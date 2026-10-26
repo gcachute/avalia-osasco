@@ -73,9 +73,6 @@ export default async function PaginaVereador({ params }: Props) {
         <Link href="/#ranking" className="text-slate-500 hover:text-slate-800">
           ← Ranking
         </Link>
-        <Link href={`/comparar?a=${v.id}`} className="rounded-lg px-3 py-1.5 font-medium text-blue-800 ring-1 ring-blue-200 transition hover:bg-blue-50">
-          Comparar com outro vereador
-        </Link>
       </div>
 
       <header className="relative mt-4 flex flex-wrap items-start gap-5 overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6">

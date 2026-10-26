@@ -83,9 +83,6 @@ export default function Home() {
             <Link href="/prefeito" className="rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 ring-1 ring-slate-300 transition hover:bg-slate-50">
               Nota do prefeito
             </Link>
-            <Link href="/comparar" className="rounded-xl px-5 py-2.5 text-sm font-semibold text-blue-800 transition hover:bg-blue-50">
-              Comparar vereadores →
-            </Link>
           </div>
         </div>
       </section>
@@ -139,7 +136,7 @@ export default function Home() {
 
       <Secao titulo="Ranking dos vereadores" id="ranking" subtitulo="Clique em um vereador para ver como a nota foi formada e as planilhas de origem.">
         <Ranking
-          vereadores={vereadores.map(({ id, nome, partido, foto, emExercicio, nota, posicao, indicadores, perfil, pilares }) => ({
+          vereadores={vereadores.map(({ id, nome, partido, foto, emExercicio, nota, posicao, indicadores, perfil, pilares, temas }) => ({
             id,
             nome,
             partido,
@@ -150,6 +147,7 @@ export default function Home() {
             indicadores,
             mesa: perfil?.mesa ?? null,
             pilares: { A: pilares.A.nota, B: pilares.B.nota, C: pilares.C.nota, D: pilares.D.nota, E: pilares.E.nota },
+            temas: temas.slice(0, 2).map((t) => t.tema),
           }))}
         />
         <p className="mt-3 text-xs text-slate-500">
