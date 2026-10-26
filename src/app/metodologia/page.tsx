@@ -34,8 +34,9 @@ export default function Metodologia() {
 
       <Secao titulo="Nota dos vereadores" id="vereadores">
         <p className="mb-4 text-slate-700">
-          Cinco pilares, no mesmo formato da nota do prefeito. A nota é a média ponderada dos pilares que têm dados e aparece como provisória
-          enquanto algum pilar estiver sem fonte aberta.
+          Cinco pilares, no mesmo formato da nota do prefeito. A nota é a média ponderada dos pilares A, B, C e E. O pilar D (custo do mandato)
+          aparece em cada perfil, mas tem peso zero: o Quadro de Pessoal da Câmara dá a mesma estrutura a todos os gabinetes, então ele não separa
+          um vereador do outro.
         </p>
         <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
           <table className="w-full text-sm">
@@ -54,7 +55,7 @@ export default function Metodologia() {
                     </div>
                     <div className="text-slate-500">{c.descricao}</div>
                   </td>
-                  <td className="px-4 py-3 text-right tabular-nums">{Math.round((m.vereador.pesos[c.chave] / total) * 100)}%</td>
+                  <td className="px-4 py-3 text-right tabular-nums">{m.vereador.pesos[c.chave] ? `${Math.round((m.vereador.pesos[c.chave] / total) * 100)}%` : "fora"}</td>
                 </tr>
               ))}
             </tbody>
@@ -191,7 +192,11 @@ export default function Metodologia() {
           <li>A maioria das matérias é votada de forma simbólica, sem registro individual. Só as votações nominais mostram o voto de cada vereador.</li>
           <li>Uma falta só conta como justificada se a justificativa foi lida no expediente de alguma sessão; licenças comunicadas de outra forma não aparecem.</li>
           <li>Separar projetos simbólicos dos de política pública não mede a qualidade de cada um. A classificação é automática e pode errar em casos de fronteira.</li>
-          <li>Requerimentos ao Executivo, presença nas reuniões das comissões, custo dos gabinetes e atendimento aos moradores ainda não têm dados abertos e ficam de fora.</li>
+          <li>Requerimentos e indicações apresentados desde 2025, presença nas reuniões das comissões e atendimento aos moradores ainda não têm dados abertos sem captcha e ficam de fora.</li>
+          <li>
+            Custo do mandato: usamos os vencimentos do Quadro de Pessoal oficial (sem encargos e benefícios) e as despesas que a Câmara envia ao TCE-SP.
+            A folha por gabinete, com quem está lotado em cada um, não é publicada em formato aberto.
+          </li>
           <li>As planilhas são preenchidas à mão pela Câmara e podem ter erros de digitação. Copiamos os dados como estão.</li>
         </ul>
       </Secao>

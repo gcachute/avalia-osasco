@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-26T21:36:45.391Z",
+ "geradoEm": "2026-10-26T23:12:02.856Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-09-29"
@@ -27,7 +27,7 @@
     "A": 20,
     "B": 25,
     "C": 25,
-    "D": 15,
+    "D": 0,
     "E": 15
    },
    "minimoSessoes": 20
@@ -1173,6 +1173,7 @@
     "honrarias": 11,
     "mocoes": 59,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 3,
     "frentes": 9,
     "pontosComissoes": 5.75,
@@ -1180,6 +1181,122 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 17
    },
+   "temas": [
+    {
+     "tema": "Gestão pública e transparência",
+     "n": 5
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 3
+    },
+    {
+     "tema": "Saúde",
+     "n": 2
+    },
+    {
+     "tema": "Segurança",
+     "n": 2
+    },
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 1
+    },
+    {
+     "tema": "Mobilidade",
+     "n": 1
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 1
+    },
+    {
+     "tema": "Animais",
+     "n": 1
+    },
+    {
+     "tema": "Mulheres",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 8
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 8
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 13
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 8
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 6
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -2050,7 +2167,8 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Dispõe sobre a denominação da Praça Valdinei Borges dos Santos – Nei, no bairro Jardim Roberto.",
      "sessao": "2026-08-18-o42",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-167/2026",
@@ -2061,7 +2179,10 @@
      "autorTexto": "LAÉRCIO MENDONÇA",
      "ementa": "Dispõe sobre normas de transparência para o cadastramento de estabelecimentos fornecedores de alimentos em plataformas de entrega em domicílio (delivery) no Município de Osasco.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-125/2026",
@@ -2072,7 +2193,8 @@
      "autorTexto": "LAÉRCIO MENDONÇA",
      "ementa": "Institui a Campanha Municipal Ruas da Copa do Mundo no Município de Osasco e dá outras providências.",
      "sessao": "2026-06-09-o32",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-120/2026",
@@ -2083,7 +2205,11 @@
      "autorTexto": "LAÉRCIO MENDONÇA",
      "ementa": "Dispõe sobre a responsabilidade das empresas concessionárias e permissionárias que utilizam a infraestrutura de postes em logradouros públicos quanto à manutenção de vegetação que ofereça risco à segurança e ao patrimônio no Município de Osasco e dá outras providências.",
      "sessao": "2026-05-21-o28",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Segurança",
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-47/2026",
@@ -2094,7 +2220,11 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Altera a Lei nº 836, de 17 de abril de 1969, que dispõe sobre o Estatuto dos Funcionários Públicos do Município de Osasco, para instituir a licença para mulheres que apresentem sintomas incapacitantes durante o período menstrual.",
      "sessao": "2026-03-12-o10",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mulheres",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-46/2026",
@@ -2105,7 +2235,11 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Dispõe sobre a obrigatoriedade de concessão de isenção total ou parcial da taxa de inscrição em corridas de rua realizadas por entidades privadas, para pessoas de baixa renda.",
      "sessao": "2026-03-12-o10",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais",
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PDL-42/2026",
@@ -2126,7 +2260,8 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Institui o Dia Municipal do Porteiro no âmbito do Município de Osasco e dá outras providências.",
      "sessao": "2026-02-26-o6",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PR-4/2026",
@@ -2137,7 +2272,8 @@
      "autorTexto": "LAÉRCIO MENDONÇA",
      "ementa": "Institui o Banco de Soluções e Inovação Cidadã no âmbito da Câmara Municipal de Osasco e dá outras providências.",
      "sessao": "2026-05-19-o27",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-225/2025",
@@ -2148,7 +2284,8 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Institui o 'Dia Municipal do DJ' no Calendário Oficial do Município de Osasco e dá outras providências.",
      "sessao": "2025-12-11-o73",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-214/2025",
@@ -2159,7 +2296,10 @@
      "autorTexto": "Laercio Mendonca",
      "ementa": "Institui o Programa de Incentivo e Fortalecimento do Comércio Local no Município de Osasco.",
      "sessao": "2025-11-18-o67",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-213/2025",
@@ -2170,7 +2310,11 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Dispõe sobre a dispensa do expediente, sem prejuízo de vencimentos, e a concessão facultativa de ajuda de custo aos servidores públicos municipais que representem oficialmente o Município de Osasco em competições esportivas e eventos correlatos, e dá outras providências.",
      "sessao": "2025-11-18-o67",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Esporte, cultura e lazer",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-159/2025",
@@ -2181,7 +2325,11 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Estabelece condições para autorização de provas de corrida de rua, caminhada e ciclismo realizadas em vias públicas no Município de Osasco, com foco em acessibilidade de preço, transparência, segurança e inclusão social, sem geração de despesas ao erário público, e dá outras providências.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Segurança",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-104/2025",
@@ -2192,7 +2340,8 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Institui o mês junho violeta.",
      "sessao": "2025-10-21-o60",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-97/2025",
@@ -2233,7 +2382,8 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Institui o dia do Psicopedagogo no calendário oficial do Município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-84/2025",
@@ -2244,7 +2394,10 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Dispõe sobre as regras para a circulação de bicicletas motorizadas ou ciclomotores, bicicletas elétricas e equipamentos de mobilidade individual autopropelidos e congêneres em vias públicas, ciclovias e ciclofaixas.",
      "sessao": "2025-06-12-o34",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mobilidade"
+     ]
     },
     {
      "key": "PDL-83/2025",
@@ -2315,7 +2468,11 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Institui a Semana da Saúde Mental do Servidor Público.",
      "sessao": "2025-05-15-o26",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Saúde",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-44/2025",
@@ -2326,7 +2483,11 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Altera a Lei nº 4.888, de 21 de junho de 2018, que dispõe sobre a vacinação domiciliar às pessoas idosas e às pessoas com deficiência motora, multideficiência profunda com dificuldade de locomoção, doenças incapacitativas e degenerativas e dá outras providências",
      "sessao": "2025-05-13-o25",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PDL-38/2025",
@@ -2347,10 +2508,12 @@
      "autorTexto": "Laércio Mendonça",
      "ementa": "Institui a honraria “Centenário Osasquense”.",
      "sessao": "2025-08-26-o44",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [
     {
      "key": "L-5.449",
@@ -2474,7 +2637,7 @@
      "ranking": 11
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 8.5,
    "posicao": 1
   },
@@ -2586,6 +2749,7 @@
     "honrarias": 9,
     "mocoes": 26,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 2,
     "frentes": 6,
     "pontosComissoes": 3.75,
@@ -2593,6 +2757,130 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 10
    },
+   "temas": [
+    {
+     "tema": "Educação",
+     "n": 5
+    },
+    {
+     "tema": "Segurança",
+     "n": 5
+    },
+    {
+     "tema": "Saúde",
+     "n": 5
+    },
+    {
+     "tema": "Mobilidade",
+     "n": 3
+    },
+    {
+     "tema": "Mulheres",
+     "n": 2
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 1
+    },
+    {
+     "tema": "Animais",
+     "n": 1
+    },
+    {
+     "tema": "Meio ambiente",
+     "n": 1
+    },
+    {
+     "tema": "Idosos",
+     "n": 1
+    },
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 1
+    },
+    {
+     "tema": "Gestão pública e transparência",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 4
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -3421,7 +3709,11 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre diretrizes para a promoção da saúde mental dos servidores públicos municipais no âmbito do Município de Osasco.",
      "sessao": "2026-09-15-o50",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-203/2026",
@@ -3432,7 +3724,10 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre diretrizes para o agendamento compartilhado de consultas nas Unidades Básicas de Saúde – UBS do Município de Osasco para pessoas nas condições que específica.",
      "sessao": "2026-09-03-o47",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-197/2026",
@@ -3443,7 +3738,8 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre a denominação da Inspetoria de Postura Inspetor Jefferson Rodilha.",
      "sessao": "2026-09-01-o46",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-165/2026",
@@ -3454,7 +3750,11 @@
      "autorTexto": "PEDRINHO CANTAGESSI",
      "ementa": "Institui o Programa Municipal Unidade Odontológica Móvel Escolar no âmbito do Município de Osasco.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Educação"
+     ]
     },
     {
      "key": "PL-164/2026",
@@ -3465,7 +3765,8 @@
      "autorTexto": "PEDRINHO CANTAGESSI",
      "ementa": "Institui o Programa Municipal de Acompanhamento Integral da Pessoa Idosa – PAI Osasco, no âmbito do Município de Osasco.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-154/2026",
@@ -3476,7 +3777,12 @@
      "autorTexto": "PEDRINHO CANTAGESSI",
      "ementa": "Dispõe sobre a instalação de sistemas de sinalização sonora em semáforos e outros pontos de trânsito, com o objetivo de garantir a segurança e a mobilidade de pessoas com deficiência visual, e dá outras providências.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Segurança",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PL-74/2026",
@@ -3487,7 +3793,13 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre o desembarque de mulheres e idosos, usuários do Sistema de Transporte Coletivo, como medida de segurança e proteção e dá outras providências.",
      "sessao": "2026-04-07-o16",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mulheres",
+      "Segurança",
+      "Mobilidade",
+      "Idosos"
+     ]
     },
     {
      "key": "PL-65/2026",
@@ -3498,7 +3810,10 @@
      "autorTexto": "PEDRINHO CANTAGESSI",
      "ementa": "Institui, no âmbito do Município de Osasco, a premiação “Leitor do Ano” nas escolas públicas municipais e dá outras providências.",
      "sessao": "2026-04-28-o21",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PL-60/2026",
@@ -3509,7 +3824,10 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre diretrizes para a dispensação de medicamentos prescritos por médicos da rede privada no âmbito da rede pública municipal de saúde de Osasco, e dá outras providências.",
      "sessao": "2026-03-24-o13",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-59/2026",
@@ -3520,7 +3838,10 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe do “Programa Farmácia Amiga” sobre a autorização para dispensação de medicamentos da rede pública municipal por farmácias privadas conveniadas, mediante apresentação de receitas oriundas do Sistema Único de Saúde (SUS), e dá outras providências.",
      "sessao": "2026-03-24-o13",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-57/2026",
@@ -3531,7 +3852,12 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre a criação do Programa Ônibus Rosa e das diretrizes para a proteção e segurança das mulheres no sistema de transporte público coletivo de passageiros no âmbito do Município de Osasco, e dá outras providências.",
      "sessao": "2026-03-31-o15",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mulheres",
+      "Segurança",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PL-50/2026",
@@ -3542,7 +3868,10 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Institui o Programa Municipal de Fiscalização Colaborativa de Resíduos Sólidos.",
      "sessao": "2026-03-17-o11",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Meio ambiente"
+     ]
     },
     {
      "key": "PL-48/2026",
@@ -3553,7 +3882,8 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Cria no Município de Osasco a Biblioteca Digital Municipal, e dá outras providências.",
      "sessao": "2026-03-12-o10",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PDL-35/2026",
@@ -3574,7 +3904,8 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Institui o Programa Praça Sensorial no Município de Osasco e dá outras providências.",
      "sessao": "2026-03-03-o7",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-26/2026",
@@ -3585,7 +3916,10 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Institui o Dia Municipal da Alfabetização e cria o Programa Municipal de Soletração no Município de Osasco, e dá outras providências.",
      "sessao": "2026-02-26-o6",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PL-8/2026",
@@ -3596,7 +3930,10 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Autoriza a Guarda Civil Municipal de Osasco a utilizar Armas Eletroeletrônicas de Incapacitação Neuromuscular (AINM – “taser”), conformidade com a legislação e normas federais aplicáveis, e dá outras providências.",
      "sessao": "2026-02-05-o2",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Segurança"
+     ]
     },
     {
      "key": "PDL-7/2026",
@@ -3617,7 +3954,10 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Autoriza a Guarda Civil Municipal de Osasco a utilizar Armas Eletroeletrônicas de Incapacitação Neuromuscular (AINM — “taser”), em conformidade com a legislação e normas federais aplicáveis, e dá outras providências.",
      "sessao": "2025-11-25-o68",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Segurança"
+     ]
     },
     {
      "key": "PL-179/2025",
@@ -3628,7 +3968,11 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre a obrigatoriedade de realização de busca ativa e comunicação ao Conselho Tutelar de alunos matriculados nas escolas da rede municipal de ensino de Osasco que não possuam o registro do nome do pai em sua certidão de nascimento.",
      "sessao": "2025-10-07-o56",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação",
+      "Animais"
+     ]
     },
     {
      "key": "PL-173/2025",
@@ -3639,7 +3983,11 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Institui no âmbito da rede municipal de ensino do Município de Osasco a Campanha Cultural \"Conhecendo Minha Cidade: A História das Nossas Ruas\".",
      "sessao": "2025-10-07-o56",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação",
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PDL-86/2025",
@@ -3660,7 +4008,8 @@
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Institui a Semana Municipal de Conscientização sobre o Vitiligo.",
      "sessao": "2025-06-03-o31",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-74/2025",
@@ -3681,7 +4030,8 @@
      "autorTexto": "Pedro Cantagessi Vitoriano",
      "ementa": "Dispõe sobre a denominação da Viela Willian Gomes de Sousa, no Jardim Bandeiras.",
      "sessao": "2025-06-05-o32",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-40/2025",
@@ -3735,6 +4085,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [
@@ -3813,7 +4164,7 @@
      "ranking": 9
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 8.3,
    "posicao": 2
   },
@@ -3909,6 +4260,7 @@
     "honrarias": 4,
     "mocoes": 27,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 2,
     "frentes": 4,
     "pontosComissoes": 6,
@@ -3916,6 +4268,114 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 10
    },
+   "temas": [
+    {
+     "tema": "Saúde",
+     "n": 2
+    },
+    {
+     "tema": "Crianças e jovens",
+     "n": 2
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 1
+    },
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 1
+    },
+    {
+     "tema": "Mobilidade",
+     "n": 1
+    },
+    {
+     "tema": "Assistência social e moradia",
+     "n": 1
+    },
+    {
+     "tema": "Educação",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -4786,7 +5246,10 @@
      "autorTexto": "Cantor Goleiro",
      "ementa": "Dispõe sobre o fornecimento de leite com fórmulas infantis especiais gratuita para crianças até dois anos, inscritas no CAD Único, com intolerância à lactose ou alergias à proteína do leite, ou nas condições especificas no âmbito do Município de Osasco.",
      "sessao": "2026-08-27-o45",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-192/2026",
@@ -4797,7 +5260,10 @@
      "autorTexto": "Cantor Goleiro",
      "ementa": "Dispõe sobre a Política Municipal de Prevenção e Combate à Adultização Infantil no Município de Osasco.",
      "sessao": "2026-08-27-o45",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-166/2026",
@@ -4808,7 +5274,11 @@
      "autorTexto": "CANTOR GOLEIRO",
      "ementa": "Institui diretrizes da Política Municipal de Promoção da Saúde Visual dos Estudantes da Rede Pública Municipal de Ensino de Osasco.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Educação"
+     ]
     },
     {
      "key": "PL-141/2026",
@@ -4819,7 +5289,10 @@
      "autorTexto": "CANTOR GOLEIRO",
      "ementa": "Institui no Calendário Oficial de Eventos do Município, o dia do aniversário do Conjunto Habitacional Miguel Costa.",
      "sessao": "2026-06-25-o37",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Assistência social e moradia"
+     ]
     },
     {
      "key": "PL-132/2026",
@@ -4830,7 +5303,8 @@
      "autorTexto": "CANTOR GOLEIRO",
      "ementa": "Institui no Calendário Oficial de Eventos de Osasco o Dia do Aniversário do bairro Jd. Vila Nova.",
      "sessao": "2026-06-25-o37",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-131/2026",
@@ -4841,7 +5315,8 @@
      "autorTexto": "CANTOR GOLEIRO",
      "ementa": "Institui no Calendário Oficial de Eventos de Osasco o Dia do Aniversário do Jd. Canaã.",
      "sessao": "2026-06-25-o37",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-51/2026",
@@ -4852,7 +5327,8 @@
      "autorTexto": "Cantor Goleiro",
      "ementa": "Dispõe sobre o “Dia Municipal do Ambulante”, no município de Osasco e dá outras providências.",
      "sessao": "2026-03-17-o11",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-24/2026",
@@ -4863,7 +5339,8 @@
      "autorTexto": "Cantor Goleiro",
      "ementa": "Dispõe sobre a implementação de prevenção à gravidez na adolescência e disponibilização de métodos contraceptivos disponíveis na rede pública Municipal de Osasco.",
      "sessao": "2026-02-24-o5",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PDL-20/2026",
@@ -4894,7 +5371,10 @@
      "autorTexto": "GILMEIRON MEDEIROS",
      "ementa": "Dispõe sobre a criação do cartão de saúde OZ, de identificação dos moradores do Município de Osasco-SP.",
      "sessao": "2025-11-13-o66",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-207/2025",
@@ -4905,7 +5385,11 @@
      "autorTexto": "GILMEIRON MEDEIROS",
      "ementa": "Dispõe sobre a concessão de gratuidade no transporte público municipal às pessoas com deficiência, pessoas com Transtorno do Espectro Autista (TEA) e pessoas com Transtorno de Déficit de Atenção e Hiperatividade (TDAH), e dá outras providências.",
      "sessao": "2025-11-13-o66",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PL-110/2025",
@@ -4916,7 +5400,8 @@
      "autorTexto": "Cantor Goleiro",
      "ementa": "Dispõe sobre a instalação de faixas de pedestres transversais elevadas ou com sinalização aprimorada em vias públicas do Município de Osasco.",
      "sessao": "2025-08-19-o42",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PDL-78/2025",
@@ -4947,10 +5432,14 @@
      "autorTexto": "Cantor Goleiro",
      "ementa": "Dispõe sobre a inscrição online de famílias de baixa renda no benefício de Tarifa Social Inscrita no CadUnico, no âmbito do Município de Osasco.",
      "sessao": "2025-05-13-o25",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Economia e emprego"
+     ]
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [
@@ -5029,7 +5518,7 @@
      "ranking": 7
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 8,
    "posicao": 3
   },
@@ -5085,6 +5574,7 @@
     "honrarias": 3,
     "mocoes": 24,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 0,
     "frentes": 0,
     "pontosComissoes": 0,
@@ -5092,6 +5582,94 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 6
    },
+   "temas": [
+    {
+     "tema": "Crianças e jovens",
+     "n": 2
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 20
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-05-06-e1",
@@ -5260,7 +5838,8 @@
      "autorTexto": "Rodolfo Cara",
      "ementa": "Dispõe sobre princípios e diretrizes a serem observadas no âmbito do Poder Executivo para a elaboração e implementação das políticas públicas da primeira infância no Município de Osasco e sobre o plano municipal pela primeira infância, e dá outras providências.",
      "sessao": "2025-05-13-o25",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-58/2025",
@@ -5271,7 +5850,11 @@
      "autorTexto": "Rodolfo Cara",
      "ementa": "Dispõe sobre o programa de investimento jovem atleta – criança e adolescentes de Osasco através de práticas esportivas no Município de Osasco – PRIJA , dá outras providências.",
      "sessao": "2025-05-13-o25",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Crianças e jovens",
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PL-57/2025",
@@ -5282,7 +5865,10 @@
      "autorTexto": "Rodolfo Cara",
      "ementa": "Cria o Programa Municipal de garantia de direitos às crianças e adolescentes de Osasco - PRODECA, e dá outras providências.",
      "sessao": "2025-05-13-o25",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PDL-18/2025",
@@ -5316,6 +5902,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [
@@ -5374,7 +5961,7 @@
      "ranking": 17
     }
    },
-   "cobertura": 0.6,
+   "cobertura": 0.7058823529411765,
    "nota": 7.6,
    "posicao": 4
   },
@@ -5488,6 +6075,7 @@
     "honrarias": 10,
     "mocoes": 18,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 3,
     "frentes": 6,
     "pontosComissoes": 4.5,
@@ -5495,6 +6083,122 @@
     "vetosRecebidos": 1,
     "adiadasPorAusencia": 10
    },
+   "temas": [
+    {
+     "tema": "Educação",
+     "n": 4
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 3
+    },
+    {
+     "tema": "Meio ambiente",
+     "n": 3
+    },
+    {
+     "tema": "Mulheres",
+     "n": 2
+    },
+    {
+     "tema": "Gestão pública e transparência",
+     "n": 1
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 1
+    },
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 1
+    },
+    {
+     "tema": "Crianças e jovens",
+     "n": 1
+    },
+    {
+     "tema": "Saúde",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -6365,7 +7069,11 @@
      "autorTexto": "HEBER DO JUNTOZ",
      "ementa": "Dispõe sobre a concessão de Título de Utilidade Pública à Casaviva Instituto Cultural, Ambiental e de Atenção à Família.",
      "sessao": "2026-08-04-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Meio ambiente",
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PL-155/2026",
@@ -6376,7 +7084,10 @@
      "autorTexto": "HEBER DO JUNTOZ",
      "ementa": "Institui diretrizes para a promoção da fitoterapia no âmbito da rede pública municipal de saúde, por meio do Programa Municipal Farmácias Vivas.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-134/2026",
@@ -6387,7 +7098,10 @@
      "autorTexto": "HEBER DO JUNTOZ",
      "ementa": "Institui o programa municipal de resposta imediata e proteção proativa à mulher, estabelece sanções administrativas ao agressor e dá outras providências.",
      "sessao": "2026-06-18-o35",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mulheres"
+     ]
     },
     {
      "key": "PL-126/2026",
@@ -6398,7 +7112,10 @@
      "autorTexto": "HEBER DO JUNTOZ",
      "ementa": "Dispõe sobre a instalação de bebedouros públicos em todas as regiões de grande circulação e/ou concentração de pessoas no Município de Osasco.",
      "sessao": "2026-06-09-o32",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-109/2026",
@@ -6409,7 +7126,11 @@
      "autorTexto": "Heber do Juntoz",
      "ementa": "Institui a “Hora do Acolhimento” em hipermercados e grandes estabelecimentos comerciais em Osasco e estabelece diretrizes para a redução de estímulos sensoriais para pessoas com Transtorno do Espectro Autista (TEA).",
      "sessao": "2026-05-05-o23",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Educação"
+     ]
     },
     {
      "key": "PL-92/2026",
@@ -6420,7 +7141,10 @@
      "autorTexto": "HEBER DO JUNTOZ",
      "ementa": "Dispõe sobre a reserva de 1% das vagas nos concursos públicos para provimento de cargos efetivos e empregos públicos e nos cargos em comissão no Município de Osasco para pessoas transexuais e travestis.",
      "sessao": "2026-04-23-o20",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-88/2026",
@@ -6431,7 +7155,10 @@
      "autorTexto": "Heber do Juntoz",
      "ementa": "Institui diretrizes para a Política Municipal de Apoio à Maternidade Atípica no Município de Osasco.",
      "sessao": "2026-04-16-o19",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mulheres"
+     ]
     },
     {
      "key": "PL-73/2026",
@@ -6442,7 +7169,11 @@
      "autorTexto": "Heber do Juntoz",
      "ementa": "Institui, no âmbito do Município de Osasco, o Programa Orçamento Cidadão, destinado à promoção da transparência e da educação fiscal.",
      "sessao": "2026-04-09-o17",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-70/2026",
@@ -6453,7 +7184,10 @@
      "autorTexto": "Heber do Juntoz",
      "ementa": "Institui o Dia Municipal de Combate à Cultura Red Pill no Município de Osasco.",
      "sessao": "2026-04-07-o16",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PL-58/2026",
@@ -6464,7 +7198,10 @@
      "autorTexto": "Heber do Juntoz",
      "ementa": "Dispõe sobre a ampliação dos serviços de Psicologia e Serviço Social na rede pública de educação básica do Município de Osasco.",
      "sessao": "2026-03-24-o13",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PDL-21/2026",
@@ -6485,7 +7222,8 @@
      "autorTexto": "HEBER ROCHA FARIAS",
      "ementa": "Veda a divulgação ou exibição de propagandas de casas ou aplicativos de apostas (bets) em equipamentos públicos municipais, inclusive nos casos de concessão ou permissão de uso.",
      "sessao": "2026-02-10-o3",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PDL-8/2026",
@@ -6506,7 +7244,8 @@
      "autorTexto": "HEBER DO JUNTOZ",
      "ementa": "Altera a Lei Complementar nº 443/2024, que Institui o Código de Obras e Edificações do Município de Osasco e dá outras providências.",
      "sessao": "2026-06-02-o31",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-109/2025",
@@ -6517,7 +7256,10 @@
      "autorTexto": "Heber Juntoz",
      "ementa": "Altera a Lei nº 3.995, de 29 de dezembro de 2005, que dispõe sobre o corte, a poda e o replantio de árvores no município e dá outras providências.",
      "sessao": "2025-09-16-o50",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Meio ambiente"
+     ]
     },
     {
      "key": "PDL-94/2025",
@@ -6578,7 +7320,10 @@
      "autorTexto": "Heber Juntoz",
      "ementa": "Institui diretrizes para a implementação e incentivo de Soluções Baseadas na Natureza (SBN) e infraestruturas verdes-azuis no Município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Meio ambiente"
+     ]
     },
     {
      "key": "PDL-39/2025",
@@ -6619,7 +7364,10 @@
      "autorTexto": "Heber do JuntOz",
      "ementa": "Dispõe da criação, no município de Osasco, de cursos extensivos preparatórios para o ingresso no ensino superior e escolas técnicas.",
      "sessao": "2025-02-27-o7",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PL-17/2025",
@@ -6630,7 +7378,10 @@
      "autorTexto": "Heber do JuntOz",
      "ementa": "Altera a Lei nº 4.019, de 23 de março de 2006, que dispõe sobre o Programa de Agricultura Urbana – PRAURB, no Município de Osasco e dá outras providências.",
      "sessao": "2025-03-20-o12",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PL-15/2025",
@@ -6641,10 +7392,12 @@
      "autorTexto": "Heber do JuntOz",
      "ementa": "Permite a criação de pomares urbanos para a execução da política de plantio, manejo, preservação e expansão da arborização frutífera nativa em espaços públicos do município.",
      "sessao": "2025-02-27-o7",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [
     {
@@ -6733,7 +7486,7 @@
      "ranking": 8
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 7.3,
    "posicao": 5
   },
@@ -6863,6 +7616,7 @@
     "honrarias": 4,
     "mocoes": 18,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 3,
     "frentes": 8,
     "pontosComissoes": 8.5,
@@ -6870,6 +7624,110 @@
     "vetosRecebidos": 1,
     "adiadasPorAusencia": 16
    },
+   "temas": [
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 2
+    },
+    {
+     "tema": "Crianças e jovens",
+     "n": 2
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 1
+    },
+    {
+     "tema": "Educação",
+     "n": 1
+    },
+    {
+     "tema": "Segurança",
+     "n": 1
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 2
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -7674,7 +8532,8 @@
      "autorTexto": "Sérgio Fontelllas",
      "ementa": "Institui o Dia Municipal de Conscientização e Prevenção contra os Jogos de Apostas Online (Bets) no Município de Osasco.",
      "sessao": "2026-09-29-o54",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-145/2026",
@@ -7685,7 +8544,12 @@
      "autorTexto": "SÉRGIO FONTELLAS",
      "ementa": "Institui o Programa Praça dos Autistas, destinado à criação de Espaços Públicos Multissensoriais, com finalidade inclusiva para o lazer, a convivência e o desenvolvimento de crianças com transtorno do Espectro Autista (TEA).",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Crianças e jovens",
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PL-144/2026",
@@ -7696,7 +8560,11 @@
      "autorTexto": "SÉRGIO FONTELLAS",
      "ementa": "Institui a Política de prevenção à violência contra os educadores da Rede Municipal de Ensino de Osasco.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação",
+      "Segurança"
+     ]
     },
     {
      "key": "PL-143/2026",
@@ -7707,7 +8575,10 @@
      "autorTexto": "SERGIO FONTELLAS",
      "ementa": "Institui no Calendário Oficial o Dia do Jovem Cristão, a ser comemorado anualmente em 21 de outubro.",
      "sessao": "2026-08-25-o44",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-142/2026",
@@ -7718,7 +8589,8 @@
      "autorTexto": "SÉRGIO FONTELLAS",
      "ementa": "Institui no Calendário Oficial a Celebração de Casamentos, a realizar-se anualmente no mês de maio.",
      "sessao": "2026-06-25-o37",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-42/2026",
@@ -7729,7 +8601,8 @@
      "autorTexto": "SÉRGIO FONTELLAS",
      "ementa": "Dispõe sobre a denominação da viela Santos Luiz Silva.",
      "sessao": "2026-05-07-o24",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-30/2026",
@@ -7760,7 +8633,8 @@
      "autorTexto": "Sérgio Fontellas",
      "ementa": "Institui a Campanha Outubrinho Rosa.",
      "sessao": "2025-08-28-o45",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-42/2025",
@@ -7771,7 +8645,8 @@
      "autorTexto": "Sérgio Fontellas",
      "ementa": "Institui a Campanha Outubro Rosa.",
      "sessao": "2025-08-28-o45",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-27/2025",
@@ -7792,7 +8667,11 @@
      "autorTexto": "Sérgio Fontellas",
      "ementa": "Institui a certificação municipal Selo Empresa Amiga dos Autistas.",
      "sessao": "2025-04-01-o15",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-25/2025",
@@ -7803,7 +8682,8 @@
      "autorTexto": "Sérgio Fontellas",
      "ementa": "Dispõe sobre a criação da carteira de identificação de pessoas acometidas por Alzheimer.",
      "sessao": "2025-04-01-o15",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PDL-9/2025",
@@ -7817,6 +8697,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [
     {
      "key": "L-5.445",
@@ -7938,7 +8819,7 @@
      "ranking": 12
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 7.1,
    "posicao": 6
   },
@@ -8070,6 +8951,7 @@
     "honrarias": 9,
     "mocoes": 84,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 3,
     "frentes": 9,
     "pontosComissoes": 5.75,
@@ -8077,6 +8959,138 @@
     "vetosRecebidos": 1,
     "adiadasPorAusencia": 43
    },
+   "temas": [
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 13
+    },
+    {
+     "tema": "Saúde",
+     "n": 11
+    },
+    {
+     "tema": "Educação",
+     "n": 6
+    },
+    {
+     "tema": "Animais",
+     "n": 5
+    },
+    {
+     "tema": "Mobilidade",
+     "n": 5
+    },
+    {
+     "tema": "Gestão pública e transparência",
+     "n": 4
+    },
+    {
+     "tema": "Assistência social e moradia",
+     "n": 3
+    },
+    {
+     "tema": "Mulheres",
+     "n": 3
+    },
+    {
+     "tema": "Segurança",
+     "n": 2
+    },
+    {
+     "tema": "Idosos",
+     "n": 2
+    },
+    {
+     "tema": "Meio ambiente",
+     "n": 2
+    },
+    {
+     "tema": "Crianças e jovens",
+     "n": 2
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 24
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 10
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 25
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 15
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 11
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 14
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 8
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 1
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -8947,7 +9961,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Altera a Lei nº 4.524, de 4 de abril de 2012, para dispor sobre a transferência da permissão de exploração do serviço de táxi em caso de falecimento do permissionário e em razão de incapacidade superveniente para a condução do veículo, e dá outras providências.",
      "sessao": "2026-09-15-o50",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-170/2026",
@@ -8958,7 +9973,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui, no âmbito do Município de Osasco, a Política Municipal de Identificação, Acolhimento e Encaminhamento de Pessoas com Transtorno de Acumulação.",
      "sessao": "2026-08-06-o39",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-163/2026",
@@ -8969,7 +9985,8 @@
      "autorTexto": "GABRIEL SAÚDE",
      "ementa": "Institui, no âmbito do Município de Osasco, a Política Municipal de Comunicação Aumentativa e Alternativa (CAA) em Espaços Públicos.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-160/2026",
@@ -8980,7 +9997,12 @@
      "autorTexto": "GABRIEL SAÚDE",
      "ementa": "Dispõe sobre a promoção da alimentação adequada e saudável no ambiente escolar das redes municipal e privada de educação básica do Município de Osasco e dá outras providências.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação",
+      "Meio ambiente",
+      "Assistência social e moradia"
+     ]
     },
     {
      "key": "PL-157/2026",
@@ -8991,7 +10013,8 @@
      "autorTexto": "GABRIEL SAÚDE",
      "ementa": "Institui a Política Municipal de Proteção dos Direitos da Pessoa com Fibromialgia no Município de Osasco.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-147/2026",
@@ -9002,7 +10025,8 @@
      "autorTexto": "GABRIEL SAÚDE",
      "ementa": "Denomina Viela José Carlos de Arruda a atual Viela 15 do Loteamento Jardim Velloso, situado no Bairro Veloso.",
      "sessao": "2026-08-04-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-118/2026",
@@ -9013,7 +10037,11 @@
      "autorTexto": "GABRIEL SAÚDE",
      "ementa": "Garante às pessoas com Transtorno do Espectro Autista o direito ao atendimento odontológico adaptado na rede pública de saúde do Município de Osasco e dá outras providências.",
      "sessao": "2026-05-19-o27",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-98/2026",
@@ -9024,7 +10052,10 @@
      "autorTexto": "GABRIEL SAÚDE",
      "ementa": "Regulamenta o repasse do Incentivo Financeiro Adicional – IFA aos Agentes Comunitários de Saúde – ACS e aos Agentes de Combate às Endemias – ACE do Município de Osasco, e dá outras providências",
      "sessao": "2026-04-23-o20",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-97/2026",
@@ -9035,7 +10066,11 @@
      "autorTexto": "GABRIEL SAÚDE",
      "ementa": "Dispõe sobre a instalação de sistemas de monitoramento eletrônico por câmeras de segurança nas Instituições de Ensino Público localizadas no Município de Osasco, e dá outras providências.",
      "sessao": "2026-04-23-o20",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação",
+      "Segurança"
+     ]
     },
     {
      "key": "PL-96/2026",
@@ -9046,7 +10081,11 @@
      "autorTexto": "GABRIEL SAÚDE",
      "ementa": "Denomina \"Pet Parque Orelha\" o espaço público de uso coletivo integrado por área de convivência para animais de estimação e parquinho infantil, localizado na Rua Maestro Vahakn Minassian, s/n, no Município de Osasco, e dá outras providências.",
      "sessao": "2026-04-23-o20",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Crianças e jovens",
+      "Animais"
+     ]
     },
     {
      "key": "PL-91/2026",
@@ -9057,7 +10096,10 @@
      "autorTexto": "GABRIEL SAÚDE",
      "ementa": "Institui o Programa RAIO de OZ – Rede de Atenção Integral e Acolhimento de Osasco, reconhece o direito ao cuidado integral com absoluta prioridade aos cuidadores de Pessoas com Deficiência no Município de Osasco, e dá outras providências.",
      "sessao": "2026-04-23-o20",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-75/2026",
@@ -9068,7 +10110,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui a Carteirinha de Identificação da Pessoa com Deficiência – CIPCD, no âmbito do Município de Osasco, e dá outras providências.",
      "sessao": "2026-04-09-o17",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-69/2026",
@@ -9079,7 +10124,11 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Altera o parágrafo único do art. 1º e o art. 2º da Lei nº 3.478, de 12 de maio de 1999, que dispõe sobre o ingresso de gestantes em veículos de transporte coletivo no Município, e dá outras providências.",
      "sessao": "2026-03-31-o15",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mulheres",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PL-66/2026",
@@ -9090,7 +10139,11 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui a Política Municipal de Atenção Integral à Gestante de Alto Risco e aos Primeiros Mil Dias da Criança no Município de Osasco e dá outras providências.",
      "sessao": "2026-03-26-o14",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mulheres",
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-56/2026",
@@ -9101,7 +10154,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre o direito à instalação de estação de recarga individual para veículos elétricos em edificações residenciais e comerciais no âmbito do Município de Osasco, em consonância com a Lei Estadual nº 18.403, de 18 de fevereiro de 2026, e dá outras providências.",
      "sessao": "2026-03-24-o13",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-45/2026",
@@ -9112,7 +10166,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a instalação de código QR (Quick Response) nos postes de iluminação pública de vias de grande circulação no Município de Osasco para registro digital de ocorrências pelos cidadãos e dá outras providências.",
      "sessao": "2026-03-12-o10",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-44/2026",
@@ -9123,7 +10178,12 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui a pulseira de identificação com código QR para pessoas com deficiência, transtornos do neurodesenvolvimento e doenças crônicas em situação de vulnerabilidade com risco de desaparecimento no Município de Osasco e dá outras providências.",
      "sessao": "2026-03-12-o10",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA",
+      "Assistência social e moradia"
+     ]
     },
     {
      "key": "PL-33/2026",
@@ -9134,7 +10194,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui a Caminhada \"Passos TEA\" no Calendário Oficial de Eventos do Município de Osasco e dá outras providências.",
      "sessao": "2026-03-03-o7",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-32/2026",
@@ -9145,7 +10206,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui o \"Selo Autista a Bordo\" no Município de Osasco e dá outras providências.",
      "sessao": "2026-03-03-o7",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PDL-25/2026",
@@ -9166,7 +10230,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui a Meia Maratona de Osasco – 21K no Calendário Oficial de Eventos do Município de Osasco, a ser realizada anualmente no último domingo do mês de fevereiro, e dá outras providências.",
      "sessao": "2026-03-10-o9",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-12/2026",
@@ -9177,7 +10242,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui a política municipal de fornecimento gratuito de medicamentos e produtos à base de canabidiol e outras substâncias canabinóides pelo Sistema Único de Saúde (SUS) em Osasco.",
      "sessao": "2026-02-12-o4",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PLC-3/2026",
@@ -9188,7 +10256,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Estabelece desconto de 50% (cinquenta por cento) no pagamento do IPTU - Imposto Predial e Territorial Urbano aos imóveis localizados nas vias públicas onde se realizam feiras-livres, no âmbito do Município de Osasco, e dá outras providências.",
      "sessao": "2026-03-03-o7",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-229/2025",
@@ -9199,7 +10268,11 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a possibilidade de conversão do pagamento de multas de trânsito de natureza leve em doação de sangue ou medula óssea no Município de Osasco e dá outras providências.",
      "sessao": "2025-12-18-o75",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Meio ambiente",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PL-221/2025",
@@ -9210,7 +10283,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui o Programa Municipal de Identificação Animal com Medalha QR Code no Município de Osasco e dá outras providências.",
      "sessao": "2025-12-09-o72",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-217/2025",
@@ -9221,7 +10297,12 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui a política municipal de incentivo ao diagnóstico do transtorno do espectro autista (TEA) em adultos e idosos no Município de Osasco e dá outras providências.",
      "sessao": "2025-11-27-o69",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA",
+      "Idosos"
+     ]
     },
     {
      "key": "PL-209/2025",
@@ -9232,7 +10313,12 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a obrigatoriedade de instalação de dispositivos de proteção viária (guard rails) nas calçadas adjacentes aos estabelecimentos de ensino no município de Osasco.",
      "sessao": "2025-11-18-o67",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação",
+      "Animais",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PL-190/2025",
@@ -9243,7 +10329,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a disponibilização do carnê de Imposto Predial e Territorial Urbano - IPTU em braile para os contribuintes com deficiência visual no município de Osasco.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-189/2025",
@@ -9254,7 +10343,11 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui homenagem anual aos servidores públicos municipais aposentados.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Idosos",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-187/2025",
@@ -9265,7 +10358,11 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a emissão da Carteira de Identificação da Pessoa com Doença Rara no âmbito do Município de Osasco.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-185/2025",
@@ -9276,7 +10373,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui o Programa \"Sábado Saúde Osasco\" estabelecendo o funcionamento das Unidades Básicas de Saúde (UBS) localizadas em Polos de Saúde aos sábados, no horário das 8h às 18h.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-184/2025",
@@ -9287,7 +10387,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a criação do Programa Municipal de Reabilitação Auditiva no município de Osasco e dá outras providências.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-183/2025",
@@ -9298,7 +10399,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a instituição do \"DISPOSITIVO GUARDA VIDA\" para proteção dos servidores públicos municipais que atuam em atendimento ao público no Município de Osasco.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-181/2025",
@@ -9309,7 +10413,12 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a prioridade de atendimento psicossocial e de segurança às mães atípicas que se dedicam integralmente ao cuidado de filhos com Transtorno do Espectro Autista (TEA) no sistema de segurança e saúde municipal de Osasco.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA",
+      "Segurança"
+     ]
     },
     {
      "key": "PL-178/2025",
@@ -9320,7 +10429,11 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui o Programa Municipal de Albergues Temporários para Animais em Situação de Rua no Município de Osasco.",
      "sessao": "2025-09-23-o52",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais",
+      "Assistência social e moradia"
+     ]
     },
     {
      "key": "PL-176/2025",
@@ -9331,7 +10444,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui a Política Municipal de Praças Sensoriais Inclusivas no Município de Osasco.",
      "sessao": "2025-09-23-o52",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-171/2025",
@@ -9342,7 +10456,12 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Veda a nomeação de pessoa condenada, por sentença criminal com trânsito em julgado e fundamentada na Lei Federal nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), para exercer cargo ou emprego público no Município de Osasco, inclusive nos âmbitos do Poder Legislativo e da Administração Indireta.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mulheres",
+      "Mobilidade",
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-170/2025",
@@ -9353,7 +10472,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui diretrizes municipais para atenção às pessoas com Fibromialgia e doenças correlatas no município de Osasco, em complemento à Lei Federal nº 15.176/2025 e dá outras providências.",
      "sessao": "2025-09-23-o52",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-168/2025",
@@ -9364,7 +10486,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui a iluminação especial em monumentos e edificações públicas municipais em alusão ao Dia Mundial de Conscientização do Autismo no Município de Osasco.",
      "sessao": "2025-09-18-o51",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-167/2025",
@@ -9375,7 +10500,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Estabelece diretrizes municipais para implementação e efetivação do direito ao acompanhamento especializado nas escolas no Município de Osasco, em complementação à Lei Federal nº 12.764/2012 e ao Decreto Federal nº 8.368/2014.",
      "sessao": "2025-09-18-o51",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PL-166/2025",
@@ -9386,7 +10514,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Reconhece a importância dos jardins sensoriais nas escolas públicas e estabelece diretrizes para sua implementação voluntária no Município de Osasco.",
      "sessao": "2025-09-18-o51",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PL-165/2025",
@@ -9397,7 +10528,11 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a facilitação do acesso aos produtos à base de canabidiol (CBD) no Sistema Único de Saúde Municipal para pacientes com Transtorno do Espectro Autista (TEA) no Município de Osasco.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-158/2025",
@@ -9408,7 +10543,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a criação do Selo Escola Amiga da Inclusão no âmbito do Município de Osasco.",
      "sessao": "2025-09-23-o52",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PL-154/2025",
@@ -9419,7 +10557,11 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Altera a Lei nº 5.213, de 28 de dezembro de 2022, que dispõe sobre a flexibilização da jornada de trabalho dos servidores com deficiência física, intelectual, visual e/ou auditiva, e daqueles que sejam cônjuges, companheiros, pais ou responsáveis legais de pessoas com deficiência.",
      "sessao": "2025-09-16-o50",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-149/2025",
@@ -9430,7 +10572,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui o Sistema de Alerta \"Oz\" (Osasco Zela) para localização de pessoas desaparecidas no Município de Osasco.",
      "sessao": "2025-09-16-o50",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-143/2025",
@@ -9441,7 +10584,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui no Calendário Oficial do Município de Osasco a \"Semana QuitaOZ\".",
      "sessao": "2025-09-16-o50",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-130/2025",
@@ -9452,7 +10596,11 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Institui o Programa Conecta Oz, que estabelece serviço de transporte individual or aplicativo gratuito para usuários do SUS em tratamento de saúde.",
      "sessao": "2025-09-09-o48",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PDL-125/2025",
@@ -9503,7 +10651,11 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a reserva de vagas para pessoas com deficiência (PCDs) e pessoas com Transtorno do Espectro Autista (TEA) nas ações, programas, projetos e atividades promovidos por órgãos da administração pública e entidades conveniadas.",
      "sessao": "2025-09-16-o50",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-79/2025",
@@ -9514,7 +10666,10 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a obrigatoriedade da instalação de piso tátil de alerta e direcional em novas construções públicas e privadas no Município de Osasco.",
      "sessao": "2025-06-17-o35",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PDL-59/2025",
@@ -9565,7 +10720,8 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Altera a Lei Complementar nº 443, de 20 de dezembro de 2024, que institui o Código de Obras e Edificações do Município de Osasco e dá outras providências.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PLC-9/2025",
@@ -9576,10 +10732,12 @@
      "autorTexto": "Gabriel Saúde",
      "ementa": "Altera a Lei Complementar nº 404 de 28 de dezembro de 2022, que institui o Código Tributário do Município de Osasco e dá outras providências.",
      "sessao": "2025-09-23-o52",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [
     {
      "key": "L-5.448",
@@ -9809,7 +10967,7 @@
      "ranking": 21
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 6.9,
    "posicao": 7
   },
@@ -9899,6 +11057,7 @@
     "honrarias": 7,
     "mocoes": 21,
     "requerimentos": 1,
+    "requerimentosNaPauta": 1,
     "comissoes": 0,
     "frentes": 5,
     "pontosComissoes": 5.25,
@@ -9906,6 +11065,85 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 6
    },
+   "temas": [],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -10776,7 +12014,8 @@
      "autorTexto": "CARMÔNIO BASTOS",
      "ementa": "Dispõe sobre a denominação do novo prédio da Câmara Municipal de Osasco.",
      "sessao": "2026-04-28-o21",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-31/2026",
@@ -10797,7 +12036,8 @@
      "autorTexto": "Carmônio Bastos",
      "ementa": "Dispõe sobre a denominação do Parque Nordestino de Osasco.",
      "sessao": "2026-02-03-o1",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-1/2026",
@@ -10818,7 +12058,8 @@
      "autorTexto": "CARMONIO GONCALVES BASTOS",
      "ementa": "Dispõe sobre a inserção da legislatura vigente da Câmara Municipal nas placas de inauguração de obras públicas de construção, revitalização, reforma ou ampliação realizadas no Município de Osasco, e dá outras providências.",
      "sessao": "2025-11-06-o64",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-125/2025",
@@ -10829,7 +12070,8 @@
      "autorTexto": "Carmônio Bastos",
      "ementa": "Dispõe sobre a denominação da viela Orlando Rocha Freixeda.",
      "sessao": "2025-08-28-o45",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-114/2025",
@@ -10840,7 +12082,8 @@
      "autorTexto": "Cârmonio Bastos",
      "ementa": "Dispõe sobre denominação da UBS Adalgiza Correia Soares.",
      "sessao": "2025-08-05-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-077/2025",
@@ -10891,7 +12134,8 @@
      "autorTexto": "Carmônio Bastos",
      "ementa": "Institui a Festa da Família no Calendário Oficial.",
      "sessao": "2025-04-22-o20",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-1/2025",
@@ -10914,6 +12158,20 @@
      "ementa": "Requer informações do Executivo Municipal sobre o descarte dos livros e demais impressos pertencentes ao acervo da Biblioteca Municipal Monteiro Lobato, conforme divulgado amplamente pela imprensa na semana passada e, ainda, informações sobre o armazenamento, a conservação e o manuseio, com possível risco à saúde, do material.",
      "informacao": true,
      "sessao": "2026-04-28-o21"
+    }
+   ],
+   "requerimentosNaPauta": [
+    {
+     "key": "REQ-7/2026",
+     "numero": 7,
+     "ano": 2026,
+     "autor": "carmonio-bastos",
+     "ementa": "Requer informações do Executivo Municipal sobre o descarte dos livros e demais impressos pertencentes ao acervo da Biblioteca Municipal Monteiro Lobato, conforme divulgado amplamente pela imprensa na semana passada e, ainda, informações sobre o armazenamento, a conservação e o manuseio, com possível risco à saúde, do material.",
+     "sessoes": 1,
+     "primeira": "2026-04-28-o21",
+     "ultima": "2026-04-28-o21",
+     "status": "APROVADO",
+     "aindaNaPauta": false
     }
    ],
    "leis": [
@@ -10995,7 +12253,7 @@
      "ranking": 5
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 6.4,
    "posicao": 8
   },
@@ -11101,6 +12359,7 @@
     "honrarias": 11,
     "mocoes": 64,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 0,
     "frentes": 7,
     "pontosComissoes": 1.75,
@@ -11108,6 +12367,118 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 49
    },
+   "temas": [
+    {
+     "tema": "Animais",
+     "n": 11
+    },
+    {
+     "tema": "Segurança",
+     "n": 2
+    },
+    {
+     "tema": "Mobilidade",
+     "n": 2
+    },
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 1
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 1
+    },
+    {
+     "tema": "Assistência social e moradia",
+     "n": 1
+    },
+    {
+     "tema": "Educação",
+     "n": 1
+    },
+    {
+     "tema": "Crianças e jovens",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 10
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 8
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 6
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -11942,7 +13313,13 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Institui diretrizes de Segurança no Transporte de Crianças e de Educação para o Uso Adequado dos Dispositivos de Retenção Infantil no Município de Osasco.",
      "sessao": "2026-09-29-o54",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação",
+      "Crianças e jovens",
+      "Segurança",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PL-214/2026",
@@ -11953,7 +13330,10 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Institui a Doação Voluntária para a Causa Animal no Município de Osasco, mediante disponibilização de opção de doação junto aos documentos de arrecadação do Imposto Predial e Territorial Urbano - IPTU.",
      "sessao": "2026-09-22-o52",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-187/2026",
@@ -11964,7 +13344,8 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a denominação do Pet Parque Pet Estrela localizado no bairro Jaguaribe.",
      "sessao": "2026-08-18-o42",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-175/2026",
@@ -11975,7 +13356,8 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a denominação do Pet Parque Cão Caramelo localizado no bairro Jaguaribe.",
      "sessao": "2026-08-11-o40",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-84/2026",
@@ -11986,7 +13368,10 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Institui o Programa Protetores Mirins dos Animais, no Município de Osasco.",
      "sessao": "2026-04-14-o18",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-76/2026",
@@ -11997,7 +13382,11 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Assegura a toda pessoa o direito de fornecer alimento e água a animais em situação de rua, inclusive cães e gatos comunitários, em locais públicos.",
      "sessao": "2026-04-09-o17",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais",
+      "Assistência social e moradia"
+     ]
     },
     {
      "key": "PL-25/2026",
@@ -12008,7 +13397,8 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Institui no Calendário Oficial do Município de Osasco o “Dia Municipal da Corrida de Rua” e dá outras providências.",
      "sessao": "2026-02-26-o6",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-20/2026",
@@ -12019,7 +13409,10 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a autorização do sepultamento de cães e gatos junto a seus tutores.",
      "sessao": "2026-02-24-o5",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PDL-18/2026",
@@ -12040,7 +13433,8 @@
      "autorTexto": "ALEXANDRE DE JESUS CAPRIOTTI",
      "ementa": "Institui no Calendário Oficial do Município de Osasco, o “Dia Municipal de Empatia com Pet”, e dá outras providências.",
      "sessao": "2025-11-13-o66",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-202/2025",
@@ -12051,7 +13445,8 @@
      "autorTexto": "Alexandre de Jesus Capriotti",
      "ementa": "Institui, no âmbito do Município de Osasco, a “Campanha de Combate à Esporotricose”, e dá outras providencias.",
      "sessao": "2025-10-30-o62",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-193/2025",
@@ -12062,7 +13457,8 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Institui no calendário oficial do Município de Osasco, o dia “Família Christensen – A História que nos une”.",
      "sessao": "2025-10-07-o56",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-148/2025",
@@ -12073,7 +13469,10 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Institui, no calendário oficial do Município de Osasco, a Campanha “Todos Contra a FIV e FELV” de conscientização sobre a Imunodeficiência Viral Felina – FIV e a Leucemia Viral Felina - FELV.",
      "sessao": "2025-09-02-o46",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-121/2025",
@@ -12084,7 +13483,10 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a obrigatoriedade de prestação de socorro aos animais atropelados no Município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PDL-102/2025",
@@ -12125,7 +13527,10 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a proibição da permanência de animais desacompanhados no interior de veículos automotores no Município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-96/2025",
@@ -12136,7 +13541,10 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a proibição da realização de tatuagens permanentes ou temporárias, bem como a colocação de piercing em animais, para fins estéticos, no Município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PDL-092/2025",
@@ -12167,7 +13575,10 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre proteção ao direito de fornecer alimento e água a animais de rua em espaços públicos no município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PDL-87/2025",
@@ -12188,7 +13599,12 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Institui o mês Outubro Caramelo, dedicado à conscientização sobre a segurança dos animais no trânsito.",
      "sessao": "2025-08-05-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Segurança",
+      "Animais",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PDL-065/2025",
@@ -12219,7 +13635,8 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a proibição do plantio de espécies vegetais tóxicas ou que tenham espinhos nas áreas públicas no âmbito do Município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PDL-54/2025",
@@ -12250,7 +13667,10 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Torna obrigatória em todos os supermercados e congêneres, a adaptação de cinco por cento dos carrinhos de compras a animais domésticos com porte pequeno e médio.",
      "sessao": "2025-04-08-o17",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PR-11/2025",
@@ -12261,7 +13681,10 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a criação da Procuradoria Especial contra maus-tratos a animais na Câmara Municipal de Osasco.",
      "sessao": "2025-08-28-o45",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PR-5/2025",
@@ -12272,7 +13695,8 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Institui o “Kids Day” no âmbito da Câmara Municipal de Osasco.",
      "sessao": "2025-06-17-o35",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-5/2025",
@@ -12283,10 +13707,14 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a denominação da arena esportiva Janilson Vieira Lopes.",
      "sessao": "2025-10-07-o56",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [
     {
      "key": "L-5.441",
@@ -12530,7 +13958,7 @@
      "ranking": 19
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 5.9,
    "posicao": 9
   },
@@ -12644,6 +14072,7 @@
     "honrarias": 12,
     "mocoes": 48,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 2,
     "frentes": 7,
     "pontosComissoes": 4.25,
@@ -12651,6 +14080,110 @@
     "vetosRecebidos": 1,
     "adiadasPorAusencia": 15
    },
+   "temas": [
+    {
+     "tema": "Mobilidade",
+     "n": 3
+    },
+    {
+     "tema": "Gestão pública e transparência",
+     "n": 3
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 2
+    },
+    {
+     "tema": "Educação",
+     "n": 1
+    },
+    {
+     "tema": "Mulheres",
+     "n": 1
+    },
+    {
+     "tema": "Segurança",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 8
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 5
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -13521,7 +15054,10 @@
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a criação do Selo Empresa Amiga da Mãe Atípica no âmbito do Município de Osasco.",
      "sessao": "2026-08-20-o43",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-186/2026",
@@ -13532,7 +15068,10 @@
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a Instituição da Semana Municipal do Servidor Sangue Bom no calendário oficial do município de Osasco.",
      "sessao": "2026-08-18-o42",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-176/2026",
@@ -13543,7 +15082,10 @@
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a criação do Selo Servidor Sangue Bom no âmbito do Município de Osasco.",
      "sessao": "2026-08-11-o40",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-146/2026",
@@ -13554,7 +15096,10 @@
      "autorTexto": "GUILHERME PRADO",
      "ementa": "Dispõe sobre a instituição, no âmbito da Guarda Municipal de Osasco, da Ronda Ostensiva com Motocicletas – ROMO.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mobilidade"
+     ]
     },
     {
      "key": "PL-137/2026",
@@ -13565,7 +15110,12 @@
      "autorTexto": "GUILHERME PRADO",
      "ementa": "Dispõe sobre a garantia de prioridade na matrícula e na transferência escolar, nas unidades da rede pública municipal de ensino de Osasco, para filhos, dependentes ou tutelados de mulheres em situação de violência doméstica e familiar.",
      "sessao": "2026-06-18-o35",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação",
+      "Mulheres",
+      "Segurança"
+     ]
     },
     {
      "key": "PL-117/2026",
@@ -13576,7 +15126,8 @@
      "autorTexto": "GUILHERME PRADO",
      "ementa": "Dispõe sobre alteração da denominação da Rua General Labatut para Rua Padre Leo Dolan – Padre Leo.",
      "sessao": "2026-05-19-o27",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-83/2026",
@@ -13587,7 +15138,10 @@
      "autorTexto": "Guilherme Prado",
      "ementa": "Institui no Calendário Oficial de Osasco o Dia da Corrida e Caminhada Desafio dos Trabalhadores.",
      "sessao": "2026-04-14-o18",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-82/2026",
@@ -13598,7 +15152,8 @@
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a instituição do “Dia do Dogueiro” no Calendário Oficial do Município de Osasco.",
      "sessao": "2026-04-14-o18",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-81/2026",
@@ -13609,7 +15164,10 @@
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a denominação do Restaurante Municipal do Servidor Armando Silva Maero.",
      "sessao": "2026-04-14-o18",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PDL-36/2026",
@@ -13670,7 +15228,10 @@
      "autorTexto": "Guilherme Prado",
      "ementa": "Denomina o programa “Rizolito Motoboy – faixa azul de motos” no Município de Osasco e dá outras providências.",
      "sessao": "2026-02-03-o1",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Mobilidade"
+     ]
     },
     {
      "key": "PDL-3/2026",
@@ -13691,7 +15252,8 @@
      "autorTexto": "Guilherme Prado",
      "ementa": "Institui o Dia da Pessoa Desaparecida no âmbito do Município de Osasco.",
      "sessao": "2025-12-09-o72",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-216/2025",
@@ -13702,7 +15264,8 @@
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre alteração da denominação da rua General Labatut para rua Padre Léo.",
      "sessao": "2025-11-27-o69",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-146/2025",
@@ -13713,7 +15276,10 @@
      "autorTexto": "Guilherme Prado",
      "ementa": "Institui no Município de Osasco a implantação de faixas de retenção e recuo exclusivas para motocicletas.",
      "sessao": "2025-09-04-o47",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mobilidade"
+     ]
     },
     {
      "key": "PL-145/2025",
@@ -13724,7 +15290,8 @@
      "autorTexto": "GUILHERME PRADO",
      "ementa": "Institui a Semana municipal da Mãe Atípica.",
      "sessao": "2025-09-09-o48",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-067/2025",
@@ -13755,7 +15322,8 @@
      "autorTexto": "Guilherme Prado",
      "ementa": "Institui a Semana Municipal da Mãe Atípica.",
      "sessao": "2025-03-18-o11",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-20/2025",
@@ -13799,6 +15367,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [
     {
@@ -13907,7 +15476,7 @@
      "ranking": 10
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 5.9,
    "posicao": 10
   },
@@ -13974,6 +15543,7 @@
     "honrarias": 2,
     "mocoes": 9,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 0,
     "frentes": 0,
     "pontosComissoes": 0,
@@ -13981,6 +15551,110 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 7
    },
+   "temas": [
+    {
+     "tema": "Animais",
+     "n": 1
+    },
+    {
+     "tema": "Educação",
+     "n": 1
+    },
+    {
+     "tema": "Saúde",
+     "n": 1
+    },
+    {
+     "tema": "Mulheres",
+     "n": 1
+    },
+    {
+     "tema": "Segurança",
+     "n": 1
+    },
+    {
+     "tema": "Meio ambiente",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -14683,7 +16357,10 @@
      "autorTexto": "RODRIGO GANSINHO",
      "ementa": "Institui a Política Municipal de Incentivo à Denúncia de Infrações Ambientais no Município de Osasco e dá outras providências.",
      "sessao": "2026-04-28-o21",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Meio ambiente"
+     ]
     },
     {
      "key": "PL-95/2026",
@@ -14694,7 +16371,8 @@
      "autorTexto": "RODRIGO GANSINHO",
      "ementa": "Dispõe sobre a utilização de QR Code em placas informativas de obras públicas no Município de Osasco e dá outras providências.",
      "sessao": "2026-04-23-o20",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-94/2026",
@@ -14705,7 +16383,12 @@
      "autorTexto": "RODRIGO GANSINHO",
      "ementa": "Institui o Estatuto Municipal de Proteção Integral à Vítima de Violência Doméstica e Familiar no Município de Osasco, cria o Protocolo Municipal de Atenção Integral à Vítima (PMAIV), institui a \"Sala Lilás\" nas unidades de saúde, e dá outras providências.",
      "sessao": "2026-04-23-o20",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Mulheres",
+      "Segurança"
+     ]
     },
     {
      "key": "PL-93/2026",
@@ -14716,7 +16399,10 @@
      "autorTexto": "RODRIGO GANSINHO",
      "ementa": "Altera a Lei Municipal nº 5.432, de 10 de novembro de 2025, que institui o Dia do Psicopedagogo no Calendário Oficial do Município de Osasco, para prever a realização de seminários, palestras e ações educativas durante o mês de novembro.",
      "sessao": "2026-04-23-o20",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PL-90/2026",
@@ -14727,7 +16413,8 @@
      "autorTexto": "RODRIGO GANSINHO",
      "ementa": "Institui o Dia Municipal do Neuropsicopedagogo.",
      "sessao": "2026-04-23-o20",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-86/2026",
@@ -14738,7 +16425,8 @@
      "autorTexto": "Rodrigo Gansinho",
      "ementa": "Institui o Dia Municipal do Psicanalista Clínico no Calendário Oficial do Município de Osasco.",
      "sessao": "2026-04-14-o18",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-80/2026",
@@ -14749,7 +16437,10 @@
      "autorTexto": "Rodrigo Gansinho",
      "ementa": "Altera o art. 5º da Lei 5.109, de 30 de abril de 2021, que dispõe sobre a proibição de confinamento, acorrentamento e alojamento inadequado de animais.",
      "sessao": "2026-04-14-o18",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PDL-12/2026",
@@ -14773,6 +16464,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [
@@ -14835,7 +16527,7 @@
      "ranking": 6
     }
    },
-   "cobertura": 0.6,
+   "cobertura": 0.7058823529411765,
    "nota": 5.9,
    "posicao": 11
   },
@@ -14946,6 +16638,7 @@
     "honrarias": 9,
     "mocoes": 25,
     "requerimentos": 0,
+    "requerimentosNaPauta": 2,
     "comissoes": 2,
     "frentes": 7,
     "pontosComissoes": 4.25,
@@ -14953,6 +16646,118 @@
     "vetosRecebidos": 1,
     "adiadasPorAusencia": 30
    },
+   "temas": [
+    {
+     "tema": "Animais",
+     "n": 9
+    },
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 8
+    },
+    {
+     "tema": "Saúde",
+     "n": 6
+    },
+    {
+     "tema": "Mobilidade",
+     "n": 2
+    },
+    {
+     "tema": "Educação",
+     "n": 2
+    },
+    {
+     "tema": "Crianças e jovens",
+     "n": 2
+    },
+    {
+     "tema": "Meio ambiente",
+     "n": 1
+    },
+    {
+     "tema": "Assistência social e moradia",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 11
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 8
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 1
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -15757,7 +17562,11 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Institui as diretrizes para a Política Municipal de Ampliação e Descentralização da Assistência Médico-Veterinária para cães e gatos no Município de Osasco e dá outras providências.",
      "sessao": "2026-08-27-o45",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Animais"
+     ]
     },
     {
      "key": "PL-169/2026",
@@ -15768,7 +17577,10 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Institui o Programa Municipal Passeio Limpo destinado à conscientização sobre a guarda responsável de animais domésticos e à disponibilização de sacos biodegradáveis para o recolhimento de dejetos de animais em vias e espaços públicos do Município de Osasco, e dá outras providências.",
      "sessao": "2026-08-06-o39",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-129/2026",
@@ -15779,7 +17591,8 @@
      "autorTexto": "RALFI SILVA",
      "ementa": "Institui diretrizes para a divulgação e incentivo à realização do “Teste da Bochechinha” no Município de Osasco, e dá outras providências.",
      "sessao": "2026-06-11-o33",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-127/2026",
@@ -15790,7 +17603,10 @@
      "autorTexto": "RALFI SILVA",
      "ementa": "Institui diretrizes para a Política Municipal de Prevenção ao Uso de Drogas nas Escolas no Município de Osasco, e dá outras providências.",
      "sessao": "2026-06-11-o33",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PL-116/2026",
@@ -15801,7 +17617,10 @@
      "autorTexto": "RALFI SILVA",
      "ementa": "Dispõe sobre a promoção da campanha de conscientização “Eu freio para animais” no âmbito do Município de Osasco e dá outras providências.",
      "sessao": "2026-05-12-o25",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-101/2026",
@@ -15812,7 +17631,12 @@
      "autorTexto": "RALFI SILVA",
      "ementa": "Ficam instituídas diretrizes para a promoção da acessibilidade sensorial a crianças diagnosticadas com Transtorno do Espectro Autista (TEA), no município de Osasco, e dá outras providências.",
      "sessao": "2026-04-28-o21",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA",
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-99/2026",
@@ -15823,7 +17647,11 @@
      "autorTexto": "RALFI SILVA",
      "ementa": "Dispõe sobre o incentivo ao uso de dispositivos de rastreamento e localização para crianças e adolescentes com Transtorno do Espectro Autista (TEA), no Município de Osasco.",
      "sessao": "2026-04-23-o20",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-77/2026",
@@ -15834,7 +17662,10 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre diretrizes para a promoção da triagem precoce para detecção de sinais de Transtorno do Espectro Autista (TEA) e outras deficiências no Município de Osasco.",
      "sessao": "2026-04-14-o18",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-54/2026",
@@ -15845,7 +17676,8 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre a regulamentação de canis e gatis no Município de Osasco e dá outras providências.",
      "sessao": "2026-03-24-o13",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-53/2026",
@@ -15856,7 +17688,8 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Institui no calendário oficial do Município de Osasco a Celebração Reinafé.",
      "sessao": "2026-03-24-o13",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-52/2026",
@@ -15867,7 +17700,11 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre a identificação de animais comunitários e autoriza a utilização de coleiras refletivas em cães e gatos em situação de rua no Município de Osasco e dá outras providências.",
      "sessao": "2026-03-24-o13",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais",
+      "Assistência social e moradia"
+     ]
     },
     {
      "key": "PDL-24/2026",
@@ -15888,7 +17725,10 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Institui diretrizes para o programa municipal de destinação final digna de animais domésticos no Município de Osasco.",
      "sessao": "2026-02-24-o5",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-19/2026",
@@ -15899,7 +17739,11 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Autoriza o Poder Executivo Municipal a instituir programa de incentivo à doação voluntária de sangue mediante conversão de multas de trânsito de natureza leve ou média, e dá outras providências.",
      "sessao": "2026-03-24-o13",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Meio ambiente",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PL-18/2026",
@@ -15910,7 +17754,8 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Autoriza o Poder Executivo a instituir a Carteira Municipal de Identificação da Pessoa com Epilepsia – CMIPE no Município de Osasco.",
      "sessao": "2026-02-24-o5",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-17/2026",
@@ -15921,7 +17766,8 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre a campanha de conscientização sobre epilepsia no Município de Osasco, visando informar e mobilizar a população quanto aos cuidados e à prevenção relacionados à condição.",
      "sessao": "2026-02-24-o5",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-16/2026",
@@ -15932,7 +17778,10 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Autoriza o Poder Executivo a instituir programa de atendimento veterinário móvel para cães e gatos no Município de Osasco.",
      "sessao": "2026-02-24-o5",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-15/2026",
@@ -15943,7 +17792,11 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre a formação continuada e a capacitação de profissionais da rede municipal de ensino de Osasco para o acolhimento e a inclusão de estudantes com Transtorno do Espectro Autista (TEA).",
      "sessao": "2026-02-24-o5",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Educação"
+     ]
     },
     {
      "key": "PDL-15/2026",
@@ -15964,7 +17817,10 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Estabelece diretrizes para a implantação de faixa de pedestres destinada à travessia de animais domésticos no Município de Osasco e dá outras providências.",
      "sessao": "2026-02-24-o5",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-13/2026",
@@ -15975,7 +17831,11 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Estabelece o programa de apoio às pessoas com doenças raras no Município de Osasco e dá outras providências.",
      "sessao": "2026-02-24-o5",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PDL-10/2026",
@@ -15996,7 +17856,8 @@
      "autorTexto": "RALFI SILVA",
      "ementa": "Institui a sala sensorial de acolhimento e inclusão na sede da Câmara Municipal de Osasco e dá outras providências.",
      "sessao": "2026-06-18-o35",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PLC-2/2026",
@@ -16007,7 +17868,8 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Autoriza o Poder Executivo a promover a substituição de cabos aéreos por cabos subterrâneos no Município de Osasco.",
      "sessao": "2026-02-12-o4",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-226/2025",
@@ -16018,7 +17880,10 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Fica assegurada a circulação de animais domésticos nas áreas comuns dos condomínios de casas ou apartamentos, na forma que especifica.",
      "sessao": "2025-12-16-o74",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-153/2025",
@@ -16029,7 +17894,10 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "institui o botão do pânico nas unidades de saúde do Município de Osasco",
      "sessao": "2025-09-09-o48",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-152/2025",
@@ -16040,7 +17908,8 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre a revogação da Lei nº 3.587, de 14 de dezembro de 2000, que institui no calendário oficial de eventos do Município de Osasco a Festa do Peão Boiadeiro.",
      "sessao": "2025-09-09-o48",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-151/2025",
@@ -16051,7 +17920,11 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre o fornecimento gratuito de vacinas essenciais a animais domésticos.",
      "sessao": "2025-09-09-o48",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Animais"
+     ]
     },
     {
      "key": "PL-127/2025",
@@ -16062,7 +17935,10 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Institui o Censo Qualificado das Pessoas com Autismo no Município de Osasco.",
      "sessao": "2025-08-19-o42",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-116/2025",
@@ -16073,7 +17949,11 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre o tempo mínimo de tolerância concedida à pessoa com deficiência ou com mobilidade reduzida na cobrança pelo estacionamento de veículos em estabelecimento comercial.",
      "sessao": "2025-08-12-o40",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PDL-101/2025",
@@ -16124,7 +18004,10 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre as diretrizes para as ações da Política Municipal de medicamentos formulados de derivado vegetal à base de canabidiol, em associação com outras substâncias canabinoides, incluindo o tetrahidrocanabidiol, em caráter de excepcionalidade pelo Poder Executivo nas unidades de saúde pública municipal e privada conveniada ao Sistema Único de Saúde - SUS, no Município de Osasco.",
      "sessao": "2025-09-30-o54",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-32/2025",
@@ -16135,7 +18018,10 @@
      "autorTexto": "Ralfi Rafael da Silva",
      "ementa": "Assegura o ingresso e a permanência de cães de assistência a pessoas com deficiência ou transtorno do espectro autista - TEA em locais de uso público ou privado.",
      "sessao": "2025-06-03-o31",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PDL-03/2025",
@@ -16159,6 +18045,32 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [
+    {
+     "key": "REQ-11/2022",
+     "numero": 11,
+     "ano": 2022,
+     "autor": "ralfi-silva",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas a todos os contratos vinculados à Secretaria de Saúde que estejam vigorando de forma emergencial.",
+     "sessoes": 49,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2025-09-16-o50",
+     "status": null,
+     "aindaNaPauta": false
+    },
+    {
+     "key": "REQ-12/2022",
+     "numero": 12,
+     "ano": 2022,
+     "autor": "ralfi-silva",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas a todos os contratos vinculados à",
+     "sessoes": 49,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2025-09-16-o50",
+     "status": null,
+     "aindaNaPauta": false
+    }
+   ],
    "leis": [
     {
      "key": "L-5.452",
@@ -16336,7 +18248,7 @@
      "ranking": 15
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 5.7,
    "posicao": 12
   },
@@ -16395,6 +18307,7 @@
     "honrarias": 4,
     "mocoes": 17,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 0,
     "frentes": 0,
     "pontosComissoes": 3,
@@ -16402,6 +18315,85 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 4
    },
+   "temas": [],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -17272,7 +19264,8 @@
      "autorTexto": "Elânia Silva",
      "ementa": "Dispõe sobre a proibição de publicidade exterior em espaços públicos de plataformas de apostas virtuais e jogos de azar eletrônicos, e dá outras providências.",
      "sessao": "2026-08-13-o41",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-119/2026",
@@ -17283,7 +19276,8 @@
      "autorTexto": "Elânia Silva",
      "ementa": "Dispõe sobre a concessão de Título de Utilidade Pública ao Instituto Inovar Solução Sustentável.",
      "sessao": "2026-08-06-o39",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-33/2026",
@@ -17304,7 +19298,8 @@
      "autorTexto": "Elania Silva",
      "ementa": "Dispõe sobre a regulamentação das atividades de escritório virtual, coworking e assemelhados no Município de Osasco e dá outras providências.",
      "sessao": "2025-08-26-o44",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-132/2025",
@@ -17315,7 +19310,8 @@
      "autorTexto": "Elania Silva",
      "ementa": "Institui no calendário oficial do Município de Osasco, a Semana de Conscientização da Manobra de Heimlich e dá outras providências.",
      "sessao": "2025-08-26-o44",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-126/2025",
@@ -17326,7 +19322,8 @@
      "autorTexto": "ELANIA SILVA",
      "ementa": "Dispõe sobre a concessão de título de utilidade pública ao Instituto Novo Tempo.",
      "sessao": "2026-03-12-o10",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-108/2025",
@@ -17357,7 +19354,8 @@
      "autorTexto": "Elania Silva",
      "ementa": "Dispõe sobre a criação do Programa Municipal Tampinhas do Bem.",
      "sessao": "2025-04-01-o15",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PDL-13/2025",
@@ -17378,7 +19376,8 @@
      "autorTexto": "Elania Silva",
      "ementa": "Institui, no âmbito da Câmara de Osasco, o Programa “Tampinha do Bem”.",
      "sessao": "2025-08-12-o40",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PR-7/2025",
@@ -17389,10 +19388,12 @@
      "autorTexto": "ELANIA SILVA",
      "ementa": "Institui, no âmbito da Câmara Municipal de Osasco o Programa ' Tampinhas do Bem'.",
      "sessao": "2025-11-27-o69",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [
     {
      "key": "L-5.467",
@@ -17456,7 +19457,7 @@
      "ranking": 4
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 5,
    "posicao": 13
   },
@@ -17534,6 +19535,7 @@
     "honrarias": 7,
     "mocoes": 1,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 2,
     "frentes": 1,
     "pontosComissoes": 2.25,
@@ -17541,6 +19543,90 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 0
    },
+   "temas": [
+    {
+     "tema": "Mobilidade",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -18369,7 +20455,10 @@
      "autorTexto": "Fábio Chirinhan",
      "ementa": "Dispõe sobre a denominação do calçadão da rua Antônio Agu.",
      "sessao": "2025-09-04-o47",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Mobilidade"
+     ]
     },
     {
      "key": "PDL-124/2025",
@@ -18413,6 +20502,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [],
@@ -18450,7 +20540,7 @@
      "ranking": 1
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 4.9,
    "posicao": 14
   },
@@ -18518,6 +20608,7 @@
     "honrarias": 1,
     "mocoes": 1,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 1,
     "frentes": 1,
     "pontosComissoes": 1.25,
@@ -18525,6 +20616,85 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 0
    },
+   "temas": [],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 1
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2026-05-07-o24",
@@ -18735,7 +20905,8 @@
      "autorTexto": "Ivanildo Eventos",
      "ementa": "Institui o Dia do Pedestre no Calendário Oficial do Município de Osasco.",
      "sessao": "2026-08-11-o40",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-41/2026",
@@ -18749,6 +20920,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [],
@@ -18786,7 +20958,7 @@
      "ranking": 2
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 4.9,
    "posicao": 15
   },
@@ -18900,6 +21072,7 @@
     "honrarias": 3,
     "mocoes": 49,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 3,
     "frentes": 6,
     "pontosComissoes": 7.5,
@@ -18907,6 +21080,114 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 39
    },
+   "temas": [
+    {
+     "tema": "Saúde",
+     "n": 2
+    },
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 2
+    },
+    {
+     "tema": "Educação",
+     "n": 2
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 1
+    },
+    {
+     "tema": "Mulheres",
+     "n": 1
+    },
+    {
+     "tema": "Crianças e jovens",
+     "n": 1
+    },
+    {
+     "tema": "Gestão pública e transparência",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 8
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 8
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -19699,7 +21980,8 @@
      "autorTexto": "Batista Comunidade",
      "ementa": "Dispõe sobre a prorrogação da validade da licença de funcionamento sanitária dos estabelecimentos sujeitos à fiscalização da Vigilância Sanitária no Município de Osasco.",
      "sessao": "2026-08-20-o43",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-183/2026",
@@ -19710,7 +21992,10 @@
      "autorTexto": "Batista Comunidade",
      "ementa": "Garante atendimento prioritário nos serviços de saúde e de atenção psicológica da rede pública municipal às mães e aos pais atípicos e aos cuidadores designados.",
      "sessao": "2026-08-13-o41",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-181/2026",
@@ -19721,7 +22006,10 @@
      "autorTexto": "Batista Comunidade",
      "ementa": "Dispõe sobre o pagamento de adicional de insalubridade às cozinheiras e cantineiras no âmbito da administração pública municipal.",
      "sessao": "2026-08-11-o40",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-152/2026",
@@ -19732,7 +22020,11 @@
      "autorTexto": "BATISTA COMUNIDADE",
      "ementa": "Institui diretrizes para a implementação de ficha de anamnese ampliada para estudantes com Transtorno do Espectro Autista (TEA) nas instituições de ensino do Município de Osasco, e dá outras providências.",
      "sessao": "2026-08-04-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Educação"
+     ]
     },
     {
      "key": "PL-149/2026",
@@ -19743,7 +22035,10 @@
      "autorTexto": "BATISTA COMUNIDADE",
      "ementa": "Reconhece como atividade extracurricular a prática do hip-hop, a ser difundida nas escolas da rede municipal de ensino de Osasco.",
      "sessao": "2026-08-04-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PL-55/2026",
@@ -19754,7 +22049,11 @@
      "autorTexto": "Batista Comunidade",
      "ementa": "Institui o programa de vacinação domiciliar para pessoas com Transtorno do Espectro Autista (TEA) no município de Osasco, e dá outras providências.",
      "sessao": "2026-03-24-o13",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-112/2025",
@@ -19765,7 +22064,11 @@
      "autorTexto": "Batista Comunidade",
      "ementa": "Institui a Política Municipal de Atenção Precoce à Gestante de Alto Risco e aos Primeiros Mil Dias da Criança no Município de Osasco.",
      "sessao": "2025-08-19-o42",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mulheres",
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-99/2025",
@@ -19776,7 +22079,10 @@
      "autorTexto": "Batista Comunidade",
      "ementa": "Institui a Política \"Vini Jr.\" de Combate ao Racismo nos torneios esportivos realizados ou patrocinados pela Prefeitura de Osasco.",
      "sessao": "2025-08-19-o42",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PDL-28/2025",
@@ -19810,6 +22116,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [
@@ -20004,7 +22311,7 @@
      "ranking": 20
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 4.8,
    "posicao": 16
   },
@@ -20112,6 +22419,7 @@
     "honrarias": 5,
     "mocoes": 68,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 3,
     "frentes": 5,
     "pontosComissoes": 4.75,
@@ -20119,6 +22427,106 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 35
    },
+   "temas": [
+    {
+     "tema": "Educação",
+     "n": 2
+    },
+    {
+     "tema": "Saúde",
+     "n": 2
+    },
+    {
+     "tema": "Crianças e jovens",
+     "n": 2
+    },
+    {
+     "tema": "Mulheres",
+     "n": 1
+    },
+    {
+     "tema": "Segurança",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 8
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -20989,7 +23397,8 @@
      "autorTexto": "Délbio Teruel",
      "ementa": "Dispõe sobre a denominação da Praça Benedito José dos Santos.",
      "sessao": "2026-09-01-o46",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-198/2026",
@@ -21000,7 +23409,8 @@
      "autorTexto": "Délbio Teruel",
      "ementa": "Dispõe sobre a denominação da Praça Benedito José dos Santos.",
      "sessao": "2026-09-15-o50",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-162/2026",
@@ -21011,7 +23421,11 @@
      "autorTexto": "DELBIO TERUEL E CAPRIOTTI",
      "ementa": "Dispõe sobre a denominação do Centro Municipal de Educação Infantil CEMEI Vera Lúcia de Matos localizado no bairro Portal D’Oeste.",
      "sessao": "2026-08-04-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Educação",
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-106/2026",
@@ -21022,7 +23436,10 @@
      "autorTexto": "Delbio Teruel",
      "ementa": "Denomina “Cidade da Polícia Adilson Custódio Moreira” o complexo de segurança pública localizado no Município de Osasco.",
      "sessao": "2026-05-05-o23",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Segurança"
+     ]
     },
     {
      "key": "PL-62/2026",
@@ -21033,7 +23450,11 @@
      "autorTexto": "Delbio Teruel",
      "ementa": "Altera a Lei nº 5.110, de 12 de maio de 2021, que dispõe sobre a denominação do Hospital da Criança Dr. Celso Antônio Giglio, no Município de Osasco.",
      "sessao": "2026-03-24-o13",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Saúde",
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-5/2026",
@@ -21044,7 +23465,10 @@
      "autorTexto": "Delbio Teruel",
      "ementa": "Institui diretrizes para a prevenção, identificação e acolhimento de pessoas com transtorno do jogo patológico (ludopatia) no âmbito da rede municipal de saúde, com foco na atenção psicossocial, e dá outras providências.",
      "sessao": "2026-02-03-o1",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-223/2025",
@@ -21055,7 +23479,11 @@
      "autorTexto": "Délbio Teruel",
      "ementa": "Autoriza o Poder Executivo a instituir o Programa ‘Defesa para Elas’, destinado à promoção de ações educativas e preventivas de defesa pessoal para mulheres no município de Osasco.",
      "sessao": "2025-12-09-o72",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação",
+      "Mulheres"
+     ]
     },
     {
      "key": "PL-218/2025",
@@ -21066,7 +23494,8 @@
      "autorTexto": "Delbio Teruel",
      "ementa": "Institui o “Dia Municipal do Vôlei Adaptado à Melhor Idade”, no âmbito do Município de Osasco, e dá outras providências.",
      "sessao": "2025-12-04-o71",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-205/2025",
@@ -21077,7 +23506,8 @@
      "autorTexto": "DELBIO CAMARGO TERUEL",
      "ementa": "Dispõe sobre a denominação do Campo Manoel Antonio Cabral localizado nas dependências do Parque Ecológico Manoel Manzano na Rua Sérgio Pompeo, SN - Metalúrgico.",
      "sessao": "2025-11-06-o64",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-196/2025",
@@ -21088,7 +23518,8 @@
      "autorTexto": "Délbio Teruel",
      "ementa": "dispõe sobre a denominação de Viela Marlene Josefa da Silva, localizada na Rua Nova Goiânia, entre os números 279 e 400, no bairro Portal D’ Oeste.",
      "sessao": "2025-10-30-o62",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-99/2025",
@@ -21129,7 +23560,8 @@
      "autorTexto": "Délbio Teruel",
      "ementa": "Altera a denominação de praça XI de junho para praça São Mateus, localizada no Jardim Cipava.",
      "sessao": "2025-08-05-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-58/2025",
@@ -21150,7 +23582,8 @@
      "autorTexto": "Délbio Teruel",
      "ementa": "Dispõe sobre alteração da denominação da Avenida das Comunicações para Avenida Silvio Santos.",
      "sessao": "2025-05-20-o27",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-23/2025",
@@ -21164,6 +23597,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [
     {
      "key": "L-5.462",
@@ -21359,7 +23793,7 @@
      "ranking": 18
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 4.8,
    "posicao": 17
   },
@@ -21418,6 +23852,7 @@
     "honrarias": 7,
     "mocoes": 58,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 0,
     "frentes": 0,
     "pontosComissoes": 3,
@@ -21425,6 +23860,110 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 33
    },
+   "temas": [
+    {
+     "tema": "Mulheres",
+     "n": 2
+    },
+    {
+     "tema": "Segurança",
+     "n": 2
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 2
+    },
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 1
+    },
+    {
+     "tema": "Saúde",
+     "n": 1
+    },
+    {
+     "tema": "Gestão pública e transparência",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 11
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 3
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -22295,7 +24834,10 @@
      "autorTexto": "ELSA OLIVEIRA",
      "ementa": "Institui o programa municipal de reconhecimento e valorização dos lugares de memória da cultura afro-brasileira e da população negra no Município de Osasco.",
      "sessao": "2026-06-18-o35",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PL-112/2026",
@@ -22306,7 +24848,12 @@
      "autorTexto": "ELSA OLIVEIRA",
      "ementa": "Dispõe sobre diretrizes para a transparência de dados sobre violência contra a mulher no Município de Osasco e autoriza a criação de cadastro administrativo de agressores com condenação transitada em julgado.",
      "sessao": "2026-05-12-o25",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mulheres",
+      "Segurança",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-108/2026",
@@ -22317,7 +24864,8 @@
      "autorTexto": "Elsa Oliveira",
      "ementa": "Institui a Política Municipal de Proteção da Memória e do Patrimônio Público de Osasco.",
      "sessao": "2026-05-05-o23",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-107/2026",
@@ -22328,7 +24876,10 @@
      "autorTexto": "Elsa Oliveira",
      "ementa": "Institui o Inventário Municipal do Patrimônio Histórico, Cultural e Documental de Osasco.",
      "sessao": "2026-05-05-o23",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PL-87/2026",
@@ -22339,7 +24890,10 @@
      "autorTexto": "Elsa Oliveira",
      "ementa": "Institui diretrizes para a promoção da acessibilidade e segurança em vielas, escadões e passagens públicas com desnível no Município de Osasco, e dá outras providências.",
      "sessao": "2026-04-14-o18",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Segurança"
+     ]
     },
     {
      "key": "PDL-43/2026",
@@ -22370,7 +24924,8 @@
      "autorTexto": "Elsa Oliveira",
      "ementa": "Altera a Lei nº 3.981/2005 que dispõe sobre a Instituição do Programa Operação Trabalho do Município de Osasco, e dá outras providências.",
      "sessao": "2026-03-03-o7",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PDL-34/2026",
@@ -22391,7 +24946,10 @@
      "autorTexto": "Elsa Oliveira",
      "ementa": "Institui o Dia Municipal de Luto e de Memória às Mulheres Vítimas de Feminicídio no Município de Osasco e dá outras providências.",
      "sessao": "2026-03-03-o7",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Mulheres"
+     ]
     },
     {
      "key": "PL-30/2026",
@@ -22402,7 +24960,8 @@
      "autorTexto": "Elsa Oliveira",
      "ementa": "Institui o dia municipal da equidade de gênero.",
      "sessao": "2026-03-03-o7",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PR-3/2026",
@@ -22413,7 +24972,8 @@
      "autorTexto": "ELSA OLIVEIRA",
      "ementa": "Dispõe sobre a instituição da Medalha Longevidade Ativa 70+ no âmbito da Câmara Municipal de Osasco e dá outras providências.",
      "sessao": "2026-05-19-o27",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-203/2025",
@@ -22424,7 +24984,8 @@
      "autorTexto": "Elsa Oliveira",
      "ementa": "Institui o Dia das Artes Marciais no âmbito do Município.",
      "sessao": "2025-10-30-o62",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-77/2025",
@@ -22435,7 +24996,10 @@
      "autorTexto": "Elsa Oliveira",
      "ementa": "Institui o dia municipal do desafio menos tela, mais saúde.",
      "sessao": "2025-09-02-o46",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-72/2025",
@@ -22446,7 +25010,8 @@
      "autorTexto": "Elsa Natal de Oliveira",
      "ementa": "Institui a Semana da Comunidade Surda.",
      "sessao": "2025-05-29-o30",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-64/2025",
@@ -22487,7 +25052,10 @@
      "autorTexto": "Elsa de Oliveira",
      "ementa": "Dispõe sobre o reconhecimento da fibromialgia como deficiência.",
      "sessao": "2025-03-18-o11",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PDL-4/2025",
@@ -22501,6 +25069,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [
@@ -22671,7 +25240,7 @@
      "ranking": 16
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 4.8,
    "posicao": 18
   },
@@ -22743,6 +25312,7 @@
     "honrarias": 0,
     "mocoes": 3,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 1,
     "frentes": 1,
     "pontosComissoes": 1.25,
@@ -22750,6 +25320,85 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 0
    },
+   "temas": [],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 2
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2026-05-07-o24",
@@ -22952,6 +25601,7 @@
    ],
    "proposicoes": [],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [],
@@ -22989,7 +25639,7 @@
      "ranking": 3
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 4.7,
    "posicao": 19
   },
@@ -23052,6 +25702,7 @@
     "honrarias": 10,
     "mocoes": 42,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 0,
     "frentes": 0,
     "pontosComissoes": 3,
@@ -23059,6 +25710,98 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 31
    },
+   "temas": [
+    {
+     "tema": "Crianças e jovens",
+     "n": 3
+    },
+    {
+     "tema": "Mulheres",
+     "n": 1
+    },
+    {
+     "tema": "Segurança",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 6
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -23929,7 +26672,8 @@
      "autorTexto": "Stephane Rossi",
      "ementa": "Institui a “Semana Municipal de Combate ao Bullying” no Município de Osasco.",
      "sessao": "2026-09-03-o47",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-122/2026",
@@ -23940,7 +26684,10 @@
      "autorTexto": "STEPHANE ROSSI",
      "ementa": "Altera a Lei nº 5.422, de 29 de setembro de 2025, que Institui a Semana Municipal de Incentivo à Adoção de Crianças e Adolescentes.",
      "sessao": "2026-05-28-o30",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PDL-38/2026",
@@ -23981,7 +26728,10 @@
      "autorTexto": "Stephane Rossi",
      "ementa": "Institui a Semana Municipal de Combate à Automutilação e ao Suicídio de Crianças e Adolescentes.",
      "sessao": "2025-09-30-o54",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-140/2025",
@@ -23992,7 +26742,8 @@
      "autorTexto": "Stephane Rossi",
      "ementa": "Institui o Dia Municipal da Acessibilidade Digital.",
      "sessao": "2025-08-26-o44",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-129/2025",
@@ -24003,7 +26754,8 @@
      "autorTexto": "Stephane Rossi",
      "ementa": "Institui o Dia Roxo – Dia Municipal de Conscientização sobre a Epilepsia.",
      "sessao": "2025-08-26-o44",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-106/2025",
@@ -24054,7 +26806,8 @@
      "autorTexto": "Stephane Rossi",
      "ementa": "Institui o mês Maio Laranja.",
      "sessao": "2025-06-12-o34",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-53/2025",
@@ -24065,7 +26818,10 @@
      "autorTexto": "Stephane Rossi",
      "ementa": "Institui a Semana Municipal de Incentivo à Adoção de Crianças e Adolescentes.",
      "sessao": "2025-05-22-o28",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PDL-41/2025",
@@ -24086,7 +26842,11 @@
      "autorTexto": "Stephane Carolina Rossi de Almeida Magdesian",
      "ementa": "Institui o Dia Municipal das Mulheres das Forças de Segurança Pública.",
      "sessao": "2025-06-10-o33",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Mulheres",
+      "Segurança"
+     ]
     },
     {
      "key": "PL-36/2025",
@@ -24097,7 +26857,8 @@
      "autorTexto": "Stephane Carolina Rossi de Almeida Magdesian",
      "ementa": "Institui o Dia Municipal do Canto pela Paz.",
      "sessao": "2025-06-10-o33",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-31/2025",
@@ -24118,7 +26879,8 @@
      "autorTexto": "Stephane Rossi",
      "ementa": "Institui o dia municipal do Natal Encantado.",
      "sessao": "2025-03-25-o13",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-21/2025",
@@ -24132,6 +26894,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [
     {
      "key": "L-5.446",
@@ -24311,7 +27074,7 @@
      "ranking": 14
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 4.5,
    "posicao": 20
   },
@@ -24417,6 +27180,7 @@
     "honrarias": 8,
     "mocoes": 43,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 2,
     "frentes": 5,
     "pontosComissoes": 3.75,
@@ -24424,6 +27188,110 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 57
    },
+   "temas": [
+    {
+     "tema": "Saúde",
+     "n": 1
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 1
+    },
+    {
+     "tema": "Mulheres",
+     "n": 1
+    },
+    {
+     "tema": "Gestão pública e transparência",
+     "n": 1
+    },
+    {
+     "tema": "Crianças e jovens",
+     "n": 1
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 4
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -25294,7 +28162,10 @@
      "autorTexto": "Josias da Juco",
      "ementa": "Institui o Selo Empresa Amiga dos Imigrantes no âmbito do Município de Osasco e dá outras providências.",
      "sessao": "2026-09-22-o52",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-105/2026",
@@ -25305,7 +28176,10 @@
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre diretrizes para proteção de crianças e adolescentes no âmbito do Município de Osasco, mediante exigência de certidão de antecedentes criminais de profissionais que exerçam atividades que envolvam contato direto com esse público.",
      "sessao": "2026-05-05-o23",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-89/2026",
@@ -25316,7 +28190,11 @@
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre alteração a Lei nº 4.855, de 7 de dezembro de 2017, para estender a prorrogação da licença-maternidade às servidoras públicas municipais que adotarem ou obtiverem guarda judicial para fins de adoção.",
      "sessao": "2026-04-16-o19",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mulheres",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-85/2026",
@@ -25327,7 +28205,10 @@
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre a denominação da Arena Esportiva Antônio Soares dos Santos.",
      "sessao": "2026-04-14-o18",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PL-36/2026",
@@ -25338,7 +28219,8 @@
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre a vedação à circulação e à comercialização de escapamentos irregulares ou adulterados no Município de Osasco.",
      "sessao": "2026-03-05-o8",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-35/2026",
@@ -25349,7 +28231,8 @@
      "autorTexto": "Josias da Juco",
      "ementa": "Institui o “Dia do Veterano Militar das Forças Armadas Brasileiras e Forças Auxiliares” no Município de Osasco e dá outras providências.",
      "sessao": "2026-03-05-o8",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PDL-32/2026",
@@ -25370,7 +28253,8 @@
      "autorTexto": "JOSIAS DA JUCO",
      "ementa": "Dispõe sobre a denominação de praça localizada no bairro Bela Vista, no Município de Osasco, e dá outras providências",
      "sessao": "2026-02-10-o3",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-2/2026",
@@ -25411,7 +28295,8 @@
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre a implantação de código tipo QR Code nas placas de denominação de ruas, praças, logradouros e equipamentos públicos do Município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-75/2025",
@@ -25422,7 +28307,10 @@
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre o atendimento prioritário aos pacientes com diabetes na rede pública de saúde do município.",
      "sessao": "2025-08-14-o41",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PDL-56/2025",
@@ -25453,7 +28341,8 @@
      "autorTexto": "Josias da Juco",
      "ementa": "Institui a semana municipal de incentivo à doação de leite humano.",
      "sessao": "2025-04-29-o22",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PDL-24/2025",
@@ -25484,7 +28373,8 @@
      "autorTexto": "Josias da Juco",
      "ementa": "Institui o Programa Nossa História no âmbito da Câmara Municipal de Osasco e dá outras providências.",
      "sessao": "2025-08-14-o41",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PR-4/2025",
@@ -25495,10 +28385,12 @@
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre a denominação de Sala das Comissões Permanentes Doutora Régia Maria Gouveia Sarmento.",
      "sessao": "2025-08-05-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [
@@ -25765,7 +28657,7 @@
      "ranking": 22
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 4.3,
    "posicao": 21
   },
@@ -25824,6 +28716,7 @@
     "honrarias": 14,
     "mocoes": 37,
     "requerimentos": 0,
+    "requerimentosNaPauta": 1,
     "comissoes": 0,
     "frentes": 0,
     "pontosComissoes": 0,
@@ -25831,6 +28724,106 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 74
    },
+   "temas": [
+    {
+     "tema": "Saúde",
+     "n": 9
+    },
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 2
+    },
+    {
+     "tema": "Educação",
+     "n": 2
+    },
+    {
+     "tema": "Animais",
+     "n": 1
+    },
+    {
+     "tema": "Crianças e jovens",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 14
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 7
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 2
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -26539,7 +29532,8 @@
      "autorTexto": "LÚCIA DA SAÚDE",
      "ementa": "Institui o dia ‘Quadran-Day’ no Calendário Oficial do Município de Osasco.",
      "sessao": "2026-06-16-o34",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-115/2026",
@@ -26550,7 +29544,10 @@
      "autorTexto": "LÚCIA DA SAÚDE",
      "ementa": "Faculta o Executivo a instituir Política Municipal de Atenção Domiciliar em Saúde no âmbito do Sistema Único de Saúde (SUS), mediante integração e adesão ao Programa Melhor em Casa, e dá outras providências.",
      "sessao": "2026-05-12-o25",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-71/2026",
@@ -26561,7 +29558,8 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Institui o Dia Municipal de Conscientização sobre a Apraxia de Fala na Infância (AFI) no Calendário Oficial do Município de Osasco, e dá outras providências.",
      "sessao": "2026-04-09-o17",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-9/2026",
@@ -26572,7 +29570,10 @@
      "autorTexto": "LÚCIA DA SAÚDE",
      "ementa": "Institui o Programa Municipal de Divulgação, Prevenção e Tratamento da Endometriose.",
      "sessao": "2026-02-10-o3",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PDL-6/2026",
@@ -26593,7 +29594,12 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Dispõe sobre a distribuição pelo Sistema Único de Saúde de sensor medidor contínuo de glicose para crianças de quatro a doze anos portadores de diabetes matriculadas na Rede Pública de Ensino do Município de Osasco.",
      "sessao": "2025-10-14-o58",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Educação",
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-139/2025",
@@ -26604,7 +29610,8 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Dispõe sobre a denominação do Boulevard localizado na Avenida Bandeirantes, entre os números 478 e 168, no Jardim Aliança, Osasco.",
      "sessao": "2025-08-26-o44",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-118/2025",
@@ -26615,7 +29622,10 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Institui o Mês de Conscientização sobre as Doenças Cardiovasculares.",
      "sessao": "2025-08-05-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-117/2025",
@@ -26626,7 +29636,10 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Dispõe sobre a obrigatoriedade de profissional habilitado com curso de primeiros socorros suporte básico à vida nas academias de ginástica do Município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-115/2025",
@@ -26637,7 +29650,11 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Dispõe sobre o uso do cordão de fita de identificação para pessoas diagnosticadas com algum tipo de doença rara.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-113/2025",
@@ -26648,7 +29665,10 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Altera a lei nº 4.829, de 14 de setembro de 2017, que dispõe sobre a divulgação do \"Disque 100\" nos livros, cadernos, impressos informativos da Secretaria de Educação do Município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PL-106/2025",
@@ -26659,7 +29679,10 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Institui o Dia das Unidades Básicas de Saúde – UBS de Osasco.",
      "sessao": "2025-10-09-o57",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-93/2025",
@@ -26670,7 +29693,8 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Institui a Semana de Prevenção e Apoio à Ansiedade no Município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-92/2025",
@@ -26681,7 +29705,11 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Institui o dia municipal das doenças raras no Município de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "PL-90/2025",
@@ -26692,7 +29720,8 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Dispõe sobre procedimentos de limpeza e esterilização de instrumentos utilizados por manicures, pedicures, barbeiros e cabeleireiros em estabelecimentos de embelezamento.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PDL-073/2025",
@@ -26833,7 +29862,8 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Cria o Programa de Internação Domiciliar no Município de Osasco – PID.",
      "sessao": "2025-05-06-o23",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-50/2025",
@@ -26844,7 +29874,10 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Dispõe sobre a determinação de vacinação contra tétano e hepatite B em manicures, pedicures, podólogos e tatuadores.",
      "sessao": "2025-05-06-o23",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-28/2025",
@@ -26855,7 +29888,8 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Institui o dia das pessoas centenárias no município de Osasco.",
      "sessao": "2025-03-25-o13",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-21/2025",
@@ -26866,7 +29900,10 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Dispõe sobre a garantia de oferta de ala ou leitos separados para as mães de natimorto e/ou mães com óbito fetal, nas redes pública e privada de saúde.",
      "sessao": "2025-04-01-o15",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PR-8/2025",
@@ -26877,7 +29914,8 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Institui a Galeria Lilás nas dependências da Câmara Municipal de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PR-08/2025",
@@ -26888,10 +29926,25 @@
      "autorTexto": "LÚCIA DA SAÚDE",
      "ementa": "Institui a Galeria Lilás nas dependências da Câmara Municipal de Osasco.",
      "sessao": "2026-02-10-o3",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [
+    {
+     "key": "REQ-87/2017",
+     "numero": 87,
+     "ano": 2017,
+     "autor": "lucia-da-saude",
+     "ementa": "Solicita informações se há algum projeto de plano de carreira para os auxiliares e técnicos de enfermagem no Município.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    }
+   ],
    "leis": [
     {
      "key": "L-5.456",
@@ -27243,7 +30296,7 @@
      "ranking": 23
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 3,
    "posicao": 22
   },
@@ -27321,6 +30374,7 @@
     "honrarias": 1,
     "mocoes": 46,
     "requerimentos": 0,
+    "requerimentosNaPauta": 20,
     "comissoes": 1,
     "frentes": 2,
     "pontosComissoes": 2,
@@ -27328,6 +30382,102 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 31
    },
+   "temas": [
+    {
+     "tema": "Pessoas com deficiência e TEA",
+     "n": 1
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 1
+    },
+    {
+     "tema": "Segurança",
+     "n": 1
+    },
+    {
+     "tema": "Crianças e jovens",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 11
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 14
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -28198,7 +31348,8 @@
      "autorTexto": "Emerson Osasco",
      "ementa": "Institui o Programa Municipal “Osasco Comunicação Acessível” no Município de Osasco e dá outras providências.",
      "sessao": "2026-03-10-o9",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     },
     {
      "key": "PL-28/2026",
@@ -28209,7 +31360,8 @@
      "autorTexto": "Emerson Osasco",
      "ementa": "Dispõe sobre a concessão de Título de Utilidade Pública à Associação Amigos do Jardim Bonança.",
      "sessao": "2026-03-03-o7",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-135/2025",
@@ -28220,7 +31372,10 @@
      "autorTexto": "Emerson Osasco",
      "ementa": "institui medidas de proteção à criança contra adultização, exposição indevida e exploração digital no Município de Osasco.",
      "sessao": "2025-10-30-o62",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Crianças e jovens"
+     ]
     },
     {
      "key": "PL-134/2025",
@@ -28231,7 +31386,10 @@
      "autorTexto": "Emerson Osasco",
      "ementa": "Institui, no Município de Osasco, a Semana Municipal de Combate à Violência Digital e Sexual e dá outras providências.",
      "sessao": "2025-10-16-o59",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Segurança"
+     ]
     },
     {
      "key": "PL-133/2025",
@@ -28242,7 +31400,10 @@
      "autorTexto": "Emerson Osasco",
      "ementa": "Dispõe sobre o reconhecimento da atividade de trancista como expressão cultural e profissional e institui, no Calendário Oficial do Município de Osasco, o Dia da Pessoa Trancista.",
      "sessao": "2025-10-16-o59",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PDL-57/2025",
@@ -28263,10 +31424,255 @@
      "autorTexto": "Emerson Osasco",
      "ementa": "Altera a Lei nº 4.841, de 30 de outubro de 2017, que institui, no âmbito do Município de Osasco, Política Pública para a garantia, proteção e ampliação dos direitos das pessoas com Transtorno no Espectro Autista e dá outras providencias.",
      "sessao": "2025-04-01-o15",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [
+    {
+     "key": "REQ-14/2022",
+     "numero": 14,
+     "ano": 2022,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao plano de trabalho e contrato vigente do CEU das Artes – Yolanda Aparecida Avelino Ribeiro com o Instituto Morgan.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-06/2023",
+     "numero": 6,
+     "ano": 2023,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato e relação de pagamentos das empresas Medical Corp, Dermarcor e Assim Clínica Ltda, na integra e com anexos.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-07/2023",
+     "numero": 7,
+     "ano": 2023,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas à Maternidade Amador Aguiar, sobre os contratos das empresas Medical Corp e Dermarcor.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-08/2023",
+     "numero": 8,
+     "ano": 2023,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas à Maternidade Amador Aguiar, no que diz respeito ao número de óbitos mensais, no período entre 2017 e 2023, bem como o contato dos familiares e comparativos entre as médias municipal, estadual e federal.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-09/2023",
+     "numero": 9,
+     "ano": 2023,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas à verba mensal destinada para manutenção das ambulâncias do SAMU.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-11/2023",
+     "numero": 11,
+     "ano": 2023,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas às desapropriações no bairro Bonança e Morro do Socó.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-03/2024",
+     "numero": 3,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização civil Instituto Solução Social - CNPJ: 13.779.122/0001-70.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-04/2024",
+     "numero": 4,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização civil Associação das Mães Unidas do Novo Osasco - AMUNO - CNPJ: 51.240.240/0001-02.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-05/2024",
+     "numero": 5,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização civil Associação de Proteção à Maternidade a Infância e a Adolescência - ASPROMATINA - CNPJ: 73.062.325/0005-04.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-06/2024",
+     "numero": 6,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização civil Instituto Inovação Social - CNPJ: 23.794.590/0001-77.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-07/2024",
+     "numero": 7,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização civil Associação das Mães do Jardim Veloso - CNPJ: 53.414.702/88.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-08/2024",
+     "numero": 8,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização Associação Quintal Mágico - CNPJ: 03.301.548/0001-60.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-09/2024",
+     "numero": 9,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização civil Associação Educacional Maria do Carmo Ferreira Paula - CNPJ: 22.533.209/0001-53.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-10/2024",
+     "numero": 10,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização civil Centro de Participação Popular do Jardim Veloso - CNPJ: 51.448.496/0001-00.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-11/2024",
+     "numero": 11,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização civil Associação das Mulheres em Defesa à Criança- AMDC - CNPJ: 57.386.609/0001-68.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-12/2024",
+     "numero": 12,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização civil Associação Solidária Crescendo Cidadã - CNPJ: 07.375.464/0001-21.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-13/2024",
+     "numero": 13,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização civil Instituto Veracidade - CNPJ: 13.256.793/0001-56.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-14/2024",
+     "numero": 14,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao contrato celebrado com a organização civil Associação para Gestão de Unidades Administrativas Sociais - ÁGUAS - CNPJ: 12.661.184/0001-10.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-15/2024",
+     "numero": 15,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas à reabertura da Casa de Angola de Osasco.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    },
+    {
+     "key": "REQ-16/2024",
+     "numero": 16,
+     "ano": 2024,
+     "autor": "emerson-osasco",
+     "ementa": "Requer o envio de ofício ao Poder Executivo solicitando informações relacionadas ao projeto de implementação de Centro de Referência de Cultura Afro-brasileira e de Religiões de Matriz Africana, previsto para o parque Glauco Vilas Boas.",
+     "sessoes": 128,
+     "primeira": "2025-02-06-o1",
+     "ultima": "2026-09-29-o54",
+     "status": null,
+     "aindaNaPauta": true
+    }
+   ],
    "leis": [
     {
      "key": "L-5.450",
@@ -28446,7 +31852,7 @@
      "ranking": 13
     }
    },
-   "cobertura": 0.85,
+   "cobertura": 1,
    "nota": 2.3,
    "posicao": 23
   },
@@ -28536,6 +31942,7 @@
     "honrarias": 6,
     "mocoes": 19,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 0,
     "frentes": 5,
     "pontosComissoes": 1.25,
@@ -28543,6 +31950,110 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 48
    },
+   "temas": [
+    {
+     "tema": "Saúde",
+     "n": 2
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 1
+    },
+    {
+     "tema": "Gestão pública e transparência",
+     "n": 1
+    },
+    {
+     "tema": "Meio ambiente",
+     "n": 1
+    },
+    {
+     "tema": "Animais",
+     "n": 1
+    },
+    {
+     "tema": "Mobilidade",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 13
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-02-06-o1",
@@ -29281,7 +32792,11 @@
      "autorTexto": "Paulo Júnior",
      "ementa": "Dispõe sobre a proibição do atendimento a bonecos hiper-realistas em unidades de saúde públicas no Município de Osasco, bem como da sua utilização nos assentos preferenciais do transporte coletivo municipal, e dá outras providências.",
      "sessao": "2025-12-11-o73",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Mobilidade"
+     ]
     },
     {
      "key": "PL-220/2025",
@@ -29292,7 +32807,10 @@
      "autorTexto": "Paulo Júnior",
      "ementa": "Dispõe sobre a obrigatoriedade de exposição, em hospitais públicos e privados do Município de Osasco, da legislação que garante o direito à visita religiosa, regulamenta os horários dessas visitas e dá outras providências.",
      "sessao": "2025-12-09-o72",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
     },
     {
      "key": "PL-219/2025",
@@ -29303,7 +32821,10 @@
      "autorTexto": "Paulo Júnior",
      "ementa": "Institui a concessão de Licença de Funcionamento Especial para templos religiosos de qualquer natureza.",
      "sessao": "2025-12-09-o72",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Meio ambiente"
+     ]
     },
     {
      "key": "PL-156/2025",
@@ -29314,7 +32835,12 @@
      "autorTexto": "Paulo Júnior",
      "ementa": "Estabelece diretrizes para a promoção da saúde mental e o gerenciamento de riscos psicossociais por empresas prestadoras de serviços à administração pública municipal de Osasco.",
      "sessao": "2025-09-09-o48",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Economia e emprego",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PDL-116/2025",
@@ -29378,6 +32904,7 @@
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [
@@ -29604,7 +33131,7 @@
      "ranking": 24
     }
    },
-   "cobertura": 0.6,
+   "cobertura": 0.7058823529411765,
    "nota": 1.3,
    "posicao": 24
   },
@@ -29639,6 +33166,7 @@
     "honrarias": 0,
     "mocoes": 0,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 0,
     "frentes": 0,
     "pontosComissoes": 0,
@@ -29646,6 +33174,85 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 0
    },
+   "temas": [],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-06-05-e2",
@@ -29710,6 +33317,7 @@
    ],
    "proposicoes": [],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [],
@@ -29740,7 +33348,7 @@
      "componentes": {}
     }
    },
-   "cobertura": 0.6,
+   "cobertura": 0.7058823529411765,
    "nota": null,
    "posicao": null
   },
@@ -29796,6 +33404,7 @@
     "honrarias": 0,
     "mocoes": 10,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 0,
     "frentes": 0,
     "pontosComissoes": 0,
@@ -29803,6 +33412,98 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 1
    },
+   "temas": [
+    {
+     "tema": "Educação",
+     "n": 1
+    },
+    {
+     "tema": "Segurança",
+     "n": 1
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 10
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 5
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-05-06-e1",
@@ -29893,7 +33594,10 @@
      "autorTexto": "Guiga",
      "ementa": "Institui o Osasco Tattoo Festival.",
      "sessao": "2025-06-03-o31",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PL-67/2025",
@@ -29904,7 +33608,8 @@
      "autorTexto": "Guiga",
      "ementa": "Institui a Semana Municipal do Bem-estar.",
      "sessao": "2025-05-15-o26",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-65/2025",
@@ -29915,7 +33620,10 @@
      "autorTexto": "Guiga",
      "ementa": "Institui a Semana Municipal de Conscientização sobre a Segurança Digital a Proteção de Dados.",
      "sessao": "2025-05-15-o26",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Segurança"
+     ]
     },
     {
      "key": "PL-64/2025",
@@ -29926,7 +33634,8 @@
      "autorTexto": "Guiga",
      "ementa": "Institui no calendário oficial do Município de Osasco o “Oz com Jesus”.",
      "sessao": "2025-05-15-o26",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": []
     },
     {
      "key": "PL-63/2025",
@@ -29937,10 +33646,14 @@
      "autorTexto": "Guiga",
      "ementa": "Institui o “Dia da Paz e Gentileza nas Escolas”.",
      "sessao": "2025-05-15-o26",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação"
+     ]
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [
@@ -29976,7 +33689,7 @@
      "componentes": {}
     }
    },
-   "cobertura": 0.6,
+   "cobertura": 0.7058823529411765,
    "nota": null,
    "posicao": null
   },
@@ -30035,6 +33748,7 @@
     "honrarias": 6,
     "mocoes": 4,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 0,
     "frentes": 0,
     "pontosComissoes": 0,
@@ -30042,6 +33756,102 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 0
    },
+   "temas": [
+    {
+     "tema": "Economia e emprego",
+     "n": 2
+    },
+    {
+     "tema": "Mobilidade",
+     "n": 1
+    },
+    {
+     "tema": "Educação",
+     "n": 1
+    },
+    {
+     "tema": "Gestão pública e transparência",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 14
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2025-09-02-o46",
@@ -30120,7 +33930,10 @@
      "autorTexto": "Helder Oliveira",
      "ementa": "Institui o Sistema Municipal de Transparência em Fila de Procedimentos Eletivos do SUS.",
      "sessao": "2025-09-18-o51",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-163/2025",
@@ -30131,7 +33944,10 @@
      "autorTexto": "Helder Oliveira",
      "ementa": "Institui a Semana Municipal do Empreendedor.",
      "sessao": "2025-09-18-o51",
-     "classe": "simbolico"
+     "classe": "simbolico",
+     "temas": [
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-162/2025",
@@ -30142,7 +33958,11 @@
      "autorTexto": "Helder Oliveira",
      "ementa": "Institui o Programa Municipal de Cursos Populares de Educação Financeira e Empreendedorismo para adultos em Osasco.",
      "sessao": "2025-09-18-o51",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Educação",
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-160/2025",
@@ -30153,7 +33973,10 @@
      "autorTexto": "Helder Oliveira",
      "ementa": "Dispõe sobre a definição de todos os assentos dos ônibus municipais como preferenciais.",
      "sessao": "2025-09-18-o51",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": [
+      "Mobilidade"
+     ]
     },
     {
      "key": "PDL-50/2025",
@@ -30224,10 +34047,12 @@
      "autorTexto": "Helder Oliveira",
      "ementa": "Altera Lei Complementar nº 443, de 20 de dezembro de 2024, que institui o Código de Obras e Edificação do Município de Osasco e dá outras providências.",
      "sessao": "2025-09-18-o51",
-     "classe": "substantivo"
+     "classe": "substantivo",
+     "temas": []
     }
    ],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [],
@@ -30258,7 +34083,7 @@
      "componentes": {}
     }
    },
-   "cobertura": 0.6,
+   "cobertura": 0.7058823529411765,
    "nota": null,
    "posicao": null
   },
@@ -30317,6 +34142,7 @@
     "honrarias": 0,
     "mocoes": 0,
     "requerimentos": 0,
+    "requerimentosNaPauta": 0,
     "comissoes": 0,
     "frentes": 0,
     "pontosComissoes": 0,
@@ -30324,6 +34150,85 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 0
    },
+   "temas": [],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    }
+   ],
    "presencaPorSessao": [
     {
      "sessao": "2026-06-09-o32",
@@ -30370,6 +34275,7 @@
    ],
    "proposicoes": [],
    "requerimentos": [],
+   "requerimentosNaPauta": [],
    "leis": [],
    "vetos": [],
    "adiadas": [],
@@ -30400,7 +34306,7 @@
      "componentes": {}
     }
    },
-   "cobertura": 0.6,
+   "cobertura": 0.7058823529411765,
    "nota": null,
    "posicao": null
   }
@@ -34425,5 +38331,127 @@
     "sessao": "2026-03-26-o14"
    }
   ]
+ },
+ "camara": {
+  "custoMandato": {
+   "fonte": "Câmara Municipal de Osasco, Quadro de Pessoal 2026 (Lei 5.038/2019)",
+   "url": "https://cmo.rdmsistemas.com.br/portalcidadao/",
+   "ano": 2026,
+   "subsidio": 24754,
+   "gabinete": [
+    {
+     "cargo": "Chefe de Gabinete",
+     "quantidade": 1,
+     "vencimento": 15038.3
+    },
+    {
+     "cargo": "Assessor de Coordenação",
+     "quantidade": 1,
+     "vencimento": 11782.99
+    },
+    {
+     "cargo": "Assessor Parlamentar I",
+     "quantidade": 3,
+     "vencimento": 9232.2
+    },
+    {
+     "cargo": "Assessor Parlamentar II",
+     "quantidade": 1,
+     "vencimento": 7595.4
+    },
+    {
+     "cargo": "Assessor Parlamentar III",
+     "quantidade": 2,
+     "vencimento": 6248.7
+    }
+   ],
+   "assessores": 8,
+   "gabineteMensal": 74610.69,
+   "totalMensal": 99364.69
+  },
+  "despesas": {
+   "fonte": "TCE-SP, Portal da Transparência Municipal (dados do sistema AUDESP)",
+   "url": "https://transparencia.tce.sp.gov.br/",
+   "coletadoEm": "2026-10-26",
+   "anos": {
+    "2025": {
+     "pago": 116042767.58,
+     "meses": 12,
+     "maioresFornecedores": [
+      {
+       "nome": "CAMARA MUNICIPAL DE OSASCO",
+       "pago": 64867489.9
+      },
+      {
+       "nome": "TETO CONSTRUTORA S A",
+       "pago": 14817296.78
+      },
+      {
+       "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+       "pago": 5747524.83
+      },
+      {
+       "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO S A",
+       "pago": 5596253.94
+      },
+      {
+       "nome": "IPMO INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
+       "pago": 3742752.49
+      },
+      {
+       "nome": "RED PROG AGENCIA DE PUBLICIDADE LTDA",
+       "pago": 3272802.81
+      },
+      {
+       "nome": "BRASIL COMPANY NEGOCIOS EMPRESARIAIS LTDA",
+       "pago": 3187286.06
+      },
+      {
+       "nome": "FAPETEC FUNDACAO DE APOIO A PESQUISA ENSINO TECNOLOGIA E CULTURA",
+       "pago": 2414772.55
+      }
+     ]
+    },
+    "2026": {
+     "pago": 74195903.95,
+     "meses": 8,
+     "maioresFornecedores": [
+      {
+       "nome": "CAMARA MUNICIPAL DE OSASCO",
+       "pago": 46421423.52
+      },
+      {
+       "nome": "TETO CONSTRUTORA S A",
+       "pago": 4949016.26
+      },
+      {
+       "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO S A",
+       "pago": 4173457.38
+      },
+      {
+       "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+       "pago": 3978881.94
+      },
+      {
+       "nome": "IPMO INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
+       "pago": 2182406.88
+      },
+      {
+       "nome": "BRASIL COMPANY NEGOCIOS EMPRESARIAIS LTDA",
+       "pago": 1733077.44
+      },
+      {
+       "nome": "RED PROG AGENCIA DE PUBLICIDADE LTDA",
+       "pago": 1351297.93
+      },
+      {
+       "nome": "MOVIMENTO EMPRESA JORNALISTICA E EDITORA LTDA",
+       "pago": 1203469.5
+      }
+     ]
+    }
+   }
+  },
+  "requerimentosParados": 21
  }
 }
