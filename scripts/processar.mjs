@@ -4,7 +4,7 @@ import { existsSync, readFileSync, readdirSync, writeFileSync, mkdirSync } from 
 import { readWorkbook } from "./lib/xlsx.mjs";
 import { calcularFiscal } from "./lib/fiscal.mjs";
 import { calcularIegm } from "./lib/iegm.mjs";
-import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, pontosComissoes } from "./lib/vereadores.mjs";
+import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, pontosComissoes, temasDoProjeto } from "./lib/vereadores.mjs";
 import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
 
@@ -250,7 +250,7 @@ const vereadores = [...pessoas.values()].map((p) => {
   const faltas = registradas.length - presencas;
   const justificadas = Math.min(faltas, p.justificativas.length);
   const props = [...proposicoes.values()].filter((x) => x.autor === p.id);
-  const projetos = props.filter((x) => metodologia.tiposProjeto.includes(x.tipo)).map((x) => ({ ...x, classe: classificarProjeto(x.ementa) }));
+  const projetos = props.filter((x) => metodologia.tiposProjeto.includes(x.tipo)).map((x) => ({ ...x, classe: classificarProjeto(x.ementa), temas: temasDoProjeto(x.ementa) }));
   const honrarias = props.filter((x) => !metodologia.tiposProjeto.includes(x.tipo));
   const reqs = [...requerimentos.values()].filter((x) => x.autor === p.id);
   const leis = [...sancoes.values()].filter((x) => x.autor === p.id);
@@ -302,6 +302,20 @@ const vereadores = [...pessoas.values()].map((p) => {
       vetosRecebidos: [...vetos.values()].filter((x) => x.autor === p.id).length,
       adiadasPorAusencia: p.adiadasPorAusencia.length,
     },
+    temas: Object.entries(
+      projetos.flatMap((x) => x.temas).reduce((acc, t) => ({ ...acc, [t]: (acc[t] ?? 0) + 1 }), {}),
+    )
+      .map(([tema, n]) => ({ tema, n }))
+      .sort((a, b) => b.n - a.n),
+    // Proposições (projetos, honrarias, moções) e presença por mês, pela data da sessão.
+    atividadePorMes: Object.values(
+      [...props, ...[...mocoes.values()].filter((x) => x.autor === p.id)].reduce((acc, x) => {
+        const mes = x.sessao.slice(0, 7);
+        acc[mes] ??= { mes, proposicoes: 0 };
+        acc[mes].proposicoes++;
+        return acc;
+      }, Object.fromEntries(sessoesOrdenadas.map((s) => [s.data.slice(0, 7), { mes: s.data.slice(0, 7), proposicoes: 0 }]))),
+    ),
     presencaPorSessao: p.sessoes,
     proposicoes: [...projetos, ...honrarias].sort((a, b) => b.ano - a.ano || b.numero - a.numero),
     requerimentos: reqs.sort((a, b) => b.ano - a.ano || b.numero - a.numero),

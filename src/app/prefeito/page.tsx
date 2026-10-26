@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { TabelaPares } from "@/components/Fiscal";
 import { Faixa, TabelaIegm } from "@/components/Iegm";
 import { PilarD, PilarE } from "@/components/PilaresDE";
-import { Avatar, Barra, Cartao, NotaBadge, Secao } from "@/components/ui";
+import { Barra, Cartao, NotaBadge, Retrato, Secao } from "@/components/ui";
 import type { AnoFiscal, CidadeFiscal } from "@/lib/dados";
 import { PILARES_PREFEITO, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, num, plural, sessao } from "@/lib/dados";
 import { INDICADORES, primarioTexto, ranking, rotuloPeriodo } from "@/lib/fiscal";
@@ -114,8 +114,9 @@ export default function PaginaPrefeito() {
 
   return (
     <>
-      <header className="flex flex-wrap items-center gap-5">
-        <Avatar nome={p.nome} foto={p.foto} tamanho={112} />
+      <header className="relative flex flex-wrap items-center gap-5 overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6">
+        <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-blue-100 opacity-50 blur-3xl" aria-hidden />
+        <Retrato nome={p.nome} foto={p.foto} className="relative w-32 shrink-0 rounded-2xl shadow-sm ring-1 ring-slate-200 sm:w-40" />
         <div className="min-w-0 flex-1">
           <h1 className="text-3xl font-bold tracking-tight text-slate-900">{p.nome}</h1>
           <p className="mt-1 flex flex-wrap items-center gap-2 text-slate-600">

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Link from "next/link";
+import { Animacoes } from "@/components/Animacoes";
+import { Nav } from "@/components/Nav";
+import { BotaoTema, SCRIPT_TEMA } from "@/components/Tema";
 import { dados, dataBR } from "@/lib/dados";
 import "./globals.css";
 
@@ -14,25 +17,27 @@ export const metadata: Metadata = {
 const NAV = [
   { href: "/", nome: "Ranking" },
   { href: "/prefeito", nome: "Prefeito" },
+  { href: "/comparar", nome: "Comparar" },
   { href: "/metodologia", nome: "Metodologia" },
 ];
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-BR">
-      <body className={`${geist.variable} min-h-screen bg-slate-50 font-sans text-slate-800 antialiased`}>
-        <header className="border-b border-slate-200 bg-white">
+    <html lang="pt-BR" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: SCRIPT_TEMA }} />
+      </head>
+      <body className={`${geist.variable} min-h-screen bg-slate-50 font-sans text-slate-800 antialiased transition-colors`}>
+        <Animacoes />
+        <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur">
           <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3">
             <Link href="/" className="flex items-center gap-2 font-semibold text-slate-900">
               <span className="grid h-8 w-8 place-items-center rounded-lg bg-blue-800 text-sm font-bold text-white">AO</span>
               Avalia Osasco
             </Link>
-            <nav className="flex gap-1 text-sm">
-              {NAV.map((n) => (
-                <Link key={n.href} href={n.href} className="rounded-md px-3 py-1.5 text-slate-600 hover:bg-slate-100 hover:text-slate-900">
-                  {n.nome}
-                </Link>
-              ))}
+            <nav className="-mx-1 flex max-w-full items-center gap-1 overflow-x-auto px-1 text-sm">
+              <Nav itens={NAV} />
+              <BotaoTema />
             </nav>
           </div>
         </header>

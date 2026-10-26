@@ -60,8 +60,10 @@ export type Vereador = {
     vetosRecebidos: number;
     adiadasPorAusencia: number;
   };
+  temas: { tema: string; n: number }[];
+  atividadePorMes: { mes: string; proposicoes: number }[];
   presencaPorSessao: { sessao: string; presente: boolean | null; primeiraChamada: boolean | null; presidente: boolean }[];
-  proposicoes: (Proposicao & { classe?: "substantivo" | "simbolico" })[];
+  proposicoes: (Proposicao & { classe?: "substantivo" | "simbolico"; temas?: string[] })[];
   requerimentos: Proposicao[];
   leis: Lei[];
   vetos: Veto[];
