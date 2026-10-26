@@ -1,0 +1,184 @@
+{
+ "ciclo": 2025,
+ "fonte": "https://pntp.atricon.org.br/dados-abertos/",
+ "arquivo": "https://cdn.atricon.org.br/2026/08/dados_pntp_2025.zip",
+ "coletadoEm": "2026-10-26T21:09:01.618Z",
+ "avaliacoes": [
+  {
+   "ibge": 3549904,
+   "poder": "Executivo",
+   "entidade": "Prefeitura Municipal de São José dos Campos",
+   "indice": 0.8904000000000001,
+   "essenciais": 1,
+   "nivel": "Ouro",
+   "variacao": 0.1012987012987015,
+   "validada": true,
+   "site": "https://www.sjc.sp.gov.br/"
+  },
+  {
+   "ibge": 3509502,
+   "poder": "Legislativo",
+   "entidade": "Câmara Municipal de Campinas",
+   "indice": 0.9187000000000002,
+   "essenciais": 1,
+   "nivel": "Ouro",
+   "variacao": -0.03477621349022906,
+   "validada": true,
+   "site": "https://www.campinas.sp.leg.br/pagina_inicial"
+  },
+  {
+   "ibge": 3509502,
+   "poder": "Executivo",
+   "entidade": "Prefeitura Municipal de Campinas",
+   "indice": 0.9128,
+   "essenciais": 1,
+   "nivel": "Ouro",
+   "variacao": 0.01264699356556468,
+   "validada": true,
+   "site": "https://campinas.sp.gov.br/"
+  },
+  {
+   "ibge": 3549904,
+   "poder": "Legislativo",
+   "entidade": "Câmara Municipal de São José dos Campos",
+   "indice": 0.8956,
+   "essenciais": 1,
+   "nivel": "Ouro",
+   "variacao": -0.001115324559446736,
+   "validada": true,
+   "site": "https://www.camarasjc.sp.gov.br/"
+  },
+  {
+   "ibge": 3543402,
+   "poder": "Executivo",
+   "entidade": "Prefeitura Municipal de Ribeirão Preto",
+   "indice": 0.7813,
+   "essenciais": 1,
+   "nivel": "Prata",
+   "variacao": 0.1233644859813084,
+   "validada": true,
+   "site": "https://www.ribeiraopreto.sp.gov.br/portal/"
+  },
+  {
+   "ibge": 3548708,
+   "poder": "Executivo",
+   "entidade": "Prefeitura Municipal de São Bernardo do Campo",
+   "indice": 0.8397,
+   "essenciais": 1,
+   "nivel": "Prata",
+   "variacao": -0.05894878404124179,
+   "validada": true,
+   "site": "https://www.saobernardo.sp.gov.br/web/sbc"
+  },
+  {
+   "ibge": 3534401,
+   "poder": "Executivo",
+   "entidade": "Prefeitura Municipal de Osasco",
+   "indice": 0.8231999999999998,
+   "essenciais": 1,
+   "nivel": "Prata",
+   "variacao": 0.07579717720857289,
+   "validada": true,
+   "site": "http://osasco.sp.gov.br/"
+  },
+  {
+   "ibge": 3552205,
+   "poder": "Executivo",
+   "entidade": "Prefeitura Municipal de Sorocaba",
+   "indice": 0.7737999999999998,
+   "essenciais": 1,
+   "nivel": "Prata",
+   "variacao": -0.1502306171754888,
+   "validada": true,
+   "site": "https://www.sorocaba.sp.gov.br/"
+  },
+  {
+   "ibge": 3518800,
+   "poder": "Legislativo",
+   "entidade": "Câmara Municipal de Guarulhos",
+   "indice": 0.7943000000000001,
+   "essenciais": 0.8095,
+   "nivel": "Elevado",
+   "variacao": 0.01210499490316008,
+   "validada": true,
+   "site": "https://www.guarulhos.sp.leg.br/"
+  },
+  {
+   "ibge": 3552205,
+   "poder": "Legislativo",
+   "entidade": "Câmara Municipal de Sorocaba",
+   "indice": 0.8921,
+   "essenciais": 0.9523999999999999,
+   "nivel": "Elevado",
+   "variacao": 0.2083164025463903,
+   "validada": false,
+   "site": "https://www.camarasorocaba.sp.gov.b"
+  },
+  {
+   "ibge": 3518800,
+   "poder": "Executivo",
+   "entidade": "Prefeitura Municipal de Guarulhos",
+   "indice": 0.8784000000000002,
+   "essenciais": 0.9394,
+   "nivel": "Elevado",
+   "variacao": 0.1915355398806295,
+   "validada": false,
+   "site": "https://www.guarulhos.sp.gov.br/"
+  },
+  {
+   "ibge": 3534401,
+   "poder": "Legislativo",
+   "entidade": "Câmara Municipal de Osasco",
+   "indice": 0.7374,
+   "essenciais": 1,
+   "nivel": "Intermediário",
+   "variacao": 0.7338349400423229,
+   "validada": true,
+   "site": "https://www.osasco.sp.leg.br/"
+  },
+  {
+   "ibge": 3547809,
+   "poder": "Executivo",
+   "entidade": "Prefeitura Municipal de Santo André",
+   "indice": 0.6674,
+   "essenciais": 0.9697,
+   "nivel": "Intermediário",
+   "variacao": -0.02255418863503231,
+   "validada": false,
+   "site": "https://web.santoandre.sp.gov.br/"
+  },
+  {
+   "ibge": 3547809,
+   "poder": "Legislativo",
+   "entidade": "Câmara Municipal de Santo André",
+   "indice": 0.5664,
+   "essenciais": 0.8095,
+   "nivel": "Intermediário",
+   "variacao": 0.1099353321575544,
+   "validada": true,
+   "site": "http://www.cmsandre.sp.gov.br/"
+  },
+  {
+   "ibge": 3543402,
+   "poder": "Legislativo",
+   "entidade": "Câmara Municipal de Ribeirão Preto",
+   "indice": 0.6849,
+   "essenciais": 1,
+   "nivel": "Intermediário",
+   "variacao": 0.3008547008547008,
+   "validada": false,
+   "site": "https://www.camararibeiraopreto.sp.gov.br/"
+  },
+  {
+   "ibge": 3548708,
+   "poder": "Legislativo",
+   "entidade": "Câmara Municipal de São Bernardo do Campo",
+   "indice": 0.6148,
+   "essenciais": 0.5238,
+   "nivel": "Intermediário",
+   "variacao": 0.001302931596091178,
+   "validada": false,
+   "site": "https://www.camarasbc.sp.gov.br/"
+  }
+ ]
+}

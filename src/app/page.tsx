@@ -1,103 +1,76 @@
-import Image from "next/image";
+import Link from "next/link";
+import { Ranking } from "@/components/Ranking";
+import { Avatar, Cartao, NotaBadge } from "@/components/ui";
+import { dados, dataBR, pct } from "@/lib/dados";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const { vereadores, prefeito, sessoes, periodo } = dados;
+  const ativos = vereadores.filter((v) => v.emExercicio);
+  const presencaMedia = ativos.reduce((a, v) => a + (v.indicadores.presenca ?? 0), 0) / (ativos.length || 1);
+  const projetos = vereadores.reduce((a, v) => a + v.indicadores.projetos, 0);
+  const adiadas = vereadores.reduce((a, v) => a + v.indicadores.adiadasPorAusencia, 0);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <>
+      <section className="max-w-3xl">
+        <p className="text-sm font-medium text-blue-800">Legislatura 2025–2028</p>
+        <h1 className="mt-1 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Como estão trabalhando os políticos de Osasco?</h1>
+        <p className="mt-3 text-lg text-slate-600">
+          Seu imposto paga os salários da Câmara e da Prefeitura. Aqui você vê, com dados oficiais, quem comparece às sessões, quem vota e quem
+          apresenta projetos.
+        </p>
+      </section>
+
+      <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
+        <Cartao titulo="Sessões analisadas" valor={sessoes.length} detalhe={`${dataBR(periodo.inicio)} a ${dataBR(periodo.fim)}`} />
+        <Cartao titulo="Presença média" valor={pct(presencaMedia)} detalhe="vereadores em exercício" />
+        <Cartao titulo="Projetos apresentados" valor={projetos} detalhe="por vereadores, no período" />
+        <Cartao titulo="Itens adiados" valor={adiadas} detalhe="porque o autor faltou" />
+      </div>
+
+      <section className="mt-10">
+        <div className="mb-4 flex flex-wrap items-end justify-between gap-2">
+          <h2 className="text-xl font-semibold text-slate-900">Ranking dos vereadores</h2>
+          <Link href="/metodologia" className="text-sm text-blue-800 underline">
+            Como a nota é calculada
+          </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <Ranking
+          vereadores={vereadores.map(({ id, nome, partido, foto, emExercicio, nota, posicao, indicadores, perfil }) => ({
+            id, nome, partido, foto, emExercicio, nota, posicao, indicadores, mesa: perfil?.mesa ?? null,
+          }))}
+        />
+        <p className="mt-3 text-xs text-slate-500">
+          Nota provisória: o pilar de custo do mandato ainda não tem dados abertos. Só recebe nota quem tem pelo menos {dados.metodologia.vereador.minimoSessoes} sessões no período. Clique em um nome para ver os detalhes e as
+          planilhas de origem.
+        </p>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="mb-4 text-xl font-semibold text-slate-900">Prefeitura</h2>
+        <Link href="/prefeito" className="flex flex-wrap items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 hover:border-blue-300">
+          <Avatar nome={prefeito.nome} foto={prefeito.foto} tamanho={56} />
+          <div className="min-w-0 flex-1">
+            <div className="font-semibold text-slate-900">{prefeito.nome}</div>
+            <div className="text-sm text-slate-500">
+              {prefeito.cargo} · {prefeito.partido} · {prefeito.mandato}
+            </div>
+          </div>
+          <div className="text-center">
+            <NotaBadge valor={prefeito.nota} />
+            <div className="mt-1 text-xs text-slate-500">{prefeito.nota == null ? "em construção" : prefeito.provisoria ? "nota provisória" : "nota do mandato"}</div>
+          </div>
+          <div className="flex gap-6 text-sm">
+            <span>
+              <b className="block text-lg tabular-nums text-slate-900">{prefeito.indicadores.projetosEnviados}</b>projetos enviados
+            </span>
+            <span>
+              <b className="block text-lg tabular-nums text-slate-900">{prefeito.indicadores.vetosTotais + prefeito.indicadores.vetosParciais}</b>
+              vetos
+            </span>
+          </div>
+        </Link>
+      </section>
+    </>
   );
 }

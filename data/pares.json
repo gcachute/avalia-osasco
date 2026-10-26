@@ -1,0 +1,16 @@
+{
+  "_leiame": "Cidades comparadas com Osasco nos pilares fiscais. Códigos IBGE de 7 dígitos. 'anos' define quais exercícios são baixados do SICONFI; o primeiro é a linha de base (gestão anterior).",
+  "foco": 3534401,
+  "inicioMandato": 2025,
+  "anos": [2024, 2025, 2026],
+  "cidades": [
+    { "ibge": 3534401, "nome": "Osasco" },
+    { "ibge": 3518800, "nome": "Guarulhos" },
+    { "ibge": 3509502, "nome": "Campinas" },
+    { "ibge": 3548708, "nome": "São Bernardo do Campo" },
+    { "ibge": 3547809, "nome": "Santo André" },
+    { "ibge": 3549904, "nome": "São José dos Campos" },
+    { "ibge": 3552205, "nome": "Sorocaba" },
+    { "ibge": 3543402, "nome": "Ribeirão Preto" }
+  ]
+}

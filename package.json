@@ -6,22 +6,31 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "coletar": "node scripts/coletar.mjs",
+    "dados": "node scripts/processar.mjs",
+    "coletar:fiscal": "node scripts/coletar-siconfi.mjs",
+    "coletar:iegm": "node scripts/coletar-iegm.mjs",
+    "coletar:resultados": "node scripts/coletar-resultados.mjs",
+    "coletar:transparencia": "node scripts/coletar-transparencia.mjs",
+    "coletar:prefeito": "npm run coletar:fiscal && npm run coletar:iegm && npm run coletar:resultados && npm run coletar:transparencia",
+    "coletar:vereadores": "node scripts/coletar-vereadores.mjs"
   },
   "dependencies": {
+    "next": "15.5.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.4"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
-    "@eslint/eslintrc": "^3"
+    "fflate": "^0.8.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

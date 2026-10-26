@@ -1,0 +1,271 @@
+{
+  "_leiame": "Cadastro manual. Partido, foto e contatos dos vereadores vêm de data/perfis.json (npm run coletar:vereadores); preencha aqui só para corrigir ou completar. Use apelidos para grafias diferentes que aparecem nas planilhas.",
+  "prefeito": {
+    "id": "prefeito",
+    "nome": "Gerson Pessoa",
+    "cargo": "Prefeito de Osasco",
+    "partido": "Podemos",
+    "mandato": "2025–2028",
+    "foto": "https://upload.wikimedia.org/wikipedia/commons/7/71/2024_GERSON_PESSOA_CANDIDATO_PREFEITO_SP_OSASCO_TSE_%28250001905071%29.jpg",
+    "perfilOficial": "https://pt.wikipedia.org/wiki/Gerson_Pessoa",
+    "creditoFoto": "Foto de candidatura (TSE), via Wikimedia Commons",
+    "creditoFotoUrl": "https://commons.wikimedia.org/wiki/File:2024_GERSON_PESSOA_CANDIDATO_PREFEITO_SP_OSASCO_TSE_(250001905071).jpg"
+  },
+  "vereadores": [
+    {
+      "id": "alexandre-capriotti",
+      "nome": "Alexandre Capriotti",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "batista-comunidade",
+      "nome": "Batista Comunidade",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "cantor-goleiro",
+      "nome": "Cantor Goleiro",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "carmonio-bastos",
+      "nome": "Carmônio Bastos",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "delbio-teruel",
+      "nome": "Délbio Teruel",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "elania-silva",
+      "nome": "Elania Silva",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "elsa-oliveira",
+      "nome": "Elsa Oliveira",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Elsa Natal de Oliveira",
+        "Elsa de Oliveira"
+      ]
+    },
+    {
+      "id": "emerson-osasco",
+      "nome": "Emerson Osasco",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Emerson"
+      ]
+    },
+    {
+      "id": "fabio-chirinhan",
+      "nome": "Fábio Chirinhan",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "gabriel-saude",
+      "nome": "Gabriel Saúde",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Gabriel da Saúde"
+      ]
+    },
+    {
+      "id": "guiga",
+      "nome": "Guiga",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "guilherme-prado",
+      "nome": "Guilherme Prado",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "heber-do-juntoz",
+      "nome": "Heber do Juntoz",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Heber Juntoz"
+      ]
+    },
+    {
+      "id": "ivanildo-eventos",
+      "nome": "Ivanildo Eventos",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "josias-da-juco",
+      "nome": "Josias da Juco",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Josias Juco"
+      ]
+    },
+    {
+      "id": "juliao",
+      "nome": "Julião",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Julião Soares"
+      ]
+    },
+    {
+      "id": "laercio-mendonca",
+      "nome": "Laércio Mendonça",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Laérco Mendonça"
+      ]
+    },
+    {
+      "id": "lucia-da-saude",
+      "nome": "Lúcia da Saúde",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Lúcia de Saúde"
+      ]
+    },
+    {
+      "id": "paulo-junior",
+      "nome": "Paulo Junior",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "pedrinho-cantagessi",
+      "nome": "Pedrinho Cantagessi",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Pedrinho Cantegessi",
+        "Pedro Cantagessi",
+        "Pedro Cantagessi Vitoriano"
+      ]
+    },
+    {
+      "id": "ralfi-silva",
+      "nome": "Ralfi Silva",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Ralfi",
+        "Ralfi Rafael da Silva"
+      ]
+    },
+    {
+      "id": "rodolfo-cara",
+      "nome": "Rodolfo Cara",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "rodrigo-gansinho",
+      "nome": "Rodrigo Gansinho",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "sergio-fontellas",
+      "nome": "Sérgio Fontellas",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Sérgio Fontelllas"
+      ]
+    },
+    {
+      "id": "stephane-rossi",
+      "nome": "Stephane Rossi",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": []
+    },
+    {
+      "id": "andre-luis-alves-pereira",
+      "nome": "André Luís Alves Pereira",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [],
+      "suplente": true
+    },
+    {
+      "id": "helder-oliveira",
+      "nome": "Hélder Oliveira",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [
+        "Helder"
+      ],
+      "suplente": true
+    },
+    {
+      "id": "ze-carlos-santa-maria",
+      "nome": "Zé Carlos Santa Maria",
+      "partido": null,
+      "foto": null,
+      "perfilOficial": null,
+      "apelidos": [],
+      "suplente": true
+    }
+  ]
+}

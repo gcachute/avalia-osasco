@@ -1,0 +1,109 @@
+{
+ "fonte": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/inf10sp.def",
+ "fonteNascidos": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinasc/cnv/nvsp.def",
+ "coletadoEm": "2026-10-26T21:09:01.124Z",
+ "anos": {
+  "2023": {
+   "3509502": {
+    "obitos": 106,
+    "nascidos": 12258
+   },
+   "3518800": {
+    "obitos": 233,
+    "nascidos": 17504
+   },
+   "3534401": {
+    "obitos": 109,
+    "nascidos": 8195
+   },
+   "3543402": {
+    "obitos": 96,
+    "nascidos": 7500
+   },
+   "3547809": {
+    "obitos": 62,
+    "nascidos": 7378
+   },
+   "3548708": {
+    "obitos": 68,
+    "nascidos": 7815
+   },
+   "3549904": {
+    "obitos": 79,
+    "nascidos": 8090
+   },
+   "3552205": {
+    "obitos": 95,
+    "nascidos": 8749
+   }
+  },
+  "2024": {
+   "3509502": {
+    "obitos": 115,
+    "nascidos": 11465
+   },
+   "3518800": {
+    "obitos": 203,
+    "nascidos": 16112
+   },
+   "3534401": {
+    "obitos": 100,
+    "nascidos": 7869
+   },
+   "3543402": {
+    "obitos": 75,
+    "nascidos": 7020
+   },
+   "3547809": {
+    "obitos": 71,
+    "nascidos": 6986
+   },
+   "3548708": {
+    "obitos": 66,
+    "nascidos": 7315
+   },
+   "3549904": {
+    "obitos": 62,
+    "nascidos": 7463
+   },
+   "3552205": {
+    "obitos": 91,
+    "nascidos": 8278
+   }
+  },
+  "2025": {
+   "3509502": {
+    "obitos": 134,
+    "nascidos": 11662
+   },
+   "3518800": {
+    "obitos": 249,
+    "nascidos": 17212
+   },
+   "3534401": {
+    "obitos": 105,
+    "nascidos": 7710
+   },
+   "3543402": {
+    "obitos": 73,
+    "nascidos": 7136
+   },
+   "3547809": {
+    "obitos": 66,
+    "nascidos": 7032
+   },
+   "3548708": {
+    "obitos": 65,
+    "nascidos": 7538
+   },
+   "3549904": {
+    "obitos": 59,
+    "nascidos": 7598
+   },
+   "3552205": {
+    "obitos": 113,
+    "nascidos": 8640
+   }
+  }
+ }
+}

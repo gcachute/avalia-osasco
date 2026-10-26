@@ -1,0 +1,827 @@
+{
+ "coletadoEm": "2026-10-26T20:59:40.782Z",
+ "fonte": "https://www.tce.sp.gov.br/iegm",
+ "valorFaixa": {
+  "A": 0.95,
+  "B+": 0.825,
+  "B": 0.675,
+  "C+": 0.55,
+  "C": 0.25
+ },
+ "anos": [
+  {
+   "anoBase": 2024,
+   "descricao": "IEG-M 2025 (Ano Base: 2024)",
+   "totalMunicipios": 644,
+   "publicacoes": [
+    {
+     "tipo": "Respostas",
+     "url": "https://painel.tce.sp.gov.br/arquivos/iegm/Base_2024.zip"
+    },
+    {
+     "tipo": "Manual",
+     "url": "https://www.tce.sp.gov.br/publicacoes/manual-ieg-m-2025"
+    },
+    {
+     "tipo": "Anuário",
+     "url": "https://painel.tce.sp.gov.br/arquivos/iegm/Anuario_IEG_M_2014_2024.pdf"
+    }
+   ],
+   "cidades": [
+    {
+     "exercicio_ref": 2024,
+     "ano_apuracao": 2025,
+     "codigo_municipio": 3509502,
+     "nome": "Campinas",
+     "iegm": "B",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C+",
+     "isaude": "B",
+     "iamb": "B+",
+     "icidade": "B+",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2024,
+     "ano_apuracao": 2025,
+     "codigo_municipio": 3518800,
+     "nome": "Guarulhos",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C",
+     "isaude": "C+",
+     "iamb": "C",
+     "icidade": "B+",
+     "igov": "B"
+    },
+    {
+     "exercicio_ref": 2024,
+     "ano_apuracao": 2025,
+     "codigo_municipio": 3534401,
+     "nome": "Osasco",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C+",
+     "isaude": "B",
+     "iamb": "C",
+     "icidade": "C+",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2024,
+     "ano_apuracao": 2025,
+     "codigo_municipio": 3543402,
+     "nome": "Ribeirão Preto",
+     "iegm": "B",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "B",
+     "icidade": "C+",
+     "igov": "B"
+    },
+    {
+     "exercicio_ref": 2024,
+     "ano_apuracao": 2025,
+     "codigo_municipio": 3547809,
+     "nome": "Santo André",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "C",
+     "ieduc": "B",
+     "isaude": "C+",
+     "iamb": "B",
+     "icidade": "B+",
+     "igov": "B"
+    },
+    {
+     "exercicio_ref": 2024,
+     "ano_apuracao": 2025,
+     "codigo_municipio": 3548708,
+     "nome": "São Bernardo do Campo",
+     "iegm": "B",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "B+",
+     "icidade": "B+",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2024,
+     "ano_apuracao": 2025,
+     "codigo_municipio": 3549904,
+     "nome": "São José dos Campos",
+     "iegm": "B",
+     "iplanejamento": "B",
+     "ifiscal": "C+",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "B",
+     "icidade": "B",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2024,
+     "ano_apuracao": 2025,
+     "codigo_municipio": 3552205,
+     "nome": "Sorocaba",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "B",
+     "icidade": "B",
+     "igov": "A"
+    }
+   ]
+  },
+  {
+   "anoBase": 2023,
+   "descricao": "IEG-M 2024 (Ano Base: 2023)",
+   "totalMunicipios": 644,
+   "publicacoes": [
+    {
+     "tipo": "Respostas",
+     "url": "https://painel.tce.sp.gov.br/arquivos/iegm/Base_2023.zip"
+    },
+    {
+     "tipo": "Manual",
+     "url": "https://www.tce.sp.gov.br/publicacoes/manual-ieg-m-2024"
+    },
+    {
+     "tipo": "Anuário",
+     "url": "https://painel.tce.sp.gov.br/arquivos/iegm/Anuario_IEG-M_2014-2023.pdf"
+    }
+   ],
+   "cidades": [
+    {
+     "exercicio_ref": 2023,
+     "ano_apuracao": 2024,
+     "codigo_municipio": 3509502,
+     "nome": "Campinas",
+     "iegm": "C",
+     "iplanejamento": "C",
+     "ifiscal": "C",
+     "ieduc": "C",
+     "isaude": "C+",
+     "iamb": "B",
+     "icidade": "B+",
+     "igov": "C+"
+    },
+    {
+     "exercicio_ref": 2023,
+     "ano_apuracao": 2024,
+     "codigo_municipio": 3518800,
+     "nome": "Guarulhos",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C+",
+     "isaude": "C+",
+     "iamb": "C",
+     "icidade": "B+",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2023,
+     "ano_apuracao": 2024,
+     "codigo_municipio": 3534401,
+     "nome": "Osasco",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C+",
+     "isaude": "B",
+     "iamb": "C",
+     "icidade": "B",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2023,
+     "ano_apuracao": 2024,
+     "codigo_municipio": 3543402,
+     "nome": "Ribeirão Preto",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "B",
+     "isaude": "B+",
+     "iamb": "C+",
+     "icidade": "B",
+     "igov": "B"
+    },
+    {
+     "exercicio_ref": 2023,
+     "ano_apuracao": 2024,
+     "codigo_municipio": 3547809,
+     "nome": "Santo André",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "C",
+     "ieduc": "B",
+     "isaude": "C+",
+     "iamb": "B+",
+     "icidade": "B+",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2023,
+     "ano_apuracao": 2024,
+     "codigo_municipio": 3548708,
+     "nome": "São Bernardo do Campo",
+     "iegm": "B",
+     "iplanejamento": "C+",
+     "ifiscal": "B",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "B+",
+     "icidade": "B",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2023,
+     "ano_apuracao": 2024,
+     "codigo_municipio": 3549904,
+     "nome": "São José dos Campos",
+     "iegm": "B",
+     "iplanejamento": "B",
+     "ifiscal": "C",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "B",
+     "icidade": "B",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2023,
+     "ano_apuracao": 2024,
+     "codigo_municipio": 3552205,
+     "nome": "Sorocaba",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C+",
+     "isaude": "C+",
+     "iamb": "B",
+     "icidade": "B+",
+     "igov": "B+"
+    }
+   ]
+  },
+  {
+   "anoBase": 2022,
+   "descricao": "IEG-M 2023 (Ano Base: 2022)",
+   "totalMunicipios": 644,
+   "publicacoes": [
+    {
+     "tipo": "Respostas",
+     "url": "https://painel.tce.sp.gov.br/arquivos/iegm/Base_2022_1.zip"
+    },
+    {
+     "tipo": "Manual",
+     "url": "https://www.tce.sp.gov.br/publicacoes/manual-ieg-m-2023"
+    },
+    {
+     "tipo": "Anuário",
+     "url": "https://painel.tce.sp.gov.br/arquivos/iegm/Anuario_IEG-M_2014-2022.pdf"
+    }
+   ],
+   "cidades": [
+    {
+     "exercicio_ref": 2022,
+     "ano_apuracao": 2023,
+     "codigo_municipio": 3509502,
+     "nome": "Campinas",
+     "iegm": "C",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C+",
+     "isaude": "C",
+     "iamb": "B",
+     "icidade": "B+",
+     "igov": "C"
+    },
+    {
+     "exercicio_ref": 2022,
+     "ano_apuracao": 2023,
+     "codigo_municipio": 3518800,
+     "nome": "Guarulhos",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C",
+     "isaude": "C+",
+     "iamb": "C+",
+     "icidade": "B+",
+     "igov": "B"
+    },
+    {
+     "exercicio_ref": 2022,
+     "ano_apuracao": 2023,
+     "codigo_municipio": 3534401,
+     "nome": "Osasco",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C",
+     "isaude": "B",
+     "iamb": "C+",
+     "icidade": "B+",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2022,
+     "ano_apuracao": 2023,
+     "codigo_municipio": 3543402,
+     "nome": "Ribeirão Preto",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "C+",
+     "icidade": "B",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2022,
+     "ano_apuracao": 2023,
+     "codigo_municipio": 3547809,
+     "nome": "Santo André",
+     "iegm": "C+",
+     "iplanejamento": "B",
+     "ifiscal": "C+",
+     "ieduc": "C",
+     "isaude": "C",
+     "iamb": "B",
+     "icidade": "B+",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2022,
+     "ano_apuracao": 2023,
+     "codigo_municipio": 3548708,
+     "nome": "São Bernardo do Campo",
+     "iegm": "B",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "C+",
+     "icidade": "C+",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2022,
+     "ano_apuracao": 2023,
+     "codigo_municipio": 3549904,
+     "nome": "São José dos Campos",
+     "iegm": "B",
+     "iplanejamento": "B",
+     "ifiscal": "C+",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "B",
+     "icidade": "B+",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2022,
+     "ano_apuracao": 2023,
+     "codigo_municipio": 3552205,
+     "nome": "Sorocaba",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B+",
+     "ieduc": "C",
+     "isaude": "C+",
+     "iamb": "B",
+     "icidade": "B",
+     "igov": "B"
+    }
+   ]
+  },
+  {
+   "anoBase": 2021,
+   "descricao": "IEG-M 2022 (Ano Base: 2021)",
+   "totalMunicipios": 644,
+   "publicacoes": [
+    {
+     "tipo": "Respostas",
+     "url": "https://painel.tce.sp.gov.br/arquivos/iegm/Base_2021.zip"
+    },
+    {
+     "tipo": "Manual",
+     "url": "https://www.tce.sp.gov.br/publicacoes/manual-ieg-m-2022"
+    },
+    {
+     "tipo": "Manual",
+     "url": "https://www.tce.sp.gov.br/sites/default/files/publicacoes/Manual%20IEG-M%20-%20Sistema%20de%20Question%C3%A1rios.pdf"
+    },
+    {
+     "tipo": "Manual",
+     "url": "https://www.tce.sp.gov.br/sites/default/files/publicacoes/QuestionarioPrincipal-IEGM%202022-AnoBase2021.pdf"
+    },
+    {
+     "tipo": "Anuário",
+     "url": "https://painel.tce.sp.gov.br/arquivos/iegm/anuario_IEG-M_2014-2021.pdf"
+    }
+   ],
+   "cidades": [
+    {
+     "exercicio_ref": 2021,
+     "ano_apuracao": 2022,
+     "codigo_municipio": 3509502,
+     "nome": "Campinas",
+     "iegm": "C",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C",
+     "isaude": "C",
+     "iamb": "B",
+     "icidade": "B+",
+     "igov": "C+"
+    },
+    {
+     "exercicio_ref": 2021,
+     "ano_apuracao": 2022,
+     "codigo_municipio": 3518800,
+     "nome": "Guarulhos",
+     "iegm": "C",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C",
+     "isaude": "C+",
+     "iamb": "C",
+     "icidade": "C+",
+     "igov": "C"
+    },
+    {
+     "exercicio_ref": 2021,
+     "ano_apuracao": 2022,
+     "codigo_municipio": 3534401,
+     "nome": "Osasco",
+     "iegm": "C",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C",
+     "isaude": "C+",
+     "iamb": "C",
+     "icidade": "B",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2021,
+     "ano_apuracao": 2022,
+     "codigo_municipio": 3543402,
+     "nome": "Ribeirão Preto",
+     "iegm": "C",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C",
+     "isaude": "B",
+     "iamb": "C+",
+     "icidade": "C",
+     "igov": "B"
+    },
+    {
+     "exercicio_ref": 2021,
+     "ano_apuracao": 2022,
+     "codigo_municipio": 3547809,
+     "nome": "Santo André",
+     "iegm": "C",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C",
+     "isaude": "C",
+     "iamb": "B",
+     "icidade": "B+",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2021,
+     "ano_apuracao": 2022,
+     "codigo_municipio": 3548708,
+     "nome": "São Bernardo do Campo",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "C",
+     "icidade": "C+",
+     "igov": "B"
+    },
+    {
+     "exercicio_ref": 2021,
+     "ano_apuracao": 2022,
+     "codigo_municipio": 3549904,
+     "nome": "São José dos Campos",
+     "iegm": "B",
+     "iplanejamento": "B+",
+     "ifiscal": "C+",
+     "ieduc": "C+",
+     "isaude": "B",
+     "iamb": "B",
+     "icidade": "B",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2021,
+     "ano_apuracao": 2022,
+     "codigo_municipio": 3552205,
+     "nome": "Sorocaba",
+     "iegm": "C",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C",
+     "isaude": "C",
+     "iamb": "C+",
+     "icidade": "B+",
+     "igov": "B+"
+    }
+   ]
+  },
+  {
+   "anoBase": 2020,
+   "descricao": "IEG-M 2021 (Ano Base: 2020)",
+   "totalMunicipios": 644,
+   "publicacoes": [
+    {
+     "tipo": "Respostas",
+     "url": "https://painel.tce.sp.gov.br/arquivos/iegm/Base_2020.zip"
+    },
+    {
+     "tipo": "Manual",
+     "url": "https://www.tce.sp.gov.br/sites/default/files/publicacoes/Manual%20IEG-M%202021%20-%20Sistema%20de%20Question%C3%A1rios.pdf"
+    },
+    {
+     "tipo": "Manual",
+     "url": "https://www.tce.sp.gov.br/sites/default/files/publicacoes/Manual-IEG-M%202021%20-%20Dados%20do%20exerc%C3%ADcio%202020.pdf"
+    },
+    {
+     "tipo": "Outros",
+     "url": "https://www.tce.sp.gov.br/sites/default/files/publicacoes/Manual_TCESP%20-%20AUDESP-IEGM_Gestao_do_Lixo%20-%202021_0.pdf"
+    },
+    {
+     "tipo": "Anuário",
+     "url": "http://www.tce.sp.gov.br/anuario-iegm-2014-2020"
+    }
+   ],
+   "cidades": [
+    {
+     "exercicio_ref": 2020,
+     "ano_apuracao": 2021,
+     "codigo_municipio": 3509502,
+     "nome": "Campinas",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C+",
+     "isaude": "B",
+     "iamb": "B+",
+     "icidade": "A",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2020,
+     "ano_apuracao": 2021,
+     "codigo_municipio": 3518800,
+     "nome": "Guarulhos",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C",
+     "isaude": "B",
+     "iamb": "C",
+     "icidade": "B+",
+     "igov": "C"
+    },
+    {
+     "exercicio_ref": 2020,
+     "ano_apuracao": 2021,
+     "codigo_municipio": 3534401,
+     "nome": "Osasco",
+     "iegm": "B",
+     "iplanejamento": "C+",
+     "ifiscal": "B",
+     "ieduc": "C",
+     "isaude": "B",
+     "iamb": "C+",
+     "icidade": "B",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2020,
+     "ano_apuracao": 2021,
+     "codigo_municipio": 3543402,
+     "nome": "Ribeirão Preto",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C+",
+     "isaude": "B",
+     "iamb": "B",
+     "icidade": "C+",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2020,
+     "ano_apuracao": 2021,
+     "codigo_municipio": 3547809,
+     "nome": "Santo André",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C",
+     "isaude": "C",
+     "iamb": "B",
+     "icidade": "B+",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2020,
+     "ano_apuracao": 2021,
+     "codigo_municipio": 3548708,
+     "nome": "São Bernardo do Campo",
+     "iegm": "B",
+     "iplanejamento": "B",
+     "ifiscal": "C",
+     "ieduc": "B+",
+     "isaude": "C+",
+     "iamb": "C+",
+     "icidade": "B+",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2020,
+     "ano_apuracao": 2021,
+     "codigo_municipio": 3549904,
+     "nome": "São José dos Campos",
+     "iegm": "B",
+     "iplanejamento": "B+",
+     "ifiscal": "B",
+     "ieduc": "B",
+     "isaude": "C+",
+     "iamb": "B+",
+     "icidade": "C+",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2020,
+     "ano_apuracao": 2021,
+     "codigo_municipio": 3552205,
+     "nome": "Sorocaba",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C",
+     "isaude": "C+",
+     "iamb": "C+",
+     "icidade": "B+",
+     "igov": "B+"
+    }
+   ]
+  },
+  {
+   "anoBase": 2019,
+   "descricao": "IEG-M 2020 (Ano Base: 2019)",
+   "totalMunicipios": 644,
+   "publicacoes": [
+    {
+     "tipo": "Respostas",
+     "url": "https://painel.tce.sp.gov.br/arquivos/iegm/Base_2019.zip"
+    },
+    {
+     "tipo": "Manual",
+     "url": "https://www.tce.sp.gov.br/publicacoes/manual-ieg-m-2020"
+    },
+    {
+     "tipo": "Anuário",
+     "url": "https://www4.tce.sp.gov.br/transparencia/sites/default/files/downloads/Anu%C3%A1rio%20resultados%20consolidados%20IEG-M%202014-2019.pdf"
+    }
+   ],
+   "cidades": [
+    {
+     "exercicio_ref": 2019,
+     "ano_apuracao": 2020,
+     "codigo_municipio": 3509502,
+     "nome": "Campinas",
+     "iegm": "B",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C+",
+     "isaude": "B",
+     "iamb": "B+",
+     "icidade": "A",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2019,
+     "ano_apuracao": 2020,
+     "codigo_municipio": 3518800,
+     "nome": "Guarulhos",
+     "iegm": "C",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C",
+     "isaude": "B",
+     "iamb": "C+",
+     "icidade": "B",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2019,
+     "ano_apuracao": 2020,
+     "codigo_municipio": 3534401,
+     "nome": "Osasco",
+     "iegm": "C+",
+     "iplanejamento": "C+",
+     "ifiscal": "B",
+     "ieduc": "C",
+     "isaude": "B",
+     "iamb": "C",
+     "icidade": "B",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2019,
+     "ano_apuracao": 2020,
+     "codigo_municipio": 3543402,
+     "nome": "Ribeirão Preto",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "C+",
+     "ieduc": "C",
+     "isaude": "B",
+     "iamb": "B",
+     "icidade": "C+",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2019,
+     "ano_apuracao": 2020,
+     "codigo_municipio": 3547809,
+     "nome": "Santo André",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C+",
+     "isaude": "C",
+     "iamb": "C",
+     "icidade": "A",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2019,
+     "ano_apuracao": 2020,
+     "codigo_municipio": 3548708,
+     "nome": "São Bernardo do Campo",
+     "iegm": "B",
+     "iplanejamento": "B",
+     "ifiscal": "B",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "B",
+     "icidade": "B",
+     "igov": "B+"
+    },
+    {
+     "exercicio_ref": 2019,
+     "ano_apuracao": 2020,
+     "codigo_municipio": 3549904,
+     "nome": "São José dos Campos",
+     "iegm": "B",
+     "iplanejamento": "B+",
+     "ifiscal": "C+",
+     "ieduc": "B",
+     "isaude": "B",
+     "iamb": "B+",
+     "icidade": "B",
+     "igov": "A"
+    },
+    {
+     "exercicio_ref": 2019,
+     "ano_apuracao": 2020,
+     "codigo_municipio": 3552205,
+     "nome": "Sorocaba",
+     "iegm": "C+",
+     "iplanejamento": "C",
+     "ifiscal": "B",
+     "ieduc": "C",
+     "isaude": "B",
+     "iamb": "B",
+     "icidade": "B+",
+     "igov": "B"
+    }
+   ]
+  }
+ ]
+}

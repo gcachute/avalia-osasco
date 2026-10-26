@@ -1,0 +1,29 @@
+{
+  "inicioLegislatura": "2025-01-01",
+  "tiposProjeto": [
+    "PL",
+    "PLC",
+    "PR",
+    "PELO"
+  ],
+  "prefeito": {
+    "pesos": {
+      "A": 25,
+      "B": 10,
+      "C": 25,
+      "D": 25,
+      "E": 15
+    },
+    "coberturaMinima": 0.7
+  },
+  "vereador": {
+    "pesos": {
+      "A": 20,
+      "B": 25,
+      "C": 25,
+      "D": 15,
+      "E": 15
+    },
+    "minimoSessoes": 20
+  }
+}
