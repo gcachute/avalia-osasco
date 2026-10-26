@@ -4,7 +4,7 @@ import { existsSync, readFileSync, readdirSync, writeFileSync, mkdirSync } from 
 import { readWorkbook } from "./lib/xlsx.mjs";
 import { calcularFiscal } from "./lib/fiscal.mjs";
 import { calcularIegm } from "./lib/iegm.mjs";
-import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, pontosComissoes } from "./lib/vereadores.mjs";
+import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, pontosComissoes, temasDoProjeto } from "./lib/vereadores.mjs";
 import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
 
@@ -82,7 +82,7 @@ const PROP_RE = new RegExp(
   "is",
 );
 const MOCAO_RE = new RegExp(`^(?:\\d+\\.\\s*)?mo[cç][aã]o de ([\\p{L} ]+?)\\s+n\\S*\\s*(\\d+)\\s*\\/\\s*(\\d{4})\\s*${DASH}\\s*(?:\\d+\\/\\d{4}\\s*${DASH}\\s*)?(.+?)\\s*${DASH}\\s*(.*)$`, "isu");
-const REQ_RE = new RegExp(`^(?:\\d+\\.\\s*)?requerimento\\s+n\\S*\\s*(\\d+)\\s*\\/\\s*(\\d{4})\\s*${DASH}\\s*(.+?)\\s*${DASH}\\s*(.*)$`, "is");
+const REQ_RE = new RegExp(`^(?:\\d+\\s*[.–-]\\s*)?requerimento\\s+n\\S*\\s*(\\d+)\\s*\\/\\s*(\\d{4})\\s*${DASH}\\s*(.+?)\\s*${DASH}\\s*(.*)$`, "is");
 const JUSTIFICATIVA_RE = /justificativa de aus[eê]ncia d[oa] vereador[a]?\s+(.+?)\.?$/i;
 const SANCAO_RE = /san[cç][aã]o de lei( complementar)? n\S*\s*([\d.]+),?\s*de ([^,]+?\d{4}),.*?de autoria d[oa] (?:vereador[a]?\s+|poder\s+)?([^.,;]+)/is;
 const VETO_RE = /veto (total|parcial) n\S*\s*(\d+\/\d{4}) ao projeto de lei( complementar)? n\S*\s*(\d+\/\d{4}).*?de autoria d[oa] (?:vereador[a]?\s+)?([^.,;]+)/is;
@@ -112,6 +112,7 @@ const pessoas = new Map(); // id -> acumuladores
 const proposicoes = new Map(); // "PL-12/2025" -> proposição
 const mocoes = new Map();
 const requerimentos = new Map();
+const pautaRequerimentos = new Map(); // requerimentos de qualquer ano pautados na Ordem do Dia
 const sancoes = new Map();
 const vetos = new Map();
 const decretos = new Set();
@@ -194,6 +195,14 @@ for (const { sheets, s } of lidas) {
         const rm = text.match(REQ_RE);
         const key = `REQ-${rm[1]}/${rm[2]}`;
         autor = rm[3];
+        // Requerimentos que voltam à pauta sessão após sessão sem deliberação (o plenário não vota).
+        if (/requerimento/i.test(sheet.name)) {
+          const r = pautaRequerimentos.get(key) ?? { key, numero: Number(rm[1]), ano: Number(rm[2]), autor: idFor(primaryAuthor(autor)), ementa: clean(rm[4]), sessoes: 0, primeira: s.id };
+          r.sessoes++;
+          r.ultima = s.id;
+          r.status = clean(status[col]) || null;
+          pautaRequerimentos.set(key, r);
+        }
         if (Number(rm[2]) >= Number(metodologia.inicioLegislatura.slice(0, 4)) && !requerimentos.has(key))
           requerimentos.set(key, { key, tipo: "REQ", numero: Number(rm[1]), ano: Number(rm[2]), autor: attribute(autor), ementa: clean(rm[4]), informacao: /informa[cç]/i.test(rm[4]), sessao: s.id });
       } else if (mm) {
@@ -250,9 +259,10 @@ const vereadores = [...pessoas.values()].map((p) => {
   const faltas = registradas.length - presencas;
   const justificadas = Math.min(faltas, p.justificativas.length);
   const props = [...proposicoes.values()].filter((x) => x.autor === p.id);
-  const projetos = props.filter((x) => metodologia.tiposProjeto.includes(x.tipo)).map((x) => ({ ...x, classe: classificarProjeto(x.ementa) }));
+  const projetos = props.filter((x) => metodologia.tiposProjeto.includes(x.tipo)).map((x) => ({ ...x, classe: classificarProjeto(x.ementa), temas: temasDoProjeto(x.ementa) }));
   const honrarias = props.filter((x) => !metodologia.tiposProjeto.includes(x.tipo));
   const reqs = [...requerimentos.values()].filter((x) => x.autor === p.id);
+  const naPauta = [...pautaRequerimentos.values()].filter((x) => x.autor === p.id);
   const leis = [...sancoes.values()].filter((x) => x.autor === p.id);
   const substantivos = projetos.filter((x) => x.classe === "substantivo").length;
   const votosDados = p.votos.sim + p.votos.nao + p.votos.abstencao;
@@ -295,6 +305,7 @@ const vereadores = [...pessoas.values()].map((p) => {
       honrarias: honrarias.length,
       mocoes: [...mocoes.values()].filter((x) => x.autor === p.id).length,
       requerimentos: reqs.length,
+      requerimentosNaPauta: naPauta.length,
       comissoes: perfil?.comissoes.filter((c) => c.tipo !== "frente").length ?? 0,
       frentes: perfil?.comissoes.filter((c) => c.tipo === "frente").length ?? 0,
       pontosComissoes: pontosComissoes(perfil?.comissoes, perfil?.mesa),
@@ -302,9 +313,26 @@ const vereadores = [...pessoas.values()].map((p) => {
       vetosRecebidos: [...vetos.values()].filter((x) => x.autor === p.id).length,
       adiadasPorAusencia: p.adiadasPorAusencia.length,
     },
+    temas: Object.entries(
+      projetos.flatMap((x) => x.temas).reduce((acc, t) => ({ ...acc, [t]: (acc[t] ?? 0) + 1 }), {}),
+    )
+      .map(([tema, n]) => ({ tema, n }))
+      .sort((a, b) => b.n - a.n),
+    // Proposições (projetos, honrarias, moções) e presença por mês, pela data da sessão.
+    atividadePorMes: Object.values(
+      [...props, ...[...mocoes.values()].filter((x) => x.autor === p.id)].reduce((acc, x) => {
+        const mes = x.sessao.slice(0, 7);
+        acc[mes] ??= { mes, proposicoes: 0 };
+        acc[mes].proposicoes++;
+        return acc;
+      }, Object.fromEntries(sessoesOrdenadas.map((s) => [s.data.slice(0, 7), { mes: s.data.slice(0, 7), proposicoes: 0 }]))),
+    ),
     presencaPorSessao: p.sessoes,
     proposicoes: [...projetos, ...honrarias].sort((a, b) => b.ano - a.ano || b.numero - a.numero),
     requerimentos: reqs.sort((a, b) => b.ano - a.ano || b.numero - a.numero),
+    requerimentosNaPauta: naPauta
+      .map((x) => ({ ...x, aindaNaPauta: x.ultima === sessoesOrdenadas.at(-1)?.id }))
+      .sort((a, b) => a.ano - b.ano || a.numero - b.numero),
     leis,
     vetos: [...vetos.values()].filter((x) => x.autor === p.id),
     adiadas: p.adiadasPorAusencia,
@@ -358,6 +386,35 @@ const prefeito = {
   vetos: [...vetos.values()],
 };
 
+// ---------- custo da Câmara ----------
+// Estrutura de cada gabinete e despesas da Câmara. Como a lei dá o mesmo gabinete a todos, o custo
+// não diferencia vereadores: é mostrado, mas não entra na nota (pilar D).
+const lerJson = (f) => (existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null);
+const custo = lerJson("data/custo-mandato.json");
+const despesas = lerJson("data/camara-despesas.json");
+const gabineteMensal = custo && Math.round(custo.gabinete.reduce((a, c) => a + c.quantidade * c.vencimento, 0) * 100) / 100;
+const camara = {
+  custoMandato: custo && {
+    fonte: custo.fonte,
+    url: custo.url,
+    ano: custo.ano,
+    subsidio: custo.subsidio,
+    gabinete: custo.gabinete.map(({ cargo, quantidade, vencimento }) => ({ cargo, quantidade, vencimento })),
+    assessores: custo.gabinete.reduce((a, c) => a + c.quantidade, 0),
+    gabineteMensal,
+    totalMensal: Math.round((gabineteMensal + custo.subsidio) * 100) / 100,
+  },
+  despesas: despesas && {
+    fonte: despesas.fonte,
+    url: despesas.url,
+    coletadoEm: despesas.coletadoEm,
+    anos: Object.fromEntries(
+      Object.entries(despesas.anos).map(([ano, a]) => [ano, { pago: a.pago, meses: a.meses.length, maioresFornecedores: a.maioresFornecedores.slice(0, 8) }]),
+    ),
+  },
+  requerimentosParados: [...pautaRequerimentos.values()].filter((x) => x.ultima === sessoesOrdenadas.at(-1)?.id).length,
+};
+
 mkdirSync("src/data", { recursive: true });
 writeFileSync(
   "src/data/dados.json",
@@ -370,6 +427,7 @@ writeFileSync(
       sessoes: sessoesOrdenadas,
       vereadores,
       prefeito,
+      camara,
     },
     null,
     1,

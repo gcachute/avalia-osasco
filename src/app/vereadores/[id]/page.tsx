@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Avatar, Barra, Cartao, NotaBadge, Secao } from "@/components/ui";
-import type { PilarVereador } from "@/lib/dados";
-import { PILARES_VEREADOR, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, pct, plural, sessao } from "@/lib/dados";
+import { AtividadeMensal } from "@/components/Atividade";
+import { CustoMandato } from "@/components/Camara";
+import { Avatar, Barra, Cartao, NotaBadge, Retrato, Secao } from "@/components/ui";
+import type { PilarVereador, Vereador } from "@/lib/dados";
+import { PILARES_VEREADOR, TIPO_NOME, dados, dataBR, milReais, nomeSessao, nota, nota10, pct, plural, sessao } from "@/lib/dados";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => dados.vereadores.map((v) => ({ id: v.id }));
@@ -38,25 +40,48 @@ export default async function PaginaVereador({ params }: Props) {
   const honrarias = v.proposicoes.filter((p) => !dados.metodologia.tiposProjeto.includes(p.tipo));
   const comNota = dados.vereadores.filter((x) => x.posicao).length;
   const pf = v.perfil;
+  const custo = dados.camara.custoMandato;
+  const parados = v.requerimentosNaPauta.filter((r) => r.aindaNaPauta);
+
+  // Comparação com a média dos vereadores com nota (menos itens adiados é melhor).
+  const pares = dados.vereadores.filter((x) => x.nota != null);
+  const media = (f: (x: Vereador) => number | null) => {
+    const vs = pares.map(f).filter((n): n is number => n != null);
+    return vs.reduce((a, b) => a + b, 0) / (vs.length || 1);
+  };
+  const comparacoes = [
+    { nome: "Presença nas sessões", valor: i.presencaAjustada, media: media((x) => x.indicadores.presencaAjustada), formato: pct, maiorMelhor: true },
+    { nome: "Participação nas votações nominais", valor: i.participacaoVotos, media: media((x) => x.indicadores.participacaoVotos), formato: pct, maiorMelhor: true },
+    { nome: "Projetos de política pública", valor: i.projetosSubstantivos, media: media((x) => x.indicadores.projetosSubstantivos), formato: (n: number | null) => (n == null ? "—" : n.toLocaleString("pt-BR", { maximumFractionDigits: 1 })), maiorMelhor: true },
+    { nome: "Leis sancionadas", valor: i.leisSancionadas, media: media((x) => x.indicadores.leisSancionadas), formato: (n: number | null) => (n == null ? "—" : n.toLocaleString("pt-BR", { maximumFractionDigits: 1 })), maiorMelhor: true },
+    { nome: "Itens próprios adiados por falta", valor: i.adiadasPorAusencia, media: media((x) => x.indicadores.adiadasPorAusencia), formato: (n: number | null) => (n == null ? "—" : n.toLocaleString("pt-BR", { maximumFractionDigits: 1 })), maiorMelhor: false },
+  ];
+  const ordem = dados.vereadores.filter((x) => x.posicao);
+  const idx = ordem.findIndex((x) => x.id === v.id);
+  const anterior = idx > 0 ? ordem[idx - 1] : null;
+  const seguinte = idx >= 0 && idx < ordem.length - 1 ? ordem[idx + 1] : null;
   const detalhes: Record<PilarVereador, string> = {
     A: `Presença de ${pct(i.presencaAjustada)} descontadas ${plural(i.faltasJustificadas, "falta justificada", "faltas justificadas")} (esteve em ${i.presencas} de ${i.sessoes} sessões) · votou em ${pct(i.participacaoVotos)} das votações nominais`,
     B: `${plural(i.projetosSubstantivos, "projeto", "projetos")} de política pública, ${plural(i.projetosSimbolicos, "simbólico", "simbólicos")} e ${plural(i.leisSancionadas, "lei sancionada", "leis sancionadas")} em ${i.sessoes} sessões`,
     C: !v.emExercicio
       ? "Sem dado: a composição das comissões publicada é a atual, e este vereador já saiu da Câmara"
       : `${pf?.mesa ? `${pf.mesa} da Mesa Diretora · ` : ""}${plural(i.comissoes, "comissão", "comissões")} · ${plural(i.frentes, "frente parlamentar", "frentes parlamentares")}`,
-    D: "Sem dados abertos de gasto por gabinete",
+    D: custo ? `${milReais(custo.totalMensal)} por mês em salários (vereador e ${custo.assessores} assessores), igual para todos os gabinetes` : "Sem dados de custo do gabinete",
     E: `${plural(i.adiadasPorAusencia, "item próprio adiado", "itens próprios adiados")} porque faltou, em ${i.sessoes} sessões`,
   };
 
   return (
     <>
-      <Link href="/" className="text-sm text-slate-500 hover:text-slate-800">
-        ← Ranking
-      </Link>
+      <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
+        <Link href="/#ranking" className="text-slate-500 hover:text-slate-800">
+          ← Ranking
+        </Link>
+      </div>
 
-      <header className="mt-4 flex flex-wrap items-start gap-5">
-        <Avatar nome={v.nome} foto={v.foto} tamanho={112} />
-        <div className="min-w-0 flex-1">
+      <header className="relative mt-4 flex flex-wrap items-start gap-5 overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6">
+        <div className="pointer-events-none absolute -left-20 -top-24 h-64 w-64 rounded-full bg-blue-100 opacity-50 blur-3xl" aria-hidden />
+        <Retrato nome={v.nome} foto={v.foto} className="relative w-36 shrink-0 rounded-2xl shadow-sm ring-1 ring-slate-200 sm:w-44" />
+        <div className="relative min-w-0 flex-1">
           <h1 className="text-3xl font-bold tracking-tight text-slate-900">{v.nome}</h1>
           <p className="mt-1 flex flex-wrap items-center gap-2 text-slate-600">
             {v.partido && <span className="rounded-md bg-slate-900 px-2 py-0.5 text-sm font-semibold text-white">{v.partido}</span>}
@@ -119,10 +144,10 @@ export default async function PaginaVereador({ params }: Props) {
             ))}
           </p>
         </div>
-        <div className="text-right">
+        <div className="relative text-right">
           <NotaBadge valor={v.nota} grande />
           <p className="mt-1 text-sm text-slate-500">
-            {v.posicao ? `${v.posicao}º de ${comNota} · nota provisória` : `Menos de ${dados.metodologia.vereador.minimoSessoes} sessões no período`}
+            {v.posicao ? `${v.posicao}º de ${comNota} vereadores` : `Menos de ${dados.metodologia.vereador.minimoSessoes} sessões no período`}
           </p>
         </div>
       </header>
@@ -133,10 +158,18 @@ export default async function PaginaVereador({ params }: Props) {
           return (
             <a key={pl.chave} href="#nota" className={`rounded-xl border bg-white p-4 ${pl.chave === "D" ? "border-dashed border-slate-300" : "border-slate-200 hover:border-blue-300"}`}>
               <div className="text-xs font-medium uppercase tracking-wide text-slate-400">
-                Pilar {pl.chave} · {Math.round((pesos[pl.chave] / totalPesos) * 100)}%
+                Pilar {pl.chave} · {pesos[pl.chave] ? `${Math.round((pesos[pl.chave] / totalPesos) * 100)}%` : "fora da nota"}
               </div>
               <div className="mt-1 text-sm font-medium text-slate-900">{pl.nome}</div>
-              <div className="mt-2">{n == null ? <span className="text-sm text-slate-400">sem dados</span> : <NotaBadge valor={n} />}</div>
+              <div className="mt-2">
+                {n != null ? (
+                  <NotaBadge valor={n} />
+                ) : pl.chave === "D" && custo ? (
+                  <span className="text-sm font-semibold tabular-nums text-slate-700">{milReais(custo.totalMensal)}/mês</span>
+                ) : (
+                  <span className="text-sm text-slate-400">sem dados</span>
+                )}
+              </div>
               {v.pilares[pl.chave].ranking && <div className="mt-1 text-xs text-slate-500">{v.pilares[pl.chave].ranking}º no pilar</div>}
             </a>
           );
@@ -162,9 +195,61 @@ export default async function PaginaVereador({ params }: Props) {
           ))}
         </div>
         <p className="mt-2 text-xs text-slate-500">
-          A nota é a média ponderada dos pilares com dados ({Math.round(v.cobertura * 100)}% do peso). É provisória enquanto o pilar D não tiver fonte aberta.
+          A nota é a média ponderada dos pilares A, B, C e E. O custo do mandato (D) aparece para consulta, mas não entra na nota porque é igual para todos.
         </p>
       </Secao>
+
+      <Secao titulo="Comparado com a média da Câmara" subtitulo={`Média entre os ${pares.length} vereadores com nota, no mesmo período.`}>
+        <div className="divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white px-5">
+          {comparacoes.map((c) => {
+            const melhor = c.valor != null && (c.maiorMelhor ? c.valor > c.media * 1.02 : c.valor < c.media * 0.98);
+            const pior = c.valor != null && (c.maiorMelhor ? c.valor < c.media * 0.98 : c.valor > c.media * 1.02);
+            const escala = Math.max(c.valor ?? 0, c.media) * 1.15 || 1;
+            return (
+              <div key={c.nome} className="grid items-center gap-x-4 gap-y-2 py-3 sm:grid-cols-[1fr_14rem_7rem]">
+                <div className="text-sm font-medium text-slate-900">{c.nome}</div>
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2 text-xs text-slate-500">
+                    <span className="w-14 shrink-0">{v.nome.split(" ")[0]}</span>
+                    <Barra valor={(c.valor ?? 0) / escala} classe="bg-blue-700" />
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-slate-500">
+                    <span className="w-14 shrink-0">Média</span>
+                    <Barra valor={c.media / escala} classe="bg-slate-400" />
+                  </div>
+                </div>
+                <div className="text-right text-sm">
+                  <span className="font-semibold tabular-nums text-slate-900">{c.formato(c.valor)}</span>
+                  <span className="text-slate-400"> / {c.formato(c.media)}</span>
+                  <div className={`text-xs font-medium ${melhor ? "text-emerald-700" : pior ? "text-rose-700" : "text-slate-500"}`}>
+                    {melhor ? "▲ melhor que a média" : pior ? "▼ pior que a média" : "● na média"}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </Secao>
+
+      <div className="grid gap-6 lg:grid-cols-2">
+        <Secao titulo="Atividade por mês">
+          <AtividadeMensal meses={v.atividadePorMes} />
+        </Secao>
+        <Secao titulo="Temas dos projetos" subtitulo="Identificados pelas palavras da ementa; um projeto pode ter mais de um tema.">
+          {v.temas.length ? (
+            <div className="flex flex-wrap gap-2 rounded-2xl border border-slate-200 bg-white p-4">
+              {v.temas.map((t) => (
+                <span key={t.tema} className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-sm text-blue-900 ring-1 ring-blue-200">
+                  {t.tema}
+                  <span className="rounded-full bg-white px-1.5 text-xs font-semibold tabular-nums text-blue-800">{t.n}</span>
+                </span>
+              ))}
+            </div>
+          ) : (
+            <p className="rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-500">Nenhum projeto com tema identificado no período.</p>
+          )}
+        </Secao>
+      </div>
 
       {pf && pf.bio.length > 0 && (
         <Secao titulo="Quem é">
@@ -267,6 +352,49 @@ export default async function PaginaVereador({ params }: Props) {
         </Secao>
       )}
 
+      {v.requerimentosNaPauta.length > 0 && (
+        <Secao
+          titulo={`Requerimentos de informação na pauta (${v.requerimentosNaPauta.length})`}
+          subtitulo={
+            parados.length
+              ? `${plural(parados.length, "pedido", "pedidos")} de informação ao Executivo ${parados.length === 1 ? "continua" : "continuam"} na Ordem do Dia, sessão após sessão, sem ir a votação.`
+              : "Pedidos de informação ao Executivo que passaram pela Ordem do Dia."
+          }
+        >
+          <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white text-sm">
+            {v.requerimentosNaPauta.map((r) => (
+              <li key={r.key} className="p-4">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <span className="font-medium text-slate-900">
+                    Requerimento nº {r.numero}/{r.ano}
+                  </span>
+                  <span
+                    className={`rounded px-1.5 py-0.5 text-xs ring-1 ring-inset ${r.aindaNaPauta ? "bg-amber-50 text-amber-800 ring-amber-200" : "bg-slate-50 text-slate-600 ring-slate-200"}`}
+                  >
+                    {r.status ? r.status.toLowerCase() : r.aindaNaPauta ? `na pauta em ${r.sessoes} sessões, sem votação` : `saiu da pauta após ${r.sessoes} sessões`}
+                  </span>
+                </div>
+                <div className="mt-1 text-slate-700">{r.ementa}</div>
+                <div className="mt-1 text-xs text-slate-500">
+                  Desde a <LinkSessao id={r.primeira} />
+                  {r.ultima !== r.primeira && (
+                    <>
+                      {" "}até a <LinkSessao id={r.ultima} />
+                    </>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </Secao>
+      )}
+
+      {custo && (
+        <Secao titulo="Quanto custa este mandato" subtitulo="Salário do vereador e dos cargos do gabinete, pelo Quadro de Pessoal oficial da Câmara.">
+          <CustoMandato custo={custo} />
+        </Secao>
+      )}
+
       {v.adiadas.length > 0 && (
         <Secao titulo={`Itens adiados porque o autor faltou (${v.adiadas.length})`}>
           <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white text-sm">
@@ -278,6 +406,32 @@ export default async function PaginaVereador({ params }: Props) {
             ))}
           </ul>
         </Secao>
+      )}
+      {(anterior || seguinte) && (
+        <nav className="mt-12 grid gap-3 sm:grid-cols-2" aria-label="Outros vereadores no ranking">
+          {anterior ? (
+            <Link href={`/vereadores/${anterior.id}`} className="group flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-3 transition hover:border-blue-300 hover:shadow-md">
+              <span className="text-slate-400 transition group-hover:-translate-x-1">←</span>
+              <Avatar nome={anterior.nome} foto={anterior.foto} tamanho={44} />
+              <span className="min-w-0">
+                <span className="block text-xs text-slate-500">{anterior.posicao}º no ranking</span>
+                <span className="block truncate font-medium text-slate-900">{anterior.nome}</span>
+              </span>
+            </Link>
+          ) : (
+            <span />
+          )}
+          {seguinte && (
+            <Link href={`/vereadores/${seguinte.id}`} className="group flex items-center justify-end gap-3 rounded-2xl border border-slate-200 bg-white p-3 text-right transition hover:border-blue-300 hover:shadow-md">
+              <span className="min-w-0">
+                <span className="block text-xs text-slate-500">{seguinte.posicao}º no ranking</span>
+                <span className="block truncate font-medium text-slate-900">{seguinte.nome}</span>
+              </span>
+              <Avatar nome={seguinte.nome} foto={seguinte.foto} tamanho={44} />
+              <span className="text-slate-400 transition group-hover:translate-x-1">→</span>
+            </Link>
+          )}
+        </nav>
       )}
     </>
   );

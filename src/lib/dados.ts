@@ -7,6 +7,39 @@ export type Proposicao = { key: string; tipo: string; numero: number; ano: numbe
 export type Lei = { key: string; lei: string; data: string; autor: string; resumo: string; sessao: string };
 export type Veto = { key: string; tipo: string; numero: string; projeto: string; autor: string; resumo: string; sessao: string };
 
+export type RequerimentoNaPauta = {
+  key: string;
+  numero: number;
+  ano: number;
+  autor: string;
+  ementa: string;
+  sessoes: number;
+  primeira: string;
+  ultima: string;
+  status: string | null;
+  aindaNaPauta: boolean;
+};
+
+export type Camara = {
+  custoMandato: {
+    fonte: string;
+    url: string;
+    ano: number;
+    subsidio: number;
+    gabinete: { cargo: string; quantidade: number; vencimento: number }[];
+    assessores: number;
+    gabineteMensal: number;
+    totalMensal: number;
+  } | null;
+  despesas: {
+    fonte: string;
+    url: string;
+    coletadoEm: string;
+    anos: Record<string, { pago: number; meses: number; maioresFornecedores: { nome: string; pago: number }[] }>;
+  } | null;
+  requerimentosParados: number;
+};
+
 export type PilarVereador = "A" | "B" | "C" | "D" | "E";
 
 export type Comissao = { nome: string; url: string; cargo: string; tipo: "permanente" | "temporaria" | "frente" };
@@ -53,6 +86,7 @@ export type Vereador = {
     honrarias: number;
     mocoes: number;
     requerimentos: number;
+    requerimentosNaPauta: number;
     comissoes: number;
     frentes: number;
     pontosComissoes: number;
@@ -60,9 +94,12 @@ export type Vereador = {
     vetosRecebidos: number;
     adiadasPorAusencia: number;
   };
+  temas: { tema: string; n: number }[];
+  atividadePorMes: { mes: string; proposicoes: number }[];
   presencaPorSessao: { sessao: string; presente: boolean | null; primeiraChamada: boolean | null; presidente: boolean }[];
-  proposicoes: (Proposicao & { classe?: "substantivo" | "simbolico" })[];
+  proposicoes: (Proposicao & { classe?: "substantivo" | "simbolico"; temas?: string[] })[];
   requerimentos: Proposicao[];
+  requerimentosNaPauta: RequerimentoNaPauta[];
   leis: Lei[];
   vetos: Veto[];
   adiadas: { sessao: string; item: string }[];
@@ -217,6 +254,7 @@ export type Dados = {
     projetos: Proposicao[];
     vetos: Veto[];
   };
+  camara: Camara;
 };
 
 export const dados = bruto as unknown as Dados;
@@ -228,7 +266,7 @@ export const PILARES_VEREADOR: { chave: PilarVereador; nome: string; descricao: 
   { chave: "A", nome: "Assiduidade", descricao: "Presença nas sessões (faltas justificadas não contam contra) e participação nas votações nominais. 95% ou mais vale 10; 75% ou menos vale 0." },
   { chave: "B", nome: "Legislação que importa", descricao: "Projetos de lei por sessão em exercício. Projeto de política pública vale 1, simbólico (nome de rua, data comemorativa, título) vale 0,2, e cada lei sancionada soma 1." },
   { chave: "C", nome: "Fiscalização e comissões", descricao: "Trabalho nas comissões da Câmara (presidência e relatoria valem mais) e cargos na Mesa Diretora. Requerimentos ao Executivo entram quando houver dados abertos." },
-  { chave: "D", nome: "Custo do mandato", descricao: "Gasto do gabinete com assessores e diárias. Ainda sem dados abertos por vereador; fica fora da nota." },
+  { chave: "D", nome: "Custo do mandato", descricao: "Salário do vereador e dos assessores do gabinete. A lei dá a mesma estrutura a todos os gabinetes, então esse custo não separa um vereador do outro e fica fora da nota. Diárias e ressarcimentos por vereador não aparecem nas despesas abertas." },
   { chave: "E", nome: "Compromisso com a pauta", descricao: "Itens do próprio vereador adiados porque ele faltou. Nenhum vale 10; 3 ou mais a cada 10 sessões vale 0." },
 ];
 

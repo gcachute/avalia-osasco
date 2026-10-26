@@ -4,6 +4,9 @@ export const num = (v: number | null | undefined, casas = 1) =>
 
 export const milhoes = (v: number) => `${v < 0 ? "−" : ""}R$ ${num(Math.abs(v) / 1e6, 0)} mi`;
 
+export const reais = (v: number, casas = 0) => `R$ ${num(v, casas)}`;
+export const milReais = (v: number) => `R$ ${num(v / 1e3, 1)} mil`;
+
 export const nota10 = (v: number | null | undefined) => (v == null ? null : Math.round(v * 100) / 10);
 
 export const plural = (n: number, um: string, varios: string) => `${n} ${n === 1 ? um : varios}`;

@@ -1,0 +1,16 @@
+{
+ "_leiame": "Valores copiados do Quadro de Pessoal da Câmara (Lei Municipal 5.038/2019 e alterações), arquivo 'Cargos e Salários 2026' do Portal do Cidadão (Transparência → Prestando Contas → Outras Informações → Quadro Geral de Pessoal). Cópia em data/fontes/quadro-de-pessoal-camara-2026.pdf. São vencimentos mensais, sem encargos, 13º, férias nem benefícios.",
+ "fonte": "Câmara Municipal de Osasco, Quadro de Pessoal 2026 (Lei 5.038/2019)",
+ "url": "https://cmo.rdmsistemas.com.br/portalcidadao/",
+ "arquivo": "data/fontes/quadro-de-pessoal-camara-2026.pdf",
+ "ano": 2026,
+ "vereadores": 21,
+ "subsidio": 24754.0,
+ "gabinete": [
+  { "cargo": "Chefe de Gabinete", "quantidade": 1, "vencimento": 15038.3, "noQuadro": 21 },
+  { "cargo": "Assessor de Coordenação", "quantidade": 1, "vencimento": 11782.99, "noQuadro": 21 },
+  { "cargo": "Assessor Parlamentar I", "quantidade": 3, "vencimento": 9232.2, "noQuadro": 63 },
+  { "cargo": "Assessor Parlamentar II", "quantidade": 1, "vencimento": 7595.4, "noQuadro": 21 },
+  { "cargo": "Assessor Parlamentar III", "quantidade": 2, "vencimento": 6248.7, "noQuadro": 42 }
+ ]
+}

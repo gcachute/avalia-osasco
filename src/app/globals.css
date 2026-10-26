@@ -1,5 +1,113 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Modo escuro: espelha as escalas de cor (50 <-> 950, 100 <-> 900...), então todo o site
+   troca de tema sem precisar de classes dark: em cada componente. */
+.dark {
+  color-scheme: dark;
+  --color-white:  oklch(20.8% 0.042 265.755);
+  --color-slate-50:  oklch(12.9% 0.042 264.695);
+  --color-slate-100:  oklch(20.8% 0.042 265.755);
+  --color-slate-200:  oklch(27.9% 0.041 260.031);
+  --color-slate-300:  oklch(37.2% 0.044 257.287);
+  --color-slate-400:  oklch(44.6% 0.043 257.281);
+  --color-slate-500:  oklch(55.4% 0.046 257.417);
+  --color-slate-600:  oklch(70.4% 0.04 256.788);
+  --color-slate-700:  oklch(86.9% 0.022 252.894);
+  --color-slate-800:  oklch(92.9% 0.013 255.508);
+  --color-slate-900:  oklch(96.8% 0.007 247.896);
+  --color-slate-950:  oklch(98.4% 0.003 247.858);
+  --color-blue-50:  oklch(28.2% 0.091 267.935);
+  --color-blue-100:  oklch(37.9% 0.146 265.522);
+  --color-blue-200:  oklch(42.4% 0.199 265.638);
+  --color-blue-300:  oklch(48.8% 0.243 264.376);
+  --color-blue-400:  oklch(54.6% 0.245 262.881);
+  --color-blue-500:  oklch(62.3% 0.214 259.815);
+  --color-blue-600:  oklch(70.7% 0.165 254.624);
+  --color-blue-700:  oklch(80.9% 0.105 251.813);
+  --color-blue-800:  oklch(88.2% 0.059 254.128);
+  --color-blue-900:  oklch(93.2% 0.032 255.585);
+  --color-blue-950:  oklch(97% 0.014 254.604);
+  --color-emerald-50:  oklch(26.2% 0.051 172.552);
+  --color-emerald-100:  oklch(37.8% 0.077 168.94);
+  --color-emerald-200:  oklch(43.2% 0.095 166.913);
+  --color-emerald-300:  oklch(50.8% 0.118 165.612);
+  --color-emerald-400:  oklch(59.6% 0.145 163.225);
+  --color-emerald-500:  oklch(69.6% 0.17 162.48);
+  --color-emerald-600:  oklch(76.5% 0.177 163.223);
+  --color-emerald-700:  oklch(84.5% 0.143 164.978);
+  --color-emerald-800:  oklch(90.5% 0.093 164.15);
+  --color-emerald-900:  oklch(95% 0.052 163.051);
+  --color-emerald-950:  oklch(97.9% 0.021 166.113);
+  --color-amber-50:  oklch(27.9% 0.077 45.635);
+  --color-amber-100:  oklch(41.4% 0.112 45.904);
+  --color-amber-200:  oklch(47.3% 0.137 46.201);
+  --color-amber-300:  oklch(55.5% 0.163 48.998);
+  --color-amber-400:  oklch(66.6% 0.179 58.318);
+  --color-amber-500:  oklch(76.9% 0.188 70.08);
+  --color-amber-600:  oklch(82.8% 0.189 84.429);
+  --color-amber-700:  oklch(87.9% 0.169 91.605);
+  --color-amber-800:  oklch(92.4% 0.12 95.746);
+  --color-amber-900:  oklch(96.2% 0.059 95.617);
+  --color-amber-950:  oklch(98.7% 0.022 95.277);
+  --color-rose-50:  oklch(27.1% 0.105 12.094);
+  --color-rose-100:  oklch(41% 0.159 10.272);
+  --color-rose-200:  oklch(45.5% 0.188 13.697);
+  --color-rose-300:  oklch(51.4% 0.222 16.935);
+  --color-rose-400:  oklch(58.6% 0.253 17.585);
+  --color-rose-500:  oklch(64.5% 0.246 16.439);
+  --color-rose-600:  oklch(71.2% 0.194 13.428);
+  --color-rose-700:  oklch(81% 0.117 11.638);
+  --color-rose-800:  oklch(89.2% 0.058 10.001);
+  --color-rose-900:  oklch(94.1% 0.03 12.58);
+  --color-rose-950:  oklch(96.9% 0.015 12.422);
+  --color-lime-50:  oklch(27.4% 0.072 132.109);
+  --color-lime-100:  oklch(40.5% 0.101 131.063);
+  --color-lime-200:  oklch(45.3% 0.124 130.933);
+  --color-lime-300:  oklch(53.2% 0.157 131.589);
+  --color-lime-400:  oklch(64.8% 0.2 131.684);
+  --color-lime-500:  oklch(76.8% 0.233 130.85);
+  --color-lime-600:  oklch(84.1% 0.238 128.85);
+  --color-lime-700:  oklch(89.7% 0.196 126.665);
+  --color-lime-800:  oklch(93.8% 0.127 124.321);
+  --color-lime-900:  oklch(96.7% 0.067 122.328);
+  --color-lime-950:  oklch(98.6% 0.031 120.757);
+}
+
+/* Entrada suave dos blocos ao rolar a página (ver components/Revelar.tsx). */
+.js .revelar {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+.js .revelar.visivel {
+  opacity: 1;
+  transform: none;
+}
+
+/* Barras que crescem até o valor quando aparecem na tela. Sem JavaScript, ficam no valor final. */
+.barra-anim {
+  transition: width 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.js .barra-anim:not(.visivel) {
+  width: 0 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .revelar,
+  .barra-anim {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+  .js .barra-anim:not(.visivel) {
+    width: auto;
+  }
 }

@@ -17,6 +17,25 @@ const SIMBOLICO =
   /denomina|da nome|dar nome|altera(cao)? (a|da) denominacao|institui (o|a) (dia|semana|mes|campanha|festa|marcha|jornada|outubro|novembro|setembro|junho|maio|abril)|dia municipal|semana municipal|mes municipal|calendario oficial|utilidade publica|titulo de cidadao|concessao de (titulo|medalha|diploma)|patrimonio (cultural|historico|imaterial)|reconhece como|capital (municipal|estadual) d/;
 export const classificarProjeto = (ementa) => (SIMBOLICO.test(norm(ementa)) ? "simbolico" : "substantivo");
 
+// Temas por palavras-chave da ementa (um projeto pode ter mais de um).
+const TEMAS = [
+  ["Saúde", /saude|hospital|medic|doenc|vacina|odontolog|ubs|tratamento|diagnost/],
+  ["Pessoas com deficiência e TEA", /autis|tea|deficien|neurodiverg|doenca(s)? rara|pcd/],
+  ["Educação", /escola|ensino|educa|aluno|creche|professor|alfabetiz/],
+  ["Mulheres", /mulher|feminin|gestante|violencia domestica|maria da penha|menstru|materni/],
+  ["Crianças e jovens", /crianca|adolescente|juventude|jovem|infantil|bebe/],
+  ["Segurança", /seguranca|guarda civil|gcm|polic|monitoramento|camera|violencia/],
+  ["Animais", /animal|animais|pet|caes|cao|gato|fauna/],
+  ["Meio ambiente", /ambient|arvore|verde|sustentab|reciclag|residuo|natureza|poluic|clima/],
+  ["Mobilidade", /transito|transporte|onibus|ciclo|motocicl|motoboy|estacionamento|calcada|viario/],
+  ["Idosos", /idoso|terceira idade|aposentad/],
+  ["Esporte, cultura e lazer", /esport|cultur|arte|musica|turismo|lazer|festival/],
+  ["Economia e emprego", /emprego|empresa|comercio|empreend|renda|trabalhador|economi|consumidor/],
+  ["Gestão pública e transparência", /servidor|funcionarios publicos|transparen|licitac|contrat|orcament|administracao publica/],
+  ["Assistência social e moradia", /vulnerab|assistencia social|fome|alimenta|moradia|habitac|morador de rua|situacao de rua/],
+];
+export const temasDoProjeto = (ementa) => TEMAS.filter(([, re]) => re.test(norm(ementa))).map(([t]) => t);
+
 export const PESO_SIMBOLICO = 0.2;
 export const ESCALA_PRESENCA = [0.75, 0.95]; // abaixo de 75% vale 0, a partir de 95% vale 10
 export const LIMITE_ADIAMENTOS = 3; // itens adiados por falta do autor a cada 10 sessões que zeram o pilar E
