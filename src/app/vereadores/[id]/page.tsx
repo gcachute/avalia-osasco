@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AtividadeMensal } from "@/components/Atividade";
+import { CustoMandato } from "@/components/Camara";
 import { Avatar, Barra, Cartao, NotaBadge, Retrato, Secao } from "@/components/ui";
 import type { PilarVereador, Vereador } from "@/lib/dados";
-import { PILARES_VEREADOR, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, pct, plural, sessao } from "@/lib/dados";
+import { PILARES_VEREADOR, TIPO_NOME, dados, dataBR, milReais, nomeSessao, nota, nota10, pct, plural, sessao } from "@/lib/dados";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => dados.vereadores.map((v) => ({ id: v.id }));
@@ -39,6 +40,8 @@ export default async function PaginaVereador({ params }: Props) {
   const honrarias = v.proposicoes.filter((p) => !dados.metodologia.tiposProjeto.includes(p.tipo));
   const comNota = dados.vereadores.filter((x) => x.posicao).length;
   const pf = v.perfil;
+  const custo = dados.camara.custoMandato;
+  const parados = v.requerimentosNaPauta.filter((r) => r.aindaNaPauta);
 
   // Comparação com a média dos vereadores com nota (menos itens adiados é melhor).
   const pares = dados.vereadores.filter((x) => x.nota != null);
@@ -63,7 +66,7 @@ export default async function PaginaVereador({ params }: Props) {
     C: !v.emExercicio
       ? "Sem dado: a composição das comissões publicada é a atual, e este vereador já saiu da Câmara"
       : `${pf?.mesa ? `${pf.mesa} da Mesa Diretora · ` : ""}${plural(i.comissoes, "comissão", "comissões")} · ${plural(i.frentes, "frente parlamentar", "frentes parlamentares")}`,
-    D: "Sem dados abertos de gasto por gabinete",
+    D: custo ? `${milReais(custo.totalMensal)} por mês em salários (vereador e ${custo.assessores} assessores), igual para todos os gabinetes` : "Sem dados de custo do gabinete",
     E: `${plural(i.adiadasPorAusencia, "item próprio adiado", "itens próprios adiados")} porque faltou, em ${i.sessoes} sessões`,
   };
 
@@ -144,7 +147,7 @@ export default async function PaginaVereador({ params }: Props) {
         <div className="relative text-right">
           <NotaBadge valor={v.nota} grande />
           <p className="mt-1 text-sm text-slate-500">
-            {v.posicao ? `${v.posicao}º de ${comNota} · nota provisória` : `Menos de ${dados.metodologia.vereador.minimoSessoes} sessões no período`}
+            {v.posicao ? `${v.posicao}º de ${comNota} vereadores` : `Menos de ${dados.metodologia.vereador.minimoSessoes} sessões no período`}
           </p>
         </div>
       </header>
@@ -155,10 +158,18 @@ export default async function PaginaVereador({ params }: Props) {
           return (
             <a key={pl.chave} href="#nota" className={`rounded-xl border bg-white p-4 ${pl.chave === "D" ? "border-dashed border-slate-300" : "border-slate-200 hover:border-blue-300"}`}>
               <div className="text-xs font-medium uppercase tracking-wide text-slate-400">
-                Pilar {pl.chave} · {Math.round((pesos[pl.chave] / totalPesos) * 100)}%
+                Pilar {pl.chave} · {pesos[pl.chave] ? `${Math.round((pesos[pl.chave] / totalPesos) * 100)}%` : "fora da nota"}
               </div>
               <div className="mt-1 text-sm font-medium text-slate-900">{pl.nome}</div>
-              <div className="mt-2">{n == null ? <span className="text-sm text-slate-400">sem dados</span> : <NotaBadge valor={n} />}</div>
+              <div className="mt-2">
+                {n != null ? (
+                  <NotaBadge valor={n} />
+                ) : pl.chave === "D" && custo ? (
+                  <span className="text-sm font-semibold tabular-nums text-slate-700">{milReais(custo.totalMensal)}/mês</span>
+                ) : (
+                  <span className="text-sm text-slate-400">sem dados</span>
+                )}
+              </div>
               {v.pilares[pl.chave].ranking && <div className="mt-1 text-xs text-slate-500">{v.pilares[pl.chave].ranking}º no pilar</div>}
             </a>
           );
@@ -184,7 +195,7 @@ export default async function PaginaVereador({ params }: Props) {
           ))}
         </div>
         <p className="mt-2 text-xs text-slate-500">
-          A nota é a média ponderada dos pilares com dados ({Math.round(v.cobertura * 100)}% do peso). É provisória enquanto o pilar D não tiver fonte aberta.
+          A nota é a média ponderada dos pilares A, B, C e E. O custo do mandato (D) aparece para consulta, mas não entra na nota porque é igual para todos.
         </p>
       </Secao>
 
@@ -338,6 +349,49 @@ export default async function PaginaVereador({ params }: Props) {
         <Secao titulo={`Honrarias e decretos legislativos (${honrarias.length})`}>
           <p className="-mt-2 mb-3 text-sm text-slate-500">Títulos de cidadão, cartões de prata, diplomas e similares. Aparecem aqui, mas não contam na nota.</p>
           <ListaProposicoes itens={honrarias} vazio="" />
+        </Secao>
+      )}
+
+      {v.requerimentosNaPauta.length > 0 && (
+        <Secao
+          titulo={`Requerimentos de informação na pauta (${v.requerimentosNaPauta.length})`}
+          subtitulo={
+            parados.length
+              ? `${plural(parados.length, "pedido", "pedidos")} de informação ao Executivo ${parados.length === 1 ? "continua" : "continuam"} na Ordem do Dia, sessão após sessão, sem ir a votação.`
+              : "Pedidos de informação ao Executivo que passaram pela Ordem do Dia."
+          }
+        >
+          <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white text-sm">
+            {v.requerimentosNaPauta.map((r) => (
+              <li key={r.key} className="p-4">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <span className="font-medium text-slate-900">
+                    Requerimento nº {r.numero}/{r.ano}
+                  </span>
+                  <span
+                    className={`rounded px-1.5 py-0.5 text-xs ring-1 ring-inset ${r.aindaNaPauta ? "bg-amber-50 text-amber-800 ring-amber-200" : "bg-slate-50 text-slate-600 ring-slate-200"}`}
+                  >
+                    {r.status ? r.status.toLowerCase() : r.aindaNaPauta ? `na pauta em ${r.sessoes} sessões, sem votação` : `saiu da pauta após ${r.sessoes} sessões`}
+                  </span>
+                </div>
+                <div className="mt-1 text-slate-700">{r.ementa}</div>
+                <div className="mt-1 text-xs text-slate-500">
+                  Desde a <LinkSessao id={r.primeira} />
+                  {r.ultima !== r.primeira && (
+                    <>
+                      {" "}até a <LinkSessao id={r.ultima} />
+                    </>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </Secao>
+      )}
+
+      {custo && (
+        <Secao titulo="Quanto custa este mandato" subtitulo="Salário do vereador e dos cargos do gabinete, pelo Quadro de Pessoal oficial da Câmara.">
+          <CustoMandato custo={custo} />
         </Secao>
       )}
 

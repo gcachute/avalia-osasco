@@ -1,0 +1,263 @@
+{
+ "fonte": "TCE-SP, Portal da Transparência Municipal (dados do sistema AUDESP)",
+ "url": "https://transparencia.tce.sp.gov.br/",
+ "coletadoEm": "2026-10-26",
+ "anos": {
+  "2025": {
+   "meses": [
+    {
+     "mes": 1,
+     "empenhado": 28024075.060000006,
+     "liquidado": 6241622.590000001,
+     "pago": 5508277.290000002,
+     "anulado": 6305426.12
+    },
+    {
+     "mes": 2,
+     "empenhado": 12517211.009999998,
+     "liquidado": 8690842.989999996,
+     "pago": 8221896.019999998,
+     "anulado": 7075217.95
+    },
+    {
+     "mes": 3,
+     "empenhado": 9803462.020000001,
+     "liquidado": 8459412.700000001,
+     "pago": 7969405.190000001,
+     "anulado": 1393205.0300000003
+    },
+    {
+     "mes": 4,
+     "empenhado": 47711624.3,
+     "liquidado": 9752840.839999992,
+     "pago": 10686301.450000001,
+     "anulado": 21444302.9
+    },
+    {
+     "mes": 5,
+     "empenhado": 9504706.22,
+     "liquidado": 11173102.4,
+     "pago": 9335183.08,
+     "anulado": 306323.12
+    },
+    {
+     "mes": 6,
+     "empenhado": 13105693.58,
+     "liquidado": 9744819.009999998,
+     "pago": 11133740.07,
+     "anulado": 5507391.34
+    },
+    {
+     "mes": 7,
+     "empenhado": 15596876.040000003,
+     "liquidado": 7926211.940000002,
+     "pago": 7848328.480000001,
+     "anulado": 8245197.4399999995
+    },
+    {
+     "mes": 8,
+     "empenhado": 7467248.649999999,
+     "liquidado": 8808901.189999996,
+     "pago": 8582450.88,
+     "anulado": 1068549.28
+    },
+    {
+     "mes": 9,
+     "empenhado": 8239766.549999998,
+     "liquidado": 8958837.65,
+     "pago": 9625439.319999998,
+     "anulado": 1019089.34
+    },
+    {
+     "mes": 10,
+     "empenhado": 9333216.419999998,
+     "liquidado": 10634088.609999994,
+     "pago": 10656909.669999996,
+     "anulado": 13451.7
+    },
+    {
+     "mes": 11,
+     "empenhado": 8199740.260000001,
+     "liquidado": 8885011.860000001,
+     "pago": 8911971.610000003,
+     "anulado": 1313986.9100000001
+    },
+    {
+     "mes": 12,
+     "empenhado": 20495578.87000001,
+     "liquidado": 17312106.06,
+     "pago": 17562864.52,
+     "anulado": 7237291.869999998
+    }
+   ],
+   "empenhado": 189999198.98,
+   "liquidado": 116587797.84,
+   "pago": 116042767.58,
+   "anulado": 60929433,
+   "maioresFornecedores": [
+    {
+     "nome": "CAMARA MUNICIPAL DE OSASCO",
+     "pago": 64867489.9
+    },
+    {
+     "nome": "TETO CONSTRUTORA S A",
+     "pago": 14817296.78
+    },
+    {
+     "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+     "pago": 5747524.83
+    },
+    {
+     "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO S A",
+     "pago": 5596253.94
+    },
+    {
+     "nome": "IPMO INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
+     "pago": 3742752.49
+    },
+    {
+     "nome": "RED PROG AGENCIA DE PUBLICIDADE LTDA",
+     "pago": 3272802.81
+    },
+    {
+     "nome": "BRASIL COMPANY NEGOCIOS EMPRESARIAIS LTDA",
+     "pago": 3187286.06
+    },
+    {
+     "nome": "FAPETEC FUNDACAO DE APOIO A PESQUISA ENSINO TECNOLOGIA E CULTURA",
+     "pago": 2414772.55
+    },
+    {
+     "nome": "JUMPER SEGURANCA E VIGILANCIA PATRIMONIAL LTDA",
+     "pago": 1522758.38
+    },
+    {
+     "nome": "VILLE SERVICOS E NEGOCIOS LTDA",
+     "pago": 1392317.46
+    },
+    {
+     "nome": "MOVIMENTO EMPRESA JORNALISTICA E EDITORA LTDA",
+     "pago": 1234610.7
+    },
+    {
+     "nome": "P S TECNOLOGIA LTDA",
+     "pago": 1043054
+    }
+   ]
+  },
+  "2026": {
+   "meses": [
+    {
+     "mes": 1,
+     "empenhado": 19322359.19,
+     "liquidado": 6308066.5,
+     "pago": 5483421.7,
+     "anulado": 2211143.4000000004
+    },
+    {
+     "mes": 2,
+     "empenhado": 7891052.09,
+     "liquidado": 7027117.8100000005,
+     "pago": 7016853.169999999,
+     "anulado": 20403.1
+    },
+    {
+     "mes": 3,
+     "empenhado": 10895548.360000001,
+     "liquidado": 8979453.45,
+     "pago": 8968470.1,
+     "anulado": 552012.51
+    },
+    {
+     "mes": 4,
+     "empenhado": 10317767.62,
+     "liquidado": 8030564.1899999995,
+     "pago": 8036870.480000001,
+     "anulado": 29242.839999999997
+    },
+    {
+     "mes": 5,
+     "empenhado": 13867563.709999999,
+     "liquidado": 13312655.419999998,
+     "pago": 13217567.22,
+     "anulado": 3368379.6999999997
+    },
+    {
+     "mes": 6,
+     "empenhado": 8723829.399999999,
+     "liquidado": 9752127.589999998,
+     "pago": 9751986.24,
+     "anulado": 4574.57
+    },
+    {
+     "mes": 7,
+     "empenhado": 14043598.22,
+     "liquidado": 10545737.100000005,
+     "pago": 10583794.670000002,
+     "anulado": 2710581.6900000004
+    },
+    {
+     "mes": 8,
+     "empenhado": 17168350.92,
+     "liquidado": 11157350.8,
+     "pago": 11136940.37,
+     "anulado": 5013136.25
+    }
+   ],
+   "empenhado": 102230069.51,
+   "liquidado": 75113072.86,
+   "pago": 74195903.95,
+   "anulado": 13909474.06,
+   "maioresFornecedores": [
+    {
+     "nome": "CAMARA MUNICIPAL DE OSASCO",
+     "pago": 46421423.52
+    },
+    {
+     "nome": "TETO CONSTRUTORA S A",
+     "pago": 4949016.26
+    },
+    {
+     "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO S A",
+     "pago": 4173457.38
+    },
+    {
+     "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+     "pago": 3978881.94
+    },
+    {
+     "nome": "IPMO INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
+     "pago": 2182406.88
+    },
+    {
+     "nome": "BRASIL COMPANY NEGOCIOS EMPRESARIAIS LTDA",
+     "pago": 1733077.44
+    },
+    {
+     "nome": "RED PROG AGENCIA DE PUBLICIDADE LTDA",
+     "pago": 1351297.93
+    },
+    {
+     "nome": "MOVIMENTO EMPRESA JORNALISTICA E EDITORA LTDA",
+     "pago": 1203469.5
+    },
+    {
+     "nome": "P S TECNOLOGIA LTDA",
+     "pago": 1089288
+    },
+    {
+     "nome": "JUMPER SEGURANCA E VIGILANCIA PATRIMONIAL LTDA",
+     "pago": 1013072.5
+    },
+    {
+     "nome": "VILLE SERVICOS E NEGOCIOS LTDA",
+     "pago": 1007828.79
+    },
+    {
+     "nome": "IGECS INSTITUTO DE GESTAO DE CIDADES",
+     "pago": 822500
+    }
+   ]
+  }
+ }
+}

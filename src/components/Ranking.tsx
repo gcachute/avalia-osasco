@@ -130,7 +130,7 @@ function Linha({ v, posicao }: { v: ItemRanking; posicao: number }) {
         </div>
         <div className="text-right lg:text-center">
           <NotaBadge valor={v.nota} />
-          <div className="mt-1 text-[11px] text-slate-400">{v.nota == null ? `${v.indicadores.sessoes} sessões` : "provisória"}</div>
+          <div className="mt-1 text-[11px] text-slate-400">{v.nota == null ? `${v.indicadores.sessoes} sessões` : "de 10"}</div>
         </div>
         <div className="col-span-3 grid grid-cols-5 gap-1.5 lg:contents">
           {COLUNAS.map((c) => (

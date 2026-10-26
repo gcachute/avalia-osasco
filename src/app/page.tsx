@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Numero } from "@/components/Animacoes";
+import { CustoMandato, DespesasCamara } from "@/components/Camara";
 import { GraficoPartidos, type MediaPartido } from "@/components/Partidos";
 import { Ranking } from "@/components/Ranking";
 import { Avatar, NotaBadge, Retrato, Secao } from "@/components/ui";
@@ -37,7 +38,7 @@ function Destaque({ rotulo, v, valor, alerta = false }: { rotulo: string; v: Ver
 }
 
 export default function Home() {
-  const { vereadores, prefeito, sessoes, periodo } = dados;
+  const { vereadores, prefeito, sessoes, periodo, camara } = dados;
   const ativos = vereadores.filter((v) => v.emExercicio);
   const comNota = vereadores.filter((v) => v.nota != null);
   const presencaMedia = ativos.reduce((a, v) => a + (v.indicadores.presencaAjustada ?? 0), 0) / (ativos.length || 1);
@@ -151,10 +152,26 @@ export default function Home() {
           }))}
         />
         <p className="mt-3 text-xs text-slate-500">
-          Notas provisórias: o pilar de custo do mandato ainda não tem dados abertos. Só recebe nota quem tem pelo menos{" "}
+          O custo do mandato é igual para todos os gabinetes e não entra na nota. Só recebe nota quem tem pelo menos{" "}
           {dados.metodologia.vereador.minimoSessoes} sessões no período.
         </p>
       </Secao>
+
+      {(camara.custoMandato || camara.despesas) && (
+        <Secao
+          titulo="Quanto custa a Câmara"
+          subtitulo={
+            camara.requerimentosParados
+              ? `E um dado que chama atenção: ${camara.requerimentosParados} requerimentos de informação ao Executivo estão na Ordem do Dia desde o início da legislatura, sessão após sessão, sem ir a votação. Eles aparecem no perfil de cada autor.`
+              : undefined
+          }
+        >
+          <div className="grid gap-3 lg:grid-cols-2">
+            {camara.custoMandato && <CustoMandato custo={camara.custoMandato} />}
+            {camara.despesas && <DespesasCamara despesas={camara.despesas} />}
+          </div>
+        </Secao>
+      )}
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Secao titulo="Nota média por partido">
