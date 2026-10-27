@@ -7,6 +7,7 @@ import { calcularIegm } from "./lib/iegm.mjs";
 import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, pontosComissoes, temasDoProjeto } from "./lib/vereadores.mjs";
 import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
+import { carregarBairros, reconhecedorDeBairros } from "./lib/bairros.mjs";
 
 const RAW = "data/raw";
 const BASE_URL = "https://www.osasco.sp.leg.br/assets/file/";
@@ -87,6 +88,7 @@ const JUSTIFICATIVA_RE = /justificativa de aus[eê]ncia d[oa] vereador[a]?\s+(.+
 const SANCAO_RE = /san[cç][aã]o de lei( complementar)? n\S*\s*([\d.]+),?\s*de ([^,]+?\d{4}),.*?de autoria d[oa] (?:vereador[a]?\s+|poder\s+)?([^.,;]+)/is;
 const VETO_RE = /veto (total|parcial) n\S*\s*(\d+\/\d{4}) ao projeto de lei( complementar)? n\S*\s*(\d+\/\d{4}).*?de autoria d[oa] (?:vereador[a]?\s+)?([^.,;]+)/is;
 
+const TIPO_NOME = { PL: "Projeto de lei", PLC: "Projeto de lei complementar", PR: "Projeto de resolução", PELO: "Emenda à Lei Orgânica" };
 const TIPOS = {
   "projeto de lei": "PL",
   "projeto de lei complementar": "PLC",
@@ -105,6 +107,18 @@ const primaryAuthor = (autor) =>
       .split(/,|\s+e\s+/i)[0],
   );
 
+// Algumas linhas da planilha não têm o travessão entre o autor e a ementa ("RALFI SILVA Institui ...").
+// Se o autor não é reconhecido, procura o nome conhecido mais longo no começo e devolve o resto para a ementa.
+function separaAutor(autor, ementa) {
+  if (isExecutivo(autor) || aliases.has(nameKey(primaryAuthor(autor)))) return [autor, ementa];
+  const palavras = clean(autor).split(" ");
+  for (let n = palavras.length - 1; n >= 1; n--) {
+    const nome = palavras.slice(0, n).join(" ");
+    if (aliases.has(nameKey(nome))) return [nome, `${palavras.slice(n).join(" ")} – ${ementa}`];
+  }
+  return [autor, ementa];
+}
+
 // ---------- processamento ----------
 const files = readdirSync(RAW).filter((f) => f.endsWith(".xlsx"));
 const sessoes = new Map();
@@ -116,6 +130,7 @@ const pautaRequerimentos = new Map(); // requerimentos de qualquer ano pautados 
 const sancoes = new Map();
 const vetos = new Map();
 const decretos = new Set();
+const atosExecutivo = new Map(); // texto integral de decretos, ofícios e vetos do prefeito lidos no expediente
 const naoAtribuidos = new Set();
 
 const pessoa = (nome) => {
@@ -187,10 +202,11 @@ for (const { sheets, s } of lidas) {
       if (pm) {
         const tipo = TIPOS[norm(pm[1])] ?? pm[1];
         const key = `${tipo}-${pm[2]}/${pm[3]}`;
-        autor = pm[4];
+        let ementa;
+        [autor, ementa] = separaAutor(pm[4], pm[5]);
         // Conta na primeira vez que aparece (leitura no expediente ou pauta da Ordem do Dia), só desta legislatura.
         if (Number(pm[3]) >= Number(metodologia.inicioLegislatura.slice(0, 4)) && !proposicoes.has(key))
-          proposicoes.set(key, { key, tipo, numero: Number(pm[2]), ano: Number(pm[3]), autor: attribute(autor), autorTexto: clean(autor), ementa: clean(pm[5]), sessao: s.id });
+          proposicoes.set(key, { key, tipo, numero: Number(pm[2]), ano: Number(pm[3]), autor: attribute(autor), autorTexto: clean(autor), ementa: clean(ementa), sessao: s.id });
       } else if (text.match(REQ_RE)) {
         const rm = text.match(REQ_RE);
         const key = `REQ-${rm[1]}/${rm[2]}`;
@@ -230,6 +246,8 @@ for (const { sheets, s } of lidas) {
         if (!vetos.has(key)) vetos.set(key, { key, tipo: vm[1].toLowerCase(), numero: vm[2], projeto: `${vm[3] ? "PLC" : "PL"} ${vm[4]}`, autor: attribute(vm[5]), resumo: text.replace(/^.*?que\s+/i, "").slice(0, 220), sessao: s.id });
       }
       if (/^decretos? n/i.test(text) && /prefeit/i.test(text)) for (const n of text.matchAll(/\b1\d\.\d{3}\b/g)) decretos.add(n[0]);
+      if (/^(decreto|of[ií]cio|mensagem|veto)/i.test(text) && /prefeit|executivo/i.test(text.slice(0, 160)) && !atosExecutivo.has(text.slice(0, 120)))
+        atosExecutivo.set(text.slice(0, 120), { texto: text, sessao: s.id });
     });
 
     // Votos nominais: linhas com o nome de quem está no plenário.
@@ -415,6 +433,46 @@ const camara = {
   requerimentosParados: [...pautaRequerimentos.values()].filter((x) => x.ultima === sessoesOrdenadas.at(-1)?.id).length,
 };
 
+// ---------- mapa por bairro ----------
+// Itens oficiais (projetos, moções, pedidos de informação, leis e vetos) que citam um bairro pelo nome.
+const malha = carregarBairros();
+let mapa = null;
+if (malha) {
+  const acha = reconhecedorDeBairros(malha.bairros);
+  const nomes = new Map(vereadores.map((v) => [v.id, v.nome]));
+  nomes.set("prefeito", `${pf.nome} (prefeito)`).set("mesa-diretora", "Mesa Diretora").set("comissao", "Comissão da Câmara");
+  const itens = [];
+  const adiciona = (chave, tipo, autor, texto, sessaoId, prefeitura = autor === "prefeito") => {
+    const bairros = acha(texto);
+    if (!bairros.length) return;
+    itens.push({ id: chave, tipo, origem: prefeitura ? "prefeitura" : "camara", autor, autorNome: nomes.get(autor) ?? null, data: sessaoId.slice(0, 10), sessao: sessaoId, texto: clean(texto).slice(0, 260), bairros });
+  };
+  for (const x of proposicoes.values()) adiciona(x.key, x.tipo === "PDL" ? "Honraria" : (TIPO_NOME[x.tipo] ?? x.tipo), x.autor, x.ementa, x.sessao);
+  for (const x of mocoes.values()) adiciona(x.key, x.tipo, x.autor, x.ementa, x.sessao);
+  for (const x of [...requerimentos.values(), ...pautaRequerimentos.values()])
+    if (!itens.some((i) => i.id === x.key)) adiciona(x.key, "Pedido de informação", x.autor, x.ementa, x.sessao ?? x.primeira);
+  [...atosExecutivo.values()].forEach((x, i) => {
+    const t = x.texto;
+    const tipo = /veto/i.test(t.slice(0, 80))
+      ? "Veto do prefeito"
+      : /^decreto/i.test(t)
+        ? "Decreto"
+        : /san[cç][aã]o/i.test(t)
+          ? "Lei sancionada"
+          : /resposta ao requerimento/i.test(t)
+            ? "Resposta a pedido de informação"
+            : "Ofício do prefeito";
+    // O texto do ofício traz cabeçalho e número de protocolo: mostramos a partir do assunto.
+    adiciona(`EXE-${i}`, tipo, "prefeito", t.replace(/^.*?prefeit[oa][^–—-]*[–—-]\s*/i, ""), x.sessao, true);
+  });
+  itens.sort((a, b) => a.data.localeCompare(b.data));
+  mapa = {
+    fonte: malha.fonte,
+    bairros: malha.bairros.map((b) => ({ ...b, citacoes: itens.filter((i) => i.bairros.includes(b.id)).length })),
+    itens,
+  };
+}
+
 mkdirSync("src/data", { recursive: true });
 writeFileSync(
   "src/data/dados.json",
@@ -428,6 +486,7 @@ writeFileSync(
       vereadores,
       prefeito,
       camara,
+      mapa,
     },
     null,
     1,
