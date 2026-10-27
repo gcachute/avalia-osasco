@@ -80,6 +80,7 @@ export default async function PaginaVereador({ params }: Props) {
             formato: "inteiro" as const,
             escala: "zero" as const,
             total: votosMapa.total,
+            link: `/mapa/?indicador=votosVereador&autor=${v.id}`,
           },
         ]
       : []),
@@ -90,6 +91,7 @@ export default async function PaginaVereador({ params }: Props) {
       valores: docsPorBairro,
       formato: "inteiro",
       escala: "zero",
+      link: `/mapa/?indicador=citacoes&autor=${v.id}`,
     },
   ];
   const parados = v.requerimentosNaPauta.filter((r) => r.aindaNaPauta);
@@ -269,7 +271,6 @@ export default async function PaginaVereador({ params }: Props) {
             modos={modosMapa}
             itens={itensMapa}
             corItens="var(--mapa-camara)"
-            linkMapa={votosMapa ? `/mapa/?indicador=votosVereador&autor=${v.id}` : `/mapa/?autor=${v.id}`}
           />
         </Secao>
       )}

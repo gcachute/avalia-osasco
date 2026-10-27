@@ -133,6 +133,7 @@ export default function PaginaPrefeito() {
       valores: pctPorBairro,
       formato: "pct",
       escala: "faixa",
+      link: "/mapa/?indicador=prefeito",
     },
     {
       chave: "docs",
@@ -141,6 +142,7 @@ export default function PaginaPrefeito() {
       valores: docsPorBairro,
       formato: "inteiro",
       escala: "zero",
+      link: "/mapa/?indicador=citacoes&origem=prefeitura",
     },
   ];
   const mapaPrefeito = mapa && (
@@ -152,7 +154,6 @@ export default function PaginaPrefeito() {
         modos={modosMapa}
         itens={itensMapa}
         corItens="var(--mapa-prefeitura)"
-        linkMapa="/mapa/?indicador=prefeito&origem=prefeitura"
       />
     </Secao>
   );
