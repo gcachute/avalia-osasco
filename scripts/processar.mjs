@@ -7,7 +7,7 @@ import { calcularIegm } from "./lib/iegm.mjs";
 import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, pontosComissoes, temasDoProjeto } from "./lib/vereadores.mjs";
 import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
-import { carregarBairros, reconhecedorDeBairros } from "./lib/bairros.mjs";
+import { carregarBairros, reconhecedorDeBairros, reconhecedorDeEquipamentos } from "./lib/bairros.mjs";
 import { montarTerritorio } from "./lib/territorio.mjs";
 
 const RAW = "data/raw";
@@ -27,6 +27,8 @@ const nameKey = (s) =>
   slug(clean(s).replace(/\s*-\s*president[ea].*$/i, "").replace(/\s*\(suplente\)\s*$/i, "").replace(/^(pra\.|vereador[a]?)\s+/i, ""));
 
 const fotos = existsSync("data/fotos.json") ? JSON.parse(readFileSync("data/fotos.json", "utf8")) : {};
+// Logos dos partidos salvos no repositório (npm run coletar:partidos).
+const logos = existsSync("data/partidos.json") ? JSON.parse(readFileSync("data/partidos.json", "utf8")) : {};
 const aliases = new Map();
 for (const v of config.vereadores) for (const a of [v.nome, ...(v.apelidos ?? [])]) aliases.set(nameKey(a), v.id);
 // O nome completo do perfil oficial também vale como apelido (alguns ofícios usam o nome de registro).
@@ -161,6 +163,33 @@ function attribute(autor) {
   return id;
 }
 
+// Todos os autores citados pelo nome ("Délbio Teruel e Capriotti", "A, B e C"). O primeiro continua em
+// `autor`; a lista completa vai em `autores`, e o item conta para cada um. "E outros vereadores" não diz
+// quem são, então só os nomeados contam.
+function todosAutores(autor) {
+  const principal = attribute(autor);
+  if (["prefeito", "mesa-diretora", "comissao"].includes(principal)) return [principal];
+  const nomes = clean(autor)
+    .replace(/^(d[oa]s?|vereador(a|es|as)?)\s+/i, "")
+    .replace(/\s+e\s+(outr|demais)[oa]s?\b.*$/i, "")
+    .split(/,|\s+e\s+/i)
+    .map((n) => clean(n.replace(/^(vereador[a]?|ver\.)\s+/i, "")))
+    .filter(Boolean);
+  const ids = nomes.map(idParcial).filter(Boolean);
+  return [...new Set([principal, ...ids])];
+}
+
+// Coautor citado só por parte do nome ("Capriotti"): vale se a parte identifica um único vereador.
+function idParcial(nome) {
+  const id = idFor(nome);
+  if (config.vereadores.some((v) => v.id === id) || pessoas.has(id)) return id;
+  const chave = nameKey(nome);
+  if (chave.length < 4) return null;
+  const candidatos = new Set([...aliases.entries()].filter(([a]) => `-${a}-`.includes(`-${chave}-`)).map(([, v]) => v));
+  return candidatos.size === 1 ? [...candidatos][0] : null;
+}
+const ehAutor = (x, id) => (x.autores ?? [x.autor]).includes(id);
+
 // Em ordem cronológica, para que "primeira vez vista" e a linha do tempo de presença façam sentido.
 const lidas = files
   .map((file) => {
@@ -208,30 +237,30 @@ for (const { sheets, s } of lidas) {
         [autor, ementa] = separaAutor(pm[4], pm[5]);
         // Conta na primeira vez que aparece (leitura no expediente ou pauta da Ordem do Dia), só desta legislatura.
         if (Number(pm[3]) >= Number(metodologia.inicioLegislatura.slice(0, 4)) && !proposicoes.has(key))
-          proposicoes.set(key, { key, tipo, numero: Number(pm[2]), ano: Number(pm[3]), autor: attribute(autor), autorTexto: clean(autor), ementa: clean(ementa), sessao: s.id });
+          proposicoes.set(key, { key, tipo, numero: Number(pm[2]), ano: Number(pm[3]), autor: attribute(autor), autores: todosAutores(autor), autorTexto: clean(autor), ementa: clean(ementa), sessao: s.id });
       } else if (text.match(REQ_RE)) {
         const rm = text.match(REQ_RE);
         const key = `REQ-${rm[1]}/${rm[2]}`;
         autor = rm[3];
         // Requerimentos que voltam à pauta sessão após sessão sem deliberação (o plenário não vota).
         if (/requerimento/i.test(sheet.name)) {
-          const r = pautaRequerimentos.get(key) ?? { key, numero: Number(rm[1]), ano: Number(rm[2]), autor: idFor(primaryAuthor(autor)), ementa: clean(rm[4]), sessoes: 0, primeira: s.id };
+          const r = pautaRequerimentos.get(key) ?? { key, numero: Number(rm[1]), ano: Number(rm[2]), autor: idFor(primaryAuthor(autor)), autores: todosAutores(autor), ementa: clean(rm[4]), sessoes: 0, primeira: s.id };
           r.sessoes++;
           r.ultima = s.id;
           r.status = clean(status[col]) || null;
           pautaRequerimentos.set(key, r);
         }
         if (Number(rm[2]) >= Number(metodologia.inicioLegislatura.slice(0, 4)) && !requerimentos.has(key))
-          requerimentos.set(key, { key, tipo: "REQ", numero: Number(rm[1]), ano: Number(rm[2]), autor: attribute(autor), ementa: clean(rm[4]), informacao: /informa[cç]/i.test(rm[4]), sessao: s.id });
+          requerimentos.set(key, { key, tipo: "REQ", numero: Number(rm[1]), ano: Number(rm[2]), autor: attribute(autor), autores: todosAutores(autor), ementa: clean(rm[4]), informacao: /informa[cç]/i.test(rm[4]), sessao: s.id });
       } else if (mm) {
         const key = `MOC-${mm[2]}/${mm[3]}`;
         autor = mm[4];
-        if (!mocoes.has(key)) mocoes.set(key, { key, tipo: `Moção de ${clean(mm[1]).toLowerCase()}`, numero: Number(mm[2]), ano: Number(mm[3]), autor: attribute(autor), ementa: clean(mm[5]), sessao: s.id });
+        if (!mocoes.has(key)) mocoes.set(key, { key, tipo: `Moção de ${clean(mm[1]).toLowerCase()}`, numero: Number(mm[2]), ano: Number(mm[3]), autor: attribute(autor), autores: todosAutores(autor), ementa: clean(mm[5]), sessao: s.id });
       }
       const st = norm(status[col]);
       if (autor && /ausencia d[oa] autor/.test(st) && !isExecutivo(autor)) {
         const p = pessoas.get(attribute(autor));
-        p?.adiadasPorAusencia.push({ sessao: s.id, item: text.slice(0, 160) });
+        p?.adiadasPorAusencia.push({ sessao: s.id, item: text });
       }
 
       const jm = text.match(JUSTIFICATIVA_RE);
@@ -240,12 +269,12 @@ for (const { sheets, s } of lidas) {
       const sm = text.match(SANCAO_RE);
       if (sm) {
         const key = `${sm[1] ? "LC" : "L"}-${sm[2]}`;
-        if (!sancoes.has(key)) sancoes.set(key, { key, lei: `Lei${sm[1] ? " Complementar" : ""} nº ${sm[2]}`, data: clean(sm[3]), autor: attribute(sm[4]), resumo: text.replace(/^.*?que\s+/i, "").slice(0, 220), sessao: s.id });
+        if (!sancoes.has(key)) sancoes.set(key, { key, lei: `Lei${sm[1] ? " Complementar" : ""} nº ${sm[2]}`, data: clean(sm[3]), autor: attribute(sm[4]), autores: todosAutores(sm[4]), resumo: text.replace(/^.*?que\s+/i, ""), sessao: s.id });
       }
       const vm = text.match(VETO_RE);
       if (vm) {
         const key = `${vm[1]}-${vm[2]}`;
-        if (!vetos.has(key)) vetos.set(key, { key, tipo: vm[1].toLowerCase(), numero: vm[2], projeto: `${vm[3] ? "PLC" : "PL"} ${vm[4]}`, autor: attribute(vm[5]), resumo: text.replace(/^.*?que\s+/i, "").slice(0, 220), sessao: s.id });
+        if (!vetos.has(key)) vetos.set(key, { key, tipo: vm[1].toLowerCase(), numero: vm[2], projeto: `${vm[3] ? "PLC" : "PL"} ${vm[4]}`, autor: attribute(vm[5]), autores: todosAutores(vm[5]), resumo: text.replace(/^.*?que\s+/i, ""), sessao: s.id });
       }
       if (/^decretos? n/i.test(text) && /prefeit/i.test(text)) for (const n of text.matchAll(/\b1\d\.\d{3}\b/g)) decretos.add(n[0]);
       if (/^(decreto|of[ií]cio|mensagem|veto)/i.test(text) && /prefeit|executivo/i.test(text.slice(0, 160)) && !atosExecutivo.has(text.slice(0, 120)))
@@ -278,12 +307,12 @@ const vereadores = [...pessoas.values()].map((p) => {
   const presencas = registradas.filter((x) => x.presente).length;
   const faltas = registradas.length - presencas;
   const justificadas = Math.min(faltas, p.justificativas.length);
-  const props = [...proposicoes.values()].filter((x) => x.autor === p.id);
+  const props = [...proposicoes.values()].filter((x) => ehAutor(x, p.id));
   const projetos = props.filter((x) => metodologia.tiposProjeto.includes(x.tipo)).map((x) => ({ ...x, classe: classificarProjeto(x.ementa), temas: temasDoProjeto(x.ementa) }));
-  const honrarias = props.filter((x) => !metodologia.tiposProjeto.includes(x.tipo));
-  const reqs = [...requerimentos.values()].filter((x) => x.autor === p.id);
-  const naPauta = [...pautaRequerimentos.values()].filter((x) => x.autor === p.id);
-  const leis = [...sancoes.values()].filter((x) => x.autor === p.id);
+  const honrarias = props.filter((x) => !metodologia.tiposProjeto.includes(x.tipo)).map((x) => ({ ...x, temas: temasDoProjeto(x.ementa) }));
+  const reqs = [...requerimentos.values()].filter((x) => ehAutor(x, p.id));
+  const naPauta = [...pautaRequerimentos.values()].filter((x) => ehAutor(x, p.id));
+  const leis = [...sancoes.values()].filter((x) => ehAutor(x, p.id));
   const substantivos = projetos.filter((x) => x.classe === "substantivo").length;
   const votosDados = p.votos.sim + p.votos.nao + p.votos.abstencao;
   const ultima = p.sessoes.at(-1)?.sessao;
@@ -292,6 +321,7 @@ const vereadores = [...pessoas.values()].map((p) => {
     nome: cfg.nomeExibicao ?? perfil?.nome ?? cfg.nome ?? p.nomePlanilha,
     partido: cfg.partido ?? perfil?.partido ?? null,
     partidoNome: cfg.partidoNome ?? perfil?.partidoNome ?? null,
+    partidoLogo: logos[cfg.partido ?? perfil?.partido]?.arquivo ?? null,
     // Foto salva no repositório (npm run coletar:fotos); sem ela, o endereço original.
     foto: fotos[p.id]?.arquivo ?? cfg.foto ?? perfil?.foto ?? null,
     fotoFonte: fotos[p.id]?.fonte ?? (cfg.foto || perfil?.foto ? "Câmara Municipal de Osasco" : null),
@@ -325,14 +355,14 @@ const vereadores = [...pessoas.values()].map((p) => {
       projetosSimbolicos: projetos.length - substantivos,
       pontosLegislacao: substantivos + PESO_SIMBOLICO * (projetos.length - substantivos) + leis.length,
       honrarias: honrarias.length,
-      mocoes: [...mocoes.values()].filter((x) => x.autor === p.id).length,
+      mocoes: [...mocoes.values()].filter((x) => ehAutor(x, p.id)).length,
       requerimentos: reqs.length,
       requerimentosNaPauta: naPauta.length,
       comissoes: perfil?.comissoes.filter((c) => c.tipo !== "frente").length ?? 0,
       frentes: perfil?.comissoes.filter((c) => c.tipo === "frente").length ?? 0,
       pontosComissoes: pontosComissoes(perfil?.comissoes, perfil?.mesa),
       leisSancionadas: leis.length,
-      vetosRecebidos: [...vetos.values()].filter((x) => x.autor === p.id).length,
+      vetosRecebidos: [...vetos.values()].filter((x) => ehAutor(x, p.id)).length,
       adiadasPorAusencia: p.adiadasPorAusencia.length,
     },
     temas: Object.entries(
@@ -342,7 +372,7 @@ const vereadores = [...pessoas.values()].map((p) => {
       .sort((a, b) => b.n - a.n),
     // Proposições (projetos, honrarias, moções) e presença por mês, pela data da sessão.
     atividadePorMes: Object.values(
-      [...props, ...[...mocoes.values()].filter((x) => x.autor === p.id)].reduce((acc, x) => {
+      [...props, ...[...mocoes.values()].filter((x) => ehAutor(x, p.id))].reduce((acc, x) => {
         const mes = x.sessao.slice(0, 7);
         acc[mes] ??= { mes, proposicoes: 0 };
         acc[mes].proposicoes++;
@@ -355,9 +385,15 @@ const vereadores = [...pessoas.values()].map((p) => {
     requerimentosNaPauta: naPauta
       .map((x) => ({ ...x, aindaNaPauta: x.ultima === sessoesOrdenadas.at(-1)?.id }))
       .sort((a, b) => a.ano - b.ano || a.numero - b.numero),
-    leis,
-    vetos: [...vetos.values()].filter((x) => x.autor === p.id),
-    adiadas: p.adiadasPorAusencia,
+    leis: leis.map((x) => ({ ...x, temas: temasDoProjeto(x.resumo) })),
+    vetos: [...vetos.values()].filter((x) => ehAutor(x, p.id)).map((x) => ({ ...x, temas: temasDoProjeto(x.resumo) })),
+    // Item adiado: "TIPO Nº X/AAAA – AUTOR – ementa". O tema sai só da ementa, para o nome do autor
+    // ("Gabriel Saúde") não virar tema; o título vem do começo.
+    adiadas: p.adiadasPorAusencia.map((a) => {
+      const partes = a.item.split(/\s+[–—-]\s+/);
+      const ementa = partes.length >= 3 ? partes.slice(2).join(" – ") : a.item;
+      return { ...a, titulo: partes.length >= 3 ? clean(partes[0].replace(/^\d+\s*[.)-]\s*/, "")) : null, ementa, temas: temasDoProjeto(ementa) };
+    }),
   };
 });
 
@@ -365,7 +401,7 @@ const notasVereadores = calcularNotas(vereadores, metodologia);
 vereadores.sort((a, b) => (b.nota ?? -1) - (a.nota ?? -1) || a.nome.localeCompare(b.nome));
 vereadores.forEach((v, i) => (v.posicao = v.nota === null ? null : i + 1));
 
-const pf = { ...config.prefeito, ...(fotos.prefeito && { foto: fotos.prefeito.arquivo, creditoFoto: fotos.prefeito.fonte, creditoFotoUrl: "https://divulgacandcontas.tse.jus.br/" }) };
+const pf = { ...config.prefeito, partidoLogo: logos[config.prefeito.partido]?.arquivo ?? null, ...(fotos.prefeito && { foto: fotos.prefeito.arquivo, creditoFoto: fotos.prefeito.fonte, creditoFotoUrl: "https://divulgacandcontas.tse.jus.br/" }) };
 const projetosExecutivo = [...proposicoes.values()].filter((x) => x.autor === "prefeito");
 const fiscal = calcularFiscal();
 // A nota final do prefeito só sai quando os pilares com dado somarem a cobertura mínima do peso total.
@@ -404,8 +440,8 @@ const prefeito = {
     leisDoExecutivo: [...sancoes.values()].filter((x) => x.autor === "prefeito").length,
     decretosLidos: decretos.size,
   },
-  projetos: projetosExecutivo.sort((a, b) => b.ano - a.ano || b.numero - a.numero),
-  vetos: [...vetos.values()],
+  projetos: projetosExecutivo.map((x) => ({ ...x, temas: temasDoProjeto(x.ementa) })).sort((a, b) => b.ano - a.ano || b.numero - a.numero),
+  vetos: [...vetos.values()].map((x) => ({ ...x, temas: temasDoProjeto(x.resumo) })),
 };
 
 // ---------- custo da Câmara ----------
@@ -443,18 +479,34 @@ const malha = carregarBairros();
 let mapa = null;
 if (malha) {
   const acha = reconhecedorDeBairros(malha.bairros);
+  const achaEquipamento = reconhecedorDeEquipamentos();
   const nomes = new Map(vereadores.map((v) => [v.id, v.nome]));
   nomes.set("prefeito", `${pf.nome} (prefeito)`).set("mesa-diretora", "Mesa Diretora").set("comissao", "Comissão da Câmara");
   const itens = [];
-  const adiciona = (chave, tipo, autor, texto, sessaoId, prefeitura = autor === "prefeito") => {
-    const bairros = acha(texto);
+  const adiciona = (chave, tipo, autor, texto, sessaoId, prefeitura = autor === "prefeito", autores = null) => {
+    const porNome = acha(texto);
+    // Sem o nome do bairro, vale a escola ou unidade de saúde citada (e o item guarda qual foi).
+    const equipamentos = achaEquipamento(texto).filter((e) => !porNome.includes(e.bairro));
+    const bairros = [...porNome, ...equipamentos.map((e) => e.bairro)];
     if (!bairros.length) return;
-    itens.push({ id: chave, tipo, origem: prefeitura ? "prefeitura" : "camara", autor, autorNome: nomes.get(autor) ?? null, data: sessaoId.slice(0, 10), sessao: sessaoId, texto: clean(texto).slice(0, 260), bairros });
+    itens.push({
+      id: chave,
+      tipo,
+      origem: prefeitura ? "prefeitura" : "camara",
+      autor,
+      ...(autores?.length > 1 && { autores, autoresNomes: autores.map((x) => nomes.get(x) ?? x) }),
+      autorNome: nomes.get(autor) ?? null,
+      data: sessaoId.slice(0, 10),
+      sessao: sessaoId,
+      texto: clean(texto),
+      bairros,
+      ...(equipamentos.length && { via: equipamentos.map((e) => e.nome) }),
+    });
   };
-  for (const x of proposicoes.values()) adiciona(x.key, x.tipo === "PDL" ? "Honraria" : (TIPO_NOME[x.tipo] ?? x.tipo), x.autor, x.ementa, x.sessao);
-  for (const x of mocoes.values()) adiciona(x.key, x.tipo, x.autor, x.ementa, x.sessao);
+  for (const x of proposicoes.values()) adiciona(x.key, x.tipo === "PDL" ? "Honraria" : (TIPO_NOME[x.tipo] ?? x.tipo), x.autor, x.ementa, x.sessao, undefined, x.autores);
+  for (const x of mocoes.values()) adiciona(x.key, x.tipo, x.autor, x.ementa, x.sessao, undefined, x.autores);
   for (const x of [...requerimentos.values(), ...pautaRequerimentos.values()])
-    if (!itens.some((i) => i.id === x.key)) adiciona(x.key, "Pedido de informação", x.autor, x.ementa, x.sessao ?? x.primeira);
+    if (!itens.some((i) => i.id === x.key)) adiciona(x.key, "Pedido de informação", x.autor, x.ementa, x.sessao ?? x.primeira, undefined, x.autores);
   [...atosExecutivo.values()].forEach((x, i) => {
     const t = x.texto;
     const tipo = /veto/i.test(t.slice(0, 80))
@@ -527,6 +579,8 @@ if (fiscal) {
 if (iegm) console.log(`Prefeito: pilar C ${iegm.pilar.nota?.toFixed(2) ?? "— (IEG-M do mandato ainda não publicado)"}; último IEG-M: ano-base ${iegm.ultimoAnoBase}`);
 else console.log("Sem IEG-M: rode npm run coletar:iegm.");
 console.log(`Prefeito: pilar D ${resultados?.pilar.nota?.toFixed(2) ?? "—"}, pilar E ${transparencia?.pilar.nota?.toFixed(2) ?? "—"} → nota ${prefeito.nota ?? "—"} (cobertura ${Math.round(cobertura * 100)}%)`);
+const coautorias = [...proposicoes.values(), ...mocoes.values(), ...requerimentos.values(), ...sancoes.values()].filter((x) => x.autores?.length > 1);
+console.log(`${coautorias.length} itens com mais de um autor nomeado: ${coautorias.map((x) => `${x.key} (${x.autores.join(" + ")})`).join("; ")}`);
 console.log(`${sessoes.size} sessões, ${vereadores.length} vereadores, ${proposicoes.size} proposições, ${mocoes.size} moções, ${sancoes.size} sanções, ${vetos.size} vetos`);
 if (naoAtribuidos.size) console.log("Autores não reconhecidos (adicione em data/politicos.json → apelidos):", [...naoAtribuidos]);
 const semConfig = vereadores.filter((v) => !config.vereadores.some((c) => c.id === v.id)).map((v) => v.id);

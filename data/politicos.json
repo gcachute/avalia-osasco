@@ -241,7 +241,8 @@
     {
       "id": "andre-luis-alves-pereira",
       "nome": "André Luís Alves Pereira",
-      "partido": null,
+      "partido": "REPUBLICANOS",
+      "partidoNome": "Republicanos",
       "foto": null,
       "perfilOficial": null,
       "apelidos": ["Andrezinho"],

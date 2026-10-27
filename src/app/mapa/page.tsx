@@ -1,39 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { geoMercator, geoPath } from "d3-geo";
 import type { FeatureCollection, Geometry } from "geojson";
 import { MapaBairros, type BairroDesenho, type FavelaDesenho, type PontoDesenho } from "@/components/MapaBairros";
 import { Secao } from "@/components/ui";
 import { dados, dataBR, num } from "@/lib/dados";
-import geo from "@/data/bairros-geo.json";
+import { geometriaBairros } from "@/lib/mapaGeo";
 import geoFavelas from "@/data/favelas-geo.json";
 
 export const metadata: Metadata = { title: "Mapa por bairro" };
-
-// Osasco é comprida no sentido norte–sul: a altura é fixa e a largura sai da própria geometria.
-const ALTURA = 760;
-const MARGEM = 8;
-const titulo = (s: string) => s.toLowerCase().replace(/(^|\s)(\p{L})/gu, (m) => m.toUpperCase()).replace(/\b(De|Da|Do|Dos|Das|E)\b/g, (m) => m.toLowerCase());
 
 export default function PaginaMapa() {
   const mapa = dados.mapa;
   if (!mapa) return <p className="text-slate-600">Rode npm run coletar:bairros e npm run dados para gerar o mapa.</p>;
 
-  // A projeção é calculada aqui, na geração do site: o navegador recebe os caminhos SVG prontos.
-  const colecao = geo as unknown as FeatureCollection<Geometry, { id: string }>;
-  const projecao = geoMercator().fitHeight(ALTURA - 2 * MARGEM, colecao);
-  const [[x0, y0], [x1]] = geoPath(projecao).bounds(colecao);
-  const [tx, ty] = projecao.translate();
-  projecao.translate([tx - x0 + MARGEM, ty - y0 + MARGEM]);
-  const LARGURA = Math.ceil(x1 - x0 + 2 * MARGEM);
-  const caminho = geoPath(projecao).digits(1);
-  const [cx0, cy0] = caminho.centroid(colecao);
+  const { largura: LARGURA, altura: ALTURA, contornos, projecao, caminho } = geometriaBairros();
   const info = new Map(mapa.bairros.map((b) => [b.id, b]));
-  const desenhos: BairroDesenho[] = colecao.features.map((f) => {
-    const b = info.get(f.properties.id)!;
-    const [cx, cy] = caminho.centroid(f);
-    return { ...b, d: caminho(f) ?? "", cx: Math.round(cx * 10) / 10, cy: Math.round(cy * 10) / 10, distancia: Math.hypot(cx - cx0, cy - cy0) };
-  });
+  const desenhos: BairroDesenho[] = contornos.map((c) => ({ ...info.get(c.id)!, ...c }));
   const pontos: PontoDesenho[] = mapa.pontos.flatMap((p) => {
     const xy = projecao([p.lon, p.lat]);
     return xy && xy[0] >= 0 && xy[0] <= LARGURA && xy[1] >= 0 && xy[1] <= ALTURA ? [{ ...p, x: Math.round(xy[0] * 10) / 10, y: Math.round(xy[1] * 10) / 10 }] : [];
@@ -52,24 +34,16 @@ export default function PaginaMapa() {
   const pobres = porRenda.slice(0, quarto);
   const ricos = porRenda.slice(-quarto);
   const menosEsgoto = habitados.filter((b) => b.censo!.esgoto != null).sort((a, b) => a.censo!.esgoto! - b.censo!.esgoto!)[0];
-  const comPrefeito = mapa.bairros.filter((b) => b.eleicao?.prefeito?.[0]?.pct != null);
-  const prefMin = comPrefeito.slice().sort((a, b) => a.eleicao!.prefeito![0].pct! - b.eleicao!.prefeito![0].pct!)[0];
-  const prefMax = comPrefeito.slice().sort((a, b) => b.eleicao!.prefeito![0].pct! - a.eleicao!.prefeito![0].pct!)[0];
-  const emExercicio = dados.vereadores.filter((v) => v.emExercicio);
-  const concentracao = emExercicio
-    .map((v) => {
-      const x = mapa.votosVereador[v.id];
-      const [bairro, votos] = Object.entries(x?.porBairro ?? {})[0] ?? [];
-      return x && bairro ? { v, bairro, pct: (votos / x.total) * 100 } : null;
-    })
-    .filter((x): x is NonNullable<typeof x> => x != null)
-    .sort((a, b) => b.pct - a.pct)[0];
-  const nomeBairro = (id: string) => info.get(id)?.nome ?? id;
+  const menor = (k: "calcada" | "bueiro" | "iluminacao") => habitados.filter((b) => b.censo![k] != null).sort((a, b) => a.censo![k]! - b.censo![k]!)[0];
+  const semCalcada = menor("calcada");
+  const semBueiro = menor("bueiro");
+  // Saúde: bairro mais populoso sem nenhuma unidade do SUS cadastrada.
+  const semUnidade = habitados.filter((b) => !b.saude?.length).sort((a, b) => b.censo!.pessoas - a.censo!.pessoas);
   const maisCrime = habitados.filter((b) => b.seguranca).sort((a, b) => b.seguranca!.roubos.n - a.seguranca!.roubos.n)[0];
 
   const semCitacao = mapa.bairros.filter((b) => b.citacoes === 0);
   const popSem = semCitacao.reduce((a, b) => a + (b.censo?.pessoas ?? b.populacao ?? 0), 0);
-  const unidadesSus = mapa.pontos.filter((p) => p.tipo === "saude").length;
+  const unidadesSus = mapa.bairros.reduce((a, b) => a + (b.saude?.length ?? 0), 0);
   const escolasPublicas = mapa.bairros.reduce((a, b) => a + (b.escolas?.filter((e) => e.rede !== "Privada").length ?? 0), 0);
 
   const achados = [
@@ -81,15 +55,14 @@ export default function PaginaMapa() {
       rotulo: "Saneamento",
       texto: `${menosEsgoto.nome} tem só ${num(menosEsgoto.censo!.esgoto!, 0)}% das casas na rede de esgoto (Osasco: ${num(mapa.cidade?.esgoto ?? 0, 0)}%) e foi citado em ${menosEsgoto.citacoes} ${menosEsgoto.citacoes === 1 ? "documento" : "documentos"}.`,
     },
-    prefMin &&
-      prefMax && {
-        rotulo: "Eleição 2024",
-        texto: `${titulo(mapa.prefeitoEleicao[0]?.nome ?? "")} teve de ${num(prefMin.eleicao!.prefeito![0].pct!, 0)}% (${prefMin.nome}) a ${num(prefMax.eleicao!.prefeito![0].pct!, 0)}% (${prefMax.nome}) dos votos válidos, conforme o bairro.`,
+    semCalcada &&
+      semBueiro && {
+        rotulo: "Rua",
+        texto: `Em ${semCalcada.nome}, só ${num(semCalcada.censo!.calcada!, 0)}% das casas têm calçada na quadra (Osasco: ${num(mapa.cidade?.calcada ?? 0, 0)}%). Bueiro, o pior é ${semBueiro.nome}: ${num(semBueiro.censo!.bueiro!, 0)}% (Osasco: ${num(mapa.cidade?.bueiro ?? 0, 0)}%).`,
       },
-    concentracao && {
-      rotulo: "Voto concentrado",
-      texto: `${num(concentracao.pct, 0)}% dos votos de ${concentracao.v.nome} vieram de um só bairro: ${nomeBairro(concentracao.bairro)}.`,
-      href: `/vereadores/${concentracao.v.id}`,
+    semUnidade.length > 0 && {
+      rotulo: "Saúde",
+      texto: `${semUnidade.length} bairros com moradores não têm nenhuma unidade do SUS cadastrada; o maior é ${semUnidade[0].nome}, com ${semUnidade[0].censo!.pessoas.toLocaleString("pt-BR")} moradores. Osasco tem ${num((unidadesSus / (mapa.cidade?.pessoas ?? 1)) * 1e4, 1)} unidades por 10 mil habitantes.`,
     },
     maisCrime && {
       rotulo: "Segurança",

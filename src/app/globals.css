@@ -158,7 +158,8 @@
   transform-box: fill-box;
   transform-origin: center;
 }
-.mapa-bairro:hover,
+/* Sem o retângulo de foco do navegador: o próprio mapa contorna o bairro em foco (mouse ou teclado). */
+.mapa-bairro:focus,
 .mapa-bairro:focus-visible {
   outline: none;
 }

@@ -3,7 +3,7 @@ import { Numero } from "@/components/Animacoes";
 import { CustoMandato, DespesasCamara } from "@/components/Camara";
 import { GraficoPartidos, type MediaPartido } from "@/components/Partidos";
 import { Ranking } from "@/components/Ranking";
-import { Avatar, NotaBadge, Retrato, Secao } from "@/components/ui";
+import { Avatar, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { Vereador } from "@/lib/dados";
 import { PILARES_PREFEITO, dados, dataBR, nota, nota10, pct } from "@/lib/dados";
 
@@ -29,8 +29,8 @@ function Destaque({ rotulo, v, valor }: { rotulo: string; v: Vereador; valor: st
       <div className="min-w-0">
         <div className="text-xs font-medium uppercase tracking-wide text-blue-800">{rotulo}</div>
         <div className="truncate font-semibold text-slate-900 group-hover:text-blue-800">{v.nome}</div>
-        <div className="text-sm text-slate-600">
-          {valor} {v.partido && <span className="text-slate-400">· {v.partido}</span>}
+        <div className="mt-0.5 flex flex-wrap items-center gap-2 text-sm text-slate-600">
+          {valor} <SeloPartido sigla={v.partido} logo={v.partidoLogo} />
         </div>
       </div>
     </Link>
@@ -55,7 +55,7 @@ export default function Home() {
   const porPartido: MediaPartido[] = Object.values(
     ativosComNota.reduce<Record<string, MediaPartido>>((acc, v) => {
       const p = v.partido ?? "Sem partido";
-      acc[p] ??= { partido: p, media: 0, vereadores: [] };
+      acc[p] ??= { partido: p, logo: v.partidoLogo, media: 0, vereadores: [] };
       acc[p].vereadores.push({ nome: v.nome, nota: v.nota! });
       return acc;
     }, {}),
@@ -138,10 +138,11 @@ export default function Home() {
 
       <Secao titulo="Ranking dos vereadores" id="ranking" subtitulo="Clique em um vereador para ver como a nota foi formada e as planilhas de origem.">
         <Ranking
-          vereadores={vereadores.map(({ id, nome, partido, foto, emExercicio, nota, posicao, indicadores, perfil, pilares, temas }) => ({
+          vereadores={vereadores.map(({ id, nome, partido, partidoLogo, foto, emExercicio, nota, posicao, indicadores, perfil, pilares, temas }) => ({
             id,
             nome,
             partido,
+            partidoLogo,
             foto,
             emExercicio,
             nota,
@@ -188,8 +189,9 @@ export default function Home() {
               <Avatar nome={prefeito.nome} foto={prefeito.foto} tamanho={72} />
               <div className="min-w-0 flex-1">
                 <div className="text-lg font-semibold text-slate-900 group-hover:text-blue-800">{prefeito.nome}</div>
-                <div className="text-sm text-slate-500">
-                  {prefeito.cargo} · {prefeito.partido} · {prefeito.mandato}
+                <div className="mt-0.5 flex flex-wrap items-center gap-2 text-sm text-slate-500">
+                  <SeloPartido sigla={prefeito.partido} logo={prefeito.partidoLogo} />
+                  {prefeito.cargo} · {prefeito.mandato}
                 </div>
               </div>
               <div className="text-center">
