@@ -387,7 +387,13 @@ const vereadores = [...pessoas.values()].map((p) => {
       .sort((a, b) => a.ano - b.ano || a.numero - b.numero),
     leis: leis.map((x) => ({ ...x, temas: temasDoProjeto(x.resumo) })),
     vetos: [...vetos.values()].filter((x) => ehAutor(x, p.id)).map((x) => ({ ...x, temas: temasDoProjeto(x.resumo) })),
-    adiadas: p.adiadasPorAusencia,
+    // Item adiado: "TIPO Nº X/AAAA – AUTOR – ementa". O tema sai só da ementa, para o nome do autor
+    // ("Gabriel Saúde") não virar tema; o título vem do começo.
+    adiadas: p.adiadasPorAusencia.map((a) => {
+      const partes = a.item.split(/\s+[–—-]\s+/);
+      const ementa = partes.length >= 3 ? partes.slice(2).join(" – ") : a.item;
+      return { ...a, titulo: partes.length >= 3 ? clean(partes[0].replace(/^\d+\s*[.)-]\s*/, "")) : null, ementa, temas: temasDoProjeto(ementa) };
+    }),
   };
 });
 

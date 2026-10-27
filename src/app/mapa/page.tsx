@@ -1,38 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { geoMercator, geoPath } from "d3-geo";
 import type { FeatureCollection, Geometry } from "geojson";
 import { MapaBairros, type BairroDesenho, type FavelaDesenho, type PontoDesenho } from "@/components/MapaBairros";
 import { Secao } from "@/components/ui";
 import { dados, dataBR, num } from "@/lib/dados";
-import geo from "@/data/bairros-geo.json";
+import { geometriaBairros } from "@/lib/mapaGeo";
 import geoFavelas from "@/data/favelas-geo.json";
 
 export const metadata: Metadata = { title: "Mapa por bairro" };
-
-// Osasco é comprida no sentido norte–sul: a altura é fixa e a largura sai da própria geometria.
-const ALTURA = 760;
-const MARGEM = 8;
 
 export default function PaginaMapa() {
   const mapa = dados.mapa;
   if (!mapa) return <p className="text-slate-600">Rode npm run coletar:bairros e npm run dados para gerar o mapa.</p>;
 
-  // A projeção é calculada aqui, na geração do site: o navegador recebe os caminhos SVG prontos.
-  const colecao = geo as unknown as FeatureCollection<Geometry, { id: string }>;
-  const projecao = geoMercator().fitHeight(ALTURA - 2 * MARGEM, colecao);
-  const [[x0, y0], [x1]] = geoPath(projecao).bounds(colecao);
-  const [tx, ty] = projecao.translate();
-  projecao.translate([tx - x0 + MARGEM, ty - y0 + MARGEM]);
-  const LARGURA = Math.ceil(x1 - x0 + 2 * MARGEM);
-  const caminho = geoPath(projecao).digits(1);
-  const [cx0, cy0] = caminho.centroid(colecao);
+  const { largura: LARGURA, altura: ALTURA, contornos, projecao, caminho } = geometriaBairros();
   const info = new Map(mapa.bairros.map((b) => [b.id, b]));
-  const desenhos: BairroDesenho[] = colecao.features.map((f) => {
-    const b = info.get(f.properties.id)!;
-    const [cx, cy] = caminho.centroid(f);
-    return { ...b, d: caminho(f) ?? "", cx: Math.round(cx * 10) / 10, cy: Math.round(cy * 10) / 10, distancia: Math.hypot(cx - cx0, cy - cy0) };
-  });
+  const desenhos: BairroDesenho[] = contornos.map((c) => ({ ...info.get(c.id)!, ...c }));
   const pontos: PontoDesenho[] = mapa.pontos.flatMap((p) => {
     const xy = projecao([p.lon, p.lat]);
     return xy && xy[0] >= 0 && xy[0] <= LARGURA && xy[1] >= 0 && xy[1] <= ALTURA ? [{ ...p, x: Math.round(xy[0] * 10) / 10, y: Math.round(xy[1] * 10) / 10 }] : [];

@@ -233,6 +233,20 @@ export function MapaBairros({
     setTema(INDICADORES.find((i) => i.chave === k)!.tema);
     setChave(k);
   };
+  // Links das páginas de vereador e prefeito abrem o mapa já filtrado: ?indicador=, ?autor=, ?origem=.
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search);
+    const ind = q.get("indicador");
+    if (ind && INDICADORES.some((i) => i.chave === ind)) {
+      setTema(INDICADORES.find((i) => i.chave === ind)!.tema);
+      setChave(ind);
+    }
+    const a = q.get("autor");
+    if (a) setAutor(a);
+    const o = q.get("origem");
+    if (o === "camara" || o === "prefeitura") setOrigem(o);
+  }, []);
+
   const alternarCamada = (c: Camada) =>
     setCamadas((s) => {
       const n = new Set(s);
