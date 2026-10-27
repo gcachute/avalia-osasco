@@ -35,7 +35,10 @@ function mesesEntre(inicio: string, fim: string) {
   const [af, mf] = [Number(fim.slice(0, 4)), Number(fim.slice(5, 7))];
   while (a < af || (a === af && m <= mf)) {
     out.push(`${a}-${String(m).padStart(2, "0")}`);
-    m === 12 ? ((a += 1), (m = 1)) : (m += 1);
+    if (m === 12) {
+      a += 1;
+      m = 1;
+    } else m += 1;
   }
   return out;
 }

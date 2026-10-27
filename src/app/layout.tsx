@@ -31,7 +31,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className={`${geist.variable} min-h-screen bg-slate-50 font-sans text-slate-800 antialiased transition-colors`}>
         <Animacoes />
         <NovaAba />
-        <header data-mesma-aba className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur">
+        <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur">
           <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3">
             <Link href="/" className="flex items-center gap-2 font-semibold text-slate-900">
               <span className="grid h-8 w-8 place-items-center rounded-lg bg-blue-800 text-sm font-bold text-white">AO</span>

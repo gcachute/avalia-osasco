@@ -2,15 +2,14 @@
 
 import { useEffect } from "react";
 
-// Todo link que leva para outra página abre em nova aba, para quem está explorando o site (o mapa,
-// um ranking filtrado) não perder o que estava vendo. Ficam na mesma aba o menu do topo (marcado com
-// data-mesma-aba) e os atalhos para um trecho da própria página (#ranking).
+// Links para fora do site (fontes oficiais, planilhas, redes sociais) abrem em nova aba, para quem está
+// lendo não perder a página. Links internos continuam na mesma aba.
 export function NovaAba() {
   useEffect(() => {
     const ajusta = (raiz: ParentNode) =>
       raiz.querySelectorAll<HTMLAnchorElement>("a[href]:not([target])").forEach((a) => {
         const href = a.getAttribute("href") ?? "";
-        if (href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:") || a.closest("[data-mesma-aba]")) return;
+        if (!/^https?:\/\//i.test(href) || new URL(href, location.href).origin === location.origin) return;
         a.target = "_blank";
         a.rel = "noopener noreferrer";
       });

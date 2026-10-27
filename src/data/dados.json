@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-27T03:29:39.152Z",
+ "geradoEm": "2026-10-27T03:40:10.241Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -1078,6 +1078,7 @@
    "nome": "Pedrinho Cantagessi",
    "partido": "UNIAO",
    "partidoNome": "União Brasil",
+   "partidoLogo": "/partidos/uniao.png",
    "foto": "/fotos/vereadores/pedrinho-cantagessi.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/pedrinho-cantagessi",
@@ -1193,7 +1194,7 @@
    "temas": [
     {
      "tema": "Educação",
-     "n": 6
+     "n": 7
     },
     {
      "tema": "Segurança",
@@ -1204,8 +1205,16 @@
      "n": 5
     },
     {
+     "tema": "Datas e calendário",
+     "n": 4
+    },
+    {
      "tema": "Mobilidade",
      "n": 3
+    },
+    {
+     "tema": "Nomes e homenagens",
+     "n": 2
     },
     {
      "tema": "Meio ambiente",
@@ -1213,6 +1222,10 @@
     },
     {
      "tema": "Mulheres",
+     "n": 2
+    },
+    {
+     "tema": "Idosos",
      "n": 2
     },
     {
@@ -1224,15 +1237,11 @@
      "n": 1
     },
     {
-     "tema": "Idosos",
-     "n": 1
-    },
-    {
      "tema": "Pessoas com deficiência e TEA",
      "n": 1
     },
     {
-     "tema": "Gestão pública e transparência",
+     "tema": "Servidores públicos",
      "n": 1
     }
    ],
@@ -2188,7 +2197,7 @@
      "classe": "substantivo",
      "temas": [
       "Saúde",
-      "Gestão pública e transparência"
+      "Servidores públicos"
      ]
     },
     {
@@ -2215,7 +2224,9 @@
      "ementa": "Dispõe sobre a denominação da Inspetoria de Postura Inspetor Jefferson Rodilha.",
      "sessao": "2026-09-01-o46",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-165/2026",
@@ -2242,7 +2253,9 @@
      "ementa": "Institui o Programa Municipal de Acompanhamento Integral da Pessoa Idosa – PAI Osasco, no âmbito do Município de Osasco.",
      "sessao": "2026-08-04-o38",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Idosos"
+     ]
     },
     {
      "key": "PL-154/2026",
@@ -2359,7 +2372,9 @@
      "ementa": "Cria no Município de Osasco a Biblioteca Digital Municipal, e dá outras providências.",
      "sessao": "2026-03-12-o10",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Educação"
+     ]
     },
     {
      "key": "PDL-35/2026",
@@ -2369,7 +2384,10 @@
      "autor": "pedrinho-cantagessi",
      "autorTexto": "PEDRINHO CANTAGESSI",
      "ementa": "Concede Medalha Antônio Raposo Tavares e Diploma Cidade de Osasco ao Sr. Jorge Luiz Cantagessi de Souza.",
-     "sessao": "2026-08-04-o38"
+     "sessao": "2026-08-04-o38",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-29/2026",
@@ -2394,7 +2412,8 @@
      "sessao": "2026-02-26-o6",
      "classe": "simbolico",
      "temas": [
-      "Educação"
+      "Educação",
+      "Datas e calendário"
      ]
     },
     {
@@ -2419,7 +2438,10 @@
      "autor": "pedrinho-cantagessi",
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre a concessão de Título de cidadão Osasquense ao Sr. Renan Vinicius Sindona Momo Lopes do Prado.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-215/2025",
@@ -2462,7 +2484,8 @@
      "classe": "substantivo",
      "temas": [
       "Educação",
-      "Esporte, cultura e lazer"
+      "Esporte, cultura e lazer",
+      "Datas e calendário"
      ]
     },
     {
@@ -2473,7 +2496,11 @@
      "autor": "pedrinho-cantagessi",
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Centro Educacional Desafio.",
-     "sessao": "2025-12-02-o70"
+     "sessao": "2025-12-02-o70",
+     "temas": [
+      "Educação",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-76/2025",
@@ -2485,7 +2512,9 @@
      "ementa": "Institui a Semana Municipal de Conscientização sobre o Vitiligo.",
      "sessao": "2025-06-03-o31",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PDL-74/2025",
@@ -2495,7 +2524,10 @@
      "autor": "pedrinho-cantagessi",
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre a concessão de Diploma João Cândido – Almirante Negro ao Sr. Lourival Francisco da Silva.",
-     "sessao": "2025-11-11-o65"
+     "sessao": "2025-11-11-o65",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-56/2025",
@@ -2507,7 +2539,10 @@
      "ementa": "Dispõe sobre a denominação da Viela Willian Gomes de Sousa, no Jardim Bandeiras.",
      "sessao": "2025-06-05-o32",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-40/2025",
@@ -2517,7 +2552,10 @@
      "autor": "pedrinho-cantagessi",
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre a concessão de título de cidadão Osasquense a Sra. Vera Lúcia Cantagessi.",
-     "sessao": "2025-09-02-o46"
+     "sessao": "2025-09-02-o46",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-36/2025",
@@ -2527,7 +2565,10 @@
      "autor": "pedrinho-cantagessi",
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Senhor Alexey Carvalho.",
-     "sessao": "2025-08-19-o42"
+     "sessao": "2025-08-19-o42",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-34/2025",
@@ -2537,7 +2578,10 @@
      "autor": "pedrinho-cantagessi",
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa a Barbearia Morales.",
-     "sessao": "2025-08-19-o42"
+     "sessao": "2025-08-19-o42",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-33/2025",
@@ -2547,7 +2591,11 @@
      "autor": "pedrinho-cantagessi",
      "autorTexto": "Pedrinho Cantagessi",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa ao Instituto Sophia Vercelli - ISV.",
-     "sessao": "2025-08-19-o42"
+     "sessao": "2025-08-19-o42",
+     "temas": [
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-19/2025",
@@ -2557,7 +2605,10 @@
      "autor": "pedrinho-cantagessi",
      "autorTexto": "Pedro Cantagessi Vitoriano",
      "ementa": "Dispõe sobre a concessão de Medalha Antônio Raposo Tavares e o Diploma de Osasco ao Doutor Silvio Luiz Priori.",
-     "sessao": "2025-06-05-o32"
+     "sessao": "2025-06-05-o32",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -2649,6 +2700,7 @@
    "nome": "Laércio Mendonça",
    "partido": "PDT",
    "partidoNome": "Partido Democrático Trabalhista",
+   "partidoLogo": "/partidos/pdt.png",
    "foto": "/fotos/vereadores/laercio-mendonca.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/laercio-mendonca",
@@ -2783,8 +2835,20 @@
    },
    "temas": [
     {
-     "tema": "Gestão pública e transparência",
+     "tema": "Datas e calendário",
      "n": 5
+    },
+    {
+     "tema": "Servidores públicos",
+     "n": 3
+    },
+    {
+     "tema": "Nomes e homenagens",
+     "n": 3
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 3
     },
     {
      "tema": "Economia e emprego",
@@ -2799,7 +2863,15 @@
      "n": 2
     },
     {
+     "tema": "Gestão pública e transparência",
+     "n": 2
+    },
+    {
      "tema": "Pessoas com deficiência e TEA",
+     "n": 1
+    },
+    {
+     "tema": "Idosos",
      "n": 1
     },
     {
@@ -2807,11 +2879,19 @@
      "n": 1
     },
     {
-     "tema": "Esporte, cultura e lazer",
+     "tema": "Educação",
      "n": 1
     },
     {
      "tema": "Animais",
+     "n": 1
+    },
+    {
+     "tema": "Entidades e utilidade pública",
+     "n": 1
+    },
+    {
+     "tema": "Tributos e dívidas",
      "n": 1
     },
     {
@@ -3796,7 +3876,9 @@
      "ementa": "Dispõe sobre a denominação da Praça Valdinei Borges dos Santos – Nei, no bairro Jardim Roberto.",
      "sessao": "2026-08-18-o42",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-167/2026",
@@ -3822,7 +3904,9 @@
      "ementa": "Institui a Campanha Municipal Ruas da Copa do Mundo no Município de Osasco e dá outras providências.",
      "sessao": "2026-06-09-o32",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-120/2026",
@@ -3836,7 +3920,8 @@
      "classe": "substantivo",
      "temas": [
       "Segurança",
-      "Economia e emprego"
+      "Economia e emprego",
+      "Nomes e homenagens"
      ]
     },
     {
@@ -3851,7 +3936,7 @@
      "classe": "substantivo",
      "temas": [
       "Mulheres",
-      "Gestão pública e transparência"
+      "Servidores públicos"
      ]
     },
     {
@@ -3866,7 +3951,10 @@
      "classe": "substantivo",
      "temas": [
       "Animais",
-      "Economia e emprego"
+      "Esporte, cultura e lazer",
+      "Economia e emprego",
+      "Entidades e utilidade pública",
+      "Tributos e dívidas"
      ]
     },
     {
@@ -3877,7 +3965,10 @@
      "autor": "laercio-mendonca",
      "autorTexto": "Laércio Mendonça",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Sr. Osvaldo Rossato Júnior.",
-     "sessao": "2026-09-10-o49"
+     "sessao": "2026-09-10-o49",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-27/2026",
@@ -3889,7 +3980,9 @@
      "ementa": "Institui o Dia Municipal do Porteiro no âmbito do Município de Osasco e dá outras providências.",
      "sessao": "2026-02-26-o6",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PR-4/2026",
@@ -3913,7 +4006,9 @@
      "ementa": "Institui o 'Dia Municipal do DJ' no Calendário Oficial do Município de Osasco e dá outras providências.",
      "sessao": "2025-12-11-o73",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-214/2025",
@@ -3941,7 +4036,7 @@
      "classe": "substantivo",
      "temas": [
       "Esporte, cultura e lazer",
-      "Gestão pública e transparência"
+      "Servidores públicos"
      ]
     },
     {
@@ -3956,6 +4051,7 @@
      "classe": "substantivo",
      "temas": [
       "Segurança",
+      "Esporte, cultura e lazer",
       "Gestão pública e transparência"
      ]
     },
@@ -3979,7 +4075,12 @@
      "autor": "laercio-mendonca",
      "autorTexto": "Laércio Mendonça",
      "ementa": "Concede o Cartão de Prata ao artista Jota.pê, em reconhecimento à sua destacada trajetória artística, às premiações nacionais e internacionais conquistadas e à relevante contribuição para a valorização da cultura brasileira e para a projeção do nome de Osasco.",
-     "sessao": "2025-12-11-o73"
+     "sessao": "2025-12-11-o73",
+     "temas": [
+      "Saúde",
+      "Esporte, cultura e lazer",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-96/2025",
@@ -3989,7 +4090,12 @@
      "autor": "laercio-mendonca",
      "autorTexto": "Laércio Mendonça",
      "ementa": "Dispõe sobre a concessão da Medalha Antônio Raposo Tavares e do Diploma Cidade de Osasco ao artista Jota.pê, em reconhecimento à sua destacada trajetória artística, contribuição à cultura brasileira e projeção positiva do nome de Osasco no cenário nacional e internacional.",
-     "sessao": "2025-12-11-o73"
+     "sessao": "2025-12-11-o73",
+     "temas": [
+      "Saúde",
+      "Esporte, cultura e lazer",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-90/2025",
@@ -3999,7 +4105,10 @@
      "autor": "laercio-mendonca",
      "autorTexto": "Laércio Mendonça",
      "ementa": "Concede placa comemorativa ao Colégio São Gabriel.",
-     "sessao": "2025-12-11-o73"
+     "sessao": "2025-12-11-o73",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-89/2025",
@@ -4011,7 +4120,10 @@
      "ementa": "Institui o dia do Psicopedagogo no calendário oficial do Município de Osasco.",
      "sessao": "2025-08-05-o38",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Educação",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-84/2025",
@@ -4035,7 +4147,11 @@
      "autor": "laercio-mendonca",
      "autorTexto": "Laércio Mendonça",
      "ementa": "Concede o diploma “Força de Segurança de Destaque” ao inspetor regional Paulo Siqueira, subcomandante da guarda civil municipal de Osasco, em reconhecimento à sua destacada trajetória profissional, liderança, inovação na gestão da corporação e relevantes serviços prestados à segurança pública e à comunidade.",
-     "sessao": "2025-11-25-o68"
+     "sessao": "2025-11-25-o68",
+     "temas": [
+      "Segurança",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-083/2025",
@@ -4045,7 +4161,11 @@
      "autor": "laercio-mendonca",
      "autorTexto": "Laércio Mendonça",
      "ementa": "Concede o Diploma “Força de Segurança de Destaque” ao Inspetor Regional Paulo Siqueira, Subcomandante da Guarda Civil Municipal de Osasco, em reconhecimento à sua destacada trajetória profissional, liderança, inovação na gestão da corporação e relevantes serviços prestados à segurança pública e à comunidade.",
-     "sessao": "2025-12-09-o72"
+     "sessao": "2025-12-09-o72",
+     "temas": [
+      "Segurança",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-82/2025",
@@ -4055,7 +4175,10 @@
      "autor": "laercio-mendonca",
      "autorTexto": "Laércio Mendonça",
      "ementa": "Dispõe sobre a concessão de placa comemorativa ao Colégio São Gabriel.",
-     "sessao": "2025-11-25-o68"
+     "sessao": "2025-11-25-o68",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-79/2025",
@@ -4065,7 +4188,11 @@
      "autor": "laercio-mendonca",
      "autorTexto": "Laércio Mendonça",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Igreja Adventista do Sétimo Dia.",
-     "sessao": "2025-11-18-o67"
+     "sessao": "2025-11-18-o67",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-75/2025",
@@ -4075,7 +4202,10 @@
      "autor": "laercio-mendonca",
      "autorTexto": "Laercio Mendonca",
      "ementa": "Concede o Diploma “João Cândido – Almirante Negro” ao artista Marcos Santos, conhecido como DJ Murphy, e dá outras providências.",
-     "sessao": "2025-11-18-o67"
+     "sessao": "2025-11-18-o67",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-61/2025",
@@ -4085,7 +4215,11 @@
      "autor": "laercio-mendonca",
      "autorTexto": "Laércio Mendonça",
      "ementa": "dispõe sobre a concessão de Cartão de Prata da Câmara Municipal de Osasco a empresa Rei dos Pisos e seu proprietário, Sr. Roberto Bocholgonian.",
-     "sessao": "2025-10-30-o62"
+     "sessao": "2025-10-30-o62",
+     "temas": [
+      "Economia e emprego",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-45/2025",
@@ -4099,7 +4233,8 @@
      "classe": "simbolico",
      "temas": [
       "Saúde",
-      "Gestão pública e transparência"
+      "Datas e calendário",
+      "Servidores públicos"
      ]
     },
     {
@@ -4114,7 +4249,8 @@
      "classe": "substantivo",
      "temas": [
       "Saúde",
-      "Pessoas com deficiência e TEA"
+      "Pessoas com deficiência e TEA",
+      "Idosos"
      ]
     },
     {
@@ -4125,7 +4261,10 @@
      "autor": "laercio-mendonca",
      "autorTexto": "LAÉRCIO MENDONÇA",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Senhor Luciano Camandoni.",
-     "sessao": "2025-10-09-o57"
+     "sessao": "2025-10-09-o57",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PR-10/2025",
@@ -4137,7 +4276,9 @@
      "ementa": "Institui a honraria “Centenário Osasquense”.",
      "sessao": "2025-08-26-o44",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -4149,7 +4290,8 @@
      "data": "7 de janeiro de 2026",
      "autor": "laercio-mendonca",
      "resumo": "institui o mês junho violeta, de autoria do vereador Laércio Mendonça.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": []
     },
     {
      "key": "L-5.461",
@@ -4157,7 +4299,10 @@
      "data": "24 de março de 2026",
      "autor": "laercio-mendonca",
      "resumo": "institui o Dia Municipal do DJ no Calendário Oficial do Município de Osasco e dá outras providências, de autoria do vereador Laércio Mendonça.",
-     "sessao": "2026-03-31-o15"
+     "sessao": "2026-03-31-o15",
+     "temas": [
+      "Datas e calendário"
+     ]
     }
    ],
    "vetos": [],
@@ -4274,6 +4419,7 @@
    "nome": "Cantor Goleiro",
    "partido": "UNIAO",
    "partidoNome": "União Brasil",
+   "partidoLogo": "/partidos/uniao.png",
    "foto": "/fotos/vereadores/cantor-goleiro.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/cantor-goleiro",
@@ -4372,6 +4518,18 @@
    },
    "temas": [
     {
+     "tema": "Datas e calendário",
+     "n": 4
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 2
+    },
+    {
+     "tema": "Mobilidade",
+     "n": 2
+    },
+    {
      "tema": "Saúde",
      "n": 2
     },
@@ -4380,15 +4538,7 @@
      "n": 2
     },
     {
-     "tema": "Economia e emprego",
-     "n": 1
-    },
-    {
      "tema": "Pessoas com deficiência e TEA",
-     "n": 1
-    },
-    {
-     "tema": "Mobilidade",
      "n": 1
     },
     {
@@ -5421,6 +5571,7 @@
      "sessao": "2026-06-25-o37",
      "classe": "simbolico",
      "temas": [
+      "Datas e calendário",
       "Assistência social e moradia"
      ]
     },
@@ -5434,7 +5585,9 @@
      "ementa": "Institui no Calendário Oficial de Eventos de Osasco o Dia do Aniversário do bairro Jd. Vila Nova.",
      "sessao": "2026-06-25-o37",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-131/2026",
@@ -5446,7 +5599,9 @@
      "ementa": "Institui no Calendário Oficial de Eventos de Osasco o Dia do Aniversário do Jd. Canaã.",
      "sessao": "2026-06-25-o37",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-51/2026",
@@ -5458,7 +5613,10 @@
      "ementa": "Dispõe sobre o “Dia Municipal do Ambulante”, no município de Osasco e dá outras providências.",
      "sessao": "2026-03-17-o11",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Economia e emprego",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-24/2026",
@@ -5480,7 +5638,10 @@
      "autor": "cantor-goleiro",
      "autorTexto": "CANTOR GOLEIRO",
      "ementa": "Concede Medalha Antônio Raposo Tavares e Diploma Cidade de Osasco à Suzete Souza Franco.",
-     "sessao": "2026-04-28-o21"
+     "sessao": "2026-04-28-o21",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-16/2026",
@@ -5490,7 +5651,10 @@
      "autor": "cantor-goleiro",
      "autorTexto": "Cantor Goleiro",
      "ementa": "Dispõe sobre a concessão de Título de Cidadã Osasquense à Camila de Paula Brait.",
-     "sessao": "2026-04-14-o18"
+     "sessao": "2026-04-14-o18",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-208/2025",
@@ -5531,7 +5695,9 @@
      "ementa": "Dispõe sobre a instalação de faixas de pedestres transversais elevadas ou com sinalização aprimorada em vias públicas do Município de Osasco.",
      "sessao": "2025-08-19-o42",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Mobilidade"
+     ]
     },
     {
      "key": "PDL-78/2025",
@@ -5541,7 +5707,10 @@
      "autor": "cantor-goleiro",
      "autorTexto": "Cantor Goleiro",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao senhor Claudinei Alves dos Santos.",
-     "sessao": "2025-11-18-o67"
+     "sessao": "2025-11-18-o67",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-11/2025",
@@ -5551,7 +5720,10 @@
      "autor": "cantor-goleiro",
      "autorTexto": "Cantor Goleiro",
      "ementa": "Dispõe sobre a concessão de Medalha Raposo Tavares e Diploma Cidade de Osasco ao senhor José Virgolino de Oliveira.",
-     "sessao": "2025-04-22-o20"
+     "sessao": "2025-04-22-o20",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-9/2025",
@@ -5657,6 +5829,7 @@
    "nome": "Rodolfo Cara",
    "partido": "PODE",
    "partidoNome": "Podemos",
+   "partidoLogo": null,
    "foto": "/fotos/vereadores/rodolfo-cara.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/rodolfo-cara",
@@ -6013,7 +6186,10 @@
      "autor": "rodolfo-cara",
      "autorTexto": "Rodolfo Cara",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Dr. Aparecido José Dias.",
-     "sessao": "2025-05-13-o25"
+     "sessao": "2025-05-13-o25",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-17/2025",
@@ -6023,7 +6199,10 @@
      "autor": "rodolfo-cara",
      "autorTexto": "Rodolfo Cara",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Dr. Paulo Sérgio Maluf Barroso.",
-     "sessao": "2025-05-13-o25"
+     "sessao": "2025-05-13-o25",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-16/2025",
@@ -6033,7 +6212,11 @@
      "autor": "rodolfo-cara",
      "autorTexto": "Rodolfo Cara",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Senhor Marcos Evangelista de Morais Cafu.",
-     "sessao": "2025-05-13-o25"
+     "sessao": "2025-05-13-o25",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -6105,6 +6288,7 @@
    "nome": "Heber do JuntOz",
    "partido": "PT",
    "partidoNome": "Partido dos Trabalhadores",
+   "partidoLogo": "/partidos/pt.png",
    "foto": "/fotos/vereadores/heber-do-juntoz.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/heber-do-juntoz",
@@ -6233,15 +6417,31 @@
      "n": 3
     },
     {
+     "tema": "Economia e emprego",
+     "n": 2
+    },
+    {
      "tema": "Mulheres",
      "n": 2
+    },
+    {
+     "tema": "Imóveis e áreas públicas",
+     "n": 1
+    },
+    {
+     "tema": "Datas e calendário",
+     "n": 1
+    },
+    {
+     "tema": "Orçamento e finanças",
+     "n": 1
     },
     {
      "tema": "Gestão pública e transparência",
      "n": 1
     },
     {
-     "tema": "Economia e emprego",
+     "tema": "Servidores públicos",
      "n": 1
     },
     {
@@ -6254,6 +6454,10 @@
     },
     {
      "tema": "Saúde",
+     "n": 1
+    },
+    {
+     "tema": "Entidades e utilidade pública",
      "n": 1
     }
    ],
@@ -7236,7 +7440,8 @@
      "classe": "simbolico",
      "temas": [
       "Meio ambiente",
-      "Esporte, cultura e lazer"
+      "Esporte, cultura e lazer",
+      "Entidades e utilidade pública"
      ]
     },
     {
@@ -7307,7 +7512,8 @@
      "sessao": "2026-04-23-o20",
      "classe": "substantivo",
      "temas": [
-      "Economia e emprego"
+      "Economia e emprego",
+      "Servidores públicos"
      ]
     },
     {
@@ -7336,6 +7542,7 @@
      "classe": "substantivo",
      "temas": [
       "Educação",
+      "Orçamento e finanças",
       "Gestão pública e transparência"
      ]
     },
@@ -7350,7 +7557,8 @@
      "sessao": "2026-04-07-o16",
      "classe": "simbolico",
      "temas": [
-      "Esporte, cultura e lazer"
+      "Esporte, cultura e lazer",
+      "Datas e calendário"
      ]
     },
     {
@@ -7375,7 +7583,11 @@
      "autor": "heber-do-juntoz",
      "autorTexto": "HEBER DO JUNTOZ",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à ETEC Professor André Bogasian",
-     "sessao": "2026-04-28-o21"
+     "sessao": "2026-04-28-o21",
+     "temas": [
+      "Educação",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-11/2026",
@@ -7387,7 +7599,10 @@
      "ementa": "Veda a divulgação ou exibição de propagandas de casas ou aplicativos de apostas (bets) em equipamentos públicos municipais, inclusive nos casos de concessão ou permissão de uso.",
      "sessao": "2026-02-10-o3",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Economia e emprego",
+      "Imóveis e áreas públicas"
+     ]
     },
     {
      "key": "PDL-8/2026",
@@ -7397,7 +7612,10 @@
      "autor": "heber-do-juntoz",
      "autorTexto": "Heber do Juntoz",
      "ementa": "Dispõe sobre a concessão de Título de cidadão osasquense ao deputado estadual Maurici.",
-     "sessao": "2026-02-05-o2"
+     "sessao": "2026-02-05-o2",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PLC-06/2026",
@@ -7433,7 +7651,10 @@
      "autor": "heber-do-juntoz",
      "autorTexto": "Heber do Juntoz",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa Sindicato dos Bancários de São Paulo, Osasco e Região.",
-     "sessao": "2025-12-04-o71"
+     "sessao": "2025-12-04-o71",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-91/2025",
@@ -7443,7 +7664,10 @@
      "autor": "heber-do-juntoz",
      "autorTexto": "Heber do Juntoz",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa Sindicato dos Bancários de São Paulo, Osasco e Região.",
-     "sessao": "2025-12-09-o72"
+     "sessao": "2025-12-09-o72",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-89/2025",
@@ -7453,7 +7677,10 @@
      "autor": "heber-do-juntoz",
      "autorTexto": "Heber do Juntoz",
      "ementa": "Dispõe sobre a concessão de Diploma João Cândido – Almirante Negro à Prof.ª Zélia Lucas Patrício.",
-     "sessao": "2025-12-02-o70"
+     "sessao": "2025-12-02-o70",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-88/2025",
@@ -7463,7 +7690,10 @@
      "autor": "heber-do-juntoz",
      "autorTexto": "Heber do Juntoz",
      "ementa": "Dispõe sobre a concessão de Título de cidadão Osasquense ao Deputado Federal Kiko Celeguim.",
-     "sessao": "2025-12-02-o70"
+     "sessao": "2025-12-02-o70",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-088/2025",
@@ -7473,7 +7703,10 @@
      "autor": "heber-do-juntoz",
      "autorTexto": "HEBER DO JUNTOZ",
      "ementa": "Dispõe sobre a concessão de Título de cidadão Osasquense ao Deputado Federal Kiko Celeguim.",
-     "sessao": "2026-05-07-o24"
+     "sessao": "2026-05-07-o24",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-78/2025",
@@ -7497,7 +7730,10 @@
      "autor": "heber-do-juntoz",
      "autorTexto": "Heber do Juntoz",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao advogado e ex-presidente da Câmara dos Deputados do Brasil Dr. João Cunha.",
-     "sessao": "2025-08-26-o44"
+     "sessao": "2025-08-26-o44",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-37/2025",
@@ -7507,7 +7743,11 @@
      "autor": "heber-do-juntoz",
      "autorTexto": "Heber do Juntoz",
      "ementa": "Dispõe sobre a concessão de placa comemorativa ao Sindicato dos Empregados no Comércio de Osasco e Região. (SECOR).",
-     "sessao": "2025-08-28-o45"
+     "sessao": "2025-08-28-o45",
+     "temas": [
+      "Economia e emprego",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-26/2025",
@@ -7517,7 +7757,10 @@
      "autor": "heber-do-juntoz",
      "autorTexto": "Heber do Juntoz",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Prof. Dr. Ricardo dos Santos Coelho.",
-     "sessao": "2025-08-05-o38"
+     "sessao": "2025-08-05-o38",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-23/2025",
@@ -7571,7 +7814,10 @@
      "projeto": "PL 78/2025",
      "autor": "heber-do-juntoz",
      "resumo": "institui diretrizes para a implementação e incentivo de Soluções baseadas na Natureza (SbN) e Infraestruturas Verdes-Azuis no Município de Osasco, de autoria do vereador Heber do Juntoz.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Meio ambiente"
+     ]
     }
    ],
    "adiadas": [
@@ -7659,6 +7905,7 @@
    "nome": "Sergio Fontellas",
    "partido": "REPUBLICANOS",
    "partidoNome": null,
+   "partidoLogo": null,
    "foto": "/fotos/vereadores/sergio-fontellas.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/sergio-fontellas",
@@ -7791,7 +8038,19 @@
    },
    "temas": [
     {
+     "tema": "Datas e calendário",
+     "n": 5
+    },
+    {
      "tema": "Pessoas com deficiência e TEA",
+     "n": 2
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 2
+    },
+    {
+     "tema": "Saúde",
      "n": 2
     },
     {
@@ -7799,7 +8058,7 @@
      "n": 2
     },
     {
-     "tema": "Economia e emprego",
+     "tema": "Nomes e homenagens",
      "n": 1
     },
     {
@@ -7812,10 +8071,6 @@
     },
     {
      "tema": "Esporte, cultura e lazer",
-     "n": 1
-    },
-    {
-     "tema": "Saúde",
      "n": 1
     }
    ],
@@ -8744,7 +8999,10 @@
      "ementa": "Institui o Dia Municipal de Conscientização e Prevenção contra os Jogos de Apostas Online (Bets) no Município de Osasco.",
      "sessao": "2026-09-29-o54",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Economia e emprego",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-145/2026",
@@ -8788,7 +9046,8 @@
      "sessao": "2026-08-25-o44",
      "classe": "simbolico",
      "temas": [
-      "Crianças e jovens"
+      "Crianças e jovens",
+      "Datas e calendário"
      ]
     },
     {
@@ -8801,7 +9060,9 @@
      "ementa": "Institui no Calendário Oficial a Celebração de Casamentos, a realizar-se anualmente no mês de maio.",
      "sessao": "2026-06-25-o37",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-42/2026",
@@ -8813,7 +9074,9 @@
      "ementa": "Dispõe sobre a denominação da viela Santos Luiz Silva.",
      "sessao": "2026-05-07-o24",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-30/2026",
@@ -8823,7 +9086,10 @@
      "autor": "sergio-fontellas",
      "autorTexto": "SÉRGIO FONTELLAS",
      "ementa": "Dispõe sobre a concessão de Título de Cidadã Osasquense à Senhora Renata Torres de Sene.",
-     "sessao": "2026-06-25-o37"
+     "sessao": "2026-06-25-o37",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-29/2026",
@@ -8833,7 +9099,12 @@
      "autor": "sergio-fontellas",
      "autorTexto": "SÉRGIO FONTELLAS",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata à empresa Osasco Educacional Cursos Técnicos Ltda, nome fantasia Grau Técnico.",
-     "sessao": "2026-08-04-o38"
+     "sessao": "2026-08-04-o38",
+     "temas": [
+      "Educação",
+      "Economia e emprego",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-47/2025",
@@ -8845,7 +9116,9 @@
      "ementa": "Institui a Campanha Outubrinho Rosa.",
      "sessao": "2025-08-28-o45",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-42/2025",
@@ -8857,7 +9130,10 @@
      "ementa": "Institui a Campanha Outubro Rosa.",
      "sessao": "2025-08-28-o45",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Saúde",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PDL-27/2025",
@@ -8867,7 +9143,10 @@
      "autor": "sergio-fontellas",
      "autorTexto": "Sergio Fontellas",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense à Deputada Federal Maria do Parto Mendes Rosas.",
-     "sessao": "2025-06-24-o36"
+     "sessao": "2025-06-24-o36",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-26/2025",
@@ -8904,7 +9183,11 @@
      "autor": "sergio-fontellas",
      "autorTexto": "Sergio Fontellas",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa aos Obreiros Voluntários da Igreja Universal do Reino de Deus.",
-     "sessao": "2025-06-24-o36"
+     "sessao": "2025-06-24-o36",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -8916,7 +9199,11 @@
      "data": "19 de dezembro de 2025",
      "autor": "sergio-fontellas",
      "resumo": "institui a Campanha Outubro Rosa, de autoria do vereador Sérgio Fontellas.",
-     "sessao": "2026-02-05-o2"
+     "sessao": "2026-02-05-o2",
+     "temas": [
+      "Saúde",
+      "Datas e calendário"
+     ]
     }
    ],
    "vetos": [
@@ -8927,7 +9214,10 @@
      "projeto": "PL 47/2025",
      "autor": "sergio-fontellas",
      "resumo": "institui a Campanha Outubrinho Rosa, de autoria do vereador Sérgio Fontellas.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Datas e calendário"
+     ]
     }
    ],
    "adiadas": [
@@ -9039,6 +9329,7 @@
    "nome": "Gabriel Saúde",
    "partido": "AGIR",
    "partidoNome": null,
+   "partidoLogo": "/partidos/agir.png",
    "foto": "/fotos/vereadores/gabriel-saude.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/gabriel-saude",
@@ -9174,11 +9465,11 @@
    "temas": [
     {
      "tema": "Pessoas com deficiência e TEA",
-     "n": 13
+     "n": 14
     },
     {
      "tema": "Saúde",
-     "n": 11
+     "n": 12
     },
     {
      "tema": "Educação",
@@ -9193,16 +9484,32 @@
      "n": 5
     },
     {
-     "tema": "Gestão pública e transparência",
+     "tema": "Servidores públicos",
      "n": 4
+    },
+    {
+     "tema": "Nomes e homenagens",
+     "n": 4
+    },
+    {
+     "tema": "Datas e calendário",
+     "n": 3
     },
     {
      "tema": "Assistência social e moradia",
      "n": 3
     },
     {
+     "tema": "Tributos e dívidas",
+     "n": 3
+    },
+    {
      "tema": "Mulheres",
      "n": 3
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 2
     },
     {
      "tema": "Segurança",
@@ -9221,7 +9528,19 @@
      "n": 2
     },
     {
-     "tema": "Economia e emprego",
+     "tema": "Entidades e utilidade pública",
+     "n": 1
+    },
+    {
+     "tema": "Gestão pública e transparência",
+     "n": 1
+    },
+    {
+     "tema": "Imóveis e áreas públicas",
+     "n": 1
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
      "n": 1
     }
    ],
@@ -10266,7 +10585,9 @@
      "ementa": "Denomina Viela José Carlos de Arruda a atual Viela 15 do Loteamento Jardim Velloso, situado no Bairro Veloso.",
      "sessao": "2026-08-04-o38",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-118/2026",
@@ -10324,7 +10645,8 @@
      "classe": "simbolico",
      "temas": [
       "Crianças e jovens",
-      "Animais"
+      "Animais",
+      "Nomes e homenagens"
      ]
     },
     {
@@ -10435,7 +10757,10 @@
      "ementa": "Institui a Caminhada \"Passos TEA\" no Calendário Oficial de Eventos do Município de Osasco e dá outras providências.",
      "sessao": "2026-03-03-o7",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-32/2026",
@@ -10459,7 +10784,10 @@
      "autor": "gabriel-saude",
      "autorTexto": "GABRIEL SAÚDE",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Senhor Edson Ogeda Martins.",
-     "sessao": "2026-06-16-o34"
+     "sessao": "2026-06-16-o34",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-22/2026",
@@ -10471,7 +10799,10 @@
      "ementa": "Institui a Meia Maratona de Osasco – 21K no Calendário Oficial de Eventos do Município de Osasco, a ser realizada anualmente no último domingo do mês de fevereiro, e dá outras providências.",
      "sessao": "2026-03-10-o9",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Esporte, cultura e lazer",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-12/2026",
@@ -10497,7 +10828,11 @@
      "ementa": "Estabelece desconto de 50% (cinquenta por cento) no pagamento do IPTU - Imposto Predial e Territorial Urbano aos imóveis localizados nas vias públicas onde se realizam feiras-livres, no âmbito do Município de Osasco, e dá outras providências.",
      "sessao": "2026-03-03-o7",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Economia e emprego",
+      "Tributos e dívidas",
+      "Imóveis e áreas públicas"
+     ]
     },
     {
      "key": "PL-229/2025",
@@ -10510,6 +10845,7 @@
      "sessao": "2025-12-18-o75",
      "classe": "substantivo",
      "temas": [
+      "Saúde",
       "Meio ambiente",
       "Mobilidade"
      ]
@@ -10525,7 +10861,8 @@
      "sessao": "2025-12-09-o72",
      "classe": "substantivo",
      "temas": [
-      "Animais"
+      "Animais",
+      "Nomes e homenagens"
      ]
     },
     {
@@ -10571,7 +10908,8 @@
      "sessao": "2025-10-14-o58",
      "classe": "substantivo",
      "temas": [
-      "Pessoas com deficiência e TEA"
+      "Pessoas com deficiência e TEA",
+      "Tributos e dívidas"
      ]
     },
     {
@@ -10586,7 +10924,8 @@
      "classe": "substantivo",
      "temas": [
       "Idosos",
-      "Gestão pública e transparência"
+      "Servidores públicos",
+      "Nomes e homenagens"
      ]
     },
     {
@@ -10641,7 +10980,7 @@
      "sessao": "2025-10-14-o58",
      "classe": "substantivo",
      "temas": [
-      "Gestão pública e transparência"
+      "Servidores públicos"
      ]
     },
     {
@@ -10700,7 +11039,8 @@
      "temas": [
       "Mulheres",
       "Mobilidade",
-      "Economia e emprego"
+      "Economia e emprego",
+      "Servidores públicos"
      ]
     },
     {
@@ -10800,7 +11140,7 @@
      "classe": "substantivo",
      "temas": [
       "Pessoas com deficiência e TEA",
-      "Gestão pública e transparência"
+      "Servidores públicos"
      ]
     },
     {
@@ -10825,7 +11165,9 @@
      "ementa": "Institui no Calendário Oficial do Município de Osasco a \"Semana QuitaOZ\".",
      "sessao": "2025-09-16-o50",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-130/2025",
@@ -10850,7 +11192,10 @@
      "autor": "gabriel-saude",
      "autorTexto": "Gabriel Saúde",
      "ementa": "Concede o Diploma João Cândido-Almirante Negro ao senhor Waldomiro Hildebrando Ribeiro dos Santos.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-109/2025",
@@ -10860,7 +11205,10 @@
      "autor": "gabriel-saude",
      "autorTexto": "Gabriel Saúde",
      "ementa": "Concede o Diploma de Líder Comunitário à Sra. Érica da Rocha, em reconhecimento à sua notável trajetória de superação pessoal, compromisso social e relevantes serviços prestados à comunidade do Município de Osasco.",
-     "sessao": "2025-12-18-o75"
+     "sessao": "2025-12-18-o75",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-095/2025",
@@ -10870,7 +11218,11 @@
      "autor": "gabriel-saude",
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a concessão Concede Placa Comemorativa ao Dr. Wanderlei Amadeu de Pasqual, em reconhecimento aos seus 40 anos de dedicação ao atendimento de pacientes especiais, iniciados em 1985, e aos relevantes serviços prestados à saúde e à comunidade osasquense.",
-     "sessao": "2025-12-09-o72"
+     "sessao": "2025-12-09-o72",
+     "temas": [
+      "Saúde",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-85/2025",
@@ -10880,7 +11232,10 @@
      "autor": "gabriel-saude",
      "autorTexto": "Gabriel Saúde",
      "ementa": "Ficam concedidos ao Sr. Toshio Yasutaki a Medalha Antônio Raposo Tavares e o Diploma Cidade de Osasco.",
-     "sessao": "2025-11-27-o69"
+     "sessao": "2025-11-27-o69",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-82/2025",
@@ -10894,6 +11249,7 @@
      "classe": "substantivo",
      "temas": [
       "Pessoas com deficiência e TEA",
+      "Entidades e utilidade pública",
       "Gestão pública e transparência"
      ]
     },
@@ -10919,7 +11275,10 @@
      "autor": "gabriel-saude",
      "autorTexto": "GABRIEL SAÚDE",
      "ementa": "Dispõe sobre a concessão de Título de Cidadã Osasquense à Sra. Carolina Gomes Lourenço.",
-     "sessao": "2025-12-04-o71"
+     "sessao": "2025-12-04-o71",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-46/2025",
@@ -10929,7 +11288,10 @@
      "autor": "gabriel-saude",
      "autorTexto": "Gabriel Saúde",
      "ementa": "Concede Placa Comemorativa à Mecânica Allen, em homenagem aos seus 40 anos de fundação.",
-     "sessao": "2025-09-16-o50"
+     "sessao": "2025-09-16-o50",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-43/2025",
@@ -10939,7 +11301,12 @@
      "autor": "gabriel-saude",
      "autorTexto": "Gabriel Saúde",
      "ementa": "Dispõe sobre a concessão o Cartão de Prata à entidade Alegra Odontologia.",
-     "sessao": "2025-09-16-o50"
+     "sessao": "2025-09-16-o50",
+     "temas": [
+      "Saúde",
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-42/2025",
@@ -10949,7 +11316,11 @@
      "autor": "gabriel-saude",
      "autorTexto": "Gabriel Saúde",
      "ementa": "Concede o Cartão de Prata à Comunidade Matriz Santa Maria Mãe de Deus.",
-     "sessao": "2025-09-16-o50"
+     "sessao": "2025-09-16-o50",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PLC-14/2025",
@@ -10973,7 +11344,9 @@
      "ementa": "Altera a Lei Complementar nº 404 de 28 de dezembro de 2022, que institui o Código Tributário do Município de Osasco e dá outras providências.",
      "sessao": "2025-09-23-o52",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Tributos e dívidas"
+     ]
     }
    ],
    "requerimentos": [],
@@ -10985,7 +11358,14 @@
      "data": "7 de janeiro de 2026",
      "autor": "gabriel-saude",
      "resumo": "veda a nomeação de pessoa condenada por sentença criminal com trânsito em julgado e fundamentada na Lei Federal nº 11.340, de 7 de agosto de 2006(Lei Maria da Penha), para exercer cargo ou emprego público no Município de Osasco, inclusive nos âmbitos do Poder Legislativo e da Administração Indireta, de autoria do vereador Gabriel Saúde.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Saúde",
+      "Mulheres",
+      "Mobilidade",
+      "Economia e emprego",
+      "Servidores públicos"
+     ]
     }
    ],
    "vetos": [
@@ -10996,7 +11376,11 @@
      "projeto": "PL 143/2025",
      "autor": "gabriel-saude",
      "resumo": "institui no Calendário Oficial do Município de Osasco a \"Semana Quita0Z\", de autoria do vereador Gabriel Saúde.",
-     "sessao": "2026-03-26-o14"
+     "sessao": "2026-03-26-o14",
+     "temas": [
+      "Saúde",
+      "Datas e calendário"
+     ]
     }
    ],
    "adiadas": [
@@ -11216,6 +11600,7 @@
    "nome": "Carmônio Bastos",
    "partido": "PODE",
    "partidoNome": "Podemos",
+   "partidoLogo": null,
    "foto": "/fotos/vereadores/carmonio-bastos.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/carmonio-bastos",
@@ -11306,7 +11691,20 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 6
    },
-   "temas": [],
+   "temas": [
+    {
+     "tema": "Nomes e homenagens",
+     "n": 5
+    },
+    {
+     "tema": "Datas e calendário",
+     "n": 1
+    },
+    {
+     "tema": "Saúde",
+     "n": 1
+    }
+   ],
    "atividadePorMes": [
     {
      "mes": "2025-02",
@@ -12284,7 +12682,9 @@
      "ementa": "Dispõe sobre a denominação do novo prédio da Câmara Municipal de Osasco.",
      "sessao": "2026-04-28-o21",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-31/2026",
@@ -12294,7 +12694,14 @@
      "autor": "carmonio-bastos",
      "autorTexto": "CARMÔNIO BASTOS",
      "ementa": "Fica concedida Placa Comemorativa à Delegação Cidade-Irmã Tsu, em comemoração aos 50 anos da celebração do Convênio entre o município de Osasco e a cidade de Tsu, da Província de Mie, no Japão, em reconhecimento à histórica relação de cooperação amizade, e intercâmbio cultural, educacional, esportivo e econômico.",
-     "sessao": "2026-06-25-o37"
+     "sessao": "2026-06-25-o37",
+     "temas": [
+      "Educação",
+      "Esporte, cultura e lazer",
+      "Economia e emprego",
+      "Nomes e homenagens",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-6/2026",
@@ -12306,7 +12713,9 @@
      "ementa": "Dispõe sobre a denominação do Parque Nordestino de Osasco.",
      "sessao": "2026-02-03-o1",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-1/2026",
@@ -12316,7 +12725,10 @@
      "autor": "carmonio-bastos",
      "autorTexto": "Carmônio Bastos",
      "ementa": "Dispõe sobre a concessão de Título de cidadão osasquense ao senhor Guido Geuna, arquiteto e ex-prefeito (SINDACO) da cidade de Osasco, Itália.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-206/2025",
@@ -12328,7 +12740,9 @@
      "ementa": "Dispõe sobre a inserção da legislatura vigente da Câmara Municipal nas placas de inauguração de obras públicas de construção, revitalização, reforma ou ampliação realizadas no Município de Osasco, e dá outras providências.",
      "sessao": "2025-11-06-o64",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-125/2025",
@@ -12340,7 +12754,9 @@
      "ementa": "Dispõe sobre a denominação da viela Orlando Rocha Freixeda.",
      "sessao": "2025-08-28-o45",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-114/2025",
@@ -12352,7 +12768,10 @@
      "ementa": "Dispõe sobre denominação da UBS Adalgiza Correia Soares.",
      "sessao": "2025-08-05-o38",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Saúde",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-077/2025",
@@ -12362,7 +12781,13 @@
      "autor": "carmonio-bastos",
      "autorTexto": "CARMONIO GONCALVES BASTOS",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Associação de Judô Kenshin, pelos relevantes serviços prestados à cidade de Osasco e à formação esportiva, educacional e humana de seus cidadãos.",
-     "sessao": "2025-11-13-o66"
+     "sessao": "2025-11-13-o66",
+     "temas": [
+      "Educação",
+      "Esporte, cultura e lazer",
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-076/2025",
@@ -12372,7 +12797,10 @@
      "autor": "carmonio-bastos",
      "autorTexto": "CARMONIO GONCALVES BASTOS",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Senhor Nelson Shigueki Koh.",
-     "sessao": "2025-11-13-o66"
+     "sessao": "2025-11-13-o66",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-76/2025",
@@ -12382,7 +12810,13 @@
      "autor": "carmonio-bastos",
      "autorTexto": "CARMÔNIO BASTOS",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Senhor Nelson Shigueki Koh E PROJETO DE DECRETO LEGISLATIVO Nº 77/2025 - CARMÔNIO BASTOS - Dispõe sobre a concessão de Placa Comemorativa à Associação de Judô Kenshin, pelos relevantes serviços prestados à cidade de Osasco e à formação esportiva, educacional e humana de seus cidadãos.",
-     "sessao": "2025-12-18-o75"
+     "sessao": "2025-12-18-o75",
+     "temas": [
+      "Educação",
+      "Esporte, cultura e lazer",
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-35/2025",
@@ -12392,7 +12826,10 @@
      "autor": "carmonio-bastos",
      "autorTexto": "Carmônio Bastos",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao senhor Gustavo Albano Dias da Silva.",
-     "sessao": "2025-08-26-o44"
+     "sessao": "2025-08-26-o44",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-34/2025",
@@ -12404,7 +12841,9 @@
      "ementa": "Institui a Festa da Família no Calendário Oficial.",
      "sessao": "2025-04-22-o20",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PDL-1/2025",
@@ -12414,7 +12853,10 @@
      "autor": "carmonio-bastos",
      "autorTexto": "Carmônio Bastos",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao senhor Vitor Dantas Magnani.",
-     "sessao": "2025-03-06-o8"
+     "sessao": "2025-03-06-o8",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [
@@ -12450,7 +12892,10 @@
      "data": "3 de março de 2026",
      "autor": "carmonio-bastos",
      "resumo": "dispõe sobre a inserção da legislatura vigente da Câmara Municipal nas placas de inauguração de obras públicas de construção, revitalização, reforma ou ampliação realizadas no Município de Osasco, de autoria do vereador Carmônio Bastos e outros vereadores.",
-     "sessao": "2026-03-05-o8"
+     "sessao": "2026-03-05-o8",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "L-5.458",
@@ -12458,7 +12903,10 @@
      "data": "5 de março de 2026",
      "autor": "carmonio-bastos",
      "resumo": "dispõe sobre a denominação do Parque Nordestino de Osasco, de autoria do vereador Carmônio Bastos.",
-     "sessao": "2026-03-10-o9"
+     "sessao": "2026-03-10-o9",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "vetos": [],
@@ -12531,6 +12979,7 @@
    "nome": "Rodrigo Gansinho",
    "partido": "PL",
    "partidoNome": "Partido Liberal",
+   "partidoLogo": "/partidos/pl.png",
    "foto": "/fotos/vereadores/rodrigo-gansinho.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/rodrigo-gansinho",
@@ -12600,11 +13049,15 @@
    },
    "temas": [
     {
-     "tema": "Animais",
-     "n": 1
+     "tema": "Datas e calendário",
+     "n": 3
     },
     {
      "tema": "Educação",
+     "n": 2
+    },
+    {
+     "tema": "Animais",
      "n": 1
     },
     {
@@ -12617,6 +13070,10 @@
     },
     {
      "tema": "Segurança",
+     "n": 1
+    },
+    {
+     "tema": "Nomes e homenagens",
      "n": 1
     },
     {
@@ -13423,7 +13880,9 @@
      "ementa": "Dispõe sobre a utilização de QR Code em placas informativas de obras públicas no Município de Osasco e dá outras providências.",
      "sessao": "2026-04-23-o20",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-94/2026",
@@ -13452,7 +13911,8 @@
      "sessao": "2026-04-23-o20",
      "classe": "simbolico",
      "temas": [
-      "Educação"
+      "Educação",
+      "Datas e calendário"
      ]
     },
     {
@@ -13465,7 +13925,10 @@
      "ementa": "Institui o Dia Municipal do Neuropsicopedagogo.",
      "sessao": "2026-04-23-o20",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Educação",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-86/2026",
@@ -13477,7 +13940,9 @@
      "ementa": "Institui o Dia Municipal do Psicanalista Clínico no Calendário Oficial do Município de Osasco.",
      "sessao": "2026-04-14-o18",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-80/2026",
@@ -13501,7 +13966,10 @@
      "autor": "rodrigo-gansinho",
      "autorTexto": "Rodrigo Gansinho",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Dr. Anderson Pires Giampaoli.",
-     "sessao": "2026-03-03-o7"
+     "sessao": "2026-03-03-o7",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-11/2026",
@@ -13511,7 +13979,10 @@
      "autor": "rodrigo-gansinho",
      "autorTexto": "Rodrigo Gansinho",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à CAMILA BRAIT.",
-     "sessao": "2026-02-26-o6"
+     "sessao": "2026-02-26-o6",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -13587,6 +14058,7 @@
    "nome": "Alexandre Capriotti",
    "partido": "PL",
    "partidoNome": "Partido Liberal",
+   "partidoLogo": "/partidos/pl.png",
    "foto": "/fotos/vereadores/alexandre-capriotti.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/alexandre-capriotti",
@@ -13696,7 +14168,15 @@
    "temas": [
     {
      "tema": "Animais",
-     "n": 11
+     "n": 14
+    },
+    {
+     "tema": "Datas e calendário",
+     "n": 5
+    },
+    {
+     "tema": "Nomes e homenagens",
+     "n": 3
     },
     {
      "tema": "Segurança",
@@ -13707,15 +14187,19 @@
      "n": 2
     },
     {
+     "tema": "Esporte, cultura e lazer",
+     "n": 2
+    },
+    {
      "tema": "Pessoas com deficiência e TEA",
      "n": 1
     },
     {
-     "tema": "Esporte, cultura e lazer",
+     "tema": "Assistência social e moradia",
      "n": 1
     },
     {
-     "tema": "Assistência social e moradia",
+     "tema": "Tributos e dívidas",
      "n": 1
     },
     {
@@ -14686,7 +15170,8 @@
      "sessao": "2026-09-22-o52",
      "classe": "substantivo",
      "temas": [
-      "Animais"
+      "Animais",
+      "Tributos e dívidas"
      ]
     },
     {
@@ -14699,7 +15184,10 @@
      "ementa": "Dispõe sobre a denominação do Pet Parque Pet Estrela localizado no bairro Jaguaribe.",
      "sessao": "2026-08-18-o42",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Animais",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-175/2026",
@@ -14711,7 +15199,10 @@
      "ementa": "Dispõe sobre a denominação do Pet Parque Cão Caramelo localizado no bairro Jaguaribe.",
      "sessao": "2026-08-11-o40",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Animais",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-84/2026",
@@ -14752,7 +15243,10 @@
      "ementa": "Institui no Calendário Oficial do Município de Osasco o “Dia Municipal da Corrida de Rua” e dá outras providências.",
      "sessao": "2026-02-26-o6",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Esporte, cultura e lazer",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-20/2026",
@@ -14776,7 +15270,10 @@
      "autor": "alexandre-capriotti",
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a concessão da Medalha Antônio Raposo Tavares e do Diploma Cidade de Osasco ao senhor Antônio Cesar Felix de Sousa.",
-     "sessao": "2026-04-09-o17"
+     "sessao": "2026-04-09-o17",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-210/2025",
@@ -14788,7 +15285,10 @@
      "ementa": "Institui no Calendário Oficial do Município de Osasco, o “Dia Municipal de Empatia com Pet”, e dá outras providências.",
      "sessao": "2025-11-13-o66",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Animais",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-202/2025",
@@ -14800,7 +15300,9 @@
      "ementa": "Institui, no âmbito do Município de Osasco, a “Campanha de Combate à Esporotricose”, e dá outras providencias.",
      "sessao": "2025-10-30-o62",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-193/2025",
@@ -14812,7 +15314,9 @@
      "ementa": "Institui no calendário oficial do Município de Osasco, o dia “Família Christensen – A História que nos une”.",
      "sessao": "2025-10-07-o56",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-148/2025",
@@ -14825,7 +15329,8 @@
      "sessao": "2025-09-02-o46",
      "classe": "simbolico",
      "temas": [
-      "Pessoas com deficiência e TEA"
+      "Pessoas com deficiência e TEA",
+      "Datas e calendário"
      ]
     },
     {
@@ -14850,7 +15355,10 @@
      "autor": "alexandre-capriotti",
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa ao Restaurante Café Brasil.",
-     "sessao": "2025-12-16-o74"
+     "sessao": "2025-12-16-o74",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-98/2025",
@@ -14860,7 +15368,10 @@
      "autor": "alexandre-capriotti",
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a concessão da Medalha Antônio Raposo Tavares e Diploma Cidade de Osasco ao senhor Amarildo Rodrigues.",
-     "sessao": "2025-12-11-o73"
+     "sessao": "2025-12-11-o73",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-098/2025",
@@ -14870,7 +15381,10 @@
      "autor": "alexandre-capriotti",
      "autorTexto": "ALEXANDRE CAPRIOTTI",
      "ementa": "Dispõe sobre a concessão da Medalha Antônio Raposo Tavares e Diploma Cidade de Osasco ao senhor Amarildo Rodrigues.",
-     "sessao": "2026-05-07-o24"
+     "sessao": "2026-05-07-o24",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-97/2025",
@@ -14908,7 +15422,10 @@
      "autor": "alexandre-capriotti",
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à DPA Formaturas.",
-     "sessao": "2025-12-09-o72"
+     "sessao": "2025-12-09-o72",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-92/2025",
@@ -14918,7 +15435,10 @@
      "autor": "alexandre-capriotti",
      "autorTexto": "ALEXANDRE CAPRIOTTI",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à DPA Formaturas.",
-     "sessao": "2026-04-30-o22"
+     "sessao": "2026-04-30-o22",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-87/2025",
@@ -14942,7 +15462,10 @@
      "autor": "alexandre-capriotti",
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a concessão de Diploma Líder Comunitário ao senhor Valdemilson da Conceição.",
-     "sessao": "2025-12-02-o70"
+     "sessao": "2025-12-02-o70",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-86/2025",
@@ -14968,7 +15491,10 @@
      "autor": "alexandre-capriotti",
      "autorTexto": "ALEXANDRE DE JESUS CAPRIOTTI",
      "ementa": "Dispõe sobre a concessão de Título de Cidadã Osasquense Senhora Elza Pereira Lopes Sena.",
-     "sessao": "2025-11-06-o64"
+     "sessao": "2025-11-06-o64",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-65/2025",
@@ -14978,7 +15504,10 @@
      "autor": "alexandre-capriotti",
      "autorTexto": "ALEXANDRE CAPRIOTTI",
      "ementa": "Dispõe sobre a concessão de Título de Cidadã Osasquense Senhora Elza Pereira Lopes Sena.",
-     "sessao": "2026-04-23-o20"
+     "sessao": "2026-04-23-o20",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-54/2025",
@@ -15000,7 +15529,10 @@
      "autor": "alexandre-capriotti",
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a concessão de cartão de prata ao senhor Bruno Marcello de Oliveira Lima.",
-     "sessao": "2025-09-30-o54"
+     "sessao": "2025-09-30-o54",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-53/2025",
@@ -15010,7 +15542,10 @@
      "autor": "alexandre-capriotti",
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a concessão de cartão de prata ao senhor Rogério Lins Wanderley.",
-     "sessao": "2025-09-23-o52"
+     "sessao": "2025-09-23-o52",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-31/2025",
@@ -15063,7 +15598,8 @@
      "sessao": "2025-10-07-o56",
      "classe": "simbolico",
      "temas": [
-      "Esporte, cultura e lazer"
+      "Esporte, cultura e lazer",
+      "Nomes e homenagens"
      ]
     }
    ],
@@ -15076,7 +15612,11 @@
      "data": "19 de dezembro de 2025",
      "autor": "alexandre-capriotti",
      "resumo": "dispõe sobre a denominação da arena esportiva Janilson Vieira Lopes, de autoria do vereador Alexandre Capriotti.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Esporte, cultura e lazer",
+      "Nomes e homenagens"
+     ]
     }
    ],
    "vetos": [],
@@ -15325,6 +15865,7 @@
    "nome": "Guilherme Prado",
    "partido": "PRD",
    "partidoNome": "Partido Renovação Democrática",
+   "partidoLogo": "/partidos/prd.png",
    "foto": "/fotos/vereadores/guilherme-prado.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/guilherme-prado",
@@ -15441,16 +15982,28 @@
    },
    "temas": [
     {
+     "tema": "Datas e calendário",
+     "n": 5
+    },
+    {
+     "tema": "Nomes e homenagens",
+     "n": 4
+    },
+    {
      "tema": "Mobilidade",
      "n": 3
     },
     {
-     "tema": "Gestão pública e transparência",
+     "tema": "Servidores públicos",
      "n": 3
     },
     {
      "tema": "Economia e emprego",
      "n": 2
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 1
     },
     {
      "tema": "Educação",
@@ -16457,7 +17010,8 @@
      "sessao": "2026-08-18-o42",
      "classe": "simbolico",
      "temas": [
-      "Gestão pública e transparência"
+      "Datas e calendário",
+      "Servidores públicos"
      ]
     },
     {
@@ -16471,7 +17025,7 @@
      "sessao": "2026-08-11-o40",
      "classe": "substantivo",
      "temas": [
-      "Gestão pública e transparência"
+      "Servidores públicos"
      ]
     },
     {
@@ -16514,7 +17068,9 @@
      "ementa": "Dispõe sobre alteração da denominação da Rua General Labatut para Rua Padre Leo Dolan – Padre Leo.",
      "sessao": "2026-05-19-o27",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-83/2026",
@@ -16527,7 +17083,9 @@
      "sessao": "2026-04-14-o18",
      "classe": "simbolico",
      "temas": [
-      "Economia e emprego"
+      "Esporte, cultura e lazer",
+      "Economia e emprego",
+      "Datas e calendário"
      ]
     },
     {
@@ -16540,7 +17098,9 @@
      "ementa": "Dispõe sobre a instituição do “Dia do Dogueiro” no Calendário Oficial do Município de Osasco.",
      "sessao": "2026-04-14-o18",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-81/2026",
@@ -16553,7 +17113,8 @@
      "sessao": "2026-04-14-o18",
      "classe": "simbolico",
      "temas": [
-      "Gestão pública e transparência"
+      "Servidores públicos",
+      "Nomes e homenagens"
      ]
     },
     {
@@ -16564,7 +17125,10 @@
      "autor": "guilherme-prado",
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Sr. Odair Zago.",
-     "sessao": "2026-08-06-o39"
+     "sessao": "2026-08-06-o39",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-13/2026",
@@ -16574,7 +17138,10 @@
      "autor": "guilherme-prado",
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Sr. Josué Silveira Ramos.",
-     "sessao": "2026-03-10-o9"
+     "sessao": "2026-03-10-o9",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-5/2026",
@@ -16584,7 +17151,10 @@
      "autor": "guilherme-prado",
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a concessão de Diploma Líder Comunitário ao Sr. João Cachate da Silva.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-4/2026",
@@ -16594,7 +17164,10 @@
      "autor": "guilherme-prado",
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata para o senhor Claúdio Monteiro Júnior.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-004/2026",
@@ -16604,7 +17177,10 @@
      "autor": "guilherme-prado",
      "autorTexto": "GUILHERME PRADO",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata para o Senhor Claudio Monteiro Júnior.",
-     "sessao": "2026-05-07-o24"
+     "sessao": "2026-05-07-o24",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-3/2026",
@@ -16617,7 +17193,8 @@
      "sessao": "2026-02-03-o1",
      "classe": "simbolico",
      "temas": [
-      "Mobilidade"
+      "Mobilidade",
+      "Nomes e homenagens"
      ]
     },
     {
@@ -16628,7 +17205,10 @@
      "autor": "guilherme-prado",
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a concessão de Medalha Antônio Raposo Tavares e Diploma Cidade de Osasco ao senhor Sérgio Di Pace Di Nizo.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-222/2025",
@@ -16652,7 +17232,9 @@
      "ementa": "Dispõe sobre alteração da denominação da rua General Labatut para rua Padre Léo.",
      "sessao": "2025-11-27-o69",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-146/2025",
@@ -16678,7 +17260,9 @@
      "ementa": "Institui a Semana municipal da Mãe Atípica.",
      "sessao": "2025-09-09-o48",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PDL-067/2025",
@@ -16688,7 +17272,10 @@
      "autor": "guilherme-prado",
      "autorTexto": "GUILHERME DE PRADO SOUZA",
      "ementa": "Dispõe sobre concessão de Diploma Líder Comunitário ao senhor Antônio Vieira da Silva - Tonão",
-     "sessao": "2025-11-06-o64"
+     "sessao": "2025-11-06-o64",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-67/2025",
@@ -16698,7 +17285,10 @@
      "autor": "guilherme-prado",
      "autorTexto": "GUILHERME PRADO",
      "ementa": "Dispõe sobre a concessão de Diploma de Líder Comunitário ao Senhor Antônio Vieira da Silva – Tonão.",
-     "sessao": "2025-11-11-o65"
+     "sessao": "2025-11-11-o65",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-20/2025",
@@ -16710,7 +17300,9 @@
      "ementa": "Institui a Semana Municipal da Mãe Atípica.",
      "sessao": "2025-03-18-o11",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PDL-20/2025",
@@ -16720,7 +17312,11 @@
      "autor": "guilherme-prado",
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata à Construíde – Organização da Sociedade Civil.",
-     "sessao": "2025-06-03-o31"
+     "sessao": "2025-06-03-o31",
+     "temas": [
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-8/2025",
@@ -16730,7 +17326,10 @@
      "autor": "guilherme-prado",
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao senhor Eduardo Matias.",
-     "sessao": "2025-03-11-o9"
+     "sessao": "2025-03-11-o9",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-7/2025",
@@ -16740,7 +17339,10 @@
      "autor": "guilherme-prado",
      "autorTexto": "Guilherme Prado",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata para o Capitão Daniel Ribeiro Juvino.",
-     "sessao": "2025-03-11-o9"
+     "sessao": "2025-03-11-o9",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-6/2025",
@@ -16750,7 +17352,10 @@
      "autor": "guilherme-prado",
      "autorTexto": "GUILHERME PRADO",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao senhor Edilson Devechio.",
-     "sessao": "2025-04-24-o21"
+     "sessao": "2025-04-24-o21",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -16764,7 +17369,10 @@
      "projeto": "PL 216/2025",
      "autor": "guilherme-prado",
      "resumo": "dispõe sobre alteração da denominação da rua General Labatut para rua Padre Léo, de autoria do vereador Guilherme Prado.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "adiadas": [
@@ -16872,6 +17480,7 @@
    "nome": "Ralfi Silva",
    "partido": "REPUBLICANOS",
    "partidoNome": null,
+   "partidoLogo": null,
    "foto": "/fotos/vereadores/ralfi-silva.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/ralfi-silva",
@@ -16986,7 +17595,7 @@
    "temas": [
     {
      "tema": "Animais",
-     "n": 9
+     "n": 10
     },
     {
      "tema": "Pessoas com deficiência e TEA",
@@ -16997,16 +17606,24 @@
      "n": 6
     },
     {
+     "tema": "Datas e calendário",
+     "n": 4
+    },
+    {
+     "tema": "Mobilidade",
+     "n": 3
+    },
+    {
      "tema": "Educação",
      "n": 3
     },
     {
-     "tema": "Mobilidade",
+     "tema": "Crianças e jovens",
      "n": 2
     },
     {
-     "tema": "Crianças e jovens",
-     "n": 2
+     "tema": "Entidades e utilidade pública",
+     "n": 1
     },
     {
      "tema": "Meio ambiente",
@@ -18003,7 +18620,8 @@
      "sessao": "2026-05-12-o25",
      "classe": "substantivo",
      "temas": [
-      "Animais"
+      "Animais",
+      "Datas e calendário"
      ]
     },
     {
@@ -18073,7 +18691,9 @@
      "ementa": "Institui no calendário oficial do Município de Osasco a Celebração Reinafé.",
      "sessao": "2026-03-24-o13",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-52/2026",
@@ -18098,7 +18718,10 @@
      "autor": "ralfi-silva",
      "autorTexto": "RALFI SILVA",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa ao Espaço Lúmen.",
-     "sessao": "2026-06-11-o33"
+     "sessao": "2026-06-11-o33",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-23/2026",
@@ -18151,7 +18774,9 @@
      "ementa": "Dispõe sobre a campanha de conscientização sobre epilepsia no Município de Osasco, visando informar e mobilizar a população quanto aos cuidados e à prevenção relacionados à condição.",
      "sessao": "2026-02-24-o5",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-16/2026",
@@ -18190,7 +18815,10 @@
      "autor": "ralfi-silva",
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre a concessão do Diploma João Cândido - Almirante Negro a Mauro Benedito de Santana Filho.",
-     "sessao": "2026-04-07-o16"
+     "sessao": "2026-04-07-o16",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-14/2026",
@@ -18203,7 +18831,8 @@
      "sessao": "2026-02-24-o5",
      "classe": "substantivo",
      "temas": [
-      "Animais"
+      "Animais",
+      "Mobilidade"
      ]
     },
     {
@@ -18229,7 +18858,10 @@
      "autor": "ralfi-silva",
      "autorTexto": "Ralfi Silva",
      "ementa": "Concede a Medalha Antônio Raposo Tavares e o Diploma Cidade de Osasco ao Sr. Thiago Borges Batista.",
-     "sessao": "2026-02-24-o5"
+     "sessao": "2026-02-24-o5",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PR-6/2026",
@@ -18293,7 +18925,9 @@
      "ementa": "Dispõe sobre a revogação da Lei nº 3.587, de 14 de dezembro de 2000, que institui no calendário oficial de eventos do Município de Osasco a Festa do Peão Boiadeiro.",
      "sessao": "2025-09-09-o48",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-151/2025",
@@ -18347,7 +18981,10 @@
      "autor": "ralfi-silva",
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre a Concessão de Cartão de Prata a DGT Administradora.",
-     "sessao": "2025-12-16-o74"
+     "sessao": "2025-12-16-o74",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-100/2025",
@@ -18357,7 +18994,10 @@
      "autor": "ralfi-silva",
      "autorTexto": "Ralfi Silva",
      "ementa": "– Dispõe sobre a concessão de Placa Comemorativa à Ecco Multimarcas.",
-     "sessao": "2025-12-16-o74"
+     "sessao": "2025-12-16-o74",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-81/2025",
@@ -18367,7 +19007,10 @@
      "autor": "ralfi-silva",
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre a Concessão de Cartão de Prata ao Judoca João Velloza.",
-     "sessao": "2025-11-18-o67"
+     "sessao": "2025-11-18-o67",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-80/2025",
@@ -18377,7 +19020,8 @@
      "autor": "ralfi-silva",
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre a concessão de Troféu João Cândido - Almirante Negro a Fábio Rodrigues da Silva.",
-     "sessao": "2025-12-09-o72"
+     "sessao": "2025-12-09-o72",
+     "temas": []
     },
     {
      "key": "PL-39/2025",
@@ -18390,7 +19034,8 @@
      "sessao": "2025-09-30-o54",
      "classe": "substantivo",
      "temas": [
-      "Saúde"
+      "Saúde",
+      "Entidades e utilidade pública"
      ]
     },
     {
@@ -18404,7 +19049,8 @@
      "sessao": "2025-06-03-o31",
      "classe": "substantivo",
      "temas": [
-      "Pessoas com deficiência e TEA"
+      "Pessoas com deficiência e TEA",
+      "Animais"
      ]
     },
     {
@@ -18415,7 +19061,11 @@
      "autor": "ralfi-silva",
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Drogaria Econômica.",
-     "sessao": "2025-08-05-o38"
+     "sessao": "2025-08-05-o38",
+     "temas": [
+      "Economia e emprego",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-3/2025",
@@ -18425,7 +19075,11 @@
      "autor": "ralfi-silva",
      "autorTexto": "RALFI",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Drogaria Econômica.",
-     "sessao": "2025-09-16-o50"
+     "sessao": "2025-09-16-o50",
+     "temas": [
+      "Economia e emprego",
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -18462,7 +19116,11 @@
      "data": "16 de janeiro de 2026",
      "autor": "ralfi-silva",
      "resumo": "assegura o ingresso e a permanência de cães de assistência a pessoas com deficiência ou transtorno do espectro autista – TEA em locais de uso público, de autoria do vereador Ralfi Silva.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Animais"
+     ]
     }
    ],
    "vetos": [
@@ -18473,7 +19131,11 @@
      "projeto": "PL 32/2025",
      "autor": "ralfi-silva",
      "resumo": "dispõe assegura o ingresso e a permanência de cães de assistência a pessoas com deficiência ou transtorno do espectro autista – TEA em locais de uso público ou privado, de autoria do vereador Ralfi Silva.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Animais"
+     ]
     }
    ],
    "adiadas": [
@@ -18645,6 +19307,7 @@
    "nome": "Fábio Chirinhan",
    "partido": "PRD",
    "partidoNome": "Partido Renovação Democrática",
+   "partidoLogo": "/partidos/prd.png",
    "foto": "/fotos/vereadores/fabio-chirinhan.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/fabio-chirinhan",
@@ -18726,6 +19389,10 @@
    "temas": [
     {
      "tema": "Mobilidade",
+     "n": 1
+    },
+    {
+     "tema": "Nomes e homenagens",
      "n": 1
     }
    ],
@@ -19632,7 +20299,10 @@
      "autor": "fabio-chirinhan",
      "autorTexto": "Fábio Chirinhan e outros Vereadores",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Senhor José Antônio Couzo Arévalo Júnior.",
-     "sessao": "2026-08-25-o44"
+     "sessao": "2026-08-25-o44",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-22/2026",
@@ -19642,7 +20312,10 @@
      "autor": "fabio-chirinhan",
      "autorTexto": "FÁBIO CHIRINHAN",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Sr. José Antonio Couzo Arévalo Júnior.",
-     "sessao": "2026-04-30-o22"
+     "sessao": "2026-04-30-o22",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-19/2026",
@@ -19652,7 +20325,10 @@
      "autor": "fabio-chirinhan",
      "autorTexto": "Fábio Chirinhan",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Sr. Aluísio de Moura Santos.",
-     "sessao": "2026-04-14-o18"
+     "sessao": "2026-04-14-o18",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-150/2025",
@@ -19665,7 +20341,8 @@
      "sessao": "2025-09-04-o47",
      "classe": "simbolico",
      "temas": [
-      "Mobilidade"
+      "Mobilidade",
+      "Nomes e homenagens"
      ]
     },
     {
@@ -19676,7 +20353,11 @@
      "autor": "fabio-chirinhan",
      "autorTexto": "Fábio Chirinhan",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata à Associação Grupo do Bem.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-121/2025",
@@ -19686,7 +20367,11 @@
      "autor": "fabio-chirinhan",
      "autorTexto": "Fábio Chirinhan",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata à Associação Projeto Vida.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-120/2025",
@@ -19696,7 +20381,10 @@
      "autor": "fabio-chirinhan",
      "autorTexto": "Fábio Chirinhan",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Sr. Paulo Rangel Nogueira Paiva, por sua contribuição social, profissional e humana para a cidade de Osasco.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-115/2025",
@@ -19706,7 +20394,10 @@
      "autor": "fabio-chirinhan",
      "autorTexto": "Fábio Chirinhan",
      "ementa": "Dispõe sobre a concessão de placa comemorativa ao senhor Tiago Vieira Calheiros Silva pelos serviços prestados na cidade de Osasco.",
-     "sessao": "2025-12-18-o75"
+     "sessao": "2025-12-18-o75",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -19757,6 +20448,7 @@
    "nome": "Ivanildo Eventos",
    "partido": "PSD",
    "partidoNome": "Partido Social Democrático",
+   "partidoLogo": "/partidos/psd.png",
    "foto": "/fotos/vereadores/ivanildo-eventos.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/ivanildo-eventos",
@@ -19825,7 +20517,16 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 0
    },
-   "temas": [],
+   "temas": [
+    {
+     "tema": "Mobilidade",
+     "n": 1
+    },
+    {
+     "tema": "Datas e calendário",
+     "n": 1
+    }
+   ],
    "atividadePorMes": [
     {
      "mes": "2025-02",
@@ -20143,7 +20844,10 @@
      "ementa": "Institui o Dia do Pedestre no Calendário Oficial do Município de Osasco.",
      "sessao": "2026-08-11-o40",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Mobilidade",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PDL-41/2026",
@@ -20153,7 +20857,10 @@
      "autor": "ivanildo-eventos",
      "autorTexto": "Ivanildo Eventos",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Abda Music Coral e Orquestra.",
-     "sessao": "2026-09-03-o47"
+     "sessao": "2026-09-03-o47",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -20204,6 +20911,7 @@
    "nome": "Elania Silva",
    "partido": "PSD",
    "partidoNome": "Partido Social Democrático",
+   "partidoLogo": "/partidos/psd.png",
    "foto": "/fotos/vereadores/elania-silva.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/elania-silva",
@@ -20263,7 +20971,28 @@
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 4
    },
-   "temas": [],
+   "temas": [
+    {
+     "tema": "Meio ambiente",
+     "n": 4
+    },
+    {
+     "tema": "Economia e emprego",
+     "n": 2
+    },
+    {
+     "tema": "Entidades e utilidade pública",
+     "n": 2
+    },
+    {
+     "tema": "Saúde",
+     "n": 1
+    },
+    {
+     "tema": "Datas e calendário",
+     "n": 1
+    }
+   ],
    "atividadePorMes": [
     {
      "mes": "2025-02",
@@ -21241,7 +21970,9 @@
      "ementa": "Dispõe sobre a proibição de publicidade exterior em espaços públicos de plataformas de apostas virtuais e jogos de azar eletrônicos, e dá outras providências.",
      "sessao": "2026-08-13-o41",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-119/2026",
@@ -21253,7 +21984,10 @@
      "ementa": "Dispõe sobre a concessão de Título de Utilidade Pública ao Instituto Inovar Solução Sustentável.",
      "sessao": "2026-08-06-o39",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Meio ambiente",
+      "Entidades e utilidade pública"
+     ]
     },
     {
      "key": "PDL-33/2026",
@@ -21263,7 +21997,10 @@
      "autor": "elania-silva",
      "autorTexto": "ELÂNIA SILVA",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata à Sra. Eurenilda Carneiro de Pontes.",
-     "sessao": "2026-08-04-o38"
+     "sessao": "2026-08-04-o38",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-138/2025",
@@ -21275,7 +22012,9 @@
      "ementa": "Dispõe sobre a regulamentação das atividades de escritório virtual, coworking e assemelhados no Município de Osasco e dá outras providências.",
      "sessao": "2025-08-26-o44",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Economia e emprego"
+     ]
     },
     {
      "key": "PL-132/2025",
@@ -21287,7 +22026,10 @@
      "ementa": "Institui no calendário oficial do Município de Osasco, a Semana de Conscientização da Manobra de Heimlich e dá outras providências.",
      "sessao": "2025-08-26-o44",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Saúde",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-126/2025",
@@ -21299,7 +22041,9 @@
      "ementa": "Dispõe sobre a concessão de título de utilidade pública ao Instituto Novo Tempo.",
      "sessao": "2026-03-12-o10",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Entidades e utilidade pública"
+     ]
     },
     {
      "key": "PDL-108/2025",
@@ -21309,7 +22053,10 @@
      "autor": "elania-silva",
      "autorTexto": "Elânia Silva",
      "ementa": "Dispõe sobre a concessão da Medalha Antônio Raposo Tavares e do Diploma Cidade de Osasco ao Sr. Wellington Carfi dos Santos.",
-     "sessao": "2025-12-16-o74"
+     "sessao": "2025-12-16-o74",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-107/2025",
@@ -21319,7 +22066,10 @@
      "autor": "elania-silva",
      "autorTexto": "Elânia Silva",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Sr. Jairo Lucas Sacramento.",
-     "sessao": "2025-12-16-o74"
+     "sessao": "2025-12-16-o74",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-18/2025",
@@ -21331,7 +22081,9 @@
      "ementa": "Dispõe sobre a criação do Programa Municipal Tampinhas do Bem.",
      "sessao": "2025-04-01-o15",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Meio ambiente"
+     ]
     },
     {
      "key": "PDL-13/2025",
@@ -21341,7 +22093,10 @@
      "autor": "elania-silva",
      "autorTexto": "Elania Silva",
      "ementa": "Dispõe sobre a concessão de Placa de Inclusão Social e combate ao Racismo a Transportadora Translima.",
-     "sessao": "2025-08-12-o40"
+     "sessao": "2025-08-12-o40",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PR-07/2025",
@@ -21353,7 +22108,9 @@
      "ementa": "Institui, no âmbito da Câmara de Osasco, o Programa “Tampinha do Bem”.",
      "sessao": "2025-08-12-o40",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Meio ambiente"
+     ]
     },
     {
      "key": "PR-7/2025",
@@ -21365,7 +22122,9 @@
      "ementa": "Institui, no âmbito da Câmara Municipal de Osasco o Programa ' Tampinhas do Bem'.",
      "sessao": "2025-11-27-o69",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Meio ambiente"
+     ]
     }
    ],
    "requerimentos": [],
@@ -21377,7 +22136,10 @@
      "data": "14 de abril de 2026",
      "autor": "elania-silva",
      "resumo": "dispõe sobre a concessão de Título de Utilidade Pública ao Instituto Um Novo Tempo, de autoria da vereadora Elania Silva.",
-     "sessao": "2026-04-16-o19"
+     "sessao": "2026-04-16-o19",
+     "temas": [
+      "Entidades e utilidade pública"
+     ]
     }
    ],
    "vetos": [],
@@ -21442,6 +22204,7 @@
    "nome": "Elsa Oliveira",
    "partido": "PODE",
    "partidoNome": "Podemos",
+   "partidoLogo": null,
    "foto": "/fotos/vereadores/elsa-oliveira.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/elsa-oliveira",
@@ -21503,15 +22266,19 @@
    },
    "temas": [
     {
+     "tema": "Datas e calendário",
+     "n": 4
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 3
+    },
+    {
      "tema": "Mulheres",
      "n": 2
     },
     {
      "tema": "Segurança",
-     "n": 2
-    },
-    {
-     "tema": "Esporte, cultura e lazer",
      "n": 2
     },
     {
@@ -21524,6 +22291,10 @@
     },
     {
      "tema": "Gestão pública e transparência",
+     "n": 1
+    },
+    {
+     "tema": "Nomes e homenagens",
      "n": 1
     }
    ],
@@ -22572,7 +23343,10 @@
      "autor": "elsa-oliveira",
      "autorTexto": "Elsa Oliveira",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa ao Colégio Haya, em celebração aos seus 50 anos de fundação.",
-     "sessao": "2026-09-22-o52"
+     "sessao": "2026-09-22-o52",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-40/2026",
@@ -22582,7 +23356,12 @@
      "autor": "elsa-oliveira",
      "autorTexto": "Elsa Oliveira",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata à Associação Esportiva e Cultural CT Garagem (ACTG).",
-     "sessao": "2026-08-27-o45"
+     "sessao": "2026-08-27-o45",
+     "temas": [
+      "Esporte, cultura e lazer",
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-34/2026",
@@ -22604,7 +23383,10 @@
      "autor": "elsa-oliveira",
      "autorTexto": "ELSA OLIVEIRA",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa ao Colégio Anglo Leonardo da Vinci, em celebração aos seus 50 anos de fundação",
-     "sessao": "2026-08-04-o38"
+     "sessao": "2026-08-04-o38",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-31/2026",
@@ -22617,7 +23399,8 @@
      "sessao": "2026-03-03-o7",
      "classe": "simbolico",
      "temas": [
-      "Mulheres"
+      "Mulheres",
+      "Datas e calendário"
      ]
     },
     {
@@ -22630,7 +23413,9 @@
      "ementa": "Institui o dia municipal da equidade de gênero.",
      "sessao": "2026-03-03-o7",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PR-3/2026",
@@ -22642,7 +23427,9 @@
      "ementa": "Dispõe sobre a instituição da Medalha Longevidade Ativa 70+ no âmbito da Câmara Municipal de Osasco e dá outras providências.",
      "sessao": "2026-05-19-o27",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-203/2025",
@@ -22654,7 +23441,9 @@
      "ementa": "Institui o Dia das Artes Marciais no âmbito do Município.",
      "sessao": "2025-10-30-o62",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
     },
     {
      "key": "PL-77/2025",
@@ -22667,7 +23456,8 @@
      "sessao": "2025-09-02-o46",
      "classe": "simbolico",
      "temas": [
-      "Saúde"
+      "Saúde",
+      "Datas e calendário"
      ]
     },
     {
@@ -22680,7 +23470,9 @@
      "ementa": "Institui a Semana da Comunidade Surda.",
      "sessao": "2025-05-29-o30",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PDL-64/2025",
@@ -22690,7 +23482,11 @@
      "autor": "elsa-oliveira",
      "autorTexto": "ELSA OLIVEIRA",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa pelos 10 anos do Centro de Defesa dos Direitos da Criança e do Adolescente - CEDECA.",
-     "sessao": "2026-02-10-o3"
+     "sessao": "2026-02-10-o3",
+     "temas": [
+      "Crianças e jovens",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-55/2025",
@@ -22700,7 +23496,10 @@
      "autor": "elsa-oliveira",
      "autorTexto": "Elsa Oliveira",
      "ementa": "Dispõe sobre o Título de Cidadã Osasquense à Senhora Maria Helena Dias.",
-     "sessao": "2025-09-30-o54"
+     "sessao": "2025-09-30-o54",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-22/2025",
@@ -22710,7 +23509,10 @@
      "autor": "elsa-oliveira",
      "autorTexto": "Elsa Oliveira",
      "ementa": "Dispõe sobre a concessão de cartão de prata ao escritor André Vianco.",
-     "sessao": "2025-09-02-o46"
+     "sessao": "2025-09-02-o46",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-7/2025",
@@ -22734,7 +23536,11 @@
      "autor": "elsa-oliveira",
      "autorTexto": "Elsa Oliveira",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa aos 50 anos da Igreja Presbiteriana Renovada de Osasco.",
-     "sessao": "2025-03-11-o9"
+     "sessao": "2025-03-11-o9",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -22922,6 +23728,7 @@
    "nome": "Julião Soares",
    "partido": "PSB",
    "partidoNome": "Partido Socialista Brasileiro",
+   "partidoLogo": "/partidos/psb.png",
    "foto": "/fotos/vereadores/juliao.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/juliao-soares",
@@ -23350,6 +24157,7 @@
    "nome": "Délbio Teruel",
    "partido": "UNIAO",
    "partidoNome": "União Brasil",
+   "partidoLogo": "/partidos/uniao.png",
    "foto": "/fotos/vereadores/delbio-teruel.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/delbio-teruel",
@@ -23460,6 +24268,10 @@
    },
    "temas": [
     {
+     "tema": "Nomes e homenagens",
+     "n": 9
+    },
+    {
      "tema": "Educação",
      "n": 2
     },
@@ -23470,6 +24282,10 @@
     {
      "tema": "Crianças e jovens",
      "n": 2
+    },
+    {
+     "tema": "Datas e calendário",
+     "n": 1
     },
     {
      "tema": "Mulheres",
@@ -24457,7 +25273,9 @@
      "ementa": "Dispõe sobre a denominação da Praça Benedito José dos Santos.",
      "sessao": "2026-09-01-o46",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-198/2026",
@@ -24469,7 +25287,9 @@
      "ementa": "Dispõe sobre a denominação da Praça Benedito José dos Santos.",
      "sessao": "2026-09-15-o50",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-162/2026",
@@ -24483,7 +25303,8 @@
      "classe": "simbolico",
      "temas": [
       "Educação",
-      "Crianças e jovens"
+      "Crianças e jovens",
+      "Nomes e homenagens"
      ]
     },
     {
@@ -24497,7 +25318,8 @@
      "sessao": "2026-05-05-o23",
      "classe": "simbolico",
      "temas": [
-      "Segurança"
+      "Segurança",
+      "Nomes e homenagens"
      ]
     },
     {
@@ -24512,7 +25334,8 @@
      "classe": "simbolico",
      "temas": [
       "Saúde",
-      "Crianças e jovens"
+      "Crianças e jovens",
+      "Nomes e homenagens"
      ]
     },
     {
@@ -24554,7 +25377,9 @@
      "ementa": "Institui o “Dia Municipal do Vôlei Adaptado à Melhor Idade”, no âmbito do Município de Osasco, e dá outras providências.",
      "sessao": "2025-12-04-o71",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-205/2025",
@@ -24566,7 +25391,9 @@
      "ementa": "Dispõe sobre a denominação do Campo Manoel Antonio Cabral localizado nas dependências do Parque Ecológico Manoel Manzano na Rua Sérgio Pompeo, SN - Metalúrgico.",
      "sessao": "2025-11-06-o64",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-196/2025",
@@ -24578,7 +25405,9 @@
      "ementa": "dispõe sobre a denominação de Viela Marlene Josefa da Silva, localizada na Rua Nova Goiânia, entre os números 279 e 400, no bairro Portal D’ Oeste.",
      "sessao": "2025-10-30-o62",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-99/2025",
@@ -24588,7 +25417,10 @@
      "autor": "delbio-teruel",
      "autorTexto": "Délbio Teruel",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa ao Alternativa Autoposto e dá outras providências.",
-     "sessao": "2025-12-11-o73"
+     "sessao": "2025-12-11-o73",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-93/2025",
@@ -24598,7 +25430,10 @@
      "autor": "delbio-teruel",
      "autorTexto": "Delbio Teruel",
      "ementa": "Dispõe sobre a concessão do Cartão de Prata ao senhor Fábio Rodrigues da Silva – “Babu”, em reconhecimento aos relevantes serviços prestados ao Município de Osasco.",
-     "sessao": "2025-12-04-o71"
+     "sessao": "2025-12-04-o71",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-84/2025",
@@ -24608,7 +25443,10 @@
      "autor": "delbio-teruel",
      "autorTexto": "Délbio Teruel",
      "ementa": "Dispõe sobre a concessão de placa comemorativa ao Colégio Dom Henrique Km 18.",
-     "sessao": "2025-11-25-o68"
+     "sessao": "2025-11-25-o68",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-74/2025",
@@ -24620,7 +25458,9 @@
      "ementa": "Altera a denominação de praça XI de junho para praça São Mateus, localizada no Jardim Cipava.",
      "sessao": "2025-08-05-o38",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-58/2025",
@@ -24630,7 +25470,10 @@
      "autor": "delbio-teruel",
      "autorTexto": "Délbio Teruel",
      "ementa": "Concede Medalha Antônio Raposo Tavares e Diploma Cidade de Osasco ao Sr. Claudenes Begnini.",
-     "sessao": "2025-10-07-o56"
+     "sessao": "2025-10-07-o56",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-35/2025",
@@ -24642,7 +25485,9 @@
      "ementa": "Dispõe sobre alteração da denominação da Avenida das Comunicações para Avenida Silvio Santos.",
      "sessao": "2025-05-20-o27",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-23/2025",
@@ -24652,7 +25497,10 @@
      "autor": "delbio-teruel",
      "autorTexto": "Délbio Teruel",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Tenente-Coronel PM Joaquim Keida Mendonça Ishy.",
-     "sessao": "2025-06-03-o31"
+     "sessao": "2025-06-03-o31",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -24664,7 +25512,10 @@
      "data": "24 de março de 2026",
      "autor": "delbio-teruel",
      "resumo": "institui o Dia Municipal do Vôlei Adaptado à Melhor Idade, no âmbito do Município de Osasco, e dá outras providências, de autoria do vereador Délbio Teruel.",
-     "sessao": "2026-03-31-o15"
+     "sessao": "2026-03-31-o15",
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "L-5.468",
@@ -24672,7 +25523,12 @@
      "data": "14 de abril de 2026",
      "autor": "delbio-teruel",
      "resumo": "altera a Lei nº 5.110, de 12 de maio de 2021, que dispõe sobre a denominação do Hospital da Criança Dr. Celso Antônio Giglio, no Município de Osasco, de autoria do vereador Délbio Teruel.",
-     "sessao": "2026-04-16-o19"
+     "sessao": "2026-04-16-o19",
+     "temas": [
+      "Saúde",
+      "Crianças e jovens",
+      "Nomes e homenagens"
+     ]
     }
    ],
    "vetos": [],
@@ -24865,6 +25721,7 @@
    "nome": "Stephane Rossi",
    "partido": "PL",
    "partidoNome": "Partido Liberal",
+   "partidoLogo": "/partidos/pl.png",
    "foto": "/fotos/vereadores/stephane-rossi.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/stephane-rossi",
@@ -24930,8 +25787,16 @@
    },
    "temas": [
     {
+     "tema": "Datas e calendário",
+     "n": 9
+    },
+    {
      "tema": "Crianças e jovens",
      "n": 3
+    },
+    {
+     "tema": "Esporte, cultura e lazer",
+     "n": 1
     },
     {
      "tema": "Mulheres",
@@ -25919,7 +26784,9 @@
      "ementa": "Institui a “Semana Municipal de Combate ao Bullying” no Município de Osasco.",
      "sessao": "2026-09-03-o47",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-122/2026",
@@ -25932,7 +26799,8 @@
      "sessao": "2026-05-28-o30",
      "classe": "simbolico",
      "temas": [
-      "Crianças e jovens"
+      "Crianças e jovens",
+      "Datas e calendário"
      ]
     },
     {
@@ -25943,7 +26811,10 @@
      "autor": "stephane-rossi",
      "autorTexto": "Stephane Rossi",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao sr. Marcelo da Silva.",
-     "sessao": "2026-08-20-o43"
+     "sessao": "2026-08-20-o43",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-17/2026",
@@ -25953,7 +26824,10 @@
      "autor": "stephane-rossi",
      "autorTexto": "Stephane Rossi",
      "ementa": "Dispõe sobre a concessão do Diploma João Cândido - Almirante Negro ao senhor Bruno Vinicius Oliveira Santos.",
-     "sessao": "2026-04-14-o18"
+     "sessao": "2026-04-14-o18",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-14/2026",
@@ -25963,7 +26837,10 @@
      "autor": "stephane-rossi",
      "autorTexto": "Stephane Rossi",
      "ementa": "Dispõe sobre a concessão de Diploma Líder Comunitário ao senhor Anderson Roberty Andrade da Silva.",
-     "sessao": "2026-03-10-o9"
+     "sessao": "2026-03-10-o9",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PR-7/2026",
@@ -25988,7 +26865,8 @@
      "sessao": "2025-09-30-o54",
      "classe": "simbolico",
      "temas": [
-      "Crianças e jovens"
+      "Crianças e jovens",
+      "Datas e calendário"
      ]
     },
     {
@@ -26001,7 +26879,9 @@
      "ementa": "Institui o Dia Municipal da Acessibilidade Digital.",
      "sessao": "2025-08-26-o44",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-129/2025",
@@ -26013,7 +26893,9 @@
      "ementa": "Institui o Dia Roxo – Dia Municipal de Conscientização sobre a Epilepsia.",
      "sessao": "2025-08-26-o44",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PDL-106/2025",
@@ -26023,7 +26905,12 @@
      "autor": "stephane-rossi",
      "autorTexto": "Stephane Rossi",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Associação Brasileira Autismo Conexão – ABRAAC.",
-     "sessao": "2025-12-16-o74"
+     "sessao": "2025-12-16-o74",
+     "temas": [
+      "Pessoas com deficiência e TEA",
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-105/2025",
@@ -26033,7 +26920,10 @@
      "autor": "stephane-rossi",
      "autorTexto": "Stephane Rossi",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Impercap Saunas.",
-     "sessao": "2025-12-16-o74"
+     "sessao": "2025-12-16-o74",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-104/2025",
@@ -26043,7 +26933,10 @@
      "autor": "stephane-rossi",
      "autorTexto": "Stephane Rossi",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Sr. Marco Antônio de Queiróz Pataro Moraes.",
-     "sessao": "2025-12-16-o74"
+     "sessao": "2025-12-16-o74",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-103/2025",
@@ -26053,7 +26946,10 @@
      "autor": "stephane-rossi",
      "autorTexto": "Stephane Rossi",
      "ementa": "Dispõe sobre a concessão da Medalha Antônio Raposo Tavares e Diploma Cidade de Osasco ao senhor Jorge Kamalakian.",
-     "sessao": "2025-12-16-o74"
+     "sessao": "2025-12-16-o74",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-55/2025",
@@ -26078,7 +26974,8 @@
      "sessao": "2025-05-22-o28",
      "classe": "simbolico",
      "temas": [
-      "Crianças e jovens"
+      "Crianças e jovens",
+      "Datas e calendário"
      ]
     },
     {
@@ -26089,7 +26986,10 @@
      "autor": "stephane-rossi",
      "autorTexto": "Stephane Rossi",
      "ementa": "Dispõe sobre a concessão de Diploma João Cândido – Almirante Negro ao senhor Carlos Ricardo Ribeiro.",
-     "sessao": "2025-09-02-o46"
+     "sessao": "2025-09-02-o46",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-38/2025",
@@ -26103,7 +27003,8 @@
      "classe": "simbolico",
      "temas": [
       "Mulheres",
-      "Segurança"
+      "Segurança",
+      "Datas e calendário"
      ]
     },
     {
@@ -26116,7 +27017,9 @@
      "ementa": "Institui o Dia Municipal do Canto pela Paz.",
      "sessao": "2025-06-10-o33",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PDL-31/2025",
@@ -26126,7 +27029,10 @@
      "autor": "stephane-rossi",
      "autorTexto": "Stephane Rossi",
      "ementa": "Dispõe sobre a concessão de diploma João Cândido – Almirante Negro ao senhor Ricardo Aparecido Dias.",
-     "sessao": "2025-08-28-o45"
+     "sessao": "2025-08-28-o45",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-29/2025",
@@ -26138,7 +27044,10 @@
      "ementa": "Institui o dia municipal do Natal Encantado.",
      "sessao": "2025-03-25-o13",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Esporte, cultura e lazer",
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PDL-21/2025",
@@ -26148,7 +27057,10 @@
      "autor": "stephane-rossi",
      "autorTexto": "Stephane Carolina Rossi de Almeida Magdesian",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Senhor Erivan da Silva Gomes.",
-     "sessao": "2025-06-10-o33"
+     "sessao": "2025-06-10-o33",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -26160,7 +27072,10 @@
      "data": "19 de dezembro de 2025",
      "autor": "stephane-rossi",
      "resumo": "institui o dia municipal da acessibilidade digital, de autoria da vereadora Stephane Rossi.",
-     "sessao": "2026-02-05-o2"
+     "sessao": "2026-02-05-o2",
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "L-5.459",
@@ -26168,7 +27083,11 @@
      "data": "17 de março de 2026",
      "autor": "stephane-rossi",
      "resumo": "institui a Semana Municipal de Combate à Automutilação e ao Suicídio de Crianças e Adolescentes, de autoria da vereadora Stephane Rossi.",
-     "sessao": "2026-03-24-o13"
+     "sessao": "2026-03-24-o13",
+     "temas": [
+      "Crianças e jovens",
+      "Datas e calendário"
+     ]
     }
    ],
    "vetos": [],
@@ -26345,6 +27264,7 @@
    "nome": "Batista Comunidade",
    "partido": "AVANTE",
    "partidoNome": null,
+   "partidoLogo": "/partidos/avante.png",
    "foto": "/fotos/vereadores/batista-comunidade.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/batista-comunidade",
@@ -27499,7 +28419,10 @@
      "autor": "batista-comunidade",
      "autorTexto": "Batista Comunidade",
      "ementa": "Dispõe sobre a concessão de Diploma João Cândido - Almirante Negro a Diego Rocha Garcia.",
-     "sessao": "2025-08-19-o42"
+     "sessao": "2025-08-19-o42",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-25/2025",
@@ -27509,7 +28432,10 @@
      "autor": "batista-comunidade",
      "autorTexto": "Batista Comunidade",
      "ementa": "Dispõe sobre a concessão de Medalha Raposo Tavares e Diploma da Cidade de Osasco ao Senhor Rubem Farias.",
-     "sessao": "2025-08-19-o42"
+     "sessao": "2025-08-19-o42",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-15/2025",
@@ -27519,7 +28445,10 @@
      "autor": "batista-comunidade",
      "autorTexto": "Batista Comunidade",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa ao “Podpah, Informações e Internet”.",
-     "sessao": "2025-08-19-o42"
+     "sessao": "2025-08-19-o42",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -27731,6 +28660,7 @@
    "nome": "Josias da Juco",
    "partido": "PSD",
    "partidoNome": "Partido Social Democrático",
+   "partidoLogo": "/partidos/psd.png",
    "foto": "/fotos/vereadores/josias-da-juco.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/josias-da-juco",
@@ -27839,6 +28769,14 @@
    },
    "temas": [
     {
+     "tema": "Nomes e homenagens",
+     "n": 4
+    },
+    {
+     "tema": "Datas e calendário",
+     "n": 1
+    },
+    {
      "tema": "Saúde",
      "n": 1
     },
@@ -27851,7 +28789,7 @@
      "n": 1
     },
     {
-     "tema": "Gestão pública e transparência",
+     "tema": "Servidores públicos",
      "n": 1
     },
     {
@@ -28870,7 +29808,7 @@
      "classe": "substantivo",
      "temas": [
       "Mulheres",
-      "Gestão pública e transparência"
+      "Servidores públicos"
      ]
     },
     {
@@ -28884,7 +29822,8 @@
      "sessao": "2026-04-14-o18",
      "classe": "simbolico",
      "temas": [
-      "Esporte, cultura e lazer"
+      "Esporte, cultura e lazer",
+      "Nomes e homenagens"
      ]
     },
     {
@@ -28919,7 +29858,10 @@
      "autor": "josias-da-juco",
      "autorTexto": "JOSIAS DA JUCO",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Transportadora RB, e dá outras providências.",
-     "sessao": "2026-08-04-o38"
+     "sessao": "2026-08-04-o38",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-10/2026",
@@ -28931,7 +29873,9 @@
      "ementa": "Dispõe sobre a denominação de praça localizada no bairro Bela Vista, no Município de Osasco, e dá outras providências",
      "sessao": "2026-02-10-o3",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-2/2026",
@@ -28941,7 +29885,10 @@
      "autor": "josias-da-juco",
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre a concessão de Título de cidadão osasquense ao senhor Adriano Giovanni Miglio, prefeito (SINDACO) da cidade de Osasco, Itália.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-123/2025",
@@ -28951,7 +29898,10 @@
      "autor": "josias-da-juco",
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata a Oficina Mecânica – Magnata’s Centro Automotivo.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-122/2025",
@@ -28961,7 +29911,11 @@
      "autor": "josias-da-juco",
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa em razão do Convênio de Irmandade entre o Município de Osasco Brasil e a Cidade di Itália, reconhecidas historicamente como cidades irmãs gêmeas.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens",
+      "Gestão pública e transparência"
+     ]
     },
     {
      "key": "PL-119/2025",
@@ -28973,7 +29927,9 @@
      "ementa": "Dispõe sobre a implantação de código tipo QR Code nas placas de denominação de ruas, praças, logradouros e equipamentos públicos do Município de Osasco.",
      "sessao": "2025-08-05-o38",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-75/2025",
@@ -28997,7 +29953,10 @@
      "autor": "josias-da-juco",
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Sr. Luciano da Silva Bastos.",
-     "sessao": "2025-08-12-o40"
+     "sessao": "2025-08-12-o40",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-52/2025",
@@ -29007,7 +29966,8 @@
      "autor": "josias-da-juco",
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre aprovação das contas da Prefeitura do Município de Osasco referentes ao Exercício de 2023.",
-     "sessao": "2025-09-16-o50"
+     "sessao": "2025-09-16-o50",
+     "temas": []
     },
     {
      "key": "PL-37/2025",
@@ -29019,7 +29979,9 @@
      "ementa": "Institui a semana municipal de incentivo à doação de leite humano.",
      "sessao": "2025-04-29-o22",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PDL-24/2025",
@@ -29029,7 +29991,10 @@
      "autor": "josias-da-juco",
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre a concessão de título de cidadão osasquense ao senhor Sebastião Bognar.",
-     "sessao": "2025-09-09-o48"
+     "sessao": "2025-09-09-o48",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-12/2025",
@@ -29039,7 +30004,10 @@
      "autor": "josias-da-juco",
      "autorTexto": "Josias da Juco",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Livraria 100% Cristão.",
-     "sessao": "2025-04-29-o22"
+     "sessao": "2025-04-29-o22",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PR-6/2025",
@@ -29063,7 +30031,9 @@
      "ementa": "Dispõe sobre a denominação de Sala das Comissões Permanentes Doutora Régia Maria Gouveia Sarmento.",
      "sessao": "2025-08-05-o38",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -29355,6 +30325,7 @@
    "nome": "Lúcia da Saúde",
    "partido": "PODE",
    "partidoNome": "Podemos",
+   "partidoLogo": null,
    "foto": "/fotos/vereadores/lucia-da-saude.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/lucia-da-saude",
@@ -29417,7 +30388,11 @@
    "temas": [
     {
      "tema": "Saúde",
-     "n": 9
+     "n": 11
+    },
+    {
+     "tema": "Datas e calendário",
+     "n": 5
     },
     {
      "tema": "Pessoas com deficiência e TEA",
@@ -29429,6 +30404,10 @@
     },
     {
      "tema": "Animais",
+     "n": 1
+    },
+    {
+     "tema": "Nomes e homenagens",
      "n": 1
     },
     {
@@ -30251,7 +31230,9 @@
      "ementa": "Institui o dia ‘Quadran-Day’ no Calendário Oficial do Município de Osasco.",
      "sessao": "2026-06-16-o34",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-115/2026",
@@ -30277,7 +31258,9 @@
      "ementa": "Institui o Dia Municipal de Conscientização sobre a Apraxia de Fala na Infância (AFI) no Calendário Oficial do Município de Osasco, e dá outras providências.",
      "sessao": "2026-04-09-o17",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-9/2026",
@@ -30301,7 +31284,10 @@
      "autor": "lucia-da-saude",
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Dispõe sobre a concessão de Diploma Líder Comunitário ao Sr. Cristiano de Farias Coronado.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-191/2025",
@@ -30329,7 +31315,9 @@
      "ementa": "Dispõe sobre a denominação do Boulevard localizado na Avenida Bandeirantes, entre os números 478 e 168, no Jardim Aliança, Osasco.",
      "sessao": "2025-08-26-o44",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-118/2025",
@@ -30342,7 +31330,8 @@
      "sessao": "2025-08-05-o38",
      "classe": "simbolico",
      "temas": [
-      "Saúde"
+      "Saúde",
+      "Datas e calendário"
      ]
     },
     {
@@ -30356,6 +31345,7 @@
      "sessao": "2025-08-05-o38",
      "classe": "substantivo",
      "temas": [
+      "Saúde",
       "Animais"
      ]
     },
@@ -30412,7 +31402,9 @@
      "ementa": "Institui a Semana de Prevenção e Apoio à Ansiedade no Município de Osasco.",
      "sessao": "2025-08-05-o38",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-92/2025",
@@ -30426,7 +31418,8 @@
      "classe": "simbolico",
      "temas": [
       "Saúde",
-      "Pessoas com deficiência e TEA"
+      "Pessoas com deficiência e TEA",
+      "Datas e calendário"
      ]
     },
     {
@@ -30449,7 +31442,10 @@
      "autor": "lucia-da-saude",
      "autorTexto": "FRANCISCA JENILUCIA RIBEIRO DE ANDRADE",
      "ementa": "Dispõe sobre a concessão do Diploma João Cândido – Almirante Negro à Regina Marcia de Almeida.",
-     "sessao": "2025-11-06-o64"
+     "sessao": "2025-11-06-o64",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-73/2025",
@@ -30459,7 +31455,10 @@
      "autor": "lucia-da-saude",
      "autorTexto": "LÚCIA DA SAÚDE",
      "ementa": "Dispõe sobre a concessão do Diploma João Cândido – Almirante Negro à Regina Marcia de Almeida.",
-     "sessao": "2026-02-12-o4"
+     "sessao": "2026-02-12-o4",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-072/2025",
@@ -30469,7 +31468,11 @@
      "autor": "lucia-da-saude",
      "autorTexto": "FRANCISCA JENILUCIA RIBEIRO DE ANDRADE",
      "ementa": "Dispõe sobre a concessão Cartão de Prata à Evelin Cristina Silva Nunes, proposta pela Vereadora Lúcia da Saúde, destacando sua atuação na saúde pública e seu trabalho social, além de homenagear seu pai, Jaime Parcela, como inspiração e parceiro em ações comunitárias.",
-     "sessao": "2025-11-06-o64"
+     "sessao": "2025-11-06-o64",
+     "temas": [
+      "Saúde",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-72/2025",
@@ -30479,7 +31482,10 @@
      "autor": "lucia-da-saude",
      "autorTexto": "LÚCIA DA SAÚDE",
      "ementa": "Dispõe sobre a concessão Cartão de Prata à Evelin Cristina Silva Nunes.",
-     "sessao": "2026-02-26-o6"
+     "sessao": "2026-02-26-o6",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-071/2025",
@@ -30489,7 +31495,12 @@
      "autor": "lucia-da-saude",
      "autorTexto": "FRANCISCA JENILUCIA RIBEIRO DE ANDRADE",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata a Pastora Ninfa Cândida Alves Pereira, proposta pela Lúcia da Saúde, em reconhecimento à sua trajetória de fé, dedicação e profundo impacto social na cidade de Osasco.",
-     "sessao": "2025-11-06-o64"
+     "sessao": "2025-11-06-o64",
+     "temas": [
+      "Saúde",
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-71/2025",
@@ -30499,7 +31510,11 @@
      "autor": "lucia-da-saude",
      "autorTexto": "LÚCIA DA SAÚDE",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata a Pastora Ninfa Cândida Alves Pereira.",
-     "sessao": "2026-04-23-o20"
+     "sessao": "2026-04-23-o20",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-070/2025",
@@ -30509,7 +31524,10 @@
      "autor": "lucia-da-saude",
      "autorTexto": "FRANCISCA JENILUCIA RIBEIRO DE ANDRADE",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Doutor José Amando Mota, pelos serviços prestados na Cidade de Osasco.",
-     "sessao": "2025-11-06-o64"
+     "sessao": "2025-11-06-o64",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-069/2025",
@@ -30519,7 +31537,11 @@
      "autor": "lucia-da-saude",
      "autorTexto": "FRANCISCA JENILUCIA RIBEIRO DE ANDRADE",
      "ementa": "Dispõe sobre a concessão de Medalha Antônio Raposo Tavares e o Diploma Cidade de Osasco, ao Pastor Newton Conegero, pelos serviços prestados na cidade de Osasco.",
-     "sessao": "2025-11-06-o64"
+     "sessao": "2025-11-06-o64",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-69/2025",
@@ -30529,7 +31551,11 @@
      "autor": "lucia-da-saude",
      "autorTexto": "LÚCIA DA SAÚDE",
      "ementa": "Dispõe sobre a concessão de Medalha Antônio Raposo Tavares e o Diploma Cidade de Osasco, ao Pastor Newton Conegero.",
-     "sessao": "2026-04-07-o16"
+     "sessao": "2026-04-07-o16",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-068/2025",
@@ -30539,7 +31565,11 @@
      "autor": "lucia-da-saude",
      "autorTexto": "FRANCISCA JENILUCIA RIBEIRO DE ANDRADE",
      "ementa": "Dispõe sobre a Concessão de Placa Comemorativa à Igreja do Evangelho Quadrangular Jardim Paulista – Osasco.",
-     "sessao": "2025-11-06-o64"
+     "sessao": "2025-11-06-o64",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-68/2025",
@@ -30549,7 +31579,11 @@
      "autor": "lucia-da-saude",
      "autorTexto": "LÚCIA DA SAÚDE",
      "ementa": "Dispõe sobre a Concessão de Placa Comemorativa à Igreja do Evangelho Quadrangular Jardim Paulista - Osasco.",
-     "sessao": "2026-03-03-o7"
+     "sessao": "2026-03-03-o7",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-066/2025",
@@ -30559,7 +31593,11 @@
      "autor": "lucia-da-saude",
      "autorTexto": "FRANCISCA JENILUCIA RIBEIRO DE ANDRADE",
      "ementa": "Dispõe sobre a Concessão de Placa Comemorativa à Igreja de Jesus Cristo dos Santos dos Últimos Dias.",
-     "sessao": "2025-11-06-o64"
+     "sessao": "2025-11-06-o64",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-66/2025",
@@ -30569,7 +31607,11 @@
      "autor": "lucia-da-saude",
      "autorTexto": "LÚCIA DA SAÚDE",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Igreja de Jesus Cristo dos Santos dos Últimos Dias.",
-     "sessao": "2026-03-31-o15"
+     "sessao": "2026-03-31-o15",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-51/2025",
@@ -30581,7 +31623,9 @@
      "ementa": "Cria o Programa de Internação Domiciliar no Município de Osasco – PID.",
      "sessao": "2025-05-06-o23",
      "classe": "substantivo",
-     "temas": []
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "PL-50/2025",
@@ -30670,7 +31714,10 @@
      "data": "3 de março de 2026",
      "autor": "lucia-da-saude",
      "resumo": "institui o dia das Unidades de Saúde – UBS de Osasco, de autoria da vereadora Lúcia da Saúde.",
-     "sessao": "2026-03-05-o8"
+     "sessao": "2026-03-05-o8",
+     "temas": [
+      "Saúde"
+     ]
     },
     {
      "key": "L-5.465",
@@ -30678,7 +31725,11 @@
      "data": "6 de abril de 2026",
      "autor": "lucia-da-saude",
      "resumo": "dispõe sobre o uso do cordão de fita de identificação para pessoas diagnosticadas com algum tipo de doença rara, de autoria da vereadora Lúcia da Saúde.",
-     "sessao": "2026-04-09-o17"
+     "sessao": "2026-04-09-o17",
+     "temas": [
+      "Saúde",
+      "Pessoas com deficiência e TEA"
+     ]
     }
    ],
    "vetos": [],
@@ -31023,6 +32074,7 @@
    "nome": "Emerson Osasco",
    "partido": "PCdoB",
    "partidoNome": "Partido Comunista do Brasil",
+   "partidoLogo": "/partidos/pcdob.png",
    "foto": "/fotos/vereadores/emerson-osasco.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/emerson-osasco",
@@ -31103,6 +32155,10 @@
    },
    "temas": [
     {
+     "tema": "Datas e calendário",
+     "n": 2
+    },
+    {
      "tema": "Pessoas com deficiência e TEA",
      "n": 1
     },
@@ -31116,6 +32172,10 @@
     },
     {
      "tema": "Crianças e jovens",
+     "n": 1
+    },
+    {
+     "tema": "Entidades e utilidade pública",
      "n": 1
     }
    ],
@@ -32108,7 +33168,9 @@
      "ementa": "Dispõe sobre a concessão de Título de Utilidade Pública à Associação Amigos do Jardim Bonança.",
      "sessao": "2026-03-03-o7",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Entidades e utilidade pública"
+     ]
     },
     {
      "key": "PL-135/2025",
@@ -32135,7 +33197,8 @@
      "sessao": "2025-10-16-o59",
      "classe": "simbolico",
      "temas": [
-      "Segurança"
+      "Segurança",
+      "Datas e calendário"
      ]
     },
     {
@@ -32149,7 +33212,8 @@
      "sessao": "2025-10-16-o59",
      "classe": "simbolico",
      "temas": [
-      "Esporte, cultura e lazer"
+      "Esporte, cultura e lazer",
+      "Datas e calendário"
      ]
     },
     {
@@ -32160,7 +33224,12 @@
      "autor": "emerson-osasco",
      "autorTexto": "Emerson",
      "ementa": "Dispõe sobre a concessão de honraria de Cartão de Prata à Associação Amigos do Jardim Bonança, em reconhecimento ao relevante trabalho que vem realizando em prol da saúde da comunidade local.",
-     "sessao": "2025-10-07-o56"
+     "sessao": "2025-10-07-o56",
+     "temas": [
+      "Saúde",
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PL-24/2025",
@@ -32427,7 +33496,10 @@
      "data": "7 de janeiro de 2026",
      "autor": "emerson-osasco",
      "resumo": "altera a Lei nº 4.841, de 30 de outubro de 2017, que institui, no âmbito do Município de Osasco, política pública para a garantia, proteção e ampliação dos direitos das pessoas com Transtorno no Espectro Autista e dá outras providências, de autoria do vereador Emerson Osasco.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Pessoas com deficiência e TEA"
+     ]
     },
     {
      "key": "L-5.451",
@@ -32435,7 +33507,11 @@
      "data": "7 de janeiro de 2026",
      "autor": "emerson-osasco",
      "resumo": "dispõe sobre o reconhecimento da atividade de trancista como expressão cultural e profissional e institui, no Calendário Oficial do Município de Osasco, o Dia da Pessoa Trancista, de autoria do vereador Emerson Osasco.",
-     "sessao": "2026-02-03-o1"
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Esporte, cultura e lazer",
+      "Datas e calendário"
+     ]
     }
    ],
    "vetos": [],
@@ -32608,6 +33684,7 @@
    "nome": "Paulo Junior",
    "partido": "PRD",
    "partidoNome": "Partido Renovação Democrática",
+   "partidoLogo": "/partidos/prd.png",
    "foto": "/fotos/vereadores/paulo-junior.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/paulo-junior",
@@ -32701,6 +33778,10 @@
    "temas": [
     {
      "tema": "Saúde",
+     "n": 2
+    },
+    {
+     "tema": "Religião",
      "n": 2
     },
     {
@@ -33561,7 +34642,8 @@
      "sessao": "2025-12-09-o72",
      "classe": "substantivo",
      "temas": [
-      "Animais"
+      "Animais",
+      "Religião"
      ]
     },
     {
@@ -33575,7 +34657,8 @@
      "sessao": "2025-12-09-o72",
      "classe": "substantivo",
      "temas": [
-      "Meio ambiente"
+      "Meio ambiente",
+      "Religião"
      ]
     },
     {
@@ -33602,7 +34685,11 @@
      "autor": "paulo-junior",
      "autorTexto": "Paulo Junior",
      "ementa": "Dispõe sobre a concessão de placa comemorativa a Igreja Unida.",
-     "sessao": "2025-12-18-o75"
+     "sessao": "2025-12-18-o75",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-114/2025",
@@ -33612,7 +34699,11 @@
      "autor": "paulo-junior",
      "autorTexto": "Paulo Júnior",
      "ementa": "Dispõe sobre a medalha Antônio Raposo Tavares ao Pastor Moisés Rodrigues.",
-     "sessao": "2025-12-18-o75"
+     "sessao": "2025-12-18-o75",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-113/2025",
@@ -33622,7 +34713,11 @@
      "autor": "paulo-junior",
      "autorTexto": "Paulo Júnior",
      "ementa": "Dispõe sobre a concessão de cartão de prata ao pastor Marcelo Baena Manzini.",
-     "sessao": "2025-12-18-o75"
+     "sessao": "2025-12-18-o75",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-112/2025",
@@ -33632,7 +34727,11 @@
      "autor": "paulo-junior",
      "autorTexto": "Paulo Júnior",
      "ementa": "Dispõe sobre a concessão de placa comemorativa a igreja evangélica avivamento bíblico desde 1946 edificando vidas.",
-     "sessao": "2025-12-18-o75"
+     "sessao": "2025-12-18-o75",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-111/2025",
@@ -33642,7 +34741,11 @@
      "autor": "paulo-junior",
      "autorTexto": "Paulo Júnior",
      "ementa": "Dispõe sobre a concessão de placa comemorativa a igreja Unida em Cristo – Novo Osasco.",
-     "sessao": "2025-12-18-o75"
+     "sessao": "2025-12-18-o75",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-110/2025",
@@ -33652,7 +34755,11 @@
      "autor": "paulo-junior",
      "autorTexto": "Paulo Júnior",
      "ementa": "Dispõe sobre a concessão do Diploma João Cândido Almirante Negro ao Pastor Vamilton Batista dos Santos.",
-     "sessao": "2025-12-18-o75"
+     "sessao": "2025-12-18-o75",
+     "temas": [
+      "Religião",
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -33892,6 +34999,7 @@
    "nome": "André Luís Alves Pereira",
    "partido": null,
    "partidoNome": null,
+   "partidoLogo": null,
    "foto": "/fotos/vereadores/andre-luis-alves-pereira.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": null,
@@ -34105,7 +35213,10 @@
      "autor": "andre-luis-alves-pereira",
      "autorTexto": "Andrezinho",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Sonar Produtora.",
-     "sessao": "2025-06-24-o36"
+     "sessao": "2025-06-24-o36",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     }
    ],
    "requerimentos": [],
@@ -34158,6 +35269,7 @@
    "nome": "Guiga",
    "partido": "AVANTE",
    "partidoNome": null,
+   "partidoLogo": "/partidos/avante.png",
    "foto": "/fotos/vereadores/guiga.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/guiga",
@@ -34215,6 +35327,10 @@
     "adiadasPorAusencia": 1
    },
    "temas": [
+    {
+     "tema": "Datas e calendário",
+     "n": 3
+    },
     {
      "tema": "Educação",
      "n": 1
@@ -34415,7 +35531,9 @@
      "ementa": "Institui a Semana Municipal do Bem-estar.",
      "sessao": "2025-05-15-o26",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-65/2025",
@@ -34428,7 +35546,8 @@
      "sessao": "2025-05-15-o26",
      "classe": "simbolico",
      "temas": [
-      "Segurança"
+      "Segurança",
+      "Datas e calendário"
      ]
     },
     {
@@ -34441,7 +35560,9 @@
      "ementa": "Institui no calendário oficial do Município de Osasco o “Oz com Jesus”.",
      "sessao": "2025-05-15-o26",
      "classe": "simbolico",
-     "temas": []
+     "temas": [
+      "Datas e calendário"
+     ]
     },
     {
      "key": "PL-63/2025",
@@ -34504,6 +35625,7 @@
    "nome": "Hélder Oliveira",
    "partido": "REPUBLICANOS",
    "partidoNome": null,
+   "partidoLogo": null,
    "foto": "/fotos/vereadores/helder-oliveira.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/helder-oliveira",
@@ -34574,6 +35696,10 @@
     },
     {
      "tema": "Educação",
+     "n": 1
+    },
+    {
+     "tema": "Datas e calendário",
      "n": 1
     },
     {
@@ -34757,7 +35883,8 @@
      "sessao": "2025-09-18-o51",
      "classe": "simbolico",
      "temas": [
-      "Economia e emprego"
+      "Economia e emprego",
+      "Datas e calendário"
      ]
     },
     {
@@ -34797,7 +35924,10 @@
      "autor": "helder-oliveira",
      "autorTexto": "Helder",
      "ementa": "Dispõe sobre a concessão de Medalha Antônio Raposo Tavares e Diploma Cidade de Osasco ao senhor Edson dos Santos Pereira.",
-     "sessao": "2025-09-16-o50"
+     "sessao": "2025-09-16-o50",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-49/2025",
@@ -34807,7 +35937,10 @@
      "autor": "helder-oliveira",
      "autorTexto": "Helder",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata ao senhor Archimedes Soares.",
-     "sessao": "2025-09-16-o50"
+     "sessao": "2025-09-16-o50",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-48/2025",
@@ -34817,7 +35950,10 @@
      "autor": "helder-oliveira",
      "autorTexto": "Helder",
      "ementa": "Dispõe sobre concessão de Placa Comemorativa à Pitzi.com.br, Reparação e Manutenção de Equipamentos Eletrônicos Ltda.",
-     "sessao": "2025-09-16-o50"
+     "sessao": "2025-09-16-o50",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-47/2025",
@@ -34827,7 +35963,10 @@
      "autor": "helder-oliveira",
      "autorTexto": "Helder",
      "ementa": "Dispõe sobre a concessão de Cartão de Prata à senhora Fabiana Novais Santos.",
-     "sessao": "2025-09-16-o50"
+     "sessao": "2025-09-16-o50",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-45/2025",
@@ -34837,7 +35976,11 @@
      "autor": "helder-oliveira",
      "autorTexto": "Helder",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa ao Instituto “Se Liga na Missão”.",
-     "sessao": "2025-09-16-o50"
+     "sessao": "2025-09-16-o50",
+     "temas": [
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PDL-44/2025",
@@ -34847,7 +35990,10 @@
      "autor": "helder-oliveira",
      "autorTexto": "Helder",
      "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Senhor Antônio Carlos Casulari Roxo da Motta.",
-     "sessao": "2025-09-16-o50"
+     "sessao": "2025-09-16-o50",
+     "temas": [
+      "Nomes e homenagens"
+     ]
     },
     {
      "key": "PLC-10/2025",
@@ -34903,6 +36049,7 @@
    "nome": "Zé Carlos Santa Maria",
    "partido": "UNIAO",
    "partidoNome": "União Brasil",
+   "partidoLogo": "/partidos/uniao.png",
    "foto": "/fotos/vereadores/ze-carlos-santa-maria.jpg",
    "fotoFonte": "TSE, fotos de candidatura das eleições de 2024",
    "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/ze-carlos-santa-maria",
@@ -35137,6 +36284,7 @@
   "perfilOficial": "https://pt.wikipedia.org/wiki/Gerson_Pessoa",
   "creditoFoto": "TSE, fotos de candidatura das eleições de 2024",
   "creditoFotoUrl": "https://divulgacandcontas.tse.jus.br/",
+  "partidoLogo": null,
   "nota": 5.2,
   "cobertura": 0.75,
   "provisoria": true,
@@ -38207,7 +39355,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências",
-    "sessao": "2026-10-06-o56"
+    "sessao": "2026-10-06-o56",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-221/2026",
@@ -38217,7 +39368,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-10-06-o56"
+    "sessao": "2026-10-06-o56",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-220/2026",
@@ -38227,7 +39381,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-10-06-o56"
+    "sessao": "2026-10-06-o56",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-213/2026",
@@ -38237,7 +39394,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-09-22-o52"
+    "sessao": "2026-09-22-o52",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-212/2026",
@@ -38247,7 +39407,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-09-15-o50"
+    "sessao": "2026-09-15-o50",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-211/2026",
@@ -38257,7 +39420,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-09-15-o50"
+    "sessao": "2026-09-15-o50",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-207/2026",
@@ -38267,7 +39433,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-09-10-o49"
+    "sessao": "2026-09-10-o49",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-206/2026",
@@ -38277,7 +39446,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-09-10-o49"
+    "sessao": "2026-09-10-o49",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-205/2026",
@@ -38287,7 +39459,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-09-10-o49"
+    "sessao": "2026-09-10-o49",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-204/2026",
@@ -38297,7 +39472,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-09-03-o47"
+    "sessao": "2026-09-03-o47",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-201/2026",
@@ -38307,7 +39485,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-09-03-o47"
+    "sessao": "2026-09-03-o47",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-200/2026",
@@ -38317,7 +39498,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-09-03-o47"
+    "sessao": "2026-09-03-o47",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-194/2026",
@@ -38327,7 +39511,12 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Autoriza o Poder Executivo a doar área de propriedade municipal às entidades privadas sem fins lucrativos, habilitadas e credenciadas, nos termos do Decreto nº 14.872, de 23 de outubro de 2025, para desenvolvimento de projetos habitacionais no âmbito do Programa Minha Casa Minha Vida Entidades – PMCMV-E.",
-    "sessao": "2026-08-25-o44"
+    "sessao": "2026-08-25-o44",
+    "temas": [
+     "Entidades e utilidade pública",
+     "Imóveis e áreas públicas",
+     "Assistência social e moradia"
+    ]
    },
    {
     "key": "PL-193/2026",
@@ -38337,7 +39526,12 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Autoriza o Poder Executivo a doar áreas de propriedade municipal ao Fundo de Arrendamento Residencial - FAR, representado pela Caixa Econômica Federal, para fins de construção de moradias destinadas à alienação no âmbito do Programa Minha Casa Minha Vida – PMCMV.",
-    "sessao": "2026-08-25-o44"
+    "sessao": "2026-08-25-o44",
+    "temas": [
+     "Economia e emprego",
+     "Imóveis e áreas públicas",
+     "Assistência social e moradia"
+    ]
    },
    {
     "key": "PL-190/2026",
@@ -38347,7 +39541,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-20-o43"
+    "sessao": "2026-08-20-o43",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-185/2026",
@@ -38357,7 +39554,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-13-o41"
+    "sessao": "2026-08-13-o41",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-180/2026",
@@ -38367,7 +39567,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-11-o40"
+    "sessao": "2026-08-11-o40",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-179/2026",
@@ -38377,7 +39580,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional suplementar ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-11-o40"
+    "sessao": "2026-08-11-o40",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-178/2026",
@@ -38387,7 +39593,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-11-o40"
+    "sessao": "2026-08-11-o40",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-177/2026",
@@ -38397,7 +39606,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-11-o40"
+    "sessao": "2026-08-11-o40",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-174/2026",
@@ -38407,7 +39619,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-20-o43"
+    "sessao": "2026-08-20-o43",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-173/2026",
@@ -38417,7 +39632,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-20-o43"
+    "sessao": "2026-08-20-o43",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-172/2026",
@@ -38427,7 +39645,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-20-o43"
+    "sessao": "2026-08-20-o43",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-168/2026",
@@ -38437,7 +39658,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências",
-    "sessao": "2026-08-04-o38"
+    "sessao": "2026-08-04-o38",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-161/2026",
@@ -38447,7 +39671,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-04-o38"
+    "sessao": "2026-08-04-o38",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-159/2026",
@@ -38457,7 +39684,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-04-o38"
+    "sessao": "2026-08-04-o38",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-158/2026",
@@ -38467,7 +39697,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a denominação oficial de logradouro no Assentamento Social Abas, Jardim Mutinga.",
-    "sessao": "2026-08-04-o38"
+    "sessao": "2026-08-04-o38",
+    "temas": [
+     "Nomes e homenagens"
+    ]
    },
    {
     "key": "PL-153/2026",
@@ -38477,7 +39710,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-04-o38"
+    "sessao": "2026-08-04-o38",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-148/2026",
@@ -38487,7 +39723,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-04-o38"
+    "sessao": "2026-08-04-o38",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-135/2026",
@@ -38497,7 +39736,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-06-16-o34"
+    "sessao": "2026-06-16-o34",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-133/2026",
@@ -38507,7 +39749,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a alteração da Lei nº 5.153, de 10 de dezembro de 2021, que trata das consignações em folha de pagamento dos servidores públicos ativos e inativos, e dos pensionistas do Município de Osasco e dá outras providências.",
-    "sessao": "2026-06-16-o34"
+    "sessao": "2026-06-16-o34",
+    "temas": [
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PL-123/2026",
@@ -38517,7 +39762,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre as diretrizes orçamentárias do Município de Osasco para o exercício de 2027, no âmbito da Administração Direta e Indireta do Município e dá outras providências.",
-    "sessao": "2026-06-02-o31"
+    "sessao": "2026-06-02-o31",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-121/2026",
@@ -38527,7 +39775,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a prorrogação do prazo para adesão ao Programa de Parcelamento Especial de Osasco, previsto na Lei nº 5.447, de 22 de dezembro de 2025.",
-    "sessao": "2026-05-21-o28"
+    "sessao": "2026-05-21-o28",
+    "temas": [
+     "Tributos e dívidas"
+    ]
    },
    {
     "key": "PL-114/2026",
@@ -38537,7 +39788,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-05-12-o25"
+    "sessao": "2026-05-12-o25",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-113/2026",
@@ -38547,7 +39801,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-05-12-o25"
+    "sessao": "2026-05-12-o25",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-111/2026",
@@ -38557,7 +39814,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-05-07-o24"
+    "sessao": "2026-05-07-o24",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-110/2026",
@@ -38567,7 +39827,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-05-05-o23"
+    "sessao": "2026-05-05-o23",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-103/2026",
@@ -38577,7 +39840,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-04-28-o21"
+    "sessao": "2026-04-28-o21",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-79/2026",
@@ -38587,7 +39853,13 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre o Sistema Municipal de Estacionamento Rotativo Pago em vias e logradouros públicos do Município de Osasco/SP; designa a INOVA OZ - Agência de Inovação e Desenvolvimento Tecnológico de Osasco S.A. como entidade gestora delegada para a gestão administrativa, tecnológica e contratual do Sistema, e dá outras providências.",
-    "sessao": "2026-04-09-o17"
+    "sessao": "2026-04-09-o17",
+    "temas": [
+     "Mobilidade",
+     "Entidades e utilidade pública",
+     "Nomes e homenagens",
+     "Gestão pública e transparência"
+    ]
    },
    {
     "key": "PL-68/2026",
@@ -38597,7 +39869,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-03-31-o15"
+    "sessao": "2026-03-31-o15",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-67/2026",
@@ -38607,7 +39882,12 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Autoriza o Município de Osasco a celebrar convênio com o Estado de São Paulo, por intermédio da Secretaria de Estado da Cultura e Economia Criativa.",
-    "sessao": "2026-04-07-e5"
+    "sessao": "2026-04-07-e5",
+    "temas": [
+     "Esporte, cultura e lazer",
+     "Economia e emprego",
+     "Gestão pública e transparência"
+    ]
    },
    {
     "key": "PL-63/2026",
@@ -38617,7 +39897,8 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Altera a Lei nº 5.157, de 15 de dezembro de 2021, que dispõe sobre o Programa Nosso Futuro, e dá outras providências.",
-    "sessao": "2026-03-31-e4"
+    "sessao": "2026-03-31-e4",
+    "temas": []
    },
    {
     "key": "PL-49/2026",
@@ -38627,7 +39908,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a prorrogação do prazo para adesão ao Programa de Parcelamento Especial de Osasco, previsto na Lei nº 5.447, de 22 de dezembro de 2025.",
-    "sessao": "2026-03-12-o10"
+    "sessao": "2026-03-12-o10",
+    "temas": [
+     "Tributos e dívidas"
+    ]
    },
    {
     "key": "PL-41/2026",
@@ -38637,7 +39921,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeitura do Município de Osasco",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-03-05-o8"
+    "sessao": "2026-03-05-o8",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-40/2026",
@@ -38647,7 +39934,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeitura do Município de Osasco",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-03-05-o8"
+    "sessao": "2026-03-05-o8",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-39/2026",
@@ -38657,7 +39947,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeitura do Município de Osasco",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-03-05-o8"
+    "sessao": "2026-03-05-o8",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-38/2026",
@@ -38667,7 +39960,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeitura do Município de Osasco",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-03-05-o8"
+    "sessao": "2026-03-05-o8",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-37/2026",
@@ -38677,7 +39973,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeitura do Município de Osasco",
     "ementa": "Dispõe sobre a concessão de subsídio financeiro para custeio do sistema de transporte coletivo público de passageiros do Município de Osasco no ano de 2026.",
-    "sessao": "2026-03-05-o8"
+    "sessao": "2026-03-05-o8",
+    "temas": [
+     "Mobilidade"
+    ]
    },
    {
     "key": "PLC-9/2026",
@@ -38687,7 +39986,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a alteração da estrutura organizacional e administrativa da Prefeitura Municipal de Osasco e dá outras providências.",
-    "sessao": "2026-10-08-o57"
+    "sessao": "2026-10-08-o57",
+    "temas": [
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PLC-7/2026",
@@ -38697,7 +39999,11 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Institui o Plano de Carreira e Remuneração para o cargo de Agente de Trânsito de Osasco, cria novas escalas de vencimentos e dá outras providências.",
-    "sessao": "2026-08-04-o38"
+    "sessao": "2026-08-04-o38",
+    "temas": [
+     "Mobilidade",
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PLC-5/2026",
@@ -38707,7 +40013,11 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a concessão de reajuste, de pagamento de abono e revisão de padrão de vencimento dos cargos públicos de provimento efetivo, funções, empregos públicos e dos cargos de provimento em comissão da Administração Direta e Indireta de Direito Público, e dá outras providências.",
-    "sessao": "2026-05-12-o25"
+    "sessao": "2026-05-12-o25",
+    "temas": [
+     "Economia e emprego",
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PL-4/2026",
@@ -38717,7 +40027,12 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Revoga o parágrafo único do art. 1º e o art. 7º da Lei nº 5.311, de 22 de dezembro de 2023, que autoriza o Poder Executivo a contratar operação de crédito internacional com o Fundo Financeiro para o Desenvolvimento da Bacia do Prata – FONPLATA, e a oferecer garantias, e dá outras providências.",
-    "sessao": "2026-02-03-o1"
+    "sessao": "2026-02-03-o1",
+    "temas": [
+     "Saúde",
+     "Orçamento e finanças",
+     "Gestão pública e transparência"
+    ]
    },
    {
     "key": "PLC-4/2026",
@@ -38727,7 +40042,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Disciplina a criação, organização e funcionamento de feiras livres no Município de Osasco.",
-    "sessao": "2026-05-05-o23"
+    "sessao": "2026-05-05-o23",
+    "temas": [
+     "Economia e emprego"
+    ]
    },
    {
     "key": "PL-02/2026",
@@ -38737,7 +40055,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre abertura de crédito adicional ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-01-27-e1"
+    "sessao": "2026-01-27-e1",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-2/2026",
@@ -38747,7 +40068,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-06-o39"
+    "sessao": "2026-08-06-o39",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PLC-1/2026",
@@ -38757,7 +40081,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a revisão de padrão de vencimentos de agente de defesa civil e vigia municipal, e dá outras providências.",
-    "sessao": "2026-02-03-o1"
+    "sessao": "2026-02-03-o1",
+    "temas": [
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PL-228/2025",
@@ -38767,7 +40094,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre o Programa de Parcelamento Especial de Osasco no âmbito do Município de Osasco.",
-    "sessao": "2025-12-16-o74"
+    "sessao": "2025-12-16-o74",
+    "temas": [
+     "Tributos e dívidas"
+    ]
    },
    {
     "key": "PL-227/2025",
@@ -38777,7 +40107,8 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a criação do Programa Municipal de Fortalecimento dos Vínculos Familiares e Apoio à Parentalidade.",
-    "sessao": "2025-12-16-o74"
+    "sessao": "2025-12-16-o74",
+    "temas": []
    },
    {
     "key": "PL-212/2025",
@@ -38787,7 +40118,8 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispões sobre o Cadastro único do Cidadão do Município de Osasco.",
-    "sessao": "2025-12-18-e8"
+    "sessao": "2025-12-18-e8",
+    "temas": []
    },
    {
     "key": "PL-211/2025",
@@ -38797,7 +40129,8 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre o Cadastro Único do Cidadão de Osasco.",
-    "sessao": "2025-11-18-o67"
+    "sessao": "2025-11-18-o67",
+    "temas": []
    },
    {
     "key": "PL-200/2025",
@@ -38807,7 +40140,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Estima a receita e fixa a despesa da Administração Direta e Indireta no Município de Osasco para o exercício de 2026 na forma que especifica.",
-    "sessao": "2025-10-16-o59"
+    "sessao": "2025-10-16-o59",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-177/2025",
@@ -38817,7 +40153,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2025-09-23-o52"
+    "sessao": "2025-09-23-o52",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-157/2025",
@@ -38827,7 +40166,12 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispões sobre a alteração da Lei n° 5.311, de 22 de dezembro de 2023, que autorizou o Poder Executivo a contratar operação de crédito internacional com o Fundo Financeiro para o Desenvolvimento da Bacia do Prata - FONPLATA, e a oferecer garantias.",
-    "sessao": "2025-09-09-o48"
+    "sessao": "2025-09-09-o48",
+    "temas": [
+     "Saúde",
+     "Orçamento e finanças",
+     "Gestão pública e transparência"
+    ]
    },
    {
     "key": "PL-155/2025",
@@ -38837,7 +40181,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2025-09-09-o48"
+    "sessao": "2025-09-09-o48",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-136/2025",
@@ -38847,7 +40194,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Declara “Cidades-Irmãs” o Município de Osasco – SP e o Município de Cedro – CE.",
-    "sessao": "2025-08-19-o42"
+    "sessao": "2025-08-19-o42",
+    "temas": [
+     "Nomes e homenagens"
+    ]
    },
    {
     "key": "PL-124/2025",
@@ -38857,7 +40207,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre o Plano Plurianual do Município de Osasco para o quadriênio compreendido entre 2026 e 2029.",
-    "sessao": "2025-08-05-o38"
+    "sessao": "2025-08-05-o38",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-123/2025",
@@ -38867,7 +40220,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre as diretrizes orçamentárias do Município de Osasco para o exercício de 2026, no âmbito da Administração Direta e Indireta do Município, e dá outras providências.",
-    "sessao": "2025-08-05-o38"
+    "sessao": "2025-08-05-o38",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-120/2025",
@@ -38877,7 +40233,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2025-08-05-o38"
+    "sessao": "2025-08-05-o38",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-103/2025",
@@ -38887,7 +40246,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2025-06-24-o36"
+    "sessao": "2025-06-24-o36",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-102/2025",
@@ -38897,7 +40259,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2025-06-24-o36"
+    "sessao": "2025-06-24-o36",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-91/2025",
@@ -38907,7 +40272,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a desafetação e posterior doação de área de terreno ao Estado de São Paulo e dá outras providências.",
-    "sessao": "2025-06-10-o33"
+    "sessao": "2025-06-10-o33",
+    "temas": [
+     "Imóveis e áreas públicas"
+    ]
    },
    {
     "key": "PL-71/2025",
@@ -38917,7 +40285,12 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a alteração da Lei n° 5.311, de 22 de dezembro de 2023, que autorizou o Poder Executivo a contratar operação de crédito internacional com o Fundo Financeiro para o Desenvolvimento da Bacia do Prata - FONPLATA, e a oferecer garantias.",
-    "sessao": "2025-05-15-o26"
+    "sessao": "2025-05-15-o26",
+    "temas": [
+     "Saúde",
+     "Orçamento e finanças",
+     "Gestão pública e transparência"
+    ]
    },
    {
     "key": "PL-40/2025",
@@ -38927,7 +40300,12 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Autoriza o Poder Executivo a contratar operação de crédito com a Caixa Econômica Federal e dá outras providências.",
-    "sessao": "2025-04-22-o20"
+    "sessao": "2025-04-22-o20",
+    "temas": [
+     "Economia e emprego",
+     "Orçamento e finanças",
+     "Gestão pública e transparência"
+    ]
    },
    {
     "key": "PLC-19/2025",
@@ -38937,7 +40315,8 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Altera o § 1º do art. 3º da Lei Complementar nº 258, de 27 de dezembro de 2012, que dispõe sobre a criação de fundos de previdência, revoga sua redação anterior e dá nova disciplina à revisão da segregação de massas no âmbito do IPMO.",
-    "sessao": "2025-12-11-o73"
+    "sessao": "2025-12-11-o73",
+    "temas": []
    },
    {
     "key": "PLC-18/2025",
@@ -38947,7 +40326,14 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a extinção do Convênio com a Fundação Instituto Tecnológico de Osasco – FITO referente ao Programa Mundo da Criança, com a redistribuição dos cargos de Professor de Desenvolvimento Infantil, e dá outras providências.",
-    "sessao": "2025-12-11-o73"
+    "sessao": "2025-12-11-o73",
+    "temas": [
+     "Educação",
+     "Crianças e jovens",
+     "Entidades e utilidade pública",
+     "Servidores públicos",
+     "Gestão pública e transparência"
+    ]
    },
    {
     "key": "PLC-17/2025",
@@ -38957,7 +40343,12 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre o congelamento da base do valor venal dos imóveis para fins de lançamento do IPTU e da taxa de coleta e remoção de resíduos sólidos nos exercícios de 2026 a 2028 e dá outras providências.",
-    "sessao": "2025-12-04-o71"
+    "sessao": "2025-12-04-o71",
+    "temas": [
+     "Meio ambiente",
+     "Tributos e dívidas",
+     "Imóveis e áreas públicas"
+    ]
    },
    {
     "key": "PLC-16/2025",
@@ -38967,7 +40358,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a alteração da Lei Complementar nº 428, de 22 de dezembro de 2023, que consolida as atribuições e os requisitos dos cargos de provimento efetivo da Prefeitura do Município de Osasco.",
-    "sessao": "2025-10-23-o61"
+    "sessao": "2025-10-23-o61",
+    "temas": [
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PLC-15/2025",
@@ -38977,7 +40371,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a regularização edilícia no Município de Osasco.",
-    "sessao": "2025-10-09-o57"
+    "sessao": "2025-10-09-o57",
+    "temas": [
+     "Imóveis e áreas públicas"
+    ]
    },
    {
     "key": "PLC-13/2025",
@@ -38987,7 +40384,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a revisão de padrão de vencimentos de agente de defesa civil e vigia municipal e dá outras providências.",
-    "sessao": "2025-09-30-o54"
+    "sessao": "2025-09-30-o54",
+    "temas": [
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PLC-12/2025",
@@ -38997,7 +40397,11 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Altera a Lei Complementar nº 299, de 31 de agosto de 2015, que institui o abono de atividade complementar da guarda civil municipal.",
-    "sessao": "2025-09-30-o54"
+    "sessao": "2025-09-30-o54",
+    "temas": [
+     "Segurança",
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PLC-11/2025",
@@ -39007,7 +40411,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a criação da Câmara de Conciliação e Transação Fiscal do Município de Osasco, bem como institui a transação tributária, e dá outras providências.",
-    "sessao": "2025-09-23-o52"
+    "sessao": "2025-09-23-o52",
+    "temas": [
+     "Tributos e dívidas"
+    ]
    },
    {
     "key": "PL-10/2025",
@@ -39017,7 +40424,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento e dá outras providências.",
-    "sessao": "2025-02-11-o2"
+    "sessao": "2025-02-11-o2",
+    "temas": [
+     "Orçamento e finanças"
+    ]
    },
    {
     "key": "PL-8/2025",
@@ -39027,7 +40437,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a criação e a definição da Política Municipal de videomonitoramento e videomonitoramento compartilhado no município de Osasco e dá outras providências.",
-    "sessao": "2025-02-11-o2"
+    "sessao": "2025-02-11-o2",
+    "temas": [
+     "Segurança"
+    ]
    },
    {
     "key": "PLC-08/2025",
@@ -39037,7 +40450,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Altera a Lei Complementar n° 428, de 22 de dezembro de 2023, que dispõe sobre a consolidação das atribuições e dos requisitos dos cargos de provimento efetivo da Prefeitura do Município de Osasco.",
-    "sessao": "2025-08-14-o41"
+    "sessao": "2025-08-14-o41",
+    "temas": [
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PLC-8/2025",
@@ -39047,7 +40463,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Altera a Lei Complementar n° 428, de 22 de dezembro de 2023, que dispõe sobre a consolidação das atribuições e dos requisitos dos cargos de provimento efetivo da Prefeitura do Município de Osasco.",
-    "sessao": "2025-09-23-o52"
+    "sessao": "2025-09-23-o52",
+    "temas": [
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PLC-7/2025",
@@ -39057,7 +40476,10 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Altera a Lei Complementar n° 389, de 30 de dezembro de 2020, que disciplina e estabelece a arquitetura organizacional e administrativa da estrutura de pessoal da' hierarquia superior da Administração Direta do Executivo Municipal de Osasco e constitui diretrizes gerais obrigatórias para as demais leis que tratarem do tema.",
-    "sessao": "2025-09-04-o47"
+    "sessao": "2025-09-04-o47",
+    "temas": [
+     "Animais"
+    ]
    },
    {
     "key": "PLC-6/2025",
@@ -39067,7 +40489,11 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Institui a Política de Cotas Raciais no Município de Osasco, no âmbito da Administração Pública Municipal, Direta e Indireta, para reserva de vagas para pessoas negras e indígenas oferecidas para provimento de cargos efetivos em concursos.",
-    "sessao": "2025-06-24-o36"
+    "sessao": "2025-06-24-o36",
+    "temas": [
+     "Servidores públicos",
+     "Gestão pública e transparência"
+    ]
    },
    {
     "key": "PLC-5/2025",
@@ -39077,7 +40503,8 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Altera a Lei Complementar n° 403, de 28 de dezembro de 2022, que dispõe sobre a Política Municipal de Inovação, cria o Comitê Gestor de Desenvolvimento Tecnológico e Inovação, cria o Fundo Municipal de Desenvolvimento de Inovação Tecnológica, autoriza a criação da Agência Municipal de Desenvolvimento Tecnológico e Inovação e delega Serviços Públicos Municipais.",
-    "sessao": "2025-06-24-o36"
+    "sessao": "2025-06-24-o36",
+    "temas": []
    },
    {
     "key": "PLC-4/2025",
@@ -39087,7 +40514,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Altera a Lei Complementar nº 404 de 28 de dezembro de 2022, que dispõe sobre o Código Tributário do Município de Osasco.",
-    "sessao": "2025-06-24-o36"
+    "sessao": "2025-06-24-o36",
+    "temas": [
+     "Tributos e dívidas"
+    ]
    },
    {
     "key": "PL-3/2025",
@@ -39097,7 +40527,11 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre alteração da localização da Praça Luiz Gonzaga, no Bairro Bussocaba, e da denominação da Praça Estela Rosa Campanha Ribeiro.",
-    "sessao": "2025-02-06-o1"
+    "sessao": "2025-02-06-o1",
+    "temas": [
+     "Datas e calendário",
+     "Nomes e homenagens"
+    ]
    },
    {
     "key": "PLC-3/2025",
@@ -39107,7 +40541,10 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Altera a lei complementar nº 206, de 22 de dezembro de 2011, que dispõe sobre a ordenação da paisagem e controle sonoro no meio ambiente urbano do Município de Osasco.",
-    "sessao": "2025-05-22-o28"
+    "sessao": "2025-05-22-o28",
+    "temas": [
+     "Meio ambiente"
+    ]
    },
    {
     "key": "PLC-02/2025",
@@ -39117,7 +40554,11 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a concessão de reajuste, de pagamento de abono e revisão de padrão de vencimento dos cargos públicos de provimento efetivo, funções, empregos públicos e dos cargos de provimento em comissão da Administração Direta e Indireta de Direito Público, e dá outras providências.",
-    "sessao": "2025-05-20-o27"
+    "sessao": "2025-05-20-o27",
+    "temas": [
+     "Economia e emprego",
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PLC-2/2025",
@@ -39127,7 +40568,11 @@
     "autor": "prefeito",
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre a concessão de reajuste, de pagamento de abono e revisão de padrão de vencimento dos cargos públicos de provimento efetivo, funções, empregos públicos e dos cargos de provimento em comissão da Administração Direta e Indireta de Direito Público, e dá outras providências.",
-    "sessao": "2025-05-27-o29"
+    "sessao": "2025-05-27-o29",
+    "temas": [
+     "Economia e emprego",
+     "Servidores públicos"
+    ]
    },
    {
     "key": "PLC-1/2025",
@@ -39137,7 +40582,8 @@
     "autor": "prefeito",
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a alteração da Lei Complementar nº 442, de 20 de dezembro de 2024.",
-    "sessao": "2025-04-08-o17"
+    "sessao": "2025-04-08-o17",
+    "temas": []
    }
   ],
   "vetos": [
