@@ -1,0 +1,272 @@
+{
+ "fonte": "Câmara Municipal de Osasco, Portal do Cidadão: Folha de pagamento sintético (Transparência › Prestando Contas › Outras Informações › Quadro Geral de Pessoal)",
+ "url": "https://cmo.rdmsistemas.com.br/portalcidadao/",
+ "nota": "Valores brutos (proventos) da folha normal do mês, servidores ativos. O relatório não informa o gabinete de cada assessor.",
+ "meses": {
+  "2026-09": {
+   "folha": "FN-256 FOLHA NORMAL SET26",
+   "vereadores": {
+    "pessoas": 20,
+    "bruto": 549998.02,
+    "porVereador": [
+     {
+      "id": "alexandre-capriotti",
+      "nome": "ALEXANDRE DE JESUS CAPRIOTTI",
+      "bruto": 28291.58
+     },
+     {
+      "id": "batista-comunidade",
+      "nome": "BATISTA DE SOUSA MOREIRA",
+      "bruto": 27581.92
+     },
+     {
+      "id": "carmonio-bastos",
+      "nome": "CARMONIO GONCALVES BASTOS",
+      "bruto": 28291.58
+     },
+     {
+      "id": "delbio-teruel",
+      "nome": "DELBIO CAMARGO TERUEL",
+      "bruto": 28291.58
+     },
+     {
+      "id": "elania-silva",
+      "nome": "ELANIA SILVA DE LIMA",
+      "bruto": 27581.92
+     },
+     {
+      "id": "elsa-oliveira",
+      "nome": "ELSA NATAL DE OLIVEIRA",
+      "bruto": 27333.96
+     },
+     {
+      "id": "emerson-osasco",
+      "nome": "EMERSON MARCIO VITALINO",
+      "bruto": 27085.6
+     },
+     {
+      "id": "lucia-da-saude",
+      "nome": "FRANCISCA JENILUCIA RIBEIRO DE ANDRADE",
+      "bruto": 27581.92
+     },
+     {
+      "id": "gabriel-saude",
+      "nome": "GABRIEL DE PAULA BARBOSA",
+      "bruto": 27085.6
+     },
+     {
+      "id": "cantor-goleiro",
+      "nome": "GILMEIRON MEDEIROS",
+      "bruto": 27581.92
+     },
+     {
+      "id": "guilherme-prado",
+      "nome": "GUILHERME DE PRADO SOUZA",
+      "bruto": 26826.35
+     },
+     {
+      "id": "heber-do-juntoz",
+      "nome": "HEBER ROCHA FARIAS",
+      "bruto": 26826.35
+     },
+     {
+      "id": "ivanildo-eventos",
+      "nome": "IVANILDO LUIZ DOS SANTOS",
+      "bruto": 27734.61
+     },
+     {
+      "id": "josias-da-juco",
+      "nome": "JOSIAS NASCIMENTO DE JESUS",
+      "bruto": 27581.92
+     },
+     {
+      "id": "laercio-mendonca",
+      "nome": "LAERCIO PATRICIO DE MENDONCA",
+      "bruto": 27581.92
+     },
+     {
+      "id": "juliao",
+      "nome": "LUIS CARLOS SOARES DE OLIVEIRA",
+      "bruto": 27581.92
+     },
+     {
+      "id": "pedrinho-cantagessi",
+      "nome": "PEDRO CANTAGESSI VITORIANO",
+      "bruto": 27333.96
+     },
+     {
+      "id": "ralfi-silva",
+      "nome": "RALFI RAFAEL DA SILVA",
+      "bruto": 27333.96
+     },
+     {
+      "id": "sergio-fontellas",
+      "nome": "SERGIO AUGUSTO FONTELLAS DOS SANTOS",
+      "bruto": 27734.61
+     },
+     {
+      "id": "stephane-rossi",
+      "nome": "STEPHANE CAROLINA ROSSI DE ALMEIDA MAGDESIAN",
+      "bruto": 26754.84
+     }
+    ]
+   },
+   "comissionados": {
+    "pessoas": 196,
+    "bruto": 2826501.18,
+    "gabinetes": {
+     "pessoas": 162,
+     "bruto": 2205800.5
+    },
+    "outros": {
+     "pessoas": 34,
+     "bruto": 620700.68
+    },
+    "porCargo": [
+     {
+      "cargo": "ASSESSOR PARLAMENTAR I",
+      "gabinete": true,
+      "pessoas": 61,
+      "bruto": 819042.76
+     },
+     {
+      "cargo": "CHEFE DE GABINETE",
+      "gabinete": true,
+      "pessoas": 20,
+      "bruto": 434175.65
+     },
+     {
+      "cargo": "ASSESSOR PARLAMENTAR III",
+      "gabinete": true,
+      "pessoas": 42,
+      "bruto": 407492.22
+     },
+     {
+      "cargo": "ASSESSOR DE COORDENACAO",
+      "gabinete": true,
+      "pessoas": 19,
+      "bruto": 317886.25
+     },
+     {
+      "cargo": "ASSESSOR PARLAMENTAR II",
+      "gabinete": true,
+      "pessoas": 20,
+      "bruto": 227203.62
+     },
+     {
+      "cargo": "ASSESSOR PARLAMENTAR I DA PRESIDENCIA",
+      "gabinete": false,
+      "pessoas": 6,
+      "bruto": 75356.88
+     },
+     {
+      "cargo": "ASSESSOR DE GABINETE",
+      "gabinete": false,
+      "pessoas": 4,
+      "bruto": 56354.84
+     },
+     {
+      "cargo": "CHEFE DE GABINETE DA PRESIDENCIA",
+      "gabinete": false,
+      "pessoas": 2,
+      "bruto": 51436.33
+     },
+     {
+      "cargo": "SECRETARIO DA PRESIDENCIA",
+      "gabinete": false,
+      "pessoas": 3,
+      "bruto": 42281.22
+     },
+     {
+      "cargo": "ASSESSOR ESPECIAL DA PRESIDENCIA",
+      "gabinete": false,
+      "pessoas": 2,
+      "bruto": 42093.06
+     },
+     {
+      "cargo": "ASSESSOR PARLAMENTAR III DA PRESIDENCIA",
+      "gabinete": false,
+      "pessoas": 4,
+      "bruto": 35336.23
+     },
+     {
+      "cargo": "ASSESSOR DE COORDENACAO DA",
+      "gabinete": false,
+      "pessoas": 2,
+      "bruto": 34859.94
+     },
+     {
+      "cargo": "DIRETOR JURIDICO DA PRESIDENCIA",
+      "gabinete": false,
+      "pessoas": 1,
+      "bruto": 33675.42
+     },
+     {
+      "cargo": "ASSESSOR ESPECIAL DE CONTAS",
+      "gabinete": false,
+      "pessoas": 1,
+      "bruto": 33052.63
+     },
+     {
+      "cargo": "DIRETOR GERAL",
+      "gabinete": false,
+      "pessoas": 1,
+      "bruto": 32701.92
+     },
+     {
+      "cargo": "DIRETOR DE GESTAO DE PESSOAS",
+      "gabinete": false,
+      "pessoas": 1,
+      "bruto": 31250.87
+     },
+     {
+      "cargo": "DIRETOR DE COMUNICACAO",
+      "gabinete": false,
+      "pessoas": 1,
+      "bruto": 29120.79
+     },
+     {
+      "cargo": "DIRETOR DO LEGISLATIVO",
+      "gabinete": false,
+      "pessoas": 1,
+      "bruto": 29018.45
+     },
+     {
+      "cargo": "DIRETOR DE ADMINISTRACAO PREDIAL",
+      "gabinete": false,
+      "pessoas": 1,
+      "bruto": 28861.54
+     },
+     {
+      "cargo": "CHEFE DE DIVISAO DE RECURSOS HUMANOS",
+      "gabinete": false,
+      "pessoas": 1,
+      "bruto": 21394.29
+     },
+     {
+      "cargo": "CHEFE DA COORDENADORIA DE EVENTOS",
+      "gabinete": false,
+      "pessoas": 1,
+      "bruto": 18988.24
+     },
+     {
+      "cargo": "CHEFE DA COORDENADORIA DO CENTRO",
+      "gabinete": false,
+      "pessoas": 1,
+      "bruto": 14431.86
+     },
+     {
+      "cargo": "ASSESSOR PARLAMENTAR II DA PRESIDENCIA",
+      "gabinete": false,
+      "pessoas": 1,
+      "bruto": 10486.17
+     }
+    ]
+   },
+   "todos": {
+    "pessoas": 324,
+    "bruto": 5666897.81
+   }
+  }
+ }
+}

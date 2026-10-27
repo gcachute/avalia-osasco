@@ -78,7 +78,8 @@ export function DespesasCamara({ despesas }: { despesas: NonNullable<Camara["des
       </ul>
       <p className="mt-3 text-xs text-slate-500">
         Valores efetivamente pagos no ano. Não aparecem diárias ou ressarcimentos pagos diretamente a vereadores nesses
-        dados. Fonte:{" "}
+        dados; a Ouvidoria Legislativa confirmou, em resposta a pedido de acesso à informação (27/10/2026), que a Câmara não paga diárias,
+        auxílios ou verbas de gabinete aos vereadores. Fonte:{" "}
         <a href={despesas.url} className="underline">
           {despesas.fonte}
         </a>
