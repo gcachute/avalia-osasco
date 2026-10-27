@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-27T03:40:10.241Z",
+ "geradoEm": "2026-10-27T03:44:23.483Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -8042,15 +8042,15 @@
      "n": 5
     },
     {
+     "tema": "Saúde",
+     "n": 3
+    },
+    {
      "tema": "Pessoas com deficiência e TEA",
      "n": 2
     },
     {
      "tema": "Economia e emprego",
-     "n": 2
-    },
-    {
-     "tema": "Saúde",
      "n": 2
     },
     {
@@ -9117,6 +9117,7 @@
      "sessao": "2025-08-28-o45",
      "classe": "simbolico",
      "temas": [
+      "Saúde",
       "Datas e calendário"
      ]
     },
@@ -9216,6 +9217,7 @@
      "resumo": "institui a Campanha Outubrinho Rosa, de autoria do vereador Sérgio Fontellas.",
      "sessao": "2026-02-03-o1",
      "temas": [
+      "Saúde",
       "Datas e calendário"
      ]
     }
@@ -11360,7 +11362,6 @@
      "resumo": "veda a nomeação de pessoa condenada por sentença criminal com trânsito em julgado e fundamentada na Lei Federal nº 11.340, de 7 de agosto de 2006(Lei Maria da Penha), para exercer cargo ou emprego público no Município de Osasco, inclusive nos âmbitos do Poder Legislativo e da Administração Indireta, de autoria do vereador Gabriel Saúde.",
      "sessao": "2026-02-03-o1",
      "temas": [
-      "Saúde",
       "Mulheres",
       "Mobilidade",
       "Economia e emprego",
@@ -11378,7 +11379,6 @@
      "resumo": "institui no Calendário Oficial do Município de Osasco a \"Semana Quita0Z\", de autoria do vereador Gabriel Saúde.",
      "sessao": "2026-03-26-o14",
      "temas": [
-      "Saúde",
       "Datas e calendário"
      ]
     }
@@ -40594,7 +40594,11 @@
     "projeto": "PL 47/2025",
     "autor": "sergio-fontellas",
     "resumo": "institui a Campanha Outubrinho Rosa, de autoria do vereador Sérgio Fontellas.",
-    "sessao": "2026-02-03-o1"
+    "sessao": "2026-02-03-o1",
+    "temas": [
+     "Saúde",
+     "Datas e calendário"
+    ]
    },
    {
     "key": "parcial-01/2026",
@@ -40603,7 +40607,11 @@
     "projeto": "PL 32/2025",
     "autor": "ralfi-silva",
     "resumo": "dispõe assegura o ingresso e a permanência de cães de assistência a pessoas com deficiência ou transtorno do espectro autista – TEA em locais de uso público ou privado, de autoria do vereador Ralfi Silva.",
-    "sessao": "2026-02-03-o1"
+    "sessao": "2026-02-03-o1",
+    "temas": [
+     "Pessoas com deficiência e TEA",
+     "Animais"
+    ]
    },
    {
     "key": "total-02/2026",
@@ -40612,7 +40620,10 @@
     "projeto": "PL 216/2025",
     "autor": "guilherme-prado",
     "resumo": "dispõe sobre alteração da denominação da rua General Labatut para rua Padre Léo, de autoria do vereador Guilherme Prado.",
-    "sessao": "2026-02-03-o1"
+    "sessao": "2026-02-03-o1",
+    "temas": [
+     "Nomes e homenagens"
+    ]
    },
    {
     "key": "total-03/2026",
@@ -40621,7 +40632,10 @@
     "projeto": "PL 78/2025",
     "autor": "heber-do-juntoz",
     "resumo": "institui diretrizes para a implementação e incentivo de Soluções baseadas na Natureza (SbN) e Infraestruturas Verdes-Azuis no Município de Osasco, de autoria do vereador Heber do Juntoz.",
-    "sessao": "2026-02-03-o1"
+    "sessao": "2026-02-03-o1",
+    "temas": [
+     "Meio ambiente"
+    ]
    },
    {
     "key": "total-4/2026",
@@ -40630,7 +40644,10 @@
     "projeto": "PL 143/2025",
     "autor": "gabriel-saude",
     "resumo": "institui no Calendário Oficial do Município de Osasco a \"Semana Quita0Z\", de autoria do vereador Gabriel Saúde.",
-    "sessao": "2026-03-26-o14"
+    "sessao": "2026-03-26-o14",
+    "temas": [
+     "Datas e calendário"
+    ]
    }
   ]
  },

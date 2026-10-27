@@ -19,7 +19,7 @@ export const classificarProjeto = (ementa) => (SIMBOLICO.test(norm(ementa)) ? "s
 
 // Temas por palavras-chave da ementa (um projeto pode ter mais de um).
 const TEMAS = [
-  ["Saúde", /saude|hospital|medic|doenc|vacina|odontolog|ubs\b|tratamento|diagnost|heimlich|primeiros socorros|doacao de sangue|cancer|diabet|obesidade|enfermag|farmac|internac|outubro rosa|novembro azul/],
+  ["Saúde", /saude|hospital|medic|doenc|vacina|odontolog|ubs\b|tratamento|diagnost|heimlich|primeiros socorros|doacao de sangue|cancer|diabet|obesidade|enfermag|farmac|internac|outubr[a-z]* rosa|novembr[a-z]* azul/],
   ["Pessoas com deficiência e TEA", /autis|\btea\b|deficien|neurodiverg|doenca(s)? rara|pcd/],
   ["Educação", /escola|ensino|educa|aluno|creche|professor|alfabetiz|pedagog|leitura|biblioteca/],
   ["Mulheres", /mulher|feminin|gestante|violencia domestica|maria da penha|menstru|materni/],
@@ -42,7 +42,11 @@ const TEMAS = [
   ["Gestão pública e transparência", /transparen|licitac|contrat|administracao publica|convenio/],
   ["Assistência social e moradia", /vulnerab|assistencia social|fome|alimenta|moradia|habitac|morador de rua|situacao de rua/],
 ];
-export const temasDoProjeto = (ementa) => TEMAS.filter(([, re]) => re.test(norm(ementa))).map(([t]) => t);
+// O trecho "de autoria do vereador Gabriel Saúde" não pode virar tema: o nome do autor sai antes.
+export const temasDoProjeto = (ementa) => {
+  const texto = norm(ementa).replace(/,?\s*de autoria d[oa].*$/, "");
+  return TEMAS.filter(([, re]) => re.test(texto)).map(([t]) => t);
+};
 
 export const PESO_SIMBOLICO = 0.2;
 export const ESCALA_PRESENCA = [0.75, 0.95]; // abaixo de 75% vale 0, a partir de 95% vale 10

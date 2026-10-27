@@ -361,18 +361,23 @@ export default function PaginaPrefeito() {
       </Secao>
 
       <Secao titulo={`Vetos (${p.vetos.length})`}>
-        <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white">
-          {p.vetos.map((x) => {
+        <ListaTematica
+          nomes={["veto", "vetos"]}
+          vazio="Nenhum veto comunicado nas sessões analisadas."
+          itens={p.vetos.map((x) => {
             const autor = dados.vereadores.find((v) => v.id === x.autor);
-            return (
-              <li key={x.key} className="p-4 text-sm">
-                <span className="mr-2 rounded bg-rose-50 px-1.5 py-0.5 text-xs font-medium text-rose-800">Veto {x.tipo}</span>
-                <b className="text-slate-900">{x.projeto}</b>
-                {autor && <> de {autor.nome}</>} — {x.resumo}
-              </li>
-            );
+            const s = sessao(x.sessao);
+            return {
+              key: x.key,
+              titulo: autor ? `${x.projeto}, de ${autor.nome}` : x.projeto,
+              curto: x.projeto,
+              texto: x.resumo,
+              temas: x.temas ?? [],
+              selo: { texto: `Veto ${x.tipo}`, tom: "vermelho" as const },
+              sessao: s ? { rotulo: `${nomeSessao(s)} (${dataBR(s.data)})`, url: s.url } : null,
+            };
           })}
-        </ul>
+        />
       </Secao>
 
     </>
