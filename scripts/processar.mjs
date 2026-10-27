@@ -7,7 +7,7 @@ import { calcularIegm } from "./lib/iegm.mjs";
 import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, pontosComissoes, temasDoProjeto } from "./lib/vereadores.mjs";
 import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
-import { carregarBairros, reconhecedorDeBairros } from "./lib/bairros.mjs";
+import { carregarBairros, reconhecedorDeBairros, reconhecedorDeEquipamentos } from "./lib/bairros.mjs";
 import { montarTerritorio } from "./lib/territorio.mjs";
 
 const RAW = "data/raw";
@@ -231,7 +231,7 @@ for (const { sheets, s } of lidas) {
       const st = norm(status[col]);
       if (autor && /ausencia d[oa] autor/.test(st) && !isExecutivo(autor)) {
         const p = pessoas.get(attribute(autor));
-        p?.adiadasPorAusencia.push({ sessao: s.id, item: text.slice(0, 160) });
+        p?.adiadasPorAusencia.push({ sessao: s.id, item: text });
       }
 
       const jm = text.match(JUSTIFICATIVA_RE);
@@ -240,12 +240,12 @@ for (const { sheets, s } of lidas) {
       const sm = text.match(SANCAO_RE);
       if (sm) {
         const key = `${sm[1] ? "LC" : "L"}-${sm[2]}`;
-        if (!sancoes.has(key)) sancoes.set(key, { key, lei: `Lei${sm[1] ? " Complementar" : ""} nº ${sm[2]}`, data: clean(sm[3]), autor: attribute(sm[4]), resumo: text.replace(/^.*?que\s+/i, "").slice(0, 220), sessao: s.id });
+        if (!sancoes.has(key)) sancoes.set(key, { key, lei: `Lei${sm[1] ? " Complementar" : ""} nº ${sm[2]}`, data: clean(sm[3]), autor: attribute(sm[4]), resumo: text.replace(/^.*?que\s+/i, ""), sessao: s.id });
       }
       const vm = text.match(VETO_RE);
       if (vm) {
         const key = `${vm[1]}-${vm[2]}`;
-        if (!vetos.has(key)) vetos.set(key, { key, tipo: vm[1].toLowerCase(), numero: vm[2], projeto: `${vm[3] ? "PLC" : "PL"} ${vm[4]}`, autor: attribute(vm[5]), resumo: text.replace(/^.*?que\s+/i, "").slice(0, 220), sessao: s.id });
+        if (!vetos.has(key)) vetos.set(key, { key, tipo: vm[1].toLowerCase(), numero: vm[2], projeto: `${vm[3] ? "PLC" : "PL"} ${vm[4]}`, autor: attribute(vm[5]), resumo: text.replace(/^.*?que\s+/i, ""), sessao: s.id });
       }
       if (/^decretos? n/i.test(text) && /prefeit/i.test(text)) for (const n of text.matchAll(/\b1\d\.\d{3}\b/g)) decretos.add(n[0]);
       if (/^(decreto|of[ií]cio|mensagem|veto)/i.test(text) && /prefeit|executivo/i.test(text.slice(0, 160)) && !atosExecutivo.has(text.slice(0, 120)))
@@ -443,13 +443,28 @@ const malha = carregarBairros();
 let mapa = null;
 if (malha) {
   const acha = reconhecedorDeBairros(malha.bairros);
+  const achaEquipamento = reconhecedorDeEquipamentos();
   const nomes = new Map(vereadores.map((v) => [v.id, v.nome]));
   nomes.set("prefeito", `${pf.nome} (prefeito)`).set("mesa-diretora", "Mesa Diretora").set("comissao", "Comissão da Câmara");
   const itens = [];
   const adiciona = (chave, tipo, autor, texto, sessaoId, prefeitura = autor === "prefeito") => {
-    const bairros = acha(texto);
+    const porNome = acha(texto);
+    // Sem o nome do bairro, vale a escola ou unidade de saúde citada (e o item guarda qual foi).
+    const equipamentos = achaEquipamento(texto).filter((e) => !porNome.includes(e.bairro));
+    const bairros = [...porNome, ...equipamentos.map((e) => e.bairro)];
     if (!bairros.length) return;
-    itens.push({ id: chave, tipo, origem: prefeitura ? "prefeitura" : "camara", autor, autorNome: nomes.get(autor) ?? null, data: sessaoId.slice(0, 10), sessao: sessaoId, texto: clean(texto).slice(0, 260), bairros });
+    itens.push({
+      id: chave,
+      tipo,
+      origem: prefeitura ? "prefeitura" : "camara",
+      autor,
+      autorNome: nomes.get(autor) ?? null,
+      data: sessaoId.slice(0, 10),
+      sessao: sessaoId,
+      texto: clean(texto),
+      bairros,
+      ...(equipamentos.length && { via: equipamentos.map((e) => e.nome) }),
+    });
   };
   for (const x of proposicoes.values()) adiciona(x.key, x.tipo === "PDL" ? "Honraria" : (TIPO_NOME[x.tipo] ?? x.tipo), x.autor, x.ementa, x.sessao);
   for (const x of mocoes.values()) adiciona(x.key, x.tipo, x.autor, x.ementa, x.sessao);

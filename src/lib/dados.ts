@@ -50,6 +50,8 @@ export type ItemMapa = {
   sessao: string;
   texto: string;
   bairros: string[];
+  // Quando o bairro foi reconhecido pela escola ou unidade de saúde citada, e não pelo nome.
+  via?: string[];
 };
 
 export type CensoBairro = {

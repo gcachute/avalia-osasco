@@ -403,7 +403,7 @@ export default async function PaginaVereador({ params }: Props) {
           <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white text-sm">
             {v.adiadas.map((a, k) => (
               <li key={k} className="p-4">
-                <div className="text-slate-700">{a.item}…</div>
+                <div className="text-slate-700">{a.item}</div>
                 <div className="mt-1 text-xs text-slate-500"><LinkSessao id={a.sessao} /></div>
               </li>
             ))}
