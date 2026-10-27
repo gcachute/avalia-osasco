@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-27T14:03:01.425Z",
+ "geradoEm": "2026-10-27T14:26:38.908Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -48480,8 +48480,312 @@
   "despesas": {
    "fonte": "TCE-SP, Portal da Transparência Municipal (dados do sistema AUDESP)",
    "url": "https://transparencia.tce.sp.gov.br/",
-   "coletadoEm": "2026-10-26",
+   "coletadoEm": "2026-10-27",
    "anos": {
+    "2017": {
+     "pago": 41002832.78,
+     "meses": 12,
+     "maioresFornecedores": [
+      {
+       "nome": "CAMARA MUNICIPAL DE OSASCO",
+       "pago": 26090372.5
+      },
+      {
+       "nome": "VIGENT CONSTRUCOES LTDA",
+       "pago": 3116637.29
+      },
+      {
+       "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+       "pago": 3074880.78
+      },
+      {
+       "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+       "pago": 1794276
+      },
+      {
+       "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+       "pago": 1632165.87
+      },
+      {
+       "nome": "INFOREADY TECNOLOGIA LTDA",
+       "pago": 1069435.55
+      },
+      {
+       "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+       "pago": 641764.74
+      },
+      {
+       "nome": "RDM SISTEMA DE GESTAO LTDA - ME",
+       "pago": 576055.44
+      }
+     ]
+    },
+    "2018": {
+     "pago": 49397607.47,
+     "meses": 12,
+     "maioresFornecedores": [
+      {
+       "nome": "CAMARA MUNICIPAL DE OSASCO",
+       "pago": 28457139.02
+      },
+      {
+       "nome": "MXA SOLUTIONS LTDA - ME",
+       "pago": 4129578.55
+      },
+      {
+       "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+       "pago": 3384954.16
+      },
+      {
+       "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+       "pago": 2296030.26
+      },
+      {
+       "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+       "pago": 1842177.52
+      },
+      {
+       "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+       "pago": 1687399.53
+      },
+      {
+       "nome": "PEREZ DAMIANI COMUNICACAO LTDA",
+       "pago": 1222739.97
+      },
+      {
+       "nome": "MICRO KA INFORMATICA LTDA",
+       "pago": 1022173.13
+      }
+     ]
+    },
+    "2019": {
+     "pago": 52197761.05,
+     "meses": 12,
+     "maioresFornecedores": [
+      {
+       "nome": "CAMARA MUNICIPAL DE OSASCO",
+       "pago": 32098860.8
+      },
+      {
+       "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+       "pago": 3731421.65
+      },
+      {
+       "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+       "pago": 2577282.44
+      },
+      {
+       "nome": "PEREZ DAMIANI COMUNICACAO LTDA",
+       "pago": 2327690.47
+      },
+      {
+       "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+       "pago": 2132671.75
+      },
+      {
+       "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+       "pago": 1835629.53
+      },
+      {
+       "nome": "MICRO KA INFORMATICA LTDA",
+       "pago": 1633537.01
+      },
+      {
+       "nome": "MXA SOLUTIONS LTDA - ME",
+       "pago": 1080366.24
+      }
+     ]
+    },
+    "2020": {
+     "pago": 64546673.56,
+     "meses": 12,
+     "maioresFornecedores": [
+      {
+       "nome": "CAMARA MUNICIPAL DE OSASCO",
+       "pago": 43752523.22
+      },
+      {
+       "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+       "pago": 4963391.49
+      },
+      {
+       "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+       "pago": 2660614.1
+      },
+      {
+       "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+       "pago": 2489183.97
+      },
+      {
+       "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+       "pago": 2382211
+      },
+      {
+       "nome": "MICRO KA INFORMATICA LTDA",
+       "pago": 1310600.09
+      },
+      {
+       "nome": "CENTURION SEGURANCA E VIGILANCIA LTDA",
+       "pago": 940877.34
+      },
+      {
+       "nome": "FT SOLUCOES TECNOLOGICAS PRODUCOES AUDIOVISUAIS EIRELI",
+       "pago": 677271.69
+      }
+     ]
+    },
+    "2021": {
+     "pago": 73574327.91,
+     "meses": 12,
+     "maioresFornecedores": [
+      {
+       "nome": "CAMARA MUNICIPAL DE OSASCO",
+       "pago": 47235690.58
+      },
+      {
+       "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+       "pago": 5020137.84
+      },
+      {
+       "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+       "pago": 3202867.64
+      },
+      {
+       "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+       "pago": 2981832.41
+      },
+      {
+       "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+       "pago": 2811000
+      },
+      {
+       "nome": "PEREZ DAMIANI COMUNICACAO LTDA",
+       "pago": 2481477.39
+      },
+      {
+       "nome": "MICRO KA INFORMATICA LTDA",
+       "pago": 1966792.04
+      },
+      {
+       "nome": "CENTURION SEGURANCA E VIGILANCIA LTDA",
+       "pago": 1131100.04
+      }
+     ]
+    },
+    "2022": {
+     "pago": 77636984.31,
+     "meses": 12,
+     "maioresFornecedores": [
+      {
+       "nome": "CAMARA MUNICIPAL DE OSASCO",
+       "pago": 49875793.24
+      },
+      {
+       "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+       "pago": 5492112.56
+      },
+      {
+       "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+       "pago": 3459176.76
+      },
+      {
+       "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+       "pago": 3157006.77
+      },
+      {
+       "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+       "pago": 3045872.24
+      },
+      {
+       "nome": "PEREZ DAMIANI COMUNICACAO LTDA",
+       "pago": 1778325.83
+      },
+      {
+       "nome": "MICRO KA INFORMATICA LTDA",
+       "pago": 1753503
+      },
+      {
+       "nome": "H PROJ PLANEJAMENTO E PROJETOS LTDA",
+       "pago": 1691437.56
+      }
+     ]
+    },
+    "2023": {
+     "pago": 86934623.8,
+     "meses": 12,
+     "maioresFornecedores": [
+      {
+       "nome": "CAMARA MUNICIPAL DE OSASCO",
+       "pago": 56400334.13
+      },
+      {
+       "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+       "pago": 5438285.88
+      },
+      {
+       "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+       "pago": 4239867.33
+      },
+      {
+       "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+       "pago": 3444655.97
+      },
+      {
+       "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+       "pago": 2754493.4
+      },
+      {
+       "nome": "RED PROG AGENCIA DE PUBLICIDADE LTDA",
+       "pago": 2072491.26
+      },
+      {
+       "nome": "CENTURION SEGURANCA E VIGILANCIA LTDA",
+       "pago": 1201391.96
+      },
+      {
+       "nome": "VILLE SERVICOS E NEGOCIOS LTDA",
+       "pago": 1080442.86
+      }
+     ]
+    },
+    "2024": {
+     "pago": 113235249.08,
+     "meses": 12,
+     "maioresFornecedores": [
+      {
+       "nome": "CAMARA MUNICIPAL DE OSASCO",
+       "pago": 59796508.93
+      },
+      {
+       "nome": "TETO CONSTRUTORA SA",
+       "pago": 20876349.93
+      },
+      {
+       "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+       "pago": 5971385.13
+      },
+      {
+       "nome": "PLUXEE BENEFICIOS BRASIL SA",
+       "pago": 4626300.17
+      },
+      {
+       "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+       "pago": 3551731.35
+      },
+      {
+       "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+       "pago": 2754493.4
+      },
+      {
+       "nome": "BRASIL COMPANY NEGOCIOS EMPRESARIAIS LTDA",
+       "pago": 2700107.71
+      },
+      {
+       "nome": "MOVIMENTO EMPRESA JORNALISTICA E EDITORA LTDA",
+       "pago": 1846875.59
+      }
+     ]
+    },
     "2025": {
      "pago": 116042767.58,
      "meses": 12,

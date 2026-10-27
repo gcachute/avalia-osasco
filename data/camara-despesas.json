@@ -1,8 +1,1144 @@
 {
  "fonte": "TCE-SP, Portal da Transparência Municipal (dados do sistema AUDESP)",
  "url": "https://transparencia.tce.sp.gov.br/",
- "coletadoEm": "2026-10-26",
+ "coletadoEm": "2026-10-27",
  "anos": {
+  "2017": {
+   "meses": [
+    {
+     "mes": 1,
+     "empenhado": 6282883.640000001,
+     "liquidado": 2101268.31,
+     "pago": 1366024.2699999993,
+     "anulado": 0
+    },
+    {
+     "mes": 2,
+     "empenhado": 2241676.79,
+     "liquidado": 2859805.2699999996,
+     "pago": 2986683.87,
+     "anulado": 1518.75
+    },
+    {
+     "mes": 3,
+     "empenhado": 2535099.48,
+     "liquidado": 3169914.1800000006,
+     "pago": 3104356.8600000003,
+     "anulado": 1014.87
+    },
+    {
+     "mes": 4,
+     "empenhado": 2993059.95,
+     "liquidado": 2722401.9600000004,
+     "pago": 2844097.3999999994,
+     "anulado": 672.65
+    },
+    {
+     "mes": 5,
+     "empenhado": 2721430.56,
+     "liquidado": 3306392.040000001,
+     "pago": 3196010.1899999995,
+     "anulado": 44552.45
+    },
+    {
+     "mes": 6,
+     "empenhado": 3732104.349999999,
+     "liquidado": 4367832.24,
+     "pago": 4090468.9699999993,
+     "anulado": 527.43
+    },
+    {
+     "mes": 7,
+     "empenhado": 2378063.6199999996,
+     "liquidado": 2457751.829999999,
+     "pago": 2973402.119999999,
+     "anulado": 957.4799999999999
+    },
+    {
+     "mes": 8,
+     "empenhado": 3070834.2099999995,
+     "liquidado": 3072136.8699999996,
+     "pago": 3096950.0300000003,
+     "anulado": 55127.52
+    },
+    {
+     "mes": 9,
+     "empenhado": 2649426.5800000005,
+     "liquidado": 3131472.6300000004,
+     "pago": 2869291.090000001,
+     "anulado": 900.05
+    },
+    {
+     "mes": 10,
+     "empenhado": 3362457.6300000004,
+     "liquidado": 2956396.11,
+     "pago": 3069367.01,
+     "anulado": 24486.74
+    },
+    {
+     "mes": 11,
+     "empenhado": 8058170.510000001,
+     "liquidado": 3278305.5699999994,
+     "pago": 3074325.2600000007,
+     "anulado": 33075.95
+    },
+    {
+     "mes": 12,
+     "empenhado": 3828149.1000000006,
+     "liquidado": 7669972.4899999965,
+     "pago": 8331855.709999995,
+     "anulado": 657720.96
+    }
+   ],
+   "empenhado": 43853356.42,
+   "liquidado": 41093649.5,
+   "pago": 41002832.78,
+   "anulado": 820554.85,
+   "maioresFornecedores": [
+    {
+     "nome": "CAMARA MUNICIPAL DE OSASCO",
+     "pago": 26090372.5
+    },
+    {
+     "nome": "VIGENT CONSTRUCOES LTDA",
+     "pago": 3116637.29
+    },
+    {
+     "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+     "pago": 3074880.78
+    },
+    {
+     "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+     "pago": 1794276
+    },
+    {
+     "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+     "pago": 1632165.87
+    },
+    {
+     "nome": "INFOREADY TECNOLOGIA LTDA",
+     "pago": 1069435.55
+    },
+    {
+     "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+     "pago": 641764.74
+    },
+    {
+     "nome": "RDM SISTEMA DE GESTAO LTDA - ME",
+     "pago": 576055.44
+    },
+    {
+     "nome": "Pessoas físicas (servidores e outros)",
+     "pago": 572183.45
+    },
+    {
+     "nome": "VICENTE D ARCO IMOVEIS EIRELI Â",
+     "pago": 336420
+    },
+    {
+     "nome": "NR SERVICOS DE SEGURANCA E VIGILANCIA LTDA - EPP",
+     "pago": 249600
+    },
+    {
+     "nome": "TELEFONICA BRASIL S/A",
+     "pago": 160996.16
+    }
+   ]
+  },
+  "2018": {
+   "meses": [
+    {
+     "mes": 1,
+     "empenhado": 9603147.880000005,
+     "liquidado": 2801692.4499999997,
+     "pago": 2229919.8899999997,
+     "anulado": 40
+    },
+    {
+     "mes": 2,
+     "empenhado": 3731728.149999999,
+     "liquidado": 3276201.9,
+     "pago": 3176192.1799999997,
+     "anulado": 143316.1
+    },
+    {
+     "mes": 3,
+     "empenhado": 2630919.38,
+     "liquidado": 3178188.4299999992,
+     "pago": 3463005.6,
+     "anulado": 2177.9
+    },
+    {
+     "mes": 4,
+     "empenhado": 4441182.509999999,
+     "liquidado": 3224050.5,
+     "pago": 3131906.86,
+     "anulado": 1865.63
+    },
+    {
+     "mes": 5,
+     "empenhado": 4436160.670000001,
+     "liquidado": 3504860.68,
+     "pago": 3500390.960000001,
+     "anulado": 2666.6800000000003
+    },
+    {
+     "mes": 6,
+     "empenhado": 3878941.1799999997,
+     "liquidado": 4497992.15,
+     "pago": 4664169.549999999,
+     "anulado": 2007.1200000000001
+    },
+    {
+     "mes": 7,
+     "empenhado": 2794470.369999999,
+     "liquidado": 3845458.8000000007,
+     "pago": 3675220.2700000014,
+     "anulado": 2176.09
+    },
+    {
+     "mes": 8,
+     "empenhado": 3248391.3099999996,
+     "liquidado": 3989100.249999999,
+     "pago": 3996850.2699999996,
+     "anulado": 4586.6900000000005
+    },
+    {
+     "mes": 9,
+     "empenhado": 4166030.41,
+     "liquidado": 3632505.15,
+     "pago": 3692190.5000000014,
+     "anulado": 927932.1400000001
+    },
+    {
+     "mes": 10,
+     "empenhado": 7682998.28,
+     "liquidado": 4668217.309999999,
+     "pago": 4612092.769999998,
+     "anulado": 9873.46
+    },
+    {
+     "mes": 11,
+     "empenhado": 3116304.8099999996,
+     "liquidado": 4735814.75,
+     "pago": 4789430.73,
+     "anulado": 733881.7399999999
+    },
+    {
+     "mes": 12,
+     "empenhado": 3842727.840000001,
+     "liquidado": 8043525.100000001,
+     "pago": 8466237.890000002,
+     "anulado": 1632435.0899999999
+    }
+   ],
+   "empenhado": 53573002.79,
+   "liquidado": 49397607.47,
+   "pago": 49397607.47,
+   "anulado": 3462958.64,
+   "maioresFornecedores": [
+    {
+     "nome": "CAMARA MUNICIPAL DE OSASCO",
+     "pago": 28457139.02
+    },
+    {
+     "nome": "MXA SOLUTIONS LTDA - ME",
+     "pago": 4129578.55
+    },
+    {
+     "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+     "pago": 3384954.16
+    },
+    {
+     "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+     "pago": 2296030.26
+    },
+    {
+     "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+     "pago": 1842177.52
+    },
+    {
+     "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+     "pago": 1687399.53
+    },
+    {
+     "nome": "PEREZ DAMIANI COMUNICACAO LTDA",
+     "pago": 1222739.97
+    },
+    {
+     "nome": "MICRO KA INFORMATICA LTDA",
+     "pago": 1022173.13
+    },
+    {
+     "nome": "CENTURION SEGURANCA E VIGILANCIA LTDA",
+     "pago": 701783.83
+    },
+    {
+     "nome": "RDM SISTEMA DE GESTAO LTDA - ME",
+     "pago": 587465.6
+    },
+    {
+     "nome": "PARTNER MANUTENCAO E TERCEIRIZACAO LTDA",
+     "pago": 445652.91
+    },
+    {
+     "nome": "FUNDACAO INSTITUTO DE PESQUISAS ECONOMICAS FIPE",
+     "pago": 414000
+    }
+   ]
+  },
+  "2019": {
+   "meses": [
+    {
+     "mes": 1,
+     "empenhado": 8769287.81,
+     "liquidado": 3302418.0799999996,
+     "pago": 2531379.4800000004,
+     "anulado": 0
+    },
+    {
+     "mes": 2,
+     "empenhado": 5061248.540000002,
+     "liquidado": 4187403.0399999996,
+     "pago": 4500715.470000001,
+     "anulado": 1493.86
+    },
+    {
+     "mes": 3,
+     "empenhado": 2901864.0400000005,
+     "liquidado": 3747307.1300000004,
+     "pago": 3569876.0700000008,
+     "anulado": 1690.3899999999999
+    },
+    {
+     "mes": 4,
+     "empenhado": 5236878.54,
+     "liquidado": 4225739.669999999,
+     "pago": 4529026.740000001,
+     "anulado": 67015.99
+    },
+    {
+     "mes": 5,
+     "empenhado": 4814034.960000001,
+     "liquidado": 4630271.72,
+     "pago": 4552905.49,
+     "anulado": 1181.04
+    },
+    {
+     "mes": 6,
+     "empenhado": 3775202.699999999,
+     "liquidado": 4746566.03,
+     "pago": 4468487.67,
+     "anulado": 2769.59
+    },
+    {
+     "mes": 7,
+     "empenhado": 2839485.62,
+     "liquidado": 4200227.38,
+     "pago": 3883992.84,
+     "anulado": 16131.230000000001
+    },
+    {
+     "mes": 8,
+     "empenhado": 4082245.6,
+     "liquidado": 3749198.6,
+     "pago": 4158973.26,
+     "anulado": 2043.98
+    },
+    {
+     "mes": 9,
+     "empenhado": 3316977.9400000004,
+     "liquidado": 3994758.2699999996,
+     "pago": 3862583.249999998,
+     "anulado": 904.36
+    },
+    {
+     "mes": 10,
+     "empenhado": 3781750.96,
+     "liquidado": 3921824.3299999996,
+     "pago": 4300796.159999999,
+     "anulado": 779.06
+    },
+    {
+     "mes": 11,
+     "empenhado": 3076191.6100000003,
+     "liquidado": 3924115.8100000005,
+     "pago": 3430180.710000001,
+     "anulado": 728177.73
+    },
+    {
+     "mes": 12,
+     "empenhado": 8848194.23,
+     "liquidado": 7568104.33,
+     "pago": 8408843.91,
+     "anulado": 545890.5
+    }
+   ],
+   "empenhado": 56503362.55,
+   "liquidado": 52197934.39,
+   "pago": 52197761.05,
+   "anulado": 1368077.73,
+   "maioresFornecedores": [
+    {
+     "nome": "CAMARA MUNICIPAL DE OSASCO",
+     "pago": 32098860.8
+    },
+    {
+     "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+     "pago": 3731421.65
+    },
+    {
+     "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+     "pago": 2577282.44
+    },
+    {
+     "nome": "PEREZ DAMIANI COMUNICACAO LTDA",
+     "pago": 2327690.47
+    },
+    {
+     "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+     "pago": 2132671.75
+    },
+    {
+     "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+     "pago": 1835629.53
+    },
+    {
+     "nome": "MICRO KA INFORMATICA LTDA",
+     "pago": 1633537.01
+    },
+    {
+     "nome": "MXA SOLUTIONS LTDA - ME",
+     "pago": 1080366.24
+    },
+    {
+     "nome": "PARTNER MANUTENCAO E TERCEIRIZACAO LTDA",
+     "pago": 639415.04
+    },
+    {
+     "nome": "RDM SISTEMA DE GESTAO LTDA - ME",
+     "pago": 632176.12
+    },
+    {
+     "nome": "NR SERVICOS DE SEGURANCA E VIGILANCIA LTDA - EPP",
+     "pago": 511728.72
+    },
+    {
+     "nome": "CENTURION SEGURANCA E VIGILANCIA LTDA",
+     "pago": 437004.38
+    }
+   ]
+  },
+  "2020": {
+   "meses": [
+    {
+     "mes": 1,
+     "empenhado": 8576422.200000001,
+     "liquidado": 4857421.180000002,
+     "pago": 4315833.230000002,
+     "anulado": 0
+    },
+    {
+     "mes": 2,
+     "empenhado": 8426747.849999998,
+     "liquidado": 4697007.44,
+     "pago": 4394607.630000001,
+     "anulado": 2242.29
+    },
+    {
+     "mes": 3,
+     "empenhado": 4266045.130000001,
+     "liquidado": 5519849.38,
+     "pago": 5983477.390000001,
+     "anulado": 0
+    },
+    {
+     "mes": 4,
+     "empenhado": 7325991.22,
+     "liquidado": 5640810.48,
+     "pago": 5169745.97,
+     "anulado": 0
+    },
+    {
+     "mes": 5,
+     "empenhado": 5463565.17,
+     "liquidado": 4758338.869999999,
+     "pago": 5022054.62,
+     "anulado": 1051713.48
+    },
+    {
+     "mes": 6,
+     "empenhado": 5679000.76,
+     "liquidado": 6392085.799999999,
+     "pago": 6400838.770000001,
+     "anulado": 202251.39
+    },
+    {
+     "mes": 7,
+     "empenhado": 3615487.9699999997,
+     "liquidado": 4541635.49,
+     "pago": 4789269.880000002,
+     "anulado": 4175.92
+    },
+    {
+     "mes": 8,
+     "empenhado": 4407587.13,
+     "liquidado": 5261419.71,
+     "pago": 4819941.38,
+     "anulado": 411512.72
+    },
+    {
+     "mes": 9,
+     "empenhado": 4799461.1899999995,
+     "liquidado": 5608462.159999998,
+     "pago": 5503286.130000001,
+     "anulado": 58800
+    },
+    {
+     "mes": 10,
+     "empenhado": 5459881.31,
+     "liquidado": 5524550.220000001,
+     "pago": 5468627.4,
+     "anulado": 300000
+    },
+    {
+     "mes": 11,
+     "empenhado": 4253288.3,
+     "liquidado": 5137008.86,
+     "pago": 5411152.110000002,
+     "anulado": 888559.3500000001
+    },
+    {
+     "mes": 12,
+     "empenhado": 5587463.050000003,
+     "liquidado": 6608194.029999999,
+     "pago": 7267839.05,
+     "anulado": 353968.66
+    }
+   ],
+   "empenhado": 67860941.28,
+   "liquidado": 64546783.62,
+   "pago": 64546673.56,
+   "anulado": 3273223.81,
+   "maioresFornecedores": [
+    {
+     "nome": "CAMARA MUNICIPAL DE OSASCO",
+     "pago": 43752523.22
+    },
+    {
+     "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+     "pago": 4963391.49
+    },
+    {
+     "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+     "pago": 2660614.1
+    },
+    {
+     "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+     "pago": 2489183.97
+    },
+    {
+     "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+     "pago": 2382211
+    },
+    {
+     "nome": "MICRO KA INFORMATICA LTDA",
+     "pago": 1310600.09
+    },
+    {
+     "nome": "CENTURION SEGURANCA E VIGILANCIA LTDA",
+     "pago": 940877.34
+    },
+    {
+     "nome": "FT SOLUCOES TECNOLOGICAS PRODUCOES AUDIOVISUAIS EIRELI",
+     "pago": 677271.69
+    },
+    {
+     "nome": "WEBCSI CONSULTORIA E SOLUCOES EM INFORMATICA LTDA",
+     "pago": 668060.54
+    },
+    {
+     "nome": "RDM SISTEMA DE GESTAO LTDA - ME",
+     "pago": 642165.62
+    },
+    {
+     "nome": "PEREZ DAMIANI COMUNICACAO LTDA",
+     "pago": 638255.11
+    },
+    {
+     "nome": "PARTNER MANUTENCAO E TERCEIRIZACAO LTDA",
+     "pago": 615440.57
+    }
+   ]
+  },
+  "2021": {
+   "meses": [
+    {
+     "mes": 1,
+     "empenhado": 13614006.25,
+     "liquidado": 5753642.2,
+     "pago": 4785027.400000003,
+     "anulado": 0
+    },
+    {
+     "mes": 2,
+     "empenhado": 7538774.81,
+     "liquidado": 6105386.010000001,
+     "pago": 6320806.750000001,
+     "anulado": 0
+    },
+    {
+     "mes": 3,
+     "empenhado": 4774541.6899999995,
+     "liquidado": 5716658.19,
+     "pago": 5490556.600000001,
+     "anulado": 53560.55
+    },
+    {
+     "mes": 4,
+     "empenhado": 5856782.639999999,
+     "liquidado": 5632181.129999999,
+     "pago": 6230986.059999998,
+     "anulado": 191256.74
+    },
+    {
+     "mes": 5,
+     "empenhado": 6984100,
+     "liquidado": 7194899.820000001,
+     "pago": 6962396.6400000015,
+     "anulado": 599148.47
+    },
+    {
+     "mes": 6,
+     "empenhado": 4240449.04,
+     "liquidado": 5521834.79,
+     "pago": 5419438.17,
+     "anulado": 1609.98
+    },
+    {
+     "mes": 7,
+     "empenhado": 4403452.79,
+     "liquidado": 5549673.089999998,
+     "pago": 5548126.320000002,
+     "anulado": 0
+    },
+    {
+     "mes": 8,
+     "empenhado": 4729290.440000001,
+     "liquidado": 6344148.630000002,
+     "pago": 6019712.7600000035,
+     "anulado": 65681.7
+    },
+    {
+     "mes": 9,
+     "empenhado": 5626232.49,
+     "liquidado": 5446027.170000001,
+     "pago": 5617535.2700000005,
+     "anulado": 0
+    },
+    {
+     "mes": 10,
+     "empenhado": 6071838.74,
+     "liquidado": 5769933.550000003,
+     "pago": 5863634.359999999,
+     "anulado": 114799.27
+    },
+    {
+     "mes": 11,
+     "empenhado": 4484711.35,
+     "liquidado": 6352481.58,
+     "pago": 6116652.53,
+     "anulado": 0
+    },
+    {
+     "mes": 12,
+     "empenhado": 8608694.820000002,
+     "liquidado": 8187461.750000002,
+     "pago": 9199455.050000006,
+     "anulado": 740
+    }
+   ],
+   "empenhado": 76932875.06,
+   "liquidado": 73574327.91,
+   "pago": 73574327.91,
+   "anulado": 1026796.71,
+   "maioresFornecedores": [
+    {
+     "nome": "CAMARA MUNICIPAL DE OSASCO",
+     "pago": 47235690.58
+    },
+    {
+     "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+     "pago": 5020137.84
+    },
+    {
+     "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+     "pago": 3202867.64
+    },
+    {
+     "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+     "pago": 2981832.41
+    },
+    {
+     "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+     "pago": 2811000
+    },
+    {
+     "nome": "PEREZ DAMIANI COMUNICACAO LTDA",
+     "pago": 2481477.39
+    },
+    {
+     "nome": "MICRO KA INFORMATICA LTDA",
+     "pago": 1966792.04
+    },
+    {
+     "nome": "CENTURION SEGURANCA E VIGILANCIA LTDA",
+     "pago": 1131100.04
+    },
+    {
+     "nome": "VILLE PUBLICIDADE E SERVICOS LTDA",
+     "pago": 813395.9
+    },
+    {
+     "nome": "RDM SISTEMA DE GESTAO LTDA - ME",
+     "pago": 750000
+    },
+    {
+     "nome": "MXA SOLUTIONS LTDA - ME",
+     "pago": 701103.1
+    },
+    {
+     "nome": "VICENTE D ARCO IMOVEIS EIRELI Â",
+     "pago": 592125.32
+    }
+   ]
+  },
+  "2022": {
+   "meses": [
+    {
+     "mes": 1,
+     "empenhado": 9930838.090000002,
+     "liquidado": 4472728.1,
+     "pago": 3670573.290000001,
+     "anulado": 0
+    },
+    {
+     "mes": 2,
+     "empenhado": 8867584.430000002,
+     "liquidado": 5106420.020000003,
+     "pago": 4875833.570000001,
+     "anulado": 608.05
+    },
+    {
+     "mes": 3,
+     "empenhado": 5464387.999999999,
+     "liquidado": 5507164.649999999,
+     "pago": 6128314.1899999995,
+     "anulado": 1789.79
+    },
+    {
+     "mes": 4,
+     "empenhado": 6463026.5,
+     "liquidado": 5708593.12,
+     "pago": 5343455.589999999,
+     "anulado": 580.28
+    },
+    {
+     "mes": 5,
+     "empenhado": 9950942.330000004,
+     "liquidado": 8249092.000000001,
+     "pago": 8087881.419999999,
+     "anulado": 1207.1
+    },
+    {
+     "mes": 6,
+     "empenhado": 4858112.4799999995,
+     "liquidado": 6046559.130000002,
+     "pago": 6266590.33,
+     "anulado": 458.37
+    },
+    {
+     "mes": 7,
+     "empenhado": 4715809.14,
+     "liquidado": 5959627.860000001,
+     "pago": 6012317.530000001,
+     "anulado": 15.42
+    },
+    {
+     "mes": 8,
+     "empenhado": 5062663.94,
+     "liquidado": 6984234.93,
+     "pago": 7172296.94,
+     "anulado": 928.82
+    },
+    {
+     "mes": 9,
+     "empenhado": 5312471.920000001,
+     "liquidado": 6952443.780000001,
+     "pago": 6730158.95,
+     "anulado": 189242.00999999998
+    },
+    {
+     "mes": 10,
+     "empenhado": 6166693.68,
+     "liquidado": 6176664.559999998,
+     "pago": 6173045.120000001,
+     "anulado": 1403.72
+    },
+    {
+     "mes": 11,
+     "empenhado": 5048691.049999999,
+     "liquidado": 6450041.529999999,
+     "pago": 6484736.759999997,
+     "anulado": 9995.220000000001
+    },
+    {
+     "mes": 12,
+     "empenhado": 10875663.070000002,
+     "liquidado": 10023414.629999999,
+     "pago": 10691780.62,
+     "anulado": 2929.84
+    }
+   ],
+   "empenhado": 82716884.63,
+   "liquidado": 77636984.31,
+   "pago": 77636984.31,
+   "anulado": 209158.62,
+   "maioresFornecedores": [
+    {
+     "nome": "CAMARA MUNICIPAL DE OSASCO",
+     "pago": 49875793.24
+    },
+    {
+     "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+     "pago": 5492112.56
+    },
+    {
+     "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+     "pago": 3459176.76
+    },
+    {
+     "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+     "pago": 3157006.77
+    },
+    {
+     "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+     "pago": 3045872.24
+    },
+    {
+     "nome": "PEREZ DAMIANI COMUNICACAO LTDA",
+     "pago": 1778325.83
+    },
+    {
+     "nome": "MICRO KA INFORMATICA LTDA",
+     "pago": 1753503
+    },
+    {
+     "nome": "H PROJ PLANEJAMENTO E PROJETOS LTDA",
+     "pago": 1691437.56
+    },
+    {
+     "nome": "CENTURION SEGURANCA E VIGILANCIA LTDA",
+     "pago": 1135489.74
+    },
+    {
+     "nome": "VICENTE D ARCO IMOVEIS EIRELI Â",
+     "pago": 917191.17
+    },
+    {
+     "nome": "DMD SERVICOS GERAIS LTDA - ME",
+     "pago": 778594.56
+    },
+    {
+     "nome": "RDM SISTEMA DE GESTAO LTDA - ME",
+     "pago": 649000
+    }
+   ]
+  },
+  "2023": {
+   "meses": [
+    {
+     "mes": 1,
+     "empenhado": 8472800.599999998,
+     "liquidado": 5013687.930000002,
+     "pago": 4124871.8599999994,
+     "anulado": 0
+    },
+    {
+     "mes": 2,
+     "empenhado": 10896128.07,
+     "liquidado": 5020452.439999999,
+     "pago": 5238673.960000001,
+     "anulado": 0
+    },
+    {
+     "mes": 3,
+     "empenhado": 6786814.790000002,
+     "liquidado": 5801040.13,
+     "pago": 5792751.450000002,
+     "anulado": 79706.56999999999
+    },
+    {
+     "mes": 4,
+     "empenhado": 6999702.410000001,
+     "liquidado": 6812270.540000003,
+     "pago": 6700255.210000002,
+     "anulado": 496.57
+    },
+    {
+     "mes": 5,
+     "empenhado": 7734179.640000001,
+     "liquidado": 8885710.110000001,
+     "pago": 8934015.049999999,
+     "anulado": 2483.0299999999997
+    },
+    {
+     "mes": 6,
+     "empenhado": 6774946.460000002,
+     "liquidado": 7689147.310000002,
+     "pago": 7671411.51,
+     "anulado": 10181.5
+    },
+    {
+     "mes": 7,
+     "empenhado": 6888215.159999998,
+     "liquidado": 6608003.410000001,
+     "pago": 6631410.329999999,
+     "anulado": 18645.829999999998
+    },
+    {
+     "mes": 8,
+     "empenhado": 5758835.8199999975,
+     "liquidado": 6947739.719999999,
+     "pago": 6950315.74,
+     "anulado": 15524
+    },
+    {
+     "mes": 9,
+     "empenhado": 6352185.44,
+     "liquidado": 7357322.29,
+     "pago": 7378250.429999999,
+     "anulado": 158727.08000000002
+    },
+    {
+     "mes": 10,
+     "empenhado": 7749699.02,
+     "liquidado": 7910864.189999999,
+     "pago": 8158769.489999998,
+     "anulado": 47721.17
+    },
+    {
+     "mes": 11,
+     "empenhado": 6178950.82,
+     "liquidado": 6298834.629999999,
+     "pago": 6495965.029999998,
+     "anulado": 409668.24
+    },
+    {
+     "mes": 12,
+     "empenhado": 11397232.67,
+     "liquidado": 13058180.540000003,
+     "pago": 12857933.740000006,
+     "anulado": 617161.9400000001
+    }
+   ],
+   "empenhado": 91989690.9,
+   "liquidado": 87403253.24,
+   "pago": 86934623.8,
+   "anulado": 1360315.93,
+   "maioresFornecedores": [
+    {
+     "nome": "CAMARA MUNICIPAL DE OSASCO",
+     "pago": 56400334.13
+    },
+    {
+     "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+     "pago": 5438285.88
+    },
+    {
+     "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO SA",
+     "pago": 4239867.33
+    },
+    {
+     "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+     "pago": 3444655.97
+    },
+    {
+     "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+     "pago": 2754493.4
+    },
+    {
+     "nome": "RED PROG AGENCIA DE PUBLICIDADE LTDA",
+     "pago": 2072491.26
+    },
+    {
+     "nome": "CENTURION SEGURANCA E VIGILANCIA LTDA",
+     "pago": 1201391.96
+    },
+    {
+     "nome": "VILLE SERVICOS E NEGOCIOS LTDA",
+     "pago": 1080442.86
+    },
+    {
+     "nome": "MICRO KA INFORMATICA LTDA",
+     "pago": 1018394.17
+    },
+    {
+     "nome": "BRASIL COMPANY NEGOCIOS EMPRESARIAIS LTDA",
+     "pago": 988933
+    },
+    {
+     "nome": "DMD SERVICOS GERAIS LTDA - ME",
+     "pago": 967227.61
+    },
+    {
+     "nome": "VICENTE D ARCO IMOVEIS EIRELI Â",
+     "pago": 929390.8
+    }
+   ]
+  },
+  "2024": {
+   "meses": [
+    {
+     "mes": 1,
+     "empenhado": 14598749.169999998,
+     "liquidado": 5768701.800000001,
+     "pago": 5034769.53,
+     "anulado": 0
+    },
+    {
+     "mes": 2,
+     "empenhado": 12980460.969999999,
+     "liquidado": 7423131.3999999985,
+     "pago": 6963107.629999999,
+     "anulado": 0
+    },
+    {
+     "mes": 3,
+     "empenhado": 9051596.03,
+     "liquidado": 8919585.48,
+     "pago": 9176974.239999998,
+     "anulado": 8231.49
+    },
+    {
+     "mes": 4,
+     "empenhado": 7491187.0600000005,
+     "liquidado": 7605067.309999999,
+     "pago": 8232985.72,
+     "anulado": 25303.16
+    },
+    {
+     "mes": 5,
+     "empenhado": 11910636.680000003,
+     "liquidado": 10012255.940000001,
+     "pago": 9883893.57,
+     "anulado": 183184.71000000002
+    },
+    {
+     "mes": 6,
+     "empenhado": 6204659.57,
+     "liquidado": 8943849.35,
+     "pago": 9353142.180000002,
+     "anulado": 800395.21
+    },
+    {
+     "mes": 7,
+     "empenhado": 7087424.029999999,
+     "liquidado": 9806515.970000004,
+     "pago": 9349467.600000003,
+     "anulado": 15031.02
+    },
+    {
+     "mes": 8,
+     "empenhado": 6278305.5200000005,
+     "liquidado": 7797869.789999999,
+     "pago": 7984044.659999999,
+     "anulado": 40758.96
+    },
+    {
+     "mes": 9,
+     "empenhado": 11652786.860000001,
+     "liquidado": 9712307.16,
+     "pago": 9733168.680000003,
+     "anulado": 129316.70999999999
+    },
+    {
+     "mes": 10,
+     "empenhado": 7274687.979999999,
+     "liquidado": 10852207.88,
+     "pago": 10383609.109999998,
+     "anulado": 1204311.73
+    },
+    {
+     "mes": 11,
+     "empenhado": 10044539.89,
+     "liquidado": 10138520.020000001,
+     "pago": 9730637.449999997,
+     "anulado": 110894.70999999999
+    },
+    {
+     "mes": 12,
+     "empenhado": 14183237.629999999,
+     "liquidado": 16696051.690000003,
+     "pago": 17409448.710000005,
+     "anulado": 163058.29
+    }
+   ],
+   "empenhado": 118758271.39,
+   "liquidado": 113676063.79,
+   "pago": 113235249.08,
+   "anulado": 2680485.99,
+   "maioresFornecedores": [
+    {
+     "nome": "CAMARA MUNICIPAL DE OSASCO",
+     "pago": 59796508.93
+    },
+    {
+     "nome": "TETO CONSTRUTORA SA",
+     "pago": 20876349.93
+    },
+    {
+     "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
+     "pago": 5971385.13
+    },
+    {
+     "nome": "PLUXEE BENEFICIOS BRASIL SA",
+     "pago": 4626300.17
+    },
+    {
+     "nome": "INSTITUTO DE PREVIDENCIA DO MUN OSASCO",
+     "pago": 3551731.35
+    },
+    {
+     "nome": "FUNDACAO APOIO A PESQUISA ENSINO TECNOL CULTURA",
+     "pago": 2754493.4
+    },
+    {
+     "nome": "BRASIL COMPANY NEGOCIOS EMPRESARIAIS LTDA",
+     "pago": 2700107.71
+    },
+    {
+     "nome": "MOVIMENTO EMPRESA JORNALISTICA E EDITORA LTDA",
+     "pago": 1846875.59
+    },
+    {
+     "nome": "RED PROG AGENCIA DE PUBLICIDADE LTDA",
+     "pago": 1628647.32
+    },
+    {
+     "nome": "VILLE SERVICOS E NEGOCIOS LTDA",
+     "pago": 1483677.54
+    },
+    {
+     "nome": "JUMPER SEGURANCA E VIGILANCIA PATRIMONIAL LTDA",
+     "pago": 1300139.81
+    },
+    {
+     "nome": "VICENTE D ARCO IMOVEIS EIRELI Â",
+     "pago": 934214.14
+    }
+   ]
+  },
   "2025": {
    "meses": [
     {
