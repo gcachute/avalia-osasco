@@ -398,8 +398,8 @@ const vereadores = [...pessoas.values()].map((p) => {
 });
 
 const notasVereadores = calcularNotas(vereadores, metodologia);
-vereadores.sort((a, b) => (b.nota ?? -1) - (a.nota ?? -1) || a.nome.localeCompare(b.nome));
-vereadores.forEach((v, i) => (v.posicao = v.nota === null ? null : i + 1));
+// Sem nota geral: a ordem padrão é a produção (o que foi feito), depois o nome.
+vereadores.sort((a, b) => (b.coeficientes.producao ?? -1) - (a.coeficientes.producao ?? -1) || a.nome.localeCompare(b.nome));
 
 const pf = { ...config.prefeito, partidoLogo: logos[config.prefeito.partido]?.arquivo ?? null, ...(fotos.prefeito && { foto: fotos.prefeito.arquivo, creditoFoto: fotos.prefeito.fonte, creditoFotoUrl: "https://divulgacandcontas.tse.jus.br/" }) };
 const projetosExecutivo = [...proposicoes.values()].filter((x) => x.autor === "prefeito");
@@ -418,15 +418,10 @@ const pilares = {
 };
 const pilaresComNota = Object.entries(pilares).filter(([, v]) => v.nota != null);
 const cobertura = pilaresComNota.reduce((a, [k]) => a + pesosPrefeito[k], 0) / pesoTotal;
+// Sem nota geral do prefeito: cada pilar tem a sua nota, com a conta e os dados por trás.
 const prefeito = {
   ...pf,
-  nota:
-    cobertura >= metodologia.prefeito.coberturaMinima
-      ? Math.round((pilaresComNota.reduce((a, [k, v]) => a + pesosPrefeito[k] * v.nota, 0) / (cobertura * pesoTotal)) * 100) / 10
-      : null,
   cobertura,
-  // Enquanto faltar algum pilar, a nota é provisória.
-  provisoria: cobertura < 1,
   pilares,
   fiscal,
   iegm,
@@ -578,7 +573,7 @@ if (fiscal) {
 } else console.log("Sem dados fiscais: rode npm run coletar:fiscal.");
 if (iegm) console.log(`Prefeito: pilar C ${iegm.pilar.nota?.toFixed(2) ?? "— (IEG-M do mandato ainda não publicado)"}; último IEG-M: ano-base ${iegm.ultimoAnoBase}`);
 else console.log("Sem IEG-M: rode npm run coletar:iegm.");
-console.log(`Prefeito: pilar D ${resultados?.pilar.nota?.toFixed(2) ?? "—"}, pilar E ${transparencia?.pilar.nota?.toFixed(2) ?? "—"} → nota ${prefeito.nota ?? "—"} (cobertura ${Math.round(cobertura * 100)}%)`);
+console.log(`Prefeito: pilar D ${resultados?.pilar.nota?.toFixed(2) ?? "—"}, pilar E ${transparencia?.pilar.nota?.toFixed(2) ?? "—"} (cobertura ${Math.round(cobertura * 100)}%)`);
 const coautorias = [...proposicoes.values(), ...mocoes.values(), ...requerimentos.values(), ...sancoes.values()].filter((x) => x.autores?.length > 1);
 console.log(`${coautorias.length} itens com mais de um autor nomeado: ${coautorias.map((x) => `${x.key} (${x.autores.join(" + ")})`).join("; ")}`);
 console.log(`${sessoes.size} sessões, ${vereadores.length} vereadores, ${proposicoes.size} proposições, ${mocoes.size} moções, ${sancoes.size} sanções, ${vetos.size} vetos`);

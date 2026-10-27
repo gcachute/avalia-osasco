@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
 import { Secao } from "@/components/ui";
-import { PILARES_VEREADOR, TIPO_NOME, dados, dataBR, num } from "@/lib/dados";
+import { COEFICIENTES, PILARES_VEREADOR, TIPO_NOME, dados, dataBR, num } from "@/lib/dados";
 
 export const metadata: Metadata = { title: "Metodologia" };
 
 export default function Metodologia() {
   const m = dados.metodologia;
-  const total = Object.values(m.vereador.pesos).reduce((a, b) => a + b, 0);
   const ordinarias = dados.sessoes.filter((s) => s.tipo === "ordinaria").length;
-  const pesosPrefeito = dados.metodologia.prefeito.pesos;
-  const totalPrefeito = Object.values(pesosPrefeito).reduce((a, b) => a + b, 0);
-  const pp = Object.fromEntries(Object.entries(pesosPrefeito).map(([k, v]) => [k, Math.round((v / totalPrefeito) * 100)]));
   const ref = dados.prefeito.fiscal?.referencias;
   const pares = (dados.prefeito.fiscal?.anos.at(-1)?.cidades ?? []).filter((c) => !c.foco).map((c) => c.nome);
 
@@ -18,7 +14,8 @@ export default function Metodologia() {
     <article className="max-w-3xl">
       <h1 className="text-3xl font-bold tracking-tight text-slate-900">Metodologia</h1>
       <p className="mt-3 text-lg text-slate-600">
-        A nota vai de 0 a 10 e é calculada só com dados públicos e oficiais. Nada aqui é opinião: cada número leva à planilha da Câmara de onde saiu.
+        Não há nota geral. Cada avaliação vai de 0 a 10 e é calculada só com dados públicos e oficiais, com a conta à mostra. Cada número leva ao
+        documento oficial de onde saiu.
       </p>
 
       <Secao titulo="De onde vêm os dados">
@@ -36,18 +33,28 @@ export default function Metodologia() {
         </p>
       </Secao>
 
-      <Secao titulo="Nota dos vereadores" id="vereadores">
+      <Secao titulo="Vereadores: participação, produção e eficiência" id="vereadores">
         <p className="mb-4 text-slate-700">
-          Cinco pilares, no mesmo formato da nota do prefeito. A nota é a média ponderada dos pilares A, B, C e E. O pilar D (custo do mandato)
-          aparece em cada perfil, mas tem peso zero: o Quadro de Pessoal da Câmara dá a mesma estrutura a todos os gabinetes, então ele não separa
-          um vereador do outro.
+          Cada vereador tem cinco avaliações individuais (os pilares abaixo), cada uma de 0 a 10. Elas formam três coeficientes, sem nota geral:
+        </p>
+        <ul className="mb-4 space-y-2 text-slate-700">
+          {COEFICIENTES.map((c) => (
+            <li key={c.chave} className="rounded-xl border border-slate-200 bg-white p-3">
+              <b>{c.nome}.</b> {c.descricao}
+            </li>
+          ))}
+        </ul>
+        <p className="mb-4 text-slate-700">
+          Na página inicial dá para ordenar a lista por qualquer coeficiente ou montar um critério próprio, dando peso de 0 a 3 a presença,
+          votações, projetos e leis, comissões, pauta e eficiência. O custo do mandato (D) aparece em cada perfil e não entra em nenhum coeficiente:
+          o Quadro de Pessoal da Câmara dá a mesma estrutura a todos os gabinetes.
         </p>
         <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
           <table className="w-full text-sm">
             <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
               <tr>
                 <th className="px-4 py-2">Pilar</th>
-                <th className="px-4 py-2 text-right">Peso</th>
+                <th className="px-4 py-2 text-right">Coeficiente</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
@@ -59,7 +66,7 @@ export default function Metodologia() {
                     </div>
                     <div className="text-slate-500">{c.descricao}</div>
                   </td>
-                  <td className="px-4 py-3 text-right tabular-nums">{m.vereador.pesos[c.chave] ? `${Math.round((m.vereador.pesos[c.chave] / total) * 100)}%` : "fora"}</td>
+                  <td className="px-4 py-3 text-right">{COEFICIENTES.find((x) => x.pilares.includes(c.chave))?.nome ?? "informativo"}</td>
                 </tr>
               ))}
             </tbody>
@@ -88,24 +95,24 @@ export default function Metodologia() {
             Tudo é medido em relação às sessões em que a pessoa estava <b>em exercício</b>. Suplentes que assumiram no meio do mandato não são
             prejudicados.
           </li>
-          <li>Só recebe nota quem tem pelo menos {m.vereador.minimoSessoes} sessões no período. Suplentes que ficaram poucas semanas aparecem sem nota.</li>
+          <li>Só tem coeficientes quem tem pelo menos {m.vereador.minimoSessoes} sessões no período. Suplentes que ficaram poucas semanas aparecem sem eles.</li>
           <li>
             Contam como projeto: {m.tiposProjeto.map((t) => TIPO_NOME[t] ?? t).join(", ")}. Projetos, moções, requerimentos e leis com mais de um autor
             contam para todos os autores citados pelo nome. Quando o texto diz só “e outros vereadores”, não há como saber quem são.
           </li>
           <li>
-            Moções, títulos de cidadão, cartões de prata e outras honrarias aparecem no perfil, mas não entram na nota, porque não mudam leis nem
+            Moções, títulos de cidadão, cartões de prata e outras honrarias aparecem no perfil, mas não entram na produção, porque não mudam leis nem
             políticas públicas.
           </li>
           <li>Quem está na presidência da sessão conta como presente e não é cobrado pelos votos (o presidente só vota em empate).</li>
         </ul>
       </Secao>
 
-      <Secao titulo="Nota do prefeito" id="prefeito">
+      <Secao titulo="Prefeito: uma nota por pilar" id="prefeito">
         <p className="text-slate-700">
-          O prefeito é avaliado em cinco pilares: gestão fiscal ({pp.A}%), mínimos constitucionais ({pp.B}%), qualidade da gestão pelo IEG-M do TCE-SP
-          ({pp.C}%), resultados em educação e saúde ({pp.D}%) e transparência e entregas ({pp.E}%). A nota final só é publicada quando houver dados para
-          pelo menos {Math.round(dados.metodologia.prefeito.coberturaMinima * 100)}% do peso. Enquanto algum pilar estiver sem dados do mandato, a nota é a média ponderada dos pilares disponíveis e aparece como provisória.
+          O prefeito é avaliado em cinco pilares, cada um com a sua nota e sem nota geral: gestão fiscal, mínimos constitucionais, qualidade da
+          gestão pelo IEG-M do TCE-SP, resultados em educação e saúde, e transparência e entregas. Pilar sem dados do mandato fica sem nota até a
+          fonte publicar.
         </p>
         <p className="mt-3 text-slate-700">
           Os dois pilares usam os relatórios fiscais que a própria Prefeitura entrega ao Tesouro Nacional (RREO e RGF, pelo sistema SICONFI). Osasco é

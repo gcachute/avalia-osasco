@@ -27,3 +27,20 @@ export function geometriaBairros() {
   cache = { largura: Math.ceil(x1 - x0 + 2 * MARGEM), altura: ALTURA_MAPA, contornos, projecao, caminho };
   return cache;
 }
+
+// Tudo o que o componente do mapa completo precisa, já projetado: bairros, pontos e favelas.
+export async function dadosDoMapaCompleto(mapa: import("./dados").Mapa) {
+  const { largura, altura, contornos, projecao, caminho } = geometriaBairros();
+  const { default: geoFavelas } = await import("@/data/favelas-geo.json");
+  const info = new Map(mapa.bairros.map((b) => [b.id, b]));
+  const bairros = contornos.map((c) => ({ ...info.get(c.id)!, ...c }));
+  const pontos = mapa.pontos.flatMap((p) => {
+    const xy = projecao([p.lon, p.lat]);
+    return xy && xy[0] >= 0 && xy[0] <= largura && xy[1] >= 0 && xy[1] <= altura ? [{ ...p, x: Math.round(xy[0] * 10) / 10, y: Math.round(xy[1] * 10) / 10 }] : [];
+  });
+  const favelas = (geoFavelas as unknown as FeatureCollection<Geometry, { codigo: string; nome: string; moradores: number }>).features.map((f) => ({
+    ...f.properties,
+    d: caminho(f) ?? "",
+  }));
+  return { largura, altura, bairros, pontos, favelas };
+}

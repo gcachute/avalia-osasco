@@ -102,16 +102,33 @@ export function calcularNotas(vereadores, metodologia) {
       D: { nota: null, componentes: {} },
       E: { nota: linear(por10(i.adiadasPorAusencia, v), 0, 1, LIMITE_ADIAMENTOS, 0), componentes: {} },
     };
-    const comNota = Object.entries(v.pilares).filter(([, p]) => p.nota != null);
-    const peso = comNota.reduce((a, [k]) => a + cfg.pesos[k], 0);
-    const total = Object.values(cfg.pesos).reduce((a, b) => a + b, 0);
-    v.cobertura = peso / total;
-    v.nota = i.sessoes >= cfg.minimoSessoes && peso ? Math.round((comNota.reduce((a, [k, p]) => a + cfg.pesos[k] * p.nota, 0) / peso) * 100) / 10 : null;
+    // Sem nota geral: dois coeficientes, cada um a média dos seus pilares, e a eficiência.
+    const elegivel = i.sessoes >= cfg.minimoSessoes;
+    v.coeficientes = elegivel
+      ? {
+          participacao: media([v.pilares.A.nota, v.pilares.E.nota]),
+          producao: media([v.pilares.B.nota, v.pilares.C.nota]),
+          eficiencia: null,
+        }
+      : { participacao: null, producao: null, eficiencia: null };
+    // O que produziu por sessão em que esteve presente: as faltas não entram na conta.
+    v.indicadores.producaoPorPresenca = i.presencas ? (i.pontosLegislacao / i.presencas) * 10 : null;
   }
 
-  for (const k of ["A", "B", "C", "E"]) {
-    const ordem = vereadores.filter((v) => v.nota != null && v.pilares[k].nota != null).sort((a, b) => b.pilares[k].nota - a.pilares[k].nota);
-    ordem.forEach((v, idx) => (v.pilares[k].ranking = idx + 1));
-  }
-  return { usaRequerimentos, referencias: { legislacao: refLeg, requerimentos: refReq, comissoes: refCom } };
+  // Eficiência: produção por sessão presente, comparada com o percentil 90 entre os vereadores.
+  const refEfi = p90(elegiveis.map((v) => v.indicadores.producaoPorPresenca ?? 0));
+  for (const v of vereadores)
+    if (v.indicadores.sessoes >= cfg.minimoSessoes && v.indicadores.producaoPorPresenca != null)
+      v.coeficientes.eficiencia = Math.min(1, v.indicadores.producaoPorPresenca / refEfi);
+
+  const ranquear = (lista, valor, gravar) =>
+    lista
+      .filter((v) => valor(v) != null)
+      .sort((a, b) => valor(b) - valor(a))
+      .forEach((v, idx) => gravar(v, idx + 1));
+  const elegiveisAgora = vereadores.filter((v) => v.indicadores.sessoes >= cfg.minimoSessoes);
+  for (const k of ["A", "B", "C", "E"]) ranquear(elegiveisAgora, (v) => v.pilares[k].nota, (v, n) => (v.pilares[k].ranking = n));
+  for (const v of vereadores) v.rankings = {};
+  for (const k of ["participacao", "producao", "eficiencia"]) ranquear(elegiveisAgora, (v) => v.coeficientes[k], (v, n) => (v.rankings[k] = n));
+  return { usaRequerimentos, referencias: { legislacao: refLeg, requerimentos: refReq, comissoes: refCom, eficiencia: refEfi } };
 }

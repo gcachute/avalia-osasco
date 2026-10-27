@@ -153,9 +153,9 @@ export type Vereador = {
     mesa: string | null;
   } | null;
   emExercicio: boolean;
-  nota: number | null;
-  posicao: number | null;
-  cobertura: number;
+  // Sem nota geral: participação, produção e eficiência (0 a 1), e a posição em cada um.
+  coeficientes: Record<Coeficiente, number | null>;
+  rankings: Partial<Record<Coeficiente, number>>;
   pilares: Record<PilarVereador, { nota: number | null; ranking?: number; componentes: Record<string, number | null> }>;
   indicadores: {
     sessoes: number;
@@ -181,6 +181,7 @@ export type Vereador = {
     leisSancionadas: number;
     vetosRecebidos: number;
     adiadasPorAusencia: number;
+    producaoPorPresenca: number | null;
   };
   temas: { tema: string; n: number }[];
   atividadePorMes: { mes: string; proposicoes: number }[];
@@ -324,14 +325,12 @@ export type Dados = {
     creditoFoto?: string;
     creditoFotoUrl?: string;
     perfilOficial: string | null;
-    nota: number | null;
     cobertura: number;
     pilares: Partial<Record<PilarPrefeito, { nota: number | null; anos: number[] }>>;
     fiscal: Fiscal | null;
     iegm: Iegm | null;
     resultados: Resultados | null;
     transparencia: Transparencia | null;
-    provisoria: boolean;
     indicadores: {
       projetosEnviados: number;
       vetosTotais: number;
@@ -351,6 +350,31 @@ export const dados = bruto as unknown as Dados;
 
 const sessoesPorId = new Map(dados.sessoes.map((s) => [s.id, s]));
 export const sessao = (id: string) => sessoesPorId.get(id);
+
+export type Coeficiente = "participacao" | "producao" | "eficiencia";
+
+// Os coeficientes dos vereadores. Não há nota geral: cada coeficiente mostra os pilares que o formam.
+export const COEFICIENTES: { chave: Coeficiente; nome: string; descricao: string; pilares: PilarVereador[] }[] = [
+  {
+    chave: "participacao",
+    nome: "Participação",
+    descricao: "Média de Assiduidade (presença nas sessões e nas votações nominais) e Compromisso com a pauta (itens próprios adiados porque faltou).",
+    pilares: ["A", "E"],
+  },
+  {
+    chave: "producao",
+    nome: "Produção",
+    descricao: "Média de Legislação que importa (projetos de política pública e leis sancionadas) e Fiscalização e comissões (comissões e Mesa Diretora).",
+    pilares: ["B", "C"],
+  },
+  {
+    chave: "eficiencia",
+    nome: "Eficiência",
+    descricao:
+      "O que produziu por sessão em que esteve presente: projetos de política pública (simbólicos valem 0,2) e leis sancionadas a cada 10 presenças. As faltas não entram na conta. Comparado com o percentil 90 entre os vereadores.",
+    pilares: [],
+  },
+];
 
 export const PILARES_VEREADOR: { chave: PilarVereador; nome: string; descricao: string }[] = [
   { chave: "A", nome: "Assiduidade", descricao: "Presença nas sessões (faltas justificadas não contam contra) e participação nas votações nominais. 95% ou mais vale 10; 75% ou menos vale 0." },

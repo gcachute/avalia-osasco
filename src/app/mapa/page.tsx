@@ -1,29 +1,16 @@
 import type { Metadata } from "next";
-import type { FeatureCollection, Geometry } from "geojson";
-import { MapaBairros, type BairroDesenho, type FavelaDesenho, type PontoDesenho } from "@/components/MapaBairros";
+import { MapaBairros } from "@/components/MapaBairros";
 import { Secao } from "@/components/ui";
 import { dados, dataBR, num } from "@/lib/dados";
-import { geometriaBairros } from "@/lib/mapaGeo";
-import geoFavelas from "@/data/favelas-geo.json";
+import { dadosDoMapaCompleto } from "@/lib/mapaGeo";
 
 export const metadata: Metadata = { title: "Mapa por bairro" };
 
-export default function PaginaMapa() {
+export default async function PaginaMapa() {
   const mapa = dados.mapa;
   if (!mapa) return <p className="text-slate-600">Rode npm run coletar:bairros e npm run dados para gerar o mapa.</p>;
 
-  const { largura: LARGURA, altura: ALTURA, contornos, projecao, caminho } = geometriaBairros();
-  const info = new Map(mapa.bairros.map((b) => [b.id, b]));
-  const desenhos: BairroDesenho[] = contornos.map((c) => ({ ...info.get(c.id)!, ...c }));
-  const pontos: PontoDesenho[] = mapa.pontos.flatMap((p) => {
-    const xy = projecao([p.lon, p.lat]);
-    return xy && xy[0] >= 0 && xy[0] <= LARGURA && xy[1] >= 0 && xy[1] <= ALTURA ? [{ ...p, x: Math.round(xy[0] * 10) / 10, y: Math.round(xy[1] * 10) / 10 }] : [];
-  });
-
-  const favelas: FavelaDesenho[] = (geoFavelas as unknown as FeatureCollection<Geometry, { codigo: string; nome: string; moradores: number }>).features.map((f) => ({
-    ...f.properties,
-    d: caminho(f) ?? "",
-  }));
+  const { largura: LARGURA, altura: ALTURA, bairros: desenhos, pontos, favelas } = await dadosDoMapaCompleto(mapa);
 
   const semCitacao = mapa.bairros.filter((b) => b.citacoes === 0);
   const popSem = semCitacao.reduce((a, b) => a + (b.censo?.pessoas ?? b.populacao ?? 0), 0);
