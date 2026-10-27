@@ -240,3 +240,27 @@
     transform: translateX(8px);
   }
 }
+
+/* Logo: a íris segue o ponteiro (Logo.tsx) e o olho pisca de vez em quando. */
+.logo-iris {
+  transition: transform 0.25s ease-out;
+}
+.logo-palpebra {
+  transform-origin: 24px 24px;
+  animation: logo-piscar 7s infinite;
+}
+a:hover .logo-palpebra {
+  animation: logo-piscar-ja 0.35s;
+}
+@keyframes logo-piscar {
+  0%, 94%, 100% { transform: scaleY(1); }
+  96% { transform: scaleY(0.08); }
+}
+@keyframes logo-piscar-ja {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.08); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-palpebra, a:hover .logo-palpebra { animation: none; }
+  .logo-iris { transition: none; }
+}
