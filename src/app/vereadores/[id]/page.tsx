@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AtividadeMensal } from "@/components/Atividade";
-import { CustoMandato } from "@/components/Camara";
+import { CustoMandato, rotuloMesFolha } from "@/components/Camara";
 import { ListaTematica, type ItemLista } from "@/components/ListaTematica";
 import { MapaPessoa, type ModoMapa } from "@/components/MapaPessoa";
 import { geometriaBairros } from "@/lib/mapaGeo";
+import { reais } from "@/lib/formato";
 import { AvisoParcial, Avatar, Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { PilarVereador, Vereador } from "@/lib/dados";
 import { COEFICIENTES, PILARES_VEREADOR, TIPO_NOME, dados, dataBR, milReais, nomeSessao, nota, nota10, num, pct, plural, sessao } from "@/lib/dados";
@@ -59,6 +60,10 @@ export default async function PaginaVereador({ params }: Props) {
   const avaliados = dados.vereadores.filter((x) => x.coeficientes.producao != null);
   const pf = v.perfil;
   const custo = dados.camara.custoMandato;
+  // Subsídio bruto pago ao vereador no último mês da folha publicada (Portal do Cidadão).
+  const folha = dados.camara.folha;
+  const mesFolha = folha ? Object.keys(folha.meses).sort().at(-1)! : null;
+  const pagoNoMes = folha && mesFolha ? (folha.meses[mesFolha].vereadores.porVereador.find((x) => x.id === v.id)?.bruto ?? null) : null;
 
   // Mapa: onde teve votos em 2024 e onde agiu (documentos que citam um bairro).
   const mapa = dados.mapa;
@@ -522,6 +527,12 @@ export default async function PaginaVereador({ params }: Props) {
       {custo && (
         <Secao titulo="Quanto custa este mandato" subtitulo="Salário do vereador e dos cargos do gabinete, pelo Quadro de Pessoal oficial da Câmara.">
           <CustoMandato custo={custo} />
+          {pagoNoMes != null && mesFolha && (
+            <p className="mt-3 text-sm text-slate-600">
+              Pago a {v.nome} na folha de {rotuloMesFolha(mesFolha)}: <b className="tabular-nums text-slate-900">{reais(pagoNoMes)}</b> brutos (subsídio e
+              adicionais da folha normal; fonte: Portal do Cidadão da Câmara).
+            </p>
+          )}
         </Secao>
       )}
 

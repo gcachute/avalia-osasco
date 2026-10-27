@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CustoMandato, DespesasCamara } from "@/components/Camara";
+import { CustoMandato, DespesasCamara, FolhaCamara } from "@/components/Camara";
 import type { VereadorLista } from "@/components/ListaVereadores";
 import { PainelInicial } from "@/components/PainelInicial";
 import { GraficoPartidos, type MediaPartido } from "@/components/Partidos";
@@ -204,6 +204,7 @@ export default async function Home() {
           <div className="grid gap-3 lg:grid-cols-2">
             {camara.custoMandato && <CustoMandato custo={camara.custoMandato} />}
             {camara.despesas && <DespesasCamara despesas={camara.despesas} />}
+            {camara.folha && <FolhaCamara folha={camara.folha} />}
           </div>
         </Secao>
       )}

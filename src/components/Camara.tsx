@@ -88,3 +88,62 @@ export function DespesasCamara({ despesas }: { despesas: NonNullable<Camara["des
     </div>
   );
 }
+
+const MESES_NOME = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+export const rotuloMesFolha = (m: string) => `${MESES_NOME[Number(m.slice(5, 7)) - 1]} de ${m.slice(0, 4)}`;
+const titulo = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/^\p{L}/u, (c) => c.toUpperCase())
+    .replace(/coordenacao/, "coordenação")
+    .replace(/ (i{1,3})$/, (m) => m.toUpperCase());
+
+// Folha real do último mês publicado no Portal do Cidadão: o que foi pago, em valores brutos.
+export function FolhaCamara({ folha }: { folha: NonNullable<Camara["folha"]> }) {
+  const mes = Object.keys(folha.meses).sort().at(-1)!;
+  const m = folha.meses[mes];
+  // Um chefe de gabinete por vereador: é o melhor número de gabinetes que o relatório permite contar.
+  const gabinetes = Math.max(m.vereadores.pessoas, m.gabinetes.porCargo.find((c) => c.cargo === "CHEFE DE GABINETE")?.pessoas ?? 0) || 21;
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-white p-5">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <div>
+          <div className="text-sm text-slate-500">Folha paga em {rotuloMesFolha(mes)} (bruto)</div>
+          <div className="text-3xl font-semibold tabular-nums text-slate-900">{m.todos ? mi(m.todos.bruto) : mi(m.gabinetes.bruto + m.vereadores.bruto)}</div>
+        </div>
+        <div className="text-right text-sm text-slate-500">{m.todos ? `${num(m.todos.pessoas, 0)} pessoas na Câmara` : ""}</div>
+      </div>
+      <table className="mt-4 w-full text-sm">
+        <tbody className="divide-y divide-slate-100">
+          <tr>
+            <td className="py-1.5 text-slate-700">
+              <span className="tabular-nums text-slate-400">{m.vereadores.pessoas} × </span>Vereadores
+            </td>
+            <td className="py-1.5 text-right tabular-nums text-slate-600">{reais(m.vereadores.bruto)}</td>
+          </tr>
+          {m.gabinetes.porCargo.map((c) => (
+            <tr key={c.cargo}>
+              <td className="py-1.5 text-slate-700">
+                <span className="tabular-nums text-slate-400">{c.pessoas} × </span>
+                {titulo(c.cargo)}
+              </td>
+              <td className="py-1.5 text-right tabular-nums text-slate-600">{reais(c.bruto)}</td>
+            </tr>
+          ))}
+          <tr className="font-medium">
+            <td className="py-1.5 text-slate-900">Média por gabinete ({gabinetes} gabinetes, só assessores)</td>
+            <td className="py-1.5 text-right tabular-nums text-slate-900">{reais(m.gabinetes.bruto / gabinetes)}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p className="mt-3 text-xs text-slate-500">
+        Valores brutos da folha normal, servidores ativos. O relatório oficial não informa o gabinete de cada assessor, por isso a conta por gabinete é uma
+        média. Nomes de assessores não são publicados aqui. Fonte:{" "}
+        <a href={folha.url} className="underline">
+          Portal do Cidadão da Câmara (Folha de pagamento sintético)
+        </a>
+        .
+      </p>
+    </div>
+  );
+}
