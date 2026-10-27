@@ -9,7 +9,8 @@ import { baixar, emCache, sleep } from "./lib/baixar.mjs";
 
 const pares = JSON.parse(readFileSync("data/pares.json", "utf8"));
 const EDICAO_IDEB = Number(process.env.EDICAO_IDEB ?? 2025);
-const ANOS_SAUDE = [2023, 2024, 2025];
+// Desde 2015, para a série histórica; o pilar usa só os anos do mandato.
+const ANOS_SAUDE = Array.from({ length: new Date().getFullYear() - 2015 }, (_, i) => 2015 + i);
 mkdirSync("data/resultados", { recursive: true });
 
 // ---------- IDEB ----------

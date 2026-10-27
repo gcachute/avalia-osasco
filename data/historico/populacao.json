@@ -1,0 +1,120 @@
+{
+ "fonte": "IBGE, Censos Demográficos (tabelas 200 e 4709) e estimativas anuais (tabela 6579), via SIDRA",
+ "url": "https://sidra.ibge.gov.br/",
+ "censos": [
+  {
+   "ano": 1970,
+   "pessoas": 283073
+  },
+  {
+   "ano": 1980,
+   "pessoas": 474544
+  },
+  {
+   "ano": 1991,
+   "pessoas": 568225
+  },
+  {
+   "ano": 2000,
+   "pessoas": 652593
+  },
+  {
+   "ano": 2010,
+   "pessoas": 666740
+  },
+  {
+   "ano": 2022,
+   "pessoas": 728615
+  }
+ ],
+ "estimativas": [
+  {
+   "ano": 2001,
+   "pessoas": 661155
+  },
+  {
+   "ano": 2002,
+   "pessoas": 670345
+  },
+  {
+   "ano": 2003,
+   "pessoas": 678583
+  },
+  {
+   "ano": 2004,
+   "pessoas": 695879
+  },
+  {
+   "ano": 2005,
+   "pessoas": 705450
+  },
+  {
+   "ano": 2006,
+   "pessoas": 714950
+  },
+  {
+   "ano": 2008,
+   "pessoas": 713066
+  },
+  {
+   "ano": 2009,
+   "pessoas": 718646
+  },
+  {
+   "ano": 2011,
+   "pessoas": 667826
+  },
+  {
+   "ano": 2012,
+   "pessoas": 668877
+  },
+  {
+   "ano": 2013,
+   "pessoas": 691652
+  },
+  {
+   "ano": 2014,
+   "pessoas": 693271
+  },
+  {
+   "ano": 2015,
+   "pessoas": 694844
+  },
+  {
+   "ano": 2016,
+   "pessoas": 696382
+  },
+  {
+   "ano": 2017,
+   "pessoas": 697886
+  },
+  {
+   "ano": 2018,
+   "pessoas": 696850
+  },
+  {
+   "ano": 2019,
+   "pessoas": 698418
+  },
+  {
+   "ano": 2020,
+   "pessoas": 699944
+  },
+  {
+   "ano": 2021,
+   "pessoas": 701428
+  },
+  {
+   "ano": 2024,
+   "pessoas": 756952
+  },
+  {
+   "ano": 2025,
+   "pessoas": 759524
+  },
+  {
+   "ano": 2026,
+   "pessoas": 761441
+  }
+ ]
+}

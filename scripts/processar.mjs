@@ -9,6 +9,7 @@ import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
 import { carregarBairros, reconhecedorDeBairros, reconhecedorDeEquipamentos } from "./lib/bairros.mjs";
 import { montarTerritorio } from "./lib/territorio.mjs";
+import { montarHistorico } from "./lib/historico.mjs";
 
 const RAW = "data/raw";
 const BASE_URL = "https://www.osasco.sp.leg.br/assets/file/";
@@ -560,6 +561,7 @@ writeFileSync(
       prefeito,
       camara,
       mapa,
+      historico: montarHistorico(),
     },
     null,
     1,

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { AvisoParcial, Secao } from "@/components/ui";
 import { COEFICIENTES, PILARES_VEREADOR, TIPO_NOME, dados, dataBR, num } from "@/lib/dados";
 
@@ -197,6 +198,31 @@ export default function Metodologia() {
         <p className="mt-3 text-sm text-slate-500">
           Valores impossíveis (por exemplo, uma cidade declarando 0,2% de gasto em saúde) são tratados como erro de preenchimento, descartados e
           listados na página do prefeito.
+        </p>
+      </Secao>
+
+      <Secao titulo="Séries históricas" id="historico">
+        <ul className="list-disc space-y-2 pl-5 text-slate-700">
+          <li>
+            <b>Censo 2010 × 2022:</b> o Censo 2010 do IBGE é publicado por setor censitário, com o nome do bairro; somamos os setores de cada bairro. Setores
+            pequenos têm dados em sigilo e ficam fora das contas. A renda de 2010 é corrigida pelo IPCA até julho de 2022 (data de referência do Censo).
+            O IBGE mudou a forma de levantar o entorno das casas (asfalto, calçada, árvores...) entre os dois Censos, e alguns bairros mudaram de limite.
+          </li>
+          <li>
+            <b>Eleições de 2016, 2020 e 2024:</b> votos por seção do TSE, somados pelo bairro do local de votação. Em 2016 o TSE não publica coordenadas: o
+            local é reconhecido pelo mesmo número ou nome em 2020 e 2024. &quot;Voto no eleito&quot; é a porcentagem do prefeito que acabou eleito no 1º
+            turno, para comparar os três anos do mesmo jeito.
+          </li>
+          <li>
+            <b>Prefeitura e Câmara:</b> as contas desde 2017 (SICONFI), a mortalidade infantil desde 2015 (DataSUS), o IDEB desde 2005 (INEP) e as despesas
+            da Câmara desde 2017 (TCE-SP), em valores da época. As notas do prefeito continuam usando só os anos do mandato atual.
+          </li>
+          <li>
+            <b>População:</b> Censos desde 1970 e estimativas anuais do IBGE.
+          </li>
+        </ul>
+        <p className="mt-3 text-sm text-slate-600">
+          Veja em <Link href="/evolucao" className="underline">Evolução</Link> e, para cada bairro, na aba Evolução do mapa.
         </p>
       </Secao>
 

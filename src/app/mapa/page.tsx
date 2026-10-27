@@ -63,6 +63,7 @@ export default async function PaginaMapa() {
           vereadores={dados.vereadores.map((v) => ({ id: v.id, nome: v.nome }))}
           favelas={favelas}
           projecao={projecao}
+          historico={dados.historico}
           anoSeguranca={mapa.anoSeguranca ?? null}
         />
       </div>

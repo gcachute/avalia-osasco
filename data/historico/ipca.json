@@ -1,0 +1,11 @@
+{
+ "fonte": "IBGE, IPCA número-índice (tabela 1737), via SIDRA",
+ "url": "https://sidra.ibge.gov.br/tabela/1737",
+ "de": "2010-07",
+ "ate": "2022-07",
+ "indices": {
+  "201007": 3111.05,
+  "202207": 6411.95
+ },
+ "fator": 2.061
+}

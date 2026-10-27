@@ -119,6 +119,7 @@ export default async function Home() {
               vereadores: vereadores.map((v) => ({ id: v.id, nome: v.nome })),
               favelas: mapaPronto.favelas,
               projecao: mapaPronto.projecao,
+              historico: dados.historico,
               anoSeguranca: mapa.anoSeguranca ?? null,
             }}
           />
