@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { PilarVereador, Vereador as VereadorCompleto } from "@/lib/dados";
 import { nota, nota10, pct, plural } from "@/lib/formato";
-import { NotaBadge, Retrato } from "./ui";
+import { NotaBadge, Retrato, SeloPartido } from "./ui";
 
-export type ItemRanking = Pick<VereadorCompleto, "id" | "nome" | "partido" | "foto" | "emExercicio" | "nota" | "posicao" | "indicadores"> & {
+export type ItemRanking = Pick<VereadorCompleto, "id" | "nome" | "partido" | "partidoLogo" | "foto" | "emExercicio" | "nota" | "posicao" | "indicadores"> & {
   mesa: string | null;
   pilares: Record<PilarVereador, number | null>;
   temas: string[];
@@ -117,7 +117,7 @@ function Linha({ v, posicao }: { v: ItemRanking; posicao: number }) {
         <div className="min-w-0 space-y-1.5">
           <div className="truncate text-base font-semibold text-slate-900 group-hover:text-blue-800">{v.nome}</div>
           <div className="flex flex-wrap items-center gap-1 text-xs text-slate-500">
-            {v.partido && <span className="rounded bg-slate-100 px-1.5 py-0.5 font-medium text-slate-700">{v.partido}</span>}
+            <SeloPartido sigla={v.partido} logo={v.partidoLogo} />
             {v.mesa && <span className="rounded bg-blue-50 px-1.5 py-0.5 text-blue-800 ring-1 ring-blue-200">{v.mesa} da Mesa</span>}
             {!v.emExercicio && <span className="rounded bg-slate-100 px-1.5 py-0.5">fora da Câmara</span>}
             {v.temas.map((t) => (

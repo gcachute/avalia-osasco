@@ -3,7 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AtividadeMensal } from "@/components/Atividade";
 import { CustoMandato } from "@/components/Camara";
-import { Avatar, Barra, Cartao, NotaBadge, Retrato, Secao } from "@/components/ui";
+import { ListaTematica, type ItemLista } from "@/components/ListaTematica";
+import { MapaPessoa, type ModoMapa } from "@/components/MapaPessoa";
+import { geometriaBairros } from "@/lib/mapaGeo";
+import { Avatar, Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { PilarVereador, Vereador } from "@/lib/dados";
 import { PILARES_VEREADOR, TIPO_NOME, dados, dataBR, milReais, nomeSessao, nota, nota10, pct, plural, sessao } from "@/lib/dados";
 
@@ -17,6 +20,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const v = dados.vereadores.find((x) => x.id === id);
   return { title: v ? `${v.nome} — vereador(a) de Osasco` : "Vereador" };
 }
+
+const linkSessao = (id: string) => {
+  const s = sessao(id);
+  return s ? { rotulo: `${nomeSessao(s)} (${dataBR(s.data)})`, url: s.url } : null;
+};
+
+// Projetos e honrarias no formato da lista com temas.
+const itemProposicao = (p: Vereador["proposicoes"][number]): ItemLista => ({
+  key: p.key,
+  titulo: `${TIPO_NOME[p.tipo] ?? p.tipo} nº ${p.numero}/${p.ano}`,
+  curto: `${p.tipo} ${p.numero}/${p.ano}`,
+  texto: p.ementa,
+  temas: p.temas ?? [],
+  selo: p.classe ? (p.classe === "substantivo" ? { texto: "política pública", tom: "verde" } : { texto: "simbólico", tom: "cinza" }) : undefined,
+  sessao: linkSessao(p.sessao),
+});
 
 function LinkSessao({ id }: { id: string }) {
   const s = sessao(id);
@@ -41,6 +60,40 @@ export default async function PaginaVereador({ params }: Props) {
   const comNota = dados.vereadores.filter((x) => x.posicao).length;
   const pf = v.perfil;
   const custo = dados.camara.custoMandato;
+
+  // Mapa: onde teve votos em 2024 e onde agiu (documentos que citam um bairro).
+  const mapa = dados.mapa;
+  const geoB = geometriaBairros();
+  const nomeBairro = new Map(mapa?.bairros.map((b) => [b.id, b.nome]) ?? []);
+  const votosMapa = mapa?.votosVereador[v.id];
+  const itensMapa = mapa?.itens.filter((x) => (x.autores ?? [x.autor]).includes(v.id)) ?? [];
+  const docsPorBairro: Record<string, number> = {};
+  for (const x of itensMapa) for (const b of x.bairros) docsPorBairro[b] = (docsPorBairro[b] ?? 0) + 1;
+  const modosMapa: ModoMapa[] = [
+    ...(votosMapa
+      ? [
+          {
+            chave: "votos",
+            nome: "Votos em 2024",
+            descricao: `${votosMapa.total.toLocaleString("pt-BR")} votos para vereador em 2024, somados pelos locais de votação de cada bairro.`,
+            valores: votosMapa.porBairro,
+            formato: "inteiro" as const,
+            escala: "zero" as const,
+            total: votosMapa.total,
+            link: `/mapa/?indicador=votosVereador&autor=${v.id}`,
+          },
+        ]
+      : []),
+    {
+      chave: "docs",
+      nome: "Onde agiu",
+      descricao: "Projetos, moções e pedidos de informação que citam o bairro pelo nome ou por uma escola ou unidade de saúde dele.",
+      valores: docsPorBairro,
+      formato: "inteiro",
+      escala: "zero",
+      link: `/mapa/?indicador=citacoes&autor=${v.id}`,
+    },
+  ];
   const parados = v.requerimentosNaPauta.filter((r) => r.aindaNaPauta);
 
   // Comparação com a média dos vereadores com nota (menos itens adiados é melhor).
@@ -87,7 +140,7 @@ export default async function PaginaVereador({ params }: Props) {
         <div className="relative min-w-0 flex-1">
           <h1 className="text-3xl font-bold tracking-tight text-slate-900">{v.nome}</h1>
           <p className="mt-1 flex flex-wrap items-center gap-2 text-slate-600">
-            {v.partido && <span className="rounded-md bg-slate-900 px-2 py-0.5 text-sm font-semibold text-white">{v.partido}</span>}
+            <SeloPartido sigla={v.partido} logo={v.partidoLogo} grande />
             <span>{v.partidoNome ?? (v.partido ? "" : "partido não informado")}</span>
             {pf?.mesa && <span className="rounded-md bg-blue-50 px-2 py-0.5 text-sm text-blue-800 ring-1 ring-blue-200">{pf.mesa} da Mesa</span>}
             {!v.emExercicio && <span className="rounded-md bg-slate-100 px-2 py-0.5 text-sm text-slate-600">não está mais em exercício</span>}
@@ -201,6 +254,26 @@ export default async function PaginaVereador({ params }: Props) {
           A nota é a média ponderada dos pilares A, B, C e E. O custo do mandato (D) aparece para consulta, mas não entra na nota porque é igual para todos.
         </p>
       </Secao>
+
+      {mapa && (votosMapa || itensMapa.length > 0) && (
+        <Secao
+          titulo="No mapa de Osasco"
+          subtitulo={
+            votosMapa
+              ? "Onde veio a votação de 2024 e quais bairros aparecem nos documentos do mandato. Os círculos laranja são os documentos."
+              : "Quais bairros aparecem nos documentos do mandato."
+          }
+        >
+          <MapaPessoa
+            largura={geoB.largura}
+            altura={geoB.altura}
+            bairros={geoB.contornos.map((c) => ({ ...c, nome: nomeBairro.get(c.id) ?? c.id }))}
+            modos={modosMapa}
+            itens={itensMapa}
+            corItens="var(--mapa-camara)"
+          />
+        </Secao>
+      )}
 
       <Secao titulo="Comparado com a média da Câmara" subtitulo={`Média entre os ${pares.length} vereadores com nota, no mesmo período.`}>
         <div className="divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white px-5">
@@ -324,34 +397,46 @@ export default async function PaginaVereador({ params }: Props) {
       </Secao>
 
       <Secao titulo={`Projetos apresentados (${projetos.length})`}>
-        <ListaProposicoes itens={projetos} vazio="Nenhum projeto encontrado nas sessões analisadas." />
+        <ListaTematica itens={projetos.map(itemProposicao)} nomes={["projeto", "projetos"]} vazio="Nenhum projeto encontrado nas sessões analisadas." />
       </Secao>
 
       {(v.leis.length > 0 || v.vetos.length > 0) && (
         <Secao titulo="Leis sancionadas e vetos">
-          <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white">
-            {v.leis.map((l) => (
-              <li key={l.key} className="p-4 text-sm">
-                <span className="mr-2 rounded bg-emerald-50 px-1.5 py-0.5 text-xs font-medium text-emerald-800">Sancionada</span>
-                <b className="text-slate-900">{l.lei}</b> ({l.data}) — {l.resumo}
-                <div className="mt-1 text-xs text-slate-500">Comunicada na <LinkSessao id={l.sessao} /></div>
-              </li>
-            ))}
-            {v.vetos.map((x) => (
-              <li key={x.key} className="p-4 text-sm">
-                <span className="mr-2 rounded bg-rose-50 px-1.5 py-0.5 text-xs font-medium text-rose-800">Veto {x.tipo}</span>
-                <b className="text-slate-900">{x.projeto}</b> — {x.resumo}
-                <div className="mt-1 text-xs text-slate-500">Comunicado na <LinkSessao id={x.sessao} /></div>
-              </li>
-            ))}
-          </ul>
+          <ListaTematica
+            nomes={["lei ou veto", "leis e vetos"]}
+            vazio=""
+            itens={[
+              ...v.leis.map(
+                (l): ItemLista => ({
+                  key: l.key,
+                  titulo: `${l.lei} (${l.data})`,
+                  curto: l.lei,
+                  texto: l.resumo,
+                  temas: l.temas ?? [],
+                  selo: { texto: "Sancionada", tom: "verde" },
+                  sessao: linkSessao(l.sessao),
+                }),
+              ),
+              ...v.vetos.map(
+                (x): ItemLista => ({
+                  key: x.key,
+                  titulo: x.projeto,
+                  curto: x.projeto,
+                  texto: x.resumo,
+                  temas: x.temas ?? [],
+                  selo: { texto: `Veto ${x.tipo}`, tom: "vermelho" },
+                  sessao: linkSessao(x.sessao),
+                }),
+              ),
+            ]}
+          />
         </Secao>
       )}
 
       {honrarias.length > 0 && (
         <Secao titulo={`Honrarias e decretos legislativos (${honrarias.length})`}>
           <p className="-mt-2 mb-3 text-sm text-slate-500">Títulos de cidadão, cartões de prata, diplomas e similares. Aparecem aqui, mas não contam na nota.</p>
-          <ListaProposicoes itens={honrarias} vazio="" />
+          <ListaTematica itens={honrarias.map(itemProposicao)} nomes={["honraria", "honrarias"]} vazio="" agrupar />
         </Secao>
       )}
 
@@ -400,14 +485,20 @@ export default async function PaginaVereador({ params }: Props) {
 
       {v.adiadas.length > 0 && (
         <Secao titulo={`Itens adiados porque o autor faltou (${v.adiadas.length})`}>
-          <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white text-sm">
-            {v.adiadas.map((a, k) => (
-              <li key={k} className="p-4">
-                <div className="text-slate-700">{a.item}…</div>
-                <div className="mt-1 text-xs text-slate-500"><LinkSessao id={a.sessao} /></div>
-              </li>
-            ))}
-          </ul>
+          <ListaTematica
+            nomes={["item", "itens"]}
+            vazio=""
+            itens={v.adiadas.map(
+              (a, k): ItemLista => ({
+                key: `${a.sessao}-${k}`,
+                titulo: a.titulo ? a.titulo.charAt(0) + a.titulo.slice(1).toLowerCase() : "Item adiado",
+                curto: a.titulo ?? "item",
+                texto: a.ementa,
+                temas: a.temas,
+                sessao: linkSessao(a.sessao),
+              }),
+            )}
+          />
         </Secao>
       )}
       {(anterior || seguinte) && (
@@ -437,29 +528,5 @@ export default async function PaginaVereador({ params }: Props) {
         </nav>
       )}
     </>
-  );
-}
-
-function ListaProposicoes({ itens, vazio }: { itens: typeof dados.vereadores[number]["proposicoes"]; vazio: string }) {
-  if (!itens.length) return <p className="text-sm text-slate-500">{vazio}</p>;
-  return (
-    <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white">
-      {itens.map((p) => (
-        <li key={p.key} className="p-4 text-sm">
-          <div className="font-medium text-slate-900">
-            {TIPO_NOME[p.tipo] ?? p.tipo} nº {p.numero}/{p.ano}
-            {p.classe && (
-              <span className={`ml-2 rounded px-1.5 py-0.5 text-xs font-medium ${p.classe === "substantivo" ? "bg-emerald-50 text-emerald-800" : "bg-slate-100 text-slate-600"}`}>
-                {p.classe === "substantivo" ? "política pública" : "simbólico"}
-              </span>
-            )}
-          </div>
-          <p className="mt-0.5 text-slate-600">{p.ementa}</p>
-          <div className="mt-1 text-xs text-slate-500">
-            Visto pela primeira vez na <LinkSessao id={p.sessao} />
-          </div>
-        </li>
-      ))}
-    </ul>
   );
 }

@@ -35,7 +35,10 @@ function mesesEntre(inicio: string, fim: string) {
   const [af, mf] = [Number(fim.slice(0, 4)), Number(fim.slice(5, 7))];
   while (a < af || (a === af && m <= mf)) {
     out.push(`${a}-${String(m).padStart(2, "0")}`);
-    m === 12 ? ((a += 1), (m = 1)) : (m += 1);
+    if (m === 12) {
+      a += 1;
+      m = 1;
+    } else m += 1;
   }
   return out;
 }
@@ -146,16 +149,17 @@ export function MapaBairros({
 
   const autores = useMemo(() => {
     const m = new Map<string, { id: string; nome: string; n: number; origem: ItemMapa["origem"] }>();
-    for (const i of itens) {
-      const a = m.get(i.autor) ?? { id: i.autor, nome: i.autorNome ?? i.autor, n: 0, origem: i.origem };
-      a.n++;
-      m.set(i.autor, a);
-    }
+    for (const i of itens)
+      (i.autores ?? [i.autor]).forEach((id, k) => {
+        const a = m.get(id) ?? { id, nome: (i.autoresNomes?.[k] ?? i.autorNome) || id, n: 0, origem: i.origem };
+        a.n++;
+        m.set(id, a);
+      });
     return [...m.values()].sort((a, b) => b.n - a.n || a.nome.localeCompare(b.nome));
   }, [itens]);
 
   const filtrados = useMemo(
-    () => itens.filter((i) => (origem === "todos" || i.origem === origem) && (!autorAtivo || i.autor === autorAtivo)),
+    () => itens.filter((i) => (origem === "todos" || i.origem === origem) && (!autorAtivo || (i.autores ?? [i.autor]).includes(autorAtivo))),
     [itens, origem, autorAtivo],
   );
   const ateMes = meses[mes];
@@ -229,6 +233,20 @@ export function MapaBairros({
     setTema(INDICADORES.find((i) => i.chave === k)!.tema);
     setChave(k);
   };
+  // Links das páginas de vereador e prefeito abrem o mapa já filtrado: ?indicador=, ?autor=, ?origem=.
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search);
+    const ind = q.get("indicador");
+    if (ind && INDICADORES.some((i) => i.chave === ind)) {
+      setTema(INDICADORES.find((i) => i.chave === ind)!.tema);
+      setChave(ind);
+    }
+    const a = q.get("autor");
+    if (a) setAutor(a);
+    const o = q.get("origem");
+    if (o === "camara" || o === "prefeitura") setOrigem(o);
+  }, []);
+
   const alternarCamada = (c: Camada) =>
     setCamadas((s) => {
       const n = new Set(s);
@@ -576,7 +594,10 @@ export function MapaBairros({
                       <span className="ml-auto">{dataCurta(i.data)}</span>
                     </div>
                     <p className="mt-0.5 line-clamp-2 text-slate-700">{i.texto}</p>
-                    <div className="mt-0.5 text-[11px] text-slate-500">{i.autorNome}</div>
+                    <div className="mt-0.5 text-[11px] text-slate-500">
+                      {i.autoresNomes?.join(", ") ?? i.autorNome}
+                      {i.via && ` · via ${i.via[0].toLowerCase().replace(/(^|\s)(\p{L})/gu, (m) => m.toUpperCase())}`}
+                    </div>
                   </li>
                 ))}
                 {!feed.length && <li className="text-xs text-slate-500">Nenhum documento com estes filtros.</li>}

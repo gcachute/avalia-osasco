@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
+import { ContaPilarA, ContaPilarB } from "@/components/ContaFiscal";
+import { ListaTematica } from "@/components/ListaTematica";
+import { MapaPessoa, type ModoMapa } from "@/components/MapaPessoa";
+import { geometriaBairros } from "@/lib/mapaGeo";
 import { TabelaPares } from "@/components/Fiscal";
 import { Faixa, TabelaIegm } from "@/components/Iegm";
 import { PilarD, PilarE } from "@/components/PilaresDE";
-import { Barra, Cartao, NotaBadge, Retrato, Secao } from "@/components/ui";
+import { Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { AnoFiscal, CidadeFiscal } from "@/lib/dados";
 import { PILARES_PREFEITO, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, num, plural, sessao } from "@/lib/dados";
 import { INDICADORES, primarioTexto, ranking, rotuloPeriodo } from "@/lib/fiscal";
@@ -112,6 +116,48 @@ export default function PaginaPrefeito() {
   const anoParcial = f?.anos.find((a) => !a.completo && a.mandato);
   const focoParcial = anoParcial?.cidades.find((c) => c.foco);
 
+  // Mapa: votação do prefeito eleito em 2024 por bairro e documentos da Prefeitura que citam bairros.
+  const mapa = dados.mapa;
+  const geoB = geometriaBairros();
+  const itensMapa = mapa?.itens.filter((x) => x.origem === "prefeitura") ?? [];
+  const docsPorBairro: Record<string, number> = {};
+  for (const x of itensMapa) for (const b of x.bairros) docsPorBairro[b] = (docsPorBairro[b] ?? 0) + 1;
+  const pctPorBairro = Object.fromEntries(
+    (mapa?.bairros ?? []).filter((b) => b.eleicao?.prefeito?.[0]?.pct != null).map((b) => [b.id, b.eleicao!.prefeito![0].pct!]),
+  );
+  const modosMapa: ModoMapa[] = [
+    {
+      chave: "votos",
+      nome: "Votos em 2024",
+      descricao: `Porcentagem dos votos válidos no 1º turno de 2024 (${num(mapa?.prefeitoEleicao[0]?.pct ?? 0, 1)}% na cidade), somados pelos locais de votação de cada bairro.`,
+      valores: pctPorBairro,
+      formato: "pct",
+      escala: "faixa",
+      link: "/mapa/?indicador=prefeito",
+    },
+    {
+      chave: "docs",
+      nome: "Documentos da Prefeitura",
+      descricao: "Projetos, leis sancionadas, vetos e decretos do Executivo que citam o bairro.",
+      valores: docsPorBairro,
+      formato: "inteiro",
+      escala: "zero",
+      link: "/mapa/?indicador=citacoes&origem=prefeitura",
+    },
+  ];
+  const mapaPrefeito = mapa && (
+    <Secao titulo="No mapa de Osasco" subtitulo="Como cada bairro votou em 2024 e onde aparecem os atos da Prefeitura. Os círculos verdes são os documentos.">
+      <MapaPessoa
+        largura={geoB.largura}
+        altura={geoB.altura}
+        bairros={geoB.contornos.map((c) => ({ ...c, nome: mapa.bairros.find((b) => b.id === c.id)?.nome ?? c.id }))}
+        modos={modosMapa}
+        itens={itensMapa}
+        corItens="var(--mapa-prefeitura)"
+      />
+    </Secao>
+  );
+
   return (
     <>
       <header className="relative flex flex-wrap items-center gap-5 overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6">
@@ -120,7 +166,7 @@ export default function PaginaPrefeito() {
         <div className="min-w-0 flex-1">
           <h1 className="text-3xl font-bold tracking-tight text-slate-900">{p.nome}</h1>
           <p className="mt-1 flex flex-wrap items-center gap-2 text-slate-600">
-            <span className="rounded-md bg-slate-900 px-2 py-0.5 text-sm font-semibold text-white">{p.partido}</span>
+            <SeloPartido sigla={p.partido} logo={p.partidoLogo} grande />
             {p.cargo} · mandato {p.mandato}
           </p>
           {p.creditoFoto && (
@@ -187,19 +233,20 @@ export default function PaginaPrefeito() {
             <div className="rounded-xl border border-slate-200 bg-white px-5 py-2">
               <PilarA a={anoNota} c={focoNota} />
             </div>
-            <p className="mt-2 text-xs text-slate-500">
-              Nota do pilar: média dos três itens. Osasco ficou em {focoNota.pilares.A.ranking}º entre {anoNota.cidades.filter((c) => c.pilares.A.nota != null).length} cidades neste pilar.
-            </p>
+            <div className="mt-4">
+              <h3 className="mb-2 text-sm font-semibold text-slate-900">Como a nota foi calculada</h3>
+              <ContaPilarA a={anoNota} c={focoNota} f={f} />
+            </div>
           </Secao>
 
           <Secao titulo={`Pilar B · Mínimos constitucionais (${anoNota.ano})`} id="pilar-B">
             <div className="rounded-xl border border-slate-200 bg-white px-5 py-2">
               <PilarB a={anoNota} c={focoNota} />
             </div>
-            <p className="mt-2 text-xs text-slate-500">
-              Cumprir o mínimo vale 5 pontos. O restante depende da posição entre as cidades comparadas. Descumprir qualquer mínimo zera o pilar.
-              Osasco ficou em {focoNota.pilares.B.ranking}º entre {anoNota.cidades.filter((c) => c.pilares.B.nota != null).length} cidades neste pilar.
-            </p>
+            <div className="mt-4">
+              <h3 className="mb-2 text-sm font-semibold text-slate-900">Como a nota foi calculada</h3>
+              <ContaPilarB a={anoNota} c={focoNota} f={f} />
+            </div>
           </Secao>
 
           <Secao titulo="Comparação com cidades parecidas">
@@ -336,40 +383,49 @@ export default function PaginaPrefeito() {
         </div>
       </Secao>
 
+      {mapaPrefeito}
+
       <Secao titulo={`Projetos enviados pelo Executivo (${p.projetos.length})`}>
-        <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white">
-          {p.projetos.map((x) => {
+        <p className="-mt-2 mb-3 text-sm text-slate-500">
+          Projetos com o mesmo texto (como os pedidos de crédito adicional ao orçamento) aparecem numa linha só. Filtre por tema ou busque pelo
+          assunto.
+        </p>
+        <ListaTematica
+          agrupar
+          nomes={["projeto", "projetos"]}
+          vazio="Nenhum projeto do Executivo nas sessões analisadas."
+          itens={p.projetos.map((x) => {
             const s = sessao(x.sessao);
-            return (
-              <li key={x.key} className="p-4 text-sm">
-                <div className="font-medium text-slate-900">
-                  {TIPO_NOME[x.tipo] ?? x.tipo} nº {x.numero}/{x.ano}
-                </div>
-                <p className="mt-0.5 text-slate-600">{x.ementa}</p>
-                {s && (
-                  <a href={s.url} className="mt-1 inline-block text-xs text-blue-800 underline">
-                    {nomeSessao(s)} ({dataBR(s.data)})
-                  </a>
-                )}
-              </li>
-            );
+            return {
+              key: x.key,
+              titulo: `${TIPO_NOME[x.tipo] ?? x.tipo} nº ${x.numero}/${x.ano}`,
+              curto: `${x.tipo} ${x.numero}/${x.ano}`,
+              texto: x.ementa,
+              temas: x.temas ?? [],
+              sessao: s ? { rotulo: `${nomeSessao(s)} (${dataBR(s.data)})`, url: s.url } : null,
+            };
           })}
-        </ul>
+        />
       </Secao>
 
       <Secao titulo={`Vetos (${p.vetos.length})`}>
-        <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white">
-          {p.vetos.map((x) => {
+        <ListaTematica
+          nomes={["veto", "vetos"]}
+          vazio="Nenhum veto comunicado nas sessões analisadas."
+          itens={p.vetos.map((x) => {
             const autor = dados.vereadores.find((v) => v.id === x.autor);
-            return (
-              <li key={x.key} className="p-4 text-sm">
-                <span className="mr-2 rounded bg-rose-50 px-1.5 py-0.5 text-xs font-medium text-rose-800">Veto {x.tipo}</span>
-                <b className="text-slate-900">{x.projeto}</b>
-                {autor && <> de {autor.nome}</>} — {x.resumo}
-              </li>
-            );
+            const s = sessao(x.sessao);
+            return {
+              key: x.key,
+              titulo: autor ? `${x.projeto}, de ${autor.nome}` : x.projeto,
+              curto: x.projeto,
+              texto: x.resumo,
+              temas: x.temas ?? [],
+              selo: { texto: `Veto ${x.tipo}`, tom: "vermelho" as const },
+              sessao: s ? { rotulo: `${nomeSessao(s)} (${dataBR(s.data)})`, url: s.url } : null,
+            };
           })}
-        </ul>
+        />
       </Secao>
 
     </>

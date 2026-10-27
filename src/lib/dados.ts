@@ -3,9 +3,9 @@ import bruto from "@/data/dados.json";
 export * from "./formato";
 
 export type Sessao = { id: string; numero: number; tipo: "ordinaria" | "extraordinaria"; data: string; url: string };
-export type Proposicao = { key: string; tipo: string; numero: number; ano: number; autor: string; ementa: string; sessao: string };
-export type Lei = { key: string; lei: string; data: string; autor: string; resumo: string; sessao: string };
-export type Veto = { key: string; tipo: string; numero: string; projeto: string; autor: string; resumo: string; sessao: string };
+export type Proposicao = { key: string; tipo: string; numero: number; ano: number; autor: string; ementa: string; sessao: string; temas?: string[] };
+export type Lei = { key: string; lei: string; data: string; autor: string; resumo: string; sessao: string; temas?: string[] };
+export type Veto = { key: string; tipo: string; numero: string; projeto: string; autor: string; resumo: string; sessao: string; temas?: string[] };
 
 export type RequerimentoNaPauta = {
   key: string;
@@ -50,6 +50,11 @@ export type ItemMapa = {
   sessao: string;
   texto: string;
   bairros: string[];
+  // Coautorias: todos os autores citados (o primeiro também está em `autor`).
+  autores?: string[];
+  autoresNomes?: string[];
+  // Quando o bairro foi reconhecido pela escola ou unidade de saúde citada, e não pelo nome.
+  via?: string[];
 };
 
 export type CensoBairro = {
@@ -130,6 +135,7 @@ export type Vereador = {
   nome: string;
   partido: string | null;
   partidoNome: string | null;
+  partidoLogo: string | null;
   foto: string | null;
   fotoFonte: string | null;
   perfilOficial: string | null;
@@ -184,7 +190,7 @@ export type Vereador = {
   requerimentosNaPauta: RequerimentoNaPauta[];
   leis: Lei[];
   vetos: Veto[];
-  adiadas: { sessao: string; item: string }[];
+  adiadas: { sessao: string; item: string; titulo: string | null; ementa: string; temas: string[] }[];
 };
 
 export type IndicadoresFiscais = {
@@ -312,6 +318,7 @@ export type Dados = {
     nome: string;
     cargo: string;
     partido: string;
+    partidoLogo?: string | null;
     mandato: string;
     foto: string | null;
     creditoFoto?: string;

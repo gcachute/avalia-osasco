@@ -140,6 +140,7 @@ export function PainelBairro({
                     <span>{dataCurta(i.data)}</span>
                   </div>
                   <p className="mt-0.5 text-sm text-slate-700">{i.texto}</p>
+                  {i.via && <p className="mt-0.5 text-[11px] text-slate-500">Ligado ao bairro por: {i.via.map(titulo).join(", ")}</p>}
                   <div className="mt-0.5 text-xs">
                     {vereadores.has(i.autor) ? (
                       <Link href={`/vereadores/${i.autor}`} className="text-blue-800 underline">
