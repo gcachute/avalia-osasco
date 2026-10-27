@@ -6,7 +6,7 @@ import { geometriaBairros } from "@/lib/mapaGeo";
 import { TabelaPares } from "@/components/Fiscal";
 import { Faixa, TabelaIegm } from "@/components/Iegm";
 import { PilarD, PilarE } from "@/components/PilaresDE";
-import { Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
+import { AvisoParcial, Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { AnoFiscal, CidadeFiscal } from "@/lib/dados";
 import { PILARES_PREFEITO, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, num, plural, sessao } from "@/lib/dados";
 import { INDICADORES, primarioTexto, ranking, rotuloPeriodo } from "@/lib/fiscal";
@@ -178,6 +178,8 @@ export default function PaginaPrefeito() {
         </div>
         <p className="max-w-xs text-sm text-slate-500">Sem nota geral: cada pilar abaixo tem a sua nota, com os dados e a conta por trás.</p>
       </header>
+
+      <AvisoParcial alvo="prefeito" className="mt-4" />
 
       {PILARES_PREFEITO.some((x) => p.pilares[x.chave]?.nota == null) && (
         <p className="mt-6 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-600">

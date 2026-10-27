@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Secao } from "@/components/ui";
+import { AvisoParcial, Secao } from "@/components/ui";
 import { COEFICIENTES, PILARES_VEREADOR, TIPO_NOME, dados, dataBR, num } from "@/lib/dados";
 
 export const metadata: Metadata = { title: "Metodologia" };
@@ -17,6 +17,8 @@ export default function Metodologia() {
         Não há nota geral. Cada avaliação vai de 0 a 10 e é calculada só com dados públicos e oficiais, com a conta à mostra. Cada número leva ao
         documento oficial de onde saiu.
       </p>
+
+      <AvisoParcial className="mt-5" />
 
       <Secao titulo="De onde vêm os dados">
         <p className="text-slate-700">
