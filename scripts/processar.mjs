@@ -26,6 +26,7 @@ const slug = (s) => norm(s).replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 const nameKey = (s) =>
   slug(clean(s).replace(/\s*-\s*president[ea].*$/i, "").replace(/\s*\(suplente\)\s*$/i, "").replace(/^(pra\.|vereador[a]?)\s+/i, ""));
 
+const fotos = existsSync("data/fotos.json") ? JSON.parse(readFileSync("data/fotos.json", "utf8")) : {};
 const aliases = new Map();
 for (const v of config.vereadores) for (const a of [v.nome, ...(v.apelidos ?? [])]) aliases.set(nameKey(a), v.id);
 // O nome completo do perfil oficial também vale como apelido (alguns ofícios usam o nome de registro).
@@ -291,7 +292,9 @@ const vereadores = [...pessoas.values()].map((p) => {
     nome: cfg.nomeExibicao ?? perfil?.nome ?? cfg.nome ?? p.nomePlanilha,
     partido: cfg.partido ?? perfil?.partido ?? null,
     partidoNome: cfg.partidoNome ?? perfil?.partidoNome ?? null,
-    foto: cfg.foto ?? perfil?.foto ?? null,
+    // Foto salva no repositório (npm run coletar:fotos); sem ela, o endereço original.
+    foto: fotos[p.id]?.arquivo ?? cfg.foto ?? perfil?.foto ?? null,
+    fotoFonte: fotos[p.id]?.fonte ?? (cfg.foto || perfil?.foto ? "Câmara Municipal de Osasco" : null),
     perfilOficial: cfg.perfilOficial ?? perfil?.url ?? null,
     perfil: perfil && {
       nomeCompleto: perfil.nomeCompleto,
@@ -362,7 +365,7 @@ const notasVereadores = calcularNotas(vereadores, metodologia);
 vereadores.sort((a, b) => (b.nota ?? -1) - (a.nota ?? -1) || a.nome.localeCompare(b.nome));
 vereadores.forEach((v, i) => (v.posicao = v.nota === null ? null : i + 1));
 
-const pf = config.prefeito;
+const pf = { ...config.prefeito, ...(fotos.prefeito && { foto: fotos.prefeito.arquivo, creditoFoto: fotos.prefeito.fonte, creditoFotoUrl: "https://divulgacandcontas.tse.jus.br/" }) };
 const projetosExecutivo = [...proposicoes.values()].filter((x) => x.autor === "prefeito");
 const fiscal = calcularFiscal();
 // A nota final do prefeito só sai quando os pilares com dado somarem a cobertura mínima do peso total.
@@ -477,11 +480,26 @@ if (malha) {
     votosVereador: Object.fromEntries(Object.entries(territorio?.votosVereador ?? {}).filter(([id]) => vereadores.some((v) => v.id === id))),
     pontos: territorio?.pontos ?? [],
     minimoMoradores: territorio?.minimoMoradores ?? 0,
+    anoSeguranca: territorio?.anoSeguranca ?? null,
+    partidoDoPrefeito: territorio?.partidoDoPrefeito ?? null,
+    partidosCidade: territorio?.partidosCidade ?? [],
     fontes: territorio?.fontes ?? [],
   };
 }
 
 mkdirSync("src/data", { recursive: true });
+// Contornos das favelas e comunidades urbanas, com nome e moradores, para a camada do mapa.
+if (existsSync("data/territorio/favelas-contornos.json") && existsSync("data/territorio/favelas.json")) {
+  const info = new Map(JSON.parse(readFileSync("data/territorio/favelas.json", "utf8")).comunidades.map((c) => [c.codigo, c]));
+  const geo = JSON.parse(readFileSync("data/territorio/favelas-contornos.json", "utf8"));
+  const arred = (anel) => anel.filter((_, i) => i % 2 === 0 || i === anel.length - 1).map(([x, y]) => [Math.round(x * 1e5) / 1e5, Math.round(y * 1e5) / 1e5]);
+  for (const f of geo.features) {
+    const c = info.get(f.properties.codigo);
+    f.properties = { codigo: f.properties.codigo, nome: c?.nome ?? "", moradores: c?.moradores ?? 0 };
+    f.geometry.coordinates = f.geometry.type === "Polygon" ? f.geometry.coordinates.map(arred) : f.geometry.coordinates.map((p) => p.map(arred));
+  }
+  writeFileSync("src/data/favelas-geo.json", JSON.stringify(geo));
+}
 writeFileSync(
   "src/data/dados.json",
   JSON.stringify(

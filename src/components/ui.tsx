@@ -1,14 +1,17 @@
-import { faixa, iniciais, nota } from "@/lib/formato";
+import { faixa, nota } from "@/lib/formato";
+import { Foto } from "./Foto";
 
 export function Avatar({ nome, foto, tamanho = 40 }: { nome: string; foto: string | null; tamanho?: number }) {
   const style = { width: tamanho, height: tamanho, fontSize: tamanho * 0.38 };
-  if (foto)
-    // eslint-disable-next-line @next/next/no-img-element
-    return <img src={foto} alt="" loading="lazy" style={style} className="shrink-0 rounded-full object-cover object-top ring-1 ring-slate-200" />;
   return (
-    <span style={style} className="grid shrink-0 place-items-center rounded-full bg-blue-100 font-semibold text-blue-900" aria-hidden>
-      {iniciais(nome)}
-    </span>
+    <Foto
+      nome={nome}
+      foto={foto}
+      alt=""
+      style={style}
+      className="shrink-0 rounded-full object-cover object-top ring-1 ring-slate-200"
+      classeIniciais="grid shrink-0 place-items-center rounded-full bg-blue-100 font-semibold text-blue-900"
+    />
   );
 }
 
@@ -16,14 +19,13 @@ export function Avatar({ nome, foto, tamanho = 40 }: { nome: string; foto: strin
 export function Retrato({ nome, foto, className = "" }: { nome: string; foto: string | null; className?: string }) {
   return (
     <div className={`relative aspect-[3/4] overflow-hidden bg-slate-100 ${className}`}>
-      {foto ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={foto} alt={`Foto de ${nome}`} loading="lazy" className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105" />
-      ) : (
-        <span className="grid h-full w-full place-items-center text-4xl font-semibold text-blue-900" aria-hidden>
-          {iniciais(nome)}
-        </span>
-      )}
+      <Foto
+        nome={nome}
+        foto={foto}
+        alt={`Foto de ${nome}`}
+        className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+        classeIniciais="grid h-full w-full place-items-center bg-gradient-to-br from-blue-50 to-slate-100 text-4xl font-semibold text-blue-900"
+      />
     </div>
   );
 }

@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { geoMercator, geoPath } from "d3-geo";
 import type { FeatureCollection, Geometry } from "geojson";
-import { MapaBairros, type BairroDesenho, type PontoDesenho } from "@/components/MapaBairros";
+import { MapaBairros, type BairroDesenho, type FavelaDesenho, type PontoDesenho } from "@/components/MapaBairros";
 import { Secao } from "@/components/ui";
 import { dados, dataBR, num } from "@/lib/dados";
 import geo from "@/data/bairros-geo.json";
+import geoFavelas from "@/data/favelas-geo.json";
 
 export const metadata: Metadata = { title: "Mapa por bairro" };
 
@@ -38,6 +39,11 @@ export default function PaginaMapa() {
     return xy && xy[0] >= 0 && xy[0] <= LARGURA && xy[1] >= 0 && xy[1] <= ALTURA ? [{ ...p, x: Math.round(xy[0] * 10) / 10, y: Math.round(xy[1] * 10) / 10 }] : [];
   });
 
+  const favelas: FavelaDesenho[] = (geoFavelas as unknown as FeatureCollection<Geometry, { codigo: string; nome: string; moradores: number }>).features.map((f) => ({
+    ...f.properties,
+    d: caminho(f) ?? "",
+  }));
+
   // ---------- achados (calculados com os dados, não escritos à mão) ----------
   const habitados = mapa.bairros.filter((b) => b.censo && !b.censo.poucosMoradores && b.censo.rendaMedia != null);
   const porRenda = habitados.slice().sort((a, b) => a.censo!.rendaMedia! - b.censo!.rendaMedia!);
@@ -59,6 +65,7 @@ export default function PaginaMapa() {
     .filter((x): x is NonNullable<typeof x> => x != null)
     .sort((a, b) => b.pct - a.pct)[0];
   const nomeBairro = (id: string) => info.get(id)?.nome ?? id;
+  const maisCrime = habitados.filter((b) => b.seguranca).sort((a, b) => b.seguranca!.roubos.n - a.seguranca!.roubos.n)[0];
 
   const semCitacao = mapa.bairros.filter((b) => b.citacoes === 0);
   const popSem = semCitacao.reduce((a, b) => a + (b.censo?.pessoas ?? b.populacao ?? 0), 0);
@@ -84,6 +91,10 @@ export default function PaginaMapa() {
       texto: `${num(concentracao.pct, 0)}% dos votos de ${concentracao.v.nome} vieram de um só bairro: ${nomeBairro(concentracao.bairro)}.`,
       href: `/vereadores/${concentracao.v.id}`,
     },
+    maisCrime && {
+      rotulo: "Segurança",
+      texto: `${maisCrime.nome} teve ${maisCrime.seguranca!.roubos.n.toLocaleString("pt-BR")} roubos registrados em ${mapa.anoSeguranca}, o maior número entre os bairros com moradores.`,
+    },
   ].filter(Boolean) as { rotulo: string; texto: string; href?: string }[];
 
   return (
@@ -94,10 +105,10 @@ export default function PaginaMapa() {
           <p className="text-sm font-medium text-blue-800">Mapa de Osasco</p>
           <h1 className="mt-1 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Onde a política chega em cada bairro</h1>
           <p className="mt-3 max-w-3xl text-slate-600">
-            Documentos da Câmara e da Prefeitura que citam cada bairro, ao lado do retrato oficial de quem mora lá: renda, saneamento, rua, escolas,
-            saúde e como o bairro votou em 2024. Aperte o play para ver a legislatura acontecer mês a mês.
+            Documentos da Câmara e da Prefeitura que citam cada bairro, ao lado do retrato oficial de quem mora lá: renda, saneamento, rua, favelas,
+            escolas, saúde, segurança, obras e como o bairro votou em 2024. Aperte o play para ver a legislatura acontecer mês a mês.
           </p>
-          <dl className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          <dl className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
             {[
               { t: "Bairros oficiais", v: mapa.bairros.length.toLocaleString("pt-BR") },
               { t: "Moradores (Censo 2022)", v: `${Math.round((mapa.cidade?.pessoas ?? 0) / 1000).toLocaleString("pt-BR")} mil` },
@@ -105,6 +116,8 @@ export default function PaginaMapa() {
               { t: "Moradores em bairros nunca citados", v: `${Math.round(popSem / 1000).toLocaleString("pt-BR")} mil` },
               { t: "Unidades de saúde SUS", v: unidadesSus.toLocaleString("pt-BR") },
               { t: "Escolas públicas", v: escolasPublicas.toLocaleString("pt-BR") },
+              { t: "Moradores em favelas e comunidades", v: `${num(mapa.cidade?.favelas ?? 0, 0)}%` },
+              { t: `Ocorrências policiais em ${mapa.anoSeguranca ?? ""}`, v: Math.round(mapa.bairros.reduce((a, b) => a + Object.values(b.seguranca ?? {}).reduce((x, g) => x + g.n, 0), 0)).toLocaleString("pt-BR") },
             ].map((c) => (
               <div key={c.t} className="rounded-xl bg-slate-50 p-3">
                 <dt className="text-xs text-slate-500">{c.t}</dt>
@@ -116,7 +129,7 @@ export default function PaginaMapa() {
       </section>
 
       {achados.length > 0 && (
-        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
           {achados.map((a) => {
             const corpo = (
               <>
@@ -149,6 +162,8 @@ export default function PaginaMapa() {
           cidade={mapa.cidade}
           votosVereador={mapa.votosVereador}
           vereadores={dados.vereadores.map((v) => ({ id: v.id, nome: v.nome }))}
+          favelas={favelas}
+          anoSeguranca={mapa.anoSeguranca ?? null}
         />
       </div>
 
@@ -172,6 +187,15 @@ export default function PaginaMapa() {
             <b>Saúde e escolas:</b> unidades que atendem pelo SUS no CNES, com a localização informada ao Ministério da Saúde. Escolas em
             funcionamento no Censo Escolar 2024, ligadas ao bairro pelo endereço. O IDEB é o de 2025 (ou 2023, quando a escola não teve nota em
             2025). No mapa só aparecem as escolas que também são locais de votação, porque o INEP não publica coordenadas.
+          </li>
+          <li>
+            <b>Segurança:</b> boletins de ocorrência de {mapa.anoSeguranca} da Secretaria da Segurança Pública, contados pelo local do fato. As taxas
+            são por morador: em áreas de comércio e passagem, como o Centro, ficam altas porque muita gente circula e pouca gente mora. Nenhum
+            endereço de ocorrência é mostrado.
+          </li>
+          <li>
+            <b>Favelas e comunidades urbanas:</b> áreas delimitadas pelo IBGE no Censo 2022. <b>Obras:</b> contratos acompanhados pelo Painel de
+            Obras do TCE-SP cujo objeto cita o bairro.
           </li>
           <li>Indicações (pedidos de asfalto, poda, iluminação) trazem rua e bairro, mas a Câmara só as publica numa busca com captcha. Quando elas entrarem, o mapa fica bem mais completo.</li>
           <li>

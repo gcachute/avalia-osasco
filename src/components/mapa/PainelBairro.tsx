@@ -6,13 +6,23 @@ import type { BairroMapa, ItemMapa, Mapa } from "@/lib/dados";
 import { num } from "@/lib/formato";
 import { INDICADORES, formatar } from "./indicadores";
 
-type Aba = "perfil" | "politica" | "eleicao" | "servicos";
+type Aba = "perfil" | "politica" | "eleicao" | "servicos" | "seguranca";
 const ABAS: { chave: Aba; nome: string }[] = [
   { chave: "perfil", nome: "Perfil" },
   { chave: "politica", nome: "Documentos" },
   { chave: "eleicao", nome: "Eleição" },
   { chave: "servicos", nome: "Serviços" },
+  { chave: "seguranca", nome: "Segurança" },
 ];
+const CRIMES = [
+  ["roubos", "Roubos"],
+  ["furtos", "Furtos"],
+  ["violencia", "Agressões"],
+  ["sexual", "Estupros"],
+  ["transito", "Acidentes de trânsito"],
+  ["drogas", "Drogas"],
+  ["mortes", "Mortes violentas"],
+] as const;
 // Indicadores do Censo mostrados como barras contra a média da cidade.
 const BARRAS = ["esgoto", "pavimentacao", "iluminacao", "calcada", "bueiro", "arvores", "rampa", "onibus", "alfabetizados", "negros", "criancas", "idosos"];
 
@@ -29,6 +39,7 @@ export function PainelBairro({
   aoEscolherIndicador,
   aoFechar,
   mesTexto,
+  anoSeguranca,
 }: {
   bairro: BairroMapa;
   itens: ItemMapa[];
@@ -38,6 +49,7 @@ export function PainelBairro({
   aoEscolherIndicador: (chave: string) => void;
   aoFechar: () => void;
   mesTexto: string | null;
+  anoSeguranca: number | null;
 }) {
   const [aba, setAba] = useState<Aba>(abaInicial);
   const c = bairro.censo;
@@ -71,7 +83,7 @@ export function PainelBairro({
             role="tab"
             aria-selected={aba === a.chave}
             onClick={() => setAba(a.chave)}
-            className={`flex-1 rounded-md px-2 py-1 text-xs font-medium transition ${aba === a.chave ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
+            className={`flex-1 rounded-md px-1.5 py-1 text-[11px] font-medium transition ${aba === a.chave ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
           >
             {a.nome}
           </button>
@@ -82,6 +94,12 @@ export function PainelBairro({
         {aba === "perfil" &&
           (c && !c.poucosMoradores ? (
             <div className="space-y-2.5">
+              {bairro.favelas && bairro.favelas.moradores > 0 && (
+                <div className="rounded-lg bg-amber-50 p-2.5 text-xs text-amber-900 ring-1 ring-amber-200">
+                  <b>{formatar(bairro.favelas.pct, "pct")}</b> dos moradores ({bairro.favelas.moradores.toLocaleString("pt-BR")}) vivem em favelas e comunidades
+                  urbanas: {bairro.favelas.comunidades.map((x) => x.nome).join(", ")}.
+                </div>
+              )}
               <p className="text-xs text-slate-500">
                 Censo 2022 · {c.domicilios.toLocaleString("pt-BR")} domicílios · {formatar(c.densidade, "densidade")}. A marca escura é a média de Osasco.
               </p>
@@ -185,6 +203,36 @@ export function PainelBairro({
                   ))}
                 </ol>
               </div>
+              <div className="grid grid-cols-2 gap-2 text-center">
+                {[
+                  { t: "Comparecimento", v: bairro.eleicao.comparecimento, m: cidade?.comparecimento },
+                  { t: "Brancos e nulos", v: bairro.eleicao.brancosNulos, m: cidade?.brancosNulos },
+                ].map((x) => (
+                  <div key={x.t} className="rounded-lg bg-slate-50 p-2">
+                    <div className="text-base font-semibold tabular-nums text-slate-900">{formatar(x.v, "pct")}</div>
+                    <div className="text-[11px] text-slate-500">
+                      {x.t}
+                      {x.m != null && ` · cidade ${formatar(x.m, "pct")}`}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {bairro.eleicao.partidos && (
+                <div>
+                  <div className="text-xs font-medium text-slate-900">Partidos mais votados para vereador</div>
+                  <div className="mt-2 space-y-1.5">
+                    {bairro.eleicao.partidos.map((p) => (
+                      <div key={p.numero} className="grid grid-cols-[5.5rem_minmax(0,1fr)_3rem] items-center gap-2 text-xs">
+                        <span className="truncate text-slate-700">{p.sigla}</span>
+                        <span className="h-2 rounded-full bg-slate-100">
+                          <span className="block h-full rounded-full bg-blue-600 transition-all duration-700" style={{ width: `${Math.min(100, p.pct * 2)}%` }} />
+                        </span>
+                        <span className="text-right tabular-nums text-slate-900">{formatar(p.pct, "pct")}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
               <p className="text-[11px] text-slate-500">
                 {bairro.eleicao.eleitores.toLocaleString("pt-BR")} eleitores em {bairro.eleicao.locais} {bairro.eleicao.locais === 1 ? "local" : "locais"} de votação. O
                 eleitor vota no local da sua seção, que nem sempre fica no bairro onde mora.
@@ -238,8 +286,66 @@ export function PainelBairro({
                 {!publicas.length && <li className="text-slate-500">Nenhuma escola pública com endereço neste bairro no Censo Escolar.</li>}
               </ul>
             </div>
+            {!!bairro.obras?.length && (
+              <div>
+                <span className="text-xs font-medium text-slate-900">Obras públicas acompanhadas pelo TCE-SP ({bairro.obras.length})</span>
+                <ul className="mt-1.5 space-y-2 text-xs">
+                  {bairro.obras.map((o) => (
+                    <li key={o.objeto} className="rounded-lg bg-slate-50 p-2">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span
+                          className={`rounded px-1.5 py-0.5 text-[10px] font-medium ring-1 ring-inset ${/paralis/i.test(o.situacao) ? "bg-rose-50 text-rose-800 ring-rose-200" : /atrasad/i.test(o.situacao) ? "bg-amber-50 text-amber-800 ring-amber-200" : "bg-emerald-50 text-emerald-800 ring-emerald-200"}`}
+                        >
+                          {o.situacao}
+                        </span>
+                        <span className="tabular-nums text-slate-500">R$ {(o.valor / 1e6).toLocaleString("pt-BR", { maximumFractionDigits: 1 })} mi</span>
+                      </div>
+                      <p className="mt-1 line-clamp-3 text-slate-700">{o.objeto.charAt(0) + o.objeto.slice(1).toLowerCase()}</p>
+                      <div className="mt-0.5 text-[11px] text-slate-500">{titulo(o.contratante)}</div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         )}
+
+        {aba === "seguranca" &&
+          (bairro.seguranca ? (
+            <div className="space-y-2.5">
+              <p className="text-xs text-slate-500">
+                Ocorrências registradas pela polícia em {anoSeguranca} com local do fato no bairro (SSP-SP). A marca escura é a taxa de Osasco.
+              </p>
+              {CRIMES.map(([g, nome]) => {
+                const x = bairro.seguranca![g];
+                const media = (cidade?.[`crime_${g}`] as number | null | undefined) ?? null;
+                const escala = Math.max(x.por10mil ?? 0, media ?? 0) * 1.25 || 1;
+                return (
+                  <button key={g} onClick={() => aoEscolherIndicador(`crime_${g}`)} className="block w-full text-left" title="Clique para colorir o mapa">
+                    <div className="flex justify-between text-xs">
+                      <span className="text-slate-700">{nome}</span>
+                      <span className="tabular-nums text-slate-900">
+                        {x.n.toLocaleString("pt-BR")}
+                        {x.por10mil != null && <span className="text-slate-400"> · {num(x.por10mil, 1)} por 10 mil</span>}
+                      </span>
+                    </div>
+                    {x.por10mil != null && (
+                      <div className="relative mt-1 h-2 rounded-full bg-slate-100">
+                        <div className="h-full rounded-full bg-blue-600 transition-all duration-700" style={{ width: `${(x.por10mil / escala) * 100}%` }} />
+                        {media != null && <div className="absolute -top-0.5 h-3 w-0.5 rounded bg-slate-900" style={{ left: `${(media / escala) * 100}%` }} />}
+                      </div>
+                    )}
+                  </button>
+                );
+              })}
+              <p className="text-[11px] text-slate-500">
+                A taxa usa os moradores do bairro. Onde há muito comércio e circulação, e poucos moradores, ela fica alta mesmo sem o bairro ser mais
+                perigoso para quem mora lá.
+              </p>
+            </div>
+          ) : (
+            <p className="rounded-lg bg-slate-50 p-3 text-sm text-slate-600">Sem dados de ocorrências para este bairro.</p>
+          ))}
       </div>
     </div>
   );

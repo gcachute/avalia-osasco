@@ -32,3 +32,6 @@ export const iniciais = (nome: string) =>
     .map((p) => p[0])
     .join("")
     .toUpperCase();
+
+// Arquivos de public/ (como as fotos baixadas) precisam do prefixo do GitHub Pages (/avalia-osasco).
+export const comBase = (src: string) => (src.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${src}` : src);

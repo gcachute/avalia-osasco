@@ -1,8 +1,8 @@
 // Indicadores que podem colorir o mapa. Cada um sabe ler o próprio valor de um bairro.
-import type { BairroMapa, Mapa } from "@/lib/dados";
+import type { BairroMapa, GrupoCrime, Mapa } from "@/lib/dados";
 import { num } from "@/lib/formato";
 
-export type Tema = "politica" | "eleicao" | "pessoas" | "infra" | "servicos";
+export type Tema = "politica" | "eleicao" | "pessoas" | "infra" | "servicos" | "seguranca";
 
 export type Contexto = {
   contagem: Record<string, { total: number; camara: number; prefeitura: number }>;
@@ -29,6 +29,7 @@ export const TEMAS: { chave: Tema; nome: string }[] = [
   { chave: "pessoas", nome: "Renda e moradores" },
   { chave: "infra", nome: "Rua e saneamento" },
   { chave: "servicos", nome: "Saúde e escolas" },
+  { chave: "seguranca", nome: "Segurança" },
 ];
 
 const pessoas = (b: BairroMapa) => b.censo?.pessoas ?? b.populacao ?? 0;
@@ -65,6 +66,35 @@ export const INDICADORES: Indicador[] = [
     escala: "zero",
     valor: (b, c) => (c.votos ? (c.votos.porBairro[b.id] ?? 0) : null),
   },
+  {
+    chave: "comparecimento",
+    tema: "eleicao",
+    nome: "Comparecimento",
+    dica: "Eleitores aptos que foram votar no 1º turno de 2024",
+    formato: "pct",
+    escala: "faixa",
+    valor: (b) => b.eleicao?.comparecimento ?? null,
+    cidade: (c) => c.comparecimento,
+  },
+  {
+    chave: "brancosNulos",
+    tema: "eleicao",
+    nome: "Brancos e nulos",
+    dica: "Votos brancos e nulos para prefeito entre quem compareceu",
+    formato: "pct",
+    escala: "faixa",
+    valor: (b) => b.eleicao?.brancosNulos ?? null,
+    cidade: (c) => c.brancosNulos,
+  },
+  {
+    chave: "partidoPrefeito",
+    tema: "eleicao",
+    nome: "Partido do prefeito (vereador)",
+    dica: "Votos para vereador no partido do prefeito eleito, entre os votos válidos para vereador",
+    formato: "pct",
+    escala: "faixa",
+    valor: (b) => b.partidoPrefeito ?? null,
+  },
   { chave: "eleitores", tema: "eleicao", nome: "Eleitores", dica: "Eleitores com seção em locais de votação do bairro", formato: "inteiro", escala: "zero", valor: (b) => b.eleicao?.eleitores ?? null },
   {
     chave: "renda",
@@ -81,6 +111,16 @@ export const INDICADORES: Indicador[] = [
   { chave: "negros", tema: "pessoas", nome: "Pretos e pardos", dica: "Moradores que se declararam pretos ou pardos", formato: "pct", escala: "faixa", valor: censo("negros"), cidade: (c) => c.negros },
   { chave: "criancas", tema: "pessoas", nome: "Crianças até 14 anos", dica: "Moradores de 0 a 14 anos", formato: "pct", escala: "faixa", valor: censo("criancas"), cidade: (c) => c.criancas },
   { chave: "idosos", tema: "pessoas", nome: "Idosos 60+", dica: "Moradores com 60 anos ou mais", formato: "pct", escala: "faixa", valor: censo("idosos"), cidade: (c) => c.idosos },
+  {
+    chave: "favelas",
+    tema: "pessoas",
+    nome: "Em favelas e comunidades",
+    dica: "Moradores em favelas e comunidades urbanas delimitadas pelo IBGE no Censo 2022",
+    formato: "pct",
+    escala: "zero",
+    valor: (b) => (b.censo?.poucosMoradores ? null : (b.favelas?.pct ?? null)),
+    cidade: (c) => c.favelas,
+  },
   { chave: "alfabetizados", tema: "pessoas", nome: "Alfabetização", dica: "Moradores de 15 anos ou mais que sabem ler e escrever", formato: "pct", escala: "faixa", valor: censo("alfabetizados"), cidade: (c) => c.alfabetizados },
   { chave: "esgoto", tema: "infra", nome: "Esgoto na rede", dica: "Domicílios ligados à rede geral de esgoto ou pluvial (ou fossa ligada à rede)", formato: "pct", escala: "faixa", valor: censo("esgoto"), cidade: (c) => c.esgoto },
   { chave: "pavimentacao", tema: "infra", nome: "Rua asfaltada", dica: "Domicílios em quadra com via pavimentada", formato: "pct", escala: "faixa", valor: censo("pavimentacao"), cidade: (c) => c.pavimentacao },
@@ -121,6 +161,36 @@ export const INDICADORES: Indicador[] = [
     },
   },
 ];
+
+// Segurança: ocorrências registradas pela polícia com local do fato no bairro. Por morador, áreas de
+// comércio com poucos moradores (como o Centro) ficam com taxas altas: as pessoas circulam, mas não moram lá.
+const crime = (g: GrupoCrime, nome: string, dica: string): Indicador => ({
+  chave: `crime_${g}`,
+  tema: "seguranca",
+  nome,
+  dica: `${dica}, por 10 mil moradores`,
+  formato: "decimal",
+  escala: "faixa",
+  valor: (b) => b.seguranca?.[g]?.por10mil ?? null,
+  cidade: (c) => c[`crime_${g}`],
+});
+INDICADORES.push(
+  crime("roubos", "Roubos", "Roubos (com violência ou ameaça), inclusive de veículos e cargas"),
+  crime("furtos", "Furtos", "Furtos, inclusive de veículos e cargas"),
+  crime("violencia", "Agressões", "Lesão corporal dolosa e tentativas de homicídio"),
+  crime("sexual", "Estupros", "Estupros e estupros de vulnerável"),
+  crime("transito", "Acidentes de trânsito", "Feridos e mortos em acidentes de trânsito"),
+  crime("drogas", "Drogas", "Ocorrências de tráfico, porte e apreensão de entorpecentes"),
+  {
+    chave: "crime_mortes",
+    tema: "seguranca",
+    nome: "Mortes violentas",
+    dica: "Homicídios dolosos, latrocínios e lesões corporais seguidas de morte, em números absolutos",
+    formato: "inteiro",
+    escala: "zero",
+    valor: (b) => b.seguranca?.mortes?.n ?? null,
+  },
+);
 
 export function formatar(v: number | null | undefined, f: Formato) {
   if (v == null || !Number.isFinite(v)) return "—";

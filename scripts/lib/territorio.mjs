@@ -1,6 +1,7 @@
 // Junta, por bairro, os dados de território coletados em data/territorio (Censo, TSE, CNES, escolas)
 // e calcula a média da cidade para comparação.
 import { existsSync, readFileSync } from "node:fs";
+import { reconhecedorDeBairros } from "./bairros.mjs";
 
 const ler = (f) => (existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null);
 
@@ -23,6 +24,14 @@ const BASE = {
   rampa: "domicilios",
   arvores: "domicilios",
 };
+// Siglas dos partidos pelo número da urna (eleições de 2024).
+const SIGLAS = {
+  10: "Republicanos", 11: "PP", 12: "PDT", 13: "PT", 15: "MDB", 16: "PSTU", 18: "Rede", 20: "Podemos", 21: "PCB", 22: "PL",
+  23: "Cidadania", 25: "PRD", 27: "DC", 28: "PRTB", 29: "PCO", 30: "Novo", 33: "Mobiliza", 35: "PMB", 36: "Agir", 40: "PSB",
+  43: "PV", 44: "União", 45: "PSDB", 50: "PSOL", 55: "PSD", 65: "PCdoB", 70: "Avante", 77: "Solidariedade", 80: "UP",
+};
+const GRUPOS_CRIME = ["mortes", "roubos", "furtos", "violencia", "sexual", "transito", "drogas"];
+
 // Bairros com tão poucos moradores que as porcentagens viram ruído (áreas industriais).
 const MINIMO_MORADORES = 500;
 
@@ -31,6 +40,11 @@ export function montarTerritorio(malha, idFor) {
   const eleicao = ler("data/territorio/eleicao-2024.json");
   const saude = ler("data/territorio/saude.json");
   const escolas = ler("data/territorio/escolas.json");
+  const favelas = ler("data/territorio/favelas.json");
+  const seguranca = ler("data/territorio/seguranca.json");
+  const obrasTce = ler("data/transparencia/obras.json");
+  const acha = reconhecedorDeBairros(malha.bairros);
+  const obras = (obrasTce?.obras?.["3534401"] ?? []).map((o) => ({ ...o, bairros: acha(o.objeto) }));
   if (!censo && !eleicao && !saude) return null;
 
   const porId = Object.fromEntries((censo?.bairros ?? []).map((b) => [b.id, b]));
@@ -63,6 +77,7 @@ export function montarTerritorio(malha, idFor) {
         if (b !== "sem-bairro") votosVereador[id].porBairro[b] = (votosVereador[id].porBairro[b] ?? 0) + q;
       }
   const candidatosPrefeito = prefeito?.candidatos.filter((c) => c.valido) ?? [];
+  const partidoDoPrefeito = candidatosPrefeito[0] ? String(candidatosPrefeito[0].numero).slice(0, 2) : null;
   const validosPrefeito = candidatosPrefeito.reduce((a, c) => a + c.votos, 0);
 
   const bairros = Object.fromEntries(
@@ -73,6 +88,11 @@ export function montarTerritorio(malha, idFor) {
       const locais = eleicao?.locais.filter((l) => l.bairro === b.id) ?? [];
       const unidades = saude?.unidades.filter((u) => u.bairro === b.id) ?? [];
       const esc = escolas?.escolas.filter((e) => e.bairro === b.id) ?? [];
+      const comp = eleicao?.comparecimento?.[b.id];
+      const pt = eleicao?.partidos?.porBairro?.[b.id];
+      const ptTotal = pt ? Object.values(pt).reduce((a, q) => a + q, 0) : 0;
+      const crimes = seguranca?.porBairro?.[b.id] ?? null;
+      const pessoasB = c?.pessoas ?? 0;
       return [
         b.id,
         {
@@ -96,13 +116,51 @@ export function montarTerritorio(malha, idFor) {
                   .map(([nome, votos]) => ({ nome, id: idDoCandidato.get(nome), votos, pct: Math.round((votos / vb.validos) * 1000) / 10 }))
               : null,
             validosVereador: vb?.validos ?? 0,
+            comparecimento: comp?.aptos ? Math.round((comp.compareceram / comp.aptos) * 1000) / 10 : null,
+            brancosNulos: comp?.compareceram ? Math.round(((comp.brancos + comp.nulos) / comp.compareceram) * 1000) / 10 : null,
+            partidos: pt
+              ? Object.entries(pt)
+                  .sort((a, z) => z[1] - a[1])
+                  .slice(0, 5)
+                  .map(([n, q]) => ({ numero: n, sigla: SIGLAS[n] ?? eleicao.partidos.nomes[n] ?? n, pct: Math.round((q / ptTotal) * 1000) / 10 }))
+              : null,
           },
+          partidoPrefeito: pt && partidoDoPrefeito ? Math.round(((pt[partidoDoPrefeito] ?? 0) / ptTotal) * 1000) / 10 : null,
+          favelas: favelas
+            ? {
+                moradores: favelas.emFavela[b.id] ?? 0,
+                pct: pessoasB ? Math.round(((favelas.emFavela[b.id] ?? 0) / pessoasB) * 1000) / 10 : null,
+                comunidades: favelas.comunidades
+                  .filter((x) => x.bairros[b.id])
+                  .map((x) => ({ nome: x.nome, moradores: x.bairros[b.id] }))
+                  .sort((a, z) => z.moradores - a.moradores),
+              }
+            : null,
+          seguranca: crimes
+            ? Object.fromEntries(GRUPOS_CRIME.map((g) => [g, { n: crimes[g] ?? 0, por10mil: pessoasB >= MINIMO_MORADORES ? Math.round(((crimes[g] ?? 0) / pessoasB) * 1e5) / 10 : null }]))
+            : seguranca
+              ? Object.fromEntries(GRUPOS_CRIME.map((g) => [g, { n: 0, por10mil: pessoasB >= MINIMO_MORADORES ? 0 : null }]))
+              : null,
+          obras: obras
+            .filter((o) => o.bairros.includes(b.id))
+            .map(({ objeto, situacao, valor, contratante, contratado, ano }) => ({ objeto, situacao, valor, contratante, contratado, ano })),
           saude: unidades.map(({ cnes, nome, tipo, publica, turno }) => ({ cnes, nome, tipo, publica, turno })),
           escolas: esc.map(({ codigo, nome, rede, idebIniciais, idebFinais }) => ({ codigo, nome, rede, idebIniciais, idebFinais })),
         },
       ];
     }),
   );
+
+  // Médias da cidade para os indicadores que não vêm prontos do Censo.
+  if (favelas && cidade.pessoas) cidade.favelas = Math.round((Object.values(favelas.emFavela).reduce((x, q) => x + q, 0) / cidade.pessoas) * 1000) / 10;
+  if (eleicao?.comparecimento) {
+    const t = Object.values(eleicao.comparecimento).reduce((x, q) => ({ aptos: x.aptos + q.aptos, foram: x.foram + q.compareceram, bn: x.bn + q.brancos + q.nulos }), { aptos: 0, foram: 0, bn: 0 });
+    cidade.comparecimento = Math.round((t.foram / t.aptos) * 1000) / 10;
+    cidade.brancosNulos = Math.round((t.bn / t.foram) * 1000) / 10;
+  }
+  if (seguranca && cidade.pessoas)
+    for (const g of GRUPOS_CRIME)
+      cidade[`crime_${g}`] = Math.round((Object.values(seguranca.porBairro).reduce((x, q) => x + (q[g] ?? 0), 0) / cidade.pessoas) * 1e5) / 10;
 
   const pontos = [
     ...(saude?.unidades ?? []).filter((u) => u.lat && u.lon).map((u) => ({ tipo: "saude", categoria: u.tipo, nome: u.nome, lat: u.lat, lon: u.lon, bairro: u.bairro })),
@@ -121,6 +179,13 @@ export function montarTerritorio(malha, idFor) {
     votosVereador,
     pontos,
     minimoMoradores: MINIMO_MORADORES,
-    fontes: [censo, eleicao, saude, escolas].filter(Boolean).map((x) => ({ nome: x.fonte, url: x.url })),
+    anoSeguranca: seguranca?.ano ?? null,
+    partidoDoPrefeito: partidoDoPrefeito ? (SIGLAS[partidoDoPrefeito] ?? partidoDoPrefeito) : null,
+    partidosCidade: eleicao?.partidos
+      ? Object.entries(eleicao.partidos.total)
+          .sort((a, z) => z[1] - a[1])
+          .map(([n, q]) => ({ numero: n, sigla: SIGLAS[n] ?? eleicao.partidos.nomes[n] ?? n, votos: q }))
+      : [],
+    fontes: [censo, eleicao, saude, escolas, favelas, seguranca, obrasTce && { fonte: "TCE-SP, Painel de Obras", url: "https://www.tce.sp.gov.br/paineldeobras" }].filter(Boolean).map((x) => ({ nome: x.fonte, url: x.url })),
   };
 }
