@@ -37,6 +37,13 @@ const PARAMETROS: { chave: Parametro; nome: string; dica: string }[] = [
 ];
 const PESOS_INICIAIS: Record<Parametro, number> = { presenca: 1, votacoes: 1, legislacao: 1, comissoes: 1, pauta: 1, eficiencia: 1 };
 const CHAVE_PESOS = "avalia-osasco:pesos";
+const NIVEIS = ["Não conta", "Pouco", "Médio", "Muito"];
+const PRONTOS: { nome: string; pesos: Record<Parametro, number> }[] = [
+  { nome: "Equilibrado", pesos: PESOS_INICIAIS },
+  { nome: "Quem aparece", pesos: { presenca: 3, votacoes: 3, legislacao: 0, comissoes: 1, pauta: 2, eficiencia: 0 } },
+  { nome: "Quem produz", pesos: { presenca: 0, votacoes: 0, legislacao: 3, comissoes: 2, pauta: 0, eficiencia: 1 } },
+  { nome: "Quando vai, faz", pesos: { presenca: 0, votacoes: 1, legislacao: 1, comissoes: 0, pauta: 1, eficiencia: 3 } },
+];
 const CURTO = { participacao: "Part.", producao: "Prod.", eficiencia: "Efic." } as const;
 const semAcento = (s: string) => s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 
@@ -71,14 +78,14 @@ export function ListaVereadores({
       if (salvo) setPesos({ ...PESOS_INICIAIS, ...JSON.parse(salvo) });
     } catch {}
   }, []);
-  const mudarPeso = (k: Parametro, v: number) =>
-    setPesos((p) => {
-      const n = { ...p, [k]: v };
-      try {
-        localStorage.setItem(CHAVE_PESOS, JSON.stringify(n));
-      } catch {}
-      return n;
-    });
+  const definirPesos = (n: Record<Parametro, number>) => {
+    setPesos(n);
+    try {
+      localStorage.setItem(CHAVE_PESOS, JSON.stringify(n));
+    } catch {}
+  };
+  const mudarPeso = (k: Parametro, v: number) => definirPesos({ ...pesos, [k]: v });
+  const somaPesos = PARAMETROS.reduce((a, p) => a + pesos[p.chave], 0);
 
   const valor = (v: VereadorLista) => {
     if (criterio !== "proprio") return v.coeficientes[criterio];
@@ -122,15 +129,61 @@ export function ListaVereadores({
           ))}
         </div>
         {criterio === "proprio" && (
-          <div className="space-y-1.5 rounded-lg bg-slate-50 p-2.5">
-            <p className="text-[11px] text-slate-500">Quanto pesa cada parâmetro para você (0 = não conta):</p>
-            {PARAMETROS.map((p) => (
-              <label key={p.chave} className="grid grid-cols-[6.5rem_minmax(0,1fr)_1rem] items-center gap-2 text-xs text-slate-700" title={p.dica}>
-                {p.nome}
-                <input type="range" min={0} max={3} step={1} value={pesos[p.chave]} onChange={(e) => mudarPeso(p.chave, Number(e.target.value))} className="accent-blue-700" />
-                <span className="text-right tabular-nums text-slate-900">{pesos[p.chave]}</span>
-              </label>
-            ))}
+          <div className="animate-[mapa-painel_0.35s_ease_both] rounded-xl border border-blue-100 bg-gradient-to-b from-blue-50/80 to-white p-2.5">
+            <div className="flex items-baseline justify-between gap-2">
+              <p className="text-xs font-semibold text-slate-900">O que importa para você?</p>
+              <span className="text-[10px] text-slate-500">fica salvo neste navegador</span>
+            </div>
+            <div className="mt-1.5 flex flex-wrap gap-1" role="group" aria-label="Combinações prontas">
+              {PRONTOS.map((m) => {
+                const ativo = PARAMETROS.every((p) => pesos[p.chave] === m.pesos[p.chave]);
+                return (
+                  <button
+                    key={m.nome}
+                    onClick={() => definirPesos(m.pesos)}
+                    aria-pressed={ativo}
+                    className={`rounded-full px-2 py-0.5 text-[10px] font-medium ring-1 ring-inset transition ${ativo ? "bg-blue-800 text-white ring-blue-800" : "bg-white text-slate-600 ring-slate-200 hover:text-slate-900 hover:ring-slate-300"}`}
+                  >
+                    {m.nome}
+                  </button>
+                );
+              })}
+            </div>
+            <ul className="mt-2 space-y-1.5">
+              {PARAMETROS.map((p) => {
+                const parte = somaPesos ? pesos[p.chave] / somaPesos : 0;
+                return (
+                  <li key={p.chave} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-2">
+                    <div className="min-w-0">
+                      <div className="flex items-baseline justify-between gap-1 text-xs">
+                        <span className={`truncate font-medium ${pesos[p.chave] ? "text-slate-800" : "text-slate-400"}`} title={p.dica}>
+                          {p.nome}
+                        </span>
+                        <span className="shrink-0 text-[10px] tabular-nums text-slate-500">{Math.round(parte * 100)}%</span>
+                      </div>
+                      <span className="mt-0.5 block h-1 overflow-hidden rounded-full bg-slate-200/70">
+                        <span className="block h-full rounded-full bg-blue-600 transition-all duration-300" style={{ width: `${parte * 100}%` }} />
+                      </span>
+                    </div>
+                    <div className="flex rounded-md bg-white p-0.5 ring-1 ring-slate-200" role="radiogroup" aria-label={`Peso de ${p.nome}`}>
+                      {NIVEIS.map((n, k) => (
+                        <button
+                          key={n}
+                          role="radio"
+                          aria-checked={pesos[p.chave] === k}
+                          title={n}
+                          onClick={() => mudarPeso(p.chave, k)}
+                          className={`h-5 w-5 rounded text-[10px] font-semibold tabular-nums transition ${pesos[p.chave] === k ? (k ? "bg-blue-700 text-white" : "bg-slate-500 text-white") : "text-slate-500 hover:bg-slate-100"}`}
+                        >
+                          {k}
+                        </button>
+                      ))}
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+            <p className="mt-2 text-[10px] leading-snug text-slate-500">0 = não conta · 3 = pesa muito. A porcentagem é quanto cada parâmetro vale na sua nota.</p>
           </div>
         )}
         <div className="flex items-center gap-2">

@@ -216,9 +216,23 @@
 .mapa-rotulo {
   fill: var(--mapa-rotulo);
   stroke: var(--mapa-halo);
-  stroke-width: 3px;
+  stroke-width: calc(3px / var(--k, 1));
   paint-order: stroke;
   pointer-events: none;
+}
+/* Zoom do mapa: --k é o fator atual. Marcadores e ondas ficam do mesmo tamanho na tela;
+   com as ruas ligadas, as cores ficam mais transparentes conforme se aproxima. */
+.mapa-escala {
+  transform: scale(calc(1 / var(--k, 1)));
+}
+.mapa-com-ruas .mapa-bairro {
+  fill-opacity: clamp(0.22, calc(1 - var(--k, 1) * 0.12), 0.86);
+}
+.mapa-ruas {
+  filter: saturate(0.55) brightness(1.04);
+}
+.dark .mapa-ruas {
+  filter: invert(1) hue-rotate(180deg) saturate(0.4) brightness(0.8) contrast(0.95);
 }
 @media (prefers-reduced-motion: reduce) {
   .mapa-entrada .mapa-bairro,

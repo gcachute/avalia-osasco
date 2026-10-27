@@ -42,5 +42,7 @@ export async function dadosDoMapaCompleto(mapa: import("./dados").Mapa) {
     ...f.properties,
     d: caminho(f) ?? "",
   }));
-  return { largura, altura, bairros, pontos, favelas };
+  // Escala e translação da projeção: o navegador usa para alinhar os ladrilhos de ruas aos bairros.
+  const [tx, ty] = projecao.translate();
+  return { largura, altura, bairros, pontos, favelas, projecao: { k: projecao.scale(), tx, ty } };
 }
