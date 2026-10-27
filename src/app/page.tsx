@@ -12,7 +12,7 @@ const PASSOS = [
   { n: "1", titulo: "Dados oficiais", texto: "Planilhas da Câmara, Tesouro Nacional, Tribunal de Contas, IBGE, TSE, INEP, Ministério da Saúde e Segurança Pública." },
   {
     n: "2",
-    titulo: "Sem nota geral",
+    titulo: "A conta à mostra",
     texto: "Cada vereador tem participação, produção e eficiência, e cada uma mostra as avaliações e a conta por trás. O prefeito tem uma nota por pilar.",
   },
   { n: "3", titulo: "Você confere a fonte", texto: "Cada número leva ao documento oficial de onde saiu. Achou um erro? Dá para pedir correção." },
@@ -151,7 +151,7 @@ export default async function Home() {
             Todas as regras
           </Link>{" "}
           ·{" "}
-          <Link href="/mapa" className="underline">
+          <Link href="/mapa#como-ler" className="underline">
             Como ler o mapa e as fontes de cada camada
           </Link>
         </p>
@@ -187,7 +187,7 @@ export default async function Home() {
                 );
               })}
             </ul>
-            <p className="border-t border-slate-100 px-5 py-2 text-xs text-slate-500">Sem nota geral: cada pilar com os dados e a conta na página do prefeito.</p>
+            <p className="border-t border-slate-100 px-5 py-2 text-xs text-slate-500">Cada pilar com os dados e a conta na página do prefeito.</p>
           </Link>
         </Secao>
       </div>

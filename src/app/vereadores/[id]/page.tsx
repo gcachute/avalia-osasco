@@ -131,7 +131,7 @@ export default async function PaginaVereador({ params }: Props) {
     <>
       <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
         <Link href="/#vereadores" className="text-slate-500 hover:text-slate-800">
-          ← Ranking
+          ← Painel
         </Link>
       </div>
 
@@ -246,7 +246,7 @@ export default async function PaginaVereador({ params }: Props) {
         })}
       </div>
 
-      <Secao titulo="Coeficientes" id="coeficientes" subtitulo="Não há nota geral: cada coeficiente junta avaliações individuais, mostradas logo abaixo.">
+      <Secao titulo="Coeficientes" id="coeficientes" subtitulo="Cada coeficiente junta avaliações individuais, mostradas logo abaixo.">
         <div className="grid gap-3 md:grid-cols-3">
           {COEFICIENTES.map((c) => (
             <div key={c.chave} className="rounded-xl border border-slate-200 bg-white p-4">
@@ -297,7 +297,7 @@ export default async function PaginaVereador({ params }: Props) {
           ))}
         </div>
         <p className="mt-2 text-xs text-slate-500">
-          Não há nota geral. Participação é a média de A e E; Produção, a média de B e C. O custo do mandato (D) aparece para consulta e não entra em
+          Participação é a média de A e E; Produção, a média de B e C. O custo do mandato (D) aparece para consulta e não entra em
           nenhum coeficiente, porque é igual para todos os gabinetes.
         </p>
       </Secao>

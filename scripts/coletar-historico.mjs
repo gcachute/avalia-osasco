@@ -136,7 +136,7 @@ writeFileSync(
     {
       fonte: "IBGE, Censo Demográfico 2010, resultados do universo por setor censitário, somados por bairro",
       url: "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2010/Resultados_do_Universo/Agregados_por_Setores_Censitarios/",
-      notaRenda: `Renda média do responsável com rendimento, corrigida pelo IPCA para julho de 2022 (fator ${fatorIpca}).`,
+      notaRenda: `Renda média do responsável com rendimento, corrigida pelo IPCA para julho de 2022 (fator ${String(fatorIpca).replace(".", ",")}).`,
       bairros: censo2010,
     },
     null,

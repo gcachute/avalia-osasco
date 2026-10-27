@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { num } from "@/lib/formato";
 import { formatar, type Formato } from "./mapa/indicadores";
 
 // Gráfico de linhas para séries históricas (anos no eixo x). Uma escala só; a referência da cidade
@@ -14,6 +15,13 @@ const formatarGrafico = (v: number, f: FormatoGrafico) =>
     : f === "milhoesReais"
       ? `R$ ${(v / 1e6).toLocaleString("pt-BR", { maximumFractionDigits: v >= 1e8 ? 0 : 1 })} mi`
       : formatar(v, f);
+// Marcas do eixo com as mesmas casas decimais em todas (0%, 50%, 100% e não 0,0%, 50%, 100,0%).
+const formatarMarca = (v: number, f: FormatoGrafico, passo: number) => {
+  const casas = Number.isInteger(passo) ? 0 : 1;
+  if (f === "pct") return `${num(v, casas)}%`;
+  if (f === "decimal" || f === "porMil") return num(v, casas);
+  return formatarGrafico(v, f);
+};
 
 export function GraficoLinha({
   series,
@@ -106,7 +114,7 @@ export function GraficoLinha({
           <g key={v}>
             <line x1={m.esq} x2={largura - m.dir} y1={py(v)} y2={py(v)} stroke="var(--grafico-grade)" strokeWidth={1} />
             <text x={m.esq - 6} y={py(v)} dy="0.32em" textAnchor="end" className="fill-slate-500 text-[10px] tabular-nums">
-              {formatarGrafico(v, formato)}
+              {formatarMarca(v, formato, passoY)}
             </text>
           </g>
         ))}

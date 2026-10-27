@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-27T22:28:11.345Z",
+ "geradoEm": "2026-10-27T23:42:23.821Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -36,7 +36,7 @@
  "notasVereadores": {
   "usaRequerimentos": false,
   "referencias": {
-   "legislacao": 1.3,
+   "legislacao": 1.2166666666666666,
    "requerimentos": 0.06802721088435373,
    "comissoes": 6,
    "eficiencia": 1.435114503816794
@@ -3109,7 +3109,7 @@
      ]
     },
     {
-     "key": "PDL-095/2025",
+     "key": "PDL-95/2025",
      "tipo": "PDL",
      "numero": 95,
      "ano": 2025,
@@ -4219,9 +4219,9 @@
      "ranking": 3
     },
     "B": {
-     "nota": 0.8875739644970415,
+     "nota": 0.9483667017913595,
      "componentes": {
-      "legislacao": 0.8875739644970415
+      "legislacao": 0.9483667017913595
      },
      "ranking": 6
     },
@@ -4241,7 +4241,7 @@
    },
    "coeficientes": {
     "participacao": 0.6153846153846154,
-    "producao": 0.8875739644970415,
+    "producao": 0.9483667017913595,
     "eficiencia": 0.8361702127659573
    },
    "rankings": {
@@ -4377,7 +4377,7 @@
     "projetosSubstantivos": 11,
     "projetosSimbolicos": 7,
     "pontosLegislacao": 14.4,
-    "honrarias": 11,
+    "honrarias": 10,
     "mocoes": 59,
     "requerimentos": 0,
     "requerimentosNaPauta": 0,
@@ -4498,7 +4498,7 @@
     },
     {
      "mes": "2025-12",
-     "proposicoes": 8
+     "proposicoes": 7
     },
     {
      "mes": "2026-01",
@@ -5770,23 +5770,6 @@
      ]
     },
     {
-     "key": "PDL-083/2025",
-     "tipo": "PDL",
-     "numero": 83,
-     "ano": 2025,
-     "autor": "laercio-mendonca",
-     "autores": [
-      "laercio-mendonca"
-     ],
-     "autorTexto": "Laércio Mendonça",
-     "ementa": "Concede o Diploma “Força de Segurança de Destaque” ao Inspetor Regional Paulo Siqueira, Subcomandante da Guarda Civil Municipal de Osasco, em reconhecimento à sua destacada trajetória profissional, liderança, inovação na gestão da corporação e relevantes serviços prestados à segurança pública e à comunidade.",
-     "sessao": "2025-12-09-o72",
-     "temas": [
-      "Segurança",
-      "Nomes e homenagens"
-     ]
-    },
-    {
      "key": "PDL-82/2025",
      "tipo": "PDL",
      "numero": 82,
@@ -6131,9 +6114,9 @@
      "ranking": 2
     },
     "B": {
-     "nota": 0.7535321821036107,
+     "nota": 0.8051439753983787,
      "componentes": {
-      "legislacao": 0.7535321821036107
+      "legislacao": 0.8051439753983787
      },
      "ranking": 8
     },
@@ -6157,7 +6140,7 @@
    },
    "coeficientes": {
     "participacao": 0.8072562358276644,
-    "producao": 0.8559327577184721,
+    "producao": 0.8817386543658561,
     "eficiencia": 0.7167173252279634
    },
    "rankings": {
@@ -6272,7 +6255,7 @@
     "projetosSubstantivos": 28,
     "projetosSimbolicos": 2,
     "pontosLegislacao": 29.4,
-    "honrarias": 9,
+    "honrarias": 8,
     "mocoes": 25,
     "requerimentos": 0,
     "requerimentosNaPauta": 2,
@@ -6361,7 +6344,7 @@
     },
     {
      "mes": "2025-09",
-     "proposicoes": 6
+     "proposicoes": 5
     },
     {
      "mes": "2025-10",
@@ -7857,7 +7840,7 @@
      ]
     },
     {
-     "key": "PDL-03/2025",
+     "key": "PDL-3/2025",
      "tipo": "PDL",
      "numero": 3,
      "ano": 2025,
@@ -7868,23 +7851,6 @@
      "autorTexto": "Ralfi Silva",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Drogaria Econômica.",
      "sessao": "2025-08-05-o38",
-     "temas": [
-      "Economia e emprego",
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-3/2025",
-     "tipo": "PDL",
-     "numero": 3,
-     "ano": 2025,
-     "autor": "ralfi-silva",
-     "autores": [
-      "ralfi-silva"
-     ],
-     "autorTexto": "RALFI",
-     "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Drogaria Econômica.",
-     "sessao": "2025-09-16-o50",
      "temas": [
       "Economia e emprego",
       "Nomes e homenagens"
@@ -10156,7 +10122,7 @@
     "projetosSubstantivos": 15,
     "projetosSimbolicos": 2,
     "pontosLegislacao": 15.4,
-    "honrarias": 10,
+    "honrarias": 9,
     "mocoes": 18,
     "requerimentos": 0,
     "requerimentosNaPauta": 0,
@@ -10289,7 +10255,7 @@
     },
     {
      "mes": "2026-05",
-     "proposicoes": 2
+     "proposicoes": 1
     },
     {
      "mes": "2026-06",
@@ -11422,7 +11388,7 @@
      ]
     },
     {
-     "key": "PLC-06/2026",
+     "key": "PLC-6/2026",
      "tipo": "PLC",
      "numero": 6,
      "ano": 2026,
@@ -11513,22 +11479,6 @@
      "autorTexto": "Heber do Juntoz",
      "ementa": "Dispõe sobre a concessão de Título de cidadão Osasquense ao Deputado Federal Kiko Celeguim.",
      "sessao": "2025-12-02-o70",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-088/2025",
-     "tipo": "PDL",
-     "numero": 88,
-     "ano": 2025,
-     "autor": "heber-do-juntoz",
-     "autores": [
-      "heber-do-juntoz"
-     ],
-     "autorTexto": "HEBER DO JUNTOZ",
-     "ementa": "Dispõe sobre a concessão de Título de cidadão Osasquense ao Deputado Federal Kiko Celeguim.",
-     "sessao": "2026-05-07-o24",
      "temas": [
       "Nomes e homenagens"
      ]
@@ -11778,9 +11728,9 @@
      "ranking": 15
     },
     "B": {
-     "nota": 0.8058608058608059,
+     "nota": 0.8610567514677104,
      "componentes": {
-      "legislacao": 0.8058608058608059
+      "legislacao": 0.8610567514677104
      },
      "ranking": 7
     },
@@ -11804,7 +11754,7 @@
    },
    "coeficientes": {
     "participacao": 0.6835052488691304,
-    "producao": 0.7779304029304029,
+    "producao": 0.8055283757338552,
     "eficiencia": 0.8653912148249827
    },
    "rankings": {
@@ -13289,9 +13239,9 @@
      "ranking": 1
     },
     "B": {
-     "nota": 0.4604918890633176,
+     "nota": 0.49203242941012026,
      "componentes": {
-      "legislacao": 0.4604918890633176
+      "legislacao": 0.49203242941012026
      },
      "ranking": 9
     },
@@ -13315,7 +13265,7 @@
    },
    "coeficientes": {
     "participacao": 0.8866213151927438,
-    "producao": 0.7302459445316588,
+    "producao": 0.7460162147050602,
     "eficiencia": 0.4288052373158756
    },
    "rankings": {
@@ -14922,9 +14872,9 @@
      "ranking": 20
     },
     "B": {
-     "nota": 0.41331802525832373,
+     "nota": 0.4416274790431405,
      "componentes": {
-      "legislacao": 0.41331802525832373
+      "legislacao": 0.4416274790431405
      },
      "ranking": 12
     },
@@ -14948,7 +14898,7 @@
    },
    "coeficientes": {
     "participacao": 0.11909203980099509,
-    "producao": 0.7066590126291619,
+    "producao": 0.7208137395215702,
     "eficiencia": 0.44398418376953486
    },
    "rankings": {
@@ -16476,9 +16426,9 @@
      "ranking": 8
     },
     "B": {
-     "nota": 0.4072398190045249,
+     "nota": 0.43513295729250606,
      "componentes": {
-      "legislacao": 0.4072398190045249
+      "legislacao": 0.43513295729250606
      },
      "ranking": 13
     },
@@ -16502,7 +16452,7 @@
    },
    "coeficientes": {
     "participacao": 0.735824553702078,
-    "producao": 0.7036199095022624,
+    "producao": 0.717566478646253,
     "eficiencia": 0.41808510638297874
    },
    "rankings": {
@@ -16612,7 +16562,7 @@
     "projetosSubstantivos": 14,
     "projetosSimbolicos": 9,
     "pontosLegislacao": 16.8,
-    "honrarias": 11,
+    "honrarias": 8,
     "mocoes": 67,
     "requerimentos": 0,
     "requerimentosNaPauta": 0,
@@ -16729,11 +16679,11 @@
     },
     {
      "mes": "2026-04",
-     "proposicoes": 8
+     "proposicoes": 6
     },
     {
      "mes": "2026-05",
-     "proposicoes": 4
+     "proposicoes": 3
     },
     {
      "mes": "2026-06",
@@ -17901,22 +17851,6 @@
      ]
     },
     {
-     "key": "PDL-098/2025",
-     "tipo": "PDL",
-     "numero": 98,
-     "ano": 2025,
-     "autor": "alexandre-capriotti",
-     "autores": [
-      "alexandre-capriotti"
-     ],
-     "autorTexto": "ALEXANDRE CAPRIOTTI",
-     "ementa": "Dispõe sobre a concessão da Medalha Antônio Raposo Tavares e Diploma Cidade de Osasco ao senhor Amarildo Rodrigues.",
-     "sessao": "2026-05-07-o24",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
      "key": "PL-97/2025",
      "tipo": "PL",
      "numero": 97,
@@ -17951,7 +17885,7 @@
      ]
     },
     {
-     "key": "PDL-092/2025",
+     "key": "PDL-92/2025",
      "tipo": "PDL",
      "numero": 92,
      "ano": 2025,
@@ -17962,22 +17896,6 @@
      "autorTexto": "Alexandre Capriotti",
      "ementa": "Dispõe sobre a concessão de Placa Comemorativa à DPA Formaturas.",
      "sessao": "2025-12-09-o72",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-92/2025",
-     "tipo": "PDL",
-     "numero": 92,
-     "ano": 2025,
-     "autor": "alexandre-capriotti",
-     "autores": [
-      "alexandre-capriotti"
-     ],
-     "autorTexto": "ALEXANDRE CAPRIOTTI",
-     "ementa": "Dispõe sobre a concessão de Placa Comemorativa à DPA Formaturas.",
-     "sessao": "2026-04-30-o22",
      "temas": [
       "Nomes e homenagens"
      ]
@@ -18035,7 +17953,7 @@
      ]
     },
     {
-     "key": "PDL-065/2025",
+     "key": "PDL-65/2025",
      "tipo": "PDL",
      "numero": 65,
      "ano": 2025,
@@ -18046,22 +17964,6 @@
      "autorTexto": "ALEXANDRE DE JESUS CAPRIOTTI",
      "ementa": "Dispõe sobre a concessão de Título de Cidadã Osasquense Senhora Elza Pereira Lopes Sena.",
      "sessao": "2025-11-06-o64",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-65/2025",
-     "tipo": "PDL",
-     "numero": 65,
-     "ano": 2025,
-     "autor": "alexandre-capriotti",
-     "autores": [
-      "alexandre-capriotti"
-     ],
-     "autorTexto": "ALEXANDRE CAPRIOTTI",
-     "ementa": "Dispõe sobre a concessão de Título de Cidadã Osasquense Senhora Elza Pereira Lopes Sena.",
-     "sessao": "2026-04-23-o20",
      "temas": [
       "Nomes e homenagens"
      ]
@@ -18649,9 +18551,9 @@
      "ranking": 5
     },
     "B": {
-     "nota": 0.9165302782324058,
+     "nota": 0.9793063246866803,
      "componentes": {
-      "legislacao": 0.9165302782324058
+      "legislacao": 0.9793063246866803
      },
      "ranking": 5
     },
@@ -18675,7 +18577,7 @@
    },
    "coeficientes": {
     "participacao": 0.4866682974559687,
-    "producao": 0.6040984724495363,
+    "producao": 0.6354864956766735,
     "eficiencia": 0.8801791713325866
    },
    "rankings": {
@@ -20459,11 +20361,11 @@
      "ranking": 17
     },
     "B": {
-     "nota": 0.31397174254317106,
+     "nota": 0.33547665641599106,
      "componentes": {
-      "legislacao": 0.31397174254317106
+      "legislacao": 0.33547665641599106
      },
-     "ranking": 16
+     "ranking": 15
     },
     "C": {
      "nota": 0.7916666666666666,
@@ -20485,1483 +20387,13 @@
    },
    "coeficientes": {
     "participacao": 0.35543844056102675,
-    "producao": 0.5528192046049188,
+    "producao": 0.5635716615413289,
     "eficiencia": 0.33446808510638293
    },
    "rankings": {
     "participacao": 17,
     "producao": 11,
-    "eficiencia": 17
-   }
-  },
-  {
-   "id": "carmonio-bastos",
-   "nome": "Carmônio Bastos",
-   "partido": "PODE",
-   "partidoNome": "Podemos",
-   "partidoLogo": "/partidos/pode.png",
-   "foto": "/fotos/vereadores/carmonio-bastos.jpg",
-   "fotoFonte": "Câmara Municipal de Osasco",
-   "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/carmonio-bastos",
-   "perfil": {
-    "nomeCompleto": "Carmônio Gonçalves Bastos",
-    "votos": 5631,
-    "telefone": "(11) 3699-9167",
-    "email": "carmoniobastos@osasco.sp.leg.br",
-    "naturalidade": "Pilão Arcado/BA",
-    "ocupacao": "Administrador",
-    "instrucao": "Ensino Fundamental Completo",
-    "redes": [
-     {
-      "rede": "instagram",
-      "url": "https://www.instagram.com/carmoniobastosoficial/"
-     },
-     {
-      "rede": "facebook",
-      "url": "https://www.facebook.com/carmonioOficial"
-     }
-    ],
-    "bio": [
-     "O vereador Carmônio Bastos (PODE) é um nordestino que se tornou um osasquense apaixonado. Nascido em Pilão Arcado (BA), ele chegou a Osasco em 1983 e se estabeleceu na região de Presidente Altino.",
-     "Carmônio iniciou sua carreira política em 2016, quando foi convidado pelo então prefeito Jorge Lapas a se candidatar a uma vaga no Legislativo osasquense. Embora não tenha sido eleito na época, ele continuou a se envolver nos bastidores da política local. Em 2018, o prefeito Rogério Lins (PODE) o convidou para assumir a Secretaria de Esportes, Recreação e Lazer (SEREL). Enquanto esteve à frente da SEREL, Carmônio liderou a modernização da estrutura e humanização dos serviços, promovendo uma verdadeira revolução na pasta."
-    ],
-    "comissoes": [
-     {
-      "nome": "Frente Parlamentar de Segurança Pública",
-      "url": "https://www.osasco.sp.leg.br/atividade-legislativa/comissoes/14",
-      "cargo": "Membro",
-      "tipo": "frente"
-     },
-     {
-      "nome": "Frente Parlamentar do Terceiro Setor",
-      "url": "https://www.osasco.sp.leg.br/atividade-legislativa/comissoes/36",
-      "cargo": "Membro",
-      "tipo": "frente"
-     },
-     {
-      "nome": "Frente Parlamentar em Defesa da Vida e da Família",
-      "url": "https://www.osasco.sp.leg.br/atividade-legislativa/comissoes/12",
-      "cargo": "Membro",
-      "tipo": "frente"
-     },
-     {
-      "nome": "Frente Parlamentar Evangélica",
-      "url": "https://www.osasco.sp.leg.br/atividade-legislativa/comissoes/24",
-      "cargo": "Membro",
-      "tipo": "frente"
-     },
-     {
-      "nome": "Frente Parlamentar Nossa História",
-      "url": "https://www.osasco.sp.leg.br/atividade-legislativa/comissoes/19",
-      "cargo": "Membro",
-      "tipo": "frente"
-     }
-    ],
-    "mesa": "Presidente"
-   },
-   "emExercicio": true,
-   "indicadores": {
-    "sessoes": 147,
-    "presencas": 136,
-    "faltas": 11,
-    "faltasJustificadas": 6,
-    "presenca": 0.9251700680272109,
-    "presencaAjustada": 0.9645390070921985,
-    "pontualidade": 0.9251700680272109,
-    "votos": {
-     "sim": 193,
-     "nao": 0,
-     "abstencao": 3,
-     "ausente": 37
-    },
-    "participacaoVotos": 0.8412017167381974,
-    "projetos": 6,
-    "projetosSubstantivos": 1,
-    "projetosSimbolicos": 5,
-    "pontosLegislacao": 4,
-    "honrarias": 7,
-    "mocoes": 21,
-    "requerimentos": 1,
-    "requerimentosNaPauta": 1,
-    "comissoes": 0,
-    "frentes": 5,
-    "pontosComissoes": 5.25,
-    "leisSancionadas": 2,
-    "vetosRecebidos": 0,
-    "adiadasPorAusencia": 6,
-    "producaoPorPresenca": 0.29411764705882354
-   },
-   "temas": [
-    {
-     "tema": "Nomes e homenagens",
-     "n": 5
-    },
-    {
-     "tema": "Datas e calendário",
-     "n": 1
-    },
-    {
-     "tema": "Saúde",
-     "n": 1
-    }
-   ],
-   "atividadePorMes": [
-    {
-     "mes": "2025-02",
-     "proposicoes": 1
-    },
-    {
-     "mes": "2025-03",
-     "proposicoes": 2
-    },
-    {
-     "mes": "2025-04",
-     "proposicoes": 1
-    },
-    {
-     "mes": "2025-05",
-     "proposicoes": 2
-    },
-    {
-     "mes": "2025-06",
-     "proposicoes": 2
-    },
-    {
-     "mes": "2025-07",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2025-08",
-     "proposicoes": 6
-    },
-    {
-     "mes": "2025-09",
-     "proposicoes": 2
-    },
-    {
-     "mes": "2025-10",
-     "proposicoes": 2
-    },
-    {
-     "mes": "2025-11",
-     "proposicoes": 4
-    },
-    {
-     "mes": "2025-12",
-     "proposicoes": 4
-    },
-    {
-     "mes": "2026-01",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2026-02",
-     "proposicoes": 2
-    },
-    {
-     "mes": "2026-03",
-     "proposicoes": 1
-    },
-    {
-     "mes": "2026-04",
-     "proposicoes": 3
-    },
-    {
-     "mes": "2026-05",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2026-06",
-     "proposicoes": 2
-    },
-    {
-     "mes": "2026-08",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2026-09",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2026-10",
-     "proposicoes": 0
-    }
-   ],
-   "presencaPorSessao": [
-    {
-     "sessao": "2025-02-06-o1",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-02-11-o2",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-02-13-o3",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-02-20-o5",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-02-25-o6",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-02-27-o7",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-03-06-o8",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-03-11-o9",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-03-13-o10",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-03-18-o11",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-03-20-o12",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-03-25-o13",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-03-27-o14",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-04-01-o15",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-04-03-o16",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-04-08-o17",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-04-10-o18",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-04-15-o19",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-04-22-o20",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-04-24-o21",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-04-29-o22",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-05-06-e1",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-05-06-o23",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-05-08-o24",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-05-13-o25",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-05-15-o26",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-05-20-o27",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-05-22-o28",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-05-27-o29",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-05-29-o30",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-06-03-o31",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-06-05-e2",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-06-05-e3",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-06-05-o32",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-06-10-o33",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-06-12-o34",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-06-17-o35",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-06-24-o36",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-06-26-o37",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-07-01-e4",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-07-01-e5",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-08-05-o38",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-08-07-o39",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-08-12-o40",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-08-14-o41",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-08-19-o42",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-08-21-o43",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-08-26-o44",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-08-28-o45",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-09-02-o46",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-09-04-o47",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-09-09-o48",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-09-11-o49",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-09-16-o50",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-09-18-o51",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-09-23-o52",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-09-25-o53",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-09-30-e6",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-09-30-o54",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-10-02-o55",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-10-07-o56",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-10-09-o57",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-10-14-o58",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-10-16-o59",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-10-21-o60",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-10-23-o61",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-10-30-o62",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-11-04-o63",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-11-06-o64",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-11-11-o65",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-11-13-o66",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-11-18-e7",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-11-18-o67",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-11-25-o68",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-11-27-o69",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-12-02-o70",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-12-04-o71",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-12-09-o72",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-12-11-o73",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-12-16-o74",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-12-18-e8",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2025-12-18-o75",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-01-27-e1",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-01-27-e2",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-02-03-o1",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-02-05-o2",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-02-10-o3",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-02-12-o4",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-02-24-o5",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-02-26-o6",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-03-03-o7",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-03-05-o8",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-03-10-o9",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-03-12-o10",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-03-17-e3",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-03-17-o11",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-03-19-o12",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-03-24-o13",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-03-26-o14",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-03-31-e4",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-03-31-o15",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-04-07-e5",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-04-07-o16",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-04-09-o17",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-04-14-o18",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-04-16-o19",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-04-23-o20",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-04-28-o21",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-04-30-o22",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-05-05-o23",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-05-07-o24",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-05-12-o25",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-05-14-o26",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-05-19-o27",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-05-21-o28",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-05-26-e6",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-05-26-o29",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-05-28-o30",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-06-02-o31",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-06-09-o32",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-06-11-o33",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-06-16-o34",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-06-18-o35",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-06-23-o36",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-06-25-e7",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-06-25-o37",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-08-04-o38",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-08-06-o39",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-08-11-o40",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-08-13-o41",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-08-18-o42",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-08-20-o43",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-08-25-o44",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-08-27-o45",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-09-01-o46",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-09-03-o47",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-09-08-o48",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-09-10-o49",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-09-15-o50",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-09-17-o51",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-09-22-o52",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-09-24-o53",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-09-29-o54",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-10-01-e8",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-10-01-o55",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-10-06-o56",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    },
-    {
-     "sessao": "2026-10-08-o57",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": true
-    }
-   ],
-   "proposicoes": [
-    {
-     "key": "PL-100/2026",
-     "tipo": "PL",
-     "numero": 100,
-     "ano": 2026,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "CARMÔNIO BASTOS",
-     "ementa": "Dispõe sobre a denominação do novo prédio da Câmara Municipal de Osasco.",
-     "sessao": "2026-04-28-o21",
-     "classe": "simbolico",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-31/2026",
-     "tipo": "PDL",
-     "numero": 31,
-     "ano": 2026,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "CARMÔNIO BASTOS",
-     "ementa": "Fica concedida Placa Comemorativa à Delegação Cidade-Irmã Tsu, em comemoração aos 50 anos da celebração do Convênio entre o município de Osasco e a cidade de Tsu, da Província de Mie, no Japão, em reconhecimento à histórica relação de cooperação amizade, e intercâmbio cultural, educacional, esportivo e econômico.",
-     "sessao": "2026-06-25-o37",
-     "temas": [
-      "Educação",
-      "Esporte, cultura e lazer",
-      "Economia e emprego",
-      "Nomes e homenagens",
-      "Gestão pública e transparência"
-     ]
-    },
-    {
-     "key": "PL-6/2026",
-     "tipo": "PL",
-     "numero": 6,
-     "ano": 2026,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "Carmônio Bastos",
-     "ementa": "Dispõe sobre a denominação do Parque Nordestino de Osasco.",
-     "sessao": "2026-02-03-o1",
-     "classe": "simbolico",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-1/2026",
-     "tipo": "PDL",
-     "numero": 1,
-     "ano": 2026,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "Carmônio Bastos",
-     "ementa": "Dispõe sobre a concessão de Título de cidadão osasquense ao senhor Guido Geuna, arquiteto e ex-prefeito (SINDACO) da cidade de Osasco, Itália.",
-     "sessao": "2026-02-03-o1",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PL-206/2025",
-     "tipo": "PL",
-     "numero": 206,
-     "ano": 2025,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "CARMONIO GONCALVES BASTOS",
-     "ementa": "Dispõe sobre a inserção da legislatura vigente da Câmara Municipal nas placas de inauguração de obras públicas de construção, revitalização, reforma ou ampliação realizadas no Município de Osasco, e dá outras providências.",
-     "sessao": "2025-11-06-o64",
-     "classe": "substantivo",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PL-125/2025",
-     "tipo": "PL",
-     "numero": 125,
-     "ano": 2025,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "Carmônio Bastos",
-     "ementa": "Dispõe sobre a denominação da viela Orlando Rocha Freixeda.",
-     "sessao": "2025-08-28-o45",
-     "classe": "simbolico",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PL-114/2025",
-     "tipo": "PL",
-     "numero": 114,
-     "ano": 2025,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "Cârmonio Bastos",
-     "ementa": "Dispõe sobre denominação da UBS Adalgiza Correia Soares.",
-     "sessao": "2025-08-05-o38",
-     "classe": "simbolico",
-     "temas": [
-      "Saúde",
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-077/2025",
-     "tipo": "PDL",
-     "numero": 77,
-     "ano": 2025,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "CARMONIO GONCALVES BASTOS",
-     "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Associação de Judô Kenshin, pelos relevantes serviços prestados à cidade de Osasco e à formação esportiva, educacional e humana de seus cidadãos.",
-     "sessao": "2025-11-13-o66",
-     "temas": [
-      "Educação",
-      "Esporte, cultura e lazer",
-      "Entidades e utilidade pública",
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-076/2025",
-     "tipo": "PDL",
-     "numero": 76,
-     "ano": 2025,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "CARMONIO GONCALVES BASTOS",
-     "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Senhor Nelson Shigueki Koh.",
-     "sessao": "2025-11-13-o66",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-76/2025",
-     "tipo": "PDL",
-     "numero": 76,
-     "ano": 2025,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "CARMÔNIO BASTOS",
-     "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Senhor Nelson Shigueki Koh E PROJETO DE DECRETO LEGISLATIVO Nº 77/2025 - CARMÔNIO BASTOS - Dispõe sobre a concessão de Placa Comemorativa à Associação de Judô Kenshin, pelos relevantes serviços prestados à cidade de Osasco e à formação esportiva, educacional e humana de seus cidadãos.",
-     "sessao": "2025-12-18-o75",
-     "temas": [
-      "Educação",
-      "Esporte, cultura e lazer",
-      "Entidades e utilidade pública",
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-35/2025",
-     "tipo": "PDL",
-     "numero": 35,
-     "ano": 2025,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "Carmônio Bastos",
-     "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao senhor Gustavo Albano Dias da Silva.",
-     "sessao": "2025-08-26-o44",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PL-34/2025",
-     "tipo": "PL",
-     "numero": 34,
-     "ano": 2025,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "Carmônio Bastos",
-     "ementa": "Institui a Festa da Família no Calendário Oficial.",
-     "sessao": "2025-04-22-o20",
-     "classe": "simbolico",
-     "temas": [
-      "Datas e calendário"
-     ]
-    },
-    {
-     "key": "PDL-1/2025",
-     "tipo": "PDL",
-     "numero": 1,
-     "ano": 2025,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "autorTexto": "Carmônio Bastos",
-     "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao senhor Vitor Dantas Magnani.",
-     "sessao": "2025-03-06-o8",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    }
-   ],
-   "requerimentos": [
-    {
-     "key": "REQ-7/2026",
-     "tipo": "REQ",
-     "numero": 7,
-     "ano": 2026,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "ementa": "Requer informações do Executivo Municipal sobre o descarte dos livros e demais impressos pertencentes ao acervo da Biblioteca Municipal Monteiro Lobato, conforme divulgado amplamente pela imprensa na semana passada e, ainda, informações sobre o armazenamento, a conservação e o manuseio, com possível risco à saúde, do material.",
-     "informacao": true,
-     "sessao": "2026-04-28-o21"
-    }
-   ],
-   "requerimentosNaPauta": [
-    {
-     "key": "REQ-7/2026",
-     "numero": 7,
-     "ano": 2026,
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "ementa": "Requer informações do Executivo Municipal sobre o descarte dos livros e demais impressos pertencentes ao acervo da Biblioteca Municipal Monteiro Lobato, conforme divulgado amplamente pela imprensa na semana passada e, ainda, informações sobre o armazenamento, a conservação e o manuseio, com possível risco à saúde, do material.",
-     "sessoes": 1,
-     "primeira": "2026-04-28-o21",
-     "ultima": "2026-04-28-o21",
-     "status": "APROVADO",
-     "aindaNaPauta": false
-    }
-   ],
-   "leis": [
-    {
-     "key": "L-5.454",
-     "lei": "Lei nº 5.454",
-     "data": "3 de março de 2026",
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "resumo": "dispõe sobre a inserção da legislatura vigente da Câmara Municipal nas placas de inauguração de obras públicas de construção, revitalização, reforma ou ampliação realizadas no Município de Osasco, de autoria do vereador Carmônio Bastos e outros vereadores.",
-     "sessao": "2026-03-05-o8",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "L-5.458",
-     "lei": "Lei nº 5.458",
-     "data": "5 de março de 2026",
-     "autor": "carmonio-bastos",
-     "autores": [
-      "carmonio-bastos"
-     ],
-     "resumo": "dispõe sobre a denominação do Parque Nordestino de Osasco, de autoria do vereador Carmônio Bastos.",
-     "sessao": "2026-03-10-o9",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    }
-   ],
-   "vetos": [],
-   "adiadas": [
-    {
-     "sessao": "2025-02-11-o2",
-     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 21/2025 – CARMÔNIO BASTOS – Para o time de vôlei feminino de Osasco pela conquista do tetracampeonato da Copa Brasil Feminina de Vôlei.",
-     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 21/2025",
-     "ementa": "Para o time de vôlei feminino de Osasco pela conquista do tetracampeonato da Copa Brasil Feminina de Vôlei.",
-     "temas": [
-      "Mulheres",
-      "Esporte, cultura e lazer"
-     ]
-    },
-    {
-     "sessao": "2025-02-13-o3",
-     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 21/2025 – CARMÔNIO BASTOS – Para o time de vôlei feminino de Osasco pela conquista do tetracampeonato da Copa Brasil Feminina de Vôlei.",
-     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 21/2025",
-     "ementa": "Para o time de vôlei feminino de Osasco pela conquista do tetracampeonato da Copa Brasil Feminina de Vôlei.",
-     "temas": [
-      "Mulheres",
-      "Esporte, cultura e lazer"
-     ]
-    },
-    {
-     "sessao": "2025-05-08-o24",
-     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 166/2025 – CARMÔNIO BASTOS - À equipe de vôlei feminino do Osasco Voleibol Clube pela brilhante conquista da Superliga Feminina de Vôlei 2025.",
-     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 166/2025",
-     "ementa": "À equipe de vôlei feminino do Osasco Voleibol Clube pela brilhante conquista da Superliga Feminina de Vôlei 2025.",
-     "temas": [
-      "Mulheres"
-     ]
-    },
-    {
-     "sessao": "2025-09-23-o52",
-     "item": "MOÇÃO DE RECONHECIMENTO Nº 460/2025 – CARMÔNIO BASTOS – Às atletas Gabriela Silva Oliveira e Isabella Akemi Ishikawa, que representaram o Brasil no Campeonato Sul-Americano de Ginástica Rítmica, conquistando o primeiro lugar.",
-     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 460/2025",
-     "ementa": "Às atletas Gabriela Silva Oliveira e Isabella Akemi Ishikawa, que representaram o Brasil no Campeonato Sul-Americano de Ginástica Rítmica, conquistando o primeiro lugar.",
-     "temas": [
-      "Esporte, cultura e lazer"
-     ]
-    },
-    {
-     "sessao": "2025-09-30-o54",
-     "item": "MOÇÃO DE RECONHECIMENTO Nº 460/2025 – CARMÔNIO BASTOS – Às atletas Gabriela Silva Oliveira e Isabella Akemi Ishikawa, que representaram o Brasil no Campeonato Sul-Americano de Ginástica Rítmica, conquistando o primeiro lugar.",
-     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 460/2025",
-     "ementa": "Às atletas Gabriela Silva Oliveira e Isabella Akemi Ishikawa, que representaram o Brasil no Campeonato Sul-Americano de Ginástica Rítmica, conquistando o primeiro lugar.",
-     "temas": [
-      "Esporte, cultura e lazer"
-     ]
-    },
-    {
-     "sessao": "2026-03-05-o8",
-     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 20/2026 – CARMÔNIO BASTOS – Ao Vôlei Osasco pela conquista do título da Copa Brasil Feminina de Vôlei 2026, em Londrina - PR.",
-     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 20/2026",
-     "ementa": "Ao Vôlei Osasco pela conquista do título da Copa Brasil Feminina de Vôlei 2026, em Londrina – PR.",
-     "temas": [
-      "Mulheres"
-     ]
-    }
-   ],
-   "pilares": {
-    "A": {
-     "nota": 0.7280042918454936,
-     "componentes": {
-      "presenca": 1,
-      "votacoes": 0.4560085836909873
-     },
-     "ranking": 13
-    },
-    "B": {
-     "nota": 0.20931449502878072,
-     "componentes": {
-      "legislacao": 0.20931449502878072
-     },
-     "ranking": 21
-    },
-    "C": {
-     "nota": 0.875,
-     "componentes": {
-      "requerimentos": null,
-      "comissoes": 0.875
-     },
-     "ranking": 6
-    },
-    "D": {
-     "nota": null,
-     "componentes": {}
-    },
-    "E": {
-     "nota": 0.8639455782312926,
-     "componentes": {},
-     "ranking": 5
-    }
-   },
-   "coeficientes": {
-    "participacao": 0.7959749350383931,
-    "producao": 0.5421572475143903,
-    "eficiencia": 0.20494367959949936
-   },
-   "rankings": {
-    "participacao": 7,
-    "producao": 12,
-    "eficiencia": 21
+    "eficiencia": 16
    }
   },
   {
@@ -22073,7 +20505,7 @@
     "projetosSubstantivos": 5,
     "projetosSimbolicos": 10,
     "pontosLegislacao": 7,
-    "honrarias": 12,
+    "honrarias": 10,
     "mocoes": 48,
     "requerimentos": 0,
     "requerimentosNaPauta": 0,
@@ -22162,7 +20594,7 @@
     },
     {
      "mes": "2025-11",
-     "proposicoes": 4
+     "proposicoes": 3
     },
     {
      "mes": "2025-12",
@@ -22186,7 +20618,7 @@
     },
     {
      "mes": "2026-05",
-     "proposicoes": 6
+     "proposicoes": 5
     },
     {
      "mes": "2026-06",
@@ -23314,22 +21746,6 @@
      ]
     },
     {
-     "key": "PDL-004/2026",
-     "tipo": "PDL",
-     "numero": 4,
-     "ano": 2026,
-     "autor": "guilherme-prado",
-     "autores": [
-      "guilherme-prado"
-     ],
-     "autorTexto": "GUILHERME PRADO",
-     "ementa": "Dispõe sobre a concessão de Cartão de Prata para o Senhor Claudio Monteiro Júnior.",
-     "sessao": "2026-05-07-o24",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
      "key": "PL-3/2026",
      "tipo": "PL",
      "numero": 3,
@@ -23430,7 +21846,7 @@
      ]
     },
     {
-     "key": "PDL-067/2025",
+     "key": "PDL-67/2025",
      "tipo": "PDL",
      "numero": 67,
      "ano": 2025,
@@ -23441,22 +21857,6 @@
      "autorTexto": "GUILHERME DE PRADO SOUZA",
      "ementa": "Dispõe sobre concessão de Diploma Líder Comunitário ao senhor Antônio Vieira da Silva - Tonão",
      "sessao": "2025-11-06-o64",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-67/2025",
-     "tipo": "PDL",
-     "numero": 67,
-     "ano": 2025,
-     "autor": "guilherme-prado",
-     "autores": [
-      "guilherme-prado"
-     ],
-     "autorTexto": "GUILHERME PRADO",
-     "ementa": "Dispõe sobre a concessão de Diploma de Líder Comunitário ao Senhor Antônio Vieira da Silva – Tonão.",
-     "sessao": "2025-11-11-o65",
      "temas": [
       "Nomes e homenagens"
      ]
@@ -23713,9 +22113,9 @@
      "ranking": 14
     },
     "B": {
-     "nota": 0.3663003663003663,
+     "nota": 0.39138943248532293,
      "componentes": {
-      "legislacao": 0.3663003663003663
+      "legislacao": 0.39138943248532293
      },
      "ranking": 14
     },
@@ -23739,13 +22139,1464 @@
    },
    "coeficientes": {
     "participacao": 0.6758223837480198,
-    "producao": 0.5373168498168498,
+    "producao": 0.5498613829093282,
     "eficiencia": 0.3810671542553191
    },
    "rankings": {
     "participacao": 11,
-    "producao": 13,
+    "producao": 12,
     "eficiencia": 15
+   }
+  },
+  {
+   "id": "carmonio-bastos",
+   "nome": "Carmônio Bastos",
+   "partido": "PODE",
+   "partidoNome": "Podemos",
+   "partidoLogo": "/partidos/pode.png",
+   "foto": "/fotos/vereadores/carmonio-bastos.jpg",
+   "fotoFonte": "Câmara Municipal de Osasco",
+   "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/carmonio-bastos",
+   "perfil": {
+    "nomeCompleto": "Carmônio Gonçalves Bastos",
+    "votos": 5631,
+    "telefone": "(11) 3699-9167",
+    "email": "carmoniobastos@osasco.sp.leg.br",
+    "naturalidade": "Pilão Arcado/BA",
+    "ocupacao": "Administrador",
+    "instrucao": "Ensino Fundamental Completo",
+    "redes": [
+     {
+      "rede": "instagram",
+      "url": "https://www.instagram.com/carmoniobastosoficial/"
+     },
+     {
+      "rede": "facebook",
+      "url": "https://www.facebook.com/carmonioOficial"
+     }
+    ],
+    "bio": [
+     "O vereador Carmônio Bastos (PODE) é um nordestino que se tornou um osasquense apaixonado. Nascido em Pilão Arcado (BA), ele chegou a Osasco em 1983 e se estabeleceu na região de Presidente Altino.",
+     "Carmônio iniciou sua carreira política em 2016, quando foi convidado pelo então prefeito Jorge Lapas a se candidatar a uma vaga no Legislativo osasquense. Embora não tenha sido eleito na época, ele continuou a se envolver nos bastidores da política local. Em 2018, o prefeito Rogério Lins (PODE) o convidou para assumir a Secretaria de Esportes, Recreação e Lazer (SEREL). Enquanto esteve à frente da SEREL, Carmônio liderou a modernização da estrutura e humanização dos serviços, promovendo uma verdadeira revolução na pasta."
+    ],
+    "comissoes": [
+     {
+      "nome": "Frente Parlamentar de Segurança Pública",
+      "url": "https://www.osasco.sp.leg.br/atividade-legislativa/comissoes/14",
+      "cargo": "Membro",
+      "tipo": "frente"
+     },
+     {
+      "nome": "Frente Parlamentar do Terceiro Setor",
+      "url": "https://www.osasco.sp.leg.br/atividade-legislativa/comissoes/36",
+      "cargo": "Membro",
+      "tipo": "frente"
+     },
+     {
+      "nome": "Frente Parlamentar em Defesa da Vida e da Família",
+      "url": "https://www.osasco.sp.leg.br/atividade-legislativa/comissoes/12",
+      "cargo": "Membro",
+      "tipo": "frente"
+     },
+     {
+      "nome": "Frente Parlamentar Evangélica",
+      "url": "https://www.osasco.sp.leg.br/atividade-legislativa/comissoes/24",
+      "cargo": "Membro",
+      "tipo": "frente"
+     },
+     {
+      "nome": "Frente Parlamentar Nossa História",
+      "url": "https://www.osasco.sp.leg.br/atividade-legislativa/comissoes/19",
+      "cargo": "Membro",
+      "tipo": "frente"
+     }
+    ],
+    "mesa": "Presidente"
+   },
+   "emExercicio": true,
+   "indicadores": {
+    "sessoes": 147,
+    "presencas": 136,
+    "faltas": 11,
+    "faltasJustificadas": 6,
+    "presenca": 0.9251700680272109,
+    "presencaAjustada": 0.9645390070921985,
+    "pontualidade": 0.9251700680272109,
+    "votos": {
+     "sim": 193,
+     "nao": 0,
+     "abstencao": 3,
+     "ausente": 37
+    },
+    "participacaoVotos": 0.8412017167381974,
+    "projetos": 6,
+    "projetosSubstantivos": 1,
+    "projetosSimbolicos": 5,
+    "pontosLegislacao": 4,
+    "honrarias": 6,
+    "mocoes": 21,
+    "requerimentos": 1,
+    "requerimentosNaPauta": 1,
+    "comissoes": 0,
+    "frentes": 5,
+    "pontosComissoes": 5.25,
+    "leisSancionadas": 2,
+    "vetosRecebidos": 0,
+    "adiadasPorAusencia": 6,
+    "producaoPorPresenca": 0.29411764705882354
+   },
+   "temas": [
+    {
+     "tema": "Nomes e homenagens",
+     "n": 5
+    },
+    {
+     "tema": "Datas e calendário",
+     "n": 1
+    },
+    {
+     "tema": "Saúde",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 6
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 4
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 3
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-10",
+     "proposicoes": 0
+    }
+   ],
+   "presencaPorSessao": [
+    {
+     "sessao": "2025-02-06-o1",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-02-11-o2",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-02-13-o3",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-02-20-o5",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-02-25-o6",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-02-27-o7",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-03-06-o8",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-03-11-o9",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-03-13-o10",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-03-18-o11",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-03-20-o12",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-03-25-o13",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-03-27-o14",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-04-01-o15",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-04-03-o16",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-04-08-o17",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-04-10-o18",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-04-15-o19",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-04-22-o20",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-04-24-o21",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-04-29-o22",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-05-06-e1",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-05-06-o23",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-05-08-o24",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-05-13-o25",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-05-15-o26",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-05-20-o27",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-05-22-o28",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-05-27-o29",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-05-29-o30",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-06-03-o31",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-06-05-e2",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-06-05-e3",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-06-05-o32",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-06-10-o33",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-06-12-o34",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-06-17-o35",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-06-24-o36",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-06-26-o37",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-07-01-e4",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-07-01-e5",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-08-05-o38",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-08-07-o39",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-08-12-o40",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-08-14-o41",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-08-19-o42",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-08-21-o43",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-08-26-o44",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-08-28-o45",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-09-02-o46",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-09-04-o47",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-09-09-o48",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-09-11-o49",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-09-16-o50",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-09-18-o51",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-09-23-o52",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-09-25-o53",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-09-30-e6",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-09-30-o54",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-10-02-o55",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-10-07-o56",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-10-09-o57",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-10-14-o58",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-10-16-o59",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-10-21-o60",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-10-23-o61",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-10-30-o62",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-11-04-o63",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-11-06-o64",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-11-11-o65",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-11-13-o66",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-11-18-e7",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-11-18-o67",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-11-25-o68",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-11-27-o69",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-12-02-o70",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-12-04-o71",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-12-09-o72",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-12-11-o73",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-12-16-o74",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-12-18-e8",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2025-12-18-o75",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-01-27-e1",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-01-27-e2",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-02-03-o1",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-02-05-o2",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-02-10-o3",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-02-12-o4",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-02-24-o5",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-02-26-o6",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-03-03-o7",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-03-05-o8",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-03-10-o9",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-03-12-o10",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-03-17-e3",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-03-17-o11",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-03-19-o12",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-03-24-o13",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-03-26-o14",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-03-31-e4",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-03-31-o15",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-04-07-e5",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-04-07-o16",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-04-09-o17",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-04-14-o18",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-04-16-o19",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-04-23-o20",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-04-28-o21",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-04-30-o22",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-05-05-o23",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-05-07-o24",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-05-12-o25",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-05-14-o26",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-05-19-o27",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-05-21-o28",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-05-26-e6",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-05-26-o29",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-05-28-o30",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-06-02-o31",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-06-09-o32",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-06-11-o33",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-06-16-o34",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-06-18-o35",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-06-23-o36",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-06-25-e7",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-06-25-o37",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-08-04-o38",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-08-06-o39",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-08-11-o40",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-08-13-o41",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-08-18-o42",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-08-20-o43",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-08-25-o44",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-08-27-o45",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-09-01-o46",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-09-03-o47",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-09-08-o48",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-09-10-o49",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-09-15-o50",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-09-17-o51",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-09-22-o52",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-09-24-o53",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-09-29-o54",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-10-01-e8",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-10-01-o55",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-10-06-o56",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    },
+    {
+     "sessao": "2026-10-08-o57",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": true
+    }
+   ],
+   "proposicoes": [
+    {
+     "key": "PL-100/2026",
+     "tipo": "PL",
+     "numero": 100,
+     "ano": 2026,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "CARMÔNIO BASTOS",
+     "ementa": "Dispõe sobre a denominação do novo prédio da Câmara Municipal de Osasco.",
+     "sessao": "2026-04-28-o21",
+     "classe": "simbolico",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "PDL-31/2026",
+     "tipo": "PDL",
+     "numero": 31,
+     "ano": 2026,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "CARMÔNIO BASTOS",
+     "ementa": "Fica concedida Placa Comemorativa à Delegação Cidade-Irmã Tsu, em comemoração aos 50 anos da celebração do Convênio entre o município de Osasco e a cidade de Tsu, da Província de Mie, no Japão, em reconhecimento à histórica relação de cooperação amizade, e intercâmbio cultural, educacional, esportivo e econômico.",
+     "sessao": "2026-06-25-o37",
+     "temas": [
+      "Educação",
+      "Esporte, cultura e lazer",
+      "Economia e emprego",
+      "Nomes e homenagens",
+      "Gestão pública e transparência"
+     ]
+    },
+    {
+     "key": "PL-6/2026",
+     "tipo": "PL",
+     "numero": 6,
+     "ano": 2026,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "Carmônio Bastos",
+     "ementa": "Dispõe sobre a denominação do Parque Nordestino de Osasco.",
+     "sessao": "2026-02-03-o1",
+     "classe": "simbolico",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "PDL-1/2026",
+     "tipo": "PDL",
+     "numero": 1,
+     "ano": 2026,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "Carmônio Bastos",
+     "ementa": "Dispõe sobre a concessão de Título de cidadão osasquense ao senhor Guido Geuna, arquiteto e ex-prefeito (SINDACO) da cidade de Osasco, Itália.",
+     "sessao": "2026-02-03-o1",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "PL-206/2025",
+     "tipo": "PL",
+     "numero": 206,
+     "ano": 2025,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "CARMONIO GONCALVES BASTOS",
+     "ementa": "Dispõe sobre a inserção da legislatura vigente da Câmara Municipal nas placas de inauguração de obras públicas de construção, revitalização, reforma ou ampliação realizadas no Município de Osasco, e dá outras providências.",
+     "sessao": "2025-11-06-o64",
+     "classe": "substantivo",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "PL-125/2025",
+     "tipo": "PL",
+     "numero": 125,
+     "ano": 2025,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "Carmônio Bastos",
+     "ementa": "Dispõe sobre a denominação da viela Orlando Rocha Freixeda.",
+     "sessao": "2025-08-28-o45",
+     "classe": "simbolico",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "PL-114/2025",
+     "tipo": "PL",
+     "numero": 114,
+     "ano": 2025,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "Cârmonio Bastos",
+     "ementa": "Dispõe sobre denominação da UBS Adalgiza Correia Soares.",
+     "sessao": "2025-08-05-o38",
+     "classe": "simbolico",
+     "temas": [
+      "Saúde",
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "PDL-77/2025",
+     "tipo": "PDL",
+     "numero": 77,
+     "ano": 2025,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "CARMONIO GONCALVES BASTOS",
+     "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Associação de Judô Kenshin, pelos relevantes serviços prestados à cidade de Osasco e à formação esportiva, educacional e humana de seus cidadãos.",
+     "sessao": "2025-11-13-o66",
+     "temas": [
+      "Educação",
+      "Esporte, cultura e lazer",
+      "Entidades e utilidade pública",
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "PDL-76/2025",
+     "tipo": "PDL",
+     "numero": 76,
+     "ano": 2025,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "CARMONIO GONCALVES BASTOS",
+     "ementa": "Dispõe sobre a concessão de Cartão de Prata ao Senhor Nelson Shigueki Koh.",
+     "sessao": "2025-11-13-o66",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "PDL-35/2025",
+     "tipo": "PDL",
+     "numero": 35,
+     "ano": 2025,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "Carmônio Bastos",
+     "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao senhor Gustavo Albano Dias da Silva.",
+     "sessao": "2025-08-26-o44",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "PL-34/2025",
+     "tipo": "PL",
+     "numero": 34,
+     "ano": 2025,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "Carmônio Bastos",
+     "ementa": "Institui a Festa da Família no Calendário Oficial.",
+     "sessao": "2025-04-22-o20",
+     "classe": "simbolico",
+     "temas": [
+      "Datas e calendário"
+     ]
+    },
+    {
+     "key": "PDL-1/2025",
+     "tipo": "PDL",
+     "numero": 1,
+     "ano": 2025,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "autorTexto": "Carmônio Bastos",
+     "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao senhor Vitor Dantas Magnani.",
+     "sessao": "2025-03-06-o8",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    }
+   ],
+   "requerimentos": [
+    {
+     "key": "REQ-7/2026",
+     "tipo": "REQ",
+     "numero": 7,
+     "ano": 2026,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "ementa": "Requer informações do Executivo Municipal sobre o descarte dos livros e demais impressos pertencentes ao acervo da Biblioteca Municipal Monteiro Lobato, conforme divulgado amplamente pela imprensa na semana passada e, ainda, informações sobre o armazenamento, a conservação e o manuseio, com possível risco à saúde, do material.",
+     "informacao": true,
+     "sessao": "2026-04-28-o21"
+    }
+   ],
+   "requerimentosNaPauta": [
+    {
+     "key": "REQ-7/2026",
+     "numero": 7,
+     "ano": 2026,
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "ementa": "Requer informações do Executivo Municipal sobre o descarte dos livros e demais impressos pertencentes ao acervo da Biblioteca Municipal Monteiro Lobato, conforme divulgado amplamente pela imprensa na semana passada e, ainda, informações sobre o armazenamento, a conservação e o manuseio, com possível risco à saúde, do material.",
+     "sessoes": 1,
+     "primeira": "2026-04-28-o21",
+     "ultima": "2026-04-28-o21",
+     "status": "APROVADO",
+     "aindaNaPauta": false
+    }
+   ],
+   "leis": [
+    {
+     "key": "L-5.454",
+     "lei": "Lei nº 5.454",
+     "data": "3 de março de 2026",
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "resumo": "dispõe sobre a inserção da legislatura vigente da Câmara Municipal nas placas de inauguração de obras públicas de construção, revitalização, reforma ou ampliação realizadas no Município de Osasco, de autoria do vereador Carmônio Bastos e outros vereadores.",
+     "sessao": "2026-03-05-o8",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "L-5.458",
+     "lei": "Lei nº 5.458",
+     "data": "5 de março de 2026",
+     "autor": "carmonio-bastos",
+     "autores": [
+      "carmonio-bastos"
+     ],
+     "resumo": "dispõe sobre a denominação do Parque Nordestino de Osasco, de autoria do vereador Carmônio Bastos.",
+     "sessao": "2026-03-10-o9",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    }
+   ],
+   "vetos": [],
+   "adiadas": [
+    {
+     "sessao": "2025-02-11-o2",
+     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 21/2025 – CARMÔNIO BASTOS – Para o time de vôlei feminino de Osasco pela conquista do tetracampeonato da Copa Brasil Feminina de Vôlei.",
+     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 21/2025",
+     "ementa": "Para o time de vôlei feminino de Osasco pela conquista do tetracampeonato da Copa Brasil Feminina de Vôlei.",
+     "temas": [
+      "Mulheres",
+      "Esporte, cultura e lazer"
+     ]
+    },
+    {
+     "sessao": "2025-02-13-o3",
+     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 21/2025 – CARMÔNIO BASTOS – Para o time de vôlei feminino de Osasco pela conquista do tetracampeonato da Copa Brasil Feminina de Vôlei.",
+     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 21/2025",
+     "ementa": "Para o time de vôlei feminino de Osasco pela conquista do tetracampeonato da Copa Brasil Feminina de Vôlei.",
+     "temas": [
+      "Mulheres",
+      "Esporte, cultura e lazer"
+     ]
+    },
+    {
+     "sessao": "2025-05-08-o24",
+     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 166/2025 – CARMÔNIO BASTOS - À equipe de vôlei feminino do Osasco Voleibol Clube pela brilhante conquista da Superliga Feminina de Vôlei 2025.",
+     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 166/2025",
+     "ementa": "À equipe de vôlei feminino do Osasco Voleibol Clube pela brilhante conquista da Superliga Feminina de Vôlei 2025.",
+     "temas": [
+      "Mulheres"
+     ]
+    },
+    {
+     "sessao": "2025-09-23-o52",
+     "item": "MOÇÃO DE RECONHECIMENTO Nº 460/2025 – CARMÔNIO BASTOS – Às atletas Gabriela Silva Oliveira e Isabella Akemi Ishikawa, que representaram o Brasil no Campeonato Sul-Americano de Ginástica Rítmica, conquistando o primeiro lugar.",
+     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 460/2025",
+     "ementa": "Às atletas Gabriela Silva Oliveira e Isabella Akemi Ishikawa, que representaram o Brasil no Campeonato Sul-Americano de Ginástica Rítmica, conquistando o primeiro lugar.",
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
+    },
+    {
+     "sessao": "2025-09-30-o54",
+     "item": "MOÇÃO DE RECONHECIMENTO Nº 460/2025 – CARMÔNIO BASTOS – Às atletas Gabriela Silva Oliveira e Isabella Akemi Ishikawa, que representaram o Brasil no Campeonato Sul-Americano de Ginástica Rítmica, conquistando o primeiro lugar.",
+     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 460/2025",
+     "ementa": "Às atletas Gabriela Silva Oliveira e Isabella Akemi Ishikawa, que representaram o Brasil no Campeonato Sul-Americano de Ginástica Rítmica, conquistando o primeiro lugar.",
+     "temas": [
+      "Esporte, cultura e lazer"
+     ]
+    },
+    {
+     "sessao": "2026-03-05-o8",
+     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 20/2026 – CARMÔNIO BASTOS – Ao Vôlei Osasco pela conquista do título da Copa Brasil Feminina de Vôlei 2026, em Londrina - PR.",
+     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 20/2026",
+     "ementa": "Ao Vôlei Osasco pela conquista do título da Copa Brasil Feminina de Vôlei 2026, em Londrina – PR.",
+     "temas": [
+      "Mulheres"
+     ]
+    }
+   ],
+   "pilares": {
+    "A": {
+     "nota": 0.7280042918454936,
+     "componentes": {
+      "presenca": 1,
+      "votacoes": 0.4560085836909873
+     },
+     "ranking": 13
+    },
+    "B": {
+     "nota": 0.22365110427732737,
+     "componentes": {
+      "legislacao": 0.22365110427732737
+     },
+     "ranking": 21
+    },
+    "C": {
+     "nota": 0.875,
+     "componentes": {
+      "requerimentos": null,
+      "comissoes": 0.875
+     },
+     "ranking": 6
+    },
+    "D": {
+     "nota": null,
+     "componentes": {}
+    },
+    "E": {
+     "nota": 0.8639455782312926,
+     "componentes": {},
+     "ranking": 5
+    }
+   },
+   "coeficientes": {
+    "participacao": 0.7959749350383931,
+    "producao": 0.5493255521386637,
+    "eficiencia": 0.20494367959949936
+   },
+   "rankings": {
+    "participacao": 7,
+    "producao": 13,
+    "eficiencia": 21
    }
   },
   {
@@ -25725,9 +25576,9 @@
      "ranking": 16
     },
     "B": {
-     "nota": 0.41862899005756143,
+     "nota": 0.44730220855465475,
      "componentes": {
-      "legislacao": 0.41862899005756143
+      "legislacao": 0.44730220855465475
      },
      "ranking": 11
     },
@@ -25751,7 +25602,7 @@
    },
    "coeficientes": {
     "participacao": 0.26913940545676673,
-    "producao": 0.5218144950287807,
+    "producao": 0.5361511042773274,
     "eficiencia": 0.4764502636843062
    },
    "rankings": {
@@ -25810,11 +25661,11 @@
      "ausente": 162
     },
     "participacaoVotos": 0.625,
-    "projetos": 20,
-    "projetosSubstantivos": 12,
+    "projetos": 19,
+    "projetosSubstantivos": 11,
     "projetosSimbolicos": 8,
-    "pontosLegislacao": 15.6,
-    "honrarias": 14,
+    "pontosLegislacao": 14.6,
+    "honrarias": 8,
     "mocoes": 38,
     "requerimentos": 0,
     "requerimentosNaPauta": 1,
@@ -25824,7 +25675,7 @@
     "leisSancionadas": 2,
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 74,
-    "producaoPorPresenca": 2.0526315789473686
+    "producaoPorPresenca": 1.9210526315789473
    },
    "temas": [
     {
@@ -25907,15 +25758,15 @@
     },
     {
      "mes": "2026-02",
-     "proposicoes": 6
-    },
-    {
-     "mes": "2026-03",
      "proposicoes": 3
     },
     {
+     "mes": "2026-03",
+     "proposicoes": 1
+    },
+    {
      "mes": "2026-04",
-     "proposicoes": 6
+     "proposicoes": 4
     },
     {
      "mes": "2026-05",
@@ -26921,7 +26772,7 @@
      "temas": []
     },
     {
-     "key": "PDL-073/2025",
+     "key": "PDL-73/2025",
      "tipo": "PDL",
      "numero": 73,
      "ano": 2025,
@@ -26937,23 +26788,7 @@
      ]
     },
     {
-     "key": "PDL-73/2025",
-     "tipo": "PDL",
-     "numero": 73,
-     "ano": 2025,
-     "autor": "lucia-da-saude",
-     "autores": [
-      "lucia-da-saude"
-     ],
-     "autorTexto": "LÚCIA DA SAÚDE",
-     "ementa": "Dispõe sobre a concessão do Diploma João Cândido – Almirante Negro à Regina Marcia de Almeida.",
-     "sessao": "2026-02-12-o4",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-072/2025",
+     "key": "PDL-72/2025",
      "tipo": "PDL",
      "numero": 72,
      "ano": 2025,
@@ -26970,23 +26805,7 @@
      ]
     },
     {
-     "key": "PDL-72/2025",
-     "tipo": "PDL",
-     "numero": 72,
-     "ano": 2025,
-     "autor": "lucia-da-saude",
-     "autores": [
-      "lucia-da-saude"
-     ],
-     "autorTexto": "LÚCIA DA SAÚDE",
-     "ementa": "Dispõe sobre a concessão Cartão de Prata à Evelin Cristina Silva Nunes.",
-     "sessao": "2026-02-26-o6",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-071/2025",
+     "key": "PDL-71/2025",
      "tipo": "PDL",
      "numero": 71,
      "ano": 2025,
@@ -27004,24 +26823,7 @@
      ]
     },
     {
-     "key": "PDL-71/2025",
-     "tipo": "PDL",
-     "numero": 71,
-     "ano": 2025,
-     "autor": "lucia-da-saude",
-     "autores": [
-      "lucia-da-saude"
-     ],
-     "autorTexto": "LÚCIA DA SAÚDE",
-     "ementa": "Dispõe sobre a concessão de Cartão de Prata a Pastora Ninfa Cândida Alves Pereira.",
-     "sessao": "2026-04-23-o20",
-     "temas": [
-      "Religião",
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-070/2025",
+     "key": "PDL-70/2025",
      "tipo": "PDL",
      "numero": 70,
      "ano": 2025,
@@ -27037,7 +26839,7 @@
      ]
     },
     {
-     "key": "PDL-069/2025",
+     "key": "PDL-69/2025",
      "tipo": "PDL",
      "numero": 69,
      "ano": 2025,
@@ -27054,24 +26856,7 @@
      ]
     },
     {
-     "key": "PDL-69/2025",
-     "tipo": "PDL",
-     "numero": 69,
-     "ano": 2025,
-     "autor": "lucia-da-saude",
-     "autores": [
-      "lucia-da-saude"
-     ],
-     "autorTexto": "LÚCIA DA SAÚDE",
-     "ementa": "Dispõe sobre a concessão de Medalha Antônio Raposo Tavares e o Diploma Cidade de Osasco, ao Pastor Newton Conegero.",
-     "sessao": "2026-04-07-o16",
-     "temas": [
-      "Religião",
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-068/2025",
+     "key": "PDL-68/2025",
      "tipo": "PDL",
      "numero": 68,
      "ano": 2025,
@@ -27088,24 +26873,7 @@
      ]
     },
     {
-     "key": "PDL-68/2025",
-     "tipo": "PDL",
-     "numero": 68,
-     "ano": 2025,
-     "autor": "lucia-da-saude",
-     "autores": [
-      "lucia-da-saude"
-     ],
-     "autorTexto": "LÚCIA DA SAÚDE",
-     "ementa": "Dispõe sobre a Concessão de Placa Comemorativa à Igreja do Evangelho Quadrangular Jardim Paulista - Osasco.",
-     "sessao": "2026-03-03-o7",
-     "temas": [
-      "Religião",
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-066/2025",
+     "key": "PDL-66/2025",
      "tipo": "PDL",
      "numero": 66,
      "ano": 2025,
@@ -27116,23 +26884,6 @@
      "autorTexto": "FRANCISCA JENILUCIA RIBEIRO DE ANDRADE",
      "ementa": "Dispõe sobre a Concessão de Placa Comemorativa à Igreja de Jesus Cristo dos Santos dos Últimos Dias.",
      "sessao": "2025-11-06-o64",
-     "temas": [
-      "Religião",
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-66/2025",
-     "tipo": "PDL",
-     "numero": 66,
-     "ano": 2025,
-     "autor": "lucia-da-saude",
-     "autores": [
-      "lucia-da-saude"
-     ],
-     "autorTexto": "LÚCIA DA SAÚDE",
-     "ementa": "Dispõe sobre a concessão de Placa Comemorativa à Igreja de Jesus Cristo dos Santos dos Últimos Dias.",
-     "sessao": "2026-03-31-o15",
      "temas": [
       "Religião",
       "Nomes e homenagens"
@@ -27216,21 +26967,6 @@
      "autorTexto": "Lúcia da Saúde",
      "ementa": "Institui a Galeria Lilás nas dependências da Câmara Municipal de Osasco.",
      "sessao": "2025-08-05-o38",
-     "classe": "substantivo",
-     "temas": []
-    },
-    {
-     "key": "PR-08/2025",
-     "tipo": "PR",
-     "numero": 8,
-     "ano": 2025,
-     "autor": "lucia-da-saude",
-     "autores": [
-      "lucia-da-saude"
-     ],
-     "autorTexto": "LÚCIA DA SAÚDE",
-     "ementa": "Institui a Galeria Lilás nas dependências da Câmara Municipal de Osasco.",
-     "sessao": "2026-02-10-o3",
      "classe": "substantivo",
      "temas": []
     }
@@ -29742,9 +29478,9 @@
      "ranking": 12
     },
     "B": {
-     "nota": 0.42909471480900047,
+     "nota": 0.4584847637685211,
      "componentes": {
-      "legislacao": 0.42909471480900047
+      "legislacao": 0.4584847637685211
      },
      "ranking": 10
     },
@@ -29768,7 +29504,7 @@
    },
    "coeficientes": {
     "participacao": 0.47889926410815903,
-    "producao": 0.46454735740450026,
+    "producao": 0.47924238188426055,
     "eficiencia": 0.4232466509062253
    },
    "rankings": {
@@ -29827,10 +29563,10 @@
      "ausente": 129
     },
     "participacaoVotos": 0.7445544554455445,
-    "projetos": 8,
-    "projetosSubstantivos": 5,
+    "projetos": 7,
+    "projetosSubstantivos": 4,
     "projetosSimbolicos": 3,
-    "pontosLegislacao": 6.6,
+    "pontosLegislacao": 5.6,
     "honrarias": 4,
     "mocoes": 18,
     "requerimentos": 0,
@@ -29841,12 +29577,12 @@
     "leisSancionadas": 1,
     "vetosRecebidos": 0,
     "adiadasPorAusencia": 4,
-    "producaoPorPresenca": 0.5196850393700787
+    "producaoPorPresenca": 0.4409448818897638
    },
    "temas": [
     {
      "tema": "Meio ambiente",
-     "n": 4
+     "n": 3
     },
     {
      "tema": "Economia e emprego",
@@ -29908,7 +29644,7 @@
     },
     {
      "mes": "2025-11",
-     "proposicoes": 2
+     "proposicoes": 1
     },
     {
      "mes": "2025-12",
@@ -31006,7 +30742,7 @@
      ]
     },
     {
-     "key": "PR-07/2025",
+     "key": "PR-7/2025",
      "tipo": "PR",
      "numero": 7,
      "ano": 2025,
@@ -31017,23 +30753,6 @@
      "autorTexto": "Elania Silva",
      "ementa": "Institui, no âmbito da Câmara de Osasco, o Programa “Tampinha do Bem”.",
      "sessao": "2025-08-12-o40",
-     "classe": "substantivo",
-     "temas": [
-      "Meio ambiente"
-     ]
-    },
-    {
-     "key": "PR-7/2025",
-     "tipo": "PR",
-     "numero": 7,
-     "ano": 2025,
-     "autor": "elania-silva",
-     "autores": [
-      "elania-silva"
-     ],
-     "autorTexto": "ELANIA SILVA",
-     "ementa": "Institui, no âmbito da Câmara Municipal de Osasco o Programa ' Tampinhas do Bem'.",
-     "sessao": "2025-11-27-o69",
      "classe": "substantivo",
      "temas": [
       "Meio ambiente"
@@ -31101,11 +30820,11 @@
      "ranking": 19
     },
     "B": {
-     "nota": 0.34536891679748816,
+     "nota": 0.3131115459882583,
      "componentes": {
-      "legislacao": 0.34536891679748816
+      "legislacao": 0.3131115459882583
      },
-     "ranking": 15
+     "ranking": 17
     },
     "C": {
      "nota": 0.5,
@@ -31127,13 +30846,13 @@
    },
    "coeficientes": {
     "participacao": 0.6351062725559709,
-    "producao": 0.4226844583987441,
-    "eficiencia": 0.3621209582844697
+    "producao": 0.40655577299412915,
+    "eficiencia": 0.30725414642318644
    },
    "rankings": {
     "participacao": 12,
     "producao": 17,
-    "eficiencia": 16
+    "eficiencia": 19
    }
   },
   {
@@ -32886,9 +32605,9 @@
      "ranking": 10
     },
     "B": {
-     "nota": 0.26164311878597596,
+     "nota": 0.2795638803466593,
      "componentes": {
-      "legislacao": 0.26164311878597596
+      "legislacao": 0.2795638803466593
      },
      "ranking": 19
     },
@@ -32912,13 +32631,1168 @@
    },
    "coeficientes": {
     "participacao": 0.5463863218243273,
-    "producao": 0.380821559392988,
+    "producao": 0.3897819401733297,
     "eficiencia": 0.25430967541543714
    },
    "rankings": {
     "participacao": 14,
     "producao": 18,
     "eficiencia": 20
+   }
+  },
+  {
+   "id": "rodrigo-gansinho",
+   "nome": "Rodrigo Gansinho",
+   "partido": "PL",
+   "partidoNome": "Partido Liberal",
+   "partidoLogo": "/partidos/pl.png",
+   "foto": "/fotos/vereadores/rodrigo-gansinho.jpg",
+   "fotoFonte": "Câmara Municipal de Osasco",
+   "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/rodrigo-gansinho",
+   "perfil": {
+    "nomeCompleto": "Rodrigo Mendes Pascoto (Suplente)",
+    "votos": null,
+    "telefone": "(11) 3699-9175",
+    "email": "rodrigo.gansinho@osasco.sp.leg.br",
+    "naturalidade": "Osasco/SP",
+    "ocupacao": "Empresário",
+    "instrucao": "Superior Completo",
+    "redes": [
+     {
+      "rede": "instagram",
+      "url": "https://www.instagram.com/rodrigogansinho/"
+     },
+     {
+      "rede": "facebook",
+      "url": "https://www.facebook.com/rodrigogansinho"
+     },
+     {
+      "rede": "x",
+      "url": "https://x.com/rodrigogansinho"
+     },
+     {
+      "rede": "tiktok",
+      "url": "https://www.tiktok.com/@rodrigogansinho"
+     }
+    ],
+    "bio": [
+     "Rodrigo Mendes Pascoto, conhecido como Rodrigo Gansinho, é um vereador que tem se destacado na política por sua abordagem dinâmica, compromisso com a melhoria da gestão pública e a promoção de oportunidades para a juventude.",
+     "Gansinho ingressou na política com um forte desejo de fazer a diferença na cidade em que vive. Nascido e criado em Osasco, é filho caçula de Hélio Antônio Pascoto e Sônia Mendes Pascoto. Por sua vez, é pai de dois filhos — Rodrigo Júnior e Gustavo. O apelido de Gansinho surgiu durante sua época escolar. Seu sobrenome \"Pascoto\" foi transformado em \"Pescoço\" por seus amigos, e logo ele se tornou \"Gansinho\" por ser o irmão mais novo, uma referência bem-humorada a um ganso com um pescoço proeminente."
+    ],
+    "comissoes": [],
+    "mesa": null
+   },
+   "emExercicio": false,
+   "indicadores": {
+    "sessoes": 115,
+    "presencas": 98,
+    "faltas": 17,
+    "faltasJustificadas": 7,
+    "presenca": 0.8521739130434782,
+    "presencaAjustada": 0.9074074074074074,
+    "pontualidade": 0.4434782608695652,
+    "votos": {
+     "sim": 341,
+     "nao": 5,
+     "abstencao": 0,
+     "ausente": 36
+    },
+    "participacaoVotos": 0.9057591623036649,
+    "projetos": 7,
+    "projetosSubstantivos": 4,
+    "projetosSimbolicos": 3,
+    "pontosLegislacao": 4.6,
+    "honrarias": 2,
+    "mocoes": 9,
+    "requerimentos": 0,
+    "requerimentosNaPauta": 0,
+    "comissoes": 0,
+    "frentes": 0,
+    "pontosComissoes": 0,
+    "leisSancionadas": 0,
+    "vetosRecebidos": 0,
+    "adiadasPorAusencia": 7,
+    "producaoPorPresenca": 0.4693877551020408
+   },
+   "temas": [
+    {
+     "tema": "Datas e calendário",
+     "n": 3
+    },
+    {
+     "tema": "Educação",
+     "n": 2
+    },
+    {
+     "tema": "Animais",
+     "n": 1
+    },
+    {
+     "tema": "Saúde",
+     "n": 1
+    },
+    {
+     "tema": "Mulheres",
+     "n": 1
+    },
+    {
+     "tema": "Segurança",
+     "n": 1
+    },
+    {
+     "tema": "Nomes e homenagens",
+     "n": 1
+    },
+    {
+     "tema": "Meio ambiente",
+     "n": 1
+    }
+   ],
+   "atividadePorMes": [
+    {
+     "mes": "2025-02",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-03",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-04",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-06",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-07",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2025-09",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2025-10",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-11",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2025-12",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-01",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-02",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-03",
+     "proposicoes": 2
+    },
+    {
+     "mes": "2026-04",
+     "proposicoes": 9
+    },
+    {
+     "mes": "2026-05",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-06",
+     "proposicoes": 1
+    },
+    {
+     "mes": "2026-08",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-09",
+     "proposicoes": 0
+    },
+    {
+     "mes": "2026-10",
+     "proposicoes": 0
+    }
+   ],
+   "presencaPorSessao": [
+    {
+     "sessao": "2025-02-06-o1",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-02-11-o2",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-02-13-o3",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-02-20-o5",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-02-25-o6",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-02-27-o7",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-03-06-o8",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-03-11-o9",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-03-13-o10",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-03-18-o11",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-03-20-o12",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-03-25-o13",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-03-27-o14",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-04-01-o15",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-04-03-o16",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-04-08-o17",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-04-10-o18",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-04-15-o19",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-04-22-o20",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-04-24-o21",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-04-29-o22",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-05-06-e1",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-05-06-o23",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-05-08-o24",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-05-13-o25",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-05-15-o26",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-05-20-o27",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-05-22-o28",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-05-27-o29",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-05-29-o30",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-06-03-o31",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-06-05-e2",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-06-05-e3",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-06-05-o32",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-06-10-o33",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-06-12-o34",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-06-17-o35",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-06-24-o36",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-06-26-o37",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-07-01-e4",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-07-01-e5",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-08-05-o38",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-08-07-o39",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-08-12-o40",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-08-14-o41",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-08-19-o42",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-08-21-o43",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-08-26-o44",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-08-28-o45",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-09-02-o46",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-09-04-o47",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-09-09-o48",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-09-11-o49",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-09-16-o50",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-09-18-o51",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-09-23-o52",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-09-25-o53",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-09-30-e6",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-09-30-o54",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-10-02-o55",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-10-07-o56",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-10-09-o57",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-10-14-o58",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-10-16-o59",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-10-21-o60",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-10-23-o61",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-10-30-o62",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-11-04-o63",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-11-06-o64",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-11-11-o65",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-11-13-o66",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-11-18-e7",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-11-18-o67",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-11-25-o68",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-11-27-o69",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-12-02-o70",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-12-04-o71",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-12-09-o72",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-12-11-o73",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-12-16-o74",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-12-18-e8",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2025-12-18-o75",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-01-27-e1",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-01-27-e2",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-02-03-o1",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-02-05-o2",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-02-10-o3",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-02-12-o4",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-02-24-o5",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-02-26-o6",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-03-03-o7",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-03-05-o8",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-03-10-o9",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-03-12-o10",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-03-17-e3",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-03-17-o11",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-03-19-o12",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-03-24-o13",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-03-26-o14",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-03-31-e4",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-03-31-o15",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-04-07-e5",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-04-07-o16",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-04-09-o17",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-04-14-o18",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-04-16-o19",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-04-23-o20",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-04-28-o21",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-04-30-o22",
+     "presente": false,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-06-11-o33",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-06-16-o34",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-06-18-o35",
+     "presente": true,
+     "primeiraChamada": false,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-06-23-o36",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-06-25-e7",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    },
+    {
+     "sessao": "2026-06-25-o37",
+     "presente": true,
+     "primeiraChamada": true,
+     "presidente": false
+    }
+   ],
+   "proposicoes": [
+    {
+     "key": "PL-102/2026",
+     "tipo": "PL",
+     "numero": 102,
+     "ano": 2026,
+     "autor": "rodrigo-gansinho",
+     "autores": [
+      "rodrigo-gansinho"
+     ],
+     "autorTexto": "RODRIGO GANSINHO",
+     "ementa": "Institui a Política Municipal de Incentivo à Denúncia de Infrações Ambientais no Município de Osasco e dá outras providências.",
+     "sessao": "2026-04-28-o21",
+     "classe": "substantivo",
+     "temas": [
+      "Meio ambiente"
+     ]
+    },
+    {
+     "key": "PL-95/2026",
+     "tipo": "PL",
+     "numero": 95,
+     "ano": 2026,
+     "autor": "rodrigo-gansinho",
+     "autores": [
+      "rodrigo-gansinho"
+     ],
+     "autorTexto": "RODRIGO GANSINHO",
+     "ementa": "Dispõe sobre a utilização de QR Code em placas informativas de obras públicas no Município de Osasco e dá outras providências.",
+     "sessao": "2026-04-23-o20",
+     "classe": "substantivo",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "PL-94/2026",
+     "tipo": "PL",
+     "numero": 94,
+     "ano": 2026,
+     "autor": "rodrigo-gansinho",
+     "autores": [
+      "rodrigo-gansinho"
+     ],
+     "autorTexto": "RODRIGO GANSINHO",
+     "ementa": "Institui o Estatuto Municipal de Proteção Integral à Vítima de Violência Doméstica e Familiar no Município de Osasco, cria o Protocolo Municipal de Atenção Integral à Vítima (PMAIV), institui a \"Sala Lilás\" nas unidades de saúde, e dá outras providências.",
+     "sessao": "2026-04-23-o20",
+     "classe": "substantivo",
+     "temas": [
+      "Saúde",
+      "Mulheres",
+      "Segurança"
+     ]
+    },
+    {
+     "key": "PL-93/2026",
+     "tipo": "PL",
+     "numero": 93,
+     "ano": 2026,
+     "autor": "rodrigo-gansinho",
+     "autores": [
+      "rodrigo-gansinho"
+     ],
+     "autorTexto": "RODRIGO GANSINHO",
+     "ementa": "Altera a Lei Municipal nº 5.432, de 10 de novembro de 2025, que institui o Dia do Psicopedagogo no Calendário Oficial do Município de Osasco, para prever a realização de seminários, palestras e ações educativas durante o mês de novembro.",
+     "sessao": "2026-04-23-o20",
+     "classe": "simbolico",
+     "temas": [
+      "Educação",
+      "Datas e calendário"
+     ]
+    },
+    {
+     "key": "PL-90/2026",
+     "tipo": "PL",
+     "numero": 90,
+     "ano": 2026,
+     "autor": "rodrigo-gansinho",
+     "autores": [
+      "rodrigo-gansinho"
+     ],
+     "autorTexto": "RODRIGO GANSINHO",
+     "ementa": "Institui o Dia Municipal do Neuropsicopedagogo.",
+     "sessao": "2026-04-23-o20",
+     "classe": "simbolico",
+     "temas": [
+      "Educação",
+      "Datas e calendário"
+     ]
+    },
+    {
+     "key": "PL-86/2026",
+     "tipo": "PL",
+     "numero": 86,
+     "ano": 2026,
+     "autor": "rodrigo-gansinho",
+     "autores": [
+      "rodrigo-gansinho"
+     ],
+     "autorTexto": "Rodrigo Gansinho",
+     "ementa": "Institui o Dia Municipal do Psicanalista Clínico no Calendário Oficial do Município de Osasco.",
+     "sessao": "2026-04-14-o18",
+     "classe": "simbolico",
+     "temas": [
+      "Datas e calendário"
+     ]
+    },
+    {
+     "key": "PL-80/2026",
+     "tipo": "PL",
+     "numero": 80,
+     "ano": 2026,
+     "autor": "rodrigo-gansinho",
+     "autores": [
+      "rodrigo-gansinho"
+     ],
+     "autorTexto": "Rodrigo Gansinho",
+     "ementa": "Altera o art. 5º da Lei 5.109, de 30 de abril de 2021, que dispõe sobre a proibição de confinamento, acorrentamento e alojamento inadequado de animais.",
+     "sessao": "2026-04-14-o18",
+     "classe": "substantivo",
+     "temas": [
+      "Animais"
+     ]
+    },
+    {
+     "key": "PDL-12/2026",
+     "tipo": "PDL",
+     "numero": 12,
+     "ano": 2026,
+     "autor": "rodrigo-gansinho",
+     "autores": [
+      "rodrigo-gansinho"
+     ],
+     "autorTexto": "Rodrigo Gansinho",
+     "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Dr. Anderson Pires Giampaoli.",
+     "sessao": "2026-03-03-o7",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    },
+    {
+     "key": "PDL-11/2026",
+     "tipo": "PDL",
+     "numero": 11,
+     "ano": 2026,
+     "autor": "rodrigo-gansinho",
+     "autores": [
+      "rodrigo-gansinho"
+     ],
+     "autorTexto": "Rodrigo Gansinho",
+     "ementa": "Dispõe sobre a concessão de Placa Comemorativa à CAMILA BRAIT.",
+     "sessao": "2026-02-26-o6",
+     "temas": [
+      "Nomes e homenagens"
+     ]
+    }
+   ],
+   "requerimentos": [],
+   "requerimentosNaPauta": [],
+   "leis": [],
+   "vetos": [],
+   "adiadas": [
+    {
+     "sessao": "2025-09-02-o46",
+     "item": "MOÇÃO DE RECONHECIMENTO Nº 409/2025 – RODRIGO GANSINHO - Ao Professor Paulo Sérgio, conhecido como Serginho do Pestana, por seu valioso trabalho de transformação na vida de milhares de jovens através do esporte.",
+     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 409/2025",
+     "ementa": "Ao Professor Paulo Sérgio, conhecido como Serginho do Pestana, por seu valioso trabalho de transformação na vida de milhares de jovens através do esporte.",
+     "temas": [
+      "Educação",
+      "Esporte, cultura e lazer"
+     ]
+    },
+    {
+     "sessao": "2025-09-04-o47",
+     "item": "MOÇÃO DE RECONHECIMENTO Nº 409/2025 – RODRIGO GANSINHO - Ao Professor Paulo Sérgio, conhecido como Serginho do Pestana, por seu valioso trabalho de transformação na vida de milhares de jovens através do esporte.",
+     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 409/2025",
+     "ementa": "Ao Professor Paulo Sérgio, conhecido como Serginho do Pestana, por seu valioso trabalho de transformação na vida de milhares de jovens através do esporte.",
+     "temas": [
+      "Educação",
+      "Esporte, cultura e lazer"
+     ]
+    },
+    {
+     "sessao": "2025-09-18-o51",
+     "item": "MOÇÃO DE RECONHECIMENTO Nº 449/2025 – RODRIGO GANSINHO – Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
+     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 449/2025",
+     "ementa": "Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
+     "temas": [
+      "Educação",
+      "Esporte, cultura e lazer"
+     ]
+    },
+    {
+     "sessao": "2025-09-23-o52",
+     "item": "MOÇÃO DE RECONHECIMENTO Nº 449/2025 – RODRIGO GANSINHO – Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
+     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 449/2025",
+     "ementa": "Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
+     "temas": [
+      "Educação",
+      "Esporte, cultura e lazer"
+     ]
+    },
+    {
+     "sessao": "2025-09-25-o53",
+     "item": "MOÇÃO DE RECONHECIMENTO Nº 449/2025 – RODRIGO GANSINHO – Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
+     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 449/2025",
+     "ementa": "Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
+     "temas": [
+      "Educação",
+      "Esporte, cultura e lazer"
+     ]
+    },
+    {
+     "sessao": "2025-10-09-o57",
+     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 486/2025 – RODRIGO GANSINHO – À Equipe Técnica e aos Atletas de Futebol de Salão da Seleção de Osasco, por representarem a Cidade de Osasco com campanhas brilhantes na conquista dos troféus de Campeão na categoria Sub-12 e Vice-Campeão na categoria Sub-10 do Campeonato de Futsal do Circuito Cioeste 2025.",
+     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 486/2025",
+     "ementa": "À Equipe Técnica e aos Atletas de Futebol de Salão da Seleção de Osasco, por representarem a Cidade de Osasco com campanhas brilhantes na conquista dos troféus de Campeão na categoria Sub-12 e Vice-Campeão na categoria Sub-10 do Campeonato de Futsal do Circuito Cioeste 2025.",
+     "temas": [
+      "Esporte, cultura e lazer",
+      "Datas e calendário"
+     ]
+    },
+    {
+     "sessao": "2026-04-30-o22",
+     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 106/2026 – RODRIGO GANSINHO – À Bable Pet Osasco pelos dois anos de história, uma jornada inspiradora marcada por amor, cuidado e pelo compromisso diário de fazer a diferença na vida dos pets e das famílias osasquenses.",
+     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 106/2026",
+     "ementa": "À Bable Pet Osasco pelos dois anos de história, uma jornada inspiradora marcada por amor, cuidado e pelo compromisso diário de fazer a diferença na vida dos pets e das famílias osasquenses.",
+     "temas": [
+      "Animais"
+     ]
+    }
+   ],
+   "pilares": {
+    "A": {
+     "nota": 0.7829164242776812,
+     "componentes": {
+      "presenca": 0.7870370370370374,
+      "votacoes": 0.7787958115183249
+     },
+     "ranking": 11
+    },
+    "B": {
+     "nota": 0.3287671232876712,
+     "componentes": {
+      "legislacao": 0.3287671232876712
+     },
+     "ranking": 16
+    },
+    "C": {
+     "nota": null,
+     "componentes": {}
+    },
+    "D": {
+     "nota": null,
+     "componentes": {}
+    },
+    "E": {
+     "nota": 0.7971014492753623,
+     "componentes": {},
+     "ranking": 6
+    }
+   },
+   "coeficientes": {
+    "participacao": 0.7900089367765217,
+    "producao": 0.3287671232876712,
+    "eficiencia": 0.32707338254450713
+   },
+   "rankings": {
+    "participacao": 8,
+    "producao": 19,
+    "eficiencia": 17
    }
   },
   {
@@ -34138,7 +35012,7 @@
      "aindaNaPauta": true
     },
     {
-     "key": "REQ-06/2023",
+     "key": "REQ-6/2023",
      "numero": 6,
      "ano": 2023,
      "autor": "emerson-osasco",
@@ -34153,7 +35027,7 @@
      "aindaNaPauta": true
     },
     {
-     "key": "REQ-07/2023",
+     "key": "REQ-7/2023",
      "numero": 7,
      "ano": 2023,
      "autor": "emerson-osasco",
@@ -34168,7 +35042,7 @@
      "aindaNaPauta": true
     },
     {
-     "key": "REQ-08/2023",
+     "key": "REQ-8/2023",
      "numero": 8,
      "ano": 2023,
      "autor": "emerson-osasco",
@@ -34183,7 +35057,7 @@
      "aindaNaPauta": true
     },
     {
-     "key": "REQ-09/2023",
+     "key": "REQ-9/2023",
      "numero": 9,
      "ano": 2023,
      "autor": "emerson-osasco",
@@ -34213,7 +35087,7 @@
      "aindaNaPauta": true
     },
     {
-     "key": "REQ-03/2024",
+     "key": "REQ-3/2024",
      "numero": 3,
      "ano": 2024,
      "autor": "emerson-osasco",
@@ -34228,7 +35102,7 @@
      "aindaNaPauta": true
     },
     {
-     "key": "REQ-04/2024",
+     "key": "REQ-4/2024",
      "numero": 4,
      "ano": 2024,
      "autor": "emerson-osasco",
@@ -34243,7 +35117,7 @@
      "aindaNaPauta": true
     },
     {
-     "key": "REQ-05/2024",
+     "key": "REQ-5/2024",
      "numero": 5,
      "ano": 2024,
      "autor": "emerson-osasco",
@@ -34258,7 +35132,7 @@
      "aindaNaPauta": true
     },
     {
-     "key": "REQ-06/2024",
+     "key": "REQ-6/2024",
      "numero": 6,
      "ano": 2024,
      "autor": "emerson-osasco",
@@ -34273,7 +35147,7 @@
      "aindaNaPauta": true
     },
     {
-     "key": "REQ-07/2024",
+     "key": "REQ-7/2024",
      "numero": 7,
      "ano": 2024,
      "autor": "emerson-osasco",
@@ -34288,7 +35162,7 @@
      "aindaNaPauta": true
     },
     {
-     "key": "REQ-08/2024",
+     "key": "REQ-8/2024",
      "numero": 8,
      "ano": 2024,
      "autor": "emerson-osasco",
@@ -34303,7 +35177,7 @@
      "aindaNaPauta": true
     },
     {
-     "key": "REQ-09/2024",
+     "key": "REQ-9/2024",
      "numero": 9,
      "ano": 2024,
      "autor": "emerson-osasco",
@@ -34729,9 +35603,9 @@
      "ranking": 24
     },
     "B": {
-     "nota": 0.293040293040293,
+     "nota": 0.3131115459882583,
      "componentes": {
-      "legislacao": 0.293040293040293
+      "legislacao": 0.3131115459882583
      },
      "ranking": 18
     },
@@ -34755,1168 +35629,13 @@
    },
    "coeficientes": {
     "participacao": 0.14852607709750565,
-    "producao": 0.3131868131868132,
+    "producao": 0.3232224396607958,
     "eficiencia": 0.5202836879432623
    },
    "rankings": {
     "participacao": 20,
-    "producao": 19,
-    "eficiencia": 9
-   }
-  },
-  {
-   "id": "rodrigo-gansinho",
-   "nome": "Rodrigo Gansinho",
-   "partido": "PL",
-   "partidoNome": "Partido Liberal",
-   "partidoLogo": "/partidos/pl.png",
-   "foto": "/fotos/vereadores/rodrigo-gansinho.jpg",
-   "fotoFonte": "Câmara Municipal de Osasco",
-   "perfilOficial": "https://www.osasco.sp.leg.br/vereadores/rodrigo-gansinho",
-   "perfil": {
-    "nomeCompleto": "Rodrigo Mendes Pascoto (Suplente)",
-    "votos": null,
-    "telefone": "(11) 3699-9175",
-    "email": "rodrigo.gansinho@osasco.sp.leg.br",
-    "naturalidade": "Osasco/SP",
-    "ocupacao": "Empresário",
-    "instrucao": "Superior Completo",
-    "redes": [
-     {
-      "rede": "instagram",
-      "url": "https://www.instagram.com/rodrigogansinho/"
-     },
-     {
-      "rede": "facebook",
-      "url": "https://www.facebook.com/rodrigogansinho"
-     },
-     {
-      "rede": "x",
-      "url": "https://x.com/rodrigogansinho"
-     },
-     {
-      "rede": "tiktok",
-      "url": "https://www.tiktok.com/@rodrigogansinho"
-     }
-    ],
-    "bio": [
-     "Rodrigo Mendes Pascoto, conhecido como Rodrigo Gansinho, é um vereador que tem se destacado na política por sua abordagem dinâmica, compromisso com a melhoria da gestão pública e a promoção de oportunidades para a juventude.",
-     "Gansinho ingressou na política com um forte desejo de fazer a diferença na cidade em que vive. Nascido e criado em Osasco, é filho caçula de Hélio Antônio Pascoto e Sônia Mendes Pascoto. Por sua vez, é pai de dois filhos — Rodrigo Júnior e Gustavo. O apelido de Gansinho surgiu durante sua época escolar. Seu sobrenome \"Pascoto\" foi transformado em \"Pescoço\" por seus amigos, e logo ele se tornou \"Gansinho\" por ser o irmão mais novo, uma referência bem-humorada a um ganso com um pescoço proeminente."
-    ],
-    "comissoes": [],
-    "mesa": null
-   },
-   "emExercicio": false,
-   "indicadores": {
-    "sessoes": 115,
-    "presencas": 98,
-    "faltas": 17,
-    "faltasJustificadas": 7,
-    "presenca": 0.8521739130434782,
-    "presencaAjustada": 0.9074074074074074,
-    "pontualidade": 0.4434782608695652,
-    "votos": {
-     "sim": 341,
-     "nao": 5,
-     "abstencao": 0,
-     "ausente": 36
-    },
-    "participacaoVotos": 0.9057591623036649,
-    "projetos": 7,
-    "projetosSubstantivos": 4,
-    "projetosSimbolicos": 3,
-    "pontosLegislacao": 4.6,
-    "honrarias": 2,
-    "mocoes": 9,
-    "requerimentos": 0,
-    "requerimentosNaPauta": 0,
-    "comissoes": 0,
-    "frentes": 0,
-    "pontosComissoes": 0,
-    "leisSancionadas": 0,
-    "vetosRecebidos": 0,
-    "adiadasPorAusencia": 7,
-    "producaoPorPresenca": 0.4693877551020408
-   },
-   "temas": [
-    {
-     "tema": "Datas e calendário",
-     "n": 3
-    },
-    {
-     "tema": "Educação",
-     "n": 2
-    },
-    {
-     "tema": "Animais",
-     "n": 1
-    },
-    {
-     "tema": "Saúde",
-     "n": 1
-    },
-    {
-     "tema": "Mulheres",
-     "n": 1
-    },
-    {
-     "tema": "Segurança",
-     "n": 1
-    },
-    {
-     "tema": "Nomes e homenagens",
-     "n": 1
-    },
-    {
-     "tema": "Meio ambiente",
-     "n": 1
-    }
-   ],
-   "atividadePorMes": [
-    {
-     "mes": "2025-02",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2025-03",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2025-04",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2025-05",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2025-06",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2025-07",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2025-08",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2025-09",
-     "proposicoes": 2
-    },
-    {
-     "mes": "2025-10",
-     "proposicoes": 1
-    },
-    {
-     "mes": "2025-11",
-     "proposicoes": 1
-    },
-    {
-     "mes": "2025-12",
-     "proposicoes": 1
-    },
-    {
-     "mes": "2026-01",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2026-02",
-     "proposicoes": 1
-    },
-    {
-     "mes": "2026-03",
-     "proposicoes": 2
-    },
-    {
-     "mes": "2026-04",
-     "proposicoes": 9
-    },
-    {
-     "mes": "2026-05",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2026-06",
-     "proposicoes": 1
-    },
-    {
-     "mes": "2026-08",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2026-09",
-     "proposicoes": 0
-    },
-    {
-     "mes": "2026-10",
-     "proposicoes": 0
-    }
-   ],
-   "presencaPorSessao": [
-    {
-     "sessao": "2025-02-06-o1",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-02-11-o2",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-02-13-o3",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-02-20-o5",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-02-25-o6",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-02-27-o7",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-03-06-o8",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-03-11-o9",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-03-13-o10",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-03-18-o11",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-03-20-o12",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-03-25-o13",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-03-27-o14",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-04-01-o15",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-04-03-o16",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-04-08-o17",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-04-10-o18",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-04-15-o19",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-04-22-o20",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-04-24-o21",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-04-29-o22",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-05-06-e1",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-05-06-o23",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-05-08-o24",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-05-13-o25",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-05-15-o26",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-05-20-o27",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-05-22-o28",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-05-27-o29",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-05-29-o30",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-06-03-o31",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-06-05-e2",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-06-05-e3",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-06-05-o32",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-06-10-o33",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-06-12-o34",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-06-17-o35",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-06-24-o36",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-06-26-o37",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-07-01-e4",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-07-01-e5",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-08-05-o38",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-08-07-o39",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-08-12-o40",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-08-14-o41",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-08-19-o42",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-08-21-o43",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-08-26-o44",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-08-28-o45",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-09-02-o46",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-09-04-o47",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-09-09-o48",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-09-11-o49",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-09-16-o50",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-09-18-o51",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-09-23-o52",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-09-25-o53",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-09-30-e6",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-09-30-o54",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-10-02-o55",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-10-07-o56",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-10-09-o57",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-10-14-o58",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-10-16-o59",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-10-21-o60",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-10-23-o61",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-10-30-o62",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-11-04-o63",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-11-06-o64",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-11-11-o65",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-11-13-o66",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-11-18-e7",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-11-18-o67",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-11-25-o68",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-11-27-o69",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-12-02-o70",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-12-04-o71",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-12-09-o72",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-12-11-o73",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-12-16-o74",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-12-18-e8",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2025-12-18-o75",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-01-27-e1",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-01-27-e2",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-02-03-o1",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-02-05-o2",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-02-10-o3",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-02-12-o4",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-02-24-o5",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-02-26-o6",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-03-03-o7",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-03-05-o8",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-03-10-o9",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-03-12-o10",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-03-17-e3",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-03-17-o11",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-03-19-o12",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-03-24-o13",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-03-26-o14",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-03-31-e4",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-03-31-o15",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-04-07-e5",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-04-07-o16",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-04-09-o17",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-04-14-o18",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-04-16-o19",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-04-23-o20",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-04-28-o21",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-04-30-o22",
-     "presente": false,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-06-11-o33",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-06-16-o34",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-06-18-o35",
-     "presente": true,
-     "primeiraChamada": false,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-06-23-o36",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-06-25-e7",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    },
-    {
-     "sessao": "2026-06-25-o37",
-     "presente": true,
-     "primeiraChamada": true,
-     "presidente": false
-    }
-   ],
-   "proposicoes": [
-    {
-     "key": "PL-102/2026",
-     "tipo": "PL",
-     "numero": 102,
-     "ano": 2026,
-     "autor": "rodrigo-gansinho",
-     "autores": [
-      "rodrigo-gansinho"
-     ],
-     "autorTexto": "RODRIGO GANSINHO",
-     "ementa": "Institui a Política Municipal de Incentivo à Denúncia de Infrações Ambientais no Município de Osasco e dá outras providências.",
-     "sessao": "2026-04-28-o21",
-     "classe": "substantivo",
-     "temas": [
-      "Meio ambiente"
-     ]
-    },
-    {
-     "key": "PL-95/2026",
-     "tipo": "PL",
-     "numero": 95,
-     "ano": 2026,
-     "autor": "rodrigo-gansinho",
-     "autores": [
-      "rodrigo-gansinho"
-     ],
-     "autorTexto": "RODRIGO GANSINHO",
-     "ementa": "Dispõe sobre a utilização de QR Code em placas informativas de obras públicas no Município de Osasco e dá outras providências.",
-     "sessao": "2026-04-23-o20",
-     "classe": "substantivo",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PL-94/2026",
-     "tipo": "PL",
-     "numero": 94,
-     "ano": 2026,
-     "autor": "rodrigo-gansinho",
-     "autores": [
-      "rodrigo-gansinho"
-     ],
-     "autorTexto": "RODRIGO GANSINHO",
-     "ementa": "Institui o Estatuto Municipal de Proteção Integral à Vítima de Violência Doméstica e Familiar no Município de Osasco, cria o Protocolo Municipal de Atenção Integral à Vítima (PMAIV), institui a \"Sala Lilás\" nas unidades de saúde, e dá outras providências.",
-     "sessao": "2026-04-23-o20",
-     "classe": "substantivo",
-     "temas": [
-      "Saúde",
-      "Mulheres",
-      "Segurança"
-     ]
-    },
-    {
-     "key": "PL-93/2026",
-     "tipo": "PL",
-     "numero": 93,
-     "ano": 2026,
-     "autor": "rodrigo-gansinho",
-     "autores": [
-      "rodrigo-gansinho"
-     ],
-     "autorTexto": "RODRIGO GANSINHO",
-     "ementa": "Altera a Lei Municipal nº 5.432, de 10 de novembro de 2025, que institui o Dia do Psicopedagogo no Calendário Oficial do Município de Osasco, para prever a realização de seminários, palestras e ações educativas durante o mês de novembro.",
-     "sessao": "2026-04-23-o20",
-     "classe": "simbolico",
-     "temas": [
-      "Educação",
-      "Datas e calendário"
-     ]
-    },
-    {
-     "key": "PL-90/2026",
-     "tipo": "PL",
-     "numero": 90,
-     "ano": 2026,
-     "autor": "rodrigo-gansinho",
-     "autores": [
-      "rodrigo-gansinho"
-     ],
-     "autorTexto": "RODRIGO GANSINHO",
-     "ementa": "Institui o Dia Municipal do Neuropsicopedagogo.",
-     "sessao": "2026-04-23-o20",
-     "classe": "simbolico",
-     "temas": [
-      "Educação",
-      "Datas e calendário"
-     ]
-    },
-    {
-     "key": "PL-86/2026",
-     "tipo": "PL",
-     "numero": 86,
-     "ano": 2026,
-     "autor": "rodrigo-gansinho",
-     "autores": [
-      "rodrigo-gansinho"
-     ],
-     "autorTexto": "Rodrigo Gansinho",
-     "ementa": "Institui o Dia Municipal do Psicanalista Clínico no Calendário Oficial do Município de Osasco.",
-     "sessao": "2026-04-14-o18",
-     "classe": "simbolico",
-     "temas": [
-      "Datas e calendário"
-     ]
-    },
-    {
-     "key": "PL-80/2026",
-     "tipo": "PL",
-     "numero": 80,
-     "ano": 2026,
-     "autor": "rodrigo-gansinho",
-     "autores": [
-      "rodrigo-gansinho"
-     ],
-     "autorTexto": "Rodrigo Gansinho",
-     "ementa": "Altera o art. 5º da Lei 5.109, de 30 de abril de 2021, que dispõe sobre a proibição de confinamento, acorrentamento e alojamento inadequado de animais.",
-     "sessao": "2026-04-14-o18",
-     "classe": "substantivo",
-     "temas": [
-      "Animais"
-     ]
-    },
-    {
-     "key": "PDL-12/2026",
-     "tipo": "PDL",
-     "numero": 12,
-     "ano": 2026,
-     "autor": "rodrigo-gansinho",
-     "autores": [
-      "rodrigo-gansinho"
-     ],
-     "autorTexto": "Rodrigo Gansinho",
-     "ementa": "Dispõe sobre a concessão de Título de Cidadão Osasquense ao Dr. Anderson Pires Giampaoli.",
-     "sessao": "2026-03-03-o7",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    },
-    {
-     "key": "PDL-11/2026",
-     "tipo": "PDL",
-     "numero": 11,
-     "ano": 2026,
-     "autor": "rodrigo-gansinho",
-     "autores": [
-      "rodrigo-gansinho"
-     ],
-     "autorTexto": "Rodrigo Gansinho",
-     "ementa": "Dispõe sobre a concessão de Placa Comemorativa à CAMILA BRAIT.",
-     "sessao": "2026-02-26-o6",
-     "temas": [
-      "Nomes e homenagens"
-     ]
-    }
-   ],
-   "requerimentos": [],
-   "requerimentosNaPauta": [],
-   "leis": [],
-   "vetos": [],
-   "adiadas": [
-    {
-     "sessao": "2025-09-02-o46",
-     "item": "MOÇÃO DE RECONHECIMENTO Nº 409/2025 – RODRIGO GANSINHO - Ao Professor Paulo Sérgio, conhecido como Serginho do Pestana, por seu valioso trabalho de transformação na vida de milhares de jovens através do esporte.",
-     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 409/2025",
-     "ementa": "Ao Professor Paulo Sérgio, conhecido como Serginho do Pestana, por seu valioso trabalho de transformação na vida de milhares de jovens através do esporte.",
-     "temas": [
-      "Educação",
-      "Esporte, cultura e lazer"
-     ]
-    },
-    {
-     "sessao": "2025-09-04-o47",
-     "item": "MOÇÃO DE RECONHECIMENTO Nº 409/2025 – RODRIGO GANSINHO - Ao Professor Paulo Sérgio, conhecido como Serginho do Pestana, por seu valioso trabalho de transformação na vida de milhares de jovens através do esporte.",
-     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 409/2025",
-     "ementa": "Ao Professor Paulo Sérgio, conhecido como Serginho do Pestana, por seu valioso trabalho de transformação na vida de milhares de jovens através do esporte.",
-     "temas": [
-      "Educação",
-      "Esporte, cultura e lazer"
-     ]
-    },
-    {
-     "sessao": "2025-09-18-o51",
-     "item": "MOÇÃO DE RECONHECIMENTO Nº 449/2025 – RODRIGO GANSINHO – Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
-     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 449/2025",
-     "ementa": "Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
-     "temas": [
-      "Educação",
-      "Esporte, cultura e lazer"
-     ]
-    },
-    {
-     "sessao": "2025-09-23-o52",
-     "item": "MOÇÃO DE RECONHECIMENTO Nº 449/2025 – RODRIGO GANSINHO – Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
-     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 449/2025",
-     "ementa": "Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
-     "temas": [
-      "Educação",
-      "Esporte, cultura e lazer"
-     ]
-    },
-    {
-     "sessao": "2025-09-25-o53",
-     "item": "MOÇÃO DE RECONHECIMENTO Nº 449/2025 – RODRIGO GANSINHO – Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
-     "titulo": "MOÇÃO DE RECONHECIMENTO Nº 449/2025",
-     "ementa": "Ao professor Betinho pelo trabalho de excelência na iniciação, na formação e no aperfeiçoamento de jovens atletas com comprometimento, visão e principalmente amor pelo que faz.",
-     "temas": [
-      "Educação",
-      "Esporte, cultura e lazer"
-     ]
-    },
-    {
-     "sessao": "2025-10-09-o57",
-     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 486/2025 – RODRIGO GANSINHO – À Equipe Técnica e aos Atletas de Futebol de Salão da Seleção de Osasco, por representarem a Cidade de Osasco com campanhas brilhantes na conquista dos troféus de Campeão na categoria Sub-12 e Vice-Campeão na categoria Sub-10 do Campeonato de Futsal do Circuito Cioeste 2025.",
-     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 486/2025",
-     "ementa": "À Equipe Técnica e aos Atletas de Futebol de Salão da Seleção de Osasco, por representarem a Cidade de Osasco com campanhas brilhantes na conquista dos troféus de Campeão na categoria Sub-12 e Vice-Campeão na categoria Sub-10 do Campeonato de Futsal do Circuito Cioeste 2025.",
-     "temas": [
-      "Esporte, cultura e lazer",
-      "Datas e calendário"
-     ]
-    },
-    {
-     "sessao": "2026-04-30-o22",
-     "item": "MOÇÃO DE CONGRATULAÇÕES Nº 106/2026 – RODRIGO GANSINHO – À Bable Pet Osasco pelos dois anos de história, uma jornada inspiradora marcada por amor, cuidado e pelo compromisso diário de fazer a diferença na vida dos pets e das famílias osasquenses.",
-     "titulo": "MOÇÃO DE CONGRATULAÇÕES Nº 106/2026",
-     "ementa": "À Bable Pet Osasco pelos dois anos de história, uma jornada inspiradora marcada por amor, cuidado e pelo compromisso diário de fazer a diferença na vida dos pets e das famílias osasquenses.",
-     "temas": [
-      "Animais"
-     ]
-    }
-   ],
-   "pilares": {
-    "A": {
-     "nota": 0.7829164242776812,
-     "componentes": {
-      "presenca": 0.7870370370370374,
-      "votacoes": 0.7787958115183249
-     },
-     "ranking": 11
-    },
-    "B": {
-     "nota": 0.3076923076923076,
-     "componentes": {
-      "legislacao": 0.3076923076923076
-     },
-     "ranking": 17
-    },
-    "C": {
-     "nota": null,
-     "componentes": {}
-    },
-    "D": {
-     "nota": null,
-     "componentes": {}
-    },
-    "E": {
-     "nota": 0.7971014492753623,
-     "componentes": {},
-     "ranking": 6
-    }
-   },
-   "coeficientes": {
-    "participacao": 0.7900089367765217,
-    "producao": 0.3076923076923076,
-    "eficiencia": 0.32707338254450713
-   },
-   "rankings": {
-    "participacao": 8,
     "producao": 20,
-    "eficiencia": 18
+    "eficiencia": 9
    }
   },
   {
@@ -37480,9 +37199,9 @@
      "ranking": 21
     },
     "B": {
-     "nota": 0.25429116338207247,
+     "nota": 0.2717083663534473,
      "componentes": {
-      "legislacao": 0.25429116338207247
+      "legislacao": 0.2717083663534473
      },
      "ranking": 20
     },
@@ -37502,13 +37221,13 @@
    },
    "coeficientes": {
     "participacao": 0.030968468468468437,
-    "producao": 0.25429116338207247,
+    "producao": 0.2717083663534473,
     "eficiencia": 0.3240969816922315
    },
    "rankings": {
     "participacao": 23,
     "producao": 21,
-    "eficiencia": 19
+    "eficiencia": 18
    }
   },
   {
@@ -38649,9 +38368,9 @@
      "ranking": 7
     },
     "B": {
-     "nota": 0.011396011396011397,
+     "nota": 0.012176560121765602,
      "componentes": {
-      "legislacao": 0.011396011396011397
+      "legislacao": 0.012176560121765602
      },
      "ranking": 23
     },
@@ -38675,7 +38394,7 @@
    },
    "coeficientes": {
     "participacao": 0.9342248908296944,
-    "producao": 0.1931980056980057,
+    "producao": 0.1935882800608828,
     "eficiencia": 0.011238846945778997
    },
    "rankings": {
@@ -39126,9 +38845,9 @@
      "ranking": 4
     },
     "B": {
-     "nota": 0.04158004158004158,
+     "nota": 0.04442798963346909,
      "componentes": {
-      "legislacao": 0.04158004158004158
+      "legislacao": 0.04442798963346909
      },
      "ranking": 22
     },
@@ -39152,7 +38871,7 @@
    },
    "coeficientes": {
     "participacao": 1,
-    "producao": 0.12495668745668746,
+    "producao": 0.1263806614834012,
     "eficiencia": 0.03766532489936745
    },
    "rankings": {
@@ -39861,9 +39580,9 @@
      }
     },
     "B": {
-     "nota": 0.7692307692307692,
+     "nota": 0.8219178082191781,
      "componentes": {
-      "legislacao": 0.7692307692307692
+      "legislacao": 0.8219178082191781
      }
     },
     "C": {
@@ -46831,7 +46550,7 @@
    ]
   },
   "indicadores": {
-   "projetosEnviados": 94,
+   "projetosEnviados": 91,
    "vetosTotais": 4,
    "vetosParciais": 1,
    "leisSancionadas": 23,
@@ -47699,7 +47418,7 @@
     ]
    },
    {
-    "key": "PL-02/2026",
+    "key": "PL-2/2026",
     "tipo": "PL",
     "numero": 2,
     "ano": 2026,
@@ -47710,22 +47429,6 @@
     "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
     "ementa": "Dispõe sobre abertura de crédito adicional ao orçamento vigente e dá outras providências.",
     "sessao": "2026-01-27-e1",
-    "temas": [
-     "Orçamento e finanças"
-    ]
-   },
-   {
-    "key": "PL-2/2026",
-    "tipo": "PL",
-    "numero": 2,
-    "ano": 2026,
-    "autor": "prefeito",
-    "autores": [
-     "prefeito"
-    ],
-    "autorTexto": "Prefeito do Município de Osasco",
-    "ementa": "Dispõe sobre abertura de crédito adicional especial ao orçamento vigente e dá outras providências.",
-    "sessao": "2026-08-06-o39",
     "temas": [
      "Orçamento e finanças"
     ]
@@ -48184,7 +47887,7 @@
     ]
    },
    {
-    "key": "PLC-08/2025",
+    "key": "PLC-8/2025",
     "tipo": "PLC",
     "numero": 8,
     "ano": 2025,
@@ -48195,22 +47898,6 @@
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Altera a Lei Complementar n° 428, de 22 de dezembro de 2023, que dispõe sobre a consolidação das atribuições e dos requisitos dos cargos de provimento efetivo da Prefeitura do Município de Osasco.",
     "sessao": "2025-08-14-o41",
-    "temas": [
-     "Servidores públicos"
-    ]
-   },
-   {
-    "key": "PLC-8/2025",
-    "tipo": "PLC",
-    "numero": 8,
-    "ano": 2025,
-    "autor": "prefeito",
-    "autores": [
-     "prefeito"
-    ],
-    "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
-    "ementa": "Altera a Lei Complementar n° 428, de 22 de dezembro de 2023, que dispõe sobre a consolidação das atribuições e dos requisitos dos cargos de provimento efetivo da Prefeitura do Município de Osasco.",
-    "sessao": "2025-09-23-o52",
     "temas": [
      "Servidores públicos"
     ]
@@ -48312,7 +47999,7 @@
     ]
    },
    {
-    "key": "PLC-02/2025",
+    "key": "PLC-2/2025",
     "tipo": "PLC",
     "numero": 2,
     "ano": 2025,
@@ -48323,23 +48010,6 @@
     "autorTexto": "Prefeito do Município de Osasco",
     "ementa": "Dispõe sobre a concessão de reajuste, de pagamento de abono e revisão de padrão de vencimento dos cargos públicos de provimento efetivo, funções, empregos públicos e dos cargos de provimento em comissão da Administração Direta e Indireta de Direito Público, e dá outras providências.",
     "sessao": "2025-05-20-o27",
-    "temas": [
-     "Economia e emprego",
-     "Servidores públicos"
-    ]
-   },
-   {
-    "key": "PLC-2/2025",
-    "tipo": "PLC",
-    "numero": 2,
-    "ano": 2025,
-    "autor": "prefeito",
-    "autores": [
-     "prefeito"
-    ],
-    "autorTexto": "PREFEITO DO MUNICÍPIO DE OSASCO",
-    "ementa": "Dispõe sobre a concessão de reajuste, de pagamento de abono e revisão de padrão de vencimento dos cargos públicos de provimento efetivo, funções, empregos públicos e dos cargos de provimento em comissão da Administração Direta e Indireta de Direito Público, e dá outras providências.",
-    "sessao": "2025-05-27-o29",
     "temas": [
      "Economia e emprego",
      "Servidores públicos"
@@ -63807,7 +63477,7 @@
     ]
    },
    {
-    "id": "REQ-04/2024",
+    "id": "REQ-4/2024",
     "tipo": "Pedido de informação",
     "origem": "camara",
     "autor": "emerson-osasco",
@@ -63820,7 +63490,7 @@
     ]
    },
    {
-    "id": "REQ-07/2024",
+    "id": "REQ-7/2024",
     "tipo": "Pedido de informação",
     "origem": "camara",
     "autor": "emerson-osasco",

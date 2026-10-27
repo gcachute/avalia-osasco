@@ -1,4 +1,4 @@
-# De Olh OZ
+# De Olho em OZ
 
 Site que avalia os vereadores e o prefeito de Osasco com dados oficiais da Câmara Municipal. Foi inspirado em sites como o seuimposto.com.
 
