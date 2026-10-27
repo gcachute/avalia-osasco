@@ -7,6 +7,7 @@ import { PainelBairro } from "./mapa/PainelBairro";
 
 export type BairroDesenho = BairroMapa & { d: string; cx: number; cy: number; distancia: number };
 export type PontoDesenho = PontoMapa & { x: number; y: number };
+export type FavelaDesenho = { codigo: string; nome: string; moradores: number; d: string };
 
 type Origem = "todos" | "camara" | "prefeitura";
 type Camada = PontoMapa["tipo"];
@@ -76,6 +77,8 @@ export function MapaBairros({
   cidade,
   votosVereador,
   vereadores,
+  favelas,
+  anoSeguranca,
 }: {
   bairros: BairroDesenho[];
   itens: ItemMapa[];
@@ -87,6 +90,8 @@ export function MapaBairros({
   cidade: Mapa["cidade"];
   votosVereador: Mapa["votosVereador"];
   vereadores: { id: string; nome: string }[];
+  favelas: FavelaDesenho[];
+  anoSeguranca: number | null;
 }) {
   const meses = useMemo(() => mesesEntre(inicio, fim), [inicio, fim]);
   const [tema, setTema] = useState<Tema>("politica");
@@ -98,6 +103,8 @@ export function MapaBairros({
   const [tocando, setTocando] = useState(false);
   const [foco, setFoco] = useState<string | null>(null);
   const [pontoFoco, setPontoFoco] = useState<PontoDesenho | null>(null);
+  const [verFavelas, setVerFavelas] = useState(false);
+  const [favelaFoco, setFavelaFoco] = useState<FavelaDesenho | null>(null);
   const [selecionado, setSelecionado] = useState<string | null>(null);
   const [dica, setDica] = useState<{ x: number; y: number } | null>(null);
   const [entrou, setEntrou] = useState(false);
@@ -234,7 +241,7 @@ export function MapaBairros({
     if (mes >= meses.length - 1) setMes(0);
     setTocando(true);
   };
-  const abaInicial = tema === "eleicao" ? "eleicao" : tema === "servicos" ? "servicos" : tema === "politica" ? "politica" : "perfil";
+  const abaInicial = tema === "eleicao" ? "eleicao" : tema === "servicos" ? "servicos" : tema === "politica" ? "politica" : tema === "seguranca" ? "seguranca" : "perfil";
   const opcoesAutor =
     chave === "votosVereador"
       ? comVotos.map((v) => ({ id: v.id, rotulo: `${v.nome} (${votosVereador[v.id].total.toLocaleString("pt-BR")} votos)` }))
@@ -308,6 +315,7 @@ export function MapaBairros({
             onMouseLeave={() => {
               setFoco(null);
               setPontoFoco(null);
+              setFavelaFoco(null);
               setDica(null);
             }}
           >
@@ -322,6 +330,9 @@ export function MapaBairros({
               }}
             >
               <defs>
+                <pattern id="mapa-favela" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+                  <line x1="0" y1="0" x2="0" y2="5" stroke="var(--mapa-camara)" strokeWidth="2.2" />
+                </pattern>
                 <pattern id="mapa-sem-dado" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
                   <rect width="6" height="6" fill="var(--mapa-vazio)" />
                   <line x1="0" y1="0" x2="0" y2="6" stroke="var(--mapa-hachura)" strokeWidth="2" />
@@ -353,6 +364,23 @@ export function MapaBairros({
               </g>
               {realce && porId.get(realce) && (
                 <path d={porId.get(realce)!.d} fill="none" stroke="var(--mapa-destaque)" strokeWidth={2.5} strokeLinejoin="round" pointerEvents="none" />
+              )}
+              {/* Contornos das favelas e comunidades urbanas (IBGE) */}
+              {verFavelas && (
+                <g>
+                  {favelas.map((f) => (
+                    <path
+                      key={f.codigo}
+                      d={f.d}
+                      className="mapa-ponto cursor-help"
+                      fill="url(#mapa-favela)"
+                      stroke="var(--mapa-camara)"
+                      strokeWidth={favelaFoco === f ? 2.2 : 1.2}
+                      onMouseEnter={() => setFavelaFoco(f)}
+                      onMouseLeave={() => setFavelaFoco(null)}
+                    />
+                  ))}
+                </g>
               )}
               {/* Pontos das camadas ligadas */}
               <g>
@@ -392,12 +420,18 @@ export function MapaBairros({
                 ))}
             </svg>
 
-            {dica && (pontoFoco || bFoco) && (
+            {dica && (pontoFoco || favelaFoco || bFoco) && (
               <div
                 className="pointer-events-none absolute z-10 w-60 rounded-xl border border-slate-200 bg-white/95 p-3 text-xs shadow-lg backdrop-blur"
                 style={{ left: Math.max(4, Math.min(dica.x + 14, (caixa.current?.clientWidth ?? 600) - 244)), top: dica.y + 14 }}
               >
-                {pontoFoco ? (
+                {favelaFoco && !pontoFoco ? (
+                  <>
+                    <div className="text-[11px] uppercase tracking-wide text-slate-500">Favela ou comunidade urbana</div>
+                    <div className="text-sm font-semibold text-slate-900">{favelaFoco.nome}</div>
+                    <div className="mt-0.5 text-slate-600">{favelaFoco.moradores.toLocaleString("pt-BR")} moradores no Censo 2022</div>
+                  </>
+                ) : pontoFoco ? (
                   <>
                     <div className="text-[11px] uppercase tracking-wide text-slate-500">{pontoFoco.categoria}</div>
                     <div className="text-sm font-semibold text-slate-900">{pontoFoco.nome}</div>
@@ -512,6 +546,16 @@ export function MapaBairros({
                   </button>
                 );
               })}
+              <button
+                onClick={() => setVerFavelas((v) => !v)}
+                aria-pressed={verFavelas}
+                className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-medium ring-1 ring-inset transition ${verFavelas ? "bg-slate-900 text-white ring-slate-900" : "bg-white text-slate-600 ring-slate-200 hover:bg-slate-50"}`}
+              >
+                <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden>
+                  <rect x="1" y="1" width="10" height="10" rx="2" fill="url(#mapa-favela)" stroke="var(--mapa-camara)" strokeWidth="1.2" />
+                </svg>
+                Favelas e comunidades ({favelas.length})
+              </button>
             </div>
 
             <div>
@@ -620,6 +664,7 @@ export function MapaBairros({
             aoEscolherIndicador={escolherIndicador}
             aoFechar={() => setSelecionado(null)}
             mesTexto={mes < meses.length - 1 ? rotuloMes(ateMes) : null}
+            anoSeguranca={anoSeguranca}
           />
         ) : (
           <div>

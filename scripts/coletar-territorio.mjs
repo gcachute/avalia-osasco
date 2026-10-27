@@ -129,6 +129,7 @@ console.log(`TSE: ${locais.size} locais de votação em Osasco, ${semBairro.leng
 // Votos somados por bairro, por cargo e turno.
 const votos = {}; // cargo|turno -> bairro -> nome -> votos
 const totais = {}; // cargo|turno -> nome -> {numero, votos}
+const partidos = { nomes: {}, total: {}, porBairro: {} }; // vereador: votos somados pelo número do partido (2 primeiros dígitos)
 cab = null;
 for await (const l of linhasDoZip(zipVotos)) {
   if (!cab) {
@@ -147,20 +148,29 @@ for await (const l of linhasDoZip(zipVotos)) {
   votos[chave][bairro] ??= {};
   votos[chave][bairro][nome] = (votos[chave][bairro][nome] ?? 0) + q;
   totais[chave] ??= {};
-  totais[chave][nome] ??= { numero: c[cab.NR_VOTAVEL], votos: 0 };
+  totais[chave][nome] ??= { numero: c[cab.NR_VOTAVEL], sq: c[cab.SQ_CANDIDATO], votos: 0 };
   totais[chave][nome].votos += q;
+  const nr = c[cab.NR_VOTAVEL];
+  if (c[cab.DS_CARGO] === "Vereador" && !["95", "96"].includes(nr) && /^\d{2}(\d{3})?$/.test(nr)) {
+    const pt = nr.slice(0, 2);
+    if (nr.length === 2) partidos.nomes[pt] = nome;
+    partidos.total[pt] = (partidos.total[pt] ?? 0) + q;
+    partidos.porBairro[bairro] ??= {};
+    partidos.porBairro[bairro][pt] = (partidos.porBairro[bairro][pt] ?? 0) + q;
+  }
 }
 
 const NAO_CANDIDATO = /^(VOTO )?(BRANCO|NULO)$/i;
 const eleicao = {
   fonte: "Tribunal Superior Eleitoral, resultados por seção e locais de votação, eleições municipais de 2024",
   url: "https://dadosabertos.tse.jus.br/",
+  partidos,
   locais: [...locais.values()].map(({ id, nome, endereco, lat, lon, bairro, eleitores }) => ({ id, nome, endereco, lat, lon, bairro, eleitores })),
   cargos: Object.fromEntries(
     Object.entries(totais).map(([chave, cand]) => {
       const [cargo, turno] = chave.split("|");
       const lista = Object.entries(cand)
-        .map(([nome, x]) => ({ nome, numero: x.numero, votos: x.votos, valido: !NAO_CANDIDATO.test(nome) }))
+        .map(([nome, x]) => ({ nome, numero: x.numero, sq: x.sq && x.sq !== "-1" ? x.sq : null, votos: x.votos, valido: !NAO_CANDIDATO.test(nome) }))
         .sort((a, b) => b.votos - a.votos);
       // Vereador: só candidatos com votação relevante, para o arquivo não ficar enorme.
       const guardados = new Set(lista.filter((x) => !x.valido || cargo !== "Vereador" || x.votos >= 1000).map((x) => x.nome));
@@ -177,6 +187,26 @@ const eleicao = {
     }),
   ),
 };
+// Comparecimento e abstenção (eleição para prefeito, 1º turno), somados por bairro.
+const zipDetalhe = await emCache(TSE + "detalhe_votacao_secao/detalhe_votacao_secao_2024.zip", "tse/detalhe_votacao_secao_2024.zip");
+const comparecimento = {};
+cab = null;
+for await (const l of linhasDoZip(zipDetalhe)) {
+  if (!cab) {
+    cab = Object.fromEntries(camposCsv(l).map((k, i) => [k, i]));
+    continue;
+  }
+  if (!l.includes('"OSASCO"')) continue;
+  const c = camposCsv(l);
+  if (c[cab.SG_UF] !== "SP" || c[cab.NM_MUNICIPIO] !== "OSASCO" || c[cab.DS_CARGO] !== "Prefeito" || c[cab.NR_TURNO] !== "1") continue;
+  const b = locais.get(`${c[cab.NR_ZONA]}-${c[cab.NR_LOCAL_VOTACAO]}`)?.bairro ?? "sem-bairro";
+  const x = (comparecimento[b] ??= { aptos: 0, compareceram: 0, brancos: 0, nulos: 0 });
+  x.aptos += numero(c[cab.QT_APTOS]) ?? 0;
+  x.compareceram += numero(c[cab.QT_COMPARECIMENTO]) ?? 0;
+  x.brancos += numero(c[cab.QT_VOTOS_BRANCOS]) ?? 0;
+  x.nulos += numero(c[cab.QT_VOTOS_NULOS]) ?? 0;
+}
+eleicao.comparecimento = comparecimento;
 writeFileSync("data/territorio/eleicao-2024.json", JSON.stringify(eleicao, null, 1));
 console.log(`TSE: cargos ${Object.keys(eleicao.cargos).join(", ")}`);
 
@@ -299,3 +329,116 @@ const publicas = escolas.filter((e) => e.rede !== "Privada");
 console.log(
   `Escolas: ${escolas.length} em funcionamento (${publicas.length} públicas); ${escolas.filter((e) => !e.bairro).length} sem bairro; ${escolas.filter((e) => e.lat).length} com coordenadas; ${escolas.filter((e) => e.idebIniciais || e.idebFinais).length} com IDEB`,
 );
+
+
+// ---------- IBGE: favelas e comunidades urbanas (Censo 2022) ----------
+// Moradores de cada bairro que vivem em setores censitários classificados como favela ou comunidade urbana,
+// e o contorno de cada comunidade para desenhar no mapa.
+const zipSetores = await emCache(AGREG.replace("Agregados_por_Bairro_csv/", "Agregados_por_Setor_csv/") + "Agregados_por_setores_basico_BR_20260520.zip", "censo/setores_basico.zip");
+const porCodigo = new Map(malha.bairros.map((b) => [b.codigo, b.id]));
+const comunidades = {}; // código FCU -> {nome, moradores, bairros: {id: moradores}}
+const emFavela = {}; // bairro -> moradores
+cab = null;
+for await (const l of linhasDoZip(zipSetores)) {
+  if (!cab) {
+    cab = Object.fromEntries(camposCsv(l).map((k, i) => [k.toUpperCase(), i]));
+    continue;
+  }
+  if (!l.startsWith(`"${IBGE_MUN}`)) continue;
+  const c = camposCsv(l);
+  const fcu = c[cab.CD_FCU];
+  if (!fcu || fcu === ".") continue;
+  const pessoasSetor = numero(c[cab.V0001]) ?? 0;
+  const bairro = porCodigo.get(c[cab.CD_BAIRRO]) ?? null;
+  const x = (comunidades[fcu] ??= { codigo: fcu, nome: c[cab.NM_FCU], moradores: 0, bairros: {} });
+  x.moradores += pessoasSetor;
+  if (bairro) {
+    x.bairros[bairro] = (x.bairros[bairro] ?? 0) + pessoasSetor;
+    emFavela[bairro] = (emFavela[bairro] ?? 0) + pessoasSetor;
+  }
+}
+const { lerShapefile } = await import("./lib/shp.mjs");
+const zipFcu = unzipSync(
+  new Uint8Array(
+    readFileSync(await emCache(CENSO + "Favelas_e_comunidades_urbanas_Resultados_do_universo/arquivos_vetoriais/poligonos_FCUs_shp.zip", "favelas/poligonos_FCUs_shp.zip")),
+  ),
+);
+const shpFcu = Object.keys(zipFcu).find((k) => k.endsWith(".shp"));
+const contornos = lerShapefile(zipFcu[shpFcu], zipFcu[shpFcu.replace(/\.shp$/, ".dbf")])
+  .filter((f) => String(f.properties.cd_mun) === IBGE_MUN)
+  .map((f) => ({ type: "Feature", properties: { codigo: String(f.properties.cd_fcu) }, geometry: f.geometry }));
+writeFileSync(
+  "data/territorio/favelas.json",
+  JSON.stringify(
+    {
+      fonte: "IBGE, Censo 2022, Favelas e Comunidades Urbanas (setores e polígonos)",
+      url: CENSO + "Favelas_e_comunidades_urbanas_Resultados_do_universo/",
+      emFavela,
+      comunidades: Object.values(comunidades)
+        .map((x) => ({ ...x, nome: x.nome.replace(/\s+-\s+[A-Z]{1,3}$/, "") }))
+        .sort((a, b) => b.moradores - a.moradores),
+    },
+    null,
+    1,
+  ),
+);
+writeFileSync("data/territorio/favelas-contornos.json", JSON.stringify({ type: "FeatureCollection", features: contornos }));
+console.log(`Favelas: ${Object.keys(comunidades).length} comunidades, ${Object.values(emFavela).reduce((a, b) => a + b, 0).toLocaleString("pt-BR")} moradores, ${contornos.length} contornos`);
+
+// ---------- SSP-SP: ocorrências criminais registradas em 2025 ----------
+// Cada linha da planilha é uma natureza de crime em um boletim de ocorrência, com o local do fato.
+// Publicamos só a contagem por bairro e por grupo; nenhum endereço ou boletim individual.
+const { linhasXlsx } = await import("./lib/xlsx-fluxo.mjs");
+const ANO_SSP = 2025;
+const planilhaSsp = await emCache(`https://www.ssp.sp.gov.br/assets/estatistica/transparencia/spDados/SPDadosCriminais_${ANO_SSP}.xlsx`, `ssp/SPDadosCriminais_${ANO_SSP}.xlsx`);
+const GRUPOS = [
+  ["mortes", /^(HOMIC[IÍ]DIO DOLOSO$|LATROC[IÍ]NIO|LES[AÃ]O CORPORAL SEGUIDA DE MORTE)/],
+  ["roubos", /^ROUBO/],
+  ["furtos", /^FURTO/],
+  ["violencia", /^(LES[AÃ]O CORPORAL DOLOSA|TENTATIVA DE HOMIC)/],
+  ["sexual", /^ESTUPRO/],
+  ["transito", /(ACIDENTE DE TR[AÂ]NSITO)/],
+  ["drogas", /ENTORPECENTES/],
+];
+const crimes = {}; // bairro -> grupo -> n
+const vistos = new Set();
+let semLocal = 0, total = 0;
+cab = null;
+for await (const r of linhasXlsx(planilhaSsp, new RegExp(String(ANO_SSP)))) {
+  if (!cab) {
+    cab = Object.fromEntries(r.map((k, i) => [k, i]));
+    continue;
+  }
+  if (r[0] === "NOME_DEPARTAMENTO" || r[cab.CD_IBGE] !== IBGE_MUN) continue;
+  const nat = r[cab.NATUREZA_APURADA];
+  const chave = `${r[cab.NUM_BO]}|${r[cab.ANO_BO]}|${r[cab.NOME_DELEGACIA]}|${nat}`;
+  if (vistos.has(chave)) continue;
+  vistos.add(chave);
+  const grupo = GRUPOS.find(([, re]) => re.test(nat))?.[0];
+  if (!grupo) continue;
+  total++;
+  const lat = Number(r[cab.LATITUDE]), lon = Number(r[cab.LONGITUDE]);
+  const bairro = localiza(lon, lat) ?? porTexto(`bairro ${r[cab.BAIRRO]}`);
+  if (!bairro) {
+    semLocal++;
+    continue;
+  }
+  crimes[bairro] ??= {};
+  crimes[bairro][grupo] = (crimes[bairro][grupo] ?? 0) + 1;
+}
+writeFileSync(
+  "data/territorio/seguranca.json",
+  JSON.stringify(
+    {
+      fonte: `Secretaria da Segurança Pública de SP, dados criminais (boletins de ocorrência) de ${ANO_SSP}`,
+      url: "https://www.ssp.sp.gov.br/estatistica/dados-mensais",
+      ano: ANO_SSP,
+      total,
+      semLocal,
+      porBairro: crimes,
+    },
+    null,
+    1,
+  ),
+);
+console.log(`SSP ${ANO_SSP}: ${total} ocorrências em Osasco nos grupos escolhidos, ${semLocal} sem bairro identificado`);

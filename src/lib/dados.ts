@@ -90,10 +90,19 @@ export type BairroMapa = {
     prefeito: { nome: string; pct: number | null }[] | null;
     vereadores: { nome: string; id: string; votos: number; pct: number }[] | null;
     validosVereador: number;
+    comparecimento?: number | null;
+    brancosNulos?: number | null;
+    partidos?: { numero: string; sigla: string; pct: number }[] | null;
   } | null;
+  partidoPrefeito?: number | null;
+  favelas?: { moradores: number; pct: number | null; comunidades: { nome: string; moradores: number }[] } | null;
+  seguranca?: Record<GrupoCrime, { n: number; por10mil: number | null }> | null;
+  obras?: { objeto: string; situacao: string; valor: number; contratante: string; contratado: string; ano: number }[];
   saude?: { cnes: string; nome: string; tipo: string; publica: boolean; turno: string | null }[];
   escolas?: { codigo: string; nome: string; rede: string; idebIniciais: number | null; idebFinais: number | null }[];
 };
+
+export type GrupoCrime = "mortes" | "roubos" | "furtos" | "violencia" | "sexual" | "transito" | "drogas";
 
 export type PontoMapa = { tipo: "saude" | "votacao" | "escola"; categoria: string; nome: string; lat: number; lon: number; bairro: string | null; eleitores?: number };
 
@@ -101,11 +110,14 @@ export type Mapa = {
   fonte: string;
   bairros: BairroMapa[];
   itens: ItemMapa[];
-  cidade: (Partial<Record<keyof CensoBairro, number | null>> & { pessoas?: number; densidade?: number }) | null;
+  cidade: (Partial<Record<keyof CensoBairro, number | null>> & { pessoas?: number; densidade?: number } & Record<string, number | null | undefined>) | null;
   prefeitoEleicao: { nome: string; votos: number; pct: number }[];
   votosVereador: Record<string, { nomeUrna: string; total: number; porBairro: Record<string, number> }>;
   pontos: PontoMapa[];
   minimoMoradores: number;
+  anoSeguranca?: number | null;
+  partidoDoPrefeito?: string | null;
+  partidosCidade?: { numero: string; sigla: string; votos: number }[];
   fontes: { nome: string; url: string }[];
 };
 
@@ -119,6 +131,7 @@ export type Vereador = {
   partido: string | null;
   partidoNome: string | null;
   foto: string | null;
+  fotoFonte: string | null;
   perfilOficial: string | null;
   perfil: {
     nomeCompleto: string | null;

@@ -87,7 +87,7 @@
     opacity 0.5s ease,
     transform 0.5s ease;
 }
-.js .revelar.visivel {
+.js .revelar[data-visivel] {
   opacity: 1;
   transform: none;
 }
@@ -96,7 +96,7 @@
 .barra-anim {
   transition: width 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.js .barra-anim:not(.visivel) {
+.js .barra-anim:not([data-visivel]) {
   width: 0 !important;
 }
 
@@ -107,7 +107,7 @@
     opacity: 1;
     transform: none;
   }
-  .js .barra-anim:not(.visivel) {
+  .js .barra-anim:not([data-visivel]) {
     width: auto;
   }
 }

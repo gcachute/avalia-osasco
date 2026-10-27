@@ -17,6 +17,7 @@
     "coletar:vereadores": "node scripts/coletar-vereadores.mjs",
     "coletar:camara": "node scripts/coletar-camara.mjs",
     "coletar:bairros": "node scripts/coletar-bairros.mjs",
+    "coletar:fotos": "node scripts/coletar-fotos.mjs",
     "coletar:territorio": "node --max-old-space-size=6000 scripts/coletar-territorio.mjs"
   },
   "dependencies": {

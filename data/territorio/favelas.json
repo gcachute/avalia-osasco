@@ -1,0 +1,721 @@
+{
+ "fonte": "IBGE, Censo 2022, Favelas e Comunidades Urbanas (setores e polígonos)",
+ "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Favelas_e_comunidades_urbanas_Resultados_do_universo/",
+ "emFavela": {
+  "jardim-das-flores": 127,
+  "piratininga": 5055,
+  "pestana": 171,
+  "jardim-roberto": 2205,
+  "ayrosa": 3866,
+  "castelo-branco": 2184,
+  "alianca": 2022,
+  "rochdale": 8581,
+  "adalgisa": 246,
+  "industrial-mazzei": 703,
+  "mutinga": 2371,
+  "padroeira": 6255,
+  "sao-pedro": 2181,
+  "munhoz-junior": 6333,
+  "helena-maria": 1486,
+  "jaguaribe": 5110,
+  "vila-menck": 4637,
+  "bussocaba": 1966,
+  "bandeiras": 2462,
+  "portal-d-oeste": 5257,
+  "baronesa": 767,
+  "veloso": 5214,
+  "industrial-anhanguera": 2974,
+  "jardim-novo-osasco": 544,
+  "platina": 312,
+  "santa-fe": 857,
+  "paiva-ramos": 2654,
+  "bonanca": 13502,
+  "remedios": 569,
+  "santo-antonio": 1114,
+  "santa-maria": 2613,
+  "jardim-conceicao": 713,
+  "cidade-das-flores": 126,
+  "km-18": 145
+ },
+ "comunidades": [
+  {
+   "codigo": "35344010144",
+   "nome": "Colinas d'Oeste",
+   "moradores": 10182,
+   "bairros": {
+    "bonanca": 10182
+   }
+  },
+  {
+   "codigo": "35344010142",
+   "nome": "Açucará / Inigrantes / Real Cargas",
+   "moradores": 4671,
+   "bairros": {
+    "paiva-ramos": 2654,
+    "bonanca": 543
+   }
+  },
+  {
+   "codigo": "35344010149",
+   "nome": "Jaguaribe",
+   "moradores": 3921,
+   "bairros": {
+    "jaguaribe": 3921
+   }
+  },
+  {
+   "codigo": "35344010078",
+   "nome": "Piratininga",
+   "moradores": 3901,
+   "bairros": {
+    "piratininga": 3901
+   }
+  },
+  {
+   "codigo": "35344010122",
+   "nome": "Padroeira",
+   "moradores": 3359,
+   "bairros": {
+    "padroeira": 3359
+   }
+  },
+  {
+   "codigo": "35344010173",
+   "nome": "Chapéu de Couro",
+   "moradores": 3124,
+   "bairros": {
+    "portal-d-oeste": 3124
+   }
+  },
+  {
+   "codigo": "35344010011",
+   "nome": "Jardim Marieta",
+   "moradores": 3037,
+   "bairros": {
+    "ayrosa": 3037
+   }
+  },
+  {
+   "codigo": "35344010185",
+   "nome": "Rochdale",
+   "moradores": 2994,
+   "bairros": {
+    "rochdale": 2994
+   }
+  },
+  {
+   "codigo": "35344010054",
+   "nome": "Rochdale",
+   "moradores": 2843,
+   "bairros": {
+    "rochdale": 2843
+   }
+  },
+  {
+   "codigo": "35344010001",
+   "nome": "Morro do Sabão",
+   "moradores": 2838,
+   "bairros": {
+    "munhoz-junior": 2838
+   }
+  },
+  {
+   "codigo": "35344010132",
+   "nome": "Veloso",
+   "moradores": 2800,
+   "bairros": {
+    "veloso": 2800
+   }
+  },
+  {
+   "codigo": "35344010091",
+   "nome": "Girassois",
+   "moradores": 2322,
+   "bairros": {
+    "industrial-anhanguera": 1879
+   }
+  },
+  {
+   "codigo": "35344010099",
+   "nome": "Portal D'oeste I",
+   "moradores": 2062,
+   "bairros": {
+    "portal-d-oeste": 2062
+   }
+  },
+  {
+   "codigo": "35344010039",
+   "nome": "Vila Menck",
+   "moradores": 2012,
+   "bairros": {
+    "vila-menck": 2012
+   }
+  },
+  {
+   "codigo": "35344010019",
+   "nome": "Vicentina",
+   "moradores": 1935,
+   "bairros": {
+    "jardim-roberto": 1935
+   }
+  },
+  {
+   "codigo": "35344010141",
+   "nome": "Santa Maria - SM2",
+   "moradores": 1778,
+   "bairros": {
+    "santa-maria": 1778
+   }
+  },
+  {
+   "codigo": "35344010004",
+   "nome": "Helena Maria - D2/Munhoz Júnior",
+   "moradores": 1542,
+   "bairros": {
+    "munhoz-junior": 1098,
+    "helena-maria": 444
+   }
+  },
+  {
+   "codigo": "35344010170",
+   "nome": "Bonança / Eucaliptal / Rua dos Anjos",
+   "moradores": 1529,
+   "bairros": {
+    "bonanca": 1529
+   }
+  },
+  {
+   "codigo": "35344010161",
+   "nome": "Aliança",
+   "moradores": 1504,
+   "bairros": {
+    "alianca": 1504
+   }
+  },
+  {
+   "codigo": "35344010014",
+   "nome": "Veloso - U/ Novo Osasco",
+   "moradores": 1503,
+   "bairros": {
+    "veloso": 1227,
+    "jardim-novo-osasco": 276
+   }
+  },
+  {
+   "codigo": "35344010154",
+   "nome": "Dersa / Buraco",
+   "moradores": 1425,
+   "bairros": {
+    "sao-pedro": 1425
+   }
+  },
+  {
+   "codigo": "35344010008",
+   "nome": "Rochdale",
+   "moradores": 1386,
+   "bairros": {
+    "rochdale": 1386
+   }
+  },
+  {
+   "codigo": "35344010002",
+   "nome": "Mutinga",
+   "moradores": 1380,
+   "bairros": {
+    "mutinga": 1380
+   }
+  },
+  {
+   "codigo": "35344010044",
+   "nome": "Jaguaribe",
+   "moradores": 1265,
+   "bairros": {
+    "jaguaribe": 910,
+    "santo-antonio": 355
+   }
+  },
+  {
+   "codigo": "35344010084",
+   "nome": "Ind Anhanguera",
+   "moradores": 1095,
+   "bairros": {
+    "industrial-anhanguera": 1095
+   }
+  },
+  {
+   "codigo": "35344010131",
+   "nome": "Jardim Santo Antônio",
+   "moradores": 1094,
+   "bairros": {
+    "santo-antonio": 759,
+    "bussocaba": 335
+   }
+  },
+  {
+   "codigo": "35344010045",
+   "nome": "Mutinga",
+   "moradores": 991,
+   "bairros": {
+    "mutinga": 991
+   }
+  },
+  {
+   "codigo": "35344010016",
+   "nome": "Veloso",
+   "moradores": 981,
+   "bairros": {
+    "veloso": 981
+   }
+  },
+  {
+   "codigo": "35344010076",
+   "nome": "Jardim Elvira - C2",
+   "moradores": 975,
+   "bairros": {
+    "castelo-branco": 975
+   }
+  },
+  {
+   "codigo": "35344010035",
+   "nome": "Bandeiras - AQ I",
+   "moradores": 894,
+   "bairros": {
+    "bandeiras": 894
+   }
+  },
+  {
+   "codigo": "35344010157",
+   "nome": "Ocupação Esperança",
+   "moradores": 857,
+   "bairros": {
+    "santa-fe": 857
+   }
+  },
+  {
+   "codigo": "35344010137",
+   "nome": "Piratininga / Vila Constran",
+   "moradores": 846,
+   "bairros": {
+    "piratininga": 846
+   }
+  },
+  {
+   "codigo": "35344010074",
+   "nome": "Jardim Marieta",
+   "moradores": 829,
+   "bairros": {
+    "ayrosa": 829
+   }
+  },
+  {
+   "codigo": "35344010180",
+   "nome": "Pinheirinho",
+   "moradores": 822,
+   "bairros": {
+    "rochdale": 822
+   }
+  },
+  {
+   "codigo": "35344010152",
+   "nome": "Bussocaba - AD 2/Jaguaribe",
+   "moradores": 819,
+   "bairros": {
+    "jaguaribe": 279,
+    "bussocaba": 540
+   }
+  },
+  {
+   "codigo": "35344010037",
+   "nome": "Padroeira",
+   "moradores": 815,
+   "bairros": {
+    "padroeira": 815
+   }
+  },
+  {
+   "codigo": "35344010168",
+   "nome": "Munhoz Júnior",
+   "moradores": 788,
+   "bairros": {
+    "munhoz-junior": 788
+   }
+  },
+  {
+   "codigo": "35344010021",
+   "nome": "Bussocaba",
+   "moradores": 760,
+   "bairros": {
+    "bussocaba": 760
+   }
+  },
+  {
+   "codigo": "35344010053",
+   "nome": "São Pedro",
+   "moradores": 756,
+   "bairros": {
+    "sao-pedro": 756
+   }
+  },
+  {
+   "codigo": "35344010166",
+   "nome": "Avenida Panorâmica",
+   "moradores": 729,
+   "bairros": {
+    "bonanca": 729
+   }
+  },
+  {
+   "codigo": "35344010042",
+   "nome": "Vila Menck",
+   "moradores": 718,
+   "bairros": {
+    "vila-menck": 718
+   }
+  },
+  {
+   "codigo": "35344010164",
+   "nome": "Mutinga",
+   "moradores": 703,
+   "bairros": {
+    "industrial-mazzei": 703
+   }
+  },
+  {
+   "codigo": "35344010110",
+   "nome": "Munhoz JR - C1",
+   "moradores": 687,
+   "bairros": {
+    "castelo-branco": 323,
+    "munhoz-junior": 364
+   }
+  },
+  {
+   "codigo": "35344010175",
+   "nome": "Santa Maria - SM3",
+   "moradores": 679,
+   "bairros": {
+    "santa-maria": 679
+   }
+  },
+  {
+   "codigo": "35344010178",
+   "nome": "Baronesa",
+   "moradores": 614,
+   "bairros": {
+    "portal-d-oeste": 71
+   }
+  },
+  {
+   "codigo": "35344010063",
+   "nome": "Padroeira",
+   "moradores": 570,
+   "bairros": {
+    "padroeira": 570
+   }
+  },
+  {
+   "codigo": "35344010181",
+   "nome": "Remédios",
+   "moradores": 569,
+   "bairros": {
+    "remedios": 569
+   }
+  },
+  {
+   "codigo": "35344010135",
+   "nome": "Bandeiras",
+   "moradores": 550,
+   "bairros": {
+    "bandeiras": 550
+   }
+  },
+  {
+   "codigo": "35344010184",
+   "nome": "Rochdale - P1",
+   "moradores": 536,
+   "bairros": {
+    "rochdale": 536
+   }
+  },
+  {
+   "codigo": "35344010174",
+   "nome": "Fazendinha",
+   "moradores": 536,
+   "bairros": {
+    "jardim-conceicao": 536
+   }
+  },
+  {
+   "codigo": "35344010055",
+   "nome": "Bandeiras",
+   "moradores": 528,
+   "bairros": {
+    "bandeiras": 528
+   }
+  },
+  {
+   "codigo": "35344010070",
+   "nome": "Baronesa",
+   "moradores": 525,
+   "bairros": {
+    "baronesa": 525
+   }
+  },
+  {
+   "codigo": "35344010126",
+   "nome": "Helena Maria",
+   "moradores": 522,
+   "bairros": {
+    "helena-maria": 522
+   }
+  },
+  {
+   "codigo": "35344010007",
+   "nome": "Helena Maria",
+   "moradores": 520,
+   "bairros": {
+    "helena-maria": 520
+   }
+  },
+  {
+   "codigo": "35344010177",
+   "nome": "Luiz Bonfá",
+   "moradores": 519,
+   "bairros": {
+    "bonanca": 519
+   }
+  },
+  {
+   "codigo": "35344010068",
+   "nome": "Vila Menck",
+   "moradores": 504,
+   "bairros": {
+    "vila-menck": 504
+   }
+  },
+  {
+   "codigo": "35344010085",
+   "nome": "Vila Menck",
+   "moradores": 501,
+   "bairros": {
+    "vila-menck": 501
+   }
+  },
+  {
+   "codigo": "35344010029",
+   "nome": "Jardim Elvira - CH2",
+   "moradores": 493,
+   "bairros": {
+    "castelo-branco": 493
+   }
+  },
+  {
+   "codigo": "35344010034",
+   "nome": "Bandeiras",
+   "moradores": 490,
+   "bairros": {
+    "bandeiras": 490
+   }
+  },
+  {
+   "codigo": "35344010005",
+   "nome": "Munhoz Júnior",
+   "moradores": 483,
+   "bairros": {
+    "munhoz-junior": 483
+   }
+  },
+  {
+   "codigo": "35344010171",
+   "nome": "Padroeira",
+   "moradores": 460,
+   "bairros": {
+    "padroeira": 460
+   }
+  },
+  {
+   "codigo": "35344010079",
+   "nome": "Vila Menck",
+   "moradores": 457,
+   "bairros": {
+    "vila-menck": 457
+   }
+  },
+  {
+   "codigo": "35344010065",
+   "nome": "Vila Menck",
+   "moradores": 445,
+   "bairros": {
+    "vila-menck": 445
+   }
+  },
+  {
+   "codigo": "35344010072",
+   "nome": "Munhoz Júnior",
+   "moradores": 444,
+   "bairros": {
+    "munhoz-junior": 444
+   }
+  },
+  {
+   "codigo": "35344010048",
+   "nome": "Jardim Elvira - CH1/Castelo Branco",
+   "moradores": 425,
+   "bairros": {}
+  },
+  {
+   "codigo": "35344010046",
+   "nome": "Jardim Elvira - BC1",
+   "moradores": 393,
+   "bairros": {
+    "castelo-branco": 393
+   }
+  },
+  {
+   "codigo": "35344010155",
+   "nome": "Itaperuna",
+   "moradores": 376,
+   "bairros": {
+    "padroeira": 376
+   }
+  },
+  {
+   "codigo": "35344010051",
+   "nome": "Padroeira - AR/Jardim Turíbio",
+   "moradores": 349,
+   "bairros": {
+    "padroeira": 349
+   }
+  },
+  {
+   "codigo": "35344010022",
+   "nome": "Bussocaba - AD1",
+   "moradores": 331,
+   "bairros": {
+    "bussocaba": 331
+   }
+  },
+  {
+   "codigo": "35344010033",
+   "nome": "Jardim Padroeira",
+   "moradores": 326,
+   "bairros": {
+    "padroeira": 326
+   }
+  },
+  {
+   "codigo": "35344010050",
+   "nome": "Aliança",
+   "moradores": 319,
+   "bairros": {
+    "alianca": 319
+   }
+  },
+  {
+   "codigo": "35344010169",
+   "nome": "Munhoz JR - D1",
+   "moradores": 318,
+   "bairros": {
+    "munhoz-junior": 318
+   }
+  },
+  {
+   "codigo": "35344010158",
+   "nome": "Platina",
+   "moradores": 312,
+   "bairros": {
+    "platina": 312
+   }
+  },
+  {
+   "codigo": "35344010136",
+   "nome": "Montalverne",
+   "moradores": 308,
+   "bairros": {
+    "piratininga": 308
+   }
+  },
+  {
+   "codigo": "35344010183",
+   "nome": "Cidade das Flores / Pestana",
+   "moradores": 297,
+   "bairros": {
+    "pestana": 171,
+    "cidade-das-flores": 126
+   }
+  },
+  {
+   "codigo": "35344010167",
+   "nome": "Pestana / Jardim das Flores",
+   "moradores": 272,
+   "bairros": {
+    "jardim-das-flores": 127,
+    "km-18": 145
+   }
+  },
+  {
+   "codigo": "35344010030",
+   "nome": "Jardim Roberto",
+   "moradores": 270,
+   "bairros": {
+    "jardim-roberto": 270
+   }
+  },
+  {
+   "codigo": "35344010156",
+   "nome": "Novo Osasco",
+   "moradores": 268,
+   "bairros": {
+    "jardim-novo-osasco": 268
+   }
+  },
+  {
+   "codigo": "35344010115",
+   "nome": "Adalgisa",
+   "moradores": 246,
+   "bairros": {
+    "adalgisa": 246
+   }
+  },
+  {
+   "codigo": "35344010151",
+   "nome": "Baronesa",
+   "moradores": 242,
+   "bairros": {
+    "baronesa": 242
+   }
+  },
+  {
+   "codigo": "35344010163",
+   "nome": "Veloso",
+   "moradores": 206,
+   "bairros": {
+    "veloso": 206
+   }
+  },
+  {
+   "codigo": "35344010139",
+   "nome": "Radar",
+   "moradores": 199,
+   "bairros": {
+    "alianca": 199
+   }
+  },
+  {
+   "codigo": "35344010153",
+   "nome": "Conceição",
+   "moradores": 177,
+   "bairros": {
+    "jardim-conceicao": 177
+   }
+  },
+  {
+   "codigo": "35344010176",
+   "nome": "Margaridas",
+   "moradores": 156,
+   "bairros": {
+    "santa-maria": 156
+   }
+  }
+ ]
+}
