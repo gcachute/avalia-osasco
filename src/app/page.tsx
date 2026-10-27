@@ -3,7 +3,7 @@ import { CustoMandato, DespesasCamara } from "@/components/Camara";
 import type { VereadorLista } from "@/components/ListaVereadores";
 import { PainelInicial } from "@/components/PainelInicial";
 import { GraficoPartidos, type MediaPartido } from "@/components/Partidos";
-import { Avatar, NotaBadge, Secao, SeloPartido } from "@/components/ui";
+import { AvisoParcial, Avatar, NotaBadge, Secao, SeloPartido } from "@/components/ui";
 import type { Coeficiente } from "@/lib/dados";
 import { COEFICIENTES, PILARES_PREFEITO, dados, dataBR, nota10 } from "@/lib/dados";
 import { dadosDoMapaCompleto } from "@/lib/mapaGeo";
@@ -99,6 +99,8 @@ export default async function Home() {
             </span>
           </Link>
         </section>
+
+        <AvisoParcial />
 
         {mapa && mapaPronto ? (
           <PainelInicial

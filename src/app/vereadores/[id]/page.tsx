@@ -6,7 +6,7 @@ import { CustoMandato } from "@/components/Camara";
 import { ListaTematica, type ItemLista } from "@/components/ListaTematica";
 import { MapaPessoa, type ModoMapa } from "@/components/MapaPessoa";
 import { geometriaBairros } from "@/lib/mapaGeo";
-import { Avatar, Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
+import { AvisoParcial, Avatar, Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { PilarVereador, Vereador } from "@/lib/dados";
 import { COEFICIENTES, PILARES_VEREADOR, TIPO_NOME, dados, dataBR, milReais, nomeSessao, nota, nota10, num, pct, plural, sessao } from "@/lib/dados";
 
@@ -214,6 +214,8 @@ export default async function PaginaVereador({ params }: Props) {
           )}
         </div>
       </header>
+
+      <AvisoParcial alvo="vereador" className="mt-4" />
 
       <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-5">
         {PILARES_VEREADOR.map((pl) => {
