@@ -174,7 +174,7 @@ export function MapaBairros({
   const zoomRef = useRef<ZoomBehavior<SVGSVGElement, unknown> | null>(null);
   const ouvintes = useRef(new Set<(v: Vista) => void>());
   const [vista, setVista] = useState<Vista>({ k: 1, x: 0, y: 0 });
-  const [ruas, setRuas] = useState(true);
+  const [ruas, setRuas] = useState(false);
   const [pxPorUnidade, setPxPorUnidade] = useState(0);
   const [avisoRolagem, setAvisoRolagem] = useState(false);
   const inscrever = useCallback((f: (v: Vista) => void) => {
