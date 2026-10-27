@@ -1,0 +1,72 @@
+name: Atualizar dados
+
+# Todo dia 5, às 6h de Brasília: baixa o que houver de novo nas fontes oficiais, recalcula as notas e publica.
+# Cada coletor pode falhar sozinho (site fora do ar, por exemplo) sem impedir os outros.
+# IDEB/DataSUS e PNTP saem uma vez por ano e são pesados: rode à mão com npm run coletar:resultados / coletar:transparencia.
+on:
+  schedule:
+    - cron: "0 9 5 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: atualizar-dados
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    outputs:
+      mudou: ${{ steps.commit.outputs.mudou }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Planilhas das sessões (Câmara)
+        run: npm run coletar
+        continue-on-error: true
+      - name: Perfis dos vereadores (Câmara)
+        run: npm run coletar:vereadores
+        continue-on-error: true
+      - name: Despesas da Câmara (TCE-SP)
+        run: npm run coletar:camara
+        continue-on-error: true
+      - name: Dados fiscais (SICONFI)
+        run: npm run coletar:fiscal
+        continue-on-error: true
+      - name: IEG-M (TCE-SP)
+        run: npm run coletar:iegm
+        continue-on-error: true
+
+      - name: Recalcular notas
+        run: npm run dados
+
+      - name: Commit dos dados novos
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data src/data
+          # dados.json muda a cada execução por causa do campo geradoEm; só conta mudança real.
+          if git diff --cached --quiet -- . ':(exclude)src/data/dados.json' && [ "$(git diff --cached -U0 -- src/data/dados.json | grep -c '^[+-] ')" -le 2 ]; then
+            echo "Nada novo nas fontes."
+            echo "mudou=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Atualização mensal dos dados ($(date -u +%Y-%m-%d))"
+            git push
+            echo "mudou=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  # Commits feitos com o GITHUB_TOKEN não disparam o workflow de publicação, então ele é chamado aqui.
+  publicar:
+    needs: atualizar
+    if: needs.atualizar.outputs.mudou == 'true'
+    uses: ./.github/workflows/pages.yml

@@ -19,7 +19,7 @@ const ESCALA = [
   { faixa: "0 a 4,9", nome: "Fraco", classe: "bg-rose-50 text-rose-800 ring-rose-200" },
 ];
 
-function Destaque({ rotulo, v, valor, alerta = false }: { rotulo: string; v: Vereador; valor: string; alerta?: boolean }) {
+function Destaque({ rotulo, v, valor }: { rotulo: string; v: Vereador; valor: string }) {
   return (
     <Link
       href={`/vereadores/${v.id}`}
@@ -27,7 +27,7 @@ function Destaque({ rotulo, v, valor, alerta = false }: { rotulo: string; v: Ver
     >
       <Retrato nome={v.nome} foto={v.foto} className="w-16 shrink-0 rounded-xl" />
       <div className="min-w-0">
-        <div className={`text-xs font-medium uppercase tracking-wide ${alerta ? "text-rose-700" : "text-blue-800"}`}>{rotulo}</div>
+        <div className="text-xs font-medium uppercase tracking-wide text-blue-800">{rotulo}</div>
         <div className="truncate font-semibold text-slate-900 group-hover:text-blue-800">{v.nome}</div>
         <div className="text-sm text-slate-600">
           {valor} {v.partido && <span className="text-slate-400">· {v.partido}</span>}
@@ -51,7 +51,6 @@ export default function Home() {
   const melhor = maior(ativosComNota, (v) => v.nota ?? 0);
   const presente = maior(ativosComNota, (v) => (v.indicadores.presencaAjustada ?? 0) + v.indicadores.sessoes / 1e4);
   const produtivo = maior(ativosComNota, (v) => v.indicadores.projetosSubstantivos);
-  const faltoso = maior(ativosComNota, (v) => v.indicadores.adiadasPorAusencia);
 
   const porPartido: MediaPartido[] = Object.values(
     ativosComNota.reduce<Record<string, MediaPartido>>((acc, v) => {
@@ -83,6 +82,9 @@ export default function Home() {
             </a>
             <Link href="/prefeito" className="rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 ring-1 ring-slate-300 transition hover:bg-slate-50">
               Nota do prefeito
+            </Link>
+            <Link href="/mapa" className="rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 ring-1 ring-slate-300 transition hover:bg-slate-50">
+              Mapa por bairro
             </Link>
           </div>
         </div>
@@ -127,11 +129,10 @@ export default function Home() {
       </Secao>
 
       <Secao titulo="Destaques" subtitulo="Entre os vereadores em exercício com nota.">
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {melhor && <Destaque rotulo="Maior nota" v={melhor} valor={`nota ${nota(melhor.nota)}`} />}
           {presente && <Destaque rotulo="Mais presente" v={presente} valor={`${pct(presente.indicadores.presencaAjustada)} de presença`} />}
           {produtivo && <Destaque rotulo="Mais projetos de política pública" v={produtivo} valor={`${produtivo.indicadores.projetosSubstantivos} projetos`} />}
-          {faltoso && <Destaque rotulo="Mais itens adiados por falta" v={faltoso} valor={`${faltoso.indicadores.adiadasPorAusencia} itens`} alerta />}
         </div>
       </Secao>
 

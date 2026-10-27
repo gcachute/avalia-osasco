@@ -30,8 +30,8 @@ export function GraficoPartidos({ dados }: { dados: MediaPartido[] }) {
                 <span className="relative h-5">
                   <span className="absolute inset-y-0 left-0 w-full rounded bg-slate-100" />
                   <span
-                    className={`barra-anim absolute inset-y-0 left-0 rounded transition-colors ${aberto ? "bg-blue-700" : "bg-blue-500"}`}
-                    style={{ width: `${(p.media / 10) * 100}%` }}
+                    className="barra-anim absolute inset-y-0 left-0 rounded"
+                    style={{ width: `${(p.media / 10) * 100}%`, background: aberto ? "var(--color-blue-700)" : "var(--color-blue-500)", transition: "width 0.9s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s" }}
                   />
                 </span>
                 <span className="text-right font-semibold tabular-nums text-slate-900">{nota(p.media)}</span>

@@ -3,28 +3,43 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-// Observa os elementos .revelar e .barra-anim da página e marca como .visivel quando entram na tela.
-// Roda de novo a cada troca de página (as páginas mudam sem recarregar).
+// Observa os elementos .revelar e .barra-anim e marca com data-visivel quando entram na tela.
+// A marca é um atributo, não uma classe: se um componente trocar a própria classe (ao passar o mouse,
+// por exemplo), o React reescreve o className mas não apaga o atributo, e a barra não volta a zero.
+// Elementos que surgem depois (filtros, listas que mudam) também são observados.
+const SELETOR = ".revelar:not([data-visivel]), .barra-anim:not([data-visivel])";
+
 export function Animacoes() {
   const caminho = usePathname();
   useEffect(() => {
-    const alvos = document.querySelectorAll(".revelar:not(.visivel), .barra-anim:not(.visivel)");
+    const marca = (el: Element) => el.setAttribute("data-visivel", "");
     if (!("IntersectionObserver" in window)) {
-      alvos.forEach((el) => el.classList.add("visivel"));
+      document.querySelectorAll(SELETOR).forEach(marca);
       return;
     }
     const obs = new IntersectionObserver(
       (entradas) => {
         for (const e of entradas)
           if (e.isIntersecting) {
-            e.target.classList.add("visivel");
+            marca(e.target);
             obs.unobserve(e.target);
           }
       },
       { rootMargin: "0px 0px -8% 0px" },
     );
-    alvos.forEach((el) => obs.observe(el));
-    return () => obs.disconnect();
+    const observar = (raiz: ParentNode) => {
+      if (raiz instanceof Element && raiz.matches(SELETOR)) obs.observe(raiz);
+      raiz.querySelectorAll(SELETOR).forEach((el) => obs.observe(el));
+    };
+    observar(document);
+    const novos = new MutationObserver((mudancas) => {
+      for (const m of mudancas) m.addedNodes.forEach((n) => n instanceof Element && observar(n));
+    });
+    novos.observe(document.body, { childList: true, subtree: true });
+    return () => {
+      obs.disconnect();
+      novos.disconnect();
+    };
   }, [caminho]);
   return null;
 }
