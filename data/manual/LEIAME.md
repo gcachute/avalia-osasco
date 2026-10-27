@@ -50,7 +50,13 @@ Campos que importam: tipo, número/ano, autor, data, ementa e, quando houver, **
 
 ## Modelo de pedido pela Lei de Acesso à Informação
 
-Envie em https://www.osasco.sp.leg.br/ouvidoria-do-legislativo:
+Envie por um destes canais:
+
+1. pela página https://www.osasco.sp.leg.br/ouvidoria-do-legislativo (o link "SIC" do Portal do Cidadão leva para lá);
+2. se o site da Câmara estiver fora do ar, pelo e-mail **ouvidoria@osasco.sp.leg.br**, que é o publicado nos perfis oficiais. Guarde a cópia enviada: ela serve de comprovante da data do pedido;
+3. presencialmente, no protocolo da Câmara (Av. dos Autonomistas, 2607, Centro), ou pelo telefone (11) 3699-9133 para saber o canal que está funcionando.
+
+Texto do pedido:
 
 > Com base na Lei nº 12.527/2011, solicito, em formato aberto (planilha CSV ou Excel), a relação mensal de janeiro de 2025 até o mês mais recente dos servidores comissionados lotados nos gabinetes dos vereadores. Peço que a relação traga cargo, gabinete de lotação e remuneração bruta, sem dados pessoais além do nome. Solicito também o valor das diárias e dos ressarcimentos pagos a cada vereador no mesmo período.
 

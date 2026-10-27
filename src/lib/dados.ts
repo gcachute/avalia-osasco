@@ -40,6 +40,24 @@ export type Camara = {
   requerimentosParados: number;
 };
 
+export type ItemMapa = {
+  id: string;
+  tipo: string;
+  origem: "camara" | "prefeitura";
+  autor: string;
+  autorNome: string | null;
+  data: string;
+  sessao: string;
+  texto: string;
+  bairros: string[];
+};
+
+export type Mapa = {
+  fonte: string;
+  bairros: { id: string; codigo: string; nome: string; populacao: number | null; citacoes: number }[];
+  itens: ItemMapa[];
+};
+
 export type PilarVereador = "A" | "B" | "C" | "D" | "E";
 
 export type Comissao = { nome: string; url: string; cargo: string; tipo: "permanente" | "temporaria" | "frente" };
@@ -255,6 +273,7 @@ export type Dados = {
     vetos: Veto[];
   };
   camara: Camara;
+  mapa: Mapa | null;
 };
 
 export const dados = bruto as unknown as Dados;

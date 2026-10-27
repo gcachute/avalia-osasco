@@ -84,6 +84,9 @@ export default function Home() {
             <Link href="/prefeito" className="rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 ring-1 ring-slate-300 transition hover:bg-slate-50">
               Nota do prefeito
             </Link>
+            <Link href="/mapa" className="rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 ring-1 ring-slate-300 transition hover:bg-slate-50">
+              Mapa por bairro
+            </Link>
           </div>
         </div>
       </section>
