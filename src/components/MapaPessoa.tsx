@@ -15,6 +15,7 @@ export type ModoMapa = {
   // "zero" para contagens; "faixa" (quantis) para porcentagens que ficam todas parecidas.
   escala: "zero" | "faixa";
   total?: number; // para mostrar "x% dos votos" no detalhe do bairro
+  link: string; // mapa completo já aberto nesta mesma visão
 };
 
 const FAIXAS = 6;
@@ -29,7 +30,6 @@ export function MapaPessoa({
   modos,
   itens,
   corItens,
-  linkMapa,
 }: {
   largura: number;
   altura: number;
@@ -37,7 +37,6 @@ export function MapaPessoa({
   modos: ModoMapa[];
   itens: ItemMapa[];
   corItens: string;
-  linkMapa: string;
 }) {
   const [chave, setChave] = useState(modos[0]?.chave ?? "");
   const [foco, setFoco] = useState<string | null>(null);
@@ -222,8 +221,8 @@ export function MapaPessoa({
           </div>
         )}
 
-        <Link href={linkMapa} className="inline-flex items-center gap-1 text-sm font-medium text-blue-800 underline">
-          Ver no mapa completo →
+        <Link href={modo.link} className="inline-flex items-center gap-1 text-sm font-medium text-blue-800 underline">
+          Ver {modo.nome.toLowerCase()} no mapa completo →
         </Link>
       </div>
     </div>
