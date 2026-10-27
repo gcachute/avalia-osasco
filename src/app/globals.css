@@ -277,7 +277,8 @@
   transition: transform 0.25s ease-out;
 }
 .logo-palpebra {
-  transform-origin: 24px 24px;
+  transform-box: fill-box;
+  transform-origin: center;
   animation: logo-piscar 7s infinite;
 }
 a:hover .logo-palpebra {

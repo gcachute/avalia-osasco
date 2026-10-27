@@ -246,7 +246,7 @@ export function ListaVereadores({
         {!lista.length && <li className="p-4 text-sm text-slate-500">Nenhum vereador encontrado.</li>}
       </ol>
       <p className="border-t border-slate-100 px-3 py-2 text-[11px] text-slate-500">
-        Sem nota geral. Quem tem menos de {minimoSessoes} sessões aparece sem coeficientes. <Link href="/metodologia" className="underline">Como cada um é calculado</Link>
+        Quem tem menos de {minimoSessoes} sessões aparece sem coeficientes. <Link href="/metodologia" className="underline">Como cada um é calculado</Link>
       </p>
     </aside>
   );

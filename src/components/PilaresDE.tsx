@@ -146,7 +146,7 @@ export function PilarE({ t }: { t: Transparencia }) {
             celulas: [
               <>
                 {c.nome}
-                {c.pntp && !c.pntp.validada && <span className="ml-1 text-xs font-normal text-slate-400">(PNTP não validado)</span>}
+                {c.pntp && !c.pntp.validada && <span className="text-xs font-normal text-slate-400"> (PNTP não validado)</span>}
               </>,
               pct(c.pntp?.indice),
               c.pntp?.nivel ?? "—",

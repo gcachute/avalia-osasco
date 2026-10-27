@@ -111,7 +111,7 @@ export function montarHistorico() {
             { nome: c2010.fonte, url: c2010.url },
             { nome: c2022.fonte, url: c2022.url },
           ],
-          notaRenda: c2010.notaRenda,
+          notaRenda: c2010.notaRenda?.replace(/fator (\d+)\.(\d+)/, "fator $1,$2"), // arquivos coletados antes gravaram o fator com ponto
           fatorIpca: ipca?.fator ?? null,
           cidade: { 2010: mediaCidade(c2010.bairros), 2022: mediaCidade(c2022.bairros) },
           bairros: Object.fromEntries(
