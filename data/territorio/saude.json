@@ -1,0 +1,806 @@
+{
+ "fonte": "Ministério da Saúde, Cadastro Nacional de Estabelecimentos de Saúde (CNES), unidades que atendem pelo SUS",
+ "url": "https://dadosabertos.saude.gov.br/",
+ "unidades": [
+  {
+   "cnes": "8028",
+   "nome": "HOSPITAL MUNICIPAL ANTONIO GIGLIO",
+   "tipo": "Hospital",
+   "publica": true,
+   "lat": -23.53232235,
+   "lon": -46.7771277288,
+   "bairro": "centro",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "8036",
+   "nome": "HOSPITAL MATERNIDADE AMADOR AGUIAR",
+   "tipo": "Hospital",
+   "publica": true,
+   "lat": -23.5047325,
+   "lon": -46.7881282,
+   "bairro": "alianca",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "8044",
+   "nome": "POLICLINICA LEONIL CRE BORTOLOSSO",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": -23.5184,
+   "lon": -46.78849,
+   "bairro": "piratininga",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8052",
+   "nome": "HOSPITAL REGIONAL DR VIVALDO MARTINS SIMOES OSASCO",
+   "tipo": "Hospital",
+   "publica": true,
+   "lat": -23.5249302,
+   "lon": -46.7719389845,
+   "bairro": "presidente-altino",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "8060",
+   "nome": "POLICLINICA ZONA SUL PEDRO BATISTA BONIN",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": -23.53839604,
+   "lon": -46.7824244499,
+   "bairro": "vila-osasco",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "8079",
+   "nome": "PA DR ANISIO ROSAN",
+   "tipo": "Urgência",
+   "publica": true,
+   "lat": null,
+   "lon": null,
+   "bairro": null,
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "8087",
+   "nome": "PRONTO SOCORRO CONRADO CESARINO NUVOLINI",
+   "tipo": "Urgência",
+   "publica": true,
+   "lat": -23.5547229823,
+   "lon": -46.8020367622,
+   "bairro": "jardim-roberto",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "8095",
+   "nome": "UBS DARCY ALVES E ROBALINHO",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.51367,
+   "lon": -46.76427,
+   "bairro": "ayrosa",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8109",
+   "nome": "UBS SYLVIO JOAO L DE LUCIA",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5009689977,
+   "lon": -46.7976014021,
+   "bairro": "jardim-elvira",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8117",
+   "nome": "UBS MARIA GIRADE CURY",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5716691,
+   "lon": -46.796133,
+   "bairro": "jardim-novo-osasco",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8125",
+   "nome": "UBS LUCIANO RODRIGUES COSTA",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5416419189,
+   "lon": -46.801199913,
+   "bairro": "pestana",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8133",
+   "nome": "UBS VILA MENCK",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.4971762513,
+   "lon": -46.7721247673,
+   "bairro": "vila-menck",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8141",
+   "nome": "PRONTO SOCORRO DR ANTONIO FLAVIO FRANCA",
+   "tipo": "Urgência",
+   "publica": true,
+   "lat": -23.5125638585,
+   "lon": -46.7759013176,
+   "bairro": "rochdale",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "8168",
+   "nome": "UBS MARIA GATTI GIGLIO",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5369536,
+   "lon": -46.7940497,
+   "bairro": "jardim-das-flores",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8176",
+   "nome": "UBS NEYDE ALVES DA SILVA",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5318843687,
+   "lon": -46.8068647385,
+   "bairro": "vila-militar",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8184",
+   "nome": "UBS CAROLINA MARIA DE JESUS",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5569653196,
+   "lon": -46.7897629738,
+   "bairro": "jaguaribe",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8206",
+   "nome": "UBS SANTA MARIA GORETTI",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5481334364,
+   "lon": -46.7765021324,
+   "bairro": "bela-vista",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8214",
+   "nome": "UBS JOSE HILARIO DOS SANTOS",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5184468803,
+   "lon": -46.794526577,
+   "bairro": "piratininga",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8222",
+   "nome": "UBS VASCO DA ROCHA LEAO",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5650961,
+   "lon": -46.8058156,
+   "bairro": "veloso",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8230",
+   "nome": "UBS GETULINO JOSE DIAS",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.55175281,
+   "lon": -46.8095362186,
+   "bairro": "padroeira",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8249",
+   "nome": "UBS ANUNCIATA DE LUCIA",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5359327,
+   "lon": -46.8038582,
+   "bairro": "pestana",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "8257",
+   "nome": "UBS OTACILIO FIRMINO LOPES",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5073016,
+   "lon": -46.7667952,
+   "bairro": "mutinga",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8265",
+   "nome": "UBS FRANCISCA LIMA DE LIRA",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.4921295,
+   "lon": -46.791668,
+   "bairro": "baronesa",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "8273",
+   "nome": "UBS PE GUERRINO RICIOTTI",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.318,
+   "lon": -46.4521,
+   "bairro": null,
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "8281",
+   "nome": "UBS MARIA PIA DE OLIVEIRA",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5611574,
+   "lon": -46.7979467,
+   "bairro": "santo-antonio",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "8303",
+   "nome": "UBS JOSE FRANCISCO REZENDE",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5289333541,
+   "lon": -46.795964241,
+   "bairro": "km-18",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "8311",
+   "nome": "UBS SANTA GEMA GALGANI",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5277726035,
+   "lon": -46.7664599419,
+   "bairro": "presidente-altino",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "8338",
+   "nome": "UBS HELENA MARREY",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.518722333,
+   "lon": -46.7816090584,
+   "bairro": "rochdale",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8346",
+   "nome": "UBS FRANCISCO DIAS DA SILVA",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5311713,
+   "lon": -46.8102239253,
+   "bairro": "quintauna",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8354",
+   "nome": "UBS IRMA AGUEDA MARIA JAIME",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.578226283,
+   "lon": -46.8008780479,
+   "bairro": "jardim-conceicao",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8362",
+   "nome": "UBS RAIMUNDA CAVALCANTE DE SOUZA",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.4982772613,
+   "lon": -46.8038888795,
+   "bairro": "munhoz-junior",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "8370",
+   "nome": "UBS JOSE SABINO FERREIRA",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.4992031105,
+   "lon": -46.7838406563,
+   "bairro": "industrial-mazzei",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8389",
+   "nome": "CENTRO DE ATENCAO AO IDOSO UNICO GALLAFRIO",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": -23.5235448453,
+   "lon": -46.7696285101,
+   "bairro": "presidente-altino",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "8397",
+   "nome": "UBS ODUVALDO MAGLIO",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5449270602,
+   "lon": -46.7634558678,
+   "bairro": "vila-yara",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "8400",
+   "nome": "UBS DR ADAUTO RIBEIRO",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.4797006774,
+   "lon": -46.7831754684,
+   "bairro": "industrial-anhanguera",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "8419",
+   "nome": "UBS LIA BUARQUE DE MACEDO GASPARINI",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5802125616,
+   "lon": -46.8031740189,
+   "bairro": "jardim-conceicao",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8427",
+   "nome": "UBS GUILHERMINA DE NOBREGA ABREU",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5659901,
+   "lon": -46.8122084,
+   "bairro": "metalurgicos",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "8478",
+   "nome": "LAR BUSSOCABA ASSISTENCIA VICENTINA",
+   "tipo": "Hospital",
+   "publica": false,
+   "lat": -23.5330057368,
+   "lon": -46.7919945717,
+   "bairro": "jardim-das-flores",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "26131",
+   "nome": "UBS JOSE GUIMARAES DE ABREU",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5432156495,
+   "lon": -46.7875099182,
+   "bairro": "cipava",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "429546",
+   "nome": "HOPE SERVICOS EM SAUDE",
+   "tipo": "Exames e terapias",
+   "publica": false,
+   "lat": -23.5328483524,
+   "lon": -46.7768454552,
+   "bairro": "centro",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "2024098",
+   "nome": "CTA SAE DE INFECTOLOGIA",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": -23.5387679,
+   "lon": -46.7829664,
+   "bairro": "vila-osasco",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "2058871",
+   "nome": "LABORATORIO II DE OSASCO",
+   "tipo": "Exames e terapias",
+   "publica": true,
+   "lat": null,
+   "lon": null,
+   "bairro": "bela-vista",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "2806126",
+   "nome": "UNASCO OSASCO",
+   "tipo": "Especialidades",
+   "publica": false,
+   "lat": -23.5375696,
+   "lon": -46.77830625,
+   "bairro": "centro",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "2935570",
+   "nome": "CELULA LAB",
+   "tipo": "Exames e terapias",
+   "publica": false,
+   "lat": -23.546264699,
+   "lon": -46.7830896378,
+   "bairro": "cipava",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "3007227",
+   "nome": "CENTRO DE ATENCAO PSICOSSOCIAL II OSASCO CAPS II",
+   "tipo": "Saúde mental",
+   "publica": true,
+   "lat": -23.5312154778,
+   "lon": -46.7903208733,
+   "bairro": "km-18",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "3007316",
+   "nome": "CENTRO DE DETENCAO PROVISORIA I DE OSASCO",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5929751599,
+   "lon": -46.8046975136,
+   "bairro": "raposo-tavares",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "3007332",
+   "nome": "CENTRO DE DETENCAO PROVISORIA II DE OSASCO",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": -23.5914216896,
+   "lon": -46.8121647835,
+   "bairro": "raposo-tavares",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "3184765",
+   "nome": "UBS EMILIA COSME CERQUEIRA",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5022138244,
+   "lon": -46.8082809448,
+   "bairro": "munhoz-junior",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "3373207",
+   "nome": "SION MEDICINA OSASCO",
+   "tipo": "Exames e terapias",
+   "publica": false,
+   "lat": null,
+   "lon": null,
+   "bairro": null,
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "3552454",
+   "nome": "UBS LAURINDA RODOLFO RUBO",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5585133,
+   "lon": -46.7815173,
+   "bairro": "jardim-d-abril",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "3581683",
+   "nome": "UBS JOSE MENESES ALVES",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.584991307,
+   "lon": -46.8143963814,
+   "bairro": "santa-maria",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "3591042",
+   "nome": "UBS CARMENO NAGGHY",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5021351138,
+   "lon": -46.7737770081,
+   "bairro": "mutinga",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "3815919",
+   "nome": "CASA DA MULHER DINALVA SOUZA BARCELLOS",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": -23.5048091,
+   "lon": -46.7882229,
+   "bairro": "alianca",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "3825752",
+   "nome": "PRONTO SOCORRO PESTANA P S ANDRE SACCO",
+   "tipo": "Urgência",
+   "publica": true,
+   "lat": -23.5329273,
+   "lon": -46.8018193,
+   "bairro": "pestana",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "3828107",
+   "nome": "PRONTO SOCORRO DR OSMAR MESQUITA",
+   "tipo": "Urgência",
+   "publica": true,
+   "lat": -23.4989338,
+   "lon": -46.7933209,
+   "bairro": "helena-maria",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "3945278",
+   "nome": "CENTRO DE ESPECIALIDADES ODONTOLOGICAS CEO OSASCO",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": -23.5435863,
+   "lon": -46.7686861,
+   "bairro": "vila-campesina",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "4063503",
+   "nome": "ORGANIZACAO SOCIAL ASSOCIACAO MANTENEDORA DE MAES ESPECIAIS",
+   "tipo": "Especialidades",
+   "publica": false,
+   "lat": -23.5214965038,
+   "lon": -46.7550444603,
+   "bairro": "remedios",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "4091507",
+   "nome": "OLAUDO TELERRADIOLOGIA",
+   "tipo": "Especialidades",
+   "publica": false,
+   "lat": -23.5344869734,
+   "lon": -46.7748684628,
+   "bairro": "centro",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "4106083",
+   "nome": "UBS ELIOMAR REIS DE OLIVEIRA",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.4957987564,
+   "lon": -46.7906427383,
+   "bairro": "baronesa",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "4995473",
+   "nome": "PA MUNHOZ JUNIOR",
+   "tipo": "Urgência",
+   "publica": true,
+   "lat": -23.5336549456,
+   "lon": -46.7888188362,
+   "bairro": "jardim-das-flores",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "5065119",
+   "nome": "CAPS INFANTIL LILIANE ALVES DIAS CAPS II",
+   "tipo": "Saúde mental",
+   "publica": true,
+   "lat": -23.5296022565,
+   "lon": -46.7870163918,
+   "bairro": "centro",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "5101654",
+   "nome": "HOSPITAL SINO BRASILEIRO",
+   "tipo": "Hospital",
+   "publica": false,
+   "lat": -23.5317860026,
+   "lon": -46.7814803123,
+   "bairro": "centro",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "5493943",
+   "nome": "AACD",
+   "tipo": "Especialidades",
+   "publica": false,
+   "lat": -23.5048091,
+   "lon": -46.7882229,
+   "bairro": "alianca",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "5857287",
+   "nome": "PRONTO ATENDIMENTO CENTRAL PAC",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": null,
+   "lon": null,
+   "bairro": "centro",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "5925304",
+   "nome": "CENTRO DE ATENCAO PSICOSSOCIAL CAPS II ALCOOL E DROGAS",
+   "tipo": "Saúde mental",
+   "publica": true,
+   "lat": -23.5329860638,
+   "lon": -46.7920589447,
+   "bairro": "jardim-das-flores",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "5932696",
+   "nome": "PS FENELON GUEDES PEREIRA",
+   "tipo": "Urgência",
+   "publica": true,
+   "lat": -23.5129648,
+   "lon": -46.7638821,
+   "bairro": "ayrosa",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "6011233",
+   "nome": "CENTRO DE ATENCAO AO IDOSO PADRE RAFAEL BUSATTO",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": -23.5284021644,
+   "lon": -46.7989253998,
+   "bairro": "km-18",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "6030807",
+   "nome": "UPA JOSE SANTOS SASSO",
+   "tipo": "Urgência",
+   "publica": true,
+   "lat": -23.5727392778,
+   "lon": -46.8029379845,
+   "bairro": "jardim-conceicao",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "6036414",
+   "nome": "INCOR OSASCO",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": null,
+   "lon": null,
+   "bairro": "piratininga",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "6054668",
+   "nome": "CEREST FRANCISCO RODRIGUES DE BRITO OSASCO",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": -23.5301137679,
+   "lon": -46.7960715294,
+   "bairro": "km-18",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "6451713",
+   "nome": "UBS JOSE GROFF",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5067789587,
+   "lon": -46.7870807648,
+   "bairro": "alianca",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "6675719",
+   "nome": "INSTITUTO DO SONO DE OSASCO E MEDICINA DIAGNOSTICA",
+   "tipo": "Especialidades",
+   "publica": false,
+   "lat": -23.5357599339,
+   "lon": -46.7774033546,
+   "bairro": "centro",
+   "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
+  },
+  {
+   "cnes": "6684718",
+   "nome": "SAD SERVICO DE ATENDIMENTO DOMICILIAR",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": -23.54301,
+   "lon": -46.77391,
+   "bairro": "centro",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "6983855",
+   "nome": "UBS MARIA DO SOCORRO BEZERRA PATRICIO",
+   "tipo": "Atenção básica",
+   "publica": true,
+   "lat": -23.5547115,
+   "lon": -46.8157232,
+   "bairro": "bandeiras",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "7152574",
+   "nome": "UPA JOSE CAMPOS BARRETO ZEQUINHA BARRETO",
+   "tipo": "Urgência",
+   "publica": true,
+   "lat": -23.5399894815,
+   "lon": -46.846818924,
+   "bairro": "vila-menck",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "7682581",
+   "nome": "PS JOSE IBRAHIN",
+   "tipo": "Urgência",
+   "publica": true,
+   "lat": -23.5591092731,
+   "lon": -46.7813301086,
+   "bairro": "jardim-d-abril",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "7732597",
+   "nome": "CENTRO DE CONTROLE DE ZOONOSES",
+   "tipo": "Vigilância",
+   "publica": true,
+   "lat": -23.5330450829,
+   "lon": -46.7920589447,
+   "bairro": "jardim-das-flores",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "7996802",
+   "nome": "UPA VICENTE MISSIANO",
+   "tipo": "Urgência",
+   "publica": true,
+   "lat": -23.537097666,
+   "lon": -46.7764377594,
+   "bairro": "centro",
+   "turno": "ATENDIMENTO CONTINUO DE 24 HORAS/DIA (PLANTAO:INCLUI SABADOS, DOMINGOS E FERIADOS)"
+  },
+  {
+   "cnes": "9595341",
+   "nome": "CER DR EDMUNDO CAMPANHA BURJATO TIPO II",
+   "tipo": "Especialidades",
+   "publica": true,
+   "lat": -23.5442008,
+   "lon": -46.7850825,
+   "bairro": "cipava",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  },
+  {
+   "cnes": "9736867",
+   "nome": "ONE LAUDOS DIAGNOSTICOS MEDICOS",
+   "tipo": "Especialidades",
+   "publica": false,
+   "lat": -23.5356320618,
+   "lon": -46.7744100094,
+   "bairro": "centro",
+   "turno": "ATENDIMENTOS NOS TURNOS DA MANHA E A TARDE"
+  }
+ ]
+}

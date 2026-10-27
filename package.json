@@ -16,7 +16,8 @@
     "coletar:prefeito": "npm run coletar:fiscal && npm run coletar:iegm && npm run coletar:resultados && npm run coletar:transparencia",
     "coletar:vereadores": "node scripts/coletar-vereadores.mjs",
     "coletar:camara": "node scripts/coletar-camara.mjs",
-    "coletar:bairros": "node scripts/coletar-bairros.mjs"
+    "coletar:bairros": "node scripts/coletar-bairros.mjs",
+    "coletar:territorio": "node --max-old-space-size=6000 scripts/coletar-territorio.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
