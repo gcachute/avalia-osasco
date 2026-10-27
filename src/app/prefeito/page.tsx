@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import { ContaPilarA, ContaPilarB } from "@/components/ContaFiscal";
 import { ListaTematica } from "@/components/ListaTematica";
+import { MapaPessoa, type ModoMapa } from "@/components/MapaPessoa";
+import { geometriaBairros } from "@/lib/mapaGeo";
 import { TabelaPares } from "@/components/Fiscal";
 import { Faixa, TabelaIegm } from "@/components/Iegm";
 import { PilarD, PilarE } from "@/components/PilaresDE";
@@ -113,6 +116,47 @@ export default function PaginaPrefeito() {
   const anoParcial = f?.anos.find((a) => !a.completo && a.mandato);
   const focoParcial = anoParcial?.cidades.find((c) => c.foco);
 
+  // Mapa: votação do prefeito eleito em 2024 por bairro e documentos da Prefeitura que citam bairros.
+  const mapa = dados.mapa;
+  const geoB = geometriaBairros();
+  const itensMapa = mapa?.itens.filter((x) => x.origem === "prefeitura") ?? [];
+  const docsPorBairro: Record<string, number> = {};
+  for (const x of itensMapa) for (const b of x.bairros) docsPorBairro[b] = (docsPorBairro[b] ?? 0) + 1;
+  const pctPorBairro = Object.fromEntries(
+    (mapa?.bairros ?? []).filter((b) => b.eleicao?.prefeito?.[0]?.pct != null).map((b) => [b.id, b.eleicao!.prefeito![0].pct!]),
+  );
+  const modosMapa: ModoMapa[] = [
+    {
+      chave: "votos",
+      nome: "Votos em 2024",
+      descricao: `Porcentagem dos votos válidos no 1º turno de 2024 (${num(mapa?.prefeitoEleicao[0]?.pct ?? 0, 1)}% na cidade), somados pelos locais de votação de cada bairro.`,
+      valores: pctPorBairro,
+      formato: "pct",
+      escala: "faixa",
+    },
+    {
+      chave: "docs",
+      nome: "Documentos da Prefeitura",
+      descricao: "Projetos, leis sancionadas, vetos e decretos do Executivo que citam o bairro.",
+      valores: docsPorBairro,
+      formato: "inteiro",
+      escala: "zero",
+    },
+  ];
+  const mapaPrefeito = mapa && (
+    <Secao titulo="No mapa de Osasco" subtitulo="Como cada bairro votou em 2024 e onde aparecem os atos da Prefeitura. Os círculos verdes são os documentos.">
+      <MapaPessoa
+        largura={geoB.largura}
+        altura={geoB.altura}
+        bairros={geoB.contornos.map((c) => ({ ...c, nome: mapa.bairros.find((b) => b.id === c.id)?.nome ?? c.id }))}
+        modos={modosMapa}
+        itens={itensMapa}
+        corItens="var(--mapa-prefeitura)"
+        linkMapa="/mapa/?indicador=prefeito&origem=prefeitura"
+      />
+    </Secao>
+  );
+
   return (
     <>
       <header className="relative flex flex-wrap items-center gap-5 overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6">
@@ -188,19 +232,20 @@ export default function PaginaPrefeito() {
             <div className="rounded-xl border border-slate-200 bg-white px-5 py-2">
               <PilarA a={anoNota} c={focoNota} />
             </div>
-            <p className="mt-2 text-xs text-slate-500">
-              Nota do pilar: média dos três itens. Osasco ficou em {focoNota.pilares.A.ranking}º entre {anoNota.cidades.filter((c) => c.pilares.A.nota != null).length} cidades neste pilar.
-            </p>
+            <div className="mt-4">
+              <h3 className="mb-2 text-sm font-semibold text-slate-900">Como a nota foi calculada</h3>
+              <ContaPilarA a={anoNota} c={focoNota} f={f} />
+            </div>
           </Secao>
 
           <Secao titulo={`Pilar B · Mínimos constitucionais (${anoNota.ano})`} id="pilar-B">
             <div className="rounded-xl border border-slate-200 bg-white px-5 py-2">
               <PilarB a={anoNota} c={focoNota} />
             </div>
-            <p className="mt-2 text-xs text-slate-500">
-              Cumprir o mínimo vale 5 pontos. O restante depende da posição entre as cidades comparadas. Descumprir qualquer mínimo zera o pilar.
-              Osasco ficou em {focoNota.pilares.B.ranking}º entre {anoNota.cidades.filter((c) => c.pilares.B.nota != null).length} cidades neste pilar.
-            </p>
+            <div className="mt-4">
+              <h3 className="mb-2 text-sm font-semibold text-slate-900">Como a nota foi calculada</h3>
+              <ContaPilarB a={anoNota} c={focoNota} f={f} />
+            </div>
           </Secao>
 
           <Secao titulo="Comparação com cidades parecidas">
@@ -336,6 +381,8 @@ export default function PaginaPrefeito() {
           <Cartao titulo="Decretos comunicados à Câmara" valor={i.decretosLidos} detalhe="a maioria abre crédito adicional no orçamento" />
         </div>
       </Secao>
+
+      {mapaPrefeito}
 
       <Secao titulo={`Projetos enviados pelo Executivo (${p.projetos.length})`}>
         <p className="-mt-2 mb-3 text-sm text-slate-500">

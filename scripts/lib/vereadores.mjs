@@ -29,7 +29,7 @@ const TEMAS = [
   ["Meio ambiente", /ambient|arvore|verde|sustentab|sustentav|reciclag|residuo|tampinha|natureza|poluic|clima|enchente/],
   ["Mobilidade", /transito|transporte|onibus|ciclo|motocicl|motoboy|estacionamento|calcada|viario|pedestre|semaforo|lombada/],
   ["Idosos", /idos[ao]|terceira idade|aposentad/],
-  ["Esporte, cultura e lazer", /esport|cultur|\barte|musica|turismo|lazer|festival|maratona|corrida|futebol|natal/],
+  ["Esporte, cultura e lazer", /esport|cultur|\barte|musica|turismo|lazer|festival|maratona|corrida|futebol|natal|campeonato|campea|atleta|jogos/],
   ["Economia e emprego", /emprego|empresa|comercio|empreend|renda|trabalhador|economi|consumidor|coworking|escritorio virtual|aposta|feira|ambulante/],
   ["Entidades e utilidade pública", /utilidade publica|entidade|associacao|instituto|organizacao da sociedade civil/],
   ["Datas e calendário", /calendario oficial|semana (municipal )?d[aeo]|dia municipal|mes (municipal )?d[aeo]|data comemorativa|campanha/],

@@ -190,7 +190,7 @@ export type Vereador = {
   requerimentosNaPauta: RequerimentoNaPauta[];
   leis: Lei[];
   vetos: Veto[];
-  adiadas: { sessao: string; item: string }[];
+  adiadas: { sessao: string; item: string; titulo: string | null; ementa: string; temas: string[] }[];
 };
 
 export type IndicadoresFiscais = {

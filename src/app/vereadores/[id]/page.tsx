@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { AtividadeMensal } from "@/components/Atividade";
 import { CustoMandato } from "@/components/Camara";
 import { ListaTematica, type ItemLista } from "@/components/ListaTematica";
+import { MapaPessoa, type ModoMapa } from "@/components/MapaPessoa";
+import { geometriaBairros } from "@/lib/mapaGeo";
 import { Avatar, Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { PilarVereador, Vereador } from "@/lib/dados";
 import { PILARES_VEREADOR, TIPO_NOME, dados, dataBR, milReais, nomeSessao, nota, nota10, pct, plural, sessao } from "@/lib/dados";
@@ -58,6 +60,38 @@ export default async function PaginaVereador({ params }: Props) {
   const comNota = dados.vereadores.filter((x) => x.posicao).length;
   const pf = v.perfil;
   const custo = dados.camara.custoMandato;
+
+  // Mapa: onde teve votos em 2024 e onde agiu (documentos que citam um bairro).
+  const mapa = dados.mapa;
+  const geoB = geometriaBairros();
+  const nomeBairro = new Map(mapa?.bairros.map((b) => [b.id, b.nome]) ?? []);
+  const votosMapa = mapa?.votosVereador[v.id];
+  const itensMapa = mapa?.itens.filter((x) => (x.autores ?? [x.autor]).includes(v.id)) ?? [];
+  const docsPorBairro: Record<string, number> = {};
+  for (const x of itensMapa) for (const b of x.bairros) docsPorBairro[b] = (docsPorBairro[b] ?? 0) + 1;
+  const modosMapa: ModoMapa[] = [
+    ...(votosMapa
+      ? [
+          {
+            chave: "votos",
+            nome: "Votos em 2024",
+            descricao: `${votosMapa.total.toLocaleString("pt-BR")} votos para vereador em 2024, somados pelos locais de votação de cada bairro.`,
+            valores: votosMapa.porBairro,
+            formato: "inteiro" as const,
+            escala: "zero" as const,
+            total: votosMapa.total,
+          },
+        ]
+      : []),
+    {
+      chave: "docs",
+      nome: "Onde agiu",
+      descricao: "Projetos, moções e pedidos de informação que citam o bairro pelo nome ou por uma escola ou unidade de saúde dele.",
+      valores: docsPorBairro,
+      formato: "inteiro",
+      escala: "zero",
+    },
+  ];
   const parados = v.requerimentosNaPauta.filter((r) => r.aindaNaPauta);
 
   // Comparação com a média dos vereadores com nota (menos itens adiados é melhor).
@@ -218,6 +252,27 @@ export default async function PaginaVereador({ params }: Props) {
           A nota é a média ponderada dos pilares A, B, C e E. O custo do mandato (D) aparece para consulta, mas não entra na nota porque é igual para todos.
         </p>
       </Secao>
+
+      {mapa && (votosMapa || itensMapa.length > 0) && (
+        <Secao
+          titulo="No mapa de Osasco"
+          subtitulo={
+            votosMapa
+              ? "Onde veio a votação de 2024 e quais bairros aparecem nos documentos do mandato. Os círculos laranja são os documentos."
+              : "Quais bairros aparecem nos documentos do mandato."
+          }
+        >
+          <MapaPessoa
+            largura={geoB.largura}
+            altura={geoB.altura}
+            bairros={geoB.contornos.map((c) => ({ ...c, nome: nomeBairro.get(c.id) ?? c.id }))}
+            modos={modosMapa}
+            itens={itensMapa}
+            corItens="var(--mapa-camara)"
+            linkMapa={votosMapa ? `/mapa/?indicador=votosVereador&autor=${v.id}` : `/mapa/?autor=${v.id}`}
+          />
+        </Secao>
+      )}
 
       <Secao titulo="Comparado com a média da Câmara" subtitulo={`Média entre os ${pares.length} vereadores com nota, no mesmo período.`}>
         <div className="divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white px-5">
@@ -429,14 +484,20 @@ export default async function PaginaVereador({ params }: Props) {
 
       {v.adiadas.length > 0 && (
         <Secao titulo={`Itens adiados porque o autor faltou (${v.adiadas.length})`}>
-          <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white text-sm">
-            {v.adiadas.map((a, k) => (
-              <li key={k} className="p-4">
-                <div className="text-slate-700">{a.item}</div>
-                <div className="mt-1 text-xs text-slate-500"><LinkSessao id={a.sessao} /></div>
-              </li>
-            ))}
-          </ul>
+          <ListaTematica
+            nomes={["item", "itens"]}
+            vazio=""
+            itens={v.adiadas.map(
+              (a, k): ItemLista => ({
+                key: `${a.sessao}-${k}`,
+                titulo: a.titulo ? a.titulo.charAt(0) + a.titulo.slice(1).toLowerCase() : "Item adiado",
+                curto: a.titulo ?? "item",
+                texto: a.ementa,
+                temas: a.temas,
+                sessao: linkSessao(a.sessao),
+              }),
+            )}
+          />
         </Secao>
       )}
       {(anterior || seguinte) && (
