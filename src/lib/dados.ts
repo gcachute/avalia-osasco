@@ -37,6 +37,20 @@ export type Camara = {
     coletadoEm: string;
     anos: Record<string, { pago: number; meses: number; maioresFornecedores: { nome: string; pago: number }[] }>;
   } | null;
+  folha: {
+    fonte: string;
+    url: string;
+    nota: string;
+    meses: Record<
+      string,
+      {
+        todos: { pessoas: number; bruto: number } | null;
+        comissionados: { pessoas: number; bruto: number } | null;
+        gabinetes: { pessoas: number; bruto: number; porCargo: { cargo: string; pessoas: number; bruto: number }[] };
+        vereadores: { pessoas: number; bruto: number; porVereador: { id: string; bruto: number }[] };
+      }
+    >;
+  } | null;
   requerimentosParados: number;
 };
 

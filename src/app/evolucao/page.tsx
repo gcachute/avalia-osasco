@@ -68,13 +68,16 @@ export default function Evolucao() {
     .sort((a, b) => a.ano - b.ano);
   const despesasCompletas = despesas.filter((d) => d.meses === 12);
   const despesaParcial = despesas.find((d) => d.meses < 12);
+  const folha = dados.camara.folha;
+  const mesesFolha = Object.entries(folha?.meses ?? {}).sort(([a], [b]) => a.localeCompare(b));
+  const mesNum = (m: string) => Number(m.slice(0, 4)) * 12 + Number(m.slice(5, 7)) - 1;
 
   return (
     <article>
       <h1 className="text-3xl font-bold tracking-tight text-slate-900">Osasco no tempo</h1>
       <p className="mt-2 max-w-3xl text-slate-600">
-        Os mesmos dados oficiais do site em anos anteriores, para comparar com o passado: Censos de {a0 || "2010"} e {a1 || "2022"}, eleições desde 2016,
-        contas da Prefeitura desde 2017 e despesas da Câmara. Cada bairro também tem a sua evolução no mapa (aba Evolução).
+        Os mesmos dados oficiais do site em anos anteriores, para comparar com o passado: Censos de {a0 || "2010"} e {a1 || "2022"}, eleições desde
+        2016, contas da Prefeitura desde 2017 e despesas da Câmara. Cada bairro também tem a sua evolução no mapa (aba Evolução).
       </p>
       <AvisoParcial className="mt-4" />
 
@@ -97,7 +100,12 @@ export default function Evolucao() {
               altura={210}
               series={[
                 { nome: "Censos", cor: "var(--grafico-1)", pontos: h.populacao.censos.map((c) => ({ x: c.ano, y: c.pessoas })) },
-                { nome: "Estimativas do IBGE", cor: "var(--grafico-ref)", tracejada: true, pontos: h.populacao.estimativas.map((c) => ({ x: c.ano, y: c.pessoas })) },
+                {
+                  nome: "Estimativas do IBGE",
+                  cor: "var(--grafico-ref)",
+                  tracejada: true,
+                  pontos: h.populacao.estimativas.map((c) => ({ x: c.ano, y: c.pessoas })),
+                },
               ]}
             />
           </Cartao>
@@ -111,14 +119,21 @@ export default function Evolucao() {
               {[
                 { t: "Moradores", a: censo.cidade[a0].pessoas, b: censo.cidade[a1].pessoas, f: "inteiro" as const },
                 { t: "Domicílios", a: censo.cidade[a0].domicilios, b: censo.cidade[a1].domicilios, f: "inteiro" as const },
-                { t: `Renda média do responsável (reais de ${a1})`, a: censo.cidade[a0].rendaMedia, b: censo.cidade[a1].rendaMedia, f: "reais" as const },
+                {
+                  t: `Renda média do responsável (reais de ${a1})`,
+                  a: censo.cidade[a0].rendaMedia,
+                  b: censo.cidade[a1].rendaMedia,
+                  f: "reais" as const,
+                },
               ].map((x) => (
                 <div key={x.t} className="rounded-2xl border border-slate-200 bg-white p-4">
                   <div className="text-xs text-slate-500">{x.t}</div>
                   <div className="mt-1 text-sm tabular-nums text-slate-600">
                     {formatar(x.a, x.f)} → <b className="text-xl text-slate-900">{formatar(x.b, x.f)}</b>
                   </div>
-                  <div className="text-xs font-semibold tabular-nums text-slate-700">{formatar(x.a && x.b != null ? (x.b / x.a - 1) * 100 : null, "varPct")}</div>
+                  <div className="text-xs font-semibold tabular-nums text-slate-700">
+                    {formatar(x.a && x.b != null ? (x.b / x.a - 1) * 100 : null, "varPct")}
+                  </div>
                 </div>
               ))}
               <p className="text-[11px] text-slate-500">{censo.notaRenda}</p>
@@ -145,9 +160,17 @@ export default function Evolucao() {
                           />
                         )}
                         {v0 != null && (
-                          <span className="absolute -top-0.5 h-3 w-3 -translate-x-1/2 rounded-full border-2 bg-white" style={{ left: `${v0}%`, borderColor: "var(--grafico-1)" }} />
+                          <span
+                            className="absolute -top-0.5 h-3 w-3 -translate-x-1/2 rounded-full border-2 bg-white"
+                            style={{ left: `${v0}%`, borderColor: "var(--grafico-1)" }}
+                          />
                         )}
-                        {v1 != null && <span className="absolute -top-0.5 h-3 w-3 -translate-x-1/2 rounded-full" style={{ left: `${v1}%`, background: "var(--grafico-1)" }} />}
+                        {v1 != null && (
+                          <span
+                            className="absolute -top-0.5 h-3 w-3 -translate-x-1/2 rounded-full"
+                            style={{ left: `${v1}%`, background: "var(--grafico-1)" }}
+                          />
+                        )}
                       </div>
                     </li>
                   );
@@ -171,8 +194,16 @@ export default function Evolucao() {
                 formato="pct"
                 zeroNaBase
                 series={[
-                  { nome: "Comparecimento", cor: "var(--grafico-1)", pontos: ele.anos.map((a) => ({ x: a, y: ele.cidade[String(a)].comparecimento })) },
-                  { nome: "Brancos e nulos", cor: "var(--grafico-2)", pontos: ele.anos.map((a) => ({ x: a, y: ele.cidade[String(a)].brancosNulos })) },
+                  {
+                    nome: "Comparecimento",
+                    cor: "var(--grafico-1)",
+                    pontos: ele.anos.map((a) => ({ x: a, y: ele.cidade[String(a)].comparecimento })),
+                  },
+                  {
+                    nome: "Brancos e nulos",
+                    cor: "var(--grafico-2)",
+                    pontos: ele.anos.map((a) => ({ x: a, y: ele.cidade[String(a)].brancosNulos })),
+                  },
                 ]}
               />
             </Cartao>
@@ -225,14 +256,19 @@ export default function Evolucao() {
                   </div>
                 ))}
               </div>
-              <p className="mt-2 text-[11px] text-slate-500">Votos de legenda e nos candidatos de cada partido, entre os votos válidos para vereador.</p>
+              <p className="mt-2 text-[11px] text-slate-500">
+                Votos de legenda e nos candidatos de cada partido, entre os votos válidos para vereador.
+              </p>
             </Cartao>
           </div>
         </Secao>
       )}
 
       {(fiscalAnos.length > 1 || res) && (
-        <Secao titulo="Prefeitura" subtitulo="Anos fechados, como entregues ao Tesouro Nacional (SICONFI); saúde e mortalidade pelo DataSUS; IDEB pelo INEP.">
+        <Secao
+          titulo="Prefeitura"
+          subtitulo="Anos fechados, como entregues ao Tesouro Nacional (SICONFI); saúde e mortalidade pelo DataSUS; IDEB pelo INEP."
+        >
           <div className="grid gap-4 lg:grid-cols-2">
             {fiscalAnos.length > 1 && (
               <Cartao titulo="Gasto com pessoal e investimento">
@@ -242,7 +278,11 @@ export default function Evolucao() {
                   zeroNaBase
                   series={[
                     { nome: "Pessoal (% da RCL)", cor: "var(--grafico-1)", pontos: fiscalAnos.map((a) => ({ x: a.ano, y: osasco(a).pessoal })) },
-                    { nome: "Investimento (% da despesa)", cor: "var(--grafico-2)", pontos: fiscalAnos.map((a) => ({ x: a.ano, y: osasco(a).investimento })) },
+                    {
+                      nome: "Investimento (% da despesa)",
+                      cor: "var(--grafico-2)",
+                      pontos: fiscalAnos.map((a) => ({ x: a.ano, y: osasco(a).investimento })),
+                    },
                   ]}
                 />
               </Cartao>
@@ -256,7 +296,11 @@ export default function Evolucao() {
                     zeroNaBase
                     series={[
                       { nome: "Saúde (mínimo 15%)", cor: "var(--grafico-3)", pontos: fiscalAnos.map((a) => ({ x: a.ano, y: osasco(a).saude })) },
-                      { nome: "Educação (mínimo 25%)", cor: "var(--grafico-1)", pontos: fiscalAnos.map((a) => ({ x: a.ano, y: osasco(a).educacao })) },
+                      {
+                        nome: "Educação (mínimo 25%)",
+                        cor: "var(--grafico-1)",
+                        pontos: fiscalAnos.map((a) => ({ x: a.ano, y: osasco(a).educacao })),
+                      },
                     ]}
                   />
                 ) : (
@@ -274,13 +318,16 @@ export default function Evolucao() {
                   </ul>
                 )}
                 <p className="mt-2 text-[11px] text-slate-500">
-                  Nos anos sem valor, Osasco não informou saúde e educação no demonstrativo enviado ao SICONFI (esses dados vão ao SIOPS e ao SIOPE, ainda não
-                  integrados ao site).
+                  Nos anos sem valor, Osasco não informou saúde e educação no demonstrativo enviado ao SICONFI (esses dados vão ao SIOPS e ao SIOPE,
+                  ainda não integrados ao site).
                 </p>
               </Cartao>
             )}
             {res?.ideb.serie && (
-              <Cartao titulo="IDEB dos anos iniciais (rede municipal)" fonte={pf.resultados?.ideb ? [{ nome: "INEP", url: pf.resultados.ideb.fonte }] : undefined}>
+              <Cartao
+                titulo="IDEB dos anos iniciais (rede municipal)"
+                fonte={pf.resultados?.ideb ? [{ nome: "INEP", url: pf.resultados.ideb.fonte }] : undefined}
+              >
                 <GraficoLinha
                   rotulo="IDEB dos anos iniciais da rede municipal de Osasco"
                   formato="decimal"
@@ -295,7 +342,10 @@ export default function Evolucao() {
               </Cartao>
             )}
             {res && Object.keys(res.mortalidade.serie).length > 1 && (
-              <Cartao titulo="Mortalidade infantil (por mil nascidos vivos)" fonte={pf.resultados?.mortalidade ? [{ nome: "DataSUS (SIM e SINASC)", url: pf.resultados.mortalidade.fonte }] : undefined}>
+              <Cartao
+                titulo="Mortalidade infantil (por mil nascidos vivos)"
+                fonte={pf.resultados?.mortalidade ? [{ nome: "DataSUS (SIM e SINASC)", url: pf.resultados.mortalidade.fonte }] : undefined}
+              >
                 <GraficoLinha
                   rotulo="Óbitos de menores de 1 ano por mil nascidos vivos em Osasco"
                   formato="decimal"
@@ -315,23 +365,60 @@ export default function Evolucao() {
         </Secao>
       )}
 
-      {despesasCompletas.length > 1 && (
+      {(despesasCompletas.length > 1 || mesesFolha.length > 1) && (
         <Secao titulo="Câmara Municipal">
-          <Cartao titulo="Despesa paga pela Câmara por ano" fonte={dados.camara.despesas ? [{ nome: dados.camara.despesas.fonte, url: dados.camara.despesas.url }] : undefined}>
-            <GraficoLinha
-              rotulo="Despesa paga pela Câmara Municipal de Osasco por ano, em valores da época"
-              formato="milhoesReais"
-              zeroNaBase
-              series={[{ nome: "Despesa paga", cor: "var(--grafico-1)", pontos: despesasCompletas.map((d) => ({ x: d.ano, y: d.pago })) }]}
-            />
-            <p className="text-[11px] text-slate-500">
-              Valores da época, sem correção pela inflação.
-              {despesaParcial && ` ${despesaParcial.ano}: ${milhoes(despesaParcial.pago)} em ${despesaParcial.meses} meses (ano em andamento, fora do gráfico).`}
-            </p>
-          </Cartao>
+          {mesesFolha.length > 1 && folha && (
+            <div className="mb-4">
+              <Cartao
+                titulo="Folha de pagamento por mês (bruto)"
+                fonte={[{ nome: "Portal do Cidadão da Câmara, Folha de pagamento sintético", url: folha.url }]}
+              >
+                <GraficoLinha
+                  rotulo="Folha de pagamento bruta da Câmara por mês: total, cargos de gabinete e vereadores"
+                  formato="milhoesReais"
+                  zeroNaBase
+                  eixoX="mes"
+                  series={[
+                    {
+                      nome: "Câmara inteira",
+                      cor: "var(--grafico-1)",
+                      pontos: mesesFolha.map(([m, x]) => ({ x: mesNum(m), y: x.todos?.bruto ?? null })),
+                    },
+                    {
+                      nome: "Cargos de gabinete",
+                      cor: "var(--grafico-2)",
+                      pontos: mesesFolha.map(([m, x]) => ({ x: mesNum(m), y: x.gabinetes.bruto })),
+                    },
+                    { nome: "Vereadores", cor: "var(--grafico-3)", pontos: mesesFolha.map(([m, x]) => ({ x: mesNum(m), y: x.vereadores.bruto })) },
+                  ]}
+                />
+                <p className="text-[11px] text-slate-500">
+                  Folha normal de cada mês, servidores ativos, valores brutos. Cargos de gabinete: chefe de gabinete, assessor de coordenação e
+                  assessores parlamentares I, II e III.
+                </p>
+              </Cartao>
+            </div>
+          )}
+          {despesasCompletas.length > 1 && (
+            <Cartao
+              titulo="Despesa paga pela Câmara por ano"
+              fonte={dados.camara.despesas ? [{ nome: dados.camara.despesas.fonte, url: dados.camara.despesas.url }] : undefined}
+            >
+              <GraficoLinha
+                rotulo="Despesa paga pela Câmara Municipal de Osasco por ano, em valores da época"
+                formato="milhoesReais"
+                zeroNaBase
+                series={[{ nome: "Despesa paga", cor: "var(--grafico-1)", pontos: despesasCompletas.map((d) => ({ x: d.ano, y: d.pago })) }]}
+              />
+              <p className="text-[11px] text-slate-500">
+                Valores da época, sem correção pela inflação.
+                {despesaParcial &&
+                  ` ${despesaParcial.ano}: ${milhoes(despesaParcial.pago)} em ${despesaParcial.meses} meses (ano em andamento, fora do gráfico).`}
+              </p>
+            </Cartao>
+          )}
         </Secao>
       )}
     </article>
   );
 }
-

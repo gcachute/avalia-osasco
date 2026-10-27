@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-27T14:26:38.908Z",
+ "geradoEm": "2026-10-27T22:28:11.345Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -48861,6 +48861,2568 @@
        "pago": 1203469.5
       }
      ]
+    }
+   }
+  },
+  "folha": {
+   "fonte": "Câmara Municipal de Osasco, Portal do Cidadão: Folha de pagamento sintético (Transparência › Prestando Contas › Outras Informações › Quadro Geral de Pessoal)",
+   "url": "https://cmo.rdmsistemas.com.br/portalcidadao/",
+   "nota": "Valores brutos (proventos) da folha normal do mês, servidores ativos. O relatório não informa o gabinete de cada assessor.",
+   "meses": {
+    "2025-01": {
+     "todos": {
+      "pessoas": 231,
+      "bruto": 3663340.22
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 107,
+      "bruto": 1315857.96,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 41,
+        "bruto": 487342.15
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 14,
+        "bruto": 273596.19
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 17,
+        "bruto": 247662.42
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 25,
+        "bruto": 202420.46
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 10,
+        "bruto": 104836.74
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 511768.84,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 27770.4
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27142.13
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27277.3
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 27277.3
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27142.13
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 26702.73
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26702.73
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 27142.13
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26702.73
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 26922.6
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26409.9
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26409.9
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 26922.6
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27142.13
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27142.13
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 26922.6
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 26702.73
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27142.13
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26192.54
+       }
+      ]
+     }
+    },
+    "2025-02": {
+     "todos": {
+      "pessoas": 236,
+      "bruto": 3786674.26
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 109,
+      "bruto": 1361878.3,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 41,
+        "bruto": 491188.5
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 15,
+        "bruto": 289689.6
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 17,
+        "bruto": 254574.79
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 25,
+        "bruto": 211528.39
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 11,
+        "bruto": 114897.02
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 512032.22,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 27780.93
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27152.66
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27287.83
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 27287.83
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27152.66
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 26713.26
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26713.26
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 27152.66
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26713.26
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 26933.13
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26420.43
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26483.74
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 26933.13
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27152.66
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27152.66
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 26933.13
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 26713.26
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27152.66
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26203.07
+       }
+      ]
+     }
+    },
+    "2025-03": {
+     "todos": {
+      "pessoas": 248,
+      "bruto": 4075739.29
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 117,
+      "bruto": 1469479.52,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 42,
+        "bruto": 544376.49
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 16,
+        "bruto": 304647.98
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 18,
+        "bruto": 270630.87
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 28,
+        "bruto": 222051.94
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 13,
+        "bruto": 127772.24
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 512197.71,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 27789.64
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27161.37
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27296.54
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 27296.54
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27161.37
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 26721.97
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26721.97
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 27161.37
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26721.97
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 26941.84
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26429.14
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26492.45
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 26941.84
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27161.37
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27161.37
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 26941.84
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 26721.97
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27161.37
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26211.78
+       }
+      ]
+     }
+    },
+    "2025-04": {
+     "todos": {
+      "pessoas": 250,
+      "bruto": 4004305.2
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 118,
+      "bruto": 1452575.58,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 42,
+        "bruto": 496042.33
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 16,
+        "bruto": 307345.85
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 18,
+        "bruto": 271477.64
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 28,
+        "bruto": 231896.3
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 14,
+        "bruto": 145813.46
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 512581.32,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 27809.83
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27181.56
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27316.73
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 27316.73
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27181.56
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 26742.16
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26742.16
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 27181.56
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26742.16
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 26962.03
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26449.33
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26512.64
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 26962.03
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27181.56
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27181.56
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 26962.03
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 26742.16
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27181.56
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26231.97
+       }
+      ]
+     }
+    },
+    "2025-05": {
+     "todos": {
+      "pessoas": 258,
+      "bruto": 4369050.23
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 124,
+      "bruto": 1604381.77,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 43,
+        "bruto": 539487.45
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 16,
+        "bruto": 322737.79
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 19,
+        "bruto": 298702.9
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 31,
+        "bruto": 277452.36
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 15,
+        "bruto": 166001.27
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 481879.48,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28527.56
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 7148.44
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27938.31
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 27938.31
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27776.77
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 27251.69
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 27251.69
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 7148.44
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 27251.69
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27514.46
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26901.77
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26977.41
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27514.46
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27776.77
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27776.77
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27514.46
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 27251.69
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27776.77
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26642.02
+       }
+      ]
+     }
+    },
+    "2025-06": {
+     "todos": {
+      "pessoas": 261,
+      "bruto": 5117523.07
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 124,
+      "bruto": 1838148.84,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 44,
+        "bruto": 626448.05
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 16,
+        "bruto": 382461.02
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 19,
+        "bruto": 344448.13
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 30,
+        "bruto": 296475.94
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 15,
+        "bruto": 188315.7
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 661434.42,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 36307.58
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 29037.41
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 35782.43
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 36307.58
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 35638.47
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 35170.51
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 35170.51
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 30137.58
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 35170.51
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 35404.68
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 34858.65
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 34926.07
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 35404.68
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 35638.47
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 35638.47
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 35404.68
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 35170.51
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 35638.47
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 34627.16
+       }
+      ]
+     }
+    },
+    "2025-07": {
+     "todos": {
+      "pessoas": 264,
+      "bruto": 4512762.94
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 127,
+      "bruto": 1682912.88,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 46,
+        "bruto": 580072.47
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 16,
+        "bruto": 336232.47
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 20,
+        "bruto": 326955.16
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 31,
+        "bruto": 281251.03
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 14,
+        "bruto": 158401.75
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 518158.55,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28129.8
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27460.69
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27604.65
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28129.8
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27460.69
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 26992.73
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26992.73
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 27460.69
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26992.73
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27226.9
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26680.87
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26748.29
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27226.9
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27460.69
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27460.69
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27226.9
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 26992.73
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27460.69
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26449.38
+       }
+      ]
+     }
+    },
+    "2025-08": {
+     "todos": {
+      "pessoas": 267,
+      "bruto": 4503179.65
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 129,
+      "bruto": 1685880.96,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 47,
+        "bruto": 585952.43
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 20,
+        "bruto": 330406.67
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 15,
+        "bruto": 313495.78
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 33,
+        "bruto": 300092.81
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 14,
+        "bruto": 155933.27
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 516859.17,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28041.53
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27372.42
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27516.38
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28041.53
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27372.42
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 26904.46
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26904.46
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 27372.42
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26904.46
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27372.42
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26592.6
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26660.02
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27138.63
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27372.42
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27372.42
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27138.63
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 26904.46
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27516.38
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26361.11
+       }
+      ]
+     }
+    },
+    "2025-09": {
+     "todos": {
+      "pessoas": 269,
+      "bruto": 4557796.65
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 130,
+      "bruto": 1692031.84,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 46,
+        "bruto": 574159.18
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 16,
+        "bruto": 327216.76
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 20,
+        "bruto": 326169.38
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 33,
+        "bruto": 302972.09
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 15,
+        "bruto": 161514.43
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 491327.1,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28006.41
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27337.3
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27481.26
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28006.41
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27337.3
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 26869.34
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26869.34
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 27337.3
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26869.34
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27337.3
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26557.48
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26624.9
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27103.51
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27337.3
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27337.3
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27103.51
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 26869.34
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 2616.47
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26325.99
+       }
+      ]
+     }
+    },
+    "2025-10": {
+     "todos": {
+      "pessoas": 274,
+      "bruto": 4525788.1
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 133,
+      "bruto": 1742014.03,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 50,
+        "bruto": 624598.52
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 20,
+        "bruto": 339414.07
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 16,
+        "bruto": 328894.8
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 33,
+        "bruto": 296065.96
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 14,
+        "bruto": 153040.68
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 516837.85,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 27996.98
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27327.87
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27471.83
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 27996.98
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27327.87
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 29335.31
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26859.91
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 27327.87
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26859.91
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27327.87
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26548.05
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26615.47
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27094.08
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27327.87
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27327.87
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27094.08
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 26859.91
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 25821.56
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26316.56
+       }
+      ]
+     }
+    },
+    "2025-11": {
+     "todos": {
+      "pessoas": 279,
+      "bruto": 4669451.58
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 133,
+      "bruto": 1717986.79,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 51,
+        "bruto": 629464.9
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 16,
+        "bruto": 330045.95
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 20,
+        "bruto": 329622.86
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 34,
+        "bruto": 300853.75
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 12,
+        "bruto": 127999.33
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 502482.84,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28002.34
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27333.23
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27477.19
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28002.34
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27333.23
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 26865.27
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26865.27
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 13701.51
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26865.27
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27333.23
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26553.41
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26620.83
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27099.44
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27333.23
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27333.23
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27099.44
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 26865.27
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27477.19
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26321.92
+       }
+      ]
+     }
+    },
+    "2025-12": {
+     "todos": {
+      "pessoas": 280,
+      "bruto": 4748673.65
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 133,
+      "bruto": 1824329.71,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 51,
+        "bruto": 660498.48
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 16,
+        "bruto": 365996.66
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 20,
+        "bruto": 360481.39
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 34,
+        "bruto": 308165.95
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 12,
+        "bruto": 129187.23
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 494172.54,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 27995.84
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27326.73
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27470.69
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 27995.84
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27326.73
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 27092.94
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26858.77
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 3490.62
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26858.77
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27326.73
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26983.91
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26614.33
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27092.94
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27326.73
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27326.73
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 28439.36
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 26858.77
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27470.69
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26315.42
+       }
+      ]
+     }
+    },
+    "2026-01": {
+     "todos": {
+      "pessoas": 284,
+      "bruto": 4817063.47
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 135,
+      "bruto": 1761901.12,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 51,
+        "bruto": 642572.41
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 17,
+        "bruto": 343528.77
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 20,
+        "bruto": 331855.06
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 34,
+        "bruto": 301960.68
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 13,
+        "bruto": 141984.2
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 512499.97,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28001.03
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27331.92
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27475.88
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28001.03
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27331.92
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 27098.13
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26863.96
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 23209.14
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26863.96
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27331.92
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26619.52
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26619.52
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27098.13
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27331.92
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27331.92
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27098.13
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 26863.96
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27475.88
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26552.1
+       }
+      ]
+     }
+    },
+    "2026-02": {
+     "todos": {
+      "pessoas": 287,
+      "bruto": 4659568.64
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 136,
+      "bruto": 1761638.74,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 50,
+        "bruto": 624677.86
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 17,
+        "bruto": 358100.54
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 20,
+        "bruto": 325148.36
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 35,
+        "bruto": 310046.49
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 14,
+        "bruto": 143665.49
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 515619.46,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28010.3
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27341.19
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27485.15
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28010.3
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27341.19
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 27107.4
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26873.23
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 25693.81
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26873.23
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27341.19
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26628.79
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26628.79
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27341.19
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27341.19
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27341.19
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27107.4
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 27107.4
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27485.15
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26561.37
+       }
+      ]
+     }
+    },
+    "2026-03": {
+     "todos": {
+      "pessoas": 290,
+      "bruto": 5089656.28
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 139,
+      "bruto": 1829499.68,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 52,
+        "bruto": 654827.82
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 17,
+        "bruto": 355816.74
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 20,
+        "bruto": 329343.36
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 35,
+        "bruto": 322346.11
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 15,
+        "bruto": 167165.65
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 515588.11,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28008.65
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27339.54
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 27483.5
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28008.65
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27339.54
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 27105.75
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26871.58
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 25692.16
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26871.58
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27339.54
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26627.14
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26627.14
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27339.54
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27339.54
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27339.54
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27105.75
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 27105.75
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27483.5
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26559.72
+       }
+      ]
+     }
+    },
+    "2026-04": {
+     "todos": {
+      "pessoas": 291,
+      "bruto": 4931510.13
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 140,
+      "bruto": 1814725.44,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 51,
+        "bruto": 633946
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 18,
+        "bruto": 363778.99
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 35,
+        "bruto": 329145.74
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 20,
+        "bruto": 319057.76
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 16,
+        "bruto": 168796.95
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 19,
+      "bruto": 516762.49,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28042.82
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27373.71
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 28042.82
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28042.82
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27373.71
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 27139.92
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 26905.75
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 25726.33
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 26905.75
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27373.71
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26661.31
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26661.31
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27373.71
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27373.71
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 27373.71
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27139.92
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 27139.92
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27517.67
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26593.89
+       }
+      ]
+     }
+    },
+    "2026-05": {
+     "todos": {
+      "pessoas": 311,
+      "bruto": 5874035.76
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 157,
+      "bruto": 2287004.97,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 59,
+        "bruto": 814415.75
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 20,
+        "bruto": 457837.58
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 39,
+        "bruto": 413783.68
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 20,
+        "bruto": 370765.6
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 19,
+        "bruto": 230202.36
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 21,
+      "bruto": 576383.24,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28926.37
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 28136.89
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 28894.55
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28926.37
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 28136.89
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 27859.31
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 27582.57
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 26188.74
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 27582.57
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 28136.89
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 27293.7
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 27293.7
+       },
+       {
+        "id": "ivanildo-eventos",
+        "bruto": 22964.16
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 28136.89
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 28136.89
+       },
+       {
+        "id": "juliao",
+        "bruto": 22811.47
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 28136.89
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27859.31
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 27859.31
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 28305.76
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 27214.01
+       }
+      ]
+     }
+    },
+    "2026-06": {
+     "todos": {
+      "pessoas": 316,
+      "bruto": 5772676.68
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 163,
+      "bruto": 2269240.7,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 61,
+        "bruto": 823091.29
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 21,
+        "bruto": 460087.44
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 40,
+        "bruto": 390391.32
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 21,
+        "bruto": 368694.35
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 20,
+        "bruto": 226976.3
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 21,
+      "bruto": 700903.19,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 19277.04
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 35895.18
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 36604.84
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 36604.84
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 35895.18
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 35647.22
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 35398.86
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 34147.97
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 35398.86
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 35895.18
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 35139.61
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 35139.61
+       },
+       {
+        "id": "ivanildo-eventos",
+        "bruto": 36047.87
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 35895.18
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 35895.18
+       },
+       {
+        "id": "juliao",
+        "bruto": 35895.18
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 22693.05
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 16669.15
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 35647.22
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 36047.87
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 35068.1
+       }
+      ]
+     }
+    },
+    "2026-07": {
+     "todos": {
+      "pessoas": 322,
+      "bruto": 5535449.48
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 165,
+      "bruto": 2277643.8,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 63,
+        "bruto": 845941.65
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 21,
+        "bruto": 462497.49
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 41,
+        "bruto": 395104.78
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 21,
+        "bruto": 360684.48
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 19,
+        "bruto": 213415.4
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 21,
+      "bruto": 536702.62,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 20118.1
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27659.77
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 28369.43
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28369.43
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27659.77
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 27411.81
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 27163.45
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 25912.56
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 27163.45
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27659.77
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26904.2
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26904.2
+       },
+       {
+        "id": "ivanildo-eventos",
+        "bruto": 27812.46
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27659.77
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27659.77
+       },
+       {
+        "id": "juliao",
+        "bruto": 27659.77
+       },
+       {
+        "id": "paulo-junior",
+        "bruto": 1747.21
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 20810.74
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 27411.81
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27812.46
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26832.69
+       }
+      ]
+     }
+    },
+    "2026-08": {
+     "todos": {
+      "pessoas": 322,
+      "bruto": 5653319.4
+     },
+     "comissionados": null,
+     "gabinetes": {
+      "pessoas": 165,
+      "bruto": 2370688.57,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 63,
+        "bruto": 881134.67
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 21,
+        "bruto": 472860.59
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 41,
+        "bruto": 411915.84
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 21,
+        "bruto": 381975.2
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 19,
+        "bruto": 222802.27
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 20,
+      "bruto": 550344.02,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28308.88
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27599.22
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 28308.88
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28308.88
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27599.22
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 27351.26
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 27102.9
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 27599.22
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 27102.9
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27599.22
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26843.65
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26843.65
+       },
+       {
+        "id": "ivanildo-eventos",
+        "bruto": 27751.91
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27599.22
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27599.22
+       },
+       {
+        "id": "juliao",
+        "bruto": 27599.22
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27351.26
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 27351.26
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27751.91
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26772.14
+       }
+      ]
+     }
+    },
+    "2026-09": {
+     "todos": {
+      "pessoas": 324,
+      "bruto": 5666897.81
+     },
+     "comissionados": {
+      "pessoas": 196,
+      "bruto": 2826501.18
+     },
+     "gabinetes": {
+      "pessoas": 167,
+      "bruto": 2303832.43,
+      "porCargo": [
+       {
+        "cargo": "ASSESSOR PARLAMENTAR I",
+        "pessoas": 63,
+        "bruto": 847740.36
+       },
+       {
+        "cargo": "CHEFE DE GABINETE",
+        "pessoas": 21,
+        "bruto": 463506.86
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR III",
+        "pessoas": 42,
+        "bruto": 407492.22
+       },
+       {
+        "cargo": "ASSESSOR DE COORDENACAO",
+        "pessoas": 21,
+        "bruto": 357889.37
+       },
+       {
+        "cargo": "ASSESSOR PARLAMENTAR II",
+        "pessoas": 20,
+        "bruto": 227203.62
+       }
+      ]
+     },
+     "vereadores": {
+      "pessoas": 20,
+      "bruto": 549998.02,
+      "porVereador": [
+       {
+        "id": "alexandre-capriotti",
+        "bruto": 28291.58
+       },
+       {
+        "id": "batista-comunidade",
+        "bruto": 27581.92
+       },
+       {
+        "id": "carmonio-bastos",
+        "bruto": 28291.58
+       },
+       {
+        "id": "delbio-teruel",
+        "bruto": 28291.58
+       },
+       {
+        "id": "elania-silva",
+        "bruto": 27581.92
+       },
+       {
+        "id": "elsa-oliveira",
+        "bruto": 27333.96
+       },
+       {
+        "id": "emerson-osasco",
+        "bruto": 27085.6
+       },
+       {
+        "id": "lucia-da-saude",
+        "bruto": 27581.92
+       },
+       {
+        "id": "gabriel-saude",
+        "bruto": 27085.6
+       },
+       {
+        "id": "cantor-goleiro",
+        "bruto": 27581.92
+       },
+       {
+        "id": "guilherme-prado",
+        "bruto": 26826.35
+       },
+       {
+        "id": "heber-do-juntoz",
+        "bruto": 26826.35
+       },
+       {
+        "id": "ivanildo-eventos",
+        "bruto": 27734.61
+       },
+       {
+        "id": "josias-da-juco",
+        "bruto": 27581.92
+       },
+       {
+        "id": "laercio-mendonca",
+        "bruto": 27581.92
+       },
+       {
+        "id": "juliao",
+        "bruto": 27581.92
+       },
+       {
+        "id": "pedrinho-cantagessi",
+        "bruto": 27333.96
+       },
+       {
+        "id": "ralfi-silva",
+        "bruto": 27333.96
+       },
+       {
+        "id": "sergio-fontellas",
+        "bruto": 27734.61
+       },
+       {
+        "id": "stephane-rossi",
+        "bruto": 26754.84
+       }
+      ]
+     }
     }
    }
   },

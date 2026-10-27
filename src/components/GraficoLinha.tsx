@@ -21,12 +21,15 @@ export function GraficoLinha({
   altura = 170,
   zeroNaBase = false,
   rotulo,
+  eixoX = "ano",
 }: {
   series: Serie[];
   formato: FormatoGrafico;
   altura?: number;
   zeroNaBase?: boolean;
   rotulo: string;
+  // "mes": x = ano × 12 + (mês − 1), e os rótulos saem como "jan/25".
+  eixoX?: "ano" | "mes";
 }) {
   const caixa = useRef<HTMLDivElement>(null);
   const [largura, setLargura] = useState(320);
@@ -62,7 +65,7 @@ export function GraficoLinha({
   // Rótulos do eixo x: os anos com dado, se couberem; senão, anos redondos (de 2 em 2, 5 em 5, 10 em 10...).
   const cabem = Math.max(2, Math.floor(w / 40));
   const espacados = xs.every((x, i) => i === 0 || px(x) - px(xs[i - 1]) >= 34);
-  const passo = [1, 2, 5, 10, 20, 25, 50].find((p) => (x1 - x0) / p <= cabem) ?? 50;
+  const passo = (eixoX === "mes" ? [1, 2, 3, 6, 12, 24] : [1, 2, 5, 10, 20, 25, 50]).find((p) => (x1 - x0) / p <= cabem) ?? 50;
   const rotulosX = espacados && xs.length <= cabem ? xs : Array.from({ length: Math.floor(x1 / passo) - Math.ceil(x0 / passo) + 1 }, (_, i) => (Math.ceil(x0 / passo) + i) * passo);
 
   const caminho = (s: Serie) => {
@@ -79,6 +82,8 @@ export function GraficoLinha({
     return d;
   };
   const xFoco = foco != null ? xs[foco] : null;
+  const MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+  const rotuloX = (x: number) => (eixoX === "mes" ? `${MESES[x % 12]}/${String(Math.floor(x / 12)).slice(2)}` : String(x));
 
   return (
     <figure ref={caixa} className="relative">
@@ -107,7 +112,7 @@ export function GraficoLinha({
         ))}
         {rotulosX.map((x) => (
           <text key={x} x={px(x)} y={altura - 6} textAnchor="middle" className="fill-slate-500 text-[10px] tabular-nums">
-            {x}
+            {rotuloX(x)}
           </text>
         ))}
         {xFoco != null && <line x1={px(xFoco)} x2={px(xFoco)} y1={m.cima} y2={m.cima + h} stroke="var(--grafico-ref)" strokeWidth={1} strokeDasharray="2 3" />}
@@ -135,7 +140,7 @@ export function GraficoLinha({
           className="pointer-events-none absolute top-0 z-10 min-w-36 rounded-lg border border-slate-200 bg-white/95 px-2.5 py-1.5 text-[11px] shadow-md backdrop-blur"
           style={{ left: Math.min(Math.max(0, px(xFoco) - 72), largura - 150) }}
         >
-          <div className="font-semibold text-slate-900">{xFoco}</div>
+          <div className="font-semibold text-slate-900">{rotuloX(xFoco)}</div>
           {series.map((s) => {
             const y = s.pontos.find((p) => p.x === xFoco)?.y;
             return (

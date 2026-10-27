@@ -446,6 +446,7 @@ const prefeito = {
 const lerJson = (f) => (existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null);
 const custo = lerJson("data/custo-mandato.json");
 const despesas = lerJson("data/camara-despesas.json");
+const folha = lerJson("data/camara-folha.json");
 const gabineteMensal = custo && Math.round(custo.gabinete.reduce((a, c) => a + c.quantidade * c.vencimento, 0) * 100) / 100;
 const camara = {
   custoMandato: custo && {
@@ -466,6 +467,25 @@ const camara = {
       Object.entries(despesas.anos).map(([ano, a]) => [ano, { pago: a.pago, meses: a.meses.length, maioresFornecedores: a.maioresFornecedores.slice(0, 8) }]),
     ),
   },
+  // Folha real do Portal do Cidadão (npm run ler:folha): só totais e o valor de cada vereador.
+  folha: folha && Object.keys(folha.meses).length
+    ? {
+        fonte: folha.fonte,
+        url: folha.url,
+        nota: folha.nota,
+        meses: Object.fromEntries(
+          Object.entries(folha.meses).map(([mes, m]) => [
+            mes,
+            {
+              todos: m.todos,
+              comissionados: m.comissionados,
+              gabinetes: m.gabinetes,
+              vereadores: { pessoas: m.vereadores.pessoas, bruto: m.vereadores.bruto, porVereador: m.vereadores.porVereador.filter((x) => x.id).map(({ id, bruto }) => ({ id, bruto })) },
+            },
+          ]),
+        ),
+      }
+    : null,
   requerimentosParados: [...pautaRequerimentos.values()].filter((x) => x.ultima === sessoesOrdenadas.at(-1)?.id).length,
 };
 

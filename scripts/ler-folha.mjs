@@ -45,33 +45,36 @@ for (const [slug, p] of Object.entries(perfis)) if (p.nomeCompleto) idDoVereador
 for (const v of politicos.vereadores ?? []) if (v.nomeCompleto) idDoVereador.set(dobra(v.nomeCompleto), v.id);
 
 const arquivos = existsSync(PASTA) ? readdirSync(PASTA).filter((f) => /^\d{4}-\d{2}-(agente-politico|comissionado|todos)\.zip$/.test(f)) : [];
-const meses = {};
-for (const f of arquivos.sort()) {
+// Por mês: o relatório "todos" (todos os vínculos) basta, porque o cargo diz quem é vereador e quem é de gabinete;
+// os relatórios por vínculo, quando existem, completam (comissionados da Presidência e da diretoria).
+const porMes = {};
+for (const f of arquivos) {
   const [, mes, vinculo] = f.match(/^(\d{4}-\d{2})-(.+)\.zip$/);
-  const { linhas, folha } = ler(`${PASTA}/${f}`);
-  const m = (meses[mes] ??= { folha });
-  const soma = (ls) => ({ pessoas: ls.length, bruto: Math.round(ls.reduce((a, l) => a + l.bruto, 0) * 100) / 100 });
-  if (vinculo === "agente-politico") {
-    m.vereadores = {
-      ...soma(linhas),
-      porVereador: linhas.map((l) => ({ id: idDoVereador.get(dobra(l.nome)) ?? null, nome: l.nome, bruto: l.bruto })),
-    };
-    const semId = m.vereadores.porVereador.filter((x) => !x.id).map((x) => x.nome);
-    if (semId.length) console.warn(`  ${mes}: vereadores sem correspondência no cadastro: ${semId.join(", ")}`);
-  } else if (vinculo === "comissionado") {
-    const porCargo = {};
-    for (const l of linhas) (porCargo[l.cargo] ??= []).push(l);
-    const gab = linhas.filter((l) => GABINETE.has(l.cargo));
-    m.comissionados = {
-      ...soma(linhas),
-      gabinetes: soma(gab),
-      outros: soma(linhas.filter((l) => !GABINETE.has(l.cargo))),
-      porCargo: Object.entries(porCargo)
-        .map(([cargo, ls]) => ({ cargo, gabinete: GABINETE.has(cargo), ...soma(ls) }))
-        .sort((a, b) => b.bruto - a.bruto),
-    };
-  } else m.todos = soma(linhas);
-  console.log(`${mes} ${vinculo}: ${linhas.length} pessoas, R$ ${soma(linhas).bruto.toLocaleString("pt-BR")} brutos`);
+  (porMes[mes] ??= {})[vinculo] = ler(`${PASTA}/${f}`);
+}
+const soma = (ls) => ({ pessoas: ls.length, bruto: Math.round(ls.reduce((a, l) => a + l.bruto, 0) * 100) / 100 });
+const meses = {};
+for (const mes of Object.keys(porMes).sort()) {
+  const r = porMes[mes];
+  const todos = r.todos?.linhas ?? null;
+  const vereadores = r["agente-politico"]?.linhas ?? todos?.filter((l) => l.cargo === "VEREADOR") ?? [];
+  const base = todos ?? r.comissionado?.linhas ?? [];
+  const gab = base.filter((l) => GABINETE.has(l.cargo));
+  const porCargo = {};
+  for (const l of gab) (porCargo[l.cargo] ??= []).push(l);
+  meses[mes] = {
+    folha: (r.todos ?? r["agente-politico"] ?? r.comissionado).folha,
+    todos: todos ? soma(todos) : null,
+    vereadores: {
+      ...soma(vereadores),
+      porVereador: vereadores.map((l) => ({ id: idDoVereador.get(dobra(l.nome)) ?? null, nome: l.nome, bruto: l.bruto })),
+    },
+    gabinetes: { ...soma(gab), porCargo: Object.entries(porCargo).map(([cargo, ls]) => ({ cargo, ...soma(ls) })).sort((a, b) => b.bruto - a.bruto) },
+    comissionados: r.comissionado ? soma(r.comissionado.linhas) : null,
+  };
+  const semId = meses[mes].vereadores.porVereador.filter((x) => !x.id).map((x) => x.nome);
+  if (semId.length) console.warn(`  ${mes}: vereadores sem correspondência no cadastro: ${semId.join(", ")}`);
+  console.log(`${mes}: ${vereadores.length} vereadores, ${gab.length} em cargos de gabinete (R$ ${meses[mes].gabinetes.bruto.toLocaleString("pt-BR")}), total ${meses[mes].todos?.bruto.toLocaleString("pt-BR") ?? "—"}`);
 }
 
 writeFileSync(
