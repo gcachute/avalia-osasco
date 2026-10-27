@@ -1,0 +1,5565 @@
+{
+ "fonte": "INEP, Censo Escolar 2024 e IDEB 2025 por escola (com 2023 quando 2025 não foi divulgado)",
+ "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos",
+ "escolas": [
+  {
+   "codigo": "35004021",
+   "nome": "CRECHE MARIA FIGUEIREDO ANTIORIO",
+   "rede": "Municipal",
+   "bairroTexto": "ADALGISA",
+   "bairro": "adalgisa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 76,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35004076",
+   "nome": "CENTRO EDUCACIONAL ALLAN KARDEC",
+   "rede": "Privada",
+   "bairroTexto": "VILA CAMPESINA",
+   "bairro": "vila-campesina",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 27,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35004094",
+   "nome": "ESCOLA MONTESSORIANA DE OSASCO",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM DAS FLORES",
+   "bairro": "jardim-das-flores",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 140,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35004677",
+   "nome": "CRECHE PEDRO ALVES DE OLIVEIRA",
+   "rede": "Municipal",
+   "bairroTexto": "SAO PEDRO",
+   "bairro": "sao-pedro",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 195,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35004862",
+   "nome": "CEEJA DEPUTADO GUILHERME DE OLIVEIRA GOMES",
+   "rede": "Estadual",
+   "bairroTexto": "CIPAVA",
+   "bairro": "cipava",
+   "etapas": [
+    "EJA"
+   ],
+   "matriculas": 2424,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35004874",
+   "nome": "COLEGIO ESCOPO",
+   "rede": "Privada",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 249,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35005014",
+   "nome": "COLEGIO SAO JOSE DA DIVINA PROVIDENCIA",
+   "rede": "Privada",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 439,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35005267",
+   "nome": "CRECHE JOSE DAVID BINSZTAJN",
+   "rede": "Municipal",
+   "bairroTexto": "NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 170,
+   "lat": -23.5723184,
+   "lon": -46.7968394,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35005349",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL PEQUENO PRINCIPE",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 43,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35005634",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL PEROLA PRECIOSA",
+   "rede": "Privada",
+   "bairroTexto": "SANTO ANTONIO",
+   "bairro": "santo-antonio",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 29,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35005674",
+   "nome": "FADELITO OSASCO EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 72,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35005675",
+   "nome": "SUNRISE SCHOOL EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 54,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35005802",
+   "nome": "COLEGIO ANTONIO VILLAS BOAS",
+   "rede": "Privada",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 334,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35005813",
+   "nome": "ESCOLA ALIANCA",
+   "rede": "Privada",
+   "bairroTexto": "PESTANA",
+   "bairro": "pestana",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 24,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35005827",
+   "nome": "CENTRO EDUCACIONAL APRENDER BRINCAR E CRESCER",
+   "rede": "Privada",
+   "bairroTexto": "QUITAUNA",
+   "bairro": "quintauna",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 51,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35005958",
+   "nome": "F B R EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 49,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006032",
+   "nome": "COLEGIO APRENDENDO COM AMOR",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM ELVIRA",
+   "bairro": "jardim-elvira",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 331,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006112",
+   "nome": "KIDS WAY BERCARIO E EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 165,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006186",
+   "nome": "CRECHE MARIA JOSE DA SILVA JESUS",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM ROBERTO",
+   "bairro": "jardim-roberto",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 145,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006188",
+   "nome": "CRECHE AGENTIL DOS REIS",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM ROBERTO",
+   "bairro": "jardim-roberto",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 137,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006218",
+   "nome": "CASTELO DOS GIGANTES ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "CIPAVA",
+   "bairro": "cipava",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 107,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006264",
+   "nome": "AUDAX CURSOS PROFISSIONALIZANTES",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [],
+   "matriculas": 21,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006305",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL MIMO DA GENTE",
+   "rede": "Privada",
+   "bairroTexto": "NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 47,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006421",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL TIA MARISA",
+   "rede": "Privada",
+   "bairroTexto": "HELENA MARIA",
+   "bairro": "helena-maria",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 115,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006559",
+   "nome": "CENTRO EDUCACIONAL MIRA MARIA",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 42,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006571",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL SAO MATEUS",
+   "rede": "Privada",
+   "bairroTexto": "REMEDIOS",
+   "bairro": "remedios",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 91,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006624",
+   "nome": "PEQUENO PRINCIPE BERCARIO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 19,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006625",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL O APRENDIZ PEQUENO SABIO I",
+   "rede": "Privada",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 90,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006627",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL O APRENDIZ PEQUENO SABIO II",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 54,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006628",
+   "nome": "ESPACO ENCANTADO CARINHA DE ANJO",
+   "rede": "Privada",
+   "bairroTexto": "VILA CAMPESINA",
+   "bairro": "vila-campesina",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 35,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006663",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL MASTER KIDS",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 86,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006745",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL ALFA KIDS",
+   "rede": "Privada",
+   "bairroTexto": "SANTO ANTONIO",
+   "bairro": "santo-antonio",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 28,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006747",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL PETEKINHA",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 87,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006748",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL PEQUENO PRINCIPE",
+   "rede": "Privada",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 32,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006751",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL EDUCANDO PEQUENOS CIDADAOS",
+   "rede": "Privada",
+   "bairroTexto": "PESTANA",
+   "bairro": "pestana",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 31,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006843",
+   "nome": "COLEGIO RAIO DE LUZ",
+   "rede": "Privada",
+   "bairroTexto": "UMUARAMA",
+   "bairro": "umuarama",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 232,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35006862",
+   "nome": "COLEGIO DESTAQUE UNIDADE II",
+   "rede": "Privada",
+   "bairroTexto": "CIPAVA",
+   "bairro": "cipava",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 155,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35007076",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL MUNDO DA CRIANCA",
+   "rede": "Privada",
+   "bairroTexto": "BUSSOCABA",
+   "bairro": "bussocaba",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 39,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35007101",
+   "nome": "TRENZINHO DA ALEGRIA BERCARIO",
+   "rede": "Privada",
+   "bairroTexto": "JAGUARIBE",
+   "bairro": "jaguaribe",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 8,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35007184",
+   "nome": "ESCOLA FAMILIA KIDS",
+   "rede": "Privada",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 9,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35007471",
+   "nome": "INSTITUICAO PRESBITERIANA DE ENSINO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 155,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35007581",
+   "nome": "CORDEL DA VILA",
+   "rede": "Privada",
+   "bairroTexto": "UMUARAMA",
+   "bairro": "umuarama",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 276,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35007589",
+   "nome": "COLEGIO A TURMA DA LU",
+   "rede": "Privada",
+   "bairroTexto": "VILA YOLANDA",
+   "bairro": "vila-yolanda",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 20,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35007646",
+   "nome": "TESLA DIGITAL SCHOOL",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 180,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35007667",
+   "nome": "EDUCA MAIS SAUDE LTDA",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [],
+   "matriculas": 54,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35007718",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL E FUNDAMENTAL LIMAOZINHO BOZANHI",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM DAS FLORES",
+   "bairro": "jardim-das-flores",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 139,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35007726",
+   "nome": "COLEGIO CULTURA EDUCACIONAL",
+   "rede": "Privada",
+   "bairroTexto": "BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 190,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35007828",
+   "nome": "COC VILA YARA UNIDADE II",
+   "rede": "Privada",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Médio"
+   ],
+   "matriculas": 206,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35008100",
+   "nome": "COLEGIO APRENDER E SABER",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 52,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35008104",
+   "nome": "SEMENTE DO CONHECIMENTO EIRELI ME",
+   "rede": "Privada",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 38,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35008133",
+   "nome": "ESPACO DAY CARE OSASCO LTDA",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 57,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35008179",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL VILA JARDIM LTDA",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM DAS FLORES",
+   "bairro": "jardim-das-flores",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 36,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35008182",
+   "nome": "BOSQUE DO CRESCER LTDA",
+   "rede": "Privada",
+   "bairroTexto": "PRESIDENTE ALTINO",
+   "bairro": "presidente-altino",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 69,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35008214",
+   "nome": "COLEGIO BELA VISTA KIDS LTDA",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 55,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35008763",
+   "nome": "DOM HENRIQUE KM 18 COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "KM 18",
+   "bairro": "km-18",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 518,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35008844",
+   "nome": "GENIAL MENTE ESCOLA",
+   "rede": "Privada",
+   "bairroTexto": "QUITAUNA",
+   "bairro": "quintauna",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 22,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009391",
+   "nome": "BLOOM EDUCACAO INFANTIL E RECREACAO LTDA",
+   "rede": "Privada",
+   "bairroTexto": "VILA CAMPESINA",
+   "bairro": "vila-campesina",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 34,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009395",
+   "nome": "CRECHE PROFESSOR ANTONIO GUACU DINAER PITERI",
+   "rede": "Privada",
+   "bairroTexto": "PIRATININGA",
+   "bairro": "piratininga",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 1008,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009401",
+   "nome": "HAPPY KIDS BABY EDUCACAO INFANTIL LTDA ME",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 25,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009412",
+   "nome": "DECOLAR KIDS BERCARIO E EDUCACAO INFANTIL LTDA",
+   "rede": "Privada",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 58,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009440",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL GEGE KIDS LTDA",
+   "rede": "Privada",
+   "bairroTexto": "SANTO ANTONIO",
+   "bairro": "santo-antonio",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 19,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009510",
+   "nome": "PEQUENOS NOTAVEIS ESCOLA DE EDUCACAO INFANTIL LTDA",
+   "rede": "Privada",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 23,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009530",
+   "nome": "COLEGIO FUN DAY",
+   "rede": "Privada",
+   "bairroTexto": "VILA CAMPESINA",
+   "bairro": "vila-campesina",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 19,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009537",
+   "nome": "CEL PROF ORLANDO GERIBOLA",
+   "rede": "Estadual",
+   "bairroTexto": "BUSSOCABA",
+   "bairro": "bussocaba",
+   "etapas": [],
+   "matriculas": 0,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009539",
+   "nome": "GRAU TECNICO UNIDADE OSASCO OSASCO EDUCACIONAL CURSOS TECNICOS LTDA",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [],
+   "matriculas": 786,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009570",
+   "nome": "PROZ UNIDADE OSASCO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [],
+   "matriculas": 249,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009791",
+   "nome": "ESCOLA TECYOU",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [],
+   "matriculas": 88,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009906",
+   "nome": "BEEHIVE SCHOOL EDUCACAO INFANTIL LTDA",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 56,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35009925",
+   "nome": "BETHEL ENSINO CRISTAO BILINGUE",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 65,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010057",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL AMOR A VIDA",
+   "rede": "Privada",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 32,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010061",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL DUQUE SAO FRANCISCO",
+   "rede": "Privada",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 9,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010089",
+   "nome": "ESCOLA CANADENSE DE OSASCO",
+   "rede": "Privada",
+   "bairroTexto": "KM 18",
+   "bairro": "km-18",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 27,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010234",
+   "nome": "COLEGIO MARIA MATER",
+   "rede": "Privada",
+   "bairroTexto": "CIPAVA",
+   "bairro": "cipava",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 41,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010318",
+   "nome": "COLEGIO MAXIMO",
+   "rede": "Privada",
+   "bairroTexto": "PRESIDENTE ALTINO",
+   "bairro": "presidente-altino",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 42,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010358",
+   "nome": "SOUL MASTER KIDS",
+   "rede": "Privada",
+   "bairroTexto": "VILA CAMPESINA",
+   "bairro": "vila-campesina",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 45,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010489",
+   "nome": "CICLO GOTINHAS II",
+   "rede": "Privada",
+   "bairroTexto": "BUSSOCABA",
+   "bairro": "bussocaba",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 124,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010518",
+   "nome": "CICLO GOTINHAS I",
+   "rede": "Privada",
+   "bairroTexto": "CONCEICAO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 142,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010541",
+   "nome": "CRECHE PROFESSOR MANOEL DA SILVA",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM DAS FLORES",
+   "bairro": "jardim-das-flores",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 424,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010542",
+   "nome": "CRECHE JOAO PEDRO BRITO GONCALVES",
+   "rede": "Privada",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 95,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010545",
+   "nome": "CRECHE OSORIO LORIA",
+   "rede": "Privada",
+   "bairroTexto": "CONCEICAO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 178,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010548",
+   "nome": "CRECHE ALTINO ROSSI DE ALMEIDA",
+   "rede": "Privada",
+   "bairroTexto": "QUITAUNA",
+   "bairro": "quintauna",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 188,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010549",
+   "nome": "CRECHE SEBASTIAO VITORINO PEREIRA",
+   "rede": "Privada",
+   "bairroTexto": "VILA MENCK",
+   "bairro": "vila-menck",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 93,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010550",
+   "nome": "CRECHE VANIA LUCIA SOUZA",
+   "rede": "Privada",
+   "bairroTexto": "SANTA MARIA",
+   "bairro": "santa-maria",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 94,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010551",
+   "nome": "CRECHE JOSE TONIOLO NETTO",
+   "rede": "Privada",
+   "bairroTexto": "NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 94,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010557",
+   "nome": "CICLO GOTINHAS III",
+   "rede": "Privada",
+   "bairroTexto": "PORTAL D OESTE",
+   "bairro": "portal-d-oeste",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 130,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010674",
+   "nome": "ELOI LACERDA PROF",
+   "rede": "Estadual",
+   "bairroTexto": "PIRATININGA",
+   "bairro": "piratininga",
+   "etapas": [
+    "Fundamental II",
+    "Médio",
+    "EJA"
+   ],
+   "matriculas": 904,
+   "lat": -23.5190298,
+   "lon": -46.7927481,
+   "idebIniciais": null,
+   "idebFinais": 4.5
+  },
+  {
+   "codigo": "35010686",
+   "nome": "ERNESTO THENN DE BARROS PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "JARDIM NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1765,
+   "lat": -23.5710957,
+   "lon": -46.7962658,
+   "idebIniciais": null,
+   "idebFinais": 4.7
+  },
+  {
+   "codigo": "35010703",
+   "nome": "MAGICO DE OZ",
+   "rede": "Privada",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 10,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010706",
+   "nome": "DARCY RIBEIRO",
+   "rede": "Privada",
+   "bairroTexto": "SANTA MARIA",
+   "bairro": "santa-maria",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 26,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010708",
+   "nome": "ALEGRIA DE APRENDER",
+   "rede": "Privada",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 23,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010709",
+   "nome": "CEI CELINA ALMEIDA",
+   "rede": "Privada",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 32,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010710",
+   "nome": "CEI FERNANDA ALVES PADRIN",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM BONANCA",
+   "bairro": "bonanca",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 48,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010712",
+   "nome": "CEI JOSE MONTEIRO NETO",
+   "rede": "Privada",
+   "bairroTexto": "SANTA MARIA",
+   "bairro": "santa-maria",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 12,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010713",
+   "nome": "CEI LUIZA TOLEDO PADRIN",
+   "rede": "Privada",
+   "bairroTexto": "INDUSTRIAL ANHANGUERA",
+   "bairro": "industrial-anhanguera",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 12,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010715",
+   "nome": "CEI MADALENA SINDONA",
+   "rede": "Privada",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 12,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010716",
+   "nome": "JOSE MARIA RODRIGUES LEITE PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "VILA CAMPESINA",
+   "bairro": "vila-campesina",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 762,
+   "lat": -23.5425975,
+   "lon": -46.7719177,
+   "idebIniciais": null,
+   "idebFinais": 5.6
+  },
+  {
+   "codigo": "35010717",
+   "nome": "CEI TEODORA SALGUEIRO DE ALMEIDA",
+   "rede": "Privada",
+   "bairroTexto": "PORTAL DOESTE",
+   "bairro": "portal-d-oeste",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 31,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010728",
+   "nome": "ALCYR OLIVEIRA PORCIUNCULA PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "VILA MENCK",
+   "bairro": "mutinga",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 663,
+   "lat": -23.5063681,
+   "lon": -46.7677728,
+   "idebIniciais": null,
+   "idebFinais": 5
+  },
+  {
+   "codigo": "35010741",
+   "nome": "ROSA BONFIGLIOLI",
+   "rede": "Estadual",
+   "bairroTexto": "JARDIM D ABRIL",
+   "bairro": "jardim-d-abril",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 717,
+   "lat": -23.5692362,
+   "lon": -46.7775617,
+   "idebIniciais": null,
+   "idebFinais": 5.2
+  },
+  {
+   "codigo": "35010789",
+   "nome": "JOSE LIBERATTI PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1715,
+   "idebIniciais": null,
+   "idebFinais": 5.1
+  },
+  {
+   "codigo": "35010790",
+   "nome": "FRANCISCA LISBOA PERALTA PROFESSORA",
+   "rede": "Estadual",
+   "bairroTexto": "JARDIM ELVIRA",
+   "bairro": "jardim-elvira",
+   "etapas": [
+    "Fundamental II"
+   ],
+   "matriculas": 527,
+   "lat": -23.5035246,
+   "lon": -46.7941346,
+   "idebIniciais": null,
+   "idebFinais": 5.3
+  },
+  {
+   "codigo": "35010807",
+   "nome": "ANTONIO PAIVA DE SAMPAIO CORONEL",
+   "rede": "Estadual",
+   "bairroTexto": "QUITAUNA",
+   "bairro": "quintauna",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 408,
+   "idebIniciais": null,
+   "idebFinais": 6.2
+  },
+  {
+   "codigo": "35010820",
+   "nome": "FANNY MONZONI SANTOS PROFESSORA",
+   "rede": "Estadual",
+   "bairroTexto": "VILA YOLANDA",
+   "bairro": "vila-yolanda",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 808,
+   "lat": -23.545666,
+   "lon": -46.7928045,
+   "idebIniciais": null,
+   "idebFinais": 4.5
+  },
+  {
+   "codigo": "35010844",
+   "nome": "MARIA AUGUSTA SIQUEIRA PROFESSORA",
+   "rede": "Estadual",
+   "bairroTexto": "REMEDIOS",
+   "bairro": "remedios",
+   "etapas": [
+    "Médio"
+   ],
+   "matriculas": 385,
+   "lat": -23.5174093,
+   "lon": -46.757495,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35010868",
+   "nome": "LUIZ LUSTOSA DA SILVA PROFESSOR DOUTOR",
+   "rede": "Estadual",
+   "bairroTexto": "BARONESA",
+   "bairro": "baronesa",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 2436,
+   "lat": -23.4966338,
+   "lon": -46.7860705,
+   "idebIniciais": null,
+   "idebFinais": 4.7
+  },
+  {
+   "codigo": "35010873",
+   "nome": "JOAO BAPTISTA DE BRITO PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Fundamental II"
+   ],
+   "matriculas": 432,
+   "lat": -23.5495695,
+   "lon": -46.7599773,
+   "idebIniciais": null,
+   "idebFinais": 5.8
+  },
+  {
+   "codigo": "35010881",
+   "nome": "AURELIANO LEITE DOUTOR",
+   "rede": "Estadual",
+   "bairroTexto": "VILA MENK",
+   "bairro": "vila-menck",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1430,
+   "lat": -23.4990021,
+   "lon": -46.7704842,
+   "idebIniciais": null,
+   "idebFinais": 4.5
+  },
+  {
+   "codigo": "35010893",
+   "nome": "AMERICO MARCO ANTONIO DOUTOR",
+   "rede": "Estadual",
+   "bairroTexto": "PESTANA",
+   "bairro": "pestana",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 2234,
+   "lat": -23.5435886,
+   "lon": -46.801454,
+   "idebIniciais": null,
+   "idebFinais": 4.9
+  },
+  {
+   "codigo": "35010900",
+   "nome": "BENEDICTO CALDEIRA PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "JAGUARIBE",
+   "bairro": "jaguaribe",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 694,
+   "lat": -23.5587038,
+   "lon": -46.7864885,
+   "idebIniciais": null,
+   "idebFinais": 4.8
+  },
+  {
+   "codigo": "35010923",
+   "nome": "HELOISA DE ASSUMPCAO PROFESSORA",
+   "rede": "Estadual",
+   "bairroTexto": "KM 18",
+   "bairro": "km-18",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 858,
+   "idebIniciais": null,
+   "idebFinais": 4.2
+  },
+  {
+   "codigo": "35010947",
+   "nome": "ALICE VELHO TEIXEIRA PROFESSORA",
+   "rede": "Estadual",
+   "bairroTexto": "PRESIDENTE ALTINO",
+   "bairro": "presidente-altino",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 482,
+   "idebIniciais": null,
+   "idebFinais": 5.1
+  },
+  {
+   "codigo": "35010959",
+   "nome": "JULIA LOPES DE ALMEIDA",
+   "rede": "Estadual",
+   "bairroTexto": "ROCHDALE",
+   "bairro": "rochdale",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 2243,
+   "lat": -23.5177697,
+   "lon": -46.7811356,
+   "idebIniciais": null,
+   "idebFinais": 5
+  },
+  {
+   "codigo": "35010984",
+   "nome": "GLORIA AZEDIA BONETTI PROFESSORA",
+   "rede": "Estadual",
+   "bairroTexto": "BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 436,
+   "lat": -23.5498988,
+   "lon": -46.7838044,
+   "idebIniciais": null,
+   "idebFinais": 5.2
+  },
+  {
+   "codigo": "35010996",
+   "nome": "GRACILIANO RAMOS",
+   "rede": "Estadual",
+   "bairroTexto": "NOVO OSASCO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 612,
+   "lat": -23.5772717,
+   "lon": -46.7931385,
+   "idebIniciais": null,
+   "idebFinais": 4.9
+  },
+  {
+   "codigo": "35011010",
+   "nome": "OGUIOMAR RUGGERI PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1306,
+   "lat": -23.56638408,
+   "lon": -46.80273166,
+   "idebIniciais": null,
+   "idebFinais": 5
+  },
+  {
+   "codigo": "35011034",
+   "nome": "TELMO COELHO FILHO MAJOR",
+   "rede": "Estadual",
+   "bairroTexto": "KM 18",
+   "bairro": "km-18",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 2436,
+   "idebIniciais": null,
+   "idebFinais": 5.4
+  },
+  {
+   "codigo": "35011058",
+   "nome": "LEONARDO VILAS BOAS",
+   "rede": "Estadual",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 337,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35011061",
+   "nome": "JOSUE BENEDICTO MENDES PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "JARDIM ELVIRA",
+   "bairro": "munhoz-junior",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 897,
+   "lat": -23.4974052,
+   "lon": -46.804492,
+   "idebIniciais": null,
+   "idebFinais": 5.3
+  },
+  {
+   "codigo": "35011083",
+   "nome": "VICENTE PEIXOTO PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 538,
+   "lat": -23.5380657,
+   "lon": -46.7837149,
+   "idebIniciais": null,
+   "idebFinais": 5.7
+  },
+  {
+   "codigo": "35011095",
+   "nome": "ANTONIO RAPOSO TAVARES",
+   "rede": "Estadual",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1743,
+   "idebIniciais": null,
+   "idebFinais": 4.9
+  },
+  {
+   "codigo": "35011113",
+   "nome": "FRANCISCO CASABONA PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 496,
+   "lat": -23.5181322,
+   "lon": -46.7704315,
+   "idebIniciais": null,
+   "idebFinais": 5.6
+  },
+  {
+   "codigo": "35011137",
+   "nome": "NEWTON ESPIRITO SANTO AYRES PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "SANTO ANTONIO",
+   "bairro": "santo-antonio",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 2177,
+   "lat": -23.55813758,
+   "lon": -46.79865559,
+   "idebIniciais": null,
+   "idebFinais": 4.9
+  },
+  {
+   "codigo": "35011149",
+   "nome": "LUCY ANNA CARROZO LATORRE PROFESSORA",
+   "rede": "Estadual",
+   "bairroTexto": "JARDIM DAS FLORES",
+   "bairro": "jardim-das-flores",
+   "etapas": [
+    "Fundamental II"
+   ],
+   "matriculas": 428,
+   "lat": -23.535541,
+   "lon": -46.7931886,
+   "idebIniciais": null,
+   "idebFinais": 6.8
+  },
+  {
+   "codigo": "35038647",
+   "nome": "JOSE GERALDO VIEIRA",
+   "rede": "Estadual",
+   "bairroTexto": "UMUARAMA",
+   "bairro": "jardim-d-abril",
+   "etapas": [
+    "Médio"
+   ],
+   "matriculas": 441,
+   "lat": -23.56056,
+   "lon": -46.7821778,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35038684",
+   "nome": "GASTAO RAMOS PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "TRES MONTANHAS",
+   "bairro": "tres-montanhas",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 809,
+   "lat": -23.4790207,
+   "lon": -46.7840559,
+   "idebIniciais": null,
+   "idebFinais": 4.8
+  },
+  {
+   "codigo": "35038702",
+   "nome": "ANTONIO DE ALMEIDA JUNIOR",
+   "rede": "Estadual",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Fundamental II"
+   ],
+   "matriculas": 290,
+   "lat": -23.56363937,
+   "lon": -46.80491819,
+   "idebIniciais": null,
+   "idebFinais": 5.8
+  },
+  {
+   "codigo": "35038726",
+   "nome": "TARSILA DO AMARAL",
+   "rede": "Estadual",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "bandeiras",
+   "etapas": [
+    "Fundamental II",
+    "Médio",
+    "EJA"
+   ],
+   "matriculas": 1627,
+   "lat": -23.55638761,
+   "lon": -46.81193642,
+   "idebIniciais": null,
+   "idebFinais": 4.5
+  },
+  {
+   "codigo": "35038738",
+   "nome": "FRANCISCO MATARAZZO SOBRINHO",
+   "rede": "Estadual",
+   "bairroTexto": "MUNHOZ JUNIOR",
+   "bairro": "munhoz-junior",
+   "etapas": [
+    "Fundamental II"
+   ],
+   "matriculas": 491,
+   "lat": -23.5050123,
+   "lon": -46.8065555,
+   "idebIniciais": null,
+   "idebFinais": 5
+  },
+  {
+   "codigo": "35039196",
+   "nome": "HORACIO QUAGLIO PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "JARDIM PLATINA",
+   "bairro": "platina",
+   "etapas": [
+    "Fundamental II",
+    "Médio",
+    "EJA"
+   ],
+   "matriculas": 846,
+   "lat": -23.4989701,
+   "lon": -46.7669978,
+   "idebIniciais": null,
+   "idebFinais": 4.5
+  },
+  {
+   "codigo": "35040770",
+   "nome": "NEUZA DE OLIVEIRA PREVIDE PROFESSORA",
+   "rede": "Estadual",
+   "bairroTexto": "HELENA MARIA",
+   "bairro": "helena-maria",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 2096,
+   "lat": -23.5006449,
+   "lon": -46.7876295,
+   "idebIniciais": null,
+   "idebFinais": 4.7
+  },
+  {
+   "codigo": "35040800",
+   "nome": "ARMANDO GABAN PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "CONCEICAO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1587,
+   "idebIniciais": null,
+   "idebFinais": 4.3
+  },
+  {
+   "codigo": "35046619",
+   "nome": "ORLANDO GERIBOLA PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "BUSSOCABA",
+   "bairro": "bussocaba",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 592,
+   "lat": -23.56465017,
+   "lon": -46.79442579,
+   "idebIniciais": null,
+   "idebFinais": 5.5
+  },
+  {
+   "codigo": "35046620",
+   "nome": "JOSE RIBEIRO DE SOUZA PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "BUSSOCABA",
+   "bairro": "bussocaba",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 669,
+   "lat": -23.5675707,
+   "lon": -46.7879552,
+   "idebIniciais": null,
+   "idebFinais": 5.1
+  },
+  {
+   "codigo": "35051433",
+   "nome": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL PROFA MARIA APARECIDA DE CAMARGO DAMY RODRIGUES",
+   "rede": "Municipal",
+   "bairroTexto": "BONANCA",
+   "bairro": "bonanca",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 668,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35051445",
+   "nome": "THEREZA BIANCHI COLLINO CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "PRESIDENTE ALTINO",
+   "bairro": "presidente-altino",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 191,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35051457",
+   "nome": "JOSE FLAVIO DE FREITAS PROF CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM MUTINGA",
+   "bairro": "mutinga",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 265,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35051470",
+   "nome": "ALICE MANHOLER PETERI CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "KM 18",
+   "bairro": "km-18",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 253,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35051482",
+   "nome": "SEVERINO DE ARAUJO FREIRE EMEI",
+   "rede": "Municipal",
+   "bairroTexto": "NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 287,
+   "lat": -23.571036,
+   "lon": -46.7953893,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35051494",
+   "nome": "FERNANDO BUONADUCE PROF CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM DAS FLORES",
+   "bairro": "jardim-das-flores",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 176,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35051500",
+   "nome": "LOURDES CANDIDA FARIA CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "PIRATININGA",
+   "bairro": "piratininga",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 406,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35051524",
+   "nome": "HELENA COUTINHO CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 157,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35051536",
+   "nome": "OSWALDO GONCALVES CARVALHO CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "ROCHDALE",
+   "bairro": "rochdale",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 525,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35070129",
+   "nome": "VALTER DE OLIVEIRA FERREIRA PROF EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "HELENA MARIA",
+   "bairro": "munhoz-junior",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 890,
+   "lat": -23.4966053,
+   "lon": -46.8044147,
+   "idebIniciais": 5.8,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35070130",
+   "nome": "DALVA MIRIAN PORTELA MACHADO PROFA EMEI",
+   "rede": "Municipal",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 318,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35070142",
+   "nome": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL E ENSINO FUNDAMENTAL ELIO APARECIDO DA SILVA",
+   "rede": "Municipal",
+   "bairroTexto": "VILA MENK",
+   "bairro": "vila-menck",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 993,
+   "idebIniciais": 6.1,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35070154",
+   "nome": "YOLANDA BOTARO VICENTE CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 143,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35072989",
+   "nome": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL PROFA MARIA ALVES DORIA",
+   "rede": "Municipal",
+   "bairroTexto": "MUNHOZ JUNIOR",
+   "bairro": "munhoz-junior",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 392,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35075504",
+   "nome": "EMIR MACEDO NOGUEIRA PROF EMEI",
+   "rede": "Municipal",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 265,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35076867",
+   "nome": "GERTRUDES ROSSI CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "PORTAL D OESTE",
+   "bairro": "portal-d-oeste",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 729,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35078827",
+   "nome": "ADHEMAR PEREIRA DE BARROS EMEI",
+   "rede": "Municipal",
+   "bairroTexto": "NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 138,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35078839",
+   "nome": "JOSE ERMIRIO DE MORAES SENADOR CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 526,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35078840",
+   "nome": "ESTEVAO BRETT CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 246,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35078852",
+   "nome": "ELIDE ALVES DORIA PROFA CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM CALIFORNIA",
+   "bairro": null,
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 260,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35078864",
+   "nome": "CRISTINE APARECIDA DE OLIVEIRA BRAGA CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "ADALGISA",
+   "bairro": "adalgisa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 183,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35081450",
+   "nome": "OMAR OGEDA MARTINS CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "VILA MENK",
+   "bairro": "vila-menck",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 231,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35081462",
+   "nome": "IGNES COLLINO EMEI",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM D ABRIL",
+   "bairro": "jaguaribe",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 216,
+   "lat": -23.5580617,
+   "lon": -46.7789274,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35082119",
+   "nome": "FORTUNATA PEREIRA DE JESUS SANTOS CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "PESTANA",
+   "bairro": "pestana",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 156,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35082485",
+   "nome": "VICTOR BRECHERET ESCULTOR EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "BARONESA",
+   "bairro": "baronesa",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 981,
+   "idebIniciais": 5.9,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35082491",
+   "nome": "ALFREDO FARHAT DEPUTADO EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "SAO PEDRO",
+   "bairro": "sao-pedro",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 709,
+   "idebIniciais": 6.1,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35082570",
+   "nome": "ALIPIO DA SILVA LAVOURA PROF CEMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "VILA MENK",
+   "bairro": "vila-menck",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 543,
+   "idebIniciais": 5.9,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35082600",
+   "nome": "JOAO EUCLYDES PEREIRA PROF EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM ELVIRA",
+   "bairro": "castelo-branco",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 449,
+   "lat": -23.5053794,
+   "lon": -46.7908242,
+   "idebIniciais": 6,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35082659",
+   "nome": "MANOEL TERTULIANO DE CERQUEIRA PROF EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "CONCEICAO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 311,
+   "idebIniciais": 6,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35082661",
+   "nome": "OLAVO ANTONIO BARBOSA SPINOLA PROF EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM ROBERTO",
+   "bairro": "jardim-roberto",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 318,
+   "idebIniciais": 8,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35082685",
+   "nome": "EMEF PROFA OLINDA MOREIRA LEMES DA CUNHA",
+   "rede": "Municipal",
+   "bairroTexto": "MUNHOZ JUNIOR",
+   "bairro": "munhoz-junior",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 501,
+   "lat": -23.5004813,
+   "lon": -46.8028238,
+   "idebIniciais": 6.4,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35082867",
+   "nome": "ONEIDE BORTOLOTE PROFA EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "INDUSTRIAL ANHANGUERA",
+   "bairro": "industrial-anhanguera",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 667,
+   "lat": -23.4897228,
+   "lon": -46.7773536,
+   "idebIniciais": 4.9,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35083094",
+   "nome": "OSWALDO QUIRINO SIMOES EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "SANTO ANTONIO",
+   "bairro": "santo-antonio",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 558,
+   "idebIniciais": 6.5,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35083112",
+   "nome": "QUINTINO BOCAIUVA EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 880,
+   "lat": -23.5707689,
+   "lon": -46.79458,
+   "idebIniciais": 6.9,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35083161",
+   "nome": "TECLA MERLO IRMA EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "MUTINGA",
+   "bairro": "mutinga",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 888,
+   "idebIniciais": 6,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35083185",
+   "nome": "ELZA DE CARVALHO MELLO BATTISTON PROFA EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "PESTANA",
+   "bairro": "cidade-das-flores",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 921,
+   "lat": -23.5396157,
+   "lon": -46.805022,
+   "idebIniciais": 6.4,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35083239",
+   "nome": "NAIR BELLACOSA WARZEKA PROFA CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM ELVIRA",
+   "bairro": "jardim-elvira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 222,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35083240",
+   "nome": "ANTONIO DE SAMPAIO GENERAL EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "KM 18",
+   "bairro": "km-18",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 604,
+   "idebIniciais": 6.7,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35085819",
+   "nome": "WILMA FOLTRAN PORTELLA PROFA CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "ROCHDALE",
+   "bairro": "rochdale",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 526,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35085820",
+   "nome": "FORTUNATO ANTIORIO PROF CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 261,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35087973",
+   "nome": "PROVIDENCIA DOS ANJOS CARREIRA CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "QUITAUNA",
+   "bairro": "quintauna",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 253,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35087981",
+   "nome": "MARIO SEBASTIAO ALVES LIMA CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 145,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35087993",
+   "nome": "JOAO DE FARIAS CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "VILA MENK",
+   "bairro": "vila-menck",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 289,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35088006",
+   "nome": "SONIA MARIA DE ALMEIDA FERNANDES PROFA EMEI",
+   "rede": "Municipal",
+   "bairroTexto": "BARONESA",
+   "bairro": "baronesa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 331,
+   "lat": -23.4978514,
+   "lon": -46.7854318,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35088018",
+   "nome": "ANTONIO PAULINO RIBEIRO PROF CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "BANDEIRAS",
+   "bairro": "bandeiras",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 204,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35091236",
+   "nome": "DESCIO MENDES PEREIRA DR EMEI",
+   "rede": "Municipal",
+   "bairroTexto": "METALURGICOS",
+   "bairro": "metalurgicos",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 189,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35093154",
+   "nome": "ZAIRA COLLINO ODALIA CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "CIDADE DAS FLORES",
+   "bairro": "cidade-das-flores",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 498,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35094389",
+   "nome": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL OSWALDO SALLES NEMER",
+   "rede": "Municipal",
+   "bairroTexto": "CONCEICAO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 449,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35097317",
+   "nome": "CEMEI PEDRO MARTINO",
+   "rede": "Municipal",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 183,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35097329",
+   "nome": "JAPHET FONTES CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "VILA MENCK",
+   "bairro": "vila-menck",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 137,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35109393",
+   "nome": "APLICACAO DE OSASCO COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 451,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35109400",
+   "nome": "FERNAO DIAS PAIS COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 557,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35109411",
+   "nome": "NOSSA SENHORA DOS REMEDIOS COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "VILA REMEDIOS",
+   "bairro": "remedios",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1067,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35109423",
+   "nome": "ASSIS CHATEAUBRIAND EMB ESC ED INFANTIL E ENS FUNDAMENTAL",
+   "rede": "Privada",
+   "bairroTexto": "VILA CAMPESINA",
+   "bairro": "vila-campesina",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 2507,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35109435",
+   "nome": "NOSSA SENHORA DE MISERICORDIA COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 994,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35109460",
+   "nome": "ASSIS CHATEAUBRIAND EMB EEFMEPJA",
+   "rede": "Privada",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 2964,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35109472",
+   "nome": "FITO ESCOLA DE EDUCACAO BASICA UNIDADE I",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM DAS FLORES",
+   "bairro": "jardim-das-flores",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1222,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35109496",
+   "nome": "SAO PIO X INSTITUTO",
+   "rede": "Privada",
+   "bairroTexto": "VILA QUITAUNA",
+   "bairro": "quintauna",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 497,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35119660",
+   "nome": "COLEGIO PRESTES MAIA",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM D ABRIL",
+   "bairro": "jardim-d-abril",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 368,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35120637",
+   "nome": "PADRE ANCHIETA COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 620,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35120947",
+   "nome": "ESCOLA DE EDUCACAO BASICA FUNDACAO BRADESCO",
+   "rede": "Privada",
+   "bairroTexto": "CONCEICAO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1430,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35121022",
+   "nome": "PAPA MIKE COLEGIO UNIDADE II",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [],
+   "matriculas": 410,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35124618",
+   "nome": "COC VILA YARA",
+   "rede": "Privada",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 670,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35125404",
+   "nome": "NOVA GERACAO ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 49,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35130928",
+   "nome": "SETA COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 283,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35130936",
+   "nome": "CAMINHO SUAVE EEIEF",
+   "rede": "Privada",
+   "bairroTexto": "PRESIDENTE ALTINO",
+   "bairro": "presidente-altino",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 34,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35130941",
+   "nome": "HAYA CURSO E COLEGIO II",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 517,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35131573",
+   "nome": "NADIR DIAS DE FIGUEIREDO ESCOLA SENAI",
+   "rede": "Privada",
+   "bairroTexto": "PRESIDENTE ALTINO",
+   "bairro": "presidente-altino",
+   "etapas": [],
+   "matriculas": 209,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35132412",
+   "nome": "VIDA COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 121,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35135288",
+   "nome": "COLEGIO ANGLO LEONARDO DA VINCI",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 405,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35138373",
+   "nome": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL E ENSINO FUNDAMENTAL SAAD BECHARA",
+   "rede": "Municipal",
+   "bairroTexto": "PIRATININGA",
+   "bairro": "piratininga",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 719,
+   "idebIniciais": 6,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35138381",
+   "nome": "MARIA JOSE FERREIRA FERRAZ PROFESSORA CEMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "SANTA FE",
+   "bairro": "santa-fe",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 461,
+   "idebIniciais": 6.3,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35138630",
+   "nome": "COLEGIO RIBEIRO DE FREITAS",
+   "rede": "Privada",
+   "bairroTexto": "ROCHDALE",
+   "bairro": "rochdale",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 420,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35139531",
+   "nome": "RUBENS BANDEIRA CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "VILA MENK",
+   "bairro": "vila-menck",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 473,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35139816",
+   "nome": "MARIA TARCILLA FORNASARO MELLI CEMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "JAGUARIBE",
+   "bairro": "jaguaribe",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 1244,
+   "idebIniciais": 6.1,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35140144",
+   "nome": "INTEGRADO DE OSASCO COLEGIO ENSINO FUNDAMENTAL E MEDIO",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM DAS FLORES",
+   "bairro": "jardim-das-flores",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 607,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35140454",
+   "nome": "CANDIDO DE OLIVEIRA PROFESSOR ESCOLA EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "CAMPESINA",
+   "bairro": "vila-campesina",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 73,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35141124",
+   "nome": "ESCOLA SESI LUIZ CARLOS TRABUCO CAPPI",
+   "rede": "Privada",
+   "bairroTexto": "PIRATININGA",
+   "bairro": "piratininga",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio",
+    "EJA"
+   ],
+   "matriculas": 2080,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35142232",
+   "nome": "PERES COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM PIRATININGA",
+   "bairro": "piratininga",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 581,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35143078",
+   "nome": "FAMILIA STELLA COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "CIPAVA",
+   "bairro": "cipava",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 321,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35144733",
+   "nome": "PRISMA COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "VILA YOLANDA",
+   "bairro": "vila-yolanda",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 513,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35144745",
+   "nome": "ADVENTISTA COLEGIO DE VILA YARA",
+   "rede": "Privada",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1606,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35148748",
+   "nome": "SENAC OSASCO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [],
+   "matriculas": 524,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35154039",
+   "nome": "PER TUTTI ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 61,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35154908",
+   "nome": "DESAFIO CENTRO EDUCACIONAL",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1207,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35154969",
+   "nome": "PANTERINHA CENTRO EDUCACIONAL",
+   "rede": "Privada",
+   "bairroTexto": "VILA CAMPESINA",
+   "bairro": "vila-campesina",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 17,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35154994",
+   "nome": "COLEGIO MARINA COSTA",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM HELENA MARIA",
+   "bairro": "helena-maria",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 162,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35159244",
+   "nome": "UNIVERSAL STAR COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 284,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35159897",
+   "nome": "MANOEL MORATTO COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 788,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35159980",
+   "nome": "ADOLFO WESSEL KARELUXE COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "PESTANA",
+   "bairro": "pestana",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 381,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35160015",
+   "nome": "JOANA ZONCA MADRE ESCOLA INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "QUITAUNA",
+   "bairro": "quintauna",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 44,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35160258",
+   "nome": "PRESBITERIANO COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "PRESIDENTE ALTINO",
+   "bairro": "presidente-altino",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 148,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35166832",
+   "nome": "INSTITUTO EDUCACIONAL E CULTURAL FILADELFIA",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 368,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35166844",
+   "nome": "COLEGIO SAO GABRIEL",
+   "rede": "Privada",
+   "bairroTexto": "BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 577,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35167149",
+   "nome": "CURUMIM ESCOLA EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "VILA QUITAUNA",
+   "bairro": "quintauna",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 72,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35168191",
+   "nome": "SOSSEGO DA MAMAE CENTRO DE RECREACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "ROCHDALE",
+   "bairro": "rochdale",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 83,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35176285",
+   "nome": "COLEGIO BOZANHI",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM DAS FLORES",
+   "bairro": "jardim-das-flores",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 124,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35176291",
+   "nome": "MUNDO MAGICO ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM ELVIRA",
+   "bairro": "jardim-elvira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 37,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35176321",
+   "nome": "ESCOLA DE EDUCACAO INFANTIL E ENSINO FUNDAMENTAL JOAO DE BARRO",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 179,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35176345",
+   "nome": "LUMIAR ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM CALIFORNIA",
+   "bairro": null,
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 33,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35176382",
+   "nome": "MICHELINI PROFA INSTITUTO EDUCACIONAL",
+   "rede": "Privada",
+   "bairroTexto": "HELENA MARIA",
+   "bairro": "helena-maria",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 153,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35176394",
+   "nome": "AMAURI MARQUES DE AZEVEDO COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM BARONESA",
+   "bairro": "baronesa",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 211,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35184883",
+   "nome": "LITA ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "VILA DOS REMEDIOS",
+   "bairro": "remedios",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 50,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35184937",
+   "nome": "PEQUENO SAMURAI ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 14,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35186624",
+   "nome": "TRENZINHO DA ALEGRIA ESCOLA DE RECREACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "JAGUARIBE",
+   "bairro": "jaguaribe",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 113,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35197282",
+   "nome": "PRIMEIROS PASSOS ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "BUSSOCABA",
+   "bairro": "bussocaba",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 90,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35197300",
+   "nome": "RA TIM BUM ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 62,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35197324",
+   "nome": "PINGO DE GENTE ESCOLA DE EDUCACAO E RECREACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "PRESIDENTE ALTINO",
+   "bairro": "presidente-altino",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 30,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35211333",
+   "nome": "CEMEI ALIPIO PEREIRA DOS SANTOS PROF",
+   "rede": "Municipal",
+   "bairroTexto": "JAGUARIBE",
+   "bairro": "jaguaribe",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 181,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35211345",
+   "nome": "ESMERALDA FERREIRA SIMAO NOBREGA PROFA EMEI",
+   "rede": "Municipal",
+   "bairroTexto": "CONCEICAO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 299,
+   "lat": -23.57977221,
+   "lon": -46.80220112,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35211357",
+   "nome": "LUZIA MOMI SASSO CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 159,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35211370",
+   "nome": "MARIA BERTONI FIORITA PROFA EMEI",
+   "rede": "Municipal",
+   "bairroTexto": "PIRATININGA",
+   "bairro": "piratininga",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 353,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217098",
+   "nome": "BENEDICTO WESCHENFELDER EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "I A P I",
+   "bairro": "iapi",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 903,
+   "lat": -23.513535,
+   "lon": -46.7900939,
+   "idebIniciais": 6.8,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217104",
+   "nome": "BITTENCOURT MARECHAL EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 646,
+   "idebIniciais": 6.6,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217116",
+   "nome": "CECILIA CORREA CASTELANI PROFA EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "VILA YOLANDA",
+   "bairro": "vila-yolanda",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 304,
+   "lat": -23.5493996,
+   "lon": -46.7966537,
+   "idebIniciais": 6.2,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217128",
+   "nome": "FRANCISCO MANUEL LUMBRALES DE SA CARNEIRO DR EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "BARONESA",
+   "bairro": "baronesa",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 1021,
+   "lat": -23.4925732,
+   "lon": -46.7921617,
+   "idebIniciais": 5.4,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217136",
+   "nome": "GASPAR DA MADRE DE DEUS FREI EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "PRESIDENTE ALTINO",
+   "bairro": "presidente-altino",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 574,
+   "idebIniciais": 6.6,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217141",
+   "nome": "HUGO RIBEIRO DE ALMEIDA DR EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM CANAA",
+   "bairro": null,
+   "etapas": [
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 449,
+   "idebIniciais": 6.1,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217153",
+   "nome": "MARINA SADDI HAIDAR CEMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "ALIANCA",
+   "bairro": "alianca",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 1343,
+   "idebIniciais": 5.8,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217165",
+   "nome": "MAX ZENDRON PROF EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 526,
+   "lat": -23.5499314,
+   "lon": -46.768156,
+   "idebIniciais": 6.8,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217177",
+   "nome": "LUCIANO FELICIO BIONDO PROF EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "JAGUARIBE",
+   "bairro": "jaguaribe",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 596,
+   "lat": -23.5568288,
+   "lon": -46.7882511,
+   "idebIniciais": 6.9,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217189",
+   "nome": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL E ENSINO FUNDAMENTAL FRANCISCO CAVALCANTI PONTES DE MIRANDA",
+   "rede": "Municipal",
+   "bairroTexto": "PESTANA",
+   "bairro": "pestana",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 564,
+   "idebIniciais": 6.5,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217190",
+   "nome": "JOSE MARTINIANO DE ALENCAR EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 686,
+   "lat": -23.5536432,
+   "lon": -46.7851334,
+   "idebIniciais": 6.9,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35217207",
+   "nome": "JOAO GUIMARAES ROSA EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "VILA YOLANDA",
+   "bairro": "vila-yolanda",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 545,
+   "lat": -23.5418927,
+   "lon": -46.7957055,
+   "idebIniciais": 6.8,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232786",
+   "nome": "ANEZIO CABRAL PROF EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM D ABRIL",
+   "bairro": "umuarama",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 837,
+   "lat": -23.558996,
+   "lon": -46.7766123,
+   "idebIniciais": 6.4,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232798",
+   "nome": "BENEDITO ALVES TURIBIO EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 849,
+   "lat": -23.55569409,
+   "lon": -46.8086981,
+   "idebIniciais": 6,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232804",
+   "nome": "DOMINGOS BLASCO MAESTRO EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 877,
+   "idebIniciais": 6.8,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232816",
+   "nome": "JOAO LARIZZATTI EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "VL QUITAUNA",
+   "bairro": "km-18",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 995,
+   "lat": -23.5313973,
+   "lon": -46.7997719,
+   "idebIniciais": 6.2,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232828",
+   "nome": "JOSE MANOEL AYRES DR EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "VELOSO",
+   "bairro": "metalurgicos",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 838,
+   "lat": -23.56669373,
+   "lon": -46.80998833,
+   "idebIniciais": 6.2,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232836",
+   "nome": "LAERTE JOSE DOS SANTOS PROF EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 596,
+   "lat": -23.541429,
+   "lon": -46.7858675,
+   "idebIniciais": 6.5,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232841",
+   "nome": "OSCAR PENNACINO EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "BANDEIRAS",
+   "bairro": "bandeiras",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 884,
+   "lat": -23.56031936,
+   "lon": -46.81359359,
+   "idebIniciais": 6.4,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232853",
+   "nome": "RENATO FIUZA TELES PROF EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM CONCEICAO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 1165,
+   "lat": -23.57952471,
+   "lon": -46.80222832,
+   "idebIniciais": 5.7,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232865",
+   "nome": "JOAO CAMPESTRINI PROF EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "MUNHOZ JUNIOR",
+   "bairro": "munhoz-junior",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 803,
+   "lat": -23.4993261,
+   "lon": -46.8081532,
+   "idebIniciais": 6.2,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232877",
+   "nome": "JOSIAS BAPTISTA PASTOR EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "HELENA MARIA",
+   "bairro": "helena-maria",
+   "etapas": [
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 1077,
+   "idebIniciais": 6.4,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232889",
+   "nome": "MANOEL BARBOSA DE SOUZA PROF EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "BONANCA",
+   "bairro": "bonanca",
+   "etapas": [
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 1212,
+   "lat": -23.4895165,
+   "lon": -46.7901461,
+   "idebIniciais": 6.1,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232890",
+   "nome": "TEREZINHA MARTINS PEREIRA PROFA EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "ROCHDALE",
+   "bairro": "rochdale",
+   "etapas": [
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 1114,
+   "lat": -23.5151025,
+   "lon": -46.7797582,
+   "idebIniciais": 6,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35232907",
+   "nome": "TOBIAS BARRETO DE MENEZES EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 839,
+   "lat": -23.5153421,
+   "lon": -46.7677947,
+   "idebIniciais": 5.6,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35234230",
+   "nome": "ETIENE SALES CAMPELO PROFA EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "SANTO ANTONIO",
+   "bairro": "santo-antonio",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 964,
+   "idebIniciais": 7.5,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35256857",
+   "nome": "COLEGIO YEREVAN",
+   "rede": "Privada",
+   "bairroTexto": "PRESIDENTE ALTINO",
+   "bairro": "presidente-altino",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 95,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35256869",
+   "nome": "PAPA MIKE COLEGIO UNIDADE I",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 363,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35269104",
+   "nome": "ZULEIKA GONCALVES MENDES PROFA EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "SANTA MARIA",
+   "bairro": "santa-maria",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 1097,
+   "idebIniciais": 6.4,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35279092",
+   "nome": "LUIZ BORTOLOSSO EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "ROCHDALE",
+   "bairro": "rochdale",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 953,
+   "lat": -23.5151934,
+   "lon": -46.7840391,
+   "idebIniciais": 6,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35279109",
+   "nome": "ELIDIO MANTOVANI MONSENHOR EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "1 DE MAIO",
+   "bairro": null,
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 688,
+   "idebIniciais": 7.1,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35279523",
+   "nome": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL SALVADOR SACCO",
+   "rede": "Municipal",
+   "bairroTexto": "CIDADE DAS FLORES",
+   "bairro": "cidade-das-flores",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 224,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35281736",
+   "nome": "ALICE RABECCHINI FERREIRA EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 849,
+   "idebIniciais": 5.8,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35281748",
+   "nome": "MESSIAS GONCALVES DA SILVA EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "SANTA MARIA",
+   "bairro": "santa-maria",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 1084,
+   "idebIniciais": 6.2,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35283915",
+   "nome": "SERGIO ZANARDI CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 151,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35283927",
+   "nome": "JOAO CORREA CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM TURIBIO",
+   "bairro": "padroeira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 169,
+   "lat": -23.55247236,
+   "lon": -46.80939521,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35283939",
+   "nome": "OLGA CAMOLESI PAVAO CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "JD IVONE",
+   "bairro": null,
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 143,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35283940",
+   "nome": "SADAMITU OMOSAKO CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "MUNHOZ JUNIOR",
+   "bairro": "munhoz-junior",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 159,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35283952",
+   "nome": "PEDRO PENOV CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "VILA PRADO",
+   "bairro": null,
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 289,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35283964",
+   "nome": "HERMINIA LOPES CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "QUITAUNA",
+   "bairro": "quintauna",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 129,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35283976",
+   "nome": "EZIO MELLI CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "BONANCA",
+   "bairro": "bonanca",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 156,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35283988",
+   "nome": "CRECHE LEONIL CRE BORTOLOSSO",
+   "rede": "Municipal",
+   "bairroTexto": "HELENA MARIA",
+   "bairro": "helena-maria",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 194,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35283997",
+   "nome": "ROSA PEREIRA CRE CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 83,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284002",
+   "nome": "SILVIA FERREIRA FARAH PROFA CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "MUNHOZ JUNIOR",
+   "bairro": "munhoz-junior",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 198,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284026",
+   "nome": "RECANTO ALEGRE CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "VILA PESTANA",
+   "bairro": "pestana",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 211,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284038",
+   "nome": "LAR DA INFANCIA PE JOSE CARLOS DI MAMBRO CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "VILA YOLANDA",
+   "bairro": "vila-yolanda",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 201,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284048",
+   "nome": "DAISY RIBEIRO NEVES CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "CIDADE DAS FLORES",
+   "bairro": "cidade-das-flores",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 189,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284087",
+   "nome": "JOAQUINA FRANCA GARCIA CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "MUTINGA",
+   "bairro": "mutinga",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 131,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284099",
+   "nome": "ALZIRA SILVA MEDEIROS CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "ALIANCA",
+   "bairro": "alianca",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 207,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284117",
+   "nome": "HILDA ALVES DOS SANTOS MARIM CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 254,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284129",
+   "nome": "IDA BELMONTE BISCUOLA CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "PRESIDENTE ALTINO",
+   "bairro": "presidente-altino",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 186,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284130",
+   "nome": "LIDIA THOMAZ CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM D ABRIL",
+   "bairro": "jardim-d-abril",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 240,
+   "lat": -23.5612327,
+   "lon": -46.7782813,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284142",
+   "nome": "GIUSEPPA BERSANI MICHELIN CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "UMUARAMA",
+   "bairro": "umuarama",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 192,
+   "lat": -23.5552797,
+   "lon": -46.7763763,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284166",
+   "nome": "BENEDITA DE OLIVEIRA CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM D AVILA",
+   "bairro": "vila-menck",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 118,
+   "lat": -23.5029869,
+   "lon": -46.7673286,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284178",
+   "nome": "MARIA BENEDITA CONSTANCIO IRMA CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "SANTO ANTONIO",
+   "bairro": "santo-antonio",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 294,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284185",
+   "nome": "VILMA CATAN CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 137,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284191",
+   "nome": "MERCEDES CORREA RUIZ BATISTA CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 253,
+   "lat": -23.5716385,
+   "lon": -46.7950093,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284208",
+   "nome": "ELZA BATTISTON CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM ELVIRA",
+   "bairro": "jardim-elvira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 148,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284221",
+   "nome": "INES SANCHES MENDES CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "METALURGICOS",
+   "bairro": "metalurgicos",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 79,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284233",
+   "nome": "JOSE ESPINOSA CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "CONCEICAO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 323,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284245",
+   "nome": "SERAPHINA BISSOLATTI CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 170,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284257",
+   "nome": "ALHA ELIAS ABIBE CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 209,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284269",
+   "nome": "ROSA BROSEGHINI CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "BARONESA",
+   "bairro": "baronesa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 146,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284270",
+   "nome": "MARIA JOSE ANUNCIACAO CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "CIPAVA",
+   "bairro": "cipava",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 107,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284282",
+   "nome": "AMELIA TOZZETO VIVIANE CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "CONCEICAO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 174,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35284294",
+   "nome": "OLIMPIA MARIA DE JESUS CARVALHO CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "I A P I",
+   "bairro": "iapi",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 209,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35287775",
+   "nome": "MARIA MADALENA LEITE BARBOSA FREIXEDA CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "CIDADE DAS FLORES",
+   "bairro": "cidade-das-flores",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 108,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35291663",
+   "nome": "INOVACAO COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "I A P I",
+   "bairro": "iapi",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 185,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35294603",
+   "nome": "JARDIM SANTA MARIA III",
+   "rede": "Estadual",
+   "bairroTexto": "SANTA MARIA",
+   "bairro": "santa-maria",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1579,
+   "lat": -23.58360544,
+   "lon": -46.81281715,
+   "idebIniciais": null,
+   "idebFinais": 4.4
+  },
+  {
+   "codigo": "35295012",
+   "nome": "ETEC PROFESSOR ANDRE BOGASIAN",
+   "rede": "Estadual",
+   "bairroTexto": "BONFIM",
+   "bairro": "bonfim",
+   "etapas": [
+    "Médio"
+   ],
+   "matriculas": 1120,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35296661",
+   "nome": "MARINA VON PUTTKAMMER MELLI PROFA EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "BANDEIRAS",
+   "bairro": "bandeiras",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 1052,
+   "lat": -23.55081225,
+   "lon": -46.81652837,
+   "idebIniciais": 6.5,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35297495",
+   "nome": "ANJOS DE PIJAMAS ESCOLA EDUCACIONAL E RECREATIVA INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "METALURGICOS",
+   "bairro": "metalurgicos",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 24,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35299534",
+   "nome": "ALEGRIA DE SABER ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 30,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35300019",
+   "nome": "RECRIARTE COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "REMEDIOS",
+   "bairro": "remedios",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 196,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35300202",
+   "nome": "COLEGIO DEL PAPA GENTE INOCENTE",
+   "rede": "Privada",
+   "bairroTexto": "I A P I",
+   "bairro": "iapi",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 160,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35300214",
+   "nome": "SANTOS DUMONT COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "PESTANA",
+   "bairro": "pestana",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 216,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35300226",
+   "nome": "SANTA LUZIA ESCOLA",
+   "rede": "Privada",
+   "bairroTexto": "JAGUARIBE",
+   "bairro": "jaguaribe",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 64,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35300275",
+   "nome": "COLEGIO BELA VISTA PIMPOLHO",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 85,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35343336",
+   "nome": "CLARA LUZ ESCOLA",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [],
+   "matriculas": 454,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35380556",
+   "nome": "ASSOCIACAO SOLIDARIA CRESCENDO CIDADA NUCLEO II",
+   "rede": "Privada",
+   "bairroTexto": "VILA MENK",
+   "bairro": "vila-menck",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 51,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35380659",
+   "nome": "CENTRO DE PARTICIPACAO POPULAR DO JARDIM VELOSO",
+   "rede": "Privada",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 85,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35380787",
+   "nome": "COMECANDO A APRENDER CRECHE",
+   "rede": "Privada",
+   "bairroTexto": "BARONESA",
+   "bairro": "baronesa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 80,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35381275",
+   "nome": "ASSOCIACAO SOLIDARIA CRESCENDO CIDADA NUCLEO I",
+   "rede": "Privada",
+   "bairroTexto": "CHACARA ACUCARA",
+   "bairro": null,
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 111,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35381482",
+   "nome": "CASA DO APRENDER CRECHE",
+   "rede": "Privada",
+   "bairroTexto": "MUNHOZ JUNIOR",
+   "bairro": "munhoz-junior",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 107,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35381697",
+   "nome": "BRILHO DO APRENDER CRECHE",
+   "rede": "Privada",
+   "bairroTexto": "VILA MENK",
+   "bairro": "vila-menck",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 95,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35381779",
+   "nome": "AVENTURA DO APRENDER CRECHE",
+   "rede": "Privada",
+   "bairroTexto": "PIRATININGA",
+   "bairro": "piratininga",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 87,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35382024",
+   "nome": "HELENA MARIA CRECHE",
+   "rede": "Privada",
+   "bairroTexto": "HELENA MARIA",
+   "bairro": "helena-maria",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 85,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35382036",
+   "nome": "TARSILA DO AMARAL CRECHE",
+   "rede": "Privada",
+   "bairroTexto": "MUNHOZ JUNIOR",
+   "bairro": "bandeiras",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 72,
+   "lat": -23.55638761,
+   "lon": -46.81193642,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35382188",
+   "nome": "ASSOCIACAO DAS MAES DO JARDIM VELOSO",
+   "rede": "Privada",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 146,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35382267",
+   "nome": "QUINTAL MAGICO ASSOCIACAO",
+   "rede": "Privada",
+   "bairroTexto": "NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 169,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35382528",
+   "nome": "ASSOCIACAO DAS MAES UNIDAS NOVO OSASCO NUCLEO II",
+   "rede": "Privada",
+   "bairroTexto": "NOVO OSASCO",
+   "bairro": "jardim-novo-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 139,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35382553",
+   "nome": "DOMINGOS TONINI PADRE CENTRO DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 130,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35393447",
+   "nome": "CENTRO DE ATEND SOCIOEDUC AO ADOLESC OSASCO I CI",
+   "rede": "Estadual",
+   "bairroTexto": "RAPOSO TAVARES",
+   "bairro": "raposo-tavares",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 47,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35395808",
+   "nome": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL E ENSINO FUNDAMENTAL PADRE JOSE GROSSI DIAS",
+   "rede": "Municipal",
+   "bairroTexto": "CONCEICAO",
+   "bairro": "jardim-conceicao",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 662,
+   "idebIniciais": 7.4,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35395997",
+   "nome": "ALBERTO SANTOS DUMONT CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 427,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35411383",
+   "nome": "UNIABO ESC DE EDUCACAO CONTINUADA UNIDADE OSASCO",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [],
+   "matriculas": 18,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35416897",
+   "nome": "JOSE VERISSIMO DE MATOS EMEF",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM ROBERTO",
+   "bairro": "jardim-roberto",
+   "etapas": [
+    "Fundamental I"
+   ],
+   "matriculas": 299,
+   "lat": -23.54789,
+   "lon": -46.803335,
+   "idebIniciais": 6.4,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35434590",
+   "nome": "MARIO QUINTANA CEMEI",
+   "rede": "Municipal",
+   "bairroTexto": "SAO PEDRO",
+   "bairro": "sao-pedro",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 303,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35435375",
+   "nome": "DARCY RIBEIRO PROFESSOR CENTRO MUN DE ED INF E ENS FUND",
+   "rede": "Municipal",
+   "bairroTexto": "REMEDIOS",
+   "bairro": "remedios",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 850,
+   "idebIniciais": 6.1,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35438157",
+   "nome": "CENTRO E ATEND SOCIOEDUC AO ADOLESCENTE II CI",
+   "rede": "Estadual",
+   "bairroTexto": "RAPOSO TAVARES",
+   "bairro": "raposo-tavares",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 52,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35439617",
+   "nome": "ZILDA ARNS NEUMANN DRA CENTRO DE EDUC UNIFICADA",
+   "rede": "Municipal",
+   "bairroTexto": "JARDIM ELVIRA",
+   "bairro": "jardim-elvira",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 1547,
+   "idebIniciais": 6.2,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35444066",
+   "nome": "JEANETE BEAUCHAMP PROFESSORA EMEIEF",
+   "rede": "Municipal",
+   "bairroTexto": "PORTAL D OESTE",
+   "bairro": "portal-d-oeste",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 734,
+   "idebIniciais": 5.7,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35446105",
+   "nome": "ETEC DR CELSO GIGLIO",
+   "rede": "Estadual",
+   "bairroTexto": "REMEDIOS",
+   "bairro": "remedios",
+   "etapas": [
+    "Médio"
+   ],
+   "matriculas": 901,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35446737",
+   "nome": "COLEGIO ALPHA",
+   "rede": "Privada",
+   "bairroTexto": "PESTANA",
+   "bairro": "pestana",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 24,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35451691",
+   "nome": "ESPACO E LAZER RECREACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "PESTANA",
+   "bairro": "pestana",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 26,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35457838",
+   "nome": "JOSE SARAMAGO CENTRO DE EDUCACAO UNIFICADA",
+   "rede": "Municipal",
+   "bairroTexto": "SANTO ANTONIO",
+   "bairro": "santo-antonio",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "EJA"
+   ],
+   "matriculas": 1893,
+   "idebIniciais": 6.4,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35460624",
+   "nome": "PASSINHOS DO SABER CENTRO DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM D ABRIL",
+   "bairro": "jardim-d-abril",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 40,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35461386",
+   "nome": "TURMINHA DO PIMPOLHO UNID III COLEGIO DE RECREACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 38,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35461696",
+   "nome": "AMAURI KIDS ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "HELENA MARIA",
+   "bairro": "helena-maria",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 82,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35464636",
+   "nome": "DOM HENRIQUE COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "UMUARAMA",
+   "bairro": "umuarama",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 983,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35465616",
+   "nome": "MANASSES COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 257,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35476161",
+   "nome": "MUNDO DOS SONHOS ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "BUSSOCABA",
+   "bairro": "bussocaba",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 6,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35477734",
+   "nome": "ALMEIDA ROSA ESCOLA DE EDUCACAO E RECREACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 35,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35477746",
+   "nome": "URSINHO AZUL CENTRO DE RECREACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "MUTINGA",
+   "bairro": "mutinga",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 10,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35478714",
+   "nome": "SAO LUIZ FAVARETO ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "CIPAVA",
+   "bairro": "cipava",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 70,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35479044",
+   "nome": "AMABILE PROVASI ESCOLA DE EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 46,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35479330",
+   "nome": "EDUCATIVA OSASCO",
+   "rede": "Privada",
+   "bairroTexto": "KM 18",
+   "bairro": "km-18",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 182,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35481087",
+   "nome": "INTERATIVO PESTALOZZI COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "BANDEIRAS",
+   "bairro": "bandeiras",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 170,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35481105",
+   "nome": "POLICIA MILITAR COLEGIO DA",
+   "rede": "Privada",
+   "bairroTexto": "QUITAUNA",
+   "bairro": "quintauna",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 492,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35496893",
+   "nome": "JOSE MARQUES DE REZENDE CRECHE",
+   "rede": "Municipal",
+   "bairroTexto": "CIPAVA",
+   "bairro": "cipava",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 62,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35514214",
+   "nome": "PRISMAR COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "VILA YOLANDA",
+   "bairro": "vila-yolanda",
+   "etapas": [
+    "Infantil",
+    "Fundamental I"
+   ],
+   "matriculas": 412,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35563250",
+   "nome": "ESCOLA PARQUE DO KM 18",
+   "rede": "Municipal",
+   "bairroTexto": "KM 18",
+   "bairro": "km-18",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 85,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35565556",
+   "nome": "BABY PASSINHO CENTRO EDUCACIONAL INFANTIL BERCARIO",
+   "rede": "Privada",
+   "bairroTexto": "VILA CAMPESINA",
+   "bairro": "vila-campesina",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 126,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35567929",
+   "nome": "ESCOPO COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "VILA YARA",
+   "bairro": "vila-yara",
+   "etapas": [
+    "Médio"
+   ],
+   "matriculas": 80,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35568260",
+   "nome": "SA BRAGA E PIMPOLHO COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 352,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35568582",
+   "nome": "STAR MAX COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 425,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35568818",
+   "nome": "FUN DAY EDUCACAO INFANTIL",
+   "rede": "Privada",
+   "bairroTexto": "VILA CAMPESINA",
+   "bairro": "vila-campesina",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 67,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35576554",
+   "nome": "ESCOLA TECNICA PAULISTANA",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [],
+   "matriculas": 65,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35577832",
+   "nome": "KINDER STEPS EDUCACAO INFANTIL BILINGUE",
+   "rede": "Privada",
+   "bairroTexto": "VILA OSASCO",
+   "bairro": "vila-osasco",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 24,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35577959",
+   "nome": "CENTRO MUN DE ED INFANTIL CARLOS FERNANDES COSTA",
+   "rede": "Municipal",
+   "bairroTexto": "VELOSO",
+   "bairro": "veloso",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 540,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35579178",
+   "nome": "ESCOLA DE EDUCACAO E RECREACAO INFANTIL CRIDEAL I",
+   "rede": "Privada",
+   "bairroTexto": "KM 18",
+   "bairro": "km-18",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 51,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35580284",
+   "nome": "ESCOLA DE ED E REC INFANTIL APRENDER E BRINCAR II",
+   "rede": "Privada",
+   "bairroTexto": "JARDIM DAS FLORES",
+   "bairro": "jardim-das-flores",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 37,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35583571",
+   "nome": "CENTRO EDUCACIONAL SAPIENZA",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 21,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35584083",
+   "nome": "CEMEI MARIA DA CONCEICAO DA SILVA PAIXAO",
+   "rede": "Municipal",
+   "bairroTexto": "BANDEIRAS",
+   "bairro": "bandeiras",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 532,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35586274",
+   "nome": "CEMEI YOLANDA DE SA BATTISTON",
+   "rede": "Municipal",
+   "bairroTexto": "MUNHOZ JUNIOR",
+   "bairro": "munhoz-junior",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 456,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35587904",
+   "nome": "CEMEI NELLY GRIZI OLIVA",
+   "rede": "Municipal",
+   "bairroTexto": "ADALGISA",
+   "bairro": "adalgisa",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 197,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35800200",
+   "nome": "CUNHA CARVALHO CURUMIM COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "VILA QUITAUNA",
+   "bairro": "quintauna",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 388,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35803844",
+   "nome": "HAYA INSTITUTO EDUCACIONAL",
+   "rede": "Privada",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [
+    "Médio"
+   ],
+   "matriculas": 118,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35805488",
+   "nome": "NUVENZINHA DO SABER ERI",
+   "rede": "Privada",
+   "bairroTexto": "CIDADE DAS FLORES",
+   "bairro": "cidade-das-flores",
+   "etapas": [
+    "Infantil"
+   ],
+   "matriculas": 37,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35809100",
+   "nome": "GENESIS LIFE COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "SANTO ANTONIO",
+   "bairro": "santo-antonio",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II"
+   ],
+   "matriculas": 991,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35809111",
+   "nome": "ATENEU COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "BELA VISTA",
+   "bairro": "bela-vista",
+   "etapas": [
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 340,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35809512",
+   "nome": "VIVENDO E APRENDENDO COLEGIO",
+   "rede": "Privada",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Infantil",
+    "Fundamental I",
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 588,
+   "idebIniciais": null,
+   "idebFinais": null
+  },
+  {
+   "codigo": "35902032",
+   "nome": "ANTONIO BRAZ GAMBARINI DOUTOR",
+   "rede": "Estadual",
+   "bairroTexto": "METALURGICOS",
+   "bairro": "metalurgicos",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1275,
+   "lat": -23.56610966,
+   "lon": -46.81438089,
+   "idebIniciais": null,
+   "idebFinais": 4.5
+  },
+  {
+   "codigo": "35902755",
+   "nome": "JOSE JORGE PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "CIDADE DAS FLORES",
+   "bairro": "cidade-das-flores",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1002,
+   "lat": -23.5375515,
+   "lon": -46.8071922,
+   "idebIniciais": null,
+   "idebFinais": 4.8
+  },
+  {
+   "codigo": "35904740",
+   "nome": "FERNANDO BUONADUCE PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "JARDIM PORTAL DO OESTE I",
+   "bairro": "portal-d-oeste",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1961,
+   "lat": -23.4938151,
+   "lon": -46.7989105,
+   "idebIniciais": null,
+   "idebFinais": 4.3
+  },
+  {
+   "codigo": "35906360",
+   "nome": "WALTER NEGRELLI",
+   "rede": "Estadual",
+   "bairroTexto": "I A P I",
+   "bairro": "iapi",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 2192,
+   "lat": -23.5143449,
+   "lon": -46.7878426,
+   "idebIniciais": null,
+   "idebFinais": 4.8
+  },
+  {
+   "codigo": "35910442",
+   "nome": "GABRIELA MARIA ELISABETH WIENKEM IRMA",
+   "rede": "Estadual",
+   "bairroTexto": "PADROEIRA",
+   "bairro": "padroeira",
+   "etapas": [
+    "Fundamental II"
+   ],
+   "matriculas": 867,
+   "idebIniciais": null,
+   "idebFinais": 4.7
+  },
+  {
+   "codigo": "35912396",
+   "nome": "SAO PAULO DA CRUZ",
+   "rede": "Estadual",
+   "bairroTexto": "JARDIM SANTO ANTONIO",
+   "bairro": "santo-antonio",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 501,
+   "lat": -23.55544585,
+   "lon": -46.79442993,
+   "idebIniciais": null,
+   "idebFinais": 5.6
+  },
+  {
+   "codigo": "35923096",
+   "nome": "PAULO FREIRE EDUCADOR",
+   "rede": "Estadual",
+   "bairroTexto": "ALIANCA",
+   "bairro": "alianca",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 810,
+   "idebIniciais": null,
+   "idebFinais": 4.7
+  },
+  {
+   "codigo": "35924039",
+   "nome": "CLAUDINEI GARCIA PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "AYROSA",
+   "bairro": "ayrosa",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 514,
+   "lat": -23.5125195,
+   "lon": -46.76585712,
+   "idebIniciais": null,
+   "idebFinais": 5.1
+  },
+  {
+   "codigo": "35924040",
+   "nome": "ANTONIO CARLOS DA TRINDADE",
+   "rede": "Estadual",
+   "bairroTexto": "AYROSA",
+   "bairro": "mutinga",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 341,
+   "lat": -23.5087764,
+   "lon": -46.7655832,
+   "idebIniciais": null,
+   "idebFinais": 4.9
+  },
+  {
+   "codigo": "35925421",
+   "nome": "JOSE EDSON MARTINS GOMES PROFESSOR",
+   "rede": "Estadual",
+   "bairroTexto": "JARDIM ELVIRA",
+   "bairro": "munhoz-junior",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 1874,
+   "lat": -23.5015089,
+   "lon": -46.8011339,
+   "idebIniciais": null,
+   "idebFinais": 4.7
+  },
+  {
+   "codigo": "35925627",
+   "nome": "DIRETOR RICARDO GENESIO DA SILVA",
+   "rede": "Estadual",
+   "bairroTexto": "JARDIM CIPAVA II",
+   "bairro": "veloso",
+   "etapas": [
+    "Fundamental II",
+    "Médio"
+   ],
+   "matriculas": 859,
+   "lat": -23.56187138,
+   "lon": -46.81322191,
+   "idebIniciais": null,
+   "idebFinais": 4.9
+  },
+  {
+   "codigo": "35985235",
+   "nome": "CEL JTO A EE ANTONIO RAPOSO TAVARES",
+   "rede": "Estadual",
+   "bairroTexto": "CENTRO",
+   "bairro": "centro",
+   "etapas": [],
+   "matriculas": 0,
+   "idebIniciais": null,
+   "idebFinais": null
+  }
+ ]
+}

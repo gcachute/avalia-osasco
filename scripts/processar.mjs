@@ -8,6 +8,7 @@ import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, pontosComissoes, tem
 import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
 import { carregarBairros, reconhecedorDeBairros } from "./lib/bairros.mjs";
+import { montarTerritorio } from "./lib/territorio.mjs";
 
 const RAW = "data/raw";
 const BASE_URL = "https://www.osasco.sp.leg.br/assets/file/";
@@ -23,7 +24,7 @@ const norm = (s) =>
 const slug = (s) => norm(s).replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 // Nome como aparece na planilha → chave estável ("Carmônio Bastos - Presidente" → "carmonio-bastos").
 const nameKey = (s) =>
-  slug(clean(s).replace(/\s*-\s*president[ea].*$/i, "").replace(/^(pra\.|vereador[a]?)\s+/i, ""));
+  slug(clean(s).replace(/\s*-\s*president[ea].*$/i, "").replace(/\s*\(suplente\)\s*$/i, "").replace(/^(pra\.|vereador[a]?)\s+/i, ""));
 
 const aliases = new Map();
 for (const v of config.vereadores) for (const a of [v.nome, ...(v.apelidos ?? [])]) aliases.set(nameKey(a), v.id);
@@ -466,10 +467,17 @@ if (malha) {
     adiciona(`EXE-${i}`, tipo, "prefeito", t.replace(/^.*?prefeit[oa][^–—-]*[–—-]\s*/i, ""), x.sessao, true);
   });
   itens.sort((a, b) => a.data.localeCompare(b.data));
+  const territorio = montarTerritorio(malha, idFor);
   mapa = {
     fonte: malha.fonte,
-    bairros: malha.bairros.map((b) => ({ ...b, citacoes: itens.filter((i) => i.bairros.includes(b.id)).length })),
+    bairros: malha.bairros.map((b) => ({ ...b, citacoes: itens.filter((i) => i.bairros.includes(b.id)).length, ...(territorio?.bairros[b.id] ?? {}) })),
     itens,
+    cidade: territorio?.cidade ?? null,
+    prefeitoEleicao: territorio?.prefeito ?? [],
+    votosVereador: Object.fromEntries(Object.entries(territorio?.votosVereador ?? {}).filter(([id]) => vereadores.some((v) => v.id === id))),
+    pontos: territorio?.pontos ?? [],
+    minimoMoradores: territorio?.minimoMoradores ?? 0,
+    fontes: territorio?.fontes ?? [],
   };
 }
 

@@ -52,10 +52,61 @@ export type ItemMapa = {
   bairros: string[];
 };
 
+export type CensoBairro = {
+  areaKm2: number | null;
+  pessoas: number;
+  domicilios: number;
+  moradoresPorDomicilio: number | null;
+  rendaMedia: number | null;
+  rendaMediana: number | null;
+  agua: number | null;
+  esgoto: number | null;
+  lixo: number | null;
+  alfabetizados: number | null;
+  negros: number | null;
+  criancas: number | null;
+  idosos: number | null;
+  pavimentacao: number | null;
+  bueiro: number | null;
+  iluminacao: number | null;
+  onibus: number | null;
+  calcada: number | null;
+  rampa: number | null;
+  arvores: number | null;
+  densidade: number | null;
+  poucosMoradores: boolean;
+};
+
+export type BairroMapa = {
+  id: string;
+  codigo: string;
+  nome: string;
+  populacao: number | null;
+  citacoes: number;
+  censo?: CensoBairro | null;
+  eleicao?: {
+    locais: number;
+    eleitores: number;
+    prefeito: { nome: string; pct: number | null }[] | null;
+    vereadores: { nome: string; id: string; votos: number; pct: number }[] | null;
+    validosVereador: number;
+  } | null;
+  saude?: { cnes: string; nome: string; tipo: string; publica: boolean; turno: string | null }[];
+  escolas?: { codigo: string; nome: string; rede: string; idebIniciais: number | null; idebFinais: number | null }[];
+};
+
+export type PontoMapa = { tipo: "saude" | "votacao" | "escola"; categoria: string; nome: string; lat: number; lon: number; bairro: string | null; eleitores?: number };
+
 export type Mapa = {
   fonte: string;
-  bairros: { id: string; codigo: string; nome: string; populacao: number | null; citacoes: number }[];
+  bairros: BairroMapa[];
   itens: ItemMapa[];
+  cidade: (Partial<Record<keyof CensoBairro, number | null>> & { pessoas?: number; densidade?: number }) | null;
+  prefeitoEleicao: { nome: string; votos: number; pct: number }[];
+  votosVereador: Record<string, { nomeUrna: string; total: number; porBairro: Record<string, number> }>;
+  pontos: PontoMapa[];
+  minimoMoradores: number;
+  fontes: { nome: string; url: string }[];
 };
 
 export type PilarVereador = "A" | "B" | "C" | "D" | "E";
