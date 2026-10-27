@@ -1,0 +1,366 @@
+{
+ "fonte": "IBGE, Censo Demográfico 2022: malha de bairros e população residente por bairro",
+ "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/",
+ "bairros": [
+  {
+   "id": "adalgisa",
+   "codigo": "3534401025",
+   "nome": "Adalgisa",
+   "populacao": 8857
+  },
+  {
+   "id": "alianca",
+   "codigo": "3534401033",
+   "nome": "Aliança",
+   "populacao": 16335
+  },
+  {
+   "id": "ayrosa",
+   "codigo": "3534401022",
+   "nome": "Ayrosa",
+   "populacao": 21775
+  },
+  {
+   "id": "bandeiras",
+   "codigo": "3534401047",
+   "nome": "Bandeiras",
+   "populacao": 24246
+  },
+  {
+   "id": "baronesa",
+   "codigo": "3534401043",
+   "nome": "Baronesa",
+   "populacao": 13403
+  },
+  {
+   "id": "bela-vista",
+   "codigo": "3534401019",
+   "nome": "Bela Vista",
+   "populacao": 11248
+  },
+  {
+   "id": "bonanca",
+   "codigo": "3534401052",
+   "nome": "Bonança",
+   "populacao": 23431
+  },
+  {
+   "id": "bonfim",
+   "codigo": "3534401010",
+   "nome": "Bonfim",
+   "populacao": 1621
+  },
+  {
+   "id": "bussocaba",
+   "codigo": "3534401045",
+   "nome": "Bussocaba",
+   "populacao": 12741
+  },
+  {
+   "id": "castelo-branco",
+   "codigo": "3534401029",
+   "nome": "Castelo Branco",
+   "populacao": 5098
+  },
+  {
+   "id": "centro",
+   "codigo": "3534401003",
+   "nome": "Centro",
+   "populacao": 13250
+  },
+  {
+   "id": "cidade-das-flores",
+   "codigo": "3534401027",
+   "nome": "Cidade das Flores",
+   "populacao": 8316
+  },
+  {
+   "id": "cidade-de-deus",
+   "codigo": "3534401015",
+   "nome": "Cidade de Deus",
+   "populacao": 285
+  },
+  {
+   "id": "cipava",
+   "codigo": "3534401006",
+   "nome": "Cipava",
+   "populacao": 8600
+  },
+  {
+   "id": "city-bussocaba",
+   "codigo": "3534401050",
+   "nome": "City Bussocaba",
+   "populacao": 2632
+  },
+  {
+   "id": "helena-maria",
+   "codigo": "3534401042",
+   "nome": "Helena Maria",
+   "populacao": 20604
+  },
+  {
+   "id": "iapi",
+   "codigo": "3534401021",
+   "nome": "Iapi",
+   "populacao": 12803
+  },
+  {
+   "id": "industrial-altino",
+   "codigo": "3534401024",
+   "nome": "Industrial Altino",
+   "populacao": 17
+  },
+  {
+   "id": "industrial-anhanguera",
+   "codigo": "3534401049",
+   "nome": "Industrial Anhanguera",
+   "populacao": 6807
+  },
+  {
+   "id": "industrial-autonomistas",
+   "codigo": "3534401012",
+   "nome": "Industrial Autonomistas",
+   "populacao": 14571
+  },
+  {
+   "id": "industrial-centro",
+   "codigo": "3534401005",
+   "nome": "Industrial Centro",
+   "populacao": 867
+  },
+  {
+   "id": "industrial-mazzei",
+   "codigo": "3534401039",
+   "nome": "Industrial Mazzei",
+   "populacao": 2370
+  },
+  {
+   "id": "industrial-remedios",
+   "codigo": "3534401023",
+   "nome": "Industrial Remédios",
+   "populacao": 3081
+  },
+  {
+   "id": "jaguaribe",
+   "codigo": "3534401035",
+   "nome": "Jaguaribe",
+   "populacao": 23679
+  },
+  {
+   "id": "jardim-conceicao",
+   "codigo": "3534401057",
+   "nome": "Jardim Conceição",
+   "populacao": 40738
+  },
+  {
+   "id": "jardim-d-abril",
+   "codigo": "3534401034",
+   "nome": "Jardim D'Abril",
+   "populacao": 13812
+  },
+  {
+   "id": "jardim-das-flores",
+   "codigo": "3534401001",
+   "nome": "Jardim das Flores",
+   "populacao": 9265
+  },
+  {
+   "id": "jardim-elvira",
+   "codigo": "3534401032",
+   "nome": "Jardim Elvira",
+   "populacao": 10446
+  },
+  {
+   "id": "jardim-novo-osasco",
+   "codigo": "3534401051",
+   "nome": "Jardim Novo Osasco",
+   "populacao": 18344
+  },
+  {
+   "id": "jardim-roberto",
+   "codigo": "3534401020",
+   "nome": "Jardim Roberto",
+   "populacao": 20704
+  },
+  {
+   "id": "km-18",
+   "codigo": "3534401002",
+   "nome": "Km 18",
+   "populacao": 11929
+  },
+  {
+   "id": "metalurgicos",
+   "codigo": "3534401054",
+   "nome": "Metalúrgicos",
+   "populacao": 8146
+  },
+  {
+   "id": "munhoz-junior",
+   "codigo": "3534401038",
+   "nome": "Munhoz Júnior",
+   "populacao": 28944
+  },
+  {
+   "id": "mutinga",
+   "codigo": "3534401040",
+   "nome": "Mutinga",
+   "populacao": 12312
+  },
+  {
+   "id": "padroeira",
+   "codigo": "3534401041",
+   "nome": "Padroeira",
+   "populacao": 24420
+  },
+  {
+   "id": "paiva-ramos",
+   "codigo": "3534401055",
+   "nome": "Paiva Ramos",
+   "populacao": 2805
+  },
+  {
+   "id": "parque-continental",
+   "codigo": "3534401013",
+   "nome": "Parque Continental",
+   "populacao": 387
+  },
+  {
+   "id": "pestana",
+   "codigo": "3534401008",
+   "nome": "Pestana",
+   "populacao": 12226
+  },
+  {
+   "id": "piratininga",
+   "codigo": "3534401016",
+   "nome": "Piratininga",
+   "populacao": 14063
+  },
+  {
+   "id": "platina",
+   "codigo": "3534401053",
+   "nome": "Platina",
+   "populacao": 2865
+  },
+  {
+   "id": "portal-d-oeste",
+   "codigo": "3534401048",
+   "nome": "Portal D'Oeste",
+   "populacao": 10162
+  },
+  {
+   "id": "presidente-altino",
+   "codigo": "3534401011",
+   "nome": "Presidente Altino",
+   "populacao": 13699
+  },
+  {
+   "id": "quintauna",
+   "codigo": "3534401037",
+   "nome": "Quintaúna",
+   "populacao": 9043
+  },
+  {
+   "id": "raposo-tavares",
+   "codigo": "3534401059",
+   "nome": "Raposo Tavares",
+   "populacao": 580
+  },
+  {
+   "id": "remedios",
+   "codigo": "3534401030",
+   "nome": "Remédios",
+   "populacao": 4990
+  },
+  {
+   "id": "rochdale",
+   "codigo": "3534401017",
+   "nome": "Rochdale",
+   "populacao": 25259
+  },
+  {
+   "id": "santa-fe",
+   "codigo": "3534401058",
+   "nome": "Santa Fé",
+   "populacao": 1501
+  },
+  {
+   "id": "santa-maria",
+   "codigo": "3534401060",
+   "nome": "Santa Maria",
+   "populacao": 29184
+  },
+  {
+   "id": "santo-antonio",
+   "codigo": "3534401031",
+   "nome": "Santo Antônio",
+   "populacao": 13510
+  },
+  {
+   "id": "sao-pedro",
+   "codigo": "3534401036",
+   "nome": "São Pedro",
+   "populacao": 27174
+  },
+  {
+   "id": "setor-militar",
+   "codigo": "3534401009",
+   "nome": "Setor Militar",
+   "populacao": 2958
+  },
+  {
+   "id": "tres-montanhas",
+   "codigo": "3534401056",
+   "nome": "Três Montanhas",
+   "populacao": 1441
+  },
+  {
+   "id": "umuarama",
+   "codigo": "3534401026",
+   "nome": "Umuarama",
+   "populacao": 10260
+  },
+  {
+   "id": "veloso",
+   "codigo": "3534401046",
+   "nome": "Veloso",
+   "populacao": 29666
+  },
+  {
+   "id": "vila-campesina",
+   "codigo": "3534401014",
+   "nome": "Vila Campesina",
+   "populacao": 2607
+  },
+  {
+   "id": "vila-menck",
+   "codigo": "3534401044",
+   "nome": "Vila Menck",
+   "populacao": 22240
+  },
+  {
+   "id": "vila-militar",
+   "codigo": "3534401028",
+   "nome": "Vila Militar",
+   "populacao": 274
+  },
+  {
+   "id": "vila-osasco",
+   "codigo": "3534401004",
+   "nome": "Vila Osasco",
+   "populacao": 12126
+  },
+  {
+   "id": "vila-yara",
+   "codigo": "3534401018",
+   "nome": "Vila Yara",
+   "populacao": 7622
+  },
+  {
+   "id": "vila-yolanda",
+   "codigo": "3534401007",
+   "nome": "Vila Yolanda",
+   "populacao": 12300
+  }
+ ]
+}

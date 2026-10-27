@@ -1,0 +1,484 @@
+{
+ "fonte": "Secretaria da Segurança Pública de SP, dados criminais (boletins de ocorrência) de 2025",
+ "url": "https://www.ssp.sp.gov.br/estatistica/dados-mensais",
+ "ano": 2025,
+ "total": 18652,
+ "semLocal": 205,
+ "porBairro": {
+  "km-18": {
+   "violencia": 40,
+   "furtos": 368,
+   "transito": 37,
+   "roubos": 141,
+   "drogas": 10,
+   "sexual": 2
+  },
+  "jardim-novo-osasco": {
+   "transito": 20,
+   "furtos": 173,
+   "mortes": 2,
+   "violencia": 69,
+   "roubos": 146,
+   "drogas": 4,
+   "sexual": 2
+  },
+  "santa-maria": {
+   "violencia": 83,
+   "furtos": 307,
+   "sexual": 5,
+   "transito": 19,
+   "roubos": 212,
+   "drogas": 14
+  },
+  "jardim-conceicao": {
+   "roubos": 146,
+   "furtos": 196,
+   "transito": 24,
+   "violencia": 106,
+   "drogas": 15,
+   "sexual": 3
+  },
+  "remedios": {
+   "roubos": 55,
+   "violencia": 15,
+   "furtos": 85,
+   "sexual": 1,
+   "transito": 11
+  },
+  "piratininga": {
+   "roubos": 93,
+   "furtos": 140,
+   "transito": 42,
+   "drogas": 20,
+   "violencia": 33,
+   "mortes": 2,
+   "sexual": 5
+  },
+  "centro": {
+   "furtos": 2177,
+   "roubos": 437,
+   "sexual": 8,
+   "transito": 99,
+   "mortes": 3,
+   "violencia": 160,
+   "drogas": 31
+  },
+  "cidade-de-deus": {
+   "furtos": 30,
+   "violencia": 2,
+   "transito": 9,
+   "roubos": 2
+  },
+  "cipava": {
+   "furtos": 103,
+   "roubos": 37,
+   "drogas": 6,
+   "transito": 9,
+   "violencia": 13,
+   "mortes": 1,
+   "sexual": 1
+  },
+  "vila-campesina": {
+   "furtos": 127,
+   "violencia": 11,
+   "transito": 14,
+   "roubos": 31,
+   "mortes": 1
+  },
+  "umuarama": {
+   "violencia": 21,
+   "roubos": 48,
+   "furtos": 111,
+   "transito": 18,
+   "sexual": 2,
+   "drogas": 2
+  },
+  "santa-fe": {
+   "roubos": 23,
+   "sexual": 1,
+   "furtos": 35,
+   "violencia": 5,
+   "drogas": 1,
+   "transito": 2
+  },
+  "industrial-anhanguera": {
+   "roubos": 113,
+   "furtos": 152,
+   "transito": 25,
+   "violencia": 25,
+   "mortes": 1,
+   "drogas": 8,
+   "sexual": 2
+  },
+  "sao-pedro": {
+   "roubos": 117,
+   "violencia": 72,
+   "furtos": 207,
+   "sexual": 7,
+   "transito": 30,
+   "drogas": 10,
+   "mortes": 1
+  },
+  "vila-yara": {
+   "furtos": 433,
+   "roubos": 105,
+   "violencia": 19,
+   "sexual": 2,
+   "transito": 13
+  },
+  "industrial-autonomistas": {
+   "furtos": 297,
+   "transito": 21,
+   "roubos": 53,
+   "violencia": 11,
+   "drogas": 1
+  },
+  "baronesa": {
+   "violencia": 52,
+   "sexual": 5,
+   "furtos": 153,
+   "roubos": 45,
+   "mortes": 1,
+   "transito": 21,
+   "drogas": 6
+  },
+  "jardim-elvira": {
+   "drogas": 5,
+   "sexual": 4,
+   "furtos": 100,
+   "mortes": 1,
+   "violencia": 33,
+   "transito": 4,
+   "roubos": 17
+  },
+  "mutinga": {
+   "furtos": 111,
+   "roubos": 21,
+   "violencia": 44,
+   "drogas": 2,
+   "transito": 21,
+   "sexual": 1
+  },
+  "metalurgicos": {
+   "furtos": 83,
+   "transito": 9,
+   "sexual": 2,
+   "violencia": 15,
+   "roubos": 37,
+   "drogas": 4,
+   "mortes": 1
+  },
+  "munhoz-junior": {
+   "furtos": 212,
+   "sexual": 5,
+   "transito": 16,
+   "violencia": 77,
+   "roubos": 68,
+   "drogas": 18,
+   "mortes": 4
+  },
+  "jardim-das-flores": {
+   "furtos": 111,
+   "violencia": 25,
+   "drogas": 33,
+   "roubos": 49,
+   "transito": 11,
+   "sexual": 3
+  },
+  "cidade-das-flores": {
+   "furtos": 44,
+   "violencia": 16,
+   "roubos": 32,
+   "sexual": 1,
+   "transito": 5,
+   "drogas": 7,
+   "mortes": 1
+  },
+  "quintauna": {
+   "furtos": 162,
+   "drogas": 2,
+   "transito": 19,
+   "violencia": 26,
+   "roubos": 65,
+   "mortes": 2
+  },
+  "pestana": {
+   "furtos": 146,
+   "violencia": 37,
+   "roubos": 76,
+   "transito": 20,
+   "drogas": 8,
+   "sexual": 3,
+   "mortes": 1
+  },
+  "vila-militar": {
+   "furtos": 32,
+   "roubos": 15,
+   "violencia": 2,
+   "transito": 2
+  },
+  "bonfim": {
+   "transito": 14,
+   "furtos": 78,
+   "roubos": 44,
+   "violencia": 14,
+   "mortes": 1
+  },
+  "jardim-roberto": {
+   "violencia": 63,
+   "furtos": 186,
+   "mortes": 2,
+   "roubos": 117,
+   "drogas": 13,
+   "transito": 11,
+   "sexual": 5
+  },
+  "veloso": {
+   "sexual": 11,
+   "furtos": 262,
+   "violencia": 97,
+   "roubos": 152,
+   "drogas": 30,
+   "transito": 36,
+   "mortes": 3
+  },
+  "jaguaribe": {
+   "furtos": 165,
+   "transito": 25,
+   "violencia": 38,
+   "sexual": 3,
+   "roubos": 65,
+   "drogas": 9,
+   "mortes": 1
+  },
+  "bussocaba": {
+   "furtos": 121,
+   "violencia": 40,
+   "roubos": 57,
+   "drogas": 13,
+   "transito": 27,
+   "sexual": 6
+  },
+  "raposo-tavares": {
+   "transito": 8,
+   "furtos": 26,
+   "violencia": 29,
+   "roubos": 28,
+   "drogas": 14
+  },
+  "city-bussocaba": {
+   "transito": 3,
+   "furtos": 32,
+   "violencia": 7,
+   "roubos": 31,
+   "drogas": 2
+  },
+  "industrial-remedios": {
+   "furtos": 82,
+   "roubos": 29,
+   "transito": 14,
+   "drogas": 1,
+   "violencia": 1
+  },
+  "rochdale": {
+   "furtos": 299,
+   "mortes": 2,
+   "violencia": 87,
+   "drogas": 15,
+   "roubos": 110,
+   "sexual": 10,
+   "transito": 41
+  },
+  "ayrosa": {
+   "furtos": 226,
+   "transito": 25,
+   "violencia": 80,
+   "roubos": 92,
+   "drogas": 12,
+   "sexual": 1
+  },
+  "vila-menck": {
+   "furtos": 161,
+   "transito": 17,
+   "mortes": 3,
+   "violencia": 80,
+   "roubos": 38,
+   "sexual": 4,
+   "drogas": 12
+  },
+  "alianca": {
+   "furtos": 230,
+   "transito": 24,
+   "violencia": 53,
+   "roubos": 37,
+   "drogas": 14,
+   "sexual": 6,
+   "mortes": 1
+  },
+  "castelo-branco": {
+   "violencia": 9,
+   "roubos": 7,
+   "furtos": 22,
+   "drogas": 2
+  },
+  "iapi": {
+   "violencia": 17,
+   "roubos": 52,
+   "furtos": 142,
+   "transito": 30,
+   "sexual": 1,
+   "mortes": 1
+  },
+  "bela-vista": {
+   "furtos": 156,
+   "transito": 23,
+   "roubos": 79,
+   "violencia": 14,
+   "drogas": 2
+  },
+  "jardim-d-abril": {
+   "furtos": 102,
+   "violencia": 38,
+   "drogas": 3,
+   "roubos": 93,
+   "sexual": 4,
+   "transito": 22
+  },
+  "adalgisa": {
+   "furtos": 60,
+   "violencia": 6,
+   "roubos": 46,
+   "transito": 6,
+   "sexual": 1
+  },
+  "vila-osasco": {
+   "furtos": 185,
+   "transito": 29,
+   "violencia": 27,
+   "roubos": 78,
+   "sexual": 2
+  },
+  "industrial-mazzei": {
+   "drogas": 5,
+   "furtos": 36,
+   "violencia": 7,
+   "roubos": 14,
+   "transito": 5
+  },
+  "platina": {
+   "furtos": 38,
+   "roubos": 18,
+   "violencia": 9,
+   "transito": 2
+  },
+  "tres-montanhas": {
+   "furtos": 22,
+   "violencia": 9,
+   "roubos": 7,
+   "sexual": 1
+  },
+  "paiva-ramos": {
+   "violencia": 3,
+   "roubos": 1,
+   "furtos": 5,
+   "drogas": 2,
+   "sexual": 1
+  },
+  "bonanca": {
+   "drogas": 44,
+   "sexual": 5,
+   "furtos": 95,
+   "violencia": 53,
+   "roubos": 41,
+   "mortes": 2,
+   "transito": 15
+  },
+  "bandeiras": {
+   "sexual": 4,
+   "furtos": 151,
+   "transito": 24,
+   "violencia": 68,
+   "roubos": 105,
+   "drogas": 10,
+   "mortes": 1
+  },
+  "vila-yolanda": {
+   "furtos": 152,
+   "transito": 23,
+   "violencia": 51,
+   "roubos": 50,
+   "sexual": 2,
+   "drogas": 4
+  },
+  "padroeira": {
+   "furtos": 219,
+   "mortes": 5,
+   "violencia": 85,
+   "roubos": 127,
+   "drogas": 24,
+   "transito": 17,
+   "sexual": 6
+  },
+  "santo-antonio": {
+   "furtos": 193,
+   "transito": 29,
+   "violencia": 54,
+   "drogas": 12,
+   "roubos": 78,
+   "sexual": 4
+  },
+  "parque-continental": {
+   "furtos": 15,
+   "violencia": 3,
+   "transito": 2,
+   "drogas": 1,
+   "roubos": 2
+  },
+  "presidente-altino": {
+   "furtos": 413,
+   "transito": 12,
+   "violencia": 26,
+   "roubos": 98,
+   "mortes": 1,
+   "sexual": 3,
+   "drogas": 1
+  },
+  "helena-maria": {
+   "sexual": 2,
+   "furtos": 196,
+   "transito": 28,
+   "violencia": 69,
+   "roubos": 56,
+   "drogas": 19,
+   "mortes": 2
+  },
+  "portal-d-oeste": {
+   "sexual": 1,
+   "furtos": 141,
+   "mortes": 1,
+   "transito": 13,
+   "violencia": 50,
+   "roubos": 49,
+   "drogas": 5
+  },
+  "setor-militar": {
+   "furtos": 14,
+   "roubos": 3,
+   "violencia": 2,
+   "transito": 1
+  },
+  "industrial-centro": {
+   "furtos": 65,
+   "roubos": 24,
+   "transito": 7,
+   "drogas": 2,
+   "violencia": 3
+  },
+  "industrial-altino": {
+   "furtos": 75,
+   "roubos": 23,
+   "transito": 18,
+   "violencia": 2
+  }
+ }
+}

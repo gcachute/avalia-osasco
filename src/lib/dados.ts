@@ -40,6 +40,87 @@ export type Camara = {
   requerimentosParados: number;
 };
 
+export type ItemMapa = {
+  id: string;
+  tipo: string;
+  origem: "camara" | "prefeitura";
+  autor: string;
+  autorNome: string | null;
+  data: string;
+  sessao: string;
+  texto: string;
+  bairros: string[];
+};
+
+export type CensoBairro = {
+  areaKm2: number | null;
+  pessoas: number;
+  domicilios: number;
+  moradoresPorDomicilio: number | null;
+  rendaMedia: number | null;
+  rendaMediana: number | null;
+  agua: number | null;
+  esgoto: number | null;
+  lixo: number | null;
+  alfabetizados: number | null;
+  negros: number | null;
+  criancas: number | null;
+  idosos: number | null;
+  pavimentacao: number | null;
+  bueiro: number | null;
+  iluminacao: number | null;
+  onibus: number | null;
+  calcada: number | null;
+  rampa: number | null;
+  arvores: number | null;
+  densidade: number | null;
+  poucosMoradores: boolean;
+};
+
+export type BairroMapa = {
+  id: string;
+  codigo: string;
+  nome: string;
+  populacao: number | null;
+  citacoes: number;
+  censo?: CensoBairro | null;
+  eleicao?: {
+    locais: number;
+    eleitores: number;
+    prefeito: { nome: string; pct: number | null }[] | null;
+    vereadores: { nome: string; id: string; votos: number; pct: number }[] | null;
+    validosVereador: number;
+    comparecimento?: number | null;
+    brancosNulos?: number | null;
+    partidos?: { numero: string; sigla: string; pct: number }[] | null;
+  } | null;
+  partidoPrefeito?: number | null;
+  favelas?: { moradores: number; pct: number | null; comunidades: { nome: string; moradores: number }[] } | null;
+  seguranca?: Record<GrupoCrime, { n: number; por10mil: number | null }> | null;
+  obras?: { objeto: string; situacao: string; valor: number; contratante: string; contratado: string; ano: number }[];
+  saude?: { cnes: string; nome: string; tipo: string; publica: boolean; turno: string | null }[];
+  escolas?: { codigo: string; nome: string; rede: string; idebIniciais: number | null; idebFinais: number | null }[];
+};
+
+export type GrupoCrime = "mortes" | "roubos" | "furtos" | "violencia" | "sexual" | "transito" | "drogas";
+
+export type PontoMapa = { tipo: "saude" | "votacao" | "escola"; categoria: string; nome: string; lat: number; lon: number; bairro: string | null; eleitores?: number };
+
+export type Mapa = {
+  fonte: string;
+  bairros: BairroMapa[];
+  itens: ItemMapa[];
+  cidade: (Partial<Record<keyof CensoBairro, number | null>> & { pessoas?: number; densidade?: number } & Record<string, number | null | undefined>) | null;
+  prefeitoEleicao: { nome: string; votos: number; pct: number }[];
+  votosVereador: Record<string, { nomeUrna: string; total: number; porBairro: Record<string, number> }>;
+  pontos: PontoMapa[];
+  minimoMoradores: number;
+  anoSeguranca?: number | null;
+  partidoDoPrefeito?: string | null;
+  partidosCidade?: { numero: string; sigla: string; votos: number }[];
+  fontes: { nome: string; url: string }[];
+};
+
 export type PilarVereador = "A" | "B" | "C" | "D" | "E";
 
 export type Comissao = { nome: string; url: string; cargo: string; tipo: "permanente" | "temporaria" | "frente" };
@@ -50,6 +131,7 @@ export type Vereador = {
   partido: string | null;
   partidoNome: string | null;
   foto: string | null;
+  fotoFonte: string | null;
   perfilOficial: string | null;
   perfil: {
     nomeCompleto: string | null;
@@ -255,6 +337,7 @@ export type Dados = {
     vetos: Veto[];
   };
   camara: Camara;
+  mapa: Mapa | null;
 };
 
 export const dados = bruto as unknown as Dados;
