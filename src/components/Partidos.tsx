@@ -6,14 +6,28 @@ import { SeloPartido } from "./ui";
 
 export type MediaPartido = { partido: string; logo?: string | null; media: number; vereadores: { nome: string; nota: number }[] };
 
-// Barras horizontais com a nota média de cada partido (uma série, uma cor). Passar o mouse
-// ou tocar mostra quem são os vereadores do partido.
-export function GraficoPartidos({ dados }: { dados: MediaPartido[] }) {
+// Barras horizontais com a média de cada partido no coeficiente escolhido (uma série, uma cor).
+// Passar o mouse ou tocar mostra quem são os vereadores do partido.
+export function GraficoPartidos({ conjuntos }: { conjuntos: { chave: string; nome: string; dados: MediaPartido[] }[] }) {
+  const [chave, setChave] = useState(conjuntos[0]?.chave);
   const [ativo, setAtivo] = useState<string | null>(null);
+  const atual = conjuntos.find((c) => c.chave === chave) ?? conjuntos[0];
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-4">
+      <div className="mb-3 flex flex-wrap gap-1 rounded-lg bg-slate-100 p-0.5" role="group" aria-label="Coeficiente">
+        {conjuntos.map((c) => (
+          <button
+            key={c.chave}
+            onClick={() => setChave(c.chave)}
+            aria-pressed={c.chave === atual.chave}
+            className={`flex-1 rounded-md px-2.5 py-1 text-xs font-medium transition ${c.chave === atual.chave ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
+          >
+            {c.nome}
+          </button>
+        ))}
+      </div>
       <ul className="space-y-2" role="list">
-        {dados.map((p) => {
+        {atual.dados.map((p) => {
           const aberto = ativo === p.partido;
           return (
             <li key={p.partido}>
@@ -33,22 +47,24 @@ export function GraficoPartidos({ dados }: { dados: MediaPartido[] }) {
                 <span className="relative h-5">
                   <span className="absolute inset-y-0 left-0 w-full rounded bg-slate-100" />
                   <span
-                    className="barra-anim absolute inset-y-0 left-0 rounded"
-                    style={{ width: `${(p.media / 10) * 100}%`, background: aberto ? "var(--color-blue-700)" : "var(--color-blue-500)", transition: "width 0.9s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s" }}
+                    className="absolute inset-y-0 left-0 rounded"
+                    style={{
+                      width: `${(p.media / 10) * 100}%`,
+                      background: aberto ? "var(--color-blue-700)" : "var(--color-blue-500)",
+                      transition: "width 0.6s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s",
+                    }}
                   />
                 </span>
                 <span className="text-right font-semibold tabular-nums text-slate-900">{nota(p.media)}</span>
               </button>
               <div className={`grid transition-all duration-300 ${aberto ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
-                <p className="overflow-hidden pl-[7.25rem] text-xs text-slate-500">
-                  {p.vereadores.map((v) => `${v.nome} (${nota(v.nota)})`).join(" · ")}
-                </p>
+                <p className="overflow-hidden pl-[7.25rem] text-xs text-slate-500">{p.vereadores.map((v) => `${v.nome} (${nota(v.nota)})`).join(" · ")}</p>
               </div>
             </li>
           );
         })}
       </ul>
-      <p className="mt-3 text-xs text-slate-500">Média simples das notas dos vereadores em exercício de cada partido. Passe o mouse ou toque para ver quem são.</p>
+      <p className="mt-3 text-xs text-slate-500">Média simples dos vereadores em exercício de cada partido, de 0 a 10. Passe o mouse ou toque para ver quem são.</p>
     </div>
   );
 }

@@ -1,108 +1,131 @@
 import Link from "next/link";
-import { Numero } from "@/components/Animacoes";
-import { CustoMandato, DespesasCamara } from "@/components/Camara";
+import { CustoMandato, DespesasCamara, FolhaCamara } from "@/components/Camara";
+import type { VereadorLista } from "@/components/ListaVereadores";
+import { PainelInicial } from "@/components/PainelInicial";
 import { GraficoPartidos, type MediaPartido } from "@/components/Partidos";
-import { Ranking } from "@/components/Ranking";
-import { Avatar, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
-import type { Vereador } from "@/lib/dados";
-import { PILARES_PREFEITO, dados, dataBR, nota, nota10, pct } from "@/lib/dados";
+import { AvisoParcial, Avatar, NotaBadge, Secao, SeloPartido } from "@/components/ui";
+import type { Coeficiente } from "@/lib/dados";
+import { COEFICIENTES, PILARES_PREFEITO, dados, dataBR, nota10 } from "@/lib/dados";
+import { dadosDoMapaCompleto } from "@/lib/mapaGeo";
 
 const PASSOS = [
-  { n: "1", titulo: "Juntamos dados oficiais", texto: "Planilhas de presença e votação da Câmara, relatórios fiscais do Tesouro, Tribunal de Contas, INEP e DataSUS." },
-  { n: "2", titulo: "Calculamos uma nota de 0 a 10", texto: "Cinco pilares para cada político, com regras públicas e iguais para todos. Nada de opinião." },
+  { n: "1", titulo: "Dados oficiais", texto: "Planilhas da Câmara, Tesouro Nacional, Tribunal de Contas, IBGE, TSE, INEP, Ministério da Saúde e Segurança Pública." },
+  {
+    n: "2",
+    titulo: "Sem nota geral",
+    texto: "Cada vereador tem participação, produção e eficiência, e cada uma mostra as avaliações e a conta por trás. O prefeito tem uma nota por pilar.",
+  },
   { n: "3", titulo: "Você confere a fonte", texto: "Cada número leva ao documento oficial de onde saiu. Achou um erro? Dá para pedir correção." },
 ];
 
-const ESCALA = [
-  { faixa: "7 a 10", nome: "Bom", classe: "bg-emerald-50 text-emerald-800 ring-emerald-200" },
-  { faixa: "5 a 6,9", nome: "Regular", classe: "bg-amber-50 text-amber-800 ring-amber-200" },
-  { faixa: "0 a 4,9", nome: "Fraco", classe: "bg-rose-50 text-rose-800 ring-rose-200" },
-];
-
-function Destaque({ rotulo, v, valor }: { rotulo: string; v: Vereador; valor: string }) {
-  return (
-    <Link
-      href={`/vereadores/${v.id}`}
-      className="group flex items-center gap-3 overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md"
-    >
-      <Retrato nome={v.nome} foto={v.foto} className="w-16 shrink-0 rounded-xl" />
-      <div className="min-w-0">
-        <div className="text-xs font-medium uppercase tracking-wide text-blue-800">{rotulo}</div>
-        <div className="truncate font-semibold text-slate-900 group-hover:text-blue-800">{v.nome}</div>
-        <div className="mt-0.5 flex flex-wrap items-center gap-2 text-sm text-slate-600">
-          {valor} <SeloPartido sigla={v.partido} logo={v.partidoLogo} />
-        </div>
-      </div>
-    </Link>
-  );
-}
-
-export default function Home() {
-  const { vereadores, prefeito, sessoes, periodo, camara } = dados;
+export default async function Home() {
+  const { vereadores, prefeito, sessoes, periodo, camara, mapa } = dados;
+  const minimo = dados.metodologia.vereador.minimoSessoes;
   const ativos = vereadores.filter((v) => v.emExercicio);
-  const comNota = vereadores.filter((v) => v.nota != null);
-  const presencaMedia = ativos.reduce((a, v) => a + (v.indicadores.presencaAjustada ?? 0), 0) / (ativos.length || 1);
-  const projetos = vereadores.reduce((a, v) => a + v.indicadores.projetosSubstantivos, 0);
-  const adiadas = vereadores.reduce((a, v) => a + v.indicadores.adiadasPorAusencia, 0);
-  const notaMedia = comNota.reduce((a, v) => a + (v.nota ?? 0), 0) / (comNota.length || 1);
+  const mapaPronto = mapa ? await dadosDoMapaCompleto(mapa) : null;
 
-  const maior = (lista: Vereador[], f: (v: Vereador) => number) => [...lista].sort((a, b) => f(b) - f(a))[0];
-  const ativosComNota = comNota.filter((v) => v.emExercicio);
-  const melhor = maior(ativosComNota, (v) => v.nota ?? 0);
-  const presente = maior(ativosComNota, (v) => (v.indicadores.presencaAjustada ?? 0) + v.indicadores.sessoes / 1e4);
-  const produtivo = maior(ativosComNota, (v) => v.indicadores.projetosSubstantivos);
+  const lista: VereadorLista[] = vereadores.map((v) => {
+    const avaliado = v.coeficientes.producao != null;
+    const n = (x: number | null | undefined) => (avaliado ? (x ?? null) : null);
+    return {
+      id: v.id,
+      nome: v.nome,
+      partido: v.partido,
+      partidoLogo: v.partidoLogo,
+      foto: v.foto,
+      emExercicio: v.emExercicio,
+      sessoes: v.indicadores.sessoes,
+      coeficientes: v.coeficientes,
+      parametros: {
+        presenca: n(v.pilares.A.componentes.presenca),
+        votacoes: n(v.pilares.A.componentes.votacoes),
+        legislacao: n(v.pilares.B.nota),
+        comissoes: n(v.pilares.C.nota),
+        pauta: n(v.pilares.E.nota),
+        eficiencia: n(v.coeficientes.eficiencia),
+      },
+    };
+  });
 
-  const porPartido: MediaPartido[] = Object.values(
-    ativosComNota.reduce<Record<string, MediaPartido>>((acc, v) => {
-      const p = v.partido ?? "Sem partido";
-      acc[p] ??= { partido: p, logo: v.partidoLogo, media: 0, vereadores: [] };
-      acc[p].vereadores.push({ nome: v.nome, nota: v.nota! });
-      return acc;
-    }, {}),
-  )
-    .map((p) => ({ ...p, media: p.vereadores.reduce((a, v) => a + v.nota, 0) / p.vereadores.length }))
-    .sort((a, b) => b.media - a.media);
+  // Média por partido em cada coeficiente (vereadores em exercício com coeficientes).
+  const porPartido = (k: Coeficiente): MediaPartido[] =>
+    Object.values(
+      ativos
+        .filter((v) => v.coeficientes[k] != null)
+        .reduce<Record<string, MediaPartido>>((acc, v) => {
+          const p = v.partido ?? "Sem partido";
+          acc[p] ??= { partido: p, logo: v.partidoLogo, media: 0, vereadores: [] };
+          acc[p].vereadores.push({ nome: v.nome, nota: v.coeficientes[k]! * 10 });
+          return acc;
+        }, {}),
+    )
+      .map((p) => ({ ...p, media: p.vereadores.reduce((a, v) => a + v.nota, 0) / p.vereadores.length }))
+      .sort((a, b) => b.media - a.media);
+
+  const documentos = mapa?.itens.length ?? 0;
+  const bairrosCitados = mapa?.bairros.filter((b) => b.citacoes > 0).length ?? 0;
 
   return (
     <>
-      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-5 py-8 sm:px-8 sm:py-10">
-        <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-blue-100 opacity-60 blur-3xl" aria-hidden />
-        <div className="relative max-w-3xl">
-          <p className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-800 ring-1 ring-blue-200">
-            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-blue-600" /> Legislatura 2025–2028 · dados até {dataBR(periodo.fim)}
-          </p>
-          <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">Como estão trabalhando os políticos de Osasco?</h1>
-          <p className="mt-4 text-lg text-slate-600">
-            Seu imposto paga a Câmara e a Prefeitura. Aqui você vê uma nota de 0 a 10 para cada vereador e para o prefeito, calculada só com dados
-            oficiais: quem comparece, quem propõe leis que mudam a cidade, quem trabalha nas comissões e como andam as contas públicas.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a href="#ranking" className="rounded-xl bg-blue-800 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700">
-              Ver o ranking
-            </a>
-            <Link href="/prefeito" className="rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 ring-1 ring-slate-300 transition hover:bg-slate-50">
-              Nota do prefeito
-            </Link>
-            <Link href="/mapa" className="rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 ring-1 ring-slate-300 transition hover:bg-slate-50">
-              Mapa por bairro
-            </Link>
+      {/* Painel em largura total, como um mapa de apuração: lista à esquerda, mapa ao centro, detalhes à direita. */}
+      <div className="relative left-1/2 w-[min(1680px,calc(100vw-2rem))] -translate-x-1/2 space-y-4">
+        <section className="flex flex-wrap items-center gap-x-6 gap-y-3 rounded-2xl border border-slate-200 bg-white px-4 py-3">
+          <div className="min-w-0">
+            <h1 className="text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">Osasco, bairro a bairro</h1>
+            <p className="text-xs text-slate-500">
+              O que cada vereador e a Prefeitura fazem em cada bairro · legislatura 2025–2028 · dados até {dataBR(periodo.fim)}
+            </p>
           </div>
-        </div>
-      </section>
+          <dl className="flex flex-wrap gap-x-6 gap-y-1 text-sm">
+            {[
+              { t: "Sessões", v: sessoes.length },
+              { t: "Vereadores em exercício", v: ativos.length },
+              { t: "Documentos com bairro", v: documentos },
+              { t: "Bairros citados", v: `${bairrosCitados} de ${mapa?.bairros.length ?? 0}` },
+            ].map((c) => (
+              <div key={c.t}>
+                <dt className="text-[11px] uppercase tracking-wide text-slate-500">{c.t}</dt>
+                <dd className="text-lg font-semibold tabular-nums text-slate-900">{typeof c.v === "number" ? c.v.toLocaleString("pt-BR") : c.v}</dd>
+              </div>
+            ))}
+          </dl>
+          <Link href="/prefeito" className="group ml-auto flex items-center gap-3 rounded-xl px-2 py-1.5 transition hover:bg-slate-50">
+            <Avatar nome={prefeito.nome} foto={prefeito.foto} tamanho={44} />
+            <span className="min-w-0">
+              <span className="block text-[11px] uppercase tracking-wide text-slate-500">Prefeito</span>
+              <span className="flex items-center gap-2 font-semibold text-slate-900 group-hover:text-blue-800">
+                {prefeito.nome} <SeloPartido sigla={prefeito.partido} logo={prefeito.partidoLogo} />
+              </span>
+            </span>
+          </Link>
+        </section>
 
-      <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4">
-        {[
-          { titulo: "Sessões analisadas", valor: <Numero valor={sessoes.length} />, detalhe: `${dataBR(periodo.inicio)} a ${dataBR(periodo.fim)}` },
-          { titulo: "Nota média da Câmara", valor: <Numero valor={notaMedia} casas={1} />, detalhe: `${comNota.length} vereadores com nota` },
-          { titulo: "Presença média", valor: <Numero valor={presencaMedia * 100} sufixo="%" />, detalhe: "sem contar faltas justificadas" },
-          { titulo: "Itens adiados por falta", valor: <Numero valor={adiadas} />, detalhe: `${projetos} projetos de política pública no período` },
-        ].map((c) => (
-          <div key={c.titulo} className="revelar rounded-2xl border border-slate-200 bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md">
-            <div className="text-sm text-slate-500">{c.titulo}</div>
-            <div className="mt-1 text-3xl font-semibold text-slate-900">{c.valor}</div>
-            <div className="mt-1 text-xs text-slate-500">{c.detalhe}</div>
-          </div>
-        ))}
+        <AvisoParcial />
+
+        {mapa && mapaPronto ? (
+          <PainelInicial
+            vereadores={lista}
+            minimoSessoes={minimo}
+            mapa={{
+              bairros: mapaPronto.bairros,
+              itens: mapa.itens,
+              pontos: mapaPronto.pontos,
+              largura: mapaPronto.largura,
+              altura: mapaPronto.altura,
+              inicio: periodo.inicio,
+              fim: periodo.fim,
+              cidade: mapa.cidade,
+              votosVereador: mapa.votosVereador,
+              vereadores: vereadores.map((v) => ({ id: v.id, nome: v.nome })),
+              favelas: mapaPronto.favelas,
+              projecao: mapaPronto.projecao,
+              historico: dados.historico,
+              anoSeguranca: mapa.anoSeguranca ?? null,
+            }}
+          />
+        ) : (
+          <p className="text-slate-600">Rode npm run coletar:bairros e npm run dados para gerar o mapa.</p>
+        )}
       </div>
 
       <Secao titulo="Como funciona">
@@ -115,76 +138,32 @@ export default function Home() {
             </li>
           ))}
         </ol>
-        <div className="mt-3 flex flex-wrap items-center gap-2 rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-600">
-          <span className="mr-1 font-medium text-slate-900">Como ler a nota:</span>
-          {ESCALA.map((e) => (
-            <span key={e.nome} className={`rounded-lg px-2.5 py-1 font-medium ring-1 ring-inset ${e.classe}`}>
-              {e.faixa} · {e.nome}
-            </span>
+        <div className="mt-3 grid gap-3 md:grid-cols-3">
+          {COEFICIENTES.map((c) => (
+            <div key={c.chave} className="rounded-2xl border border-slate-200 bg-white p-4 text-sm">
+              <div className="font-semibold text-slate-900">{c.nome}</div>
+              <p className="mt-1 text-slate-600">{c.descricao}</p>
+            </div>
           ))}
-          <Link href="/metodologia" className="ml-auto text-blue-800 underline">
-            Ver todas as regras
+        </div>
+        <p className="mt-2 text-xs text-slate-500">
+          <Link href="/metodologia" className="underline">
+            Todas as regras
+          </Link>{" "}
+          ·{" "}
+          <Link href="/mapa" className="underline">
+            Como ler o mapa e as fontes de cada camada
           </Link>
-        </div>
-      </Secao>
-
-      <Secao titulo="Destaques" subtitulo="Entre os vereadores em exercício com nota.">
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {melhor && <Destaque rotulo="Maior nota" v={melhor} valor={`nota ${nota(melhor.nota)}`} />}
-          {presente && <Destaque rotulo="Mais presente" v={presente} valor={`${pct(presente.indicadores.presencaAjustada)} de presença`} />}
-          {produtivo && <Destaque rotulo="Mais projetos de política pública" v={produtivo} valor={`${produtivo.indicadores.projetosSubstantivos} projetos`} />}
-        </div>
-      </Secao>
-
-      <Secao titulo="Ranking dos vereadores" id="ranking" subtitulo="Clique em um vereador para ver como a nota foi formada e as planilhas de origem.">
-        <Ranking
-          vereadores={vereadores.map(({ id, nome, partido, partidoLogo, foto, emExercicio, nota, posicao, indicadores, perfil, pilares, temas }) => ({
-            id,
-            nome,
-            partido,
-            partidoLogo,
-            foto,
-            emExercicio,
-            nota,
-            posicao,
-            indicadores,
-            mesa: perfil?.mesa ?? null,
-            pilares: { A: pilares.A.nota, B: pilares.B.nota, C: pilares.C.nota, D: pilares.D.nota, E: pilares.E.nota },
-            temas: temas.slice(0, 2).map((t) => t.tema),
-          }))}
-        />
-        <p className="mt-3 text-xs text-slate-500">
-          O custo do mandato é igual para todos os gabinetes e não entra na nota. Só recebe nota quem tem pelo menos{" "}
-          {dados.metodologia.vereador.minimoSessoes} sessões no período.
         </p>
       </Secao>
 
-      {(camara.custoMandato || camara.despesas) && (
-        <Secao
-          titulo="Quanto custa a Câmara"
-          subtitulo={
-            camara.requerimentosParados
-              ? `E um dado que chama atenção: ${camara.requerimentosParados} requerimentos de informação ao Executivo estão na Ordem do Dia desde o início da legislatura, sessão após sessão, sem ir a votação. Eles aparecem no perfil de cada autor.`
-              : undefined
-          }
-        >
-          <div className="grid gap-3 lg:grid-cols-2">
-            {camara.custoMandato && <CustoMandato custo={camara.custoMandato} />}
-            {camara.despesas && <DespesasCamara despesas={camara.despesas} />}
-          </div>
-        </Secao>
-      )}
-
       <div className="grid gap-6 lg:grid-cols-2">
-        <Secao titulo="Nota média por partido">
-          <GraficoPartidos dados={porPartido} />
+        <Secao titulo="Média por partido">
+          <GraficoPartidos conjuntos={COEFICIENTES.map((c) => ({ chave: c.chave, nome: c.nome, dados: porPartido(c.chave) }))} />
         </Secao>
 
         <Secao titulo="Prefeitura">
-          <Link
-            href="/prefeito"
-            className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md"
-          >
+          <Link href="/prefeito" className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:border-blue-300 hover:shadow-md">
             <div className="flex items-center gap-4 p-5">
               <Avatar nome={prefeito.nome} foto={prefeito.foto} tamanho={72} />
               <div className="min-w-0 flex-1">
@@ -194,27 +173,41 @@ export default function Home() {
                   {prefeito.cargo} · {prefeito.mandato}
                 </div>
               </div>
-              <div className="text-center">
-                <NotaBadge valor={prefeito.nota} grande />
-                <div className="mt-1 text-xs text-slate-500">{prefeito.provisoria ? "provisória" : "do mandato"}</div>
-              </div>
             </div>
-            <div className="grid grid-cols-5 gap-2 border-t border-slate-100 p-4">
+            <ul className="divide-y divide-slate-100 border-t border-slate-100">
               {PILARES_PREFEITO.map((pl) => {
                 const n = prefeito.pilares[pl.chave]?.nota;
                 return (
-                  <div key={pl.chave} title={`${pl.nome}: ${n == null ? "aguardando dados" : nota(nota10(n))}`}>
-                    <div className="h-1.5 overflow-hidden rounded-full bg-slate-100">
-                      <div className="barra-anim h-full rounded-full bg-blue-600" style={{ width: `${(n ?? 0) * 100}%` }} />
-                    </div>
-                    <div className="mt-1 truncate text-[10px] uppercase tracking-wide text-slate-400">{pl.nome.split(" ")[0]}</div>
-                  </div>
+                  <li key={pl.chave} className="flex items-center justify-between gap-3 px-5 py-2.5 text-sm">
+                    <span className="text-slate-700">
+                      {pl.chave} · {pl.nome}
+                    </span>
+                    {n == null ? <span className="text-xs text-slate-400">sem dados do mandato</span> : <NotaBadge valor={nota10(n)} />}
+                  </li>
                 );
               })}
-            </div>
+            </ul>
+            <p className="border-t border-slate-100 px-5 py-2 text-xs text-slate-500">Sem nota geral: cada pilar com os dados e a conta na página do prefeito.</p>
           </Link>
         </Secao>
       </div>
+
+      {(camara.custoMandato || camara.despesas) && (
+        <Secao
+          titulo="Quanto custa a Câmara"
+          subtitulo={
+            camara.requerimentosParados
+              ? `${camara.requerimentosParados} requerimentos de informação ao Executivo estão na Ordem do Dia desde o início da legislatura sem votação registrada. A lista está no perfil de cada autor.`
+              : undefined
+          }
+        >
+          <div className="grid gap-3 lg:grid-cols-2">
+            {camara.custoMandato && <CustoMandato custo={camara.custoMandato} />}
+            {camara.despesas && <DespesasCamara despesas={camara.despesas} />}
+            {camara.folha && <FolhaCamara folha={camara.folha} />}
+          </div>
+        </Secao>
+      )}
     </>
   );
 }

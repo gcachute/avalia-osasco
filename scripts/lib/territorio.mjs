@@ -6,7 +6,7 @@ import { reconhecedorDeBairros } from "./bairros.mjs";
 const ler = (f) => (existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null);
 
 // Indicadores do Censo: média da cidade ponderada pela base de cada um (pessoas ou domicílios).
-const BASE = {
+export const BASE = {
   rendaMedia: "domicilios",
   rendaMediana: "domicilios",
   agua: "domicilios",
@@ -25,7 +25,7 @@ const BASE = {
   arvores: "domicilios",
 };
 // Siglas dos partidos pelo número da urna (eleições de 2024).
-const SIGLAS = {
+export const SIGLAS = {
   10: "Republicanos", 11: "PP", 12: "PDT", 13: "PT", 15: "MDB", 16: "PSTU", 18: "Rede", 20: "Podemos", 21: "PCB", 22: "PL",
   23: "Cidadania", 25: "PRD", 27: "DC", 28: "PRTB", 29: "PCO", 30: "Novo", 33: "Mobiliza", 35: "PMB", 36: "Agir", 40: "PSB",
   43: "PV", 44: "União", 45: "PSDB", 50: "PSOL", 55: "PSD", 65: "PCdoB", 70: "Avante", 77: "Solidariedade", 80: "UP",
@@ -33,7 +33,7 @@ const SIGLAS = {
 const GRUPOS_CRIME = ["mortes", "roubos", "furtos", "violencia", "sexual", "transito", "drogas"];
 
 // Bairros com tão poucos moradores que as porcentagens viram ruído (áreas industriais).
-const MINIMO_MORADORES = 500;
+export const MINIMO_MORADORES = 500;
 
 export function montarTerritorio(malha, idFor) {
   const censo = ler("data/territorio/censo.json");

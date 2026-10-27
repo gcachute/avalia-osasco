@@ -87,3 +87,42 @@ export function Secao({ titulo, children, id, subtitulo }: { titulo: string; chi
     </section>
   );
 }
+
+const ALVO_AVISO = {
+  geral: {
+    quem: "dos vereadores e da Prefeitura",
+    dados: "presença, votações, projetos, comissões, documentos que citam bairros e contas oficiais",
+    formas: "reuniões, atendimento à população, articulação com o governo e com outras esferas, emendas e acompanhamento nos bairros",
+  },
+  vereador: {
+    quem: "deste(a) vereador(a)",
+    dados: "presença nas sessões, votações, projetos, comissões e documentos que citam bairros",
+    formas: "reuniões, atendimento à população, pedidos e articulação com a Prefeitura e outras esferas, emendas e acompanhamento nos bairros",
+  },
+  prefeito: {
+    quem: "deste prefeito",
+    dados: "contas fiscais, mínimos de saúde e educação, indicadores de resultado, transparência, obras e documentos que citam bairros",
+    formas: "gestão das secretarias, convênios e parcerias, articulação com o Estado e a União, programas e serviços no dia a dia dos bairros",
+  },
+} as const;
+
+/* Aviso de que os números são um recorte: só mostram o que está nos registros públicos coletados. */
+export function AvisoParcial({ alvo = "geral", className = "" }: { alvo?: keyof typeof ALVO_AVISO; className?: string }) {
+  const a = ALVO_AVISO[alvo];
+  return (
+    <aside role="note" className={`flex gap-3 rounded-2xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-950 ${className}`}>
+      <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0 text-amber-600" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" />
+        <path d="M12 9v4M12 17h.01" />
+      </svg>
+      <div className="space-y-1">
+        <p className="font-semibold">Atenção: este é um retrato parcial da atuação {a.quem}.</p>
+        <p>
+          A análise usa única e exclusivamente os dados públicos que coletamos: {a.dados}. Ela não reflete 100% do trabalho de um político. Há muitas
+          outras formas de agir por Osasco, inclusive indiretas, como {a.formas}, que não aparecem nesses registros. Leia os números como uma parte da
+          atuação, não como o mandato inteiro.
+        </p>
+      </div>
+    </aside>
+  );
+}

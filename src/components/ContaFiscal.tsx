@@ -84,12 +84,6 @@ export function ContaPilarA({ a, c, f }: { a: AnoFiscal; c: CidadeFiscal; f: Fis
   const k = c.pilares.A.componentes;
   const i = c.indicadores;
   const n = a.cidades.filter((x) => x.indicadores.investimento != null).length;
-  const itens = [
-    { nome: "pessoal", p: k.pessoal },
-    { nome: "investimento", p: k.investimento },
-    { nome: "resultado primário", p: k.primario },
-  ];
-  const pior = itens.filter((x) => x.p != null).sort((x, y) => x.p! - y.p!)[0];
   return (
     <div className="space-y-3">
       <Formula nomes={["pessoal", "investimento", "primário"]} valores={[k.pessoal, k.investimento, k.primario]} total={c.pilares.A.nota} />
@@ -108,12 +102,9 @@ export function ContaPilarA({ a, c, f }: { a: AnoFiscal; c: CidadeFiscal; f: Fis
           corrente líquida abaixo da meta, ou mais, vale 0. Osasco: <b>{primarioTexto(c)}</b> → <b>{pts(k.primario)}</b>.
         </li>
       </ul>
-      {pior && (
-        <p className="text-sm text-slate-700">
-          O que mais puxou a nota para baixo foi o <b>{pior.nome}</b> ({pts(pior.p)}). Osasco ficou em <b>{c.pilares.A.ranking}º</b> entre{" "}
-          {a.cidades.filter((x) => x.pilares.A.nota != null).length} cidades:
-        </p>
-      )}
+      <p className="text-sm text-slate-700">
+        Posição de Osasco no pilar: <b>{c.pilares.A.ranking}º</b> entre {a.cidades.filter((x) => x.pilares.A.nota != null).length} cidades.
+      </p>
       <Tabela
         a={a}
         pilar="A"
@@ -162,7 +153,7 @@ export function ContaPilarB({ a, c, f }: { a: AnoFiscal; c: CidadeFiscal; f: Fis
         ))}
       </ul>
       <p className="text-sm text-slate-700">
-        Osasco ficou em <b>{c.pilares.B.ranking}º</b> entre {n} cidades:
+        Posição de Osasco no pilar: <b>{c.pilares.B.ranking}º</b> entre {n} cidades.
       </p>
       <Tabela
         a={a}

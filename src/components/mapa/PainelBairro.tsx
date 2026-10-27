@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import type { BairroMapa, ItemMapa, Mapa } from "@/lib/dados";
+import type { BairroMapa, Historico, ItemMapa, Mapa } from "@/lib/dados";
 import { num } from "@/lib/formato";
+import { EvolucaoBairro } from "./EvolucaoBairro";
 import { INDICADORES, formatar } from "./indicadores";
 
-type Aba = "perfil" | "politica" | "eleicao" | "servicos" | "seguranca";
+type Aba = "perfil" | "evolucao" | "politica" | "eleicao" | "servicos" | "seguranca";
 const ABAS: { chave: Aba; nome: string }[] = [
   { chave: "perfil", nome: "Perfil" },
+  { chave: "evolucao", nome: "Evolução" },
   { chave: "politica", nome: "Documentos" },
   { chave: "eleicao", nome: "Eleição" },
   { chave: "servicos", nome: "Serviços" },
@@ -40,16 +42,18 @@ export function PainelBairro({
   aoFechar,
   mesTexto,
   anoSeguranca,
+  historico,
 }: {
   bairro: BairroMapa;
   itens: ItemMapa[];
   cidade: Mapa["cidade"];
   vereadores: Set<string>;
   abaInicial: Aba;
-  aoEscolherIndicador: (chave: string) => void;
+  aoEscolherIndicador: (chave: string, periodo?: string) => void;
   aoFechar: () => void;
   mesTexto: string | null;
   anoSeguranca: number | null;
+  historico?: Historico | null;
 }) {
   const [aba, setAba] = useState<Aba>(abaInicial);
   const c = bairro.censo;
@@ -76,14 +80,14 @@ export function PainelBairro({
         ))}
       </div>
 
-      <div className="mt-4 flex gap-1 rounded-lg bg-slate-100 p-0.5" role="tablist">
+      <div className="mt-4 grid grid-cols-3 gap-0.5 rounded-lg bg-slate-100 p-0.5" role="tablist">
         {ABAS.map((a) => (
           <button
             key={a.chave}
             role="tab"
             aria-selected={aba === a.chave}
             onClick={() => setAba(a.chave)}
-            className={`flex-1 rounded-md px-1.5 py-1 text-[11px] font-medium transition ${aba === a.chave ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
+            className={`rounded-md px-1.5 py-1 text-[11px] font-medium transition ${aba === a.chave ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
           >
             {a.nome}
           </button>
@@ -129,6 +133,16 @@ export function PainelBairro({
               Área com poucos moradores ({pessoas.toLocaleString("pt-BR")} no Censo 2022). As porcentagens do Censo não são mostradas para não virarem ruído.
             </p>
           ))}
+
+        {aba === "evolucao" && (
+          <EvolucaoBairro
+            id={bairro.id}
+            nome={bairro.nome}
+            historico={historico}
+            poucosMoradores={!!c?.poucosMoradores}
+            aoEscolherIndicador={aoEscolherIndicador}
+          />
+        )}
 
         {aba === "politica" &&
           (itens.length ? (
