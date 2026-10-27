@@ -4,8 +4,19 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { select } from "d3-selection";
 import "d3-transition";
 import { zoom, zoomIdentity, type ZoomBehavior } from "d3-zoom";
-import type { BairroMapa, ItemMapa, Mapa, PontoMapa } from "@/lib/dados";
-import { INDICADORES, TEMAS, formatar, type Contexto, type Tema } from "./mapa/indicadores";
+import type { BairroMapa, Historico, ItemMapa, Mapa, PontoMapa } from "@/lib/dados";
+import {
+  INDICADORES,
+  TEMAS,
+  cidadeNoPeriodo,
+  formatar,
+  formatoNoPeriodo,
+  periodosDe,
+  rotuloPeriodo,
+  valorNoPeriodo,
+  type Contexto,
+  type Tema,
+} from "./mapa/indicadores";
 import { PainelBairro } from "./mapa/PainelBairro";
 import { Ruas, type Projecao, type Vista } from "./mapa/Ruas";
 
@@ -101,6 +112,7 @@ export function MapaBairros({
   vereadores,
   favelas,
   anoSeguranca,
+  historico,
   projecao,
   autor: autorControlado,
   aoMudarAutor,
@@ -117,6 +129,8 @@ export function MapaBairros({
   vereadores: { id: string; nome: string }[];
   favelas: FavelaDesenho[];
   anoSeguranca: number | null;
+  // Séries históricas (Censo 2010 e eleições anteriores): permitem escolher o ano no mapa.
+  historico?: Historico | null;
   // Escala e translação da projeção dos bairros; sem ela, o mapa fica sem a camada de ruas.
   projecao?: Projecao;
   // Opcional: o autor filtrado pode ser comandado de fora (a lista de vereadores da página inicial).
@@ -126,6 +140,7 @@ export function MapaBairros({
   const meses = useMemo(() => mesesEntre(inicio, fim), [inicio, fim]);
   const [tema, setTema] = useState<Tema>("politica");
   const [chave, setChave] = useState("citacoes");
+  const [periodo, setPeriodo] = useState<string | null>(null);
   const [origem, setOrigem] = useState<Origem>("todos");
   const [autorInterno, setAutorInterno] = useState("");
   const autor = autorControlado ?? autorInterno;
@@ -317,8 +332,14 @@ export function MapaBairros({
   const ctxFinal: Contexto = { contagem: contagemFinal, votos };
 
   // Escala fixa durante o play (calculada com o período inteiro).
-  const valoresFinais = bairros.map((b) => indicador.valor(b, ctxFinal)).filter((v): v is number => v != null && Number.isFinite(v));
-  const minimo = indicador.escala === "faixa" && valoresFinais.length ? Math.min(...valoresFinais) : 0;
+  // Ano escolhido (null = o mais recente, que é o valor padrão do indicador).
+  const periodos = periodosDe(indicador, historico);
+  const periodoAtivo = periodo && periodos?.includes(periodo) && periodo !== periodos.filter((x) => x !== "mudanca").at(-1) ? periodo : null;
+  const formato = periodoAtivo ? formatoNoPeriodo(indicador, periodoAtivo) : indicador.formato;
+  const escala = periodoAtivo === "mudanca" ? "faixa" : indicador.escala;
+  const valorEm = (b: BairroDesenho, c: Contexto) => (periodoAtivo ? valorNoPeriodo(indicador, b, periodoAtivo, historico) : indicador.valor(b, c));
+  const valoresFinais = bairros.map((b) => valorEm(b, ctxFinal)).filter((v): v is number => v != null && Number.isFinite(v));
+  const minimo = escala === "faixa" && valoresFinais.length ? Math.min(...valoresFinais) : 0;
   const maximo = Math.max(minimo + 1e-9, ...valoresFinais);
   // Porcentagens altas (esgoto, asfalto...) concentram quase todos os bairros perto de 100%: para mostrar a
   // diferença entre eles, as faixas de cor são quantis (cada cor tem mais ou menos o mesmo número de bairros).
@@ -326,17 +347,17 @@ export function MapaBairros({
   const cortes = Array.from({ length: FAIXAS - 1 }, (_, i) => ordenados[Math.floor(((i + 1) / FAIXAS) * (ordenados.length - 1))]);
   const faixa = (v: number | null) => {
     if (v == null || !Number.isFinite(v)) return null;
-    if (indicador.escala === "zero") return v <= 0 ? 0 : Math.min(FAIXAS, Math.ceil((v / maximo) * FAIXAS));
+    if (escala === "zero") return v <= 0 ? 0 : Math.min(FAIXAS, Math.ceil((v / maximo) * FAIXAS));
     return 1 + cortes.filter((c) => v > c).length;
   };
-  const valor = (b: BairroDesenho) => indicador.valor(b, ctx);
+  const valor = (b: BairroDesenho) => valorEm(b, ctx);
 
   const porId = useMemo(() => new Map(bairros.map((b) => [b.id, b])), [bairros]);
   const porMes = useMemo(() => meses.map((m) => filtrados.filter((i) => i.data.startsWith(m)).length), [meses, filtrados]);
   const maxMes = Math.max(1, ...porMes);
   const ranking = bairros
     .map((b) => ({ b, v: valor(b) }))
-    .filter((x): x is { b: BairroDesenho; v: number } => x.v != null && Number.isFinite(x.v) && (indicador.escala === "faixa" || x.v > 0))
+    .filter((x): x is { b: BairroDesenho; v: number } => x.v != null && Number.isFinite(x.v) && (escala === "faixa" || x.v > 0))
     .sort((a, z) => z.v - a.v);
   const nuncaCitados = bairros.filter((b) => contagem[b.id].total === 0);
   // Rótulos dos bairros de maior valor, pulando os que encostariam num rótulo já posto. Com zoom, cabem mais.
@@ -357,7 +378,7 @@ export function MapaBairros({
   const bFoco = foco ? porId.get(foco) : null;
   const maxDist = Math.max(1, ...bairros.map((b) => b.distancia));
   const feed = (doMes.length ? doMes : visiveis.slice(-6)).slice().reverse().slice(0, 6);
-  const mediaCidade = cidade && indicador.cidade ? (indicador.cidade(cidade) ?? null) : null;
+  const mediaCidade = periodoAtivo ? cidadeNoPeriodo(indicador, periodoAtivo, historico) : cidade && indicador.cidade ? (indicador.cidade(cidade) ?? null) : null;
   const pontosVisiveis = pontos.filter((p) => camadas.has(p.tipo));
   const pos = (v: number) => Math.min(100, Math.max(0, ((v - minimo) / (maximo - minimo || 1)) * 100));
 
@@ -379,9 +400,10 @@ export function MapaBairros({
     setTema(t);
     setChave(INDICADORES.find((i) => i.tema === t)!.chave);
   };
-  const escolherIndicador = (k: string) => {
+  const escolherIndicador = (k: string, p?: string) => {
     setTema(INDICADORES.find((i) => i.chave === k)!.tema);
     setChave(k);
+    setPeriodo(p ?? null);
   };
   // Links das páginas de vereador e prefeito abrem o mapa já filtrado: ?indicador=, ?autor=, ?origem=.
   useEffect(() => {
@@ -478,7 +500,7 @@ export function MapaBairros({
               <button
                 key={i.chave}
                 title={i.dica}
-                onClick={() => setChave(i.chave)}
+                onClick={() => (setChave(i.chave), setPeriodo(null))}
                 aria-pressed={chave === i.chave}
                 className={`rounded-md px-2.5 py-1 text-xs transition ${chave === i.chave ? "bg-white font-medium text-slate-900 shadow-sm ring-1 ring-slate-300" : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"}`}
               >
@@ -486,6 +508,27 @@ export function MapaBairros({
               </button>
             ))}
           </div>
+          {periodos && (
+            <div className="flex flex-wrap items-center gap-2 text-[11px]">
+              <span className="font-medium uppercase tracking-wide text-slate-500">{indicador.historia?.tipo === "censo" ? "Censo" : "Eleição"}</span>
+              <div className="flex rounded-lg bg-slate-100 p-0.5" role="group" aria-label="Ano">
+                {periodos.map((p) => {
+                  const ativo = (periodoAtivo ?? periodos.filter((x) => x !== "mudanca").at(-1)) === p;
+                  return (
+                    <button
+                      key={p}
+                      onClick={() => setPeriodo(p)}
+                      aria-pressed={ativo}
+                      className={`rounded-md px-2.5 py-1 font-semibold tabular-nums transition ${ativo ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
+                    >
+                      {rotuloPeriodo(p)}
+                    </button>
+                  );
+                })}
+              </div>
+              {periodoAtivo === "mudanca" && <span className="text-slate-500">de {periodos[0]} para {periodos.at(-2)}</span>}
+            </div>
+          )}
           {(politica || chave === "votosVereador") && (
             <div className="flex flex-wrap items-center gap-2">
               {politica && (
@@ -575,7 +618,7 @@ export function MapaBairros({
                         vectorEffect="non-scaling-stroke"
                         tabIndex={0}
                         role="button"
-                        aria-label={`${b.nome}: ${formatar(valor(b), indicador.formato)}`}
+                        aria-label={`${b.nome}: ${formatar(valor(b), formato)}`}
                         onMouseEnter={() => setFoco(b.id)}
                         onFocus={() => setFoco(b.id)}
                         onBlur={() => setFoco(null)}
@@ -836,10 +879,10 @@ export function MapaBairros({
                       <div className="text-sm font-semibold text-slate-900">{bFoco.nome}</div>
                       <div className="mt-1 flex items-baseline justify-between gap-3">
                         <span className="text-slate-600">{indicador.nome}</span>
-                        <span className="text-base font-semibold tabular-nums text-slate-900">{formatar(valor(bFoco), indicador.formato)}</span>
+                        <span className="text-base font-semibold tabular-nums text-slate-900">{formatar(valor(bFoco), formato)}</span>
                       </div>
                       {mediaCidade != null && (
-                        <div className="text-right text-[11px] text-slate-500">Osasco: {formatar(mediaCidade, indicador.formato)}</div>
+                        <div className="text-right text-[11px] text-slate-500">Osasco: {formatar(mediaCidade, formato)}</div>
                       )}
                       {chave === "votosVereador" && votos && (
                         <div className="text-right text-[11px] text-slate-500">
@@ -876,7 +919,10 @@ export function MapaBairros({
 
           <div className="min-w-0 flex-1 space-y-3">
             <div>
-              <div className="text-xs uppercase tracking-wide text-slate-500">{indicador.nome}</div>
+              <div className="text-xs uppercase tracking-wide text-slate-500">
+                {indicador.nome}
+                {periodos && ` · ${rotuloPeriodo(periodoAtivo ?? periodos.filter((x) => x !== "mudanca").at(-1)!)}`}
+              </div>
               <div className="flex flex-wrap items-baseline gap-x-2">
                 {politica ? (
                   <>
@@ -893,7 +939,7 @@ export function MapaBairros({
                 ) : (
                   <>
                     <span className="text-4xl font-bold tabular-nums tracking-tight text-slate-900">
-                      {formatar(mediaCidade ?? ranking[0]?.v ?? null, indicador.formato)}
+                      {formatar(mediaCidade ?? ranking[0]?.v ?? null, formato)}
                     </span>
                     <span className="text-sm text-slate-500">{mediaCidade != null ? "em Osasco" : `em ${ranking[0]?.b.nome ?? "—"}, o maior`}</span>
                   </>
@@ -905,19 +951,19 @@ export function MapaBairros({
             {/* Legenda */}
             <div className="rounded-xl border border-slate-200 p-2.5 text-[11px] text-slate-600">
               <div className="flex flex-wrap items-center gap-1.5">
-                <span className="tabular-nums">{formatar(minimo, indicador.formato)}</span>
+                <span className="tabular-nums">{formatar(minimo, formato)}</span>
                 <div className="flex overflow-hidden rounded">
-                  {Array.from({ length: FAIXAS + (indicador.escala === "zero" ? 1 : 0) }, (_, f) => (
+                  {Array.from({ length: FAIXAS + (escala === "zero" ? 1 : 0) }, (_, f) => (
                     <span
                       key={f}
                       className="h-2.5 w-4 sm:w-5"
                       style={{
-                        background: corDaFaixa(indicador.escala === "zero" ? f : f + 1),
+                        background: corDaFaixa(escala === "zero" ? f : f + 1),
                       }}
                     />
                   ))}
                 </div>
-                <span className="tabular-nums">{formatar(maximo, indicador.formato)}</span>
+                <span className="tabular-nums">{formatar(maximo, formato)}</span>
                 <span className="ml-1 inline-flex items-center gap-1">
                   <span
                     className="h-2.5 w-3.5 rounded-sm"
@@ -1028,12 +1074,16 @@ export function MapaBairros({
             aoFechar={() => setSelecionado(null)}
             mesTexto={mes < meses.length - 1 ? rotuloMes(ateMes) : null}
             anoSeguranca={anoSeguranca}
+            historico={historico}
           />
         ) : (
           <div>
-            <h2 className="text-sm font-semibold text-slate-900">{indicador.nome}: ranking dos bairros</h2>
+            <h2 className="text-sm font-semibold text-slate-900">
+              {indicador.nome}
+              {periodoAtivo ? ` (${rotuloPeriodo(periodoAtivo).toLowerCase()})` : ""}: ranking dos bairros
+            </h2>
             <p className="text-xs text-slate-500">
-              {mediaCidade != null ? `A marca escura é a média de Osasco (${formatar(mediaCidade, indicador.formato)}). ` : ""}
+              {mediaCidade != null ? `A marca escura é a média de Osasco (${formatar(mediaCidade, formato)}). ` : ""}
               Clique em um bairro para ver tudo sobre ele.
             </p>
             <ol className="mt-3 space-y-1.5">
@@ -1058,7 +1108,7 @@ export function MapaBairros({
                         )}
                       </span>
                     </span>
-                    <span className="text-right text-xs font-semibold tabular-nums text-slate-900">{formatar(v, indicador.formato)}</span>
+                    <span className="text-right text-xs font-semibold tabular-nums text-slate-900">{formatar(v, formato)}</span>
                   </button>
                 </li>
               ))}
@@ -1074,7 +1124,7 @@ export function MapaBairros({
                       <button onClick={() => setSelecionado(b.id)} className="truncate text-left hover:underline">
                         {k + 16}. {b.nome}
                       </button>
-                      <span className="tabular-nums text-slate-900">{formatar(v, indicador.formato)}</span>
+                      <span className="tabular-nums text-slate-900">{formatar(v, formato)}</span>
                     </li>
                   ))}
                 </ol>

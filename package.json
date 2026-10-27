@@ -19,7 +19,8 @@
     "coletar:bairros": "node scripts/coletar-bairros.mjs",
     "coletar:fotos": "node scripts/coletar-fotos.mjs",
     "coletar:partidos": "node scripts/coletar-partidos.mjs",
-    "coletar:territorio": "node --max-old-space-size=6000 scripts/coletar-territorio.mjs"
+    "coletar:territorio": "node --max-old-space-size=6000 scripts/coletar-territorio.mjs",
+    "coletar:historico": "node --max-old-space-size=6000 scripts/coletar-historico.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

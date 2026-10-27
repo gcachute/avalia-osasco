@@ -303,6 +303,45 @@ export type Transparencia = {
 
 export type PilarPrefeito = "A" | "B" | "C" | "D" | "E";
 
+// Séries históricas: Censo 2010 × 2022 e eleições municipais de 2016, 2020 e 2024, por bairro e da cidade.
+export type CampoCenso =
+  | "pessoas" | "domicilios" | "rendaMedia" | "agua" | "esgoto" | "lixo" | "alfabetizados" | "negros" | "criancas" | "idosos"
+  | "pavimentacao" | "bueiro" | "iluminacao" | "calcada" | "rampa" | "arvores";
+export type CensoHistorico = Record<CampoCenso, number | null>;
+export type EleicaoBairroHistorico = {
+  aptos: number | null;
+  comparecimento: number | null;
+  brancosNulos: number | null;
+  eleito: number | null;
+  prefeito: { nome: string; pct: number }[];
+  partidos: { sigla: string; pct: number }[];
+};
+export type EleicaoCidadeHistorico = {
+  aptos: number;
+  comparecimento: number;
+  brancosNulos: number;
+  turnos: { turno: number; candidatos: { nome: string; partido: string; votos: number; pct: number }[] }[];
+  eleito: { nome: string; partido: string };
+  partidos: { sigla: string; pct: number }[];
+};
+export type Historico = {
+  censo: {
+    anos: number[];
+    fontes: { nome: string; url: string }[];
+    notaRenda: string;
+    fatorIpca: number | null;
+    cidade: Record<string, CensoHistorico>;
+    bairros: Record<string, Record<string, CensoHistorico | null>>;
+  } | null;
+  eleicoes: {
+    anos: number[];
+    fonte: { nome: string; url: string };
+    cidade: Record<string, EleicaoCidadeHistorico>;
+    bairros: Record<string, Record<string, EleicaoBairroHistorico | null>>;
+  } | null;
+  populacao: { fonte: string; url: string; censos: { ano: number; pessoas: number }[]; estimativas: { ano: number; pessoas: number }[] } | null;
+};
+
 export type Dados = {
   geradoEm: string;
   periodo: { inicio: string; fim: string };
@@ -344,6 +383,7 @@ export type Dados = {
   };
   camara: Camara;
   mapa: Mapa | null;
+  historico: Historico | null;
 };
 
 export const dados = bruto as unknown as Dados;

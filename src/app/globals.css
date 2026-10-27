@@ -150,6 +150,23 @@
   --mapa-hachura: #334155;
 }
 
+/* Gráficos de linha (séries históricas): três cores validadas para daltonismo, nos dois temas,
+   e um cinza para a referência da cidade (sempre tracejada). */
+:root {
+  --grafico-1: #2563eb;
+  --grafico-2: #ea580c;
+  --grafico-3: #0d9488;
+  --grafico-ref: #64748b;
+  --grafico-grade: #e2e8f0;
+}
+.dark {
+  --grafico-1: #3b82f6;
+  --grafico-2: #ea580c;
+  --grafico-3: #0d9488;
+  --grafico-ref: #94a3b8;
+  --grafico-grade: #1e293b;
+}
+
 .mapa-bairro {
   transition:
     fill 0.6s cubic-bezier(0.22, 1, 0.36, 1),
