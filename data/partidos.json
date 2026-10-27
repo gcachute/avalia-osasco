@@ -11,11 +11,23 @@
   "fonte": "Wikimedia Commons, PDT logo 2026 (cropped).png",
   "url": "https://commons.wikimedia.org/wiki/File:PDT%20logo%202026%20(cropped).png"
  },
+ "PODE": {
+  "arquivo": "/partidos/pode.png",
+  "nome": "Podemos",
+  "fonte": "Site oficial do partido (podemos.org.br)",
+  "url": "https://podemos.org.br/"
+ },
  "PT": {
   "arquivo": "/partidos/pt.png",
   "nome": "Partido dos Trabalhadores",
   "fonte": "Wikimedia Commons, PT (Brazil) logo 2021.svg",
   "url": "https://commons.wikimedia.org/wiki/File:PT%20(Brazil)%20logo%202021.svg"
+ },
+ "REPUBLICANOS": {
+  "arquivo": "/partidos/republicanos.webp",
+  "nome": "Republicanos",
+  "fonte": "Site oficial do partido (republicanos10.org.br)",
+  "url": "https://republicanos10.org.br/"
  },
  "AGIR": {
   "arquivo": "/partidos/agir.png",
@@ -58,5 +70,11 @@
   "nome": "Partido Comunista do Brasil",
   "fonte": "Wikimedia Commons, PCdoB logo.svg",
   "url": "https://commons.wikimedia.org/wiki/File:PCdoB%20logo.svg"
+ },
+ "Podemos": {
+  "arquivo": "/partidos/podemos.png",
+  "nome": "Podemos",
+  "fonte": "Site oficial do partido (podemos.org.br)",
+  "url": "https://podemos.org.br/"
  }
 }

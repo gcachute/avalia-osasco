@@ -50,6 +50,9 @@ export type ItemMapa = {
   sessao: string;
   texto: string;
   bairros: string[];
+  // Coautorias: todos os autores citados (o primeiro também está em `autor`).
+  autores?: string[];
+  autoresNomes?: string[];
   // Quando o bairro foi reconhecido pela escola ou unidade de saúde citada, e não pelo nome.
   via?: string[];
 };

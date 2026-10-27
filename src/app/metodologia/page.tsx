@@ -32,7 +32,7 @@ export default function Metodologia() {
         </p>
         <p className="mt-3 text-slate-700">
           Fotos: site da Câmara ou, na falta dela, a foto de candidatura de 2024 do TSE. Logos dos partidos: Wikimedia Commons, a partir do
-          Wikidata; quando não há logo atual confiável, aparece a sigla.
+          Wikidata, ou o site oficial do partido quando o Commons não tem o logo atual (Podemos e Republicanos).
         </p>
       </Secao>
 
@@ -90,8 +90,8 @@ export default function Metodologia() {
           </li>
           <li>Só recebe nota quem tem pelo menos {m.vereador.minimoSessoes} sessões no período. Suplentes que ficaram poucas semanas aparecem sem nota.</li>
           <li>
-            Contam como projeto: {m.tiposProjeto.map((t) => TIPO_NOME[t] ?? t).join(", ")}. Projetos com mais de um autor contam para o primeiro autor
-            listado.
+            Contam como projeto: {m.tiposProjeto.map((t) => TIPO_NOME[t] ?? t).join(", ")}. Projetos, moções, requerimentos e leis com mais de um autor
+            contam para todos os autores citados pelo nome. Quando o texto diz só “e outros vereadores”, não há como saber quem são.
           </li>
           <li>
             Moções, títulos de cidadão, cartões de prata e outras honrarias aparecem no perfil, mas não entram na nota, porque não mudam leis nem

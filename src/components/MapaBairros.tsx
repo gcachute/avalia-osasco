@@ -149,16 +149,17 @@ export function MapaBairros({
 
   const autores = useMemo(() => {
     const m = new Map<string, { id: string; nome: string; n: number; origem: ItemMapa["origem"] }>();
-    for (const i of itens) {
-      const a = m.get(i.autor) ?? { id: i.autor, nome: i.autorNome ?? i.autor, n: 0, origem: i.origem };
-      a.n++;
-      m.set(i.autor, a);
-    }
+    for (const i of itens)
+      (i.autores ?? [i.autor]).forEach((id, k) => {
+        const a = m.get(id) ?? { id, nome: (i.autoresNomes?.[k] ?? i.autorNome) || id, n: 0, origem: i.origem };
+        a.n++;
+        m.set(id, a);
+      });
     return [...m.values()].sort((a, b) => b.n - a.n || a.nome.localeCompare(b.nome));
   }, [itens]);
 
   const filtrados = useMemo(
-    () => itens.filter((i) => (origem === "todos" || i.origem === origem) && (!autorAtivo || i.autor === autorAtivo)),
+    () => itens.filter((i) => (origem === "todos" || i.origem === origem) && (!autorAtivo || (i.autores ?? [i.autor]).includes(autorAtivo))),
     [itens, origem, autorAtivo],
   );
   const ateMes = meses[mes];
@@ -580,7 +581,7 @@ export function MapaBairros({
                     </div>
                     <p className="mt-0.5 line-clamp-2 text-slate-700">{i.texto}</p>
                     <div className="mt-0.5 text-[11px] text-slate-500">
-                      {i.autorNome}
+                      {i.autoresNomes?.join(", ") ?? i.autorNome}
                       {i.via && ` · via ${i.via[0].toLowerCase().replace(/(^|\s)(\p{L})/gu, (m) => m.toUpperCase())}`}
                     </div>
                   </li>
