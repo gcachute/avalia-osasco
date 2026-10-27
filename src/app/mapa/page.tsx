@@ -10,7 +10,7 @@ export default async function PaginaMapa() {
   const mapa = dados.mapa;
   if (!mapa) return <p className="text-slate-600">Rode npm run coletar:bairros e npm run dados para gerar o mapa.</p>;
 
-  const { largura: LARGURA, altura: ALTURA, bairros: desenhos, pontos, favelas } = await dadosDoMapaCompleto(mapa);
+  const { largura: LARGURA, altura: ALTURA, bairros: desenhos, pontos, favelas, projecao } = await dadosDoMapaCompleto(mapa);
 
   const semCitacao = mapa.bairros.filter((b) => b.citacoes === 0);
   const popSem = semCitacao.reduce((a, b) => a + (b.censo?.pessoas ?? b.populacao ?? 0), 0);
@@ -62,6 +62,7 @@ export default async function PaginaMapa() {
           votosVereador={mapa.votosVereador}
           vereadores={dados.vereadores.map((v) => ({ id: v.id, nome: v.nome }))}
           favelas={favelas}
+          projecao={projecao}
           anoSeguranca={mapa.anoSeguranca ?? null}
         />
       </div>
