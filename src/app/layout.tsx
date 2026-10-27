@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import Link from "next/link";
 import { Animacoes } from "@/components/Animacoes";
 import { Nav } from "@/components/Nav";
+import { NovaAba } from "@/components/NovaAba";
 import { BotaoTema, SCRIPT_TEMA } from "@/components/Tema";
 import { dados, dataBR } from "@/lib/dados";
 import "./globals.css";
@@ -29,7 +30,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body className={`${geist.variable} min-h-screen bg-slate-50 font-sans text-slate-800 antialiased transition-colors`}>
         <Animacoes />
-        <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur">
+        <NovaAba />
+        <header data-mesma-aba className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur">
           <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3">
             <Link href="/" className="flex items-center gap-2 font-semibold text-slate-900">
               <span className="grid h-8 w-8 place-items-center rounded-lg bg-blue-800 text-sm font-bold text-white">AO</span>

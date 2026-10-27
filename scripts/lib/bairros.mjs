@@ -15,7 +15,7 @@ const LUGAR = "(?:jardim|jd\\.?|vila|vl\\.?|parque|pq\\.?|bairro|bairros|conjunt
 // Nomes que também são palavras comuns, santos ou rodovias: só contam com um prefixo de lugar.
 const AMBIGUOS = new Set([
   "alianca", "bandeiras", "bela vista", "bonfim", "castelo branco", "centro", "padroeira", "platina", "raposo tavares", "santa fe",
-  "santa maria", "santo antonio", "sao pedro", "metalurgicos", "pestana", "veloso", "baronesa", "remedios", "umuarama", "bonanca",
+  "santa maria", "santo antonio", "sao pedro", "metalurgicos", "veloso", "baronesa", "remedios", "umuarama", "bonanca",
 ]);
 
 // Grafias alternativas encontradas nos documentos.
@@ -30,6 +30,7 @@ const VARIANTES = {
   "jardim conceicao": ["jardim conceicao", "jd\\.? conceicao", "bairro conceicao"],
   "vila menck": ["vila menck", "vila menk", "vl\\.? menck"],
   "vila campesina": ["vila campesina", "bairro campesina"],
+  pestana: ["(?:do|no|bairro|jardim|jd\\.?|vila) pestana"],
   "munhoz junior": ["munhoz junior", "munhoz jr\\.?"],
   "city bussocaba": ["city bussocaba"],
   "cidade de deus": ["cidade de deus"],
@@ -101,5 +102,33 @@ export async function localizadorDeBairros() {
         if (dentroDoAnel(lon, lat, externo) && !buracos.some((b) => dentroDoAnel(lon, lat, b))) return a.id;
     }
     return null;
+  };
+}
+
+// Documentos que citam uma unidade de saúde ou escola pelo nome ("UBS José Groff", "Hospital Municipal
+// Antônio Giglio"), sem dizer o bairro. O bairro vem do cadastro da unidade (CNES e Censo Escolar).
+// Para não confundir com nomes de pessoas homenageadas, o tipo do equipamento precisa vir logo antes do nome.
+const PREFIXO_EQUIPAMENTO =
+  /^(UBS|USF|UNIDADE BASICA DE SAUDE|CENTRO DE SAUDE|PA|PS|UPA|CAPS( AD| IJ| II| III)?|AMA|HOSPITAL|POLICLINICA|EMEF|EMEI|EMEIEF|EE|E E|ESCOLA ESTADUAL|ESCOLA MUNICIPAL|CEMEI|CEU|CRECHE|COLEGIO|ESCOLA|CENTRO DE ESPECIALIDADES|AMBULATORIO)( (DE|DA|DO|DR|DRA|PROF|PROFA|PROFESSOR|PROFESSORA|PE|PADRE|ENSINO FUNDAMENTAL|EDUCACAO INFANTIL))*\s+/;
+const TIPO_ANTES =
+  /(UBS|USF|UNIDADE BASICA|POSTO DE SAUDE|PRONTO SOCORRO|PRONTO ATENDIMENTO|UPA|HOSPITAL|CAPS|POLICLINICA|AMBULATORIO|ESCOLA|EMEF|EMEI|EMEIEF|CEMEI|CRECHE|COLEGIO| EE | E E |CEU)( [A-Z]+){0,4} $/;
+const maiusculo = (s) => ` ${String(s ?? "").normalize("NFD").replace(/\p{M}/gu, "").toUpperCase().replace(/[^A-Z0-9 ]/g, " ").replace(/\s+/g, " ").trim()} `;
+
+export function reconhecedorDeEquipamentos() {
+  const ler = (f) => (existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null);
+  const saude = ler("data/territorio/saude.json")?.unidades ?? [];
+  const escolas = (ler("data/territorio/escolas.json")?.escolas ?? []).filter((e) => e.rede !== "Privada");
+  const equipamentos = [...saude, ...escolas]
+    .filter((x) => x.bairro)
+    .map((x) => ({ nome: x.nome, bairro: x.bairro, nucleo: ` ${maiusculo(x.nome).trim().replace(PREFIXO_EQUIPAMENTO, "").trim()} ` }))
+    .filter((x) => x.nucleo.trim().split(" ").length >= 2 && x.nucleo.trim().length >= 10);
+  return (texto) => {
+    const t = maiusculo(texto);
+    const achados = [];
+    for (const e of equipamentos) {
+      const i = t.indexOf(e.nucleo);
+      if (i >= 0 && TIPO_ANTES.test(t.slice(Math.max(0, i - 45), i + 1)) && !achados.some((a) => a.bairro === e.bairro)) achados.push(e);
+    }
+    return achados.map(({ nome, bairro }) => ({ nome, bairro }));
   };
 }
