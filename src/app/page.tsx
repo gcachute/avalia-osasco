@@ -164,7 +164,7 @@ export default function Home() {
           titulo="Quanto custa a Câmara"
           subtitulo={
             camara.requerimentosParados
-              ? `E um dado que chama atenção: ${camara.requerimentosParados} requerimentos de informação ao Executivo estão na Ordem do Dia desde o início da legislatura, sessão após sessão, sem ir a votação. Eles aparecem no perfil de cada autor.`
+              ? `${camara.requerimentosParados} requerimentos de informação ao Executivo estão na Ordem do Dia desde o início da legislatura sem votação registrada. A lista está no perfil de cada autor.`
               : undefined
           }
         >

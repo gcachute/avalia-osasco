@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import type { FeatureCollection, Geometry } from "geojson";
 import { MapaBairros, type BairroDesenho, type FavelaDesenho, type PontoDesenho } from "@/components/MapaBairros";
 import { Secao } from "@/components/ui";
@@ -26,49 +25,11 @@ export default function PaginaMapa() {
     d: caminho(f) ?? "",
   }));
 
-  // ---------- achados (calculados com os dados, não escritos à mão) ----------
-  const habitados = mapa.bairros.filter((b) => b.censo && !b.censo.poucosMoradores && b.censo.rendaMedia != null);
-  const porRenda = habitados.slice().sort((a, b) => a.censo!.rendaMedia! - b.censo!.rendaMedia!);
-  const quarto = Math.max(1, Math.floor(porRenda.length / 4));
-  const taxa = (lista: typeof habitados) => (lista.reduce((a, b) => a + b.citacoes, 0) / lista.reduce((a, b) => a + b.censo!.pessoas, 0)) * 1e4;
-  const pobres = porRenda.slice(0, quarto);
-  const ricos = porRenda.slice(-quarto);
-  const menosEsgoto = habitados.filter((b) => b.censo!.esgoto != null).sort((a, b) => a.censo!.esgoto! - b.censo!.esgoto!)[0];
-  const menor = (k: "calcada" | "bueiro" | "iluminacao") => habitados.filter((b) => b.censo![k] != null).sort((a, b) => a.censo![k]! - b.censo![k]!)[0];
-  const semCalcada = menor("calcada");
-  const semBueiro = menor("bueiro");
-  // Saúde: bairro mais populoso sem nenhuma unidade do SUS cadastrada.
-  const semUnidade = habitados.filter((b) => !b.saude?.length).sort((a, b) => b.censo!.pessoas - a.censo!.pessoas);
-  const maisCrime = habitados.filter((b) => b.seguranca).sort((a, b) => b.seguranca!.roubos.n - a.seguranca!.roubos.n)[0];
-
   const semCitacao = mapa.bairros.filter((b) => b.citacoes === 0);
   const popSem = semCitacao.reduce((a, b) => a + (b.censo?.pessoas ?? b.populacao ?? 0), 0);
   const unidadesSus = mapa.bairros.reduce((a, b) => a + (b.saude?.length ?? 0), 0);
   const escolasPublicas = mapa.bairros.reduce((a, b) => a + (b.escolas?.filter((e) => e.rede !== "Privada").length ?? 0), 0);
 
-  const achados = [
-    habitados.length > 8 && {
-      rotulo: "Renda × atenção",
-      texto: `Nos ${quarto} bairros mais pobres saíram ${num(taxa(pobres), 1)} documentos por 10 mil moradores; nos ${quarto} mais ricos, ${num(taxa(ricos), 1)}.`,
-    },
-    menosEsgoto && {
-      rotulo: "Saneamento",
-      texto: `${menosEsgoto.nome} tem só ${num(menosEsgoto.censo!.esgoto!, 0)}% das casas na rede de esgoto (Osasco: ${num(mapa.cidade?.esgoto ?? 0, 0)}%) e foi citado em ${menosEsgoto.citacoes} ${menosEsgoto.citacoes === 1 ? "documento" : "documentos"}.`,
-    },
-    semCalcada &&
-      semBueiro && {
-        rotulo: "Rua",
-        texto: `Em ${semCalcada.nome}, só ${num(semCalcada.censo!.calcada!, 0)}% das casas têm calçada na quadra (Osasco: ${num(mapa.cidade?.calcada ?? 0, 0)}%). Bueiro, o pior é ${semBueiro.nome}: ${num(semBueiro.censo!.bueiro!, 0)}% (Osasco: ${num(mapa.cidade?.bueiro ?? 0, 0)}%).`,
-      },
-    semUnidade.length > 0 && {
-      rotulo: "Saúde",
-      texto: `${semUnidade.length} bairros com moradores não têm nenhuma unidade do SUS cadastrada; o maior é ${semUnidade[0].nome}, com ${semUnidade[0].censo!.pessoas.toLocaleString("pt-BR")} moradores. Osasco tem ${num((unidadesSus / (mapa.cidade?.pessoas ?? 1)) * 1e4, 1)} unidades por 10 mil habitantes.`,
-    },
-    maisCrime && {
-      rotulo: "Segurança",
-      texto: `${maisCrime.nome} teve ${maisCrime.seguranca!.roubos.n.toLocaleString("pt-BR")} roubos registrados em ${mapa.anoSeguranca}, o maior número entre os bairros com moradores.`,
-    },
-  ].filter(Boolean) as { rotulo: string; texto: string; href?: string }[];
 
   return (
     <>
@@ -100,28 +61,6 @@ export default function PaginaMapa() {
           </dl>
         </div>
       </section>
-
-      {achados.length > 0 && (
-        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-          {achados.map((a) => {
-            const corpo = (
-              <>
-                <div className="text-xs font-semibold uppercase tracking-wide text-blue-800">{a.rotulo}</div>
-                <p className="mt-1 text-sm text-slate-700">{a.texto}</p>
-              </>
-            );
-            return a.href ? (
-              <Link key={a.rotulo} href={a.href} className="revelar rounded-2xl border border-slate-200 bg-white p-4 transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md">
-                {corpo}
-              </Link>
-            ) : (
-              <div key={a.rotulo} className="revelar rounded-2xl border border-slate-200 bg-white p-4">
-                {corpo}
-              </div>
-            );
-          })}
-        </div>
-      )}
 
       <div className="mt-6">
         <MapaBairros
