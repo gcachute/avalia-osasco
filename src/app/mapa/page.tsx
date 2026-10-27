@@ -55,21 +55,16 @@ export default function PaginaMapa() {
   const comPrefeito = mapa.bairros.filter((b) => b.eleicao?.prefeito?.[0]?.pct != null);
   const prefMin = comPrefeito.slice().sort((a, b) => a.eleicao!.prefeito![0].pct! - b.eleicao!.prefeito![0].pct!)[0];
   const prefMax = comPrefeito.slice().sort((a, b) => b.eleicao!.prefeito![0].pct! - a.eleicao!.prefeito![0].pct!)[0];
-  const emExercicio = dados.vereadores.filter((v) => v.emExercicio);
-  const concentracao = emExercicio
-    .map((v) => {
-      const x = mapa.votosVereador[v.id];
-      const [bairro, votos] = Object.entries(x?.porBairro ?? {})[0] ?? [];
-      return x && bairro ? { v, bairro, pct: (votos / x.total) * 100 } : null;
-    })
-    .filter((x): x is NonNullable<typeof x> => x != null)
-    .sort((a, b) => b.pct - a.pct)[0];
-  const nomeBairro = (id: string) => info.get(id)?.nome ?? id;
+  const menor = (k: "calcada" | "bueiro" | "iluminacao") => habitados.filter((b) => b.censo![k] != null).sort((a, b) => a.censo![k]! - b.censo![k]!)[0];
+  const semCalcada = menor("calcada");
+  const semBueiro = menor("bueiro");
+  // Saúde: bairro mais populoso sem nenhuma unidade do SUS cadastrada.
+  const semUnidade = habitados.filter((b) => !b.saude?.length).sort((a, b) => b.censo!.pessoas - a.censo!.pessoas);
   const maisCrime = habitados.filter((b) => b.seguranca).sort((a, b) => b.seguranca!.roubos.n - a.seguranca!.roubos.n)[0];
 
   const semCitacao = mapa.bairros.filter((b) => b.citacoes === 0);
   const popSem = semCitacao.reduce((a, b) => a + (b.censo?.pessoas ?? b.populacao ?? 0), 0);
-  const unidadesSus = mapa.pontos.filter((p) => p.tipo === "saude").length;
+  const unidadesSus = mapa.bairros.reduce((a, b) => a + (b.saude?.length ?? 0), 0);
   const escolasPublicas = mapa.bairros.reduce((a, b) => a + (b.escolas?.filter((e) => e.rede !== "Privada").length ?? 0), 0);
 
   const achados = [
@@ -86,10 +81,14 @@ export default function PaginaMapa() {
         rotulo: "Eleição 2024",
         texto: `${titulo(mapa.prefeitoEleicao[0]?.nome ?? "")} teve de ${num(prefMin.eleicao!.prefeito![0].pct!, 0)}% (${prefMin.nome}) a ${num(prefMax.eleicao!.prefeito![0].pct!, 0)}% (${prefMax.nome}) dos votos válidos, conforme o bairro.`,
       },
-    concentracao && {
-      rotulo: "Voto concentrado",
-      texto: `${num(concentracao.pct, 0)}% dos votos de ${concentracao.v.nome} vieram de um só bairro: ${nomeBairro(concentracao.bairro)}.`,
-      href: `/vereadores/${concentracao.v.id}`,
+    semCalcada &&
+      semBueiro && {
+        rotulo: "Rua",
+        texto: `Em ${semCalcada.nome}, só ${num(semCalcada.censo!.calcada!, 0)}% das casas têm calçada na quadra (Osasco: ${num(mapa.cidade?.calcada ?? 0, 0)}%). Bueiro, o pior é ${semBueiro.nome}: ${num(semBueiro.censo!.bueiro!, 0)}% (Osasco: ${num(mapa.cidade?.bueiro ?? 0, 0)}%).`,
+      },
+    semUnidade.length > 0 && {
+      rotulo: "Saúde",
+      texto: `${semUnidade.length} bairros com moradores não têm nenhuma unidade do SUS cadastrada; o maior é ${semUnidade[0].nome}, com ${semUnidade[0].censo!.pessoas.toLocaleString("pt-BR")} moradores. Osasco tem ${num((unidadesSus / (mapa.cidade?.pessoas ?? 1)) * 1e4, 1)} unidades por 10 mil habitantes.`,
     },
     maisCrime && {
       rotulo: "Segurança",

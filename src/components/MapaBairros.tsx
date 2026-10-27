@@ -576,7 +576,10 @@ export function MapaBairros({
                       <span className="ml-auto">{dataCurta(i.data)}</span>
                     </div>
                     <p className="mt-0.5 line-clamp-2 text-slate-700">{i.texto}</p>
-                    <div className="mt-0.5 text-[11px] text-slate-500">{i.autorNome}</div>
+                    <div className="mt-0.5 text-[11px] text-slate-500">
+                      {i.autorNome}
+                      {i.via && ` · via ${i.via[0].toLowerCase().replace(/(^|\s)(\p{L})/gu, (m) => m.toUpperCase())}`}
+                    </div>
                   </li>
                 ))}
                 {!feed.length && <li className="text-xs text-slate-500">Nenhum documento com estes filtros.</li>}
