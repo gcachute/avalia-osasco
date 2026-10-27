@@ -408,7 +408,7 @@ const prefeito = {
     decretosLidos: decretos.size,
   },
   projetos: projetosExecutivo.map((x) => ({ ...x, temas: temasDoProjeto(x.ementa) })).sort((a, b) => b.ano - a.ano || b.numero - a.numero),
-  vetos: [...vetos.values()],
+  vetos: [...vetos.values()].map((x) => ({ ...x, temas: temasDoProjeto(x.resumo) })),
 };
 
 // ---------- custo da Câmara ----------
