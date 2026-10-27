@@ -30,6 +30,10 @@ export default function Metodologia() {
           Período atual: <b>{dataBR(dados.periodo.inicio)}</b> a <b>{dataBR(dados.periodo.fim)}</b>, {dados.sessoes.length} sessões ({ordinarias}{" "}
           ordinárias). Sessões cuja planilha ainda não foi baixada ficam de fora até a próxima atualização.
         </p>
+        <p className="mt-3 text-slate-700">
+          Fotos: site da Câmara ou, na falta dela, a foto de candidatura de 2024 do TSE. Logos dos partidos: Wikimedia Commons, a partir do
+          Wikidata; quando não há logo atual confiável, aparece a sigla.
+        </p>
       </Secao>
 
       <Secao titulo="Nota dos vereadores" id="vereadores">

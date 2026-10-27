@@ -1,4 +1,4 @@
-import { faixa, nota } from "@/lib/formato";
+import { comBase, faixa, nota } from "@/lib/formato";
 import { Foto } from "./Foto";
 
 export function Avatar({ nome, foto, tamanho = 40 }: { nome: string; foto: string | null; tamanho?: number }) {
@@ -27,6 +27,26 @@ export function Retrato({ nome, foto, className = "" }: { nome: string; foto: st
         classeIniciais="grid h-full w-full place-items-center bg-gradient-to-br from-blue-50 to-slate-100 text-4xl font-semibold text-blue-900"
       />
     </div>
+  );
+}
+
+// Partido: logo oficial quando existe (fundo branco fixo, para aparecer também no tema escuro);
+// sem logo, a sigla num selo neutro.
+export function SeloPartido({ sigla, logo, grande = false }: { sigla: string | null; logo?: string | null; grande?: boolean }) {
+  if (!sigla) return null;
+  if (logo)
+    return (
+      <span
+        className={`inline-flex shrink-0 items-center rounded-md px-1.5 ring-1 ring-slate-200 ${grande ? "h-8" : "h-6"}`}
+        style={{ background: "#fff" }}
+        title={sigla}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={comBase(logo)} alt={`Partido: ${sigla}`} className={`w-auto max-w-24 object-contain ${grande ? "h-6" : "h-4"}`} loading="lazy" />
+      </span>
+    );
+  return (
+    <span className={`inline-flex shrink-0 items-center rounded-md bg-slate-900 px-2 font-semibold text-white ${grande ? "h-8 text-sm" : "h-6 text-xs"}`}>{sigla}</span>
   );
 }
 

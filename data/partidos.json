@@ -1,0 +1,62 @@
+{
+ "UNIAO": {
+  "arquivo": "/partidos/uniao.png",
+  "nome": "União Brasil",
+  "fonte": "Wikimedia Commons, União Brasil logo.svg",
+  "url": "https://commons.wikimedia.org/wiki/File:Uni%C3%A3o%20Brasil%20logo.svg"
+ },
+ "PDT": {
+  "arquivo": "/partidos/pdt.png",
+  "nome": "Partido Democrático Trabalhista",
+  "fonte": "Wikimedia Commons, PDT logo 2026 (cropped).png",
+  "url": "https://commons.wikimedia.org/wiki/File:PDT%20logo%202026%20(cropped).png"
+ },
+ "PT": {
+  "arquivo": "/partidos/pt.png",
+  "nome": "Partido dos Trabalhadores",
+  "fonte": "Wikimedia Commons, PT (Brazil) logo 2021.svg",
+  "url": "https://commons.wikimedia.org/wiki/File:PT%20(Brazil)%20logo%202021.svg"
+ },
+ "AGIR": {
+  "arquivo": "/partidos/agir.png",
+  "nome": "AGIR",
+  "fonte": "Wikimedia Commons, Logomarca do Partido Agir.png",
+  "url": "https://commons.wikimedia.org/wiki/File:Logomarca%20do%20Partido%20Agir.png"
+ },
+ "PL": {
+  "arquivo": "/partidos/pl.png",
+  "nome": "Partido Liberal",
+  "fonte": "Wikimedia Commons, Partido Liberal (Brazil) logo.svg",
+  "url": "https://commons.wikimedia.org/wiki/File:Partido%20Liberal%20(Brazil)%20logo.svg"
+ },
+ "PRD": {
+  "arquivo": "/partidos/prd.png",
+  "nome": "Partido Renovação Democrática",
+  "fonte": "Wikimedia Commons, Partido Renovação Democrática logo.svg",
+  "url": "https://commons.wikimedia.org/wiki/File:Partido%20Renova%C3%A7%C3%A3o%20Democr%C3%A1tica%20logo.svg"
+ },
+ "PSD": {
+  "arquivo": "/partidos/psd.png",
+  "nome": "Partido Social Democrático",
+  "fonte": "Wikimedia Commons, PSD Brazil logo.svg",
+  "url": "https://commons.wikimedia.org/wiki/File:PSD%20Brazil%20logo.svg"
+ },
+ "PSB": {
+  "arquivo": "/partidos/psb.png",
+  "nome": "Partido Socialista Brasileiro",
+  "fonte": "Wikimedia Commons, Logo of the Brazilian Socialist Party (wordmark color).svg",
+  "url": "https://commons.wikimedia.org/wiki/File:Logo%20of%20the%20Brazilian%20Socialist%20Party%20(wordmark%20color).svg"
+ },
+ "AVANTE": {
+  "arquivo": "/partidos/avante.png",
+  "nome": "AVANTE",
+  "fonte": "Wikimedia Commons, Avante 70 (Brasil) logo.svg",
+  "url": "https://commons.wikimedia.org/wiki/File:Avante%2070%20(Brasil)%20logo.svg"
+ },
+ "PCdoB": {
+  "arquivo": "/partidos/pcdob.png",
+  "nome": "Partido Comunista do Brasil",
+  "fonte": "Wikimedia Commons, PCdoB logo.svg",
+  "url": "https://commons.wikimedia.org/wiki/File:PCdoB%20logo.svg"
+ }
+}

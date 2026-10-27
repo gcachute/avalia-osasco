@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { ListaTematica } from "@/components/ListaTematica";
 import { TabelaPares } from "@/components/Fiscal";
 import { Faixa, TabelaIegm } from "@/components/Iegm";
 import { PilarD, PilarE } from "@/components/PilaresDE";
-import { Barra, Cartao, NotaBadge, Retrato, Secao } from "@/components/ui";
+import { Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { AnoFiscal, CidadeFiscal } from "@/lib/dados";
 import { PILARES_PREFEITO, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, num, plural, sessao } from "@/lib/dados";
 import { INDICADORES, primarioTexto, ranking, rotuloPeriodo } from "@/lib/fiscal";
@@ -120,7 +121,7 @@ export default function PaginaPrefeito() {
         <div className="min-w-0 flex-1">
           <h1 className="text-3xl font-bold tracking-tight text-slate-900">{p.nome}</h1>
           <p className="mt-1 flex flex-wrap items-center gap-2 text-slate-600">
-            <span className="rounded-md bg-slate-900 px-2 py-0.5 text-sm font-semibold text-white">{p.partido}</span>
+            <SeloPartido sigla={p.partido} logo={p.partidoLogo} grande />
             {p.cargo} · mandato {p.mandato}
           </p>
           {p.creditoFoto && (
@@ -337,24 +338,26 @@ export default function PaginaPrefeito() {
       </Secao>
 
       <Secao titulo={`Projetos enviados pelo Executivo (${p.projetos.length})`}>
-        <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white">
-          {p.projetos.map((x) => {
+        <p className="-mt-2 mb-3 text-sm text-slate-500">
+          Projetos com o mesmo texto (como os pedidos de crédito adicional ao orçamento) aparecem numa linha só. Filtre por tema ou busque pelo
+          assunto.
+        </p>
+        <ListaTematica
+          agrupar
+          nomes={["projeto", "projetos"]}
+          vazio="Nenhum projeto do Executivo nas sessões analisadas."
+          itens={p.projetos.map((x) => {
             const s = sessao(x.sessao);
-            return (
-              <li key={x.key} className="p-4 text-sm">
-                <div className="font-medium text-slate-900">
-                  {TIPO_NOME[x.tipo] ?? x.tipo} nº {x.numero}/{x.ano}
-                </div>
-                <p className="mt-0.5 text-slate-600">{x.ementa}</p>
-                {s && (
-                  <a href={s.url} className="mt-1 inline-block text-xs text-blue-800 underline">
-                    {nomeSessao(s)} ({dataBR(s.data)})
-                  </a>
-                )}
-              </li>
-            );
+            return {
+              key: x.key,
+              titulo: `${TIPO_NOME[x.tipo] ?? x.tipo} nº ${x.numero}/${x.ano}`,
+              curto: `${x.tipo} ${x.numero}/${x.ano}`,
+              texto: x.ementa,
+              temas: x.temas ?? [],
+              sessao: s ? { rotulo: `${nomeSessao(s)} (${dataBR(s.data)})`, url: s.url } : null,
+            };
           })}
-        </ul>
+        />
       </Secao>
 
       <Secao titulo={`Vetos (${p.vetos.length})`}>

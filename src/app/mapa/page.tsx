@@ -13,7 +13,6 @@ export const metadata: Metadata = { title: "Mapa por bairro" };
 // Osasco é comprida no sentido norte–sul: a altura é fixa e a largura sai da própria geometria.
 const ALTURA = 760;
 const MARGEM = 8;
-const titulo = (s: string) => s.toLowerCase().replace(/(^|\s)(\p{L})/gu, (m) => m.toUpperCase()).replace(/\b(De|Da|Do|Dos|Das|E)\b/g, (m) => m.toLowerCase());
 
 export default function PaginaMapa() {
   const mapa = dados.mapa;
@@ -52,9 +51,6 @@ export default function PaginaMapa() {
   const pobres = porRenda.slice(0, quarto);
   const ricos = porRenda.slice(-quarto);
   const menosEsgoto = habitados.filter((b) => b.censo!.esgoto != null).sort((a, b) => a.censo!.esgoto! - b.censo!.esgoto!)[0];
-  const comPrefeito = mapa.bairros.filter((b) => b.eleicao?.prefeito?.[0]?.pct != null);
-  const prefMin = comPrefeito.slice().sort((a, b) => a.eleicao!.prefeito![0].pct! - b.eleicao!.prefeito![0].pct!)[0];
-  const prefMax = comPrefeito.slice().sort((a, b) => b.eleicao!.prefeito![0].pct! - a.eleicao!.prefeito![0].pct!)[0];
   const menor = (k: "calcada" | "bueiro" | "iluminacao") => habitados.filter((b) => b.censo![k] != null).sort((a, b) => a.censo![k]! - b.censo![k]!)[0];
   const semCalcada = menor("calcada");
   const semBueiro = menor("bueiro");
@@ -76,11 +72,6 @@ export default function PaginaMapa() {
       rotulo: "Saneamento",
       texto: `${menosEsgoto.nome} tem só ${num(menosEsgoto.censo!.esgoto!, 0)}% das casas na rede de esgoto (Osasco: ${num(mapa.cidade?.esgoto ?? 0, 0)}%) e foi citado em ${menosEsgoto.citacoes} ${menosEsgoto.citacoes === 1 ? "documento" : "documentos"}.`,
     },
-    prefMin &&
-      prefMax && {
-        rotulo: "Eleição 2024",
-        texto: `${titulo(mapa.prefeitoEleicao[0]?.nome ?? "")} teve de ${num(prefMin.eleicao!.prefeito![0].pct!, 0)}% (${prefMin.nome}) a ${num(prefMax.eleicao!.prefeito![0].pct!, 0)}% (${prefMax.nome}) dos votos válidos, conforme o bairro.`,
-      },
     semCalcada &&
       semBueiro && {
         rotulo: "Rua",

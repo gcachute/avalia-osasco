@@ -27,6 +27,8 @@ const nameKey = (s) =>
   slug(clean(s).replace(/\s*-\s*president[ea].*$/i, "").replace(/\s*\(suplente\)\s*$/i, "").replace(/^(pra\.|vereador[a]?)\s+/i, ""));
 
 const fotos = existsSync("data/fotos.json") ? JSON.parse(readFileSync("data/fotos.json", "utf8")) : {};
+// Logos dos partidos salvos no repositório (npm run coletar:partidos).
+const logos = existsSync("data/partidos.json") ? JSON.parse(readFileSync("data/partidos.json", "utf8")) : {};
 const aliases = new Map();
 for (const v of config.vereadores) for (const a of [v.nome, ...(v.apelidos ?? [])]) aliases.set(nameKey(a), v.id);
 // O nome completo do perfil oficial também vale como apelido (alguns ofícios usam o nome de registro).
@@ -280,7 +282,7 @@ const vereadores = [...pessoas.values()].map((p) => {
   const justificadas = Math.min(faltas, p.justificativas.length);
   const props = [...proposicoes.values()].filter((x) => x.autor === p.id);
   const projetos = props.filter((x) => metodologia.tiposProjeto.includes(x.tipo)).map((x) => ({ ...x, classe: classificarProjeto(x.ementa), temas: temasDoProjeto(x.ementa) }));
-  const honrarias = props.filter((x) => !metodologia.tiposProjeto.includes(x.tipo));
+  const honrarias = props.filter((x) => !metodologia.tiposProjeto.includes(x.tipo)).map((x) => ({ ...x, temas: temasDoProjeto(x.ementa) }));
   const reqs = [...requerimentos.values()].filter((x) => x.autor === p.id);
   const naPauta = [...pautaRequerimentos.values()].filter((x) => x.autor === p.id);
   const leis = [...sancoes.values()].filter((x) => x.autor === p.id);
@@ -292,6 +294,7 @@ const vereadores = [...pessoas.values()].map((p) => {
     nome: cfg.nomeExibicao ?? perfil?.nome ?? cfg.nome ?? p.nomePlanilha,
     partido: cfg.partido ?? perfil?.partido ?? null,
     partidoNome: cfg.partidoNome ?? perfil?.partidoNome ?? null,
+    partidoLogo: logos[cfg.partido ?? perfil?.partido]?.arquivo ?? null,
     // Foto salva no repositório (npm run coletar:fotos); sem ela, o endereço original.
     foto: fotos[p.id]?.arquivo ?? cfg.foto ?? perfil?.foto ?? null,
     fotoFonte: fotos[p.id]?.fonte ?? (cfg.foto || perfil?.foto ? "Câmara Municipal de Osasco" : null),
@@ -355,8 +358,8 @@ const vereadores = [...pessoas.values()].map((p) => {
     requerimentosNaPauta: naPauta
       .map((x) => ({ ...x, aindaNaPauta: x.ultima === sessoesOrdenadas.at(-1)?.id }))
       .sort((a, b) => a.ano - b.ano || a.numero - b.numero),
-    leis,
-    vetos: [...vetos.values()].filter((x) => x.autor === p.id),
+    leis: leis.map((x) => ({ ...x, temas: temasDoProjeto(x.resumo) })),
+    vetos: [...vetos.values()].filter((x) => x.autor === p.id).map((x) => ({ ...x, temas: temasDoProjeto(x.resumo) })),
     adiadas: p.adiadasPorAusencia,
   };
 });
@@ -365,7 +368,7 @@ const notasVereadores = calcularNotas(vereadores, metodologia);
 vereadores.sort((a, b) => (b.nota ?? -1) - (a.nota ?? -1) || a.nome.localeCompare(b.nome));
 vereadores.forEach((v, i) => (v.posicao = v.nota === null ? null : i + 1));
 
-const pf = { ...config.prefeito, ...(fotos.prefeito && { foto: fotos.prefeito.arquivo, creditoFoto: fotos.prefeito.fonte, creditoFotoUrl: "https://divulgacandcontas.tse.jus.br/" }) };
+const pf = { ...config.prefeito, partidoLogo: logos[config.prefeito.partido]?.arquivo ?? null, ...(fotos.prefeito && { foto: fotos.prefeito.arquivo, creditoFoto: fotos.prefeito.fonte, creditoFotoUrl: "https://divulgacandcontas.tse.jus.br/" }) };
 const projetosExecutivo = [...proposicoes.values()].filter((x) => x.autor === "prefeito");
 const fiscal = calcularFiscal();
 // A nota final do prefeito só sai quando os pilares com dado somarem a cobertura mínima do peso total.
@@ -404,7 +407,7 @@ const prefeito = {
     leisDoExecutivo: [...sancoes.values()].filter((x) => x.autor === "prefeito").length,
     decretosLidos: decretos.size,
   },
-  projetos: projetosExecutivo.sort((a, b) => b.ano - a.ano || b.numero - a.numero),
+  projetos: projetosExecutivo.map((x) => ({ ...x, temas: temasDoProjeto(x.ementa) })).sort((a, b) => b.ano - a.ano || b.numero - a.numero),
   vetos: [...vetos.values()],
 };
 

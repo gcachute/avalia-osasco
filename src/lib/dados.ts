@@ -3,9 +3,9 @@ import bruto from "@/data/dados.json";
 export * from "./formato";
 
 export type Sessao = { id: string; numero: number; tipo: "ordinaria" | "extraordinaria"; data: string; url: string };
-export type Proposicao = { key: string; tipo: string; numero: number; ano: number; autor: string; ementa: string; sessao: string };
-export type Lei = { key: string; lei: string; data: string; autor: string; resumo: string; sessao: string };
-export type Veto = { key: string; tipo: string; numero: string; projeto: string; autor: string; resumo: string; sessao: string };
+export type Proposicao = { key: string; tipo: string; numero: number; ano: number; autor: string; ementa: string; sessao: string; temas?: string[] };
+export type Lei = { key: string; lei: string; data: string; autor: string; resumo: string; sessao: string; temas?: string[] };
+export type Veto = { key: string; tipo: string; numero: string; projeto: string; autor: string; resumo: string; sessao: string; temas?: string[] };
 
 export type RequerimentoNaPauta = {
   key: string;
@@ -132,6 +132,7 @@ export type Vereador = {
   nome: string;
   partido: string | null;
   partidoNome: string | null;
+  partidoLogo: string | null;
   foto: string | null;
   fotoFonte: string | null;
   perfilOficial: string | null;
@@ -314,6 +315,7 @@ export type Dados = {
     nome: string;
     cargo: string;
     partido: string;
+    partidoLogo?: string | null;
     mandato: string;
     foto: string | null;
     creditoFoto?: string;
