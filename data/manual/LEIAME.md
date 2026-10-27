@@ -8,20 +8,26 @@ Portal: https://cmo.rdmsistemas.com.br/portalcidadao/ (é o link "Folha de Pagam
 
 Caminho: **Transparência → Prestando Contas → Outras Informações → Quadro Geral de Pessoal → Folha de pagamento sintético**
 
-Primeiro, gere **um arquivo de teste**, para conferir se o relatório separa os servidores por gabinete:
+Para cada mês, gere:
 
-- Ano: 2026 · Mês: Setembro · Folha: `FN - FOLHA NORMAL SET26`
-- Situação: Ativo · Vínculo: Comissionado
-- Formato: **Excel** → Visualizar → salve aqui como `folha-2026-09-comissionado.xls`
+- Ano e mês · Folha: a `FN - FOLHA NORMAL` do mês
+- Situação: **Ativo** · Vínculo: **em branco** (todos)
+- Formato: **Html** → Visualizar (libere as janelas pop-up do navegador)
 
-Se o relatório mostrar lotação ou gabinete, gere o mesmo relatório para cada mês de 2025 e 2026, com o nome `folha-AAAA-MM-comissionado.xls`. Também vale gerar o vínculo **Agente Político** (os próprios vereadores) com o nome `folha-AAAA-MM-agente-politico.xls`.
+O portal devolve um `.zip` com as páginas do relatório. Salve em `data/cache/folha/AAAA-MM-todos.zip` (essa pasta não vai para o git, porque o arquivo tem nomes de servidores) e rode `npm run ler:folha` e depois `npm run dados`. Também são aceitos `AAAA-MM-agente-politico.zip` e `AAAA-MM-comissionado.zip`.
 
-Se der **"Erro de transporte HTTP: Connection timed out"** (resposta 409), a falha é do servidor da Câmara, que não alcançou o gerador de relatórios. Dá para tentar:
+O que o relatório tem e o que não tem (conferido em 27/10/2026):
 
-1. o formato **Html** ou **PDF** em vez de Excel;
-2. de novo em outro horário (cedo de manhã costuma ser melhor);
-3. como plano B, na mesma pasta: **"Cargos e Salários 2026"** (arquivo pronto, não passa pelo gerador);
-4. se continuar falhando, um pedido pela Lei de Acesso à Informação (veja o modelo no fim).
+- tem, por pessoa: matrícula, nome, proventos, descontos, líquido, admissão e **cargo**;
+- **não tem a lotação** (o gabinete de cada assessor). Por isso o site mostra os totais por cargo e uma média por gabinete, não o custo de cada gabinete.
+
+Se der **"Erro de transporte HTTP: Connection timed out"** (resposta 409), a falha é do servidor da Câmara; tente de novo mais tarde.
+
+### Recurso à Ouvidoria (pedido de 27/10/2026)
+
+A resposta de 27/10/2026 indicou o Portal do Cidadão, mas o relatório de lá não informa o gabinete. Texto sugerido para responder ao mesmo protocolo (prazo de recurso: 10 dias, art. 15 da Lei 12.527/2011):
+
+> Prezados, agradeço a resposta ao meu pedido de acesso à informação de 27/10/2026 (informe aqui o número do protocolo). O relatório "Folha de pagamento sintético" do Portal do Cidadão informa cargo e remuneração, mas não informa a lotação de cada servidor, e por isso não atende à parte do pedido que trata do gabinete de lotação. Com base no art. 15 da Lei nº 12.527/2011, apresento recurso e reitero o pedido, em formato aberto (CSV ou Excel), da relação mensal, de janeiro de 2025 até o mês mais recente, dos servidores comissionados lotados nos gabinetes dos vereadores, com cargo, gabinete (vereador) de lotação e remuneração bruta. Caso não seja possível informar nomes, peço a mesma relação apenas com matrícula ou sem identificação, agrupada por gabinete. Agradeço também a informação de que a Câmara não paga diárias, auxílios ou verbas de gabinete aos vereadores.
 
 ## 2. Requerimentos e indicações (pilar C e mapa por bairro)
 

@@ -1,8 +1,280 @@
 {
  "fonte": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/inf10sp.def",
  "fonteNascidos": "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinasc/cnv/nvsp.def",
- "coletadoEm": "2026-10-26T21:09:01.124Z",
+ "coletadoEm": "2026-10-27T14:00:14.951Z",
  "anos": {
+  "2015": {
+   "3509502": {
+    "obitos": 130,
+    "nascidos": 16196
+   },
+   "3518800": {
+    "obitos": 260,
+    "nascidos": 22315
+   },
+   "3534401": {
+    "obitos": 115,
+    "nascidos": 11012
+   },
+   "3543402": {
+    "obitos": 83,
+    "nascidos": 8834
+   },
+   "3547809": {
+    "obitos": 95,
+    "nascidos": 9258
+   },
+   "3548708": {
+    "obitos": 95,
+    "nascidos": 11252
+   },
+   "3549904": {
+    "obitos": 123,
+    "nascidos": 9808
+   },
+   "3552205": {
+    "obitos": 98,
+    "nascidos": 9446
+   }
+  },
+  "2016": {
+   "3509502": {
+    "obitos": 137,
+    "nascidos": 15159
+   },
+   "3518800": {
+    "obitos": 260,
+    "nascidos": 20969
+   },
+   "3534401": {
+    "obitos": 139,
+    "nascidos": 10317
+   },
+   "3543402": {
+    "obitos": 83,
+    "nascidos": 8037
+   },
+   "3547809": {
+    "obitos": 75,
+    "nascidos": 8802
+   },
+   "3548708": {
+    "obitos": 106,
+    "nascidos": 10761
+   },
+   "3549904": {
+    "obitos": 82,
+    "nascidos": 9562
+   },
+   "3552205": {
+    "obitos": 94,
+    "nascidos": 8935
+   }
+  },
+  "2017": {
+   "3509502": {
+    "obitos": 137,
+    "nascidos": 15433
+   },
+   "3518800": {
+    "obitos": 246,
+    "nascidos": 21219
+   },
+   "3534401": {
+    "obitos": 120,
+    "nascidos": 10179
+   },
+   "3543402": {
+    "obitos": 77,
+    "nascidos": 8378
+   },
+   "3547809": {
+    "obitos": 69,
+    "nascidos": 9095
+   },
+   "3548708": {
+    "obitos": 102,
+    "nascidos": 10974
+   },
+   "3549904": {
+    "obitos": 91,
+    "nascidos": 9743
+   },
+   "3552205": {
+    "obitos": 90,
+    "nascidos": 9267
+   }
+  },
+  "2018": {
+   "3509502": {
+    "obitos": 137,
+    "nascidos": 15060
+   },
+   "3518800": {
+    "obitos": 280,
+    "nascidos": 21112
+   },
+   "3534401": {
+    "obitos": 114,
+    "nascidos": 9975
+   },
+   "3543402": {
+    "obitos": 73,
+    "nascidos": 8404
+   },
+   "3547809": {
+    "obitos": 82,
+    "nascidos": 8995
+   },
+   "3548708": {
+    "obitos": 101,
+    "nascidos": 10723
+   },
+   "3549904": {
+    "obitos": 102,
+    "nascidos": 9686
+   },
+   "3552205": {
+    "obitos": 96,
+    "nascidos": 9418
+   }
+  },
+  "2019": {
+   "3509502": {
+    "obitos": 110,
+    "nascidos": 14583
+   },
+   "3518800": {
+    "obitos": 255,
+    "nascidos": 20479
+   },
+   "3534401": {
+    "obitos": 119,
+    "nascidos": 9564
+   },
+   "3543402": {
+    "obitos": 87,
+    "nascidos": 8153
+   },
+   "3547809": {
+    "obitos": 69,
+    "nascidos": 8990
+   },
+   "3548708": {
+    "obitos": 95,
+    "nascidos": 9889
+   },
+   "3549904": {
+    "obitos": 95,
+    "nascidos": 9076
+   },
+   "3552205": {
+    "obitos": 93,
+    "nascidos": 8914
+   }
+  },
+  "2020": {
+   "3509502": {
+    "obitos": 109,
+    "nascidos": 13637
+   },
+   "3518800": {
+    "obitos": 198,
+    "nascidos": 19175
+   },
+   "3534401": {
+    "obitos": 95,
+    "nascidos": 8911
+   },
+   "3543402": {
+    "obitos": 57,
+    "nascidos": 8009
+   },
+   "3547809": {
+    "obitos": 74,
+    "nascidos": 8598
+   },
+   "3548708": {
+    "obitos": 82,
+    "nascidos": 9158
+   },
+   "3549904": {
+    "obitos": 82,
+    "nascidos": 8682
+   },
+   "3552205": {
+    "obitos": 76,
+    "nascidos": 8963
+   }
+  },
+  "2021": {
+   "3509502": {
+    "obitos": 119,
+    "nascidos": 12839
+   },
+   "3518800": {
+    "obitos": 220,
+    "nascidos": 18279
+   },
+   "3534401": {
+    "obitos": 100,
+    "nascidos": 8381
+   },
+   "3543402": {
+    "obitos": 75,
+    "nascidos": 7750
+   },
+   "3547809": {
+    "obitos": 68,
+    "nascidos": 7992
+   },
+   "3548708": {
+    "obitos": 93,
+    "nascidos": 8576
+   },
+   "3549904": {
+    "obitos": 80,
+    "nascidos": 8545
+   },
+   "3552205": {
+    "obitos": 112,
+    "nascidos": 8677
+   }
+  },
+  "2022": {
+   "3509502": {
+    "obitos": 128,
+    "nascidos": 12654
+   },
+   "3518800": {
+    "obitos": 234,
+    "nascidos": 17612
+   },
+   "3534401": {
+    "obitos": 121,
+    "nascidos": 8118
+   },
+   "3543402": {
+    "obitos": 77,
+    "nascidos": 7945
+   },
+   "3547809": {
+    "obitos": 78,
+    "nascidos": 7625
+   },
+   "3548708": {
+    "obitos": 72,
+    "nascidos": 8030
+   },
+   "3549904": {
+    "obitos": 84,
+    "nascidos": 8072
+   },
+   "3552205": {
+    "obitos": 92,
+    "nascidos": 8814
+   }
+  },
   "2023": {
    "3509502": {
     "obitos": 106,

@@ -150,6 +150,23 @@
   --mapa-hachura: #334155;
 }
 
+/* Gráficos de linha (séries históricas): três cores validadas para daltonismo, nos dois temas,
+   e um cinza para a referência da cidade (sempre tracejada). */
+:root {
+  --grafico-1: #2563eb;
+  --grafico-2: #ea580c;
+  --grafico-3: #0d9488;
+  --grafico-ref: #64748b;
+  --grafico-grade: #e2e8f0;
+}
+.dark {
+  --grafico-1: #3b82f6;
+  --grafico-2: #ea580c;
+  --grafico-3: #0d9488;
+  --grafico-ref: #94a3b8;
+  --grafico-grade: #1e293b;
+}
+
 .mapa-bairro {
   transition:
     fill 0.6s cubic-bezier(0.22, 1, 0.36, 1),
@@ -216,9 +233,23 @@
 .mapa-rotulo {
   fill: var(--mapa-rotulo);
   stroke: var(--mapa-halo);
-  stroke-width: 3px;
+  stroke-width: calc(3px / var(--k, 1));
   paint-order: stroke;
   pointer-events: none;
+}
+/* Zoom do mapa: --k é o fator atual. Marcadores e ondas ficam do mesmo tamanho na tela;
+   com as ruas ligadas, as cores ficam mais transparentes conforme se aproxima. */
+.mapa-escala {
+  transform: scale(calc(1 / var(--k, 1)));
+}
+.mapa-com-ruas .mapa-bairro {
+  fill-opacity: clamp(0.22, calc(1 - var(--k, 1) * 0.12), 0.86);
+}
+.mapa-ruas {
+  filter: saturate(0.55) brightness(1.04);
+}
+.dark .mapa-ruas {
+  filter: invert(1) hue-rotate(180deg) saturate(0.4) brightness(0.8) contrast(0.95);
 }
 @media (prefers-reduced-motion: reduce) {
   .mapa-entrada .mapa-bairro,
@@ -239,4 +270,28 @@
     opacity: 0;
     transform: translateX(8px);
   }
+}
+
+/* Logo: a íris segue o ponteiro (Logo.tsx) e o olho pisca de vez em quando. */
+.logo-iris {
+  transition: transform 0.25s ease-out;
+}
+.logo-palpebra {
+  transform-origin: 24px 24px;
+  animation: logo-piscar 7s infinite;
+}
+a:hover .logo-palpebra {
+  animation: logo-piscar-ja 0.35s;
+}
+@keyframes logo-piscar {
+  0%, 94%, 100% { transform: scaleY(1); }
+  96% { transform: scaleY(0.08); }
+}
+@keyframes logo-piscar-ja {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.08); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-palpebra, a:hover .logo-palpebra { animation: none; }
+  .logo-iris { transition: none; }
 }

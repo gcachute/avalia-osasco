@@ -1,0 +1,1432 @@
+{
+ "ano": 2022,
+ "rreoPeriodo": 6,
+ "rgfPeriodo": 3,
+ "coletadoEm": "2026-10-27T13:56:13.131Z",
+ "cidades": {
+  "3509502": {
+   "fontes": {
+    "rreo14": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3509502&no_anexo=RREO-Anexo%2014",
+    "rreo01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3509502&no_anexo=RREO-Anexo%2001",
+    "rgf01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rgf?an_exercicio=2022&in_periodicidade=Q&nr_periodo=3&co_tipo_demonstrativo=RGF&co_poder=E&id_ente=3509502&no_anexo=RGF-Anexo%2001"
+   },
+   "rreo14": [
+    {
+     "cod_conta": "ReceitaCorrenteLiquidaDemonstrativoSimplificado",
+     "coluna": "Até o Bimestre",
+     "valor": 6641804642.78,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rreo01": [
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 6278457324,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 7314276419.67,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": 833446497.94,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 6565086656.8,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 749189762.87,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 1376035503.04,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 6266743851.37,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 1047532568.3,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 6120900146.67,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 298342805.43,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 260072570,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 498788141.26,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": -33120762.97,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 206161351.98,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 292626789.28,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 86504139.49,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 183644472.04,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 315143669.22,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 164256489.54,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 22516879.94,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rgf01": [
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "Valor",
+     "valor": 2282911080.66,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "% sobre a RCL Ajustada",
+     "valor": 34.43,
+     "rotulo": "Padrão"
+    }
+   ]
+  },
+  "3518800": {
+   "fontes": {
+    "rreo14": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3518800&no_anexo=RREO-Anexo%2014",
+    "rreo01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3518800&no_anexo=RREO-Anexo%2001",
+    "rgf01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rgf?an_exercicio=2022&in_periodicidade=Q&nr_periodo=3&co_tipo_demonstrativo=RGF&co_poder=E&id_ente=3518800&no_anexo=RGF-Anexo%2001"
+   },
+   "rreo14": [
+    {
+     "cod_conta": "ReceitaCorrenteLiquidaDemonstrativoSimplificado",
+     "coluna": "Até o Bimestre",
+     "valor": 5188230670.35,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rreo01": [
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 5575750846.39,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 6485555130.92,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": 582107856.74,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 5175020315.47,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 1310534815.45,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 944460381.69,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 4757492773.23,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 1728062357.69,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 4592768594.79,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 417527542.24,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 814704822.93,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 912054856.72,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": -55454366.99,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 274802742.83,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 637252113.89,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 77856392.16,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 174963457.21,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 737091399.51,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 143494068.25,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 99839285.62,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rgf01": [
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "Valor",
+     "valor": 2005382769.58,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "% sobre a RCL Ajustada",
+     "valor": 38.72,
+     "rotulo": "Padrão"
+    }
+   ]
+  },
+  "3534401": {
+   "fontes": {
+    "rreo14": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3534401&no_anexo=RREO-Anexo%2014",
+    "rreo01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3534401&no_anexo=RREO-Anexo%2001",
+    "rgf01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rgf?an_exercicio=2022&in_periodicidade=Q&nr_periodo=3&co_tipo_demonstrativo=RGF&co_poder=E&id_ente=3534401&no_anexo=RGF-Anexo%2001"
+   },
+   "rreo14": [
+    {
+     "cod_conta": "ReceitaCorrenteLiquidaDemonstrativoSimplificado",
+     "coluna": "Até o Bimestre",
+     "valor": 3921821098.4,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rreo01": [
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 3862888594,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 4289162438.36,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": 599325182.26,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 3955914210.25,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 333248228.11,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 925497093.61,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 3692636586.76,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 596525851.6,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 3468560841.01,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 263277623.49,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 259722469,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 275206966.94,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": 11630461.67,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 119905403,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 155301563.94,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 38692680.66,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 93401976.69,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 181804990.25,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 74662253.67,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 26503426.31,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rgf01": [
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "Valor",
+     "valor": 1298265018.9,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "% sobre a RCL Ajustada",
+     "valor": 33.14,
+     "rotulo": "Padrão"
+    }
+   ]
+  },
+  "3543402": {
+   "fontes": {
+    "rreo14": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3543402&no_anexo=RREO-Anexo%2014",
+    "rreo01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3543402&no_anexo=RREO-Anexo%2001",
+    "rgf01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rgf?an_exercicio=2022&in_periodicidade=Q&nr_periodo=3&co_tipo_demonstrativo=RGF&co_poder=E&id_ente=3543402&no_anexo=RGF-Anexo%2001"
+   },
+   "rreo14": [
+    {
+     "cod_conta": "ReceitaCorrenteLiquidaDemonstrativoSimplificado",
+     "coluna": "Até o Bimestre",
+     "valor": 3269054833.79,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rreo01": [
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 3447020904.1,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 4044759427.85,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": 410802008.57,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 3469984172.59,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 574775255.26,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 782112215.83,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 3308857973.6,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 735901454.25,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 3129796380.9,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 161126198.99,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 381127425.16,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 538306491.17,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": -53304857.09,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 224048870.02,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 314257621.15,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 46509072.2,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 172841857.51,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 365464633.66,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 167433953.37,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 51207012.51,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rgf01": [
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "Valor",
+     "valor": 1356481845.31,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "% sobre a RCL Ajustada",
+     "valor": 41.57,
+     "rotulo": "Padrão"
+    }
+   ]
+  },
+  "3547809": {
+   "fontes": {
+    "rreo14": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3547809&no_anexo=RREO-Anexo%2014",
+    "rreo01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3547809&no_anexo=RREO-Anexo%2001",
+    "rgf01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rgf?an_exercicio=2022&in_periodicidade=Q&nr_periodo=3&co_tipo_demonstrativo=RGF&co_poder=E&id_ente=3547809&no_anexo=RGF-Anexo%2001"
+   },
+   "rreo14": [
+    {
+     "cod_conta": "ReceitaCorrenteLiquidaDemonstrativoSimplificado",
+     "coluna": "Até o Bimestre",
+     "valor": 3128535009.51,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 550513031.26,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 25,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 25.44,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 275010981.05,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 70,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 87.33,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 628872784.77,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 15,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 29.27,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rreo01": [
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 3547100000,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 3965189234.05,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": 519428850.98,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 3364542109.6,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 600647124.45,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 719125941.66,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 3153353989.9,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 811835244.15,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 3047622416.11,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 211188119.7,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 619522000,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 614327078.98,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": 8273374.67,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 222843631.16,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 391483447.82,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 45135397,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 143470251.91,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 470856827.07,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 116173591.64,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 79373379.25,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rgf01": [
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "Valor",
+     "valor": 1301383247.02,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "% sobre a RCL Ajustada",
+     "valor": 42.02,
+     "rotulo": "Padrão"
+    }
+   ]
+  },
+  "3548708": {
+   "fontes": {
+    "rreo14": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3548708&no_anexo=RREO-Anexo%2014",
+    "rreo01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3548708&no_anexo=RREO-Anexo%2001",
+    "rgf01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rgf?an_exercicio=2022&in_periodicidade=Q&nr_periodo=3&co_tipo_demonstrativo=RGF&co_poder=E&id_ente=3548708&no_anexo=RGF-Anexo%2001"
+   },
+   "rreo14": [
+    {
+     "cod_conta": "ReceitaCorrenteLiquidaDemonstrativoSimplificado",
+     "coluna": "Até o Bimestre",
+     "valor": 4856639648.12,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 819400454.7,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 25,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 25.63,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 384876156.74,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 70,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 74.44,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 731885456.46,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 15,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 23.03,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rreo01": [
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 5582948000,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 6332585353.23,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": 379977882.72,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 5444324115.94,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 888261237.29,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 976590311.89,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 5169925313.88,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 1162660039.35,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 5104153665.61,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 274398802.06,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 1130883000,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 1368431286.03,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": 67469696.13,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 664367850.38,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 704063435.65,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 132669657.25,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 538130621.71,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 830300664.32,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 510967489.18,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 126237228.67,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rgf01": [
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "Valor",
+     "valor": 1379159948.11,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "% sobre a RCL Ajustada",
+     "valor": 28.43,
+     "rotulo": "Padrão"
+    }
+   ]
+  },
+  "3549904": {
+   "fontes": {
+    "rreo14": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3549904&no_anexo=RREO-Anexo%2014",
+    "rreo01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3549904&no_anexo=RREO-Anexo%2001",
+    "rgf01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rgf?an_exercicio=2022&in_periodicidade=Q&nr_periodo=3&co_tipo_demonstrativo=RGF&co_poder=E&id_ente=3549904&no_anexo=RGF-Anexo%2001"
+   },
+   "rreo14": [
+    {
+     "cod_conta": "ReceitaCorrenteLiquidaDemonstrativoSimplificado",
+     "coluna": "Até o Bimestre",
+     "valor": 3438612506.13,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 668927347.78,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 25,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 25.34,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 375618628.55,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 70,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 79.39,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 729902870.97,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 15,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 27.86,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rreo01": [
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 3587524000,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 4140727797.45,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": 436356586.25,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 3838106958.47,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 302620838.98,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 764406289.03,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 3673655274.36,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 467072523.09,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 3608214918.88,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 164451684.11,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 286550000,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 338632021.07,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": -19999503.92,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 242120590.02,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 96511431.05,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 43430990.23,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 217335857.93,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 121296163.14,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 209907655.45,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 24784732.09,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rgf01": [
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "Valor",
+     "valor": 1040259014.53,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "% sobre a RCL Ajustada",
+     "valor": 30.29,
+     "rotulo": "Padrão"
+    }
+   ]
+  },
+  "3552205": {
+   "fontes": {
+    "rreo14": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3552205&no_anexo=RREO-Anexo%2014",
+    "rreo01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=2022&nr_periodo=6&co_tipo_demonstrativo=RREO&id_ente=3552205&no_anexo=RREO-Anexo%2001",
+    "rgf01": "https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rgf?an_exercicio=2022&in_periodicidade=Q&nr_periodo=3&co_tipo_demonstrativo=RGF&co_poder=E&id_ente=3552205&no_anexo=RGF-Anexo%2001"
+   },
+   "rreo14": [
+    {
+     "cod_conta": "ReceitaCorrenteLiquidaDemonstrativoSimplificado",
+     "coluna": "Até o Bimestre",
+     "valor": 3571323649.5,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 559778807.73,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 25,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDasReceitasDeImpostosNaManutencaoEDesenvolvimentoDoEnsinoDemonstrativoSimplificado",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 25.26,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 353317048.43,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 70,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "MinimoAnualDoFUNDEBNaRemuneracaoDoMagisterioComEducacaoInfantilEnsinoFundamentalEMedioDemonstrativoSimplificado",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 92.04,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "Valor Apurado Até o Bimestre",
+     "valor": 602315184.31,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "% Mínimo a Aplicar no Exercício",
+     "valor": 15,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "AplicacaoTotalDasDespesasComAcoesEServicosPublicosDeSaude",
+     "coluna": "% Aplicado Até o Bimestre",
+     "valor": 27.37,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rreo01": [
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 3435634337.6,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 3962100851.92,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": 142799178.36,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 3610142411.09,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 351958440.83,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 624279347.37,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 3541398698.13,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 420702153.79,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 3535307345.84,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesasExcetoIntraOrcamentarias",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 68743712.96,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO INICIAL (d)",
+     "valor": 469434184.33,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DOTAÇÃO ATUALIZADA (e)",
+     "valor": 413262337.96,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS NO BIMESTRE",
+     "valor": -51949956.45,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS EMPENHADAS ATÉ O BIMESTRE (f)",
+     "valor": 149200676.84,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (g) = (e-f)",
+     "valor": 264061661.12,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS NO BIMESTRE",
+     "valor": 33838519.8,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)",
+     "valor": 130571603.09,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "SALDO (i) = (e-h)",
+     "valor": 282690734.87,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "DESPESAS PAGAS ATÉ O BIMESTRE (j)",
+     "valor": 130169742.01,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "Investimentos",
+     "coluna": "INSCRITAS EM RESTOS A PAGAR NÃO PROCESSADOS (k)",
+     "valor": 18629073.75,
+     "rotulo": "Padrão"
+    }
+   ],
+   "rgf01": [
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "Valor",
+     "valor": 1520166113.54,
+     "rotulo": "Padrão"
+    },
+    {
+     "cod_conta": "DespesaComPessoalTotal",
+     "coluna": "% sobre a RCL Ajustada",
+     "valor": 42.64,
+     "rotulo": "Padrão"
+    }
+   ]
+  }
+ }
+}

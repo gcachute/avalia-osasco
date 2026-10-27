@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Link from "next/link";
 import { Animacoes } from "@/components/Animacoes";
+import { Logo } from "@/components/Logo";
 import { Nav } from "@/components/Nav";
 import { NovaAba } from "@/components/NovaAba";
 import { BotaoTema, SCRIPT_TEMA } from "@/components/Tema";
@@ -11,14 +12,14 @@ import "./globals.css";
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: { default: "Avalia Osasco — como trabalham os políticos de Osasco", template: "%s · Avalia Osasco" },
+  title: { default: "De Olh OZ — de olho nos políticos de Osasco", template: "%s · De Olh OZ" },
   description: "Notas e indicadores dos vereadores e do prefeito de Osasco, calculados a partir de dados oficiais da Câmara Municipal.",
 };
 
 const NAV = [
-  { href: "/", nome: "Ranking" },
-  { href: "/mapa", nome: "Mapa" },
+  { href: "/", nome: "Painel" },
   { href: "/prefeito", nome: "Prefeito" },
+  { href: "/evolucao", nome: "Evolução" },
   { href: "/metodologia", nome: "Metodologia" },
 ];
 
@@ -33,9 +34,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <NovaAba />
         <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur">
           <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3">
-            <Link href="/" className="flex items-center gap-2 font-semibold text-slate-900">
-              <span className="grid h-8 w-8 place-items-center rounded-lg bg-blue-800 text-sm font-bold text-white">AO</span>
-              Avalia Osasco
+            <Link href="/" aria-label="De Olh OZ, página inicial">
+              <Logo />
             </Link>
             <nav className="-mx-1 flex max-w-full items-center gap-1 overflow-x-auto px-1 text-sm">
               <Nav itens={NAV} />

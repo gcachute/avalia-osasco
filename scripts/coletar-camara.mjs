@@ -2,17 +2,27 @@
 // Portal da Transparência Municipal: https://transparencia.tce.sp.gov.br/api/json/despesas/{municipio}/{ano}/{mes}
 // Gera data/camara-despesas.json com totais por ano e mês e os maiores fornecedores.
 // Pagamentos a pessoas físicas entram só no total, sem nome nem documento.
-import { writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { baixar, sleep } from "./lib/baixar.mjs";
 
 const MUNICIPIO = "osasco";
 const ORGAO = /c[aâ]mara municipal/i;
-const ANOS = [2025, new Date().getFullYear()].filter((a, i, l) => l.indexOf(a) === i);
+// Desde o primeiro ano da gestão anterior, para comparar com o passado. Anos já fechados e baixados antes não são
+// pedidos de novo (cada mês da API tem alguns MB): só o ano atual e o anterior são atualizados.
+const DESDE = Number(process.env.DESDE ?? 2017);
+const ATUAL = new Date().getFullYear();
+const ANOS = Array.from({ length: ATUAL - DESDE + 1 }, (_, i) => DESDE + i);
+const ARQUIVO = "data/camara-despesas.json";
+const anterior = existsSync(ARQUIVO) ? JSON.parse(readFileSync(ARQUIVO, "utf8")).anos : {};
 const valor = (s) => Number(String(s).replace(/\./g, "").replace(",", ".")) || 0;
 const EVENTO = { Empenhado: "empenhado", "Valor Liquidado": "liquidado", "Valor Pago": "pago", "Anulação": "anulado" };
 
 const anos = {};
 for (const ano of ANOS) {
+  if (anterior[ano] && ano < ATUAL - 1) {
+    anos[ano] = anterior[ano];
+    continue;
+  }
   const meses = [];
   const fornecedores = {};
   for (let mes = 1; mes <= 12; mes++) {
@@ -49,7 +59,7 @@ for (const ano of ANOS) {
 }
 
 writeFileSync(
-  "data/camara-despesas.json",
+  ARQUIVO,
   JSON.stringify(
     {
       fonte: "TCE-SP, Portal da Transparência Municipal (dados do sistema AUDESP)",
@@ -61,4 +71,4 @@ writeFileSync(
     1,
   ),
 );
-console.log("Gravado data/camara-despesas.json");
+console.log(`Gravado ${ARQUIVO}: ${Object.keys(anos).join(", ")}`);

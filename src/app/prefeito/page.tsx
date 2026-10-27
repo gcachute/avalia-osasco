@@ -6,7 +6,7 @@ import { geometriaBairros } from "@/lib/mapaGeo";
 import { TabelaPares } from "@/components/Fiscal";
 import { Faixa, TabelaIegm } from "@/components/Iegm";
 import { PilarD, PilarE } from "@/components/PilaresDE";
-import { Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
+import { AvisoParcial, Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { AnoFiscal, CidadeFiscal } from "@/lib/dados";
 import { PILARES_PREFEITO, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, num, plural, sessao } from "@/lib/dados";
 import { INDICADORES, primarioTexto, ranking, rotuloPeriodo } from "@/lib/fiscal";
@@ -109,8 +109,6 @@ export default function PaginaPrefeito() {
   const i = p.indicadores;
   const f = p.fiscal;
   const ie = p.iegm;
-  const pesos = dados.metodologia.prefeito.pesos;
-  const pesoTotal = Object.values(pesos).reduce((a, b) => a + b, 0);
   const anoNota = f && [...f.anos].reverse().find((a) => a.completo && a.mandato);
   const focoNota = anoNota?.cidades.find((c) => c.foco);
   const anoParcial = f?.anos.find((a) => !a.completo && a.mandato);
@@ -133,7 +131,7 @@ export default function PaginaPrefeito() {
       valores: pctPorBairro,
       formato: "pct",
       escala: "faixa",
-      link: "/mapa/?indicador=prefeito",
+      link: "/?indicador=prefeito",
     },
     {
       chave: "docs",
@@ -142,7 +140,7 @@ export default function PaginaPrefeito() {
       valores: docsPorBairro,
       formato: "inteiro",
       escala: "zero",
-      link: "/mapa/?indicador=citacoes&origem=prefeitura",
+      link: "/?indicador=citacoes&origem=prefeitura",
     },
   ];
   const mapaPrefeito = mapa && (
@@ -178,29 +176,19 @@ export default function PaginaPrefeito() {
             </p>
           )}
         </div>
-        <div className="text-right">
-          <NotaBadge valor={p.nota} grande />
-          <p className="mt-1 text-sm text-slate-500">{p.nota == null ? "nota final em construção" : p.provisoria ? "nota provisória do mandato" : "nota do mandato"}</p>
-        </div>
+        <p className="max-w-xs text-sm text-slate-500">Sem nota geral: cada pilar abaixo tem a sua nota, com os dados e a conta por trás.</p>
       </header>
 
-      {p.nota == null && (
-        <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-          <b>A nota final ainda não foi publicada.</b> Ela é formada por cinco pilares. Os pilares com dados do mandato valem{" "}
-          {Math.round(p.cobertura * 100)}% do peso. A nota final só aparece quando houver dados para pelo menos{" "}
-          {Math.round(dados.metodologia.prefeito.coberturaMinima * 100)}% do peso, para não julgar o prefeito só pelas contas.
-        </div>
-      )}
+      <AvisoParcial alvo="prefeito" className="mt-4" />
 
-      {p.nota != null && p.provisoria && (
-        <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-          <b>Nota provisória.</b> Ela é a média ponderada dos pilares que já têm dados do mandato, que somam {Math.round(p.cobertura * 100)}% do peso.
-          Ainda falta{PILARES_PREFEITO.filter((x) => p.pilares[x.chave]?.nota == null).length > 1 ? "m" : ""}:{" "}
+      {PILARES_PREFEITO.some((x) => p.pilares[x.chave]?.nota == null) && (
+        <p className="mt-6 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-600">
+          Ainda sem dados do mandato:{" "}
           {PILARES_PREFEITO.filter((x) => p.pilares[x.chave]?.nota == null)
             .map((x) => `${x.chave} (${x.nome})`)
             .join(", ")}
-          . A nota é recalculada sozinha quando os dados saírem.
-        </div>
+          . A nota desse pilar aparece quando a fonte publicar os dados de 2025.
+        </p>
       )}
 
       <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-5">
@@ -209,7 +197,7 @@ export default function PaginaPrefeito() {
           return (
             <a key={pl.chave} href={pl.pronto ? `#pilar-${pl.chave}` : undefined} className={`rounded-xl border bg-white p-4 ${pl.pronto ? "border-slate-200 hover:border-blue-300" : "border-dashed border-slate-300"}`}>
               <div className="text-xs font-medium uppercase tracking-wide text-slate-400">
-                Pilar {pl.chave} · {Math.round((pesos[pl.chave] / pesoTotal) * 100)}%
+                Pilar {pl.chave}
               </div>
               <div className="mt-1 text-sm font-medium text-slate-900">{pl.nome}</div>
               <div className="mt-2">

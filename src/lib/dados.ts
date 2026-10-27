@@ -37,6 +37,20 @@ export type Camara = {
     coletadoEm: string;
     anos: Record<string, { pago: number; meses: number; maioresFornecedores: { nome: string; pago: number }[] }>;
   } | null;
+  folha: {
+    fonte: string;
+    url: string;
+    nota: string;
+    meses: Record<
+      string,
+      {
+        todos: { pessoas: number; bruto: number } | null;
+        comissionados: { pessoas: number; bruto: number } | null;
+        gabinetes: { pessoas: number; bruto: number; porCargo: { cargo: string; pessoas: number; bruto: number }[] };
+        vereadores: { pessoas: number; bruto: number; porVereador: { id: string; bruto: number }[] };
+      }
+    >;
+  } | null;
   requerimentosParados: number;
 };
 
@@ -153,9 +167,9 @@ export type Vereador = {
     mesa: string | null;
   } | null;
   emExercicio: boolean;
-  nota: number | null;
-  posicao: number | null;
-  cobertura: number;
+  // Sem nota geral: participação, produção e eficiência (0 a 1), e a posição em cada um.
+  coeficientes: Record<Coeficiente, number | null>;
+  rankings: Partial<Record<Coeficiente, number>>;
   pilares: Record<PilarVereador, { nota: number | null; ranking?: number; componentes: Record<string, number | null> }>;
   indicadores: {
     sessoes: number;
@@ -181,6 +195,7 @@ export type Vereador = {
     leisSancionadas: number;
     vetosRecebidos: number;
     adiadasPorAusencia: number;
+    producaoPorPresenca: number | null;
   };
   temas: { tema: string; n: number }[];
   atividadePorMes: { mes: string; proposicoes: number }[];
@@ -302,6 +317,45 @@ export type Transparencia = {
 
 export type PilarPrefeito = "A" | "B" | "C" | "D" | "E";
 
+// Séries históricas: Censo 2010 × 2022 e eleições municipais de 2016, 2020 e 2024, por bairro e da cidade.
+export type CampoCenso =
+  | "pessoas" | "domicilios" | "rendaMedia" | "agua" | "esgoto" | "lixo" | "alfabetizados" | "negros" | "criancas" | "idosos"
+  | "pavimentacao" | "bueiro" | "iluminacao" | "calcada" | "rampa" | "arvores";
+export type CensoHistorico = Record<CampoCenso, number | null>;
+export type EleicaoBairroHistorico = {
+  aptos: number | null;
+  comparecimento: number | null;
+  brancosNulos: number | null;
+  eleito: number | null;
+  prefeito: { nome: string; pct: number }[];
+  partidos: { sigla: string; pct: number }[];
+};
+export type EleicaoCidadeHistorico = {
+  aptos: number;
+  comparecimento: number;
+  brancosNulos: number;
+  turnos: { turno: number; candidatos: { nome: string; partido: string; votos: number; pct: number }[] }[];
+  eleito: { nome: string; partido: string };
+  partidos: { sigla: string; pct: number }[];
+};
+export type Historico = {
+  censo: {
+    anos: number[];
+    fontes: { nome: string; url: string }[];
+    notaRenda: string;
+    fatorIpca: number | null;
+    cidade: Record<string, CensoHistorico>;
+    bairros: Record<string, Record<string, CensoHistorico | null>>;
+  } | null;
+  eleicoes: {
+    anos: number[];
+    fonte: { nome: string; url: string };
+    cidade: Record<string, EleicaoCidadeHistorico>;
+    bairros: Record<string, Record<string, EleicaoBairroHistorico | null>>;
+  } | null;
+  populacao: { fonte: string; url: string; censos: { ano: number; pessoas: number }[]; estimativas: { ano: number; pessoas: number }[] } | null;
+};
+
 export type Dados = {
   geradoEm: string;
   periodo: { inicio: string; fim: string };
@@ -324,14 +378,12 @@ export type Dados = {
     creditoFoto?: string;
     creditoFotoUrl?: string;
     perfilOficial: string | null;
-    nota: number | null;
     cobertura: number;
     pilares: Partial<Record<PilarPrefeito, { nota: number | null; anos: number[] }>>;
     fiscal: Fiscal | null;
     iegm: Iegm | null;
     resultados: Resultados | null;
     transparencia: Transparencia | null;
-    provisoria: boolean;
     indicadores: {
       projetosEnviados: number;
       vetosTotais: number;
@@ -345,12 +397,38 @@ export type Dados = {
   };
   camara: Camara;
   mapa: Mapa | null;
+  historico: Historico | null;
 };
 
 export const dados = bruto as unknown as Dados;
 
 const sessoesPorId = new Map(dados.sessoes.map((s) => [s.id, s]));
 export const sessao = (id: string) => sessoesPorId.get(id);
+
+export type Coeficiente = "participacao" | "producao" | "eficiencia";
+
+// Os coeficientes dos vereadores. Não há nota geral: cada coeficiente mostra os pilares que o formam.
+export const COEFICIENTES: { chave: Coeficiente; nome: string; descricao: string; pilares: PilarVereador[] }[] = [
+  {
+    chave: "participacao",
+    nome: "Participação",
+    descricao: "Média de Assiduidade (presença nas sessões e nas votações nominais) e Compromisso com a pauta (itens próprios adiados porque faltou).",
+    pilares: ["A", "E"],
+  },
+  {
+    chave: "producao",
+    nome: "Produção",
+    descricao: "Média de Legislação que importa (projetos de política pública e leis sancionadas) e Fiscalização e comissões (comissões e Mesa Diretora).",
+    pilares: ["B", "C"],
+  },
+  {
+    chave: "eficiencia",
+    nome: "Eficiência",
+    descricao:
+      "O que produziu por sessão em que esteve presente: projetos de política pública (simbólicos valem 0,2) e leis sancionadas a cada 10 presenças. As faltas não entram na conta. Comparado com o percentil 90 entre os vereadores.",
+    pilares: [],
+  },
+];
 
 export const PILARES_VEREADOR: { chave: PilarVereador; nome: string; descricao: string }[] = [
   { chave: "A", nome: "Assiduidade", descricao: "Presença nas sessões (faltas justificadas não contam contra) e participação nas votações nominais. 95% ou mais vale 10; 75% ou menos vale 0." },
