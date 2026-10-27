@@ -82,6 +82,8 @@ export function MapaBairros({
   vereadores,
   favelas,
   anoSeguranca,
+  autor: autorControlado,
+  aoMudarAutor,
 }: {
   bairros: BairroDesenho[];
   itens: ItemMapa[];
@@ -95,12 +97,17 @@ export function MapaBairros({
   vereadores: { id: string; nome: string }[];
   favelas: FavelaDesenho[];
   anoSeguranca: number | null;
+  // Opcional: o autor filtrado pode ser comandado de fora (a lista de vereadores da página inicial).
+  autor?: string;
+  aoMudarAutor?: (id: string) => void;
 }) {
   const meses = useMemo(() => mesesEntre(inicio, fim), [inicio, fim]);
   const [tema, setTema] = useState<Tema>("politica");
   const [chave, setChave] = useState("citacoes");
   const [origem, setOrigem] = useState<Origem>("todos");
-  const [autor, setAutor] = useState("");
+  const [autorInterno, setAutorInterno] = useState("");
+  const autor = autorControlado ?? autorInterno;
+  const setAutor = aoMudarAutor ?? setAutorInterno;
   const [camadas, setCamadas] = useState<Set<Camada>>(new Set());
   const [mes, setMes] = useState(meses.length - 1);
   const [tocando, setTocando] = useState(false);
@@ -245,7 +252,8 @@ export function MapaBairros({
     if (a) setAutor(a);
     const o = q.get("origem");
     if (o === "camara" || o === "prefeitura") setOrigem(o);
-  }, []);
+    // Só na abertura da página: depois, quem manda é quem está navegando.
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const alternarCamada = (c: Camada) =>
     setCamadas((s) => {
@@ -270,6 +278,26 @@ export function MapaBairros({
       <div className="min-w-0 rounded-2xl border border-slate-200 bg-white">
         {/* Tema, indicador e filtros: tudo acima do mapa */}
         <div className="space-y-2 border-b border-slate-100 p-3">
+          {/* Trilha: Osasco › bairro selecionado, e o autor filtrado */}
+          <nav className="flex flex-wrap items-center gap-1.5 text-xs" aria-label="Onde você está no mapa">
+            <button onClick={() => setSelecionado(null)} className={`rounded-md px-2 py-1 font-medium transition ${sel ? "text-slate-500 hover:bg-slate-100 hover:text-slate-900" : "bg-slate-100 text-slate-900"}`}>
+              Osasco
+            </button>
+            {sel && (
+              <>
+                <span className="text-slate-400">›</span>
+                <span className="rounded-md bg-slate-100 px-2 py-1 font-medium text-slate-900">{sel.nome}</span>
+              </>
+            )}
+            {autorAtivo && (
+              <span className="ml-auto inline-flex items-center gap-1 rounded-full bg-blue-50 px-2.5 py-1 font-medium text-blue-900 ring-1 ring-inset ring-blue-200">
+                {nomeVereador.get(autorAtivo) ?? autores.find((a) => a.id === autorAtivo)?.nome ?? autorAtivo}
+                <button onClick={() => setAutor("")} aria-label="Tirar o filtro de autor" className="ml-0.5 rounded-full px-1 text-blue-700 hover:bg-blue-100">
+                  ×
+                </button>
+              </span>
+            )}
+          </nav>
           <div className="flex flex-wrap gap-1" role="tablist" aria-label="Tema">
             {TEMAS.map((t) => (
               <button
