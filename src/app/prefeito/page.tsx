@@ -176,7 +176,7 @@ export default function PaginaPrefeito() {
             </p>
           )}
         </div>
-        <p className="max-w-xs text-sm text-slate-500">Sem nota geral: cada pilar abaixo tem a sua nota, com os dados e a conta por trás.</p>
+        <p className="max-w-xs text-sm text-slate-500">Cada pilar abaixo tem a sua nota, com os dados e a conta por trás.</p>
       </header>
 
       <AvisoParcial alvo="prefeito" className="mt-4" />

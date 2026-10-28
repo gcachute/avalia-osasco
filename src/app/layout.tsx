@@ -12,8 +12,8 @@ import "./globals.css";
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: { default: "De Olh OZ — de olho nos políticos de Osasco", template: "%s · De Olh OZ" },
-  description: "Notas e indicadores dos vereadores e do prefeito de Osasco, calculados a partir de dados oficiais da Câmara Municipal.",
+  title: { default: "De Olho em OZ — os políticos de Osasco em dados oficiais", template: "%s · De Olho em OZ" },
+  description: "Vereadores e prefeito de Osasco em dados oficiais: presença, projetos, contas da Prefeitura e da Câmara, e o retrato de cada bairro no mapa.",
 };
 
 const NAV = [
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <NovaAba />
         <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur">
           <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3">
-            <Link href="/" aria-label="De Olh OZ, página inicial">
+            <Link href="/" aria-label="De Olho em OZ, página inicial">
               <Logo />
             </Link>
             <nav className="-mx-1 flex max-w-full items-center gap-1 overflow-x-auto px-1 text-sm">
@@ -47,11 +47,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <footer className="border-t border-slate-200 bg-white">
           <div className="mx-auto max-w-5xl space-y-2 px-4 py-6 text-sm text-slate-500">
             <p>
-              Projeto independente, sem vínculo com a Câmara Municipal ou a Prefeitura de Osasco. Todos os números vêm dos{" "}
-              <a className="underline hover:text-slate-800" href="https://www.osasco.sp.leg.br/registros-de-presenca-e-votacao">
-                registros oficiais de presença e votação
-              </a>{" "}
-              da Câmara.
+              Projeto independente, sem vínculo com a Câmara Municipal ou a Prefeitura de Osasco. Todos os números vêm de fontes oficiais (Câmara,
+              Tesouro Nacional, TCE-SP, IBGE, TSE, INEP e DataSUS), listadas na{" "}
+              <Link className="underline hover:text-slate-800" href="/metodologia">
+                metodologia
+              </Link>
+              .
             </p>
             <p>
               Dados de {dataBR(dados.periodo.inicio)} a {dataBR(dados.periodo.fim)} · {dados.sessoes.length} sessões analisadas · atualizado em{" "}

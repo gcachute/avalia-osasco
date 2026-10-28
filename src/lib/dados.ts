@@ -167,7 +167,7 @@ export type Vereador = {
     mesa: string | null;
   } | null;
   emExercicio: boolean;
-  // Sem nota geral: participação, produção e eficiência (0 a 1), e a posição em cada um.
+  // Participação, produção e eficiência (0 a 1), e a posição em cada um.
   coeficientes: Record<Coeficiente, number | null>;
   rankings: Partial<Record<Coeficiente, number>>;
   pilares: Record<PilarVereador, { nota: number | null; ranking?: number; componentes: Record<string, number | null> }>;
@@ -407,7 +407,7 @@ export const sessao = (id: string) => sessoesPorId.get(id);
 
 export type Coeficiente = "participacao" | "producao" | "eficiencia";
 
-// Os coeficientes dos vereadores. Não há nota geral: cada coeficiente mostra os pilares que o formam.
+// Os coeficientes dos vereadores: cada coeficiente mostra os pilares que o formam.
 export const COEFICIENTES: { chave: Coeficiente; nome: string; descricao: string; pilares: PilarVereador[] }[] = [
   {
     chave: "participacao",
@@ -434,7 +434,7 @@ export const PILARES_VEREADOR: { chave: PilarVereador; nome: string; descricao: 
   { chave: "A", nome: "Assiduidade", descricao: "Presença nas sessões (faltas justificadas não contam contra) e participação nas votações nominais. 95% ou mais vale 10; 75% ou menos vale 0." },
   { chave: "B", nome: "Legislação que importa", descricao: "Projetos de lei por sessão em exercício. Projeto de política pública vale 1, simbólico (nome de rua, data comemorativa, título) vale 0,2, e cada lei sancionada soma 1." },
   { chave: "C", nome: "Fiscalização e comissões", descricao: "Trabalho nas comissões da Câmara (presidência e relatoria valem mais) e cargos na Mesa Diretora. Requerimentos ao Executivo entram quando houver dados abertos." },
-  { chave: "D", nome: "Custo do mandato", descricao: "Salário do vereador e dos assessores do gabinete. A lei dá a mesma estrutura a todos os gabinetes, então esse custo não separa um vereador do outro e fica fora da nota. Diárias e ressarcimentos por vereador não aparecem nas despesas abertas." },
+  { chave: "D", nome: "Custo do mandato", descricao: "Salário do vereador e dos assessores do gabinete. A lei dá a mesma estrutura a todos os gabinetes, então esse custo não separa um vereador do outro e fica fora da nota. A Câmara informou, por pedido de acesso à informação, que não paga diárias, auxílios ou verbas de gabinete aos vereadores." },
   { chave: "E", nome: "Compromisso com a pauta", descricao: "Itens do próprio vereador adiados porque ele faltou. Nenhum vale 10; 3 ou mais a cada 10 sessões vale 0." },
 ];
 

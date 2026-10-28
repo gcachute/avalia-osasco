@@ -68,7 +68,7 @@ export default async function PaginaMapa() {
         />
       </div>
 
-      <Secao titulo="Como ler o mapa">
+      <Secao titulo="Como ler o mapa" id="como-ler">
         <ul className="list-disc space-y-2 pl-5 text-sm text-slate-700">
           <li>
             <b>Documentos:</b> um documento conta para um bairro quando o texto cita o nome dele (ou uma grafia conhecida, como Quitaúna e
