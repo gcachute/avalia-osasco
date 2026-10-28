@@ -13,7 +13,22 @@ const limpar = (s) => String(s ?? "").replace(/\r\n/g, "\n").trim();
 // Evita que um pedido marque pessoas (@nome) ou feche issues (#123 com "fixes") no GitHub.
 const neutro = (s) => s.replace(/@/g, "@​").replace(/\b(close[sd]?|fix(e[sd])?|resolve[sd]?)\b(\s*#)/gi, "$1​$3");
 
+// Limite de envios por endereço de internet, guardado no cache da Cloudflare (vale por data center; basta contra
+// quem tenta encher a lista de pedidos). O endereço não é guardado em lugar nenhum além dessa contagem.
+const MAXIMO_POR_HORA = 5;
+async function excedeuLimite(request) {
+  const ip = request.headers.get("CF-Connecting-IP");
+  if (!ip || typeof caches === "undefined") return false;
+  const chave = new Request(new URL(`/__limite/correcao/${encodeURIComponent(ip)}`, request.url));
+  const anterior = await caches.default.match(chave);
+  const n = anterior ? Number(await anterior.text()) || 0 : 0;
+  if (n >= MAXIMO_POR_HORA) return true;
+  await caches.default.put(chave, new Response(String(n + 1), { headers: { "Cache-Control": "max-age=3600" } }));
+  return false;
+}
+
 export async function onRequestPost({ request, env }) {
+  if (Number(request.headers.get("Content-Length") ?? 0) > 20000) return resposta(413, { erro: "O pedido ficou grande demais. Resuma o texto e tente de novo." });
   let d;
   try {
     d = await request.json();
@@ -30,6 +45,7 @@ export async function onRequestPost({ request, env }) {
       return resposta(400, { erro: `${nome} precisa ter entre ${min} e ${max} letras.` });
     }
   }
+  if (await excedeuLimite(request)) return resposta(429, { erro: "Você já enviou vários pedidos agora há pouco. Tente de novo daqui a uma hora." });
   if (!env.GITHUB_TOKEN) return resposta(503, { erro: "O envio de pedidos está fora do ar no momento.", semToken: true });
 
   const corpo = [

@@ -15,6 +15,16 @@ const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 export const metadata: Metadata = {
   title: { default: "De Olho em OZ — os políticos de Osasco em dados oficiais", template: "%s · De Olho em OZ" },
   description: "Vereadores e prefeito de Osasco em dados oficiais: presença, projetos, contas da Prefeitura e da Câmara, e o retrato de cada bairro no mapa.",
+  metadataBase: new URL("https://deolhoemoz.com.br"),
+  // Como o site aparece quando alguém compartilha um endereço dele (a imagem vem de opengraph-image.tsx).
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    siteName: "De Olho em OZ",
+    title: "De Olho em OZ",
+    description: "Os vereadores e o prefeito de Osasco em dados oficiais: presença, projetos, contas públicas e o retrato de cada bairro.",
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const NAV = [
