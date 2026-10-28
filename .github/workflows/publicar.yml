@@ -2,7 +2,8 @@ name: Publicar na Cloudflare
 
 # Gera o site e publica na Cloudflare Pages (projeto "deolhoemoz").
 # Push na main: produção (deolhoemoz.com.br). Push em outro branch: prévia em <branch>.deolhoemoz.pages.dev.
-# Precisa dos secrets CLOUDFLARE_API_TOKEN (permissão "Cloudflare Pages: Edit") e CLOUDFLARE_ACCOUNT_ID.
+# Precisa dos secrets CLOUDFLARE_API_TOKEN (permissão "Cloudflare Pages: Edit") e CLOUDFLARE_ACCOUNT_ID; GH_ISSUES_TOKEN liga o formulário de correção.
+# A pasta functions/ (formulário de correção) vai junto: o wrangler a publica como Pages Functions.
 on:
   push:
   workflow_dispatch:
@@ -39,6 +40,17 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx --yes wrangler@4 pages project list | grep -qw "$PROJETO" || npx --yes wrangler@4 pages project create "$PROJETO" --production-branch main
+
+      # Token do GitHub que o formulário de correção usa para abrir issues (functions/api/correcao.js).
+      # Fica guardado na Cloudflare como segredo, em produção e nas prévias. Sem o secret GH_ISSUES_TOKEN, o passo não faz nada.
+      - name: Token do formulário de correção
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          GH_ISSUES_TOKEN: ${{ secrets.GH_ISSUES_TOKEN }}
+        run: |
+          if [ -z "$GH_ISSUES_TOKEN" ]; then echo "Sem GH_ISSUES_TOKEN: o formulário fica sem envio automático."; exit 0; fi
+          jq -n --arg t "$GH_ISSUES_TOKEN" '{deployment_configs: {production: {env_vars: {GITHUB_TOKEN: {type: "secret_text", value: $t}}}, preview: {env_vars: {GITHUB_TOKEN: {type: "secret_text", value: $t}}}}}'             | curl -s -X PATCH "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/$PROJETO"                 -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H "Content-Type: application/json" --data @-             | jq -c '{success, erros: [.errors[]?.message]}'
 
       - name: Publicar
         env:
