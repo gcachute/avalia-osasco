@@ -5,6 +5,7 @@ import { Animacoes } from "@/components/Animacoes";
 import { Logo } from "@/components/Logo";
 import { Nav } from "@/components/Nav";
 import { NovaAba } from "@/components/NovaAba";
+import { PedidoCorrecao } from "@/components/PedidoCorrecao";
 import { BotaoTema, SCRIPT_TEMA } from "@/components/Tema";
 import { dados, dataBR } from "@/lib/dados";
 import "./globals.css";
@@ -56,11 +57,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </p>
             <p>
               Dados de {dataBR(dados.periodo.inicio)} a {dataBR(dados.periodo.fim)} · {dados.sessoes.length} sessões analisadas · atualizado em{" "}
-              {dataBR(dados.geradoEm.slice(0, 10))}. Encontrou um erro? Veja{" "}
-              <Link className="underline hover:text-slate-800" href="/metodologia#correcoes">
-                como pedir correção
-              </Link>
-              .
+              {dataBR(dados.geradoEm.slice(0, 10))}. Encontrou um erro?{" "}
+              <PedidoCorrecao className="underline hover:text-slate-800">Peça uma correção</PedidoCorrecao>.
             </p>
           </div>
         </footer>

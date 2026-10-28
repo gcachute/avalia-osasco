@@ -42,3 +42,6 @@ next-env.d.ts
 
 # downloads grandes (INEP, PNTP)
 /data/cache/
+
+# wrangler pages dev (localhost:3100)
+/.wrangler/

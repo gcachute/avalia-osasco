@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PedidoCorrecao } from "@/components/PedidoCorrecao";
 import { AvisoParcial, Secao } from "@/components/ui";
 import { COEFICIENTES, PILARES_VEREADOR, TIPO_NOME, dados, dataBR, num } from "@/lib/dados";
 
@@ -244,12 +245,16 @@ export default function Metodologia() {
 
       <Secao titulo="Correções" id="correcoes">
         <p className="text-slate-700">
-          Se algum número estiver errado, compare com a fonte oficial (link em cada item) e{" "}
-          <a className="underline" href="https://github.com/gcachute/avalia-osasco/issues/new" target="_blank" rel="noreferrer">
-            abra um pedido de correção
-          </a>{" "}
-          informando a página e o dado. Toda correção é feita na origem dos dados e vale para todos.
+          Se algum número estiver errado, compare com a fonte oficial (link em cada item) e abra um pedido de correção informando a página e o
+          dado. O pedido fica registrado e público no{" "}
+          <a className="underline" href="https://github.com/gcachute/avalia-osasco/issues" target="_blank" rel="noreferrer">
+            GitHub do projeto
+          </a>
+          , onde dá para acompanhar a resposta. Toda correção é feita na origem dos dados e vale para todos.
         </p>
+        <PedidoCorrecao className="mt-4 rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-700">
+          Pedir uma correção
+        </PedidoCorrecao>
       </Secao>
     </article>
   );
