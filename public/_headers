@@ -18,6 +18,8 @@
 # Imagem de compartilhamento: o arquivo gerado não tem extensão.
 /opengraph-image
   Content-Type: image/png
+/apple-icon
+  Content-Type: image/png
 
 # Endereços que não devem aparecer no Google (o endereço oficial é deolhoemoz.com.br).
 https://www.deolhoemoz.com.br/*

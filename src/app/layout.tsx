@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import Link from "next/link";
 import { Animacoes } from "@/components/Animacoes";
 import { Logo } from "@/components/Logo";
-import { Nav } from "@/components/Nav";
+import { BotaoTopo, NavegacaoPagina } from "@/components/NavegacaoPagina";
+import { Nav, NavInferior, type ItemNav } from "@/components/Nav";
 import { NovaAba } from "@/components/NovaAba";
 import { PedidoCorrecao } from "@/components/PedidoCorrecao";
 import { BotaoTema, SCRIPT_TEMA } from "@/components/Tema";
@@ -27,12 +28,21 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
-const NAV = [
-  { href: "/", nome: "Painel" },
-  { href: "/vereadores", nome: "Vereadores" },
-  { href: "/prefeito", nome: "Prefeito" },
-  { href: "/historico", nome: "Histórico" },
-  { href: "/metodologia", nome: "Metodologia" },
+// viewport-fit=cover deixa a barra de baixo respeitar a área do gesto do iPhone; a cor pinta a barra do navegador no celular.
+export const viewport: Viewport = {
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f172a" },
+  ],
+};
+
+const NAV: ItemNav[] = [
+  { href: "/", nome: "Painel", icone: "painel" },
+  { href: "/vereadores", nome: "Vereadores", icone: "vereadores" },
+  { href: "/prefeito", nome: "Prefeito", icone: "prefeito" },
+  { href: "/historico", nome: "Histórico", icone: "historico" },
+  { href: "/metodologia", nome: "Metodologia", icone: "metodologia" },
 ];
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -41,21 +51,27 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <script dangerouslySetInnerHTML={{ __html: SCRIPT_TEMA }} />
       </head>
-      <body className={`${geist.variable} min-h-screen bg-slate-50 font-sans text-slate-800 antialiased transition-colors`}>
+      <body
+        className={`${geist.variable} min-h-screen bg-slate-50 pb-[calc(4.25rem+env(safe-area-inset-bottom))] font-sans text-slate-800 antialiased transition-colors md:pb-0`}
+      >
         <Animacoes />
         <NovaAba />
         <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur">
-          <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-3">
+          <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-2.5 md:py-3">
             <Link href="/" aria-label="De Olho em OZ, página inicial">
               <Logo />
             </Link>
-            <nav className="-mx-1 flex max-w-full items-center gap-1 overflow-x-auto px-1 text-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-              <Nav itens={NAV} />
+            <div className="flex items-center gap-1 text-sm">
+              {/* No celular o menu fica na barra de baixo (NavInferior). */}
+              <nav className="hidden items-center gap-1 md:flex">
+                <Nav itens={NAV} />
+              </nav>
               <BotaoTema />
-            </nav>
+            </div>
           </div>
+          <NavegacaoPagina />
         </header>
-        <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
+        <main className="mx-auto max-w-5xl px-4 py-5 md:py-8">{children}</main>
         <footer className="border-t border-slate-200 bg-white">
           <div className="mx-auto max-w-5xl space-y-2 px-4 py-6 text-sm text-slate-500">
             <p>
@@ -73,6 +89,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </p>
           </div>
         </footer>
+        <BotaoTopo />
+        <NavInferior itens={NAV} />
       </body>
     </html>
   );
