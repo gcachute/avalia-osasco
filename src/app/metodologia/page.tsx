@@ -118,7 +118,9 @@ export default function Metodologia() {
           fonte publicar.
         </p>
         <p className="mt-3 text-slate-700">
-          Os dois pilares usam os relatórios fiscais que a própria Prefeitura entrega ao Tesouro Nacional (RREO e RGF, pelo sistema SICONFI). Osasco é
+          O pilar A usa os relatórios fiscais que a própria Prefeitura entrega ao Tesouro Nacional (RREO e RGF, pelo sistema SICONFI). O pilar B usa o
+          que cada prefeitura declara nos sistemas oficiais de cada área, o SIOPS (saúde) e o SIOPE (educação e FUNDEB); o resumo do RREO só entra
+          quando falta dado neles. Em 2025 Osasco informou números diferentes nos dois lugares, e as outras cidades batem. Osasco é
           comparada com {pares.length} cidades paulistas grandes ({pares.join(", ")}) no mesmo período. Conta só o mandato atual: a nota é a média dos
           anos fechados desde 2025, e 2024 aparece como referência da gestão anterior.
         </p>
@@ -152,7 +154,7 @@ export default function Metodologia() {
               <tr>
                 <td className="px-4 py-3 font-medium text-slate-900">B · Saúde, educação e FUNDEB</td>
                 <td className="px-4 py-3 text-slate-600">
-                  Cumprir o mínimo legal (15%, 25% e 70%) vale 5. Os outros 5 pontos dependem da posição entre as cidades comparadas. Descumprir
+                  Cumprir o mínimo legal (15%, 25% e 70% do FUNDEB; 60% até 2020) vale 5. Os outros 5 pontos dependem da posição entre as cidades comparadas. Descumprir
                   qualquer mínimo zera o pilar.
                 </td>
               </tr>

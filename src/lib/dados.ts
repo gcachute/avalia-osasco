@@ -224,6 +224,9 @@ export type CidadeFiscal = {
   semDados: boolean;
   fontes: Partial<Record<"rreo14" | "rreo01" | "rgf01", string>>;
   indicadores: IndicadoresFiscais;
+  // Saúde, educação e FUNDEB como estão no RREO; a nota usa o SIOPS/SIOPE quando houver (fonteMinimos).
+  rreo?: Partial<Record<"saude" | "educacao" | "fundeb", number | null>>;
+  fonteMinimos?: Partial<Record<"saude" | "educacao" | "fundeb", "SIOPS" | "SIOPE" | "RREO">>;
   posicao: Partial<Record<"saude" | "educacao" | "fundeb" | "pessoal" | "investimento", number | null>>;
   pilares: {
     A: { nota: number | null; ranking?: number; componentes: { pessoal: number | null; investimento: number | null; primario: number | null } };
@@ -453,7 +456,7 @@ export const TIPO_NOME: Record<string, string> = {
 
 export const PILARES_PREFEITO: { chave: PilarPrefeito; nome: string; fonte: string; pronto: boolean }[] = [
   { chave: "A", nome: "Gestão fiscal", fonte: "Tesouro Nacional (SICONFI)", pronto: true },
-  { chave: "B", nome: "Mínimos constitucionais", fonte: "Tesouro Nacional (SICONFI)", pronto: true },
+  { chave: "B", nome: "Mínimos constitucionais", fonte: "SIOPS e SIOPE (Ministério da Saúde e FNDE)", pronto: true },
   { chave: "C", nome: "Qualidade da gestão (IEG-M)", fonte: "TCE-SP", pronto: true },
   { chave: "D", nome: "Resultados para o cidadão", fonte: "INEP e DataSUS", pronto: true },
   { chave: "E", nome: "Transparência e entregas", fonte: "Atricon (PNTP) e TCE-SP", pronto: true },

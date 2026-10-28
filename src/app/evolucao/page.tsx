@@ -244,7 +244,7 @@ export default function Evolucao() {
       {(fiscalAnos.length > 1 || res) && (
         <Secao
           titulo="Prefeitura"
-          subtitulo="Anos fechados, como entregues ao Tesouro Nacional (SICONFI); saúde e mortalidade pelo DataSUS; IDEB pelo INEP."
+          subtitulo="Anos fechados, como entregues ao Tesouro Nacional (SICONFI), ao SIOPS e ao SIOPE; mortalidade pelo DataSUS; IDEB pelo INEP."
         >
           <div className="grid gap-4 lg:grid-cols-2">
             {fiscalAnos.length > 1 && (
@@ -288,7 +288,7 @@ export default function Evolucao() {
                       .filter((a) => a.educacao != null && a.educacao < 25)
                       .map((a) => `${a.ano} (${formatar(a.educacao, "pct")})`)
                       .join(", ")} a educação ficou abaixo do mínimo de 25%; a Emenda Constitucional 119/2022 suspendeu as punições por isso em 2020 e 2021, anos da pandemia.`}{" "}
-                  Para 2025, o resumo enviado ao Tesouro (RREO, usado nas notas do prefeito) traz números diferentes dos declarados aqui; veja a
+                  Para 2025, o resumo enviado ao Tesouro (RREO) traz números diferentes dos declarados aqui; a nota do prefeito usa estes. Veja a
                   página do prefeito.
                 </p>
               </Cartao>

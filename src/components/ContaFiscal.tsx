@@ -158,6 +158,13 @@ export function ContaPilarB({ a, c, f }: { a: AnoFiscal; c: CidadeFiscal; f: Fis
         {linhas.map((l) => (
           <li key={l.k}>
             <b className="capitalize">{l.nome}:</b> Osasco aplicou <b>{pct(l.v)}</b> (mínimo {l.min}%), o {l.lugar}º maior entre {l.entre} → <b>{pts(l.p)}</b>.
+            {c.fonteMinimos?.[l.k] && <span className="text-slate-500"> Fonte: {c.fonteMinimos[l.k]}.</span>}
+            {c.fonteMinimos?.[l.k] !== "RREO" && c.rreo?.[l.k] != null && l.v != null && Math.abs(c.rreo[l.k]! - l.v) >= 1 && (
+              <span className="text-slate-500">
+                {" "}
+                No resumo enviado ao Tesouro (RREO), a Prefeitura informou <b>{pct(c.rreo[l.k])}</b>.
+              </span>
+            )}
           </li>
         ))}
       </ul>
@@ -173,7 +180,11 @@ export function ContaPilarB({ a, c, f }: { a: AnoFiscal; c: CidadeFiscal; f: Fis
           { nome: `FUNDEB (mín. ${m.fundeb}%)`, valor: (x) => pct(x.indicadores.fundeb), pontos: (x) => x.pilares.B.componentes.fundeb },
         ]}
       />
-      <p className="text-xs text-slate-500">Fonte: relatórios fiscais enviados ao Tesouro Nacional (SICONFI), ano de {a.ano}.</p>
+      <p className="text-xs text-slate-500">
+        Fonte: o que cada prefeitura declarou no SIOPS (saúde, Ministério da Saúde) e no SIOPE (educação e FUNDEB, FNDE), ano de {a.ano}. Quando falta
+        dado nesses sistemas, entra o resumo enviado ao Tesouro Nacional (RREO, pelo SICONFI). Diferenças entre os dois aparecem nos avisos sobre a
+        qualidade dos dados.
+      </p>
     </div>
   );
 }

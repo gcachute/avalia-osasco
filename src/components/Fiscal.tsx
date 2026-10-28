@@ -82,9 +82,10 @@ export function TabelaPares({ anos }: { anos: AnoFiscal[] }) {
         </table>
       </div>
       <p className="mt-2 text-xs text-slate-500">
-        Saúde, educação e FUNDEB: % aplicado das receitas (mínimos de 15%, 25% e 70%). Pessoal: despesa com pessoal do Executivo sobre a receita
-        corrente líquida ajustada (limite de 54%). Investimento: investimentos empenhados sobre a despesa total. Resultado primário: diferença para a
-        meta da LDO, em % da RCL. Dados do Executivo de cada cidade, como entregues ao Tesouro.
+        Saúde, educação e FUNDEB: % aplicado das receitas (mínimos de 15%, 25% e 70%; FUNDEB 60% até 2020), como declarado no SIOPS e no SIOPE (no
+        ano em andamento, pelo resumo do RREO). Pessoal: despesa com pessoal do Executivo sobre a receita corrente líquida ajustada (limite de 54%).
+        Investimento: investimentos empenhados sobre a despesa total. Resultado primário: diferença para a meta da LDO, em % da RCL. Dados do
+        Executivo de cada cidade.
       </p>
     </div>
   );
