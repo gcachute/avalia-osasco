@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
-// O site é todo estático: `npm run build` gera a pasta out/, que pode ir para o GitHub Pages
-// ou qualquer hospedagem de arquivos. No GitHub Pages o site fica em /<nome-do-repositório>,
-// então o workflow define BASE_PATH.
+// O site é todo estático: `npm run build` gera a pasta out/, publicada pela Cloudflare Pages na raiz
+// do domínio. BASE_PATH só é preciso para hospedar numa subpasta (como /<repositório> no GitHub Pages).
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,

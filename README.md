@@ -33,8 +33,7 @@ Partidos, fotos, contatos, comissões e Mesa vêm de `npm run coletar:vereadores
 O site é estático: `npm run build` gera a pasta `out/`.
 
 - **Ver no computador:** rode `npm run dev` e abra http://localhost:3000.
-- **GitHub Pages:** o workflow `.github/workflows/pages.yml` publica a cada push na branch `main`. Antes, em *Settings → Pages*, escolha *Source: GitHub Actions*. Atenção: no plano gratuito do GitHub, o Pages só funciona em repositório público. Em repositório privado é preciso o plano Pro (ou Team/Enterprise), e mesmo assim o site publicado fica público.
-- **Vercel ou Netlify:** funcionam com repositório privado no plano gratuito. É só importar o repositório.
+- **Cloudflare Pages:** o workflow `.github/workflows/publicar.yml` gera o site e publica no projeto `deolhoemoz` da Cloudflare (deolhoemoz.com.br). Push na `main` vai para produção; push em outro branch gera uma prévia em `<branch>.deolhoemoz.pages.dev`. A atualização mensal chama a publicação quando há dados novos. Precisa dos secrets `CLOUDFLARE_API_TOKEN` (permissão *Cloudflare Pages: Edit*) e `CLOUDFLARE_ACCOUNT_ID`. O site fica na raiz do domínio, sem `BASE_PATH`.
 
 ## Pendências
 
