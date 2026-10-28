@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-28T01:21:52.097Z",
+ "geradoEm": "2026-10-28T04:03:08.520Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -69190,10 +69190,15 @@
  "historico": {
   "censo": {
    "anos": [
+    2000,
     2010,
     2022
    ],
    "fontes": [
+    {
+     "nome": "IBGE, Censo Demográfico 2000, resultados do universo por bairro (tabelas 3.1.3 a 3.3.5)",
+     "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2000/Dados_do_Universo/Meso_Microregioes_Distritos_Subdistritos_Bairros/Sao_Paulo.zip"
+    },
     {
      "nome": "IBGE, Censo Demográfico 2010, resultados do universo por setor censitário, somados por bairro",
      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2010/Resultados_do_Universo/Agregados_por_Setores_Censitarios/"
@@ -69203,9 +69208,27 @@
      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/"
     }
    ],
-   "notaRenda": "Renda média do responsável com rendimento, corrigida pelo IPCA para julho de 2022 (fator 2,061).",
+   "notaRenda": "Renda média do responsável com rendimento, corrigida pelo IPCA para julho de 2022: fator 3,858 para 2000 (desde agosto de 2000) e 2,061 para 2010 (desde julho de 2010).",
    "fatorIpca": 2.061,
    "cidade": {
+    "2000": {
+     "pessoas": 652593,
+     "domicilios": 181012,
+     "rendaMedia": 3552.9,
+     "agua": 98.6,
+     "esgoto": 70.7,
+     "lixo": 97.5,
+     "alfabetizados": 94.1,
+     "negros": null,
+     "criancas": 27.1,
+     "idosos": 6.9,
+     "pavimentacao": null,
+     "bueiro": null,
+     "iluminacao": null,
+     "calcada": null,
+     "rampa": null,
+     "arvores": null
+    },
     "2010": {
      "pessoas": 666740,
      "domicilios": 201894,
@@ -69245,6 +69268,24 @@
    },
    "bairros": {
     "adalgisa": {
+     "2000": {
+      "pessoas": 4373,
+      "domicilios": 1105,
+      "rendaMedia": 11482,
+      "agua": 99.5,
+      "esgoto": 72.4,
+      "lixo": 99.5,
+      "alfabetizados": 96.3,
+      "negros": null,
+      "criancas": 20.7,
+      "idosos": 7.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 5537,
       "domicilios": 1637,
@@ -69283,6 +69324,24 @@
      }
     },
     "alianca": {
+     "2000": {
+      "pessoas": 17901,
+      "domicilios": 4694,
+      "rendaMedia": 2105,
+      "agua": 90,
+      "esgoto": 42.9,
+      "lixo": 95.2,
+      "alfabetizados": 90.7,
+      "negros": null,
+      "criancas": 33.3,
+      "idosos": 3.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 18820,
       "domicilios": 5465,
@@ -69321,6 +69380,24 @@
      }
     },
     "ayrosa": {
+     "2000": {
+      "pessoas": 22737,
+      "domicilios": 6482,
+      "rendaMedia": 3803,
+      "agua": 100,
+      "esgoto": 65.2,
+      "lixo": 99.7,
+      "alfabetizados": 94.7,
+      "negros": null,
+      "criancas": 24.8,
+      "idosos": 7.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 22589,
       "domicilios": 7042,
@@ -69359,6 +69436,24 @@
      }
     },
     "bandeiras": {
+     "2000": {
+      "pessoas": 19260,
+      "domicilios": 5205,
+      "rendaMedia": 2797,
+      "agua": 99.5,
+      "esgoto": 79.1,
+      "lixo": 96,
+      "alfabetizados": 92.9,
+      "negros": null,
+      "criancas": 30.9,
+      "idosos": 3.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 19626,
       "domicilios": 5616,
@@ -69397,6 +69492,24 @@
      }
     },
     "baronesa": {
+     "2000": {
+      "pessoas": 14136,
+      "domicilios": 3887,
+      "rendaMedia": 2576,
+      "agua": 99.7,
+      "esgoto": 41.6,
+      "lixo": 99.2,
+      "alfabetizados": 92,
+      "negros": null,
+      "criancas": 28.2,
+      "idosos": 5.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 13408,
       "domicilios": 4027,
@@ -69435,6 +69548,24 @@
      }
     },
     "bela-vista": {
+     "2000": {
+      "pessoas": 14757,
+      "domicilios": 4360,
+      "rendaMedia": 4496,
+      "agua": 99.9,
+      "esgoto": 94.7,
+      "lixo": 99.9,
+      "alfabetizados": 97,
+      "negros": null,
+      "criancas": 20.2,
+      "idosos": 12.1,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 13127,
       "domicilios": 4264,
@@ -69473,6 +69604,24 @@
      }
     },
     "bonanca": {
+     "2000": {
+      "pessoas": 11409,
+      "domicilios": 3088,
+      "rendaMedia": 2291,
+      "agua": 77.1,
+      "esgoto": 26.1,
+      "lixo": 65.7,
+      "alfabetizados": 89,
+      "negros": null,
+      "criancas": 36,
+      "idosos": 2.1,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 14068,
       "domicilios": 3928,
@@ -69511,6 +69660,24 @@
      }
     },
     "bonfim": {
+     "2000": {
+      "pessoas": 3181,
+      "domicilios": 909,
+      "rendaMedia": 4389,
+      "agua": 100,
+      "esgoto": 95.8,
+      "lixo": 97,
+      "alfabetizados": 96.7,
+      "negros": null,
+      "criancas": 19.7,
+      "idosos": 11.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 1486,
       "domicilios": 467,
@@ -69549,6 +69716,24 @@
      }
     },
     "bussocaba": {
+     "2000": {
+      "pessoas": 13227,
+      "domicilios": 3594,
+      "rendaMedia": 3052,
+      "agua": 99.6,
+      "esgoto": 61.6,
+      "lixo": 97.1,
+      "alfabetizados": 93.6,
+      "negros": null,
+      "criancas": 28.5,
+      "idosos": 6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 11750,
       "domicilios": 3383,
@@ -69587,6 +69772,24 @@
      }
     },
     "castelo-branco": {
+     "2000": {
+      "pessoas": 5207,
+      "domicilios": 1349,
+      "rendaMedia": 2160,
+      "agua": 99.7,
+      "esgoto": 62.5,
+      "lixo": 99.2,
+      "alfabetizados": 92.5,
+      "negros": null,
+      "criancas": 32.5,
+      "idosos": 4.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 5238,
       "domicilios": 1458,
@@ -69625,6 +69828,24 @@
      }
     },
     "centro": {
+     "2000": {
+      "pessoas": 11871,
+      "domicilios": 3825,
+      "rendaMedia": 7483,
+      "agua": 99.9,
+      "esgoto": 99.2,
+      "lixo": 99,
+      "alfabetizados": 98.1,
+      "negros": null,
+      "criancas": 15.8,
+      "idosos": 18.3,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 11375,
       "domicilios": 4104,
@@ -69663,6 +69884,24 @@
      }
     },
     "cidade-das-flores": {
+     "2000": {
+      "pessoas": 9344,
+      "domicilios": 2579,
+      "rendaMedia": 5668,
+      "agua": 99.9,
+      "esgoto": 98,
+      "lixo": 99.5,
+      "alfabetizados": 98.5,
+      "negros": null,
+      "criancas": 25.5,
+      "idosos": 5.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 9413,
       "domicilios": 2906,
@@ -69701,6 +69940,24 @@
      }
     },
     "cidade-de-deus": {
+     "2000": {
+      "pessoas": 94,
+      "domicilios": 31,
+      "rendaMedia": 4494,
+      "agua": 100,
+      "esgoto": 100,
+      "lixo": 100,
+      "alfabetizados": 98.7,
+      "negros": null,
+      "criancas": 16,
+      "idosos": 14.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 310,
       "domicilios": 100,
@@ -69739,6 +69996,24 @@
      }
     },
     "cipava": {
+     "2000": {
+      "pessoas": 11460,
+      "domicilios": 3230,
+      "rendaMedia": 4023,
+      "agua": 100,
+      "esgoto": 99.5,
+      "lixo": 99.6,
+      "alfabetizados": 96.3,
+      "negros": null,
+      "criancas": 22.6,
+      "idosos": 10.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 10007,
       "domicilios": 3076,
@@ -69777,6 +70052,24 @@
      }
     },
     "city-bussocaba": {
+     "2000": {
+      "pessoas": 1919,
+      "domicilios": 498,
+      "rendaMedia": 10333,
+      "agua": 99.6,
+      "esgoto": 21.3,
+      "lixo": 99.6,
+      "alfabetizados": 97.3,
+      "negros": null,
+      "criancas": 24.1,
+      "idosos": 5.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 2822,
       "domicilios": 777,
@@ -69815,6 +70108,24 @@
      }
     },
     "helena-maria": {
+     "2000": {
+      "pessoas": 22920,
+      "domicilios": 6469,
+      "rendaMedia": 2357,
+      "agua": 99.7,
+      "esgoto": 51.6,
+      "lixo": 99.9,
+      "alfabetizados": 92.9,
+      "negros": null,
+      "criancas": 28.7,
+      "idosos": 4.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 21890,
       "domicilios": 6733,
@@ -69853,6 +70164,24 @@
      }
     },
     "iapi": {
+     "2000": {
+      "pessoas": 13774,
+      "domicilios": 3859,
+      "rendaMedia": 5072,
+      "agua": 99.9,
+      "esgoto": 99.1,
+      "lixo": 99.9,
+      "alfabetizados": 96.9,
+      "negros": null,
+      "criancas": 26.2,
+      "idosos": 5.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 13641,
       "domicilios": 4336,
@@ -69891,6 +70220,7 @@
      }
     },
     "industrial-altino": {
+     "2000": null,
      "2010": null,
      "2022": {
       "pessoas": 17,
@@ -69912,6 +70242,24 @@
      }
     },
     "industrial-anhanguera": {
+     "2000": {
+      "pessoas": 6463,
+      "domicilios": 1649,
+      "rendaMedia": 2309,
+      "agua": 99.3,
+      "esgoto": 32.1,
+      "lixo": 98.7,
+      "alfabetizados": 91.1,
+      "negros": null,
+      "criancas": 33.6,
+      "idosos": 3.3,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 5630,
       "domicilios": 1566,
@@ -69950,6 +70298,24 @@
      }
     },
     "industrial-autonomistas": {
+     "2000": {
+      "pessoas": 895,
+      "domicilios": 341,
+      "rendaMedia": 8935,
+      "agua": 100,
+      "esgoto": 99.7,
+      "lixo": 100,
+      "alfabetizados": 99.6,
+      "negros": null,
+      "criancas": 20.9,
+      "idosos": 2.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 6760,
       "domicilios": 2462,
@@ -69988,6 +70354,24 @@
      }
     },
     "industrial-centro": {
+     "2000": {
+      "pessoas": 46,
+      "domicilios": 11,
+      "rendaMedia": 3909,
+      "agua": 100,
+      "esgoto": 72.7,
+      "lixo": 100,
+      "alfabetizados": 97.3,
+      "negros": null,
+      "criancas": 19.6,
+      "idosos": 2.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 38,
       "domicilios": 9,
@@ -70026,6 +70410,24 @@
      }
     },
     "industrial-mazzei": {
+     "2000": {
+      "pessoas": 2806,
+      "domicilios": 810,
+      "rendaMedia": 2454,
+      "agua": 99.9,
+      "esgoto": 14.9,
+      "lixo": 99.8,
+      "alfabetizados": 93.3,
+      "negros": null,
+      "criancas": 29.4,
+      "idosos": 5.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 2669,
       "domicilios": 787,
@@ -70064,6 +70466,24 @@
      }
     },
     "industrial-remedios": {
+     "2000": {
+      "pessoas": 2811,
+      "domicilios": 813,
+      "rendaMedia": 2602,
+      "agua": 99.4,
+      "esgoto": 88.2,
+      "lixo": 98.6,
+      "alfabetizados": 94.2,
+      "negros": null,
+      "criancas": 27.4,
+      "idosos": 6.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 2364,
       "domicilios": 749,
@@ -70102,6 +70522,24 @@
      }
     },
     "jaguaribe": {
+     "2000": {
+      "pessoas": 17797,
+      "domicilios": 4987,
+      "rendaMedia": 4380,
+      "agua": 99.9,
+      "esgoto": 85.6,
+      "lixo": 97.6,
+      "alfabetizados": 94.9,
+      "negros": null,
+      "criancas": 25.4,
+      "idosos": 7.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 19687,
       "domicilios": 6249,
@@ -70140,6 +70578,24 @@
      }
     },
     "jardim-conceicao": {
+     "2000": {
+      "pessoas": 22546,
+      "domicilios": 5880,
+      "rendaMedia": 2451,
+      "agua": 99.6,
+      "esgoto": 62.5,
+      "lixo": 98.2,
+      "alfabetizados": 91.8,
+      "negros": null,
+      "criancas": 32.1,
+      "idosos": 3.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 31441,
       "domicilios": 9054,
@@ -70178,6 +70634,24 @@
      }
     },
     "jardim-d-abril": {
+     "2000": {
+      "pessoas": 14839,
+      "domicilios": 4178,
+      "rendaMedia": 4376,
+      "agua": 100,
+      "esgoto": 96.7,
+      "lixo": 100,
+      "alfabetizados": 96.1,
+      "negros": null,
+      "criancas": 23.2,
+      "idosos": 8.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 14445,
       "domicilios": 4566,
@@ -70216,6 +70690,24 @@
      }
     },
     "jardim-das-flores": {
+     "2000": {
+      "pessoas": 11829,
+      "domicilios": 3396,
+      "rendaMedia": 4856,
+      "agua": 99.9,
+      "esgoto": 96.7,
+      "lixo": 99.7,
+      "alfabetizados": 97.4,
+      "negros": null,
+      "criancas": 19.1,
+      "idosos": 10.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 10603,
       "domicilios": 3355,
@@ -70254,6 +70746,24 @@
      }
     },
     "jardim-elvira": {
+     "2000": {
+      "pessoas": 12020,
+      "domicilios": 3349,
+      "rendaMedia": 2761,
+      "agua": 99.9,
+      "esgoto": 61.6,
+      "lixo": 99.8,
+      "alfabetizados": 94.4,
+      "negros": null,
+      "criancas": 27.9,
+      "idosos": 7.1,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 10786,
       "domicilios": 3311,
@@ -70292,6 +70802,24 @@
      }
     },
     "jardim-novo-osasco": {
+     "2000": {
+      "pessoas": 18658,
+      "domicilios": 5064,
+      "rendaMedia": 2809,
+      "agua": 99.6,
+      "esgoto": 91.8,
+      "lixo": 98.1,
+      "alfabetizados": 94.3,
+      "negros": null,
+      "criancas": 26.5,
+      "idosos": 6.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 16575,
       "domicilios": 4934,
@@ -70330,6 +70858,24 @@
      }
     },
     "jardim-roberto": {
+     "2000": {
+      "pessoas": 20611,
+      "domicilios": 5515,
+      "rendaMedia": 2683,
+      "agua": 99.3,
+      "esgoto": 61.2,
+      "lixo": 99.6,
+      "alfabetizados": 93.6,
+      "negros": null,
+      "criancas": 29.2,
+      "idosos": 6.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 19576,
       "domicilios": 5824,
@@ -70368,6 +70914,24 @@
      }
     },
     "km-18": {
+     "2000": {
+      "pessoas": 13837,
+      "domicilios": 4159,
+      "rendaMedia": 4718,
+      "agua": 99.9,
+      "esgoto": 96.1,
+      "lixo": 100,
+      "alfabetizados": 96.7,
+      "negros": null,
+      "criancas": 20.3,
+      "idosos": 12.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 12474,
       "domicilios": 4042,
@@ -70406,6 +70970,24 @@
      }
     },
     "metalurgicos": {
+     "2000": {
+      "pessoas": 6160,
+      "domicilios": 1538,
+      "rendaMedia": 5186,
+      "agua": 99.9,
+      "esgoto": 99.5,
+      "lixo": 100,
+      "alfabetizados": 98,
+      "negros": null,
+      "criancas": 26.4,
+      "idosos": 3.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 6710,
       "domicilios": 2002,
@@ -70444,6 +71026,24 @@
      }
     },
     "munhoz-junior": {
+     "2000": {
+      "pessoas": 30324,
+      "domicilios": 8082,
+      "rendaMedia": 2156,
+      "agua": 99.1,
+      "esgoto": 53.6,
+      "lixo": 98.7,
+      "alfabetizados": 91.1,
+      "negros": null,
+      "criancas": 31.8,
+      "idosos": 4.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 29859,
       "domicilios": 8617,
@@ -70482,6 +71082,24 @@
      }
     },
     "mutinga": {
+     "2000": {
+      "pessoas": 14356,
+      "domicilios": 4007,
+      "rendaMedia": 2686,
+      "agua": 99.7,
+      "esgoto": 19.2,
+      "lixo": 95.6,
+      "alfabetizados": 93.9,
+      "negros": null,
+      "criancas": 27.2,
+      "idosos": 5.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 11937,
       "domicilios": 3629,
@@ -70520,6 +71138,24 @@
      }
     },
     "padroeira": {
+     "2000": {
+      "pessoas": 23821,
+      "domicilios": 6286,
+      "rendaMedia": 2155,
+      "agua": 99.6,
+      "esgoto": 59.4,
+      "lixo": 95.5,
+      "alfabetizados": 92.4,
+      "negros": null,
+      "criancas": 31.5,
+      "idosos": 5,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 25633,
       "domicilios": 7427,
@@ -70558,6 +71194,24 @@
      }
     },
     "paiva-ramos": {
+     "2000": {
+      "pessoas": 959,
+      "domicilios": 246,
+      "rendaMedia": 2636,
+      "agua": 39,
+      "esgoto": 4.9,
+      "lixo": 48.8,
+      "alfabetizados": 90,
+      "negros": null,
+      "criancas": 39.4,
+      "idosos": 2.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 1597,
       "domicilios": 433,
@@ -70596,6 +71250,24 @@
      }
     },
     "parque-continental": {
+     "2000": {
+      "pessoas": 556,
+      "domicilios": 138,
+      "rendaMedia": 19116,
+      "agua": 100,
+      "esgoto": 98.6,
+      "lixo": 100,
+      "alfabetizados": 99.8,
+      "negros": null,
+      "criancas": 9.7,
+      "idosos": 11.7,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 430,
       "domicilios": 144,
@@ -70634,6 +71306,24 @@
      }
     },
     "pestana": {
+     "2000": {
+      "pessoas": 15068,
+      "domicilios": 4324,
+      "rendaMedia": 3962,
+      "agua": 99.9,
+      "esgoto": 90.5,
+      "lixo": 99.9,
+      "alfabetizados": 95.8,
+      "negros": null,
+      "criancas": 23.1,
+      "idosos": 10.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 13334,
       "domicilios": 4180,
@@ -70672,6 +71362,24 @@
      }
     },
     "piratininga": {
+     "2000": {
+      "pessoas": 10537,
+      "domicilios": 2899,
+      "rendaMedia": 2885,
+      "agua": 96.2,
+      "esgoto": 68.9,
+      "lixo": 99.8,
+      "alfabetizados": 91,
+      "negros": null,
+      "criancas": 30.8,
+      "idosos": 6.1,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 12514,
       "domicilios": 3856,
@@ -70710,6 +71418,24 @@
      }
     },
     "platina": {
+     "2000": {
+      "pessoas": 2618,
+      "domicilios": 700,
+      "rendaMedia": 2831,
+      "agua": 97.9,
+      "esgoto": 45.3,
+      "lixo": 97,
+      "alfabetizados": 92.3,
+      "negros": null,
+      "criancas": 28.4,
+      "idosos": 5.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 2510,
       "domicilios": 733,
@@ -70748,6 +71474,24 @@
      }
     },
     "portal-d-oeste": {
+     "2000": {
+      "pessoas": 8990,
+      "domicilios": 2356,
+      "rendaMedia": 2297,
+      "agua": 99.2,
+      "esgoto": 47.5,
+      "lixo": 90.8,
+      "alfabetizados": 92,
+      "negros": null,
+      "criancas": 31.4,
+      "idosos": 3.3,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 10658,
       "domicilios": 3054,
@@ -70786,6 +71530,24 @@
      }
     },
     "presidente-altino": {
+     "2000": {
+      "pessoas": 9421,
+      "domicilios": 2963,
+      "rendaMedia": 4368,
+      "agua": 99.9,
+      "esgoto": 94.5,
+      "lixo": 100,
+      "alfabetizados": 96.4,
+      "negros": null,
+      "criancas": 19,
+      "idosos": 14.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 9380,
       "domicilios": 3114,
@@ -70824,6 +71586,24 @@
      }
     },
     "quintauna": {
+     "2000": {
+      "pessoas": 8441,
+      "domicilios": 2413,
+      "rendaMedia": 5016,
+      "agua": 99.8,
+      "esgoto": 95.9,
+      "lixo": 99.9,
+      "alfabetizados": 97.6,
+      "negros": null,
+      "criancas": 21.6,
+      "idosos": 8.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 8786,
       "domicilios": 2808,
@@ -70862,6 +71642,24 @@
      }
     },
     "raposo-tavares": {
+     "2000": {
+      "pessoas": 187,
+      "domicilios": 42,
+      "rendaMedia": 4194,
+      "agua": 64.3,
+      "esgoto": 7.1,
+      "lixo": 92.9,
+      "alfabetizados": 88.1,
+      "negros": null,
+      "criancas": 23.5,
+      "idosos": 11.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 654,
       "domicilios": null,
@@ -70900,6 +71698,24 @@
      }
     },
     "remedios": {
+     "2000": {
+      "pessoas": 6004,
+      "domicilios": 1805,
+      "rendaMedia": 3468,
+      "agua": 99.7,
+      "esgoto": 99.8,
+      "lixo": 99.7,
+      "alfabetizados": 95.3,
+      "negros": null,
+      "criancas": 21.5,
+      "idosos": 12.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 5515,
       "domicilios": 1737,
@@ -70938,6 +71754,24 @@
      }
     },
     "rochdale": {
+     "2000": {
+      "pessoas": 28506,
+      "domicilios": 7702,
+      "rendaMedia": 2796,
+      "agua": 96.3,
+      "esgoto": 66.3,
+      "lixo": 99.3,
+      "alfabetizados": 92.9,
+      "negros": null,
+      "criancas": 28.9,
+      "idosos": 6.5,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 28501,
       "domicilios": 8380,
@@ -70976,6 +71810,24 @@
      }
     },
     "santa-fe": {
+     "2000": {
+      "pessoas": 1062,
+      "domicilios": 281,
+      "rendaMedia": 2323,
+      "agua": 40.9,
+      "esgoto": 22.8,
+      "lixo": 84.7,
+      "alfabetizados": 92.8,
+      "negros": null,
+      "criancas": 32,
+      "idosos": 5.3,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 1007,
       "domicilios": 298,
@@ -71014,6 +71866,24 @@
      }
     },
     "santa-maria": {
+     "2000": {
+      "pessoas": 11751,
+      "domicilios": 3064,
+      "rendaMedia": 2541,
+      "agua": 94.2,
+      "esgoto": 4.5,
+      "lixo": 86.4,
+      "alfabetizados": 93.7,
+      "negros": null,
+      "criancas": 33.5,
+      "idosos": 2.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 22520,
       "domicilios": 6213,
@@ -71052,6 +71922,24 @@
      }
     },
     "santo-antonio": {
+     "2000": {
+      "pessoas": 15030,
+      "domicilios": 4146,
+      "rendaMedia": 3436,
+      "agua": 99.9,
+      "esgoto": 87.9,
+      "lixo": 99,
+      "alfabetizados": 94.8,
+      "negros": null,
+      "criancas": 25.9,
+      "idosos": 6.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 11466,
       "domicilios": 3265,
@@ -71090,6 +71978,24 @@
      }
     },
     "sao-pedro": {
+     "2000": {
+      "pessoas": 13523,
+      "domicilios": 3657,
+      "rendaMedia": 2810,
+      "agua": 97.2,
+      "esgoto": 55.2,
+      "lixo": 92.2,
+      "alfabetizados": 92,
+      "negros": null,
+      "criancas": 31,
+      "idosos": 4.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 16902,
       "domicilios": 5152,
@@ -71128,6 +72034,24 @@
      }
     },
     "setor-militar": {
+     "2000": {
+      "pessoas": 1202,
+      "domicilios": 302,
+      "rendaMedia": 2464,
+      "agua": 98,
+      "esgoto": 24.2,
+      "lixo": 87.7,
+      "alfabetizados": 91.6,
+      "negros": null,
+      "criancas": 35.9,
+      "idosos": 3.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 279,
       "domicilios": 69,
@@ -71166,6 +72090,24 @@
      }
     },
     "tres-montanhas": {
+     "2000": {
+      "pessoas": 1625,
+      "domicilios": 429,
+      "rendaMedia": 4381,
+      "agua": 100,
+      "esgoto": 2.6,
+      "lixo": 88.8,
+      "alfabetizados": 94.6,
+      "negros": null,
+      "criancas": 29.9,
+      "idosos": 4.7,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 1853,
       "domicilios": 565,
@@ -71204,6 +72146,24 @@
      }
     },
     "umuarama": {
+     "2000": {
+      "pessoas": 5506,
+      "domicilios": 1571,
+      "rendaMedia": 5034,
+      "agua": 99.9,
+      "esgoto": 85.9,
+      "lixo": 99.9,
+      "alfabetizados": 97.4,
+      "negros": null,
+      "criancas": 21,
+      "idosos": 11.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 5078,
       "domicilios": 1569,
@@ -71242,6 +72202,24 @@
      }
     },
     "veloso": {
+     "2000": {
+      "pessoas": 29362,
+      "domicilios": 7822,
+      "rendaMedia": 2921,
+      "agua": 99.7,
+      "esgoto": 83.9,
+      "lixo": 97.8,
+      "alfabetizados": 94,
+      "negros": null,
+      "criancas": 28,
+      "idosos": 5.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 30464,
       "domicilios": 9083,
@@ -71280,6 +72258,24 @@
      }
     },
     "vila-campesina": {
+     "2000": {
+      "pessoas": 2536,
+      "domicilios": 763,
+      "rendaMedia": 7062,
+      "agua": 99.9,
+      "esgoto": 98.2,
+      "lixo": 99.9,
+      "alfabetizados": 98,
+      "negros": null,
+      "criancas": 13,
+      "idosos": 19.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 2571,
       "domicilios": 864,
@@ -71318,6 +72314,24 @@
      }
     },
     "vila-menck": {
+     "2000": {
+      "pessoas": 25528,
+      "domicilios": 7119,
+      "rendaMedia": 2422,
+      "agua": 99.9,
+      "esgoto": 47.6,
+      "lixo": 99.4,
+      "alfabetizados": 92.9,
+      "negros": null,
+      "criancas": 28.3,
+      "idosos": 5.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 23646,
       "domicilios": 6965,
@@ -71356,6 +72370,24 @@
      }
     },
     "vila-militar": {
+     "2000": {
+      "pessoas": 342,
+      "domicilios": 101,
+      "rendaMedia": 8083,
+      "agua": 100,
+      "esgoto": 100,
+      "lixo": 100,
+      "alfabetizados": 100,
+      "negros": null,
+      "criancas": 32.5,
+      "idosos": 0.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 250,
       "domicilios": 81,
@@ -71394,6 +72426,24 @@
      }
     },
     "vila-osasco": {
+     "2000": {
+      "pessoas": 10955,
+      "domicilios": 3433,
+      "rendaMedia": 6582,
+      "agua": 99.9,
+      "esgoto": 96.9,
+      "lixo": 99.8,
+      "alfabetizados": 97.5,
+      "negros": null,
+      "criancas": 20.5,
+      "idosos": 11.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 10392,
       "domicilios": 3539,
@@ -71432,6 +72482,24 @@
      }
     },
     "vila-yara": {
+     "2000": {
+      "pessoas": 10337,
+      "domicilios": 3193,
+      "rendaMedia": 7755,
+      "agua": 100,
+      "esgoto": 99,
+      "lixo": 100,
+      "alfabetizados": 97.1,
+      "negros": null,
+      "criancas": 19,
+      "idosos": 11.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 9436,
       "domicilios": 3248,
@@ -71470,6 +72538,24 @@
      }
     },
     "vila-yolanda": {
+     "2000": {
+      "pessoas": 15158,
+      "domicilios": 4314,
+      "rendaMedia": 3475,
+      "agua": 99.9,
+      "esgoto": 92.2,
+      "lixo": 92.7,
+      "alfabetizados": 95.3,
+      "negros": null,
+      "criancas": 24.9,
+      "idosos": 8.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 14703,
       "domicilios": 4642,
@@ -77128,6 +78214,84 @@
     {
      "ano": 2026,
      "pessoas": 761441
+    }
+   ]
+  },
+  "minimos": {
+   "fontes": {
+    "saude": "Ministério da Saúde, SIOPS: indicador 3.2, % da receita própria aplicada em ações e serviços públicos de saúde (LC 141/2012)",
+    "educacao": "FNDE, SIOPE: indicador 1.1, % das receitas de impostos aplicado em manutenção e desenvolvimento do ensino; 1.2, % do FUNDEB na remuneração dos profissionais"
+   },
+   "urls": {
+    "saude": "https://siops.datasus.gov.br/",
+    "educacao": "https://www.fnde.gov.br/siope/"
+   },
+   "anos": [
+    {
+     "ano": 2015,
+     "saude": 34.52,
+     "educacao": 25.09,
+     "fundeb": 64.48
+    },
+    {
+     "ano": 2016,
+     "saude": 34.95,
+     "educacao": 25.07,
+     "fundeb": 79.76
+    },
+    {
+     "ano": 2017,
+     "saude": 34,
+     "educacao": 25.92,
+     "fundeb": 84.36
+    },
+    {
+     "ano": 2018,
+     "saude": 30,
+     "educacao": 25.18,
+     "fundeb": 88.89
+    },
+    {
+     "ano": 2019,
+     "saude": 30.06,
+     "educacao": 25.21,
+     "fundeb": 88.34
+    },
+    {
+     "ano": 2020,
+     "saude": 30.57,
+     "educacao": 25.33,
+     "fundeb": 88.64
+    },
+    {
+     "ano": 2021,
+     "saude": 30.65,
+     "educacao": 23.77,
+     "fundeb": 78.33
+    },
+    {
+     "ano": 2022,
+     "saude": 25.34,
+     "educacao": 26.05,
+     "fundeb": 88.51
+    },
+    {
+     "ano": 2023,
+     "saude": 25.84,
+     "educacao": 28,
+     "fundeb": 93.33
+    },
+    {
+     "ano": 2024,
+     "saude": 22.53,
+     "educacao": 30.47,
+     "fundeb": 96.67
+    },
+    {
+     "ano": 2025,
+     "saude": 22.9,
+     "educacao": 26.66,
+     "fundeb": 96.47
     }
    ]
   }
