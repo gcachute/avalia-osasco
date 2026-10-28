@@ -4,6 +4,8 @@
 //  C. Comissões e articulação: comissões, Mesa Diretora, frentes parlamentares e lideranças.
 //  D. Custo do mandato: igual para todos os gabinetes; só informativo.
 //  E. Compromisso com a pauta: itens próprios adiados porque o autor faltou.
+//  F. Integridade: decisões definitivas de órgãos oficiais (contas julgadas irregulares pelo TCE-SP, condenações no
+//     cadastro de improbidade do CNJ). Começa em 10 e cada registro desconta; processos em andamento não entram.
 // Réguas inspiradas no Ranking dos Políticos (ranking.org.br, Manual 2026): presença em proporção direta, metas
 // fixas em vez de comparar com quem mais produz, e bônus que só somam. O mandato tem muitas outras formas de
 // atuação que os dados não mostram; por isso as réguas não punem com força quem fica abaixo do esperado.
@@ -62,6 +64,17 @@ export const MINIMO_COM_REQUERIMENTOS = 5;
 export const PONTOS_COMISSAO = { presidente: 1.5, "vice-presidente": 1.25, relator: 1.25, membro: 1, frente: 0.25, presidenteFrente: 0.5 };
 export const PONTOS_MESA = { presidente: 4, outros: 3 };
 export const PONTOS_LIDERANCA = 1.5; // líder de bancada ou do prefeito vale o mesmo que presidir uma comissão
+// Integridade: desconto por registro definitivo. Contas irregulares com decisão de mais de 10 anos pesam metade.
+export const DESCONTO_INTEGRIDADE = { tce: 4, tceAntigo: 2, cnj: 5, anosAntigo: 10 };
+
+export function notaIntegridade(registros = [], hoje = new Date()) {
+  const desconto = registros.reduce((acc, r) => {
+    if (r.fonte === "cnj") return acc + DESCONTO_INTEGRIDADE.cnj;
+    const anos = (hoje - new Date(r.decisaoDefinitiva)) / (365.25 * 24 * 3600 * 1000);
+    return acc + (anos > DESCONTO_INTEGRIDADE.anosAntigo ? DESCONTO_INTEGRIDADE.tceAntigo : DESCONTO_INTEGRIDADE.tce);
+  }, 0);
+  return Math.max(0, 10 - desconto) / 10;
+}
 
 const curva = (x, alvo) => (x == null ? null : Math.min(1, Math.pow(Math.max(0, x) / alvo, CURVA)));
 
@@ -111,6 +124,8 @@ export function calcularNotas(vereadores, metodologia) {
         : { nota: null, componentes: {} },
       D: { nota: null, componentes: {} },
       E: { nota: Math.max(0, 1 - (por10(i.adiadasPorAusencia, v) * PERDA_POR_ADIAMENTO) / 10), componentes: {} },
+      // Só para quem foi consultado nas fontes; sem consulta, fica sem nota (nunca "nada consta" por omissão).
+      F: { nota: v.integridade ? notaIntegridade(v.integridade.registros) : null, componentes: {} },
     };
     // Bônus de atuação na comunidade (moções e honrarias): só soma, com teto, como os bônus do Ranking dos Políticos.
     const comunidade = Math.min(BONUS_COMUNIDADE.maximo, ((i.mocoes + i.honrarias) / 10) * BONUS_COMUNIDADE.porDez) / 10;
@@ -122,8 +137,9 @@ export function calcularNotas(vereadores, metodologia) {
           participacao: v.pilares.A.nota == null ? null : (1 - PESO_PAUTA) * v.pilares.A.nota + PESO_PAUTA * v.pilares.E.nota,
           producao: base == null ? null : Math.min(1, base + comunidade),
           eficiencia: null,
+          integridade: v.pilares.F.nota,
         }
-      : { participacao: null, producao: null, eficiencia: null };
+      : { participacao: null, producao: null, eficiencia: null, integridade: v.pilares.F.nota };
     // O que produziu por sessão em que esteve presente: as faltas não entram na conta.
     v.indicadores.producaoPorPresenca = i.presencas ? (i.pontosLegislacao / i.presencas) * 10 : null;
     if (elegivel) v.coeficientes.eficiencia = curva(v.indicadores.producaoPorPresenca, ALVO_LEGISLACAO);
@@ -135,6 +151,7 @@ export function calcularNotas(vereadores, metodologia) {
       .sort((a, b) => valor(b) - valor(a))
       .forEach((v, idx) => gravar(v, idx + 1));
   const elegiveisAgora = vereadores.filter((v) => v.indicadores.sessoes >= cfg.minimoSessoes);
+  // Integridade não ganha posição: não é uma disputa, só o registro de cada um.
   for (const k of ["A", "B", "C", "E"]) ranquear(elegiveisAgora, (v) => v.pilares[k].nota, (v, n) => (v.pilares[k].ranking = n));
   for (const v of vereadores) v.rankings = {};
   for (const k of ["participacao", "producao", "eficiencia"]) ranquear(elegiveisAgora, (v) => v.coeficientes[k], (v, n) => (v.rankings[k] = n));

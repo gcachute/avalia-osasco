@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AtividadeMensal } from "@/components/Atividade";
 import { CustoMandato, rotuloMesFolha } from "@/components/Camara";
+import { SecaoIntegridade } from "@/components/Integridade";
 import { ListaTematica, type ItemLista } from "@/components/ListaTematica";
 import { MapaPessoa, type ModoMapa } from "@/components/MapaPessoa";
 import { geometriaBairros } from "@/lib/mapaGeo";
@@ -132,6 +133,11 @@ export default async function PaginaVereador({ params }: Props) {
           .join(" · "),
     D: custo ? `${milReais(custo.totalMensal)} por mês em salários (vereador e ${custo.assessores} assessores), igual para todos os gabinetes` : "Sem dados de custo do gabinete",
     E: `${plural(i.adiadasPorAusencia, "item próprio adiado", "itens próprios adiados")} porque faltou, em ${i.sessoes} sessões`,
+    F: !v.integridade
+      ? "Ainda não consultado nas fontes oficiais"
+      : v.integridade.registros.length
+        ? `${plural(v.integridade.registros.length, "decisão definitiva", "decisões definitivas")} em fonte oficial (detalhes na seção Integridade)`
+        : "Nada consta no TCE-SP e no cadastro de improbidade do CNJ",
   };
 
   return (
@@ -211,18 +217,28 @@ export default async function PaginaVereador({ params }: Props) {
             ))}
           </p>
         </div>
-        <div className="relative grid w-full grid-cols-3 gap-2 sm:w-auto sm:min-w-[22rem]">
+        <div className="relative grid w-full grid-cols-2 gap-2 sm:w-auto sm:min-w-[22rem] sm:grid-cols-4">
           {COEFICIENTES.map((c) => (
             <a key={c.chave} href="#coeficientes" className="rounded-xl bg-slate-50 p-3 text-center ring-1 ring-inset ring-slate-200 transition hover:ring-blue-300" title={c.descricao}>
               <div className="text-[11px] font-medium uppercase tracking-wide text-slate-500">{c.nome}</div>
               <div className="mt-1">
                 {v.coeficientes[c.chave] == null ? <span className="text-sm text-slate-400">—</span> : <NotaBadge valor={nota10(v.coeficientes[c.chave])} />}
               </div>
-              <div className="mt-1 text-[11px] text-slate-500">{v.rankings[c.chave] ? `${v.rankings[c.chave]}º de ${avaliados.length}` : "sem dados"}</div>
+              <div className="mt-1 text-[11px] text-slate-500">
+                {c.chave === "integridade"
+                  ? v.integridade
+                    ? v.integridade.registros.length
+                      ? plural(v.integridade.registros.length, "registro", "registros")
+                      : "nada consta"
+                    : "sem consulta"
+                  : v.rankings[c.chave]
+                    ? `${v.rankings[c.chave]}º de ${avaliados.length}`
+                    : "sem dados"}
+              </div>
             </a>
           ))}
           {v.coeficientes.producao == null && (
-            <p className="col-span-3 text-xs text-slate-500">Menos de {dados.metodologia.vereador.minimoSessoes} sessões no período: sem coeficientes.</p>
+            <p className="col-span-2 text-xs text-slate-500 sm:col-span-4">Menos de {dados.metodologia.vereador.minimoSessoes} sessões no período: sem coeficientes.</p>
           )}
         </div>
       </header>
@@ -254,7 +270,7 @@ export default async function PaginaVereador({ params }: Props) {
       </div>
 
       <Secao titulo="Coeficientes" id="coeficientes" subtitulo="Cada coeficiente junta avaliações individuais, mostradas logo abaixo.">
-        <div className="grid gap-3 md:grid-cols-3">
+        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
           {COEFICIENTES.map((c) => (
             <div key={c.chave} className="rounded-xl border border-slate-200 bg-white p-4">
               <div className="flex items-center justify-between gap-2">
@@ -291,6 +307,12 @@ export default async function PaginaVereador({ params }: Props) {
           ))}
         </div>
       </Secao>
+
+      {v.integridade && (
+        <Secao titulo="Integridade" id="integridade" subtitulo="Decisões definitivas de órgãos oficiais. Processos em andamento não entram.">
+          <SecaoIntegridade integridade={v.integridade} nota={v.coeficientes.integridade} quem="o vereador" />
+        </Secao>
+      )}
 
       <Secao titulo="Como cada avaliação foi calculada" id="nota">
         <div className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white px-5">

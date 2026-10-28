@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-28T06:27:56.126Z",
+ "geradoEm": "2026-10-28T18:32:28.129Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -1181,6 +1181,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 147,
@@ -3725,6 +3741,10 @@
      "nota": 0.7074829931972789,
      "componentes": {},
      "ranking": 19
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -3733,7 +3753,8 @@
    "coeficientes": {
     "participacao": 0.8212144714000709,
     "producao": 1,
-    "eficiencia": 1
+    "eficiencia": 1,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 18,
@@ -3828,6 +3849,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 136,
@@ -5821,6 +5858,10 @@
      "nota": 0.7720588235294118,
      "componentes": {},
      "ranking": 15
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -5829,7 +5870,8 @@
    "coeficientes": {
     "participacao": 0.7420529607191715,
     "producao": 0.9676057019420153,
-    "eficiencia": 1
+    "eficiencia": 1,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 21,
@@ -5925,6 +5967,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [
     {
      "tipo": "bancada",
@@ -7603,6 +7661,10 @@
      "nota": 0.9285714285714286,
      "componentes": {},
      "ranking": 9
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -7611,7 +7673,8 @@
    "coeficientes": {
     "participacao": 0.9426619466684312,
     "producao": 0.964381878791661,
-    "eficiencia": 0.9738166074689062
+    "eficiencia": 0.9738166074689062,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 5,
@@ -7727,6 +7790,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 147,
@@ -9506,6 +9585,10 @@
      "nota": 0.8843537414965986,
      "componentes": {},
      "ranking": 11
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -9514,7 +9597,8 @@
    "coeficientes": {
     "participacao": 0.9567030334146238,
     "producao": 0.9372062362288464,
-    "eficiencia": 0.7974177864844574
+    "eficiencia": 0.7974177864844574,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 3,
@@ -9554,6 +9638,22 @@
     "mesa": null
    },
    "emExercicio": false,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 26,
@@ -10022,6 +10122,10 @@
      "nota": 0.7692307692307692,
      "componentes": {},
      "ranking": 16
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -10030,7 +10134,8 @@
    "coeficientes": {
     "participacao": 0.9217948717948719,
     "producao": 0.8813463898725556,
-    "eficiencia": 0.8746896591546224
+    "eficiencia": 0.8746896591546224,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 8,
@@ -10128,6 +10233,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 147,
@@ -11776,6 +11897,10 @@
      "nota": 0.9319727891156463,
      "componentes": {},
      "ranking": 8
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -11784,7 +11909,8 @@
    "coeficientes": {
     "participacao": 0.8813974165995732,
     "producao": 0.8647284264643024,
-    "eficiencia": 0.8929037891892183
+    "eficiencia": 0.8929037891892183,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 15,
@@ -11882,6 +12008,22 @@
     "mesa": "2º Vice-Presidente"
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 134,
@@ -13413,6 +13555,10 @@
      "nota": 0.7014925373134329,
      "componentes": {},
      "ranking": 20
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -13421,7 +13567,8 @@
    "coeficientes": {
     "participacao": 0.7754337224767254,
     "producao": 0.8200547793757098,
-    "eficiencia": 0.5982706205438139
+    "eficiencia": 0.5982706205438139,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 20,
@@ -13501,6 +13648,22 @@
     "mesa": "4º Secretário"
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 147,
@@ -14928,6 +15091,10 @@
      "nota": 0.9319727891156463,
      "componentes": {},
      "ranking": 7
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -14936,7 +15103,8 @@
    "coeficientes": {
     "participacao": 0.9747234702899729,
     "producao": 0.8191472315529018,
-    "eficiencia": 0.5859131231922774
+    "eficiencia": 0.5859131231922774,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 2,
@@ -15050,6 +15218,22 @@
     "mesa": "3º Secretário"
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 136,
@@ -16486,6 +16670,10 @@
      "nota": 0.8823529411764706,
      "componentes": {},
      "ranking": 12
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -16494,7 +16682,8 @@
    "coeficientes": {
     "participacao": 0.92639796996021,
     "producao": 0.7896648862199398,
-    "eficiencia": 0.5770799623628855
+    "eficiencia": 0.5770799623628855,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 7,
@@ -16586,6 +16775,31 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [
+     {
+      "fonte": "tce",
+      "tipo": "Contas anuais de Câmara Municipal",
+      "orgao": "Câmara Municipal de Osasco",
+      "exercicio": 2002,
+      "processo": "TC-194/026/02",
+      "decisaoDefinitiva": "2007-08-27"
+     }
+    ],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [
     {
      "tipo": "prefeito",
@@ -18306,6 +18520,10 @@
      "nota": 0.7551020408163265,
      "componentes": {},
      "ranking": 18
+    },
+    "F": {
+     "nota": 0.8,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -18314,7 +18532,8 @@
    "coeficientes": {
     "participacao": 0.8353729540407531,
     "producao": 0.7789895155366335,
-    "eficiencia": 0.5047658755841546
+    "eficiencia": 0.5047658755841546,
+    "integridade": 0.8
    },
    "rankings": {
     "participacao": 17,
@@ -18404,6 +18623,31 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [
+     {
+      "fonte": "tce",
+      "tipo": "Contas anuais de Câmara Municipal",
+      "orgao": "Câmara Municipal de Osasco",
+      "exercicio": 2022,
+      "processo": "TC-5031/989/22",
+      "decisaoDefinitiva": "2025-12-05"
+     }
+    ],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 147,
@@ -20322,6 +20566,10 @@
      "nota": 0.5918367346938775,
      "componentes": {},
      "ranking": 23
+    },
+    "F": {
+     "nota": 0.6,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -20330,7 +20578,8 @@
    "coeficientes": {
     "participacao": 0.8044919566849409,
     "producao": 0.7286802486854843,
-    "eficiencia": 0.6241481961753113
+    "eficiencia": 0.6241481961753113,
+    "integridade": 0.6
    },
    "rankings": {
     "participacao": 19,
@@ -20420,6 +20669,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 141,
@@ -22451,6 +22716,10 @@
      "nota": 0.6453900709219857,
      "componentes": {},
      "ranking": 21
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -22459,7 +22728,8 @@
    "coeficientes": {
     "participacao": 0.8959883399585424,
     "producao": 0.724208437609565,
-    "eficiencia": 0.9020276059191272
+    "eficiencia": 0.9020276059191272,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 11,
@@ -22557,6 +22827,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 147,
@@ -24207,6 +24493,10 @@
      "nota": 0.8979591836734694,
      "componentes": {},
      "ranking": 10
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -24215,7 +24505,8 @@
    "coeficientes": {
     "participacao": 0.8902767682415432,
     "producao": 0.7077279327126429,
-    "eficiencia": 0.5458559979794808
+    "eficiencia": 0.5458559979794808,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 13,
@@ -24289,6 +24580,31 @@
     "mesa": "Presidente"
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [
+     {
+      "fonte": "tce",
+      "tipo": "Prestação de contas de repasse ao terceiro setor",
+      "orgao": "Prefeitura Municipal de Osasco",
+      "exercicio": 2010,
+      "processo": "TC-26690/026/14",
+      "decisaoDefinitiva": "2017-04-05"
+     }
+    ],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 147,
@@ -25662,6 +25978,10 @@
      "nota": 0.9591836734693877,
      "componentes": {},
      "ranking": 5
+    },
+    "F": {
+     "nota": 0.6,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -25670,7 +25990,8 @@
    "coeficientes": {
     "participacao": 0.9141330242260359,
     "producao": 0.6680431706552664,
-    "eficiencia": 0.3762338739247741
+    "eficiencia": 0.3762338739247741,
+    "integridade": 0.6
    },
    "rankings": {
     "participacao": 9,
@@ -25713,6 +26034,22 @@
     "mesa": "Vice-Presidente"
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [
     {
      "tipo": "bancada",
@@ -27014,6 +27351,10 @@
      "nota": 0.9727891156462585,
      "componentes": {},
      "ranking": 4
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -27022,7 +27363,8 @@
    "coeficientes": {
     "participacao": 0.8501260841807091,
     "producao": 0.6624370279599948,
-    "eficiencia": 0.47970674855109163
+    "eficiencia": 0.47970674855109163,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 16,
@@ -27065,6 +27407,22 @@
     "mesa": "1º Secretária"
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 147,
@@ -28783,6 +29141,10 @@
      "nota": 0.7687074829931972,
      "componentes": {},
      "ranking": 17
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -28791,7 +29153,8 @@
    "coeficientes": {
     "participacao": 0.881649618009632,
     "producao": 0.6560702906610105,
-    "eficiencia": 0.5813441343814006
+    "eficiencia": 0.5813441343814006,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 14,
@@ -28838,6 +29201,22 @@
     "mesa": "2º Secretária"
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 147,
@@ -30572,6 +30951,10 @@
      "nota": 0.782312925170068,
      "componentes": {},
      "ranking": 14
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -30580,7 +30963,8 @@
    "coeficientes": {
     "participacao": 0.8933214742181752,
     "producao": 0.5851381715975144,
-    "eficiencia": 0.42824756954811843
+    "eficiencia": 0.42824756954811843,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 12,
@@ -30642,6 +31026,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 147,
@@ -32419,6 +32819,10 @@
      "nota": 0.7891156462585034,
      "componentes": {},
      "ranking": 13
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -32427,7 +32831,8 @@
    "coeficientes": {
     "participacao": 0.5254031128448098,
     "producao": 0.5253447774035633,
-    "eficiencia": 0.6579930443919493
+    "eficiencia": 0.6579930443919493,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 24,
@@ -32470,6 +32875,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 120,
@@ -34560,6 +34981,10 @@
      "nota": 0.3833333333333333,
      "componentes": {},
      "ranking": 24
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -34568,7 +34993,8 @@
    "coeficientes": {
     "participacao": 0.6306666666666667,
     "producao": 0.48697931117591065,
-    "eficiencia": 1
+    "eficiencia": 1,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 23,
@@ -34619,6 +35045,22 @@
     "mesa": null
    },
    "emExercicio": false,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 115,
@@ -35719,6 +36161,10 @@
      "nota": 0.9391304347826087,
      "componentes": {},
      "ranking": 6
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -35727,7 +36173,8 @@
    "coeficientes": {
     "participacao": 0.9130927148409507,
     "producao": 0.4634610920362118,
-    "eficiencia": 0.49804008452941806
+    "eficiencia": 0.49804008452941806,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 10,
@@ -35801,6 +36248,22 @@
     "mesa": null
    },
    "emExercicio": false,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [
     {
      "tipo": "bancada",
@@ -37321,6 +37784,10 @@
      "nota": 0.6033057851239669,
      "componentes": {},
      "ranking": 22
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -37329,7 +37796,8 @@
    "coeficientes": {
     "participacao": 0.7149084163322937,
     "producao": 0.42856176908475546,
-    "eficiencia": 0.4953157850857551
+    "eficiencia": 0.4953157850857551,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 22,
@@ -37391,6 +37859,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 135,
@@ -38498,6 +38982,10 @@
      "nota": 1,
      "componentes": {},
      "ranking": 1
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -38506,7 +38994,8 @@
    "coeficientes": {
     "participacao": 0.9464519650655023,
     "producao": 0.3168939783276835,
-    "eficiencia": 0.06590376573782457
+    "eficiencia": 0.06590376573782457,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 4,
@@ -38558,6 +39047,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 37,
@@ -38979,6 +39484,10 @@
      "nota": 1,
      "componentes": {},
      "ranking": 2
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -38987,7 +39496,8 @@
    "coeficientes": {
     "participacao": 0.9877300613496933,
     "producao": 0.2661644718099351,
-    "eficiencia": 0.13615770028268634
+    "eficiencia": 0.13615770028268634,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 1,
@@ -39043,6 +39553,22 @@
     "mesa": null
    },
    "emExercicio": true,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 37,
@@ -39420,6 +39946,10 @@
      "nota": 1,
      "componentes": {},
      "ranking": 3
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -39428,7 +39958,8 @@
    "coeficientes": {
     "participacao": 0.9395788426463274,
     "producao": 0.19808562166859192,
-    "eficiencia": 0
+    "eficiencia": 0,
+    "integridade": 1
    },
    "rankings": {
     "participacao": 6,
@@ -39447,6 +39978,22 @@
    "perfilOficial": null,
    "perfil": null,
    "emExercicio": false,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 10,
@@ -39716,6 +40263,10 @@
     "E": {
      "nota": 0.8,
      "componentes": {}
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -39724,7 +40275,8 @@
    "coeficientes": {
     "participacao": null,
     "producao": null,
-    "eficiencia": null
+    "eficiencia": null,
+    "integridade": 1
    },
    "rankings": {}
   },
@@ -39760,6 +40312,22 @@
     "mesa": null
    },
    "emExercicio": false,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 13,
@@ -40098,6 +40666,10 @@
     "E": {
      "nota": 0.9230769230769231,
      "componentes": {}
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -40106,7 +40678,8 @@
    "coeficientes": {
     "participacao": null,
     "producao": null,
-    "eficiencia": null
+    "eficiencia": null,
+    "integridade": 1
    },
    "rankings": {}
   },
@@ -40145,6 +40718,22 @@
     "mesa": null
    },
    "emExercicio": false,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 11,
@@ -40563,6 +41152,10 @@
     "E": {
      "nota": 1,
      "componentes": {}
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -40571,7 +41164,8 @@
    "coeficientes": {
     "participacao": null,
     "producao": null,
-    "eficiencia": null
+    "eficiencia": null,
+    "integridade": 1
    },
    "rankings": {}
   },
@@ -40610,6 +41204,22 @@
     "mesa": null
    },
    "emExercicio": false,
+   "integridade": {
+    "registros": [],
+    "fontes": {
+     "tce": {
+      "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+      "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+      "posicao": "2026-10-01",
+      "consultadoEm": "2026-10-28"
+     },
+     "cnj": {
+      "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+      "consultadoEm": "2026-10-28"
+     }
+    }
+   },
    "liderancas": [],
    "indicadores": {
     "sessoes": 7,
@@ -40800,6 +41410,10 @@
     "E": {
      "nota": 1,
      "componentes": {}
+    },
+    "F": {
+     "nota": 1,
+     "componentes": {}
     }
    },
    "bonus": {
@@ -40808,7 +41422,8 @@
    "coeficientes": {
     "participacao": null,
     "producao": null,
-    "eficiencia": null
+    "eficiencia": null,
+    "integridade": 1
    },
    "rankings": {}
   }
@@ -40854,6 +41469,23 @@
      2025
     ]
    }
+  },
+  "integridade": {
+   "registros": [],
+   "fontes": {
+    "tce": {
+     "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+     "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+     "posicao": "2026-10-01",
+     "consultadoEm": "2026-10-28"
+    },
+    "cnj": {
+     "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+     "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+     "consultadoEm": "2026-10-28"
+    }
+   },
+   "nota": 1
   },
   "fiscal": {
    "pilares": {

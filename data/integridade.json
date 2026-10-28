@@ -1,0 +1,52 @@
+{
+ "nota": "Só decisões definitivas publicadas por órgãos oficiais. A identificação foi conferida pelo nome completo e pelos dígitos do CPF que a própria fonte mostra (CPF obtido na Divulgação de Candidaturas do TSE, eleições 2024). Nenhum CPF é guardado aqui. Atualizar à mão: ver data/manual/LEIAME.md.",
+ "fontes": {
+  "tce": {
+   "nome": "TCE-SP, Relação de responsáveis por contas julgadas irregulares",
+   "url": "https://www.tce.sp.gov.br/relacao-de-responsaveis-por-contas-julgadas-irregulares",
+   "posicao": "2026-10-01",
+   "consultadoEm": "2026-10-28"
+  },
+  "cnj": {
+   "nome": "CNJ, Cadastro Nacional de Condenações Cíveis por Ato de Improbidade Administrativa e Inelegibilidade",
+   "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php",
+   "consultadoEm": "2026-10-28"
+  }
+ },
+ "consultados": [
+  "gabriel-saude", "ralfi-silva", "pedrinho-cantagessi", "laercio-mendonca", "rodolfo-cara", "heber-do-juntoz", "batista-comunidade",
+  "cantor-goleiro", "sergio-fontellas", "delbio-teruel", "josias-da-juco", "alexandre-capriotti", "guilherme-prado", "carmonio-bastos",
+  "elania-silva", "elsa-oliveira", "stephane-rossi", "emerson-osasco", "lucia-da-saude", "rodrigo-gansinho", "paulo-junior",
+  "fabio-chirinhan", "ivanildo-eventos", "juliao", "andre-luis-alves-pereira", "guiga", "helder-oliveira", "ze-carlos-santa-maria",
+  "prefeito"
+ ],
+ "registros": [
+  {
+   "id": "delbio-teruel",
+   "fonte": "tce",
+   "tipo": "Contas anuais de Câmara Municipal",
+   "orgao": "Câmara Municipal de Osasco",
+   "exercicio": 2002,
+   "processo": "TC-194/026/02",
+   "decisaoDefinitiva": "2007-08-27"
+  },
+  {
+   "id": "josias-da-juco",
+   "fonte": "tce",
+   "tipo": "Contas anuais de Câmara Municipal",
+   "orgao": "Câmara Municipal de Osasco",
+   "exercicio": 2022,
+   "processo": "TC-5031/989/22",
+   "decisaoDefinitiva": "2025-12-05"
+  },
+  {
+   "id": "carmonio-bastos",
+   "fonte": "tce",
+   "tipo": "Prestação de contas de repasse ao terceiro setor",
+   "orgao": "Prefeitura Municipal de Osasco",
+   "exercicio": 2010,
+   "processo": "TC-26690/026/14",
+   "decisaoDefinitiva": "2017-04-05"
+  }
+ ]
+}

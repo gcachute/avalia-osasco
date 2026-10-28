@@ -4,7 +4,7 @@ import { existsSync, readFileSync, readdirSync, writeFileSync, mkdirSync } from 
 import { readWorkbook } from "./lib/xlsx.mjs";
 import { calcularFiscal } from "./lib/fiscal.mjs";
 import { calcularIegm } from "./lib/iegm.mjs";
-import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, pontosComissoes, temasDoProjeto } from "./lib/vereadores.mjs";
+import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, notaIntegridade, pontosComissoes, temasDoProjeto } from "./lib/vereadores.mjs";
 import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
 import { carregarBairros, reconhecedorDeBairros, reconhecedorDeEquipamentos } from "./lib/bairros.mjs";
@@ -30,6 +30,13 @@ const slug = (s) => norm(s).replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 // Nome como aparece na planilha → chave estável ("Carmônio Bastos - Presidente" → "carmonio-bastos").
 const nameKey = (s) =>
   slug(clean(s).replace(/\s*-\s*president[ea].*$/i, "").replace(/\s*\(suplente\)\s*$/i, "").replace(/^(pra\.|vereador[a]?)\s+/i, ""));
+
+// Integridade: registros definitivos conferidos à mão (TCE-SP e CNJ). Só quem está em "consultados" ganha a seção.
+const integridade = existsSync("data/integridade.json") ? JSON.parse(readFileSync("data/integridade.json", "utf8")) : null;
+const integridadeDe = (id) =>
+  integridade?.consultados.includes(id)
+    ? { registros: integridade.registros.filter((r) => r.id === id).map(({ id: _, ...r }) => r), fontes: integridade.fontes }
+    : null;
 
 const fotos = existsSync("data/fotos.json") ? JSON.parse(readFileSync("data/fotos.json", "utf8")) : {};
 // Logos dos partidos salvos no repositório (npm run coletar:partidos).
@@ -365,6 +372,7 @@ const vereadores = [...pessoas.values()].map((p) => {
       mesa: perfil.mesa ?? null,
     },
     emExercicio: ultima === sessoesOrdenadas.at(-1)?.id,
+    integridade: integridadeDe(p.id),
     // Uma por tipo, a mais recente (o mesmo ofício às vezes é lido em mais de uma sessão).
     liderancas: Object.values(
       Object.fromEntries(
@@ -453,10 +461,13 @@ const pilares = {
 const pilaresComNota = Object.entries(pilares).filter(([, v]) => v.nota != null);
 const cobertura = pilaresComNota.reduce((a, [k]) => a + pesosPrefeito[k], 0) / pesoTotal;
 // Sem nota geral do prefeito: cada pilar tem a sua nota, com a conta e os dados por trás.
+const integridadePrefeito = integridadeDe("prefeito");
 const prefeito = {
   ...pf,
   cobertura,
   pilares,
+  // Integridade aparece na página do prefeito com a mesma régua, fora da nota dos pilares A a E.
+  integridade: integridadePrefeito && { ...integridadePrefeito, nota: notaIntegridade(integridadePrefeito.registros) },
   fiscal,
   iegm,
   resultados,
