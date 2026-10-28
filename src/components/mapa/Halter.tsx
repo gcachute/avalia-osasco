@@ -11,9 +11,9 @@ export function Halter({ nome, pontos, cidade, grande = false }: { nome: string;
   const d = grande ? "h-3 w-3 -top-0.5" : "h-2 w-2 top-0.5";
   return (
     <div>
-      <div className={`flex items-baseline justify-between gap-2 ${grande ? "text-sm" : "text-xs"}`}>
+      <div className={`flex flex-wrap items-baseline justify-between gap-x-2 ${grande ? "text-sm" : "text-xs"}`}>
         <span className="text-slate-700">{nome}</span>
-        <span className="shrink-0 tabular-nums text-slate-500">
+        <span className="ml-auto shrink-0 tabular-nums text-slate-500">
           {com.slice(0, -1).map((p) => (
             <span key={p.ano} title={p.ano}>
               {formatar(p.v, "pct")} →{" "}
@@ -25,7 +25,7 @@ export function Halter({ nome, pontos, cidade, grande = false }: { nome: string;
           <span className={`font-semibold text-slate-700 ${grande ? "text-xs" : ""}`}>{formatar(mud, "pp")}</span>
         </span>
       </div>
-      <div className={`relative mt-1 rounded-full bg-slate-100 ${grande ? "h-2" : "h-1.5"}`}>
+      <div className={`relative mx-1.5 mt-1 rounded-full bg-slate-100 ${grande ? "h-2" : "h-1.5"}`}>
         {com.length > 1 && (
           <div
             className="absolute h-full rounded-full"

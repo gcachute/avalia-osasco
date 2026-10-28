@@ -23,6 +23,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: v ? `${v.nome} — vereador(a) de Osasco` : "Vereador" };
 }
 
+// Quanto cada pilar pesa no coeficiente do grupo, mostrado no quadro de pilares.
+const PESO_PILAR: Partial<Record<PilarVereador, string>> = {
+  A: "80% da participação",
+  E: "20% da participação",
+  B: "metade da produção",
+  C: "metade da produção",
+  F: "começa em 10 e só cai com decisão definitiva",
+};
+
 const linkSessao = (id: string) => {
   const s = sessao(id);
   return s ? { rotulo: `${nomeSessao(s)} (${dataBR(s.data)})`, url: s.url } : null;
@@ -154,15 +163,15 @@ export default async function PaginaVereador({ params }: Props) {
           <Retrato nome={v.nome} foto={v.foto} className="rounded-2xl shadow-sm ring-1 ring-slate-200" />
           {v.foto && v.fotoFonte && <figcaption className="mt-1 text-[10px] leading-tight text-slate-400">Foto: {v.fotoFonte}</figcaption>}
         </figure>
-        <div className="relative min-w-0 flex-1">
-          <h1 className="text-3xl font-bold tracking-tight text-slate-900">{v.nome}</h1>
+        <div className="@container relative min-w-0 flex-1 basis-64">
+          <h1 className="text-3xl font-bold tracking-tight text-balance text-slate-900">{v.nome}</h1>
           <p className="mt-1 flex flex-wrap items-center gap-2 text-slate-600">
             <SeloPartido sigla={v.partido} logo={v.partidoLogo} grande />
             <span>{v.partidoNome ?? (v.partido ? "" : "partido não informado")}</span>
             {pf?.mesa && <span className="rounded-md bg-blue-50 px-2 py-0.5 text-sm text-blue-800 ring-1 ring-blue-200">{pf.mesa} da Mesa</span>}
             {!v.emExercicio && <span className="rounded-md bg-slate-100 px-2 py-0.5 text-sm text-slate-600">não está mais em exercício</span>}
           </p>
-          <dl className="mt-3 grid gap-x-6 gap-y-1 text-sm text-slate-600 sm:grid-cols-2">
+          <dl className="mt-3 grid gap-x-6 gap-y-1 text-sm text-slate-600 @md:grid-cols-2">
             {pf?.nomeCompleto && (
               <div>
                 <dt className="inline text-slate-400">Nome: </dt>
@@ -191,7 +200,7 @@ export default async function PaginaVereador({ params }: Props) {
               <div>
                 <dt className="inline text-slate-400">E-mail: </dt>
                 <dd className="inline">
-                  <a className="text-blue-800 underline" href={`mailto:${pf.email}`}>
+                  <a className="break-all text-blue-800 underline" href={`mailto:${pf.email}`}>
                     {pf.email}
                   </a>
                 </dd>
@@ -200,7 +209,7 @@ export default async function PaginaVereador({ params }: Props) {
             {pf?.telefone && (
               <div>
                 <dt className="inline text-slate-400">Telefone: </dt>
-                <dd className="inline">{pf.telefone}</dd>
+                <dd className="inline whitespace-nowrap">{pf.telefone}</dd>
               </div>
             )}
           </dl>
@@ -245,28 +254,45 @@ export default async function PaginaVereador({ params }: Props) {
 
       <AvisoParcial alvo="vereador" className="mt-4" />
 
-      <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-5">
-        {PILARES_VEREADOR.map((pl) => {
-          const n = nota10(v.pilares[pl.chave].nota);
-          return (
-            <a key={pl.chave} href="#nota" className={`rounded-xl border bg-white p-4 ${pl.chave === "D" ? "border-dashed border-slate-300" : "border-slate-200 hover:border-blue-300"}`}>
-              <div className="text-xs font-medium uppercase tracking-wide text-slate-400">
-                Pilar {pl.chave} · {COEFICIENTES.find((c) => c.pilares.includes(pl.chave))?.nome ?? "informativo"}
-              </div>
-              <div className="mt-1 text-sm font-medium text-slate-900">{pl.nome}</div>
-              <div className="mt-2">
-                {n != null ? (
-                  <NotaBadge valor={n} />
-                ) : pl.chave === "D" && custo ? (
-                  <span className="text-sm font-semibold tabular-nums text-slate-700">{milReais(custo.totalMensal)}/mês</span>
-                ) : (
-                  <span className="text-sm text-slate-400">sem dados</span>
-                )}
-              </div>
-              {v.pilares[pl.chave].ranking && <div className="mt-1 text-xs text-slate-500">{v.pilares[pl.chave].ranking}º no pilar</div>}
-            </a>
-          );
-        })}
+      <div className="mt-8 grid gap-3 md:grid-cols-2">
+        {COEFICIENTES.filter((c) => c.pilares.length).map((c) => (
+          <div key={c.chave} className="rounded-xl border border-slate-200 bg-white p-4">
+            <div className="flex items-center justify-between gap-2">
+              <span className="text-xs font-medium uppercase tracking-wide text-slate-500">{c.nome}</span>
+              {c.pilares.length > 1 && v.coeficientes[c.chave] != null && <NotaBadge valor={nota10(v.coeficientes[c.chave])} />}
+            </div>
+            <ul className="mt-2 divide-y divide-slate-100">
+              {c.pilares.map((k) => {
+                const pl = PILARES_VEREADOR.find((p) => p.chave === k)!;
+                const n = nota10(v.pilares[k].nota);
+                const peso = PESO_PILAR[k];
+                return (
+                  <li key={k}>
+                    <a href="#nota" className="group flex items-center gap-3 py-2">
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-slate-100 text-xs font-semibold text-slate-600">{k}</span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block text-sm font-medium text-slate-900 group-hover:text-blue-800">{pl.nome}</span>
+                        {(peso || v.pilares[k].ranking) && (
+                          <span className="block text-xs text-slate-500">{[peso, v.pilares[k].ranking && `${v.pilares[k].ranking}º no pilar`].filter(Boolean).join(" · ")}</span>
+                        )}
+                      </span>
+                      {n != null ? <NotaBadge valor={n} /> : <span className="text-sm text-slate-400">sem dados</span>}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))}
+        <a href="#quanto-custa-este-mandato" className="rounded-xl border border-dashed border-slate-300 bg-white p-4 hover:border-blue-300">
+          <span className="text-xs font-medium uppercase tracking-wide text-slate-500">Informativo, fora da nota</span>
+          <span className="mt-2 flex items-center gap-3">
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-slate-100 text-xs font-semibold text-slate-600">D</span>
+            <span className="min-w-0 flex-1 text-sm font-medium text-slate-900">{PILARES_VEREADOR.find((p) => p.chave === "D")!.nome}</span>
+            <span className="text-sm font-semibold tabular-nums text-slate-700">{custo ? `${milReais(custo.totalMensal)}/mês` : "sem dados"}</span>
+          </span>
+          <span className="mt-1 block text-xs text-slate-500">Mesma estrutura para todos os gabinetes, por lei.</span>
+        </a>
       </div>
 
       <Secao titulo="Coeficientes" id="coeficientes" subtitulo="Cada coeficiente junta avaliações individuais, mostradas logo abaixo.">
