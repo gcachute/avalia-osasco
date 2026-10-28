@@ -256,6 +256,18 @@ export default function Metodologia() {
           Pedir uma correção
         </PedidoCorrecao>
       </Secao>
+
+      <Secao titulo="Privacidade" id="privacidade">
+        <ul className="list-disc space-y-1.5 pl-5 text-slate-700">
+          <li>O site não usa cookies, não tem propaganda e não acompanha quem visita.</li>
+          <li>A escolha de tema (claro ou escuro) e os pesos do &quot;Meu critério&quot; ficam guardados só no seu aparelho.</li>
+          <li>Os pedidos de correção ficam públicos, com o título e a descrição escritos por quem enviou. Não coloque dados pessoais neles.</li>
+          <li>
+            Os dados de vereadores e do prefeito são os que a Câmara, a Prefeitura e os órgãos oficiais já publicam sobre quem exerce cargo
+            público. Nomes de servidores e assessores não aparecem no site.
+          </li>
+        </ul>
+      </Secao>
     </article>
   );
 }
