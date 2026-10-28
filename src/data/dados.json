@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-27T23:42:23.821Z",
+ "geradoEm": "2026-10-28T01:21:52.097Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -1049,28 +1049,28 @@
    "numero": 8,
    "tipo": "extraordinaria",
    "data": "2026-10-01",
-   "url": "https://www.osasco.sp.leg.br/assets/file/Vota%C3%A7%C3%A3o_20261001_-__8%C2%AA_Extraordin%C3%A1ria.xlsx"
+   "url": "https://cmo.rdmsistemas.com.br/portalcidadao/"
   },
   {
    "id": "2026-10-01-o55",
    "numero": 55,
    "tipo": "ordinaria",
    "data": "2026-10-01",
-   "url": "https://www.osasco.sp.leg.br/assets/file/55%C2%AA_Sess%C3%A3o_Ordin%C3%A1ria_-_20261001.xlsx"
+   "url": "https://cmo.rdmsistemas.com.br/portalcidadao/"
   },
   {
    "id": "2026-10-06-o56",
    "numero": 56,
    "tipo": "ordinaria",
    "data": "2026-10-06",
-   "url": "https://www.osasco.sp.leg.br/assets/file/56%C2%AA_Sess%C3%A3o_Ordin%C3%A1ria_-_20261006.xlsx"
+   "url": "https://cmo.rdmsistemas.com.br/portalcidadao/"
   },
   {
    "id": "2026-10-08-o57",
    "numero": 57,
    "tipo": "ordinaria",
    "data": "2026-10-08",
-   "url": "https://www.osasco.sp.leg.br/assets/file/57%C2%AA_Sess%C3%A3o_Ordin%C3%A1ria_-_20261008.xlsx"
+   "url": "https://cmo.rdmsistemas.com.br/portalcidadao/"
   }
  ],
  "vereadores": [
@@ -69203,7 +69203,7 @@
      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/"
     }
    ],
-   "notaRenda": "Renda média do responsável com rendimento, corrigida pelo IPCA para julho de 2022 (fator 2.061).",
+   "notaRenda": "Renda média do responsável com rendimento, corrigida pelo IPCA para julho de 2022 (fator 2,061).",
    "fatorIpca": 2.061,
    "cidade": {
     "2010": {
