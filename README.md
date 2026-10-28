@@ -33,8 +33,7 @@ Partidos, fotos, contatos, comissões e Mesa vêm de `npm run coletar:vereadores
 O site é estático: `npm run build` gera a pasta `out/`.
 
 - **Ver no computador:** rode `npm run dev` e abra http://localhost:3000.
-- **GitHub Pages:** o workflow `.github/workflows/pages.yml` publica a cada push na branch `main`. Antes, em *Settings → Pages*, escolha *Source: GitHub Actions*. Atenção: no plano gratuito do GitHub, o Pages só funciona em repositório público. Em repositório privado é preciso o plano Pro (ou Team/Enterprise), e mesmo assim o site publicado fica público.
-- **Vercel ou Netlify:** funcionam com repositório privado no plano gratuito. É só importar o repositório.
+- **Cloudflare Pages:** o projeto está ligado a este repositório e publica sozinho a cada push na `main` (inclusive os commits da atualização mensal de dados). Cada branch e PR ganha um endereço de prévia. Configuração do projeto: comando de build `npm run build`, pasta de saída `out`, sem `BASE_PATH` (o site fica na raiz do domínio). A versão do Node vem de `.node-version`.
 
 ## Pendências
 
