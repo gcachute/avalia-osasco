@@ -107,7 +107,7 @@ export const INDICADORES: Indicador[] = [
     chave: "renda",
     tema: "pessoas",
     nome: "Renda média",
-    dica: "Rendimento médio mensal da pessoa responsável pelo domicílio (2010 corrigido pela inflação, em reais de 2022)",
+    dica: "Rendimento médio mensal da pessoa responsável pelo domicílio (2000 e 2010 corrigidos pela inflação, em reais de 2022)",
     formato: "reais",
     escala: "faixa",
     valor: censo("rendaMedia"),
@@ -202,9 +202,14 @@ INDICADORES.push(
 
 // ---- Séries históricas ----
 export const rotuloPeriodo = (p: string) => (p === "mudanca" ? "Mudança" : p);
+// Anos do Censo que têm o campo (o Censo 2000 não tem cor ou raça nem o entorno das casas).
+const anosCenso = (h: Historico, campo: CampoCenso) => (h.censo?.anos ?? []).filter((a) => h.censo!.cidade[String(a)]?.[campo] != null);
 export function periodosDe(ind: Indicador, h: Historico | null | undefined): string[] | null {
   if (!ind.historia || !h) return null;
-  if (ind.historia.tipo === "censo") return h.censo ? [...h.censo.anos.map(String), "mudanca"] : null;
+  if (ind.historia.tipo === "censo") {
+    const anos = anosCenso(h, ind.historia.campo);
+    return anos.length > 1 ? [...anos.map(String), "mudanca"] : null;
+  }
   return h.eleicoes ? h.eleicoes.anos.map(String) : null;
 }
 export const formatoNoPeriodo = (ind: Indicador, periodo: string): Formato =>
@@ -224,7 +229,8 @@ export function valorNoPeriodo(ind: Indicador, b: BairroMapa, periodo: string, h
       const x = serie?.[String(ano)];
       return !x || (ind.formato === "pct" && (x.pessoas ?? 0) < 500) ? null : (x[hist.campo] ?? null);
     };
-    if (periodo === "mudanca") return mudanca(ind, em(h.censo!.anos[0]), em(h.censo!.anos.at(-1)!));
+    const anos = anosCenso(h, hist.campo);
+    if (periodo === "mudanca") return anos.length > 1 ? mudanca(ind, em(anos[0]), em(anos.at(-1)!)) : null;
     return em(periodo);
   }
   return h.eleicoes?.bairros[b.id]?.[periodo]?.[hist.campo] ?? null;
@@ -234,7 +240,8 @@ export function cidadeNoPeriodo(ind: Indicador, periodo: string, h: Historico | 
   if (!hist || !h) return null;
   if (hist.tipo === "censo") {
     const em = (ano: number | string) => h.censo?.cidade[String(ano)]?.[hist.campo] ?? null;
-    if (periodo === "mudanca") return h.censo ? mudanca(ind, em(h.censo.anos[0]), em(h.censo.anos.at(-1)!)) : null;
+    const anos = anosCenso(h, hist.campo);
+    if (periodo === "mudanca") return anos.length > 1 ? mudanca(ind, em(anos[0]), em(anos.at(-1)!)) : null;
     return em(periodo);
   }
   const c = h.eleicoes?.cidade[periodo];

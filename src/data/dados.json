@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-28T01:21:52.097Z",
+ "geradoEm": "2026-10-28T04:11:30.599Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -40698,7 +40698,7 @@
     ]
    },
    "B": {
-    "nota": 0.7999999999999999,
+    "nota": 0.7857142857142856,
     "anos": [
      2025
     ]
@@ -40729,7 +40729,7 @@
      ]
     },
     "B": {
-     "nota": 0.7999999999999999,
+     "nota": 0.7857142857142856,
      "anos": [
       2025
      ]
@@ -40755,12 +40755,22 @@
        },
        "semDados": true,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 34,
+        "educacao": 25.92,
+        "fundeb": 84.36,
         "pessoal": 45.67,
         "investimento": 5.907080151090162,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -40773,19 +40783,20 @@
          "ranking": 3
         },
         "B": {
-         "nota": null,
+         "nota": 0.8571428571428571,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 1,
+          "educacao": 0.7857142857142857,
+          "fundeb": 0.7857142857142857
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 1
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 1,
+        "educacao": 0.5714285714285714,
+        "fundeb": 0.5714285714285714,
         "pessoal": 0.42857142857142855,
         "investimento": 0.7142857142857143
        }
@@ -40801,12 +40812,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 31.27,
+        "educacao": 25.49,
+        "fundeb": 79.17,
         "pessoal": 49.72,
         "investimento": 4.2950044457079155,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -40819,19 +40840,20 @@
          "ranking": 5
         },
         "B": {
-         "nota": null,
+         "nota": 0.7142857142857143,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.9285714285714286,
+          "educacao": 0.6428571428571428,
+          "fundeb": 0.5714285714285714
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 6
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.8571428571428571,
+        "educacao": 0.2857142857142857,
+        "fundeb": 0.14285714285714285,
         "pessoal": 0.14285714285714285,
         "investimento": 0.5714285714285714
        }
@@ -40847,12 +40869,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 30.96,
+        "educacao": 30.31,
+        "fundeb": 77.37,
         "pessoal": 50.3,
         "investimento": 3.3588513935771185,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -40865,19 +40897,20 @@
          "ranking": 6
         },
         "B": {
-         "nota": null,
+         "nota": 0.7857142857142857,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.8571428571428572,
+          "educacao": 1,
+          "fundeb": 0.5
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 3
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.7142857142857143,
+        "educacao": 1,
+        "fundeb": 0,
         "pessoal": 0,
         "investimento": 0.42857142857142855
        }
@@ -40895,10 +40928,20 @@
        "indicadores": {
         "saude": 24.17,
         "educacao": 26.47,
-        "fundeb": null,
+        "fundeb": 90.74,
         "pessoal": 38.79,
         "investimento": 6.7778265918974805,
         "primario": null
+       },
+       "rreo": {
+        "saude": 24.17,
+        "educacao": 26.47,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -40911,20 +40954,20 @@
          "ranking": 2
         },
         "B": {
-         "nota": 0.75,
+         "nota": 0.7380952380952381,
          "componentes": {
           "saude": 0.5,
-          "educacao": 1,
-          "fundeb": null
+          "educacao": 0.8571428571428572,
+          "fundeb": 0.8571428571428572
          },
          "descumpridos": [],
-         "ranking": 2
+         "ranking": 5
         }
        },
        "posicao": {
         "saude": 0,
-        "educacao": 1,
-        "fundeb": null,
+        "educacao": 0.7142857142857143,
+        "fundeb": 0.7142857142857143,
         "pessoal": 1,
         "investimento": 0.8571428571428571
        }
@@ -40941,11 +40984,21 @@
        "semDados": false,
        "indicadores": {
         "saude": 26.93,
-        "educacao": null,
-        "fundeb": null,
+        "educacao": 25.01,
+        "fundeb": 83.06,
         "pessoal": 39.08,
         "investimento": 6.95737441718272,
         "primario": null
+       },
+       "rreo": {
+        "saude": 26.93,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -40958,20 +41011,20 @@
          "ranking": 1
         },
         "B": {
-         "nota": 0.75,
+         "nota": 0.6190476190476191,
          "componentes": {
-          "saude": 0.75,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.6428571428571428,
+          "educacao": 0.5,
+          "fundeb": 0.7142857142857143
          },
          "descumpridos": [],
-         "ranking": 3
+         "ranking": 8
         }
        },
        "posicao": {
-        "saude": 0.5,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.2857142857142857,
+        "educacao": 0,
+        "fundeb": 0.42857142857142855,
         "pessoal": 0.8571428571428571,
         "investimento": 1
        }
@@ -40987,12 +41040,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 29.55,
-        "educacao": 25.63,
-        "fundeb": null,
+        "saude": 28.89,
+        "educacao": 25.07,
+        "fundeb": 92.04,
         "pessoal": 43.49,
         "investimento": 2.8421703885753278,
         "primario": null
+       },
+       "rreo": {
+        "saude": 29.55,
+        "educacao": 25.63,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41005,20 +41068,20 @@
          "ranking": 4
         },
         "B": {
-         "nota": 0.7708333333333333,
+         "nota": 0.7619047619047619,
          "componentes": {
-          "saude": 0.875,
-          "educacao": 0.6666666666666666,
-          "fundeb": null
+          "saude": 0.7857142857142857,
+          "educacao": 0.5714285714285714,
+          "fundeb": 0.9285714285714286
          },
          "descumpridos": [],
-         "ranking": 1
+         "ranking": 4
         }
        },
        "posicao": {
-        "saude": 0.75,
-        "educacao": 0.3333333333333333,
-        "fundeb": null,
+        "saude": 0.5714285714285714,
+        "educacao": 0.14285714285714285,
+        "fundeb": 0.8571428571428571,
         "pessoal": 0.7142857142857143,
         "investimento": 0.2857142857142857
        }
@@ -41034,12 +41097,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 29.62,
-        "educacao": 25.6,
-        "fundeb": null,
+        "saude": 27.94,
+        "educacao": 25.63,
+        "fundeb": 80.2,
         "pessoal": 43.7,
         "investimento": 1.3874686266586211,
         "primario": null
+       },
+       "rreo": {
+        "saude": 29.62,
+        "educacao": 25.6,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41052,20 +41125,20 @@
          "ranking": 8
         },
         "B": {
-         "nota": 0.75,
+         "nota": 0.6904761904761904,
          "componentes": {
-          "saude": 1,
-          "educacao": 0.5,
-          "fundeb": null
+          "saude": 0.7142857142857143,
+          "educacao": 0.7142857142857143,
+          "fundeb": 0.6428571428571428
          },
          "descumpridos": [],
-         "ranking": 4
+         "ranking": 7
         }
        },
        "posicao": {
-        "saude": 1,
-        "educacao": 0,
-        "fundeb": null,
+        "saude": 0.42857142857142855,
+        "educacao": 0.42857142857142855,
+        "fundeb": 0.2857142857142857,
         "pessoal": 0.5714285714285714,
         "investimento": 0
        }
@@ -41081,12 +41154,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 25.07,
-        "educacao": 26.3,
-        "fundeb": null,
+        "saude": 24.42,
+        "educacao": 26.6,
+        "fundeb": 99.77,
         "pessoal": 47.49,
         "investimento": 1.555387079978751,
         "primario": null
+       },
+       "rreo": {
+        "saude": 25.07,
+        "educacao": 26.3,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41099,20 +41182,20 @@
          "ranking": 7
         },
         "B": {
-         "nota": 0.7291666666666666,
+         "nota": 0.8333333333333334,
          "componentes": {
-          "saude": 0.625,
-          "educacao": 0.8333333333333333,
-          "fundeb": null
+          "saude": 0.5714285714285714,
+          "educacao": 0.9285714285714286,
+          "fundeb": 1
          },
          "descumpridos": [],
-         "ranking": 5
+         "ranking": 2
         }
        },
        "posicao": {
-        "saude": 0.25,
-        "educacao": 0.6666666666666666,
-        "fundeb": null,
+        "saude": 0.14285714285714285,
+        "educacao": 0.8571428571428571,
+        "fundeb": 1,
         "pessoal": 0.2857142857142857,
         "investimento": 0.14285714285714285
        }
@@ -41138,12 +41221,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": 25.01,
-        "fundeb": null,
+        "saude": 30,
+        "educacao": 25.18,
+        "fundeb": 88.89,
         "pessoal": 42.71,
         "investimento": 6.293682309427716,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": 25.01,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41156,20 +41249,20 @@
          "ranking": 3
         },
         "B": {
-         "nota": 0.5,
+         "nota": 0.7857142857142857,
          "componentes": {
-          "saude": null,
-          "educacao": 0.5,
-          "fundeb": null
+          "saude": 1,
+          "educacao": 0.5714285714285714,
+          "fundeb": 0.7857142857142857
          },
          "descumpridos": [],
-         "ranking": 6
+         "ranking": 3
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": 0,
-        "fundeb": null,
+        "saude": 1,
+        "educacao": 0.14285714285714285,
+        "fundeb": 0.5714285714285714,
         "pessoal": 0.5714285714285714,
         "investimento": 0.7142857142857143
        }
@@ -41185,12 +41278,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 28.16,
+        "educacao": 25.48,
+        "fundeb": 88.25,
         "pessoal": 48.18,
         "investimento": 3.5670565579240163,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41203,19 +41306,20 @@
          "ranking": 7
         },
         "B": {
-         "nota": null,
+         "nota": 0.7380952380952381,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.7857142857142857,
+          "educacao": 0.7142857142857143,
+          "fundeb": 0.7142857142857143
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 5
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.5714285714285714,
+        "educacao": 0.42857142857142855,
+        "fundeb": 0.42857142857142855,
         "pessoal": 0,
         "investimento": 0.2857142857142857
        }
@@ -41231,12 +41335,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 26.07,
+        "educacao": 29.3,
+        "fundeb": 77.27,
         "pessoal": 46.45,
         "investimento": 3.9162784295045174,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41249,19 +41363,20 @@
          "ranking": 5
         },
         "B": {
-         "nota": null,
+         "nota": 0.7619047619047619,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.6428571428571428,
+          "educacao": 1,
+          "fundeb": 0.6428571428571428
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 4
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.2857142857142857,
+        "educacao": 1,
+        "fundeb": 0.2857142857142857,
         "pessoal": 0.2857142857142857,
         "investimento": 0.42857142857142855
        }
@@ -41278,11 +41393,21 @@
        "semDados": false,
        "indicadores": {
         "saude": 23.08,
-        "educacao": 26.86,
-        "fundeb": null,
+        "educacao": 26.85,
+        "fundeb": 73.6,
         "pessoal": 38.09,
         "investimento": 13.775844989652603,
         "primario": null
+       },
+       "rreo": {
+        "saude": 23.08,
+        "educacao": 26.86,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41295,20 +41420,20 @@
          "ranking": 1
         },
         "B": {
-         "nota": 0.75,
+         "nota": 0.6428571428571429,
          "componentes": {
           "saude": 0.5,
-          "educacao": 1,
-          "fundeb": null
+          "educacao": 0.9285714285714286,
+          "fundeb": 0.5
          },
          "descumpridos": [],
-         "ranking": 3
+         "ranking": 7
         }
        },
        "posicao": {
         "saude": 0,
-        "educacao": 1,
-        "fundeb": null,
+        "educacao": 0.8571428571428571,
+        "fundeb": 0,
         "pessoal": 1,
         "investimento": 1
        }
@@ -41324,12 +41449,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 25.09,
-        "educacao": 26.3,
-        "fundeb": null,
+        "saude": 25.08,
+        "educacao": 25.73,
+        "fundeb": 88.97,
         "pessoal": 39.33,
         "investimento": 5.587509294871592,
         "primario": null
+       },
+       "rreo": {
+        "saude": 25.09,
+        "educacao": 26.3,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41342,20 +41477,20 @@
          "ranking": 4
         },
         "B": {
-         "nota": 0.7125,
+         "nota": 0.7380952380952381,
          "componentes": {
-          "saude": 0.625,
-          "educacao": 0.8,
-          "fundeb": null
+          "saude": 0.5714285714285714,
+          "educacao": 0.7857142857142857,
+          "fundeb": 0.8571428571428572
          },
          "descumpridos": [],
-         "ranking": 5
+         "ranking": 6
         }
        },
        "posicao": {
-        "saude": 0.25,
-        "educacao": 0.6,
-        "fundeb": null,
+        "saude": 0.14285714285714285,
+        "educacao": 0.5714285714285714,
+        "fundeb": 0.7142857142857143,
         "pessoal": 0.8571428571428571,
         "investimento": 0.5714285714285714
        }
@@ -41371,12 +41506,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 28.66,
-        "educacao": 25.4,
-        "fundeb": null,
+        "saude": 28.42,
+        "educacao": 25.2,
+        "fundeb": 94.17,
         "pessoal": 41.77,
         "investimento": 6.58809200886607,
         "primario": null
+       },
+       "rreo": {
+        "saude": 28.66,
+        "educacao": 25.4,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41389,20 +41534,20 @@
          "ranking": 2
         },
         "B": {
-         "nota": 0.85,
+         "nota": 0.8333333333333334,
          "componentes": {
-          "saude": 1,
-          "educacao": 0.7,
-          "fundeb": null
+          "saude": 0.9285714285714286,
+          "educacao": 0.6428571428571428,
+          "fundeb": 0.9285714285714286
          },
          "descumpridos": [],
-         "ranking": 1
+         "ranking": 2
         }
        },
        "posicao": {
-        "saude": 1,
-        "educacao": 0.4,
-        "fundeb": null,
+        "saude": 0.8571428571428571,
+        "educacao": 0.2857142857142857,
+        "fundeb": 0.8571428571428571,
         "pessoal": 0.7142857142857143,
         "investimento": 0.8571428571428571
        }
@@ -41418,12 +41563,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 28.49,
+        "saude": 28.36,
         "educacao": 25.02,
-        "fundeb": null,
+        "fundeb": 76.07,
         "pessoal": 44.22,
         "investimento": 3.5006979036012242,
         "primario": null
+       },
+       "rreo": {
+        "saude": 28.49,
+        "educacao": 25.02,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41436,20 +41591,20 @@
          "ranking": 6
         },
         "B": {
-         "nota": 0.7375,
+         "nota": 0.6428571428571429,
          "componentes": {
-          "saude": 0.875,
-          "educacao": 0.6,
-          "fundeb": null
+          "saude": 0.8571428571428572,
+          "educacao": 0.5,
+          "fundeb": 0.5714285714285714
          },
          "descumpridos": [],
-         "ranking": 4
+         "ranking": 8
         }
        },
        "posicao": {
-        "saude": 0.75,
-        "educacao": 0.2,
-        "fundeb": null,
+        "saude": 0.7142857142857143,
+        "educacao": 0,
+        "fundeb": 0.14285714285714285,
         "pessoal": 0.42857142857142855,
         "investimento": 0.14285714285714285
        }
@@ -41465,12 +41620,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 27.51,
-        "educacao": 26.57,
-        "fundeb": null,
+        "saude": 26.63,
+        "educacao": 26.64,
+        "fundeb": 99.98,
         "pessoal": 46.57,
         "investimento": 2.9639661794356966,
         "primario": null
+       },
+       "rreo": {
+        "saude": 27.51,
+        "educacao": 26.57,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41483,20 +41648,20 @@
          "ranking": 8
         },
         "B": {
-         "nota": 0.825,
+         "nota": 0.8571428571428572,
          "componentes": {
-          "saude": 0.75,
-          "educacao": 0.9,
-          "fundeb": null
+          "saude": 0.7142857142857143,
+          "educacao": 0.8571428571428572,
+          "fundeb": 1
          },
          "descumpridos": [],
-         "ranking": 2
+         "ranking": 1
         }
        },
        "posicao": {
-        "saude": 0.5,
-        "educacao": 0.8,
-        "fundeb": null,
+        "saude": 0.42857142857142855,
+        "educacao": 0.7142857142857143,
+        "fundeb": 1,
         "pessoal": 0.14285714285714285,
         "investimento": 0
        }
@@ -41522,12 +41687,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 30.06,
+        "educacao": 25.21,
+        "fundeb": 88.34,
         "pessoal": 38.35,
         "investimento": 7.638796311299277,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41540,19 +41715,20 @@
          "ranking": 3
         },
         "B": {
-         "nota": null,
+         "nota": 0.880952380952381,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 1,
+          "educacao": 0.7142857142857143,
+          "fundeb": 0.9285714285714286
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 1
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 1,
+        "educacao": 0.42857142857142855,
+        "fundeb": 0.8571428571428571,
         "pessoal": 0.8571428571428571,
         "investimento": 0.7142857142857143
        }
@@ -41568,12 +41744,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 26.4,
+        "educacao": 25.17,
+        "fundeb": 82.8,
         "pessoal": 42.41,
         "investimento": 6.651199558539791,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41586,19 +41772,20 @@
          "ranking": 4
         },
         "B": {
-         "nota": null,
+         "nota": 0.738095238095238,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.7857142857142857,
+          "educacao": 0.6428571428571428,
+          "fundeb": 0.7857142857142857
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 5
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.5714285714285714,
+        "educacao": 0.2857142857142857,
+        "fundeb": 0.5714285714285714,
         "pessoal": 0.42857142857142855,
         "investimento": 0.5714285714285714
        }
@@ -41614,12 +41801,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 24.12,
+        "educacao": 25.15,
+        "fundeb": 73.27,
         "pessoal": 43.66,
         "investimento": 5.577751508054337,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41632,19 +41829,20 @@
          "ranking": 7
         },
         "B": {
-         "nota": null,
+         "nota": 0.5476190476190476,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.5714285714285714,
+          "educacao": 0.5714285714285714,
+          "fundeb": 0.5
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 8
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.14285714285714285,
+        "educacao": 0.14285714285714285,
+        "fundeb": 0,
         "pessoal": 0.14285714285714285,
         "investimento": 0.2857142857142857
        }
@@ -41660,12 +41858,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 22.33,
+        "saude": 21.99,
         "educacao": 28.41,
-        "fundeb": null,
+        "fundeb": 76.18,
         "pessoal": 37.87,
         "investimento": 13.5554118134418,
         "primario": null
+       },
+       "rreo": {
+        "saude": 22.33,
+        "educacao": 28.41,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41678,20 +41886,20 @@
          "ranking": 1
         },
         "B": {
-         "nota": 0.75,
+         "nota": 0.6904761904761904,
          "componentes": {
           "saude": 0.5,
           "educacao": 1,
-          "fundeb": null
+          "fundeb": 0.5714285714285714
          },
          "descumpridos": [],
-         "ranking": 1
+         "ranking": 7
         }
        },
        "posicao": {
         "saude": 0,
         "educacao": 1,
-        "fundeb": null,
+        "fundeb": 0.14285714285714285,
         "pessoal": 1,
         "investimento": 1
        }
@@ -41708,11 +41916,21 @@
        "semDados": false,
        "indicadores": {
         "saude": 26.28,
-        "educacao": 25.7,
-        "fundeb": null,
+        "educacao": 25.35,
+        "fundeb": 85.79,
         "pessoal": 38.45,
         "investimento": 4.756403744444551,
         "primario": null
+       },
+       "rreo": {
+        "saude": 26.28,
+        "educacao": 25.7,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41725,20 +41943,20 @@
          "ranking": 6
         },
         "B": {
-         "nota": 0.75,
+         "nota": 0.7857142857142857,
          "componentes": {
-          "saude": 0.6666666666666666,
-          "educacao": 0.8333333333333333,
-          "fundeb": null
+          "saude": 0.7142857142857143,
+          "educacao": 0.7857142857142857,
+          "fundeb": 0.8571428571428572
          },
          "descumpridos": [],
-         "ranking": 2
+         "ranking": 3
         }
        },
        "posicao": {
-        "saude": 0.3333333333333333,
-        "educacao": 0.6666666666666666,
-        "fundeb": null,
+        "saude": 0.42857142857142855,
+        "educacao": 0.5714285714285714,
+        "fundeb": 0.7142857142857143,
         "pessoal": 0.7142857142857143,
         "investimento": 0.14285714285714285
        }
@@ -41754,12 +41972,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 29.28,
+        "saude": 27.86,
         "educacao": 25.03,
-        "fundeb": null,
+        "fundeb": 80.97,
         "pessoal": 38.64,
         "investimento": 9.430212959988854,
         "primario": null
+       },
+       "rreo": {
+        "saude": 29.28,
+        "educacao": 25.03,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41772,20 +42000,20 @@
          "ranking": 2
         },
         "B": {
-         "nota": 0.75,
+         "nota": 0.7142857142857143,
          "componentes": {
-          "saude": 1,
+          "saude": 0.9285714285714286,
           "educacao": 0.5,
-          "fundeb": null
+          "fundeb": 0.7142857142857143
          },
          "descumpridos": [],
-         "ranking": 3
+         "ranking": 6
         }
        },
        "posicao": {
-        "saude": 1,
+        "saude": 0.8571428571428571,
         "educacao": 0,
-        "fundeb": null,
+        "fundeb": 0.42857142857142855,
         "pessoal": 0.5714285714285714,
         "investimento": 0.8571428571428571
        }
@@ -41801,12 +42029,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 28.06,
-        "educacao": 25.52,
-        "fundeb": null,
+        "saude": 27.42,
+        "educacao": 25.53,
+        "fundeb": 79.62,
         "pessoal": 43.84,
         "investimento": 5.7340914903930775,
         "primario": null
+       },
+       "rreo": {
+        "saude": 28.06,
+        "educacao": 25.52,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41819,20 +42057,20 @@
          "ranking": 5
         },
         "B": {
-         "nota": 0.75,
+         "nota": 0.7857142857142857,
          "componentes": {
-          "saude": 0.8333333333333333,
-          "educacao": 0.6666666666666666,
-          "fundeb": null
+          "saude": 0.8571428571428572,
+          "educacao": 0.8571428571428572,
+          "fundeb": 0.6428571428571428
          },
          "descumpridos": [],
          "ranking": 4
         }
        },
        "posicao": {
-        "saude": 0.6666666666666666,
-        "educacao": 0.3333333333333333,
-        "fundeb": null,
+        "saude": 0.7142857142857143,
+        "educacao": 0.7142857142857143,
+        "fundeb": 0.2857142857142857,
         "pessoal": 0,
         "investimento": 0.42857142857142855
        }
@@ -41848,12 +42086,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 24.39,
+        "educacao": 25.55,
+        "fundeb": 98.44,
         "pessoal": 43.44,
         "investimento": 4.304186559711683,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41866,19 +42114,20 @@
          "ranking": 8
         },
         "B": {
-         "nota": null,
+         "nota": 0.8571428571428571,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.6428571428571428,
+          "educacao": 0.9285714285714286,
+          "fundeb": 1
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 2
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.2857142857142857,
+        "educacao": 0.8571428571428571,
+        "fundeb": 1,
         "pessoal": 0.2857142857142857,
         "investimento": 0
        }
@@ -41904,12 +42153,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 30.57,
+        "educacao": 25.33,
+        "fundeb": 88.64,
         "pessoal": 37.43,
         "investimento": 7.519770111402433,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41922,19 +42181,20 @@
          "ranking": 3
         },
         "B": {
-         "nota": null,
+         "nota": 0.8571428571428572,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.9285714285714286,
+          "educacao": 0.7857142857142857,
+          "fundeb": 0.8571428571428572
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 2
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.8571428571428571,
+        "educacao": 0.5714285714285714,
+        "fundeb": 0.7142857142857143,
         "pessoal": 0.5714285714285714,
         "investimento": 0.5714285714285714
        }
@@ -41950,12 +42210,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 26.15,
+        "educacao": 26.54,
+        "fundeb": 78.65,
         "pessoal": 49.22,
         "investimento": 4.91659557543963,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -41968,19 +42238,20 @@
          "ranking": 8
         },
         "B": {
-         "nota": null,
+         "nota": 0.7380952380952381,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.6428571428571428,
+          "educacao": 0.9285714285714286,
+          "fundeb": 0.6428571428571428
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 4
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.2857142857142857,
+        "educacao": 0.8571428571428571,
+        "fundeb": 0.2857142857142857,
         "pessoal": 0,
         "investimento": 0
        }
@@ -41996,12 +42267,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 26.28,
+        "educacao": 25.06,
+        "fundeb": 74.33,
         "pessoal": 38.62,
         "investimento": 5.503084856644224,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42014,19 +42295,20 @@
          "ranking": 6
         },
         "B": {
-         "nota": null,
+         "nota": 0.5952380952380952,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.7142857142857143,
+          "educacao": 0.5714285714285714,
+          "fundeb": 0.5
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 8
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.42857142857142855,
+        "educacao": 0.14285714285714285,
+        "fundeb": 0,
         "pessoal": 0.42857142857142855,
         "investimento": 0.14285714285714285
        }
@@ -42044,10 +42326,20 @@
        "indicadores": {
         "saude": 24.69,
         "educacao": 29.3,
-        "fundeb": null,
+        "fundeb": 75.44,
         "pessoal": 31.59,
         "investimento": 11.633642621545697,
         "primario": null
+       },
+       "rreo": {
+        "saude": 24.69,
+        "educacao": 29.3,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42060,20 +42352,20 @@
          "ranking": 1
         },
         "B": {
-         "nota": 0.75,
+         "nota": 0.7142857142857143,
          "componentes": {
-          "saude": 0.5,
+          "saude": 0.5714285714285714,
           "educacao": 1,
-          "fundeb": null
+          "fundeb": 0.5714285714285714
          },
          "descumpridos": [],
-         "ranking": 2
+         "ranking": 6
         }
        },
        "posicao": {
-        "saude": 0,
+        "saude": 0.14285714285714285,
         "educacao": 1,
-        "fundeb": null,
+        "fundeb": 0.14285714285714285,
         "pessoal": 1,
         "investimento": 1
        }
@@ -42089,12 +42381,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 29.28,
+        "saude": 32.11,
         "educacao": 25.28,
-        "fundeb": null,
+        "fundeb": 90.41,
         "pessoal": 37.37,
         "investimento": 6.994385542384619,
         "primario": null
+       },
+       "rreo": {
+        "saude": 29.28,
+        "educacao": 25.28,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42107,11 +42409,11 @@
          "ranking": 5
         },
         "B": {
-         "nota": 0.9166666666666666,
+         "nota": 0.880952380952381,
          "componentes": {
           "saude": 1,
-          "educacao": 0.8333333333333333,
-          "fundeb": null
+          "educacao": 0.7142857142857143,
+          "fundeb": 0.9285714285714286
          },
          "descumpridos": [],
          "ranking": 1
@@ -42119,8 +42421,8 @@
        },
        "posicao": {
         "saude": 1,
-        "educacao": 0.6666666666666666,
-        "fundeb": null,
+        "educacao": 0.42857142857142855,
+        "fundeb": 0.8571428571428571,
         "pessoal": 0.7142857142857143,
         "investimento": 0.42857142857142855
        }
@@ -42136,12 +42438,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 28.39,
-        "educacao": 25.16,
-        "fundeb": null,
+        "saude": 28.21,
+        "educacao": 25.53,
+        "fundeb": 80.25,
         "pessoal": 36.53,
         "investimento": 9.02850104328716,
         "primario": null
+       },
+       "rreo": {
+        "saude": 28.39,
+        "educacao": 25.16,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42154,20 +42466,20 @@
          "ranking": 2
         },
         "B": {
-         "nota": 0.6666666666666666,
+         "nota": 0.8095238095238096,
          "componentes": {
-          "saude": 0.8333333333333333,
-          "educacao": 0.5,
-          "fundeb": null
+          "saude": 0.8571428571428572,
+          "educacao": 0.8571428571428572,
+          "fundeb": 0.7142857142857143
          },
          "descumpridos": [],
          "ranking": 3
         }
        },
        "posicao": {
-        "saude": 0.6666666666666666,
-        "educacao": 0,
-        "fundeb": null,
+        "saude": 0.7142857142857143,
+        "educacao": 0.7142857142857143,
+        "fundeb": 0.42857142857142855,
         "pessoal": 0.8571428571428571,
         "investimento": 0.8571428571428571
        }
@@ -42184,11 +42496,21 @@
        "semDados": false,
        "indicadores": {
         "saude": 27.8,
-        "educacao": 25.26,
-        "fundeb": null,
+        "educacao": 25.27,
+        "fundeb": 84.47,
         "pessoal": 45.83,
         "investimento": 6.117391109252253,
         "primario": null
+       },
+       "rreo": {
+        "saude": 27.8,
+        "educacao": 25.26,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42201,20 +42523,20 @@
          "ranking": 7
         },
         "B": {
-         "nota": 0.6666666666666666,
+         "nota": 0.738095238095238,
          "componentes": {
-          "saude": 0.6666666666666666,
-          "educacao": 0.6666666666666666,
-          "fundeb": null
+          "saude": 0.7857142857142857,
+          "educacao": 0.6428571428571428,
+          "fundeb": 0.7857142857142857
          },
          "descumpridos": [],
-         "ranking": 4
+         "ranking": 5
         }
        },
        "posicao": {
-        "saude": 0.3333333333333333,
-        "educacao": 0.3333333333333333,
-        "fundeb": null,
+        "saude": 0.5714285714285714,
+        "educacao": 0.2857142857142857,
+        "fundeb": 0.5714285714285714,
         "pessoal": 0.14285714285714285,
         "investimento": 0.2857142857142857
        }
@@ -42230,12 +42552,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 21.97,
+        "educacao": 25,
+        "fundeb": 94.58,
         "pessoal": 41.74,
         "investimento": 7.730237375479475,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42248,19 +42580,20 @@
          "ranking": 4
         },
         "B": {
-         "nota": null,
+         "nota": 0.6666666666666666,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.5,
+          "educacao": 0.5,
+          "fundeb": 1
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 7
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0,
+        "educacao": 0,
+        "fundeb": 1,
         "pessoal": 0.2857142857142857,
         "investimento": 0.7142857142857143
        }
@@ -42286,12 +42619,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 30.65,
+        "educacao": 23.77,
+        "fundeb": 78.33,
         "pessoal": 31.13,
         "investimento": 8.096063361077025,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42304,19 +42647,22 @@
          "ranking": 3
         },
         "B": {
-         "nota": null,
+         "nota": 0,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 1,
+          "educacao": 0,
+          "fundeb": 0.8571428571428572
          },
-         "descumpridos": []
+         "descumpridos": [
+          "educacao"
+         ],
+         "ranking": 5
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 1,
+        "educacao": 0.14285714285714285,
+        "fundeb": 0.7142857142857143,
         "pessoal": 1,
         "investimento": 0.7142857142857143
        }
@@ -42332,12 +42678,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 23.77,
+        "educacao": 25.01,
+        "fundeb": 73.59,
         "pessoal": 48.43,
         "investimento": 5.499344470977366,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42350,19 +42706,20 @@
          "ranking": 8
         },
         "B": {
-         "nota": null,
+         "nota": 0.6666666666666666,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.5714285714285714,
+          "educacao": 0.7857142857142857,
+          "fundeb": 0.6428571428571428
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 4
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.14285714285714285,
+        "educacao": 0.5714285714285714,
+        "fundeb": 0.2857142857142857,
         "pessoal": 0,
         "investimento": 0.2857142857142857
        }
@@ -42378,12 +42735,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 24.91,
+        "educacao": 24.54,
+        "fundeb": 74.26,
         "pessoal": 31.92,
         "investimento": 5.154990035889574,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42396,19 +42763,22 @@
          "ranking": 6
         },
         "B": {
-         "nota": null,
+         "nota": 0,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.6428571428571428,
+          "educacao": 0,
+          "fundeb": 0.7142857142857143
          },
-         "descumpridos": []
+         "descumpridos": [
+          "educacao"
+         ],
+         "ranking": 6
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.2857142857142857,
+        "educacao": 0.42857142857142855,
+        "fundeb": 0.42857142857142855,
         "pessoal": 0.7142857142857143,
         "investimento": 0
        }
@@ -42424,12 +42794,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 26.08,
+        "saude": 25.8,
         "educacao": 25.32,
         "fundeb": 76.74,
         "pessoal": 32.12,
         "investimento": 8.113685347800228,
         "primario": null
+       },
+       "rreo": {
+        "saude": 26.08,
+        "educacao": 25.32,
+        "fundeb": 76.74
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42442,20 +42822,20 @@
          "ranking": 2
         },
         "B": {
-         "nota": 0.7777777777777777,
+         "nota": 0.8333333333333334,
          "componentes": {
-          "saude": 0.5,
+          "saude": 0.7142857142857143,
           "educacao": 1,
-          "fundeb": 0.8333333333333333
+          "fundeb": 0.7857142857142857
          },
          "descumpridos": [],
          "ranking": 1
         }
        },
        "posicao": {
-        "saude": 0,
+        "saude": 0.42857142857142855,
         "educacao": 1,
-        "fundeb": 0.6666666666666666,
+        "fundeb": 0.5714285714285714,
         "pessoal": 0.5714285714285714,
         "investimento": 0.8571428571428571
        }
@@ -42478,6 +42858,16 @@
         "investimento": 6.5889587271375225,
         "primario": null
        },
+       "rreo": {
+        "saude": 28.71,
+        "educacao": 24.07,
+        "fundeb": 82.69
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
+       },
        "pilares": {
         "A": {
          "nota": 0.7684348739495799,
@@ -42491,20 +42881,20 @@
         "B": {
          "nota": 0,
          "componentes": {
-          "saude": 1,
+          "saude": 0.9285714285714286,
           "educacao": 0,
-          "fundeb": 1
+          "fundeb": 0.9285714285714286
          },
          "descumpridos": [
           "educacao"
          ],
-         "ranking": 4
+         "ranking": 7
         }
        },
        "posicao": {
-        "saude": 1,
-        "educacao": 0,
-        "fundeb": 1,
+        "saude": 0.8571428571428571,
+        "educacao": 0.2857142857142857,
+        "fundeb": 0.8571428571428571,
         "pessoal": 0.42857142857142855,
         "investimento": 0.5714285714285714
        }
@@ -42520,12 +42910,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 28.59,
-        "educacao": 25.2,
-        "fundeb": 71.21,
+        "saude": 28.17,
+        "educacao": 25.04,
+        "fundeb": 71.67,
         "pessoal": 31.76,
         "investimento": 8.383040453257577,
         "primario": null
+       },
+       "rreo": {
+        "saude": 28.59,
+        "educacao": 25.2,
+        "fundeb": 71.21
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42538,20 +42938,20 @@
          "ranking": 1
         },
         "B": {
-         "nota": 0.7222222222222222,
+         "nota": 0.7619047619047619,
          "componentes": {
-          "saude": 0.8333333333333333,
-          "educacao": 0.8333333333333333,
-          "fundeb": 0.5
+          "saude": 0.8571428571428572,
+          "educacao": 0.8571428571428572,
+          "fundeb": 0.5714285714285714
          },
          "descumpridos": [],
          "ranking": 2
         }
        },
        "posicao": {
-        "saude": 0.6666666666666666,
-        "educacao": 0.6666666666666666,
-        "fundeb": 0,
+        "saude": 0.7142857142857143,
+        "educacao": 0.7142857142857143,
+        "fundeb": 0.14285714285714285,
         "pessoal": 0.8571428571428571,
         "investimento": 1
        }
@@ -42567,12 +42967,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 26.47,
+        "saude": 27.7,
         "educacao": 25.16,
         "fundeb": 71.65,
         "pessoal": 39.59,
         "investimento": 6.4441388130800785,
         "primario": null
+       },
+       "rreo": {
+        "saude": 26.47,
+        "educacao": 25.16,
+        "fundeb": 71.65
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42585,20 +42995,20 @@
          "ranking": 5
         },
         "B": {
-         "nota": 0.6666666666666666,
+         "nota": 0.7380952380952381,
          "componentes": {
-          "saude": 0.6666666666666666,
-          "educacao": 0.6666666666666666,
-          "fundeb": 0.6666666666666666
+          "saude": 0.7857142857142857,
+          "educacao": 0.9285714285714286,
+          "fundeb": 0.5
          },
          "descumpridos": [],
          "ranking": 3
         }
        },
        "posicao": {
-        "saude": 0.3333333333333333,
-        "educacao": 0.3333333333333333,
-        "fundeb": 0.3333333333333333,
+        "saude": 0.5714285714285714,
+        "educacao": 0.8571428571428571,
+        "fundeb": 0,
         "pessoal": 0.14285714285714285,
         "investimento": 0.42857142857142855
        }
@@ -42614,12 +43024,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 22.67,
+        "educacao": 23.31,
+        "fundeb": 85.04,
         "pessoal": 39.56,
         "investimento": 5.206188251802622,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42632,19 +43052,22 @@
          "ranking": 7
         },
         "B": {
-         "nota": null,
+         "nota": 0,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.5,
+          "educacao": 0,
+          "fundeb": 1
          },
-         "descumpridos": []
+         "descumpridos": [
+          "educacao"
+         ],
+         "ranking": 8
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0,
+        "educacao": 0,
+        "fundeb": 1,
         "pessoal": 0.2857142857142857,
         "investimento": 0.14285714285714285
        }
@@ -42670,12 +43093,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 25.34,
+        "educacao": 26.05,
+        "fundeb": 88.51,
         "pessoal": 33.14,
         "investimento": 3.0310415400141446,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42688,19 +43121,20 @@
          "ranking": 8
         },
         "B": {
-         "nota": null,
+         "nota": 0.8333333333333334,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.7857142857142857,
+          "educacao": 0.7857142857142857,
+          "fundeb": 0.9285714285714286
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 2
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.5714285714285714,
+        "educacao": 0.5714285714285714,
+        "fundeb": 0.8571428571428571,
         "pessoal": 0.7142857142857143,
         "investimento": 0
        }
@@ -42716,12 +43150,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 23.35,
+        "educacao": 25.31,
+        "fundeb": 80.52,
         "pessoal": 38.72,
         "investimento": 5.310177082948169,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42734,19 +43178,20 @@
          "ranking": 5
         },
         "B": {
-         "nota": null,
+         "nota": 0.6428571428571428,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.6428571428571428,
+          "educacao": 0.5714285714285714,
+          "fundeb": 0.7142857142857143
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 7
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.2857142857142857,
+        "educacao": 0.14285714285714285,
+        "fundeb": 0.42857142857142855,
         "pessoal": 0.42857142857142855,
         "investimento": 0.42857142857142855
        }
@@ -42762,12 +43207,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 24.69,
+        "educacao": 27.06,
+        "fundeb": 74.38,
         "pessoal": 34.43,
         "investimento": 3.1402685563405583,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42780,19 +43235,20 @@
          "ranking": 6
         },
         "B": {
-         "nota": null,
+         "nota": 0.7380952380952381,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.7142857142857143,
+          "educacao": 1,
+          "fundeb": 0.5
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 4
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.42857142857142855,
+        "educacao": 1,
+        "fundeb": 0,
         "pessoal": 0.5714285714285714,
         "investimento": 0.14285714285714285
        }
@@ -42815,6 +43271,16 @@
         "investimento": 12.202944502052159,
         "primario": null
        },
+       "rreo": {
+        "saude": 23.03,
+        "educacao": 25.63,
+        "fundeb": 74.44
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
+       },
        "pilares": {
         "A": {
          "nota": 1,
@@ -42826,20 +43292,20 @@
          "ranking": 1
         },
         "B": {
-         "nota": 0.6666666666666666,
+         "nota": 0.5952380952380952,
          "componentes": {
-          "saude": 0.5,
-          "educacao": 1,
-          "fundeb": 0.5
+          "saude": 0.5714285714285714,
+          "educacao": 0.6428571428571428,
+          "fundeb": 0.5714285714285714
          },
          "descumpridos": [],
-         "ranking": 4
+         "ranking": 8
         }
        },
        "posicao": {
-        "saude": 0,
-        "educacao": 1,
-        "fundeb": 0,
+        "saude": 0.14285714285714285,
+        "educacao": 0.2857142857142857,
+        "fundeb": 0.14285714285714285,
         "pessoal": 1,
         "investimento": 1
        }
@@ -42856,11 +43322,21 @@
        "semDados": false,
        "indicadores": {
         "saude": 29.27,
-        "educacao": 25.44,
-        "fundeb": 87.33,
+        "educacao": 26.54,
+        "fundeb": 87.39,
         "pessoal": 42.02,
         "investimento": 6.6232974324846,
         "primario": null
+       },
+       "rreo": {
+        "saude": 29.27,
+        "educacao": 25.44,
+        "fundeb": 87.33
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42873,11 +43349,11 @@
          "ranking": 2
         },
         "B": {
-         "nota": 0.8888888888888888,
+         "nota": 0.9285714285714285,
          "componentes": {
           "saude": 1,
-          "educacao": 0.8333333333333333,
-          "fundeb": 0.8333333333333333
+          "educacao": 0.9285714285714286,
+          "fundeb": 0.8571428571428572
          },
          "descumpridos": [],
          "ranking": 1
@@ -42885,8 +43361,8 @@
        },
        "posicao": {
         "saude": 1,
-        "educacao": 0.6666666666666666,
-        "fundeb": 0.6666666666666666,
+        "educacao": 0.8571428571428571,
+        "fundeb": 0.7142857142857143,
         "pessoal": 0.14285714285714285,
         "investimento": 0.8571428571428571
        }
@@ -42902,12 +43378,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 27.86,
-        "educacao": 25.34,
+        "saude": 26.3,
+        "educacao": 25.7,
         "fundeb": 79.39,
         "pessoal": 30.29,
         "investimento": 6.308333577981305,
         "primario": null
+       },
+       "rreo": {
+        "saude": 27.86,
+        "educacao": 25.34,
+        "fundeb": 79.39
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42920,20 +43406,20 @@
          "ranking": 3
         },
         "B": {
-         "nota": 0.7222222222222222,
+         "nota": 0.7380952380952381,
          "componentes": {
-          "saude": 0.8333333333333333,
-          "educacao": 0.6666666666666666,
-          "fundeb": 0.6666666666666666
+          "saude": 0.8571428571428572,
+          "educacao": 0.7142857142857143,
+          "fundeb": 0.6428571428571428
          },
          "descumpridos": [],
-         "ranking": 2
+         "ranking": 5
         }
        },
        "posicao": {
-        "saude": 0.6666666666666666,
-        "educacao": 0.3333333333333333,
-        "fundeb": 0.3333333333333333,
+        "saude": 0.7142857142857143,
+        "educacao": 0.42857142857142855,
+        "fundeb": 0.2857142857142857,
         "pessoal": 0.8571428571428571,
         "investimento": 0.5714285714285714
        }
@@ -42949,12 +43435,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 27.37,
-        "educacao": 25.26,
+        "saude": 28.53,
+        "educacao": 25.23,
         "fundeb": 92.04,
         "pessoal": 42.64,
         "investimento": 4.132819702116745,
         "primario": null
+       },
+       "rreo": {
+        "saude": 27.37,
+        "educacao": 25.26,
+        "fundeb": 92.04
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -42967,9 +43463,9 @@
          "ranking": 7
         },
         "B": {
-         "nota": 0.7222222222222222,
+         "nota": 0.8095238095238096,
          "componentes": {
-          "saude": 0.6666666666666666,
+          "saude": 0.9285714285714286,
           "educacao": 0.5,
           "fundeb": 1
          },
@@ -42978,7 +43474,7 @@
         }
        },
        "posicao": {
-        "saude": 0.3333333333333333,
+        "saude": 0.8571428571428571,
         "educacao": 0,
         "fundeb": 1,
         "pessoal": 0,
@@ -42996,12 +43492,22 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 22.61,
+        "educacao": 26.33,
+        "fundeb": 84.63,
         "pessoal": 41.57,
         "investimento": 6.456769220730182,
         "primario": null
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43014,19 +43520,20 @@
          "ranking": 4
         },
         "B": {
-         "nota": null,
+         "nota": 0.7142857142857143,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.5,
+          "educacao": 0.8571428571428572,
+          "fundeb": 0.7857142857142857
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 6
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0,
+        "educacao": 0.7142857142857143,
+        "fundeb": 0.5714285714285714,
         "pessoal": 0.2857142857142857,
         "investimento": 0.7142857142857143
        }
@@ -43052,9 +43559,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 25.84,
+        "educacao": 28,
+        "fundeb": 93.33,
         "pessoal": 39.79,
         "investimento": 4.434230480332549,
         "primario": {
@@ -43063,6 +43570,16 @@
          "rcl": 4057902705.36,
          "diferencaRCL": -3.3301936917191632
         }
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43075,19 +43592,20 @@
          "ranking": 8
         },
         "B": {
-         "nota": null,
+         "nota": 0.7857142857142857,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.6428571428571428,
+          "educacao": 0.8571428571428572,
+          "fundeb": 0.8571428571428572
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 2
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.2857142857142857,
+        "educacao": 0.7142857142857143,
+        "fundeb": 0.7142857142857143,
         "pessoal": 0.5714285714285714,
         "investimento": 0
        }
@@ -43103,9 +43621,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 26.6,
+        "educacao": 26.83,
+        "fundeb": 89.31,
         "pessoal": 47.26,
         "investimento": 5.924847601121342,
         "primario": {
@@ -43114,6 +43632,16 @@
          "rcl": 5457041362.35,
          "diferencaRCL": -4.211733244972589
         }
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43126,19 +43654,20 @@
          "ranking": 7
         },
         "B": {
-         "nota": null,
+         "nota": 0.6666666666666666,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.7142857142857143,
+          "educacao": 0.6428571428571428,
+          "fundeb": 0.6428571428571428
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 7
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.42857142857142855,
+        "educacao": 0.2857142857142857,
+        "fundeb": 0.2857142857142857,
         "pessoal": 0,
         "investimento": 0.2857142857142857
        }
@@ -43154,9 +43683,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 28.31,
+        "educacao": 27.67,
+        "fundeb": 82.98,
         "pessoal": 36.27,
         "investimento": 7.198944370758813,
         "primario": {
@@ -43165,6 +43694,16 @@
          "rcl": 6971501091.31,
          "diferencaRCL": 4.185018691077566
         }
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43177,19 +43716,20 @@
          "ranking": 2
         },
         "B": {
-         "nota": null,
+         "nota": 0.7380952380952381,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 1,
+          "educacao": 0.7142857142857143,
+          "fundeb": 0.5
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 4
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 1,
+        "educacao": 0.42857142857142855,
+        "fundeb": 0,
         "pessoal": 0.7142857142857143,
         "investimento": 0.7142857142857143
        }
@@ -43205,7 +43745,7 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 26.31,
+        "saude": 24.74,
         "educacao": 27.8,
         "fundeb": 83.85,
         "pessoal": 29.89,
@@ -43216,6 +43756,16 @@
          "rcl": 5017930634.09,
          "diferencaRCL": 2.6600945314623075
         }
+       },
+       "rreo": {
+        "saude": 26.31,
+        "educacao": 27.8,
+        "fundeb": 83.85
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43228,20 +43778,20 @@
          "ranking": 1
         },
         "B": {
-         "nota": 0.611111111111111,
+         "nota": 0.6428571428571429,
          "componentes": {
-          "saude": 0.5,
-          "educacao": 0.8333333333333333,
-          "fundeb": 0.5
+          "saude": 0.5714285714285714,
+          "educacao": 0.7857142857142857,
+          "fundeb": 0.5714285714285714
          },
          "descumpridos": [],
-         "ranking": 4
+         "ranking": 8
         }
        },
        "posicao": {
-        "saude": 0,
-        "educacao": 0.6666666666666666,
-        "fundeb": 0,
+        "saude": 0.14285714285714285,
+        "educacao": 0.5714285714285714,
+        "fundeb": 0.14285714285714285,
         "pessoal": 0.8571428571428571,
         "investimento": 1
        }
@@ -43259,7 +43809,7 @@
        "indicadores": {
         "saude": 27.9,
         "educacao": 25.99,
-        "fundeb": 93.24,
+        "fundeb": 91.11,
         "pessoal": 44.39,
         "investimento": 6.552081100797088,
         "primario": {
@@ -43268,6 +43818,16 @@
          "rcl": 3330553494.38,
          "diferencaRCL": 2.5894708166533955
         }
+       },
+       "rreo": {
+        "saude": 27.9,
+        "educacao": 25.99,
+        "fundeb": 93.24
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43280,20 +43840,20 @@
          "ranking": 3
         },
         "B": {
-         "nota": 0.7777777777777777,
+         "nota": 0.7619047619047619,
          "componentes": {
-          "saude": 1,
-          "educacao": 0.6666666666666666,
-          "fundeb": 0.6666666666666666
+          "saude": 0.9285714285714286,
+          "educacao": 0.5714285714285714,
+          "fundeb": 0.7857142857142857
          },
          "descumpridos": [],
-         "ranking": 2
+         "ranking": 3
         }
        },
        "posicao": {
-        "saude": 1,
-        "educacao": 0.3333333333333333,
-        "fundeb": 0.3333333333333333,
+        "saude": 0.8571428571428571,
+        "educacao": 0.14285714285714285,
+        "fundeb": 0.5714285714285714,
         "pessoal": 0.2857142857142857,
         "investimento": 0.5714285714285714
        }
@@ -43309,9 +43869,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 27.63,
-        "educacao": 25.84,
-        "fundeb": 95.23,
+        "saude": 26.99,
+        "educacao": 25.86,
+        "fundeb": 95.61,
         "pessoal": 28.09,
         "investimento": 7.6314211535401455,
         "primario": {
@@ -43320,6 +43880,16 @@
          "rcl": 3627117399.82,
          "diferencaRCL": -6.068382101746226
         }
+       },
+       "rreo": {
+        "saude": 27.63,
+        "educacao": 25.84,
+        "fundeb": 95.23
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43332,20 +43902,20 @@
          "ranking": 6
         },
         "B": {
-         "nota": 0.6944444444444443,
+         "nota": 0.7380952380952381,
          "componentes": {
-          "saude": 0.75,
+          "saude": 0.7857142857142857,
           "educacao": 0.5,
-          "fundeb": 0.8333333333333333
+          "fundeb": 0.9285714285714286
          },
          "descumpridos": [],
-         "ranking": 3
+         "ranking": 5
         }
        },
        "posicao": {
-        "saude": 0.5,
+        "saude": 0.5714285714285714,
         "educacao": 0,
-        "fundeb": 0.6666666666666666,
+        "fundeb": 0.8571428571428571,
         "pessoal": 1,
         "investimento": 0.8571428571428571
        }
@@ -43361,7 +43931,7 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
+        "saude": 27.03,
         "educacao": 28.22,
         "fundeb": 99.72,
         "pessoal": 42.76,
@@ -43372,6 +43942,16 @@
          "rcl": 3816706791.75,
          "diferencaRCL": 7.267064699586902
         }
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": 28.22,
+        "fundeb": 99.72
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43384,10 +43964,10 @@
          "ranking": 5
         },
         "B": {
-         "nota": 1,
+         "nota": 0.9285714285714285,
          "componentes": {
-          "saude": null,
-          "educacao": 1,
+          "saude": 0.8571428571428572,
+          "educacao": 0.9285714285714286,
           "fundeb": 1
          },
          "descumpridos": [],
@@ -43395,8 +43975,8 @@
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": 1,
+        "saude": 0.7142857142857143,
+        "educacao": 0.8571428571428571,
         "fundeb": 1,
         "pessoal": 0.42857142857142855,
         "investimento": 0.14285714285714285
@@ -43413,9 +43993,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 23.28,
+        "educacao": 29.01,
+        "fundeb": 91.07,
         "pessoal": 45.65,
         "investimento": 6.121126774141127,
         "primario": {
@@ -43424,6 +44004,16 @@
          "rcl": 3647761929.51,
          "diferencaRCL": 5.369897673840587
         }
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43436,19 +44026,20 @@
          "ranking": 4
         },
         "B": {
-         "nota": null,
+         "nota": 0.7380952380952381,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.5,
+          "educacao": 1,
+          "fundeb": 0.7142857142857143
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 6
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0,
+        "educacao": 1,
+        "fundeb": 0.42857142857142855,
         "pessoal": 0.14285714285714285,
         "investimento": 0.42857142857142855
        }
@@ -43474,9 +44065,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 22.53,
+        "educacao": 30.47,
+        "fundeb": 96.67,
         "pessoal": 40.12,
         "investimento": 5.754298067148015,
         "primario": {
@@ -43485,6 +44076,16 @@
          "rcl": 4658792790.76,
          "diferencaRCL": 4.19022745757607
         }
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43497,19 +44098,20 @@
          "ranking": 5
         },
         "B": {
-         "nota": null,
+         "nota": 0.8809523809523809,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.6428571428571428,
+          "educacao": 1,
+          "fundeb": 1
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 2
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.2857142857142857,
+        "educacao": 1,
+        "fundeb": 1,
         "pessoal": 0.42857142857142855,
         "investimento": 0.14285714285714285
        }
@@ -43525,9 +44127,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 23.97,
+        "educacao": 28.06,
+        "fundeb": 91.48,
         "pessoal": 42.62,
         "investimento": 9.409504567536539,
         "primario": {
@@ -43536,6 +44138,16 @@
          "rcl": 6208328848.7,
          "diferencaRCL": 12.357717658442825
         }
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43548,19 +44160,20 @@
          "ranking": 2
         },
         "B": {
-         "nota": null,
+         "nota": 0.7857142857142857,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.7142857142857143,
+          "educacao": 0.8571428571428572,
+          "fundeb": 0.7857142857142857
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 3
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.42857142857142855,
+        "educacao": 0.7142857142857143,
+        "fundeb": 0.5714285714285714,
         "pessoal": 0.14285714285714285,
         "investimento": 0.7142857142857143
        }
@@ -43576,9 +44189,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 26.77,
+        "educacao": 26.9,
+        "fundeb": 86.23,
         "pessoal": 34.95,
         "investimento": 7.259061679268061,
         "primario": {
@@ -43587,6 +44200,16 @@
          "rcl": 7754036995.16,
          "diferencaRCL": 2.813727656654004
         }
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43599,19 +44222,20 @@
          "ranking": 1
         },
         "B": {
-         "nota": null,
+         "nota": 0.7380952380952381,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.9285714285714286,
+          "educacao": 0.7142857142857143,
+          "fundeb": 0.5714285714285714
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 4
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.8571428571428571,
+        "educacao": 0.42857142857142855,
+        "fundeb": 0.14285714285714285,
         "pessoal": 0.7142857142857143,
         "investimento": 0.5714285714285714
        }
@@ -43639,6 +44263,16 @@
          "diferencaRCL": -7.4332952544425765
         }
        },
+       "rreo": {
+        "saude": 21.5,
+        "educacao": 29.16,
+        "fundeb": 74.58
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
+       },
        "pilares": {
         "A": {
          "nota": 0.6666666666666666,
@@ -43650,19 +44284,19 @@
          "ranking": 4
         },
         "B": {
-         "nota": 0.7083333333333334,
+         "nota": 0.6666666666666666,
          "componentes": {
-          "saude": 0.625,
-          "educacao": 1,
+          "saude": 0.5714285714285714,
+          "educacao": 0.9285714285714286,
           "fundeb": 0.5
          },
          "descumpridos": [],
-         "ranking": 2
+         "ranking": 6
         }
        },
        "posicao": {
-        "saude": 0.25,
-        "educacao": 1,
+        "saude": 0.14285714285714285,
+        "educacao": 0.8571428571428571,
         "fundeb": 0,
         "pessoal": 0.8571428571428571,
         "investimento": 1
@@ -43691,6 +44325,16 @@
          "diferencaRCL": -2.52824817644831
         }
        },
+       "rreo": {
+        "saude": 25.71,
+        "educacao": 25.03,
+        "fundeb": 89.83
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
+       },
        "pilares": {
         "A": {
          "nota": 0.548915468723297,
@@ -43704,18 +44348,18 @@
         "B": {
          "nota": 0.6666666666666666,
          "componentes": {
-          "saude": 0.75,
+          "saude": 0.7857142857142857,
           "educacao": 0.5,
-          "fundeb": 0.75
+          "fundeb": 0.7142857142857143
          },
          "descumpridos": [],
-         "ranking": 5
+         "ranking": 7
         }
        },
        "posicao": {
-        "saude": 0.5,
+        "saude": 0.5714285714285714,
         "educacao": 0,
-        "fundeb": 0.5,
+        "fundeb": 0.42857142857142855,
         "pessoal": 0,
         "investimento": 0.8571428571428571
        }
@@ -43731,9 +44375,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 25.9,
-        "educacao": 25.82,
-        "fundeb": 89.07,
+        "saude": 26.09,
+        "educacao": 25.91,
+        "fundeb": 89.23,
         "pessoal": 25.86,
         "investimento": 5.455996578722787,
         "primario": {
@@ -43742,6 +44386,16 @@
          "rcl": 4038357882.86,
          "diferencaRCL": -3.17719235792773
         }
+       },
+       "rreo": {
+        "saude": 25.9,
+        "educacao": 25.82,
+        "fundeb": 89.07
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43754,20 +44408,20 @@
          "ranking": 8
         },
         "B": {
-         "nota": 0.7083333333333334,
+         "nota": 0.6904761904761904,
          "componentes": {
-          "saude": 0.875,
-          "educacao": 0.625,
-          "fundeb": 0.625
+          "saude": 0.8571428571428572,
+          "educacao": 0.5714285714285714,
+          "fundeb": 0.6428571428571428
          },
          "descumpridos": [],
-         "ranking": 3
+         "ranking": 5
         }
        },
        "posicao": {
-        "saude": 0.75,
-        "educacao": 0.25,
-        "fundeb": 0.25,
+        "saude": 0.7142857142857143,
+        "educacao": 0.14285714285714285,
+        "fundeb": 0.2857142857142857,
         "pessoal": 1,
         "investimento": 0
        }
@@ -43783,8 +44437,8 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 27.77,
-        "educacao": 27.73,
+        "saude": 27.58,
+        "educacao": 27.7,
         "fundeb": 95.36,
         "pessoal": 36.06,
         "investimento": 6.329760318668977,
@@ -43794,6 +44448,16 @@
          "rcl": 4418567244.63,
          "diferencaRCL": -4.492253490568329
         }
+       },
+       "rreo": {
+        "saude": 27.77,
+        "educacao": 27.73,
+        "fundeb": 95.36
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43806,11 +44470,11 @@
          "ranking": 7
         },
         "B": {
-         "nota": 0.9583333333333334,
+         "nota": 0.9047619047619048,
          "componentes": {
           "saude": 1,
-          "educacao": 0.875,
-          "fundeb": 1
+          "educacao": 0.7857142857142857,
+          "fundeb": 0.9285714285714286
          },
          "descumpridos": [],
          "ranking": 1
@@ -43818,8 +44482,8 @@
        },
        "posicao": {
         "saude": 1,
-        "educacao": 0.75,
-        "fundeb": 1,
+        "educacao": 0.5714285714285714,
+        "fundeb": 0.8571428571428571,
         "pessoal": 0.5714285714285714,
         "investimento": 0.42857142857142855
        }
@@ -43835,9 +44499,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 20.89,
-        "educacao": 26.33,
-        "fundeb": 93.4,
+        "saude": 21.34,
+        "educacao": 26.86,
+        "fundeb": 93.47,
         "pessoal": 42.37,
         "investimento": 6.032020553625812,
         "primario": {
@@ -43846,6 +44510,16 @@
          "rcl": 4086798978.46,
          "diferencaRCL": 6.198548642719335
         }
+       },
+       "rreo": {
+        "saude": 20.89,
+        "educacao": 26.33,
+        "fundeb": 93.4
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43858,20 +44532,20 @@
          "ranking": 3
         },
         "B": {
-         "nota": 0.7083333333333334,
+         "nota": 0.6666666666666666,
          "componentes": {
           "saude": 0.5,
-          "educacao": 0.75,
-          "fundeb": 0.875
+          "educacao": 0.6428571428571428,
+          "fundeb": 0.8571428571428572
          },
          "descumpridos": [],
-         "ranking": 4
+         "ranking": 8
         }
        },
        "posicao": {
         "saude": 0,
-        "educacao": 0.5,
-        "fundeb": 0.75,
+        "educacao": 0.2857142857142857,
+        "fundeb": 0.7142857142857143,
         "pessoal": 0.2857142857142857,
         "investimento": 0.2857142857142857
        }
@@ -43897,9 +44571,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 17.31,
-        "educacao": 30.45,
-        "fundeb": 96.62,
+        "saude": 22.9,
+        "educacao": 26.66,
+        "fundeb": 96.47,
         "pessoal": 41.61,
         "investimento": 5.386024153266875,
         "primario": {
@@ -43908,6 +44582,16 @@
          "rcl": 4909918731.48,
          "diferencaRCL": -3.9955109401753064
         }
+       },
+       "rreo": {
+        "saude": 17.31,
+        "educacao": 30.45,
+        "fundeb": 96.62
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43920,20 +44604,20 @@
          "ranking": 8
         },
         "B": {
-         "nota": 0.7999999999999999,
+         "nota": 0.7857142857142856,
          "componentes": {
-          "saude": 0.5,
-          "educacao": 1,
-          "fundeb": 0.9
+          "saude": 0.6428571428571428,
+          "educacao": 0.7857142857142857,
+          "fundeb": 0.9285714285714286
          },
          "descumpridos": [],
-         "ranking": 2
+         "ranking": 3
         }
        },
        "posicao": {
-        "saude": 0,
-        "educacao": 1,
-        "fundeb": 0.8,
+        "saude": 0.2857142857142857,
+        "educacao": 0.5714285714285714,
+        "fundeb": 0.8571428571428571,
         "pessoal": 0.14285714285714285,
         "investimento": 0.5714285714285714
        }
@@ -43949,9 +44633,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 23.07,
+        "educacao": 25.99,
+        "fundeb": 87.1,
         "pessoal": 40.97,
         "investimento": 7.825876168398933,
         "primario": {
@@ -43960,6 +44644,16 @@
          "rcl": 6479532626.52,
          "diferencaRCL": 7.227089713591004
         }
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -43972,19 +44666,20 @@
          "ranking": 1
         },
         "B": {
-         "nota": null,
+         "nota": 0.6666666666666666,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 0.7142857142857143,
+          "educacao": 0.7142857142857143,
+          "fundeb": 0.5714285714285714
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 7
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 0.42857142857142855,
+        "educacao": 0.42857142857142855,
+        "fundeb": 0.14285714285714285,
         "pessoal": 0.2857142857142857,
         "investimento": 0.8571428571428571
        }
@@ -44000,9 +44695,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 24.89,
+        "educacao": 27.22,
+        "fundeb": 90.64,
         "pessoal": 33.45,
         "investimento": 4.925033514086855,
         "primario": {
@@ -44011,6 +44706,16 @@
          "rcl": 8985297738.92,
          "diferencaRCL": 8.65407314987276
         }
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -44023,19 +44728,20 @@
          "ranking": 3
         },
         "B": {
-         "nota": null,
+         "nota": 0.8809523809523809,
          "componentes": {
-          "saude": null,
-          "educacao": null,
-          "fundeb": null
+          "saude": 1,
+          "educacao": 0.8571428571428572,
+          "fundeb": 0.7857142857142857
          },
-         "descumpridos": []
+         "descumpridos": [],
+         "ranking": 2
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": null,
-        "fundeb": null,
+        "saude": 1,
+        "educacao": 0.7142857142857143,
+        "fundeb": 0.5714285714285714,
         "pessoal": 0.5714285714285714,
         "investimento": 0.2857142857142857
        }
@@ -44051,7 +44757,7 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 20.72,
+        "saude": 20.69,
         "educacao": 28.38,
         "fundeb": 71.95,
         "pessoal": 31.39,
@@ -44062,6 +44768,16 @@
          "rcl": 5693363501.49,
          "diferencaRCL": -1.6536452955333114
         }
+       },
+       "rreo": {
+        "saude": 20.72,
+        "educacao": 28.38,
+        "fundeb": 71.95
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -44074,19 +44790,19 @@
          "ranking": 5
         },
         "B": {
-         "nota": 0.6749999999999999,
+         "nota": 0.6666666666666666,
          "componentes": {
-          "saude": 0.625,
-          "educacao": 0.9,
+          "saude": 0.5,
+          "educacao": 1,
           "fundeb": 0.5
          },
          "descumpridos": [],
-         "ranking": 6
+         "ranking": 8
         }
        },
        "posicao": {
-        "saude": 0.25,
-        "educacao": 0.8,
+        "saude": 0,
+        "educacao": 1,
         "fundeb": 0,
         "pessoal": 0.7142857142857143,
         "investimento": 0.7142857142857143
@@ -44115,6 +44831,16 @@
          "diferencaRCL": -2.2910766367123196
         }
        },
+       "rreo": {
+        "saude": 24.23,
+        "educacao": 25.09,
+        "fundeb": 87.88
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
+       },
        "pilares": {
         "A": {
          "nota": 0.7454359292541867,
@@ -44126,20 +44852,20 @@
          "ranking": 4
         },
         "B": {
-         "nota": 0.7000000000000001,
+         "nota": 0.6904761904761904,
          "componentes": {
-          "saude": 1,
+          "saude": 0.9285714285714286,
           "educacao": 0.5,
-          "fundeb": 0.6
+          "fundeb": 0.6428571428571428
          },
          "descumpridos": [],
-         "ranking": 4
+         "ranking": 5
         }
        },
        "posicao": {
-        "saude": 1,
+        "saude": 0.8571428571428571,
         "educacao": 0,
-        "fundeb": 0.2,
+        "fundeb": 0.2857142857142857,
         "pessoal": 0.8571428571428571,
         "investimento": 1
        }
@@ -44155,9 +44881,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 22.79,
-        "educacao": 25.3,
-        "fundeb": 88.7,
+        "saude": 23.1,
+        "educacao": 25.21,
+        "fundeb": 87.9,
         "pessoal": 26.99,
         "investimento": 4.979189467048601,
         "primario": {
@@ -44166,6 +44892,16 @@
          "rcl": 4280936255.71,
          "diferencaRCL": -0.014067391664539382
         }
+       },
+       "rreo": {
+        "saude": 22.79,
+        "educacao": 25.3,
+        "fundeb": 88.7
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -44178,20 +44914,20 @@
          "ranking": 2
         },
         "B": {
-         "nota": 0.6833333333333332,
+         "nota": 0.6904761904761906,
          "componentes": {
-          "saude": 0.75,
-          "educacao": 0.6,
-          "fundeb": 0.7
+          "saude": 0.7857142857142857,
+          "educacao": 0.5714285714285714,
+          "fundeb": 0.7142857142857143
          },
          "descumpridos": [],
-         "ranking": 5
+         "ranking": 4
         }
        },
        "posicao": {
-        "saude": 0.5,
-        "educacao": 0.2,
-        "fundeb": 0.4,
+        "saude": 0.5714285714285714,
+        "educacao": 0.14285714285714285,
+        "fundeb": 0.42857142857142855,
         "pessoal": 1,
         "investimento": 0.42857142857142855
        }
@@ -44207,8 +44943,8 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": 23.78,
-        "educacao": 28.18,
+        "saude": 23.54,
+        "educacao": 28.17,
         "fundeb": 97.59,
         "pessoal": 37.45,
         "investimento": 3.693009090216188,
@@ -44218,6 +44954,16 @@
          "rcl": 4686404338.78,
          "diferencaRCL": 0.7412829531700982
         }
+       },
+       "rreo": {
+        "saude": 23.78,
+        "educacao": 28.18,
+        "fundeb": 97.59
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -44230,10 +44976,10 @@
          "ranking": 6
         },
         "B": {
-         "nota": 0.8916666666666666,
+         "nota": 0.9285714285714285,
          "componentes": {
-          "saude": 0.875,
-          "educacao": 0.8,
+          "saude": 0.8571428571428572,
+          "educacao": 0.9285714285714286,
           "fundeb": 1
          },
          "descumpridos": [],
@@ -44241,8 +44987,8 @@
         }
        },
        "posicao": {
-        "saude": 0.75,
-        "educacao": 0.6,
+        "saude": 0.7142857142857143,
+        "educacao": 0.8571428571428571,
         "fundeb": 1,
         "pessoal": 0.42857142857142855,
         "investimento": 0.14285714285714285
@@ -44259,9 +45005,9 @@
        },
        "semDados": false,
        "indicadores": {
-        "saude": null,
-        "educacao": 25.39,
-        "fundeb": 91.84,
+        "saude": 20.94,
+        "educacao": 25.51,
+        "fundeb": 92.02,
         "pessoal": 42.19,
         "investimento": 2.939346026627346,
         "primario": {
@@ -44270,6 +45016,16 @@
          "rcl": 4419520898,
          "diferencaRCL": 7.765635504864626
         }
+       },
+       "rreo": {
+        "saude": null,
+        "educacao": 25.39,
+        "fundeb": 91.84
+       },
+       "fonteMinimos": {
+        "saude": "SIOPS",
+        "educacao": "SIOPE",
+        "fundeb": "SIOPE"
        },
        "pilares": {
         "A": {
@@ -44282,20 +45038,20 @@
          "ranking": 7
         },
         "B": {
-         "nota": 0.75,
+         "nota": 0.6904761904761904,
          "componentes": {
-          "saude": null,
-          "educacao": 0.7,
-          "fundeb": 0.8
+          "saude": 0.5714285714285714,
+          "educacao": 0.6428571428571428,
+          "fundeb": 0.8571428571428572
          },
          "descumpridos": [],
-         "ranking": 3
+         "ranking": 6
         }
        },
        "posicao": {
-        "saude": null,
-        "educacao": 0.4,
-        "fundeb": 0.6,
+        "saude": 0.14285714285714285,
+        "educacao": 0.2857142857142857,
+        "fundeb": 0.7142857142857143,
         "pessoal": 0,
         "investimento": 0
        }
@@ -44332,6 +45088,16 @@
          "rcl": 5091323206.94,
          "diferencaRCL": -1.925405892840919
         }
+       },
+       "rreo": {
+        "saude": 14.83,
+        "educacao": 22.25,
+        "fundeb": 102.63
+       },
+       "fonteMinimos": {
+        "saude": "RREO",
+        "educacao": "RREO",
+        "fundeb": "RREO"
        },
        "pilares": {
         "A": {
@@ -44377,6 +45143,12 @@
          "diferencaRCL": 5.134032278496494
         }
        },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {},
        "pilares": {
         "A": {
          "nota": null,
@@ -44421,6 +45193,12 @@
          "diferencaRCL": 5.995194434220419
         }
        },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {},
        "pilares": {
         "A": {
          "nota": null,
@@ -44464,6 +45242,16 @@
          "rcl": 6036156504.9,
          "diferencaRCL": -8.14888763968768
         }
+       },
+       "rreo": {
+        "saude": 23.75,
+        "educacao": 26.5,
+        "fundeb": 82.12
+       },
+       "fonteMinimos": {
+        "saude": "RREO",
+        "educacao": "RREO",
+        "fundeb": "RREO"
        },
        "pilares": {
         "A": {
@@ -44509,6 +45297,16 @@
          "diferencaRCL": -0.9357692597846232
         }
        },
+       "rreo": {
+        "saude": 24.11,
+        "educacao": 24.18,
+        "fundeb": 90.65
+       },
+       "fonteMinimos": {
+        "saude": "RREO",
+        "educacao": "RREO",
+        "fundeb": "RREO"
+       },
        "pilares": {
         "A": {
          "nota": null,
@@ -44552,6 +45350,16 @@
          "rcl": 4616581512.49,
          "diferencaRCL": 4.008552176525678
         }
+       },
+       "rreo": {
+        "saude": 26.78,
+        "educacao": 30.67,
+        "fundeb": 81.9
+       },
+       "fonteMinimos": {
+        "saude": "RREO",
+        "educacao": "RREO",
+        "fundeb": "RREO"
        },
        "pilares": {
         "A": {
@@ -44597,6 +45405,15 @@
          "diferencaRCL": 2.427894403716771
         }
        },
+       "rreo": {
+        "saude": 24.33,
+        "educacao": 28.65,
+        "fundeb": null
+       },
+       "fonteMinimos": {
+        "saude": "RREO",
+        "educacao": "RREO"
+       },
        "pilares": {
         "A": {
          "nota": null,
@@ -44641,6 +45458,12 @@
          "diferencaRCL": 3.789377856117495
         }
        },
+       "rreo": {
+        "saude": null,
+        "educacao": null,
+        "fundeb": null
+       },
+       "fonteMinimos": {},
        "pilares": {
         "A": {
          "nota": null,
@@ -44667,40 +45490,22 @@
    ],
    "avisos": [
     "Osasco 2017: demonstrativo do período ainda não entregue ao SICONFI.",
-    "Guarulhos 2017: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Campinas 2017: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
     "Santo André 2017: educacao = 0.26 está fora da faixa plausível (10–60) e foi descartado.",
-    "Guarulhos 2018: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Campinas 2018: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Osasco 2019: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Guarulhos 2019: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Campinas 2019: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Ribeirão Preto 2019: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Osasco 2020: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Guarulhos 2020: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Campinas 2020: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Ribeirão Preto 2020: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Osasco 2021: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Guarulhos 2021: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Campinas 2021: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Ribeirão Preto 2021: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Osasco 2022: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Guarulhos 2022: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Campinas 2022: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Ribeirão Preto 2022: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Osasco 2023: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Guarulhos 2023: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Campinas 2023: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Ribeirão Preto 2023: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Osasco 2024: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Guarulhos 2024: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Campinas 2024: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Guarulhos 2025: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Campinas 2025: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
+    "Sorocaba 2017: saude = 27.94% no SIOPS e 29.62% no RREO enviado ao Tesouro. A nota usa o SIOPS.",
+    "São José dos Campos 2019: saude = 27.86% no SIOPS e 29.28% no RREO enviado ao Tesouro. A nota usa o SIOPS.",
+    "Santo André 2020: saude = 32.11% no SIOPS e 29.28% no RREO enviado ao Tesouro. A nota usa o SIOPS.",
+    "Sorocaba 2021: saude = 27.7% no SIOPS e 26.47% no RREO enviado ao Tesouro. A nota usa o SIOPS.",
+    "Santo André 2022: educacao = 26.54% no SIOPE e 25.44% no RREO enviado ao Tesouro. A nota usa o SIOPE.",
+    "São José dos Campos 2022: saude = 26.3% no SIOPS e 27.86% no RREO enviado ao Tesouro. A nota usa o SIOPS.",
+    "Sorocaba 2022: saude = 28.53% no SIOPS e 27.37% no RREO enviado ao Tesouro. A nota usa o SIOPS.",
+    "São Bernardo do Campo 2023: saude = 24.74% no SIOPS e 26.31% no RREO enviado ao Tesouro. A nota usa o SIOPS.",
+    "Santo André 2023: fundeb = 91.11% no SIOPE e 93.24% no RREO enviado ao Tesouro. A nota usa o SIOPE.",
+    "Osasco 2025: saude = 22.9% no SIOPS e 17.31% no RREO enviado ao Tesouro. A nota usa o SIOPS.",
+    "Osasco 2025: educacao = 26.66% no SIOPE e 30.45% no RREO enviado ao Tesouro. A nota usa o SIOPE.",
     "Ribeirão Preto 2025: saude = 0.2 está fora da faixa plausível (5–60) e foi descartado.",
-    "Guarulhos 2026: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Campinas 2026: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.",
-    "Ribeirão Preto 2026: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B."
+    "Guarulhos 2026: sem saúde, educação e FUNDEB no SIOPS, no SIOPE e no RREO. Fica sem nota no pilar B.",
+    "Campinas 2026: sem saúde, educação e FUNDEB no SIOPS, no SIOPE e no RREO. Fica sem nota no pilar B.",
+    "Ribeirão Preto 2026: sem saúde, educação e FUNDEB no SIOPS, no SIOPE e no RREO. Fica sem nota no pilar B."
    ],
    "referencias": {
     "minimos": {
@@ -69190,10 +69995,15 @@
  "historico": {
   "censo": {
    "anos": [
+    2000,
     2010,
     2022
    ],
    "fontes": [
+    {
+     "nome": "IBGE, Censo Demográfico 2000, resultados do universo por bairro (tabelas 3.1.3 a 3.3.5)",
+     "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2000/Dados_do_Universo/Meso_Microregioes_Distritos_Subdistritos_Bairros/Sao_Paulo.zip"
+    },
     {
      "nome": "IBGE, Censo Demográfico 2010, resultados do universo por setor censitário, somados por bairro",
      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2010/Resultados_do_Universo/Agregados_por_Setores_Censitarios/"
@@ -69203,9 +70013,27 @@
      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/"
     }
    ],
-   "notaRenda": "Renda média do responsável com rendimento, corrigida pelo IPCA para julho de 2022 (fator 2,061).",
+   "notaRenda": "Renda média do responsável com rendimento, corrigida pelo IPCA para julho de 2022: fator 3,858 para 2000 (desde agosto de 2000) e 2,061 para 2010 (desde julho de 2010).",
    "fatorIpca": 2.061,
    "cidade": {
+    "2000": {
+     "pessoas": 652593,
+     "domicilios": 181012,
+     "rendaMedia": 3552.9,
+     "agua": 98.6,
+     "esgoto": 70.7,
+     "lixo": 97.5,
+     "alfabetizados": 94.1,
+     "negros": null,
+     "criancas": 27.1,
+     "idosos": 6.9,
+     "pavimentacao": null,
+     "bueiro": null,
+     "iluminacao": null,
+     "calcada": null,
+     "rampa": null,
+     "arvores": null
+    },
     "2010": {
      "pessoas": 666740,
      "domicilios": 201894,
@@ -69245,6 +70073,24 @@
    },
    "bairros": {
     "adalgisa": {
+     "2000": {
+      "pessoas": 4373,
+      "domicilios": 1105,
+      "rendaMedia": 11482,
+      "agua": 99.5,
+      "esgoto": 72.4,
+      "lixo": 99.5,
+      "alfabetizados": 96.3,
+      "negros": null,
+      "criancas": 20.7,
+      "idosos": 7.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 5537,
       "domicilios": 1637,
@@ -69283,6 +70129,24 @@
      }
     },
     "alianca": {
+     "2000": {
+      "pessoas": 17901,
+      "domicilios": 4694,
+      "rendaMedia": 2105,
+      "agua": 90,
+      "esgoto": 42.9,
+      "lixo": 95.2,
+      "alfabetizados": 90.7,
+      "negros": null,
+      "criancas": 33.3,
+      "idosos": 3.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 18820,
       "domicilios": 5465,
@@ -69321,6 +70185,24 @@
      }
     },
     "ayrosa": {
+     "2000": {
+      "pessoas": 22737,
+      "domicilios": 6482,
+      "rendaMedia": 3803,
+      "agua": 100,
+      "esgoto": 65.2,
+      "lixo": 99.7,
+      "alfabetizados": 94.7,
+      "negros": null,
+      "criancas": 24.8,
+      "idosos": 7.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 22589,
       "domicilios": 7042,
@@ -69359,6 +70241,24 @@
      }
     },
     "bandeiras": {
+     "2000": {
+      "pessoas": 19260,
+      "domicilios": 5205,
+      "rendaMedia": 2797,
+      "agua": 99.5,
+      "esgoto": 79.1,
+      "lixo": 96,
+      "alfabetizados": 92.9,
+      "negros": null,
+      "criancas": 30.9,
+      "idosos": 3.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 19626,
       "domicilios": 5616,
@@ -69397,6 +70297,24 @@
      }
     },
     "baronesa": {
+     "2000": {
+      "pessoas": 14136,
+      "domicilios": 3887,
+      "rendaMedia": 2576,
+      "agua": 99.7,
+      "esgoto": 41.6,
+      "lixo": 99.2,
+      "alfabetizados": 92,
+      "negros": null,
+      "criancas": 28.2,
+      "idosos": 5.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 13408,
       "domicilios": 4027,
@@ -69435,6 +70353,24 @@
      }
     },
     "bela-vista": {
+     "2000": {
+      "pessoas": 14757,
+      "domicilios": 4360,
+      "rendaMedia": 4496,
+      "agua": 99.9,
+      "esgoto": 94.7,
+      "lixo": 99.9,
+      "alfabetizados": 97,
+      "negros": null,
+      "criancas": 20.2,
+      "idosos": 12.1,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 13127,
       "domicilios": 4264,
@@ -69473,6 +70409,24 @@
      }
     },
     "bonanca": {
+     "2000": {
+      "pessoas": 11409,
+      "domicilios": 3088,
+      "rendaMedia": 2291,
+      "agua": 77.1,
+      "esgoto": 26.1,
+      "lixo": 65.7,
+      "alfabetizados": 89,
+      "negros": null,
+      "criancas": 36,
+      "idosos": 2.1,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 14068,
       "domicilios": 3928,
@@ -69511,6 +70465,24 @@
      }
     },
     "bonfim": {
+     "2000": {
+      "pessoas": 3181,
+      "domicilios": 909,
+      "rendaMedia": 4389,
+      "agua": 100,
+      "esgoto": 95.8,
+      "lixo": 97,
+      "alfabetizados": 96.7,
+      "negros": null,
+      "criancas": 19.7,
+      "idosos": 11.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 1486,
       "domicilios": 467,
@@ -69549,6 +70521,24 @@
      }
     },
     "bussocaba": {
+     "2000": {
+      "pessoas": 13227,
+      "domicilios": 3594,
+      "rendaMedia": 3052,
+      "agua": 99.6,
+      "esgoto": 61.6,
+      "lixo": 97.1,
+      "alfabetizados": 93.6,
+      "negros": null,
+      "criancas": 28.5,
+      "idosos": 6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 11750,
       "domicilios": 3383,
@@ -69587,6 +70577,24 @@
      }
     },
     "castelo-branco": {
+     "2000": {
+      "pessoas": 5207,
+      "domicilios": 1349,
+      "rendaMedia": 2160,
+      "agua": 99.7,
+      "esgoto": 62.5,
+      "lixo": 99.2,
+      "alfabetizados": 92.5,
+      "negros": null,
+      "criancas": 32.5,
+      "idosos": 4.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 5238,
       "domicilios": 1458,
@@ -69625,6 +70633,24 @@
      }
     },
     "centro": {
+     "2000": {
+      "pessoas": 11871,
+      "domicilios": 3825,
+      "rendaMedia": 7483,
+      "agua": 99.9,
+      "esgoto": 99.2,
+      "lixo": 99,
+      "alfabetizados": 98.1,
+      "negros": null,
+      "criancas": 15.8,
+      "idosos": 18.3,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 11375,
       "domicilios": 4104,
@@ -69663,6 +70689,24 @@
      }
     },
     "cidade-das-flores": {
+     "2000": {
+      "pessoas": 9344,
+      "domicilios": 2579,
+      "rendaMedia": 5668,
+      "agua": 99.9,
+      "esgoto": 98,
+      "lixo": 99.5,
+      "alfabetizados": 98.5,
+      "negros": null,
+      "criancas": 25.5,
+      "idosos": 5.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 9413,
       "domicilios": 2906,
@@ -69701,6 +70745,24 @@
      }
     },
     "cidade-de-deus": {
+     "2000": {
+      "pessoas": 94,
+      "domicilios": 31,
+      "rendaMedia": 4494,
+      "agua": 100,
+      "esgoto": 100,
+      "lixo": 100,
+      "alfabetizados": 98.7,
+      "negros": null,
+      "criancas": 16,
+      "idosos": 14.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 310,
       "domicilios": 100,
@@ -69739,6 +70801,24 @@
      }
     },
     "cipava": {
+     "2000": {
+      "pessoas": 11460,
+      "domicilios": 3230,
+      "rendaMedia": 4023,
+      "agua": 100,
+      "esgoto": 99.5,
+      "lixo": 99.6,
+      "alfabetizados": 96.3,
+      "negros": null,
+      "criancas": 22.6,
+      "idosos": 10.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 10007,
       "domicilios": 3076,
@@ -69777,6 +70857,24 @@
      }
     },
     "city-bussocaba": {
+     "2000": {
+      "pessoas": 1919,
+      "domicilios": 498,
+      "rendaMedia": 10333,
+      "agua": 99.6,
+      "esgoto": 21.3,
+      "lixo": 99.6,
+      "alfabetizados": 97.3,
+      "negros": null,
+      "criancas": 24.1,
+      "idosos": 5.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 2822,
       "domicilios": 777,
@@ -69815,6 +70913,24 @@
      }
     },
     "helena-maria": {
+     "2000": {
+      "pessoas": 22920,
+      "domicilios": 6469,
+      "rendaMedia": 2357,
+      "agua": 99.7,
+      "esgoto": 51.6,
+      "lixo": 99.9,
+      "alfabetizados": 92.9,
+      "negros": null,
+      "criancas": 28.7,
+      "idosos": 4.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 21890,
       "domicilios": 6733,
@@ -69853,6 +70969,24 @@
      }
     },
     "iapi": {
+     "2000": {
+      "pessoas": 13774,
+      "domicilios": 3859,
+      "rendaMedia": 5072,
+      "agua": 99.9,
+      "esgoto": 99.1,
+      "lixo": 99.9,
+      "alfabetizados": 96.9,
+      "negros": null,
+      "criancas": 26.2,
+      "idosos": 5.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 13641,
       "domicilios": 4336,
@@ -69891,6 +71025,7 @@
      }
     },
     "industrial-altino": {
+     "2000": null,
      "2010": null,
      "2022": {
       "pessoas": 17,
@@ -69912,6 +71047,24 @@
      }
     },
     "industrial-anhanguera": {
+     "2000": {
+      "pessoas": 6463,
+      "domicilios": 1649,
+      "rendaMedia": 2309,
+      "agua": 99.3,
+      "esgoto": 32.1,
+      "lixo": 98.7,
+      "alfabetizados": 91.1,
+      "negros": null,
+      "criancas": 33.6,
+      "idosos": 3.3,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 5630,
       "domicilios": 1566,
@@ -69950,6 +71103,24 @@
      }
     },
     "industrial-autonomistas": {
+     "2000": {
+      "pessoas": 895,
+      "domicilios": 341,
+      "rendaMedia": 8935,
+      "agua": 100,
+      "esgoto": 99.7,
+      "lixo": 100,
+      "alfabetizados": 99.6,
+      "negros": null,
+      "criancas": 20.9,
+      "idosos": 2.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 6760,
       "domicilios": 2462,
@@ -69988,6 +71159,24 @@
      }
     },
     "industrial-centro": {
+     "2000": {
+      "pessoas": 46,
+      "domicilios": 11,
+      "rendaMedia": 3909,
+      "agua": 100,
+      "esgoto": 72.7,
+      "lixo": 100,
+      "alfabetizados": 97.3,
+      "negros": null,
+      "criancas": 19.6,
+      "idosos": 2.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 38,
       "domicilios": 9,
@@ -70026,6 +71215,24 @@
      }
     },
     "industrial-mazzei": {
+     "2000": {
+      "pessoas": 2806,
+      "domicilios": 810,
+      "rendaMedia": 2454,
+      "agua": 99.9,
+      "esgoto": 14.9,
+      "lixo": 99.8,
+      "alfabetizados": 93.3,
+      "negros": null,
+      "criancas": 29.4,
+      "idosos": 5.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 2669,
       "domicilios": 787,
@@ -70064,6 +71271,24 @@
      }
     },
     "industrial-remedios": {
+     "2000": {
+      "pessoas": 2811,
+      "domicilios": 813,
+      "rendaMedia": 2602,
+      "agua": 99.4,
+      "esgoto": 88.2,
+      "lixo": 98.6,
+      "alfabetizados": 94.2,
+      "negros": null,
+      "criancas": 27.4,
+      "idosos": 6.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 2364,
       "domicilios": 749,
@@ -70102,6 +71327,24 @@
      }
     },
     "jaguaribe": {
+     "2000": {
+      "pessoas": 17797,
+      "domicilios": 4987,
+      "rendaMedia": 4380,
+      "agua": 99.9,
+      "esgoto": 85.6,
+      "lixo": 97.6,
+      "alfabetizados": 94.9,
+      "negros": null,
+      "criancas": 25.4,
+      "idosos": 7.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 19687,
       "domicilios": 6249,
@@ -70140,6 +71383,24 @@
      }
     },
     "jardim-conceicao": {
+     "2000": {
+      "pessoas": 22546,
+      "domicilios": 5880,
+      "rendaMedia": 2451,
+      "agua": 99.6,
+      "esgoto": 62.5,
+      "lixo": 98.2,
+      "alfabetizados": 91.8,
+      "negros": null,
+      "criancas": 32.1,
+      "idosos": 3.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 31441,
       "domicilios": 9054,
@@ -70178,6 +71439,24 @@
      }
     },
     "jardim-d-abril": {
+     "2000": {
+      "pessoas": 14839,
+      "domicilios": 4178,
+      "rendaMedia": 4376,
+      "agua": 100,
+      "esgoto": 96.7,
+      "lixo": 100,
+      "alfabetizados": 96.1,
+      "negros": null,
+      "criancas": 23.2,
+      "idosos": 8.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 14445,
       "domicilios": 4566,
@@ -70216,6 +71495,24 @@
      }
     },
     "jardim-das-flores": {
+     "2000": {
+      "pessoas": 11829,
+      "domicilios": 3396,
+      "rendaMedia": 4856,
+      "agua": 99.9,
+      "esgoto": 96.7,
+      "lixo": 99.7,
+      "alfabetizados": 97.4,
+      "negros": null,
+      "criancas": 19.1,
+      "idosos": 10.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 10603,
       "domicilios": 3355,
@@ -70254,6 +71551,24 @@
      }
     },
     "jardim-elvira": {
+     "2000": {
+      "pessoas": 12020,
+      "domicilios": 3349,
+      "rendaMedia": 2761,
+      "agua": 99.9,
+      "esgoto": 61.6,
+      "lixo": 99.8,
+      "alfabetizados": 94.4,
+      "negros": null,
+      "criancas": 27.9,
+      "idosos": 7.1,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 10786,
       "domicilios": 3311,
@@ -70292,6 +71607,24 @@
      }
     },
     "jardim-novo-osasco": {
+     "2000": {
+      "pessoas": 18658,
+      "domicilios": 5064,
+      "rendaMedia": 2809,
+      "agua": 99.6,
+      "esgoto": 91.8,
+      "lixo": 98.1,
+      "alfabetizados": 94.3,
+      "negros": null,
+      "criancas": 26.5,
+      "idosos": 6.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 16575,
       "domicilios": 4934,
@@ -70330,6 +71663,24 @@
      }
     },
     "jardim-roberto": {
+     "2000": {
+      "pessoas": 20611,
+      "domicilios": 5515,
+      "rendaMedia": 2683,
+      "agua": 99.3,
+      "esgoto": 61.2,
+      "lixo": 99.6,
+      "alfabetizados": 93.6,
+      "negros": null,
+      "criancas": 29.2,
+      "idosos": 6.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 19576,
       "domicilios": 5824,
@@ -70368,6 +71719,24 @@
      }
     },
     "km-18": {
+     "2000": {
+      "pessoas": 13837,
+      "domicilios": 4159,
+      "rendaMedia": 4718,
+      "agua": 99.9,
+      "esgoto": 96.1,
+      "lixo": 100,
+      "alfabetizados": 96.7,
+      "negros": null,
+      "criancas": 20.3,
+      "idosos": 12.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 12474,
       "domicilios": 4042,
@@ -70406,6 +71775,24 @@
      }
     },
     "metalurgicos": {
+     "2000": {
+      "pessoas": 6160,
+      "domicilios": 1538,
+      "rendaMedia": 5186,
+      "agua": 99.9,
+      "esgoto": 99.5,
+      "lixo": 100,
+      "alfabetizados": 98,
+      "negros": null,
+      "criancas": 26.4,
+      "idosos": 3.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 6710,
       "domicilios": 2002,
@@ -70444,6 +71831,24 @@
      }
     },
     "munhoz-junior": {
+     "2000": {
+      "pessoas": 30324,
+      "domicilios": 8082,
+      "rendaMedia": 2156,
+      "agua": 99.1,
+      "esgoto": 53.6,
+      "lixo": 98.7,
+      "alfabetizados": 91.1,
+      "negros": null,
+      "criancas": 31.8,
+      "idosos": 4.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 29859,
       "domicilios": 8617,
@@ -70482,6 +71887,24 @@
      }
     },
     "mutinga": {
+     "2000": {
+      "pessoas": 14356,
+      "domicilios": 4007,
+      "rendaMedia": 2686,
+      "agua": 99.7,
+      "esgoto": 19.2,
+      "lixo": 95.6,
+      "alfabetizados": 93.9,
+      "negros": null,
+      "criancas": 27.2,
+      "idosos": 5.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 11937,
       "domicilios": 3629,
@@ -70520,6 +71943,24 @@
      }
     },
     "padroeira": {
+     "2000": {
+      "pessoas": 23821,
+      "domicilios": 6286,
+      "rendaMedia": 2155,
+      "agua": 99.6,
+      "esgoto": 59.4,
+      "lixo": 95.5,
+      "alfabetizados": 92.4,
+      "negros": null,
+      "criancas": 31.5,
+      "idosos": 5,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 25633,
       "domicilios": 7427,
@@ -70558,6 +71999,24 @@
      }
     },
     "paiva-ramos": {
+     "2000": {
+      "pessoas": 959,
+      "domicilios": 246,
+      "rendaMedia": 2636,
+      "agua": 39,
+      "esgoto": 4.9,
+      "lixo": 48.8,
+      "alfabetizados": 90,
+      "negros": null,
+      "criancas": 39.4,
+      "idosos": 2.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 1597,
       "domicilios": 433,
@@ -70596,6 +72055,24 @@
      }
     },
     "parque-continental": {
+     "2000": {
+      "pessoas": 556,
+      "domicilios": 138,
+      "rendaMedia": 19116,
+      "agua": 100,
+      "esgoto": 98.6,
+      "lixo": 100,
+      "alfabetizados": 99.8,
+      "negros": null,
+      "criancas": 9.7,
+      "idosos": 11.7,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 430,
       "domicilios": 144,
@@ -70634,6 +72111,24 @@
      }
     },
     "pestana": {
+     "2000": {
+      "pessoas": 15068,
+      "domicilios": 4324,
+      "rendaMedia": 3962,
+      "agua": 99.9,
+      "esgoto": 90.5,
+      "lixo": 99.9,
+      "alfabetizados": 95.8,
+      "negros": null,
+      "criancas": 23.1,
+      "idosos": 10.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 13334,
       "domicilios": 4180,
@@ -70672,6 +72167,24 @@
      }
     },
     "piratininga": {
+     "2000": {
+      "pessoas": 10537,
+      "domicilios": 2899,
+      "rendaMedia": 2885,
+      "agua": 96.2,
+      "esgoto": 68.9,
+      "lixo": 99.8,
+      "alfabetizados": 91,
+      "negros": null,
+      "criancas": 30.8,
+      "idosos": 6.1,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 12514,
       "domicilios": 3856,
@@ -70710,6 +72223,24 @@
      }
     },
     "platina": {
+     "2000": {
+      "pessoas": 2618,
+      "domicilios": 700,
+      "rendaMedia": 2831,
+      "agua": 97.9,
+      "esgoto": 45.3,
+      "lixo": 97,
+      "alfabetizados": 92.3,
+      "negros": null,
+      "criancas": 28.4,
+      "idosos": 5.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 2510,
       "domicilios": 733,
@@ -70748,6 +72279,24 @@
      }
     },
     "portal-d-oeste": {
+     "2000": {
+      "pessoas": 8990,
+      "domicilios": 2356,
+      "rendaMedia": 2297,
+      "agua": 99.2,
+      "esgoto": 47.5,
+      "lixo": 90.8,
+      "alfabetizados": 92,
+      "negros": null,
+      "criancas": 31.4,
+      "idosos": 3.3,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 10658,
       "domicilios": 3054,
@@ -70786,6 +72335,24 @@
      }
     },
     "presidente-altino": {
+     "2000": {
+      "pessoas": 9421,
+      "domicilios": 2963,
+      "rendaMedia": 4368,
+      "agua": 99.9,
+      "esgoto": 94.5,
+      "lixo": 100,
+      "alfabetizados": 96.4,
+      "negros": null,
+      "criancas": 19,
+      "idosos": 14.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 9380,
       "domicilios": 3114,
@@ -70824,6 +72391,24 @@
      }
     },
     "quintauna": {
+     "2000": {
+      "pessoas": 8441,
+      "domicilios": 2413,
+      "rendaMedia": 5016,
+      "agua": 99.8,
+      "esgoto": 95.9,
+      "lixo": 99.9,
+      "alfabetizados": 97.6,
+      "negros": null,
+      "criancas": 21.6,
+      "idosos": 8.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 8786,
       "domicilios": 2808,
@@ -70862,6 +72447,24 @@
      }
     },
     "raposo-tavares": {
+     "2000": {
+      "pessoas": 187,
+      "domicilios": 42,
+      "rendaMedia": 4194,
+      "agua": 64.3,
+      "esgoto": 7.1,
+      "lixo": 92.9,
+      "alfabetizados": 88.1,
+      "negros": null,
+      "criancas": 23.5,
+      "idosos": 11.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 654,
       "domicilios": null,
@@ -70900,6 +72503,24 @@
      }
     },
     "remedios": {
+     "2000": {
+      "pessoas": 6004,
+      "domicilios": 1805,
+      "rendaMedia": 3468,
+      "agua": 99.7,
+      "esgoto": 99.8,
+      "lixo": 99.7,
+      "alfabetizados": 95.3,
+      "negros": null,
+      "criancas": 21.5,
+      "idosos": 12.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 5515,
       "domicilios": 1737,
@@ -70938,6 +72559,24 @@
      }
     },
     "rochdale": {
+     "2000": {
+      "pessoas": 28506,
+      "domicilios": 7702,
+      "rendaMedia": 2796,
+      "agua": 96.3,
+      "esgoto": 66.3,
+      "lixo": 99.3,
+      "alfabetizados": 92.9,
+      "negros": null,
+      "criancas": 28.9,
+      "idosos": 6.5,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 28501,
       "domicilios": 8380,
@@ -70976,6 +72615,24 @@
      }
     },
     "santa-fe": {
+     "2000": {
+      "pessoas": 1062,
+      "domicilios": 281,
+      "rendaMedia": 2323,
+      "agua": 40.9,
+      "esgoto": 22.8,
+      "lixo": 84.7,
+      "alfabetizados": 92.8,
+      "negros": null,
+      "criancas": 32,
+      "idosos": 5.3,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 1007,
       "domicilios": 298,
@@ -71014,6 +72671,24 @@
      }
     },
     "santa-maria": {
+     "2000": {
+      "pessoas": 11751,
+      "domicilios": 3064,
+      "rendaMedia": 2541,
+      "agua": 94.2,
+      "esgoto": 4.5,
+      "lixo": 86.4,
+      "alfabetizados": 93.7,
+      "negros": null,
+      "criancas": 33.5,
+      "idosos": 2.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 22520,
       "domicilios": 6213,
@@ -71052,6 +72727,24 @@
      }
     },
     "santo-antonio": {
+     "2000": {
+      "pessoas": 15030,
+      "domicilios": 4146,
+      "rendaMedia": 3436,
+      "agua": 99.9,
+      "esgoto": 87.9,
+      "lixo": 99,
+      "alfabetizados": 94.8,
+      "negros": null,
+      "criancas": 25.9,
+      "idosos": 6.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 11466,
       "domicilios": 3265,
@@ -71090,6 +72783,24 @@
      }
     },
     "sao-pedro": {
+     "2000": {
+      "pessoas": 13523,
+      "domicilios": 3657,
+      "rendaMedia": 2810,
+      "agua": 97.2,
+      "esgoto": 55.2,
+      "lixo": 92.2,
+      "alfabetizados": 92,
+      "negros": null,
+      "criancas": 31,
+      "idosos": 4.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 16902,
       "domicilios": 5152,
@@ -71128,6 +72839,24 @@
      }
     },
     "setor-militar": {
+     "2000": {
+      "pessoas": 1202,
+      "domicilios": 302,
+      "rendaMedia": 2464,
+      "agua": 98,
+      "esgoto": 24.2,
+      "lixo": 87.7,
+      "alfabetizados": 91.6,
+      "negros": null,
+      "criancas": 35.9,
+      "idosos": 3.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 279,
       "domicilios": 69,
@@ -71166,6 +72895,24 @@
      }
     },
     "tres-montanhas": {
+     "2000": {
+      "pessoas": 1625,
+      "domicilios": 429,
+      "rendaMedia": 4381,
+      "agua": 100,
+      "esgoto": 2.6,
+      "lixo": 88.8,
+      "alfabetizados": 94.6,
+      "negros": null,
+      "criancas": 29.9,
+      "idosos": 4.7,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 1853,
       "domicilios": 565,
@@ -71204,6 +72951,24 @@
      }
     },
     "umuarama": {
+     "2000": {
+      "pessoas": 5506,
+      "domicilios": 1571,
+      "rendaMedia": 5034,
+      "agua": 99.9,
+      "esgoto": 85.9,
+      "lixo": 99.9,
+      "alfabetizados": 97.4,
+      "negros": null,
+      "criancas": 21,
+      "idosos": 11.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 5078,
       "domicilios": 1569,
@@ -71242,6 +73007,24 @@
      }
     },
     "veloso": {
+     "2000": {
+      "pessoas": 29362,
+      "domicilios": 7822,
+      "rendaMedia": 2921,
+      "agua": 99.7,
+      "esgoto": 83.9,
+      "lixo": 97.8,
+      "alfabetizados": 94,
+      "negros": null,
+      "criancas": 28,
+      "idosos": 5.8,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 30464,
       "domicilios": 9083,
@@ -71280,6 +73063,24 @@
      }
     },
     "vila-campesina": {
+     "2000": {
+      "pessoas": 2536,
+      "domicilios": 763,
+      "rendaMedia": 7062,
+      "agua": 99.9,
+      "esgoto": 98.2,
+      "lixo": 99.9,
+      "alfabetizados": 98,
+      "negros": null,
+      "criancas": 13,
+      "idosos": 19.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 2571,
       "domicilios": 864,
@@ -71318,6 +73119,24 @@
      }
     },
     "vila-menck": {
+     "2000": {
+      "pessoas": 25528,
+      "domicilios": 7119,
+      "rendaMedia": 2422,
+      "agua": 99.9,
+      "esgoto": 47.6,
+      "lixo": 99.4,
+      "alfabetizados": 92.9,
+      "negros": null,
+      "criancas": 28.3,
+      "idosos": 5.4,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 23646,
       "domicilios": 6965,
@@ -71356,6 +73175,24 @@
      }
     },
     "vila-militar": {
+     "2000": {
+      "pessoas": 342,
+      "domicilios": 101,
+      "rendaMedia": 8083,
+      "agua": 100,
+      "esgoto": 100,
+      "lixo": 100,
+      "alfabetizados": 100,
+      "negros": null,
+      "criancas": 32.5,
+      "idosos": 0.6,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 250,
       "domicilios": 81,
@@ -71394,6 +73231,24 @@
      }
     },
     "vila-osasco": {
+     "2000": {
+      "pessoas": 10955,
+      "domicilios": 3433,
+      "rendaMedia": 6582,
+      "agua": 99.9,
+      "esgoto": 96.9,
+      "lixo": 99.8,
+      "alfabetizados": 97.5,
+      "negros": null,
+      "criancas": 20.5,
+      "idosos": 11.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 10392,
       "domicilios": 3539,
@@ -71432,6 +73287,24 @@
      }
     },
     "vila-yara": {
+     "2000": {
+      "pessoas": 10337,
+      "domicilios": 3193,
+      "rendaMedia": 7755,
+      "agua": 100,
+      "esgoto": 99,
+      "lixo": 100,
+      "alfabetizados": 97.1,
+      "negros": null,
+      "criancas": 19,
+      "idosos": 11.9,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 9436,
       "domicilios": 3248,
@@ -71470,6 +73343,24 @@
      }
     },
     "vila-yolanda": {
+     "2000": {
+      "pessoas": 15158,
+      "domicilios": 4314,
+      "rendaMedia": 3475,
+      "agua": 99.9,
+      "esgoto": 92.2,
+      "lixo": 92.7,
+      "alfabetizados": 95.3,
+      "negros": null,
+      "criancas": 24.9,
+      "idosos": 8.2,
+      "pavimentacao": null,
+      "bueiro": null,
+      "iluminacao": null,
+      "calcada": null,
+      "rampa": null,
+      "arvores": null
+     },
      "2010": {
       "pessoas": 14703,
       "domicilios": 4642,
@@ -77128,6 +79019,84 @@
     {
      "ano": 2026,
      "pessoas": 761441
+    }
+   ]
+  },
+  "minimos": {
+   "fontes": {
+    "saude": "Ministério da Saúde, SIOPS: indicador 3.2, % da receita própria aplicada em ações e serviços públicos de saúde (LC 141/2012)",
+    "educacao": "FNDE, SIOPE: indicador 1.1, % das receitas de impostos aplicado em manutenção e desenvolvimento do ensino; 1.2, % do FUNDEB na remuneração dos profissionais"
+   },
+   "urls": {
+    "saude": "https://siops.datasus.gov.br/",
+    "educacao": "https://www.fnde.gov.br/siope/"
+   },
+   "anos": [
+    {
+     "ano": 2015,
+     "saude": 34.52,
+     "educacao": 25.09,
+     "fundeb": 64.48
+    },
+    {
+     "ano": 2016,
+     "saude": 34.95,
+     "educacao": 25.07,
+     "fundeb": 79.76
+    },
+    {
+     "ano": 2017,
+     "saude": 34,
+     "educacao": 25.92,
+     "fundeb": 84.36
+    },
+    {
+     "ano": 2018,
+     "saude": 30,
+     "educacao": 25.18,
+     "fundeb": 88.89
+    },
+    {
+     "ano": 2019,
+     "saude": 30.06,
+     "educacao": 25.21,
+     "fundeb": 88.34
+    },
+    {
+     "ano": 2020,
+     "saude": 30.57,
+     "educacao": 25.33,
+     "fundeb": 88.64
+    },
+    {
+     "ano": 2021,
+     "saude": 30.65,
+     "educacao": 23.77,
+     "fundeb": 78.33
+    },
+    {
+     "ano": 2022,
+     "saude": 25.34,
+     "educacao": 26.05,
+     "fundeb": 88.51
+    },
+    {
+     "ano": 2023,
+     "saude": 25.84,
+     "educacao": 28,
+     "fundeb": 93.33
+    },
+    {
+     "ano": 2024,
+     "saude": 22.53,
+     "educacao": 30.47,
+     "fundeb": 96.67
+    },
+    {
+     "ano": 2025,
+     "saude": 22.9,
+     "educacao": 26.66,
+     "fundeb": 96.47
     }
    ]
   }

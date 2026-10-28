@@ -1,0 +1,739 @@
+{
+ "coletadoEm": "2026-10-28",
+ "fontes": {
+  "saude": "Ministério da Saúde, SIOPS: indicador 3.2, % da receita própria aplicada em ações e serviços públicos de saúde (LC 141/2012)",
+  "educacao": "FNDE, SIOPE: indicador 1.1, % das receitas de impostos aplicado em manutenção e desenvolvimento do ensino; 1.2, % do FUNDEB na remuneração dos profissionais"
+ },
+ "urls": {
+  "saude": "https://siops.datasus.gov.br/",
+  "educacao": "https://www.fnde.gov.br/siope/"
+ },
+ "anos": {
+  "2015": {
+   "3509502": {
+    "nome": "Campinas",
+    "saude": 29.31,
+    "saudeAplicado": 812404931.09,
+    "saudeBase": 2771323442.36,
+    "educacao": 28.14,
+    "fundeb": 83.84
+   },
+   "3518800": {
+    "nome": "Guarulhos",
+    "saude": 27.59,
+    "saudeAplicado": 666823330.79,
+    "saudeBase": 2416846903.42,
+    "educacao": 25.32,
+    "fundeb": 79.7
+   },
+   "3534401": {
+    "nome": "Osasco",
+    "saude": 34.52,
+    "saudeAplicado": 428817634.22,
+    "saudeBase": 1241960795.47,
+    "educacao": 25.09,
+    "fundeb": 64.48
+   },
+   "3543402": {
+    "nome": "Ribeirão Preto",
+    "saude": 23.06,
+    "saudeAplicado": 309382665.78,
+    "saudeBase": 1341242302.71,
+    "educacao": 25.74,
+    "fundeb": 97.87
+   },
+   "3547809": {
+    "nome": "Santo André",
+    "saude": 27.43,
+    "saudeAplicado": 325394000.65,
+    "saudeBase": 1186093372.07,
+    "educacao": 26.14,
+    "fundeb": 88.39
+   },
+   "3548708": {
+    "nome": "São Bernardo do Campo",
+    "saude": 22.81,
+    "saudeAplicado": 490575057.32,
+    "saudeBase": 2150216734.71,
+    "educacao": 26.91,
+    "fundeb": 82.08
+   },
+   "3549904": {
+    "nome": "São José dos Campos",
+    "saude": 29.65,
+    "saudeAplicado": 455529115.32,
+    "saudeBase": 1535995386.56,
+    "educacao": 25.67,
+    "fundeb": 89.76
+   },
+   "3552205": {
+    "nome": "Sorocaba",
+    "saude": 29.28,
+    "saudeAplicado": 366973725.79,
+    "saudeBase": 1253276181.8,
+    "educacao": 26.15,
+    "fundeb": 75.43
+   }
+  },
+  "2016": {
+   "3509502": {
+    "nome": "Campinas",
+    "saude": 31.16,
+    "saudeAplicado": 895803433.59,
+    "saudeBase": 2874746875.03,
+    "educacao": 30.14,
+    "fundeb": 89.45
+   },
+   "3518800": {
+    "nome": "Guarulhos",
+    "saude": 25.41,
+    "saudeAplicado": 623324157.66,
+    "saudeBase": 2452603562.73,
+    "educacao": 25.18,
+    "fundeb": 73.56
+   },
+   "3534401": {
+    "nome": "Osasco",
+    "saude": 34.95,
+    "saudeAplicado": 464922820.51,
+    "saudeBase": 1329908565.79,
+    "educacao": 25.07,
+    "fundeb": 79.76
+   },
+   "3543402": {
+    "nome": "Ribeirão Preto",
+    "saude": 26.36,
+    "saudeAplicado": 372704883.63,
+    "saudeBase": 1413728041.33,
+    "educacao": 26.96,
+    "fundeb": 99.08
+   },
+   "3547809": {
+    "nome": "Santo André",
+    "saude": 30.79,
+    "saudeAplicado": 398508587.81,
+    "saudeBase": 1294104199.11,
+    "educacao": 25.05,
+    "fundeb": 80.62
+   },
+   "3548708": {
+    "nome": "São Bernardo do Campo",
+    "saude": 23.49,
+    "saudeAplicado": 514582993.27,
+    "saudeBase": 2189956623.54,
+    "educacao": 27.93,
+    "fundeb": 92.69
+   },
+   "3549904": {
+    "nome": "São José dos Campos",
+    "saude": 29.01,
+    "saudeAplicado": 466410826.39,
+    "saudeBase": 1607495354.33,
+    "educacao": 25.17,
+    "fundeb": 99.5
+   },
+   "3552205": {
+    "nome": "Sorocaba",
+    "saude": 30.06,
+    "saudeAplicado": 382107290.77,
+    "saudeBase": 1271055078.47,
+    "educacao": 25.23,
+    "fundeb": 78.62
+   }
+  },
+  "2017": {
+   "3509502": {
+    "nome": "Campinas",
+    "saude": 30.96,
+    "saudeAplicado": 900538646.24,
+    "saudeBase": 2908042652.44,
+    "educacao": 30.31,
+    "fundeb": 77.37
+   },
+   "3518800": {
+    "nome": "Guarulhos",
+    "saude": 31.27,
+    "saudeAplicado": 802292945.47,
+    "saudeBase": 2565149092.93,
+    "educacao": 25.49,
+    "fundeb": 79.17
+   },
+   "3534401": {
+    "nome": "Osasco",
+    "saude": 34,
+    "saudeAplicado": 476941033.99,
+    "saudeBase": 1402671772.01,
+    "educacao": 25.92,
+    "fundeb": 84.36
+   },
+   "3543402": {
+    "nome": "Ribeirão Preto",
+    "saude": 24.42,
+    "saudeAplicado": 375275345.85,
+    "saudeBase": 1536693491.76,
+    "educacao": 26.6,
+    "fundeb": 99.77
+   },
+   "3547809": {
+    "nome": "Santo André",
+    "saude": 26.93,
+    "saudeAplicado": 361254848.98,
+    "saudeBase": 1341442455.23,
+    "educacao": 25.01,
+    "fundeb": 83.06
+   },
+   "3548708": {
+    "nome": "São Bernardo do Campo",
+    "saude": 24.17,
+    "saudeAplicado": 528115157.24,
+    "saudeBase": 2184352090.28,
+    "educacao": 26.47,
+    "fundeb": 90.74
+   },
+   "3549904": {
+    "nome": "São José dos Campos",
+    "saude": 28.89,
+    "saudeAplicado": 495038289.09,
+    "saudeBase": 1713457897.73,
+    "educacao": 25.07,
+    "fundeb": 92.04
+   },
+   "3552205": {
+    "nome": "Sorocaba",
+    "saude": 27.94,
+    "saudeAplicado": 386923006.48,
+    "saudeBase": 1384796138.02,
+    "educacao": 25.63,
+    "fundeb": 80.2
+   }
+  },
+  "2018": {
+   "3509502": {
+    "nome": "Campinas",
+    "saude": 26.07,
+    "saudeAplicado": 881165388.79,
+    "saudeBase": 3379042106.67,
+    "educacao": 29.3,
+    "fundeb": 77.27
+   },
+   "3518800": {
+    "nome": "Guarulhos",
+    "saude": 28.16,
+    "saudeAplicado": 801249078.86,
+    "saudeBase": 2844665660.18,
+    "educacao": 25.48,
+    "fundeb": 88.25
+   },
+   "3534401": {
+    "nome": "Osasco",
+    "saude": 30,
+    "saudeAplicado": 488281967.38,
+    "saudeBase": 1627535735.74,
+    "educacao": 25.18,
+    "fundeb": 88.89
+   },
+   "3543402": {
+    "nome": "Ribeirão Preto",
+    "saude": 26.63,
+    "saudeAplicado": 431453310.65,
+    "saudeBase": 1619586095.81,
+    "educacao": 26.64,
+    "fundeb": 99.98
+   },
+   "3547809": {
+    "nome": "Santo André",
+    "saude": 25.08,
+    "saudeAplicado": 374601216.79,
+    "saudeBase": 1493142233.33,
+    "educacao": 25.73,
+    "fundeb": 88.97
+   },
+   "3548708": {
+    "nome": "São Bernardo do Campo",
+    "saude": 23.08,
+    "saudeAplicado": 507184170.24,
+    "saudeBase": 2197078450.21,
+    "educacao": 26.85,
+    "fundeb": 73.6
+   },
+   "3549904": {
+    "nome": "São José dos Campos",
+    "saude": 28.42,
+    "saudeAplicado": 525059203.55,
+    "saudeBase": 1847248915.57,
+    "educacao": 25.2,
+    "fundeb": 94.17
+   },
+   "3552205": {
+    "nome": "Sorocaba",
+    "saude": 28.36,
+    "saudeAplicado": 413078743.01,
+    "saudeBase": 1456181243.88,
+    "educacao": 25.02,
+    "fundeb": 76.07
+   }
+  },
+  "2019": {
+   "3509502": {
+    "nome": "Campinas",
+    "saude": 24.12,
+    "saudeAplicado": 967883711.52,
+    "saudeBase": 4011229916.06,
+    "educacao": 25.15,
+    "fundeb": 73.27
+   },
+   "3518800": {
+    "nome": "Guarulhos",
+    "saude": 26.4,
+    "saudeAplicado": 786954426.97,
+    "saudeBase": 2980398094.72,
+    "educacao": 25.17,
+    "fundeb": 82.8
+   },
+   "3534401": {
+    "nome": "Osasco",
+    "saude": 30.06,
+    "saudeAplicado": 596337619.27,
+    "saudeBase": 1983186488.83,
+    "educacao": 25.21,
+    "fundeb": 88.34
+   },
+   "3543402": {
+    "nome": "Ribeirão Preto",
+    "saude": 24.39,
+    "saudeAplicado": 428884695.08,
+    "saudeBase": 1757778438.28,
+    "educacao": 25.55,
+    "fundeb": 98.44
+   },
+   "3547809": {
+    "nome": "Santo André",
+    "saude": 26.28,
+    "saudeAplicado": 427884226.43,
+    "saudeBase": 1628070078.94,
+    "educacao": 25.35,
+    "fundeb": 85.79
+   },
+   "3548708": {
+    "nome": "São Bernardo do Campo",
+    "saude": 21.99,
+    "saudeAplicado": 517443233.62,
+    "saudeBase": 2352794602.63,
+    "educacao": 28.41,
+    "fundeb": 76.18
+   },
+   "3549904": {
+    "nome": "São José dos Campos",
+    "saude": 27.86,
+    "saudeAplicado": 558177998.12,
+    "saudeBase": 2003375402.05,
+    "educacao": 25.03,
+    "fundeb": 80.97
+   },
+   "3552205": {
+    "nome": "Sorocaba",
+    "saude": 27.42,
+    "saudeAplicado": 433262182.51,
+    "saudeBase": 1580095447.47,
+    "educacao": 25.53,
+    "fundeb": 79.62
+   }
+  },
+  "2020": {
+   "3509502": {
+    "nome": "Campinas",
+    "saude": 26.28,
+    "saudeAplicado": 1026625263.44,
+    "saudeBase": 3905072269.8,
+    "educacao": 25.06,
+    "fundeb": 74.33
+   },
+   "3518800": {
+    "nome": "Guarulhos",
+    "saude": 26.15,
+    "saudeAplicado": 752120127.64,
+    "saudeBase": 2875411096.08,
+    "educacao": 26.54,
+    "fundeb": 78.65
+   },
+   "3534401": {
+    "nome": "Osasco",
+    "saude": 30.57,
+    "saudeAplicado": 596784346.25,
+    "saudeBase": 1952038271.1,
+    "educacao": 25.33,
+    "fundeb": 88.64
+   },
+   "3543402": {
+    "nome": "Ribeirão Preto",
+    "saude": 21.97,
+    "saudeAplicado": 381185240.95,
+    "saudeBase": 1734407940.95,
+    "educacao": 25,
+    "fundeb": 94.58
+   },
+   "3547809": {
+    "nome": "Santo André",
+    "saude": 32.11,
+    "saudeAplicado": 514579979.42,
+    "saudeBase": 1602302270.09,
+    "educacao": 25.28,
+    "fundeb": 90.41
+   },
+   "3548708": {
+    "nome": "São Bernardo do Campo",
+    "saude": 24.69,
+    "saudeAplicado": 581576461.05,
+    "saudeBase": 2354874681.05,
+    "educacao": 29.3,
+    "fundeb": 75.44
+   },
+   "3549904": {
+    "nome": "São José dos Campos",
+    "saude": 28.21,
+    "saudeAplicado": 567930246.19,
+    "saudeBase": 2012783846.99,
+    "educacao": 25.53,
+    "fundeb": 80.25
+   },
+   "3552205": {
+    "nome": "Sorocaba",
+    "saude": 27.8,
+    "saudeAplicado": 442112751.1,
+    "saudeBase": 1590178346.88,
+    "educacao": 25.27,
+    "fundeb": 84.47
+   }
+  },
+  "2021": {
+   "3509502": {
+    "nome": "Campinas",
+    "saude": 24.91,
+    "saudeAplicado": 1161330629.82,
+    "saudeBase": 4661118249.04,
+    "educacao": 24.54,
+    "fundeb": 74.26
+   },
+   "3518800": {
+    "nome": "Guarulhos",
+    "saude": 23.77,
+    "saudeAplicado": 820633100.17,
+    "saudeBase": 3452138098.48,
+    "educacao": 25.01,
+    "fundeb": 73.59
+   },
+   "3534401": {
+    "nome": "Osasco",
+    "saude": 30.65,
+    "saudeAplicado": 765604774.86,
+    "saudeBase": 2497510597.81,
+    "educacao": 23.77,
+    "fundeb": 78.33
+   },
+   "3543402": {
+    "nome": "Ribeirão Preto",
+    "saude": 22.67,
+    "saudeAplicado": 463283199.85,
+    "saudeBase": 2043320759.18,
+    "educacao": 23.31,
+    "fundeb": 85.04
+   },
+   "3547809": {
+    "nome": "Santo André",
+    "saude": 28.71,
+    "saudeAplicado": 545501282.73,
+    "saudeBase": 1899838228.07,
+    "educacao": 24.07,
+    "fundeb": 82.69
+   },
+   "3548708": {
+    "nome": "São Bernardo do Campo",
+    "saude": 25.8,
+    "saudeAplicado": 734176595.83,
+    "saudeBase": 2845010239.99,
+    "educacao": 25.32,
+    "fundeb": 76.74
+   },
+   "3549904": {
+    "nome": "São José dos Campos",
+    "saude": 28.17,
+    "saudeAplicado": 673485529,
+    "saudeBase": 2390566037.91,
+    "educacao": 25.04,
+    "fundeb": 71.67
+   },
+   "3552205": {
+    "nome": "Sorocaba",
+    "saude": 27.7,
+    "saudeAplicado": 527766083.7,
+    "saudeBase": 1905274318.27,
+    "educacao": 25.16,
+    "fundeb": 71.65
+   }
+  },
+  "2022": {
+   "3509502": {
+    "nome": "Campinas",
+    "saude": 24.69,
+    "saudeAplicado": 1288269234.71,
+    "saudeBase": 5216033916.43,
+    "educacao": 27.06,
+    "fundeb": 74.38
+   },
+   "3518800": {
+    "nome": "Guarulhos",
+    "saude": 23.35,
+    "saudeAplicado": 890976214.53,
+    "saudeBase": 3815647253.65,
+    "educacao": 25.31,
+    "fundeb": 80.52
+   },
+   "3534401": {
+    "nome": "Osasco",
+    "saude": 25.34,
+    "saudeAplicado": 781964428.25,
+    "saudeBase": 3085773528.58,
+    "educacao": 26.05,
+    "fundeb": 88.51
+   },
+   "3543402": {
+    "nome": "Ribeirão Preto",
+    "saude": 22.61,
+    "saudeAplicado": 520217918.47,
+    "saudeBase": 2300524171.5,
+    "educacao": 26.33,
+    "fundeb": 84.63
+   },
+   "3547809": {
+    "nome": "Santo André",
+    "saude": 29.27,
+    "saudeAplicado": 628872784.77,
+    "saudeBase": 2148212844.99,
+    "educacao": 26.54,
+    "fundeb": 87.39
+   },
+   "3548708": {
+    "nome": "São Bernardo do Campo",
+    "saude": 23.03,
+    "saudeAplicado": 731885456.46,
+    "saudeBase": 3177955741.95,
+    "educacao": 25.63,
+    "fundeb": 74.44
+   },
+   "3549904": {
+    "nome": "São José dos Campos",
+    "saude": 26.3,
+    "saudeAplicado": 689175150.5,
+    "saudeBase": 2619741961.29,
+    "educacao": 25.7,
+    "fundeb": 79.39
+   },
+   "3552205": {
+    "nome": "Sorocaba",
+    "saude": 28.53,
+    "saudeAplicado": 627861657.98,
+    "saudeBase": 2200243962.44,
+    "educacao": 25.23,
+    "fundeb": 92.04
+   }
+  },
+  "2023": {
+   "3509502": {
+    "nome": "Campinas",
+    "saude": 28.31,
+    "saudeAplicado": 1546696871.17,
+    "saudeBase": 5463371937.61,
+    "educacao": 27.67,
+    "fundeb": 82.98
+   },
+   "3518800": {
+    "nome": "Guarulhos",
+    "saude": 26.6,
+    "saudeAplicado": 1102227204.3,
+    "saudeBase": 4142950810.64,
+    "educacao": 26.83,
+    "fundeb": 89.31
+   },
+   "3534401": {
+    "nome": "Osasco",
+    "saude": 25.84,
+    "saudeAplicado": 834121340.87,
+    "saudeBase": 3227547020.53,
+    "educacao": 28,
+    "fundeb": 93.33
+   },
+   "3543402": {
+    "nome": "Ribeirão Preto",
+    "saude": 23.28,
+    "saudeAplicado": 591748174.79,
+    "saudeBase": 2541094173.7,
+    "educacao": 29.01,
+    "fundeb": 91.07
+   },
+   "3547809": {
+    "nome": "Santo André",
+    "saude": 27.9,
+    "saudeAplicado": 643819087.55,
+    "saudeBase": 2307386842.07,
+    "educacao": 25.99,
+    "fundeb": 91.11
+   },
+   "3548708": {
+    "nome": "São Bernardo do Campo",
+    "saude": 24.74,
+    "saudeAplicado": 833633436.58,
+    "saudeBase": 3368482145.29,
+    "educacao": 27.8,
+    "fundeb": 83.85
+   },
+   "3549904": {
+    "nome": "São José dos Campos",
+    "saude": 26.99,
+    "saudeAplicado": 742501341.2,
+    "saudeBase": 2750266543.58,
+    "educacao": 25.86,
+    "fundeb": 95.61
+   },
+   "3552205": {
+    "nome": "Sorocaba",
+    "saude": 27.03,
+    "saudeAplicado": 637696032.35,
+    "saudeBase": 2359024491.46,
+    "educacao": 28.22,
+    "fundeb": 99.72
+   }
+  },
+  "2024": {
+   "3509502": {
+    "nome": "Campinas",
+    "saude": 26.77,
+    "saudeAplicado": 1605304797.47,
+    "saudeBase": 5996295699.2,
+    "educacao": 26.9,
+    "fundeb": 86.23
+   },
+   "3518800": {
+    "nome": "Guarulhos",
+    "saude": 23.97,
+    "saudeAplicado": 1103980990.91,
+    "saudeBase": 4604429049.62,
+    "educacao": 28.06,
+    "fundeb": 91.48
+   },
+   "3534401": {
+    "nome": "Osasco",
+    "saude": 22.53,
+    "saudeAplicado": 808808274.42,
+    "saudeBase": 3589632287.37,
+    "educacao": 30.47,
+    "fundeb": 96.67
+   },
+   "3543402": {
+    "nome": "Ribeirão Preto",
+    "saude": 21.34,
+    "saudeAplicado": 607098497.06,
+    "saudeBase": 2844254341.29,
+    "educacao": 26.86,
+    "fundeb": 93.47
+   },
+   "3547809": {
+    "nome": "Santo André",
+    "saude": 25.71,
+    "saudeAplicado": 658071661.86,
+    "saudeBase": 2558927147.22,
+    "educacao": 25.03,
+    "fundeb": 89.83
+   },
+   "3548708": {
+    "nome": "São Bernardo do Campo",
+    "saude": 21.5,
+    "saudeAplicado": 799119087.43,
+    "saudeBase": 3716754840.76,
+    "educacao": 29.16,
+    "fundeb": 74.58
+   },
+   "3549904": {
+    "nome": "São José dos Campos",
+    "saude": 26.09,
+    "saudeAplicado": 811808318.2,
+    "saudeBase": 3111207970.35,
+    "educacao": 25.91,
+    "fundeb": 89.23
+   },
+   "3552205": {
+    "nome": "Sorocaba",
+    "saude": 27.58,
+    "saudeAplicado": 755166232.41,
+    "saudeBase": 2737420508.21,
+    "educacao": 27.7,
+    "fundeb": 95.36
+   }
+  },
+  "2025": {
+   "3509502": {
+    "nome": "Campinas",
+    "saude": 24.89,
+    "saudeAplicado": 1667774803.45,
+    "saudeBase": 6698485562.91,
+    "educacao": 27.22,
+    "fundeb": 90.64
+   },
+   "3518800": {
+    "nome": "Guarulhos",
+    "saude": 23.07,
+    "saudeAplicado": 1148686341.17,
+    "saudeBase": 4978122804.47,
+    "educacao": 25.99,
+    "fundeb": 87.1
+   },
+   "3534401": {
+    "nome": "Osasco",
+    "saude": 22.9,
+    "saudeAplicado": 880509624.74,
+    "saudeBase": 3844742645.1,
+    "educacao": 26.66,
+    "fundeb": 96.47
+   },
+   "3543402": {
+    "nome": "Ribeirão Preto",
+    "saude": 20.94,
+    "saudeAplicado": 637880521.15,
+    "saudeBase": 3045980341.17,
+    "educacao": 25.51,
+    "fundeb": 92.02
+   },
+   "3547809": {
+    "nome": "Santo André",
+    "saude": 24.23,
+    "saudeAplicado": 663166229.25,
+    "saudeBase": 2736655640.7,
+    "educacao": 25.09,
+    "fundeb": 87.88
+   },
+   "3548708": {
+    "nome": "São Bernardo do Campo",
+    "saude": 20.69,
+    "saudeAplicado": 815932571.56,
+    "saudeBase": 3942394243.81,
+    "educacao": 28.38,
+    "fundeb": 71.95
+   },
+   "3549904": {
+    "nome": "São José dos Campos",
+    "saude": 23.1,
+    "saudeAplicado": 765435093.17,
+    "saudeBase": 3312223547.68,
+    "educacao": 25.21,
+    "fundeb": 87.9
+   },
+   "3552205": {
+    "nome": "Sorocaba",
+    "saude": 23.54,
+    "saudeAplicado": 714779638.28,
+    "saudeBase": 3036202116.53,
+    "educacao": 28.17,
+    "fundeb": 97.59
+   }
+  }
+ }
+}
