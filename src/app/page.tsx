@@ -68,7 +68,7 @@ export default async function Home() {
   return (
     <>
       {/* Painel em largura total, como um mapa de apuração: lista à esquerda, mapa ao centro, detalhes à direita. */}
-      <div className="relative left-1/2 w-[min(1680px,calc(100vw-2rem))] -translate-x-1/2 space-y-4">
+      <div className="relative left-1/2 -ml-[min(840px,calc(50vw-1rem))] w-[min(1680px,calc(100vw-2rem))] space-y-4">
         <section className="flex flex-wrap items-center gap-x-6 gap-y-3 rounded-2xl border border-slate-200 bg-white px-4 py-3">
           <div className="min-w-0">
             <h1 className="text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">Osasco, bairro a bairro</h1>

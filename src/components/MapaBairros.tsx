@@ -176,7 +176,8 @@ export function MapaBairros({
   const [vista, setVista] = useState<Vista>({ k: 1, x: 0, y: 0 });
   const [ruas, setRuas] = useState(false);
   const [pxPorUnidade, setPxPorUnidade] = useState(0);
-  const [avisoRolagem, setAvisoRolagem] = useState(false);
+  // Dica que aparece por cima do mapa: rolar sem Ctrl (computador) ou arrastar com um dedo (celular).
+  const [avisoRolagem, setAvisoRolagem] = useState<null | "rolagem" | "toque">(null);
   const inscrever = useCallback((f: (v: Vista) => void) => {
     ouvintes.current.add(f);
     return () => void ouvintes.current.delete(f);
@@ -191,6 +192,7 @@ export function MapaBairros({
     obs.observe(svg);
 
     // Rolagem só aproxima com Ctrl (ou ⌘, ou o gesto de pinça do trackpad): sem isso, a página rola normalmente.
+    // No celular, um dedo rola a página e dois dedos movem e aproximam o mapa (como nos mapas de aplicativo).
     const z = zoom<SVGSVGElement, unknown>()
       .scaleExtent([1, ZOOM_MAXIMO])
       .translateExtent([
@@ -198,7 +200,7 @@ export function MapaBairros({
         [vb.x + vb.w * 1.6, vb.h * 1.4],
       ])
       .clickDistance(5)
-      .filter((e) => (e.type === "wheel" ? e.ctrlKey || e.metaKey : !e.button))
+      .filter((e) => (e.type === "wheel" ? e.ctrlKey || e.metaKey : e.type.startsWith("touch") ? e.touches.length >= 2 : !e.button))
       .wheelDelta((e) => -e.deltaY * (e.deltaMode === 1 ? 0.05 : e.deltaMode ? 1 : 0.002) * (Math.abs(e.deltaY) >= 50 ? 1.5 : 10))
       .on("zoom", (e) => {
         const t = e.transform;
@@ -213,17 +215,35 @@ export function MapaBairros({
     zoomRef.current = z;
 
     let espera = 0;
-    const rolagem = (e: WheelEvent) => {
-      if (e.ctrlKey || e.metaKey) return;
-      setAvisoRolagem(true);
+    const avisar = (tipo: "rolagem" | "toque") => {
+      setAvisoRolagem(tipo);
       clearTimeout(espera);
-      espera = window.setTimeout(() => setAvisoRolagem(false), 1400);
+      espera = window.setTimeout(() => setAvisoRolagem(null), 1600);
+    };
+    const rolagem = (e: WheelEvent) => {
+      if (!e.ctrlKey && !e.metaKey) avisar("rolagem");
+    };
+    // Um dedo arrastando de lado no mapa: a pessoa quer mover o mapa, então mostra como.
+    let inicio: { x: number; y: number } | null = null;
+    const tocou = (e: TouchEvent) => (inicio = e.touches.length === 1 ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : null);
+    const arrastou = (e: TouchEvent) => {
+      if (!inicio || e.touches.length !== 1) return;
+      const dx = Math.abs(e.touches[0].clientX - inicio.x);
+      const dy = Math.abs(e.touches[0].clientY - inicio.y);
+      if (dx > 24 && dx > dy * 1.5) {
+        avisar("toque");
+        inicio = null;
+      }
     };
     svg.addEventListener("wheel", rolagem, { passive: true });
+    svg.addEventListener("touchstart", tocou, { passive: true });
+    svg.addEventListener("touchmove", arrastou, { passive: true });
     return () => {
       obs.disconnect();
       sel.on(".zoom", null);
       svg.removeEventListener("wheel", rolagem);
+      svg.removeEventListener("touchstart", tocou);
+      svg.removeEventListener("touchmove", arrastou);
       clearTimeout(espera);
     };
   }, [vb]);
@@ -374,6 +394,22 @@ export function MapaBairros({
     if (!perto) rotulados.add(b.id);
   }
   const sel = selecionado ? porId.get(selecionado) : null;
+  // Esc fecha o bairro aberto (no celular ele cobre parte da tela).
+  useEffect(() => {
+    if (!selecionado) return;
+    // No celular o painel do bairro sobe e cobre a parte de baixo da tela: rola a página para o mapa (com o
+    // bairro no centro dele) ficar na faixa que sobra em cima.
+    const svg = svgRef.current;
+    if (svg && !window.matchMedia("(min-width: 64rem)").matches) {
+      const r = svg.getBoundingClientRect();
+      const topoLivre = document.querySelector("header")?.getBoundingClientRect().bottom ?? 0;
+      const alvo = topoLivre + (window.innerHeight * 0.42 - topoLivre) / 2;
+      window.scrollBy({ top: r.top + r.height / 2 - alvo, behavior: semMovimento() ? "auto" : "smooth" });
+    }
+    const tecla = (e: KeyboardEvent) => e.key === "Escape" && setSelecionado(null);
+    window.addEventListener("keydown", tecla);
+    return () => window.removeEventListener("keydown", tecla);
+  }, [selecionado]);
   const realce = foco ?? selecionado;
   const bFoco = foco ? porId.get(foco) : null;
   const maxDist = Math.max(1, ...bairros.map((b) => b.distancia));
@@ -577,9 +613,9 @@ export function MapaBairros({
             <svg
               ref={svgRef}
               viewBox={`${vb.x} ${vb.y} ${vb.w} ${vb.h}`}
-              className={`mx-auto block h-[min(62vh,760px)] w-auto max-w-full cursor-grab touch-none select-none active:cursor-grabbing md:h-[min(76vh,800px)] ${ruas && projecao ? "mapa-com-ruas" : ""} ${entrou ? "mapa-entrada" : "opacity-0"}`}
+              className={`mx-auto block h-[min(62vh,760px)] w-auto max-w-full cursor-grab touch-pan-y select-none active:cursor-grabbing md:h-[min(76vh,800px)] ${ruas && projecao ? "mapa-com-ruas" : ""} ${entrou ? "mapa-entrada" : "opacity-0"}`}
               role="img"
-              aria-label="Mapa dos bairros de Osasco. Arraste para mover; use os botões ou Ctrl + rolagem para aproximar."
+              aria-label="Mapa dos bairros de Osasco. Arraste para mover (no celular, com dois dedos); use os botões ou Ctrl + rolagem para aproximar."
               onMouseMove={(e) => {
                 const r = caixa.current!.getBoundingClientRect();
                 setDica({ x: e.clientX - r.left, y: e.clientY - r.top });
@@ -794,7 +830,7 @@ export function MapaBairros({
               aria-hidden
               className={`pointer-events-none absolute inset-x-0 top-1/2 mx-auto w-fit -translate-y-1/2 rounded-lg bg-slate-900/80 px-3 py-2 text-xs text-white transition-opacity ${avisoRolagem ? "opacity-100" : "opacity-0"}`}
             >
-              Segure Ctrl (ou ⌘) e role para aproximar
+              {avisoRolagem === "toque" ? "Use dois dedos para mover o mapa" : "Segure Ctrl (ou ⌘) e role para aproximar"}
             </div>
 
             {/* Linha do tempo compacta, por cima do mapa: só no tema Política */}
@@ -1057,8 +1093,25 @@ export function MapaBairros({
         </div>
       </div>
 
-      {/* Painel lateral: ranking do indicador ou bairro selecionado */}
-      <aside className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4 lg:max-h-[60rem] lg:overflow-y-auto">
+      {/* Painel lateral: ranking do indicador ou bairro selecionado. No celular, o bairro abre num painel que sobe
+          da parte de baixo da tela, por cima do mapa, em vez de ficar lá embaixo da página. */}
+      <aside
+        className={`min-w-0 rounded-2xl border border-slate-200 bg-white p-4 lg:max-h-[60rem] lg:overflow-y-auto ${
+          sel
+            ? "max-lg:fixed max-lg:inset-x-0 max-lg:bottom-0 max-lg:z-50 max-lg:max-h-[58dvh] max-lg:overflow-y-auto max-lg:overscroll-contain max-lg:rounded-b-none max-lg:pb-[calc(1rem+env(safe-area-inset-bottom))] max-lg:shadow-[0_-12px_40px_rgb(0_0_0/0.25)] max-lg:[animation:painel-sobe_0.28s_ease-out]"
+            : ""
+        }`}
+      >
+        {sel && (
+          <button
+            type="button"
+            onClick={() => setSelecionado(null)}
+            aria-label="Fechar o bairro"
+            className="-mt-2 mb-2 flex w-full justify-center py-1 lg:hidden"
+          >
+            <span className="h-1.5 w-10 rounded-full bg-slate-300" />
+          </button>
+        )}
         {sel ? (
           <PainelBairro
             key={sel.id}

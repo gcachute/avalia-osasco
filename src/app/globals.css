@@ -265,6 +265,18 @@
     transition: none;
   }
 }
+/* Painel do bairro no celular: sobe da parte de baixo da tela. */
+@keyframes painel-sobe {
+  from {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  aside[class*="painel-sobe"] {
+    animation: none !important;
+  }
+}
 @keyframes mapa-painel {
   from {
     opacity: 0;

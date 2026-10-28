@@ -1,5 +1,6 @@
 import { comBase, faixa, nota } from "@/lib/formato";
 import { Foto } from "./Foto";
+import { TextoRecolhivel } from "./TextoRecolhivel";
 
 export function Avatar({ nome, foto, tamanho = 40 }: { nome: string; foto: string | null; tamanho?: number }) {
   const style = { width: tamanho, height: tamanho, fontSize: tamanho * 0.38 };
@@ -78,9 +79,20 @@ export function Cartao({ titulo, valor, detalhe }: { titulo: string; valor: Reac
   );
 }
 
+// Âncora de cada seção a partir do título ("Projetos apresentados (8)" -> "projetos-apresentados"), usada pelos atalhos
+// de seção (NavegacaoPagina) e para mandar o endereço direto de uma parte da página.
+const ancora = (t: string) =>
+  t
+    .replace(/\(.*?\)/g, "")
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
 export function Secao({ titulo, children, id, subtitulo }: { titulo: string; children: React.ReactNode; id?: string; subtitulo?: React.ReactNode }) {
   return (
-    <section id={id} className="revelar mt-12 scroll-mt-20">
+    <section id={id ?? ancora(titulo)} className="revelar mt-10 scroll-mt-28 md:mt-12">
       <h2 className="text-xl font-semibold text-slate-900">{titulo}</h2>
       {subtitulo && <p className="mt-1 text-sm text-slate-500">{subtitulo}</p>}
       <div className="mt-4">{children}</div>
@@ -117,11 +129,13 @@ export function AvisoParcial({ alvo = "geral", className = "" }: { alvo?: keyof 
       </svg>
       <div className="space-y-1">
         <p className="font-semibold">Atenção: este é um retrato parcial da atuação {a.quem}.</p>
-        <p>
-          A análise usa única e exclusivamente os dados públicos que coletamos: {a.dados}. Ela não reflete 100% do trabalho de um político. Há muitas
-          outras formas de agir por Osasco, inclusive indiretas, como {a.formas}, que não aparecem nesses registros. Leia os números como uma parte da
-          atuação, não como o mandato inteiro.
-        </p>
+        <TextoRecolhivel rotulo="Ler o aviso completo">
+          <p>
+            A análise usa única e exclusivamente os dados públicos que coletamos: {a.dados}. Ela não reflete 100% do trabalho de um político. Há
+            muitas outras formas de agir por Osasco, inclusive indiretas, como {a.formas}, que não aparecem nesses registros. Leia os números como uma
+            parte da atuação, não como o mandato inteiro.
+          </p>
+        </TextoRecolhivel>
       </div>
     </aside>
   );
