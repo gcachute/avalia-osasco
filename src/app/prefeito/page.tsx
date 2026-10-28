@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ContaPilarA, ContaPilarB } from "@/components/ContaFiscal";
+import { SecaoIntegridade } from "@/components/Integridade";
 import { ListaTematica } from "@/components/ListaTematica";
 import { MapaPessoa, type ModoMapa } from "@/components/MapaPessoa";
 import { geometriaBairros } from "@/lib/mapaGeo";
@@ -360,6 +361,16 @@ export default function PaginaPrefeito() {
 
       {p.resultados && <PilarD r={p.resultados} />}
       {p.transparencia && <PilarE t={p.transparencia} />}
+
+      {p.integridade && (
+        <Secao
+          titulo="Integridade"
+          id="integridade"
+          subtitulo="Decisões definitivas de órgãos oficiais, com a mesma régua dos vereadores. Mostrado ao lado dos pilares, sem entrar na nota deles."
+        >
+          <SecaoIntegridade integridade={p.integridade} nota={p.integridade.nota} quem="o prefeito" />
+        </Secao>
+      )}
 
       <Secao titulo="Relação com a Câmara">
         <p className="-mt-2 mb-4 text-sm text-slate-500">Mostrado para contexto. Não entra na nota.</p>

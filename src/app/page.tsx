@@ -138,7 +138,7 @@ export default async function Home() {
             </li>
           ))}
         </ol>
-        <div className="mt-3 grid gap-3 md:grid-cols-3">
+        <div className="mt-3 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
           {COEFICIENTES.map((c) => (
             <div key={c.chave} className="rounded-2xl border border-slate-200 bg-white p-4 text-sm">
               <div className="font-semibold text-slate-900">{c.nome}</div>
@@ -159,7 +159,10 @@ export default async function Home() {
 
       <div className="grid gap-6 lg:grid-cols-2">
         <Secao titulo="Média por partido">
-          <GraficoPartidos conjuntos={COEFICIENTES.map((c) => ({ chave: c.chave, nome: c.nome, dados: porPartido(c.chave) }))} />
+          {/* Integridade fica fora da média por partido: é um registro de cada pessoa, não do partido. */}
+          <GraficoPartidos
+            conjuntos={COEFICIENTES.filter((c) => c.chave !== "integridade").map((c) => ({ chave: c.chave, nome: c.nome, dados: porPartido(c.chave) }))}
+          />
         </Secao>
 
         <Secao titulo="Prefeitura">

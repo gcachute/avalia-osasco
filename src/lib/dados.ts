@@ -140,7 +140,14 @@ export type Mapa = {
   fontes: { nome: string; url: string }[];
 };
 
-export type PilarVereador = "A" | "B" | "C" | "D" | "E";
+export type PilarVereador = "A" | "B" | "C" | "D" | "E" | "F";
+
+// Integridade: decisões definitivas de órgãos oficiais (sem CPF). Ver data/integridade.json.
+export type RegistroIntegridade = { fonte: "tce" | "cnj"; tipo: string; orgao: string; exercicio: number; processo: string; decisaoDefinitiva: string };
+export type Integridade = {
+  registros: RegistroIntegridade[];
+  fontes: Record<"tce" | "cnj", { nome: string; url: string; consultadoEm: string; posicao?: string }>;
+};
 
 export type Comissao = { nome: string; url: string; cargo: string; tipo: "permanente" | "temporaria" | "frente" };
 
@@ -169,6 +176,7 @@ export type Vereador = {
   emExercicio: boolean;
   // Lideranças comunicadas por ofício e lidas no expediente (líder de bancada, líder do prefeito).
   liderancas?: { tipo: "bancada" | "prefeito"; sessao: string; texto: string }[];
+  integridade?: Integridade | null;
   // Bônus que só soma na Produção (0 a 0,05 na escala de 0 a 1): moções e honrarias.
   bonus?: { comunidade: number };
   // Participação, produção e eficiência (0 a 1), e a posição em cada um.
@@ -391,6 +399,7 @@ export type Dados = {
     creditoFotoUrl?: string;
     perfilOficial: string | null;
     cobertura: number;
+    integridade?: (Integridade & { nota: number }) | null;
     pilares: Partial<Record<PilarPrefeito, { nota: number | null; anos: number[] }>>;
     fiscal: Fiscal | null;
     iegm: Iegm | null;
@@ -417,7 +426,7 @@ export const dados = bruto as unknown as Dados;
 const sessoesPorId = new Map(dados.sessoes.map((s) => [s.id, s]));
 export const sessao = (id: string) => sessoesPorId.get(id);
 
-export type Coeficiente = "participacao" | "producao" | "eficiencia";
+export type Coeficiente = "participacao" | "producao" | "eficiencia" | "integridade";
 
 // Os coeficientes dos vereadores: cada coeficiente mostra os pilares que o formam.
 export const COEFICIENTES: { chave: Coeficiente; nome: string; descricao: string; pilares: PilarVereador[] }[] = [
@@ -441,6 +450,13 @@ export const COEFICIENTES: { chave: Coeficiente; nome: string; descricao: string
       "O que produziu por sessão em que esteve presente: projetos de política pública (simbólicos valem 0,2) e leis sancionadas a cada 10 presenças. As faltas não entram na conta. Mesma régua da Legislação que importa.",
     pilares: [],
   },
+  {
+    chave: "integridade",
+    nome: "Integridade",
+    descricao:
+      "Começa em 10 e desconta por decisão definitiva de órgão oficial: contas julgadas irregulares pelo Tribunal de Contas do Estado e condenações por improbidade no cadastro do CNJ. Processos em andamento não entram.",
+    pilares: ["F"],
+  },
 ];
 
 export const PILARES_VEREADOR: { chave: PilarVereador; nome: string; descricao: string }[] = [
@@ -449,6 +465,12 @@ export const PILARES_VEREADOR: { chave: PilarVereador; nome: string; descricao: 
   { chave: "C", nome: "Comissões e articulação", descricao: "Comissões da Câmara (presidência e relatoria valem mais), Mesa Diretora, frentes parlamentares e lideranças (de bancada e do prefeito). 6 pontos valem 10, com a mesma curva da legislação." },
   { chave: "D", nome: "Custo do mandato", descricao: "Salário do vereador e dos assessores do gabinete. A lei dá a mesma estrutura a todos os gabinetes, então esse custo não separa um vereador do outro e fica fora da nota. A Câmara informou, por pedido de acesso à informação, que não paga diárias, auxílios ou verbas de gabinete aos vereadores." },
   { chave: "E", nome: "Compromisso com a pauta", descricao: "Itens do próprio vereador adiados porque ele faltou. Nenhum vale 10; cada item adiado a cada 10 sessões tira 1 ponto." },
+  {
+    chave: "F",
+    nome: "Integridade",
+    descricao:
+      "Decisões definitivas publicadas por órgãos oficiais. Cada conta julgada irregular pelo TCE-SP tira 4 pontos (2 se a decisão tem mais de 10 anos); cada condenação no cadastro de improbidade do CNJ tira 5. Mínimo 0.",
+  },
 ];
 
 export const TIPO_NOME: Record<string, string> = {

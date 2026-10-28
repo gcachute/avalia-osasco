@@ -69,3 +69,13 @@ Texto do pedido:
 ## Privacidade
 
 Os relatórios de folha podem trazer nome e CPF de servidores. O site só publica totais por gabinete, sem nomes nem CPFs de assessores.
+
+## Integridade (TCE-SP e CNJ)
+
+O pilar de integridade usa só decisões definitivas de órgãos oficiais. Os registros ficam em `data/integridade.json`, **sem CPF**.
+
+1. **TCE-SP, contas julgadas irregulares** (lista atualizada todo mês): rode `npm run conferir:integridade`. O script baixa a lista e mostra quem aparece pelo nome completo. Para cada caso "NOVO, conferir", compare os dígitos do CPF que a lista mostra (ex.: `068.XXX.XXX-80`) com o CPF da pessoa na Divulgação de Candidaturas do TSE (divulgacandcontas.tse.jus.br, eleições 2024). Só se baterem, acrescente o registro em `data/integridade.json`.
+2. **CNJ, cadastro de improbidade e inelegibilidade**: a consulta é por CPF, uma de cada vez, em https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php. O site tem limite por minuto e por dia: espere uns 20 segundos entre consultas. Acrescente qualquer condenação encontrada como `"fonte": "cnj"`.
+3. Atualize as datas `consultadoEm` (e `posicao` do TCE-SP) em `data/integridade.json` e rode `npm run dados`.
+
+Nunca grave CPF no repositório: ele é público, e o número só serve para conferir a identidade na hora.

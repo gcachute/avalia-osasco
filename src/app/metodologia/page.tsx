@@ -121,6 +121,53 @@ export default function Metodologia() {
         </ul>
       </Secao>
 
+      <Secao titulo="Integridade" id="integridade">
+        <p className="text-slate-700">
+          Inspirado no critério de processos do{" "}
+          <a className="underline" href="https://ranking.org.br/criterios-e-metodologia">
+            Ranking dos Políticos
+          </a>
+          , o pilar de integridade começa em 10 e desconta por decisão definitiva publicada por órgão oficial:
+        </p>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-slate-700">
+          <li>
+            <b>Contas julgadas irregulares pelo Tribunal de Contas do Estado (TCE-SP)</b>, pela lista oficial de responsáveis, que só traz decisões das
+            quais não cabe mais recurso: cada uma tira 4 pontos, ou 2 se a decisão tem mais de 10 anos.
+          </li>
+          <li>
+            <b>Condenações no Cadastro Nacional de Condenações por Improbidade Administrativa e Inelegibilidade</b>, do Conselho Nacional de Justiça
+            (CNJ): cada uma tira 5 pontos.
+          </li>
+          <li>A nota mínima é 0. A integridade não entra na média por partido e não vira ranking: é o registro de cada pessoa.</li>
+        </ul>
+        <p className="mt-4 font-semibold text-slate-900">O que não entra, e por quê</p>
+        <ul className="mt-2 list-disc space-y-2 pl-5 text-slate-700">
+          <li>
+            Investigações, inquéritos, denúncias, processos em andamento e notícias. Todos têm direito à presunção de inocência, e o site não antecipa
+            julgamento.
+          </li>
+          <li>
+            Condenações criminais fora desses cadastros: não há fonte oficial aberta que permita conferir todas. Quando houver, elas entram com a mesma
+            regra.
+          </li>
+        </ul>
+        <p className="mt-4 font-semibold text-slate-900">Cuidados</p>
+        <ul className="mt-2 list-disc space-y-2 pl-5 text-slate-700">
+          <li>
+            Contas julgadas irregulares são decisão administrativa sobre a gestão de dinheiro público. Não são condenação criminal e não tornam ninguém
+            inelegível automaticamente.
+          </li>
+          <li>
+            Cada registro foi conferido pelo nome completo e pelos números do documento que a própria fonte mostra. O documento de identificação não é
+            guardado nem publicado aqui.
+          </li>
+          <li>
+            O site reproduz a fonte oficial, com número do processo e data, sem opinião sobre as pessoas. Se uma decisão foi revista, anulada ou não é
+            da pessoa, ou se faltar um registro, peça correção: o site corrige assim que a fonte confirmar.
+          </li>
+        </ul>
+      </Secao>
+
       <Secao titulo="Prefeito: uma nota por pilar" id="prefeito">
         <p className="text-slate-700">
           O prefeito é avaliado em cinco pilares, cada um com a sua nota: gestão fiscal, mínimos constitucionais, qualidade da

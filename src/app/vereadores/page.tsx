@@ -26,11 +26,21 @@ function Cartao({ v, avaliados }: { v: Vereador; avaliados: number }) {
         </div>
       </div>
       {temNota ? (
-        <dl className="grid grid-cols-3 gap-1.5 text-center">
+        <dl className="grid grid-cols-4 gap-1 text-center">
           {COEFICIENTES.map((c) => (
             <div key={c.chave} className="rounded-lg bg-slate-50 px-1 py-1.5">
-              <dt className="text-[10px] uppercase tracking-wide text-slate-500">{c.nome}</dt>
-              <dd className="text-base font-semibold tabular-nums text-slate-900">{num(nota10(v.coeficientes[c.chave]), 1)}</dd>
+              <dt className="truncate text-[9.5px] uppercase tracking-wide text-slate-500" title={c.nome}>{c.nome}</dt>
+              <dd
+                className={`text-base font-semibold tabular-nums ${
+                  c.chave === "integridade" && (v.coeficientes.integridade ?? 1) < 0.7
+                    ? (v.coeficientes.integridade ?? 1) < 0.5
+                      ? "text-rose-700"
+                      : "text-amber-700"
+                    : "text-slate-900"
+                }`}
+              >
+                {num(nota10(v.coeficientes[c.chave]), 1)}
+              </dd>
               {v.rankings[c.chave] && (
                 <dd className="text-[10px] tabular-nums text-slate-500">
                   {v.rankings[c.chave]}º de {avaliados}

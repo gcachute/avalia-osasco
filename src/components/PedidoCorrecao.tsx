@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
 // Botão que abre uma janela com o pedido de correção. O envio vai para /api/correcao (functions/api/correcao.js),
@@ -18,6 +18,7 @@ export function PedidoCorrecao({ children, className }: { children: React.ReactN
   const origem = useRef(""); // endereço da página onde a janela foi aberta, enviado junto sem aparecer no formulário
   // A janela vai direto no <body>: o botão pode estar dentro de um parágrafo (rodapé), e um <dialog> dentro de <p> é HTML inválido.
   const [montado, setMontado] = useState(false);
+  const tituloId = useId();
   useEffect(() => setMontado(true), []);
   const muda = (k: keyof typeof campos) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setCampos({ ...campos, [k]: e.target.value });
@@ -72,13 +73,13 @@ export function PedidoCorrecao({ children, className }: { children: React.ReactN
         createPortal(
           <dialog
             ref={janela}
-            aria-labelledby="pedido-correcao-titulo"
+            aria-labelledby={tituloId}
             className="m-auto w-[min(36rem,calc(100vw-2rem))] rounded-2xl border border-slate-200 bg-white p-0 text-slate-800 shadow-2xl backdrop:bg-slate-950/50 backdrop:backdrop-blur-sm"
             onClick={(e) => e.target === janela.current && janela.current?.close()}
           >
             <div className="max-h-[calc(100dvh-2rem)] overflow-y-auto p-5 sm:p-6">
               <div className="flex items-start justify-between gap-4">
-                <h2 id="pedido-correcao-titulo" className="text-lg font-semibold text-slate-900">
+                <h2 id={tituloId} className="text-lg font-semibold text-slate-900">
                   Pedir uma correção
                 </h2>
                 <button
