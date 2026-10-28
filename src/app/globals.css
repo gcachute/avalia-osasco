@@ -6,6 +6,19 @@
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Grade sem número de colunas definido (o caso de quase toda grade no celular) cresce até o conteúdo mais largo e
+   empurra a página para o lado. Com uma coluna que pode encolher, o texto quebra dentro da tela. Qualquer grid-cols-*
+   ganha desta regra, porque fica na camada de utilitários. */
+@layer base {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  /* Palavra que não cabe na linha (e-mail, endereço, número de processo) quebra em vez de vazar da caixa. */
+  body {
+    overflow-wrap: break-word;
+  }
+}
+
 /* Modo escuro: espelha as escalas de cor (50 <-> 950, 100 <-> 900...), então todo o site
    troca de tema sem precisar de classes dark: em cada componente. */
 .dark {

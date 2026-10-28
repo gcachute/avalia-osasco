@@ -162,8 +162,8 @@ export default function PaginaPrefeito() {
       <header className="relative flex flex-wrap items-center gap-5 overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6">
         <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-blue-100 opacity-50 blur-3xl" aria-hidden />
         <Retrato nome={p.nome} foto={p.foto} className="relative w-32 shrink-0 rounded-2xl shadow-sm ring-1 ring-slate-200 sm:w-40" />
-        <div className="min-w-0 flex-1">
-          <h1 className="text-3xl font-bold tracking-tight text-slate-900">{p.nome}</h1>
+        <div className="min-w-0 flex-1 basis-48">
+          <h1 className="text-3xl font-bold tracking-tight text-balance text-slate-900">{p.nome}</h1>
           <p className="mt-1 flex flex-wrap items-center gap-2 text-slate-600">
             <SeloPartido sigla={p.partido} logo={p.partidoLogo} grande />
             {p.cargo} · mandato {p.mandato}
@@ -200,7 +200,7 @@ export default function PaginaPrefeito() {
               <div className="text-xs font-medium uppercase tracking-wide text-slate-400">
                 Pilar {pl.chave}
               </div>
-              <div className="mt-1 text-sm font-medium text-slate-900">{pl.nome}</div>
+              <div className="mt-1 text-sm font-medium break-words hyphens-auto text-slate-900">{pl.nome}</div>
               <div className="mt-2">
                 {!pl.pronto ? (
                   <span className="text-sm text-slate-400">em breve</span>

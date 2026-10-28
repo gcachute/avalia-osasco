@@ -77,7 +77,7 @@ export default function Vereadores() {
       <AvisoParcial className="mt-5" />
 
       <Secao titulo={`Em exercício (${ativos.length})`}>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {ativos.map((v) => (
             <Cartao key={v.id} v={v} avaliados={avaliados} />
           ))}
@@ -86,7 +86,7 @@ export default function Vereadores() {
 
       {saiu.length > 0 && (
         <Secao titulo={`Passaram pela Câmara nesta legislatura (${saiu.length})`} subtitulo="Suplentes que assumiram por um tempo e vereadores que saíram.">
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {saiu.map((v) => (
               <Cartao key={v.id} v={v} avaliados={avaliados} />
             ))}

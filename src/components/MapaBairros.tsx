@@ -599,10 +599,10 @@ export function MapaBairros({
           )}
         </div>
 
-        <div className="flex flex-col gap-4 p-3 md:flex-row md:items-start">
+        <div className="flex flex-col gap-4 p-3 md:flex-row md:items-start lg:flex-col lg:items-stretch">
           <div
             ref={caixa}
-            className="relative w-full md:w-auto md:shrink-0"
+            className="relative w-full md:w-auto md:max-w-[calc(100%-15rem)] md:shrink-0 lg:w-full lg:max-w-none"
             onMouseLeave={() => {
               setFoco(null);
               setPontoFoco(null);
