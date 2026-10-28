@@ -259,7 +259,7 @@ export default function Metodologia() {
 
       <Secao titulo="Privacidade" id="privacidade">
         <ul className="list-disc space-y-1.5 pl-5 text-slate-700">
-          <li>O site não usa cookies, não tem propaganda e não acompanha quem visita.</li>
+          <li>O site não usa cookies e não tem propaganda. As visitas são contadas de forma anônima, só o total por página, sem identificar ninguém.</li>
           <li>A escolha de tema (claro ou escuro) e os pesos do &quot;Meu critério&quot; ficam guardados só no seu aparelho.</li>
           <li>Os pedidos de correção ficam públicos, com o título e a descrição escritos por quem enviou. Não coloque dados pessoais neles.</li>
           <li>
