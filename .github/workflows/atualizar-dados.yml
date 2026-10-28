@@ -1,7 +1,7 @@
 name: Atualizar dados
 
 # Todo dia 5, às 6h de Brasília: baixa o que houver de novo nas fontes oficiais, recalcula as notas e faz commit.
-# A Cloudflare Pages publica sozinha a cada push na main.
+# Quando há dados novos, chama a publicação na Cloudflare (publicar.yml).
 # Cada coletor pode falhar sozinho (site fora do ar, por exemplo) sem impedir os outros.
 # IDEB/DataSUS e PNTP saem uma vez por ano e são pesados: rode à mão com npm run coletar:resultados / coletar:transparencia.
 on:
@@ -19,6 +19,8 @@ concurrency:
 jobs:
   atualizar:
     runs-on: ubuntu-latest
+    outputs:
+      mudou: ${{ steps.commit.outputs.mudou }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -47,6 +49,7 @@ jobs:
         run: npm run dados
 
       - name: Commit dos dados novos
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -54,7 +57,16 @@ jobs:
           # dados.json muda a cada execução por causa do campo geradoEm; só conta mudança real.
           if git diff --cached --quiet -- . ':(exclude)src/data/dados.json' && [ "$(git diff --cached -U0 -- src/data/dados.json | grep -c '^[+-] ')" -le 2 ]; then
             echo "Nada novo nas fontes."
+            echo "mudou=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Atualização mensal dos dados ($(date -u +%Y-%m-%d))"
             git push
+            echo "mudou=true" >> "$GITHUB_OUTPUT"
           fi
+
+  # Commits feitos com o GITHUB_TOKEN não disparam outros workflows, então a publicação é chamada aqui.
+  publicar:
+    needs: atualizar
+    if: needs.atualizar.outputs.mudou == 'true'
+    uses: ./.github/workflows/publicar.yml
+    secrets: inherit
