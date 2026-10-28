@@ -44,6 +44,9 @@ jobs:
       - name: IEG-M (TCE-SP)
         run: npm run coletar:iegm
         continue-on-error: true
+      - name: Saúde e educação (SIOPS e SIOPE)
+        run: npm run coletar:siops
+        continue-on-error: true
 
       - name: Recalcular notas
         run: npm run dados
