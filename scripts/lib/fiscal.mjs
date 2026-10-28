@@ -1,5 +1,7 @@
 // Pilares A (gestão fiscal) e B (mínimos constitucionais) da nota do prefeito,
 // calculados a partir dos arquivos de data/siconfi (ver scripts/coletar-siconfi.mjs).
+// Saúde, educação e FUNDEB vêm primeiro do SIOPS e do SIOPE (data/siops-siope.json, os sistemas oficiais de cada
+// área, com todas as cidades); o resumo do RREO enviado ao Tesouro só entra quando faltar dado neles.
 import { existsSync, readFileSync } from "node:fs";
 
 // Faixa plausível de cada indicador. Fora dela o dado é tratado como erro de preenchimento no SICONFI.
@@ -11,6 +13,10 @@ const PLAUSIVEL = {
   investimento: [0, 40],
 };
 export const MINIMOS = { saude: 15, educacao: 25, fundeb: 70 };
+// FUNDEB na remuneração: 60% até 2020 (Lei 11.494/2007), 70% desde 2021 (Lei 14.113/2020).
+const minimo = (k, ano) => (k === "fundeb" && ano <= 2020 ? 60 : MINIMOS[k]);
+const SISTEMA = { saude: "SIOPS", educacao: "SIOPE", fundeb: "SIOPE" };
+const DIVERGENCIA = 1; // pontos percentuais de diferença entre o RREO e o SIOPS/SIOPE que viram aviso
 export const PESSOAL = { otimo: 35, alerta: 48.6, prudencial: 51.3, maximo: 54 };
 const PRIMARIO_TOLERANCIA = 3; // % da RCL abaixo da meta da LDO que leva a nota a zero
 
@@ -69,7 +75,7 @@ export const media = (xs) => {
 
 // Notas só para anos fechados: no meio do ano os percentuais de saúde e educação ainda estão subindo
 // e a meta de resultado primário é anual, então uma nota parcial seria enganosa.
-function pontuarAno(cidades, completo) {
+function pontuarAno(cidades, completo, ano) {
   const col = (k) => cidades.map((c) => c.indicadores[k]);
   for (const c of cidades) {
     if (!completo) {
@@ -81,11 +87,11 @@ function pontuarAno(cidades, completo) {
       continue;
     }
     const i = c.indicadores;
-    const abaixo = Object.entries(MINIMOS).filter(([k, m]) => i[k] != null && i[k] < m).map(([k]) => k);
+    const abaixo = Object.keys(MINIMOS).filter((k) => i[k] != null && i[k] < minimo(k, ano));
     const minimos = Object.fromEntries(
       Object.keys(MINIMOS).map((k) => {
         const p = percentil(col(k), i[k]);
-        return [k, i[k] == null ? null : i[k] < MINIMOS[k] ? 0 : p == null ? 0.75 : 0.5 + 0.5 * p];
+        return [k, i[k] == null ? null : i[k] < minimo(k, ano) ? 0 : p == null ? 0.75 : 0.5 + 0.5 * p];
       }),
     );
     const fiscal = {
@@ -114,6 +120,7 @@ function pontuarAno(cidades, completo) {
 export function calcularFiscal() {
   if (!existsSync("data/pares.json")) return null;
   const pares = JSON.parse(readFileSync("data/pares.json", "utf8"));
+  const sistemas = existsSync("data/siops-siope.json") ? JSON.parse(readFileSync("data/siops-siope.json", "utf8")).anos : {};
   const avisos = [];
   const anos = [];
   for (const ano of pares.anos) {
@@ -126,11 +133,21 @@ export function calcularFiscal() {
       const semDados = !d.rreo14?.length;
       if (semDados) avisos.push(`${c.nome} ${ano}: demonstrativo do período ainda não entregue ao SICONFI.`);
       const indicadores = validar(extrair(d), avisos, c.nome, ano);
-      if (!semDados && indicadores.saude == null && indicadores.educacao == null)
-        avisos.push(`${c.nome} ${ano}: não informou saúde e educação no RREO enviado ao SICONFI (esses dados também vão ao SIOPS e ao SIOPE, ainda não integrados). Fica sem nota no pilar B.`);
-      return { ibge: c.ibge, nome: c.nome, foco: c.ibge === pares.foco, fontes: d.fontes ?? {}, semDados, indicadores };
+      // Mínimos: SIOPS/SIOPE primeiro; o RREO fica guardado para mostrar quando os números não batem.
+      const rreo = { saude: indicadores.saude, educacao: indicadores.educacao, fundeb: indicadores.fundeb };
+      const sis = validar({ ...sistemas[ano]?.[c.ibge] }, avisos, c.nome, ano);
+      const fonteMinimos = {};
+      for (const k of Object.keys(MINIMOS)) {
+        if (sis[k] != null) (indicadores[k] = sis[k]), (fonteMinimos[k] = SISTEMA[k]);
+        else if (rreo[k] != null) fonteMinimos[k] = "RREO";
+        if (sis[k] != null && rreo[k] != null && Math.abs(sis[k] - rreo[k]) >= DIVERGENCIA)
+          avisos.push(`${c.nome} ${ano}: ${k} = ${sis[k]}% no ${SISTEMA[k]} e ${rreo[k]}% no RREO enviado ao Tesouro. A nota usa o ${SISTEMA[k]}.`);
+      }
+      if (!semDados && Object.keys(MINIMOS).every((k) => indicadores[k] == null))
+        avisos.push(`${c.nome} ${ano}: sem saúde, educação e FUNDEB no SIOPS, no SIOPE e no RREO. Fica sem nota no pilar B.`);
+      return { ibge: c.ibge, nome: c.nome, foco: c.ibge === pares.foco, fontes: d.fontes ?? {}, semDados, indicadores, rreo, fonteMinimos };
     });
-    pontuarAno(cidades, completo);
+    pontuarAno(cidades, completo, ano);
     anos.push({ ano, completo, rreoPeriodo: bruto.rreoPeriodo, rgfPeriodo: bruto.rgfPeriodo, coletadoEm: bruto.coletadoEm, mandato: ano >= pares.inicioMandato, cidades });
   }
   if (!anos.length) return null;
