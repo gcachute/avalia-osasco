@@ -233,7 +233,7 @@ for (const { sheets, s } of lidas) {
       let autor = null;
       if (pm) {
         const tipo = TIPOS[norm(pm[1])] ?? pm[1];
-        const key = `${tipo}-${pm[2]}/${pm[3]}`;
+        const key = `${tipo}-${Number(pm[2])}/${pm[3]}`; // "PL-02/2026" e "PL-2/2026" são o mesmo projeto
         let ementa;
         [autor, ementa] = separaAutor(pm[4], pm[5]);
         // Conta na primeira vez que aparece (leitura no expediente ou pauta da Ordem do Dia), só desta legislatura.
@@ -241,7 +241,7 @@ for (const { sheets, s } of lidas) {
           proposicoes.set(key, { key, tipo, numero: Number(pm[2]), ano: Number(pm[3]), autor: attribute(autor), autores: todosAutores(autor), autorTexto: clean(autor), ementa: clean(ementa), sessao: s.id });
       } else if (text.match(REQ_RE)) {
         const rm = text.match(REQ_RE);
-        const key = `REQ-${rm[1]}/${rm[2]}`;
+        const key = `REQ-${Number(rm[1])}/${rm[2]}`;
         autor = rm[3];
         // Requerimentos que voltam à pauta sessão após sessão sem deliberação (o plenário não vota).
         if (/requerimento/i.test(sheet.name)) {
@@ -254,7 +254,7 @@ for (const { sheets, s } of lidas) {
         if (Number(rm[2]) >= Number(metodologia.inicioLegislatura.slice(0, 4)) && !requerimentos.has(key))
           requerimentos.set(key, { key, tipo: "REQ", numero: Number(rm[1]), ano: Number(rm[2]), autor: attribute(autor), autores: todosAutores(autor), ementa: clean(rm[4]), informacao: /informa[cç]/i.test(rm[4]), sessao: s.id });
       } else if (mm) {
-        const key = `MOC-${mm[2]}/${mm[3]}`;
+        const key = `MOC-${Number(mm[2])}/${mm[3]}`;
         autor = mm[4];
         if (!mocoes.has(key)) mocoes.set(key, { key, tipo: `Moção de ${clean(mm[1]).toLowerCase()}`, numero: Number(mm[2]), ano: Number(mm[3]), autor: attribute(autor), autores: todosAutores(autor), ementa: clean(mm[5]), sessao: s.id });
       }

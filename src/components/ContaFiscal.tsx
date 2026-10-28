@@ -136,7 +136,16 @@ export function ContaPilarB({ a, c, f }: { a: AnoFiscal; c: CidadeFiscal; f: Fis
   const i = c.indicadores;
   const n = a.cidades.filter((x) => x.pilares.B.nota != null).length;
   const NOMES = { saude: "saúde", educacao: "educação", fundeb: "FUNDEB" } as const;
-  const linhas = (["saude", "educacao", "fundeb"] as const).map((x) => ({ k: x, nome: NOMES[x], min: m[x], v: i[x], p: k[x], lugar: lugar(a.cidades, c, x) }));
+  // Cada item compara só as cidades que informaram aquele número (Ribeirão Preto, por exemplo, não informou saúde).
+  const linhas = (["saude", "educacao", "fundeb"] as const).map((x) => ({
+    k: x,
+    nome: NOMES[x],
+    min: m[x],
+    v: i[x],
+    p: k[x],
+    lugar: lugar(a.cidades, c, x),
+    entre: a.cidades.filter((y) => y.pilares.B.nota != null && y.indicadores[x] != null).length,
+  }));
   const zerado = c.pilares.B.descumpridos.length ? `Osasco ficou abaixo do mínimo legal em ${c.pilares.B.descumpridos.map((x) => NOMES[x as keyof typeof NOMES] ?? x).join(" e ")}` : undefined;
   return (
     <div className="space-y-3">
@@ -148,7 +157,7 @@ export function ContaPilarB({ a, c, f }: { a: AnoFiscal; c: CidadeFiscal; f: Fis
       <ul className="space-y-1.5 text-sm text-slate-700">
         {linhas.map((l) => (
           <li key={l.k}>
-            <b className="capitalize">{l.nome}:</b> Osasco aplicou <b>{pct(l.v)}</b> (mínimo {l.min}%), o {l.lugar}º maior entre {n} → <b>{pts(l.p)}</b>.
+            <b className="capitalize">{l.nome}:</b> Osasco aplicou <b>{pct(l.v)}</b> (mínimo {l.min}%), o {l.lugar}º maior entre {l.entre} → <b>{pts(l.p)}</b>.
           </li>
         ))}
       </ul>

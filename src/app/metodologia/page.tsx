@@ -15,7 +15,7 @@ export default function Metodologia() {
     <article className="max-w-3xl">
       <h1 className="text-3xl font-bold tracking-tight text-slate-900">Metodologia</h1>
       <p className="mt-3 text-lg text-slate-600">
-        Não há nota geral. Cada avaliação vai de 0 a 10 e é calculada só com dados públicos e oficiais, com a conta à mostra. Cada número leva ao
+        Cada avaliação vai de 0 a 10 e é calculada só com dados públicos e oficiais, com a conta à mostra. Cada número leva ao
         documento oficial de onde saiu.
       </p>
 
@@ -38,7 +38,7 @@ export default function Metodologia() {
 
       <Secao titulo="Vereadores: participação, produção e eficiência" id="vereadores">
         <p className="mb-4 text-slate-700">
-          Cada vereador tem cinco avaliações individuais (os pilares abaixo), cada uma de 0 a 10. Elas formam três coeficientes, sem nota geral:
+          Cada vereador tem cinco avaliações individuais (os pilares abaixo), cada uma de 0 a 10. Elas formam três coeficientes:
         </p>
         <ul className="mb-4 space-y-2 text-slate-700">
           {COEFICIENTES.map((c) => (
@@ -113,7 +113,7 @@ export default function Metodologia() {
 
       <Secao titulo="Prefeito: uma nota por pilar" id="prefeito">
         <p className="text-slate-700">
-          O prefeito é avaliado em cinco pilares, cada um com a sua nota e sem nota geral: gestão fiscal, mínimos constitucionais, qualidade da
+          O prefeito é avaliado em cinco pilares, cada um com a sua nota: gestão fiscal, mínimos constitucionais, qualidade da
           gestão pelo IEG-M do TCE-SP, resultados em educação e saúde, e transparência e entregas. Pilar sem dados do mandato fica sem nota até a
           fonte publicar.
         </p>
@@ -233,8 +233,8 @@ export default function Metodologia() {
           <li>Separar projetos simbólicos dos de política pública não mede a qualidade de cada um. A classificação é automática e pode errar em casos de fronteira.</li>
           <li>Requerimentos e indicações apresentados desde 2025, presença nas reuniões das comissões e atendimento aos moradores ainda não têm dados abertos sem captcha e ficam de fora.</li>
           <li>
-            Custo do mandato: usamos os vencimentos do Quadro de Pessoal oficial (sem encargos e benefícios) e as despesas que a Câmara envia ao TCE-SP.
-            A folha por gabinete, com quem está lotado em cada um, não é publicada em formato aberto.
+            Custo do mandato: usamos os vencimentos do Quadro de Pessoal oficial (sem encargos e benefícios), as despesas que a Câmara envia ao TCE-SP
+            e a folha mensal do Portal do Cidadão. A folha não informa o gabinete de cada assessor, por isso não há custo por gabinete.
           </li>
           <li>As planilhas são preenchidas à mão pela Câmara e podem ter erros de digitação. Copiamos os dados como estão.</li>
         </ul>
@@ -242,8 +242,11 @@ export default function Metodologia() {
 
       <Secao titulo="Correções" id="correcoes">
         <p className="text-slate-700">
-          Se algum número estiver errado, compare com a planilha oficial (link em cada item) e entre em contato informando a sessão e o dado. Toda
-          correção é feita na origem dos dados e vale para todos os vereadores.
+          Se algum número estiver errado, compare com a fonte oficial (link em cada item) e{" "}
+          <a className="underline" href="https://github.com/gcachute/avalia-osasco/issues/new" target="_blank" rel="noreferrer">
+            abra um pedido de correção
+          </a>{" "}
+          informando a página e o dado. Toda correção é feita na origem dos dados e vale para todos.
         </p>
       </Secao>
     </article>

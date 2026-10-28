@@ -66,7 +66,7 @@ export function DespesasCamara({ despesas }: { despesas: NonNullable<Camara["des
           <li key={f.nome} className="grid grid-cols-[minmax(0,1fr)_5.5rem] items-center gap-3">
             <div className="min-w-0">
               <div className="truncate text-slate-700" title={f.nome}>
-                {/c[aâ]mara municipal/i.test(f.nome) ? "Folha de pessoal (repasse à conta da própria Câmara)" : f.nome.toLowerCase()}
+                {/c[aâ]mara municipal/i.test(f.nome) ? "Folha de pessoal (repasse à conta da própria Câmara)" : razaoSocial(f.nome)}
               </div>
               <div className="mt-0.5 h-1.5 overflow-hidden rounded-full bg-slate-100">
                 <div className="barra-anim h-full rounded-full bg-blue-600" style={{ width: `${(f.pago / max) * 100}%` }} />
@@ -88,6 +88,30 @@ export function DespesasCamara({ despesas }: { despesas: NonNullable<Camara["des
     </div>
   );
 }
+
+// Razão social como o AUDESP grava (maiúsculas, sem acento) escrita como nome: "TETO CONSTRUTORA S A" -> "Teto Construtora S.A.".
+const SIGLAS = new Set(["RDM", "MXA", "FT", "IPMO", "FAPETEC", "ME", "EPP", "EIRELI", "KA"]);
+const MINUSCULAS = new Set(["a", "ao", "de", "da", "do", "das", "dos", "e", "em", "para"]);
+const ACENTOS: Record<string, string> = {
+  construcoes: "construções", servicos: "serviços", comercio: "comércio", fundacao: "fundação", previdencia: "previdência",
+  municipio: "município", mun: "mun.", tecnol: "tecnol.", comunicacao: "comunicação", informatica: "informática", seguranca: "segurança",
+  vigilancia: "vigilância", solucoes: "soluções", tecnologicas: "tecnológicas", producoes: "produções", agencia: "agência",
+  negocios: "negócios", jornalistica: "jornalística", beneficios: "benefícios", gestao: "gestão", camara: "câmara",
+};
+const razaoSocial = (nome: string) =>
+  nome
+    .replace(/ S ?A$/, " S.A.")
+    .split(/\s+/)
+    .map((p, i) => {
+      const w = p.toLowerCase();
+      if (p === "S.A.") return p;
+      if (w === "ltda") return "Ltda.";
+      if (SIGLAS.has(p)) return p;
+      if (i > 0 && MINUSCULAS.has(w)) return w;
+      const c = ACENTOS[w] ?? w;
+      return c.charAt(0).toUpperCase() + c.slice(1);
+    })
+    .join(" ");
 
 const MESES_NOME = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
 export const rotuloMesFolha = (m: string) => `${MESES_NOME[Number(m.slice(5, 7)) - 1]} de ${m.slice(0, 4)}`;
