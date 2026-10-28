@@ -57,8 +57,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data src/data
-          # dados.json muda a cada execução por causa do campo geradoEm; só conta mudança real.
-          if git diff --cached --quiet -- . ':(exclude)src/data/dados.json' && [ "$(git diff --cached -U0 -- src/data/dados.json | grep -c '^[+-] ')" -le 2 ]; then
+          # As datas de coleta (coletadoEm, geradoEm) mudam a cada execução; só conta mudança real.
+          if [ "$(git diff --cached -U0 | grep '^[+-] ' | grep -cvE '"(coletadoEm|geradoEm)":')" -eq 0 ]; then
             echo "Nada novo nas fontes."
             echo "mudou=false" >> "$GITHUB_OUTPUT"
           else
