@@ -3,6 +3,8 @@
 import { existsSync, readFileSync } from "node:fs";
 import { BASE, MINIMO_MORADORES, SIGLAS } from "./territorio.mjs";
 
+const OSASCO = 3534401;
+const virgula = (x) => String(x ?? "—").replace(".", ",");
 const ler = (f) => (existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null);
 const dobra = (s) => String(s ?? "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().replace(/\s+/g, " ").trim();
 const um = (x) => Math.round(x * 10) / 10;
@@ -96,29 +98,36 @@ function resumoEleicao(ano, e) {
 }
 
 export function montarHistorico() {
+  const c2000 = ler("data/historico/censo-2000.json");
   const c2010 = ler("data/historico/censo-2010.json");
   const c2022 = ler("data/territorio/censo.json");
   const ele = ler("data/historico/eleicoes.json");
   const pop = ler("data/historico/populacao.json");
   const ipca = ler("data/historico/ipca.json");
+  const minimos = ler("data/siops-siope.json");
   if (!c2010 && !ele && !pop) return null;
 
   const censo =
     c2010 && c2022
       ? {
-          anos: [2010, 2022],
+          // O Censo 2000 entra quando data/historico/censo-2000.json existe (scripts/coletar-censo2000.py).
+          anos: c2000 ? [2000, 2010, 2022] : [2010, 2022],
           fontes: [
+            ...(c2000 ? [{ nome: c2000.fonte, url: c2000.url }] : []),
             { nome: c2010.fonte, url: c2010.url },
             { nome: c2022.fonte, url: c2022.url },
           ],
-          notaRenda: c2010.notaRenda?.replace(/fator (\d+)\.(\d+)/, "fator $1,$2"), // arquivos coletados antes gravaram o fator com ponto
+          notaRenda: c2000
+            ? `Renda média do responsável com rendimento, corrigida pelo IPCA para julho de 2022: fator ${virgula(c2000.fatorIpca)} para 2000 (desde agosto de 2000) e ${virgula(ipca?.fator)} para 2010 (desde julho de 2010).`
+            : c2010.notaRenda?.replace(/fator (\d+)\.(\d+)/, "fator $1,$2"), // arquivos coletados antes gravaram o fator com ponto
           fatorIpca: ipca?.fator ?? null,
-          cidade: { 2010: mediaCidade(c2010.bairros), 2022: mediaCidade(c2022.bairros) },
+          cidade: { ...(c2000 ? { 2000: mediaCidade(c2000.bairros) } : {}), 2010: mediaCidade(c2010.bairros), 2022: mediaCidade(c2022.bairros) },
           bairros: Object.fromEntries(
             c2022.bairros.map((b) => {
               const antes = c2010.bairros.find((x) => x.id === b.id);
               const pegar = (x) => (x?.pessoas ? Object.fromEntries(CAMPOS_CENSO.map((k) => [k, x[k] ?? null])) : null);
-              return [b.id, { 2010: pegar(antes), 2022: pegar(b) }];
+              const em2000 = c2000 ? { 2000: pegar(c2000.bairros.find((x) => x.id === b.id)) } : {};
+              return [b.id, { ...em2000, 2010: pegar(antes), 2022: pegar(b) }];
             }),
           ),
         }
@@ -142,5 +151,13 @@ export function montarHistorico() {
     censo,
     eleicoes,
     populacao: pop && { fonte: pop.fonte, url: pop.url, censos: pop.censos, estimativas: pop.estimativas },
+    // Saúde e educação de Osasco como declaradas nos sistemas próprios (SIOPS e SIOPE), ano a ano.
+    minimos: minimos && {
+      fontes: minimos.fontes,
+      urls: minimos.urls,
+      anos: Object.entries(minimos.anos)
+        .map(([ano, cs]) => ({ ano: Number(ano), saude: cs[OSASCO]?.saude ?? null, educacao: cs[OSASCO]?.educacao ?? null, fundeb: cs[OSASCO]?.fundeb ?? null }))
+        .sort((a, b) => a.ano - b.ano),
+    },
   };
 }

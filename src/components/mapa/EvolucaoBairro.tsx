@@ -2,9 +2,10 @@
 
 import type { CampoCenso, Historico } from "@/lib/dados";
 import { GraficoLinha } from "../GraficoLinha";
+import { Halter, legendaHalter } from "./Halter";
 import { formatar } from "./indicadores";
 
-// Medidas do Censo comparáveis entre 2010 e 2022, em porcentagem. A chave do indicador (quando existe) colore o mapa.
+// Medidas do Censo comparáveis entre os anos (2000, 2010 e 2022), em porcentagem. A chave do indicador (quando existe) colore o mapa.
 const LINHAS: { campo: CampoCenso; nome: string; indicador?: string }[] = [
   { campo: "esgoto", nome: "Esgoto na rede", indicador: "esgoto" },
   { campo: "agua", nome: "Água da rede geral" },
@@ -37,11 +38,16 @@ export function EvolucaoBairro({
   aoEscolherIndicador: (chave: string, periodo: string) => void;
 }) {
   const censo = historico?.censo;
-  const [a0, a1] = censo ? [String(censo.anos[0]), String(censo.anos.at(-1))] : ["", ""];
-  const antes = censo?.bairros[id]?.[a0] ?? null;
-  const depois = censo?.bairros[id]?.[a1] ?? null;
-  const cid0 = censo?.cidade[a0];
-  const cid1 = censo?.cidade[a1];
+  const anos = censo?.anos.map(String) ?? [];
+  const [a0, a1] = [anos[0] ?? "", anos.at(-1) ?? ""];
+  const serie = anos.map((a) => ({ ano: a, b: censo?.bairros[id]?.[a] ?? null, c: censo?.cidade[a] ?? null }));
+  const antes = serie.find((x) => x.b)?.b ?? null;
+  const depois = serie.at(-1)?.b ?? null;
+  // Mudança da cidade no mesmo intervalo que o bairro tem dados.
+  const mudCidade = (campo: CampoCenso) => {
+    const com = serie.filter((x) => x.b?.[campo] != null && x.c?.[campo] != null);
+    return com.length > 1 ? com.at(-1)!.c![campo]! - com[0].c![campo]! : null;
+  };
   const ele = historico?.eleicoes;
   const anosEle = ele?.anos.map(String) ?? [];
   const serieEle = anosEle.map((a) => ({ ano: a, b: ele?.bairros[id]?.[a] ?? null, c: ele?.cidade[a] ?? null }));
@@ -52,14 +58,14 @@ export function EvolucaoBairro({
       {censo && (
         <section>
           <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-            Censo {a0} → {a1}
+            Censo {anos.join(" · ")}
           </h3>
           {antes && depois ? (
             <>
               <div className="mt-2 grid grid-cols-2 gap-2">
                 {[
-                  { t: "Moradores", a: antes.pessoas, b: depois.pessoas, f: "inteiro" as const, ind: "populacao" },
-                  { t: "Renda média", a: antes.rendaMedia, b: depois.rendaMedia, f: "reais" as const, ind: "renda" },
+                  { t: "Moradores", campo: "pessoas" as const, f: "inteiro" as const, ind: "populacao" },
+                  { t: "Renda média", campo: "rendaMedia" as const, f: "reais" as const, ind: "renda" },
                 ].map((x) => (
                   <button
                     key={x.t}
@@ -69,45 +75,30 @@ export function EvolucaoBairro({
                   >
                     <div className="text-[11px] text-slate-500">{x.t}</div>
                     <div className="text-xs tabular-nums text-slate-600">
-                      {formatar(x.a, x.f)} → <b className="text-sm text-slate-900">{formatar(x.b, x.f)}</b>
+                      {serie
+                        .filter((p) => p.b?.[x.campo] != null)
+                        .map((p, i, arr) =>
+                          i === arr.length - 1 ? (
+                            <b key={p.ano} className="text-sm text-slate-900" title={p.ano}>
+                              {formatar(p.b![x.campo], x.f)}
+                            </b>
+                          ) : (
+                            <span key={p.ano} title={p.ano}>
+                              {formatar(p.b![x.campo], x.f)} →{" "}
+                            </span>
+                          ),
+                        )}
                     </div>
-                    <div className="text-[11px] font-semibold tabular-nums text-slate-700">{formatar(variacao(x.a, x.b), "varPct")}</div>
+                    <div className="text-[11px] font-semibold tabular-nums text-slate-700">{formatar(variacao(antes[x.campo], depois[x.campo]), "varPct")}</div>
                   </button>
                 ))}
               </div>
               {!poucosMoradores && (
                 <ul className="mt-3 space-y-2">
                   {LINHAS.map((l) => {
-                    const v0 = antes[l.campo];
-                    const v1 = depois[l.campo];
-                    if (v0 == null && v1 == null) return null;
-                    const mud = v0 != null && v1 != null ? v1 - v0 : null;
-                    const cm = cid0?.[l.campo] != null && cid1?.[l.campo] != null ? cid1[l.campo]! - cid0[l.campo]! : null;
-                    const conteudo = (
-                      <>
-                        <div className="flex items-baseline justify-between gap-2 text-xs">
-                          <span className="text-slate-700">{l.nome}</span>
-                          <span className="shrink-0 tabular-nums text-slate-500">
-                            {formatar(v0, "pct")} → <b className="text-slate-900">{formatar(v1, "pct")}</b>{" "}
-                            <span className="font-semibold text-slate-700">{formatar(mud, "pp")}</span>
-                          </span>
-                        </div>
-                        {/* Halteres: círculo vazio em 2010, cheio em 2022, numa régua de 0 a 100% */}
-                        <svg className="mt-1 block h-3 w-full" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden>
-                          <line x1="0" x2="100" y1="6" y2="6" stroke="var(--grafico-grade)" strokeWidth="2" vectorEffect="non-scaling-stroke" />
-                          {v0 != null && v1 != null && (
-                            <line x1={v0} x2={v1} y1="6" y2="6" stroke="var(--grafico-1)" strokeWidth="3" vectorEffect="non-scaling-stroke" />
-                          )}
-                        </svg>
-                        <div className="relative -mt-3 h-3">
-                          {v0 != null && (
-                            <span className="absolute top-0.5 h-2 w-2 -translate-x-1/2 rounded-full border-2 bg-white" style={{ left: `${v0}%`, borderColor: "var(--grafico-1)" }} />
-                          )}
-                          {v1 != null && <span className="absolute top-0.5 h-2 w-2 -translate-x-1/2 rounded-full" style={{ left: `${v1}%`, background: "var(--grafico-1)" }} />}
-                        </div>
-                        {cm != null && <div className="text-right text-[10px] text-slate-400">Osasco: {formatar(cm, "pp")}</div>}
-                      </>
-                    );
+                    const pontos = serie.map((p) => ({ ano: p.ano, v: p.b?.[l.campo] }));
+                    if (pontos.every((p) => p.v == null)) return null;
+                    const conteudo = <Halter nome={l.nome} pontos={pontos} cidade={mudCidade(l.campo)} />;
                     return (
                       <li key={l.campo}>
                         {l.indicador ? (
@@ -123,8 +114,9 @@ export function EvolucaoBairro({
                 </ul>
               )}
               <p className="mt-2 text-[10px] leading-snug text-slate-400">
-                Círculo vazio: {a0}; cheio: {a1}. Renda de {a0} corrigida pela inflação (IPCA) para reais de {a1}. Os limites de alguns bairros e a forma de
-                levantar o entorno das casas (asfalto, calçada, árvores…) mudaram entre os dois Censos.
+                {legendaHalter(anos)} Rendas anteriores corrigidas pela inflação (IPCA) para reais de {a1}. Os limites de alguns bairros mudaram entre os
+                Censos, e a forma de levantar o entorno das casas (asfalto, calçada, árvores…) mudou de 2010 para 2022. O Censo 2000 não tem cor ou raça
+                nem o entorno.
               </p>
             </>
           ) : (

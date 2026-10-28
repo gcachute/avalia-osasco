@@ -10,6 +10,7 @@
     "coletar": "node scripts/coletar.mjs",
     "dados": "node scripts/processar.mjs",
     "coletar:fiscal": "node scripts/coletar-siconfi.mjs",
+    "coletar:siops": "node scripts/coletar-siops-siope.mjs",
     "coletar:iegm": "node scripts/coletar-iegm.mjs",
     "coletar:resultados": "node scripts/coletar-resultados.mjs",
     "coletar:transparencia": "node scripts/coletar-transparencia.mjs",
