@@ -141,6 +141,17 @@ const vetos = new Map();
 const decretos = new Set();
 const atosExecutivo = new Map(); // texto integral de decretos, ofícios e vetos do prefeito lidos no expediente
 const naoAtribuidos = new Set();
+// Lideranças comunicadas por ofício e lidas no expediente: líder de bancada e líder do prefeito na Câmara.
+const liderancas = [];
+const LIDERANCA_RE = /l[ií]der/i;
+const NAO_LIDERANCA_RE = /diploma|mo[çc][ãa]o|t[ií]tulo|forma[çc][ãa]o de l[ií]der|l[ií]der comunit|lideran[çc]a (comunit|religi|social)/i;
+// Nome de vereador citado no texto (o mais longo que aparecer, para "Délbio Camargo Teruel" ganhar de "Teruel").
+const vereadorCitado = (texto) => {
+  const t = `-${slug(texto)}-`;
+  let melhor = null;
+  for (const [chave, id] of aliases) if (chave.length > 5 && t.includes(`-${chave}-`) && (!melhor || chave.length > melhor[0].length)) melhor = [chave, id];
+  return melhor?.[1] ?? null;
+};
 
 const pessoa = (nome) => {
   const id = idFor(nome);
@@ -286,6 +297,15 @@ for (const { sheets, s } of lidas) {
         atosExecutivo.set(text.slice(0, 120), { texto: text, sessao: s.id });
     });
 
+    // Lideranças: os ofícios aparecem em qualquer linha da planilha (expediente), não só na pauta.
+    for (const row of sheet.rows)
+      for (const cell of row) {
+        const text = clean(cell);
+        if (!LIDERANCA_RE.test(text) || NAO_LIDERANCA_RE.test(text) || !/bancada|partido|prefeit|governo|l[ií]der d[oa] [A-Z]{2,}/i.test(text)) continue;
+        const id = vereadorCitado(text);
+        if (id) liderancas.push({ id, tipo: /l[ií]der d[oa] (prefeit|governo)/i.test(text) ? "prefeito" : "bancada", sessao: s.id, texto: text });
+      }
+
     // Votos nominais: linhas com o nome de quem está no plenário.
     for (const row of sheet.rows.slice(5)) {
       const { nome: name, resto } = nomeDaLinha(row);
@@ -345,6 +365,15 @@ const vereadores = [...pessoas.values()].map((p) => {
       mesa: perfil.mesa ?? null,
     },
     emExercicio: ultima === sessoesOrdenadas.at(-1)?.id,
+    // Uma por tipo, a mais recente (o mesmo ofício às vezes é lido em mais de uma sessão).
+    liderancas: Object.values(
+      Object.fromEntries(
+        liderancas
+          .filter((l) => l.id === p.id)
+          .sort((a, b) => a.sessao.localeCompare(b.sessao))
+          .map((l) => [l.tipo, { tipo: l.tipo, sessao: l.sessao, texto: l.texto }]),
+      ),
+    ),
     indicadores: {
       sessoes: registradas.length,
       presencas,
@@ -365,7 +394,7 @@ const vereadores = [...pessoas.values()].map((p) => {
       requerimentosNaPauta: naPauta.length,
       comissoes: perfil?.comissoes.filter((c) => c.tipo !== "frente").length ?? 0,
       frentes: perfil?.comissoes.filter((c) => c.tipo === "frente").length ?? 0,
-      pontosComissoes: pontosComissoes(perfil?.comissoes, perfil?.mesa),
+      pontosComissoes: pontosComissoes(perfil?.comissoes, perfil?.mesa, liderancas.filter((l) => l.id === p.id)),
       leisSancionadas: leis.length,
       vetosRecebidos: [...vetos.values()].filter((x) => ehAutor(x, p.id)).length,
       adiadasPorAusencia: p.adiadasPorAusencia.length,

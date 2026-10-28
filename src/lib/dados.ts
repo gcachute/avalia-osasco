@@ -167,6 +167,10 @@ export type Vereador = {
     mesa: string | null;
   } | null;
   emExercicio: boolean;
+  // Lideranças comunicadas por ofício e lidas no expediente (líder de bancada, líder do prefeito).
+  liderancas?: { tipo: "bancada" | "prefeito"; sessao: string; texto: string }[];
+  // Bônus que só soma na Produção (0 a 0,05 na escala de 0 a 1): moções e honrarias.
+  bonus?: { comunidade: number };
   // Participação, produção e eficiência (0 a 1), e a posição em cada um.
   coeficientes: Record<Coeficiente, number | null>;
   rankings: Partial<Record<Coeficiente, number>>;
@@ -420,30 +424,31 @@ export const COEFICIENTES: { chave: Coeficiente; nome: string; descricao: string
   {
     chave: "participacao",
     nome: "Participação",
-    descricao: "Média de Assiduidade (presença nas sessões e nas votações nominais) e Compromisso com a pauta (itens próprios adiados porque faltou).",
+    descricao: "Assiduidade (presença nas sessões e nas votações nominais) vale 80%; Compromisso com a pauta (itens próprios adiados porque faltou), 20%.",
     pilares: ["A", "E"],
   },
   {
     chave: "producao",
     nome: "Produção",
-    descricao: "Média de Legislação que importa (projetos de política pública e leis sancionadas) e Fiscalização e comissões (comissões e Mesa Diretora).",
+    descricao:
+      "Média de Legislação que importa (projetos de política pública e leis sancionadas) e Comissões e articulação (comissões, Mesa Diretora, frentes e lideranças), mais um bônus de até 0,5 por moções e honrarias.",
     pilares: ["B", "C"],
   },
   {
     chave: "eficiencia",
     nome: "Eficiência",
     descricao:
-      "O que produziu por sessão em que esteve presente: projetos de política pública (simbólicos valem 0,2) e leis sancionadas a cada 10 presenças. As faltas não entram na conta. Comparado com o percentil 90 entre os vereadores.",
+      "O que produziu por sessão em que esteve presente: projetos de política pública (simbólicos valem 0,2) e leis sancionadas a cada 10 presenças. As faltas não entram na conta. Mesma régua da Legislação que importa.",
     pilares: [],
   },
 ];
 
 export const PILARES_VEREADOR: { chave: PilarVereador; nome: string; descricao: string }[] = [
-  { chave: "A", nome: "Assiduidade", descricao: "Presença nas sessões (faltas justificadas não contam contra) e participação nas votações nominais. 95% ou mais vale 10; 75% ou menos vale 0." },
-  { chave: "B", nome: "Legislação que importa", descricao: "Projetos de lei por sessão em exercício. Projeto de política pública vale 1, simbólico (nome de rua, data comemorativa, título) vale 0,2, e cada lei sancionada soma 1." },
-  { chave: "C", nome: "Fiscalização e comissões", descricao: "Trabalho nas comissões da Câmara (presidência e relatoria valem mais) e cargos na Mesa Diretora. Requerimentos ao Executivo entram quando houver dados abertos." },
+  { chave: "A", nome: "Assiduidade", descricao: "Presença nas sessões (faltas justificadas não contam contra) e participação nas votações nominais, em proporção direta: 90% vale 9." },
+  { chave: "B", nome: "Legislação que importa", descricao: "Projetos de lei por sessão em exercício. Projeto de política pública vale 1, simbólico (nome de rua, data comemorativa, título) vale 0,2, e cada lei sancionada soma 1. Um pouco de produção já pontua; 1,5 ponto a cada 10 sessões (cerca de um projeto por mês) vale 10." },
+  { chave: "C", nome: "Comissões e articulação", descricao: "Comissões da Câmara (presidência e relatoria valem mais), Mesa Diretora, frentes parlamentares e lideranças (de bancada e do prefeito). 6 pontos valem 10, com a mesma curva da legislação." },
   { chave: "D", nome: "Custo do mandato", descricao: "Salário do vereador e dos assessores do gabinete. A lei dá a mesma estrutura a todos os gabinetes, então esse custo não separa um vereador do outro e fica fora da nota. A Câmara informou, por pedido de acesso à informação, que não paga diárias, auxílios ou verbas de gabinete aos vereadores." },
-  { chave: "E", nome: "Compromisso com a pauta", descricao: "Itens do próprio vereador adiados porque ele faltou. Nenhum vale 10; 3 ou mais a cada 10 sessões vale 0." },
+  { chave: "E", nome: "Compromisso com a pauta", descricao: "Itens do próprio vereador adiados porque ele faltou. Nenhum vale 10; cada item adiado a cada 10 sessões tira 1 ponto." },
 ];
 
 export const TIPO_NOME: Record<string, string> = {

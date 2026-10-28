@@ -122,7 +122,14 @@ export default async function PaginaVereador({ params }: Props) {
     B: `${plural(i.projetosSubstantivos, "projeto", "projetos")} de política pública, ${plural(i.projetosSimbolicos, "simbólico", "simbólicos")} e ${plural(i.leisSancionadas, "lei sancionada", "leis sancionadas")} em ${i.sessoes} sessões`,
     C: !v.emExercicio
       ? "Sem dado: a composição das comissões publicada é a atual, e este vereador já saiu da Câmara"
-      : `${pf?.mesa ? `${pf.mesa} da Mesa Diretora · ` : ""}${plural(i.comissoes, "comissão", "comissões")} · ${plural(i.frentes, "frente parlamentar", "frentes parlamentares")}`,
+      : [
+          pf?.mesa ? `${pf.mesa} da Mesa Diretora` : null,
+          ...(v.liderancas ?? []).map((l) => (l.tipo === "prefeito" ? "líder do prefeito" : "líder de bancada")),
+          plural(i.comissoes, "comissão", "comissões"),
+          plural(i.frentes, "frente parlamentar", "frentes parlamentares"),
+        ]
+          .filter(Boolean)
+          .join(" · "),
     D: custo ? `${milReais(custo.totalMensal)} por mês em salários (vereador e ${custo.assessores} assessores), igual para todos os gabinetes` : "Sem dados de custo do gabinete",
     E: `${plural(i.adiadasPorAusencia, "item próprio adiado", "itens próprios adiados")} porque faltou, em ${i.sessoes} sessões`,
   };
@@ -260,8 +267,15 @@ export default async function PaginaVereador({ params }: Props) {
                   ={" "}
                   {c.pilares
                     .map((k) => `${PILARES_VEREADOR.find((p) => p.chave === k)!.nome} ${nota(nota10(v.pilares[k].nota))}`)
-                    .join(" e ")}
+                    .join(c.chave === "participacao" ? " (80%) e " : " e ")}
+                  {c.chave === "participacao" && " (20%)"}
                   {c.pilares.some((k) => v.pilares[k].nota == null) && " (sem dado não entra na média)"}
+                  {c.chave === "producao" && (v.bonus?.comunidade ?? 0) > 0 && (
+                    <>
+                      {" "}
+                      + bônus de {nota((v.bonus!.comunidade ?? 0) * 10)} por {i.mocoes + i.honrarias} moções e honrarias
+                    </>
+                  )}
                 </p>
               ) : (
                 <p className="mt-2 text-sm text-slate-700">
@@ -297,8 +311,8 @@ export default async function PaginaVereador({ params }: Props) {
           ))}
         </div>
         <p className="mt-2 text-xs text-slate-500">
-          Participação é a média de A e E; Produção, a média de B e C. O custo do mandato (D) aparece para consulta e não entra em
-          nenhum coeficiente, porque é igual para todos os gabinetes.
+          Participação junta A (80%) e E (20%); Produção é a média de B e C, mais o bônus por moções e honrarias (até 0,5). O custo do mandato (D)
+          aparece para consulta e não entra em nenhum coeficiente, porque é igual para todos os gabinetes.
         </p>
       </Secao>
 
@@ -391,8 +405,8 @@ export default async function PaginaVereador({ params }: Props) {
         </Secao>
       )}
 
-      {pf && (pf.comissoes.length > 0 || pf.mesa) && (
-        <Secao titulo="Comissões e Mesa Diretora">
+      {pf && (pf.comissoes.length > 0 || pf.mesa || (v.liderancas?.length ?? 0) > 0) && (
+        <Secao titulo="Comissões, lideranças e Mesa Diretora">
           <ul className="divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white text-sm">
             {pf.mesa && (
               <li className="flex justify-between gap-3 p-3">
@@ -400,6 +414,22 @@ export default async function PaginaVereador({ params }: Props) {
                 <span className="text-slate-600">{pf.mesa}</span>
               </li>
             )}
+            {(v.liderancas ?? []).map((l) => {
+              const s = sessao(l.sessao);
+              return (
+                <li key={l.tipo} className="flex justify-between gap-3 p-3">
+                  <span className="text-slate-900" title={l.texto}>
+                    {l.tipo === "prefeito" ? "Líder do prefeito na Câmara" : "Líder de bancada"}
+                    {s && (
+                      <a href={s.url} className="ml-1 text-xs text-slate-500 underline">
+                        (ofício lido em {dataBR(s.data)})
+                      </a>
+                    )}
+                  </span>
+                  <span className="shrink-0 text-slate-600">Liderança</span>
+                </li>
+              );
+            })}
             {[...pf.comissoes]
               .sort((a, b) => (a.tipo === b.tipo ? 0 : a.tipo === "frente" ? 1 : -1))
               .map((c) => (
