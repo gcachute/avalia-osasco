@@ -78,17 +78,26 @@ export default function Metodologia() {
         </div>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-700">
           <li>
-            Quantidades (projetos, comissões) são comparadas com o percentil 90 entre os vereadores, não com o maior valor, para que um único caso
-            extremo não achate a nota de todos. Presença e votações usam escala fixa.
+            <b>Réguas realistas.</b> Presença e votações contam em proporção direta (90% vale 9), como no{" "}
+            <a className="underline" href="https://ranking.org.br/criterios-e-metodologia">
+              Ranking dos Políticos
+            </a>
+            . Projetos e comissões são medidos contra uma meta fixa, e não contra quem mais produz: um pouco de atuação já pontua, e chegar a 10
+            exige bastante. Os dados mostram só uma parte do mandato, então as réguas não punem com força quem fica abaixo do esperado.
+          </li>
+          <li>
+            <b>Bônus por atuação na comunidade.</b> Moções (de reconhecimento, apoio, apelo, pesar) e honrarias somam até 0,5 ponto na Produção: 0,1 a
+            cada 10. O bônus só soma, nunca tira.
           </li>
           <li>
             Projetos simbólicos são identificados pela ementa: nomes de ruas e praças, datas e semanas comemorativas, títulos e utilidade pública. A
             classificação aparece em cada projeto no perfil do vereador.
           </li>
           <li>
-            Comissões: presidente vale 1,5; vice-presidente e relator, 1,25; membro, 1; frente parlamentar, 0,25. Cargo na Mesa Diretora vale 3, e a
-            presidência da Câmara, 4, porque os membros da Mesa costumam ficar fora das comissões. Como a composição publicada é a atual, quem já saiu
-            da Câmara fica sem nota neste pilar.
+            Comissões e articulação: presidente de comissão vale 1,5; vice-presidente e relator, 1,25; membro, 1. Frente parlamentar vale 0,25, e
+            presidir uma frente, 0,5. Líder de bancada e líder do prefeito valem 1,5 cada, como presidir uma comissão; as lideranças saem dos ofícios
+            lidos nas sessões. Cargo na Mesa Diretora vale 3, e a presidência da Câmara, 4, porque os membros da Mesa costumam ficar fora das
+            comissões. Como a composição publicada é a atual, quem já saiu da Câmara fica sem nota neste pilar.
           </li>
           <li>
             Requerimentos ao Executivo: as planilhas de sessão só mostram os que vão a plenário, quase todos de legislaturas anteriores, e a busca de
