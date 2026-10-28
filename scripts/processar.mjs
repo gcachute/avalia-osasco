@@ -13,6 +13,10 @@ import { montarHistorico } from "./lib/historico.mjs";
 
 const RAW = "data/raw";
 const BASE_URL = "https://www.osasco.sp.leg.br/assets/file/";
+// Planilhas que não estão no site da Câmara (data/links-cache.txt) vieram do espelho no Portal do Cidadão
+// ("Votação e Chamada"), baixadas à mão quando o site caiu. O portal não tem link direto para cada arquivo.
+const PORTAL_SESSOES = "https://cmo.rdmsistemas.com.br/portalcidadao/";
+const NO_SITE = new Set(existsSync("data/links-cache.txt") ? readFileSync("data/links-cache.txt", "utf8").split(/\r?\n/).map((l) => l.replace(/^assets\/file\//, "")) : []);
 const config = JSON.parse(readFileSync("data/politicos.json", "utf8"));
 const metodologia = JSON.parse(readFileSync("data/metodologia.json", "utf8"));
 
@@ -55,7 +59,7 @@ function sessionInfo(file, sheets) {
     const d = norm(head).match(/dia (\d+)\S* de (\w+) de (\d{4})/);
     if (d) data = `${d[3]}-${String(MESES.indexOf(d[2]) + 1).padStart(2, "0")}-${d[1].padStart(2, "0")}`;
   }
-  return { id: `${data}-${tipo === "ordinaria" ? "o" : "e"}${numero}`, numero, tipo, data, url: BASE_URL + file };
+  return { id: `${data}-${tipo === "ordinaria" ? "o" : "e"}${numero}`, numero, tipo, data, url: NO_SITE.has(file) ? BASE_URL + file : PORTAL_SESSOES };
 }
 
 // Algumas planilhas (sessões extraordinárias) têm uma coluna de numeração antes do nome.
