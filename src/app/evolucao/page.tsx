@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { GraficoLinha } from "@/components/GraficoLinha";
 import { AvisoParcial, Secao } from "@/components/ui";
+import { Halter, legendaHalter } from "@/components/mapa/Halter";
 import { formatar } from "@/components/mapa/indicadores";
 import { dados, type CampoCenso } from "@/lib/dados";
 
 export const metadata: Metadata = {
   title: "Evolução",
-  description: "Como Osasco mudou: população, Censos de 2010 e 2022, eleições desde 2016, contas da Prefeitura e despesas da Câmara.",
+  description: "Como Osasco mudou: população, Censos de 2000, 2010 e 2022, eleições desde 2016, contas da Prefeitura e despesas da Câmara.",
 };
 
 const LINHAS_CENSO: { campo: CampoCenso; nome: string }[] = [
@@ -55,7 +56,8 @@ export default function Evolucao() {
   const pf = dados.prefeito;
   const censo = h?.censo;
   const ele = h?.eleicoes;
-  const [a0, a1] = censo ? [String(censo.anos[0]), String(censo.anos.at(-1))] : ["", ""];
+  const anosCenso = censo?.anos.map(String) ?? [];
+  const a1 = anosCenso.at(-1) ?? "";
 
   // Gestões a partir das eleições: quem foi eleito em cada ano governa nos quatro anos seguintes.
   const gestoes = (ele?.anos ?? []).map((a) => ({ inicio: a + 1, fim: a + 4, ...ele!.cidade[String(a)].eleito }));
@@ -76,7 +78,7 @@ export default function Evolucao() {
     <article>
       <h1 className="text-3xl font-bold tracking-tight text-slate-900">Osasco no tempo</h1>
       <p className="mt-2 max-w-3xl text-slate-600">
-        Os mesmos dados oficiais do site em anos anteriores, para comparar com o passado: Censos de {a0 || "2010"} e {a1 || "2022"}, eleições desde
+        Os mesmos dados oficiais do site em anos anteriores, para comparar com o passado: Censos de {anosCenso.join(", ").replace(/, (\d+)$/, " e $1") || "2010 e 2022"}, eleições desde
         2016, contas da Prefeitura desde 2017 e despesas da Câmara. Cada bairro também tem a sua evolução no mapa (aba Evolução).
       </p>
       <AvisoParcial className="mt-4" />
@@ -113,72 +115,47 @@ export default function Evolucao() {
       )}
 
       {censo && (
-        <Secao titulo={`Censo ${a0} → ${a1}`} subtitulo="Média de Osasco, ponderada por moradores ou domicílios, como no mapa.">
+        <Secao titulo={`Censos ${anosCenso.join(", ")}`} subtitulo="Média de Osasco, ponderada por moradores ou domicílios, como no mapa.">
           <div className="grid gap-4 lg:grid-cols-[18rem_minmax(0,1fr)]">
             <div className="grid content-start gap-3">
               {[
-                { t: "Moradores", a: censo.cidade[a0].pessoas, b: censo.cidade[a1].pessoas, f: "inteiro" as const },
-                { t: "Domicílios", a: censo.cidade[a0].domicilios, b: censo.cidade[a1].domicilios, f: "inteiro" as const },
-                {
-                  t: `Renda média do responsável (reais de ${a1})`,
-                  a: censo.cidade[a0].rendaMedia,
-                  b: censo.cidade[a1].rendaMedia,
-                  f: "reais" as const,
-                },
-              ].map((x) => (
-                <div key={x.t} className="rounded-2xl border border-slate-200 bg-white p-4">
-                  <div className="text-xs text-slate-500">{x.t}</div>
-                  <div className="mt-1 text-sm tabular-nums text-slate-600">
-                    {formatar(x.a, x.f)} → <b className="text-xl text-slate-900">{formatar(x.b, x.f)}</b>
+                { t: "Moradores", campo: "pessoas" as const, f: "inteiro" as const },
+                { t: "Domicílios", campo: "domicilios" as const, f: "inteiro" as const },
+                { t: `Renda média do responsável (reais de ${a1})`, campo: "rendaMedia" as const, f: "reais" as const },
+              ].map((x) => {
+                const pts = anosCenso.map((a) => ({ ano: a, v: censo.cidade[a]?.[x.campo] ?? null })).filter((p) => p.v != null);
+                const [p0, p1] = [pts[0]?.v ?? null, pts.at(-1)?.v ?? null];
+                return (
+                  <div key={x.t} className="rounded-2xl border border-slate-200 bg-white p-4">
+                    <div className="text-xs text-slate-500">{x.t}</div>
+                    <ol className="mt-1 space-y-0.5 text-sm tabular-nums text-slate-600">
+                      {pts.map((p, i) => (
+                        <li key={p.ano} className="flex items-baseline justify-between gap-2">
+                          <span className="text-xs text-slate-500">{p.ano}</span>
+                          {i === pts.length - 1 ? <b className="text-lg text-slate-900">{formatar(p.v, x.f)}</b> : <span>{formatar(p.v, x.f)}</span>}
+                        </li>
+                      ))}
+                    </ol>
+                    <div className="text-xs font-semibold tabular-nums text-slate-700">
+                      {formatar(p0 && p1 != null ? (p1 / p0 - 1) * 100 : null, "varPct")} desde {pts[0]?.ano}
+                    </div>
                   </div>
-                  <div className="text-xs font-semibold tabular-nums text-slate-700">
-                    {formatar(x.a && x.b != null ? (x.b / x.a - 1) * 100 : null, "varPct")}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
               <p className="text-[11px] text-slate-500">{censo.notaRenda}</p>
             </div>
             <Cartao titulo="Domicílios e moradores, em porcentagem" fonte={censo.fontes}>
               <ul className="space-y-2.5">
-                {LINHAS_CENSO.map((l) => {
-                  const v0 = censo.cidade[a0][l.campo];
-                  const v1 = censo.cidade[a1][l.campo];
-                  return (
-                    <li key={l.campo}>
-                      <div className="flex items-baseline justify-between gap-2 text-sm">
-                        <span className="text-slate-700">{l.nome}</span>
-                        <span className="shrink-0 tabular-nums text-slate-500">
-                          {formatar(v0, "pct")} → <b className="text-slate-900">{formatar(v1, "pct")}</b>{" "}
-                          <span className="text-xs font-semibold text-slate-700">{formatar(v0 != null && v1 != null ? v1 - v0 : null, "pp")}</span>
-                        </span>
-                      </div>
-                      <div className="relative mt-1 h-2 rounded-full bg-slate-100">
-                        {v0 != null && v1 != null && (
-                          <div
-                            className="absolute h-full rounded-full"
-                            style={{ left: `${Math.min(v0, v1)}%`, width: `${Math.abs(v1 - v0)}%`, background: "var(--grafico-1)" }}
-                          />
-                        )}
-                        {v0 != null && (
-                          <span
-                            className="absolute -top-0.5 h-3 w-3 -translate-x-1/2 rounded-full border-2 bg-white"
-                            style={{ left: `${v0}%`, borderColor: "var(--grafico-1)" }}
-                          />
-                        )}
-                        {v1 != null && (
-                          <span
-                            className="absolute -top-0.5 h-3 w-3 -translate-x-1/2 rounded-full"
-                            style={{ left: `${v1}%`, background: "var(--grafico-1)" }}
-                          />
-                        )}
-                      </div>
-                    </li>
-                  );
-                })}
+                {LINHAS_CENSO.map((l) => (
+                  <li key={l.campo}>
+                    <Halter grande nome={l.nome} pontos={anosCenso.map((a) => ({ ano: a, v: censo.cidade[a]?.[l.campo] }))} />
+                  </li>
+                ))}
               </ul>
               <p className="mt-3 text-[11px] text-slate-500">
-                Círculo vazio: {a0}; cheio: {a1}. p.p. = pontos percentuais. O IBGE mudou a forma de levantar o entorno das casas (asfalto, calçada,
-                iluminação, bueiro, rampa e árvores) entre os dois Censos: compare esses itens com cautela.
+                {legendaHalter(anosCenso)} p.p. = pontos percentuais, do primeiro ao último ano com dado. O IBGE mudou a forma de levantar o entorno
+                das casas (asfalto, calçada, iluminação, bueiro, rampa e árvores) de 2010 para 2022: compare esses itens com cautela. O Censo 2000 não
+                tem cor ou raça nem o entorno.
               </p>
             </Cartao>
           </div>
@@ -287,39 +264,32 @@ export default function Evolucao() {
                 />
               </Cartao>
             )}
-            {fiscalAnos.length > 1 && (
-              <Cartao titulo="Saúde e educação (% das receitas de impostos)">
-                {fiscalAnos.filter((a) => osasco(a).saude != null || osasco(a).educacao != null).length > 1 ? (
-                  <GraficoLinha
-                    rotulo="Aplicação em saúde e em educação, Osasco"
-                    formato="pct"
-                    zeroNaBase
-                    series={[
-                      { nome: "Saúde (mínimo 15%)", cor: "var(--grafico-3)", pontos: fiscalAnos.map((a) => ({ x: a.ano, y: osasco(a).saude })) },
-                      {
-                        nome: "Educação (mínimo 25%)",
-                        cor: "var(--grafico-1)",
-                        pontos: fiscalAnos.map((a) => ({ x: a.ano, y: osasco(a).educacao })),
-                      },
-                    ]}
-                  />
-                ) : (
-                  <ul className="space-y-1 text-sm">
-                    {fiscalAnos
-                      .filter((a) => osasco(a).saude != null || osasco(a).educacao != null)
-                      .map((a) => (
-                        <li key={a.ano} className="flex justify-between gap-2">
-                          <span className="text-slate-700">{a.ano}</span>
-                          <span className="tabular-nums text-slate-900">
-                            saúde {formatar(osasco(a).saude, "pct")} · educação {formatar(osasco(a).educacao, "pct")}
-                          </span>
-                        </li>
-                      ))}
-                  </ul>
-                )}
+            {h?.minimos && h.minimos.anos.length > 1 && (
+              <Cartao
+                titulo="Saúde e educação (% das receitas de impostos)"
+                fonte={[
+                  { nome: "SIOPS (Ministério da Saúde)", url: h.minimos.urls.saude },
+                  { nome: "SIOPE (FNDE)", url: h.minimos.urls.educacao },
+                ]}
+              >
+                <GraficoLinha
+                  rotulo="Aplicação em saúde e em educação, Osasco"
+                  formato="pct"
+                  zeroNaBase
+                  series={[
+                    { nome: "Saúde (mínimo 15%)", cor: "var(--grafico-3)", pontos: h.minimos.anos.map((a) => ({ x: a.ano, y: a.saude })) },
+                    { nome: "Educação (mínimo 25%)", cor: "var(--grafico-1)", pontos: h.minimos.anos.map((a) => ({ x: a.ano, y: a.educacao })) },
+                  ]}
+                />
                 <p className="mt-2 text-[11px] text-slate-500">
-                  Nos anos sem valor, Osasco não informou saúde e educação no demonstrativo enviado ao SICONFI (esses dados vão ao SIOPS e ao SIOPE,
-                  ainda não integrados ao site).
+                  Como a Prefeitura declarou nos sistemas próprios de cada área.
+                  {h.minimos.anos.some((a) => a.educacao != null && a.educacao < 25) &&
+                    ` Em ${h.minimos.anos
+                      .filter((a) => a.educacao != null && a.educacao < 25)
+                      .map((a) => `${a.ano} (${formatar(a.educacao, "pct")})`)
+                      .join(", ")} a educação ficou abaixo do mínimo de 25%; a Emenda Constitucional 119/2022 suspendeu as punições por isso em 2020 e 2021, anos da pandemia.`}{" "}
+                  Para 2025, o resumo enviado ao Tesouro (RREO, usado nas notas do prefeito) traz números diferentes dos declarados aqui; veja a
+                  página do prefeito.
                 </p>
               </Cartao>
             )}

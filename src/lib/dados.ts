@@ -354,6 +354,11 @@ export type Historico = {
     bairros: Record<string, Record<string, EleicaoBairroHistorico | null>>;
   } | null;
   populacao: { fonte: string; url: string; censos: { ano: number; pessoas: number }[]; estimativas: { ano: number; pessoas: number }[] } | null;
+  minimos: {
+    fontes: { saude: string; educacao: string };
+    urls: { saude: string; educacao: string };
+    anos: { ano: number; saude: number | null; educacao: number | null; fundeb: number | null }[];
+  } | null;
 };
 
 export type Dados = {
