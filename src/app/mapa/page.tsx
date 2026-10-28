@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Mapa por bairro" };
 
 export default async function PaginaMapa() {
   const mapa = dados.mapa;
-  if (!mapa) return <p className="text-slate-600">Rode npm run coletar:bairros e npm run dados para gerar o mapa.</p>;
+  if (!mapa) return <p className="text-slate-600">O mapa está indisponível no momento.</p>;
 
   const { largura: LARGURA, altura: ALTURA, bairros: desenhos, pontos, favelas, projecao } = await dadosDoMapaCompleto(mapa);
 

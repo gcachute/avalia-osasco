@@ -19,8 +19,9 @@ export const metadata: Metadata = {
 
 const NAV = [
   { href: "/", nome: "Painel" },
+  { href: "/vereadores", nome: "Vereadores" },
   { href: "/prefeito", nome: "Prefeito" },
-  { href: "/evolucao", nome: "Evolução" },
+  { href: "/historico", nome: "Histórico" },
   { href: "/metodologia", nome: "Metodologia" },
 ];
 
@@ -38,7 +39,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <Link href="/" aria-label="De Olho em OZ, página inicial">
               <Logo />
             </Link>
-            <nav className="-mx-1 flex max-w-full items-center gap-1 overflow-x-auto px-1 text-sm">
+            <nav className="-mx-1 flex max-w-full items-center gap-1 overflow-x-auto px-1 text-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <Nav itens={NAV} />
               <BotaoTema />
             </nav>

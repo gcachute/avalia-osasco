@@ -130,8 +130,8 @@ export default async function PaginaVereador({ params }: Props) {
   return (
     <>
       <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
-        <Link href="/#vereadores" className="text-slate-500 hover:text-slate-800">
-          ← Painel
+        <Link href="/vereadores" className="text-slate-500 hover:text-slate-800">
+          ← Vereadores
         </Link>
       </div>
 

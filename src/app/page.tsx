@@ -124,7 +124,7 @@ export default async function Home() {
             }}
           />
         ) : (
-          <p className="text-slate-600">Rode npm run coletar:bairros e npm run dados para gerar o mapa.</p>
+          <p className="text-slate-600">O mapa está indisponível no momento.</p>
         )}
       </div>
 

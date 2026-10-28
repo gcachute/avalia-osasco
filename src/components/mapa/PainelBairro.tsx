@@ -10,7 +10,7 @@ import { INDICADORES, formatar } from "./indicadores";
 type Aba = "perfil" | "evolucao" | "politica" | "eleicao" | "servicos" | "seguranca";
 const ABAS: { chave: Aba; nome: string }[] = [
   { chave: "perfil", nome: "Perfil" },
-  { chave: "evolucao", nome: "Evolução" },
+  { chave: "evolucao", nome: "Histórico" },
   { chave: "politica", nome: "Documentos" },
   { chave: "eleicao", nome: "Eleição" },
   { chave: "servicos", nome: "Serviços" },

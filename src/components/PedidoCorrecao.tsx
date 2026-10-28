@@ -4,7 +4,8 @@ import { useRef, useState } from "react";
 
 // Botão que abre uma janela com o pedido de correção. O envio vai para /api/correcao (functions/api/correcao.js),
 // que abre uma issue no GitHub do projeto. Se o envio automático falhar, oferece abrir a mesma issue já preenchida
-// direto no GitHub (aí a pessoa precisa de conta lá).
+// direto no GitHub (aí a pessoa precisa de cadastro lá).
+// Os textos da janela não usam termos de programação: quem visita não precisa saber o que é GitHub ou issue.
 const NOVA_ISSUE = "https://github.com/gcachute/avalia-osasco/issues/new";
 type Estado = { tipo: "editando" } | { tipo: "enviando" } | { tipo: "ok"; numero: number; url: string } | { tipo: "erro"; mensagem: string };
 
@@ -13,17 +14,24 @@ export function PedidoCorrecao({ children, className }: { children: React.ReactN
   const aberto = useRef(0);
   const [estado, setEstado] = useState<Estado>({ tipo: "editando" });
   const [campos, setCampos] = useState({ titulo: "", pagina: "", descricao: "", fonte: "" });
+  const origem = useRef(""); // endereço da página onde a janela foi aberta, enviado junto sem aparecer no formulário
   const muda = (k: keyof typeof campos) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => setCampos({ ...campos, [k]: e.target.value });
 
   const abrir = () => {
     aberto.current = Date.now();
     if (estado.tipo !== "editando") setEstado({ tipo: "editando" });
-    if (!campos.pagina) setCampos((c) => ({ ...c, pagina: window.location.href.split("#")[0] }));
+    origem.current = window.location.href.split("#")[0];
     janela.current?.showModal();
   };
 
   const corpoIssue = () =>
-    [`**Página:** ${campos.pagina || "não informada"}`, `**Fonte oficial:** ${campos.fonte || "não informada"}`, "", campos.descricao].join("\n");
+    [
+      `**Página:** ${campos.pagina || "não informada"}`,
+      `**Onde conferir:** ${campos.fonte || "não informado"}`,
+      `**Enviado de:** ${origem.current}`,
+      "",
+      campos.descricao,
+    ].join("\n");
   const linkGithub = () => `${NOVA_ISSUE}?${new URLSearchParams({ title: campos.titulo, body: corpoIssue(), labels: "correção" })}`;
 
   const enviar = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -34,7 +42,7 @@ export function PedidoCorrecao({ children, className }: { children: React.ReactN
       const r = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/api/correcao`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...campos, site, aberto: aberto.current }),
+        body: JSON.stringify({ ...campos, origem: origem.current, site, aberto: aberto.current }),
       });
       const d = await r.json().catch(() => ({}));
       if (r.ok && d.url) {
@@ -42,7 +50,7 @@ export function PedidoCorrecao({ children, className }: { children: React.ReactN
         setCampos({ titulo: "", pagina: "", descricao: "", fonte: "" });
       } else setEstado({ tipo: "erro", mensagem: d.erro ?? "Não foi possível enviar agora." });
     } catch {
-      setEstado({ tipo: "erro", mensagem: "Não foi possível enviar agora (sem conexão com o servidor)." });
+      setEstado({ tipo: "erro", mensagem: "Não foi possível enviar agora. Confira sua internet e tente de novo." });
     }
   };
 
@@ -80,7 +88,7 @@ export function PedidoCorrecao({ children, className }: { children: React.ReactN
               </p>
               <div className="flex flex-wrap gap-2">
                 <a href={estado.url} target="_blank" rel="noreferrer" className="rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-700">
-                  Acompanhar no GitHub
+                  Acompanhar o pedido
                 </a>
                 <button type="button" onClick={() => setEstado({ tipo: "editando" })} className="rounded-xl px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-slate-300 hover:bg-slate-50">
                   Enviar outro
@@ -89,10 +97,6 @@ export function PedidoCorrecao({ children, className }: { children: React.ReactN
             </div>
           ) : (
             <form onSubmit={enviar} className="mt-3 space-y-4">
-              <p className="text-sm text-slate-600">
-                Compare com a fonte oficial (link em cada item) e conte o que está errado. O pedido vira uma issue pública no GitHub do projeto: não
-                inclua dados pessoais.
-              </p>
               <label className={rotulo}>
                 Título
                 <input required minLength={5} maxLength={120} value={campos.titulo} onChange={muda("titulo")} placeholder="Ex.: presença de fulano na sessão de 12/03" className={caixa} />
@@ -112,12 +116,12 @@ export function PedidoCorrecao({ children, className }: { children: React.ReactN
               </label>
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className={rotulo}>
-                  Página
-                  <input maxLength={300} value={campos.pagina} onChange={muda("pagina")} className={caixa} />
+                  Página <span className="font-normal text-slate-500">(opcional)</span>
+                  <input maxLength={300} value={campos.pagina} onChange={muda("pagina")} placeholder="Ex.: perfil de um vereador" className={caixa} />
                 </label>
                 <label className={rotulo}>
-                  Link da fonte oficial <span className="font-normal text-slate-500">(opcional)</span>
-                  <input type="url" maxLength={500} value={campos.fonte} onChange={muda("fonte")} placeholder="https://" className={caixa} />
+                  Onde conferir <span className="font-normal text-slate-500">(opcional)</span>
+                  <input maxLength={500} value={campos.fonte} onChange={muda("fonte")} placeholder="Endereço do site oficial" className={caixa} />
                 </label>
               </div>
               {/* Campo que pessoas não veem e robôs preenchem. */}
@@ -125,11 +129,11 @@ export function PedidoCorrecao({ children, className }: { children: React.ReactN
 
               {estado.tipo === "erro" && (
                 <div className="rounded-xl bg-amber-50 p-3 text-sm text-amber-900" role="alert">
-                  {estado.mensagem}{" "}
+                  {estado.mensagem} Se preferir,{" "}
                   <a href={linkGithub()} target="_blank" rel="noreferrer" className="font-semibold underline">
-                    Abrir o pedido direto no GitHub
+                    envie pela lista pública de pedidos
                   </a>{" "}
-                  (precisa de conta lá; os campos já vão preenchidos).
+                  (pede um cadastro gratuito; o que você escreveu já vai junto).
                 </div>
               )}
 
