@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 export function Nav({ itens }: { itens: { href: string; nome: string }[] }) {
   const caminho = usePathname();
-  const ativo = (href: string) => (href === "/" ? caminho === "/" || caminho.startsWith("/vereadores") : caminho.startsWith(href));
+  const ativo = (href: string) => (href === "/" ? caminho === "/" : caminho.startsWith(href));
   return (
     <>
       {itens.map((n) => (

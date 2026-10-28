@@ -48,7 +48,7 @@ export function CustoMandato({ custo, compacto = false }: { custo: NonNullable<C
 // Despesa paga pela Câmara no ano, segundo os dados enviados ao TCE-SP.
 export function DespesasCamara({ despesas }: { despesas: NonNullable<Camara["despesas"]> }) {
   const anos = Object.entries(despesas.anos).sort(([a], [b]) => Number(a) - Number(b));
-  // O último ano fechado (com os 12 meses); os anteriores aparecem na página Evolução.
+  // O último ano fechado (com os 12 meses); os anteriores aparecem na página Histórico.
   const [ano, d] = [...anos].reverse().find(([, x]) => x.meses === 12) ?? anos.at(-1)!;
   const max = d.maioresFornecedores[0]?.pago || 1;
   return (

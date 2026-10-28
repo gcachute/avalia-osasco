@@ -225,7 +225,7 @@ export default function Metodologia() {
           </li>
         </ul>
         <p className="mt-3 text-sm text-slate-600">
-          Veja em <Link href="/evolucao" className="underline">Evolução</Link> e, para cada bairro, na aba Evolução do mapa.
+          Veja em <Link href="/historico" className="underline">Histórico</Link> e, para cada bairro, na aba Histórico do mapa.
         </p>
       </Secao>
 
@@ -245,12 +245,12 @@ export default function Metodologia() {
 
       <Secao titulo="Correções" id="correcoes">
         <p className="text-slate-700">
-          Se algum número estiver errado, compare com a fonte oficial (link em cada item) e abra um pedido de correção informando a página e o
-          dado. O pedido fica registrado e público no{" "}
+          Se algum número estiver errado, peça uma correção dizendo qual é o dado e, se souber, onde conferir a informação certa. Os pedidos ficam
+          numa{" "}
           <a className="underline" href="https://github.com/gcachute/avalia-osasco/issues" target="_blank" rel="noreferrer">
-            GitHub do projeto
+            lista pública
           </a>
-          , onde dá para acompanhar a resposta. Toda correção é feita na origem dos dados e vale para todos.
+          , onde dá para acompanhar a resposta. Toda correção é feita na origem dos dados e vale para o site inteiro.
         </p>
         <PedidoCorrecao className="mt-4 rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-700">
           Pedir uma correção
