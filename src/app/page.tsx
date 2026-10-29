@@ -47,19 +47,24 @@ export default async function Home() {
     };
   });
 
-  // Média por partido em cada coeficiente (vereadores em exercício com coeficientes).
+  // Média por partido em cada coeficiente: todos os vereadores da legislatura com coeficientes (inclusive quem já saiu
+  // do cargo), cada um pesando pelas sessões em que esteve no cargo. Assim um suplente de poucas semanas não vale o
+  // mesmo que um titular do período inteiro, e quem saiu no meio do caminho não some da conta do partido.
   const porPartido = (k: Coeficiente): MediaPartido[] =>
     Object.values(
-      ativos
+      vereadores
         .filter((v) => v.coeficientes[k] != null)
         .reduce<Record<string, MediaPartido>>((acc, v) => {
           const p = v.partido ?? "Sem partido";
-          acc[p] ??= { partido: p, logo: v.partidoLogo, media: 0, vereadores: [] };
-          acc[p].vereadores.push({ nome: v.nome, nota: v.coeficientes[k]! * 10 });
+          acc[p] ??= { partido: p, logo: v.partidoLogo, media: 0, sessoes: 0, vereadores: [] };
+          acc[p].vereadores.push({ nome: v.nome, nota: v.coeficientes[k]! * 10, sessoes: v.indicadores.sessoes, saiu: !v.emExercicio });
           return acc;
         }, {}),
     )
-      .map((p) => ({ ...p, media: p.vereadores.reduce((a, v) => a + v.nota, 0) / p.vereadores.length }))
+      .map((p) => {
+        const sessoes = p.vereadores.reduce((a, v) => a + v.sessoes, 0);
+        return { ...p, sessoes, media: p.vereadores.reduce((a, v) => a + v.nota * v.sessoes, 0) / sessoes };
+      })
       .sort((a, b) => b.media - a.media);
 
   const documentos = mapa?.itens.length ?? 0;
@@ -161,6 +166,7 @@ export default async function Home() {
         <Secao titulo="Média por partido">
           {/* Integridade fica fora da média por partido: é um registro de cada pessoa, não do partido. */}
           <GraficoPartidos
+            sessoesPeriodo={sessoes.length}
             conjuntos={COEFICIENTES.filter((c) => c.chave !== "integridade").map((c) => ({ chave: c.chave, nome: c.nome, dados: porPartido(c.chave) }))}
           />
         </Secao>
