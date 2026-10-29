@@ -41,8 +41,9 @@ const NAV: ItemNav[] = [
   { href: "/", nome: "Painel", icone: "painel" },
   { href: "/vereadores", nome: "Vereadores", icone: "vereadores" },
   { href: "/prefeito", nome: "Prefeito", icone: "prefeito" },
+  { href: "/dinheiro", nome: "Dinheiro", icone: "dinheiro" },
   { href: "/historico", nome: "Histórico", icone: "historico" },
-  { href: "/metodologia", nome: "Metodologia", icone: "metodologia" },
+  { href: "/metodologia", nome: "Metodologia", curto: "Método", icone: "metodologia" },
 ];
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

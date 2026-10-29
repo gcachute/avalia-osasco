@@ -119,6 +119,8 @@ export type BairroMapa = {
   obras?: { objeto: string; situacao: string; valor: number; contratante: string; contratado: string; ano: number }[];
   saude?: { cnes: string; nome: string; tipo: string; publica: boolean; turno: string | null }[];
   escolas?: { codigo: string; nome: string; rede: string; idebIniciais: number | null; idebFinais: number | null }[];
+  // Dinheiro federal e estadual cujo texto cita o bairro: valor (dividido entre os bairros citados) e os maiores itens.
+  dinheiro?: { valor: number; quantidade: number; itens: import("./dinheiro").ItemDinheiroBairro[] } | null;
 };
 
 export type GrupoCrime = "mortes" | "roubos" | "furtos" | "violencia" | "sexual" | "transito" | "drogas";

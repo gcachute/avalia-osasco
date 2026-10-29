@@ -1,0 +1,2651 @@
+{
+ "coletadoEm": "2026-10-29",
+ "fonte": "Portal da Transparência (CGU), emendas parlamentares",
+ "url": "https://portaldatransparencia.gov.br/emendas",
+ "recebimentos": [
+  {
+   "codigo": "202644020022",
+   "autor": "JULIANA CARDOSO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-08",
+   "favorecido": "INSTITUTO RAIZ ALVINEGRA",
+   "cnpj": "28182306000125",
+   "destino": "entidade",
+   "valor": 150000
+  },
+  {
+   "codigo": "202641320013",
+   "autor": "TABATA AMARAL",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-07",
+   "favorecido": "INSTITUTO EDUCACIONAL TESLA",
+   "cnpj": "47567598000169",
+   "destino": "entidade",
+   "valor": 200000
+  },
+  {
+   "codigo": "202637370005",
+   "autor": "ORLANDO SILVA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-06",
+   "favorecido": "ASSOCIACAO AMIGOS DO JARDIM BONANCA II",
+   "cnpj": "53421046000140",
+   "destino": "entidade",
+   "valor": 400000
+  },
+  {
+   "codigo": "202650490001",
+   "autor": "COM. DE PREVI., ASSIS. SOCI, INFAN., ADOL. E FAMIL",
+   "tipo": "Emenda de Comissão",
+   "mes": "2026-06",
+   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
+   "cnpj": "13929258000119",
+   "destino": "prefeitura",
+   "valor": 1224000
+  },
+  {
+   "codigo": "202530880017",
+   "autor": "EDUARDO BOLSONARO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-06",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 700000
+  },
+  {
+   "codigo": "202650410001",
+   "autor": "COM. DA SAUDE",
+   "tipo": "Emenda de Comissão",
+   "mes": "2026-06",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 6395000
+  },
+  {
+   "codigo": "202650410002",
+   "autor": "COM. DA SAUDE",
+   "tipo": "Emenda de Comissão",
+   "mes": "2026-06",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 2500000
+  },
+  {
+   "codigo": "202640940003",
+   "autor": "MARA GABRILLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-06",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 300000
+  },
+  {
+   "codigo": "202619970014",
+   "autor": "VICENTINHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-06",
+   "favorecido": "INSTITUTO SOPHIA VERCELLI - HABILITACAO E REABILITACAO NEUROFUNCIONAL ATIPICO",
+   "cnpj": "28316531000107",
+   "destino": "entidade",
+   "valor": 300000
+  },
+  {
+   "codigo": "202641190005",
+   "autor": "MARIA ROSAS",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
+   "cnpj": "13929258000119",
+   "destino": "prefeitura",
+   "valor": 500000
+  },
+  {
+   "codigo": "202615680001",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
+   "cnpj": "13929258000119",
+   "destino": "prefeitura",
+   "valor": 200000
+  },
+  {
+   "codigo": "202637300004",
+   "autor": "MIGUEL LOMBARDI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
+   "cnpj": "13929258000119",
+   "destino": "prefeitura",
+   "valor": 100000
+  },
+  {
+   "codigo": "202643490004",
+   "autor": "DELEGADO PALUMBO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
+   "cnpj": "13929258000119",
+   "destino": "prefeitura",
+   "valor": 200000
+  },
+  {
+   "codigo": "202637460005",
+   "autor": "RENATA ABREU",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
+   "cnpj": "13929258000119",
+   "destino": "prefeitura",
+   "valor": 100000
+  },
+  {
+   "codigo": "202643700001",
+   "autor": "FABIO TERUEL",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 10063001
+  },
+  {
+   "codigo": "202671250001",
+   "autor": "BANCADA DE SAO PAULO",
+   "tipo": "Emenda de Bancada",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 2720000
+  },
+  {
+   "codigo": "202644050014",
+   "autor": "KIKO CELEGUIM",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 200000
+  },
+  {
+   "codigo": "202650410002",
+   "autor": "COM. DA SAUDE",
+   "tipo": "Emenda de Comissão",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 2110833
+  },
+  {
+   "codigo": "202637370016",
+   "autor": "ORLANDO SILVA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 2000000
+  },
+  {
+   "codigo": "202641190001",
+   "autor": "MARIA ROSAS",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 300000
+  },
+  {
+   "codigo": "202637350007",
+   "autor": "NILTO TATTO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2026-05",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 995000
+  },
+  {
+   "codigo": "202541710017",
+   "autor": "ROSANA VALLE",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-02",
+   "favorecido": "INSTITUTO INOVAR SOLUCAO SUSTENTAVEL",
+   "cnpj": "32241726000102",
+   "destino": "entidade",
+   "valor": 200000
+  },
+  {
+   "codigo": "202525280012",
+   "autor": "JILMAR TATTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-01",
+   "favorecido": "INSTITUTO CAMINHOS CONTRA INJUSTICA",
+   "cnpj": "30527194000149",
+   "destino": "entidade",
+   "valor": 750000
+  },
+  {
+   "codigo": "202541300010",
+   "autor": "SAMIA BOMFIM",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-12",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 498498
+  },
+  {
+   "codigo": "201737730004",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 600559.56
+  },
+  {
+   "codigo": "202515810003",
+   "autor": "JEFFERSON CAMPOS",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-11",
+   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
+   "cnpj": "13929258000119",
+   "destino": "prefeitura",
+   "valor": 300000
+  },
+  {
+   "codigo": "202528120019",
+   "autor": "PR. MARCO FELICIANO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-11",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 10000000
+  },
+  {
+   "codigo": "202515810008",
+   "autor": "JEFFERSON CAMPOS",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-11",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 2000000
+  },
+  {
+   "codigo": "202515680006",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-10",
+   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
+   "cnpj": "13929258000119",
+   "destino": "prefeitura",
+   "valor": 300000
+  },
+  {
+   "codigo": "202541190001",
+   "autor": "MARIA ROSAS",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-10",
+   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
+   "cnpj": "13929258000119",
+   "destino": "prefeitura",
+   "valor": 500000
+  },
+  {
+   "codigo": "202528130010",
+   "autor": "PAULO FREIRE COSTA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-10",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 200000
+  },
+  {
+   "codigo": "202544020003",
+   "autor": "JULIANA CARDOSO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-10",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 600000
+  },
+  {
+   "codigo": "202550410002",
+   "autor": "COM. DA SAUDE",
+   "tipo": "Emenda de Comissão",
+   "mes": "2025-10",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 4000000
+  },
+  {
+   "codigo": "202543680007",
+   "autor": "ERIKA HILTON",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-10",
+   "favorecido": "INSTITUTO INOVACAO SOCIAL",
+   "cnpj": "23794590000177",
+   "destino": "entidade",
+   "valor": 500000
+  },
+  {
+   "codigo": "202443500007",
+   "autor": "DELEGADO PAULO BILYNSKYJ",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-09",
+   "favorecido": "INSTITUTO MAXIMO REALIZA",
+   "cnpj": "32015402000156",
+   "destino": "entidade",
+   "valor": 1000000
+  },
+  {
+   "codigo": "202471200006",
+   "autor": "BANCADA DO RIO DE JANEIRO",
+   "tipo": "Emenda de Bancada",
+   "mes": "2025-09",
+   "favorecido": "INSTITUTO MAXIMO REALIZA",
+   "cnpj": "32015402000156",
+   "destino": "entidade",
+   "valor": 2332010
+  },
+  {
+   "codigo": "202543490001",
+   "autor": "DELEGADO PALUMBO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2025-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 1980000
+  },
+  {
+   "codigo": "202542210001",
+   "autor": "GIORDANO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2025-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 19800000
+  },
+  {
+   "codigo": "202542580002",
+   "autor": "ALFREDINHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 10000000
+  },
+  {
+   "codigo": "202523560003",
+   "autor": "ARNALDO JARDIM",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 1000000
+  },
+  {
+   "codigo": "202515680005",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 3000000
+  },
+  {
+   "codigo": "202542000001",
+   "autor": "RIBAMAR ANTONIO DA SILVA (EX-PARLAMENTAR RICARDO SILVA, NOS TERMOS ART. 78 LDO 2025 E DA MENSAGEM 95-CN, DE 06.11.25)",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 3000000
+  },
+  {
+   "codigo": "202541610001",
+   "autor": "MARCOS PEREIRA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 2000000
+  },
+  {
+   "codigo": "202542210004",
+   "autor": "GIORDANO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 23269858
+  },
+  {
+   "codigo": "202544020016",
+   "autor": "JULIANA CARDOSO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 100000
+  },
+  {
+   "codigo": "202541300001",
+   "autor": "SAMIA BOMFIM",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 500000
+  },
+  {
+   "codigo": "202543720003",
+   "autor": "FELIPE BECARI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 10000000
+  },
+  {
+   "codigo": "202525200003",
+   "autor": "CARLOS ZARATTINI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-07",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 300000
+  },
+  {
+   "codigo": "202542210003",
+   "autor": "GIORDANO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-07",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 10000000
+  },
+  {
+   "codigo": "202544050003",
+   "autor": "KIKO CELEGUIM",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-07",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 2900000
+  },
+  {
+   "codigo": "201737730004",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-06",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 189520.44
+  },
+  {
+   "codigo": "202444020020",
+   "autor": "JULIANA CARDOSO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-03",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 119195
+  },
+  {
+   "codigo": "202441300004",
+   "autor": "SAMIA BOMFIM",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-03",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 700011
+  },
+  {
+   "codigo": "202437460003",
+   "autor": "RENATA ABREU",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-02",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 1814027
+  },
+  {
+   "codigo": "202425170011",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-02",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 3000000
+  },
+  {
+   "codigo": "201737730004",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-02",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 197520
+  },
+  {
+   "codigo": "202441300004",
+   "autor": "SAMIA BOMFIM",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2024-12",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 299975
+  },
+  {
+   "codigo": "202441320017",
+   "autor": "TABATA AMARAL",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2024-12",
+   "favorecido": "INSTITUTO SOPHIA VERCELLI - HABILITACAO E REABILITACAO NEUROFUNCIONAL ATIPICO",
+   "cnpj": "28316531000107",
+   "destino": "entidade",
+   "valor": 200000
+  },
+  {
+   "codigo": "202415680019",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2024-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 2670731.79
+  },
+  {
+   "codigo": "202428130003",
+   "autor": "PAULO FREIRE COSTA",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2024-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 92000
+  },
+  {
+   "codigo": "202415810013",
+   "autor": "JEFFERSON CAMPOS",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2024-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 2000000
+  },
+  {
+   "codigo": "202425280005",
+   "autor": "JILMAR TATTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2024-08",
+   "favorecido": "INSTITUTO CAMINHOS CONTRA INJUSTICA",
+   "cnpj": "30527194000149",
+   "destino": "entidade",
+   "valor": 1000000
+  },
+  {
+   "codigo": "202415680019",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2024-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 329268.21
+  },
+  {
+   "codigo": "202441550010",
+   "autor": "KIM KATAGUIRI",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2024-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 755000
+  },
+  {
+   "codigo": "202442210001",
+   "autor": "GIORDANO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2024-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 15000000
+  },
+  {
+   "codigo": "202181000740",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2024-06",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 287306
+  },
+  {
+   "codigo": "202241710006",
+   "autor": "ROSANA VALLE",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2023-08",
+   "favorecido": "ASSOCIACAO ATLETICA VILA IZABEL",
+   "cnpj": "53415634000171",
+   "destino": "entidade",
+   "valor": 150000
+  },
+  {
+   "codigo": "201837460007",
+   "autor": "RENATA ABREU",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2023-08",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 986497.7
+  },
+  {
+   "codigo": "202241320018",
+   "autor": "TABATA AMARAL",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2023-07",
+   "favorecido": "ASSOCIACAO AMIGOS DO JARDIM BONANCA II",
+   "cnpj": "53421046000140",
+   "destino": "entidade",
+   "valor": 100000
+  },
+  {
+   "codigo": "202237370009",
+   "autor": "ORLANDO SILVA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2023-07",
+   "favorecido": "ASSOCIACAO AMIGOS DO JARDIM BONANCA II",
+   "cnpj": "53421046000140",
+   "destino": "entidade",
+   "valor": 700000
+  },
+  {
+   "codigo": "202090600001",
+   "autor": "GUILHERME DERRITE",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2023-06",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 350000
+  },
+  {
+   "codigo": "201915680016",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2023-05",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 286500
+  },
+  {
+   "codigo": "202240820014",
+   "autor": "LEILA BARROS",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2023-04",
+   "favorecido": "INSTITUTO TANDARA CAIXETA",
+   "cnpj": "04551338000192",
+   "destino": "entidade",
+   "valor": 149990.72
+  },
+  {
+   "codigo": "201837460007",
+   "autor": "RENATA ABREU",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2023-04",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 126145.99
+  },
+  {
+   "codigo": "202241320014",
+   "autor": "TABATA AMARAL",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2023-03",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 523000
+  },
+  {
+   "codigo": "202241260003",
+   "autor": "POLICIAL KATIA SASTRE",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2023-03",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 250000
+  },
+  {
+   "codigo": "202219970016",
+   "autor": "VICENTINHO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2023-03",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 100000
+  },
+  {
+   "codigo": "202239070010",
+   "autor": "ALEXANDRE FROTA",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2023-03",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 250000
+  },
+  {
+   "codigo": "201837460007",
+   "autor": "RENATA ABREU",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2022-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 278160.91
+  },
+  {
+   "codigo": "202240210002",
+   "autor": "JOICE HASSELMANN",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2022-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 500000
+  },
+  {
+   "codigo": "201625170004",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2022-06",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 754865.76
+  },
+  {
+   "codigo": "202181000792",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2022-03",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 249955
+  },
+  {
+   "codigo": "201625170004",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2022-03",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 32109.05
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 2903142.33
+  },
+  {
+   "codigo": "201625170004",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2021-11",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 222743.95
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-11",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 1185289.74
+  },
+  {
+   "codigo": "202181000791",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-10",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 323153
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-10",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 1452316.01
+  },
+  {
+   "codigo": "202125200006",
+   "autor": "CARLOS ZARATTINI",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2021-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 300000
+  },
+  {
+   "codigo": "202127990019",
+   "autor": "ELI CORREA FILHO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2021-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 500000
+  },
+  {
+   "codigo": "202115810017",
+   "autor": "JEFFERSON CAMPOS",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2021-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 500000
+  },
+  {
+   "codigo": "202137350005",
+   "autor": "NILTO TATTO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2021-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 450000
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 1298597.46
+  },
+  {
+   "codigo": "202190320006",
+   "autor": "RUI FALCAO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2021-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 300000
+  },
+  {
+   "codigo": "202081000215",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 95639
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-08",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 1337534.42
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 1427637.42
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-06",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 1587539.95
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-05",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 1369486.88
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-04",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 702731.64
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2021-03",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 1244212.42
+  },
+  {
+   "codigo": "202025200003",
+   "autor": "CARLOS ZARATTINI",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2020-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 200000
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2020-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 316090.51
+  },
+  {
+   "codigo": "201625170004",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2020-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 111123.61
+  },
+  {
+   "codigo": "201737460001",
+   "autor": "RENATA ABREU",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2020-11",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 592840
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2020-11",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 652217
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2020-10",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 473393.46
+  },
+  {
+   "codigo": "201737460001",
+   "autor": "RENATA ABREU",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2020-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 592840
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2020-08",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 1673586.16
+  },
+  {
+   "codigo": "201737460001",
+   "autor": "RENATA ABREU",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2020-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 148210
+  },
+  {
+   "codigo": "202081000254",
+   "autor": "RELATOR GERAL",
+   "tipo": "Emenda de Relator",
+   "mes": "2020-05",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 376224.6
+  },
+  {
+   "codigo": "201625170004",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2020-03",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 11254.56
+  },
+  {
+   "codigo": "201737460001",
+   "autor": "RENATA ABREU",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2019-11",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 148210
+  },
+  {
+   "codigo": "201615680001",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2019-10",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 71163.54
+  },
+  {
+   "codigo": "201637730008",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2019-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 89945.67
+  },
+  {
+   "codigo": "201625170004",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2019-08",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 404430.5
+  },
+  {
+   "codigo": "201625170004",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2019-06",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 387005.01
+  },
+  {
+   "codigo": "201625170004",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2019-05",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 43683.73
+  },
+  {
+   "codigo": "201637370010",
+   "autor": "ORLANDO SILVA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2019-03",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 789783.72
+  },
+  {
+   "codigo": "201625170004",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 50000
+  },
+  {
+   "codigo": "201623660002",
+   "autor": "VANDERLEI MACRIS",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 122925
+  },
+  {
+   "codigo": "201625190006",
+   "autor": "ANTONIO BULHOES",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 328179.48
+  },
+  {
+   "codigo": "201615680001",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 95734.32
+  },
+  {
+   "codigo": "201637730008",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 410668.77
+  },
+  {
+   "codigo": "201625170004",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-10",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 2221.38
+  },
+  {
+   "codigo": "201615680001",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 662811.12
+  },
+  {
+   "codigo": "201637730008",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 205877.07
+  },
+  {
+   "codigo": "201625190006",
+   "autor": "ANTONIO BULHOES",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 53484.47
+  },
+  {
+   "codigo": "201637370010",
+   "autor": "ORLANDO SILVA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 138108.95
+  },
+  {
+   "codigo": "201625340015",
+   "autor": "PAULO TEIXEIRA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-08",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 122925
+  },
+  {
+   "codigo": "201637370010",
+   "autor": "ORLANDO SILVA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 59707.33
+  },
+  {
+   "codigo": "201615680001",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 58991.02
+  },
+  {
+   "codigo": "201625190006",
+   "autor": "ANTONIO BULHOES",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 605936.05
+  },
+  {
+   "codigo": "201637730007",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 46966.14
+  },
+  {
+   "codigo": "201637730008",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 281108.49
+  },
+  {
+   "codigo": "201625340015",
+   "autor": "PAULO TEIXEIRA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-06",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 122925
+  },
+  {
+   "codigo": "201623660002",
+   "autor": "VANDERLEI MACRIS",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-06",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 122925
+  },
+  {
+   "codigo": "201525340002",
+   "autor": "PAULO TEIXEIRA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-04",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 122925
+  },
+  {
+   "codigo": "201637730007",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-03",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 70449.21
+  },
+  {
+   "codigo": "201525340002",
+   "autor": "PAULO TEIXEIRA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2017-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 122925
+  },
+  {
+   "codigo": "201637730007",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2017-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 117415.35
+  },
+  {
+   "codigo": "201637730001",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2017-07",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 799990
+  },
+  {
+   "codigo": "201637370009",
+   "autor": "ORLANDO SILVA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2017-06",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 100000
+  },
+  {
+   "codigo": "201627970006",
+   "autor": "BRUNA FURLAN",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2017-06",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 260000
+  },
+  {
+   "codigo": "201627970006",
+   "autor": "BRUNA FURLAN",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2016-12",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 40000
+  },
+  {
+   "codigo": "201637370009",
+   "autor": "ORLANDO SILVA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2016-12",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 400000
+  },
+  {
+   "codigo": "201529820002",
+   "autor": "FRANCISCO CHAGAS",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2016-12",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 349380
+  },
+  {
+   "codigo": "201532280011",
+   "autor": "IVAN VALENTE",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2016-12",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 776962.56
+  },
+  {
+   "codigo": "Sem informação",
+   "autor": "Sem informação",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2016-06",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 500000
+  },
+  {
+   "codigo": "Sem informação",
+   "autor": "Sem informação",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2015-12",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 549920
+  },
+  {
+   "codigo": "Sem informação",
+   "autor": "Sem informação",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2015-05",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 150000
+  }
+ ],
+ "emendas": {
+  "Sem informação": {
+   "ano": 2020,
+   "numero": "S/I",
+   "localidade": "TOCANTINS (UF)",
+   "funcao": "Transporte",
+   "subfuncao": "Transporte rodoviário",
+   "acao": "CONSERVACAO E RECUPERACAO DO PATRIMONIO DA UNIAO",
+   "empenhado": 1911743,
+   "pago": 1911743
+  },
+  "201529820002": {
+   "ano": 2015,
+   "numero": "0002",
+   "localidade": "OSASCO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "empenhado": 349380,
+   "pago": 349380
+  },
+  "201532280011": {
+   "ano": 2015,
+   "numero": "0011",
+   "localidade": "OSASCO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "empenhado": 776962.56,
+   "pago": 776962.56
+  },
+  "201525340002": {
+   "ano": 2015,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "empenhado": 750000,
+   "pago": 750000
+  },
+  "201625190006": {
+   "ano": 2016,
+   "numero": "0006",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "empenhado": 2000000,
+   "pago": 1889504.31
+  },
+  "201627970006": {
+   "ano": 2016,
+   "numero": "0006",
+   "localidade": "OSASCO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "empenhado": 300000,
+   "pago": 300000
+  },
+  "201615680001": {
+   "ano": 2016,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "empenhado": 3870000,
+   "pago": 3624150
+  },
+  "201637370009": {
+   "ano": 2016,
+   "numero": "0009",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "empenhado": 870000,
+   "pago": 870000
+  },
+  "201637370010": {
+   "ano": 2016,
+   "numero": "0010",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "empenhado": 4000000,
+   "pago": 3901380
+  },
+  "201625340015": {
+   "ano": 2016,
+   "numero": "0015",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "empenhado": 2000000,
+   "pago": 1754150
+  },
+  "201637730001": {
+   "ano": 2016,
+   "numero": "0001",
+   "localidade": "OSASCO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "empenhado": 799990,
+   "pago": 799990
+  },
+  "201637730007": {
+   "ano": 2016,
+   "numero": "0007",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Desporto e lazer",
+   "subfuncao": "Desporto comunitário",
+   "acao": "IMPLANTACAO E MODERNIZACAO DE INFRAESTRUTURA PARA ESPORTE EDUCACIONAL, RECREATIVO E DE LAZER",
+   "empenhado": 240851.7,
+   "pago": 240851.7
+  },
+  "201637730008": {
+   "ano": 2016,
+   "numero": "0008",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "empenhado": 3754150,
+   "pago": 3409066.85
+  },
+  "201623660002": {
+   "ano": 2016,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "empenhado": 3154150,
+   "pago": 3100006.3
+  },
+  "201625170004": {
+   "ano": 2016,
+   "numero": "0004",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Desporto e lazer",
+   "subfuncao": "Desporto comunitário",
+   "acao": "IMPLANTACAO E MODERNIZACAO DE INFRAESTRUTURA PARA ESPORTE EDUCACIONAL, RECREATIVO E DE LAZER",
+   "empenhado": 2655503.4,
+   "pago": 2183324.55
+  },
+  "201737460001": {
+   "ano": 2017,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "empenhado": 3995850,
+   "pago": 3689011.7
+  },
+  "201737730004": {
+   "ano": 2017,
+   "numero": "0004",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "empenhado": 3423573.04,
+   "pago": 3423573.04
+  },
+  "201837460007": {
+   "ano": 2018,
+   "numero": "0007",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "empenhado": 5049992.74,
+   "pago": 3920468.94
+  },
+  "201915680016": {
+   "ano": 2019,
+   "numero": "0016",
+   "localidade": "OSASCO - SP",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "empenhado": 986500,
+   "pago": 317078.49
+  },
+  "202025200003": {
+   "ano": 2020,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 7420000,
+   "pago": 7420000
+  },
+  "202090600001": {
+   "ano": 2020,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Segurança pública",
+   "subfuncao": "Policiamento",
+   "acao": "DESENVOLVIMENTO DE POLITICAS DE SEGURANCA PUBLICA, PREVENCAO E ENFRENTAMENTO A CRIMINALIDADE",
+   "empenhado": 4565000,
+   "pago": 3365586.95
+  },
+  "202081000215": {
+   "ano": 2020,
+   "numero": "0215",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "Múltiplo",
+   "empenhado": 425645865.5,
+   "pago": 425180864.37
+  },
+  "202081000254": {
+   "ano": 2020,
+   "numero": "0254",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Múltiplo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "Múltiplo",
+   "empenhado": 148533723,
+   "pago": 81176236.98
+  },
+  "202125200006": {
+   "ano": 2021,
+   "numero": "0006",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 7389993,
+   "pago": 7389993
+  },
+  "202127990019": {
+   "ano": 2021,
+   "numero": "0019",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 6100000,
+   "pago": 6100000
+  },
+  "202115810017": {
+   "ano": 2021,
+   "numero": "0017",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 2000000,
+   "pago": 2000000
+  },
+  "202137350005": {
+   "ano": 2021,
+   "numero": "0005",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 6769993,
+   "pago": 6769993
+  },
+  "202181000740": {
+   "ano": 2021,
+   "numero": "0740",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "acao": "Múltiplo",
+   "empenhado": 2409793649.99,
+   "pago": 1625176638.19
+  },
+  "202181000791": {
+   "ano": 2021,
+   "numero": "0791",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Múltiplo",
+   "subfuncao": "Múltiplo",
+   "acao": "Múltiplo",
+   "empenhado": 597793619.95,
+   "pago": 292895365.4
+  },
+  "202181000792": {
+   "ano": 2021,
+   "numero": "0792",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Múltiplo",
+   "acao": "Múltiplo",
+   "empenhado": 2773378867,
+   "pago": 2642506118.98
+  },
+  "202190320006": {
+   "ano": 2021,
+   "numero": "0006",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 3350000,
+   "pago": 3350000
+  },
+  "202239070010": {
+   "ano": 2022,
+   "numero": "0010",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 1889365,
+   "pago": 1889365
+  },
+  "202240210002": {
+   "ano": 2022,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 6900000,
+   "pago": 6900000
+  },
+  "202240820014": {
+   "ano": 2022,
+   "numero": "0014",
+   "localidade": "DISTRITO FEDERAL (UF)",
+   "funcao": "Desporto e lazer",
+   "subfuncao": "Desporto comunitário",
+   "acao": "DESENVOLVIMENTO DE ATIVIDADES E APOIO A PROGRAMAS, EVENTOS E PROJETOS DE ESPORTE AMADOR, EDUCACAO, LAZER E INCLUSAO SOCIAL",
+   "empenhado": 2279620.3,
+   "pago": 2279607.02
+  },
+  "202237370009": {
+   "ano": 2022,
+   "numero": "0009",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "acao": "PROMOCAO E DEFESA DE DIREITOS HUMANOS PARA TODOS",
+   "empenhado": 1350000,
+   "pago": 1050000
+  },
+  "202241260003": {
+   "ano": 2022,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 8719682,
+   "pago": 8719682
+  },
+  "202241710006": {
+   "ano": 2022,
+   "numero": "0006",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "acao": "PROMOCAO E DEFESA DE DIREITOS HUMANOS PARA TODOS",
+   "empenhado": 250000,
+   "pago": 250000
+  },
+  "202241320014": {
+   "ano": 2022,
+   "numero": "0014",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 2432789,
+   "pago": 2432789
+  },
+  "202241320018": {
+   "ano": 2022,
+   "numero": "0018",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "acao": "PROMOCAO E DEFESA DE DIREITOS HUMANOS PARA TODOS",
+   "empenhado": 2108419.42,
+   "pago": 1758419.42
+  },
+  "202219970016": {
+   "ano": 2022,
+   "numero": "0016",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 4750000,
+   "pago": 4750000
+  },
+  "202471200006": {
+   "ano": 2024,
+   "numero": "0006",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Desporto e lazer",
+   "subfuncao": "Desporto comunitário",
+   "acao": "DESENVOLVIMENTO DE ATIVIDADES E APOIO A PROGRAMAS, EVENTOS E PROJETOS DE ESPORTE AMADOR, EDUCACAO, LAZER E INCLUSAO SOCIAL",
+   "empenhado": 71740279,
+   "pago": 55634864.67
+  },
+  "202443500007": {
+   "ano": 2024,
+   "numero": "0007",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Desporto e lazer",
+   "subfuncao": "Desporto comunitário",
+   "acao": "APOIO A REALIZACAO DE EVENTOS DE ESPORTE AMADOR, EDUCACIONAL, DE LAZER E INCLUSAO SOCIAL",
+   "empenhado": 2500000,
+   "pago": 2500000
+  },
+  "202415680019": {
+   "ano": 2024,
+   "numero": "0019",
+   "localidade": "OSASCO - SP",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 3000000,
+   "pago": 3000000
+  },
+  "202442210001": {
+   "ano": 2024,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 34500000,
+   "pago": 34500000
+  },
+  "202415810013": {
+   "ano": 2024,
+   "numero": "0013",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 6371585,
+   "pago": 6371585
+  },
+  "202425280005": {
+   "ano": 2024,
+   "numero": "0005",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "acao": "PROMOCAO DA IGUALDADE DE DIREITOS E DA AUTONOMIA ECONOMICA DAS MULHERES",
+   "empenhado": 1000000,
+   "pago": 1000000
+  },
+  "202444020020": {
+   "ano": 2024,
+   "numero": "0020",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "empenhado": 6849589,
+   "pago": 6849589
+  },
+  "202441550010": {
+   "ano": 2024,
+   "numero": "0010",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 6859000,
+   "pago": 6859000
+  },
+  "202428130003": {
+   "ano": 2024,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 3942000,
+   "pago": 3942000
+  },
+  "202437460003": {
+   "ano": 2024,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 8850000,
+   "pago": 8850000
+  },
+  "202441300004": {
+   "ano": 2024,
+   "numero": "0004",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "empenhado": 1699929,
+   "pago": 1699929
+  },
+  "202441320017": {
+   "ano": 2024,
+   "numero": "0017",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "acao": "PROMOCAO E DEFESA DOS DIREITOS DAS PESSOAS COM DEFICIENCIA",
+   "empenhado": 1704796,
+   "pago": 1704796
+  },
+  "202425170011": {
+   "ano": 2024,
+   "numero": "0011",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 12700026,
+   "pago": 12700026
+  },
+  "202542580002": {
+   "ano": 2025,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 14438985,
+   "pago": 14438985
+  },
+  "202523560003": {
+   "ano": 2025,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 2375975,
+   "pago": 2375975
+  },
+  "202525200003": {
+   "ano": 2025,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "empenhado": 8058686,
+   "pago": 8058686
+  },
+  "202550410002": {
+   "ano": 2025,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 1522697939,
+   "pago": 1513616519
+  },
+  "202543490001": {
+   "ano": 2025,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 11500000,
+   "pago": 11385000
+  },
+  "202530880017": {
+   "ano": 2025,
+   "numero": "0017",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 19200000,
+   "pago": 18300000
+  },
+  "202543680007": {
+   "ano": 2025,
+   "numero": "0007",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Cultura",
+   "subfuncao": "Difusão cultural",
+   "acao": "PROMOCAO E FOMENTO A CULTURA BRASILEIRA",
+   "empenhado": 2000000,
+   "pago": 2000000
+  },
+  "202543720003": {
+   "ano": 2025,
+   "numero": "0003",
+   "localidade": "OSASCO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 10000000,
+   "pago": 10000000
+  },
+  "202515680005": {
+   "ano": 2025,
+   "numero": "0005",
+   "localidade": "OSASCO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 3000000,
+   "pago": 3000000
+  },
+  "202515680006": {
+   "ano": 2025,
+   "numero": "0006",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "SERVICOS SOCIOASSISTENCIAIS",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "empenhado": 1200000,
+   "pago": 1200000
+  },
+  "202542210001": {
+   "ano": 2025,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 33069856.43,
+   "pago": 32878879.01
+  },
+  "202542210003": {
+   "ano": 2025,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "empenhado": 10752408,
+   "pago": 10752408
+  },
+  "202542210004": {
+   "ano": 2025,
+   "numero": "0004",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 23517450,
+   "pago": 23517450
+  },
+  "202515810003": {
+   "ano": 2025,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "SERVICOS SOCIOASSISTENCIAIS",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "empenhado": 1900000,
+   "pago": 1900000
+  },
+  "202515810008": {
+   "ano": 2025,
+   "numero": "0008",
+   "localidade": "OSASCO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 2000000,
+   "pago": 2000000
+  },
+  "202525280012": {
+   "ano": 2025,
+   "numero": "0012",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "acao": "PROMOCAO DA IGUALDADE DE DIREITOS E DA AUTONOMIA ECONOMICA DAS MULHERES",
+   "empenhado": 750000,
+   "pago": 750000
+  },
+  "202544020003": {
+   "ano": 2025,
+   "numero": "0003",
+   "localidade": "OSASCO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "empenhado": 600000,
+   "pago": 600000
+  },
+  "202544020016": {
+   "ano": 2025,
+   "numero": "0016",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 4000000,
+   "pago": 4000000
+  },
+  "202544050003": {
+   "ano": 2025,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "empenhado": 8000000,
+   "pago": 8000000
+  },
+  "202541610001": {
+   "ano": 2025,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 8637993,
+   "pago": 8637993
+  },
+  "202541190001": {
+   "ano": 2025,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "SERVICOS SOCIOASSISTENCIAIS",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "empenhado": 5768000,
+   "pago": 5768000
+  },
+  "202528130010": {
+   "ano": 2025,
+   "numero": "0010",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 8591218,
+   "pago": 7891218
+  },
+  "202528120019": {
+   "ano": 2025,
+   "numero": "0019",
+   "localidade": "OSASCO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 10000000,
+   "pago": 10000000
+  },
+  "202542000001": {
+   "ano": 2025,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 24941795,
+   "pago": 24941795
+  },
+  "202541710017": {
+   "ano": 2025,
+   "numero": "0017",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Cultura",
+   "subfuncao": "Difusão cultural",
+   "acao": "PROMOCAO E FOMENTO A CULTURA BRASILEIRA",
+   "empenhado": 800000,
+   "pago": 800000
+  },
+  "202541300001": {
+   "ano": 2025,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 4000000,
+   "pago": 4000000
+  },
+  "202541300010": {
+   "ano": 2025,
+   "numero": "0010",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "empenhado": 3772495,
+   "pago": 2572603
+  },
+  "202671250001": {
+   "ano": 2026,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 207056940,
+   "pago": 172601824
+  },
+  "202650410001": {
+   "ano": 2026,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 2196430878,
+   "pago": 1845026010
+  },
+  "202650410002": {
+   "ano": 2026,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "empenhado": 1456477433,
+   "pago": 1355566829
+  },
+  "202650490001": {
+   "ano": 2026,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "SERVICOS SOCIOASSISTENCIAIS",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "empenhado": 204122063,
+   "pago": 159675054.28
+  },
+  "202643490004": {
+   "ano": 2026,
+   "numero": "0004",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "SERVICOS SOCIOASSISTENCIAIS",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "empenhado": 2800000,
+   "pago": 2600000
+  },
+  "202643700001": {
+   "ano": 2026,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "empenhado": 20126003,
+   "pago": 20126003
+  },
+  "202615680001": {
+   "ano": 2026,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "SERVICOS SOCIOASSISTENCIAIS",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "empenhado": 3200000,
+   "pago": 3000000
+  },
+  "202644020022": {
+   "ano": 2026,
+   "numero": "0022",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Cultura",
+   "subfuncao": "Difusão cultural",
+   "acao": "PROMOCAO E FOMENTO A CULTURA BRASILEIRA",
+   "empenhado": 4550000,
+   "pago": 3150000
+  },
+  "202644050014": {
+   "ano": 2026,
+   "numero": "0014",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 12600000,
+   "pago": 10800000
+  },
+  "202640940003": {
+   "ano": 2026,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 36750000,
+   "pago": 11300000
+  },
+  "202641190001": {
+   "ano": 2026,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "empenhado": 5050000,
+   "pago": 4030000
+  },
+  "202641190005": {
+   "ano": 2026,
+   "numero": "0005",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "SERVICOS SOCIOASSISTENCIAIS",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "empenhado": 7800000,
+   "pago": 7500000
+  },
+  "202637300004": {
+   "ano": 2026,
+   "numero": "0004",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "SERVICOS SOCIOASSISTENCIAIS",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "empenhado": 13165000,
+   "pago": 12765000
+  },
+  "202637350007": {
+   "ano": 2026,
+   "numero": "0007",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 7243600,
+   "pago": 5977524.45
+  },
+  "202637370005": {
+   "ano": 2026,
+   "numero": "0005",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Cultura",
+   "subfuncao": "Difusão cultural",
+   "acao": "PROMOCAO E FOMENTO A CULTURA BRASILEIRA",
+   "empenhado": 9175000,
+   "pago": 5225000
+  },
+  "202637370016": {
+   "ano": 2026,
+   "numero": "0016",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 14700000,
+   "pago": 14500000
+  },
+  "202637460005": {
+   "ano": 2026,
+   "numero": "0005",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "SERVICOS SOCIOASSISTENCIAIS",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "empenhado": 3190000,
+   "pago": 3190000
+  },
+  "202641320013": {
+   "ano": 2026,
+   "numero": "0013",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "acao": "GESTAO E FOMENTO DE POLITICAS PUBLICAS DE JUVENTUDE",
+   "empenhado": 700000,
+   "pago": 700000
+  },
+  "202619970014": {
+   "ano": 2026,
+   "numero": "0014",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "acao": "PROMOCAO E DEFESA DOS DIREITOS HUMANOS PARA TODOS E REPARACAO DE VIOLACOES",
+   "empenhado": 1400000,
+   "pago": 500000
+  }
+ },
+ "convenios": [
+  {
+   "codigo": "201525340002",
+   "numero": "819269",
+   "data": "2015-12-24",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Infraestrutura Urbana, compreendendo pavimentacao, recapeamento, drenagem, calcamento, guias, sarjetas e acessibilidade.",
+   "valor": 245850
+  },
+  {
+   "codigo": "201615680001",
+   "numero": "828759",
+   "data": "2016-12-01",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Infraestrutura urbana, compreendendo, pavimentacao, recapeamento, drenagem, calcamento, guias, sarjetas e acessibilidade.",
+   "valor": 888700
+  },
+  {
+   "codigo": "201623660002",
+   "numero": "834721",
+   "data": "2016-12-20",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Infraestrutura urbana, compreendendo, pavimentacao, recapeamento, drenagem, calcamento, guias, sarjetas e acessibilidade.",
+   "valor": 245850
+  },
+  {
+   "codigo": "201625170004",
+   "numero": "831660",
+   "data": "2016-12-01",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Implantacao e Modernizacao de Infraestrutura Esportiva",
+   "valor": 2019437.55
+  },
+  {
+   "codigo": "201625190006",
+   "numero": "829202",
+   "data": "2016-12-01",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Infraestrutura urbana, compreendendo, pavimentacao, recapeamento, drenagem, calcamento, guias, sarjetas e acessibilidade.",
+   "valor": 987600
+  },
+  {
+   "codigo": "201625340015",
+   "numero": "834519",
+   "data": "2016-12-20",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Infraestrutura urbana, compreendendo, pavimentacao, recapeamento, drenagem, calcamento, guias, sarjetas e acessibilidade.",
+   "valor": 245850
+  },
+  {
+   "codigo": "201637370010",
+   "numero": "828635",
+   "data": "2016-12-01",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Infraestrutura urbana, compreendendo, pavimentacao, recapeamento, drenagem, calcamento, guias, sarjetas e acessibilidade.",
+   "valor": 987600
+  },
+  {
+   "codigo": "201637730007",
+   "numero": "838141",
+   "data": "2016-12-29",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Aquisicao de equipamento permanente.",
+   "valor": 234830.7
+  },
+  {
+   "codigo": "201637730008",
+   "numero": "828811",
+   "data": "2016-12-08",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Infraestrutura urbana, compreendendo, pavimentacao, recapeamento, drenagem, calcamento, guias, sarjetas e acessibilidade.",
+   "valor": 987600
+  },
+  {
+   "codigo": "201737460001",
+   "numero": "845121",
+   "data": "2017-10-26",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Infraestrutura urbana, compreendendo, pavimentacao, recapeamento, drenagem, calcamento, guias, sarjetas e acessibilidade.",
+   "valor": 1482100
+  },
+  {
+   "codigo": "201737730004",
+   "numero": "856597",
+   "data": "2018-01-04",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Infraestrutura urbana compreendendo urbanizacao e regularizacao de assentamentos precarios do municipio de Osasco, contemplando sistema viario, drenagem pluvial, esgotamento sanitario, abastecimento de agua, areas de lazer.",
+   "valor": 987600
+  },
+  {
+   "codigo": "201837460007",
+   "numero": "867479",
+   "data": "2018-07-19",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Infraestrutura urbana, compreendendo, pavimentacao, recapeamento, drenagem, calcamento, guias, sarjetas e acessibilidade, de diversas ruas do municipio de Osasco, SP.",
+   "valor": 1390804.6
+  },
+  {
+   "codigo": "201915680016",
+   "numero": "895370",
+   "data": "2020-01-14",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Obras de Infraestrutura Urbana - Pavimentacao, Recapeamento Asfaltico e Drenagem nas diversas ruas do Municipio de Osasco- Sao Paulo.",
+   "valor": 286500
+  },
+  {
+   "codigo": "202081000254",
+   "numero": "668322",
+   "data": "2011-11-08",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Obras de Infraestrutura Producao de 2000 UH pelo MCMV Equipamentos Comunitarios Escola e Centro Comunitario 8650 famil",
+   "valor": 1597826388.37
+  },
+  {
+   "codigo": "202090600001",
+   "numero": "906671",
+   "data": "2021-01-04",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Modernizar a Guarda Municipal de Osasco - SP, por meio da aquisicao de viaturas caracterizadas, para acoes de Ronda Escolar.",
+   "valor": 350000
+  },
+  {
+   "codigo": "202181000740",
+   "numero": "911483",
+   "data": "2022-01-06",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Obras de Infraestrutura Urbana - Pavimentacao, Recapeamento Asfaltico e Drenagem nas diversas ruas do Municipio deOsasco- Sao Paul",
+   "valor": 287306
+  },
+  {
+   "codigo": "Sem informação",
+   "numero": "806574",
+   "data": "2014-12-15",
+   "convenente": "MUNICIPIO DE OSASCO",
+   "objeto": "Promocao de politicas de igualdade e de Direitos das Mulheres, atraves do apoio a Politica Nacional de Atencao Integral a Saude da Mulher do municipio de Osasco",
+   "valor": 150000
+  }
+ ],
+ "empresasForaDaConta": {
+  "total": 43809584.23,
+  "quantidade": 424
+ }
+}

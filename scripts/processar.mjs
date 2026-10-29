@@ -8,6 +8,7 @@ import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, notaIntegridade, pon
 import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
 import { carregarBairros, reconhecedorDeBairros, reconhecedorDeEquipamentos } from "./lib/bairros.mjs";
+import { montarDinheiro } from "./lib/dinheiro.mjs";
 import { montarTerritorio } from "./lib/territorio.mjs";
 import { montarHistorico } from "./lib/historico.mjs";
 
@@ -583,9 +584,17 @@ if (malha) {
   });
   itens.sort((a, b) => a.data.localeCompare(b.data));
   const territorio = montarTerritorio(malha, idFor);
+  // Dinheiro federal e estadual: a página própria vai num arquivo separado; o mapa recebe o que cita cada bairro.
+  const dinheiro = montarDinheiro({ acha, achaEquipamento });
+  if (dinheiro) writeFileSync("src/data/dinheiro.json", JSON.stringify(dinheiro.pagina));
   mapa = {
     fonte: malha.fonte,
-    bairros: malha.bairros.map((b) => ({ ...b, citacoes: itens.filter((i) => i.bairros.includes(b.id)).length, ...(territorio?.bairros[b.id] ?? {}) })),
+    bairros: malha.bairros.map((b) => ({
+      ...b,
+      citacoes: itens.filter((i) => i.bairros.includes(b.id)).length,
+      ...(territorio?.bairros[b.id] ?? {}),
+      dinheiro: dinheiro?.porBairro[b.id] ?? null,
+    })),
     itens,
     cidade: territorio?.cidade ?? null,
     prefeitoEleicao: territorio?.prefeito ?? [],

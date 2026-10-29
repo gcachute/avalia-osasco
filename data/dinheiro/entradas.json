@@ -1,0 +1,3358 @@
+{
+ "coletadoEm": "2026-10-29",
+ "fonte": "SICONFI, Declaração de Contas Anuais (Anexo I-C)",
+ "anos": {
+  "2018": [
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1006914801.82
+   },
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 112573393.98
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 199678566.28
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13030612.37
+   },
+   {
+    "cod": "1.7.1.8.00.0.0",
+    "conta": "1.7.1.8.00.0.0 Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 199678566.28
+   },
+   {
+    "cod": "1.7.1.8.00.0.0",
+    "conta": "1.7.1.8.00.0.0 Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13030612.37
+   },
+   {
+    "cod": "1.7.1.8.01.0.0",
+    "conta": "1.7.1.8.01.0.0 Participação na Receita da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 69087785.33
+   },
+   {
+    "cod": "1.7.1.8.01.0.0",
+    "conta": "1.7.1.8.01.0.0 Participação na Receita da União",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 12702920.69
+   },
+   {
+    "cod": "1.7.1.8.01.2.0",
+    "conta": "1.7.1.8.01.2.0 Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 63514606.34
+   },
+   {
+    "cod": "1.7.1.8.01.2.0",
+    "conta": "1.7.1.8.01.2.0 Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 12702920.69
+   },
+   {
+    "cod": "1.7.1.8.01.3.0",
+    "conta": "1.7.1.8.01.3.0 Cota-Parte do Fundo de Participação do Municípios ¿ 1% Cota entregue no mês de dezembro",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2820930.66
+   },
+   {
+    "cod": "1.7.1.8.01.4.0",
+    "conta": "1.7.1.8.01.4.0 Cota-Parte do Fundo de Participação dos Municípios - 1% Cota entregue no mês de julho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2752248.33
+   },
+   {
+    "cod": "1.7.1.8.03.0.0",
+    "conta": "1.7.1.8.03.0.0 Transferência de Recursos do Sistema Único de Saúde ¿ SUS ¿ Repasses Fundo a Fundo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 77905871.78
+   },
+   {
+    "cod": "1.7.1.8.04.0.0",
+    "conta": "1.7.1.8.04.0.0 Transferências de Recursos do Fundo Nacional de Assistência Social ¿ FNAS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1573339.22
+   },
+   {
+    "cod": "1.7.1.8.05.0.0",
+    "conta": "1.7.1.8.05.0.0 Transferências de Recursos do Fundo Nacional do Desenvolvimento da Educação ¿ FNDE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 49386388.75
+   },
+   {
+    "cod": "1.7.1.8.05.1.0",
+    "conta": "1.7.1.8.05.1.0 Transferências do Salário-Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 43828091.89
+   },
+   {
+    "cod": "1.7.1.8.05.3.0",
+    "conta": "1.7.1.8.05.3.0 Transferências Diretas do FNDE referentes ao Programa Nacional de Alimentação Escolar ¿ PNAE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5150747
+   },
+   {
+    "cod": "1.7.1.8.05.9.0",
+    "conta": "1.7.1.8.05.9.0 Outras Transferências Diretas do Fundo Nacional do Desenvolvimento da Educação ¿ FNDE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 407549.86
+   },
+   {
+    "cod": "1.7.1.8.06.0.0",
+    "conta": "1.7.1.8.06.0.0 Transferência Financeira do ICMS ¿ Desoneração ¿ L.C. Nº 87/96",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1638458.88
+   },
+   {
+    "cod": "1.7.1.8.06.0.0",
+    "conta": "1.7.1.8.06.0.0 Transferência Financeira do ICMS ¿ Desoneração ¿ L.C. Nº 87/96",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 327691.68
+   },
+   {
+    "cod": "1.7.1.8.06.1.0",
+    "conta": "1.7.1.8.06.1.0 Transferência Financeira do ICMS ¿ Desoneração ¿ L.C. Nº 87/96",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1638458.88
+   },
+   {
+    "cod": "1.7.1.8.06.1.0",
+    "conta": "1.7.1.8.06.1.0 Transferência Financeira do ICMS ¿ Desoneração ¿ L.C. Nº 87/96",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 327691.68
+   },
+   {
+    "cod": "1.7.1.8.10.0.0",
+    "conta": "1.7.1.8.10.0.0 Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 86722.32
+   },
+   {
+    "cod": "1.7.1.8.10.9.0",
+    "conta": "1.7.1.8.10.9.0 Outras Transferências de Convênios da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 86722.32
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 506844927.66
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 99542781.61
+   },
+   {
+    "cod": "1.7.2.8.00.0.0",
+    "conta": "1.7.2.8.00.0.0 Transferências dos Estados - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 506844927.66
+   },
+   {
+    "cod": "1.7.2.8.00.0.0",
+    "conta": "1.7.2.8.00.0.0 Transferências dos Estados - Específicas de Estados, DF e Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 99542781.61
+   },
+   {
+    "cod": "1.7.2.8.01.0.0",
+    "conta": "1.7.2.8.01.0.0 Participação na Receita dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 501221562.78
+   },
+   {
+    "cod": "1.7.2.8.01.0.0",
+    "conta": "1.7.2.8.01.0.0 Participação na Receita dos Estados",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 99542781.61
+   },
+   {
+    "cod": "1.7.2.8.01.1.0",
+    "conta": "1.7.2.8.01.1.0 Cota-Parte do ICMS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 381133488.5
+   },
+   {
+    "cod": "1.7.2.8.01.1.0",
+    "conta": "1.7.2.8.01.1.0 Cota-Parte do ICMS",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 76226697.53
+   },
+   {
+    "cod": "1.7.2.8.01.2.0",
+    "conta": "1.7.2.8.01.2.0 Cota-Parte do IPVA",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 113453299.06
+   },
+   {
+    "cod": "1.7.2.8.01.2.0",
+    "conta": "1.7.2.8.01.2.0 Cota-Parte do IPVA",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 22724776.16
+   },
+   {
+    "cod": "1.7.2.8.01.3.0",
+    "conta": "1.7.2.8.01.3.0 Cota-Parte do IPI - Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3027859.2
+   },
+   {
+    "cod": "1.7.2.8.01.3.0",
+    "conta": "1.7.2.8.01.3.0 Cota-Parte do IPI - Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 591307.92
+   },
+   {
+    "cod": "1.7.2.8.01.4.0",
+    "conta": "1.7.2.8.01.4.0 Cota-Parte da Contribuição de Intervenção no Domínio Econômico",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 592170.22
+   },
+   {
+    "cod": "1.7.2.8.01.9.0",
+    "conta": "1.7.2.8.01.9.0 Outras Transferências dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3014745.8
+   },
+   {
+    "cod": "1.7.2.8.02.0.0",
+    "conta": "1.7.2.8.02.0.0 Transferência da Cota-parte da Compensação Financeira (25%)",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2954149.56
+   },
+   {
+    "cod": "1.7.2.8.02.3.0",
+    "conta": "1.7.2.8.02.3.0 Cota-parte Royalties ¿ Compensação Financeira pela Produção do Petróleo ¿ Lei nº 7.990/89, artigo 9º",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2954149.56
+   },
+   {
+    "cod": "1.7.2.8.03.0.0",
+    "conta": "1.7.2.8.03.0.0 Transferência de Recursos do Estado para Programas de Saúde ¿ Repasse Fundo a Fundo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2577827.5
+   },
+   {
+    "cod": "1.7.2.8.10.0.0",
+    "conta": "1.7.2.8.10.0.0 Transferência de Convênios dos Estados e do Distrito Federal e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 91387.82
+   },
+   {
+    "cod": "1.7.2.8.10.9.0",
+    "conta": "1.7.2.8.10.9.0 Outras Transferências de Convênio dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 91387.82
+   },
+   {
+    "cod": "1.7.4.0.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17088539.66
+   },
+   {
+    "cod": "1.7.4.8.00.0.0",
+    "conta": "1.7.4.8.00.0.0 Transferências de Instituições Privadas - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17088539.66
+   },
+   {
+    "cod": "1.7.5.0.00.0.0",
+    "conta": "Transferências de Outras Instituições Públicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 283295768.22
+   },
+   {
+    "cod": "1.7.5.8.00.0.0",
+    "conta": "1.7.5.8.00.0.0 Transferências de Outras Instituições Públicas - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 283295768.22
+   },
+   {
+    "cod": "1.7.5.8.01.0.0",
+    "conta": "1.7.5.8.01.0.0 Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação ¿ FUNDEB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 283295768.22
+   },
+   {
+    "cod": "1.7.7.0.00.0.0",
+    "conta": "Transferências de Pessoas Físicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7000
+   },
+   {
+    "cod": "2.4.0.0.00.0.0",
+    "conta": "Transferências de Capital",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11421819.99
+   },
+   {
+    "cod": "2.4.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 9975963.4
+   },
+   {
+    "cod": "2.4.1.8.00.0.0",
+    "conta": "2.4.1.8.00.0.0 Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 9975963.4
+   },
+   {
+    "cod": "2.4.1.8.05.0.0",
+    "conta": "2.4.1.8.05.0.0 Transferências de Recursos Destinados a Programas de Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 582101.91
+   },
+   {
+    "cod": "2.4.1.8.10.0.0",
+    "conta": "2.4.1.8.10.0.0 Transferência de Convênios da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4306238.67
+   },
+   {
+    "cod": "2.4.1.8.99.0.0",
+    "conta": "2.4.1.8.99.0.0 Outras Transferências da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5087622.82
+   },
+   {
+    "cod": "2.4.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 231838.14
+   },
+   {
+    "cod": "2.4.2.8.00.0.0",
+    "conta": "2.4.2.8.00.0.0 Transferências dos Estados, Distrito Federal, e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 231838.14
+   },
+   {
+    "cod": "2.4.2.8.10.0.0",
+    "conta": "2.4.2.8.10.0.0 Transferências de Convênios dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 231838.14
+   },
+   {
+    "cod": "2.4.4.0.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1214018.45
+   },
+   {
+    "cod": "2.4.4.8.00.0.0",
+    "conta": "2.4.4.8.00.0.0 Transferências de Instituições Privadas - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1214018.45
+   }
+  ],
+  "2019": [
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1091422542.23
+   },
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 122224784.65
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 209151625.88
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13772363.68
+   },
+   {
+    "cod": "1.7.1.8.00.0.0",
+    "conta": "1.7.1.8.00.0.0 Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 209151625.88
+   },
+   {
+    "cod": "1.7.1.8.00.0.0",
+    "conta": "1.7.1.8.00.0.0 Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13772363.68
+   },
+   {
+    "cod": "1.7.1.8.01.0.0",
+    "conta": "1.7.1.8.01.0.0 Participação na Receita da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 74827521.71
+   },
+   {
+    "cod": "1.7.1.8.01.0.0",
+    "conta": "1.7.1.8.01.0.0 Participação na Receita da União",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13772363.68
+   },
+   {
+    "cod": "1.7.1.8.01.2.0",
+    "conta": "1.7.1.8.01.2.0 Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 68861571.47
+   },
+   {
+    "cod": "1.7.1.8.01.2.0",
+    "conta": "1.7.1.8.01.2.0 Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13772313.76
+   },
+   {
+    "cod": "1.7.1.8.01.3.0",
+    "conta": "1.7.1.8.01.3.0 Cota-Parte do Fundo de Participação do Municípios ¿ 1% Cota entregue no mês de dezembro",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3038988.5
+   },
+   {
+    "cod": "1.7.1.8.01.4.0",
+    "conta": "1.7.1.8.01.4.0 Cota-Parte do Fundo de Participação dos Municípios - 1% Cota entregue no mês de julho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2926712.07
+   },
+   {
+    "cod": "1.7.1.8.01.5.0",
+    "conta": "1.7.1.8.01.5.0 Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 249.67
+   },
+   {
+    "cod": "1.7.1.8.01.5.0",
+    "conta": "1.7.1.8.01.5.0 Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 49.92
+   },
+   {
+    "cod": "1.7.1.8.03.0.0",
+    "conta": "1.7.1.8.03.0.0 Transferência de Recursos do Sistema Único de Saúde ¿ \n SUS ¿ Bloco Custeio das Ações e Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 86708535.44
+   },
+   {
+    "cod": "1.7.1.8.03.1.0",
+    "conta": "Transferência de Recursos do SUS ¿ Atenção Básica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 86708535.44
+   },
+   {
+    "cod": "1.7.1.8.04.0.0",
+    "conta": "1.7.1.8.04.0.0 Transferências de Recursos do Sistema Único de Saúde ¿ SUS - Bloco Investimentos na Rede de Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1330535.79
+   },
+   {
+    "cod": "1.7.1.8.04.1.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS destinados à Atenção Básica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1330535.79
+   },
+   {
+    "cod": "1.7.1.8.05.0.0",
+    "conta": "1.7.1.8.05.0.0 Transferências de Recursos do Fundo Nacional do Desenvolvimento da Educação ¿ FNDE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 39684893.38
+   },
+   {
+    "cod": "1.7.1.8.05.1.0",
+    "conta": "1.7.1.8.05.1.0 Transferências do Salário-Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 37722392.48
+   },
+   {
+    "cod": "1.7.1.8.05.3.0",
+    "conta": "1.7.1.8.05.3.0 Transferências Diretas do FNDE referentes ao Programa Nacional de Alimentação Escolar ¿ PNAE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1962500.9
+   },
+   {
+    "cod": "1.7.1.8.08.0.0",
+    "conta": "1.7.1.8.08.0.0 Transferências Advindas de Emendas Parlamentares Individuais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 100000
+   },
+   {
+    "cod": "1.7.1.8.10.0.0",
+    "conta": "1.7.1.8.10.0.0 Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 148210
+   },
+   {
+    "cod": "1.7.1.8.10.9.0",
+    "conta": "1.7.1.8.10.9.0 Outras Transferências de Convênios da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 148210
+   },
+   {
+    "cod": "1.7.1.8.12.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional de Assistência Social ¿ FNAS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2751250.76
+   },
+   {
+    "cod": "1.7.1.8.99.0.0",
+    "conta": "1.7.1.8.99.0.0 Outras Transferências da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3600678.8
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 552752560.92
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 108452420.97
+   },
+   {
+    "cod": "1.7.2.8.00.0.0",
+    "conta": "1.7.2.8.00.0.0 Transferências dos Estados - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 552752560.92
+   },
+   {
+    "cod": "1.7.2.8.00.0.0",
+    "conta": "1.7.2.8.00.0.0 Transferências dos Estados - Específicas de Estados, DF e Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 108452420.97
+   },
+   {
+    "cod": "1.7.2.8.01.0.0",
+    "conta": "1.7.2.8.01.0.0 Participação na Receita dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 549468559.5
+   },
+   {
+    "cod": "1.7.2.8.01.0.0",
+    "conta": "1.7.2.8.01.0.0 Participação na Receita dos Estados",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 108452420.97
+   },
+   {
+    "cod": "1.7.2.8.01.1.0",
+    "conta": "1.7.2.8.01.1.0 Cota-Parte do ICMS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 421246975.07
+   },
+   {
+    "cod": "1.7.2.8.01.1.0",
+    "conta": "1.7.2.8.01.1.0 Cota-Parte do ICMS",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 84249394.82
+   },
+   {
+    "cod": "1.7.2.8.01.2.0",
+    "conta": "1.7.2.8.01.2.0 Cota-Parte do IPVA",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 117938085.65
+   },
+   {
+    "cod": "1.7.2.8.01.2.0",
+    "conta": "1.7.2.8.01.2.0 Cota-Parte do IPVA",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 23605926.51
+   },
+   {
+    "cod": "1.7.2.8.01.3.0",
+    "conta": "1.7.2.8.01.3.0 Cota-Parte do IPI - Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2985497.99
+   },
+   {
+    "cod": "1.7.2.8.01.3.0",
+    "conta": "1.7.2.8.01.3.0 Cota-Parte do IPI - Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 597099.64
+   },
+   {
+    "cod": "1.7.2.8.01.4.0",
+    "conta": "1.7.2.8.01.4.0 Cota-Parte da Contribuição de Intervenção no Domínio Econômico",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 357042.77
+   },
+   {
+    "cod": "1.7.2.8.01.9.0",
+    "conta": "1.7.2.8.01.9.0 Outras Transferências dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6940958.02
+   },
+   {
+    "cod": "1.7.2.8.02.0.0",
+    "conta": "1.7.2.8.02.0.0 Transferência da Cota-parte da Compensação Financeira (25%)",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2751327.33
+   },
+   {
+    "cod": "1.7.2.8.02.3.0",
+    "conta": "1.7.2.8.02.3.0 Cota-parte Royalties ¿ Compensação Financeira pela Produção do Petróleo ¿ Lei nº 7.990/89, artigo 9º",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2751327.33
+   },
+   {
+    "cod": "1.7.2.8.10.0.0",
+    "conta": "1.7.2.8.10.0.0 Transferência de Convênios dos Estados e do Distrito Federal e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 532674.09
+   },
+   {
+    "cod": "1.7.2.8.10.9.0",
+    "conta": "1.7.2.8.10.9.0 Outras Transferências de Convênio dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 532674.09
+   },
+   {
+    "cod": "1.7.4.0.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17715332.77
+   },
+   {
+    "cod": "1.7.4.0.00.1.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17715332.77
+   },
+   {
+    "cod": "1.7.5.0.00.0.0",
+    "conta": "Transferências de Outras Instituições Públicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 311803022.66
+   },
+   {
+    "cod": "1.7.5.8.00.0.0",
+    "conta": "1.7.5.8.00.0.0 Transferências de Outras Instituições Públicas - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 311803022.66
+   },
+   {
+    "cod": "1.7.5.8.01.0.0",
+    "conta": "1.7.5.8.01.0.0 Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação ¿ FUNDEB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 311803022.66
+   },
+   {
+    "cod": "2.4.0.0.00.0.0",
+    "conta": "Transferências de Capital",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21755838.05
+   },
+   {
+    "cod": "2.4.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21755838.05
+   },
+   {
+    "cod": "2.4.1.8.00.0.0",
+    "conta": "2.4.1.8.00.0.0 Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21755838.05
+   },
+   {
+    "cod": "2.4.1.8.05.0.0",
+    "conta": "2.4.1.8.05.0.0 Transferências de Recursos Destinados a Programas de Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 339522.92
+   },
+   {
+    "cod": "2.4.1.8.08.0.0",
+    "conta": "2.4.1.8.08.0.0 Transferências Advindas de Emendas Parlamentares Individuais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 863000
+   },
+   {
+    "cod": "2.4.1.8.10.0.0",
+    "conta": "2.4.1.8.10.0.0 Transferência de Convênios da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6783933.77
+   },
+   {
+    "cod": "2.4.1.8.10.2.0",
+    "conta": "Transferências de Convênio da União destinadas a Programas de Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4458011.56
+   },
+   {
+    "cod": "2.4.1.8.10.9.0",
+    "conta": "Outras Transferências de Convênios da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2325922.21
+   },
+   {
+    "cod": "2.4.1.8.99.0.0",
+    "conta": "2.4.1.8.99.0.0 Outras Transferências da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13769381.36
+   }
+  ],
+  "2020": [
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1236518928
+   },
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 123302267.09
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 339622815.49
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13105597.07
+   },
+   {
+    "cod": "1.7.1.8.00.0.0",
+    "conta": "1.7.1.8.00.0.0 Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 339622815.49
+   },
+   {
+    "cod": "1.7.1.8.00.0.0",
+    "conta": "1.7.1.8.00.0.0 Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13105597.07
+   },
+   {
+    "cod": "1.7.1.8.01.0.0",
+    "conta": "1.7.1.8.01.0.0 Participação na Receita da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 71431828.67
+   },
+   {
+    "cod": "1.7.1.8.01.0.0",
+    "conta": "1.7.1.8.01.0.0 Participação na Receita da União",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13105597.07
+   },
+   {
+    "cod": "1.7.1.8.01.2.0",
+    "conta": "1.7.1.8.01.2.0 Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 65527834.07
+   },
+   {
+    "cod": "1.7.1.8.01.2.0",
+    "conta": "1.7.1.8.01.2.0 Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13105566.21
+   },
+   {
+    "cod": "1.7.1.8.01.3.0",
+    "conta": "1.7.1.8.01.3.0 Cota-Parte do Fundo de Participação do Municípios ¿ 1% Cota entregue no mês de dezembro",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2948776.71
+   },
+   {
+    "cod": "1.7.1.8.01.4.0",
+    "conta": "1.7.1.8.01.4.0 Cota-Parte do Fundo de Participação dos Municípios - 1% Cota entregue no mês de julho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2955063.57
+   },
+   {
+    "cod": "1.7.1.8.01.5.0",
+    "conta": "1.7.1.8.01.5.0 Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 154.32
+   },
+   {
+    "cod": "1.7.1.8.01.5.0",
+    "conta": "1.7.1.8.01.5.0 Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 30.86
+   },
+   {
+    "cod": "1.7.1.8.03.0.0",
+    "conta": "1.7.1.8.03.0.0 Transferência de Recursos do Sistema Único de Saúde ¿ \n SUS ¿ Bloco Custeio das Ações e Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 84131762.25
+   },
+   {
+    "cod": "1.7.1.8.03.1.0",
+    "conta": "Transferência de Recursos do SUS ¿ Atenção Básica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17489284.6
+   },
+   {
+    "cod": "1.7.1.8.03.2.0",
+    "conta": "Transferência de Recursos do SUS ¿ Atenção de Média e Alta Complexidade Ambulatorial e Hospitalar",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 56592965.91
+   },
+   {
+    "cod": "1.7.1.8.03.3.0",
+    "conta": "Transferência de Recursos do SUS ¿ Vigilância em Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5814845.54
+   },
+   {
+    "cod": "1.7.1.8.03.4.0",
+    "conta": "Transferência de Recursos do SUS ¿ Assistência Farmacêutica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4120666.2
+   },
+   {
+    "cod": "1.7.1.8.03.5.0",
+    "conta": "Transferência de Recursos do SUS ¿ Gestão do SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 114000
+   },
+   {
+    "cod": "1.7.1.8.04.0.0",
+    "conta": "1.7.1.8.04.0.0 Transferências de Recursos do Sistema Único de Saúde ¿ SUS - Bloco Investimentos na Rede de Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 169980
+   },
+   {
+    "cod": "1.7.1.8.04.2.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS destinados à Atenção Especializada",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 169980
+   },
+   {
+    "cod": "1.7.1.8.05.0.0",
+    "conta": "1.7.1.8.05.0.0 Transferências de Recursos do Fundo Nacional do Desenvolvimento da Educação ¿ FNDE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 53635182.16
+   },
+   {
+    "cod": "1.7.1.8.05.1.0",
+    "conta": "1.7.1.8.05.1.0 Transferências do Salário-Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 47186336.81
+   },
+   {
+    "cod": "1.7.1.8.05.3.0",
+    "conta": "1.7.1.8.05.3.0 Transferências Diretas do FNDE referentes ao Programa Nacional de Alimentação Escolar ¿ PNAE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6448845.35
+   },
+   {
+    "cod": "1.7.1.8.10.0.0",
+    "conta": "1.7.1.8.10.0.0 Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1619566.9
+   },
+   {
+    "cod": "1.7.1.8.10.9.0",
+    "conta": "1.7.1.8.10.9.0 Outras Transferências de Convênios da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1619566.9
+   },
+   {
+    "cod": "1.7.1.8.12.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional de Assistência Social ¿ FNAS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3727581.07
+   },
+   {
+    "cod": "1.7.1.8.99.0.0",
+    "conta": "1.7.1.8.99.0.0 Outras Transferências da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 124906914.44
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 573746543.1
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 110196670.02
+   },
+   {
+    "cod": "1.7.2.8.00.0.0",
+    "conta": "1.7.2.8.00.0.0 Transferências dos Estados - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 573746543.1
+   },
+   {
+    "cod": "1.7.2.8.00.0.0",
+    "conta": "1.7.2.8.00.0.0 Transferências dos Estados - Específicas de Estados, DF e Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 110196670.02
+   },
+   {
+    "cod": "1.7.2.8.01.0.0",
+    "conta": "1.7.2.8.01.0.0 Participação na Receita dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 561583159.11
+   },
+   {
+    "cod": "1.7.2.8.01.0.0",
+    "conta": "1.7.2.8.01.0.0 Participação na Receita dos Estados",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 110196670.02
+   },
+   {
+    "cod": "1.7.2.8.01.1.0",
+    "conta": "1.7.2.8.01.1.0 Cota-Parte do ICMS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 424327149.38
+   },
+   {
+    "cod": "1.7.2.8.01.1.0",
+    "conta": "1.7.2.8.01.1.0 Cota-Parte do ICMS",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 84865429.67
+   },
+   {
+    "cod": "1.7.2.8.01.2.0",
+    "conta": "1.7.2.8.01.2.0 Cota-Parte do IPVA",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 123699426.87
+   },
+   {
+    "cod": "1.7.2.8.01.2.0",
+    "conta": "1.7.2.8.01.2.0 Cota-Parte do IPVA",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 24750895.9
+   },
+   {
+    "cod": "1.7.2.8.01.3.0",
+    "conta": "1.7.2.8.01.3.0 Cota-Parte do IPI - Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3102768.92
+   },
+   {
+    "cod": "1.7.2.8.01.3.0",
+    "conta": "1.7.2.8.01.3.0 Cota-Parte do IPI - Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 580344.45
+   },
+   {
+    "cod": "1.7.2.8.01.4.0",
+    "conta": "1.7.2.8.01.4.0 Cota-Parte da Contribuição de Intervenção no Domínio Econômico",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 300367.86
+   },
+   {
+    "cod": "1.7.2.8.01.9.0",
+    "conta": "1.7.2.8.01.9.0 Outras Transferências dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10153446.08
+   },
+   {
+    "cod": "1.7.2.8.02.0.0",
+    "conta": "1.7.2.8.02.0.0 Transferência da Cota-parte da Compensação Financeira (25%)",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2448010.94
+   },
+   {
+    "cod": "1.7.2.8.02.3.0",
+    "conta": "1.7.2.8.02.3.0 Cota-parte Royalties ¿ Compensação Financeira pela Produção do Petróleo ¿ Lei nº 7.990/89, artigo 9º",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2448010.94
+   },
+   {
+    "cod": "1.7.2.8.03.0.0",
+    "conta": "1.7.2.8.03.0.0 Transferência de Recursos do Estado para Programas de Saúde ¿ Repasse Fundo a Fundo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6604676.56
+   },
+   {
+    "cod": "1.7.2.8.07.0.0",
+    "conta": "1.7.2.8.07.0.0 Transferências de Estados destinadas à Assistência Social",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1610696.49
+   },
+   {
+    "cod": "1.7.2.8.99.0.0",
+    "conta": "1.7.2.8.99.0.0 Outras Transferências dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1500000
+   },
+   {
+    "cod": "1.7.4.0.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4403949.31
+   },
+   {
+    "cod": "1.7.4.8.00.0.0",
+    "conta": "1.7.4.8.00.0.0 Transferências de Instituições Privadas - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4403949.31
+   },
+   {
+    "cod": "1.7.4.8.10.0.0",
+    "conta": "Outras Transferência de Instituições Privadas para EST/DF/MUN - Não Especificadas Anteriormente",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4403949.31
+   },
+   {
+    "cod": "1.7.5.0.00.0.0",
+    "conta": "Transferências de Outras Instituições Públicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 318734369.71
+   },
+   {
+    "cod": "1.7.5.8.00.0.0",
+    "conta": "1.7.5.8.00.0.0 Transferências de Outras Instituições Públicas - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 318734369.71
+   },
+   {
+    "cod": "1.7.5.8.01.0.0",
+    "conta": "1.7.5.8.01.0.0 Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação ¿ FUNDEB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 318734369.71
+   },
+   {
+    "cod": "1.7.7.0.00.0.0",
+    "conta": "Transferências de Pessoas Físicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11250.39
+   },
+   {
+    "cod": "1.7.7.8.00.0.0",
+    "conta": "Transferências de Pessoas Físicas - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11250.39
+   },
+   {
+    "cod": "1.7.7.8.01.0.0",
+    "conta": "Transferências de Pessoas Físicas - Específicas de E/DF/M",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11250.39
+   },
+   {
+    "cod": "1.7.7.8.01.9.0",
+    "conta": "Outras Transferência de Pessoas Físicas- Específicas de E/DF/M - Não Especificadas Anteriormente",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11250.39
+   },
+   {
+    "cod": "2.4.0.0.00.0.0",
+    "conta": "Transferências de Capital",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7247405.46
+   },
+   {
+    "cod": "2.4.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7067265.64
+   },
+   {
+    "cod": "2.4.1.8.00.0.0",
+    "conta": "2.4.1.8.00.0.0 Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7067265.64
+   },
+   {
+    "cod": "2.4.1.8.10.0.0",
+    "conta": "2.4.1.8.10.0.0 Transferência de Convênios da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1605489.28
+   },
+   {
+    "cod": "2.4.1.8.10.9.0",
+    "conta": "Outras Transferências de Convênios da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1605489.28
+   },
+   {
+    "cod": "2.4.1.8.99.0.0",
+    "conta": "2.4.1.8.99.0.0 Outras Transferências da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5461776.36
+   },
+   {
+    "cod": "2.4.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 139.82
+   },
+   {
+    "cod": "2.4.2.8.00.0.0",
+    "conta": "2.4.2.8.00.0.0 Transferências dos Estados, Distrito Federal, e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 139.82
+   },
+   {
+    "cod": "2.4.2.8.10.0.0",
+    "conta": "2.4.2.8.10.0.0 Transferências de Convênios dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 139.82
+   },
+   {
+    "cod": "2.4.2.8.10.2.0",
+    "conta": "Transferências de Convênios dos Estados destinadas a Programas de Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 139.82
+   },
+   {
+    "cod": "2.4.4.0.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 180000
+   },
+   {
+    "cod": "2.4.4.0.00.1.0",
+    "conta": "2.4.4.0.00.1.0 Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 180000
+   }
+  ],
+  "2021": [
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1408985804.23
+   },
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 153447445.95
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 289117883.7
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 17609568.71
+   },
+   {
+    "cod": "1.7.1.8.00.0.0",
+    "conta": "Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 289117883.7
+   },
+   {
+    "cod": "1.7.1.8.00.0.0",
+    "conta": "Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 17609568.71
+   },
+   {
+    "cod": "1.7.1.8.01.0.0",
+    "conta": "Participação na Receita da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 95314872.97
+   },
+   {
+    "cod": "1.7.1.8.01.0.0",
+    "conta": "Participação na Receita da União",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 17609568.71
+   },
+   {
+    "cod": "1.7.1.8.01.2.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 88032432.14
+   },
+   {
+    "cod": "1.7.1.8.01.2.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 17606485.84
+   },
+   {
+    "cod": "1.7.1.8.01.3.0",
+    "conta": "Cota-Parte do Fundo de Participação do Municípios ¿ 1% Cota entregue no mês de dezembro",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3858568.97
+   },
+   {
+    "cod": "1.7.1.8.01.4.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - 1% Cota entregue no mês de julho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3408457.46
+   },
+   {
+    "cod": "1.7.1.8.01.5.0",
+    "conta": "Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15414.4
+   },
+   {
+    "cod": "1.7.1.8.01.5.0",
+    "conta": "Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 3082.87
+   },
+   {
+    "cod": "1.7.1.8.02.0.0",
+    "conta": "Transferência da Compensação Financeira pela Exploração de Recursos Naturais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4071910.36
+   },
+   {
+    "cod": "1.7.1.8.02.3.0",
+    "conta": "Cota-parte Royalties ¿ Compensação Financeira pela Produção de Petróleo ¿ Lei nº 7.990/89",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4071910.36
+   },
+   {
+    "cod": "1.7.1.8.03.0.0",
+    "conta": "Transferência de Recursos do Sistema Único de Saúde ¿ SUS ¿ Repasses Fundo a Fundo - Bloco de Manutenção das Ações e Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 87597321.92
+   },
+   {
+    "cod": "1.7.1.8.03.1.0",
+    "conta": "Transferência de Recursos do SUS ¿ Atenção Primária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21467613.84
+   },
+   {
+    "cod": "1.7.1.8.03.2.0",
+    "conta": "Transferência de Recursos do SUS ¿ Atenção Especializada",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 55651704.35
+   },
+   {
+    "cod": "1.7.1.8.03.3.0",
+    "conta": "Transferência de Recursos do SUS ¿ Vigilância em Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6297337.53
+   },
+   {
+    "cod": "1.7.1.8.03.4.0",
+    "conta": "Transferência de Recursos do SUS ¿ Assistência Farmacêutica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4120666.2
+   },
+   {
+    "cod": "1.7.1.8.03.5.0",
+    "conta": "Transferência de Recursos do SUS ¿ Gestão do SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 60000
+   },
+   {
+    "cod": "1.7.1.8.04.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS - Repasses Fundo a Fundo - Bloco de Estruturação da Rede de Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 785718
+   },
+   {
+    "cod": "1.7.1.8.04.2.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS destinados à Atenção Especializada",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 785718
+   },
+   {
+    "cod": "1.7.1.8.05.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional do Desenvolvimento da Educação ¿ FNDE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 62589131.07
+   },
+   {
+    "cod": "1.7.1.8.05.1.0",
+    "conta": "Transferências do Salário-Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 53724537.47
+   },
+   {
+    "cod": "1.7.1.8.05.3.0",
+    "conta": "Transferências Diretas do FNDE referentes ao Programa Nacional de Alimentação Escolar ¿ PNAE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8864593.6
+   },
+   {
+    "cod": "1.7.1.8.10.0.0",
+    "conta": "Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 389980
+   },
+   {
+    "cod": "1.7.1.8.10.9.0",
+    "conta": "Outras Transferências de Convênios da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 389980
+   },
+   {
+    "cod": "1.7.1.8.12.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional de Assistência Social ¿ FNAS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3370682.83
+   },
+   {
+    "cod": "1.7.1.8.99.0.0",
+    "conta": "Outras Transferências da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 34998266.55
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 693164110.99
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 135837877.24
+   },
+   {
+    "cod": "1.7.2.8.00.0.0",
+    "conta": "Transferências dos Estados - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 693164110.99
+   },
+   {
+    "cod": "1.7.2.8.00.0.0",
+    "conta": "Transferências dos Estados - Específicas de Estados, DF e Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 135837877.24
+   },
+   {
+    "cod": "1.7.2.8.01.0.0",
+    "conta": "Participação na Receita dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 679300906.98
+   },
+   {
+    "cod": "1.7.2.8.01.0.0",
+    "conta": "Participação na Receita dos Estados",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 135837877.24
+   },
+   {
+    "cod": "1.7.2.8.01.1.0",
+    "conta": "Cota-Parte do ICMS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 544579990.57
+   },
+   {
+    "cod": "1.7.2.8.01.1.0",
+    "conta": "Cota-Parte do ICMS",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 108915997.95
+   },
+   {
+    "cod": "1.7.2.8.01.2.0",
+    "conta": "Cota-Parte do IPVA",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 130471004.82
+   },
+   {
+    "cod": "1.7.2.8.01.2.0",
+    "conta": "Cota-Parte do IPVA",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 26100773
+   },
+   {
+    "cod": "1.7.2.8.01.3.0",
+    "conta": "Cota-Parte do IPI - Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4105531.28
+   },
+   {
+    "cod": "1.7.2.8.01.3.0",
+    "conta": "Cota-Parte do IPI - Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 821106.29
+   },
+   {
+    "cod": "1.7.2.8.01.4.0",
+    "conta": "Cota-Parte da Contribuição de Intervenção no Domínio Econômico",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 144380.31
+   },
+   {
+    "cod": "1.7.2.8.02.0.0",
+    "conta": "Transferência da Cota-parte da Compensação Financeira (25%)",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1578762.77
+   },
+   {
+    "cod": "1.7.2.8.02.3.0",
+    "conta": "Cota-parte Royalties ¿ Compensação Financeira pela Produção do Petróleo ¿ Lei nº 7.990/89, artigo 9º",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1578762.77
+   },
+   {
+    "cod": "1.7.2.8.03.0.0",
+    "conta": "Transferência de Recursos do Estado para Programas de Saúde ¿ Repasse Fundo a Fundo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7937902.95
+   },
+   {
+    "cod": "1.7.2.8.07.0.0",
+    "conta": "Transferências de Estados destinadas à Assistência Social",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1844254.39
+   },
+   {
+    "cod": "1.7.2.8.10.0.0",
+    "conta": "Transferência de Convênios dos Estados e do Distrito Federal e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 236721.69
+   },
+   {
+    "cod": "1.7.2.8.10.9.0",
+    "conta": "Outras Transferências de Convênio dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 236721.69
+   },
+   {
+    "cod": "1.7.2.8.99.0.0",
+    "conta": "Outras Transferências dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2265562.21
+   },
+   {
+    "cod": "1.7.4.0.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 28172557.12
+   },
+   {
+    "cod": "1.7.4.1.01.0.0",
+    "conta": "Outras Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 28172557.12
+   },
+   {
+    "cod": "1.7.5.0.00.0.0",
+    "conta": "Transferências de Outras Instituições Públicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 398531252.42
+   },
+   {
+    "cod": "1.7.5.8.00.0.0",
+    "conta": "Transferências de Outras Instituições Públicas - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 398531252.42
+   },
+   {
+    "cod": "1.7.5.8.01.0.0",
+    "conta": "Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação ¿ FUNDEB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 398531252.42
+   },
+   {
+    "cod": "2.4.0.0.00.0.0",
+    "conta": "Transferências de Capital",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17965481.21
+   },
+   {
+    "cod": "2.4.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17965481.21
+   },
+   {
+    "cod": "2.4.1.8.00.0.0",
+    "conta": "Transferências da União - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17965481.21
+   },
+   {
+    "cod": "2.4.1.8.10.0.0",
+    "conta": "Transferência de Convênios da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 916390.02
+   },
+   {
+    "cod": "2.4.1.8.10.2.0",
+    "conta": "Transferências de Convênio da União destinadas a Programas de Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 693646.07
+   },
+   {
+    "cod": "2.4.1.8.10.9.0",
+    "conta": "Outras Transferências de Convênios da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 222743.95
+   },
+   {
+    "cod": "2.4.1.8.12.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional de Assistência Social ¿ FNAS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 260774
+   },
+   {
+    "cod": "2.4.1.8.99.0.0",
+    "conta": "Outras Transferências da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 16788317.19
+   }
+  ],
+  "2022": [
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1574041759.8
+   },
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 170946074.25
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 306291723.19
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 21949860.27
+   },
+   {
+    "cod": "1.7.1.1.00.0.0",
+    "conta": "Transferências Decorrentes de Participação na Receita da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 119886912.52
+   },
+   {
+    "cod": "1.7.1.1.00.0.0",
+    "conta": "Transferências Decorrentes de Participação na Receita da União",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 21949860.27
+   },
+   {
+    "cod": "1.7.1.1.51.0.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - FPM",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 119821017.35
+   },
+   {
+    "cod": "1.7.1.1.51.0.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - FPM",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 21936681.31
+   },
+   {
+    "cod": "1.7.1.1.51.1.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 110498009.01
+   },
+   {
+    "cod": "1.7.1.1.51.1.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 21936681.31
+   },
+   {
+    "cod": "1.7.1.1.51.2.0",
+    "conta": "Cota-Parte do Fundo de Participação do Municípios ¿ 1% Cota entregue no mês de dezembro",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4808339.14
+   },
+   {
+    "cod": "1.7.1.1.51.3.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - 1% Cota entregue no mês de julho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4514669.2
+   },
+   {
+    "cod": "1.7.1.1.52.0.0",
+    "conta": "Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 65895.17
+   },
+   {
+    "cod": "1.7.1.1.52.0.0",
+    "conta": "Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13178.96
+   },
+   {
+    "cod": "1.7.1.3.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 97354615.91
+   },
+   {
+    "cod": "1.7.1.3.50.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS ¿ Repasses Fundo a Fundo - Bloco de Manutenção das Ações e Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 93865022.56
+   },
+   {
+    "cod": "1.7.1.3.50.1.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Atenção Primária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 24298987.43
+   },
+   {
+    "cod": "1.7.1.3.50.2.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Atenção Especializada",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 57472373.17
+   },
+   {
+    "cod": "1.7.1.3.50.3.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Vigilância em Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7972995.76
+   },
+   {
+    "cod": "1.7.1.3.50.4.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Assistência Farmacêutica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4120666.2
+   },
+   {
+    "cod": "1.7.1.3.51.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS - Repasses Fundo a Fundo - Bloco de Estruturação da Rede de Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1516707
+   },
+   {
+    "cod": "1.7.1.3.51.1.0",
+    "conta": "Transferências de Recursos do Bloco de Estruturação da Rede de Serviços Públicos de Saúde - Atenção Primária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1516707
+   },
+   {
+    "cod": "1.7.1.3.99.0.0",
+    "conta": "Outras Transferências de Recursos do Sistema Único de Saúde - SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1972886.35
+   },
+   {
+    "cod": "1.7.1.4.00.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional do Desenvolvimento da Educação ¿ FNDE¿",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 68455330.17
+   },
+   {
+    "cod": "1.7.1.4.50.0.0",
+    "conta": "Transferências do Salário-Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 64563756.06
+   },
+   {
+    "cod": "1.7.1.4.52.0.0",
+    "conta": "Transferências referentes ao Programa Nacional de Alimentação Escolar ¿ PNAE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3891574.11
+   },
+   {
+    "cod": "1.7.1.6.00.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional de Assistência Social ¿ FNAS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3248069.82
+   },
+   {
+    "cod": "1.7.1.7.00.0.0",
+    "conta": "Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4688361.05
+   },
+   {
+    "cod": "1.7.1.7.99.0.0",
+    "conta": "Outras Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4688361.05
+   },
+   {
+    "cod": "1.7.1.9.00.0.0",
+    "conta": "Outras Transferências de Recursos da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 12658433.72
+   },
+   {
+    "cod": "1.7.1.9.99.0.0",
+    "conta": "Outras Transferências de Recursos da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 12658433.72
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 798902203.7
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 148996213.98
+   },
+   {
+    "cod": "1.7.2.1.00.0.0",
+    "conta": "Participação na Receita dos Estados e Distrito Federal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 741510842.94
+   },
+   {
+    "cod": "1.7.2.1.00.0.0",
+    "conta": "Participação na Receita dos Estados e Distrito Federal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 148996213.98
+   },
+   {
+    "cod": "1.7.2.1.50.0.0",
+    "conta": "Cota-Parte do ICMS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 582276119.42
+   },
+   {
+    "cod": "1.7.2.1.50.0.0",
+    "conta": "Cota-Parte do ICMS",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 116455223.65
+   },
+   {
+    "cod": "1.7.2.1.51.0.0",
+    "conta": "Cota-Parte do IPVA",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 155440543.56
+   },
+   {
+    "cod": "1.7.2.1.51.0.0",
+    "conta": "Cota-Parte do IPVA",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 31839725.7
+   },
+   {
+    "cod": "1.7.2.1.52.0.0",
+    "conta": "Cota-Parte do IPI - Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3506382.97
+   },
+   {
+    "cod": "1.7.2.1.52.0.0",
+    "conta": "Cota-Parte do IPI - Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 701264.63
+   },
+   {
+    "cod": "1.7.2.1.53.0.0",
+    "conta": "Cota-Parte da Contribuição de Intervenção no Domínio Econômico",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 287796.99
+   },
+   {
+    "cod": "1.7.2.2.00.0.0",
+    "conta": "Transferências das Compensações Financeiras pela Exploração de Recursos Naturais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8065357.76
+   },
+   {
+    "cod": "1.7.2.2.52.0.0",
+    "conta": "Cota-parte Royalties ¿ Compensação Financeira pela Produção do Petróleo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8065357.76
+   },
+   {
+    "cod": "1.7.2.3.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14201261.2
+   },
+   {
+    "cod": "1.7.2.4.00.0.0",
+    "conta": "Transferências de Convênios dos Estados e DF e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 485976.25
+   },
+   {
+    "cod": "1.7.2.4.99.0.0",
+    "conta": "Outras Transferências de Convênios dos Estados e DF e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 485976.25
+   },
+   {
+    "cod": "1.7.2.9.00.0.0",
+    "conta": "Outras Transferências dos Estados e Distrito Federal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 34638765.55
+   },
+   {
+    "cod": "1.7.2.9.51.0.0",
+    "conta": "Transferências de Estados destinadas à Assistência Social",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2002271.11
+   },
+   {
+    "cod": "1.7.2.9.99.0.0",
+    "conta": "Outras Transferências dos Estados e DF",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 32636494.44
+   },
+   {
+    "cod": "1.7.4.0.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17122232.59
+   },
+   {
+    "cod": "1.7.4.1.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17122232.59
+   },
+   {
+    "cod": "1.7.4.1.01.0.0",
+    "conta": "Transferências de Instituições Privadas para Órgãos e Entidades da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17122232.59
+   },
+   {
+    "cod": "1.7.5.0.00.0.0",
+    "conta": "Transferências de Outras Instituições Públicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 451725600.32
+   },
+   {
+    "cod": "1.7.5.1.00.0.0",
+    "conta": "Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação - FUNDEB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 451725600.32
+   },
+   {
+    "cod": "2.4.0.0.00.0.0",
+    "conta": "Transferências de Capital",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 18839273.41
+   },
+   {
+    "cod": "2.4.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 18478773.41
+   },
+   {
+    "cod": "2.4.1.4.00.0.0",
+    "conta": "Transferências de Convênios da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 18478773.41
+   },
+   {
+    "cod": "2.4.1.4.54.0.0",
+    "conta": "Transferências de Convênios da União destinadas a Programas de Infraestrutura em Transporte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 541497.17
+   },
+   {
+    "cod": "2.4.1.4.99.0.0",
+    "conta": "Outras Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17937276.24
+   },
+   {
+    "cod": "2.4.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 360500
+   },
+   {
+    "cod": "2.4.2.9.00.0.0",
+    "conta": "Outras Transferências de Recursos dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 360500
+   },
+   {
+    "cod": "2.4.2.9.99.0.0",
+    "conta": "Outras Transferências de Recursos dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 360500
+   }
+  ],
+  "2023": [
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1562043867.57
+   },
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 171839975.02
+   },
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 79440.03
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 322255757.16
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 22495359.24
+   },
+   {
+    "cod": "1.7.1.1.00.0.0",
+    "conta": "Transferências Decorrentes de Participação na Receita da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 123564126.42
+   },
+   {
+    "cod": "1.7.1.1.00.0.0",
+    "conta": "Transferências Decorrentes de Participação na Receita da União",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 22495359.24
+   },
+   {
+    "cod": "1.7.1.1.51.0.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - FPM",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 123497204.54
+   },
+   {
+    "cod": "1.7.1.1.51.0.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - FPM",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 22481974.95
+   },
+   {
+    "cod": "1.7.1.1.51.1.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 112409876.85
+   },
+   {
+    "cod": "1.7.1.1.51.1.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 22481974.95
+   },
+   {
+    "cod": "1.7.1.1.51.2.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cotas Extraordinárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11087327.69
+   },
+   {
+    "cod": "1.7.1.1.52.0.0",
+    "conta": "Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 66921.88
+   },
+   {
+    "cod": "1.7.1.1.52.0.0",
+    "conta": "Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 13384.29
+   },
+   {
+    "cod": "1.7.1.3.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 98947024.37
+   },
+   {
+    "cod": "1.7.1.3.50.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS ¿ Repasses Fundo a Fundo - Bloco de Manutenção das Ações e Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 98647024.37
+   },
+   {
+    "cod": "1.7.1.3.50.1.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Atenção Primária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23591999.24
+   },
+   {
+    "cod": "1.7.1.3.50.2.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Atenção Especializada",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 58611348.61
+   },
+   {
+    "cod": "1.7.1.3.50.3.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Vigilância em Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10486769.71
+   },
+   {
+    "cod": "1.7.1.3.50.4.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Assistência Farmacêutica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4120666.2
+   },
+   {
+    "cod": "1.7.1.3.50.9.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Outros Programas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1836240.61
+   },
+   {
+    "cod": "1.7.1.3.51.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS - Repasses Fundo a Fundo - Bloco de Estruturação da Rede de Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 300000
+   },
+   {
+    "cod": "1.7.1.3.51.1.0",
+    "conta": "Transferências de Recursos do Bloco de Estruturação da Rede de Serviços Públicos de Saúde - Atenção Primária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 300000
+   },
+   {
+    "cod": "1.7.1.4.00.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional do Desenvolvimento da Educação ¿ FNDE¿",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 77706267.24
+   },
+   {
+    "cod": "1.7.1.4.50.0.0",
+    "conta": "Transferências do Salário-Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 71199817.45
+   },
+   {
+    "cod": "1.7.1.4.52.0.0",
+    "conta": "Transferências referentes ao Programa Nacional de Alimentação Escolar ¿ PNAE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6504239.1
+   },
+   {
+    "cod": "1.7.1.4.53.0.0",
+    "conta": "Transferências referentes ao Programa Nacional de Apoio ao Transporte do Escolar ¿ PNATE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2210.69
+   },
+   {
+    "cod": "1.7.1.6.00.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional de Assistência Social ¿ FNAS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7317691.33
+   },
+   {
+    "cod": "1.7.1.7.00.0.0",
+    "conta": "Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1714631.52
+   },
+   {
+    "cod": "1.7.1.7.99.0.0",
+    "conta": "Outras Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1714631.52
+   },
+   {
+    "cod": "1.7.1.9.00.0.0",
+    "conta": "Outras Transferências de Recursos da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13006016.28
+   },
+   {
+    "cod": "1.7.1.9.57.0.0",
+    "conta": "Transferência Especial da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 523000
+   },
+   {
+    "cod": "1.7.1.9.60.0.0",
+    "conta": "Transferências da Política Nacional Aldir Blanc de Fomento à Cultura - Lei nº 14.399/2022",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4584491.98
+   },
+   {
+    "cod": "1.7.1.9.99.0.0",
+    "conta": "Outras Transferências de Recursos da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7898524.3
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 782826042.3
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 149344615.78
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 79440.03
+   },
+   {
+    "cod": "1.7.2.1.00.0.0",
+    "conta": "Participação na Receita dos Estados e Distrito Federal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 745919353.13
+   },
+   {
+    "cod": "1.7.2.1.00.0.0",
+    "conta": "Participação na Receita dos Estados e Distrito Federal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 149344615.78
+   },
+   {
+    "cod": "1.7.2.1.50.0.0",
+    "conta": "Cota-Parte do ICMS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 554547236.49
+   },
+   {
+    "cod": "1.7.2.1.50.0.0",
+    "conta": "Cota-Parte do ICMS",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 110909447.07
+   },
+   {
+    "cod": "1.7.2.1.51.0.0",
+    "conta": "Cota-Parte do IPVA",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 188133843.9
+   },
+   {
+    "cod": "1.7.2.1.51.0.0",
+    "conta": "Cota-Parte do IPVA",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 37799127.24
+   },
+   {
+    "cod": "1.7.2.1.52.0.0",
+    "conta": "Cota-Parte do IPI - Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3180147.12
+   },
+   {
+    "cod": "1.7.2.1.52.0.0",
+    "conta": "Cota-Parte do IPI - Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 636041.47
+   },
+   {
+    "cod": "1.7.2.1.53.0.0",
+    "conta": "Cota-Parte da Contribuição de Intervenção no Domínio Econômico",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 58125.62
+   },
+   {
+    "cod": "1.7.2.2.00.0.0",
+    "conta": "Transferências das Compensações Financeiras pela Exploração de Recursos Naturais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6274646.79
+   },
+   {
+    "cod": "1.7.2.2.52.0.0",
+    "conta": "Cota-parte Royalties ¿ Compensação Financeira pela Produção do Petróleo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6274646.79
+   },
+   {
+    "cod": "1.7.2.3.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11279360.99
+   },
+   {
+    "cod": "1.7.2.4.00.0.0",
+    "conta": "Transferências de Convênios dos Estados e DF e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15188219.58
+   },
+   {
+    "cod": "1.7.2.4.50.0.0",
+    "conta": "Transferências de Convênios dos Estados e DF para o Sistema Único de Saúde ¿ SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14700000
+   },
+   {
+    "cod": "1.7.2.4.99.0.0",
+    "conta": "Outras Transferências de Convênios dos Estados e DF e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 488219.58
+   },
+   {
+    "cod": "1.7.2.9.00.0.0",
+    "conta": "Outras Transferências dos Estados e Distrito Federal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4164461.81
+   },
+   {
+    "cod": "1.7.2.9.00.0.0",
+    "conta": "Outras Transferências dos Estados e Distrito Federal",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 79440.03
+   },
+   {
+    "cod": "1.7.2.9.51.0.0",
+    "conta": "Transferências de Estados destinadas à Assistência Social",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2499066.7
+   },
+   {
+    "cod": "1.7.2.9.51.0.0",
+    "conta": "Transferências de Estados destinadas à Assistência Social",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 79440.03
+   },
+   {
+    "cod": "1.7.2.9.99.0.0",
+    "conta": "Outras Transferências dos Estados e DF",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1665395.11
+   },
+   {
+    "cod": "1.7.4.0.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15523623.07
+   },
+   {
+    "cod": "1.7.4.1.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15523623.07
+   },
+   {
+    "cod": "1.7.4.1.99.0.0",
+    "conta": "Outras Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15523623.07
+   },
+   {
+    "cod": "1.7.5.0.00.0.0",
+    "conta": "Transferências de Outras Instituições Públicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 441438360.74
+   },
+   {
+    "cod": "1.7.5.1.00.0.0",
+    "conta": "Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação - FUNDEB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 441438360.74
+   },
+   {
+    "cod": "1.7.9.0.00.0.0",
+    "conta": "Demais Transferências Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 84.3
+   },
+   {
+    "cod": "1.7.9.1.00.0.0",
+    "conta": "Transferências de Pessoas Físicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 84.3
+   },
+   {
+    "cod": "1.7.9.1.99.0.0",
+    "conta": "Outras Transferências de Pessoas Físicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 84.3
+   },
+   {
+    "cod": "2.4.0.0.00.0.0",
+    "conta": "Transferências de Capital",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 22876732.94
+   },
+   {
+    "cod": "2.4.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17466671.33
+   },
+   {
+    "cod": "2.4.1.1.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde - SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1796113
+   },
+   {
+    "cod": "2.4.1.1.50.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS ¿ Fundo a Fundo - Bloco de Manutenção das Ações e Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 999863
+   },
+   {
+    "cod": "2.4.1.1.50.1.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Atenção Primária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 999863
+   },
+   {
+    "cod": "2.4.1.1.51.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS - Fundo a Fundo - Bloco de Estruturação da Rede de Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 796250
+   },
+   {
+    "cod": "2.4.1.1.51.2.0",
+    "conta": "Transferências de Recursos do Bloco de Estruturação da Rede de Serviços Públicos de Saúde - Atenção Especializada",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 796250
+   },
+   {
+    "cod": "2.4.1.2.00.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional do Desenvolvimento da Educação ¿ FNDE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 289907.29
+   },
+   {
+    "cod": "2.4.1.2.50.0.0",
+    "conta": "Transferências de Recursos Destinados a Programas de Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 289907.29
+   },
+   {
+    "cod": "2.4.1.2.50.2.0",
+    "conta": "Transferências para o Programa Nacional de Reestruturação e Aquisição de Equipamentos para a Rede Escolar Pública de Educação Infantil - Proinfância",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 289907.29
+   },
+   {
+    "cod": "2.4.1.3.00.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional de Assistência Social ¿ FNAS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1031653.27
+   },
+   {
+    "cod": "2.4.1.3.50.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional de Assistência Social ¿ FNAS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1031653.27
+   },
+   {
+    "cod": "2.4.1.4.00.0.0",
+    "conta": "Transferências de Convênios da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13398997.77
+   },
+   {
+    "cod": "2.4.1.4.54.0.0",
+    "conta": "Transferências de Convênios da União destinadas a Programas de Infraestrutura em Transporte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3259705.22
+   },
+   {
+    "cod": "2.4.1.4.99.0.0",
+    "conta": "Outras Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10139292.55
+   },
+   {
+    "cod": "2.4.1.9.00.0.0",
+    "conta": "Outras Transferências de Recursos da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 950000
+   },
+   {
+    "cod": "2.4.1.9.51.0.0",
+    "conta": "Transferência Especial da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 950000
+   },
+   {
+    "cod": "2.4.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5410061.61
+   },
+   {
+    "cod": "2.4.2.1.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS dos Estados e DF",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 700000
+   },
+   {
+    "cod": "2.4.2.1.50.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 700000
+   },
+   {
+    "cod": "2.4.2.2.00.0.0",
+    "conta": "Transferências de Convênios dos Estados e DF e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1300061.61
+   },
+   {
+    "cod": "2.4.2.2.54.0.0",
+    "conta": "Transferências de Convênios dos Estados destinadas a Programas de Infraestrutura em Transporte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1300061.61
+   },
+   {
+    "cod": "2.4.2.9.00.0.0",
+    "conta": "Outras Transferências de Recursos dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3410000
+   },
+   {
+    "cod": "2.4.2.9.99.0.0",
+    "conta": "Outras Transferências de Recursos dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3410000
+   }
+  ],
+  "2024": [
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1814760983.52
+   },
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 185608845.47
+   },
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 276749.48
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 390620586.97
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 25880804.24
+   },
+   {
+    "cod": "1.7.1.1.00.0.0",
+    "conta": "Transferências Decorrentes de Participação na Receita da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 142754006.23
+   },
+   {
+    "cod": "1.7.1.1.00.0.0",
+    "conta": "Transferências Decorrentes de Participação na Receita da União",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 25880804.24
+   },
+   {
+    "cod": "1.7.1.1.51.0.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - FPM",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 142739181.39
+   },
+   {
+    "cod": "1.7.1.1.51.0.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - FPM",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 25877839.36
+   },
+   {
+    "cod": "1.7.1.1.51.1.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 129389201.43
+   },
+   {
+    "cod": "1.7.1.1.51.1.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 25877839.36
+   },
+   {
+    "cod": "1.7.1.1.51.2.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cotas Extraordinárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13349979.96
+   },
+   {
+    "cod": "1.7.1.1.52.0.0",
+    "conta": "Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14824.84
+   },
+   {
+    "cod": "1.7.1.1.52.0.0",
+    "conta": "Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 2964.88
+   },
+   {
+    "cod": "1.7.1.2.00.0.0",
+    "conta": "Transferências das Compensações Financeiras pela Exploração de Recursos Naturais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 99738.62
+   },
+   {
+    "cod": "1.7.1.2.51.0.0",
+    "conta": "Cota-parte da Compensação Financeira pela Exploração de Recursos Minerais - CFEM",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 99738.62
+   },
+   {
+    "cod": "1.7.1.3.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 190477741.62
+   },
+   {
+    "cod": "1.7.1.3.50.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS ¿ Repasses Fundo a Fundo - Bloco de Manutenção das Ações e Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 189939865.12
+   },
+   {
+    "cod": "1.7.1.3.50.1.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Atenção Primária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 59785686.19
+   },
+   {
+    "cod": "1.7.1.3.50.2.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Atenção Especializada",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 105434829.53
+   },
+   {
+    "cod": "1.7.1.3.50.3.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Vigilância em Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15006471.71
+   },
+   {
+    "cod": "1.7.1.3.50.4.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Assistência Farmacêutica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6296674.6
+   },
+   {
+    "cod": "1.7.1.3.50.9.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Outros Programas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3416203.09
+   },
+   {
+    "cod": "1.7.1.3.51.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS - Repasses Fundo a Fundo - Bloco de Estruturação da Rede de Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 537876.5
+   },
+   {
+    "cod": "1.7.1.3.51.5.0",
+    "conta": "Transferências de Recursos do Bloco de Estruturação da Rede de Serviços Públicos de Saúde - Gestão do SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 537876.5
+   },
+   {
+    "cod": "1.7.1.4.00.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional do Desenvolvimento da Educação ¿ FNDE¿",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 46182729.94
+   },
+   {
+    "cod": "1.7.1.4.50.0.0",
+    "conta": "Transferências do Salário-Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 41735684.69
+   },
+   {
+    "cod": "1.7.1.4.52.0.0",
+    "conta": "Transferências referentes ao Programa Nacional de Alimentação Escolar ¿ PNAE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4439283.61
+   },
+   {
+    "cod": "1.7.1.4.53.0.0",
+    "conta": "Transferências referentes ao Programa Nacional de Apoio ao Transporte do Escolar ¿ PNATE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7761.64
+   },
+   {
+    "cod": "1.7.1.6.00.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional de Assistência Social ¿ FNAS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5651645
+   },
+   {
+    "cod": "1.7.1.7.00.0.0",
+    "conta": "Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3000000
+   },
+   {
+    "cod": "1.7.1.7.54.0.0",
+    "conta": "Transferências de Convênios da União Destinadas a Programas de Saneamento Básico",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3000000
+   },
+   {
+    "cod": "1.7.1.9.00.0.0",
+    "conta": "Outras Transferências de Recursos da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2454725.56
+   },
+   {
+    "cod": "1.7.1.9.55.0.0",
+    "conta": "Outras Transferências para Segurança Pública",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 755000
+   },
+   {
+    "cod": "1.7.1.9.58.0.0",
+    "conta": "Transferência Obrigatória Decorrente da Lei Complementar nº 176/2020",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1682444.16
+   },
+   {
+    "cod": "1.7.1.9.60.0.0",
+    "conta": "Transferências da Política Nacional Aldir Blanc de Fomento à Cultura - Lei nº 14.399/2022",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17281.4
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 898228514.79
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 159728041.23
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 276749.48
+   },
+   {
+    "cod": "1.7.2.1.00.0.0",
+    "conta": "Participação na Receita dos Estados e Distrito Federal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 799074892.83
+   },
+   {
+    "cod": "1.7.2.1.00.0.0",
+    "conta": "Participação na Receita dos Estados e Distrito Federal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 159728041.23
+   },
+   {
+    "cod": "1.7.2.1.50.0.0",
+    "conta": "Cota-Parte do ICMS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 596019699.8
+   },
+   {
+    "cod": "1.7.2.1.50.0.0",
+    "conta": "Cota-Parte do ICMS",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 119203939.78
+   },
+   {
+    "cod": "1.7.2.1.51.0.0",
+    "conta": "Cota-Parte do IPVA",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 198038442.07
+   },
+   {
+    "cod": "1.7.2.1.51.0.0",
+    "conta": "Cota-Parte do IPVA",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 39606309.51
+   },
+   {
+    "cod": "1.7.2.1.52.0.0",
+    "conta": "Cota-Parte do IPI - Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4588959.59
+   },
+   {
+    "cod": "1.7.2.1.52.0.0",
+    "conta": "Cota-Parte do IPI - Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 917791.94
+   },
+   {
+    "cod": "1.7.2.1.53.0.0",
+    "conta": "Cota-Parte da Contribuição de Intervenção no Domínio Econômico",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 427791.37
+   },
+   {
+    "cod": "1.7.2.2.00.0.0",
+    "conta": "Transferências das Compensações Financeiras pela Exploração de Recursos Naturais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6049783.91
+   },
+   {
+    "cod": "1.7.2.2.52.0.0",
+    "conta": "Cota-parte Royalties ¿ Compensação Financeira pela Produção do Petróleo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6049783.91
+   },
+   {
+    "cod": "1.7.2.3.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 90837432.87
+   },
+   {
+    "cod": "1.7.2.4.00.0.0",
+    "conta": "Transferências de Convênios dos Estados e DF e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 169670.36
+   },
+   {
+    "cod": "1.7.2.4.99.0.0",
+    "conta": "Outras Transferências de Convênios dos Estados e DF e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 169670.36
+   },
+   {
+    "cod": "1.7.2.9.00.0.0",
+    "conta": "Outras Transferências dos Estados e Distrito Federal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2096734.82
+   },
+   {
+    "cod": "1.7.2.9.00.0.0",
+    "conta": "Outras Transferências dos Estados e Distrito Federal",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 276749.48
+   },
+   {
+    "cod": "1.7.2.9.51.0.0",
+    "conta": "Transferências de Estados destinadas à Assistência Social",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2096734.82
+   },
+   {
+    "cod": "1.7.2.9.51.0.0",
+    "conta": "Transferências de Estados destinadas à Assistência Social",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 276749.48
+   },
+   {
+    "cod": "1.7.4.0.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4375659.35
+   },
+   {
+    "cod": "1.7.4.1.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4375659.35
+   },
+   {
+    "cod": "1.7.4.1.99.0.0",
+    "conta": "Outras Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4375659.35
+   },
+   {
+    "cod": "1.7.5.0.00.0.0",
+    "conta": "Transferências de Outras Instituições Públicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 521536222.39
+   },
+   {
+    "cod": "1.7.5.1.00.0.0",
+    "conta": "Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação - FUNDEB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 521536222.39
+   },
+   {
+    "cod": "1.7.9.0.00.0.0",
+    "conta": "Demais Transferências Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 0.02
+   },
+   {
+    "cod": "1.7.9.2.00.0.0",
+    "conta": "Transferências Provenientes de Depósitos Não Identificados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 0.02
+   },
+   {
+    "cod": "2.4.0.0.00.0.0",
+    "conta": "Transferências de Capital",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 28691834.33
+   },
+   {
+    "cod": "2.4.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 26936492.33
+   },
+   {
+    "cod": "2.4.1.1.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde - SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 613418
+   },
+   {
+    "cod": "2.4.1.1.50.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS ¿ Fundo a Fundo - Bloco de Manutenção das Ações e Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 62536
+   },
+   {
+    "cod": "2.4.1.1.50.1.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Atenção Primária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 62536
+   },
+   {
+    "cod": "2.4.1.1.51.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS - Fundo a Fundo - Bloco de Estruturação da Rede de Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 550882
+   },
+   {
+    "cod": "2.4.1.1.51.2.0",
+    "conta": "Transferências de Recursos do Bloco de Estruturação da Rede de Serviços Públicos de Saúde - Atenção Especializada",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 550882
+   },
+   {
+    "cod": "2.4.1.4.00.0.0",
+    "conta": "Transferências de Convênios da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 24231074.33
+   },
+   {
+    "cod": "2.4.1.4.53.0.0",
+    "conta": "Transferências de Convênios da União destinadas a Programas de Meio Ambiente",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 207000
+   },
+   {
+    "cod": "2.4.1.4.54.0.0",
+    "conta": "Transferências de Convênios da União destinadas a Programas de Infraestrutura em Transporte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15304353.42
+   },
+   {
+    "cod": "2.4.1.4.99.0.0",
+    "conta": "Outras Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8719720.91
+   },
+   {
+    "cod": "2.4.1.9.00.0.0",
+    "conta": "Outras Transferências de Recursos da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2092000
+   },
+   {
+    "cod": "2.4.1.9.51.0.0",
+    "conta": "Transferência Especial da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2092000
+   },
+   {
+    "cod": "2.4.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1755342
+   },
+   {
+    "cod": "2.4.2.1.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS dos Estados e DF",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1455342
+   },
+   {
+    "cod": "2.4.2.1.50.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1455342
+   },
+   {
+    "cod": "2.4.2.9.00.0.0",
+    "conta": "Outras Transferências de Recursos dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 300000
+   },
+   {
+    "cod": "2.4.2.9.99.0.0",
+    "conta": "Outras Transferências de Recursos dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 300000
+   }
+  ],
+  "2025": [
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1948372731.03
+   },
+   {
+    "cod": "1.7.0.0.00.0.0",
+    "conta": "Transferências Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 199960153.01
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 456716170.8
+   },
+   {
+    "cod": "1.7.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 27997621.03
+   },
+   {
+    "cod": "1.7.1.1.00.0.0",
+    "conta": "Transferências Decorrentes de Participação na Receita da União",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 157246067.07
+   },
+   {
+    "cod": "1.7.1.1.00.0.0",
+    "conta": "Transferências Decorrentes de Participação na Receita da União",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 27997621.03
+   },
+   {
+    "cod": "1.7.1.1.51.0.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - FPM",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 157245670.33
+   },
+   {
+    "cod": "1.7.1.1.51.0.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - FPM",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 27997541.69
+   },
+   {
+    "cod": "1.7.1.1.51.1.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 139987712.53
+   },
+   {
+    "cod": "1.7.1.1.51.1.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 27997541.69
+   },
+   {
+    "cod": "1.7.1.1.51.2.0",
+    "conta": "Cota-Parte do Fundo de Participação dos Municípios - Cotas Extraordinárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17257957.8
+   },
+   {
+    "cod": "1.7.1.1.52.0.0",
+    "conta": "Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 396.74
+   },
+   {
+    "cod": "1.7.1.1.52.0.0",
+    "conta": "Cota-Parte do Imposto Sobre a Propriedade Territorial Rural",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 79.34
+   },
+   {
+    "cod": "1.7.1.2.00.0.0",
+    "conta": "Transferências das Compensações Financeiras pela Exploração de Recursos Naturais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 176861.57
+   },
+   {
+    "cod": "1.7.1.2.51.0.0",
+    "conta": "Cota-parte da Compensação Financeira pela Exploração de Recursos Minerais - CFEM",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 176861.57
+   },
+   {
+    "cod": "1.7.1.3.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 219213458.4
+   },
+   {
+    "cod": "1.7.1.3.50.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS ¿ Repasses Fundo a Fundo - Bloco de Manutenção das Ações e Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 209177543.69
+   },
+   {
+    "cod": "1.7.1.3.50.1.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Atenção Primária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 47881380.38
+   },
+   {
+    "cod": "1.7.1.3.50.2.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Atenção Especializada",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 141094197.31
+   },
+   {
+    "cod": "1.7.1.3.50.3.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Vigilância em Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13494393.59
+   },
+   {
+    "cod": "1.7.1.3.50.4.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Assistência Farmacêutica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6047505.6
+   },
+   {
+    "cod": "1.7.1.3.50.9.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Outros Programas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 660066.81
+   },
+   {
+    "cod": "1.7.1.3.51.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS - Repasses Fundo a Fundo - Bloco de Estruturação da Rede de Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10035914.71
+   },
+   {
+    "cod": "1.7.1.3.51.1.0",
+    "conta": "Transferências de Recursos do Bloco de Estruturação da Rede de Serviços Públicos de Saúde - Atenção Primária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10000000
+   },
+   {
+    "cod": "1.7.1.3.51.5.0",
+    "conta": "Transferências de Recursos do Bloco de Estruturação da Rede de Serviços Públicos de Saúde - Gestão do SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 35914.71
+   },
+   {
+    "cod": "1.7.1.4.00.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional do Desenvolvimento da Educação ¿ FNDE¿",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 49866119.75
+   },
+   {
+    "cod": "1.7.1.4.50.0.0",
+    "conta": "Transferências do Salário-Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 38820845.75
+   },
+   {
+    "cod": "1.7.1.4.52.0.0",
+    "conta": "Transferências referentes ao Programa Nacional de Alimentação Escolar ¿ PNAE",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11045274
+   },
+   {
+    "cod": "1.7.1.5.00.0.0",
+    "conta": "Transferências de Recursos de Complementação da União ao Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação ¿ FUNDEB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 287847.4
+   },
+   {
+    "cod": "1.7.1.6.00.0.0",
+    "conta": "Transferências de Recursos do Fundo Nacional de Assistência Social ¿ FNAS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6454045.69
+   },
+   {
+    "cod": "1.7.1.9.00.0.0",
+    "conta": "Outras Transferências de Recursos da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23471770.92
+   },
+   {
+    "cod": "1.7.1.9.55.0.0",
+    "conta": "Outras Transferências para Segurança Pública",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21780000
+   },
+   {
+    "cod": "1.7.1.9.56.0.0",
+    "conta": "Transferências Decorrentes de Decisão Judicial (precatórios) Relativas ao Fundo de Manutenção e Desenvolvimento do Ensino Fundamental e de Valorização do Magistério ¿ FUNDEF",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1691770.92
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 925544762.97
+   },
+   {
+    "cod": "1.7.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 171962531.98
+   },
+   {
+    "cod": "1.7.2.1.00.0.0",
+    "conta": "Participação na Receita dos Estados e Distrito Federal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 860054455.28
+   },
+   {
+    "cod": "1.7.2.1.00.0.0",
+    "conta": "Participação na Receita dos Estados e Distrito Federal",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 171962531.98
+   },
+   {
+    "cod": "1.7.2.1.50.0.0",
+    "conta": "Cota-Parte do ICMS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 639773138.95
+   },
+   {
+    "cod": "1.7.2.1.50.0.0",
+    "conta": "Cota-Parte do ICMS",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 127954627.57
+   },
+   {
+    "cod": "1.7.2.1.51.0.0",
+    "conta": "Cota-Parte do IPVA",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 215261593.22
+   },
+   {
+    "cod": "1.7.2.1.51.0.0",
+    "conta": "Cota-Parte do IPVA",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 43084732.8
+   },
+   {
+    "cod": "1.7.2.1.52.0.0",
+    "conta": "Cota-Parte do IPI - Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4615857.77
+   },
+   {
+    "cod": "1.7.2.1.52.0.0",
+    "conta": "Cota-Parte do IPI - Municípios",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 923171.61
+   },
+   {
+    "cod": "1.7.2.1.53.0.0",
+    "conta": "Cota-Parte da Contribuição de Intervenção no Domínio Econômico",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 403865.34
+   },
+   {
+    "cod": "1.7.2.2.00.0.0",
+    "conta": "Transferências das Compensações Financeiras pela Exploração de Recursos Naturais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5551788.49
+   },
+   {
+    "cod": "1.7.2.2.52.0.0",
+    "conta": "Cota-parte Royalties ¿ Compensação Financeira pela Produção do Petróleo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5551788.49
+   },
+   {
+    "cod": "1.7.2.3.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 54743881.67
+   },
+   {
+    "cod": "1.7.2.4.00.0.0",
+    "conta": "Transferências de Convênios dos Estados e DF e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 770351.78
+   },
+   {
+    "cod": "1.7.2.4.51.0.0",
+    "conta": "Transferências de Convênios dos Estados Destinadas a Programas de Educação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 372800
+   },
+   {
+    "cod": "1.7.2.4.99.0.0",
+    "conta": "Outras Transferências de Convênios dos Estados e DF e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 397551.78
+   },
+   {
+    "cod": "1.7.2.9.00.0.0",
+    "conta": "Outras Transferências dos Estados e Distrito Federal",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4424285.75
+   },
+   {
+    "cod": "1.7.2.9.51.0.0",
+    "conta": "Transferências de Estados destinadas à Assistência Social",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4424285.75
+   },
+   {
+    "cod": "1.7.4.0.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21536911.64
+   },
+   {
+    "cod": "1.7.4.1.00.0.0",
+    "conta": "Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21536911.64
+   },
+   {
+    "cod": "1.7.4.1.99.0.0",
+    "conta": "Outras Transferências de Instituições Privadas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21536911.64
+   },
+   {
+    "cod": "1.7.5.0.00.0.0",
+    "conta": "Transferências de Outras Instituições Públicas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 544574885.62
+   },
+   {
+    "cod": "1.7.5.1.00.0.0",
+    "conta": "Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação - FUNDEB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 544574885.62
+   },
+   {
+    "cod": "2.4.0.0.00.0.0",
+    "conta": "Transferências de Capital",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5840468.26
+   },
+   {
+    "cod": "2.4.1.0.00.0.0",
+    "conta": "Transferências da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5610648.26
+   },
+   {
+    "cod": "2.4.1.1.00.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde - SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1798509
+   },
+   {
+    "cod": "2.4.1.1.50.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS ¿ Fundo a Fundo - Bloco de Manutenção das Ações e Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1098498
+   },
+   {
+    "cod": "2.4.1.1.50.1.0",
+    "conta": "Transferências de Recursos do Bloco de Manutenção das Ações e Serviços Públicos de Saúde ¿ Atenção Primária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1098498
+   },
+   {
+    "cod": "2.4.1.1.51.0.0",
+    "conta": "Transferências de Recursos do Sistema Único de Saúde ¿ SUS - Fundo a Fundo - Bloco de Estruturação da Rede de Serviços Públicos de Saúde",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 700011
+   },
+   {
+    "cod": "2.4.1.1.51.2.0",
+    "conta": "Transferências de Recursos do Bloco de Estruturação da Rede de Serviços Públicos de Saúde - Atenção Especializada",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 700011
+   },
+   {
+    "cod": "2.4.1.4.00.0.0",
+    "conta": "Transferências de Convênios da União e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3812139.26
+   },
+   {
+    "cod": "2.4.1.4.52.0.0",
+    "conta": "Transferências de Convênios da União destinadas a Programas de Saneamento Básico",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 387040.44
+   },
+   {
+    "cod": "2.4.1.4.99.0.0",
+    "conta": "Outras Transferências de Convênios da União e de Suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3425098.82
+   },
+   {
+    "cod": "2.4.2.0.00.0.0",
+    "conta": "Transferências dos Estados e do Distrito Federal e de suas Entidades",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 229820
+   },
+   {
+    "cod": "2.4.2.9.00.0.0",
+    "conta": "Outras Transferências de Recursos dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 229820
+   },
+   {
+    "cod": "2.4.2.9.99.0.0",
+    "conta": "Outras Transferências de Recursos dos Estados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 229820
+   }
+  ]
+ }
+}

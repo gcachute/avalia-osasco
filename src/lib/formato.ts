@@ -6,6 +6,9 @@ export const milhoes = (v: number) => `${v < 0 ? "−" : ""}R$ ${num(Math.abs(v)
 
 export const reais = (v: number, casas = 0) => `R$ ${num(v, casas)}`;
 export const milReais = (v: number) => `R$ ${num(v / 1e3, 1)} mil`;
+// Valores grandes de dinheiro, curtos: R$ 462 mi, R$ 2,1 mi, R$ 850 mil.
+export const dinheiroCurto = (v: number) =>
+  Math.abs(v) >= 1e6 ? `R$ ${num(v / 1e6, Math.abs(v) >= 1e8 ? 0 : 1)} mi` : Math.abs(v) >= 1e3 ? `R$ ${num(v / 1e3, 0)} mil` : reais(v);
 
 export const nota10 = (v: number | null | undefined) => (v == null ? null : Math.round(v * 100) / 10);
 

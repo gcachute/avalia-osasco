@@ -1,0 +1,489 @@
+{
+ "coletadoEm": "2026-10-29",
+ "fonte": "Transferegov, transferências especiais",
+ "url": "https://www.gov.br/transferegov/pt-br",
+ "planos": [
+  {
+   "plano": "0903-004801",
+   "ano": 2020,
+   "situacao": "CIENTE",
+   "parlamentar": "Carlos Zarattini",
+   "codigoEmenda": "20202520202025200003",
+   "area": "13-Cultura / 392-Difusão Cultural",
+   "custeio": 0,
+   "investimento": 200000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Aquisição de poltronas para Espaço Cultural Grande Otelo, em Osasco/SP.",
+     "valor": 200000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "Em Ajuste do Plano de Trabalho",
+    "inicio": "2020-12-24",
+    "fim": "2023-03-24"
+   }
+  },
+  {
+   "plano": "09032021-009447",
+   "ano": 2021,
+   "situacao": "CIENTE",
+   "parlamentar": "Jefferson Campos",
+   "codigoEmenda": "20211581202115810017",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana , 16-Habitação / 482-Habitação Urbana",
+   "custeio": 0,
+   "investimento": 500000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Manutenção continuada, preventiva e corretiva de assentamentos precários no Município de Osasco/SP (complementação orçamentária da execução)",
+     "valor": 500000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2021-09-24",
+    "fim": "2022-09-24"
+   }
+  },
+  {
+   "plano": "09032021-009881",
+   "ano": 2021,
+   "situacao": "CIENTE",
+   "parlamentar": "Carlos Zarattini",
+   "codigoEmenda": "20212520202125200006",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana",
+   "custeio": 0,
+   "investimento": 300000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Canalização do Córrego Rico, no município de Osasco/SP.",
+     "valor": 300000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2021-09-24",
+    "fim": "2024-09-24"
+   }
+  },
+  {
+   "plano": "09032021-010296",
+   "ano": 2021,
+   "situacao": "CIENTE",
+   "parlamentar": "Eli Corrêa Filho",
+   "codigoEmenda": "20212799202127990019",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana , 17-Saneamento / 512-Saneamento Básico Urbano",
+   "custeio": 500000,
+   "investimento": 0,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Canalização do Córrego Rico, no município de Osasco/SP",
+     "valor": 500000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2021-09-24",
+    "fim": "2024-09-24"
+   }
+  },
+  {
+   "plano": "09032021-011361",
+   "ano": 2021,
+   "situacao": "CIENTE",
+   "parlamentar": "Nilto Tatto",
+   "codigoEmenda": "20213735202137350005",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana , 17-Saneamento / 512-Saneamento Básico Urbano",
+   "custeio": 0,
+   "investimento": 450000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Canalização do Córrego Rico, no município de Osasco/SP",
+     "valor": 450000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "Em Ajuste do Plano de Trabalho",
+    "inicio": "2021-09-24",
+    "fim": "2024-09-24"
+   }
+  },
+  {
+   "plano": "09032021-013493",
+   "ano": 2021,
+   "situacao": "CIENTE",
+   "parlamentar": "Rui Falcão",
+   "codigoEmenda": "20219032202190320006",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana",
+   "custeio": 0,
+   "investimento": 300000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Canalização do Córrego Rico, no município de Osasco/SP",
+     "valor": 300000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2021-09-24",
+    "fim": "2024-09-24"
+   }
+  },
+  {
+   "plano": "09032022-4-022429",
+   "ano": 2022,
+   "situacao": "CIENTE",
+   "parlamentar": "Tabata Amaral",
+   "codigoEmenda": "20224132202241320014",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana , 17-Saneamento / 512-Saneamento Básico Urbano",
+   "custeio": 523000,
+   "investimento": 0,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Canalização do Córrego Rico, no município de Osasco/SP",
+     "valor": 523000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2023-03-29",
+    "fim": "2026-03-29"
+   }
+  },
+  {
+   "plano": "09032022-021490",
+   "ano": 2022,
+   "situacao": "CIENTE",
+   "parlamentar": "Policial Katia Sastre",
+   "codigoEmenda": "20224126202241260003",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana , 17-Saneamento / 512-Saneamento Básico Urbano",
+   "custeio": 0,
+   "investimento": 250000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Canalização do Córrego Rico, no município de Osasco/SP",
+     "valor": 250000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2023-03-29",
+    "fim": "2026-03-29"
+   }
+  },
+  {
+   "plano": "09032022-016662",
+   "ano": 2022,
+   "situacao": "CIENTE",
+   "parlamentar": "Vicentinho",
+   "codigoEmenda": "20221997202219970016",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana , 17-Saneamento / 512-Saneamento Básico Urbano",
+   "custeio": 0,
+   "investimento": 100000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Canalização do Córrego Rico, no município de Osasco/SP",
+     "valor": 100000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2023-03-29",
+    "fim": "2026-03-29"
+   }
+  },
+  {
+   "plano": "09032022-2-022059",
+   "ano": 2022,
+   "situacao": "IMPEDIDO",
+   "parlamentar": "Tabata Amaral",
+   "codigoEmenda": "20224132202241320014",
+   "area": null,
+   "custeio": 523000,
+   "investimento": 0,
+   "objetos": [],
+   "planoTrabalho": null
+  },
+  {
+   "plano": "09032022-019718",
+   "ano": 2022,
+   "situacao": "CIENTE",
+   "parlamentar": "Alexandre Frota",
+   "codigoEmenda": "20223907202239070010",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana , 17-Saneamento / 512-Saneamento Básico Urbano",
+   "custeio": 0,
+   "investimento": 250000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Canalização do Córrego Rico, no município de Osasco/SP",
+     "valor": 250000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2023-03-29",
+    "fim": "2026-03-29"
+   }
+  },
+  {
+   "plano": "09032022-3-022252",
+   "ano": 2022,
+   "situacao": "IMPEDIDO",
+   "parlamentar": "Tabata Amaral",
+   "codigoEmenda": "20224132202241320014",
+   "area": null,
+   "custeio": 523000,
+   "investimento": 0,
+   "objetos": [],
+   "planoTrabalho": null
+  },
+  {
+   "plano": "09032022-020585",
+   "ano": 2022,
+   "situacao": "CIENTE",
+   "parlamentar": "Joice Hasselmann",
+   "codigoEmenda": "20224021202240210002",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana , 17-Saneamento / 512-Saneamento Básico Urbano",
+   "custeio": 0,
+   "investimento": 500000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Canalização do Córrego Rico, no município de Osasco/SP",
+     "valor": 500000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2022-07-01",
+    "fim": "2025-07-01"
+   }
+  },
+  {
+   "plano": "09032024-071010",
+   "ano": 2024,
+   "situacao": "CIENTE",
+   "parlamentar": "Jefferson Campos",
+   "codigoEmenda": "20241581202415810013",
+   "area": "18-Gestão Ambiental / 541-Preservação e Conservação Ambiental , 27-Desporto e Lazer / 812-Desporto Comunitário",
+   "custeio": 0,
+   "investimento": 2000000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Construção de 1 Ecoponto e 1  Quadra Poliesportiva",
+     "valor": 2000000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2024-12-12",
+    "fim": "2025-12-12"
+   }
+  },
+  {
+   "plano": "09032024-071002",
+   "ano": 2024,
+   "situacao": "CIENTE",
+   "parlamentar": "Gilberto Nascimento",
+   "codigoEmenda": "20241568202415680019",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana , 17-Saneamento / 512-Saneamento Básico Urbano",
+   "custeio": 0,
+   "investimento": 3000000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Contratação de empresa especializada para execução de obras de Construção de Galerias Pluviais na Rua Pedro Rissato, em Osasco/SP.",
+     "valor": 3000000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2024-07-03",
+    "fim": "2025-07-03"
+   }
+  },
+  {
+   "plano": "09032024-068353",
+   "ano": 2024,
+   "situacao": "CIENTE",
+   "parlamentar": "Kim Kataguiri",
+   "codigoEmenda": "20244155202441550010",
+   "area": "6-Segurança Pública / 181-Policiamento",
+   "custeio": 0,
+   "investimento": 755000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Reforma do Quartel da PMSP (alocado em próprio municipal) no Município de Osasco.",
+     "valor": 755000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2024-07-03",
+    "fim": "2027-07-03"
+   }
+  },
+  {
+   "plano": "09032024-071453",
+   "ano": 2024,
+   "situacao": "CIENTE",
+   "parlamentar": "Paulo Freire Costa",
+   "codigoEmenda": "20242813202428130003",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana",
+   "custeio": 0,
+   "investimento": 92000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Obra de infraestrutura urbana, compreendendo, pavimentação, recapeamento, drenagem, calçamento, guias, sarjetas e acessibilidade de vias localizadas no município de Osasco, SP",
+     "valor": 92000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2024-12-12",
+    "fim": "2025-10-12"
+   }
+  },
+  {
+   "plano": "09032024-070851",
+   "ano": 2024,
+   "situacao": "CIENTE",
+   "parlamentar": "Giordano",
+   "codigoEmenda": "20244221202442210001",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana",
+   "custeio": 0,
+   "investimento": 15000000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Obra de infraestrutura urbana, compreendendo, pavimentação, recapeamento, drenagem, calçamento, guias, sarjetas e acessibilidade de vias localizadas, em perímetro urbano, no município de Osasco, SP",
+     "valor": 15000000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "CONCLUIDO_NT_TCU",
+    "inicio": "2024-07-03",
+    "fim": "2026-03-03"
+   }
+  },
+  {
+   "plano": "09032025-078582",
+   "ano": 2025,
+   "situacao": "CIENTE",
+   "parlamentar": "Giordano",
+   "codigoEmenda": "20254221202542210001",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana",
+   "custeio": 0,
+   "investimento": 19800000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Execução de serviços de requalificação de malha viária, de sinalização horizontal, troca de guias e sarjetas de diversas ruas do perímetro urbano do município de Osasco.",
+     "valor": 19800000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "APROVADO",
+    "inicio": "2025-09-12",
+    "fim": "2030-09-12"
+   }
+  },
+  {
+   "plano": "09032025-084805",
+   "ano": 2025,
+   "situacao": "CIENTE",
+   "parlamentar": "Delegado Palumbo",
+   "codigoEmenda": "20254349202543490001",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana",
+   "custeio": 0,
+   "investimento": 1980000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Execução de serviços de requalificação de malha viária, de sinalização horizontal, troca de guias e sarjetas de diversas ruas do município de Osasco.",
+     "valor": 1980000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "APROVADO",
+    "inicio": "2025-09-09",
+    "fim": "2028-09-09"
+   }
+  },
+  {
+   "plano": "09032025-079723",
+   "ano": 2025,
+   "situacao": "IMPEDIDO",
+   "parlamentar": "Alfredinho",
+   "codigoEmenda": "20254258202542580001",
+   "area": "8-Assistência Social / 245-Serviços Socioassistenciais , 12-Educação / 368-Educação Básica",
+   "custeio": 1792989,
+   "investimento": 0,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Serviços Socioassistenciais",
+     "valor": 1727789
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "Em Elaboração"
+   }
+  },
+  {
+   "plano": "09032025-079724",
+   "ano": 2025,
+   "situacao": "IMPEDIDO",
+   "parlamentar": "Alfredinho",
+   "codigoEmenda": "20254258202542580001",
+   "area": "10-Saúde / 301-Atenção Básica",
+   "custeio": 0,
+   "investimento": 2203641,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "Reforma da Unidade Básica de Saúde Maria Pia de Oliveira - CNES 8281\nMeta 1: Reforma da Estrutura Física da UBS Maria Pia\nDescrição: Realizar a reforma da infraestrutura física da Unidade Básica de Saúde Maria Pia, contemplando a reestruturação total da unidade, pintura geral, adequação de consultórios, recepção, espera, salas de procedimentos, reforma de banheiros, revisão elétrica e hidráulica, e melhorias de acessibilidade.\n\nUnidade de Medida: % da obra executada\n\nValor da Meta: 100%\n\nData de Conclusão Estimada: 12 meses a partir do recebimento do recurso\n\nMeta 2: Adequação de Ambientes para Melhor Atendimento à População\nDescrição: Adequar ao menos 07 ambientes internos da UBS (consultórios, salas de procedimentos, sala de acolhimento, sala de coleta/curativos, sala de vacina) para garantir melhores condições de atendimento às 7 equipes (ESF e EAP) e à população estimada de 24.180 habitantes.\n\nUnidade de Medida: Ambientes adequados\n\nValor da Meta: 7 ambientes\n\nData de Conclusão Estimada: 12 meses a partir do recebimento do recurso",
+     "valor": 2203641
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "Em Complementação"
+   }
+  },
+  {
+   "plano": "09032026-095600",
+   "ano": 2026,
+   "situacao": "CIENTE",
+   "parlamentar": "Nilto Tatto",
+   "codigoEmenda": "20263735202637350007",
+   "area": "15-Urbanismo / 451-Infraestrutura Urbana",
+   "custeio": 0,
+   "investimento": 995000,
+   "objetos": [
+    {
+     "executor": "MUNICIPIO DE OSASCO",
+     "objeto": "RECAPEAMENTO da Rua XV de Novembro, Jaguaribe",
+     "valor": 995000
+    }
+   ],
+   "planoTrabalho": {
+    "situacao": "APROVADO",
+    "inicio": "2026-05-12",
+    "fim": "2027-05-12"
+   }
+  }
+ ]
+}

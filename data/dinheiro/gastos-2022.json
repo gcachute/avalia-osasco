@@ -1,0 +1,1066 @@
+{
+ "coletadoEm": "2026-10-29",
+ "fonte": "TCE-SP, despesas dos municípios (Audesp)",
+ "url": "https://transparencia.tce.sp.gov.br/conjunto-de-dados",
+ "ano": 2022,
+ "ultimoMes": 12,
+ "fontes": {
+  "TESOURO": 2584706045.19,
+  "TRANSFERÊNCIAS E CONVÊNIOS FEDERAIS-VINCULADOS": 144784854.03,
+  "TRANSFERÊNCIAS E CONVÊNIOS ESTADUAIS-VINCULADOS": 521140497.14,
+  "RECURSOS PRÓPRIOS DE FUNDOS ESPECIAIS DE DESPESA-VINCULADOS": 8963502.74,
+  "RECURSOS PRÓPRIOS DA ADMINISTRAÇÃO INDIRETA": 13845684.5,
+  "OPERAÇÕES DE CRÉDITO": 10403125.5
+ },
+ "grupos": {
+  "federal": {
+   "total": 144784854.03,
+   "funcoes": {
+    "ASSISTÊNCIA SOCIAL": 2973420.58,
+    "SAÚDE": 86915073.05,
+    "ADMINISTRAÇÃO": 17850,
+    "EDUCAÇÃO": 40223052.77,
+    "HABITAÇÃO": 14574641.54,
+    "DIREITOS DA CIDADANIA": 25179.98,
+    "URBANISMO": 0,
+    "CULTURA": 55636.11
+   },
+   "aplicacoes": {
+    "0510 - ASSISTÊNCIA SOCIAL - GERAL": 961286.67,
+    "0310 - SAÚDE - GERAL": 79659160.31,
+    "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 1339392.12,
+    "0100 - GERAL TOTAL": 14288504.66,
+    "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 1152751.74,
+    "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 40223052.77,
+    "0500 - ASSISTÊNCIA SOCIAL - RECURSOS ESPECÍFICOS": 1520176.88,
+    "0313 - TRANSF DO GOV. FEDERAL DESTINADAS A VENCTO DE AGENTES COMUNITÁRIOS DE SAÚDE E DE COMBATE A ENDEMIAS": 5640528.88
+   },
+   "fornecedores": {
+    "47708771000100": {
+     "nome": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "valor": 37686684.12,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 36669024.2,
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 1017659.92
+     }
+    },
+    "20672533000127": {
+     "nome": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "valor": 13715056.93,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 13715056.93
+     }
+    },
+    "03817246000149": {
+     "nome": "COMERCIAL DE ALIMENTOS NUTRIVIP DO BRASIL LTDA",
+     "valor": 13527962.97,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 13527962.97
+     }
+    },
+    "08070362000160": {
+     "nome": "NS ALIMENTOS LTDA",
+     "valor": 10327094.4,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 10327094.4
+     }
+    },
+    "18540483000182": {
+     "nome": "NATURALY DISTRIBUIDORA DE ALIMENTOS EIRELI EPP",
+     "valor": 8388953.75,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 8388953.75
+     }
+    },
+    "24516372000133": {
+     "nome": "ONE LAUDOS DIAGNOSICOS MEDICOS LTDA",
+     "valor": 7438900.55,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 7438900.55
+     }
+    },
+    "50351626000110": {
+     "nome": "BENEFICENCIA HOSPITALAR DE CESARIO LANGE",
+     "valor": 6845605.64,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 6845605.64
+     }
+    },
+    "46523171000104": {
+     "nome": "PREFEITURA DO MUNICIPIO DE OSASCO",
+     "valor": 5640528.88,
+     "aplicacoes": {
+      "0313 - TRANSF DO GOV. FEDERAL DESTINADAS A VENCTO DE AGENTES COMUNITÁRIOS DE SAÚDE E DE COMBATE A ENDEMIAS": 5640528.88
+     }
+    },
+    "11620725000107": {
+     "nome": "MEDICAL CORP ASSESSORIA A SAUDE E BEM ESTAR LTDA",
+     "valor": 4427862.87,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 4427862.87
+     }
+    },
+    "03502775000153": {
+     "nome": "ASSOCIACAO MANTENEDORA DE MAES ESPECIAIS AMME",
+     "valor": 3999237.34,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 3999237.34
+     }
+    },
+    "01916756000148": {
+     "nome": "COMERCIAL HORTIFRUTIGRANJEIRO ITAUBA LTDA",
+     "valor": 3259351.76,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 3259351.76
+     }
+    },
+    "61610283000188": {
+     "nome": "VITAL HOSPITALAR COMERCIAL LTDA",
+     "valor": 3163519.9,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 3163519.9
+     }
+    },
+    "37409100000186": {
+     "nome": "G A SERVICOS MEDICOS E HOSPITALARES LTDA",
+     "valor": 3115623.23,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 3115623.23
+     }
+    },
+    "04539279000137": {
+     "nome": "CIENTIFICALAB PRODUTOS LABORATORIAIS E SISTEMAS LTDA",
+     "valor": 2727153.72,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 2727153.72
+     }
+    },
+    "60979457000707": {
+     "nome": "AACD ASSOC DE A CRIANCA DEFICIENTE OSASCO",
+     "valor": 2616626.25,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 2616626.25
+     }
+    },
+    "12361832000112": {
+     "nome": "CLINICA ACIM GERENCIAMENTO ADMINISTRACAO E PARTICIPACOES LTDA",
+     "valor": 2366560.48,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 2366560.48
+     }
+    },
+    "20226804000110": {
+     "nome": "DERMACOR SERVICOS TECNICOS EM SAUDE LTDA",
+     "valor": 2021480.8,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 2021480.8
+     }
+    },
+    "00378257000181": {
+     "nome": "FUNDO NACIONAL DE DESENVOLVIMENTO DA EDUCACAO",
+     "valor": 1771868.78,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 1771868.78
+     }
+    },
+    "03022122000177": {
+     "nome": "BK CONSULTORIA E SERVICOS LTDA",
+     "valor": 1468796.08,
+     "aplicacoes": {
+      "0500 - ASSISTÊNCIA SOCIAL - RECURSOS ESPECÍFICOS": 1468796.08
+     }
+    },
+    "51207041000194": {
+     "nome": "EQUIPAMED EQUIPAMENTOS MEDICOS LTDA",
+     "valor": 1328261.48,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 1328261.48
+     }
+    },
+    "17988427000142": {
+     "nome": "COOPERATIVA DE PESCADORES E PRODUTORES AGRICULTURA FAMILIAR COOPPAF",
+     "valor": 988466.5,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 988466.5
+     }
+    },
+    "12043445000138": {
+     "nome": "INSTITUTO DE GESTAO ADMINISTRACAO E TREINAMENTO EM SAUDE IGATS",
+     "valor": 854376.89,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 854376.89
+     }
+    },
+    "18782260000121": {
+     "nome": "COOPERATIVA AGROPECUARIA DA AGRICULTURA FAMILIAR DE PARAGUACU PAULISTA E REGIAO COOAAFAPP",
+     "valor": 828728.82,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 828728.82
+     }
+    },
+    "20475773000131": {
+     "nome": "COOPERATIVA AGROPECUARIA DOURADOS",
+     "valor": 796641.37,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 796641.37
+     }
+    },
+    "01958324000108": {
+     "nome": "PONTO FORTE CONSTRUCOES EMPREENDIMENTOS LTDA",
+     "valor": 500000,
+     "aplicacoes": {
+      "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 500000
+     }
+    },
+    "03353358000196": {
+     "nome": "MINISTERIO DO DESENVOLVIMENTO REGIONAL MDR",
+     "valor": 359584.61,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 359584.61
+     }
+    },
+    "02423591000135": {
+     "nome": "GRUPO DE ORIENTACAO E ASSISTENCIA A SAUDE",
+     "valor": 339500,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 339500
+     }
+    },
+    "41433944000130": {
+     "nome": "COOPERATIVA DOS AGRICULTORES FAMILIARES DE PRESIDENTE VINCESLAU AGUA BELA",
+     "valor": 332809.22,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 332809.22
+     }
+    },
+    "30535468000141": {
+     "nome": "MARQUES MED",
+     "valor": 281600,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 281600
+     }
+    },
+    "10267695000126": {
+     "nome": "MEDICALL FARMA DIST PROD E SERV PARA SAUDE EIRELI",
+     "valor": 265992,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 265992
+     }
+    },
+    "47361100000107": {
+     "nome": "JUCO JUVENTUDE CIVICA DE OSASCO",
+     "valor": 260774,
+     "aplicacoes": {
+      "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 260774
+     }
+    },
+    "01664908000162": {
+     "nome": "CCM COMERCIAL CREME MARFIM LTDA",
+     "valor": 254299.42,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 254299.42
+     }
+    },
+    "02629588000172": {
+     "nome": "FIRST MEDICAL SERVICE LTDA",
+     "valor": 242845,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 242845
+     }
+    },
+    "02512121000148": {
+     "nome": "Centro Catarinense de Apoio a Audição Eireli - EPP",
+     "valor": 226500,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 226500
+     }
+    },
+    "05446196000166": {
+     "nome": "SER ESPECIAL ASSOCIACAO ASSISTENCIAL DE INTEGRACAO AO TRABALHO",
+     "valor": 196013.12,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 196013.12
+     }
+    },
+    "38007528000165": {
+     "nome": "LIDER DISTRIBUIDORA DE MOVEIS E EQUIPAMENTOS PARA SAUDE LTDA",
+     "valor": 138900,
+     "aplicacoes": {
+      "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 138900
+     }
+    },
+    "06344497000141": {
+     "nome": "VEROCHEQUE REFEICOES LTDA",
+     "valor": 135683.55,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 135683.55
+     }
+    },
+    "66106600000147": {
+     "nome": "TROUPE BRASIL PRODUCOES LTDA",
+     "valor": 120585.8,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 120585.8
+     }
+    },
+    "11719071000165": {
+     "nome": "R. SANTOS COMERCIO DE PRODUTOS ALIMENTICIOS EM GERAL EIRELI EPP",
+     "valor": 103520.52,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 103520.52
+     }
+    },
+    "18632071000172": {
+     "nome": "R RIBAS REPRESENTACAO COMERCIAL ME",
+     "valor": 97332.37,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 97332.37
+     }
+    },
+    "30778749000125": {
+     "nome": "G P VEZONO EIRELI",
+     "valor": 93200,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 93200
+     }
+    },
+    "08004710000100": {
+     "nome": "GOLDEN FOOD COMERCIO E EXPORTACAO DE ALIMENTOS EIRELI",
+     "valor": 86008.5,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 86008.5
+     }
+    },
+    "01004347000175": {
+     "nome": "COMERCIAL CARAVELAS EIRELI",
+     "valor": 76705.62,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 15939.98,
+      "0500 - ASSISTÊNCIA SOCIAL - RECURSOS ESPECÍFICOS": 51380.8,
+      "0310 - SAÚDE - GERAL": 9384.84
+     }
+    },
+    "62413869000115": {
+     "nome": "GIGANTE RECEM NASCIDO IND COM REP LTDA",
+     "valor": 75990,
+     "aplicacoes": {
+      "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 75990
+     }
+    },
+    "09058456000187": {
+     "nome": "MINDRAY DO BRASIL COM DISTR DE EQUIPAMENTOS MEDICOS LTDA",
+     "valor": 71000,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 71000
+     }
+    },
+    "03668066000142": {
+     "nome": "RDM MATERIAIS DE CONSTRUCAO E MOBILIARIO LTDA",
+     "valor": 58884.6,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 58884.6
+     }
+    },
+    "05489375000180": {
+     "nome": "MAX COMERCIO REPRESENTACOES E SERVICOS EIRELI LTDA ME",
+     "valor": 56631.75,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 27856.8,
+      "0310 - SAÚDE - GERAL": 28774.95
+     }
+    },
+    "13498596000143": {
+     "nome": "PAM ALIMENTOS E NEGOCIOS LTDA",
+     "valor": 56061.5,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 56061.5
+     }
+    },
+    "05457283000208": {
+     "nome": "MINISTERIO DO TURISMO",
+     "valor": 55636.11,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 55636.11
+     }
+    },
+    "20782880000102": {
+     "nome": "NORDESTE MEDICAL REPRESENTACAO IMPORTACAO E EXPORTACAO DE PRODUTOS HOSPITALARES LTDA",
+     "valor": 52038.4,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 52038.4
+     }
+    },
+    "08933601000169": {
+     "nome": "ASSISTENCIA VICENTINA IMACULADA CONCEICAO",
+     "valor": 50000,
+     "aplicacoes": {
+      "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 50000
+     }
+    },
+    "38259748000186": {
+     "nome": "MIAMIMED PRODUTOS ODONTOLOGICOS LTDA",
+     "valor": 48810,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 48810
+     }
+    },
+    "08847305000145": {
+     "nome": "COMERCIAL MORAES ARARAS LTDA",
+     "valor": 41474.72,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 41474.72
+     }
+    },
+    "13889622000164": {
+     "nome": "MOMILLI COMERCIAL LTDA",
+     "valor": 40225,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 15250,
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 24975
+     }
+    },
+    "20371330000109": {
+     "nome": "MUNDI EQUIPAMENTOS MEDICOS ODONTOLOGICOS E VETERINARIOS EIRELI",
+     "valor": 37800,
+     "aplicacoes": {
+      "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 37800
+     }
+    },
+    "07118264000193": {
+     "nome": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+     "valor": 37136.62,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 37136.62
+     }
+    },
+    "34444108000195": {
+     "nome": "PLG DISTRIBUIDORA DE PRODUTOS HOSPITALARES LTDA",
+     "valor": 36000,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 36000
+     }
+    },
+    "01148472000159": {
+     "nome": "NOROESTE COMERCIAL DE SUPRIMENTOS LTDA - ME",
+     "valor": 32961.74,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 32961.74
+     }
+    },
+    "23217514000107": {
+     "nome": "HUBNET E COMMERCE EIRELI",
+     "valor": 30781.45,
+     "aplicacoes": {
+      "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 30781.45
+     }
+    },
+    "30060599000110": {
+     "nome": "CS REI DO PLASTICO LTDA",
+     "valor": 26306.4,
+     "aplicacoes": {
+      "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 26306.4
+     }
+    }
+   },
+   "pessoasFisicas": 40620.78,
+   "itensBairro": [
+    {
+     "data": "2022-01-07",
+     "valor": 2255202.92,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2022-01-07",
+     "valor": 1017659.92,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2022-02-07",
+     "valor": 2322730.7,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2022-03-29",
+     "valor": 770035.32,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2022-04-27",
+     "valor": 1359161.63,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2022-06-23",
+     "valor": 1365993.59,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2022-07-22",
+     "valor": 1678548.77,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2022-07-05",
+     "valor": 1427783.76,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2022-08-16",
+     "valor": 1377604.36,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2022-09-15",
+     "valor": 1100230.68,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2022-10-25",
+     "valor": 1594228.38,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2022-11-22",
+     "valor": 1399278.67,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2022-11-18",
+     "valor": 50000,
+     "fornecedor": "ASSISTENCIA VICENTINA IMACULADA CONCEICAO",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "ASSISTÊNCIA SOCIAL",
+     "texto": "LAR BUSSOCABA",
+     "bairros": [
+      "bussocaba"
+     ]
+    },
+    {
+     "data": "2022-12-28",
+     "valor": 1642191.77,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    }
+   ],
+   "outrosFornecedores": 519297.72,
+   "quantidadeFornecedores": 116
+  },
+  "estadual": {
+   "total": 521140497.14,
+   "funcoes": {
+    "EDUCAÇÃO": 486021875.25,
+    "HABITAÇÃO": 428254.6,
+    "ASSISTÊNCIA SOCIAL": 1663786.73,
+    "SEGURANÇA PÚBLICA": 1302379.36,
+    "SAÚDE": 31621220.75,
+    "TRABALHO": 1830.45,
+    "GESTÃO AMBIENTAL": 101150
+   },
+   "aplicacoes": {
+    "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 402423350.23,
+    "0264 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO - ANO ANTERIOR": 35393616.89,
+    "0100 - GERAL TOTAL": 1833614.41,
+    "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 27035479.05,
+    "0510 - ASSISTÊNCIA SOCIAL - GERAL": 1607786.73,
+    "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 56000,
+    "0253 - EDUCAÇÃO - FUNDEF - REMUNERAÇÃO DE APLICAÇÕES FINANCEIRAS": 21169429.08,
+    "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 31621220.75
+   },
+   "fornecedores": {
+    "2035": {
+     "nome": "FOLHA DE PAG AUXILIO DOENCA",
+     "valor": 125097.14,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 125097.14
+     }
+    },
+    "5726": {
+     "nome": "FOLHA DE PAGAMENTO SALARIO FAMILIA IPMO",
+     "valor": 15642.19,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 15642.19
+     }
+    },
+    "7383": {
+     "nome": "FOLHA DE PAGAMENTO SALARIO MATERNIDADE IPMO",
+     "valor": 98220.79,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 98220.79
+     }
+    },
+    "46523171000104": {
+     "nome": "PREFEITURA DO MUNICIPIO DE OSASCO",
+     "valor": 390264970.64,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 339725847.44,
+      "0264 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO - ANO ANTERIOR": 29367863.67,
+      "0253 - EDUCAÇÃO - FUNDEF - REMUNERAÇÃO DE APLICAÇÕES FINANCEIRAS": 21169429.08,
+      "0100 - GERAL TOTAL": 1830.45
+     }
+    },
+    "46621538000114": {
+     "nome": "IPMO INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
+     "valor": 68436338.36,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 62414236.77,
+      "0264 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO - ANO ANTERIOR": 6022101.59
+     }
+    },
+    "06344497000141": {
+     "nome": "VEROCHEQUE REFEICOES LTDA",
+     "valor": 27035479.05,
+     "aplicacoes": {
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 27035479.05
+     }
+    },
+    "07118264000193": {
+     "nome": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+     "valor": 18192358,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 18192358
+     }
+    },
+    "12361832000112": {
+     "nome": "CLINICA ACIM GERENCIAMENTO ADMINISTRACAO E PARTICIPACOES LTDA",
+     "valor": 5000000,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 5000000
+     }
+    },
+    "61610283000188": {
+     "nome": "VITAL HOSPITALAR COMERCIAL LTDA",
+     "valor": 3579428.9,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 3579428.9
+     }
+    },
+    "92781335000102": {
+     "nome": "TAURUS ARMAS S A",
+     "valor": 1302379.36,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 1302379.36
+     }
+    },
+    "74400052000191": {
+     "nome": "COMERCIAL 3 ALBE LTDA",
+     "valor": 1171221,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 1171221
+     }
+    },
+    "67729178000491": {
+     "nome": "COMERCIAL CIRURGICA RIOCLARENSE LTDA",
+     "valor": 817128.9,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 817128.9
+     }
+    },
+    "30535468000141": {
+     "nome": "MARQUES MED",
+     "valor": 688767,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 688767
+     }
+    },
+    "03948933000101": {
+     "nome": "REPRESS DISTRIBUIDORA DE MEDICAMENTOS EIRELI",
+     "valor": 549963,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 549963
+     }
+    },
+    "01854654000145": {
+     "nome": "PONTUAL COMERCIAL EIRELI",
+     "valor": 544812.2,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 544812.2
+     }
+    },
+    "02423591000135": {
+     "nome": "GRUPO DE ORIENTACAO E ASSISTENCIA A SAUDE",
+     "valor": 500000,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 500000
+     }
+    },
+    "13846262000113": {
+     "nome": "FUNDO ESTADUAL DE ASSISTÊNCIA SOCIAL-FEAS",
+     "valor": 480577.59,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 480577.59
+     }
+    },
+    "23236167000151": {
+     "nome": "NORTH MED DISTRIBUIDORA DE PRODUTOS MEDICOS E HOSPITALARES LTDA",
+     "valor": 335590,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 335590
+     }
+    },
+    "08070362000160": {
+     "nome": "NS ALIMENTOS LTDA",
+     "valor": 270146.46,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 270146.46
+     }
+    },
+    "32399280000149": {
+     "nome": "ALIMENTICIA REFEICOES CORPORATIVAS LTDA",
+     "valor": 160030,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 160030
+     }
+    },
+    "03576719000163": {
+     "nome": "COMERCIAL LUX CLEAN LTDA",
+     "valor": 133865.9,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 133865.9
+     }
+    },
+    "21813311000140": {
+     "nome": "NAT NUTRE ALIMENTOS S A",
+     "valor": 125186.25,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 125186.25
+     }
+    },
+    "06276996000149": {
+     "nome": "CLINICA VETERINARIA RICARDO LTDA",
+     "valor": 101150,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 101150
+     }
+    },
+    "10267695000126": {
+     "nome": "MEDICALL FARMA DIST PROD E SERV PARA SAUDE EIRELI",
+     "valor": 100020,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 100020
+     }
+    },
+    "32396720000104": {
+     "nome": "DELTA ELETROMOVEIS EIRELI",
+     "valor": 85806.75,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 85806.75
+     }
+    },
+    "11719071000165": {
+     "nome": "R. SANTOS COMERCIO DE PRODUTOS ALIMENTICIOS EM GERAL EIRELI EPP",
+     "valor": 85146.18,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 85146.18
+     }
+    },
+    "09721729000121": {
+     "nome": "G D C DA SILVA COSTA EIRELI",
+     "valor": 56000,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 56000
+     }
+    },
+    "01664908000162": {
+     "nome": "CCM COMERCIAL CREME MARFIM LTDA",
+     "valor": 54506.12,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 54506.12
+     }
+    },
+    "29979036038547": {
+     "nome": "INSTITUTO NACIONAL DO SEGURO SOCIAL",
+     "valor": 47112.26,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 43565.29,
+      "0264 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO - ANO ANTERIOR": 3546.97
+     }
+    },
+    "13498596000143": {
+     "nome": "PAM ALIMENTOS E NEGOCIOS LTDA",
+     "valor": 38829,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 38829
+     }
+    },
+    "21597932000133": {
+     "nome": "QUALITY FOOD COMERCIO E SERVICOS LTDA EPP",
+     "valor": 34967.71,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 34967.71
+     }
+    },
+    "03668066000142": {
+     "nome": "RDM MATERIAIS DE CONSTRUCAO E MOBILIARIO LTDA",
+     "valor": 31162.3,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 31162.3
+     }
+    },
+    "61602199017350": {
+     "nome": "COMPANHIA ULTRAGAZ S A",
+     "valor": 28525.4,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 28525.4
+     }
+    },
+    "25136184000142": {
+     "nome": "NET BENEFICIOS LTDA",
+     "valor": 27383.2,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 27383.2
+     }
+    },
+    "29468112000315": {
+     "nome": "J H AR CONDICIONADOS LTDA",
+     "valor": 26505,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 26505
+     }
+    },
+    "14619703000107": {
+     "nome": "BLS COMERCIO DE ALIMENTOS LTDA",
+     "valor": 22187.1,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 22187.1
+     }
+    },
+    "05489375000180": {
+     "nome": "MAX COMERCIO REPRESENTACOES E SERVICOS EIRELI LTDA ME",
+     "valor": 19347.4,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 19347.4
+     }
+    },
+    "04013164000104": {
+     "nome": "ORLA DISTRIBUIDORA DE PRODUTOS EIRELI",
+     "valor": 16436.49,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 16436.49
+     }
+    },
+    "18979485000172": {
+     "nome": "RV MEDICAL SOLUCOES HOSPITALARES LTDA ME",
+     "valor": 16120,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 16120
+     }
+    },
+    "35067853000125": {
+     "nome": "TECHPHARMA HOSPITALAR COMERCIO IMPORTACAO E EXPORTACAO",
+     "valor": 13500,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 13500
+     }
+    },
+    "12028801000144": {
+     "nome": "HC ALECRIM DISTRIBUIDORA EIRELI",
+     "valor": 12250,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 12250
+     }
+    },
+    "12488131000149": {
+     "nome": "S T COMERCIO DE PROD DE LIMP DESCART E INFORM LTDA EPP",
+     "valor": 10386.13,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 10386.13
+     }
+    },
+    "74659186000121": {
+     "nome": "COMERCIAL MABRUK LTDA",
+     "valor": 10183.55,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 10183.55
+     }
+    },
+    "06985398000149": {
+     "nome": "COMERCIO DE PRODUTOS ALIMENTICIOS DI PRIMEIRA EIRELI EPP",
+     "valor": 9132.8,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 9132.8
+     }
+    },
+    "01838723009850": {
+     "nome": "BRF S A",
+     "valor": 8104.35,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 8104.35
+     }
+    },
+    "03649725000101": {
+     "nome": "SUPERMERCADO MORADA DO SOL LTDA",
+     "valor": 5803.06,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 5803.06
+     }
+    },
+    "32974719000110": {
+     "nome": "L D SILVA REPRESENTACAO ME",
+     "valor": 5265.8,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 5265.8
+     }
+    },
+    "08847305000145": {
+     "nome": "COMERCIAL MORAES ARARAS LTDA",
+     "valor": 5145.6,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 5145.6
+     }
+    },
+    "12958649000107": {
+     "nome": "FB DISTRIBUIDORA EIRELI",
+     "valor": 4676.87,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 4676.87
+     }
+    },
+    "26958241000131": {
+     "nome": "DANIEL ZANCAPE",
+     "valor": 3023.24,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 3023.24
+     }
+    },
+    "15674262000109": {
+     "nome": "SYM COMERCIO DE DESCARTAVEIS LTDA EPP",
+     "valor": 1629,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 1629
+     }
+    },
+    "12758923000196": {
+     "nome": "L C ARAUJO CIA EMBALAGENS LTDA",
+     "valor": 1192.58,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 1192.58
+     }
+    },
+    "00360305000104": {
+     "nome": "CAIXA ECONOMICA FEDERAL MATRIZ FGTS",
+     "valor": 845.27,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 740.61,
+      "0264 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO - ANO ANTERIOR": 104.66
+     }
+    },
+    "03488409000197": {
+     "nome": "COMERCIAL GETRIX EIRELI",
+     "valor": 765,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 765
+     }
+    },
+    "03890627000153": {
+     "nome": "BARRETO S INDUSTRIA E COMERCIO DE CONFECCOES EIRELI",
+     "valor": 616.5,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 616.5
+     }
+    },
+    "64088214000144": {
+     "nome": "TERRAO COM REPRESENTACOES LTDA",
+     "valor": 603.4,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 603.4
+     }
+    },
+    "15631315000104": {
+     "nome": "LUTAR DISTRIBUIDORA DE PRODUTOS DE LIMPEZA EIRELI",
+     "valor": 429.75,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 429.75
+     }
+    },
+    "08212263000176": {
+     "nome": "TRES LAGOAS COMERCIO DE SACARIAS E EMBALAGENS EIRELI",
+     "valor": 282,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 282
+     }
+    }
+   },
+   "pessoasFisicas": 428254.6,
+   "itensBairro": [],
+   "outrosFornecedores": 0,
+   "quantidadeFornecedores": 58
+  }
+ }
+}

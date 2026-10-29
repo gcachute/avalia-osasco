@@ -1,0 +1,1030 @@
+{
+ "coletadoEm": "2026-10-29",
+ "fonte": "TCE-SP, despesas dos municípios (Audesp)",
+ "url": "https://transparencia.tce.sp.gov.br/conjunto-de-dados",
+ "ano": 2018,
+ "ultimoMes": 12,
+ "fontes": {
+  "TESOURO": 1386332235.33,
+  "TRANSFERÊNCIAS E CONVÊNIOS ESTADUAIS-VINCULADOS": 287699821.79,
+  "RECURSOS PRÓPRIOS DA ADMINISTRAÇÃO INDIRETA": 15695823.85,
+  "TRANSFERÊNCIAS E CONVÊNIOS FEDERAIS-VINCULADOS": 130251962.66,
+  "OUTRAS FONTES DE RECURSOS": 13510883.88,
+  "OPERAÇÕES DE CRÉDITO": 1659510
+ },
+ "grupos": {
+  "estadual": {
+   "total": 287699821.79,
+   "funcoes": {
+    "EDUCAÇÃO": 284315208.35,
+    "COMÉRCIO E SERVIÇOS": 3945.4,
+    "SAÚDE": 1464205.02,
+    "TRABALHO": 600.2,
+    "ADMINISTRAÇÃO": 113130.7,
+    "ASSISTÊNCIA SOCIAL": 1795787.66,
+    "DIREITOS DA CIDADANIA": 6944.46
+   },
+   "aplicacoes": {
+    "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 29844298.99,
+    "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 239401323.09,
+    "0100 - GERAL TOTAL": 124620.76,
+    "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 1464205.02,
+    "0264 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO - ANO ANTERIOR": 2400146.64,
+    "0510 - ASSISTÊNCIA SOCIAL - GERAL": 1795787.66,
+    "0251 - EDUCAÇÃO - FUNDEF - MAGISTÉRIO": 9386.64,
+    "0253 - EDUCAÇÃO - FUNDEF - REMUNERAÇÃO DE APLICAÇÕES FINANCEIRAS": 6794336.14,
+    "0263 - EDUCAÇÃO - FUNDEB-REMUNERAÇÃO DE APLICAÇÕES FINANCEIRAS": 5865716.85
+   },
+   "fornecedores": {
+    "46523171000104": {
+     "nome": "PREFEITURA DO MUNICIPIO DE OSASCO",
+     "valor": 232714486.02,
+     "aplicacoes": {
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 24257566.85,
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 193387332.9,
+      "0264 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO - ANO ANTERIOR": 2400146.64,
+      "0251 - EDUCAÇÃO - FUNDEF - MAGISTÉRIO": 9386.64,
+      "0253 - EDUCAÇÃO - FUNDEF - REMUNERAÇÃO DE APLICAÇÕES FINANCEIRAS": 6794336.14,
+      "0263 - EDUCAÇÃO - FUNDEB-REMUNERAÇÃO DE APLICAÇÕES FINANCEIRAS": 5865716.85
+     }
+    },
+    "46621538000114": {
+     "nome": "IPMO INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
+     "valor": 34968902.12,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 29770425.69,
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 5198476.43
+     }
+    },
+    "29979036038547": {
+     "nome": "INSS INSTITUTO NACIONAL DO SEGURO SOCIAL",
+     "valor": 11418278.21,
+     "aplicacoes": {
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 218631.16,
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 11199647.05
+     }
+    },
+    "00360305000104": {
+     "nome": "CAIXA ECONOMICA FEDERAL MATRIZ FGTS",
+     "valor": 3552087.83,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 3382463.28,
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 169624.55
+     }
+    },
+    "46384111000140": {
+     "nome": "SECRETARIA DE ESTADO DA EDUCACAO",
+     "valor": 1661454.17,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 1661454.17
+     }
+    },
+    "13846262000113": {
+     "nome": "FUNDO ESTADUAL DE ASSISTÊNCIA SOCIAL-FEAS",
+     "valor": 1449704.02,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 1449704.02
+     }
+    },
+    "07118264000193": {
+     "nome": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+     "valor": 473371.6,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 473371.6
+     }
+    },
+    "43640754000119": {
+     "nome": "FUNDACAO PARA O REMEDIO POPULAR FURP",
+     "valor": 402853.92,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 402853.92
+     }
+    },
+    "67729178000491": {
+     "nome": "COMERCIAL CIRURGICA RIOCLARENSE LTDA",
+     "valor": 279500,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 279500
+     }
+    },
+    "61610283000188": {
+     "nome": "VITAL HOSPITALAR COMERCIAL LTDA",
+     "valor": 249271,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 249271
+     }
+    },
+    "46393500000131": {
+     "nome": "SECRETARIA DE PLANEJAMENTO E DESENVOLVIMENTO REGIONAL",
+     "valor": 113130.7,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 113130.7
+     }
+    },
+    "15521275000148": {
+     "nome": "ENCANTA CULTURAL",
+     "valor": 93200,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 93200
+     }
+    },
+    "03668066000142": {
+     "nome": "RDM MATERIAIS DE CONSTRUCAO E MOBILIARIO LTDA",
+     "valor": 60030.36,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 60030.36
+     }
+    },
+    "04243746000187": {
+     "nome": "ELISABETE REGINA VICCHINI RIBEIRO ME",
+     "valor": 41007.8,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 41007.8
+     }
+    },
+    "03764882000150": {
+     "nome": "COMERCIAL FORNECEDORA MATERIAIS EIRELI EPP",
+     "valor": 32052.65,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 32052.65
+     }
+    },
+    "08618261000181": {
+     "nome": "RISE COMERCIO COMUNUC E EVENTOS EIRELI EPP",
+     "valor": 29120,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 29120
+     }
+    },
+    "01854654000145": {
+     "nome": "PONTUAL COMERCIAL EIRELI",
+     "valor": 18528.5,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 18528.5
+     }
+    },
+    "22938984000199": {
+     "nome": "LUIZ ROBERTO RIBEIRO JÚNIOR - EPP",
+     "valor": 14016,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 14016
+     }
+    },
+    "02119775000106": {
+     "nome": "ONIX BRASIL COMERCIAL LTDA",
+     "valor": 13620,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 13620
+     }
+    },
+    "12488131000149": {
+     "nome": "S T COMERCIO DE PROD DE LIMP DESCART E INFORM LTDA EPP",
+     "valor": 9913.5,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 9913.5
+     }
+    },
+    "08486214000121": {
+     "nome": "CPX COMERCIO E SERVICOS LTDA ME",
+     "valor": 7125,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 7125
+     }
+    },
+    "22929478000133": {
+     "nome": "QUICKLOG COMERCIO ATACADISTA E LOGISTA EIRELI",
+     "valor": 6244.3,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 6244.3
+     }
+    },
+    "01664908000162": {
+     "nome": "CCM COMERCIAL CREME MARFIM LTDA",
+     "valor": 4989.32,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 4989.32
+     }
+    },
+    "19129613000151": {
+     "nome": "MENDES & MARQUES DISTRIBUIDORA DE MATERIAIS EDUCACIONAIS LTDA - ME",
+     "valor": 4392.2,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 4392.2
+     }
+    },
+    "61600839000155": {
+     "nome": "CENTRO DE INTEGRACAO EMPRESA ESCOLA CIEE",
+     "valor": 2771.4,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 2771.4
+     }
+    },
+    "21986437000116": {
+     "nome": "DPMAR MATERIAIS DE ESCRITORIO E CONSTRUCAO LTDA",
+     "valor": 1614.6,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 1614.6
+     }
+    },
+    "26994083000175": {
+     "nome": "CEREZZO COMERCIAL DE PRODUTOS E SERVICOS LTDA",
+     "valor": 1009.86,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 1009.86
+     }
+    },
+    "13902387000113": {
+     "nome": "FUNDO DE INVESTIMENTOS DE CREDITO PRODUTIVO POPULAR DE SAO PAULO",
+     "valor": 204.89,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 204.89
+     }
+    },
+    "11719071000165": {
+     "nome": "R. SANTOS COMERCIO DE PRODUTOS ALIMENTICIOS EM GERAL EIRELI EPP",
+     "valor": 28.32,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 28.32
+     }
+    }
+   },
+   "pessoasFisicas": 76913.5,
+   "itensBairro": [],
+   "outrosFornecedores": 0,
+   "quantidadeFornecedores": 29
+  },
+  "federal": {
+   "total": 130251962.66,
+   "funcoes": {
+    "EDUCAÇÃO": 41345743.71,
+    "SAÚDE": 78807046.9,
+    "ASSISTÊNCIA SOCIAL": 2814419.68,
+    "TRABALHO": 1304699.03,
+    "ADMINISTRAÇÃO": 133971.76,
+    "URBANISMO": 5753099.07,
+    "HABITAÇÃO": 77828.42,
+    "DESPORTO E LAZER": 15154.09
+   },
+   "aplicacoes": {
+    "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 41345743.71,
+    "0310 - SAÚDE - GERAL": 78591693.25,
+    "0510 - ASSISTÊNCIA SOCIAL - GERAL": 2692366.68,
+    "0100 - GERAL TOTAL": 7306805.37,
+    "0500 - ASSISTÊNCIA SOCIAL - RECURSOS ESPECÍFICOS": 100000,
+    "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 215353.65
+   },
+   "fornecedores": {
+    "18160462000131": {
+     "nome": "CLINICA PIRES VANCI SERVICOS MEDICOS LTDA",
+     "valor": 14490157,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 14490157
+     }
+    },
+    "07118264000193": {
+     "nome": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+     "valor": 12754238.64,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 12754238.64
+     }
+    },
+    "03817246000149": {
+     "nome": "COMERCIAL DE ALIMENTOS NUTRIVIP DO BRASIL LTDA",
+     "valor": 11592399.22,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 11592399.22
+     }
+    },
+    "07900613000124": {
+     "nome": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+     "valor": 9908648.38,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 9908648.38
+     }
+    },
+    "11891484000122": {
+     "nome": "MAXXILAB EXAMES LABORATORIAIS LTDA",
+     "valor": 8884745.32,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 8884745.32
+     }
+    },
+    "08070362000160": {
+     "nome": "NS ALIMENTOS LTDA",
+     "valor": 8878020.94,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 8253457.82,
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 624563.12
+     }
+    },
+    "01916756000148": {
+     "nome": "COMERCIAL HORTIFRUTIGRANJEIRO ITAUBA LTDA",
+     "valor": 7485329.49,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 7485329.49
+     }
+    },
+    "20697582000114": {
+     "nome": "J DIAS COMERCIO E CONFECCOES LTDA",
+     "valor": 4949587.98,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 4949587.98
+     }
+    },
+    "58625344000257": {
+     "nome": "DR. GHELFOND DIAGNÓSTICO MÉDICO LTDA.",
+     "valor": 4045680.9,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 4045680.9
+     }
+    },
+    "03641257000110": {
+     "nome": "UNISERV TERCEIRIZACAO E SERVICOS LTDA",
+     "valor": 3880430.36,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 3880430.36
+     }
+    },
+    "60979457000707": {
+     "nome": "AACD ASSOC DE A CRIANCA DEFICIENTE OSASCO",
+     "valor": 3023651.93,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 3023651.93
+     }
+    },
+    "60166832000104": {
+     "nome": "APETECE SISTEMAS DE ALIMENTACAO S A",
+     "valor": 2386771.36,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 2386771.36
+     }
+    },
+    "02582267000160": {
+     "nome": "NAYR CONFECCOES LTDA",
+     "valor": 2273624.3,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 2273624.3
+     }
+    },
+    "20672533000127": {
+     "nome": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "valor": 2149128.67,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 2149128.67
+     }
+    },
+    "07900613001015": {
+     "nome": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+     "valor": 1962562.63,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 1962562.63
+     }
+    },
+    "51207041000194": {
+     "nome": "EQUIPAMED EQUIPAMENTOS MEDICOS LTDA",
+     "valor": 1891962,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 1891962
+     }
+    },
+    "10661851000139": {
+     "nome": "ORIZZON COMERCIAL EIRELI ME",
+     "valor": 1861255.64,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 1861255.64
+     }
+    },
+    "22718427000162": {
+     "nome": "KOA TEXTIL CONFECCOES LTDA",
+     "valor": 1858912,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 1858912
+     }
+    },
+    "19344215000158": {
+     "nome": "SUPREMA COMERCIAL E INDUSTRIAL EIRELI",
+     "valor": 1858912,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 1858912
+     }
+    },
+    "10728901000158": {
+     "nome": "USICITY PAVIMENTAÇÃO LTDA.",
+     "valor": 1670406.88,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 1670406.88
+     }
+    },
+    "15046859000109": {
+     "nome": "MAXLAV LAVANDERIA ESPECIALIZADA LTDA",
+     "valor": 1482091.28,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 1482091.28
+     }
+    },
+    "60924040000402": {
+     "nome": "TB SERVICOS TRANSPORTE LIMPEZA GERENCIAMENTO E RECURSOS HUMANOS S A",
+     "valor": 1466229.27,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 1466229.27
+     }
+    },
+    "03022122000177": {
+     "nome": "BK CONSULTORIA E SERVICOS LTDA",
+     "valor": 1304699.03,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 1304699.03
+     }
+    },
+    "05876269000150": {
+     "nome": "CONSER ALIMENTOS LTDA",
+     "valor": 1237869.24,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 140382.84,
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 1063096.8,
+      "0310 - SAÚDE - GERAL": 34389.6
+     }
+    },
+    "08243988000121": {
+     "nome": "REMOCENTER REMOCOES E SERVICOS MEDICOS LTDA",
+     "valor": 987499.99,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 987499.99
+     }
+    },
+    "07900613000981": {
+     "nome": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+     "valor": 978885.32,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 978885.32
+     }
+    },
+    "78589504000186": {
+     "nome": "INDREL IND DE REFRIGERACAO LONDRINENSE LTDA",
+     "valor": 969700,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 969700
+     }
+    },
+    "62162847000120": {
+     "nome": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+     "valor": 845035.08,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 845035.08
+     }
+    },
+    "61783387000194": {
+     "nome": "LABORATORIO LAMBERT DE PATOLOGIA CLINICA LTDA - ME",
+     "valor": 800334.88,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 800334.88
+     }
+    },
+    "53063798000187": {
+     "nome": "ETEMP ENGENHARIA INDUSTRIA E COMERCIO LTDA",
+     "valor": 696308.71,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 696308.71
+     }
+    },
+    "10213438000101": {
+     "nome": "CONSTRUTORA MAXFOX LTDA",
+     "valor": 601141.97,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 601141.97
+     }
+    },
+    "61610283000188": {
+     "nome": "VITAL HOSPITALAR COMERCIAL LTDA",
+     "valor": 597235.6,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 597235.6
+     }
+    },
+    "74400052000191": {
+     "nome": "COMERCIAL 3 ALBE LTDA",
+     "valor": 561453.2,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 561453.2
+     }
+    },
+    "60924040000151": {
+     "nome": "TB TRANSP LIMP GERENC E R H LTDA",
+     "valor": 530215.16,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 530215.16
+     }
+    },
+    "60619202000229": {
+     "nome": "MESSER GASES LTDA",
+     "valor": 460210.86,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 460210.86
+     }
+    },
+    "00530493000171": {
+     "nome": "FUNDO NACIONAL DE SAUDE",
+     "valor": 431965.17,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 431965.17
+     }
+    },
+    "56335359000174": {
+     "nome": "W R B CENTRO AUTOMOTIVO LTDA ME",
+     "valor": 431876.46,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 431876.46
+     }
+    },
+    "67729178000491": {
+     "nome": "COMERCIAL CIRURGICA RIOCLARENSE LTDA",
+     "valor": 431636.07,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 431636.07
+     }
+    },
+    "09172931000141": {
+     "nome": "PELISERV EQUIP E SERVICOS ODONTO MEDICOS LTDA ME",
+     "valor": 424452.2,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 424452.2
+     }
+    },
+    "03286444000123": {
+     "nome": "RECON TECNOLOGIA LTDA EPP",
+     "valor": 349939.45,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 349939.45
+     }
+    },
+    "58763350000190": {
+     "nome": "OXY SYSTEM EQUIPAMENTOS MEDICOS LTDA",
+     "valor": 321840,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 321840
+     }
+    },
+    "02811333000126": {
+     "nome": "E E C ENGENHARIA E CONSTRUCOES LTDA",
+     "valor": 318997.17,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 318997.17
+     }
+    },
+    "10917479000189": {
+     "nome": "LIGACENTER COMERCIO DE PRODUTOS PARA EDUCAÇÃO LTDA",
+     "valor": 310191.16,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 87796.81,
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 222394.35
+     }
+    },
+    "08933601000169": {
+     "nome": "ASSISTENCIA VICENTINA IMACULADA CONCEICAO",
+     "valor": 305335,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 205335,
+      "0500 - ASSISTÊNCIA SOCIAL - RECURSOS ESPECÍFICOS": 100000
+     }
+    },
+    "02423591000135": {
+     "nome": "GRUPO DE ORIENTACAO E ASSISTENCIA A SAUDE",
+     "valor": 232500,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 232500
+     }
+    },
+    "11211419000109": {
+     "nome": "FABIO G. DA SILVA COMERCIAL EPP",
+     "valor": 211941,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 48135.5,
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 163805.5
+     }
+    },
+    "35820448006924": {
+     "nome": "WHITE MARTINS GASES INDUSTRIAIS S A",
+     "valor": 210692.97,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 210692.97
+     }
+    },
+    "03638878000145": {
+     "nome": "CAUTRONICA LTDA EPP",
+     "valor": 199887.96,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 199887.96
+     }
+    },
+    "19492142000141": {
+     "nome": "LUX PAPER INDUSTRIAL EIRELI EPP",
+     "valor": 186668,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 186668
+     }
+    },
+    "65692543000162": {
+     "nome": "ASSOC LIB COM AMOR RESP A VIDA LAR",
+     "valor": 180000,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 180000
+     }
+    },
+    "01854654000145": {
+     "nome": "PONTUAL COMERCIAL EIRELI",
+     "valor": 179446.8,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 179446.8
+     }
+    },
+    "43640754000119": {
+     "nome": "FUNDACAO PARA O REMEDIO POPULAR FURP",
+     "valor": 174188.7,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 174188.7
+     }
+    },
+    "66806555000133": {
+     "nome": "FBS CONSTRUCAO CIVIL E PAVIMENTACAO LTDA",
+     "valor": 162237.13,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 162237.13
+     }
+    },
+    "10764533000101": {
+     "nome": "AZUL TRANSPORTES E TURISMO LTDA",
+     "valor": 158200,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 158200
+     }
+    },
+    "21813311000140": {
+     "nome": "NAT NUTRE ALIMENTOS S A",
+     "valor": 152832.47,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 152832.47
+     }
+    },
+    "43677822000114": {
+     "nome": "SOEBE CONSTRUCAO E PAVIMENTACAO LTDA",
+     "valor": 146013.42,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 146013.42
+     }
+    },
+    "09560267000108": {
+     "nome": "Betaniamed Comercial Eireli - EPP",
+     "valor": 142143.94,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 142143.94
+     }
+    },
+    "03643992000163": {
+     "nome": "B B ENGENHARIA E CONSTRUCAO LTDA",
+     "valor": 139302.01,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 139302.01
+     }
+    },
+    "61602199017350": {
+     "nome": "COMPANHIA ULTRAGAZ S A",
+     "valor": 136040,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 136040
+     }
+    },
+    "46044392000191": {
+     "nome": "CONSTRUMEDICI ENGENHARIA E COMERCIO LTDA",
+     "valor": 123146.59,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 123146.59
+     }
+    }
+   },
+   "pessoasFisicas": 145533.63,
+   "itensBairro": [
+    {
+     "data": "2018-02-07",
+     "valor": 3000000,
+     "fornecedor": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento referente a Contratação Emergencial para Administração do Hospital Municipal Central e UPA Vicente Missiano. (Adto da 6ª parcela - Janeiro/2018)",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2018-02-07",
+     "valor": 2000000,
+     "fornecedor": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento referente a Contratação Emergencial para Administração do Hospital Municipal Central e UPA Vicente Missiano. (Adto da 6ª parcela - Janeiro/2018)",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2018-03-28",
+     "valor": 16477.5,
+     "fornecedor": "ASSISTENCIA VICENTINA IMACULADA CONCEICAO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento Indenizatorio a Assistencia Vicentina Imaculada Conceição LAR BUSSOCABA - Referente ao Periodo de 01/12/2017 a 31/12/2017",
+     "bairros": [
+      "bussocaba"
+     ]
+    },
+    {
+     "data": "2018-03-21",
+     "valor": 23728.76,
+     "fornecedor": "VIEL CONSTRUCOES LTDA EPP",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "URBANISMO",
+     "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
+     "bairros": [
+      "vila-yara"
+     ]
+    },
+    {
+     "data": "2018-03-28",
+     "valor": 16477.5,
+     "fornecedor": "ASSISTENCIA VICENTINA IMACULADA CONCEICAO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "\"Pagamento Indenizatório ref a prestação de serviços à \"\"Assistência Vicentina Imaculada Conceição - Lar Bussocaba\"\" - Ref ao Período de 01/11 a 30/11/2017.\"",
+     "bairros": [
+      "bussocaba"
+     ]
+    },
+    {
+     "data": "2018-04-20",
+     "valor": 5261.12,
+     "fornecedor": "CONSÓRICO HTR",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "Serviço Técnico Especializado de Engenharia Consultiva para Realização do Gerenciamento de Obras, Regularização Fundiária e Trabalho Técnico Social - Ubarnização do JD Veloso (Contrato n° 81/2015) (Proc. 235/2018) (10ª Medição Avaliação Fin",
+     "bairros": [
+      "veloso"
+     ]
+    },
+    {
+     "data": "2018-05-16",
+     "valor": 3200,
+     "fornecedor": "FLEX ELEVADORES COM DE PECAS E MANUTENCAO LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Contratação de Empresa Especializada em Serviços de Manutenção de Elevadores de Passeio e Monta Carga, para Atendimento do Departamento de Urgência e Emergência e do Hospital e Maternidade Amador Aguiar.",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2018-05-10",
+     "valor": 32857,
+     "fornecedor": "HOSPFAR INDUSTRIA E COMERCIO DE PRODUTOS HOSPITALARES LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Aquisição de Medicamentos a Ser Utilizado no Hospital e Maternidade Amador Aguiar - HMAA",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2018-05-25",
+     "valor": 7511.06,
+     "fornecedor": "ESPACO DE SAUDE E FARMACIA DE MANIPULACAO FARMA DONNA EIRELLI ME",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Fornecimento de medicamentos manipulados para atendimento do Hospital Municipal e Maternidade Amador Aguiar",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2018-06-26",
+     "valor": 59700,
+     "fornecedor": "CAUTRONICA LTDA EPP",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento de Indenizatório ref. Locação de Grupo Gerador de 55KWA Instalado nas Unidades: Rochidale, André Sacoo, Vl. Menck e P.S D`Abril do período mar/2018.",
+     "bairros": [
+      "vila-menck"
+     ]
+    },
+    {
+     "data": "2018-06-04",
+     "valor": 16477.5,
+     "fornecedor": "ASSISTENCIA VICENTINA IMACULADA CONCEICAO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "\"Pagamento Indenizatorio a Assistencia Vicentina Imaculada Conceição \"\"Lar Bussocaba\"\" - Referente ao Periodo de 01/01 a 31/01/2018\"",
+     "bairros": [
+      "bussocaba"
+     ]
+    },
+    {
+     "data": "2018-06-04",
+     "valor": 550,
+     "fornecedor": "WCG MEDICAL COMERCIO IMPORTACAO E SERVICOS LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Contratação de Empresa para Manutenção de Equipamentos para Atendimento do Hospital Municipal e Maternidade Amador Aguiar",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2018-07-11",
+     "valor": 978885.32,
+     "fornecedor": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Organização Social Civil para Administração da UPA JOSÉ SANTOS SASSO-UPA JARDIM CONCEIÇÃO. (Contrato n° 035/2018) (Regularização do Empenho n° 14701 de 05/07/2018)",
+     "bairros": [
+      "jardim-conceicao"
+     ]
+    },
+    {
+     "data": "2018-07-11",
+     "valor": 0,
+     "fornecedor": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Organização Social Civil para Adnimistração da UPA JOSÉ CAMPOS BARRETO - VILA MENCK. (Contrato nº 034/2018) (Regularização do Empenho nº 7426 de 04/04/2018)",
+     "bairros": [
+      "vila-menck"
+     ]
+    },
+    {
+     "data": "2018-07-11",
+     "valor": 0,
+     "fornecedor": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Organização Social Civil para Adnimistração da UPA JOSÉ SANTOS SASSO - JARDIM CONCEIÇÃO. (Contrato nº 035/2018) (Regularização do Empenho nº 7426 de 04/04/2018) (Junho/2018)",
+     "bairros": [
+      "jardim-conceicao"
+     ]
+    },
+    {
+     "data": "2018-07-11",
+     "valor": 978893.92,
+     "fornecedor": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Organização Social Civil para Administração da UPA JOSÉ CAMPOS BARRETO - VILA MENCK. (Contrato n° 034/2018) (Regularização do Empenho n° 14699 de 05/07/2018)",
+     "bairros": [
+      "vila-menck"
+     ]
+    },
+    {
+     "data": "2018-07-26",
+     "valor": 983668.71,
+     "fornecedor": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Organização Social Civil para Administração da UPA JOSÉ CAMPOS BARRETO - VILA MENCK. (Contrato n° 034/2018) (Regularização do Empenho n° 14699 de 05/07/2018)",
+     "bairros": [
+      "vila-menck"
+     ]
+    },
+    {
+     "data": "2018-08-31",
+     "valor": 152527.78,
+     "fornecedor": "CONSTRUTORA MAXFOX LTDA",
+     "aplicacao": "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS",
+     "funcao": "EDUCAÇÃO",
+     "texto": "Construção da Creche Jardim Roberto II - Rua Claudio Aparecido de Iliveira, 85 - Jd. Roberto (TC 5872/2013 Pro Infância Tipo 2) Contrato n° 008/2018 - REPASSE.",
+     "bairros": [
+      "jardim-roberto"
+     ]
+    },
+    {
+     "data": "2018-09-14",
+     "valor": 490,
+     "fornecedor": "Atomed Produtos Medicos e de Auxilio Humano LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Conserto do Equipamento de Emissões Otoacústicas, para atendimento do Hospital e Maternidade Amador Aguiar.",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2018-10-26",
+     "valor": 11300,
+     "fornecedor": "FLEX ELEVADORES COM DE PECAS E MANUTENCAO LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Contratação de Empresa Especializada em Serviços de Manutenção de Elevadores de Passeio e Monta Carga, para Atendimento do Departamento de Urgência e Emergência e do Hospital e Maternidade Amador Aguiar.",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2018-11-13",
+     "valor": 15210,
+     "fornecedor": "ASSISTENCIA VICENTINA IMACULADA CONCEICAO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento Indenizatório à Favor da Entidade Assistêcia Vicentina Imaculada Conceição - Lar Bussocaba - Referente ao Período de junho/2018.",
+     "bairros": [
+      "bussocaba"
+     ]
+    },
+    {
+     "data": "2018-11-08",
+     "valor": 1744.79,
+     "fornecedor": "WCG MEDICAL COMERCIO IMPORTACAO E SERVICOS LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Peças para conserto de equipamentos hospitalares, para atendimento do Hospital Municipal e Maternidade Amador Aguiar - HMMAA.",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2018-11-23",
+     "valor": 159086.53,
+     "fornecedor": "CONSTRUTORA MAXFOX LTDA",
+     "aplicacao": "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS",
+     "funcao": "EDUCAÇÃO",
+     "texto": "Construção da Creche Jardim Roberto II - Rua Claudio Aparecido de Iliveira, 85 - Jd. Roberto (TC 5872/2013 Pro Infância Tipo 2) Contrato n° 008/2018 - REPASSE.",
+     "bairros": [
+      "jardim-roberto"
+     ]
+    },
+    {
+     "data": "2018-12-06",
+     "valor": 0,
+     "fornecedor": "ASSISTENCIA VICENTINA IMACULADA CONCEICAO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento Indenizatório Referente ao Período de 01 à 30/09/2018 a Empresa Assistência Vicentina Imaculada Conceição - Lar Bussocaba.",
+     "bairros": [
+      "bussocaba"
+     ]
+    },
+    {
+     "data": "2018-12-05",
+     "valor": 2000,
+     "fornecedor": "FLEX ELEVADORES COM DE PECAS E MANUTENCAO LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Contratação de Empresa Especializada em Serviços de Manutenção de Elevadores de Passeio e Monta Carga, para Atendimento do Departamento de Urgência e Emergência e do Hospital e Maternidade Amador Aguiar.",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2018-12-11",
+     "valor": 13942.5,
+     "fornecedor": "ASSISTENCIA VICENTINA IMACULADA CONCEICAO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento Indenizatório Referente ao Período de 01 à 30/09/2018 a Empresa Assistência Vicentina Imaculada Conceição - Lar Bussocaba.",
+     "bairros": [
+      "bussocaba"
+     ]
+    },
+    {
+     "data": "2018-12-14",
+     "valor": 3173.6,
+     "fornecedor": "AMK BRASIL PROMOCOES E EVENTOS E COM DE MATERIAIS LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Aquisição de Torneiras Clínicas, para atendimento do Hospital e Maternidade Amador Aguiar - HMMAA.",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2018-12-21",
+     "valor": 1533.33,
+     "fornecedor": "FLEX ELEVADORES COM DE PECAS E MANUTENCAO LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Contratação de Empresa Especializada em Serviços de Manutenção de Elevadores de Passeio e Monta Carga, para Atendimento do Departamento de Urgência e Emergência e do Hospital e Maternidade Amador Aguiar.",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2018-12-21",
+     "valor": 239372.03,
+     "fornecedor": "APETECE SISTEMAS DE ALIMENTACAO S A",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento indenizatório, referente ao fornecimento de refeição ao hospital e maternidade Amador Aguiar no período de 15 a 31/05/2018.",
+     "bairros": [
+      "alianca"
+     ]
+    }
+   ],
+   "outrosFornecedores": 2719620.13,
+   "quantidadeFornecedores": 148
+  }
+ }
+}
