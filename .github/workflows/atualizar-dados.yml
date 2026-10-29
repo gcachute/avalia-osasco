@@ -47,6 +47,10 @@ jobs:
       - name: Saúde e educação (SIOPS e SIOPE)
         run: npm run coletar:siops
         continue-on-error: true
+      # Baixa de novo só o ano atual e o anterior das despesas do TCE-SP (cerca de 2 GB cada); os anos fechados ficam no repositório.
+      - name: Dinheiro federal e estadual (SICONFI, CGU, Transferegov, TCE-SP)
+        run: npm run coletar:dinheiro
+        continue-on-error: true
 
       - name: Recalcular notas
         run: npm run dados

@@ -1,0 +1,1376 @@
+{
+ "coletadoEm": "2026-10-29",
+ "fonte": "TCE-SP, despesas dos municípios (Audesp)",
+ "url": "https://transparencia.tce.sp.gov.br/conjunto-de-dados",
+ "ano": 2021,
+ "ultimoMes": 12,
+ "fontes": {
+  "TESOURO": 2068938114.38,
+  "TRANSFERÊNCIAS E CONVÊNIOS ESTADUAIS-VINCULADOS": 388663067.28,
+  "TRANSFERÊNCIAS E CONVÊNIOS FEDERAIS-VINCULADOS": 179554273.98,
+  "RECURSOS PRÓPRIOS DE FUNDOS ESPECIAIS DE DESPESA-VINCULADOS": 15365977.71,
+  "RECURSOS PRÓPRIOS DA ADMINISTRAÇÃO INDIRETA": 14723479.92,
+  "OPERAÇÕES DE CRÉDITO": 143045741.24
+ },
+ "grupos": {
+  "estadual": {
+   "total": 388663067.28,
+   "funcoes": {
+    "EDUCAÇÃO": 378252509.24,
+    "HABITAÇÃO": 442648.74,
+    "SAÚDE": 8919089.23,
+    "ASSISTÊNCIA SOCIAL": 1048820.07
+   },
+   "aplicacoes": {
+    "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 312811049.39,
+    "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 51128431.08,
+    "0100 - GERAL TOTAL": 442648.74,
+    "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 5090516.14,
+    "0510 - ASSISTÊNCIA SOCIAL - GERAL": 1048820.07,
+    "0264 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO - ANO ANTERIOR": 14313028.77,
+    "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 3828573.09
+   },
+   "fornecedores": {
+    "2035": {
+     "nome": "FOLHA DE PAG AUXILIO DOENCA",
+     "valor": 679192.12,
+     "aplicacoes": {
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 146946.7,
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 532245.42
+     }
+    },
+    "5726": {
+     "nome": "FOLHA DE PAGAMENTO SALARIO FAMILIA IPMO",
+     "valor": 62089.31,
+     "aplicacoes": {
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 58397.87,
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 3691.44
+     }
+    },
+    "7383": {
+     "nome": "FOLHA DE PAGAMENTO SALARIO MATERNIDADE IPMO",
+     "valor": 419865.47,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 406951.44,
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 12914.03
+     }
+    },
+    "46523171000104": {
+     "nome": "PREFEITURA DO MUNICIPIO DE OSASCO",
+     "valor": 309844849.65,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 264945020.36,
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 30586800.52,
+      "0264 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO - ANO ANTERIOR": 14313028.77
+     }
+    },
+    "46621538000114": {
+     "nome": "IPMO INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
+     "valor": 52547919.41,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 45655943.81,
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 6891975.6
+     }
+    },
+    "06344497000141": {
+     "nome": "VEROCHEQUE REFEICOES LTDA",
+     "valor": 13307571.8,
+     "aplicacoes": {
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 13307571.8
+     }
+    },
+    "61610283000188": {
+     "nome": "VITAL HOSPITALAR COMERCIAL LTDA",
+     "valor": 3408516.4,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 3408516.4
+     }
+    },
+    "26635388000190": {
+     "nome": "CENTRO DE SERVICOS DE SAUDE MEDCAL",
+     "valor": 2197623,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 2197623
+     }
+    },
+    "29979036038547": {
+     "nome": "INSS INSTITUTO NACIONAL DO SEGURO SOCIAL",
+     "valor": 737736.25,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 618603.91,
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 119132.34
+     }
+    },
+    "46384111000140": {
+     "nome": "SECRETARIA DE ESTADO DA EDUCACAO",
+     "valor": 646741.02,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 646741.02
+     }
+    },
+    "13032053000136": {
+     "nome": "T & T Produtos Médicos Hospitalares LTDA",
+     "valor": 514500,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 514500
+     }
+    },
+    "46374500015892": {
+     "nome": "SECRETARIA DE ESTADO DA SAUDE",
+     "valor": 479938.17,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 479938.17
+     }
+    },
+    "02629588000172": {
+     "nome": "FIRST MEDICAL SERVICE LTDA",
+     "valor": 467955,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 467955
+     }
+    },
+    "15021981000120": {
+     "nome": "UNOMED COMERCIO DE MATERIAIS HOSPITALARES LTDA ME",
+     "valor": 423221,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 423221
+     }
+    },
+    "08070362000160": {
+     "nome": "NS ALIMENTOS LTDA",
+     "valor": 341565.85,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 341565.85
+     }
+    },
+    "15046859000109": {
+     "nome": "MAXLAV LAVANDERIA ESPECIALIZADA LTDA",
+     "valor": 218677.7,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 218677.7
+     }
+    },
+    "10718875000187": {
+     "nome": "STAREX EMERGENCIAS MEDICAS",
+     "valor": 210000,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 210000
+     }
+    },
+    "03434334000161": {
+     "nome": "MEDIMPORT COMERCIO DE PRODUTOS HOSPITALARES EIRELI EPP",
+     "valor": 186900,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 186900
+     }
+    },
+    "01664908000162": {
+     "nome": "CCM COMERCIAL CREME MARFIM LTDA",
+     "valor": 182038.92,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 182038.92
+     }
+    },
+    "43640754000119": {
+     "nome": "FUNDACAO PARA O REMEDIO POPULAR FURP",
+     "valor": 162175,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 162175
+     }
+    },
+    "03641257000110": {
+     "nome": "UNISERV TERCEIRIZACAO E SERVICOS LTDA",
+     "valor": 134958.19,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 134958.19
+     }
+    },
+    "07046094000189": {
+     "nome": "ELYON SOLUCOES GRAFICAS LTDA",
+     "valor": 116610,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 116610
+     }
+    },
+    "14112327000160": {
+     "nome": "BIOFAC INDUSTRIA COMERCIO E REPRESENTACAO EIRELI",
+     "valor": 105600,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 105600
+     }
+    },
+    "69001378000106": {
+     "nome": "LASER TECH COMERCIAL EIRELI",
+     "valor": 95700,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 95700
+     }
+    },
+    "05489375000180": {
+     "nome": "MAX COMERCIO REPRESENTACOES E SERVICOS EIRELI LTDA ME",
+     "valor": 94052.22,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 94052.22
+     }
+    },
+    "21813311000140": {
+     "nome": "NAT NUTRE ALIMENTOS S A",
+     "valor": 60634,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 60634
+     }
+    },
+    "05782733000149": {
+     "nome": "CIAMED DISTRIBUIDORA DE MEDICAMENTOS LTDA",
+     "valor": 56548,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 56548
+     }
+    },
+    "32593430000150": {
+     "nome": "M CARREGA COMERCIO DE PRODUTOS HOSPITALARES LTDA",
+     "valor": 55778.9,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 55778.9
+     }
+    },
+    "21941290000148": {
+     "nome": "TOWER ENGENHARIA E CONSTRUCAO LTDA",
+     "valor": 47933.69,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 47933.69
+     }
+    },
+    "20754940000183": {
+     "nome": "FIVE LOCACAO DE MAQUINAS E EQUIPAMENTOS P CONSTRUCAO CIVIL E EVENTOS",
+     "valor": 36210,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 36210
+     }
+    },
+    "13846262000113": {
+     "nome": "FUNDO ESTADUAL DE ASSISTÊNCIA SOCIAL-FEAS",
+     "valor": 33629.31,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 33629.31
+     }
+    },
+    "34122728000108": {
+     "nome": "LD BRASIL HOLDING LTDA",
+     "valor": 32438,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 32438
+     }
+    },
+    "20230316000187": {
+     "nome": "M P A PRODUCAO E EVENTOS EIRELI ME",
+     "valor": 29751,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 29751
+     }
+    },
+    "22929732000101": {
+     "nome": "SEFER INDUSTRIA E COMERCIO LTDA",
+     "valor": 24000,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 24000
+     }
+    },
+    "03649725000101": {
+     "nome": "SUPERMERCADO MORADA DO SOL LTDA",
+     "valor": 22344.76,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 22344.76
+     }
+    },
+    "08610916000175": {
+     "nome": "TR2 COMERCIO E SERVICOS LTDA EPP",
+     "valor": 21717.83,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 21717.83
+     }
+    },
+    "05876269000150": {
+     "nome": "CONSER ALIMENTOS LTDA",
+     "valor": 20894.05,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 20894.05
+     }
+    },
+    "05836107000198": {
+     "nome": "RVS COMERCIAL EIRELI",
+     "valor": 19210.5,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 19210.5
+     }
+    },
+    "35820448008544": {
+     "nome": "WHITE MARTINS GASES INDUSTRIAIS LTDA",
+     "valor": 18901.2,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 18901.2
+     }
+    },
+    "14619703000107": {
+     "nome": "BLS COMERCIO DE ALIMENTOS LTDA",
+     "valor": 18678.81,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 18678.81
+     }
+    },
+    "09635131000110": {
+     "nome": "SUZUPAPER COMERCIO DE PAPELARIA LTDA",
+     "valor": 15315.4,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 15315.4
+     }
+    },
+    "30223033000161": {
+     "nome": "MIRAZAB COMERCIO E SERVICOS TECNICOS EIRELI",
+     "valor": 12000,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 12000
+     }
+    },
+    "97533241000138": {
+     "nome": "M H M DO COUTO COMERCIAL",
+     "valor": 11000,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 11000
+     }
+    },
+    "21597932000133": {
+     "nome": "QUALITY FOOD COMERCIO E SERVICOS LTDA EPP",
+     "valor": 10705.41,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 10705.41
+     }
+    },
+    "53901591000134": {
+     "nome": "PONTO MEDICO INSTRUMENTOS PARA MEDICINA LTDA",
+     "valor": 10210,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 10210
+     }
+    },
+    "32399280000149": {
+     "nome": "MARCELO PEREIRA BEZERRA RESTAURANTE",
+     "valor": 9800,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 9800
+     }
+    },
+    "03638878000145": {
+     "nome": "CAUTRONICA LTDA EPP",
+     "valor": 9000,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 9000
+     }
+    },
+    "21971041000103": {
+     "nome": "K C R S COMERCIO DE EQUIPAMENTOS EIRELI",
+     "valor": 8200,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 8200
+     }
+    },
+    "26742152000153": {
+     "nome": "GABEE FOODS COMERCIO DE ALIMENTOS EIRELI",
+     "valor": 7902.75,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 7902.75
+     }
+    },
+    "01838723000127": {
+     "nome": "BRF S A",
+     "valor": 7231.26,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 7231.26
+     }
+    },
+    "35764167000103": {
+     "nome": "ACARVE COMERCIO E LICITACOES EIRELI",
+     "valor": 6764,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 6764
+     }
+    },
+    "00360305000104": {
+     "nome": "CAIXA ECONOMICA FEDERAL MATRIZ FGTS",
+     "valor": 6544.21,
+     "aplicacoes": {
+      "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 1851.99,
+      "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 4692.22
+     }
+    },
+    "34680592000151": {
+     "nome": "BRASIL DEVICES EQUIPAMENTOS HOSPITALARES EIRELI",
+     "valor": 5149.98,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 5149.98
+     }
+    },
+    "20371330000109": {
+     "nome": "MUNDI EQUIPAMENTOS MEDICOS ODONTOLOGICOS E VETERINARIOS EIRELI",
+     "valor": 3600,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 3600
+     }
+    },
+    "30619938000155": {
+     "nome": "MEDCOLI DISTRIBUIDOR DE PRODUTOS MEDICOS COZINHA E LIMPEZA LTDA",
+     "valor": 3300,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 3300
+     }
+    },
+    "11089732000116": {
+     "nome": "STOKMED PRODUTOS HOSPITALARES LTDA",
+     "valor": 3100,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 3100
+     }
+    },
+    "24103721000195": {
+     "nome": "ROYAL ATACADISTA E COMERCIO EIRELI",
+     "valor": 2600,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 2600
+     }
+    },
+    "20451726000239": {
+     "nome": "SALUTEM COMERCIO DE MOVEIS HOSPITALARES EIRELI",
+     "valor": 929,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 929
+     }
+    },
+    "24768176000156": {
+     "nome": "STRAFER PRODUTOS MEDICO HOSPITALARES EIRELI",
+     "valor": 682,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 682
+     }
+    },
+    "23236167000151": {
+     "nome": "NORTH MED DISTRIBUIDORA DE PRODUTOS MEDICOS E HOSPITALARES LTDA",
+     "valor": 670,
+     "aplicacoes": {
+      "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 670
+     }
+    }
+   },
+   "pessoasFisicas": 442648.74,
+   "itensBairro": [],
+   "outrosFornecedores": 1048,
+   "quantidadeFornecedores": 62
+  },
+  "federal": {
+   "total": 179554273.98,
+   "funcoes": {
+    "EDUCAÇÃO": 55078008,
+    "SAÚDE": 106414117.65,
+    "ASSISTÊNCIA SOCIAL": 2254876.19,
+    "URBANISMO": 11654513.38,
+    "TRABALHO": 708997,
+    "ADMINISTRAÇÃO": 3317779.51,
+    "ENCARGOS ESPECIAIS": 9141.42,
+    "DESPORTO E LAZER": 116840.83
+   },
+   "aplicacoes": {
+    "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 51098973.4,
+    "0310 - SAÚDE - GERAL": 89376113.89,
+    "0510 - ASSISTÊNCIA SOCIAL - GERAL": 1563801.94,
+    "0100 - GERAL TOTAL": 16252930.39,
+    "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 2110763.06,
+    "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 19151691.3
+   },
+   "fornecedores": {
+    "47708771000100": {
+     "nome": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "valor": 42515228.25,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 33735254.12,
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 7763575.45,
+      "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 1016398.68
+     }
+    },
+    "04740876000125": {
+     "nome": "ALELO S A",
+     "valor": 35926316.7,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 35926316.7
+     }
+    },
+    "20672533000127": {
+     "nome": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "valor": 11654513.38,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 11654513.38
+     }
+    },
+    "20226804000110": {
+     "nome": "DERMACOR SERVICOS TECNICOS EM SAUDE LTDA",
+     "valor": 9265797.88,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 9265797.88
+     }
+    },
+    "53524534000183": {
+     "nome": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
+     "valor": 8240221.33,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 8240221.33
+     }
+    },
+    "24516372000133": {
+     "nome": "ONE LAUDOS DIAGNOSICOS MEDICOS LTDA",
+     "valor": 7047603.94,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 7047603.94
+     }
+    },
+    "08070362000160": {
+     "nome": "NS ALIMENTOS LTDA",
+     "valor": 5541095.62,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 5541095.62
+     }
+    },
+    "11620725000107": {
+     "nome": "MEDICAL CORP ASSESSORIA A SAUDE E BEM ESTAR LTDA",
+     "valor": 5443014.41,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 5443014.41
+     }
+    },
+    "03817246000149": {
+     "nome": "COMERCIAL DE ALIMENTOS NUTRIVIP DO BRASIL LTDA",
+     "valor": 5018203.41,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 5018203.41
+     }
+    },
+    "46523171000104": {
+     "nome": "PREFEITURA DO MUNICIPIO DE OSASCO",
+     "valor": 4705999.5,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 325479.41,
+      "0310 - SAÚDE - GERAL": 4380520.09
+     }
+    },
+    "04539279000137": {
+     "nome": "CIENTIFICALAB PRODUTOS LABORATORIAIS E SISTEMAS LTDA",
+     "valor": 3626893.36,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 3626893.36
+     }
+    },
+    "18160462000131": {
+     "nome": "CLINICA PIRES VANCI SERVICOS MEDICOS LTDA",
+     "valor": 3503921.22,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 3503921.22
+     }
+    },
+    "60979457000707": {
+     "nome": "AACD ASSOC DE A CRIANCA DEFICIENTE OSASCO",
+     "valor": 3367592.74,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 3367592.74
+     }
+    },
+    "28633887000174": {
+     "nome": "ELGE SERVICOS MEDICOS EIRELI",
+     "valor": 3152412,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 3152412
+     }
+    },
+    "01227588000183": {
+     "nome": "CEF PROGRAMAS DE DESENVOLVIMENTO URBANO",
+     "valor": 2992300.1,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 2992300.1
+     }
+    },
+    "07118264000193": {
+     "nome": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+     "valor": 2876067.12,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 1981702.74,
+      "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 894364.38
+     }
+    },
+    "20697582000114": {
+     "nome": "J DIAS COMERCIO E CONFECCOES LTDA",
+     "valor": 2705764.05,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 2705764.05
+     }
+    },
+    "10718875000187": {
+     "nome": "STAREX EMERGENCIAS MEDICAS",
+     "valor": 2655048.41,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 2007976.46,
+      "0310 - SAÚDE - GERAL": 647071.95
+     }
+    },
+    "01916756000148": {
+     "nome": "COMERCIAL HORTIFRUTIGRANJEIRO ITAUBA LTDA",
+     "valor": 2441285.7,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 2441285.7
+     }
+    },
+    "03641257000110": {
+     "nome": "UNISERV TERCEIRIZACAO E SERVICOS LTDA",
+     "valor": 1725575.05,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 341756.39,
+      "0310 - SAÚDE - GERAL": 1383818.66
+     }
+    },
+    "51207041000194": {
+     "nome": "EQUIPAMED EQUIPAMENTOS MEDICOS LTDA",
+     "valor": 1448299.5,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 1448299.5
+     }
+    },
+    "31263950000132": {
+     "nome": "ATENA COMERCIO E IMPORTACAO LTDA",
+     "valor": 1082018.25,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 1082018.25
+     }
+    },
+    "24138777000185": {
+     "nome": "GNOMA INDUSTRIA TEXTIL EIRELI",
+     "valor": 1082018.25,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 1082018.25
+     }
+    },
+    "17112698000130": {
+     "nome": "RS COMERCIO E PRESTACAO DE SERVICOS DE APOIO EIRELI",
+     "valor": 1081971.7,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 1081971.7
+     }
+    },
+    "18979485000172": {
+     "nome": "RV MEDICAL SOLUCOES HOSPITALARES LTDA ME",
+     "valor": 1050400,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 1050400
+     }
+    },
+    "03022122000177": {
+     "nome": "BK CONSULTORIA E SERVICOS LTDA",
+     "valor": 700000,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 700000
+     }
+    },
+    "43640754000119": {
+     "nome": "FUNDACAO PARA O REMEDIO POPULAR FURP",
+     "valor": 685713.25,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 685713.25
+     }
+    },
+    "46621538000114": {
+     "nome": "IPMO INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
+     "valor": 630101.86,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 630101.86
+     }
+    },
+    "13032053000136": {
+     "nome": "T & T Produtos Médicos Hospitalares LTDA",
+     "valor": 584500,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 584500
+     }
+    },
+    "05614358000128": {
+     "nome": "INSTITUTO MONSENHOR JOSE BENEDITO ANTUNES",
+     "valor": 489513.6,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 489513.6
+     }
+    },
+    "31250365000106": {
+     "nome": "ALIMEX COMERCIO DE PRODUTOS ALIMENTICIOS EIRELI",
+     "valor": 467100,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 467100
+     }
+    },
+    "13034156000135": {
+     "nome": "TETO CONSTRUTORA S A",
+     "valor": 445658.25,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 445658.25
+     }
+    },
+    "31541096000129": {
+     "nome": "GADIEL SOLUCOES E SERVICOS EIRELI",
+     "valor": 395854.16,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 395854.16
+     }
+    },
+    "04470103000176": {
+     "nome": "BIOTECNO INDUSTRIA E COMERCIO LTDA",
+     "valor": 370000,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 370000
+     }
+    },
+    "58763350000190": {
+     "nome": "OXY SYSTEM EQUIPAMENTOS MEDICOS LTDA",
+     "valor": 349680,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 349680
+     }
+    },
+    "03743156000150": {
+     "nome": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "valor": 349117,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 349117
+     }
+    },
+    "74400052000191": {
+     "nome": "COMERCIAL 3 ALBE LTDA",
+     "valor": 288900,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 288900
+     }
+    },
+    "67192609000180": {
+     "nome": "M A S CONSTRUCOES E EMPREENDIMENTOS LTDA",
+     "valor": 206094.71,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 206094.71
+     }
+    },
+    "60619202000148": {
+     "nome": "MESSER GASES LTDA",
+     "valor": 205353.83,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 205353.83
+     }
+    },
+    "51441939000122": {
+     "nome": "AMAMOS ASSOC MUNICIPES P AMPARO AO MENOR OSASQUENSE",
+     "valor": 200000,
+     "aplicacoes": {
+      "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 200000
+     }
+    },
+    "61602199017350": {
+     "nome": "COMPANHIA ULTRAGAZ S A",
+     "valor": 199313,
+     "aplicacoes": {
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 191356,
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 7957
+     }
+    },
+    "16996080000117": {
+     "nome": "DELTAMED H COMERCIO E SERVICOS LTDA EPP",
+     "valor": 185200,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 185200
+     }
+    },
+    "31733363000836": {
+     "nome": "CORPUS SANEAMENTO E OBRAS LTDA",
+     "valor": 173743.34,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 173743.34
+     }
+    },
+    "02423591000135": {
+     "nome": "GRUPO DE ORIENTACAO E ASSISTENCIA A SAUDE",
+     "valor": 157500,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 157500
+     }
+    },
+    "29979036038547": {
+     "nome": "INSS INSTITUTO NACIONAL DO SEGURO SOCIAL",
+     "valor": 155295.97,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 155295.97
+     }
+    },
+    "39523285000180": {
+     "nome": "INSTITUTO DE ACOMPANHAMENTO TERAPEUTICO E PSICOLOGIA LTDA",
+     "valor": 135000,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 135000
+     }
+    },
+    "65692543000162": {
+     "nome": "ASSOC LIB COM AMOR RESP A VIDA LAR",
+     "valor": 120000,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 120000
+     }
+    },
+    "56838949000110": {
+     "nome": "CONSTRUTORA PROGREDIOR LTDA",
+     "valor": 116840.83,
+     "aplicacoes": {
+      "0100 - GERAL TOTAL": 116840.83
+     }
+    },
+    "61610283000188": {
+     "nome": "VITAL HOSPITALAR COMERCIAL LTDA",
+     "valor": 112944,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 112944
+     }
+    },
+    "14619703000107": {
+     "nome": "BLS COMERCIO DE ALIMENTOS LTDA",
+     "valor": 104044.43,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 104044.43
+     }
+    },
+    "03576719000163": {
+     "nome": "COMERCIAL LUX CLEAN LTDA",
+     "valor": 101190,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 101190
+     }
+    },
+    "53440939000648": {
+     "nome": "PHARMACIA ARTESANAL LTDA",
+     "valor": 93903.71,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 93903.71
+     }
+    },
+    "22913087000120": {
+     "nome": "A MARCOS L DO PRADO",
+     "valor": 90000,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 90000
+     }
+    },
+    "15046859000109": {
+     "nome": "MAXLAV LAVANDERIA ESPECIALIZADA LTDA",
+     "valor": 82832.57,
+     "aplicacoes": {
+      "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 82832.57
+     }
+    },
+    "03668066000142": {
+     "nome": "RDM MATERIAIS DE CONSTRUCAO E MOBILIARIO LTDA",
+     "valor": 79609.62,
+     "aplicacoes": {
+      "0510 - ASSISTÊNCIA SOCIAL - GERAL": 75152.7,
+      "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 4456.92
+     }
+    },
+    "05909646000100": {
+     "nome": "SOLUGRAF ARTES GRAFICAS EDITORA LTDA",
+     "valor": 77936.49,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 77936.49
+     }
+    },
+    "20216703000169": {
+     "nome": "EMPREISERVICE SERVICOS LTDA ME",
+     "valor": 73420,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 73420
+     }
+    },
+    "30084600000146": {
+     "nome": "DZ7 COMERCIAL EIRELI",
+     "valor": 70893,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 70893
+     }
+    },
+    "61074175000138": {
+     "nome": "MAPFRE VERA CRUZ SEGURADORA S A",
+     "valor": 68567.78,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 68567.78
+     }
+    },
+    "15801092000186": {
+     "nome": "BRASMED COMERCIO E SERVICOS EIRELI",
+     "valor": 58500,
+     "aplicacoes": {
+      "0310 - SAÚDE - GERAL": 58500
+     }
+    }
+   },
+   "pessoasFisicas": 108799.44,
+   "itensBairro": [
+    {
+     "data": "2021-01-25",
+     "valor": 2083333.33,
+     "fornecedor": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO DE ORGANIZACAO SOCIAL PARA O GERENCIAMENTO E EXECUCAO DOS SERVICOS DE SAUDE DO HOSPITAL MUNICIPAL ANTONIO GIGLIO CONTRATO DE GESTAO N 006 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-02-18",
+     "valor": 2083333.33,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-03-31",
+     "valor": 956808.3,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "URBANISMO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2021-03-12",
+     "valor": 2083333.33,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-04-09",
+     "valor": 2083333.33,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-04-13",
+     "valor": 959689.66,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-04-13",
+     "valor": 516398.68,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-04-28",
+     "valor": 703741.68,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "URBANISMO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2021-04-13",
+     "valor": 479998,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-04-28",
+     "valor": 5344500,
+     "fornecedor": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PRORROGACAO EXCEPCIONAL DO CONTRATO EMERGENCIAL N 099 2019 TERMO N 197 2020 REFERENTE A ADMINISTRACAO DAS UNIDADES DE PRONTO ATENDIMENTO UPA CENTRO CONCEICAO E VILA MENK PERIODO DE 45 DIAS A PARTIR DE 06 04 2021",
+     "bairros": [
+      "vila-menck"
+     ]
+    },
+    {
+     "data": "2021-05-13",
+     "valor": 2083333.33,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-05-24",
+     "valor": 812388,
+     "fornecedor": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATO EMERGENCIAL REFERENTE A ADMINISTRACAO DAS UNIDADES DE PRONTO ATENDIMENTO UPA CENTRO CONCEICAO E VILA MENCK CT 99 2019 TERMO 197 2020 REPASSE INTERVENCAO UPA S",
+     "bairros": [
+      "vila-menck"
+     ]
+    },
+    {
+     "data": "2021-05-10",
+     "valor": 1368476.88,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "URBANISMO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2021-06-02",
+     "valor": 23020,
+     "fornecedor": "EMPREISERVICE SERVICOS LTDA ME",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO DOS ELEVADORES MONTA CARGA DO HOSPITAL MUNICIPAL E MATERNIDADE AMADOR AGUIAR E P S OSMAR MESQUITA PERIODO 08 04 A 15 04 21 I O M O N 2 031 DE 23 04 2021 E N 2 041 DE 12 05 202",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2021-06-07",
+     "valor": 2083333.33,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-06-25",
+     "valor": 1342151.49,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "URBANISMO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2021-07-23",
+     "valor": 1673025.88,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "URBANISMO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2021-07-07",
+     "valor": 1056000,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-07-05",
+     "valor": 2083333.35,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-07-07",
+     "valor": 1178227.87,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-08-06",
+     "valor": 2309688.03,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-08-06",
+     "valor": 1017659.92,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-08-27",
+     "valor": 1336524.42,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "URBANISMO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2021-08-18",
+     "valor": 82832.57,
+     "fornecedor": "MAXLAV LAVANDERIA ESPECIALIZADA LTDA",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO COVID 19 PELA PRESTACAO DE SERVICOS DE LAVANDERIA NO CENTRO DE ATENDIMENTO AO COVID19 P S JARDIM D ABRIL E POLICLINICA ZONA NORTE PERIODO JUNHO 2021 I O M O N 2 080 DE 26 07 2021",
+     "bairros": [
+      "jardim-d-abril"
+     ]
+    },
+    {
+     "data": "2021-09-09",
+     "valor": 2309688.03,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-09-09",
+     "valor": 518340.08,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-10-08",
+     "valor": 2309688.03,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-10-08",
+     "valor": 1017659.92,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-10-07",
+     "valor": 1297587.46,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "URBANISMO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2021-10-14",
+     "valor": 116840.83,
+     "fornecedor": "CONSTRUTORA PROGREDIOR LTDA",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "DESPORTO E LAZER",
+     "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA IMPLANTACAO E MODERNIZACAO DA INFRAESTRUTURA ESPORTIVA E REFORMA DO CAMPO DE FUTEBOL E GINASIO VILA AYROSA",
+     "bairros": [
+      "ayrosa"
+     ]
+    },
+    {
+     "data": "2021-11-05",
+     "valor": 500000,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-11-05",
+     "valor": 8400,
+     "fornecedor": "EMPREISERVICE SERVICOS LTDA ME",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE LIMPEZA E HIGIENIZACAO NO CENTRO DE DISTRIBUICAO E LOGISTICA DE IMUNIZACAO DO HOSPITAL MUNICIPAL E MATERNIDADE AMADOR AGUIAR PERIODO 15 A 21 06 2021 I O M O N 2 118 DE 06 10 2021",
+     "bairros": [
+      "alianca"
+     ]
+    },
+    {
+     "data": "2021-11-05",
+     "valor": 518340.08,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-11-05",
+     "valor": 2309688.03,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-11-05",
+     "valor": 1451306.01,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "URBANISMO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2021-12-02",
+     "valor": 1017659.92,
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-12-16",
+     "valor": 1171066.43,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "URBANISMO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2021-12-28",
+     "valor": 93064.39,
+     "fornecedor": "M A S CONSTRUCOES E EMPREENDIMENTOS LTDA",
+     "aplicacao": "0510 - ASSISTÊNCIA SOCIAL - GERAL",
+     "funcao": "ASSISTÊNCIA SOCIAL",
+     "texto": "CONTRATACAO DE EMPRESA PARA EXECUCAO DE SERVICOS DE BAIXA COMPLEXIDADE PARA REPARO MANUTENCAO E CONSERVACAO DA CRAS JARDIM SANTO ANTONIO ATA 44 2021 MANUTENCAO DE PROPRIOS",
+     "bairros": [
+      "santo-antonio"
+     ]
+    },
+    {
+     "data": "2021-12-16",
+     "valor": 36166.7,
+     "fornecedor": "M A S CONSTRUCOES E EMPREENDIMENTOS LTDA",
+     "aplicacao": "0510 - ASSISTÊNCIA SOCIAL - GERAL",
+     "funcao": "ASSISTÊNCIA SOCIAL",
+     "texto": "CONTRATACAO DE EMPRESA PARA EXECUCAO DE SERVICOS DE BAIXA COMPLEXIDADE PARA REPARO MANUTENCAO E CONSERVACAO DA CRAS JARDIM PIRATININGA ATA 44 2021 MANUTENCAO DE PROPRIOS",
+     "bairros": [
+      "piratininga"
+     ]
+    },
+    {
+     "data": "2021-12-23",
+     "valor": 353824.83,
+     "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "URBANISMO",
+     "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+     "bairros": [
+      "rochdale"
+     ]
+    },
+    {
+     "data": "2021-12-28",
+     "valor": 76863.62,
+     "fornecedor": "M A S CONSTRUCOES E EMPREENDIMENTOS LTDA",
+     "aplicacao": "0510 - ASSISTÊNCIA SOCIAL - GERAL",
+     "funcao": "ASSISTÊNCIA SOCIAL",
+     "texto": "CONTRATACAO DE EMPRESA PARA EXECUCAO DE SERVICOS DE BAIXA COMPLEXIDADE PARA REPARO MANUTENCAO E CONSERVACAO DA CRAS JARDIM PIRATININGA ATA 44 2021 MANUTENCAO DE PROPRIOS",
+     "bairros": [
+      "piratininga"
+     ]
+    }
+   ],
+   "outrosFornecedores": 671591.27,
+   "quantidadeFornecedores": 99
+  }
+ }
+}

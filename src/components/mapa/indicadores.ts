@@ -1,15 +1,15 @@
 // Indicadores que podem colorir o mapa. Cada um sabe ler o próprio valor de um bairro.
 import type { BairroMapa, CampoCenso, GrupoCrime, Historico, Mapa } from "@/lib/dados";
-import { num } from "@/lib/formato";
+import { dinheiroCurto, num } from "@/lib/formato";
 
-export type Tema = "politica" | "eleicao" | "pessoas" | "infra" | "servicos" | "seguranca";
+export type Tema = "politica" | "dinheiro" | "eleicao" | "pessoas" | "infra" | "servicos" | "seguranca";
 
 export type Contexto = {
   contagem: Record<string, { total: number; camara: number; prefeitura: number }>;
   votos: { nomeUrna: string; total: number; porBairro: Record<string, number> } | null;
 };
 
-export type Formato = "inteiro" | "pct" | "reais" | "decimal" | "densidade" | "porMil" | "pp" | "varPct";
+export type Formato = "inteiro" | "pct" | "reais" | "dinheiro" | "decimal" | "densidade" | "porMil" | "pp" | "varPct";
 
 // Indicadores com série histórica: o mapa deixa escolher o ano (ou a mudança entre os Censos).
 export type Historia = { tipo: "censo"; campo: CampoCenso } | { tipo: "eleicao"; campo: "comparecimento" | "brancosNulos" | "eleito" };
@@ -29,6 +29,7 @@ export type Indicador = {
 
 export const TEMAS: { chave: Tema; nome: string }[] = [
   { chave: "politica", nome: "Política" },
+  { chave: "dinheiro", nome: "Dinheiro de fora" },
   { chave: "eleicao", nome: "Eleições" },
   { chave: "pessoas", nome: "Renda e moradores" },
   { chave: "infra", nome: "Rua e saneamento" },
@@ -42,6 +43,24 @@ const censo = (k: keyof NonNullable<BairroMapa["censo"]>) => (b: BairroMapa) =>
   b.censo && !b.censo.poucosMoradores ? ((b.censo[k] as number | null) ?? null) : null;
 
 export const INDICADORES: Indicador[] = [
+  {
+    chave: "dinheiroCitado",
+    tema: "dinheiro",
+    nome: "Dinheiro federal e estadual citado",
+    dica: "Emendas, convênios e pagamentos com dinheiro da União ou do Estado cujo texto oficial cita o bairro (quando cita vários, o valor é dividido)",
+    formato: "dinheiro",
+    escala: "zero",
+    valor: (b) => b.dinheiro?.valor ?? 0,
+  },
+  {
+    chave: "dinheiroItens",
+    tema: "dinheiro",
+    nome: "Itens de dinheiro de fora",
+    dica: "Quantas emendas, convênios e contratos pagos com dinheiro federal ou estadual citam o bairro",
+    formato: "inteiro",
+    escala: "zero",
+    valor: (b) => b.dinheiro?.quantidade ?? 0,
+  },
   { chave: "citacoes", tema: "politica", nome: "Documentos", dica: "Documentos oficiais que citam o bairro", formato: "inteiro", escala: "zero", valor: (b, c) => c.contagem[b.id]?.total ?? 0 },
   {
     chave: "porHab",
@@ -262,6 +281,8 @@ export function formatar(v: number | null | undefined, f: Formato) {
       return `${num(v, v >= 99.5 || v < 10 ? 1 : 0)}%`;
     case "reais":
       return `R$ ${Math.round(v).toLocaleString("pt-BR")}`;
+    case "dinheiro":
+      return dinheiroCurto(v);
     case "decimal":
       return num(v, 1);
     case "densidade":

@@ -260,6 +260,42 @@ export default function Metodologia() {
         </p>
       </Secao>
 
+      <Secao titulo="Dinheiro de fora" id="dinheiro">
+        <ul className="list-disc space-y-2 pl-5 text-slate-700">
+          <li>
+            <b>Quanto chega:</b> receitas que a Prefeitura declarou ao Tesouro Nacional nas contas anuais (SICONFI, Anexo I-C), separadas pelo nome de
+            cada conta: FPM, ICMS, IPVA, FUNDEB, saúde, educação, assistência social e convênios. O plano de contas mudou em 2022; a separação pelo nome
+            vale para os dois formatos.
+          </li>
+          <li>
+            <b>Emendas federais:</b> arquivo de emendas do Portal da Transparência (CGU), pelo valor que chegou. Conta só o que foi para a Prefeitura e os
+            fundos municipais; entidades sem fins lucrativos de Osasco aparecem à parte, e empresas com sede na cidade que forneceram para programas
+            nacionais ficam de fora. As &quot;emendas Pix&quot; trazem, do Transferegov, o que a Prefeitura informou que vai fazer com o dinheiro.
+          </li>
+          <li>
+            <b>Emendas estaduais:</b> a planilha do TCE-SP com as transferências especiais do Estado (posição de 31/08/2024). O governo estadual não
+            publica em arquivo aberto o deputado que indicou cada uma.
+          </li>
+          <li>
+            <b>Para onde foi:</b> despesas que a Prefeitura informa ao TCE-SP, pagamento a pagamento, com a fonte do dinheiro (federal, estadual ou do
+            próprio caixa) e o código do programa. Os códigos 0800 e 0801 marcam o que foi pago com emendas federais e estaduais. Pagamentos a pessoas
+            físicas entram só nos totais.
+          </li>
+          <li>
+            <b>Bairros:</b> entram emendas, convênios e pagamentos cujo texto cita o bairro, uma escola ou uma unidade de saúde, com o mesmo reconhecimento
+            de nomes dos documentos da Câmara. Quando um item cita vários bairros, o valor é dividido entre eles.
+          </li>
+          <li>
+            <b>Limites:</b> FPM, ICMS e IPVA entram no caixa geral e não podem ser seguidos até a nota. Repasses direto aos fundos de saúde e educação e as
+            &quot;emendas Pix&quot; mostram com quem a área gastou, não qual nota cada emenda pagou. A entrega da obra ou do serviço não aparece nesses
+            registros.
+          </li>
+        </ul>
+        <p className="mt-3 text-sm text-slate-600">
+          Veja em <Link href="/dinheiro" className="underline">Dinheiro</Link>.
+        </p>
+      </Secao>
+
       <Secao titulo="Séries históricas" id="historico">
         <ul className="list-disc space-y-2 pl-5 text-slate-700">
           <li>

@@ -469,7 +469,9 @@ export function MapaBairros({
     setTocando(true);
   };
   const abaInicial =
-    tema === "eleicao"
+    tema === "dinheiro"
+      ? "dinheiro"
+      : tema === "eleicao"
       ? "eleicao"
       : tema === "servicos"
         ? "servicos"

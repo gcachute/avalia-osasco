@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-28T19:10:22.127Z",
+ "geradoEm": "2026-10-29T23:30:34.945Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -52778,7 +52778,8 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "alianca",
@@ -52996,7 +52997,148 @@
       "idebIniciais": null,
       "idebFinais": 4.7
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 1116002.49,
+     "itens": [
+      {
+       "origem": "gastoEstadual",
+       "ano": 2025,
+       "valor": 398530.09,
+       "texto": "FORNECIMENTO DE HEMOCOMPONENTES DIVERSOS EM ATENDIMENTO AO HOSPITAL MATERNIDADE AMADOR AGUIAR",
+       "quem": "APSMED ASSESSORIA E PRESTACAO DE SERVICOS MEDICOS EIRELI",
+       "pagamentos": 6,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoEstadual",
+       "ano": 2024,
+       "valor": 284009.48,
+       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE LIMPEZA HOSPITALAR PARA O HOSPITAL MUNICIPAL E MATERNIDADE AMADOR AGUIAR H M M A A SS PERIODO 26 12 2023 A 24 01 2024 IOMO N 2",
+       "quem": "UNISERV TERCEIRIZACAO E SERVICOS LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 239372.03,
+       "texto": "Pagamento indenizatório, referente ao fornecimento de refeição ao hospital e maternidade Amador Aguiar no período de 15 a 31/05/2018.",
+       "quem": "APETECE SISTEMAS DE ALIMENTACAO S A",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 60497,
+       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO EM EQUIPAMENTOS HOSPITALARES PARA O HOSPITAL MUNICIPAL E MATERNIDADE AMADOR AGUIAR PERIODO 12 10 A 21 10 2020 I O M",
+       "quem": "WCG MEDICAL COMERCIO IMPORTACAO E SERVICOS LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 32857,
+       "texto": "Aquisição de Medicamentos a Ser Utilizado no Hospital e Maternidade Amador Aguiar - HMAA",
+       "quem": "HOSPFAR INDUSTRIA E COMERCIO DE PRODUTOS HOSPITALARES LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 31420,
+       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO DOS ELEVADORES MONTA CARGA DO HOSPITAL MUNICIPAL E MATERNIDADE AMADOR AGUIAR E P S OSMAR MESQUITA PERIODO 08 04 A 1",
+       "quem": "EMPREISERVICE SERVICOS LTDA ME",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoEstadual",
+       "ano": 2024,
+       "valor": 22250,
+       "texto": "PAGAMENTO INDENIZATORIO REF PRESTACAO DE SERVICOS DE MANUTENCAO CORRETIVA NO GRUPO GERADOR DO HOSPITAL MUNICIPAL E MATERNIDADE AMADOR AGUIAR HMMAA SS PERIODO 15 12 2023 A 15 01 202",
+       "quem": "CAUTRONICA LTDA EPP",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 18033.33,
+       "texto": "Contratação de Empresa Especializada em Serviços de Manutenção de Elevadores de Passeio e Monta Carga, para Atendimento do Departamento de Urgência e Emergência e do Hospital e Mat",
+       "quem": "FLEX ELEVADORES COM DE PECAS E MANUTENCAO LTDA",
+       "pagamentos": 4,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 8271.78,
+       "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA NA PRESTACAO DE SERVICOS DE GESSO E DRYWALL PARA A EFETIVACAO DE PEQUENOS REPAROS NO C M E DO HOSPITAL E MATERNIDADE AMADOR AGUIAR P",
+       "quem": "J ALVES CONSULTORIA GESTAO E SUPERVISAO DE OBRAS LTDA ME",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 7511.06,
+       "texto": "Fornecimento de medicamentos manipulados para atendimento do Hospital Municipal e Maternidade Amador Aguiar",
+       "quem": "ESPACO DE SAUDE E FARMACIA DE MANIPULACAO FARMA DONNA EIRELLI ME",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 6307.33,
+       "texto": "Pagamento Indenizatorio a Empresa Especializada em Manutenção nos Grupos Geradores do Hospital e Maternidade Amador Aguiar e Policlinica Zona Sul - Referente ao Periodo de 12/10/20",
+       "quem": "CAUTRONICA LTDA EPP",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 3173.6,
+       "texto": "Aquisição de Torneiras Clínicas, para atendimento do Hospital e Maternidade Amador Aguiar - HMMAA.",
+       "quem": "AMK BRASIL PROMOCOES E EVENTOS E COM DE MATERIAIS LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 2294.79,
+       "texto": "Contratação de Empresa para Manutenção de Equipamentos para Atendimento do Hospital Municipal e Maternidade Amador Aguiar",
+       "quem": "WCG MEDICAL COMERCIO IMPORTACAO E SERVICOS LTDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoEstadual",
+       "ano": 2024,
+       "valor": 985,
+       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO PREVENTIVA E CONSERVACAO DE MAQUINA DO ELEVADOR MONTA CARGA EM ATENDIMENTO AO HOSPITAL MUNICIPAL E MATERNIDADE AMAD",
+       "quem": "FAVARETTO MANUTENCAO DE ELEVADORES LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 490,
+       "texto": "Conserto do Equipamento de Emissões Otoacústicas, para atendimento do Hospital e Maternidade Amador Aguiar.",
+       "quem": "Atomed Produtos Medicos e de Auxilio Humano LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 15
+    }
    },
    {
     "id": "ayrosa",
@@ -53266,7 +53408,40 @@
       "idebIniciais": null,
       "idebFinais": 5.1
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 211307.25,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 116840.83,
+       "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA IMPLANTACAO E MODERNIZACAO DA INFRAESTRUTURA ESPORTIVA E REFORMA DO CAMPO DE FUTEBOL E GINASIO VILA AYROSA",
+       "quem": "CONSTRUTORA PROGREDIOR LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 93540.6,
+       "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA PELA PRESTACAO DE SERVICOS DE MANUTENCAO GERAL NO P S FENELON GUEDES AYROSA PERIODO 20 03 20 A 08 04 2020 I O M O N 1 902 DE 31 08 2",
+       "quem": "EMPREISERVICE SERVICOS LTDA ME",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 3
+    }
    },
    {
     "id": "bandeiras",
@@ -53495,7 +53670,8 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "baronesa",
@@ -53723,7 +53899,31 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 152981.98,
+     "itens": [
+      {
+       "origem": "gastoEstadual",
+       "ano": 2023,
+       "valor": 152056.16,
+       "texto": "REFORMA DA UBS FRANCISCA LIMA DE LIRA",
+       "quem": "OMEGA CONSTRUCOES E SERVICOS",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 2
+    }
    },
    {
     "id": "bela-vista",
@@ -53977,7 +54177,22 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 925.82,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 1
+    }
    },
    {
     "id": "bonanca",
@@ -54181,7 +54396,22 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 514412.22,
+     "itens": [
+      {
+       "origem": "gastoVereadores",
+       "ano": 2025,
+       "valor": 514412.22,
+       "texto": "EMENDA PARLAMENTAR VEREADOR EMERSON PARA ASSOCIACAO AMIGOS DO JD BONANCA",
+       "quem": "ASSOCIACAO AMIGOS DO JARDIM BONANCA II",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 1
+    }
    },
    {
     "id": "bonfim",
@@ -54343,7 +54573,8 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "bussocaba",
@@ -54564,7 +54795,31 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 128585,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 78585,
+       "texto": "Pagamento Indenizatorio a Assistencia Vicentina Imaculada Conceição LAR BUSSOCABA - Referente ao Periodo de 01/12/2017 a 31/12/2017",
+       "quem": "ASSISTENCIA VICENTINA IMACULADA CONCEICAO",
+       "pagamentos": 6,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2022,
+       "valor": 50000,
+       "texto": "LAR BUSSOCABA",
+       "quem": "ASSISTENCIA VICENTINA IMACULADA CONCEICAO",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 2
+    }
    },
    {
     "id": "castelo-branco",
@@ -54743,7 +54998,8 @@
       "idebIniciais": 6,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "centro",
@@ -55237,7 +55493,112 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 78333790.71,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 22272849.42,
+       "texto": "CONTRATO EMERGENCIAL DE ORGANIZACAO PARA GERENCIAMENTO DO HOSPITAL MUNICIPAL ANTONIO GIGLIO PRORROGACAO DO CONTRATO N 008 2019 JANEIRO 2020",
+       "quem": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
+       "pagamentos": 13,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 21738752.12,
+       "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+       "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+       "pagamentos": 10,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 9691168.96,
+       "texto": "ORGANIZACAO SOCIAL NA AREA DA SAUDE PARA O GERENCIAMENTO E EXECUCAO DOS SERVICOS DE SAUDE DO HOSPITAL MUNICIPAL ANTONIO GIGLIO CT 06 2020 ADITAMENTO CONTRATUAL PARA PLANO DE CONTIN",
+       "quem": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
+       "pagamentos": 8,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 7763575.45,
+       "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+       "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+       "pagamentos": 9,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 5000000,
+       "texto": "Pagamento referente a Contratação Emergencial para Administração do Hospital Municipal Central e UPA Vicente Missiano. (Adto da 6ª parcela - Janeiro/2018)",
+       "quem": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2022,
+       "valor": 4577933.62,
+       "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+       "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 2350700,
+       "texto": "CONTRATACAO DE EMPRESA PARA A REESTRUTURACAO FISICA E READEQUACAO DO HOSPITAL MUNICIPAL ANTONIO GIGLIO CONTRATO DE GESTAO N 008 2019 ADITAMENTO DO CONTRATO",
+       "quem": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 2083333.33,
+       "texto": "CONTRATACAO DE ORGANIZACAO SOCIAL PARA O GERENCIAMENTO E EXECUCAO DOS SERVICOS DE SAUDE DO HOSPITAL MUNICIPAL ANTONIO GIGLIO CONTRATO DE GESTAO N 006 2020",
+       "quem": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2022,
+       "valor": 1017659.92,
+       "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+       "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 1016398.68,
+       "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+       "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 821419.21,
+       "texto": "Contratação de gestão de empresa com objetivo a operacionalização de gestão e execução das atividades e serviços de saúde para UPA Vicente Missiano - Centro - CT 033/2018, Valor pa",
+       "quem": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+       "pagamentos": 5,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 11
+    }
    },
    {
     "id": "cidade-das-flores",
@@ -55446,7 +55807,8 @@
       "idebIniciais": null,
       "idebFinais": 4.8
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "cidade-de-deus",
@@ -55526,7 +55888,8 @@
     },
     "obras": [],
     "saude": [],
-    "escolas": []
+    "escolas": [],
+    "dinheiro": null
    },
    {
     "id": "cipava",
@@ -55759,7 +56122,8 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "city-bussocaba",
@@ -55839,7 +56203,8 @@
     },
     "obras": [],
     "saude": [],
-    "escolas": []
+    "escolas": [],
+    "dinheiro": null
    },
    {
     "id": "helena-maria",
@@ -56071,7 +56436,31 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 7716421.32,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 7712421.32,
+       "texto": "CONTRATACAO EMERGENCIAL PARA GERENCIAMENTO DO CENTRO DE ATENDIMENTO AO PACIENTE DIAGNOSTICADO COM COVID 19 REFERENTE AO PRONTO SOCORRO OSMAR MESQUITA NO HELENA MARIA E PRONTO SOCOR",
+       "quem": "INSTITUTO ESPERANCA E VIDA",
+       "pagamentos": 3,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 8000,
+       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO EM EQUIPAMENTOS HOSPITALARES PARA A POLICLINICA ZONA NORTE D LEONIL CRE BORTOLOSSO PERIODO 13 10 2020 I O M O N 1 9",
+       "quem": "WCG MEDICAL COMERCIO IMPORTACAO E SERVICOS LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 1
+      }
+     ],
+     "quantidade": 2
+    }
    },
    {
     "id": "iapi",
@@ -56261,7 +56650,8 @@
       "idebIniciais": null,
       "idebFinais": 4.8
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "industrial-altino",
@@ -56341,7 +56731,8 @@
     },
     "obras": [],
     "saude": [],
-    "escolas": []
+    "escolas": [],
+    "dinheiro": null
    },
    {
     "id": "industrial-anhanguera",
@@ -56527,7 +56918,8 @@
       "idebIniciais": 4.9,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "industrial-autonomistas",
@@ -56681,7 +57073,8 @@
     },
     "obras": [],
     "saude": [],
-    "escolas": []
+    "escolas": [],
+    "dinheiro": null
    },
    {
     "id": "industrial-centro",
@@ -56761,7 +57154,8 @@
     },
     "obras": [],
     "saude": [],
-    "escolas": []
+    "escolas": [],
+    "dinheiro": null
    },
    {
     "id": "industrial-mazzei",
@@ -56854,7 +57248,22 @@
       "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
      }
     ],
-    "escolas": []
+    "escolas": [],
+    "dinheiro": {
+     "valor": 925.82,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 1
+    }
    },
    {
     "id": "industrial-remedios",
@@ -57008,7 +57417,8 @@
     },
     "obras": [],
     "saude": [],
-    "escolas": []
+    "escolas": [],
+    "dinheiro": null
    },
    {
     "id": "jaguaribe",
@@ -57240,7 +57650,30 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 995925.82,
+     "itens": [
+      {
+       "origem": "pix",
+       "ano": 2026,
+       "valor": 995000,
+       "texto": "RECAPEAMENTO da Rua XV de Novembro, Jaguaribe",
+       "quem": "Nilto Tatto",
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 2
+    }
    },
    {
     "id": "jardim-conceicao",
@@ -57510,7 +57943,49 @@
       "idebIniciais": 7.4,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 2095663.35,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 978885.32,
+       "texto": "Organização Social Civil para Administração da UPA JOSÉ SANTOS SASSO-UPA JARDIM CONCEIÇÃO. (Contrato n° 035/2018) (Regularização do Empenho n° 14701 de 05/07/2018)",
+       "quem": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 671503.52,
+       "texto": "Contratação de gestão de empresa com objetivo a operacionalização de gestão e execução das atividades e serviços de saúde para UPA JD CONCEIÇÃO - CT 035/2018, Valor referente ao mê",
+       "quem": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+       "pagamentos": 5,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 444348.69,
+       "texto": "Construção da Creche Conceição FNDE - Avenida Transversal Sul nº 15 - Jardim Conceição - Osasco-SP. Termo de Compromisso nº Pac 2 5442/2013 pro Infância Tipo 2 .",
+       "quem": "CONSTRUMEDICI ENGENHARIA E COMERCIO LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 4
+    }
    },
    {
     "id": "jardim-d-abril",
@@ -57715,7 +58190,58 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 3052939.31,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 1509033.35,
+       "texto": "CONTRATACAO EMERGENCIAL PARA AMPLIACAO DE LEITOS UTI S NO PRONTO SOCORRO DO JARDIM D ABRIL PS JOSE IBRAHIM COM INSTALACAO DE 40 LEITOS DE UTI",
+       "quem": "CONSTRUTORA PROGREDIOR LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoEstadual",
+       "ano": 2020,
+       "valor": 1342563.94,
+       "texto": "CONTRATACAO EMERGENCIAL PARA AMPLIACAO DE LEITOS UTI S NO PRONTO SOCORRO DO JARDIM D ABRIL PS JOSE IBRAHIM COM INSTALACAO DE 40 LEITOS DE UTI",
+       "quem": "CONSTRUTORA PROGREDIOR LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 82832.57,
+       "texto": "PAGAMENTO INDENIZATORIO COVID 19 PELA PRESTACAO DE SERVICOS DE LAVANDERIA NO CENTRO DE ATENDIMENTO AO COVID19 P S JARDIM D ABRIL E POLICLINICA ZONA NORTE PERIODO JUNHO 2021 I O M O",
+       "quem": "MAXLAV LAVANDERIA ESPECIALIZADA LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 61593.45,
+       "texto": "PAGAMENTO INDENIZATORIO COVID 19 A EMPRESA ESPECILIZADA NA PRESTACAO DE SERVICOS DE LAVANDERIA HOSPITALAR COM FORNECIMENTO DE ENXOVAL UTILIZADOS NO HOSPITAL DE CAMPANHA P S JARDIM ",
+       "quem": "MAXLAV LAVANDERIA ESPECIALIZADA LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 56916,
+       "texto": "PAGAMENTO INDENIZATORIO COVID 19 A EMPRESA ESPECIALIZADA REFERENTE A PRESTACAO DE SERVICOS DE FISIOTERAPIA NO CENTRO DE APOIO AO COVID 19 PS JARDIM D ABRIL PERIODO 16 05 2020 A 30 ",
+       "quem": "ELGE SERVICOS MEDICOS EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 5
+    }
    },
    {
     "id": "jardim-das-flores",
@@ -57981,7 +58507,8 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "jardim-elvira",
@@ -58186,7 +58713,8 @@
       "idebIniciais": 6.2,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "jardim-novo-osasco",
@@ -58442,7 +58970,22 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 925.82,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 1
+    }
    },
    {
     "id": "jardim-roberto",
@@ -58642,7 +59185,31 @@
       "idebIniciais": 6.4,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 1443991.65,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 1132377.34,
+       "texto": "Construção da creche Jardim Roberto I - Rua Antônio Russo, 680 - Jardim Roberto - Osasco/SP. TC nº 5872/2013 Pro Infância tipo 2 - Contrato nº 009/2018.",
+       "quem": "CONSTRUTORA MAXFOX LTDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 311614.31,
+       "texto": "Construção da Creche Jardim Roberto II - Rua Claudio Aparecido de Iliveira, 85 - Jd. Roberto (TC 5872/2013 Pro Infância Tipo 2) Contrato n° 008/2018 - REPASSE.",
+       "quem": "CONSTRUTORA MAXFOX LTDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 2
+    }
    },
    {
     "id": "km-18",
@@ -58910,7 +59477,40 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 553469.53,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2023,
+       "valor": 472565.1,
+       "texto": "MANUTENCAO CRAS KM 18",
+       "quem": "CONSTRUTORA PROGREDIOR LTDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 79978.61,
+       "texto": "CONTRATACAO DE EMPRESA ESPECIALIZADA EM REFORMAS E MANUTENCAO DO CRAS BAIRRO KM 18 OSASCO REFERENTE A ARP N 122 2019 CP 002 2019",
+       "quem": "M A S CONSTRUCOES E EMPREENDIMENTOS LTDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 3
+    }
    },
    {
     "id": "metalurgicos",
@@ -59108,7 +59708,22 @@
       "idebIniciais": null,
       "idebFinais": 4.5
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 925.82,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 1
+    }
    },
    {
     "id": "munhoz-junior",
@@ -59384,7 +59999,31 @@
       "idebIniciais": null,
       "idebFinais": 4.7
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 349384.05,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 348458.23,
+       "texto": "CONTRATACAO DE EMPRESA ESPECIALIZADA EM REPAROS MANUTENCAO E CONSERVACAO DE PROPRIOS MUNICIPAIS PARA O CRAS JARDIM MUNHOZ JR REFERENTE A ARP N 121 19 CC 04 2020",
+       "quem": "TOWER ENGENHARIA E CONSTRUCAO LTDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 2
+    }
    },
    {
     "id": "mutinga",
@@ -59614,7 +60253,8 @@
       "idebIniciais": null,
       "idebFinais": 4.9
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "padroeira",
@@ -59897,7 +60537,22 @@
       "idebIniciais": null,
       "idebFinais": 4.7
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 242701.05,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 242701.05,
+       "texto": "CONTRATACAO DE EMPRESA ESPECIALIZADA EM SERVICOS DE REFORMA E MANUTENCAO DO CRAS PADROEIRA JD PADROEIRA REFERENTE A ARP N 122 2019 PA N 2618 2019",
+       "quem": "E E C ENGENHARIA E CONSTRUCOES LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 1
+    }
    },
    {
     "id": "paiva-ramos",
@@ -59982,7 +60637,8 @@
     },
     "obras": [],
     "saude": [],
-    "escolas": []
+    "escolas": [],
+    "dinheiro": null
    },
    {
     "id": "parque-continental",
@@ -60062,7 +60718,8 @@
     },
     "obras": [],
     "saude": [],
-    "escolas": []
+    "escolas": [],
+    "dinheiro": null
    },
    {
     "id": "pestana",
@@ -60314,7 +60971,22 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 925.82,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 1
+    }
    },
    {
     "id": "piratininga",
@@ -60560,7 +61232,49 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 329136.99,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 211180.85,
+       "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA REFORMA DO CRAS PIRATININGA LOCALIZADO NA RUA MARTIN AFONSO 244 JARDIM PIRAT",
+       "quem": "CONSITEC ENGENHARIA E TECNOLOGIA LTDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 113030.32,
+       "texto": "CONTRATACAO DE EMPRESA PARA EXECUCAO DE SERVICOS DE BAIXA COMPLEXIDADE PARA REPARO MANUTENCAO E CONSERVACAO DA CRAS JARDIM PIRATININGA ATA 44 2021 MANUTENCAO DE PROPRIOS",
+       "quem": "M A S CONSTRUCOES E EMPREENDIMENTOS LTDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 8000,
+       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO EM EQUIPAMENTOS HOSPITALARES PARA A POLICLINICA ZONA NORTE D LEONIL CRE BORTOLOSSO PERIODO 13 10 2020 I O M O N 1 9",
+       "quem": "WCG MEDICAL COMERCIO IMPORTACAO E SERVICOS LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 1
+      }
+     ],
+     "quantidade": 4
+    }
    },
    {
     "id": "platina",
@@ -60727,7 +61441,8 @@
       "idebIniciais": null,
       "idebFinais": 4.5
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "portal-d-oeste",
@@ -60939,7 +61654,8 @@
       "idebIniciais": null,
       "idebFinais": 4.3
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "presidente-altino",
@@ -61193,7 +61909,31 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 3556.23,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 2630.41,
+       "texto": "PAGAMENTO DE SENTENCA JUDICIAL DE PEQUENO VALOR PROC JUDICIAL N 0005980 76 2020 8 26 0405 01 RECLAMANTE SPE PRESIDENTE ALTINO CONSTRUCOES LTDA RPV 313 2020",
+       "quem": "SPE PRESIDENTE ALTINO CONSTRUCOES LTDA",
+       "pagamentos": 3,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 2
+    }
    },
    {
     "id": "quintauna",
@@ -61433,7 +62173,40 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 412691.98,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 442534.78,
+       "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA A CONSTRUCAO DA CRECHE VILA MILITAR UNIFESP A SER EDIFICADA EM AREA PUBLICA NA ALAMEDA PARQUE S N QUITAUNA OSASCO SP CT 12 2018 E TERMO 85",
+       "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 1
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 380997.54,
+       "texto": "Contratação de Empresa de Engenharia para a construção da Creche vila militar- Unifesp - Rua Newton Estilac Leal. nº 643 - ALAMEDA PARQUE, Quitaúna - Osasco/SP. Contrato 012/18. (T",
+       "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
+       "pagamentos": 3,
+       "outrosBairros": 1
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 3
+    }
    },
    {
     "id": "raposo-tavares",
@@ -61617,7 +62390,8 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "remedios",
@@ -61834,7 +62608,22 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 925.82,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 1
+    }
    },
    {
     "id": "rochdale",
@@ -62074,7 +62863,139 @@
       "idebIniciais": 6,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 49152737.3,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2022,
+       "valor": 13715056.93,
+       "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+       "quem": "CONSORCIO CONSTRAN EIT ROCHDALE",
+       "pagamentos": 10,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 11654513.38,
+       "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+       "quem": "CONSORCIO CONSTRAN EIT ROCHDALE",
+       "pagamentos": 10,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 7606203.97,
+       "texto": "Execução de Obras de Urbanização, infraestrutura, pavimentação, Drenagem e Arte Especiais do Jd. Rochdale - REPASSE - Valor até JULHO de 2019, Contrato n° 071/2014.",
+       "quem": "CONSORCIO CONSTRAN EIT ROCHDALE",
+       "pagamentos": 8,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2023,
+       "valor": 4522459.22,
+       "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+       "quem": "CONSORCIO CONSTRAN EIT ROCHDALE",
+       "pagamentos": 10,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2024,
+       "valor": 4442218.93,
+       "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+       "quem": "CONSORCIO CONSTRAN EIT ROCHDALE",
+       "pagamentos": 4,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 4040679.55,
+       "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+       "quem": "CONSORCIO CONSTRAN EIT ROCHDALE",
+       "pagamentos": 7,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2025,
+       "valor": 3054722.31,
+       "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
+       "quem": "CONSORCIO CONSTRAN EIT ROCHDALE",
+       "pagamentos": 3,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2024,
+       "valor": 32430,
+       "texto": "PAGAMENTO INDENIZATORIO PRESTACAO DE SERVICOS DE ELAB DE PROJETO COMPLETO E OBTENCAO DO AUTO DE VISTORIA DO CORPO DE BOMBEIROS AVCB P O SERVICO DE ACOLHIMENTO INSTITUCIONAL P ADULT",
+       "quem": "LUCIANO VITORIO CODOGNO ASSESSORIA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoEstadual",
+       "ano": 2024,
+       "valor": 26890,
+       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO NAS REGUAS DE GASES MEDICINAIS PS ANTONIO FLAVIO FRANCA P S ROCHDALE PERIODO JANEIRO 24 17 04 2024 30 05 A 01 06 20",
+       "quem": "MAGNOTEC INSTRUMENTACAO LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 25200,
+       "texto": "Aquisição de Cobertor Solteiro e Travesseiro a Unidade de Acolhimento de Indivíduos ou Grupo de Familiares em Situação de Rua no Jd. Rochdale",
+       "quem": "MULTIFLEX DO BRASIL LTDA - ME",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 15396,
+       "texto": "Aquisição de Jogo de Lençol, Toalha de Banho, Toalha de Rosto e Travesseiro Infantil a Unidade de Acolhimento de Indivíduos ou Grupo de Familiares em Situação de Rua no Jd. Rochdal",
+       "quem": "PROROUPAS CONFECÇÕES LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 8241.19,
+       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE REFORMA DO ABRIGO RSS E INSTALACAO DE PORTA DE CORRER NA UNIDADE PRONTO SOCORRO ANTONIO FLAVIO FRANCA P S ROCHDALE PERIODO 14 ",
+       "quem": "J ALVES CONSULTORIA GESTAO E SUPERVISAO DE OBRAS LTDA ME",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 7800,
+       "texto": "Aquisição de Coberto de Solteiro para Unidade de Acolhimento de Individuos ou Grupos de Familiares em Situação de Rua no Jd. Rochdale",
+       "quem": "KANARO ARTIGOS DE CAMA, MESA E BANHO LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 14
+    }
    },
    {
     "id": "santa-fe",
@@ -62167,7 +63088,8 @@
       "idebIniciais": 6.3,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "santa-maria",
@@ -62394,7 +63316,8 @@
       "idebIniciais": null,
       "idebFinais": 4.4
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "santo-antonio",
@@ -62636,7 +63559,39 @@
       "idebIniciais": null,
       "idebFinais": 5.6
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 2352011.87,
+     "itens": [
+      {
+       "origem": "pix",
+       "ano": 2025,
+       "valor": 2203641,
+       "texto": "Reforma da Unidade Básica de Saúde Maria Pia de Oliveira - CNES 8281\nMeta 1: Reforma da Estrutura Física da UBS Maria Pia\nDescrição: Realizar a reforma da infraestrutura física da ",
+       "quem": "Alfredinho",
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 93064.39,
+       "texto": "CONTRATACAO DE EMPRESA PARA EXECUCAO DE SERVICOS DE BAIXA COMPLEXIDADE PARA REPARO MANUTENCAO E CONSERVACAO DA CRAS JARDIM SANTO ANTONIO ATA 44 2021 MANUTENCAO DE PROPRIOS",
+       "quem": "M A S CONSTRUCOES E EMPREENDIMENTOS LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 55306.48,
+       "texto": "CONTRATACAO DE EMPRESA ESPECIALIZADA EM SERVICOS DE REFORMA E MANUTENCAO DO CRAS JD SANTO ANTONIO REFERENTE A ARP N 122 2019 PA N 2618 2019",
+       "quem": "E E C ENGENHARIA E CONSTRUCOES LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 3
+    }
    },
    {
     "id": "sao-pedro",
@@ -62821,7 +63776,8 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "setor-militar",
@@ -62901,7 +63857,8 @@
     },
     "obras": [],
     "saude": [],
-    "escolas": []
+    "escolas": [],
+    "dinheiro": null
    },
    {
     "id": "tres-montanhas",
@@ -63063,7 +64020,8 @@
       "idebIniciais": null,
       "idebFinais": 4.8
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "umuarama",
@@ -63253,7 +64211,8 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "veloso",
@@ -63545,7 +64504,31 @@
       "idebIniciais": null,
       "idebFinais": 4.9
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 322337.27,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 317076.15,
+       "texto": "Contratação da empresa de engenharia para a construção da creche Veloso, na rua Doutor Pedro dos Santos Figueiredo nº 212 - Jardim Veloso - Osasco/SP. Contrato nº 010/2018 (Termo d",
+       "quem": "CONSITEC ENGENHARIA E TECNOLOGIA LTDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 5261.12,
+       "texto": "Serviço Técnico Especializado de Engenharia Consultiva para Realização do Gerenciamento de Obras, Regularização Fundiária e Trabalho Técnico Social - Ubarnização do JD Veloso (Cont",
+       "quem": "CONSÓRICO HTR",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 2
+    }
    },
    {
     "id": "vila-campesina",
@@ -63785,7 +64768,8 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "vila-menck",
@@ -64057,7 +65041,58 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 8476932.58,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 6156888,
+       "texto": "PRORROGACAO EXCEPCIONAL DO CONTRATO EMERGENCIAL N 099 2019 TERMO N 197 2020 REFERENTE A ADMINISTRACAO DAS UNIDADES DE PRONTO ATENDIMENTO UPA CENTRO CONCEICAO E VILA MENK PERIODO DE",
+       "quem": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 1962562.63,
+       "texto": "Organização Social Civil para Adnimistração da UPA JOSÉ CAMPOS BARRETO - VILA MENCK. (Contrato nº 034/2018) (Regularização do Empenho nº 7426 de 04/04/2018)",
+       "quem": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+       "pagamentos": 3,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 296856.13,
+       "texto": "Contratação de gestão de empresa com objetivo a operacionalização de gestão e execução das atividades e serviços de saúde para UPA Vila Menck - CT 034/2018.",
+       "quem": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 59700,
+       "texto": "Pagamento de Indenizatório ref. Locação de Grupo Gerador de 55KWA Instalado nas Unidades: Rochidale, André Sacoo, Vl. Menck e P.S D`Abril do período mar/2018.",
+       "quem": "CAUTRONICA LTDA EPP",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO C",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
+      }
+     ],
+     "quantidade": 5
+    }
    },
    {
     "id": "vila-militar",
@@ -64219,7 +65254,31 @@
       "turno": "ATENDIMENTO NOS TURNOS DA MANHA, TARDE E NOITE"
      }
     ],
-    "escolas": []
+    "escolas": [],
+    "dinheiro": {
+     "valor": 411766.16,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 442534.78,
+       "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA A CONSTRUCAO DA CRECHE VILA MILITAR UNIFESP A SER EDIFICADA EM AREA PUBLICA NA ALAMEDA PARQUE S N QUITAUNA OSASCO SP CT 12 2018 E TERMO 85",
+       "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 1
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 380997.54,
+       "texto": "Contratação de Empresa de Engenharia para a construção da Creche vila militar- Unifesp - Rua Newton Estilac Leal. nº 643 - ALAMEDA PARQUE, Quitaúna - Osasco/SP. Contrato 012/18. (T",
+       "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
+       "pagamentos": 3,
+       "outrosBairros": 1
+      }
+     ],
+     "quantidade": 2
+    }
    },
    {
     "id": "vila-osasco",
@@ -64531,7 +65590,8 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    },
    {
     "id": "vila-yara",
@@ -64792,7 +65852,40 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": {
+     "valor": 387308.26,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 325801.5,
+       "texto": "CONTRATACAO DE EMPRESA ESPECIALIZADA EM SERVICOS DE REFORMA E MANUTENCAO DO CCFV VILA YARA REFERENTE A ARP N 124 2019 PA N 2618 2019",
+       "quem": "CONSTRUMEDICI ENGENHARIA E COMERCIO LTDA",
+       "pagamentos": 2,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 37778,
+       "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA PELA PRESTACAO DE SERVICOS DE AR CONDICIONADO UTILIZADOS NA UNIDADE BASICA DE SAUDE VILA YARA DO MUNICIPIO PERIODO 27 08 A 31 08 I O",
+       "quem": "EMPREISERVICE SERVICOS LTDA ME",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 23728.76,
+       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do",
+       "quem": "VIEL CONSTRUCOES LTDA EPP",
+       "pagamentos": 1,
+       "outrosBairros": 0
+      }
+     ],
+     "quantidade": 3
+    }
    },
    {
     "id": "vila-yolanda",
@@ -65005,7 +66098,8 @@
       "idebIniciais": null,
       "idebFinais": null
      }
-    ]
+    ],
+    "dinheiro": null
    }
   ],
   "itens": [

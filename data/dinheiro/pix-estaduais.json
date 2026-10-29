@@ -1,0 +1,38 @@
+{
+ "coletadoEm": "2026-10-29",
+ "fonte": "TCE-SP, planilha de repasses estaduais (Comunicado SDG 59/2024)",
+ "url": "https://tce.sp.gov.br/sites/default/files/legislacao/01-Repasses%20Estaduais_0.xlsx",
+ "posicao": "2024-08-31",
+ "repasses": [
+  {
+   "data": "2022-11-07",
+   "valor": 250000,
+   "tipo": "TRANSF.ESP-EM.INDIV.IMPOSITIVAS(ART.175A CE)",
+   "programa": "ACOES DECORRENTES DE EMENDAS, EXCETO SAUDE"
+  },
+  {
+   "data": "2023-06-16",
+   "valor": 90000,
+   "tipo": "TRANSF.ESP-EM.INDIV.IMPOSITIVAS(ART.175A CE)",
+   "programa": "TRANSFERENCIAS ESPECIAIS A MUNICIPIOS"
+  },
+  {
+   "data": "2023-06-16",
+   "valor": 410000,
+   "tipo": "TRANSF.ESP-EM.INDIV.IMPOSITIVAS(ART.175A CE)",
+   "programa": "TRANSFERENCIAS ESPECIAIS A MUNICIPIOS"
+  },
+  {
+   "data": "2024-04-26",
+   "valor": 1455342,
+   "tipo": "TRANSF.ESP-EM.INDIV.IMPOSITIVAS(ART.175A CE)",
+   "programa": "TRANSFERENCIAS ESPECIAIS A MUNICIPIOS"
+  },
+  {
+   "data": "2024-04-26",
+   "valor": 623718,
+   "tipo": "TRANSF.ESP-EM.INDIV.IMPOSITIVAS(ART.175A CE)",
+   "programa": "TRANSFERENCIAS ESPECIAIS A MUNICIPIOS"
+  }
+ ]
+}
