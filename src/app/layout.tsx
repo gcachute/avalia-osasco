@@ -6,6 +6,7 @@ import { Logo } from "@/components/Logo";
 import { BotaoTopo, NavegacaoPagina } from "@/components/NavegacaoPagina";
 import { Nav, NavInferior, type ItemNav } from "@/components/Nav";
 import { NovaAba } from "@/components/NovaAba";
+import { AvisoIA } from "@/components/AvisoIA";
 import { PedidoCorrecao } from "@/components/PedidoCorrecao";
 import { BotaoTema, SCRIPT_TEMA } from "@/components/Tema";
 import { dados, dataBR } from "@/lib/dados";
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       >
         <Animacoes />
         <NovaAba />
+        <AvisoIA />
         <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur">
           <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-2.5 md:py-3">
             <Link href="/" aria-label="De Olho em OZ, página inicial">
