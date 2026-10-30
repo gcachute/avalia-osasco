@@ -1,26 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { BairroMapa } from "@/lib/dados";
 import { GRUPO_ORIGEM, ROTULO_ORIGEM, frase, type ItemDinheiroBairro } from "@/lib/dinheiro";
 import { dinheiroCurto, reaisExato } from "@/lib/formato";
 
 type Grupo = "emendas" | "federal" | "estadual" | "vereadores";
 const GRUPOS: { chave: Grupo; nome: string; cor: string }[] = [
-  { chave: "emendas", nome: "Emendas e convênios", cor: "var(--grafico-4)" },
+  { chave: "emendas", nome: "Emendas", cor: "var(--grafico-4)" },
   { chave: "federal", nome: "Gasto com verba federal", cor: "var(--grafico-1)" },
   { chave: "estadual", nome: "Gasto com verba estadual", cor: "var(--grafico-2)" },
   { chave: "vereadores", nome: "Emendas individuais", cor: "var(--grafico-3)" },
 ];
 
 // Ao passar o mouse (ou com o item aberto), os outros bairros citados ficam marcados no mapa.
-type Realce = { atual: string; nomes: Map<string, string>; marcar: (ids: string[] | null) => void };
+type Realce = { atual: string; nomes: Map<string, string>; marcar: (ids: string[] | null) => void; todos: string[] | null };
 
 function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; realce?: Realce }) {
   const [aberto, setAberto] = useState(false);
   const outros = (i.bairros ?? []).filter((b) => b !== realce?.atual);
-  const marca = (sim: boolean) => realce && outros.length > 0 && realce.marcar(sim ? outros : null);
+  // Sim: só os bairros deste item; não: volta aos bairros de todos os itens da aba.
+  const marca = (sim: boolean) => realce && outros.length > 0 && realce.marcar(sim ? outros : realce.todos);
   const grupo = GRUPOS.find((g) => g.chave === GRUPO_ORIGEM[i.origem])!;
   // Quando o texto cita vários bairros, cada um fica com uma parte igual do valor: é essa parte que entra na soma do bairro.
   const bairros = i.outrosBairros + 1;
@@ -39,8 +40,15 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
         </span>
         <span className="tabular-nums">{i.ano}</span>
         <span className="ml-auto text-right">
-          <span className="block font-semibold tabular-nums text-slate-900">{dinheiroCurto(parte)}</span>
-          {bairros > 1 && <span className="block text-[10px] text-slate-500">neste bairro</span>}
+          <span className="block font-semibold tabular-nums text-slate-900">
+            {dinheiroCurto(parte)}
+            {bairros > 1 && <span className="font-normal text-slate-500"> por bairro</span>}
+          </span>
+          {bairros > 1 && (
+            <span className="block text-[10px] tabular-nums text-slate-500">
+              {dinheiroCurto(i.valor)} ÷ {bairros} bairros{i.cidadeToda ? " (cidade toda)" : ""}
+            </span>
+          )}
         </span>
       </div>
       <button
@@ -56,7 +64,7 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
         {aberto && (
           <span className="mt-0.5 block tabular-nums text-slate-500">
             {bairros > 1
-              ? `Valor exato: ${reaisExato(i.valor)}, dividido igualmente entre os ${bairros} bairros citados (${reaisExato(parte)} para cada um).`
+              ? `Valor exato: ${reaisExato(i.valor)}, dividido igualmente entre os ${bairros} bairros${i.cidadeToda ? " da cidade" : " citados"} (${reaisExato(parte)} para cada um).`
               : `Valor exato: ${reaisExato(i.valor)}`}
           </span>
         )}
@@ -70,15 +78,23 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
           i.quem && <span>{i.quem}</span>
         )}
         {i.pagamentos && i.pagamentos > 1 && <span>{i.pagamentos} pagamentos</span>}
-        {bairros > 1 && (
-          <span>
-            {i.pagamentos && i.pagamentos > 1 ? "pagamentos" : "pagamento"} de {dinheiroCurto(i.valor)} que cita {bairros} bairros
-          </span>
-        )}
+
       </div>
+      {i.cidadeToda && (
+        <p className="mt-1 text-[11px] text-slate-600">
+          <span className="font-medium">Vale para a cidade toda:</span> o texto não cita rua nem bairro, então o valor foi dividido igualmente entre os{" "}
+          {bairros} bairros.
+        </p>
+      )}
+      {i.via && i.via.length > 0 && (
+        <p className="mt-1 text-[11px] text-slate-600">
+          <span className="font-medium">Ligado aos bairros por:</span> {i.via.join(", ")}
+          {bairros > 1 ? ` (passa por ${bairros} bairros)` : ""}.
+        </p>
+      )}
       {outros.length > 0 && realce && (
         <p className="mt-1 text-[11px] text-slate-600">
-          <span className="font-medium">Também cita</span> (tracejados no mapa):{" "}
+          <span className="font-medium">Dividido também com</span> (coloridos no mapa):{" "}
           {outros
             .map((b) => realce.nomes.get(b) ?? b)
             .sort((x, y) => x.localeCompare(y, "pt-BR"))
@@ -90,15 +106,22 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
   );
 }
 
-export function DinheiroBairro({ d, realce }: { d: NonNullable<BairroMapa["dinheiro"]>; realce?: Realce }) {
-  // Ao sair da aba, os bairros marcados no mapa voltam ao normal.
-  const marcar = realce?.marcar;
-  useEffect(() => () => marcar?.(null), [marcar]);
+export function DinheiroBairro({ d, realce: base }: { d: NonNullable<BairroMapa["dinheiro"]>; realce?: Omit<Realce, "todos"> }) {
   const [filtro, setFiltro] = useState<Grupo | null>(null);
   const porGrupo = d.porGrupo ?? {};
   const presentes = GRUPOS.filter((g) => (porGrupo[g.chave] ?? 0) > 0);
   const total = presentes.reduce((s, g) => s + (porGrupo[g.chave] ?? 0), 0);
   const itens = filtro ? d.itens.filter((i) => GRUPO_ORIGEM[i.origem] === filtro) : d.itens;
+  // Logo ao abrir a aba, todos os bairros que dividem algum item com este ficam coloridos no mapa.
+  const todosIds = [...new Set(itens.flatMap((i) => i.bairros ?? []))].filter((b) => b !== base?.atual).sort();
+  const chaveTodos = todosIds.join(",");
+  const todos = useMemo(() => (chaveTodos ? chaveTodos.split(",") : null), [chaveTodos]);
+  const marcar = base?.marcar;
+  useEffect(() => {
+    marcar?.(todos);
+    return () => marcar?.(null);
+  }, [marcar, todos]);
+  const realce = base ? { ...base, todos } : undefined;
   return (
     <div>
       <p className="text-xs text-slate-500">

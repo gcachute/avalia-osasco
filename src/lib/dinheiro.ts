@@ -183,7 +183,7 @@ export type PaginaDinheiro = {
 
 // Item do mapa: o que cita o bairro, com a origem do dinheiro.
 export type ItemDinheiroBairro = {
-  origem: "pix" | "convenio" | "gastoFederal" | "gastoEstadual" | "gastoVereadores";
+  origem: "pix" | "convenio" | "gastoEmenda" | "gastoFederal" | "gastoEstadual" | "gastoVereadores";
   ano: number;
   valor: number;
   texto: string;
@@ -194,11 +194,16 @@ export type ItemDinheiroBairro = {
   outrosBairros: number;
   // Todos os bairros citados pelo item (o valor é dividido igualmente entre eles).
   bairros?: string[];
+  // Vale para a cidade toda (emenda sem rua nem bairro no texto): dividido entre os 60 bairros.
+  cidadeToda?: boolean;
+  // Rua, córrego ou lugar que ligou o item aos bairros.
+  via?: string[];
 };
 
 export const ROTULO_ORIGEM: Record<ItemDinheiroBairro["origem"], string> = {
   pix: "Emenda Pix federal",
   convenio: "Convênio de emenda federal",
+  gastoEmenda: "Compra paga com emenda",
   gastoFederal: "Gasto com verba federal",
   gastoEstadual: "Gasto com verba estadual",
   gastoVereadores: "Gasto com emenda individual",
@@ -208,6 +213,7 @@ export const ROTULO_ORIGEM: Record<ItemDinheiroBairro["origem"], string> = {
 export const GRUPO_ORIGEM: Record<ItemDinheiroBairro["origem"], "emendas" | "federal" | "estadual" | "vereadores"> = {
   pix: "emendas",
   convenio: "emendas",
+  gastoEmenda: "emendas",
   gastoFederal: "federal",
   gastoEstadual: "estadual",
   gastoVereadores: "vereadores",

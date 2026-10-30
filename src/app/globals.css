@@ -138,6 +138,7 @@
   --mapa-6: #104281;
   --mapa-borda: #ffffff;
   --mapa-destaque: #0b0b0b;
+  --mapa-citado: rgba(234, 179, 8, 0.45);
   --mapa-camara: #eb6834;
   --mapa-prefeitura: #1baf7a;
   --mapa-rotulo: #0f172a;
@@ -155,6 +156,7 @@
   --mapa-6: #b7d3f6;
   --mapa-borda: #0b1220;
   --mapa-destaque: #f8fafc;
+  --mapa-citado: rgba(250, 204, 21, 0.4);
   --mapa-camara: #d95926;
   --mapa-prefeitura: #199e70;
   --mapa-rotulo: #f1f5f9;
@@ -415,5 +417,20 @@ a:hover .logo-palpebra {
   .entra,
   .revelar[data-visivel] .selo-pula {
     animation: none !important;
+  }
+}
+
+/* Bairros citados junto com o bairro escolhido (o mesmo item ou documento): pintados por cima da cor do indicador. */
+.mapa-citado {
+  animation: citado-entra 0.3s ease both;
+}
+@keyframes citado-entra {
+  from {
+    fill-opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mapa-citado {
+    animation: none;
   }
 }

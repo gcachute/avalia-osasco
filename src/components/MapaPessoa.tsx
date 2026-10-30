@@ -112,7 +112,12 @@ export function MapaPessoa({
             />
           ))}
           {foco && porId.get(foco) && <path d={porId.get(foco)!.d} fill="none" stroke="var(--mapa-destaque)" strokeWidth={2.5} pointerEvents="none" />}
-          {citados.map((id) => porId.get(id) && <path key={`citado-${id}`} d={porId.get(id)!.d} fill="none" stroke="var(--mapa-destaque)" strokeWidth={2} pointerEvents="none" />)}
+          {citados.map(
+            (id) =>
+              porId.get(id) && (
+                <path key={`citado-${id}`} d={porId.get(id)!.d} className="mapa-citado" fill="var(--mapa-citado)" stroke="var(--mapa-destaque)" strokeWidth={2} pointerEvents="none" />
+              ),
+          )}
           {/* Onde agiu: círculo no bairro, do tamanho do número de documentos */}
           {Object.entries(docs).map(([id, n]) => {
             const b = porId.get(id);

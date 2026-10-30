@@ -132,3 +132,51 @@ export function reconhecedorDeEquipamentos() {
     return achados.map(({ nome, bairro }) => ({ nome, bairro }));
   };
 }
+
+// Ruas, córregos e lugares com nome (data/territorio/lugares.json, do OpenStreetMap): devolve todos os bairros por onde
+// passa cada um que o texto cita. "R. XV de Novembro", "Rua 15 de Novembro" e "Rua Quinze de Novembro" são a mesma rua.
+const NUMEROS = ["", "UM", "DOIS", "TRES", "QUATRO", "CINCO", "SEIS", "SETE", "OITO", "NOVE", "DEZ", "ONZE", "DOZE", "TREZE", "QUATORZE", "QUINZE", "DEZESSEIS", "DEZESSETE", "DEZOITO", "DEZENOVE", "VINTE", "VINTE E UM", "VINTE E DOIS", "VINTE E TRES", "VINTE E QUATRO", "VINTE E CINCO", "VINTE E SEIS", "VINTE E SETE", "VINTE E OITO", "VINTE E NOVE", "TRINTA", "TRINTA E UM"];
+const ROMANOS = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII", "XXVIII", "XXIX", "XXX", "XXXI"];
+const ABREVIACOES = [
+  [/ R /g, " RUA "],
+  [/ AV /g, " AVENIDA "],
+  [/ ESTR /g, " ESTRADA "],
+  [/ TRAV /g, " TRAVESSA "],
+  [/ TV /g, " TRAVESSA "],
+  [/ AL /g, " ALAMEDA "],
+  [/ PCA /g, " PRACA "],
+  [/ CORR /g, " CORREGO "],
+  [/ PRIMEIRO /g, " 1 "],
+  [/ 1O /g, " 1 "],
+];
+const formaLugar = (s) => {
+  let t = maiusculo(s);
+  for (const [re, por] of ABREVIACOES) t = t.replace(re, por);
+  // Números por extenso (os compostos primeiro) e romanos viram algarismos, só antes de "DE" (datas: "XV DE NOVEMBRO").
+  for (let n = 31; n >= 1; n--) t = t.replace(new RegExp(` (${NUMEROS[n]}|${ROMANOS[n]}) DE `, "g"), ` ${n} DE `);
+  return t;
+};
+const GENERICOS = /^ (RUA|AVENIDA|TRAVESSA|ESTRADA|ALAMEDA|PRACA|VIELA|PASSAGEM|ACESSO|RUA PARTICULAR|ESCOLA|IGREJA|CRECHE|PADARIA|MERCADO|FARMACIA|BAR|LANCHONETE|ESTACIONAMENTO|POSTO|ACADEMIA|SALAO)( [A-Z0-9]{1,2})? $/;
+
+export function reconhecedorDeLugares() {
+  if (!existsSync("data/territorio/lugares.json")) return () => [];
+  const lugares = JSON.parse(readFileSync("data/territorio/lugares.json", "utf8"))
+    .lugares.map((l) => ({ ...l, forma: formaLugar(l.nome) }))
+    // Nomes curtos ou genéricos ("Rua A", "Escola", "Praça 1") confundem mais do que ajudam.
+    .filter((l) => l.forma.trim().length >= 10 && l.forma.trim().split(" ").length >= 2 && !GENERICOS.test(l.forma))
+    // Lugares (prédios, praças, comércios) precisam de nome com 3 palavras ou mais.
+    .filter((l) => l.tipo !== "lugar" || l.forma.trim().split(" ").length >= 3)
+    .sort((a, b) => b.forma.length - a.forma.length);
+  return (texto) => {
+    let t = formaLugar(texto);
+    const achados = [];
+    for (const l of lugares) {
+      const i = t.indexOf(l.forma);
+      if (i < 0) continue;
+      achados.push({ nome: l.nome, tipo: l.tipo, bairros: l.bairros });
+      // Apaga o trecho achado, para "Rua Pedro Rissato" não casar também com um lugar "Pedro Rissato".
+      t = t.slice(0, i) + " ".repeat(l.forma.length) + t.slice(i + l.forma.length);
+    }
+    return achados;
+  };
+}

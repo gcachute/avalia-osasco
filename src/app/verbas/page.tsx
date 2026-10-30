@@ -221,7 +221,7 @@ export default function PaginaDinheiro() {
         </p>
       </Secao>
 
-      <Secao titulo="Nos bairros" id="nos-bairros" subtitulo="Emendas, convênios e pagamentos cujo texto oficial cita o nome do bairro, uma escola ou uma unidade de saúde dele.">
+      <Secao titulo="Nos bairros" id="nos-bairros" subtitulo="Emendas, convênios e pagamentos cujo texto oficial cita o bairro, uma escola, unidade de saúde, rua ou córrego dele.">
         {bairros.length ? (
           <>
             <ol className="grid gap-x-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -241,8 +241,10 @@ export default function PaginaDinheiro() {
               </Link>
             </p>
             <p className="mt-2 text-xs text-slate-500">
-              Só entra o que cita o lugar no texto: um posto de saúde pago com dinheiro federal sem o nome do bairro na descrição não aparece aqui. Quando
-              um item cita mais de um bairro, o valor é dividido entre eles. {convenios.length} convênios de emendas foram conferidos.
+              Quando o texto cita uma rua ou um córrego, entram todos os bairros por onde ele passa (pelo mapa de ruas do OpenStreetMap); quando cita vários
+              bairros, o valor é dividido igualmente entre eles. Emendas recebidas sem rua nem bairro no texto (&quot;diversas ruas do município&quot;) valem para a
+              cidade toda e são divididas entre os 60 bairros. Pagamentos comuns sem lugar no texto não entram. {convenios.length} convênios de emendas foram
+              conferidos.
             </p>
           </>
         ) : (

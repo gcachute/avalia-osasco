@@ -310,8 +310,11 @@ export default function Metodologia() {
             emendas de relator e a situação das emendas Pix. São fatos para olhar de perto, não conclusões.
           </li>
           <li>
-            <b>Bairros:</b> entram emendas, convênios e pagamentos cujo texto cita o bairro, uma escola ou uma unidade de saúde, com o mesmo reconhecimento
-            de nomes dos documentos da Câmara. Quando um item cita vários bairros, o valor é dividido entre eles.
+            <b>Bairros:</b> entram emendas, convênios e pagamentos cujo texto cita o bairro, uma escola, uma unidade de saúde, uma rua, um córrego ou um
+            lugar com nome. Ruas e córregos contam para todos os bairros por onde passam (mapa de ruas do OpenStreetMap; nomes repetidos em pontos
+            diferentes da cidade ficam de fora). Quando um item cita vários bairros, o valor é dividido igualmente entre eles e todos aparecem no mapa.
+            Emendas recebidas sem lugar no texto valem para a cidade toda (divididas entre os 60 bairros). O valor de um convênio entra no máximo pelo que
+            Osasco recebeu da emenda (o convênio do Minha Casa Minha Vida de 2011, por exemplo, tem o valor do programa inteiro).
           </li>
           <li>
             <b>Limites:</b> FPM, ICMS e IPVA entram no caixa geral e não podem ser seguidos até a nota. Repasses direto aos fundos de saúde e educação e as

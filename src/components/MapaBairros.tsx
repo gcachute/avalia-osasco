@@ -415,8 +415,10 @@ export function MapaBairros({
   const [citados, setCitados] = useState<string[]>([]);
   // Ao escolher um bairro a partir de um documento, os outros bairros do documento continuam marcados.
   const citadosAoEscolher = useRef<string[] | null>(null);
+  // (As abas Verbas e Documentos do painel marcam e desmarcam os bairros citados por conta própria.)
   useEffect(() => {
-    setCitados(citadosAoEscolher.current ?? []);
+    if (!citadosAoEscolher.current) return;
+    setCitados(citadosAoEscolher.current);
     citadosAoEscolher.current = null;
   }, [selecionado]);
   const nomesBairros = useMemo(() => new Map(bairros.map((b) => [b.id, b.nome])), [bairros]);
@@ -687,10 +689,10 @@ export function MapaBairros({
                       <path
                         key={`citado-${id}`}
                         d={porId.get(id)!.d}
-                        fill="none"
+                        className="mapa-citado"
+                        fill="var(--mapa-citado)"
                         stroke="var(--mapa-destaque)"
                         strokeWidth={2}
-                        strokeDasharray="5 4"
                         strokeLinejoin="round"
                         vectorEffect="non-scaling-stroke"
                         pointerEvents="none"
