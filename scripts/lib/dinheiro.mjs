@@ -808,13 +808,44 @@ export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], 
 
   // No mapa vão os 15 itens de maior valor de cada bairro (a soma do bairro conta todos).
   const GRUPO = { pix: "emendas", convenio: "emendas", gastoEmenda: "emendas", gastoFederal: "federal", gastoEstadual: "estadual", gastoVereadores: "vereadores" };
+  // Itens com o mesmo propósito, ano, origem e bairros (as 9 emendas da canalização do Córrego Rico, as várias compras do
+  // mesmo serviço) viram um item só, com o total e cada parte (autor ou fornecedor e valor) para abrir no detalhe.
+  const chaveTexto = (t) =>
+    (t ?? "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim();
+  const juntarIguais = (itens) => {
+    const grupos = new Map();
+    for (const i of itens) {
+      const k = [i.origem, i.ano, chaveTexto(i.texto), (i.bairros ?? []).slice().sort().join(",")].join("|");
+      const g = grupos.get(k);
+      if (!g) grupos.set(k, { ...i, partes: [{ quem: i.quem, autor: i.autor ?? null, valor: i.valor, pagamentos: i.pagamentos ?? null }] });
+      else {
+        g.valor = r2(g.valor + i.valor);
+        g.pagamentos = (g.pagamentos ?? 1) + (i.pagamentos ?? 1);
+        g.partes.push({ quem: i.quem, autor: i.autor ?? null, valor: i.valor, pagamentos: i.pagamentos ?? null });
+      }
+    }
+    return [...grupos.values()].map((g) => {
+      if (g.partes.length < 2) {
+        const { partes: _p, ...item } = g;
+        return item;
+      }
+      // Várias partes: o "quem" do item vira a lista nas partes, da maior para a menor.
+      return { ...g, quem: null, autor: null, partes: g.partes.sort((a, b) => b.valor - a.valor) };
+    });
+  };
   for (const b of Object.values(porBairro)) {
+    b.itens = juntarIguais(b.itens);
     b.quantidade = b.itens.length;
     // Soma de cada grupo com todos os itens (inclusive os que ficam fora dos 15), já dividida entre os bairros citados.
     b.porGrupo = {};
     for (const i of b.itens) b.porGrupo[GRUPO[i.origem]] = r2((b.porGrupo[GRUPO[i.origem]] ?? 0) + i.valor / (i.outrosBairros + 1));
-    // Pela parte de cada bairro (um pagamento que cita 17 bairros vale 1/17 aqui).
-    b.itens = b.itens.sort((a, c) => c.valor / (c.outrosBairros + 1) - a.valor / (a.outrosBairros + 1)).slice(0, 15);
+    // Pelo valor inteiro, que é o que o painel mostra (os bairros citados juntos aparecem no mapa ao clicar no item).
+    b.itens = b.itens.sort((a, c) => c.valor - a.valor).slice(0, 15);
   }
   const parl = ler("parlamentares.json");
 

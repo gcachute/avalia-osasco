@@ -17,13 +17,17 @@ const GRUPOS: { chave: Grupo; nome: string; cor: string }[] = [
 // Com o item aberto (clique), os outros bairros citados ficam coloridos no mapa.
 type Realce = { atual: string; nomes: Map<string, string>; marcar: (ids: string[] | null, ajuste?: "enquadrar" | "selecionado") => void };
 
+// "4 emendas", "3 compras".
+const nomeParte = (origem: ItemDinheiroBairro["origem"], n: number) =>
+  origem === "pix" ? (n === 1 ? "emenda" : "emendas") : origem === "convenio" ? (n === 1 ? "convênio" : "convênios") : n === 1 ? "compra" : "compras";
+
 function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; realce?: Realce }) {
   const [aberto, setAberto] = useState(false);
   const outros = (i.bairros ?? []).filter((b) => b !== realce?.atual);
   const grupo = GRUPOS.find((g) => g.chave === GRUPO_ORIGEM[i.origem])!;
-  // Quando o texto cita vários bairros, cada um fica com uma parte igual do valor: é essa parte que entra na soma do bairro.
+  // O item mostra o valor inteiro; só a soma do bairro (no alto da aba) conta a parte igual de cada bairro citado.
   const bairros = i.outrosBairros + 1;
-  const parte = i.valor / bairros;
+  const partes = i.partes && i.partes.length > 1 ? i.partes : null;
   // Clicar em qualquer parte do item abre o detalhe; num item de vários bairros, o mapa se ajusta para mostrar todos
   // (fechar volta ao bairro escolhido).
   const alternar = () => {
@@ -42,16 +46,14 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
           {ROTULO_ORIGEM[i.origem]}
         </span>
         <span className="tabular-nums">{i.ano}</span>
-        <span className="ml-auto text-right">
-          <span className="block font-semibold tabular-nums text-slate-900">
-            {dinheiroCurto(parte)}
-            {bairros > 1 && <span className="font-normal text-slate-500"> por bairro</span>}
+        {partes && (
+          <span className="rounded-full bg-white px-1.5 font-medium text-slate-700 ring-1 ring-slate-200">
+            {partes.length} {nomeParte(i.origem, partes.length)}
           </span>
-          {bairros > 1 && (
-            <span className="block text-[10px] tabular-nums text-slate-500">
-              {dinheiroCurto(i.valor)} ÷ {bairros} bairros
-            </span>
-          )}
+        )}
+        <span className="ml-auto text-right">
+          <span className="block font-semibold tabular-nums text-slate-900">{dinheiroCurto(i.valor)}</span>
+          {bairros > 1 && <span className="block text-[10px] text-slate-500">{bairros} bairros</span>}
         </span>
       </div>
       {/* Para quem usa o teclado; o clique sobe até o item. */}
@@ -63,21 +65,47 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
         <span className={`block text-slate-700 ${aberto ? "" : "line-clamp-3"}`}>{frase(i.texto)}</span>
         {aberto && (
           <span className="mt-0.5 block tabular-nums text-slate-500">
-            {bairros > 1
-              ? `Valor exato: ${reaisExato(i.valor)}, dividido igualmente entre os ${bairros} bairros citados (${reaisExato(parte)} para cada um).`
-              : `Valor exato: ${reaisExato(i.valor)}`}
+            Valor exato: {reaisExato(i.valor)}
           </span>
         )}
       </button>
+      {/* Várias emendas ou compras juntas: fechado, os nomes; aberto, cada uma com o valor. */}
+      {partes && !aberto && (
+        <p className="mt-0.5 text-[11px] text-slate-500">
+          {[...new Set(partes.map((x) => x.quem).filter(Boolean))].slice(0, 3).join(", ")}
+          {new Set(partes.map((x) => x.quem)).size > 3 && ` e mais ${new Set(partes.map((x) => x.quem)).size - 3}`}
+        </p>
+      )}
+      {partes && aberto && (
+        <ul className="mt-1.5 divide-y divide-slate-200/70 rounded-md bg-white/60 px-2 text-[11px] ring-1 ring-slate-200">
+          {partes.map((x, k) => (
+            <li key={k} className="flex items-baseline gap-2 py-1">
+              <span className="min-w-0 flex-1">
+                {x.autor ? (
+                  <Link href={`/verbas?autor=${x.autor}`} onClick={(e) => e.stopPropagation()} className="font-medium text-blue-800 underline">
+                    {x.quem}
+                  </Link>
+                ) : (
+                  <span className="text-slate-700">{x.quem ?? "—"}</span>
+                )}
+                {x.pagamentos && x.pagamentos > 1 && <span className="text-slate-500"> · {x.pagamentos} pagamentos</span>}
+              </span>
+              <span className="shrink-0 text-right tabular-nums text-slate-900">
+                {reaisExato(x.valor)}
+              </span>
+            </li>
+          ))}
+        </ul>
+      )}
       <div className="mt-0.5 flex flex-wrap gap-x-2 text-[11px] text-slate-500">
-        {i.autor ? (
+        {partes ? null : i.autor ? (
           <Link href={`/verbas?autor=${i.autor}`} onClick={(e) => e.stopPropagation()} className="font-medium text-blue-800 underline">
             {i.quem}
           </Link>
         ) : (
           i.quem && <span>{i.quem}</span>
         )}
-        {i.pagamentos && i.pagamentos > 1 && <span>{i.pagamentos} pagamentos</span>}
+        {!partes && i.pagamentos && i.pagamentos > 1 && <span>{i.pagamentos} pagamentos</span>}
 
       </div>
       {i.via && i.via.length > 0 && (
@@ -88,7 +116,7 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
       )}
       {outros.length > 0 && realce && (
         <p className="mt-1 text-[11px] text-slate-600">
-          <span className="font-medium">Dividido também com</span> (coloridos no mapa com o item aberto):{" "}
+          <span className="font-medium">Também cita</span> (coloridos no mapa com o item aberto):{" "}
           {outros
             .map((b) => realce.nomes.get(b) ?? b)
             .sort((x, y) => x.localeCompare(y, "pt-BR"))
@@ -113,7 +141,8 @@ export function DinheiroBairro({ d, realce }: { d: NonNullable<BairroMapa["dinhe
     <div>
       <p className="text-xs text-slate-500">
         {d.quantidade === 1 ? "1 item" : `${d.quantidade} itens`} com dinheiro da União, do Estado ou de emendas citam o bairro, somando{" "}
-        <span className="font-semibold text-slate-900">{dinheiroCurto(d.valor)}</span>.
+        <span className="font-semibold text-slate-900">{dinheiroCurto(d.valor)}</span> (o que cita vários bairros entra na soma dividido igualmente entre
+        eles; os itens abaixo mostram o valor inteiro).
       </p>
       {total > 0 && (
         <>

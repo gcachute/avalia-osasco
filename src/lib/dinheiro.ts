@@ -196,6 +196,8 @@ export type ItemDinheiroBairro = {
   bairros?: string[];
   // Rua, córrego ou lugar que ligou o item aos bairros.
   via?: string[];
+  // Várias emendas ou compras com o mesmo propósito, ano e bairros, juntas: cada parte com quem e quanto.
+  partes?: { quem: string | null; autor: string | null; valor: number; pagamentos: number | null }[];
 };
 
 export const ROTULO_ORIGEM: Record<ItemDinheiroBairro["origem"], string> = {
