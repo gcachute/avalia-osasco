@@ -585,7 +585,7 @@ if (malha) {
   itens.sort((a, b) => a.data.localeCompare(b.data));
   const territorio = montarTerritorio(malha, idFor);
   // Dinheiro federal e estadual: a página própria vai num arquivo separado; o mapa recebe o que cita cada bairro.
-  const dinheiro = montarDinheiro({ acha, achaEquipamento, achaLugares: reconhecedorDeLugares(), todosBairros: malha.bairros.map((b) => b.id), vereadores });
+  const dinheiro = montarDinheiro({ acha, achaEquipamento, achaLugares: reconhecedorDeLugares(), vereadores });
   if (dinheiro) writeFileSync("src/data/dinheiro.json", JSON.stringify(dinheiro.pagina));
   mapa = {
     fonte: malha.fonte,

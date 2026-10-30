@@ -242,8 +242,8 @@ export default function PaginaDinheiro() {
             </p>
             <p className="mt-2 text-xs text-slate-500">
               Quando o texto cita uma rua ou um córrego, entram todos os bairros por onde ele passa (pelo mapa de ruas do OpenStreetMap); quando cita vários
-              bairros, o valor é dividido igualmente entre eles. Emendas recebidas sem rua nem bairro no texto (&quot;diversas ruas do município&quot;) valem para a
-              cidade toda e são divididas entre os 60 bairros. Pagamentos comuns sem lugar no texto não entram. {convenios.length} convênios de emendas foram
+              bairros, o valor é dividido igualmente entre eles. O que vale para Osasco inteira, sem rua nem bairro no texto (&quot;diversas ruas do
+              município&quot;), fica fora das estatísticas dos bairros. {convenios.length} convênios de emendas foram
               conferidos.
             </p>
           </>

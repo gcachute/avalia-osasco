@@ -194,8 +194,6 @@ export type ItemDinheiroBairro = {
   outrosBairros: number;
   // Todos os bairros citados pelo item (o valor é dividido igualmente entre eles).
   bairros?: string[];
-  // Vale para a cidade toda (emenda sem rua nem bairro no texto): dividido entre os 60 bairros.
-  cidadeToda?: boolean;
   // Rua, córrego ou lugar que ligou o item aos bairros.
   via?: string[];
 };
