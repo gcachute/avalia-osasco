@@ -592,7 +592,7 @@ export function QuemMandou({ autores, vereadores, porPartido }: { autores: Autor
   const [todosPartidos, setTodosPartidos] = useState(false);
   const todos = useMemo(() => [...autores, ...vereadores], [autores, vereadores]);
 
-  // /dinheiro?autor=giordano abre a ficha direto (links do mapa).
+  // /verbas?autor=giordano abre a ficha direto (links do mapa).
   useEffect(() => {
     setMontado(true);
     const chave = new URLSearchParams(window.location.search).get("autor");

@@ -32,7 +32,7 @@ function Item({ i }: { i: ItemDinheiroBairro }) {
       </button>
       <div className="mt-0.5 flex flex-wrap gap-x-2 text-[11px] text-slate-500">
         {i.autor ? (
-          <Link href={`/dinheiro?autor=${i.autor}`} className="font-medium text-blue-800 underline">
+          <Link href={`/verbas?autor=${i.autor}`} className="font-medium text-blue-800 underline">
             {i.quem}
           </Link>
         ) : (
@@ -91,8 +91,8 @@ export function DinheiroBairro({ d }: { d: NonNullable<BairroMapa["dinheiro"]> }
         ))}
       </ol>
       {!itens.length && <p className="mt-2 text-xs text-slate-500">Entre os itens de maior valor, nenhum é deste tipo.</p>}
-      <Link href="/dinheiro" className="mt-2 inline-block text-xs font-medium text-blue-800 underline">
-        Todo o dinheiro de fora
+      <Link href="/verbas" className="mt-2 inline-block text-xs font-medium text-blue-800 underline">
+        Todas as verbas de fora
       </Link>
     </div>
   );

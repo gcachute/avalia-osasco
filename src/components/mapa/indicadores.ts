@@ -29,7 +29,7 @@ export type Indicador = {
 
 export const TEMAS: { chave: Tema; nome: string }[] = [
   { chave: "politica", nome: "Política" },
-  { chave: "dinheiro", nome: "Dinheiro de fora" },
+  { chave: "dinheiro", nome: "Verbas de fora" },
   { chave: "eleicao", nome: "Eleições" },
   { chave: "pessoas", nome: "Renda e moradores" },
   { chave: "infra", nome: "Rua e saneamento" },
@@ -65,7 +65,7 @@ export const INDICADORES: Indicador[] = [
     chave: "dinheiroItens",
     tema: "dinheiro",
     nome: "Quantos itens citam",
-    dica: "Quantas emendas, convênios e pagamentos com dinheiro de fora citam o bairro",
+    dica: "Quantas emendas, convênios e pagamentos com verbas de fora citam o bairro",
     formato: "inteiro",
     escala: "zero",
     valor: (b) => b.dinheiro?.quantidade ?? 0,

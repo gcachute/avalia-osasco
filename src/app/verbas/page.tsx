@@ -11,7 +11,7 @@ import { nomeProprio, type PaginaDinheiro } from "@/lib/dinheiro";
 import { dinheiroCurto } from "@/lib/formato";
 
 export const metadata: Metadata = {
-  title: "Dinheiro de fora",
+  title: "Verbas de fora",
   description: "Quanto a União e o Estado mandam para Osasco, quais deputados e senadores mandaram emendas, com quem a Prefeitura gastou esse dinheiro e o que a conferência de integridade encontrou.",
 };
 
@@ -33,7 +33,7 @@ export default function PaginaDinheiro() {
   return (
     <>
       <header className="max-w-3xl">
-        <h1 className="text-3xl font-bold tracking-tight text-balance text-slate-900">Dinheiro de fora</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-balance text-slate-900">Verbas de fora</h1>
         <p className="mt-2 text-slate-600">
           Quanto a União e o Estado mandam para Osasco e por qual motivo, quem mandou cada emenda, com quem a Prefeitura gastou esse dinheiro e o que a
           conferência nas listas oficiais de punidos encontrou. Tudo a partir dos registros oficiais, com o link de cada fonte.

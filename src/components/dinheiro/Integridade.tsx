@@ -95,7 +95,7 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
             <span className="shrink-0 tabular-nums text-slate-900">{dinheiroCurto(p.recebeu)}</span>
           </div>
           <div className="text-xs text-slate-500">
-            Recebeu dinheiro de fora em {lista(p.anos)}
+            Recebeu verbas de fora em {lista(p.anos)}
             {p.deEmenda > 0 && ` (${dinheiroCurto(p.deEmenda)} de emendas)`}
           </div>
           <ul className="mt-2 space-y-1.5 text-xs">
@@ -111,7 +111,7 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
                     : s.valeParaOsasco
                       ? s.pagoDurante > 0
                         ? `Vale para Osasco; ${dinheiroCurto(s.pagoDurante)} foram pagos no período da punição.`
-                        : "Vale para Osasco; nenhum pagamento com dinheiro de fora no período da punição."
+                        : "Vale para Osasco; nenhum pagamento com verbas de fora no período da punição."
                       : /Multa|Publica/i.test(s.categoria)
                         ? "Multa, sem proibição de contratar."
                         : "Só vale para o órgão que puniu ou para o governo dele."}
@@ -177,7 +177,7 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
           resultado={
             <>
               Das compras e serviços pagos com dinheiro de emenda desde {comEmendas[0].ano}, {pct(semLicitacao(emendasTodas))} foram contratados sem licitação
-              (dispensa ou inexigibilidade). No total do dinheiro de fora, a parte sem licitação é de {pct(semLicitacao(somaM(i.modalidades.map((m) => m.todos))))}.
+              (dispensa ou inexigibilidade). No total das verbas de fora, a parte sem licitação é de {pct(semLicitacao(somaM(i.modalidades.map((m) => m.todos))))}.
             </>
           }
         >

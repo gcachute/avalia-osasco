@@ -260,7 +260,7 @@ export default function Metodologia() {
         </p>
       </Secao>
 
-      <Secao titulo="Dinheiro de fora" id="dinheiro">
+      <Secao titulo="Verbas de fora" id="verbas">
         <ul className="list-disc space-y-2 pl-5 text-slate-700">
           <li>
             <b>Quanto chega:</b> receitas que a Prefeitura declarou ao Tesouro Nacional nas contas anuais (SICONFI, Anexo I-C), separadas pelo nome de
@@ -291,7 +291,7 @@ export default function Metodologia() {
             físicas entram só nos totais.
           </li>
           <li>
-            <b>Conferências de integridade:</b> todas as empresas e entidades que receberam dinheiro de fora são procuradas pelo CNPJ nas listas de punidos
+            <b>Conferências de integridade:</b> todas as empresas e entidades que receberam verbas de fora são procuradas pelo CNPJ nas listas de punidos
             da CGU (CEIS, CNEP e CEPIM), e o mês de cada pagamento é comparado com o período da punição. Uma punição conta como válida para Osasco quando
             abrange todos os governos, quando é declaração de inidoneidade ou quando foi aplicada pela própria Prefeitura. Também são contadas a forma de
             contratação (licitação, dispensa, inexigibilidade), a parte dos pagamentos com a emenda identificada, a concentração em um fornecedor, as
@@ -308,7 +308,7 @@ export default function Metodologia() {
           </li>
         </ul>
         <p className="mt-3 text-sm text-slate-600">
-          Veja em <Link href="/dinheiro" className="underline">Dinheiro</Link>.
+          Veja em <Link href="/verbas" className="underline">Verbas</Link>.
         </p>
       </Secao>
 
