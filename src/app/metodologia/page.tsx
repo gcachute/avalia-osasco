@@ -265,7 +265,8 @@ export default function Metodologia() {
           <li>
             <b>Quanto chega:</b> receitas que a Prefeitura declarou ao Tesouro Nacional nas contas anuais (SICONFI, Anexo I-C), separadas pelo nome de
             cada conta: FPM, ICMS, IPVA, FUNDEB, saúde, educação, assistência social e convênios. O plano de contas mudou em 2022; a separação pelo nome
-            vale para os dois formatos.
+            vale para os dois formatos. Os valores são brutos (coluna &quot;Receitas Brutas Realizadas&quot;); a parte retida para o FUNDEB (coluna
+            &quot;Deduções – FUNDEB&quot;) aparece no detalhe de cada linha e é descontada do total do ano, para não contar duas vezes o que volta pelo FUNDEB.
           </li>
           <li>
             <b>Emendas federais:</b> arquivo de emendas do Portal da Transparência (CGU), pelo valor que chegou. Conta só o que foi para a Prefeitura e os

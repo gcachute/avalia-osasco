@@ -6,10 +6,13 @@ export type Fonte = { nome: string; url: string; coletadoEm?: string; posicao?: 
 // Conta da Declaração de Contas Anuais que forma uma linha do quadro de entradas.
 export type ContaDCA = { conta: string; valor: number };
 
+// Contas de cada linha e a parte retida para formar o FUNDEB (que volta na linha do FUNDEB).
+type Retencao = { contas: Record<string, ContaDCA[]>; paraFundeb: Record<string, number>; paraFundebTotal: number };
+
 export type EntradaAno = {
   ano: number;
-  uniao: { convenios: number; sus: number; educacao: number; assistencia: number; fpm: number; outras: number; total: number; contas: Record<string, ContaDCA[]> };
-  estado: { convenios: number; sus: number; icms: number; ipva: number; outras: number; total: number; contas: Record<string, ContaDCA[]> };
+  uniao: { convenios: number; sus: number; educacao: number; assistencia: number; fpm: number; outras: number; total: number } & Retencao;
+  estado: { convenios: number; sus: number; icms: number; ipva: number; outras: number; total: number } & Retencao;
   fundeb: number;
   contasFundeb: ContaDCA[];
 };
