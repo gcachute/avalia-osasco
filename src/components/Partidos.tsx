@@ -4,11 +4,12 @@ import { useState } from "react";
 import { nota } from "@/lib/formato";
 import { SeloPartido } from "./ui";
 
-export type MediaPartido = { partido: string; logo?: string | null; media: number; vereadores: { nome: string; nota: number }[] };
+export type MediaPartido = { partido: string; logo?: string | null; media: number; sessoes: number; vereadores: { nome: string; nota: number; sessoes: number; saiu: boolean }[] };
 
 // Barras horizontais com a média de cada partido no coeficiente escolhido (uma série, uma cor).
 // Passar o mouse ou tocar mostra quem são os vereadores do partido.
-export function GraficoPartidos({ conjuntos }: { conjuntos: { chave: string; nome: string; dados: MediaPartido[] }[] }) {
+// Partido com menos da metade das sessões do período (um suplente recente, por exemplo) fica com a barra mais clara.
+export function GraficoPartidos({ conjuntos, sessoesPeriodo }: { conjuntos: { chave: string; nome: string; dados: MediaPartido[] }[]; sessoesPeriodo: number }) {
   const [chave, setChave] = useState(conjuntos[0]?.chave);
   const [ativo, setAtivo] = useState<string | null>(null);
   const atual = conjuntos.find((c) => c.chave === chave) ?? conjuntos[0];
@@ -29,6 +30,7 @@ export function GraficoPartidos({ conjuntos }: { conjuntos: { chave: string; nom
       <ul className="space-y-2" role="list">
         {atual.dados.map((p) => {
           const aberto = ativo === p.partido;
+          const pouco = p.sessoes < sessoesPeriodo / 2;
           return (
             <li key={p.partido}>
               <button
@@ -51,6 +53,7 @@ export function GraficoPartidos({ conjuntos }: { conjuntos: { chave: string; nom
                     style={{
                       width: `${(p.media / 10) * 100}%`,
                       background: aberto ? "var(--color-blue-700)" : "var(--color-blue-500)",
+                      opacity: pouco && !aberto ? 0.4 : 1,
                       transition: "width 0.6s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s",
                     }}
                   />
@@ -58,13 +61,15 @@ export function GraficoPartidos({ conjuntos }: { conjuntos: { chave: string; nom
                 <span className="text-right font-semibold tabular-nums text-slate-900">{nota(p.media)}</span>
               </button>
               <div className={`grid transition-all duration-300 ${aberto ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
-                <p className="overflow-hidden pl-[7.25rem] text-xs text-slate-500">{p.vereadores.map((v) => `${v.nome} (${nota(v.nota)})`).join(" · ")}</p>
+                <p className="overflow-hidden pl-[7.25rem] text-xs text-slate-500">
+                  {pouco && <b className="font-semibold text-slate-700">Pouco tempo de cargo: {p.sessoes} de {sessoesPeriodo} sessões. </b>}
+                  {p.vereadores.map((v) => `${v.nome}${v.saiu ? ", já saiu" : ""} (${nota(v.nota)} em ${v.sessoes} sessões)`).join(" · ")}</p>
               </div>
             </li>
           );
         })}
       </ul>
-      <p className="mt-3 text-xs text-slate-500">Média simples dos vereadores em exercício de cada partido, de 0 a 10. Passe o mouse ou toque para ver quem são.</p>
+      <p className="mt-3 text-xs text-slate-500">Média dos vereadores de cada partido na legislatura, inclusive quem já saiu, com peso pelas sessões em que cada um esteve no cargo. De 0 a 10. Barra mais clara: partido com menos da metade das sessões do período. Passe o mouse ou toque para ver quem são.</p>
     </div>
   );
 }
