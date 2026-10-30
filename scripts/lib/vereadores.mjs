@@ -100,6 +100,8 @@ export function pontosComissoes(comissoes = [], mesa = null, liderancas = []) {
 
 export function calcularNotas(vereadores, metodologia) {
   const cfg = metodologia.vereador;
+  // As regras vão junto com as notas para o perfil mostrar a conta com os mesmos números.
+  cfg.regras = { curva: CURVA, alvoLegislacao: ALVO_LEGISLACAO, alvoComissoes: ALVO_COMISSOES, perdaPorAdiamento: PERDA_POR_ADIAMENTO };
   const elegiveis = vereadores.filter((v) => v.indicadores.sessoes >= cfg.minimoSessoes);
   const por10 = (n, v) => (v.indicadores.sessoes ? (n / v.indicadores.sessoes) * 10 : 0);
   const refReq = p90(elegiveis.map((v) => por10(v.indicadores.requerimentos, v)));

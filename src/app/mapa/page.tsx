@@ -86,7 +86,7 @@ export default async function PaginaMapa() {
           <li>
             <b>Saúde e escolas:</b> unidades que atendem pelo SUS no CNES, com a localização informada ao Ministério da Saúde. Escolas em
             funcionamento no Censo Escolar 2024, ligadas ao bairro pelo endereço. O IDEB é o de 2025 (ou 2023, quando a escola não teve nota em
-            2025). No mapa só aparecem as escolas que também são locais de votação, porque o INEP não publica coordenadas.
+            2025). O INEP não publica coordenadas: no mapa, o ponto de cada escola vem do local de votação ou do Cadastro de Endereços do IBGE, e quem não foi localizado fica só na lista do bairro.
           </li>
           <li>
             <b>Segurança:</b> boletins de ocorrência de {mapa.anoSeguranca} da Secretaria da Segurança Pública, contados pelo local do fato. As taxas

@@ -161,11 +161,36 @@ export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], 
   // esportivos em várias cidades, senadora do DF para o DF) não é dinheiro para Osasco: fica fora da conta, como as
   // empresas. Conta quando a emenda é para Osasco, para o estado de SP, ou para várias cidades com autor de SP.
   const parlamentaresTodos = ler("parlamentares.json")?.parlamentares ?? {};
+  // O arquivo da CGU por recebedor deixa de fora a maior parte dos repasses de emendas ao Fundo Municipal de Saúde. O que ele
+  // não traz vem da Consulta FNS: uma emenda só entra por aqui se a CGU não registrou o mesmo valor para ela no mesmo ano.
+  const naCgu = {};
+  for (const r of emendas.recebimentos) naCgu[`${r.mes.slice(0, 4)}|${r.codigo.slice(-8)}`] = (naCgu[`${r.mes.slice(0, 4)}|${r.codigo.slice(-8)}`] ?? 0) + r.valor;
+  // Emenda paga em parcelas aparece uma vez por parcela na consulta, com o detalhe repetido: fica uma linha de cada.
+  const fnsTodos = [...new Map((ler("emendas-fns.json")?.repasses ?? []).map((r) => [[r.ano, r.proposta, r.emenda, r.portaria, r.competencia, r.valor].join("|"), r])).values()];
+  const somaFns = {};
+  for (const r of fnsTodos) somaFns[`${r.ano}|${r.emenda}`] = (somaFns[`${r.ano}|${r.emenda}`] ?? 0) + r.valor;
+  const TIPO_FNS = { "EMENDA INDIVIDUAL": "Emenda Individual - Fundo a Fundo", "EMENDA COMISSAO": "Emenda de Comissão", "EMENDA BANCADA": "Emenda de Bancada" };
+  const parteQueFalta = (r) => {
+    const k = `${r.ano}|${r.emenda}`;
+    return naCgu[k] ? r.valor * Math.max(0, 1 - naCgu[k] / somaFns[k]) : r.valor;
+  };
+  const doFns = fnsTodos
+    .filter((r) => parteQueFalta(r) >= 1)
+    .map((r) => ({
+      codigo: [r.ano, r.ano - 1, r.ano - 2].map((a) => `${a}${r.emenda}`).find((c) => emendas.emendas[c]) ?? `${r.ano}${r.emenda}`,
+      autor: emendas.autores[r.emenda.slice(0, 4)] ?? r.parlamentar,
+      tipo: TIPO_FNS[Object.keys(TIPO_FNS).find((k) => r.tipo.startsWith(k))] ?? "Emenda - Fundo a Fundo",
+      mes: `${r.ano}-00`,
+      favorecido: r.entidade,
+      cnpj: r.cnpj,
+      destino: "prefeitura",
+      valor: r2(parteQueFalta(r)),
+    }));
   const localDe = (r) => emendas.emendas[r.codigo]?.localidade ?? "";
   const deSP = (autor) => parlamentaresTodos[autor]?.uf === "SP" || /^BANCADA DE SAO PAULO|^COM\.|^RELATOR/i.test(autor);
   const paraOsasco = (r) =>
     r.destino !== "entidade" || r.codigo === "Sem informação" || /OSASCO|^S[ÃA]O PAULO \(UF\)/i.test(localDe(r)) || (/M[ÚU]LTIPLO|NACIONAL/i.test(localDe(r)) && deSP(r.autor));
-  const rec = emendas.recebimentos.filter(paraOsasco);
+  const rec = [...emendas.recebimentos, ...doFns].filter(paraOsasco);
   const entidadesFora = emendas.recebimentos.filter((r) => !paraOsasco(r));
   const parlamentares = ler("parlamentares.json")?.parlamentares ?? {};
   const autorDe = new Map(rec.map((r) => [r.codigo, r.autor]));
@@ -650,7 +675,7 @@ export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], 
       "Emendas individuais recebidas",
       EMENDAS,
       RREO,
-      "Em 2024 a Prefeitura declarou R$ 49,5 mi em emendas individuais (e R$ 28,7 mi de bancada), mas a lista da CGU por recebedor só identifica R$ 21,4 mi: o restante chegou ao Fundo Municipal de Saúde como “incremento temporário” sem o autor na lista. Por isso 2024 aparece com menos emendas do que houve.",
+      "A coluna de emendas soma a lista da CGU e a Consulta do Fundo Nacional de Saúde e inclui as emendas Pix. Em 2024 isso dá R$ 45,7 mi de emendas de saúde e R$ 20,8 mi de emendas Pix; a Prefeitura declarou R$ 49,6 mi de emendas individuais e R$ 28,7 mi de bancada, e as emendas de comissão da saúde somam R$ 28,7 mi.",
       (e) => [recebidoTipo(e.ano, /Individual/i), rreoTotal(e.ano, "RREO3TransferenciasObrigatoriasDaUniaoRelativasAsEmendasIndividuais")],
     ),
   ].filter(Boolean);

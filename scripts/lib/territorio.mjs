@@ -40,6 +40,8 @@ export function montarTerritorio(malha, idFor) {
   const eleicao = ler("data/territorio/eleicao-2024.json");
   const saude = ler("data/territorio/saude.json");
   const escolas = ler("data/territorio/escolas.json");
+  // Coordenadas de quem não é local de votação, pelo Cadastro de Endereços do IBGE (scripts/coletar-escolas-mapa.mjs).
+  const coordEscolas = ler("data/territorio/escolas-coordenadas.json");
   const favelas = ler("data/territorio/favelas.json");
   const seguranca = ler("data/territorio/seguranca.json");
   const obrasTce = ler("data/transparencia/obras.json");
@@ -165,7 +167,10 @@ export function montarTerritorio(malha, idFor) {
   const pontos = [
     ...(saude?.unidades ?? []).filter((u) => u.lat && u.lon).map((u) => ({ tipo: "saude", categoria: u.tipo, nome: u.nome, lat: u.lat, lon: u.lon, bairro: u.bairro })),
     ...(eleicao?.locais ?? []).filter((l) => l.lat && l.lon).map((l) => ({ tipo: "votacao", categoria: "Local de votação", nome: l.nome, lat: l.lat, lon: l.lon, bairro: l.bairro, eleitores: l.eleitores })),
-    ...(escolas?.escolas ?? []).filter((e) => e.lat && e.lon).map((e) => ({ tipo: "escola", categoria: e.rede, nome: e.nome, lat: e.lat, lon: e.lon, bairro: e.bairro })),
+    ...(escolas?.escolas ?? [])
+      .map((e) => ({ ...e, ...coordEscolas?.escolas[e.codigo] }))
+      .filter((e) => e.lat && e.lon)
+      .map((e) => ({ tipo: "escola", categoria: e.rede, nome: e.nome, lat: e.lat, lon: e.lon, bairro: e.bairro })),
   ];
 
   // Para cada vereador com votos: quanto da votação veio de cada bairro.
@@ -186,6 +191,6 @@ export function montarTerritorio(malha, idFor) {
           .sort((a, z) => z[1] - a[1])
           .map(([n, q]) => ({ numero: n, sigla: SIGLAS[n] ?? eleicao.partidos.nomes[n] ?? n, votos: q }))
       : [],
-    fontes: [censo, eleicao, saude, escolas, favelas, seguranca, obrasTce && { fonte: "TCE-SP, Painel de Obras", url: "https://www.tce.sp.gov.br/paineldeobras" }].filter(Boolean).map((x) => ({ nome: x.fonte, url: x.url })),
+    fontes: [censo, eleicao, saude, escolas, coordEscolas, favelas, seguranca, obrasTce && { fonte: "TCE-SP, Painel de Obras", url: "https://www.tce.sp.gov.br/paineldeobras" }].filter(Boolean).map((x) => ({ nome: x.fonte, url: x.url })),
   };
 }

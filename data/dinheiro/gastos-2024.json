@@ -690,6 +690,50 @@
      ]
     },
     {
+     "data": "2024-07-11",
+     "valor": 54100,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE A PRESTACAO DE SERVICOS DE MANUTENCAO EM VEICULOS DA SECRETARIA DE SAUDE AUTORIZADO PELO SENHOR SECRETARIO NA IMPRENSA OFICIAL DO MUNICIPIO DIA 03 06 2024 IOMO 2649",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2024-07-11",
+     "valor": 105000,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE A PRESTACAO DE SERVICOS DE MANUTENCAO EM VEICULOS DA SECRETARIA DE SAUDE AUTORIZADO PELO SENHOR SECRETARIO NA IMPRENSA OFICIAL DO MUNICIPIO DIA 03 06 2024 IOMO 2649",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2024-07-11",
+     "valor": 319011,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE A PRESTACAO DE SERVICOS DE MANUTENCAO EM VEICULOS DA SECRETARIA DE SAUDE AUTORIZADO PELO SENHOR SECRETARIO NA IMPRENSA OFICIAL DO MUNICIPIO DIA 03 06 2024 IOMO 2649",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2024-07-11",
+     "valor": 148087,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE A AQUISICAO DE PECAS PARA MANUTENCAO EM VEICULOS DA SECRETARIA DE SAUDE DURANTE O MES DE MARCO 2024 AUTORIZADO PELO SENHOR SECRETARIO CONFORME PUBLICACAO NA IMPRENSA OFICIAL DO MUNICIPIO DIA 03 06 2024 IOMO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
      "data": "2024-09-02",
      "valor": 284009.48,
      "fornecedor": "UNISERV TERCEIRIZACAO E SERVICOS LTDA",
@@ -2934,6 +2978,45 @@
    },
    "pessoasFisicas": 3609319.98,
    "itensBairro": [
+    {
+     "data": "2024-05-17",
+     "valor": 1490367.67,
+     "fornecedor": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "SANEAMENTO",
+     "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
+     "bairros": [
+      "alianca",
+      "helena-maria",
+      "jardim-elvira"
+     ]
+    },
+    {
+     "data": "2024-06-28",
+     "valor": 513428.88,
+     "fornecedor": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "SANEAMENTO",
+     "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
+     "bairros": [
+      "alianca",
+      "helena-maria",
+      "jardim-elvira"
+     ]
+    },
+    {
+     "data": "2024-06-28",
+     "valor": 1823373.19,
+     "fornecedor": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "SANEAMENTO",
+     "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
+     "bairros": [
+      "alianca",
+      "helena-maria",
+      "jardim-elvira"
+     ]
+    },
     {
      "data": "2024-09-02",
      "valor": 32430,

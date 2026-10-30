@@ -649,7 +649,30 @@
     }
    },
    "pessoasFisicas": 442648.74,
-   "itensBairro": [],
+   "itensBairro": [
+    {
+     "data": "2021-03-31",
+     "valor": 105000,
+     "fornecedor": "STAREX EMERGENCIAS MEDICAS",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE EMPRESA ESPECIALIZADA NA PRESTACAO DE SERVICOS LOCACAO DE VEICULOS TRIPULADOS PARA ATENDIMENTO DA SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO COVID 19 CONTRATO 114 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-04-28",
+     "valor": 105000,
+     "fornecedor": "STAREX EMERGENCIAS MEDICAS",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL DE EMPRESA ESPECIALIZADA NA PRESTACAO DE SERVICOS LOCACAO DE VEICULOS TRIPULADOS PARA ATENDIMENTO DA SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO COVID 19 CONTRATO 114 2020",
+     "bairros": [
+      "centro"
+     ]
+    }
+   ],
    "pagamentosEmendas": [],
    "outrosFornecedores": 1048,
    "todosCnpjs": {
@@ -1850,6 +1873,28 @@
      ]
     },
     {
+     "data": "2021-03-24",
+     "valor": 59528,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE AQUISICAO DE PECAS PARA MANUTENCAO DE VEICULOS OFICIAIS PARA A SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 04 01 2021 A 20 01 2021 I O M O N 1 999 DE 26 02 2021",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-03-24",
+     "valor": 28780,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE PRESTACAO DE SERVICOS DE MANUTENCAO DE VEICULOS OFICIAIS PARA A SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 04 01 2021 A 20 01 2021 I O M O N 1 999 DE 26 02 2021",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
      "data": "2021-04-09",
      "valor": 2083333.33,
      "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
@@ -1872,12 +1917,34 @@
      ]
     },
     {
+     "data": "2021-04-30",
+     "valor": 275400,
+     "fornecedor": "RV MEDICAL SOLUCOES HOSPITALARES LTDA ME",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM FORNECIMENTO DE MATERIAL LABORATORIAL A SER UTILIZADO PELAS UNIDADES DA SECRETARIA DE SAUDE SWAB C PONTA TUBOS CONICOS E SACO PLASTICO P ACONDICIONAMENTO DE TUBO IOMO 2025 DE 14 04 2021",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
      "data": "2021-04-13",
      "valor": 516398.68,
      "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
      "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
      "funcao": "SAÚDE",
      "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-04-20",
+     "valor": 40032,
+     "fornecedor": "ATOS PHARMA PRODUTOS HOSPITALARES",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM FORNECIMENTO DE MEDICAMENTOS FENTANILA 0 5MG CAIXA COM 50 AMPOLAS A SER UTILIZADO NAS UNIDADES DA SECRETARIA DE SAUDE REFERENTE AO PERIODO DE 25 03 2021 IOMO N 2021 DE 05 04 2021",
      "bairros": [
       "centro"
      ]
@@ -1905,6 +1972,17 @@
      ]
     },
     {
+     "data": "2021-04-20",
+     "valor": 1067200.84,
+     "fornecedor": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPEC EM FORNECIMENTO DE MATERIAL HOSPITALAR AVENTAL E LUVAS P PROCEDIMENTO CIRURGICOS A SER UTILIZADO NAS UNIDADES DA SECRETARIA DE SAUDE REF AO PERIODO DE 15 17 19 E 26 03 2021 IOMO DE N 2021 05 04 2021",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
      "data": "2021-04-28",
      "valor": 5344500,
      "fornecedor": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
@@ -1916,12 +1994,34 @@
      ]
     },
     {
+     "data": "2021-04-20",
+     "valor": 395854.16,
+     "fornecedor": "GADIEL SOLUCOES E SERVICOS EIRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM FORNECIMENTO DE MEDICAMENTOS AS UNIDADES DA SECRETARIA DE SAUDE REFERENTE AO PERIODO DE 24 03 E 25 03 2021 IOMO 2019 DE 05 04 2021",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
      "data": "2021-05-13",
      "valor": 2083333.33,
      "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
      "aplicacao": "0310 - SAÚDE - GERAL",
      "funcao": "SAÚDE",
      "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-05-19",
+     "valor": 37110,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE PRESTACAO DE SERVICOS DE MANUTENCAO DE VEICULOS OFICIAIS P A SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 01 02 A 18 03 2021 IOMO 2035 DE 03 05 2021",
      "bairros": [
       "centro"
      ]
@@ -1946,6 +2046,19 @@
      "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
      "bairros": [
       "rochdale"
+     ]
+    },
+    {
+     "data": "2021-06-14",
+     "valor": 2925588.35,
+     "fornecedor": "CEF PROGRAMAS DE DESENVOLVIMENTO URBANO",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "ADMINISTRAÇÃO",
+     "texto": "DEVOLUCAO DE RECURSO REFERENTE AO CONTRATO DE REPASSE N 315 434 03 2009 CORREGO RICO C C 0326 006 00647067 1 E C C 0326 013 00013012 0",
+     "bairros": [
+      "alianca",
+      "helena-maria",
+      "jardim-elvira"
      ]
     },
     {
@@ -1983,6 +2096,17 @@
     },
     {
      "data": "2021-07-23",
+     "valor": 32650,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO EM VEICULOS OFICIAIS PARA A SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 01 04 2021 A 13 05 2021 I O M O N 2 072 DE 12 07 2021",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-07-23",
      "valor": 1673025.88,
      "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
      "aplicacao": "0100 - GERAL TOTAL",
@@ -2010,6 +2134,17 @@
      "aplicacao": "0310 - SAÚDE - GERAL",
      "funcao": "SAÚDE",
      "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-07-23",
+     "valor": 72669,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE AQUISICAO DE PECAS PARA MANUTENCAO DE VEICULOS OFICIAIS PARA A SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 01 04 2021 A 13 05 2021 I O M O N 2 072 DE 12 07 2021",
      "bairros": [
       "centro"
      ]
@@ -2148,6 +2283,17 @@
     },
     {
      "data": "2021-11-05",
+     "valor": 38800,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO DE VEICULOS OFICIAIS PARA A SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 01 06 2021 A 20 08 2021 I O M O N 2 124 DE 20 10 2021",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2021-11-05",
      "valor": 8400,
      "fornecedor": "EMPREISERVICE SERVICOS LTDA ME",
      "aplicacao": "0310 - SAÚDE - GERAL",
@@ -2188,6 +2334,17 @@
      "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
      "bairros": [
       "rochdale"
+     ]
+    },
+    {
+     "data": "2021-11-05",
+     "valor": 79580,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE AQUISICAO DE PECAS PARA MANUTENCAO DE VEICULOS OFICIAIS PARA A SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 01 06 2021 A 20 08 2021 I O M O N 2 124 DE 20 10 2021",
+     "bairros": [
+      "centro"
      ]
     },
     {

@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-30T20:58:33.879Z",
+ "geradoEm": "2026-10-30T22:06:30.252Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -30,7 +30,13 @@
     "D": 0,
     "E": 20
    },
-   "minimoSessoes": 20
+   "minimoSessoes": 20,
+   "regras": {
+    "curva": 0.6,
+    "alvoLegislacao": 1.5,
+    "alvoComissoes": 6,
+    "perdaPorAdiamento": 1
+   }
   }
  },
  "notasVereadores": {
@@ -47342,6 +47348,16 @@
       "educacao": 0.4642857142857143,
       "saude": 0.1696649070534827
      },
+     "partes": {
+      "educacao": {
+       "posicao": 0.42857142857142855,
+       "evolucao": 0.5
+      },
+      "saude": {
+       "posicao": 0.14285714285714285,
+       "evolucao": 0.1964726712498225
+      }
+     },
      "nota": 0.3169753106695985,
      "ranking": 8
     },
@@ -47390,6 +47406,16 @@
      "componentes": {
       "educacao": 0.6428571428571428,
       "saude": 0
+     },
+     "partes": {
+      "educacao": {
+       "posicao": 0.2857142857142857,
+       "evolucao": 0.9999999999999998
+      },
+      "saude": {
+       "posicao": 0,
+       "evolucao": 0
+      }
      },
      "nota": 0.3214285714285714,
      "ranking": 7
@@ -47440,6 +47466,16 @@
       "educacao": 0.48809523809523825,
       "saude": 0.22098859480244645
      },
+     "partes": {
+      "educacao": {
+       "posicao": 0.14285714285714285,
+       "evolucao": 0.8333333333333337
+      },
+      "saude": {
+       "posicao": 0.42857142857142855,
+       "evolucao": 0.013405761033464358
+      }
+     },
      "nota": 0.35454191644884236,
      "ranking": 5
     },
@@ -47488,6 +47524,16 @@
      "componentes": {
       "educacao": 0.7619047619047616,
       "saude": 0.7451680075753195
+     },
+     "partes": {
+      "educacao": {
+       "posicao": 0.8571428571428571,
+       "evolucao": 0.6666666666666661
+      },
+      "saude": {
+       "posicao": 0.8571428571428571,
+       "evolucao": 0.633193158007782
+      }
      },
      "nota": 0.7535363847400406,
      "ranking": 2
@@ -47538,6 +47584,16 @@
       "educacao": 0.5714285714285714,
       "saude": 0.7367291872873
      },
+     "partes": {
+      "educacao": {
+       "posicao": 0.6428571428571429,
+       "evolucao": 0.5
+      },
+      "saude": {
+       "posicao": 0.7142857142857143,
+       "evolucao": 0.7591726602888856
+      }
+     },
      "nota": 0.6540788793579357,
      "ranking": 3
     },
@@ -47586,6 +47642,16 @@
      "componentes": {
       "educacao": 0.8333333333333337,
       "saude": 0.8404082849789065
+     },
+     "partes": {
+      "educacao": {
+       "posicao": 1,
+       "evolucao": 0.6666666666666675
+      },
+      "saude": {
+       "posicao": 1,
+       "evolucao": 0.6808165699578129
+      }
      },
      "nota": 0.8368708091561201,
      "ranking": 1
@@ -47636,6 +47702,16 @@
       "educacao": 0.8214285714285714,
       "saude": 0.14285714285714285
      },
+     "partes": {
+      "educacao": {
+       "posicao": 0.6428571428571429,
+       "evolucao": 0.9999999999999998
+      },
+      "saude": {
+       "posicao": 0.2857142857142857,
+       "evolucao": 0
+      }
+     },
      "nota": 0.4821428571428571,
      "ranking": 4
     },
@@ -47684,6 +47760,16 @@
      "componentes": {
       "educacao": 0.08333333333333318,
       "saude": 0.6113709617072846
+     },
+     "partes": {
+      "educacao": {
+       "posicao": 0,
+       "evolucao": 0.16666666666666635
+      },
+      "saude": {
+       "posicao": 0.5714285714285714,
+       "evolucao": 0.6513133519859977
+      }
      },
      "nota": 0.34735214752030885,
      "ranking": 6
@@ -52999,7 +53085,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 3446238.73,
+     "valor": 5669330.83,
      "itens": [
       {
        "origem": "gastoEmenda",
@@ -53038,6 +53124,40 @@
         }
        ],
        "autor": null
+      },
+      {
+       "origem": "gastoEstadual",
+       "ano": 2023,
+       "valor": 3743687.95,
+       "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
+       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+       "pagamentos": 3,
+       "outrosBairros": 2,
+       "bairros": [
+        "alianca",
+        "helena-maria",
+        "jardim-elvira"
+       ],
+       "via": [
+        "Córrego Rico"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 2925588.35,
+       "texto": "DEVOLUCAO DE RECURSO REFERENTE AO CONTRATO DE REPASSE N 315 434 03 2009 CORREGO RICO C C 0326 006 00647067 1 E C C 0326 013 00013012 0",
+       "quem": "CEF PROGRAMAS DE DESENVOLVIMENTO URBANO",
+       "pagamentos": 1,
+       "outrosBairros": 2,
+       "bairros": [
+        "alianca",
+        "helena-maria",
+        "jardim-elvira"
+       ],
+       "via": [
+        "Córrego Rico"
+       ]
       },
       {
        "origem": "pix",
@@ -53264,45 +53384,13 @@
        "bairros": [
         "alianca"
        ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2019,
-       "valor": 6307.33,
-       "texto": "Pagamento Indenizatorio a Empresa Especializada em Manutenção nos Grupos Geradores do Hospital e Maternidade Amador Aguiar e Policlinica Zona Sul - Referente ao Periodo de 12/10/2018 a 11/11/2018",
-       "quem": "CAUTRONICA LTDA EPP",
-       "pagamentos": 2,
-       "outrosBairros": 1,
-       "bairros": [
-        "alianca",
-        "vila-osasco"
-       ],
-       "via": [
-        "Hospital e Maternidade Amador Aguiar (só o trecho no bairro citado)",
-        "Policlínica Zona Sul"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2018,
-       "valor": 3173.6,
-       "texto": "Aquisição de Torneiras Clínicas, para atendimento do Hospital e Maternidade Amador Aguiar - HMMAA.",
-       "quem": "AMK BRASIL PROMOCOES E EVENTOS E COM DE MATERIAIS LTDA",
-       "pagamentos": 1,
-       "outrosBairros": 0,
-       "bairros": [
-        "alianca"
-       ],
-       "via": [
-        "Hospital e Maternidade Amador Aguiar (só o trecho no bairro citado)"
-       ]
       }
      ],
-     "quantidade": 18,
+     "quantidade": 20,
      "porGrupo": {
       "emendas": 2333389.92,
-      "federal": 407074.25,
-      "estadual": 705774.57
+      "federal": 1382270.37,
+      "estadual": 1953670.55
      }
     }
    },
@@ -54640,8 +54728,23 @@
      }
     ],
     "dinheiro": {
-     "valor": 514412.22,
+     "valor": 3901305.05,
      "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2023,
+       "valor": 3386892.83,
+       "texto": "OBRA EMERGENCIAL RUA CAMPOS DO JORDAO BONANCA CONTENCAODE ENCOSTAS DRENAGEM E PAVIMENTACAO",
+       "quem": "SOEBE CONSTRUCAO E PAVIMENTACAO LTDA",
+       "pagamentos": 2,
+       "outrosBairros": 0,
+       "bairros": [
+        "bonanca"
+       ],
+       "via": [
+        "Rua Campos do Jordão"
+       ]
+      },
       {
        "origem": "gastoEmenda",
        "ano": 2025,
@@ -54655,8 +54758,9 @@
        ]
       }
      ],
-     "quantidade": 1,
+     "quantidade": 2,
      "porGrupo": {
+      "federal": 3386892.83,
       "emendas": 514412.22
      }
     }
@@ -55753,7 +55857,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 78533790.71,
+     "valor": 88055960.17,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -55870,6 +55974,51 @@
        ]
       },
       {
+       "origem": "gastoFederal",
+       "ano": 2022,
+       "valor": 1272536.5,
+       "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM FORNECIMENTO DE MATERIAL HOSPITALAR A S UNIDADES DA SECRETARIA DE SAUDE REFERENTE A O PERIODO DE 10 E 11 03 2022 IOMO N 2207 DE 23 03 2022",
+       "quem": "VITAL HOSPITALAR COMERCIAL LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0,
+       "bairros": [
+        "centro"
+       ],
+       "via": [
+        "Secretaria de Saúde"
+       ]
+      },
+      {
+       "origem": "gastoEstadual",
+       "ano": 2020,
+       "valor": 1272000,
+       "texto": "PAGTO INDENIZATORIO COVID 19 EMPRESA ESPECIALIZADA EM FORNECIMENTO DE PROTECAO INDIVIDUAL HOSPITALAR MASCARA AS UNIDADES DA SECRETARIA DE SAUDE REF PERIODO DE 24 04 2020 CONF PUBLICACAO 04 E 11 05 2020 DOS N 1844 E 1847 2020",
+       "quem": "RV MEDICAL SOLUCOES HOSPITALARES LTDA ME",
+       "pagamentos": 2,
+       "outrosBairros": 0,
+       "bairros": [
+        "centro"
+       ],
+       "via": [
+        "Secretaria de Saúde"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 1067200.84,
+       "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPEC EM FORNECIMENTO DE MATERIAL HOSPITALAR AVENTAL E LUVAS P PROCEDIMENTO CIRURGICOS A SER UTILIZADO NAS UNIDADES DA SECRETARIA DE SAUDE REF AO PERIODO DE 15 17 19 E 26 03 2021 IOMO DE N 2021 05 04 2021",
+       "quem": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+       "pagamentos": 1,
+       "outrosBairros": 0,
+       "bairros": [
+        "centro"
+       ],
+       "via": [
+        "Secretaria de Saúde"
+       ]
+      },
+      {
        "origem": "gastoEmenda",
        "ano": 2021,
        "valor": 1016398.68,
@@ -55897,6 +56046,21 @@
        "autor": null
       },
       {
+       "origem": "gastoEstadual",
+       "ano": 2023,
+       "valor": 823058,
+       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO DE VEICULOS OFICIAIS DA SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 02 01 2023 A 28 02 2023 IOMO N 2 424 DE 14 04 2023",
+       "quem": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+       "pagamentos": 4,
+       "outrosBairros": 0,
+       "bairros": [
+        "centro"
+       ],
+       "via": [
+        "Secretaria de Saúde"
+       ]
+      },
+      {
        "origem": "gastoFederal",
        "ano": 2019,
        "valor": 821419.21,
@@ -55909,25 +56073,41 @@
        ]
       },
       {
-       "origem": "pix",
+       "origem": "gastoFederal",
        "ano": 2020,
-       "valor": 200000,
-       "texto": "Aquisição de poltronas para Espaço Cultural Grande Otelo, em Osasco/SP.",
-       "quem": "Carlos Zarattini",
-       "autor": "carlos-zarattini",
+       "valor": 745806.95,
+       "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM SERVICOS DE MANUTENCAO E SUPORTE DE TECNOLOGIA DA INFORMACAO SUPORTE TECNICO E CAPACITACAO DO SISTEMA DE P ATENDIMENTO DA SECRETARIA DE SAUDE PERIODO DE 01 A 31 08 2020 I O M O N 1 906 DE 0",
+       "quem": "INSTITUTO TECNOLOGICO INOVACAO ITI",
+       "pagamentos": 1,
        "outrosBairros": 0,
        "bairros": [
         "centro"
        ],
        "via": [
-        "Espaço Cultural Grande Otelo"
+        "Secretaria de Saúde"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 745806.95,
+       "texto": "PAGAMENTO INDENIZATORIO COVID 19 A EMPRESA ESPECIALIZADA EM SERVICOS DE MANUTENCAO E SUPORTE DE TECNOLOGIA DA INFORMACAO ATENDIMENTO DA SECRETARIA DE SAUDE PERIODO DE 01 A 31 10 2020 I O M O N 1 938 DE 11 11 2020",
+       "quem": "INSTITUTO TECNOLOGICO INOVACAO ITI",
+       "pagamentos": 1,
+       "outrosBairros": 0,
+       "bairros": [
+        "centro"
+       ],
+       "via": [
+        "Secretaria de Saúde"
        ]
       }
      ],
-     "quantidade": 10,
+     "quantidade": 35,
      "porGrupo": {
       "emendas": 1216398.68,
-      "federal": 77317392.03
+      "federal": 83898805.49,
+      "estadual": 2940756
      }
     }
    },
@@ -56769,7 +56949,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 10049811.22,
+     "valor": 12272903.32,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -56820,6 +57000,40 @@
         }
        ],
        "autor": null
+      },
+      {
+       "origem": "gastoEstadual",
+       "ano": 2023,
+       "valor": 3743687.95,
+       "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
+       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+       "pagamentos": 3,
+       "outrosBairros": 2,
+       "bairros": [
+        "alianca",
+        "helena-maria",
+        "jardim-elvira"
+       ],
+       "via": [
+        "Córrego Rico"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 2925588.35,
+       "texto": "DEVOLUCAO DE RECURSO REFERENTE AO CONTRATO DE REPASSE N 315 434 03 2009 CORREGO RICO C C 0326 006 00647067 1 E C C 0326 013 00013012 0",
+       "quem": "CEF PROGRAMAS DE DESENVOLVIMENTO URBANO",
+       "pagamentos": 1,
+       "outrosBairros": 2,
+       "bairros": [
+        "alianca",
+        "helena-maria",
+        "jardim-elvira"
+       ],
+       "via": [
+        "Córrego Rico"
+       ]
       },
       {
        "origem": "pix",
@@ -56929,10 +57143,11 @@
        ]
       }
      ],
-     "quantidade": 5,
+     "quantidade": 7,
      "porGrupo": {
       "emendas": 2333389.92,
-      "federal": 7716421.32
+      "federal": 8691617.44,
+      "estadual": 1247895.98
      }
     }
    },
@@ -57548,7 +57763,38 @@
     "obras": [],
     "saude": [],
     "escolas": [],
-    "dinheiro": null
+    "dinheiro": {
+     "valor": 2636.53,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 23728.76,
+       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
+       "quem": "VIEL CONSTRUCOES LTDA EPP",
+       "pagamentos": 1,
+       "outrosBairros": 8,
+       "bairros": [
+        "centro",
+        "industrial-autonomistas",
+        "industrial-centro",
+        "km-18",
+        "parque-continental",
+        "quintauna",
+        "vila-campesina",
+        "vila-militar",
+        "vila-yara"
+       ],
+       "via": [
+        "Avenida dos Autonomistas (só o trecho no bairro citado)"
+       ]
+      }
+     ],
+     "quantidade": 1,
+     "porGrupo": {
+      "federal": 2636.53
+     }
+    }
    },
    {
     "id": "industrial-centro",
@@ -57629,7 +57875,38 @@
     "obras": [],
     "saude": [],
     "escolas": [],
-    "dinheiro": null
+    "dinheiro": {
+     "valor": 2636.53,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 23728.76,
+       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
+       "quem": "VIEL CONSTRUCOES LTDA EPP",
+       "pagamentos": 1,
+       "outrosBairros": 8,
+       "bairros": [
+        "centro",
+        "industrial-autonomistas",
+        "industrial-centro",
+        "km-18",
+        "parque-continental",
+        "quintauna",
+        "vila-campesina",
+        "vila-militar",
+        "vila-yara"
+       ],
+       "via": [
+        "Avenida dos Autonomistas (só o trecho no bairro citado)"
+       ]
+      }
+     ],
+     "quantidade": 1,
+     "porGrupo": {
+      "federal": 2636.53
+     }
+    }
    },
    {
     "id": "industrial-mazzei",
@@ -58494,7 +58771,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 2095663.35,
+     "valor": 1873489.01,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -58527,9 +58804,10 @@
        "texto": "Construção da Creche Conceição FNDE - Avenida Transversal Sul nº 15 - Jardim Conceição - Osasco-SP. Termo de Compromisso nº Pac 2 5442/2013 pro Infância Tipo 2 .",
        "quem": "CONSTRUMEDICI ENGENHARIA E COMERCIO LTDA",
        "pagamentos": 1,
-       "outrosBairros": 0,
+       "outrosBairros": 1,
        "bairros": [
-        "jardim-conceicao"
+        "jardim-conceicao",
+        "santa-maria"
        ],
        "via": [
         "Avenida Transversal Sul (só o trecho no bairro citado)"
@@ -58566,7 +58844,7 @@
      ],
      "quantidade": 4,
      "porGrupo": {
-      "federal": 2095663.35
+      "federal": 1873489.01
      }
     }
    },
@@ -59317,7 +59595,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 2333389.9,
+     "valor": 4556482,
      "itens": [
       {
        "origem": "gastoEmenda",
@@ -59356,6 +59634,40 @@
         }
        ],
        "autor": null
+      },
+      {
+       "origem": "gastoEstadual",
+       "ano": 2023,
+       "valor": 3743687.95,
+       "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
+       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+       "pagamentos": 3,
+       "outrosBairros": 2,
+       "bairros": [
+        "alianca",
+        "helena-maria",
+        "jardim-elvira"
+       ],
+       "via": [
+        "Córrego Rico"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 2925588.35,
+       "texto": "DEVOLUCAO DE RECURSO REFERENTE AO CONTRATO DE REPASSE N 315 434 03 2009 CORREGO RICO C C 0326 006 00647067 1 E C C 0326 013 00013012 0",
+       "quem": "CEF PROGRAMAS DE DESENVOLVIMENTO URBANO",
+       "pagamentos": 1,
+       "outrosBairros": 2,
+       "bairros": [
+        "alianca",
+        "helena-maria",
+        "jardim-elvira"
+       ],
+       "via": [
+        "Córrego Rico"
+       ]
       },
       {
        "origem": "pix",
@@ -59452,9 +59764,11 @@
        "pagamentos": 4
       }
      ],
-     "quantidade": 3,
+     "quantidade": 5,
      "porGrupo": {
-      "emendas": 2333389.92
+      "emendas": 2333389.92,
+      "federal": 975196.12,
+      "estadual": 1247895.98
      }
     }
    },
@@ -60255,7 +60569,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 553469.53,
+     "valor": 830616.83,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -60272,6 +60586,40 @@
       {
        "origem": "gastoFederal",
        "ano": 2020,
+       "valor": 442534.78,
+       "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA A CONSTRUCAO DA CRECHE VILA MILITAR UNIFESP A SER EDIFICADA EM AREA PUBLICA NA ALAMEDA PARQUE S N QUITAUNA OSASCO SP CT 12 2018 E TERMO 85 2019 REVERSAO DO EMPENHO 11438 2019",
+       "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 2,
+       "bairros": [
+        "km-18",
+        "quintauna",
+        "vila-militar"
+       ],
+       "via": [
+        "Alameda Parque (só o trecho no bairro citado)"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 380997.54,
+       "texto": "Contratação de Empresa de Engenharia para a construção da Creche vila militar- Unifesp - Rua Newton Estilac Leal. nº 643 - ALAMEDA PARQUE, Quitaúna - Osasco/SP. Contrato 012/18. (Termo de Compromisso PAC 2 5442/2013 Pró Infância Tipo 1)",
+       "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
+       "pagamentos": 3,
+       "outrosBairros": 2,
+       "bairros": [
+        "km-18",
+        "quintauna",
+        "vila-militar"
+       ],
+       "via": [
+        "Alameda Parque (só o trecho no bairro citado)"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
        "valor": 79978.61,
        "texto": "CONTRATACAO DE EMPRESA ESPECIALIZADA EM REFORMAS E MANUTENCAO DO CRAS BAIRRO KM 18 OSASCO REFERENTE A ARP N 122 2019 CP 002 2019",
        "quem": "M A S CONSTRUCOES E EMPREENDIMENTOS LTDA",
@@ -60279,6 +60627,29 @@
        "outrosBairros": 0,
        "bairros": [
         "km-18"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 23728.76,
+       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
+       "quem": "VIEL CONSTRUCOES LTDA EPP",
+       "pagamentos": 1,
+       "outrosBairros": 8,
+       "bairros": [
+        "centro",
+        "industrial-autonomistas",
+        "industrial-centro",
+        "km-18",
+        "parque-continental",
+        "quintauna",
+        "vila-campesina",
+        "vila-militar",
+        "vila-yara"
+       ],
+       "via": [
+        "Avenida dos Autonomistas (só o trecho no bairro citado)"
        ]
       },
       {
@@ -60310,9 +60681,9 @@
        ]
       }
      ],
-     "quantidade": 3,
+     "quantidade": 6,
      "porGrupo": {
-      "federal": 553469.53
+      "federal": 830616.83
      }
     }
    },
@@ -60514,8 +60885,24 @@
      }
     ],
     "dinheiro": {
-     "valor": 925.82,
+     "valor": 74809.95,
      "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 147768.25,
+       "texto": "Contratação da empresa de engenharia para a construção da creche Veloso, na rua Doutor Pedro dos Santos Figueiredo nº 212 - Jardim Veloso - Osasco/SP. Contrato nº 010/2018 (Termo de Compromisso nº PAC 6162/13). Prazo de 15 meses.Valor de Re",
+       "quem": "CONSITEC ENGENHARIA E TECNOLOGIA LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 1,
+       "bairros": [
+        "metalurgicos",
+        "veloso"
+       ],
+       "via": [
+        "Rua Doutor Pedro dos Santos Figueiredo (só o trecho no bairro citado)"
+       ]
+      },
       {
        "origem": "gastoFederal",
        "ano": 2020,
@@ -60545,9 +60932,9 @@
        ]
       }
      ],
-     "quantidade": 1,
+     "quantidade": 2,
      "porGrupo": {
-      "federal": 925.82
+      "federal": 74809.95
      }
     }
    },
@@ -61576,7 +61963,38 @@
     "obras": [],
     "saude": [],
     "escolas": [],
-    "dinheiro": null
+    "dinheiro": {
+     "valor": 2636.53,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 23728.76,
+       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
+       "quem": "VIEL CONSTRUCOES LTDA EPP",
+       "pagamentos": 1,
+       "outrosBairros": 8,
+       "bairros": [
+        "centro",
+        "industrial-autonomistas",
+        "industrial-centro",
+        "km-18",
+        "parque-continental",
+        "quintauna",
+        "vila-campesina",
+        "vila-militar",
+        "vila-yara"
+       ],
+       "via": [
+        "Avenida dos Autonomistas (só o trecho no bairro citado)"
+       ]
+      }
+     ],
+     "quantidade": 1,
+     "porGrupo": {
+      "federal": 2636.53
+     }
+    }
    },
    {
     "id": "pestana",
@@ -63111,7 +63529,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 412691.98,
+     "valor": 278073.12,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -63120,8 +63538,9 @@
        "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA A CONSTRUCAO DA CRECHE VILA MILITAR UNIFESP A SER EDIFICADA EM AREA PUBLICA NA ALAMEDA PARQUE S N QUITAUNA OSASCO SP CT 12 2018 E TERMO 85 2019 REVERSAO DO EMPENHO 11438 2019",
        "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
        "pagamentos": 1,
-       "outrosBairros": 1,
+       "outrosBairros": 2,
        "bairros": [
+        "km-18",
         "quintauna",
         "vila-militar"
        ],
@@ -63136,13 +63555,37 @@
        "texto": "Contratação de Empresa de Engenharia para a construção da Creche vila militar- Unifesp - Rua Newton Estilac Leal. nº 643 - ALAMEDA PARQUE, Quitaúna - Osasco/SP. Contrato 012/18. (Termo de Compromisso PAC 2 5442/2013 Pró Infância Tipo 1)",
        "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
        "pagamentos": 3,
-       "outrosBairros": 1,
+       "outrosBairros": 2,
        "bairros": [
+        "km-18",
         "quintauna",
         "vila-militar"
        ],
        "via": [
         "Alameda Parque (só o trecho no bairro citado)"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 23728.76,
+       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
+       "quem": "VIEL CONSTRUCOES LTDA EPP",
+       "pagamentos": 1,
+       "outrosBairros": 8,
+       "bairros": [
+        "centro",
+        "industrial-autonomistas",
+        "industrial-centro",
+        "km-18",
+        "parque-continental",
+        "quintauna",
+        "vila-campesina",
+        "vila-militar",
+        "vila-yara"
+       ],
+       "via": [
+        "Avenida dos Autonomistas (só o trecho no bairro citado)"
        ]
       },
       {
@@ -63174,9 +63617,9 @@
        ]
       }
      ],
-     "quantidade": 3,
+     "quantidade": 4,
      "porGrupo": {
-      "federal": 412691.98
+      "federal": 278073.12
      }
     }
    },
@@ -63582,8 +64025,23 @@
      }
     ],
     "dinheiro": {
-     "valor": 925.82,
+     "valor": 245699.77,
      "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 244773.95,
+       "texto": "CONTRATACAO DE OSS PARA O CENTRO ESPECIALIZADO EM REABILITACAO CER II DR EDMUNDO CAMPANHA BURJATO",
+       "quem": "INSTITUTO DE GESTAO ADMINISTRACAO E TREINAMENTO EM SAUDE IGATS",
+       "pagamentos": 3,
+       "outrosBairros": 0,
+       "bairros": [
+        "remedios"
+       ],
+       "via": [
+        "Centro Especializado em Reabilitação"
+       ]
+      },
       {
        "origem": "gastoFederal",
        "ano": 2020,
@@ -63613,9 +64071,9 @@
        ]
       }
      ],
-     "quantidade": 1,
+     "quantidade": 2,
      "porGrupo": {
-      "federal": 925.82
+      "federal": 245699.77
      }
     }
    },
@@ -64373,7 +64831,31 @@
       "idebFinais": 4.4
      }
     ],
-    "dinheiro": null
+    "dinheiro": {
+     "valor": 222174.35,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 444348.69,
+       "texto": "Construção da Creche Conceição FNDE - Avenida Transversal Sul nº 15 - Jardim Conceição - Osasco-SP. Termo de Compromisso nº Pac 2 5442/2013 pro Infância Tipo 2 .",
+       "quem": "CONSTRUMEDICI ENGENHARIA E COMERCIO LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 1,
+       "bairros": [
+        "jardim-conceicao",
+        "santa-maria"
+       ],
+       "via": [
+        "Avenida Transversal Sul (só o trecho no bairro citado)"
+       ]
+      }
+     ],
+     "quantidade": 1,
+     "porGrupo": {
+      "federal": 222174.35
+     }
+    }
    },
    {
     "id": "santo-antonio",
@@ -65601,17 +66083,30 @@
      }
     ],
     "dinheiro": {
-     "valor": 322337.27,
+     "valor": 248453.15,
      "itens": [
       {
        "origem": "gastoFederal",
        "ano": 2019,
-       "valor": 317076.15,
-       "texto": "Contratação da empresa de engenharia para a construção da creche Veloso, na rua Doutor Pedro dos Santos Figueiredo nº 212 - Jardim Veloso - Osasco/SP. Contrato nº 010/2018 (Termo de Compromisso nº PAC 6162/13). Prazo de 15 meses.Valor de Re",
+       "valor": 169307.9,
+       "texto": "Construção da creche Veloso - Rua Doutor Pedro dos Santos Figueredo, Nº 212 - Jardim Veloso - Osasco - S?P. Contrato 010/18 ( Termo de Compromisso nº PAC 2 6162/2013 Pró Infância Tipo 2) - COMPLEMENTO DE EMPENHO.",
        "quem": "CONSITEC ENGENHARIA E TECNOLOGIA LTDA",
-       "pagamentos": 2,
+       "pagamentos": 1,
        "outrosBairros": 0,
        "bairros": [
+        "veloso"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 147768.25,
+       "texto": "Contratação da empresa de engenharia para a construção da creche Veloso, na rua Doutor Pedro dos Santos Figueiredo nº 212 - Jardim Veloso - Osasco/SP. Contrato nº 010/2018 (Termo de Compromisso nº PAC 6162/13). Prazo de 15 meses.Valor de Re",
+       "quem": "CONSITEC ENGENHARIA E TECNOLOGIA LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 1,
+       "bairros": [
+        "metalurgicos",
         "veloso"
        ],
        "via": [
@@ -65631,9 +66126,9 @@
        ]
       }
      ],
-     "quantidade": 2,
+     "quantidade": 3,
      "porGrupo": {
-      "federal": 322337.27
+      "federal": 248453.15
      }
     }
    },
@@ -65876,7 +66371,38 @@
       "idebFinais": null
      }
     ],
-    "dinheiro": null
+    "dinheiro": {
+     "valor": 2636.53,
+     "itens": [
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 23728.76,
+       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
+       "quem": "VIEL CONSTRUCOES LTDA EPP",
+       "pagamentos": 1,
+       "outrosBairros": 8,
+       "bairros": [
+        "centro",
+        "industrial-autonomistas",
+        "industrial-centro",
+        "km-18",
+        "parque-continental",
+        "quintauna",
+        "vila-campesina",
+        "vila-militar",
+        "vila-yara"
+       ],
+       "via": [
+        "Avenida dos Autonomistas (só o trecho no bairro citado)"
+       ]
+      }
+     ],
+     "quantidade": 1,
+     "porGrupo": {
+      "federal": 2636.53
+     }
+    }
    },
    {
     "id": "vila-menck",
@@ -66397,7 +66923,7 @@
     ],
     "escolas": [],
     "dinheiro": {
-     "valor": 411766.16,
+     "valor": 277147.3,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -66406,8 +66932,9 @@
        "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA A CONSTRUCAO DA CRECHE VILA MILITAR UNIFESP A SER EDIFICADA EM AREA PUBLICA NA ALAMEDA PARQUE S N QUITAUNA OSASCO SP CT 12 2018 E TERMO 85 2019 REVERSAO DO EMPENHO 11438 2019",
        "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
        "pagamentos": 1,
-       "outrosBairros": 1,
+       "outrosBairros": 2,
        "bairros": [
+        "km-18",
         "quintauna",
         "vila-militar"
        ],
@@ -66422,19 +66949,43 @@
        "texto": "Contratação de Empresa de Engenharia para a construção da Creche vila militar- Unifesp - Rua Newton Estilac Leal. nº 643 - ALAMEDA PARQUE, Quitaúna - Osasco/SP. Contrato 012/18. (Termo de Compromisso PAC 2 5442/2013 Pró Infância Tipo 1)",
        "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
        "pagamentos": 3,
-       "outrosBairros": 1,
+       "outrosBairros": 2,
        "bairros": [
+        "km-18",
         "quintauna",
         "vila-militar"
        ],
        "via": [
         "Alameda Parque (só o trecho no bairro citado)"
        ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 23728.76,
+       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
+       "quem": "VIEL CONSTRUCOES LTDA EPP",
+       "pagamentos": 1,
+       "outrosBairros": 8,
+       "bairros": [
+        "centro",
+        "industrial-autonomistas",
+        "industrial-centro",
+        "km-18",
+        "parque-continental",
+        "quintauna",
+        "vila-campesina",
+        "vila-militar",
+        "vila-yara"
+       ],
+       "via": [
+        "Avenida dos Autonomistas (só o trecho no bairro citado)"
+       ]
       }
      ],
-     "quantidade": 2,
+     "quantidade": 3,
      "porGrupo": {
-      "federal": 411766.16
+      "federal": 277147.3
      }
     }
    },
@@ -67037,7 +67588,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 387308.26,
+     "valor": 366216.03,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -67070,8 +67621,16 @@
        "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
        "quem": "VIEL CONSTRUCOES LTDA EPP",
        "pagamentos": 1,
-       "outrosBairros": 0,
+       "outrosBairros": 8,
        "bairros": [
+        "centro",
+        "industrial-autonomistas",
+        "industrial-centro",
+        "km-18",
+        "parque-continental",
+        "quintauna",
+        "vila-campesina",
+        "vila-militar",
         "vila-yara"
        ],
        "via": [
@@ -67081,7 +67640,7 @@
      ],
      "quantidade": 3,
      "porGrupo": {
-      "federal": 387308.26
+      "federal": 366216.03
      }
     }
    },
@@ -72269,11 +72828,571 @@
    },
    {
     "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CENTRO EDUCACIONAL ALLAN KARDEC",
+    "lat": -23.542197,
+    "lon": -46.770185,
+    "bairro": "vila-campesina"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA MONTESSORIANA DE OSASCO",
+    "lat": -23.537157,
+    "lon": -46.795432,
+    "bairro": "jardim-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "CRECHE PEDRO ALVES DE OLIVEIRA",
+    "lat": -23.543341,
+    "lon": -46.815726,
+    "bairro": "sao-pedro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Estadual",
+    "nome": "CEEJA DEPUTADO GUILHERME DE OLIVEIRA GOMES",
+    "lat": -23.547365,
+    "lon": -46.788539,
+    "bairro": "cipava"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO ESCOPO",
+    "lat": -23.54243,
+    "lon": -46.766024,
+    "bairro": "vila-yara"
+   },
+   {
+    "tipo": "escola",
     "categoria": "Municipal",
     "nome": "CRECHE JOSE DAVID BINSZTAJN",
     "lat": -23.5723184,
     "lon": -46.7968394,
     "bairro": "jardim-novo-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL PEQUENO PRINCIPE",
+    "lat": -23.532453,
+    "lon": -46.78034,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL PEROLA PRECIOSA",
+    "lat": -23.550063,
+    "lon": -46.800045,
+    "bairro": "santo-antonio"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "FADELITO OSASCO EDUCACAO INFANTIL",
+    "lat": -23.54217,
+    "lon": -46.777568,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "SUNRISE SCHOOL EDUCACAO INFANTIL",
+    "lat": -23.541869,
+    "lon": -46.775805,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO ANTONIO VILLAS BOAS",
+    "lat": -23.517463,
+    "lon": -46.772199,
+    "bairro": "ayrosa"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA ALIANCA",
+    "lat": -23.540997,
+    "lon": -46.796915,
+    "bairro": "pestana"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CENTRO EDUCACIONAL APRENDER BRINCAR E CRESCER",
+    "lat": -23.526403,
+    "lon": -46.812459,
+    "bairro": "quintauna"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "F B R EDUCACAO INFANTIL",
+    "lat": -23.543493,
+    "lon": -46.774216,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO APRENDENDO COM AMOR",
+    "lat": -23.50354,
+    "lon": -46.79058,
+    "bairro": "jardim-elvira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "KIDS WAY BERCARIO E EDUCACAO INFANTIL",
+    "lat": -23.553976,
+    "lon": -46.780821,
+    "bairro": "bela-vista"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "CRECHE MARIA JOSE DA SILVA JESUS",
+    "lat": -23.545608,
+    "lon": -46.801073,
+    "bairro": "jardim-roberto"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "CRECHE AGENTIL DOS REIS",
+    "lat": -23.5484,
+    "lon": -46.80426,
+    "bairro": "jardim-roberto"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "AUDAX CURSOS PROFISSIONALIZANTES",
+    "lat": -23.53599,
+    "lon": -46.779873,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL MIMO DA GENTE",
+    "lat": -23.572549,
+    "lon": -46.800894,
+    "bairro": "jardim-novo-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL TIA MARISA",
+    "lat": -23.494596,
+    "lon": -46.793705,
+    "bairro": "helena-maria"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CENTRO EDUCACIONAL MIRA MARIA",
+    "lat": -23.543321,
+    "lon": -46.773959,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL SAO MATEUS",
+    "lat": -23.518898,
+    "lon": -46.753674,
+    "bairro": "remedios"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PEQUENO PRINCIPE BERCARIO",
+    "lat": -23.532542,
+    "lon": -46.780409,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL O APRENDIZ PEQUENO SABIO II",
+    "lat": -23.541819,
+    "lon": -46.78118,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESPACO ENCANTADO CARINHA DE ANJO",
+    "lat": -23.545432,
+    "lon": -46.763153,
+    "bairro": "vila-campesina"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL MASTER KIDS",
+    "lat": -23.54326,
+    "lon": -46.773326,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL ALFA KIDS",
+    "lat": -23.55733,
+    "lon": -46.796333,
+    "bairro": "santo-antonio"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL PETEKINHA",
+    "lat": -23.534144,
+    "lon": -46.786502,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL PEQUENO PRINCIPE",
+    "lat": -23.553257,
+    "lon": -46.759786,
+    "bairro": "vila-yara"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO RAIO DE LUZ",
+    "lat": -23.561248,
+    "lon": -46.783111,
+    "bairro": "umuarama"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL MUNDO DA CRIANCA",
+    "lat": -23.570208,
+    "lon": -46.791736,
+    "bairro": "bussocaba"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "TRENZINHO DA ALEGRIA BERCARIO",
+    "lat": -23.558083,
+    "lon": -46.78439,
+    "bairro": "jaguaribe"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA FAMILIA KIDS",
+    "lat": -23.54667,
+    "lon": -46.810037,
+    "bairro": "padroeira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "INSTITUICAO PRESBITERIANA DE ENSINO",
+    "lat": -23.529677,
+    "lon": -46.7855,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO A TURMA DA LU",
+    "lat": -23.547083,
+    "lon": -46.791178,
+    "bairro": "vila-yolanda"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "TESLA DIGITAL SCHOOL",
+    "lat": -23.533884,
+    "lon": -46.778777,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "EDUCA MAIS SAUDE LTDA",
+    "lat": -23.535614,
+    "lon": -46.775515,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL E FUNDAMENTAL LIMAOZINHO BOZANHI",
+    "lat": -23.530257,
+    "lon": -46.796066,
+    "bairro": "jardim-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO CULTURA EDUCACIONAL",
+    "lat": -23.545189,
+    "lon": -46.782286,
+    "bairro": "bela-vista"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COC VILA YARA UNIDADE II",
+    "lat": -23.547242,
+    "lon": -46.763701,
+    "bairro": "vila-yara"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO APRENDER E SABER",
+    "lat": -23.53954,
+    "lon": -46.781562,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "SEMENTE DO CONHECIMENTO EIRELI ME",
+    "lat": -23.567322,
+    "lon": -46.805769,
+    "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESPACO DAY CARE OSASCO LTDA",
+    "lat": -23.532523,
+    "lon": -46.786303,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL VILA JARDIM LTDA",
+    "lat": -23.537056,
+    "lon": -46.796897,
+    "bairro": "jardim-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "BOSQUE DO CRESCER LTDA",
+    "lat": -23.528484,
+    "lon": -46.768672,
+    "bairro": "presidente-altino"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO BELA VISTA KIDS LTDA",
+    "lat": -23.539918,
+    "lon": -46.77917,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "DOM HENRIQUE KM 18 COLEGIO",
+    "lat": -23.532087,
+    "lon": -46.797361,
+    "bairro": "km-18"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "BLOOM EDUCACAO INFANTIL E RECREACAO LTDA",
+    "lat": -23.547187,
+    "lon": -46.76555,
+    "bairro": "vila-campesina"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CRECHE PROFESSOR ANTONIO GUACU DINAER PITERI",
+    "lat": -23.510605,
+    "lon": -46.788283,
+    "bairro": "piratininga"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "HAPPY KIDS BABY EDUCACAO INFANTIL LTDA ME",
+    "lat": -23.540868,
+    "lon": -46.778776,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "DECOLAR KIDS BERCARIO E EDUCACAO INFANTIL LTDA",
+    "lat": -23.549588,
+    "lon": -46.767028,
+    "bairro": "vila-yara"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL GEGE KIDS LTDA",
+    "lat": -23.551244,
+    "lon": -46.799169,
+    "bairro": "santo-antonio"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PEQUENOS NOTAVEIS ESCOLA DE EDUCACAO INFANTIL LTDA",
+    "lat": -23.517486,
+    "lon": -46.772175,
+    "bairro": "ayrosa"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Estadual",
+    "nome": "CEL PROF ORLANDO GERIBOLA",
+    "lat": -23.564626,
+    "lon": -46.794299,
+    "bairro": "bussocaba"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "GRAU TECNICO UNIDADE OSASCO OSASCO EDUCACIONAL CURSOS TECNICOS LTDA",
+    "lat": -23.533382,
+    "lon": -46.777605,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PROZ UNIDADE OSASCO",
+    "lat": -23.537516,
+    "lon": -46.777404,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA TECYOU",
+    "lat": -23.532605,
+    "lon": -46.778722,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "BEEHIVE SCHOOL EDUCACAO INFANTIL LTDA",
+    "lat": -23.535963,
+    "lon": -46.783602,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "BETHEL ENSINO CRISTAO BILINGUE",
+    "lat": -23.539334,
+    "lon": -46.77993,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL AMOR A VIDA",
+    "lat": -23.560262,
+    "lon": -46.805557,
+    "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA CANADENSE DE OSASCO",
+    "lat": -23.528565,
+    "lon": -46.797875,
+    "bairro": "km-18"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO MARIA MATER",
+    "lat": -23.550503,
+    "lon": -46.785834,
+    "bairro": "cipava"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO MAXIMO",
+    "lat": -23.526612,
+    "lon": -46.77216,
+    "bairro": "presidente-altino"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "SOUL MASTER KIDS",
+    "lat": -23.541414,
+    "lon": -46.771825,
+    "bairro": "vila-campesina"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CICLO GOTINHAS II",
+    "lat": -23.565218,
+    "lon": -46.791654,
+    "bairro": "bussocaba"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CICLO GOTINHAS I",
+    "lat": -23.57857,
+    "lon": -46.799119,
+    "bairro": "jardim-conceicao"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CRECHE PROFESSOR MANOEL DA SILVA",
+    "lat": -23.535537,
+    "lon": -46.79212,
+    "bairro": "jardim-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CRECHE JOAO PEDRO BRITO GONCALVES",
+    "lat": -23.568867,
+    "lon": -46.808435,
+    "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CRECHE VANIA LUCIA SOUZA",
+    "lat": -23.575083,
+    "lon": -46.809017,
+    "bairro": "santa-maria"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CICLO GOTINHAS III",
+    "lat": -23.493404,
+    "lon": -46.796344,
+    "bairro": "portal-d-oeste"
    },
    {
     "tipo": "escola",
@@ -72293,11 +73412,75 @@
    },
    {
     "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "MAGICO DE OZ",
+    "lat": -23.550931,
+    "lon": -46.809177,
+    "bairro": "padroeira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "DARCY RIBEIRO",
+    "lat": -23.585855,
+    "lon": -46.812359,
+    "bairro": "santa-maria"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CEI CELINA ALMEIDA",
+    "lat": -23.554536,
+    "lon": -46.807761,
+    "bairro": "padroeira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CEI FERNANDA ALVES PADRIN",
+    "lat": -23.48759,
+    "lon": -46.791265,
+    "bairro": "bonanca"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CEI JOSE MONTEIRO NETO",
+    "lat": -23.585414,
+    "lon": -46.812493,
+    "bairro": "santa-maria"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CEI LUIZA TOLEDO PADRIN",
+    "lat": -23.490691,
+    "lon": -46.776299,
+    "bairro": "industrial-anhanguera"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CEI MADALENA SINDONA",
+    "lat": -23.567253,
+    "lon": -46.804462,
+    "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
     "categoria": "Estadual",
     "nome": "JOSE MARIA RODRIGUES LEITE PROFESSOR",
     "lat": -23.5425975,
     "lon": -46.7719177,
     "bairro": "vila-campesina"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CEI TEODORA SALGUEIRO DE ALMEIDA",
+    "lat": -23.491818,
+    "lon": -46.79605,
+    "bairro": "portal-d-oeste"
    },
    {
     "tipo": "escola",
@@ -72322,6 +73505,14 @@
     "lat": -23.5035246,
     "lon": -46.7941346,
     "bairro": "jardim-elvira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Estadual",
+    "nome": "ANTONIO PAIVA DE SAMPAIO CORONEL",
+    "lat": -23.53381,
+    "lon": -46.811286,
+    "bairro": "quintauna"
    },
    {
     "tipo": "escola",
@@ -72382,6 +73573,22 @@
    {
     "tipo": "escola",
     "categoria": "Estadual",
+    "nome": "HELOISA DE ASSUMPCAO PROFESSORA",
+    "lat": -23.525102,
+    "lon": -46.804773,
+    "bairro": "km-18"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Estadual",
+    "nome": "ALICE VELHO TEIXEIRA PROFESSORA",
+    "lat": -23.529518,
+    "lon": -46.762853,
+    "bairro": "presidente-altino"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Estadual",
     "nome": "JULIA LOPES DE ALMEIDA",
     "lat": -23.5177697,
     "lon": -46.7811356,
@@ -72410,6 +73617,14 @@
     "lat": -23.56638408,
     "lon": -46.80273166,
     "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Estadual",
+    "nome": "TELMO COELHO FILHO MAJOR",
+    "lat": -23.527897,
+    "lon": -46.795099,
+    "bairro": "km-18"
    },
    {
     "tipo": "escola",
@@ -72510,6 +73725,14 @@
    {
     "tipo": "escola",
     "categoria": "Estadual",
+    "nome": "ARMANDO GABAN PROFESSOR",
+    "lat": -23.574318,
+    "lon": -46.802695,
+    "bairro": "jardim-conceicao"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Estadual",
     "nome": "ORLANDO GERIBOLA PROFESSOR",
     "lat": -23.56465017,
     "lon": -46.79442579,
@@ -72526,10 +73749,58 @@
    {
     "tipo": "escola",
     "categoria": "Municipal",
+    "nome": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL PROFA MARIA APARECIDA DE CAMARGO DAMY RODRIGUES",
+    "lat": -23.489512,
+    "lon": -46.788812,
+    "bairro": "bonanca"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "THEREZA BIANCHI COLLINO CEMEI",
+    "lat": -23.526106,
+    "lon": -46.771826,
+    "bairro": "presidente-altino"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ALICE MANHOLER PETERI CEMEI",
+    "lat": -23.530982,
+    "lon": -46.797463,
+    "bairro": "km-18"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
     "nome": "SEVERINO DE ARAUJO FREIRE EMEI",
     "lat": -23.571036,
     "lon": -46.7953893,
     "bairro": "jardim-novo-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "FERNANDO BUONADUCE PROF CEMEI",
+    "lat": -23.535119,
+    "lon": -46.795622,
+    "bairro": "jardim-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "LOURDES CANDIDA FARIA CEMEI",
+    "lat": -23.52015,
+    "lon": -46.792746,
+    "bairro": "piratininga"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "HELENA COUTINHO CEMEI",
+    "lat": -23.542247,
+    "lon": -46.78304,
+    "bairro": "vila-osasco"
    },
    {
     "tipo": "escola",
@@ -72542,10 +73813,82 @@
    {
     "tipo": "escola",
     "categoria": "Municipal",
+    "nome": "YOLANDA BOTARO VICENTE CEMEI",
+    "lat": -23.51437,
+    "lon": -46.768177,
+    "bairro": "ayrosa"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL PROFA MARIA ALVES DORIA",
+    "lat": -23.501722,
+    "lon": -46.801488,
+    "bairro": "munhoz-junior"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "JOSE ERMIRIO DE MORAES SENADOR CEMEI",
+    "lat": -23.570034,
+    "lon": -46.805667,
+    "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ESTEVAO BRETT CEMEI",
+    "lat": -23.55441,
+    "lon": -46.784178,
+    "bairro": "bela-vista"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "OMAR OGEDA MARTINS CEMEI",
+    "lat": -23.503442,
+    "lon": -46.767682,
+    "bairro": "vila-menck"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
     "nome": "IGNES COLLINO EMEI",
     "lat": -23.5580617,
     "lon": -46.7789274,
     "bairro": "jaguaribe"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "FORTUNATA PEREIRA DE JESUS SANTOS CEMEI",
+    "lat": -23.534415,
+    "lon": -46.803824,
+    "bairro": "pestana"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "VICTOR BRECHERET ESCULTOR EMEF",
+    "lat": -23.494494,
+    "lon": -46.799723,
+    "bairro": "baronesa"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ALFREDO FARHAT DEPUTADO EMEF",
+    "lat": -23.543583,
+    "lon": -46.813729,
+    "bairro": "sao-pedro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ALIPIO DA SILVA LAVOURA PROF CEMEIEF",
+    "lat": -23.501326,
+    "lon": -46.76287,
+    "bairro": "vila-menck"
    },
    {
     "tipo": "escola",
@@ -72574,10 +73917,26 @@
    {
     "tipo": "escola",
     "categoria": "Municipal",
+    "nome": "OSWALDO QUIRINO SIMOES EMEIEF",
+    "lat": -23.559817,
+    "lon": -46.794853,
+    "bairro": "santo-antonio"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
     "nome": "QUINTINO BOCAIUVA EMEF",
     "lat": -23.5707689,
     "lon": -46.79458,
     "bairro": "jardim-novo-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "TECLA MERLO IRMA EMEIEF",
+    "lat": -23.508992,
+    "lon": -46.76945,
+    "bairro": "mutinga"
    },
    {
     "tipo": "escola",
@@ -72590,6 +73949,38 @@
    {
     "tipo": "escola",
     "categoria": "Municipal",
+    "nome": "NAIR BELLACOSA WARZEKA PROFA CEMEI",
+    "lat": -23.502853,
+    "lon": -46.794809,
+    "bairro": "jardim-elvira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "FORTUNATO ANTIORIO PROF CEMEI",
+    "lat": -23.513865,
+    "lon": -46.764719,
+    "bairro": "ayrosa"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "PROVIDENCIA DOS ANJOS CARREIRA CEMEI",
+    "lat": -23.525427,
+    "lon": -46.811197,
+    "bairro": "quintauna"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "JOAO DE FARIAS CEMEI",
+    "lat": -23.499202,
+    "lon": -46.768058,
+    "bairro": "vila-menck"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
     "nome": "SONIA MARIA DE ALMEIDA FERNANDES PROFA EMEI",
     "lat": -23.4978514,
     "lon": -46.7854318,
@@ -72598,10 +73989,442 @@
    {
     "tipo": "escola",
     "categoria": "Municipal",
+    "nome": "ANTONIO PAULINO RIBEIRO PROF CEMEI",
+    "lat": -23.559538,
+    "lon": -46.812627,
+    "bairro": "bandeiras"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ZAIRA COLLINO ODALIA CEMEI",
+    "lat": -23.541235,
+    "lon": -46.809196,
+    "bairro": "cidade-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL OSWALDO SALLES NEMER",
+    "lat": -23.57737,
+    "lon": -46.80078,
+    "bairro": "jardim-conceicao"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "CEMEI PEDRO MARTINO",
+    "lat": -23.538895,
+    "lon": -46.783308,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "JAPHET FONTES CEMEI",
+    "lat": -23.500474,
+    "lon": -46.776865,
+    "bairro": "vila-menck"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "APLICACAO DE OSASCO COLEGIO",
+    "lat": -23.533905,
+    "lon": -46.778473,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "FERNAO DIAS PAIS COLEGIO",
+    "lat": -23.535495,
+    "lon": -46.776314,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "NOSSA SENHORA DOS REMEDIOS COLEGIO",
+    "lat": -23.519781,
+    "lon": -46.754367,
+    "bairro": "remedios"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "NOSSA SENHORA DE MISERICORDIA COLEGIO",
+    "lat": -23.535873,
+    "lon": -46.782384,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "FITO ESCOLA DE EDUCACAO BASICA UNIDADE I",
+    "lat": -23.536945,
+    "lon": -46.7923,
+    "bairro": "jardim-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "SAO PIO X INSTITUTO",
+    "lat": -23.530744,
+    "lon": -46.8161,
+    "bairro": "quintauna"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO PRESTES MAIA",
+    "lat": -23.566117,
+    "lon": -46.779882,
+    "bairro": "jardim-d-abril"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PADRE ANCHIETA COLEGIO",
+    "lat": -23.527567,
+    "lon": -46.779685,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PAPA MIKE COLEGIO UNIDADE II",
+    "lat": -23.530804,
+    "lon": -46.778325,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COC VILA YARA",
+    "lat": -23.547518,
+    "lon": -46.765059,
+    "bairro": "vila-yara"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "NOVA GERACAO ESCOLA DE EDUCACAO INFANTIL",
+    "lat": -23.540682,
+    "lon": -46.778854,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "SETA COLEGIO",
+    "lat": -23.528607,
+    "lon": -46.781331,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "NADIR DIAS DE FIGUEIREDO ESCOLA SENAI",
+    "lat": -23.525475,
+    "lon": -46.771619,
+    "bairro": "presidente-altino"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "VIDA COLEGIO",
+    "lat": -23.533495,
+    "lon": -46.781487,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO ANGLO LEONARDO DA VINCI",
+    "lat": -23.534474,
+    "lon": -46.779202,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO RIBEIRO DE FREITAS",
+    "lat": -23.514037,
+    "lon": -46.779099,
+    "bairro": "rochdale"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "RUBENS BANDEIRA CEMEI",
+    "lat": -23.498316,
+    "lon": -46.770623,
+    "bairro": "vila-menck"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "INTEGRADO DE OSASCO COLEGIO ENSINO FUNDAMENTAL E MEDIO",
+    "lat": -23.532984,
+    "lon": -46.791472,
+    "bairro": "jardim-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CANDIDO DE OLIVEIRA PROFESSOR ESCOLA EDUCACAO INFANTIL",
+    "lat": -23.5459,
+    "lon": -46.763187,
+    "bairro": "vila-campesina"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PERES COLEGIO",
+    "lat": -23.515236,
+    "lon": -46.791989,
+    "bairro": "piratininga"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "FAMILIA STELLA COLEGIO",
+    "lat": -23.545091,
+    "lon": -46.782558,
+    "bairro": "cipava"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PRISMA COLEGIO",
+    "lat": -23.550229,
+    "lon": -46.799131,
+    "bairro": "vila-yolanda"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ADVENTISTA COLEGIO DE VILA YARA",
+    "lat": -23.551682,
+    "lon": -46.761943,
+    "bairro": "vila-yara"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "SENAC OSASCO",
+    "lat": -23.532568,
+    "lon": -46.777833,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PER TUTTI ESCOLA DE EDUCACAO INFANTIL",
+    "lat": -23.542917,
+    "lon": -46.78156,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "DESAFIO CENTRO EDUCACIONAL",
+    "lat": -23.533759,
+    "lon": -46.776584,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PANTERINHA CENTRO EDUCACIONAL",
+    "lat": -23.543128,
+    "lon": -46.771116,
+    "bairro": "vila-campesina"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO MARINA COSTA",
+    "lat": -23.499469,
+    "lon": -46.797674,
+    "bairro": "helena-maria"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "UNIVERSAL STAR COLEGIO",
+    "lat": -23.543941,
+    "lon": -46.774005,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "MANOEL MORATTO COLEGIO",
+    "lat": -23.517326,
+    "lon": -46.771743,
+    "bairro": "ayrosa"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "JOANA ZONCA MADRE ESCOLA INFANTIL",
+    "lat": -23.530906,
+    "lon": -46.81252,
+    "bairro": "quintauna"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PRESBITERIANO COLEGIO",
+    "lat": -23.528788,
+    "lon": -46.771157,
+    "bairro": "presidente-altino"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "INSTITUTO EDUCACIONAL E CULTURAL FILADELFIA",
+    "lat": -23.564751,
+    "lon": -46.78749,
+    "bairro": "jardim-novo-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO SAO GABRIEL",
+    "lat": -23.556577,
+    "lon": -46.782891,
+    "bairro": "bela-vista"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CURUMIM ESCOLA EDUCACAO INFANTIL",
+    "lat": -23.531573,
+    "lon": -46.800209,
+    "bairro": "quintauna"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "SOSSEGO DA MAMAE CENTRO DE RECREACAO INFANTIL",
+    "lat": -23.510631,
+    "lon": -46.778969,
+    "bairro": "rochdale"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO BOZANHI",
+    "lat": -23.536565,
+    "lon": -46.799371,
+    "bairro": "jardim-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "MUNDO MAGICO ESCOLA DE EDUCACAO INFANTIL",
+    "lat": -23.50411,
+    "lon": -46.795997,
+    "bairro": "jardim-elvira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO INFANTIL E ENSINO FUNDAMENTAL JOAO DE BARRO",
+    "lat": -23.539968,
+    "lon": -46.777207,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "LUMIAR ESCOLA DE EDUCACAO INFANTIL",
+    "lat": -23.545216,
+    "lon": -46.799842,
+    "bairro": null
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "MICHELINI PROFA INSTITUTO EDUCACIONAL",
+    "lat": -23.494745,
+    "lon": -46.79356,
+    "bairro": "helena-maria"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "AMAURI MARQUES DE AZEVEDO COLEGIO",
+    "lat": -23.501725,
+    "lon": -46.786592,
+    "bairro": "baronesa"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PEQUENO SAMURAI ESCOLA DE EDUCACAO INFANTIL",
+    "lat": -23.549674,
+    "lon": -46.761061,
+    "bairro": "vila-yara"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "TRENZINHO DA ALEGRIA ESCOLA DE RECREACAO INFANTIL",
+    "lat": -23.560271,
+    "lon": -46.78442,
+    "bairro": "jaguaribe"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PRIMEIROS PASSOS ESCOLA DE EDUCACAO INFANTIL",
+    "lat": -23.565154,
+    "lon": -46.791565,
+    "bairro": "bussocaba"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PINGO DE GENTE ESCOLA DE EDUCACAO E RECREACAO INFANTIL",
+    "lat": -23.530862,
+    "lon": -46.763164,
+    "bairro": "presidente-altino"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "CEMEI ALIPIO PEREIRA DOS SANTOS PROF",
+    "lat": -23.555641,
+    "lon": -46.7926,
+    "bairro": "jaguaribe"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
     "nome": "ESMERALDA FERREIRA SIMAO NOBREGA PROFA EMEI",
     "lat": -23.57977221,
     "lon": -46.80220112,
     "bairro": "jardim-conceicao"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "LUZIA MOMI SASSO CEMEI",
+    "lat": -23.552043,
+    "lon": -46.762139,
+    "bairro": "vila-yara"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "MARIA BERTONI FIORITA PROFA EMEI",
+    "lat": -23.515464,
+    "lon": -46.788106,
+    "bairro": "piratininga"
    },
    {
     "tipo": "escola",
@@ -72726,6 +74549,14 @@
    {
     "tipo": "escola",
     "categoria": "Municipal",
+    "nome": "JOSIAS BAPTISTA PASTOR EMEF",
+    "lat": -23.499265,
+    "lon": -46.790347,
+    "bairro": "helena-maria"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
     "nome": "MANOEL BARBOSA DE SOUZA PROF EMEF",
     "lat": -23.4895165,
     "lon": -46.7901461,
@@ -72749,6 +74580,22 @@
    },
    {
     "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO YEREVAN",
+    "lat": -23.52735,
+    "lon": -46.768026,
+    "bairro": "presidente-altino"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PAPA MIKE COLEGIO UNIDADE I",
+    "lat": -23.533806,
+    "lon": -46.778929,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
     "categoria": "Municipal",
     "nome": "LUIZ BORTOLOSSO EMEIEF",
     "lat": -23.5151934,
@@ -72758,10 +74605,122 @@
    {
     "tipo": "escola",
     "categoria": "Municipal",
+    "nome": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL SALVADOR SACCO",
+    "lat": -23.536015,
+    "lon": -46.807175,
+    "bairro": "cidade-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ALICE RABECCHINI FERREIRA EMEF",
+    "lat": -23.569076,
+    "lon": -46.805752,
+    "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "MESSIAS GONCALVES DA SILVA EMEIEF",
+    "lat": -23.583559,
+    "lon": -46.812787,
+    "bairro": "santa-maria"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "SERGIO ZANARDI CRECHE",
+    "lat": -23.549123,
+    "lon": -46.818121,
+    "bairro": "padroeira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
     "nome": "JOAO CORREA CRECHE",
     "lat": -23.55247236,
     "lon": -46.80939521,
     "bairro": "padroeira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "OLGA CAMOLESI PAVAO CRECHE",
+    "lat": -23.501263,
+    "lon": -46.791896,
+    "bairro": null
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "PEDRO PENOV CRECHE",
+    "lat": -23.555091,
+    "lon": -46.798909,
+    "bairro": null
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "EZIO MELLI CRECHE",
+    "lat": -23.48902,
+    "lon": -46.788539,
+    "bairro": "bonanca"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ROSA PEREIRA CRE CRECHE",
+    "lat": -23.552742,
+    "lon": -46.759872,
+    "bairro": "vila-yara"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "SILVIA FERREIRA FARAH PROFA CRECHE",
+    "lat": -23.504701,
+    "lon": -46.806311,
+    "bairro": "munhoz-junior"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "RECANTO ALEGRE CRECHE",
+    "lat": -23.543374,
+    "lon": -46.79953,
+    "bairro": "pestana"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "LAR DA INFANCIA PE JOSE CARLOS DI MAMBRO CRECHE",
+    "lat": -23.545723,
+    "lon": -46.792752,
+    "bairro": "vila-yolanda"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "DAISY RIBEIRO NEVES CRECHE",
+    "lat": -23.536026,
+    "lon": -46.80713,
+    "bairro": "cidade-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ALZIRA SILVA MEDEIROS CRECHE",
+    "lat": -23.51133,
+    "lon": -46.782829,
+    "bairro": "alianca"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "HILDA ALVES DOS SANTOS MARIM CRECHE",
+    "lat": -23.537978,
+    "lon": -46.782592,
+    "bairro": "bela-vista"
    },
    {
     "tipo": "escola",
@@ -72790,10 +74749,82 @@
    {
     "tipo": "escola",
     "categoria": "Municipal",
+    "nome": "MARIA BENEDITA CONSTANCIO IRMA CRECHE",
+    "lat": -23.555683,
+    "lon": -46.798495,
+    "bairro": "santo-antonio"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "VILMA CATAN CRECHE",
+    "lat": -23.541928,
+    "lon": -46.78327,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
     "nome": "MERCEDES CORREA RUIZ BATISTA CRECHE",
     "lat": -23.5716385,
     "lon": -46.7950093,
     "bairro": "jardim-novo-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ELZA BATTISTON CRECHE",
+    "lat": -23.501817,
+    "lon": -46.798689,
+    "bairro": "jardim-elvira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "JOSE ESPINOSA CRECHE",
+    "lat": -23.578236,
+    "lon": -46.804276,
+    "bairro": "jardim-conceicao"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ALHA ELIAS ABIBE CRECHE",
+    "lat": -23.561916,
+    "lon": -46.803587,
+    "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ROSA BROSEGHINI CRECHE",
+    "lat": -23.49804,
+    "lon": -46.785282,
+    "bairro": "baronesa"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "AMELIA TOZZETO VIVIANE CRECHE",
+    "lat": -23.577282,
+    "lon": -46.801094,
+    "bairro": "jardim-conceicao"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "MARIA MADALENA LEITE BARBOSA FREIXEDA CEMEI",
+    "lat": -23.541734,
+    "lon": -46.807219,
+    "bairro": "cidade-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "INOVACAO COLEGIO",
+    "lat": -23.515134,
+    "lon": -46.79188,
+    "bairro": "iapi"
    },
    {
     "tipo": "escola",
@@ -72802,6 +74833,14 @@
     "lat": -23.58360544,
     "lon": -46.81281715,
     "bairro": "santa-maria"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Estadual",
+    "nome": "ETEC PROFESSOR ANDRE BOGASIAN",
+    "lat": -23.524828,
+    "lon": -46.778288,
+    "bairro": "bonfim"
    },
    {
     "tipo": "escola",
@@ -72814,10 +74853,122 @@
    {
     "tipo": "escola",
     "categoria": "Privada",
+    "nome": "ANJOS DE PIJAMAS ESCOLA EDUCACIONAL E RECREATIVA INFANTIL",
+    "lat": -23.56558,
+    "lon": -46.81085,
+    "bairro": "metalurgicos"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ALEGRIA DE SABER ESCOLA DE EDUCACAO INFANTIL",
+    "lat": -23.550356,
+    "lon": -46.81475,
+    "bairro": "padroeira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "RECRIARTE COLEGIO",
+    "lat": -23.516471,
+    "lon": -46.756258,
+    "bairro": "remedios"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "SANTOS DUMONT COLEGIO",
+    "lat": -23.543796,
+    "lon": -46.801196,
+    "bairro": "pestana"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "SANTA LUZIA ESCOLA",
+    "lat": -23.558124,
+    "lon": -46.783344,
+    "bairro": "jaguaribe"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CLARA LUZ ESCOLA",
+    "lat": -23.534717,
+    "lon": -46.782763,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ASSOCIACAO SOLIDARIA CRESCENDO CIDADA NUCLEO II",
+    "lat": -23.501281,
+    "lon": -46.764781,
+    "bairro": "vila-menck"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CENTRO DE PARTICIPACAO POPULAR DO JARDIM VELOSO",
+    "lat": -23.56238,
+    "lon": -46.80749,
+    "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CASA DO APRENDER CRECHE",
+    "lat": -23.50632,
+    "lon": -46.806167,
+    "bairro": "munhoz-junior"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "BRILHO DO APRENDER CRECHE",
+    "lat": -23.502143,
+    "lon": -46.769807,
+    "bairro": "vila-menck"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
     "nome": "TARSILA DO AMARAL CRECHE",
     "lat": -23.55638761,
     "lon": -46.81193642,
     "bairro": "bandeiras"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ASSOCIACAO DAS MAES DO JARDIM VELOSO",
+    "lat": -23.562555,
+    "lon": -46.80522,
+    "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "QUINTAL MAGICO ASSOCIACAO",
+    "lat": -23.570778,
+    "lon": -46.800202,
+    "bairro": "jardim-novo-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "DOMINGOS TONINI PADRE CENTRO DE EDUCACAO INFANTIL",
+    "lat": -23.514562,
+    "lon": -46.761902,
+    "bairro": "ayrosa"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ALBERTO SANTOS DUMONT CEMEI",
+    "lat": -23.549195,
+    "lon": -46.811907,
+    "bairro": "padroeira"
    },
    {
     "tipo": "escola",
@@ -72826,6 +74977,270 @@
     "lat": -23.54789,
     "lon": -46.803335,
     "bairro": "jardim-roberto"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "MARIO QUINTANA CEMEI",
+    "lat": -23.537141,
+    "lon": -46.813569,
+    "bairro": "sao-pedro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "DARCY RIBEIRO PROFESSOR CENTRO MUN DE ED INF E ENS FUND",
+    "lat": -23.518876,
+    "lon": -46.758017,
+    "bairro": "remedios"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "ZILDA ARNS NEUMANN DRA CENTRO DE EDUC UNIFICADA",
+    "lat": -23.50191,
+    "lon": -46.79953,
+    "bairro": "jardim-elvira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Estadual",
+    "nome": "ETEC DR CELSO GIGLIO",
+    "lat": -23.522493,
+    "lon": -46.759011,
+    "bairro": "remedios"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "COLEGIO ALPHA",
+    "lat": -23.534767,
+    "lon": -46.802859,
+    "bairro": "pestana"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "JOSE SARAMAGO CENTRO DE EDUCACAO UNIFICADA",
+    "lat": -23.557474,
+    "lon": -46.800404,
+    "bairro": "santo-antonio"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PASSINHOS DO SABER CENTRO DE EDUCACAO INFANTIL",
+    "lat": -23.570199,
+    "lon": -46.779232,
+    "bairro": "jardim-d-abril"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "TURMINHA DO PIMPOLHO UNID III COLEGIO DE RECREACAO INFANTIL",
+    "lat": -23.548759,
+    "lon": -46.808735,
+    "bairro": "padroeira"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "AMAURI KIDS ESCOLA DE EDUCACAO INFANTIL",
+    "lat": -23.501507,
+    "lon": -46.786608,
+    "bairro": "helena-maria"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "MANASSES COLEGIO",
+    "lat": -23.542882,
+    "lon": -46.776006,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "URSINHO AZUL CENTRO DE RECREACAO INFANTIL",
+    "lat": -23.505248,
+    "lon": -46.771721,
+    "bairro": "mutinga"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "SAO LUIZ FAVARETO ESCOLA DE EDUCACAO INFANTIL",
+    "lat": -23.552807,
+    "lon": -46.788705,
+    "bairro": "cipava"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "AMABILE PROVASI ESCOLA DE EDUCACAO INFANTIL",
+    "lat": -23.534086,
+    "lon": -46.777806,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "EDUCATIVA OSASCO",
+    "lat": -23.530733,
+    "lon": -46.797447,
+    "bairro": "km-18"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "POLICIA MILITAR COLEGIO DA",
+    "lat": -23.526404,
+    "lon": -46.810632,
+    "bairro": "quintauna"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "JOSE MARQUES DE REZENDE CRECHE",
+    "lat": -23.543862,
+    "lon": -46.785869,
+    "bairro": "cipava"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "PRISMAR COLEGIO",
+    "lat": -23.550229,
+    "lon": -46.799131,
+    "bairro": "vila-yolanda"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOPO COLEGIO",
+    "lat": -23.54243,
+    "lon": -46.766024,
+    "bairro": "vila-yara"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "SA BRAGA E PIMPOLHO COLEGIO",
+    "lat": -23.561283,
+    "lon": -46.806742,
+    "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "STAR MAX COLEGIO",
+    "lat": -23.544198,
+    "lon": -46.77742,
+    "bairro": "bela-vista"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "FUN DAY EDUCACAO INFANTIL",
+    "lat": -23.543903,
+    "lon": -46.767055,
+    "bairro": "vila-campesina"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "KINDER STEPS EDUCACAO INFANTIL BILINGUE",
+    "lat": -23.541714,
+    "lon": -46.778175,
+    "bairro": "vila-osasco"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "CENTRO MUN DE ED INFANTIL CARLOS FERNANDES COSTA",
+    "lat": -23.562304,
+    "lon": -46.811915,
+    "bairro": "veloso"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE EDUCACAO E RECREACAO INFANTIL CRIDEAL I",
+    "lat": -23.526588,
+    "lon": -46.801428,
+    "bairro": "km-18"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ESCOLA DE ED E REC INFANTIL APRENDER E BRINCAR II",
+    "lat": -23.536162,
+    "lon": -46.794758,
+    "bairro": "jardim-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CENTRO EDUCACIONAL SAPIENZA",
+    "lat": -23.536775,
+    "lon": -46.773759,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Municipal",
+    "nome": "CEMEI MARIA DA CONCEICAO DA SILVA PAIXAO",
+    "lat": -23.556749,
+    "lon": -46.814381,
+    "bairro": "bandeiras"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "CUNHA CARVALHO CURUMIM COLEGIO",
+    "lat": -23.531178,
+    "lon": -46.794905,
+    "bairro": "quintauna"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "HAYA INSTITUTO EDUCACIONAL",
+    "lat": -23.528131,
+    "lon": -46.7794,
+    "bairro": "centro"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "NUVENZINHA DO SABER ERI",
+    "lat": -23.535452,
+    "lon": -46.809085,
+    "bairro": "cidade-das-flores"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "GENESIS LIFE COLEGIO",
+    "lat": -23.556913,
+    "lon": -46.798624,
+    "bairro": "santo-antonio"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "ATENEU COLEGIO",
+    "lat": -23.542573,
+    "lon": -46.776358,
+    "bairro": "bela-vista"
+   },
+   {
+    "tipo": "escola",
+    "categoria": "Privada",
+    "nome": "VIVENDO E APRENDENDO COLEGIO",
+    "lat": -23.514728,
+    "lon": -46.768567,
+    "bairro": "ayrosa"
    },
    {
     "tipo": "escola",
@@ -73036,6 +75451,10 @@
    {
     "nome": "INEP, Censo Escolar 2024 e IDEB 2025 por escola (com 2023 quando 2025 não foi divulgado)",
     "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos"
+   },
+   {
+    "nome": "IBGE, Cadastro Nacional de Endereços do Censo 2022 (CNEFE)",
+    "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/38734-cadastro-nacional-de-enderecos-para-fins-estatisticos.html"
    },
    {
     "nome": "IBGE, Censo 2022, Favelas e Comunidades Urbanas (setores e polígonos)",

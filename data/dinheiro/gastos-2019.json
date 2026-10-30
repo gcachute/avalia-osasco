@@ -1576,7 +1576,8 @@
      "funcao": "SAÚDE",
      "texto": "Pagamento Indenizatorio a Empresa Especializada em Manutenção nos Grupos Geradores do Hospital e Maternidade Amador Aguiar e Policlinica Zona Sul - Referente ao Periodo de 12/10/2018 a 11/11/2018",
      "bairros": [
-      "alianca"
+      "alianca",
+      "vila-osasco"
      ]
     },
     {
@@ -1587,7 +1588,8 @@
      "funcao": "SAÚDE",
      "texto": "Pagamento Indenizatorio a Empresa Especializada em Manutenção nos Grupos Geradores do Hospital e Maternidade Amador Aguiar e Policlinica Zona Sul - Referente ao Periodo de 12/10/2018 a 11/11/2018",
      "bairros": [
-      "alianca"
+      "alianca",
+      "vila-osasco"
      ]
     },
     {
@@ -1665,7 +1667,8 @@
      "texto": "Contratação de Empresa de Engenharia para a construção da Creche vila militar- Unifesp - Rua Newton Estilac Leal. nº 643 - ALAMEDA PARQUE, Quitaúna - Osasco/SP. Contrato 012/18. (Termo de Compromisso PAC 2 5442/2013 Pró Infância Tipo 1)",
      "bairros": [
       "vila-militar",
-      "quintauna"
+      "quintauna",
+      "km-18"
      ]
     },
     {
@@ -1677,7 +1680,8 @@
      "texto": "Contratação de Empresa de Engenharia para a construção da Creche vila militar- Unifesp - Rua Newton Estilac Leal. nº 643 - ALAMEDA PARQUE, Quitaúna - Osasco/SP. Contrato 012/18. (Termo de Compromisso PAC 2 5442/2013 Pró Infância Tipo 1)",
      "bairros": [
       "vila-militar",
-      "quintauna"
+      "quintauna",
+      "km-18"
      ]
     },
     {
@@ -1710,7 +1714,8 @@
      "funcao": "EDUCAÇÃO",
      "texto": "Contratação da empresa de engenharia para a construção da creche Veloso, na rua Doutor Pedro dos Santos Figueiredo nº 212 - Jardim Veloso - Osasco/SP. Contrato nº 010/2018 (Termo de Compromisso nº PAC 6162/13). Prazo de 15 meses.Valor de Re",
      "bairros": [
-      "veloso"
+      "veloso",
+      "metalurgicos"
      ]
     },
     {
@@ -1764,6 +1769,17 @@
      "aplicacao": "0310 - SAÚDE - GERAL",
      "funcao": "SAÚDE",
      "texto": "PAGAMENTO INDENIZATORIO REFERENTE AO PROJETO DE REESTRUTURACAO FISICA E ADEQUACAO HOSPITALAR REFORMA DO PRONTO SOCORRO INFANTIL E PEDIATRIA DO 3 ANDAR HOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2019-09-13",
+     "valor": 15800,
+     "fornecedor": "GECOMO SOLUCOES EM ENERGIA TEMPORARIA E SERVICOS EIRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM PRESTACAO DE SERVICOS DE GERADORES DE ENERGIA ELETRICA NAS UNIDADES DA SECRETARIA DE SAUDE NO PERIODO DE 15 05 A 14 06 2019",
      "bairros": [
       "centro"
      ]
@@ -1843,7 +1859,8 @@
      "texto": "Contratação de Empresa de Engenharia para a construção da Creche vila militar- Unifesp - Rua Newton Estilac Leal. nº 643 - ALAMEDA PARQUE, Quitaúna - Osasco/SP. Contrato 012/18. (Termo de Compromisso PAC 2 5442/2013 Pró Infância Tipo 1)",
      "bairros": [
       "vila-militar",
-      "quintauna"
+      "quintauna",
+      "km-18"
      ]
     },
     {
@@ -1854,7 +1871,8 @@
      "funcao": "EDUCAÇÃO",
      "texto": "Construção da Creche Conceição FNDE - Avenida Transversal Sul nº 15 - Jardim Conceição - Osasco-SP. Termo de Compromisso nº Pac 2 5442/2013 pro Infância Tipo 2 .",
      "bairros": [
-      "jardim-conceicao"
+      "jardim-conceicao",
+      "santa-maria"
      ]
     }
    ],

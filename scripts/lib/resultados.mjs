@@ -44,9 +44,12 @@ export function calcularResultados() {
   for (const c of cidades) {
     const m = c.mortalidade;
     m.delta = m.taxa != null && m.anterior != null ? m.taxa - m.anterior : null;
-    const educacao = c.ideb.valor == null ? null : media([percentil(idebs, c.ideb.valor), c.ideb.delta == null ? null : linear(c.ideb.delta, -EVOLUCAO.ideb, 0, EVOLUCAO.ideb, 1)]);
-    const saude = m.taxa == null ? null : media([percentil(taxas, m.taxa, false), m.delta == null ? null : linear(m.delta, EVOLUCAO.mortalidade, 0, -EVOLUCAO.mortalidade, 1)]);
+    const parteEducacao = { posicao: c.ideb.valor == null ? null : percentil(idebs, c.ideb.valor), evolucao: c.ideb.delta == null ? null : linear(c.ideb.delta, -EVOLUCAO.ideb, 0, EVOLUCAO.ideb, 1) };
+    const parteSaude = { posicao: m.taxa == null ? null : percentil(taxas, m.taxa, false), evolucao: m.delta == null ? null : linear(m.delta, EVOLUCAO.mortalidade, 0, -EVOLUCAO.mortalidade, 1) };
+    const educacao = c.ideb.valor == null ? null : media([parteEducacao.posicao, parteEducacao.evolucao]);
+    const saude = m.taxa == null ? null : media([parteSaude.posicao, parteSaude.evolucao]);
     c.componentes = { educacao, saude };
+    c.partes = { educacao: parteEducacao, saude: parteSaude };
     c.nota = media([educacao, saude]);
   }
   const ordem = cidades.filter((c) => c.nota != null).sort((a, b) => b.nota - a.nota);
