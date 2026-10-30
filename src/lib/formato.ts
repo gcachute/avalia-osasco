@@ -14,15 +14,17 @@ export const reais = (v: number, casas = 0) => `R$ ${num(corta(v, casas), casas)
 export const milReais = (v: number) => `R$ ${num(corta(v / 1e3, 1), 1)} mil`;
 // Valor completo, com centavos: R$ 639.773.139,17.
 export const reaisExato = (v: number) => `${v < 0 ? "−" : ""}R$ ${num(Math.abs(v), 2)}`;
-// Valores grandes de dinheiro, curtos e cortados (não arredondados): R$ 639,7 mi, R$ 2,1 mi, R$ 850 mil.
+// Valores grandes de dinheiro, curtos e cortados (não arredondados): R$ 3,43 bi, R$ 639,7 mi, R$ 850 mil.
 export const dinheiroCurto = (v: number): string =>
   v < 0
     ? `−${dinheiroCurto(-v)}`
-    : v >= 1e6
-      ? `R$ ${num(corta(v / 1e6, 1), 1)} mi`
-      : v >= 1e3
-        ? `R$ ${num(corta(v / 1e3, 0), 0)} mil`
-        : reais(v);
+    : v >= 1e9
+      ? `R$ ${num(corta(v / 1e9, 2), 2)} bi`
+      : v >= 1e6
+        ? `R$ ${num(corta(v / 1e6, 1), 1)} mi`
+        : v >= 1e3
+          ? `R$ ${num(corta(v / 1e3, 0), 0)} mil`
+          : reais(v);
 
 export const nota10 = (v: number | null | undefined) => (v == null ? null : Math.round(v * 100) / 10);
 

@@ -1,6 +1,7 @@
 import type { Resultados, Transparencia } from "@/lib/dados";
 import { milhoes, nota, nota10, num, plural } from "@/lib/formato";
 import { Barra, Secao } from "./ui";
+import { RolagemLateral } from "@/components/RolagemLateral";
 
 const sinal = (v: number | null, casas = 1) => (v == null ? "" : `${v > 0 ? "+" : v < 0 ? "−" : "±"}${num(Math.abs(v), casas)}`);
 
@@ -21,7 +22,7 @@ function Componente({ nome, pontos, children }: { nome: string; pontos: number |
 
 function Tabela({ cabecalho, linhas }: { cabecalho: string[]; linhas: { chave: number; foco: boolean; celulas: React.ReactNode[] }[] }) {
   return (
-    <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+    <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
       <table className="w-full min-w-[640px] text-sm">
         <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
           <tr>
@@ -44,7 +45,7 @@ function Tabela({ cabecalho, linhas }: { cabecalho: string[]; linhas: { chave: n
           ))}
         </tbody>
       </table>
-    </div>
+    </RolagemLateral>
   );
 }
 

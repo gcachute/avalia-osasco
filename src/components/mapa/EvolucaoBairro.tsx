@@ -4,6 +4,7 @@ import type { CampoCenso, Historico } from "@/lib/dados";
 import { GraficoLinha } from "../GraficoLinha";
 import { Halter, legendaHalter } from "./Halter";
 import { formatar } from "./indicadores";
+import { RolagemLateral } from "@/components/RolagemLateral";
 
 // Medidas do Censo comparáveis entre os anos (2000, 2010 e 2022), em porcentagem. A chave do indicador (quando existe) colore o mapa.
 const LINHAS: { campo: CampoCenso; nome: string; indicador?: string }[] = [
@@ -143,7 +144,7 @@ export function EvolucaoBairro({
               ]}
             />
           </div>
-          <div className="mt-3 overflow-x-auto">
+          <RolagemLateral className="mt-3" noPainel>
             <table className="w-full text-[11px]">
               <thead>
                 <tr className="text-left text-slate-500">
@@ -173,7 +174,7 @@ export function EvolucaoBairro({
                 ))}
               </tbody>
             </table>
-          </div>
+          </RolagemLateral>
           <p className="mt-1 text-[10px] leading-snug text-slate-400">Votos dos locais de votação do bairro; o eleitor nem sempre vota onde mora.</p>
         </section>
       )}

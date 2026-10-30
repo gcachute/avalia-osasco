@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { AnoIegm } from "@/lib/dados";
 import { FAIXAS, INDICES_IEGM } from "@/lib/iegm";
+import { RolagemLateral } from "@/components/RolagemLateral";
 
 export function Faixa({ valor }: { valor: string | null | undefined }) {
   if (!valor) return <span className="text-slate-400">—</span>;
@@ -38,7 +39,7 @@ export function TabelaIegm({ anos }: { anos: AnoIegm[] }) {
       <p className="mb-3 text-sm text-slate-500">
         {a.descricao}, avaliando {a.totalMunicipios} municípios paulistas.
       </p>
-      <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+      <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
         <table className="w-full min-w-[760px] text-sm">
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
             <tr>
@@ -63,7 +64,7 @@ export function TabelaIegm({ anos }: { anos: AnoIegm[] }) {
             ))}
           </tbody>
         </table>
-      </div>
+      </RolagemLateral>
       <p className="mt-2 text-xs text-slate-500">
         Faixas do TCE-SP: {Object.entries(FAIXAS).map(([k, f]) => `${k} = ${f.nome.toLowerCase()}`).join(", ")}. Passe o mouse sobre a faixa para ver o nome.
       </p>

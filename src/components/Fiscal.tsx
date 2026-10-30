@@ -4,6 +4,7 @@ import { useState } from "react";
 import type { AnoFiscal } from "@/lib/dados";
 import { nota, nota10, num } from "@/lib/formato";
 import { INDICADORES, rotuloPeriodo } from "@/lib/fiscal";
+import { RolagemLateral } from "@/components/RolagemLateral";
 
 export function TabelaPares({ anos }: { anos: AnoFiscal[] }) {
   const padrao = [...anos].reverse().find((a) => a.completo && a.mandato) ?? anos.at(-1)!;
@@ -32,7 +33,7 @@ export function TabelaPares({ anos }: { anos: AnoFiscal[] }) {
         {a.ano}: {rotuloPeriodo(a)}. Todas as cidades comparadas no mesmo período.
         {!a.completo && " Ano em andamento: os valores ainda vão mudar e as notas dos pilares só são calculadas com o ano fechado."}
       </p>
-      <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+      <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
         <table className="w-full min-w-[760px] text-sm">
           <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
             <tr>
@@ -80,7 +81,7 @@ export function TabelaPares({ anos }: { anos: AnoFiscal[] }) {
             ))}
           </tbody>
         </table>
-      </div>
+      </RolagemLateral>
       <p className="mt-2 text-xs text-slate-500">
         Saúde, educação e FUNDEB: % aplicado das receitas (mínimos de 15%, 25% e 70%; FUNDEB 60% até 2020), como declarado no SIOPS e no SIOPE (no
         ano em andamento, pelo relatório bimestral). Pessoal: despesa com pessoal do Executivo sobre a receita corrente líquida ajustada (limite de 54%).
