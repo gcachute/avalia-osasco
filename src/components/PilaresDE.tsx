@@ -56,7 +56,7 @@ export function PilarD({ r }: { r: Resultados }) {
   return (
     <Secao titulo="Pilar D · Resultados para o cidadão" id="pilar-D">
       <p className="-mt-2 mb-4 text-slate-600">
-        Dois resultados que dependem muito da prefeitura: a qualidade das escolas municipais e a sobrevivência dos bebês no primeiro ano de vida.
+        A qualidade das escolas municipais e a sobrevivência dos bebês no primeiro ano de vida.
         Cada item vale metade pela posição entre as cidades comparadas e metade pela evolução em relação à medição anterior.
       </p>
       <div className="rounded-xl border border-slate-200 bg-white px-5 py-2 divide-y divide-slate-100">

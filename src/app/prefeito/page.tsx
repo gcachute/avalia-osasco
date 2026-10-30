@@ -378,7 +378,7 @@ export default function PaginaPrefeito() {
           <Cartao titulo="Projetos enviados à Câmara" valor={i.projetosEnviados} detalhe="nas sessões analisadas" />
           <Cartao titulo="Vetos a projetos de vereadores" valor={i.vetosTotais + i.vetosParciais} detalhe={`${plural(i.vetosTotais, "total", "totais")} · ${plural(i.vetosParciais, "parcial", "parciais")}`} />
           <Cartao titulo="Leis sancionadas" valor={i.leisSancionadas} detalhe={`${i.leisDoExecutivo} de autoria do próprio Executivo`} />
-          <Cartao titulo="Decretos comunicados à Câmara" valor={i.decretosLidos} detalhe="a maioria abre crédito adicional no orçamento" />
+          <Cartao titulo="Decretos comunicados à Câmara" valor={i.decretosLidos} detalhe="nas sessões analisadas" />
         </div>
       </Secao>
 
