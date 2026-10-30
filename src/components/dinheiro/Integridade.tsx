@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Abre } from "@/components/movimento/Movimento";
 import type { Integridade, Modalidades } from "@/lib/dinheiro";
 import { dataBR, dinheiroCurto, pct } from "@/lib/formato";
 
@@ -21,15 +22,15 @@ function Conferencia({
 }) {
   const [aberto, setAberto] = useState(false);
   return (
-    <li className="rounded-xl border border-slate-200 bg-white">
+    <li className={`revelar rounded-xl border bg-white transition-[border-color,box-shadow] duration-200 ${aberto ? "border-slate-300 shadow-sm" : "border-slate-200 hover:border-slate-300"}`}>
       <button
         type="button"
         onClick={() => children && setAberto(!aberto)}
         aria-expanded={children ? aberto : undefined}
-        className={`flex w-full items-start gap-3 p-4 text-left ${children ? "" : "cursor-default"}`}
+        className={`flex w-full items-start gap-3 rounded-xl p-4 text-left ${children ? "" : "cursor-default"}`}
       >
         <span
-          className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${achou ? "bg-amber-100 text-amber-800" : "bg-emerald-100 text-emerald-800"}`}
+          className={`selo-pula mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${achou ? "bg-amber-100 text-amber-800" : "bg-emerald-100 text-emerald-800"}`}
           aria-label={achou ? "Ponto de atenção" : "Nada encontrado"}
         >
           {achou ? "!" : "✓"}
@@ -44,7 +45,11 @@ function Conferencia({
           </svg>
         )}
       </button>
-      {aberto && children && <div className="border-t border-slate-100 px-4 pt-3 pb-4 text-sm">{children}</div>}
+      {children && (
+        <Abre aberto={aberto}>
+          <div className="border-t border-slate-100 px-4 pt-3 pb-4 text-sm">{children}</div>
+        </Abre>
+      )}
     </li>
   );
 }
@@ -61,7 +66,7 @@ function Barra({ m, rotulo }: { m: Modalidades; rotulo: string }) {
     <div className="grid grid-cols-[minmax(0,7rem)_minmax(0,1fr)] items-center gap-2 text-xs max-sm:grid-cols-1">
       <span className="text-slate-600">{rotulo}</span>
       <span className="flex h-3 overflow-hidden rounded" role="img" aria-label={PARTES.map((p) => `${p.nome}: ${pct(m[p.chave] / m.total)}`).join("; ")}>
-        {PARTES.map((p) => (m[p.chave] > 0 ? <span key={p.chave} style={{ width: `${(m[p.chave] / m.total) * 100}%`, background: p.cor }} className="border-r-2 border-white last:border-r-0" /> : null))}
+        {PARTES.map((p) => (m[p.chave] > 0 ? <span key={p.chave} style={{ width: `${(m[p.chave] / m.total) * 100}%`, background: p.cor }} className="barra-anim border-r-2 border-white last:border-r-0" /> : null))}
       </span>
     </div>
   );

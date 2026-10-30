@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { dinheiroCurto } from "@/lib/formato";
 
 // Observa os elementos .revelar e .barra-anim e marca com data-visivel quando entram na tela.
 // A marca é um atributo, não uma classe: se um componente trocar a própria classe (ao passar o mouse,
@@ -75,6 +76,40 @@ export function Numero({ valor, casas = 0, sufixo = "" }: { valor: number; casas
     <span ref={setEl} className="tabular-nums">
       {atual.toLocaleString("pt-BR", { minimumFractionDigits: casas, maximumFractionDigits: casas })}
       {sufixo}
+    </span>
+  );
+}
+
+// Valor em reais que conta até o total quando aparece na tela, no formato curto ("R$ 462 mi").
+export function DinheiroAnimado({ valor }: { valor: number }) {
+  const [atual, setAtual] = useState(valor);
+  const [el, setEl] = useState<HTMLSpanElement | null>(null);
+
+  useEffect(() => {
+    if (!el || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    setAtual(0);
+    let quadro = 0;
+    const obs = new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) return;
+      obs.disconnect();
+      const inicio = performance.now();
+      const passo = (t: number) => {
+        const p = Math.min(1, (t - inicio) / 900);
+        setAtual(valor * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) quadro = requestAnimationFrame(passo);
+      };
+      quadro = requestAnimationFrame(passo);
+    });
+    obs.observe(el);
+    return () => {
+      obs.disconnect();
+      cancelAnimationFrame(quadro);
+    };
+  }, [el, valor]);
+
+  return (
+    <span ref={setEl} className="tabular-nums">
+      {dinheiroCurto(atual)}
     </span>
   );
 }

@@ -20,6 +20,8 @@ import {
   situacaoPlano,
 } from "@/lib/dinheiro";
 import { comBase, dataBR, dinheiroCurto, iniciais, reais } from "@/lib/formato";
+import { DinheiroAnimado } from "@/components/Animacoes";
+import { Abre, Segmentos } from "@/components/movimento/Movimento";
 
 // ---------- Peças pequenas ----------
 
@@ -120,21 +122,30 @@ function resumoEmenda(e: Emenda) {
   return e.acao ? frase(e.acao) : e.funcao ? nomeFuncao(e.funcao) : null;
 }
 
-export function CartaoEmenda({ e, abertoInicial = false }: { e: Emenda; abertoInicial?: boolean }) {
+// "indice": posição na lista, para os cartões entrarem em sequência.
+export function CartaoEmenda({ e, abertoInicial = false, indice }: { e: Emenda; abertoInicial?: boolean; indice?: number }) {
   const [aberto, setAberto] = useState(abertoInicial);
   const id = useId();
   const resumo = resumoEmenda(e);
   const valor = e.tipo === "vereador" ? e.recebido : e.semRegistro ? e.pagoNasNotas : e.recebido || e.paraEntidades || e.pix?.valor || 0;
   const naoChegou = e.tipo !== "vereador" && !e.semRegistro && !e.recebido && !e.paraEntidades;
   return (
-    <li className="rounded-xl border border-slate-200 bg-white">
-      <button type="button" onClick={() => setAberto(!aberto)} aria-expanded={aberto} aria-controls={id} className="flex w-full items-start gap-3 p-3 text-left">
+    <li
+      className={`rounded-xl border bg-white transition-[border-color,box-shadow] duration-200 ${indice != null ? "entra" : ""} ${aberto ? "border-slate-300 shadow-sm" : "border-slate-200 hover:border-slate-300"}`}
+      style={indice != null ? ({ "--i": indice } as React.CSSProperties) : undefined}
+    >
+      <button type="button" onClick={() => setAberto(!aberto)} aria-expanded={aberto} aria-controls={id} className="flex w-full items-start gap-3 rounded-xl p-3 text-left">
         <span className="min-w-0 flex-1">
           <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] text-slate-500">
             <span className="font-semibold text-slate-700 tabular-nums">{e.ano}</span>
             <Etiqueta>{ROTULO_TIPO_EMENDA[e.tipo]}</Etiqueta>
             {e.partido && e.tipo !== "vereador" && <span>{partidoLegivel(e.partido)} na época</span>}
-            {e.pagamentos.length > 0 && <span className="text-emerald-800">rastreada até a nota</span>}
+            {e.pagamentos.length > 0 && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-1.5 text-emerald-800 ring-1 ring-emerald-200">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" aria-hidden />
+                rastreada até a nota
+              </span>
+            )}
           </span>
           {resumo && <span className="mt-1 line-clamp-2 block text-sm text-slate-800">{frase(resumo)}</span>}
         </span>
@@ -146,8 +157,8 @@ export function CartaoEmenda({ e, abertoInicial = false }: { e: Emenda; abertoIn
           <Seta aberto={aberto} />
         </span>
       </button>
-      {aberto && (
-        <div id={id} className="space-y-3 border-t border-slate-100 px-3 pt-2 pb-3 text-sm">
+      <Abre aberto={aberto} id={id}>
+        <div className="space-y-3 border-t border-slate-100 px-3 pt-2 pb-3 text-sm">
           {EXPLICA_TIPO_EMENDA[e.tipo] && <p className="text-xs text-slate-500">{EXPLICA_TIPO_EMENDA[e.tipo]}</p>}
           {e.semRegistro && (
             <p className="text-xs text-slate-500">
@@ -275,7 +286,7 @@ export function CartaoEmenda({ e, abertoInicial = false }: { e: Emenda; abertoIn
             <p className="text-xs text-slate-500">O registro federal não traz o número nem o autor desta emenda.</p>
           )}
         </div>
-      )}
+      </Abre>
     </li>
   );
 }
@@ -320,12 +331,47 @@ function Pagamentos({ e }: { e: Emenda }) {
 function Ficha({ a, aoFechar }: { a: Autor; aoFechar: () => void }) {
   const janela = useRef<HTMLDialogElement>(null);
   const tituloId = useId();
+  const arraste = useRef<{ y0: number; dy: number } | null>(null);
   useEffect(() => {
     const d = janela.current;
     if (d && !d.open) d.showModal();
     document.documentElement.classList.add("overflow-hidden");
     return () => document.documentElement.classList.remove("overflow-hidden");
   }, []);
+  // Fecha depois da animação de saída (sem animação quando o sistema pede menos movimento).
+  const fechar = () => {
+    const d = janela.current;
+    if (!d || d.hasAttribute("data-fechando")) return;
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return d.close();
+    d.style.transform = "";
+    d.setAttribute("data-fechando", "");
+    setTimeout(() => {
+      d.removeAttribute("data-fechando");
+      d.close();
+    }, 190);
+  };
+  // No celular, arrastar a alça do topo para baixo fecha a janela.
+  const comecaArraste = (e: React.PointerEvent<HTMLDivElement>) => {
+    e.currentTarget.setPointerCapture(e.pointerId);
+    arraste.current = { y0: e.clientY, dy: 0 };
+  };
+  const arrasta = (e: React.PointerEvent) => {
+    const a = arraste.current;
+    const d = janela.current;
+    if (!a || !d) return;
+    a.dy = Math.max(0, e.clientY - a.y0);
+    d.style.transition = "none";
+    d.style.transform = `translateY(${a.dy}px)`;
+  };
+  const soltaArraste = () => {
+    const a = arraste.current;
+    const d = janela.current;
+    arraste.current = null;
+    if (!a || !d) return;
+    d.style.transition = "transform 0.25s cubic-bezier(0.22, 1, 0.36, 1)";
+    if (a.dy > 90) fechar();
+    else d.style.transform = "";
+  };
   const anos = Object.entries(a.porAno).sort(([x], [y]) => x.localeCompare(y));
   const maxAno = Math.max(...anos.map(([, v]) => v), 1);
   const p = a.perfil;
@@ -337,12 +383,31 @@ function Ficha({ a, aoFechar }: { a: Autor; aoFechar: () => void }) {
       ref={janela}
       aria-labelledby={tituloId}
       onClose={aoFechar}
-      onClick={(e) => e.target === janela.current && janela.current?.close()}
-      className="fixed inset-x-0 top-auto bottom-0 m-0 w-full max-w-none rounded-t-2xl border border-slate-200 bg-white p-0 text-slate-800 shadow-2xl backdrop:bg-slate-950/50 backdrop:backdrop-blur-sm md:inset-0 md:m-auto md:h-fit md:w-[min(44rem,calc(100vw-2rem))] md:rounded-2xl"
+      onCancel={(e) => {
+        e.preventDefault();
+        fechar();
+      }}
+      onClick={(e) => e.target === janela.current && fechar()}
+      className="ficha fixed inset-x-0 top-auto bottom-0 m-0 w-full max-w-none rounded-t-2xl border border-slate-200 bg-white p-0 text-slate-800 shadow-2xl backdrop:bg-slate-950/50 backdrop:backdrop-blur-sm md:inset-0 md:m-auto md:h-fit md:w-[min(44rem,calc(100vw-2rem))] md:rounded-2xl"
     >
-      <div className="max-h-[88dvh] overflow-y-auto p-4 sm:p-6 md:max-h-[calc(100dvh-3rem)]">
-        <div className="mx-auto mb-3 h-1 w-10 rounded-full bg-slate-200 md:hidden" aria-hidden />
-        <div className="flex items-start gap-4">
+      <div className="relative max-h-[88dvh] overflow-y-auto overscroll-contain p-4 sm:p-6 md:max-h-[calc(100dvh-3rem)]">
+        {/* Faixa de cor da esfera no topo da ficha. */}
+        <div
+          className="pointer-events-none absolute inset-x-0 top-0 h-32 opacity-[0.14]"
+          style={{ background: `linear-gradient(to bottom, ${COR_ESFERA[esferaDe(a) ?? "Federal"]}, transparent)` }}
+          aria-hidden
+        />
+        <div
+          className="relative -mx-4 -mt-4 mb-1 flex h-8 cursor-grab touch-none items-center justify-center md:hidden"
+          onPointerDown={comecaArraste}
+          onPointerMove={arrasta}
+          onPointerUp={soltaArraste}
+          onPointerCancel={soltaArraste}
+          aria-hidden
+        >
+          <span className="h-1.5 w-12 rounded-full bg-slate-300" />
+        </div>
+        <div className="relative flex items-start gap-4">
           <Foto a={a} tamanho={72} />
           <div className="min-w-0 flex-1">
             <h2 id={tituloId} className="text-lg font-semibold text-balance text-slate-900">
@@ -353,7 +418,7 @@ function Ficha({ a, aoFechar }: { a: Autor; aoFechar: () => void }) {
             </div>
             {p?.indicacaoDe && <p className="mt-1 text-xs text-slate-500">Assumiu a indicação de emendas de {nomeAutor(p.indicacaoDe)}, que deixou o mandato.</p>}
           </div>
-          <button type="button" onClick={() => janela.current?.close()} className="shrink-0 rounded-lg p-1 text-slate-500 hover:bg-slate-100" aria-label="Fechar">
+          <button type="button" onClick={fechar} className="shrink-0 rounded-lg p-1 text-slate-500 transition hover:bg-slate-100 hover:text-slate-800" aria-label="Fechar">
             <svg viewBox="0 0 20 20" className="h-5 w-5" aria-hidden>
               <path d="M5 5l10 10M15 5L5 15" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
             </svg>
@@ -380,7 +445,9 @@ function Ficha({ a, aoFechar }: { a: Autor; aoFechar: () => void }) {
         <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
           <div className="rounded-xl bg-slate-50 p-3">
             <div className="text-[11px] text-slate-500">{a.tipo === "vereador" ? "Pago com as emendas" : "Chegou à Prefeitura"}</div>
-            <div className="text-lg font-semibold tabular-nums text-slate-900">{dinheiroCurto(a.total)}</div>
+            <div className="text-lg font-semibold tabular-nums text-slate-900">
+              <DinheiroAnimado valor={a.total} />
+            </div>
           </div>
           <div className="rounded-xl bg-slate-50 p-3">
             <div className="text-[11px] text-slate-500">{a.tipo === "vereador" ? "Destinos" : "Emendas à Prefeitura"}</div>
@@ -389,7 +456,9 @@ function Ficha({ a, aoFechar }: { a: Autor; aoFechar: () => void }) {
           {a.totalEntidades > 0 && (
             <div className="rounded-xl bg-slate-50 p-3">
               <div className="text-[11px] text-slate-500">Direto a entidades</div>
-              <div className="text-lg font-semibold tabular-nums text-slate-900">{dinheiroCurto(a.totalEntidades)}</div>
+              <div className="text-lg font-semibold tabular-nums text-slate-900">
+                <DinheiroAnimado valor={a.totalEntidades} />
+              </div>
             </div>
           )}
         </div>
@@ -403,7 +472,7 @@ function Ficha({ a, aoFechar }: { a: Autor; aoFechar: () => void }) {
                   <span className="tabular-nums text-slate-500">{ano}</span>
                   <span className="relative h-2.5" aria-hidden>
                     <span className="absolute inset-0 rounded bg-slate-100" />
-                    <span className="absolute inset-y-0 left-0 rounded" style={{ width: `${Math.max(1, (v / maxAno) * 100)}%`, background: COR_ESFERA[esferaDe(a) ?? "Federal"] }} />
+                    <span className="barra-anim absolute inset-y-0 left-0 rounded" style={{ width: `${Math.max(1, (v / maxAno) * 100)}%`, background: COR_ESFERA[esferaDe(a) ?? "Federal"] }} />
                   </span>
                   <span className="tabular-nums text-slate-900">{dinheiroCurto(v)}</span>
                 </li>
@@ -417,7 +486,7 @@ function Ficha({ a, aoFechar }: { a: Autor; aoFechar: () => void }) {
             <div className="text-xs font-medium text-slate-900">{paraPrefeitura.length === 1 ? "A emenda" : `As ${paraPrefeitura.length} emendas`}</div>
             <ul className="mt-2 space-y-2">
               {paraPrefeitura.map((e, i) => (
-                <CartaoEmenda key={e.codigo ?? i} e={e} abertoInicial={a.emendas.length === 1} />
+                <CartaoEmenda key={e.codigo ?? i} e={e} abertoInicial={a.emendas.length === 1} indice={i} />
               ))}
             </ul>
           </div>
@@ -427,7 +496,7 @@ function Ficha({ a, aoFechar }: { a: Autor; aoFechar: () => void }) {
             <div className="text-xs font-medium text-slate-900">Direto a entidades, sem passar pela Prefeitura</div>
             <ul className="mt-2 space-y-2">
               {paraEntidades.map((e, i) => (
-                <CartaoEmenda key={e.codigo ?? i} e={e} abertoInicial={a.emendas.length === 1} />
+                <CartaoEmenda key={e.codigo ?? i} e={e} abertoInicial={a.emendas.length === 1} indice={i} />
               ))}
             </ul>
           </div>
@@ -456,7 +525,7 @@ type Grupo = "individuais" | "coletivas" | "vereadores" | "entidades";
 type Ordem = "valor" | "emendas" | "recentes";
 
 // Linha compacta: foto, nome, uma etiqueta de cargo e uma de partido, barra fina e valor. As emendas abrem embaixo.
-function LinhaAutor({ a, maximo, aoAbrir, partido }: { a: Autor; maximo: number; aoAbrir: () => void; partido: string | null }) {
+function LinhaAutor({ a, maximo, aoAbrir, partido, indice }: { a: Autor; maximo: number; aoAbrir: () => void; partido: string | null; indice: number }) {
   const [aberto, setAberto] = useState(false);
   const id = useId();
   const emendas = emendasPrefeitura(a).filter((e) => !partido || e.partido === partido);
@@ -470,10 +539,15 @@ function LinhaAutor({ a, maximo, aoAbrir, partido }: { a: Autor; maximo: number;
     a.perfil && a.perfil.situacao !== "Exercício" && situacaoDe(a.perfil),
   ].filter(Boolean);
   return (
-    <li>
+    <li className="entra" style={{ "--i": indice } as React.CSSProperties}>
       {/* Em cima: foto, nome, valor e botão; embaixo, na largura toda (no celular), as etiquetas e a barra. */}
-      <div className="grid grid-cols-[auto_minmax(0,1fr)_auto_auto] items-center gap-x-3 gap-y-1 py-2">
-        <button type="button" onClick={aoAbrir} className="shrink-0 rounded-full focus-visible:outline-2 sm:row-span-3 sm:self-start" aria-label={`Abrir a ficha de ${nomeDe(a)}`}>
+      <div className="group -mx-2 grid grid-cols-[auto_minmax(0,1fr)_auto_auto] items-center gap-x-3 gap-y-1 rounded-lg px-2 py-2 transition-colors hover:bg-slate-50">
+        <button
+          type="button"
+          onClick={aoAbrir}
+          className="shrink-0 rounded-full ring-2 ring-transparent transition group-hover:ring-slate-200 focus-visible:outline-2 sm:row-span-3 sm:self-start"
+          aria-label={`Abrir a ficha de ${nomeDe(a)}`}
+        >
           <Foto a={a} tamanho={32} />
         </button>
         <button type="button" onClick={aoAbrir} className="min-w-0 text-left text-sm font-medium text-slate-900 hover:underline">
@@ -507,32 +581,32 @@ function LinhaAutor({ a, maximo, aoAbrir, partido }: { a: Autor; maximo: number;
         )}
         <span className="relative col-span-4 block h-1.5 sm:col-span-3 sm:col-start-2" aria-hidden>
           <span className="absolute inset-0 rounded bg-slate-100" />
-          <span className="absolute inset-y-0 left-0 rounded" style={{ width: `${maximo ? Math.max(0.5, (valor / maximo) * 100) : 0}%`, background: COR_ESFERA[esfera ?? "Federal"] }} />
+          <span className="barra-anim absolute inset-y-0 left-0 rounded" style={{ width: `${maximo ? Math.max(0.5, (valor / maximo) * 100) : 0}%`, background: COR_ESFERA[esfera ?? "Federal"] }} />
         </span>
       </div>
-      {aberto && (
-        <div id={id} className="pb-3 sm:pl-11">
+      <Abre aberto={aberto} id={id}>
+        <div className="pb-3 sm:pl-11">
           {detalhe.length > 0 && <p className="mb-2 text-xs text-slate-500">{detalhe.join(" · ")}</p>}
           <ul className="space-y-2">
             {emendas.map((e, i) => (
-              <CartaoEmenda key={e.codigo ?? i} e={e} />
+              <CartaoEmenda key={e.codigo ?? i} e={e} indice={i} />
             ))}
           </ul>
         </div>
-      )}
+      </Abre>
     </li>
   );
 }
 
 // Uma entidade da cidade que recebeu emenda federal direto: quem mandou (abre a ficha) e as emendas.
 type Entidade = { nome: string; total: number; itens: { a: Autor; e: Emenda }[] };
-function LinhaEntidade({ x, maximo, aoAbrir }: { x: Entidade; maximo: number; aoAbrir: (a: Autor) => void }) {
+function LinhaEntidade({ x, maximo, aoAbrir, indice }: { x: Entidade; maximo: number; aoAbrir: (a: Autor) => void; indice: number }) {
   const [aberto, setAberto] = useState(false);
   const id = useId();
   const autoresX = [...new Map(x.itens.map((i) => [i.a.chave, i.a])).values()];
   return (
-    <li>
-      <div className="flex items-center gap-3 py-2">
+    <li className="entra" style={{ "--i": indice } as React.CSSProperties}>
+      <div className="-mx-2 flex items-center gap-3 rounded-lg px-2 py-2 transition-colors hover:bg-slate-50">
         <div className="min-w-0 flex-1">
           <div className="text-sm font-medium text-slate-900">{nomeProprio(x.nome)}</div>
           <div className="mt-0.5 flex flex-wrap gap-x-2 text-xs text-slate-500">
@@ -545,7 +619,7 @@ function LinhaEntidade({ x, maximo, aoAbrir }: { x: Entidade; maximo: number; ao
           </div>
           <span className="relative mt-1.5 block h-1.5" aria-hidden>
             <span className="absolute inset-0 rounded bg-slate-100" />
-            <span className="absolute inset-y-0 left-0 rounded" style={{ width: `${Math.max(0.5, (x.total / maximo) * 100)}%`, background: "var(--grafico-4)" }} />
+            <span className="barra-anim absolute inset-y-0 left-0 rounded" style={{ width: `${Math.max(0.5, (x.total / maximo) * 100)}%`, background: "var(--grafico-4)" }} />
           </span>
         </div>
         <span className="shrink-0 text-right text-sm font-semibold tabular-nums text-slate-900">{dinheiroCurto(x.total)}</span>
@@ -562,8 +636,8 @@ function LinhaEntidade({ x, maximo, aoAbrir }: { x: Entidade; maximo: number; ao
           <Seta aberto={aberto} />
         </button>
       </div>
-      {aberto && (
-        <ul id={id} className="space-y-2 pb-3">
+      <Abre aberto={aberto} id={id}>
+        <ul className="space-y-2 pb-3">
           {x.itens.map(({ a, e }, k) => (
             <li key={k}>
               <div className="mb-1 text-[11px] text-slate-500">De {nomeDe(a)}</div>
@@ -573,7 +647,7 @@ function LinhaEntidade({ x, maximo, aoAbrir }: { x: Entidade; maximo: number; ao
             </li>
           ))}
         </ul>
-      )}
+      </Abre>
     </li>
   );
 }
@@ -645,28 +719,27 @@ export function QuemMandou({ autores, vereadores, porPartido }: { autores: Autor
     { chave: "vereadores", nome: "Vereadores de Osasco", n: vereadores.length },
     { chave: "entidades", nome: "Direto a entidades", n: entidades.length },
   ];
-  const botao = (ativo: boolean) => `rounded-md px-2.5 py-1 text-xs font-medium transition ${ativo ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`;
 
   return (
     <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_18rem]">
       <div className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <div className="flex flex-wrap gap-1 rounded-lg bg-slate-100 p-0.5" role="group" aria-label="Quem">
-            {GRUPOS.filter((g) => g.n > 0).map((g) => (
-              <button
-                key={g.chave}
-                type="button"
-                aria-pressed={grupo === g.chave}
-                onClick={() => {
-                  setGrupo(g.chave);
-                  if (g.chave !== "individuais") setPartido(null);
-                }}
-                className={botao(grupo === g.chave)}
-              >
-                {g.nome} <span className="tabular-nums text-slate-400">{g.n}</span>
-              </button>
-            ))}
-          </div>
+          <Segmentos
+            rotulo="Quem"
+            valor={grupo}
+            aoEscolher={(g) => {
+              setGrupo(g);
+              if (g !== "individuais") setPartido(null);
+            }}
+            opcoes={GRUPOS.filter((g) => g.n > 0).map((g) => ({
+              valor: g.chave,
+              nome: (
+                <>
+                  {g.nome} <span className="tabular-nums text-slate-400">{g.n}</span>
+                </>
+              ),
+            }))}
+          />
           <label className={`flex items-center gap-1.5 text-xs text-slate-500 ${grupo === "entidades" ? "hidden" : ""}`}>
             Ordem
             <select value={ordem} onChange={(e) => setOrdem(e.target.value as Ordem)} className="rounded-md border border-slate-200 bg-white px-1.5 py-1 text-xs text-slate-800">
@@ -694,8 +767,8 @@ export function QuemMandou({ autores, vereadores, porPartido }: { autores: Autor
               valores das outras abas.
             </p>
             <ol className="mt-1 divide-y divide-slate-100">
-              {entidades.map((x) => (
-                <LinhaEntidade key={x.nome} x={x} maximo={entidades[0]?.total ?? 1} aoAbrir={abrir} />
+              {entidades.map((x, k) => (
+                <LinhaEntidade key={x.nome} x={x} maximo={entidades[0]?.total ?? 1} aoAbrir={abrir} indice={k} />
               ))}
             </ol>
           </>
@@ -716,9 +789,9 @@ export function QuemMandou({ autores, vereadores, porPartido }: { autores: Autor
             className="mt-3 w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none"
           />
         )}
-        <ol className="mt-1 divide-y divide-slate-100">
-          {(todosVisiveis || busca ? lista : lista.slice(0, VISIVEIS)).map((a) => (
-            <LinhaAutor key={a.chave} a={a} maximo={maximo} partido={partido} aoAbrir={() => abrir(a)} />
+        <ol key={`${grupo}|${partido}|${ordem}`} className="mt-1 divide-y divide-slate-100">
+          {(todosVisiveis || busca ? lista : lista.slice(0, VISIVEIS)).map((a, k) => (
+            <LinhaAutor key={a.chave} a={a} maximo={maximo} partido={partido} aoAbrir={() => abrir(a)} indice={k} />
           ))}
         </ol>
         {!lista.length && grupo !== "entidades" && <p className="py-6 text-center text-sm text-slate-500">Nada encontrado.</p>}
@@ -748,7 +821,7 @@ export function QuemMandou({ autores, vereadores, porPartido }: { autores: Autor
                 >
                   <span className="truncate font-medium text-slate-800">{partidoLegivel(p.sigla)}</span>
                   <span className="relative h-2" aria-hidden>
-                    <span className="absolute inset-y-0 left-0 rounded" style={{ width: `${Math.max(1, (p.valor / maxPartido) * 100)}%`, background: "var(--grafico-1)", opacity: partido && partido !== p.sigla ? 0.35 : 1 }} />
+                    <span className="barra-anim absolute inset-y-0 left-0 rounded transition-opacity" style={{ width: `${Math.max(1, (p.valor / maxPartido) * 100)}%`, background: "var(--grafico-1)", opacity: partido && partido !== p.sigla ? 0.35 : 1 }} />
                   </span>
                   <span className="tabular-nums text-slate-900">{dinheiroCurto(p.valor)}</span>
                 </button>

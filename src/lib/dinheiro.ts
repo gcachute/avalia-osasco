@@ -3,11 +3,15 @@
 
 export type Fonte = { nome: string; url: string; coletadoEm?: string; posicao?: string };
 
+// Conta da Declaração de Contas Anuais que forma uma linha do quadro de entradas.
+export type ContaDCA = { conta: string; valor: number };
+
 export type EntradaAno = {
   ano: number;
-  uniao: { convenios: number; sus: number; educacao: number; assistencia: number; fpm: number; outras: number; total: number };
-  estado: { convenios: number; sus: number; icms: number; ipva: number; outras: number; total: number };
+  uniao: { convenios: number; sus: number; educacao: number; assistencia: number; fpm: number; outras: number; total: number; contas: Record<string, ContaDCA[]> };
+  estado: { convenios: number; sus: number; icms: number; ipva: number; outras: number; total: number; contas: Record<string, ContaDCA[]> };
   fundeb: number;
+  contasFundeb: ContaDCA[];
 };
 
 // Cadastro do parlamentar na Câmara dos Deputados ou no Senado.
