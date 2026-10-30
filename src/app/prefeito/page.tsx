@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ContaPilarA, ContaPilarB } from "@/components/ContaFiscal";
 import { SecaoIntegridade } from "@/components/Integridade";
 import { ListaTematica } from "@/components/ListaTematica";
@@ -7,7 +8,7 @@ import { geometriaBairros } from "@/lib/mapaGeo";
 import { TabelaPares } from "@/components/Fiscal";
 import { Faixa, TabelaIegm } from "@/components/Iegm";
 import { PilarD, PilarE } from "@/components/PilaresDE";
-import { AvisoParcial, Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
+import { AvisoParcial, Barra, Cartao, ComoLer, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { AnoFiscal, CidadeFiscal } from "@/lib/dados";
 import { PILARES_PREFEITO, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, num, plural, sessao } from "@/lib/dados";
 import { INDICADORES, primarioTexto, ranking, rotuloPeriodo } from "@/lib/fiscal";
@@ -427,6 +428,20 @@ export default function PaginaPrefeito() {
         />
       </Secao>
 
+
+      <ComoLer>
+        <li>A avaliação é feita por pilar, de 0 a 10, sem nota geral. Cada pilar traz a própria fonte.</li>
+        <li>Aguardando dados do mandato quer dizer que a fonte ainda não publicou os números do período.</li>
+        <li>A comparação coloca Osasco ao lado de outras cidades paulistas grandes, no mesmo período.</li>
+        <li>Integridade e Relação com a Câmara aparecem ao lado dos pilares e não entram na nota deles.</li>
+        <li>
+          A conta de cada pilar está na{" "}
+          <Link href="/metodologia#prefeito" className="underline">
+            metodologia
+          </Link>
+          .
+        </li>
+      </ComoLer>
     </>
   );
 }

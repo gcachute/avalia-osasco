@@ -6,6 +6,7 @@ import { Logo } from "@/components/Logo";
 import { BotaoTopo, NavegacaoPagina } from "@/components/NavegacaoPagina";
 import { Nav, NavInferior, type ItemNav } from "@/components/Nav";
 import { NovaAba } from "@/components/NovaAba";
+import { AtalhoComoLer } from "@/components/AtalhoComoLer";
 import { AvisoIA } from "@/components/AvisoIA";
 import { PedidoCorrecao } from "@/components/PedidoCorrecao";
 import { BotaoTema, SCRIPT_TEMA } from "@/components/Tema";
@@ -75,7 +76,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           </div>
           <NavegacaoPagina />
         </header>
-        <main className="mx-auto max-w-5xl px-4 py-5 md:py-8">{children}</main>
+        <main className="mx-auto max-w-5xl px-4 py-5 md:py-8">
+          <AtalhoComoLer />
+          {children}
+        </main>
         <footer className="border-t border-slate-200 bg-white">
           <div className="mx-auto max-w-5xl space-y-2 px-4 py-6 text-sm text-slate-500">
             <p>

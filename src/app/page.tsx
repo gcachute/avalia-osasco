@@ -3,7 +3,7 @@ import { CustoMandato, DespesasCamara, FolhaCamara } from "@/components/Camara";
 import type { VereadorLista } from "@/components/ListaVereadores";
 import { PainelInicial } from "@/components/PainelInicial";
 import { GraficoPartidos, type MediaPartido } from "@/components/Partidos";
-import { AvisoParcial, Avatar, NotaBadge, Secao, SeloPartido } from "@/components/ui";
+import { AvisoParcial, Avatar, ComoLer, NotaBadge, Secao, SeloPartido } from "@/components/ui";
 import type { Coeficiente } from "@/lib/dados";
 import { COEFICIENTES, PILARES_PREFEITO, dados, dataBR, nota10 } from "@/lib/dados";
 import { dadosDoMapaCompleto } from "@/lib/mapaGeo";
@@ -217,6 +217,20 @@ export default async function Home() {
           </div>
         </Secao>
       )}
+
+      <ComoLer>
+        <li>O painel mostra a cidade de duas formas: o mapa, bairro a bairro, e a lista de vereadores. Os botões Mapa e Vereadores trocam entre elas.</li>
+        <li>No mapa, escolha uma camada e toque em um bairro para abrir os dados dele.</li>
+        <li>Na lista, cada vereador tem uma nota de 0 a 10 por coeficiente. Dá para ordenar por qualquer coeficiente ou montar um critério próprio, dando peso a cada um.</li>
+        <li>A média por partido leva em conta as sessões de cada vereador, inclui quem já saiu do cargo e deixa Integridade de fora.</li>
+        <li>
+          Os documentos vão de {dataBR(dados.periodo.inicio)} a {dataBR(dados.periodo.fim)}. A conta de cada nota está na{" "}
+          <Link href="/metodologia" className="underline">
+            metodologia
+          </Link>
+          .
+        </li>
+      </ComoLer>
     </>
   );
 }

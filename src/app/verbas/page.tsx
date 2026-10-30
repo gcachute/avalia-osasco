@@ -6,11 +6,11 @@ import { AnoEmAndamento, ConferirLinha } from "@/components/dinheiro/Conferencia
 import { QuemMandou } from "@/components/dinheiro/Emendas";
 import { ConferenciasIntegridade } from "@/components/dinheiro/Integridade";
 import { GraficoLinha } from "@/components/GraficoLinha";
-import { Secao } from "@/components/ui";
+import { ComoLer, Secao } from "@/components/ui";
 import { DinheiroAnimado } from "@/components/Animacoes";
 import { dados, dataBR } from "@/lib/dados";
 import bruto from "@/data/dinheiro.json";
-import { nomeProprio, type PaginaDinheiro } from "@/lib/dinheiro";
+import type { PaginaDinheiro } from "@/lib/dinheiro";
 import { dinheiroCurto } from "@/lib/formato";
 
 export const metadata: Metadata = {
@@ -168,13 +168,11 @@ export default function PaginaDinheiro() {
           </div>
         </div>
         <p className="mt-3 text-xs text-slate-500">
-          Ficam de fora {emendas.empresasForaDaConta.quantidade.toLocaleString("pt-BR")} pagamentos ({dinheiroCurto(emendas.empresasForaDaConta.total)}) a
-          empresas com sede em Osasco que forneceram para programas nacionais: é dinheiro de emenda, mas não foi para a cidade.
-          {emendas.entidadesForaDaConta.length > 0 &&
-            ` Pelo mesmo motivo ficam de fora ${dinheiroCurto(emendas.entidadesForaDaConta.reduce((t, x) => t + x.valor, 0))} recebidos por entidades com sede em Osasco para projetos em outro lugar (${emendas.entidadesForaDaConta
-              .map((x) => `${x.autor} para ${nomeProprio(x.entidade)}${x.destino ? `, destino ${/v[aá]rias|m[uú]ltiplo/i.test(x.destino) ? "várias cidades" : x.destino}` : ""}`)
-              .join("; ")}).`}{" "}
-          Fontes:{" "}
+          Entram aqui os valores recebidos pela Prefeitura, pelos fundos municipais e por entidades com sede em Osasco. O critério está na{" "}
+          <Link href="/metodologia#verbas" className="underline">
+            metodologia
+          </Link>
+          . Fontes:{" "}
           <a href={fontes.emendas.url} className="underline">
             {fontes.emendas.nome}
           </a>
@@ -254,8 +252,11 @@ export default function PaginaDinheiro() {
         )}
       </Secao>
 
-      <Secao titulo="Como ler esta página" id="como-ler">
-        <ul className="list-disc space-y-1.5 pl-5 text-sm text-slate-700">
+      <ComoLer>
+          <li>
+            Os valores são os recebidos pela Prefeitura, pelos fundos municipais e por entidades com sede em Osasco. As empresas e entidades da conferência de
+            punidos aparecem porque receberam verbas pagas pela Prefeitura.
+          </li>
           <li>
             Dinheiro obrigatório (FPM, ICMS, IPVA, FUNDEB) chega todo mês por regra fixa, sem pedido de ninguém. Emendas e convênios dependem de um
             parlamentar ou de um acordo.
@@ -282,8 +283,7 @@ export default function PaginaDinheiro() {
             conferência mostra o mesmo valor em outra fonte (relatório bimestral, repasses do Estado, governo federal), ano a ano.
           </li>
           <li>Se a obra ou o serviço foi entregue não aparece nesses registros. Para obras, veja a camada de obras no mapa.</li>
-        </ul>
-      </Secao>
+      </ComoLer>
     </>
   );
 }

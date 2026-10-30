@@ -194,14 +194,16 @@ export function CartaoEmenda({ e, abertoInicial = false, indice }: { e: Emenda; 
                 <dd className="text-slate-800">{frase(e.acao)}</dd>
               </>
             )}
-            {e.localidade && e.localidade !== "OSASCO - SP" && e.valorEmenda && (
+            {e.recebimentos.length > 0 && (
               <>
-                <dt className="text-slate-500">Emenda inteira</dt>
-                <dd className="text-slate-800">
-                  {reaisExato(e.valorEmenda.pago)} pagos{" "}
-                  {/M[UÚ]LTIPLO/i.test(e.localidade) ? "a várias cidades" : `para ${frase(e.localidade.replace(/\s*\(UF\)/, ""))}`}; Osasco recebeu{" "}
-                  {reaisExato(e.recebido + e.paraEntidades)}
-                </dd>
+                <dt className="text-slate-500">Recebido em Osasco</dt>
+                <dd className="tabular-nums text-slate-800">{reaisExato(e.recebido + e.paraEntidades)}</dd>
+              </>
+            )}
+            {e.paraEntidades > 0 && e.localidade && (
+              <>
+                <dt className="text-slate-500">Destino na emenda</dt>
+                <dd className="text-slate-800">{destinoDe(e.localidade)}</dd>
               </>
             )}
           </dl>
@@ -227,7 +229,7 @@ export function CartaoEmenda({ e, abertoInicial = false, indice }: { e: Emenda; 
           {e.convenios.map((c) => (
             <div key={c.numero} className="rounded-lg bg-slate-50 p-2 text-xs">
               <div className="font-medium text-slate-900">
-                Convênio {c.numero}, assinado em {dataBR(c.data)}, {dinheiroCurto(c.valor)}
+                Convênio {c.numero}, assinado em {dataBR(c.data)}, {dinheiroCurto(e.recebido + e.paraEntidades > 0 ? Math.min(c.valor, e.recebido + e.paraEntidades) : c.valor)}
               </div>
               <p className="mt-0.5 text-slate-700">{frase(c.objeto)}</p>
             </div>
@@ -598,6 +600,10 @@ function LinhaAutor({ a, maximo, aoAbrir, partido, indice }: { a: Autor; maximo:
 
 // Uma entidade da cidade que recebeu emenda federal direto: quem mandou (abre a ficha) e as emendas.
 type Entidade = { nome: string; total: number; itens: { a: Autor; e: Emenda }[] };
+
+// Campo oficial de destino da emenda: "OSASCO - SP", "SÃO PAULO (UF)", "MÚLTIPLO".
+const destinoDe = (l: string) =>
+  /M[UÚ]LTIPLO/i.test(l) ? "várias cidades" : /OSASCO/i.test(l) ? "Osasco" : /\(UF\)/.test(l) ? `estado de ${nomeProprio(l.replace(/\s*\(UF\)/, ""))}` : nomeProprio(l);
 function LinhaEntidade({ x, maximo, aoAbrir, indice }: { x: Entidade; maximo: number; aoAbrir: (a: Autor) => void; indice: number }) {
   const [aberto, setAberto] = useState(false);
   const id = useId();
@@ -614,6 +620,9 @@ function LinhaEntidade({ x, maximo, aoAbrir, indice }: { x: Entidade; maximo: nu
                 {a.perfil?.partido && ` (${partidoLegivel(a.perfil.partido)})`}
               </button>
             ))}
+          </div>
+          <div className="mt-0.5 text-[11px] text-slate-500">
+            Destino na emenda: {[...new Set(x.itens.map((i) => (i.e.localidade ? destinoDe(i.e.localidade) : "não informado")))].join(", ")}
           </div>
           <span className="relative mt-1.5 block h-1.5" aria-hidden>
             <span className="absolute inset-0 rounded bg-slate-100" />
@@ -762,7 +771,7 @@ export function QuemMandou({ autores, vereadores, porPartido }: { autores: Autor
           <>
             <p className="mt-3 text-xs text-slate-500">
               Associações e institutos sediados em Osasco que receberam emenda federal direto. Esse dinheiro não passa pela Prefeitura e não entra nos
-              valores das outras abas.
+              valores das outras abas. O destino é o que consta no registro oficial de cada emenda.
             </p>
             <ol className="mt-1 divide-y divide-slate-100">
               {entidades.map((x, k) => (

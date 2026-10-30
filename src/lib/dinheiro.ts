@@ -52,7 +52,6 @@ export type Emenda = {
   acao: string | null;
   planoOrcamentario: string | null;
   localidade: string | null;
-  valorEmenda: { empenhado: number; pago: number } | null;
   recebido: number;
   paraEntidades: number;
   recebimentos: { mes: string; favorecido: string; cnpj: string; entidade: boolean; valor: number }[];
