@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-30T04:06:22.986Z",
+ "geradoEm": "2026-10-30T04:22:35.430Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -61319,20 +61319,20 @@
       {
        "origem": "gastoFederal",
        "ano": 2020,
-       "valor": 15739,
-       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO CAMPANANHA BURJATO EMEF BENEDICTO WESCHENFELDER UBS EMILIA CO",
-       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
-       "pagamentos": 1,
-       "outrosBairros": 16
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2020,
        "valor": 8000,
        "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO EM EQUIPAMENTOS HOSPITALARES PARA A POLICLINICA ZONA NORTE D LEONIL CRE BORTOLOSSO PERIODO 13 10 2020 I O M O N 1 938 DE 11 11 2020",
        "quem": "WCG MEDICAL COMERCIO IMPORTACAO E SERVICOS LTDA",
        "pagamentos": 1,
        "outrosBairros": 1
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO CAMPANANHA BURJATO EMEF BENEDICTO WESCHENFELDER UBS EMILIA CO",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
       }
      ],
      "quantidade": 4,
@@ -61981,20 +61981,20 @@
       {
        "origem": "gastoFederal",
        "ano": 2020,
-       "valor": 15739,
-       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO CAMPANANHA BURJATO EMEF BENEDICTO WESCHENFELDER UBS EMILIA CO",
-       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
-       "pagamentos": 1,
-       "outrosBairros": 16
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2020,
        "valor": 2630.41,
        "texto": "PAGAMENTO DE SENTENCA JUDICIAL DE PEQUENO VALOR PROC JUDICIAL N 0005980 76 2020 8 26 0405 01 RECLAMANTE SPE PRESIDENTE ALTINO CONSTRUCOES LTDA RPV 313 2020",
        "quem": "SPE PRESIDENTE ALTINO CONSTRUCOES LTDA",
        "pagamentos": 3,
        "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO CAMPANANHA BURJATO EMEF BENEDICTO WESCHENFELDER UBS EMILIA CO",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
       }
      ],
      "quantidade": 2,
@@ -63033,15 +63033,6 @@
       },
       {
        "origem": "gastoFederal",
-       "ano": 2020,
-       "valor": 15739,
-       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO CAMPANANHA BURJATO EMEF BENEDICTO WESCHENFELDER UBS EMILIA CO",
-       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
-       "pagamentos": 1,
-       "outrosBairros": 16
-      },
-      {
-       "origem": "gastoFederal",
        "ano": 2019,
        "valor": 15396,
        "texto": "Aquisição de Jogo de Lençol, Toalha de Banho, Toalha de Rosto e Travesseiro Infantil a Unidade de Acolhimento de Indivíduos ou Grupo de Familiares em Situação de Rua no Jd. Rochdale",
@@ -63066,6 +63057,15 @@
        "quem": "KANARO ARTIGOS DE CAMA, MESA E BANHO LTDA",
        "pagamentos": 1,
        "outrosBairros": 0
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO CAMPANANHA BURJATO EMEF BENEDICTO WESCHENFELDER UBS EMILIA CO",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16
       }
      ],
      "quantidade": 14,
