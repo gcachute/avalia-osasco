@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import type { BairroMapa, Historico, ItemMapa, Mapa } from "@/lib/dados";
 import { num } from "@/lib/formato";
 import { DinheiroBairro } from "./DinheiroBairro";
@@ -62,17 +62,12 @@ export function PainelBairro({
   marcarBairros?: (ids: string[] | null, ajuste?: "enquadrar" | "selecionado") => void;
 }) {
   const [aba, setAba] = useState<Aba>(abaInicial);
-  // Aba Documentos: logo ao abrir, os outros bairros citados pelos documentos deste bairro ficam coloridos no mapa.
-  const chaveDocs = [...new Set(itens.filter((i) => i.bairros.length > 1).flatMap((i) => i.bairros))]
-    .filter((b) => b !== bairro.id)
-    .sort()
-    .join(",");
-  const docsCitados = useMemo(() => (chaveDocs ? chaveDocs.split(",") : null), [chaveDocs]);
+  // Aba Documentos: clicar num documento de vários bairros colore os outros no mapa; clicar de novo desfaz.
+  const [docAberto, setDocAberto] = useState<string | null>(null);
   useEffect(() => {
     if (aba !== "politica" || !marcarBairros) return;
-    marcarBairros(docsCitados);
     return () => marcarBairros(null);
-  }, [aba, docsCitados, marcarBairros]);
+  }, [aba, marcarBairros]);
   const c = bairro.censo;
   const pessoas = c?.pessoas ?? bairro.populacao ?? 0;
   const publicas = (bairro.escolas ?? []).filter((e) => e.rede !== "Privada");
@@ -177,12 +172,14 @@ export function PainelBairro({
               {itens.map((i) => (
                 <li
                   key={i.id}
-                  className="border-l-2 pl-3"
+                  className={`border-l-2 pl-3 ${i.bairros.length > 1 ? `cursor-pointer rounded-r-lg ${docAberto === i.id ? "bg-blue-50" : "hover:bg-slate-50"}` : ""}`}
                   style={{ borderColor: corOrigem(i.origem) }}
-                  onMouseEnter={() => i.bairros.length > 1 && marcarBairros?.(i.bairros.filter((b) => b !== bairro.id))}
-                  onMouseLeave={() => marcarBairros?.(docsCitados)}
-                  // Clicar num documento de vários bairros ajusta o mapa para mostrar todos.
-                  onClick={() => i.bairros.length > 1 && marcarBairros?.(i.bairros.filter((b) => b !== bairro.id), "enquadrar")}
+                  onClick={() => {
+                    if (i.bairros.length < 2) return;
+                    const abrir = docAberto !== i.id;
+                    setDocAberto(abrir ? i.id : null);
+                    marcarBairros?.(abrir ? i.bairros.filter((b) => b !== bairro.id) : null, abrir ? "enquadrar" : "selecionado");
+                  }}
                 >
                   <div className="flex flex-wrap items-center gap-x-2 text-[11px] text-slate-500">
                     <span className="font-medium text-slate-700">{i.tipo}</span>
@@ -192,7 +189,7 @@ export function PainelBairro({
                   {i.via && <p className="mt-0.5 text-[11px] text-slate-500">Ligado ao bairro por: {i.via.map(titulo).join(", ")}</p>}
                   {i.bairros.length > 1 && nomesBairros && (
                     <p className="mt-0.5 text-[11px] text-slate-500">
-                      Também cita (coloridos no mapa):{" "}
+                      Também cita (toque para colorir no mapa):{" "}
                       {i.bairros
                         .filter((b) => b !== bairro.id)
                         .map((b) => nomesBairros.get(b) ?? b)

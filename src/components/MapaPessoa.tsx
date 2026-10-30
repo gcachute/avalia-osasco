@@ -218,10 +218,10 @@ export function MapaPessoa({
               {recentes.map((i) => (
                 <li
                   key={i.id}
-                  className="rounded-lg bg-slate-50 p-2 text-xs transition-colors hover:bg-slate-100"
+                  className={`cursor-pointer rounded-lg p-2 text-xs transition-colors ${citados.join() === i.bairros.join() ? "bg-blue-50 ring-1 ring-blue-200" : "bg-slate-50 hover:bg-slate-100"}`}
                   style={{ borderLeft: `3px solid ${corItens}` }}
-                  onMouseEnter={() => setCitados(i.bairros)}
-                  onMouseLeave={() => setCitados([])}
+                  // Clicar no documento colore no mapa os bairros que ele cita; clicar de novo desfaz.
+                  onClick={() => setCitados(citados.join() === i.bairros.join() ? [] : i.bairros)}
                 >
                   <div className="flex flex-wrap gap-x-2 text-[11px] text-slate-500">
                     <span className="font-medium text-slate-700">{i.tipo}</span>

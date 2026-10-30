@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import type { BairroMapa } from "@/lib/dados";
 import { GRUPO_ORIGEM, ROTULO_ORIGEM, frase, type ItemDinheiroBairro } from "@/lib/dinheiro";
 import { dinheiroCurto, reaisExato } from "@/lib/formato";
@@ -14,24 +14,27 @@ const GRUPOS: { chave: Grupo; nome: string; cor: string }[] = [
   { chave: "vereadores", nome: "Emendas individuais", cor: "var(--grafico-3)" },
 ];
 
-// Ao passar o mouse (ou com o item aberto), os outros bairros citados ficam marcados no mapa.
-type Realce = { atual: string; nomes: Map<string, string>; marcar: (ids: string[] | null, ajuste?: "enquadrar" | "selecionado") => void; todos: string[] | null };
+// Com o item aberto (clique), os outros bairros citados ficam coloridos no mapa.
+type Realce = { atual: string; nomes: Map<string, string>; marcar: (ids: string[] | null, ajuste?: "enquadrar" | "selecionado") => void };
 
 function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; realce?: Realce }) {
   const [aberto, setAberto] = useState(false);
   const outros = (i.bairros ?? []).filter((b) => b !== realce?.atual);
-  // Sim: só os bairros deste item; não: volta aos bairros de todos os itens da aba.
-  const marca = (sim: boolean) => realce && outros.length > 0 && realce.marcar(sim ? outros : realce.todos);
   const grupo = GRUPOS.find((g) => g.chave === GRUPO_ORIGEM[i.origem])!;
   // Quando o texto cita vários bairros, cada um fica com uma parte igual do valor: é essa parte que entra na soma do bairro.
   const bairros = i.outrosBairros + 1;
   const parte = i.valor / bairros;
+  // Clicar em qualquer parte do item abre o detalhe; num item de vários bairros, o mapa se ajusta para mostrar todos
+  // (fechar volta ao bairro escolhido).
+  const alternar = () => {
+    setAberto(!aberto);
+    if (realce && outros.length > 0) realce.marcar(!aberto ? outros : null, !aberto ? "enquadrar" : "selecionado");
+  };
   return (
     <li
-      className={`entra rounded-lg p-2 transition-colors ${aberto && outros.length ? "bg-blue-50 ring-1 ring-blue-200" : "bg-slate-50"}`}
+      className={`entra cursor-pointer rounded-lg p-2 transition-colors ${aberto && outros.length ? "bg-blue-50 ring-1 ring-blue-200" : "bg-slate-50 hover:bg-slate-100"}`}
       style={{ "--i": indice } as React.CSSProperties}
-      onMouseEnter={() => marca(true)}
-      onMouseLeave={() => !aberto && marca(false)}
+      onClick={alternar}
     >
       <div className="flex flex-wrap items-baseline gap-x-2 text-[11px] text-slate-500">
         <span className="inline-flex items-center gap-1 font-medium text-slate-700">
@@ -51,13 +54,9 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
           )}
         </span>
       </div>
+      {/* Para quem usa o teclado; o clique sobe até o item. */}
       <button
         type="button"
-        onClick={() => {
-          setAberto(!aberto);
-          // Abrir um item de vários bairros ajusta o mapa para mostrar todos; fechar volta ao bairro escolhido.
-          if (realce && outros.length > 0) realce.marcar(!aberto ? outros : realce.todos, !aberto ? "enquadrar" : "selecionado");
-        }}
         aria-expanded={aberto}
         className="mt-0.5 block w-full text-left"
       >
@@ -72,7 +71,7 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
       </button>
       <div className="mt-0.5 flex flex-wrap gap-x-2 text-[11px] text-slate-500">
         {i.autor ? (
-          <Link href={`/verbas?autor=${i.autor}`} className="font-medium text-blue-800 underline">
+          <Link href={`/verbas?autor=${i.autor}`} onClick={(e) => e.stopPropagation()} className="font-medium text-blue-800 underline">
             {i.quem}
           </Link>
         ) : (
@@ -89,7 +88,7 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
       )}
       {outros.length > 0 && realce && (
         <p className="mt-1 text-[11px] text-slate-600">
-          <span className="font-medium">Dividido também com</span> (coloridos no mapa):{" "}
+          <span className="font-medium">Dividido também com</span> (coloridos no mapa com o item aberto):{" "}
           {outros
             .map((b) => realce.nomes.get(b) ?? b)
             .sort((x, y) => x.localeCompare(y, "pt-BR"))
@@ -101,22 +100,15 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
   );
 }
 
-export function DinheiroBairro({ d, realce: base }: { d: NonNullable<BairroMapa["dinheiro"]>; realce?: Omit<Realce, "todos"> }) {
+export function DinheiroBairro({ d, realce }: { d: NonNullable<BairroMapa["dinheiro"]>; realce?: Realce }) {
   const [filtro, setFiltro] = useState<Grupo | null>(null);
   const porGrupo = d.porGrupo ?? {};
   const presentes = GRUPOS.filter((g) => (porGrupo[g.chave] ?? 0) > 0);
   const total = presentes.reduce((s, g) => s + (porGrupo[g.chave] ?? 0), 0);
   const itens = filtro ? d.itens.filter((i) => GRUPO_ORIGEM[i.origem] === filtro) : d.itens;
-  // Logo ao abrir a aba, todos os bairros que dividem algum item com este ficam coloridos no mapa.
-  const todosIds = [...new Set(itens.flatMap((i) => i.bairros ?? []))].filter((b) => b !== base?.atual).sort();
-  const chaveTodos = todosIds.join(",");
-  const todos = useMemo(() => (chaveTodos ? chaveTodos.split(",") : null), [chaveTodos]);
-  const marcar = base?.marcar;
-  useEffect(() => {
-    marcar?.(todos);
-    return () => marcar?.(null);
-  }, [marcar, todos]);
-  const realce = base ? { ...base, todos } : undefined;
+  // Ao sair da aba, os bairros coloridos voltam ao normal.
+  const marcar = realce?.marcar;
+  useEffect(() => () => marcar?.(null), [marcar]);
   return (
     <div>
       <p className="text-xs text-slate-500">
