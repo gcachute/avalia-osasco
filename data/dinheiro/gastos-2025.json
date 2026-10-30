@@ -5707,6 +5707,28 @@
    "pessoasFisicas": 0,
    "itensBairro": [
     {
+     "data": "2025-10-02",
+     "valor": 24500,
+     "fornecedor": "ASSOCIACAO PESTALOZZI DE OSASCO",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "DIREITOS DA CIDADANIA",
+     "texto": "ASSOCIACAO PESTALOZZI DE OSASCO SERVICO",
+     "bairros": [
+      "umuarama"
+     ]
+    },
+    {
+     "data": "2025-10-02",
+     "valor": 75198,
+     "fornecedor": "ASSOCIACAO PESTALOZZI DE OSASCO",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "DIREITOS DA CIDADANIA",
+     "texto": "ASSOCIACAO PESTALOZZI DE OSASCO MATERIAL PERMANENTE",
+     "bairros": [
+      "umuarama"
+     ]
+    },
+    {
      "data": "2025-12-11",
      "valor": 514412.22,
      "fornecedor": "ASSOCIACAO AMIGOS DO JARDIM BONANCA II",

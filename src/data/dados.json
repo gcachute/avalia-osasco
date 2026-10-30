@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-30T20:37:04.158Z",
+ "geradoEm": "2026-10-30T20:58:33.879Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -46291,7 +46291,7 @@
   },
   "iegm": {
    "fonte": "https://www.tce.sp.gov.br/iegm",
-   "coletadoEm": "2026-10-26T20:59:40.782Z",
+   "coletadoEm": "2026-10-30T20:43:47.697Z",
    "valorFaixa": {
     "A": 0.95,
     "B+": 0.825,

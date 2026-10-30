@@ -44,26 +44,6 @@
    "valor": 1224000
   },
   {
-   "codigo": "202530880017",
-   "autor": "EDUARDO BOLSONARO",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2026-06",
-   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
-   "cnpj": "13897329000149",
-   "destino": "prefeitura",
-   "valor": 700000
-  },
-  {
-   "codigo": "202650410001",
-   "autor": "COM. DA SAUDE",
-   "tipo": "Emenda de Comissão",
-   "mes": "2026-06",
-   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
-   "cnpj": "13897329000149",
-   "destino": "prefeitura",
-   "valor": 6395000
-  },
-  {
    "codigo": "202650410002",
    "autor": "COM. DA SAUDE",
    "tipo": "Emenda de Comissão",
@@ -72,6 +52,16 @@
    "cnpj": "13897329000149",
    "destino": "prefeitura",
    "valor": 2500000
+  },
+  {
+   "codigo": "202530880017",
+   "autor": "EDUARDO BOLSONARO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-06",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 700000
   },
   {
    "codigo": "202640940003",
@@ -84,6 +74,16 @@
    "valor": 300000
   },
   {
+   "codigo": "202650410001",
+   "autor": "COM. DA SAUDE",
+   "tipo": "Emenda de Comissão",
+   "mes": "2026-06",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 6395000
+  },
+  {
    "codigo": "202619970014",
    "autor": "VICENTINHO",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -94,14 +94,24 @@
    "valor": 300000
   },
   {
-   "codigo": "202641190005",
-   "autor": "MARIA ROSAS",
+   "codigo": "202637460005",
+   "autor": "RENATA ABREU",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
    "mes": "2026-05",
    "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
    "cnpj": "13929258000119",
    "destino": "prefeitura",
-   "valor": 500000
+   "valor": 100000
+  },
+  {
+   "codigo": "202643490004",
+   "autor": "DELEGADO PALUMBO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
+   "cnpj": "13929258000119",
+   "destino": "prefeitura",
+   "valor": 200000
   },
   {
    "codigo": "202615680001",
@@ -124,54 +134,14 @@
    "valor": 100000
   },
   {
-   "codigo": "202643490004",
-   "autor": "DELEGADO PALUMBO",
+   "codigo": "202641190005",
+   "autor": "MARIA ROSAS",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
    "mes": "2026-05",
    "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
    "cnpj": "13929258000119",
    "destino": "prefeitura",
-   "valor": 200000
-  },
-  {
-   "codigo": "202637460005",
-   "autor": "RENATA ABREU",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2026-05",
-   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
-   "cnpj": "13929258000119",
-   "destino": "prefeitura",
-   "valor": 100000
-  },
-  {
-   "codigo": "202643700001",
-   "autor": "FABIO TERUEL",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2026-05",
-   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
-   "cnpj": "13897329000149",
-   "destino": "prefeitura",
-   "valor": 10063001
-  },
-  {
-   "codigo": "202671250001",
-   "autor": "BANCADA DE SAO PAULO",
-   "tipo": "Emenda de Bancada",
-   "mes": "2026-05",
-   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
-   "cnpj": "13897329000149",
-   "destino": "prefeitura",
-   "valor": 2720000
-  },
-  {
-   "codigo": "202644050014",
-   "autor": "KIKO CELEGUIM",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2026-05",
-   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
-   "cnpj": "13897329000149",
-   "destino": "prefeitura",
-   "valor": 200000
+   "valor": 500000
   },
   {
    "codigo": "202650410002",
@@ -184,6 +154,16 @@
    "valor": 2110833
   },
   {
+   "codigo": "202643700001",
+   "autor": "FABIO TERUEL",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 10063001
+  },
+  {
    "codigo": "202637370016",
    "autor": "ORLANDO SILVA",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -192,6 +172,26 @@
    "cnpj": "13897329000149",
    "destino": "prefeitura",
    "valor": 2000000
+  },
+  {
+   "codigo": "202644050014",
+   "autor": "KIKO CELEGUIM",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 200000
+  },
+  {
+   "codigo": "202671250001",
+   "autor": "BANCADA DE SAO PAULO",
+   "tipo": "Emenda de Bancada",
+   "mes": "2026-05",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 2720000
   },
   {
    "codigo": "202641190001",
@@ -284,16 +284,6 @@
    "valor": 2000000
   },
   {
-   "codigo": "202515680006",
-   "autor": "GILBERTO NASCIMENTO",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2025-10",
-   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
-   "cnpj": "13929258000119",
-   "destino": "prefeitura",
-   "valor": 300000
-  },
-  {
    "codigo": "202541190001",
    "autor": "MARIA ROSAS",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -302,6 +292,16 @@
    "cnpj": "13929258000119",
    "destino": "prefeitura",
    "valor": 500000
+  },
+  {
+   "codigo": "202515680006",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-10",
+   "favorecido": "FUNDO MUNICIPAL DE ASSISTENCIA SOCIAL DE OSASCO",
+   "cnpj": "13929258000119",
+   "destino": "prefeitura",
+   "valor": 300000
   },
   {
    "codigo": "202528130010",
@@ -384,8 +384,18 @@
    "valor": 19800000
   },
   {
-   "codigo": "202542580002",
-   "autor": "ALFREDINHO",
+   "codigo": "202515680005",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 3000000
+  },
+  {
+   "codigo": "202543720003",
+   "autor": "FELIPE BECARI",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
    "mes": "2025-08",
    "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
@@ -404,14 +414,14 @@
    "valor": 1000000
   },
   {
-   "codigo": "202515680005",
-   "autor": "GILBERTO NASCIMENTO",
+   "codigo": "202542580002",
+   "autor": "ALFREDINHO",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
    "mes": "2025-08",
    "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
    "cnpj": "13897329000149",
    "destino": "prefeitura",
-   "valor": 3000000
+   "valor": 10000000
   },
   {
    "codigo": "202542000001",
@@ -424,16 +434,6 @@
    "valor": 3000000
   },
   {
-   "codigo": "202541610001",
-   "autor": "MARCOS PEREIRA",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2025-08",
-   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
-   "cnpj": "13897329000149",
-   "destino": "prefeitura",
-   "valor": 2000000
-  },
-  {
    "codigo": "202542210004",
    "autor": "GIORDANO",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -442,16 +442,6 @@
    "cnpj": "13897329000149",
    "destino": "prefeitura",
    "valor": 23269858
-  },
-  {
-   "codigo": "202544020016",
-   "autor": "JULIANA CARDOSO",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2025-08",
-   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
-   "cnpj": "13897329000149",
-   "destino": "prefeitura",
-   "valor": 100000
   },
   {
    "codigo": "202541300001",
@@ -464,14 +454,24 @@
    "valor": 500000
   },
   {
-   "codigo": "202543720003",
-   "autor": "FELIPE BECARI",
+   "codigo": "202544020016",
+   "autor": "JULIANA CARDOSO",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
    "mes": "2025-08",
    "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
    "cnpj": "13897329000149",
    "destino": "prefeitura",
-   "valor": 10000000
+   "valor": 100000
+  },
+  {
+   "codigo": "202541610001",
+   "autor": "MARCOS PEREIRA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-08",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 2000000
   },
   {
    "codigo": "202525200003",
@@ -484,16 +484,6 @@
    "valor": 300000
   },
   {
-   "codigo": "202542210003",
-   "autor": "GIORDANO",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2025-07",
-   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
-   "cnpj": "13897329000149",
-   "destino": "prefeitura",
-   "valor": 10000000
-  },
-  {
    "codigo": "202544050003",
    "autor": "KIKO CELEGUIM",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -502,6 +492,16 @@
    "cnpj": "13897329000149",
    "destino": "prefeitura",
    "valor": 2900000
+  },
+  {
+   "codigo": "202542210003",
+   "autor": "GIORDANO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-07",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 10000000
   },
   {
    "codigo": "201737730004",
@@ -534,16 +534,6 @@
    "valor": 700011
   },
   {
-   "codigo": "202437460003",
-   "autor": "RENATA ABREU",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2025-02",
-   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
-   "cnpj": "13897329000149",
-   "destino": "prefeitura",
-   "valor": 1814027
-  },
-  {
    "codigo": "202425170011",
    "autor": "VINICIUS CARVALHO",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -552,6 +542,16 @@
    "cnpj": "13897329000149",
    "destino": "prefeitura",
    "valor": 3000000
+  },
+  {
+   "codigo": "202437460003",
+   "autor": "RENATA ABREU",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2025-02",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 1814027
   },
   {
    "codigo": "201737730004",
@@ -594,16 +594,6 @@
    "valor": 2670731.79
   },
   {
-   "codigo": "202428130003",
-   "autor": "PAULO FREIRE COSTA",
-   "tipo": "Emenda Individual - Transferências Especiais",
-   "mes": "2024-12",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 92000
-  },
-  {
    "codigo": "202415810013",
    "autor": "JEFFERSON CAMPOS",
    "tipo": "Emenda Individual - Transferências Especiais",
@@ -614,6 +604,16 @@
    "valor": 2000000
   },
   {
+   "codigo": "202428130003",
+   "autor": "PAULO FREIRE COSTA",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2024-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 92000
+  },
+  {
    "codigo": "202425280005",
    "autor": "JILMAR TATTO",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -622,16 +622,6 @@
    "cnpj": "30527194000149",
    "destino": "entidade",
    "valor": 1000000
-  },
-  {
-   "codigo": "202415680019",
-   "autor": "GILBERTO NASCIMENTO",
-   "tipo": "Emenda Individual - Transferências Especiais",
-   "mes": "2024-07",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 329268.21
   },
   {
    "codigo": "202441550010",
@@ -652,6 +642,16 @@
    "cnpj": "46523171000104",
    "destino": "prefeitura",
    "valor": 15000000
+  },
+  {
+   "codigo": "202415680019",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2024-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 329268.21
   },
   {
    "codigo": "202181000740",
@@ -684,16 +684,6 @@
    "valor": 986497.7
   },
   {
-   "codigo": "202241320018",
-   "autor": "TABATA AMARAL",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2023-07",
-   "favorecido": "ASSOCIACAO AMIGOS DO JARDIM BONANCA II",
-   "cnpj": "53421046000140",
-   "destino": "entidade",
-   "valor": 100000
-  },
-  {
    "codigo": "202237370009",
    "autor": "ORLANDO SILVA",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -702,6 +692,16 @@
    "cnpj": "53421046000140",
    "destino": "entidade",
    "valor": 700000
+  },
+  {
+   "codigo": "202241320018",
+   "autor": "TABATA AMARAL",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2023-07",
+   "favorecido": "ASSOCIACAO AMIGOS DO JARDIM BONANCA II",
+   "cnpj": "53421046000140",
+   "destino": "entidade",
+   "valor": 100000
   },
   {
    "codigo": "202090600001",
@@ -744,6 +744,16 @@
    "valor": 126145.99
   },
   {
+   "codigo": "202239070010",
+   "autor": "ALEXANDRE FROTA",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2023-03",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 250000
+  },
+  {
    "codigo": "202241320014",
    "autor": "TABATA AMARAL",
    "tipo": "Emenda Individual - Transferências Especiais",
@@ -772,16 +782,6 @@
    "cnpj": "46523171000104",
    "destino": "prefeitura",
    "valor": 100000
-  },
-  {
-   "codigo": "202239070010",
-   "autor": "ALEXANDRE FROTA",
-   "tipo": "Emenda Individual - Transferências Especiais",
-   "mes": "2023-03",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 250000
   },
   {
    "codigo": "201837460007",
@@ -844,16 +844,6 @@
    "valor": 2903142.33
   },
   {
-   "codigo": "201625170004",
-   "autor": "VINICIUS CARVALHO",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2021-11",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 222743.95
-  },
-  {
    "codigo": "202081000254",
    "autor": "RELATOR GERAL",
    "tipo": "Emenda de Relator",
@@ -862,6 +852,16 @@
    "cnpj": "46523171000104",
    "destino": "prefeitura",
    "valor": 1185289.74
+  },
+  {
+   "codigo": "201625170004",
+   "autor": "VINICIUS CARVALHO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2021-11",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 222743.95
   },
   {
    "codigo": "202181000791",
@@ -882,26 +882,6 @@
    "cnpj": "46523171000104",
    "destino": "prefeitura",
    "valor": 1452316.01
-  },
-  {
-   "codigo": "202125200006",
-   "autor": "CARLOS ZARATTINI",
-   "tipo": "Emenda Individual - Transferências Especiais",
-   "mes": "2021-09",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 300000
-  },
-  {
-   "codigo": "202127990019",
-   "autor": "ELI CORREA FILHO",
-   "tipo": "Emenda Individual - Transferências Especiais",
-   "mes": "2021-09",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 500000
   },
   {
    "codigo": "202115810017",
@@ -936,6 +916,26 @@
   {
    "codigo": "202190320006",
    "autor": "RUI FALCAO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2021-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 300000
+  },
+  {
+   "codigo": "202127990019",
+   "autor": "ELI CORREA FILHO",
+   "tipo": "Emenda Individual - Transferências Especiais",
+   "mes": "2021-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 500000
+  },
+  {
+   "codigo": "202125200006",
+   "autor": "CARLOS ZARATTINI",
    "tipo": "Emenda Individual - Transferências Especiais",
    "mes": "2021-09",
    "favorecido": "MUNICIPIO DE OSASCO",
@@ -1204,6 +1204,26 @@
    "valor": 50000
   },
   {
+   "codigo": "201637730008",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 410668.77
+  },
+  {
+   "codigo": "201615680001",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 95734.32
+  },
+  {
    "codigo": "201623660002",
    "autor": "VANDERLEI MACRIS",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -1224,26 +1244,6 @@
    "valor": 328179.48
   },
   {
-   "codigo": "201615680001",
-   "autor": "GILBERTO NASCIMENTO",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2018-12",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 95734.32
-  },
-  {
-   "codigo": "201637730008",
-   "autor": "VALMIR PRASCIDELLI",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2018-12",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 410668.77
-  },
-  {
    "codigo": "201625170004",
    "autor": "VINICIUS CARVALHO",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -1252,26 +1252,6 @@
    "cnpj": "46523171000104",
    "destino": "prefeitura",
    "valor": 2221.38
-  },
-  {
-   "codigo": "201615680001",
-   "autor": "GILBERTO NASCIMENTO",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2018-09",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 662811.12
-  },
-  {
-   "codigo": "201637730008",
-   "autor": "VALMIR PRASCIDELLI",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2018-09",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 205877.07
   },
   {
    "codigo": "201625190006",
@@ -1294,6 +1274,26 @@
    "valor": 138108.95
   },
   {
+   "codigo": "201615680001",
+   "autor": "GILBERTO NASCIMENTO",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 662811.12
+  },
+  {
+   "codigo": "201637730008",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-09",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 205877.07
+  },
+  {
    "codigo": "201625340015",
    "autor": "PAULO TEIXEIRA",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -1302,16 +1302,6 @@
    "cnpj": "46523171000104",
    "destino": "prefeitura",
    "valor": 122925
-  },
-  {
-   "codigo": "201637370010",
-   "autor": "ORLANDO SILVA",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2018-07",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 59707.33
   },
   {
    "codigo": "201615680001",
@@ -1334,6 +1324,16 @@
    "valor": 605936.05
   },
   {
+   "codigo": "201637730008",
+   "autor": "VALMIR PRASCIDELLI",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2018-07",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 281108.49
+  },
+  {
    "codigo": "201637730007",
    "autor": "VALMIR PRASCIDELLI",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -1344,14 +1344,14 @@
    "valor": 46966.14
   },
   {
-   "codigo": "201637730008",
-   "autor": "VALMIR PRASCIDELLI",
+   "codigo": "201637370010",
+   "autor": "ORLANDO SILVA",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
    "mes": "2018-07",
    "favorecido": "MUNICIPIO DE OSASCO",
    "cnpj": "46523171000104",
    "destino": "prefeitura",
-   "valor": 281108.49
+   "valor": 59707.33
   },
   {
    "codigo": "201625340015",
@@ -1394,16 +1394,6 @@
    "valor": 70449.21
   },
   {
-   "codigo": "201525340002",
-   "autor": "PAULO TEIXEIRA",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2017-12",
-   "favorecido": "MUNICIPIO DE OSASCO",
-   "cnpj": "46523171000104",
-   "destino": "prefeitura",
-   "valor": 122925
-  },
-  {
    "codigo": "201637730007",
    "autor": "VALMIR PRASCIDELLI",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -1412,6 +1402,16 @@
    "cnpj": "46523171000104",
    "destino": "prefeitura",
    "valor": 117415.35
+  },
+  {
+   "codigo": "201525340002",
+   "autor": "PAULO TEIXEIRA",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2017-12",
+   "favorecido": "MUNICIPIO DE OSASCO",
+   "cnpj": "46523171000104",
+   "destino": "prefeitura",
+   "valor": 122925
   },
   {
    "codigo": "201637730001",
@@ -1424,16 +1424,6 @@
    "valor": 799990
   },
   {
-   "codigo": "201637370009",
-   "autor": "ORLANDO SILVA",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2017-06",
-   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
-   "cnpj": "13897329000149",
-   "destino": "prefeitura",
-   "valor": 100000
-  },
-  {
    "codigo": "201627970006",
    "autor": "BRUNA FURLAN",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -1444,14 +1434,14 @@
    "valor": 260000
   },
   {
-   "codigo": "201627970006",
-   "autor": "BRUNA FURLAN",
+   "codigo": "201637370009",
+   "autor": "ORLANDO SILVA",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2016-12",
+   "mes": "2017-06",
    "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
    "cnpj": "13897329000149",
    "destino": "prefeitura",
-   "valor": 40000
+   "valor": 100000
   },
   {
    "codigo": "201637370009",
@@ -1464,16 +1454,6 @@
    "valor": 400000
   },
   {
-   "codigo": "201529820002",
-   "autor": "FRANCISCO CHAGAS",
-   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
-   "mes": "2016-12",
-   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
-   "cnpj": "13897329000149",
-   "destino": "prefeitura",
-   "valor": 349380
-  },
-  {
    "codigo": "201532280011",
    "autor": "IVAN VALENTE",
    "tipo": "Emenda Individual - Transferências com Finalidade Definida",
@@ -1482,6 +1462,26 @@
    "cnpj": "13897329000149",
    "destino": "prefeitura",
    "valor": 776962.56
+  },
+  {
+   "codigo": "201627970006",
+   "autor": "BRUNA FURLAN",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2016-12",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 40000
+  },
+  {
+   "codigo": "201529820002",
+   "autor": "FRANCISCO CHAGAS",
+   "tipo": "Emenda Individual - Transferências com Finalidade Definida",
+   "mes": "2016-12",
+   "favorecido": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "cnpj": "13897329000149",
+   "destino": "prefeitura",
+   "valor": 349380
   },
   {
    "codigo": "Sem informação",
@@ -1518,15 +1518,15 @@
   "Sem informação": {
    "ano": 2020,
    "numero": "S/I",
-   "localidade": "TOCANTINS (UF)",
-   "funcao": "Transporte",
-   "subfuncao": "Transporte rodoviário",
-   "programa": "TRANSPORTE TERRESTRE E TRANSITO",
-   "acao": "CONSERVACAO E RECUPERACAO DO PATRIMONIO DA UNIAO",
-   "planoOrcamentario": "EMENDA DE BANCADA DO ESTADO DO TOCANTINS",
-   "empenhado": 1911743,
-   "liquidado": 1911743,
-   "pago": 1911743
+   "localidade": "MARANHÃO (UF)",
+   "funcao": "Segurança pública",
+   "subfuncao": "Policiamento",
+   "programa": "SEGURANCA PUBLICA, COMBATE A CORRUPCAO, AO CRIME ORGANIZADO E AO CRIME VIOLENTO",
+   "acao": "APRIMORAMENTO DA SEGURANCA PUBLICA NACIONAL",
+   "planoOrcamentario": "ATENDIMENTO DECISAO DO SUPREMO TRIBUNAL FEDERAL - ACAO CIVIL ORIGINARIA N. 3329 MC/DF",
+   "empenhado": 14474465,
+   "liquidado": 14474465,
+   "pago": 14474465
   },
   "201529820002": {
    "ano": 2015,
