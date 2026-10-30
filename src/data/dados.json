@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-30T04:57:35.839Z",
+ "geradoEm": "2026-10-30T05:14:21.569Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -53004,10 +53004,10 @@
       {
        "origem": "gastoEmenda",
        "ano": 2024,
-       "valor": 1823373.19,
+       "valor": 3827169.74,
        "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
-       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
-       "pagamentos": 1,
+       "quem": null,
+       "pagamentos": 3,
        "outrosBairros": 2,
        "bairros": [
         "alianca",
@@ -53016,15 +53016,36 @@
        ],
        "via": [
         "Córrego Rico"
-       ]
+       ],
+       "partes": [
+        {
+         "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+         "autor": null,
+         "valor": 1823373.19,
+         "pagamentos": 1
+        },
+        {
+         "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+         "autor": null,
+         "valor": 1490367.67,
+         "pagamentos": 1
+        },
+        {
+         "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+         "autor": null,
+         "valor": 513428.88,
+         "pagamentos": 1
+        }
+       ],
+       "autor": null
       },
       {
-       "origem": "gastoEmenda",
-       "ano": 2024,
-       "valor": 1490367.67,
-       "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
-       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
-       "pagamentos": 1,
+       "origem": "pix",
+       "ano": 2022,
+       "valor": 1623000,
+       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
+       "quem": null,
+       "autor": null,
        "outrosBairros": 2,
        "bairros": [
         "alianca",
@@ -53033,7 +53054,84 @@
        ],
        "via": [
         "Córrego Rico"
-       ]
+       ],
+       "partes": [
+        {
+         "quem": "Tabata Amaral",
+         "autor": "tabata-amaral",
+         "valor": 523000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Joice Hasselmann",
+         "autor": "joice-hasselmann",
+         "valor": 500000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Policial Katia Sastre",
+         "autor": "policial-katia-sastre",
+         "valor": 250000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Alexandre Frota",
+         "autor": "alexandre-frota",
+         "valor": 250000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Vicentinho",
+         "autor": "vicentinho",
+         "valor": 100000,
+         "pagamentos": null
+        }
+       ],
+       "pagamentos": 5
+      },
+      {
+       "origem": "pix",
+       "ano": 2021,
+       "valor": 1550000,
+       "texto": "Canalização do Córrego Rico, no município de Osasco/SP.",
+       "quem": null,
+       "autor": null,
+       "outrosBairros": 2,
+       "bairros": [
+        "alianca",
+        "helena-maria",
+        "jardim-elvira"
+       ],
+       "via": [
+        "Córrego Rico"
+       ],
+       "partes": [
+        {
+         "quem": "Eli Corrêa Filho",
+         "autor": "eli-correa-filho",
+         "valor": 500000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Nilto Tatto",
+         "autor": "nilto-tatto",
+         "valor": 450000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Carlos Zarattini",
+         "autor": "carlos-zarattini",
+         "valor": 300000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Rui Falcão",
+         "autor": "rui-falcao",
+         "valor": 300000,
+         "pagamentos": null
+        }
+       ],
+       "pagamentos": 4
       },
       {
        "origem": "gastoEstadual",
@@ -53075,159 +53173,6 @@
        ]
       },
       {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 523000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Tabata Amaral",
-       "autor": "tabata-amaral",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "gastoEmenda",
-       "ano": 2024,
-       "valor": 513428.88,
-       "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
-       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
-       "pagamentos": 1,
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2021,
-       "valor": 500000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Eli Corrêa Filho",
-       "autor": "eli-correa-filho",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 500000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Joice Hasselmann",
-       "autor": "joice-hasselmann",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2021,
-       "valor": 450000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Nilto Tatto",
-       "autor": "nilto-tatto",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2021,
-       "valor": 300000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP.",
-       "quem": "Carlos Zarattini",
-       "autor": "carlos-zarattini",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2021,
-       "valor": 300000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Rui Falcão",
-       "autor": "rui-falcao",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 250000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Policial Katia Sastre",
-       "autor": "policial-katia-sastre",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 250000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Alexandre Frota",
-       "autor": "alexandre-frota",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
        "origem": "gastoFederal",
        "ano": 2020,
        "valor": 60497,
@@ -53238,11 +53183,124 @@
        "bairros": [
         "alianca"
        ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 32857,
+       "texto": "Aquisição de Medicamentos a Ser Utilizado no Hospital e Maternidade Amador Aguiar - HMAA",
+       "quem": "HOSPFAR INDUSTRIA E COMERCIO DE PRODUTOS HOSPITALARES LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0,
+       "bairros": [
+        "alianca"
+       ],
+       "via": [
+        "Hospital e Maternidade Amador Aguiar (só o trecho no bairro citado)"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 31420,
+       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO DOS ELEVADORES MONTA CARGA DO HOSPITAL MUNICIPAL E MATERNIDADE AMADOR AGUIAR E P S OSMAR MESQUITA PERIODO 08 04 A 15 04 21 I O M O N 2 031 DE 23 04 2021 E N 2 041 DE 12 05 202",
+       "quem": "EMPREISERVICE SERVICOS LTDA ME",
+       "pagamentos": 2,
+       "outrosBairros": 0,
+       "bairros": [
+        "alianca"
+       ]
+      },
+      {
+       "origem": "gastoEstadual",
+       "ano": 2024,
+       "valor": 22250,
+       "texto": "PAGAMENTO INDENIZATORIO REF PRESTACAO DE SERVICOS DE MANUTENCAO CORRETIVA NO GRUPO GERADOR DO HOSPITAL MUNICIPAL E MATERNIDADE AMADOR AGUIAR HMMAA SS PERIODO 15 12 2023 A 15 01 2024 IOMO 2 619 DE 01 04 2024",
+       "quem": "CAUTRONICA LTDA EPP",
+       "pagamentos": 2,
+       "outrosBairros": 0,
+       "bairros": [
+        "alianca"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 18033.33,
+       "texto": "Contratação de Empresa Especializada em Serviços de Manutenção de Elevadores de Passeio e Monta Carga, para Atendimento do Departamento de Urgência e Emergência e do Hospital e Maternidade Amador Aguiar.",
+       "quem": "FLEX ELEVADORES COM DE PECAS E MANUTENCAO LTDA",
+       "pagamentos": 4,
+       "outrosBairros": 0,
+       "bairros": [
+        "alianca"
+       ],
+       "via": [
+        "Hospital e Maternidade Amador Aguiar (só o trecho no bairro citado)"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 8271.78,
+       "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA NA PRESTACAO DE SERVICOS DE GESSO E DRYWALL PARA A EFETIVACAO DE PEQUENOS REPAROS NO C M E DO HOSPITAL E MATERNIDADE AMADOR AGUIAR PERIODO 10 07 A 13 07 20 I O M O N 1 901 DE 28 08 2020",
+       "quem": "J ALVES CONSULTORIA GESTAO E SUPERVISAO DE OBRAS LTDA ME",
+       "pagamentos": 1,
+       "outrosBairros": 0,
+       "bairros": [
+        "alianca"
+       ],
+       "via": [
+        "Hospital e Maternidade Amador Aguiar (só o trecho no bairro citado)"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 7511.06,
+       "texto": "Fornecimento de medicamentos manipulados para atendimento do Hospital Municipal e Maternidade Amador Aguiar",
+       "quem": "ESPACO DE SAUDE E FARMACIA DE MANIPULACAO FARMA DONNA EIRELLI ME",
+       "pagamentos": 1,
+       "outrosBairros": 0,
+       "bairros": [
+        "alianca"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2019,
+       "valor": 6307.33,
+       "texto": "Pagamento Indenizatorio a Empresa Especializada em Manutenção nos Grupos Geradores do Hospital e Maternidade Amador Aguiar e Policlinica Zona Sul - Referente ao Periodo de 12/10/2018 a 11/11/2018",
+       "quem": "CAUTRONICA LTDA EPP",
+       "pagamentos": 2,
+       "outrosBairros": 1,
+       "bairros": [
+        "alianca",
+        "vila-osasco"
+       ],
+       "via": [
+        "Hospital e Maternidade Amador Aguiar (só o trecho no bairro citado)",
+        "Policlínica Zona Sul"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2018,
+       "valor": 3173.6,
+       "texto": "Aquisição de Torneiras Clínicas, para atendimento do Hospital e Maternidade Amador Aguiar - HMMAA.",
+       "quem": "AMK BRASIL PROMOCOES E EVENTOS E COM DE MATERIAIS LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 0,
+       "bairros": [
+        "alianca"
+       ],
+       "via": [
+        "Hospital e Maternidade Amador Aguiar (só o trecho no bairro citado)"
+       ]
       }
      ],
-     "quantidade": 27,
+     "quantidade": 18,
      "porGrupo": {
-      "emendas": 2333389.9,
+      "emendas": 2333389.92,
       "federal": 407074.25,
       "estadual": 705774.57
      }
@@ -55699,23 +55757,38 @@
      "itens": [
       {
        "origem": "gastoFederal",
+       "ano": 2021,
+       "valor": 29502327.57,
+       "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
+       "quem": null,
+       "pagamentos": 19,
+       "outrosBairros": 0,
+       "bairros": [
+        "centro"
+       ],
+       "partes": [
+        {
+         "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+         "autor": null,
+         "valor": 21738752.12,
+         "pagamentos": 10
+        },
+        {
+         "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+         "autor": null,
+         "valor": 7763575.45,
+         "pagamentos": 9
+        }
+       ],
+       "autor": null
+      },
+      {
+       "origem": "gastoFederal",
        "ano": 2020,
        "valor": 22272849.42,
        "texto": "CONTRATO EMERGENCIAL DE ORGANIZACAO PARA GERENCIAMENTO DO HOSPITAL MUNICIPAL ANTONIO GIGLIO PRORROGACAO DO CONTRATO N 008 2019 JANEIRO 2020",
        "quem": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
        "pagamentos": 13,
-       "outrosBairros": 0,
-       "bairros": [
-        "centro"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2021,
-       "valor": 21738752.12,
-       "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
-       "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
-       "pagamentos": 10,
        "outrosBairros": 0,
        "bairros": [
         "centro"
@@ -55735,15 +55808,30 @@
       },
       {
        "origem": "gastoFederal",
-       "ano": 2021,
-       "valor": 7763575.45,
+       "ano": 2022,
+       "valor": 5595593.54,
        "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
-       "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
-       "pagamentos": 9,
+       "quem": null,
+       "pagamentos": 3,
        "outrosBairros": 0,
        "bairros": [
         "centro"
-       ]
+       ],
+       "partes": [
+        {
+         "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+         "autor": null,
+         "valor": 4577933.62,
+         "pagamentos": 2
+        },
+        {
+         "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+         "autor": null,
+         "valor": 1017659.92,
+         "pagamentos": 1
+        }
+       ],
+       "autor": null
       },
       {
        "origem": "gastoFederal",
@@ -55751,18 +55839,6 @@
        "valor": 5000000,
        "texto": "Pagamento referente a Contratação Emergencial para Administração do Hospital Municipal Central e UPA Vicente Missiano. (Adto da 6ª parcela - Janeiro/2018)",
        "quem": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
-       "pagamentos": 2,
-       "outrosBairros": 0,
-       "bairros": [
-        "centro"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2022,
-       "valor": 4577933.62,
-       "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
-       "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
        "pagamentos": 2,
        "outrosBairros": 0,
        "bairros": [
@@ -55794,16 +55870,31 @@
        ]
       },
       {
-       "origem": "gastoFederal",
-       "ano": 2022,
-       "valor": 1017659.92,
+       "origem": "gastoEmenda",
+       "ano": 2021,
+       "valor": 1016398.68,
        "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
-       "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
-       "pagamentos": 1,
+       "quem": null,
+       "pagamentos": 2,
        "outrosBairros": 0,
        "bairros": [
         "centro"
-       ]
+       ],
+       "partes": [
+        {
+         "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+         "autor": null,
+         "valor": 516398.68,
+         "pagamentos": 1
+        },
+        {
+         "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+         "autor": null,
+         "valor": 500000,
+         "pagamentos": 1
+        }
+       ],
+       "autor": null
       },
       {
        "origem": "gastoFederal",
@@ -55812,30 +55903,6 @@
        "texto": "Contratação de gestão de empresa com objetivo a operacionalização de gestão e execução das atividades e serviços de saúde para UPA Vicente Missiano - Centro - CT 033/2018, Valor para até Março de 2019.",
        "quem": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
        "pagamentos": 5,
-       "outrosBairros": 0,
-       "bairros": [
-        "centro"
-       ]
-      },
-      {
-       "origem": "gastoEmenda",
-       "ano": 2021,
-       "valor": 516398.68,
-       "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
-       "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
-       "pagamentos": 1,
-       "outrosBairros": 0,
-       "bairros": [
-        "centro"
-       ]
-      },
-      {
-       "origem": "gastoEmenda",
-       "ano": 2021,
-       "valor": 500000,
-       "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO",
-       "quem": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
-       "pagamentos": 1,
        "outrosBairros": 0,
        "bairros": [
         "centro"
@@ -55857,7 +55924,7 @@
        ]
       }
      ],
-     "quantidade": 13,
+     "quantidade": 10,
      "porGrupo": {
       "emendas": 1216398.68,
       "federal": 77317392.03
@@ -56719,10 +56786,10 @@
       {
        "origem": "gastoEmenda",
        "ano": 2024,
-       "valor": 1823373.19,
+       "valor": 3827169.74,
        "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
-       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
-       "pagamentos": 1,
+       "quem": null,
+       "pagamentos": 3,
        "outrosBairros": 2,
        "bairros": [
         "alianca",
@@ -56731,32 +56798,36 @@
        ],
        "via": [
         "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "gastoEmenda",
-       "ano": 2024,
-       "valor": 1490367.67,
-       "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
-       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
-       "pagamentos": 1,
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
        ],
-       "via": [
-        "Córrego Rico"
-       ]
+       "partes": [
+        {
+         "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+         "autor": null,
+         "valor": 1823373.19,
+         "pagamentos": 1
+        },
+        {
+         "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+         "autor": null,
+         "valor": 1490367.67,
+         "pagamentos": 1
+        },
+        {
+         "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+         "autor": null,
+         "valor": 513428.88,
+         "pagamentos": 1
+        }
+       ],
+       "autor": null
       },
       {
        "origem": "pix",
        "ano": 2022,
-       "valor": 523000,
+       "valor": 1623000,
        "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Tabata Amaral",
-       "autor": "tabata-amaral",
+       "quem": null,
+       "autor": null,
        "outrosBairros": 2,
        "bairros": [
         "alianca",
@@ -56765,83 +56836,48 @@
        ],
        "via": [
         "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "gastoEmenda",
-       "ano": 2024,
-       "valor": 513428.88,
-       "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
-       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
-       "pagamentos": 1,
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
        ],
-       "via": [
-        "Córrego Rico"
-       ]
+       "partes": [
+        {
+         "quem": "Tabata Amaral",
+         "autor": "tabata-amaral",
+         "valor": 523000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Joice Hasselmann",
+         "autor": "joice-hasselmann",
+         "valor": 500000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Policial Katia Sastre",
+         "autor": "policial-katia-sastre",
+         "valor": 250000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Alexandre Frota",
+         "autor": "alexandre-frota",
+         "valor": 250000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Vicentinho",
+         "autor": "vicentinho",
+         "valor": 100000,
+         "pagamentos": null
+        }
+       ],
+       "pagamentos": 5
       },
       {
        "origem": "pix",
        "ano": 2021,
-       "valor": 500000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Eli Corrêa Filho",
-       "autor": "eli-correa-filho",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 500000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Joice Hasselmann",
-       "autor": "joice-hasselmann",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2021,
-       "valor": 450000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Nilto Tatto",
-       "autor": "nilto-tatto",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2021,
-       "valor": 300000,
+       "valor": 1550000,
        "texto": "Canalização do Córrego Rico, no município de Osasco/SP.",
-       "quem": "Carlos Zarattini",
-       "autor": "carlos-zarattini",
+       "quem": null,
+       "autor": null,
        "outrosBairros": 2,
        "bairros": [
         "alianca",
@@ -56850,75 +56886,34 @@
        ],
        "via": [
         "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2021,
-       "valor": 300000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Rui Falcão",
-       "autor": "rui-falcao",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
        ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 250000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Policial Katia Sastre",
-       "autor": "policial-katia-sastre",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
+       "partes": [
+        {
+         "quem": "Eli Corrêa Filho",
+         "autor": "eli-correa-filho",
+         "valor": 500000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Nilto Tatto",
+         "autor": "nilto-tatto",
+         "valor": 450000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Carlos Zarattini",
+         "autor": "carlos-zarattini",
+         "valor": 300000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Rui Falcão",
+         "autor": "rui-falcao",
+         "valor": 300000,
+         "pagamentos": null
+        }
        ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 250000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Alexandre Frota",
-       "autor": "alexandre-frota",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 100000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Vicentinho",
-       "autor": "vicentinho",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
+       "pagamentos": 4
       },
       {
        "origem": "gastoFederal",
@@ -56934,9 +56929,9 @@
        ]
       }
      ],
-     "quantidade": 14,
+     "quantidade": 5,
      "porGrupo": {
-      "emendas": 2333389.9,
+      "emendas": 2333389.92,
       "federal": 7716421.32
      }
     }
@@ -59327,10 +59322,10 @@
       {
        "origem": "gastoEmenda",
        "ano": 2024,
-       "valor": 1823373.19,
+       "valor": 3827169.74,
        "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
-       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
-       "pagamentos": 1,
+       "quem": null,
+       "pagamentos": 3,
        "outrosBairros": 2,
        "bairros": [
         "alianca",
@@ -59339,32 +59334,36 @@
        ],
        "via": [
         "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "gastoEmenda",
-       "ano": 2024,
-       "valor": 1490367.67,
-       "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
-       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
-       "pagamentos": 1,
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
        ],
-       "via": [
-        "Córrego Rico"
-       ]
+       "partes": [
+        {
+         "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+         "autor": null,
+         "valor": 1823373.19,
+         "pagamentos": 1
+        },
+        {
+         "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+         "autor": null,
+         "valor": 1490367.67,
+         "pagamentos": 1
+        },
+        {
+         "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+         "autor": null,
+         "valor": 513428.88,
+         "pagamentos": 1
+        }
+       ],
+       "autor": null
       },
       {
        "origem": "pix",
        "ano": 2022,
-       "valor": 523000,
+       "valor": 1623000,
        "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Tabata Amaral",
-       "autor": "tabata-amaral",
+       "quem": null,
+       "autor": null,
        "outrosBairros": 2,
        "bairros": [
         "alianca",
@@ -59373,83 +59372,48 @@
        ],
        "via": [
         "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "gastoEmenda",
-       "ano": 2024,
-       "valor": 513428.88,
-       "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
-       "quem": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
-       "pagamentos": 1,
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
        ],
-       "via": [
-        "Córrego Rico"
-       ]
+       "partes": [
+        {
+         "quem": "Tabata Amaral",
+         "autor": "tabata-amaral",
+         "valor": 523000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Joice Hasselmann",
+         "autor": "joice-hasselmann",
+         "valor": 500000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Policial Katia Sastre",
+         "autor": "policial-katia-sastre",
+         "valor": 250000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Alexandre Frota",
+         "autor": "alexandre-frota",
+         "valor": 250000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Vicentinho",
+         "autor": "vicentinho",
+         "valor": 100000,
+         "pagamentos": null
+        }
+       ],
+       "pagamentos": 5
       },
       {
        "origem": "pix",
        "ano": 2021,
-       "valor": 500000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Eli Corrêa Filho",
-       "autor": "eli-correa-filho",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 500000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Joice Hasselmann",
-       "autor": "joice-hasselmann",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2021,
-       "valor": 450000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Nilto Tatto",
-       "autor": "nilto-tatto",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2021,
-       "valor": 300000,
+       "valor": 1550000,
        "texto": "Canalização do Córrego Rico, no município de Osasco/SP.",
-       "quem": "Carlos Zarattini",
-       "autor": "carlos-zarattini",
+       "quem": null,
+       "autor": null,
        "outrosBairros": 2,
        "bairros": [
         "alianca",
@@ -59458,80 +59422,39 @@
        ],
        "via": [
         "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2021,
-       "valor": 300000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Rui Falcão",
-       "autor": "rui-falcao",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
        ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 250000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Policial Katia Sastre",
-       "autor": "policial-katia-sastre",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
+       "partes": [
+        {
+         "quem": "Eli Corrêa Filho",
+         "autor": "eli-correa-filho",
+         "valor": 500000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Nilto Tatto",
+         "autor": "nilto-tatto",
+         "valor": 450000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Carlos Zarattini",
+         "autor": "carlos-zarattini",
+         "valor": 300000,
+         "pagamentos": null
+        },
+        {
+         "quem": "Rui Falcão",
+         "autor": "rui-falcao",
+         "valor": 300000,
+         "pagamentos": null
+        }
        ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 250000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Alexandre Frota",
-       "autor": "alexandre-frota",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
-      },
-      {
-       "origem": "pix",
-       "ano": 2022,
-       "valor": 100000,
-       "texto": "Canalização do Córrego Rico, no município de Osasco/SP",
-       "quem": "Vicentinho",
-       "autor": "vicentinho",
-       "outrosBairros": 2,
-       "bairros": [
-        "alianca",
-        "helena-maria",
-        "jardim-elvira"
-       ],
-       "via": [
-        "Córrego Rico"
-       ]
+       "pagamentos": 4
       }
      ],
-     "quantidade": 12,
+     "quantidade": 3,
      "porGrupo": {
-      "emendas": 2333389.9
+      "emendas": 2333389.92
      }
     }
    },
@@ -62219,19 +62142,6 @@
       {
        "origem": "gastoFederal",
        "ano": 2020,
-       "valor": 8000,
-       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO EM EQUIPAMENTOS HOSPITALARES PARA A POLICLINICA ZONA NORTE D LEONIL CRE BORTOLOSSO PERIODO 13 10 2020 I O M O N 1 938 DE 11 11 2020",
-       "quem": "WCG MEDICAL COMERCIO IMPORTACAO E SERVICOS LTDA",
-       "pagamentos": 1,
-       "outrosBairros": 1,
-       "bairros": [
-        "helena-maria",
-        "piratininga"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2020,
        "valor": 15739,
        "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO CAMPANANHA BURJATO EMEF BENEDICTO WESCHENFELDER UBS EMILIA CO",
        "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
@@ -62255,6 +62165,19 @@
         "remedios",
         "rochdale",
         "vila-menck"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 8000,
+       "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO EM EQUIPAMENTOS HOSPITALARES PARA A POLICLINICA ZONA NORTE D LEONIL CRE BORTOLOSSO PERIODO 13 10 2020 I O M O N 1 938 DE 11 11 2020",
+       "quem": "WCG MEDICAL COMERCIO IMPORTACAO E SERVICOS LTDA",
+       "pagamentos": 1,
+       "outrosBairros": 1,
+       "bairros": [
+        "helena-maria",
+        "piratininga"
        ]
       }
      ],
@@ -62904,18 +62827,6 @@
       {
        "origem": "gastoFederal",
        "ano": 2020,
-       "valor": 2630.41,
-       "texto": "PAGAMENTO DE SENTENCA JUDICIAL DE PEQUENO VALOR PROC JUDICIAL N 0005980 76 2020 8 26 0405 01 RECLAMANTE SPE PRESIDENTE ALTINO CONSTRUCOES LTDA RPV 313 2020",
-       "quem": "SPE PRESIDENTE ALTINO CONSTRUCOES LTDA",
-       "pagamentos": 3,
-       "outrosBairros": 0,
-       "bairros": [
-        "presidente-altino"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2020,
        "valor": 15739,
        "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO CAMPANANHA BURJATO EMEF BENEDICTO WESCHENFELDER UBS EMILIA CO",
        "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
@@ -62939,6 +62850,18 @@
         "remedios",
         "rochdale",
         "vila-menck"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 2630.41,
+       "texto": "PAGAMENTO DE SENTENCA JUDICIAL DE PEQUENO VALOR PROC JUDICIAL N 0005980 76 2020 8 26 0405 01 RECLAMANTE SPE PRESIDENTE ALTINO CONSTRUCOES LTDA RPV 313 2020",
+       "quem": "SPE PRESIDENTE ALTINO CONSTRUCOES LTDA",
+       "pagamentos": 3,
+       "outrosBairros": 0,
+       "bairros": [
+        "presidente-altino"
        ]
       }
      ],
@@ -64060,6 +63983,34 @@
       },
       {
        "origem": "gastoFederal",
+       "ano": 2020,
+       "valor": 15739,
+       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO CAMPANANHA BURJATO EMEF BENEDICTO WESCHENFELDER UBS EMILIA CO",
+       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
+       "pagamentos": 1,
+       "outrosBairros": 16,
+       "bairros": [
+        "ayrosa",
+        "baronesa",
+        "bela-vista",
+        "industrial-mazzei",
+        "jaguaribe",
+        "jardim-conceicao",
+        "jardim-novo-osasco",
+        "km-18",
+        "metalurgicos",
+        "munhoz-junior",
+        "pestana",
+        "piratininga",
+        "presidente-altino",
+        "quintauna",
+        "remedios",
+        "rochdale",
+        "vila-menck"
+       ]
+      },
+      {
+       "origem": "gastoFederal",
        "ano": 2019,
        "valor": 15396,
        "texto": "Aquisição de Jogo de Lençol, Toalha de Banho, Toalha de Rosto e Travesseiro Infantil a Unidade de Acolhimento de Indivíduos ou Grupo de Familiares em Situação de Rua no Jd. Rochdale",
@@ -64092,34 +64043,6 @@
        "outrosBairros": 0,
        "bairros": [
         "rochdale"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2020,
-       "valor": 15739,
-       "texto": "UBS ANUNCIATA DE LUCIA UBS ANUNCIATA UBS CARMENO NAGHY UBS JARDIM D AVILA UBS CAROLINA MARIA DE JESUS UBS JAGUARIBE CENTRO DE ATENDIMENTO AO IDOSO UNICO GALLAFRIO EMEE DR EDMUNDO CAMPANANHA BURJATO EMEF BENEDICTO WESCHENFELDER UBS EMILIA CO",
-       "quem": "GLOBAL MIX DISTRIBUIDORA HOSPITALAR EIRELI",
-       "pagamentos": 1,
-       "outrosBairros": 16,
-       "bairros": [
-        "ayrosa",
-        "baronesa",
-        "bela-vista",
-        "industrial-mazzei",
-        "jaguaribe",
-        "jardim-conceicao",
-        "jardim-novo-osasco",
-        "km-18",
-        "metalurgicos",
-        "munhoz-junior",
-        "pestana",
-        "piratininga",
-        "presidente-altino",
-        "quintauna",
-        "remedios",
-        "rochdale",
-        "vila-menck"
        ]
       }
      ],
