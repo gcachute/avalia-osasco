@@ -125,7 +125,7 @@ const frase = (s) => (s === s.toUpperCase() ? s.charAt(0) + s.slice(1).toLowerCa
 const nomeLegivel = (s) => (s === s.toUpperCase() ? s.toLowerCase().replace(/(^|\s)(\p{L})/gu, (m) => m.toUpperCase()).replace(/ (De|Da|Do|Dos|Das|E) /g, (m) => m.toLowerCase()) : s);
 
 // ---------- Montagem ----------
-export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], todosBairros = [], vereadores = [] }) {
+export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], vereadores = [] }) {
   const entradas = ler("entradas.json");
   const emendas = ler("emendas-federais.json");
   const pix = ler("pix-federais.json");
@@ -137,20 +137,15 @@ export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], 
     [...new Set([...acha(texto ?? ""), ...achaEquipamento(texto ?? "").map((e) => e.bairro), ...achaLugares(texto ?? "").flatMap((l) => l.bairros)])];
   const lugaresDe = (texto) => achaLugares(texto ?? "").map((l) => l.nome);
   const porBairro = {};
-  // O valor é dividido igualmente entre os bairros citados; "cidadeToda" marca o que vale para os 60 bairros.
+  // O valor é dividido igualmente entre os bairros citados. O que vale para a cidade toda (sem bairro, rua ou lugar no
+  // texto) não entra nas estatísticas dos bairros.
   const noBairro = (bairros, item) => {
-    const cidadeToda = bairros.length === todosBairros.length && todosBairros.length > 0;
     const via = item.texto ? lugaresDe(item.texto) : [];
     for (const b of bairros) {
       const x = (porBairro[b] ??= { valor: 0, itens: [] });
       x.valor = r2(x.valor + item.valor / bairros.length);
-      x.itens.push({ ...item, texto: item.texto?.slice(0, 300), outrosBairros: bairros.length - 1, bairros: cidadeToda ? undefined : bairros, cidadeToda, via: via.length ? via : undefined });
+      x.itens.push({ ...item, texto: item.texto?.slice(0, 300), outrosBairros: bairros.length - 1, bairros, via: via.length ? via : undefined });
     }
-  };
-  // Emenda recebida pela Prefeitura sem lugar no texto ("diversas ruas do município"): vale para a cidade toda.
-  const bairrosOuCidade = (texto) => {
-    const b = bairrosDe(texto);
-    return b.length ? b : todosBairros;
   };
 
   // Entradas por ano.
@@ -316,11 +311,12 @@ export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], 
   for (const c of convenios) {
     const recebido = recebidoPorCodigo[c.codigo];
     const valor = recebido != null ? Math.min(c.valor, recebido) : c.valor;
-    noBairro(bairrosOuCidade(c.objeto), { origem: "convenio", ano: Number(c.data.slice(0, 4)), valor: r2(valor), texto: c.objeto, ...quemE(c.autor) });
+    // Sem bairro, rua ou lugar no texto (vale para a cidade toda): fica fora das estatísticas dos bairros.
+    if (c.bairros.length) noBairro(c.bairros, { origem: "convenio", ano: Number(c.data.slice(0, 4)), valor: r2(valor), texto: c.objeto, ...quemE(c.autor) });
   }
   // Emenda Pix barrada (impedimento técnico) não trouxe dinheiro: fica fora do mapa.
   for (const p of planos.filter((p) => !/IMPEDIDO/i.test(p.situacao)))
-    for (const o of p.objetos) noBairro(bairrosOuCidade(o.objeto), { origem: "pix", ano: p.ano, valor: o.valor, texto: o.objeto, ...quemE(autorDe.get(p.codigo) ?? Object.keys(autores).find((n) => semAcento(n) === semAcento(p.parlamentar)) ?? p.parlamentar) });
+    for (const o of p.objetos) if (o.bairros.length) noBairro(o.bairros, { origem: "pix", ano: p.ano, valor: o.valor, texto: o.objeto, ...quemE(autorDe.get(p.codigo) ?? Object.keys(autores).find((n) => semAcento(n) === semAcento(p.parlamentar)) ?? p.parlamentar) });
 
   // Gastos pagos com dinheiro federal e estadual, por ano.
   const arquivosGastos = readdirSync(PASTA).filter((f) => /^gastos-\d{4}\.json$/.test(f)).sort();

@@ -46,7 +46,7 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
           </span>
           {bairros > 1 && (
             <span className="block text-[10px] tabular-nums text-slate-500">
-              {dinheiroCurto(i.valor)} ÷ {bairros} bairros{i.cidadeToda ? " (cidade toda)" : ""}
+              {dinheiroCurto(i.valor)} ÷ {bairros} bairros
             </span>
           )}
         </span>
@@ -64,7 +64,7 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
         {aberto && (
           <span className="mt-0.5 block tabular-nums text-slate-500">
             {bairros > 1
-              ? `Valor exato: ${reaisExato(i.valor)}, dividido igualmente entre os ${bairros} bairros${i.cidadeToda ? " da cidade" : " citados"} (${reaisExato(parte)} para cada um).`
+              ? `Valor exato: ${reaisExato(i.valor)}, dividido igualmente entre os ${bairros} bairros citados (${reaisExato(parte)} para cada um).`
               : `Valor exato: ${reaisExato(i.valor)}`}
           </span>
         )}
@@ -80,12 +80,6 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
         {i.pagamentos && i.pagamentos > 1 && <span>{i.pagamentos} pagamentos</span>}
 
       </div>
-      {i.cidadeToda && (
-        <p className="mt-1 text-[11px] text-slate-600">
-          <span className="font-medium">Vale para a cidade toda:</span> o texto não cita rua nem bairro, então o valor foi dividido igualmente entre os{" "}
-          {bairros} bairros.
-        </p>
-      )}
       {i.via && i.via.length > 0 && (
         <p className="mt-1 text-[11px] text-slate-600">
           <span className="font-medium">Ligado aos bairros por:</span> {i.via.join(", ")}

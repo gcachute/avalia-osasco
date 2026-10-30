@@ -313,7 +313,7 @@ export default function Metodologia() {
             <b>Bairros:</b> entram emendas, convênios e pagamentos cujo texto cita o bairro, uma escola, uma unidade de saúde, uma rua, um córrego ou um
             lugar com nome. Ruas e córregos contam para todos os bairros por onde passam (mapa de ruas do OpenStreetMap; nomes repetidos em pontos
             diferentes da cidade ficam de fora). Quando um item cita vários bairros, o valor é dividido igualmente entre eles e todos aparecem no mapa.
-            Emendas recebidas sem lugar no texto valem para a cidade toda (divididas entre os 60 bairros). O valor de um convênio entra no máximo pelo que
+            O que vale para Osasco inteira, sem lugar no texto, fica fora das estatísticas dos bairros. O valor de um convênio entra no máximo pelo que
             Osasco recebeu da emenda (o convênio do Minha Casa Minha Vida de 2011, por exemplo, tem o valor do programa inteiro).
           </li>
           <li>
