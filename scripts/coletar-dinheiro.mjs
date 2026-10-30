@@ -25,7 +25,7 @@ const PASTA = "data/dinheiro";
 const CACHE = "data/cache/dinheiro";
 const ATUAL = new Date().getFullYear();
 const DESDE = Number(process.env.DESDE ?? 2018);
-const SO = (process.env.SO ?? "entradas,emendas,pix,parlamentares,estaduais,gastos,sancoes").split(",");
+const SO = (process.env.SO ?? "entradas,rreo,uniao,sefaz,emendas,pix,parlamentares,estaduais,gastos,sancoes").split(",");
 mkdirSync(PASTA, { recursive: true });
 mkdirSync(CACHE, { recursive: true });
 
@@ -67,7 +67,8 @@ if (SO.includes("entradas")) {
     const itens = (await res.json()).items ?? [];
     await sleep(1200);
     const linhas = itens
-      .filter((i) => /^(RO)?(1\.7|2\.4)/.test(i.cod_conta))
+      // Transferências (1.7 e 2.4) e as receitas da própria cidade (impostos, taxas, contribuições, patrimonial, serviços).
+      .filter((i) => /^(RO)?(1\.\d|2\.4)/.test(i.cod_conta))
       .map((i) => ({ cod: i.cod_conta.replace(/^RO/, ""), conta: i.conta.replace(/^[\d.\s]+-\s*/, "").trim(), coluna: i.coluna, valor: centavos(i.valor) }));
     if (!linhas.length) {
       console.log(`DCA ${ano}: ainda não entregue`);
@@ -77,6 +78,165 @@ if (SO.includes("entradas")) {
     console.log(`DCA ${ano}: ${linhas.length} linhas`);
   }
   grava("entradas.json", { fonte: "SICONFI, Declaração de Contas Anuais (Anexo I-C)", anos });
+}
+
+// ---------- 1b. Relatório bimestral (RREO, Anexo 3): ano em andamento e conferência ----------
+// O relatório de cada bimestre traz, mês a mês dos últimos 12 meses, ISS, IPTU, ITBI, IRRF, FPM, ICMS, IPVA, FUNDEB e a
+// retenção para o FUNDEB. Do ano em andamento vem o último bimestre publicado (e o mesmo bimestre do ano anterior, para
+// comparar); dos anos fechados, o 6º bimestre, que serve para conferir a declaração anual.
+if (SO.includes("rreo")) {
+  const consulta = async (ano, periodo) => {
+    const r = await (
+      await baixar(`https://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=${ano}&nr_periodo=${periodo}&co_tipo_demonstrativo=RREO&no_anexo=RREO-Anexo%2003&id_ente=${IBGE}`)
+    ).json();
+    await sleep(1200);
+    return r.items ?? [];
+  };
+  const resume = (itens, ano, periodo) => {
+    // Colunas <MR-11> ... <MR>: o último mês do bimestre e os 11 anteriores.
+    const fim = periodo * 2;
+    const meses = Array.from({ length: 12 }, (_, i) => {
+      const d = new Date(Date.UTC(ano, fim - 12 + i, 1));
+      return d.toISOString().slice(0, 7);
+    });
+    const linhas = {};
+    for (const i of itens) {
+      const l = (linhas[i.cod_conta] ??= { conta: i.conta.trim(), meses: Array(12).fill(null), total: null, previsao: null });
+      const m = i.coluna.match(/^<MR(?:-(\d+))?>$/);
+      if (m) l.meses[11 - Number(m[1] ?? 0)] = centavos(i.valor);
+      else if (/^TOTAL/i.test(i.coluna)) l.total = centavos(i.valor);
+      else if (/^PREVIS/i.test(i.coluna)) l.previsao = centavos(i.valor);
+    }
+    return { periodo, meses, linhas };
+  };
+  const anos = {};
+  for (let ano = DESDE; ano <= ATUAL; ano++) {
+    let periodo = ano < ATUAL ? 6 : 0;
+    let itens = [];
+    if (periodo) itens = await consulta(ano, 6);
+    else
+      for (let p = 6; p >= 1 && !itens.length; p--) {
+        itens = await consulta(ano, p);
+        if (itens.length) periodo = p;
+      }
+    if (!itens.length) {
+      console.log(`RREO ${ano}: nada publicado ainda`);
+      continue;
+    }
+    anos[ano] = resume(itens, ano, periodo);
+    console.log(`RREO ${ano}: ${periodo}º bimestre`);
+    // Mesmo bimestre do ano anterior, para comparar o ano em andamento.
+    if (ano === ATUAL && periodo < 6) anos[ano].anoAnterior = resume(await consulta(ano - 1, periodo), ano - 1, periodo);
+  }
+  grava("rreo.json", { fonte: "SICONFI, Relatório Resumido da Execução Orçamentária (Anexo 3)", url: "https://siconfi.tesouro.gov.br/siconfi/pages/public/consulta_finbra_rreo/finbra_rreo_list.jsf", anos });
+}
+
+// ---------- 1c. Transferências da União, mês a mês (CGU) ----------
+// Fonte independente da Prefeitura: o que o governo federal diz ter transferido a Osasco. Um arquivo por mês (o país
+// inteiro, cerca de 3 MB zipado); fica guardado só o resumo de Osasco. Os meses já resumidos não são baixados de novo,
+// exceto os três últimos (o arquivo do mês pode ser corrigido depois).
+if (SO.includes("uniao")) {
+  const destino = `${PASTA}/transferencias-uniao.json`;
+  const antes = existsSync(destino) ? JSON.parse(readFileSync(destino, "utf8")).meses : {};
+  const meses = { ...antes };
+  const hoje = new Date();
+  const lista = [];
+  for (let d = new Date(Date.UTC(DESDE, 0, 1)); d < hoje; d.setUTCMonth(d.getUTCMonth() + 1)) lista.push(d.toISOString().slice(0, 7).replace("-", ""));
+  const categoria = (r) => {
+    const acao = `${r["NOME AÇÃO"]} ${r["LINGUAGEM CIDADÃ"]}`;
+    if (/FUNDO DE PARTICIPACAO DOS MUNICIPIOS|\bFPM\b/i.test(acao)) return "fpm";
+    if (/FUNDEB|FUNDO DE MANUTENCAO E DESENVOLVIMENTO DA EDUCACAO/i.test(acao)) return "fundeb";
+    if (/TRANSFERENCIAS ESPECIAIS/i.test(acao)) return "especiais";
+    if (/Sa[uú]de/i.test(r["NOME FUNÇÃO"])) return "sus";
+    if (/Educa[cç][aã]o/i.test(r["NOME FUNÇÃO"]) || /SALARIO-EDUCACAO|Sal[aá]rio-Educa/i.test(acao)) return "educacao";
+    if (/Assist[eê]ncia social/i.test(r["NOME FUNÇÃO"])) return "assistencia";
+    if (/ROYALT|PETROLEO|CFEM|CIDE|ITR\b|TERRITORIAL RURAL/i.test(acao)) return "royalties";
+    return "outras";
+  };
+  const resumoMes = async (zip) => {
+    const soma = { prefeitura: {}, entidades: 0 };
+    for await (const r of tabela(zip, /\.csv$/i)) {
+      if (r["UF"] !== "SP" || r["NOME MUNICÍPIO"].toUpperCase() !== "OSASCO") continue;
+      const v = valor(r["VALOR TRANSFERIDO"]);
+      if (/Administra[cç][aã]o P[uú]blica/i.test(r["TIPO FAVORECIDO"])) {
+        const c = categoria(r);
+        soma.prefeitura[c] = centavos((soma.prefeitura[c] ?? 0) + v);
+      } else soma.entidades = centavos(soma.entidades + v);
+    }
+    return soma;
+  };
+  let recusas = 0;
+  for (const [i, mes] of lista.entries()) {
+    if (meses[mes] && i < lista.length - 3) continue;
+    const zip = `${CACHE}/transferencias-${mes}.zip`;
+    // Arquivo já baixado (de uma coleta interrompida) é aproveitado.
+    if (existsSync(zip)) {
+      meses[mes] = await resumoMes(zip);
+      rmSync(zip);
+      continue;
+    }
+    // Depois de três recusas seguidas o servidor está limitando os pedidos: não pede mais nada nesta coleta (os arquivos
+    // já baixados continuam sendo lidos) e tenta de novo na próxima.
+    if (recusas >= 3) continue;
+    const res = await fetch(`https://dadosabertos-download.cgu.gov.br/PortalDaTransparencia/saida/transferencias/${mes}_Transferencias.zip`, {
+      headers: { "User-Agent": "avalia-osasco/0.1 (coleta de dados publicos)" },
+    });
+    if (!res.ok) {
+      recusas++;
+      console.log(`Transferências ${mes}: arquivo indisponível agora (${res.status})`);
+      await sleep(3000);
+      continue;
+    }
+    recusas = 0;
+    writeFileSync(zip, Buffer.from(await res.arrayBuffer()));
+    meses[mes] = await resumoMes(zip);
+    rmSync(zip);
+    console.log(`Transferências ${mes}: R$ ${(Object.values(meses[mes].prefeitura).reduce((a, b) => a + b, 0) / 1e6).toFixed(1)} mi`);
+    await sleep(3000);
+  }
+  grava("transferencias-uniao.json", { fonte: "Portal da Transparência (CGU), transferências da União a municípios", url: "https://portaldatransparencia.gov.br/transferencias", meses });
+}
+
+// ---------- 1d. Repasses do Estado (Secretaria da Fazenda de SP) ----------
+// Consulta pública "Repasse de Tributos a Municípios", histórico anual com os 12 meses. Fonte independente da
+// Prefeitura para conferir ICMS e IPVA. O ICMS vem já sem os 20% do FUNDEB; o IPVA vem bruto (notas da própria tabela).
+if (SO.includes("sefaz")) {
+  const URL = "https://www.fazenda.sp.gov.br/RepasseConsulta/Consulta/repasse.aspx";
+  const MUNICIPIO = "4923"; // código de Osasco na consulta
+  const MESES = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+  const cabecalhos = { "User-Agent": "avalia-osasco/0.1 (coleta de dados publicos)" };
+  const inicial = await baixar(URL, { headers: cabecalhos });
+  const cookie = (inicial.headers.getSetCookie?.() ?? []).map((c) => c.split(";")[0]).join("; ");
+  const pagina = await inicial.text();
+  const ocultos = Object.fromEntries([...pagina.matchAll(/<input[^>]*name="(__[A-Z]+)"[^>]*value="([^"]*)"/g)].map((m) => [m[1], m[2].replace(/&amp;/g, "&")]));
+  const anos = {};
+  for (let ano = DESDE; ano <= ATUAL; ano++) {
+    const corpo = new URLSearchParams({
+      ...ocultos,
+      "ctl00$ConteudoPagina$ddlMuni": MUNICIPIO,
+      "ctl00$ConteudoPagina$rblTipo": "ANO",
+      "ctl00$ConteudoPagina$ddlAno": String(ano),
+      "ctl00$ConteudoPagina$btnConfirmar": "Confirmar",
+    });
+    const res = await baixar(URL, { method: "POST", body: corpo, headers: { ...cabecalhos, cookie, "Content-Type": "application/x-www-form-urlencoded" } });
+    const texto = (await res.text()).replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ");
+    const meses = {};
+    for (const [i, nome] of MESES.entries()) {
+      const m = texto.match(new RegExp(`${nome} ((?:[\\d.]+,\\d{2} ?){5})`));
+      if (!m) continue;
+      const [icms, ipva, ipi, comp] = m[1].trim().split(" ").map(valor);
+      meses[`${ano}-${String(i + 1).padStart(2, "0")}`] = { icmsLiquido: icms, ipva, ipiExportacao: ipi, compensacao: comp };
+    }
+    if (Object.keys(meses).length) anos[ano] = meses;
+    console.log(`Repasses do Estado ${ano}: ${Object.keys(meses).length} meses`);
+    await sleep(2000);
+  }
+  grava("repasses-estado.json", {
+    fonte: "Secretaria da Fazenda de SP, Repasse de Tributos a Municípios",
+    url: URL,
+    nota: "ICMS sem os 20% retidos para o FUNDEB; IPVA bruto.",
+    anos,
+  });
 }
 
 // ---------- 2. Emendas federais (CGU) ----------

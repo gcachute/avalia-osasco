@@ -1,8 +1,362 @@
 {
- "coletadoEm": "2026-10-29",
+ "coletadoEm": "2026-10-30",
  "fonte": "SICONFI, Declaração de Contas Anuais (Anexo I-C)",
  "anos": {
   "2018": [
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2287116829.76
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 112573393.98
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2092085.53
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1121414011.55
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 864085.38
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1060013399.5
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 818554.73
+   },
+   {
+    "cod": "1.1.1.3.00.0.0",
+    "conta": "Impostos sobre a Renda e Proventos de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 57173994.56
+   },
+   {
+    "cod": "1.1.1.3.03.0.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 57173994.56
+   },
+   {
+    "cod": "1.1.1.3.03.1.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Trabalho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 43175217.17
+   },
+   {
+    "cod": "1.1.1.3.03.4.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Outros Rendimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13998777.39
+   },
+   {
+    "cod": "1.1.1.8.00.0.0",
+    "conta": "1.1.1.8.00.0.0 Impostos Específicos de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1002839404.94
+   },
+   {
+    "cod": "1.1.1.8.00.0.0",
+    "conta": "1.1.1.8.00.0.0 Impostos Específicos de Estados, DF e Municípios",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 818554.73
+   },
+   {
+    "cod": "1.1.1.8.01.0.0",
+    "conta": "1.1.1.8.01.0.0 Impostos sobre o Patrimônio para Estados/DF/Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 363413893.34
+   },
+   {
+    "cod": "1.1.1.8.01.0.0",
+    "conta": "1.1.1.8.01.0.0 Impostos sobre o Patrimônio para Estados/DF/Municípios",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 378926.64
+   },
+   {
+    "cod": "1.1.1.8.01.1.0",
+    "conta": "1.1.1.8.01.1.0 Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 312134763.3
+   },
+   {
+    "cod": "1.1.1.8.01.1.0",
+    "conta": "1.1.1.8.01.1.0 Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 214512.09
+   },
+   {
+    "cod": "1.1.1.8.01.4.0",
+    "conta": "1.1.1.8.01.4.0 Imposto sobre Transmissão ¿Inter Vivos¿ de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 51279130.04
+   },
+   {
+    "cod": "1.1.1.8.01.4.0",
+    "conta": "1.1.1.8.01.4.0 Imposto sobre Transmissão ¿Inter Vivos¿ de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 164414.55
+   },
+   {
+    "cod": "1.1.1.8.02.0.0",
+    "conta": "1.1.1.8.02.0.0 Impostos sobre a Produção, Circulação de Mercadorias e Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 639425511.6
+   },
+   {
+    "cod": "1.1.1.8.02.0.0",
+    "conta": "1.1.1.8.02.0.0 Impostos sobre a Produção, Circulação de Mercadorias e Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 439628.09
+   },
+   {
+    "cod": "1.1.1.8.02.3.0",
+    "conta": "1.1.1.8.02.3.0 Imposto sobre Serviços de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 639425511.6
+   },
+   {
+    "cod": "1.1.1.8.02.3.0",
+    "conta": "1.1.1.8.02.3.0 Imposto sobre Serviços de Qualquer Natureza",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 439628.09
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 61400612.05
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 45530.65
+   },
+   {
+    "cod": "1.1.2.1.00.0.0",
+    "conta": "Taxas pelo Exercício do Poder de Polícia",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17977185.53
+   },
+   {
+    "cod": "1.1.2.1.00.0.0",
+    "conta": "Taxas pelo Exercício do Poder de Polícia",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 20931.2
+   },
+   {
+    "cod": "1.1.2.1.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17977185.53
+   },
+   {
+    "cod": "1.1.2.1.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 20931.2
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 43423426.52
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 24599.45
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 43423426.52
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 24599.45
+   },
+   {
+    "cod": "1.2.0.0.00.0.0",
+    "conta": "Contribuições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 76655198.46
+   },
+   {
+    "cod": "1.2.1.0.00.0.0",
+    "conta": "Contribuições Sociais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 53191340.02
+   },
+   {
+    "cod": "1.2.1.0.04.0.0",
+    "conta": "Contribuição para o Regime Próprio de Previdência Social - RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 53191340.02
+   },
+   {
+    "cod": "1.2.1.0.04.1.0",
+    "conta": "Contribuição Patronal de Servidor Ativo Civil para o RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 22278.4
+   },
+   {
+    "cod": "1.2.1.0.04.2.0",
+    "conta": "Contribuição do Servidor Ativo Civil para o RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 51132089.46
+   },
+   {
+    "cod": "1.2.1.0.04.3.0",
+    "conta": "Contribuição do Servidor Inativo para o RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1763304.66
+   },
+   {
+    "cod": "1.2.1.0.04.4.0",
+    "conta": "Contribuição do Pensionista para o RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 273667.5
+   },
+   {
+    "cod": "1.2.4.0.00.0.0",
+    "conta": "Contribuição para o Custeio do Serviço de Iluminação Pública",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23463858.44
+   },
+   {
+    "cod": "1.3.0.0.00.0.0",
+    "conta": "Receita Patrimonial",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23217923.94
+   },
+   {
+    "cod": "1.3.1.0.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2132152.75
+   },
+   {
+    "cod": "1.3.1.0.01.0.0",
+    "conta": "Aluguéis, Arrendamentos, Foros, Laudêmios, Tarifas de Ocupação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 496270.51
+   },
+   {
+    "cod": "1.3.1.0.01.1.0",
+    "conta": "Aluguéis e Arrendamentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 496270.51
+   },
+   {
+    "cod": "1.3.1.0.02.0.0",
+    "conta": "Concessão, Permissão, Autorização ou Cessão do Direito de Uso de Bens Imóveis Públicos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1635882.24
+   },
+   {
+    "cod": "1.3.2.0.00.0.0",
+    "conta": "Valores Mobiliários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21085771.19
+   },
+   {
+    "cod": "1.3.2.1.00.0.0",
+    "conta": "Juros e Correções Monetárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21085771.19
+   },
+   {
+    "cod": "1.3.2.1.00.1.0",
+    "conta": "Remuneração de Depósitos Bancários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10732875.55
+   },
+   {
+    "cod": "1.3.2.1.00.2.0",
+    "conta": "Remuneração de Depósitos Especiais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1180914.28
+   },
+   {
+    "cod": "1.3.2.1.00.4.0",
+    "conta": "Remuneração dos Recursos do Regime Próprio de Previdência Social - RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 9171981.36
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 12166176.66
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1180688.73
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11970761.85
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1180688.73
+   },
+   {
+    "cod": "1.6.1.0.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11970761.85
+   },
+   {
+    "cod": "1.6.1.0.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1180688.73
+   },
+   {
+    "cod": "1.6.9.0.00.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 195414.81
+   },
+   {
+    "cod": "1.6.9.0.99.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 195414.81
+   },
    {
     "cod": "1.7.0.0.00.0.0",
     "conta": "Transferências Correntes",
@@ -298,6 +652,120 @@
     "valor": 7000
    },
    {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 46748717.33
+   },
+   {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 47311.42
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10782283.28
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 6833.04
+   },
+   {
+    "cod": "1.9.2.0.00.0.0",
+    "conta": "Indenizações, Restituições e Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3063773.68
+   },
+   {
+    "cod": "1.9.2.1.00.0.0",
+    "conta": "Indenizações",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2126583.37
+   },
+   {
+    "cod": "1.9.2.2.00.0.0",
+    "conta": "Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 937190.31
+   },
+   {
+    "cod": "1.9.2.2.01.0.0",
+    "conta": "Restituição de Convênios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 860579.89
+   },
+   {
+    "cod": "1.9.2.2.02.0.0",
+    "conta": "Restituição de Benefícios Não Desembolsados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 28762.99
+   },
+   {
+    "cod": "1.9.2.2.99.0.0",
+    "conta": "Outras Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 47847.43
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 32902660.37
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 40478.38
+   },
+   {
+    "cod": "1.9.9.0.03.0.0",
+    "conta": "Compensações Financeiras entre o Regime Geral e os Regimes Próprios de Previdência dos Servidores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3081987.91
+   },
+   {
+    "cod": "1.9.9.0.12.0.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6712251.94
+   },
+   {
+    "cod": "1.9.9.0.12.0.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 554.44
+   },
+   {
+    "cod": "1.9.9.0.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23108420.52
+   },
+   {
+    "cod": "1.9.9.0.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 39923.94
+   },
+   {
+    "cod": "1.9.9.0.99.1.0",
+    "conta": "Outras Receitas - Primárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23108420.52
+   },
+   {
+    "cod": "1.9.9.0.99.1.0",
+    "conta": "Outras Receitas - Primárias",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 39923.94
+   },
+   {
     "cod": "2.4.0.0.00.0.0",
     "conta": "Transferências de Capital",
     "coluna": "Receitas Brutas Realizadas",
@@ -365,6 +833,402 @@
    }
   ],
   "2019": [
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2723907739.87
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 122224784.65
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2713322.05
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1459690331.75
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 972953.75
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1386828558.58
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 925278.46
+   },
+   {
+    "cod": "1.1.1.3.00.0.0",
+    "conta": "Impostos sobre a Renda e Proventos de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 70921817.73
+   },
+   {
+    "cod": "1.1.1.3.03.0.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 70921817.73
+   },
+   {
+    "cod": "1.1.1.3.03.1.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Trabalho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 50985969.23
+   },
+   {
+    "cod": "1.1.1.3.03.4.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Outros Rendimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 19935848.5
+   },
+   {
+    "cod": "1.1.1.8.00.0.0",
+    "conta": "1.1.1.8.00.0.0 Impostos Específicos de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1315906740.85
+   },
+   {
+    "cod": "1.1.1.8.00.0.0",
+    "conta": "1.1.1.8.00.0.0 Impostos Específicos de Estados, DF e Municípios",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 925278.46
+   },
+   {
+    "cod": "1.1.1.8.01.0.0",
+    "conta": "1.1.1.8.01.0.0 Impostos sobre o Patrimônio para Estados/DF/Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 384257605.72
+   },
+   {
+    "cod": "1.1.1.8.01.0.0",
+    "conta": "1.1.1.8.01.0.0 Impostos sobre o Patrimônio para Estados/DF/Municípios",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 580648.14
+   },
+   {
+    "cod": "1.1.1.8.01.1.0",
+    "conta": "1.1.1.8.01.1.0 Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 331996014.55
+   },
+   {
+    "cod": "1.1.1.8.01.1.0",
+    "conta": "1.1.1.8.01.1.0 Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 372072.97
+   },
+   {
+    "cod": "1.1.1.8.01.4.0",
+    "conta": "1.1.1.8.01.4.0 Imposto sobre Transmissão ¿Inter Vivos¿ de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 52261591.17
+   },
+   {
+    "cod": "1.1.1.8.01.4.0",
+    "conta": "1.1.1.8.01.4.0 Imposto sobre Transmissão ¿Inter Vivos¿ de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 208575.17
+   },
+   {
+    "cod": "1.1.1.8.02.0.0",
+    "conta": "1.1.1.8.02.0.0 Impostos sobre a Produção, Circulação de Mercadorias e Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 931649135.13
+   },
+   {
+    "cod": "1.1.1.8.02.0.0",
+    "conta": "1.1.1.8.02.0.0 Impostos sobre a Produção, Circulação de Mercadorias e Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 344630.32
+   },
+   {
+    "cod": "1.1.1.8.02.3.0",
+    "conta": "1.1.1.8.02.3.0 Imposto sobre Serviços de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 931649135.13
+   },
+   {
+    "cod": "1.1.1.8.02.3.0",
+    "conta": "1.1.1.8.02.3.0 Imposto sobre Serviços de Qualquer Natureza",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 344630.32
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 72861773.17
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 47675.29
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 53122483.96
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 29449.75
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 53122483.96
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 29449.75
+   },
+   {
+    "cod": "1.1.2.8.00.0.0",
+    "conta": "Taxas - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 19739289.21
+   },
+   {
+    "cod": "1.1.2.8.00.0.0",
+    "conta": "Taxas - Específicas de Estados, DF e Municípios",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 18225.54
+   },
+   {
+    "cod": "1.1.2.8.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 19739289.21
+   },
+   {
+    "cod": "1.1.2.8.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 18225.54
+   },
+   {
+    "cod": "1.1.2.8.01.1.0",
+    "conta": "Taxa de Fiscalização de Vigilância Sanitária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 148457.24
+   },
+   {
+    "cod": "1.1.2.8.01.1.0",
+    "conta": "Taxa de Fiscalização de Vigilância Sanitária",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 202.29
+   },
+   {
+    "cod": "1.1.2.8.01.9.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização - Outras",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 19590831.97
+   },
+   {
+    "cod": "1.1.2.8.01.9.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização - Outras",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 18023.25
+   },
+   {
+    "cod": "1.2.0.0.00.0.0",
+    "conta": "Contribuições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 84502715.09
+   },
+   {
+    "cod": "1.2.1.0.00.0.0",
+    "conta": "Contribuições Sociais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 59638375.55
+   },
+   {
+    "cod": "1.2.1.8.00.0.0",
+    "conta": "1.2.1.8.00.0.0 Contribuições Sociais Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 59638375.55
+   },
+   {
+    "cod": "1.2.1.8.01.0.0",
+    "conta": "Contribuição do Servidor Civil para o Plano de Seguridade Social - CPSSS - Específico de EST/DF/MUN",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 59622899.83
+   },
+   {
+    "cod": "1.2.1.8.01.1.0",
+    "conta": "CPSSS do Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 59622899.83
+   },
+   {
+    "cod": "1.2.1.8.03.0.0",
+    "conta": "CPSSS Patronal - Servidor Civil - Específico de EST/DF/MUN",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15475.72
+   },
+   {
+    "cod": "1.2.1.8.03.1.0",
+    "conta": "CPSSS Patronal - Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15475.72
+   },
+   {
+    "cod": "1.2.4.0.00.0.0",
+    "conta": "Contribuição para o Custeio do Serviço de Iluminação Pública",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 24864339.54
+   },
+   {
+    "cod": "1.3.0.0.00.0.0",
+    "conta": "Receita Patrimonial",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 25937212.3
+   },
+   {
+    "cod": "1.3.1.0.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 914430.28
+   },
+   {
+    "cod": "1.3.1.0.01.0.0",
+    "conta": "Aluguéis, Arrendamentos, Foros, Laudêmios, Tarifas de Ocupação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 489877.25
+   },
+   {
+    "cod": "1.3.1.0.01.1.0",
+    "conta": "Aluguéis e Arrendamentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 489877.25
+   },
+   {
+    "cod": "1.3.1.0.02.0.0",
+    "conta": "Concessão, Permissão, Autorização ou Cessão do Direito de Uso de Bens Imóveis Públicos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 424553.03
+   },
+   {
+    "cod": "1.3.2.0.00.0.0",
+    "conta": "Valores Mobiliários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 25022782.02
+   },
+   {
+    "cod": "1.3.2.1.00.0.0",
+    "conta": "Juros e Correções Monetárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 25022782.02
+   },
+   {
+    "cod": "1.3.2.1.00.1.0",
+    "conta": "Remuneração de Depósitos Bancários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8816206.04
+   },
+   {
+    "cod": "1.3.2.1.00.2.0",
+    "conta": "Remuneração de Depósitos Especiais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 852540.2
+   },
+   {
+    "cod": "1.3.2.1.00.3.0",
+    "conta": "Remuneração de Saldos de Recursos Não-Desembolsados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23.01
+   },
+   {
+    "cod": "1.3.2.1.00.4.0",
+    "conta": "Remuneração dos Recursos do Regime Próprio de Previdência Social - RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15354012.77
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15038166.58
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1365425.73
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 12738822.66
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1365425.73
+   },
+   {
+    "cod": "1.6.1.0.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 12738822.66
+   },
+   {
+    "cod": "1.6.1.0.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1365425.73
+   },
+   {
+    "cod": "1.6.2.0.00.0.0",
+    "conta": "Serviços e Atividades Referentes à Navegação e ao Transporte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1817583
+   },
+   {
+    "cod": "1.6.2.0.02.0.0",
+    "conta": "Serviços de Transporte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1817583
+   },
+   {
+    "cod": "1.6.9.0.00.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 481760.92
+   },
+   {
+    "cod": "1.6.9.0.99.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 481760.92
+   },
    {
     "cod": "1.7.0.0.00.0.0",
     "conta": "Transferências Correntes",
@@ -660,6 +1524,174 @@
     "valor": 311803022.66
    },
    {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 47316771.92
+   },
+   {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 374942.57
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23400066.73
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 8636.82
+   },
+   {
+    "cod": "1.9.1.0.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23360980.35
+   },
+   {
+    "cod": "1.9.1.0.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 8636.82
+   },
+   {
+    "cod": "1.9.1.0.06.0.0",
+    "conta": "Multas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 39086.38
+   },
+   {
+    "cod": "1.9.1.0.06.1.0",
+    "conta": "Multas Administrativas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 39086.38
+   },
+   {
+    "cod": "1.9.2.0.00.0.0",
+    "conta": "Indenizações, Restituições e Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2506041.54
+   },
+   {
+    "cod": "1.9.2.2.00.0.0",
+    "conta": "Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 436659.56
+   },
+   {
+    "cod": "1.9.2.2.01.0.0",
+    "conta": "Restituição de Convênios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 371620.56
+   },
+   {
+    "cod": "1.9.2.2.03.0.0",
+    "conta": "Restituição de Benefícios Previdenciários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15035.77
+   },
+   {
+    "cod": "1.9.2.2.06.0.0",
+    "conta": "Restituição de Despesas de Exercícios Anteriores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 50003.23
+   },
+   {
+    "cod": "1.9.2.8.00.0.0",
+    "conta": "Indenizações, Restituições e Ressarcimentos - Específicas para Estados/DF/Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2069381.98
+   },
+   {
+    "cod": "1.9.2.8.01.0.0",
+    "conta": "Indenizações- Específicas para Estados/DF/Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1920124.74
+   },
+   {
+    "cod": "1.9.2.8.02.0.0",
+    "conta": "Restituições - Específicas para Estados/DF/Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 149257.24
+   },
+   {
+    "cod": "1.9.2.8.02.9.0",
+    "conta": "Outras Restituições - Específicas para Estados/DF/Municípios - Não Especificadas Anteriormente",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 149257.24
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21410663.65
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 366305.75
+   },
+   {
+    "cod": "1.9.9.0.03.0.0",
+    "conta": "Compensações Financeiras entre o Regime Geral e os Regimes Próprios de Previdência dos Servidores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6760265.2
+   },
+   {
+    "cod": "1.9.9.0.12.0.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 722903.76
+   },
+   {
+    "cod": "1.9.9.0.12.0.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 353.25
+   },
+   {
+    "cod": "1.9.9.0.12.2.0",
+    "conta": "Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 722903.76
+   },
+   {
+    "cod": "1.9.9.0.12.2.0",
+    "conta": "Ônus de Sucumbência",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 353.25
+   },
+   {
+    "cod": "1.9.9.0.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13927494.69
+   },
+   {
+    "cod": "1.9.9.0.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 365952.5
+   },
+   {
+    "cod": "1.9.9.0.99.1.0",
+    "conta": "Outras Receitas - Primárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13927494.69
+   },
+   {
+    "cod": "1.9.9.0.99.1.0",
+    "conta": "Outras Receitas - Primárias",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 365952.5
+   },
+   {
     "cod": "2.4.0.0.00.0.0",
     "conta": "Transferências de Capital",
     "coluna": "Receitas Brutas Realizadas",
@@ -715,6 +1747,408 @@
    }
   ],
   "2020": [
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2815143736.04
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 123302267.09
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2471033.67
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1419564007.91
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 387656.79
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1348866580.13
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 380076.38
+   },
+   {
+    "cod": "1.1.1.3.00.0.0",
+    "conta": "Impostos sobre a Renda e Proventos de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 86402241.06
+   },
+   {
+    "cod": "1.1.1.3.03.0.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 86402241.06
+   },
+   {
+    "cod": "1.1.1.3.03.1.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Trabalho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 53528977.35
+   },
+   {
+    "cod": "1.1.1.3.03.4.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Outros Rendimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 32873263.71
+   },
+   {
+    "cod": "1.1.1.8.00.0.0",
+    "conta": "1.1.1.8.00.0.0 Impostos Específicos de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1262464339.07
+   },
+   {
+    "cod": "1.1.1.8.00.0.0",
+    "conta": "1.1.1.8.00.0.0 Impostos Específicos de Estados, DF e Municípios",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 380076.38
+   },
+   {
+    "cod": "1.1.1.8.01.0.0",
+    "conta": "1.1.1.8.01.0.0 Impostos sobre o Patrimônio para Estados/DF/Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 386947827.68
+   },
+   {
+    "cod": "1.1.1.8.01.0.0",
+    "conta": "1.1.1.8.01.0.0 Impostos sobre o Patrimônio para Estados/DF/Municípios",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 300683.72
+   },
+   {
+    "cod": "1.1.1.8.01.1.0",
+    "conta": "1.1.1.8.01.1.0 Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 332457899.35
+   },
+   {
+    "cod": "1.1.1.8.01.1.0",
+    "conta": "1.1.1.8.01.1.0 Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 256998.96
+   },
+   {
+    "cod": "1.1.1.8.01.4.0",
+    "conta": "1.1.1.8.01.4.0 Imposto sobre Transmissão ¿Inter Vivos¿ de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 54489928.33
+   },
+   {
+    "cod": "1.1.1.8.01.4.0",
+    "conta": "1.1.1.8.01.4.0 Imposto sobre Transmissão ¿Inter Vivos¿ de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 43684.76
+   },
+   {
+    "cod": "1.1.1.8.02.0.0",
+    "conta": "1.1.1.8.02.0.0 Impostos sobre a Produção, Circulação de Mercadorias e Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 875516511.39
+   },
+   {
+    "cod": "1.1.1.8.02.0.0",
+    "conta": "1.1.1.8.02.0.0 Impostos sobre a Produção, Circulação de Mercadorias e Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 79392.66
+   },
+   {
+    "cod": "1.1.1.8.02.3.0",
+    "conta": "1.1.1.8.02.3.0 Imposto sobre Serviços de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 875516511.39
+   },
+   {
+    "cod": "1.1.1.8.02.3.0",
+    "conta": "1.1.1.8.02.3.0 Imposto sobre Serviços de Qualquer Natureza",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 79392.66
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 70697427.78
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 7580.41
+   },
+   {
+    "cod": "1.1.2.8.00.0.0",
+    "conta": "Taxas - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 70697427.78
+   },
+   {
+    "cod": "1.1.2.8.00.0.0",
+    "conta": "Taxas - Específicas de Estados, DF e Municípios",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 7580.41
+   },
+   {
+    "cod": "1.1.2.8.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15582775.21
+   },
+   {
+    "cod": "1.1.2.8.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 3868.66
+   },
+   {
+    "cod": "1.1.2.8.01.1.0",
+    "conta": "Taxa de Fiscalização de Vigilância Sanitária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 122833.25
+   },
+   {
+    "cod": "1.1.2.8.01.9.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização - Outras",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15459941.96
+   },
+   {
+    "cod": "1.1.2.8.01.9.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização - Outras",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 3868.66
+   },
+   {
+    "cod": "1.1.2.8.02.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 55114652.57
+   },
+   {
+    "cod": "1.1.2.8.02.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 3711.75
+   },
+   {
+    "cod": "1.1.2.8.02.9.0",
+    "conta": "Taxas pela Prestação de Serviços - Outras",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 55114652.57
+   },
+   {
+    "cod": "1.1.2.8.02.9.0",
+    "conta": "Taxas pela Prestação de Serviços - Outras",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 3711.75
+   },
+   {
+    "cod": "1.2.0.0.00.0.0",
+    "conta": "Contribuições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 96110813.42
+   },
+   {
+    "cod": "1.2.1.0.00.0.0",
+    "conta": "Contribuições Sociais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 70544559.54
+   },
+   {
+    "cod": "1.2.1.8.00.0.0",
+    "conta": "1.2.1.8.00.0.0 Contribuições Sociais Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 70544559.54
+   },
+   {
+    "cod": "1.2.1.8.01.0.0",
+    "conta": "Contribuição do Servidor Civil para o Plano de Seguridade Social - CPSSS - Específico de EST/DF/MUN",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 70530274.26
+   },
+   {
+    "cod": "1.2.1.8.01.1.0",
+    "conta": "CPSSS do Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 67578736.2
+   },
+   {
+    "cod": "1.2.1.8.01.2.0",
+    "conta": "CPSSS do Servidor Civil Inativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2618984.88
+   },
+   {
+    "cod": "1.2.1.8.01.3.0",
+    "conta": "CPSSS do Servidor Civil - Pensionistas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 332553.18
+   },
+   {
+    "cod": "1.2.1.8.03.0.0",
+    "conta": "CPSSS Patronal - Servidor Civil - Específico de EST/DF/MUN",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14285.28
+   },
+   {
+    "cod": "1.2.1.8.03.1.0",
+    "conta": "CPSSS Patronal - Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14285.28
+   },
+   {
+    "cod": "1.2.4.0.00.0.0",
+    "conta": "Contribuição para o Custeio do Serviço de Iluminação Pública",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 25566253.88
+   },
+   {
+    "cod": "1.3.0.0.00.0.0",
+    "conta": "Receita Patrimonial",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7761622.63
+   },
+   {
+    "cod": "1.3.1.0.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 727701.26
+   },
+   {
+    "cod": "1.3.1.0.01.0.0",
+    "conta": "Aluguéis, Arrendamentos, Foros, Laudêmios, Tarifas de Ocupação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 398636.99
+   },
+   {
+    "cod": "1.3.1.0.01.1.0",
+    "conta": "Aluguéis e Arrendamentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 398636.99
+   },
+   {
+    "cod": "1.3.1.0.02.0.0",
+    "conta": "Concessão, Permissão, Autorização ou Cessão do Direito de Uso de Bens Imóveis Públicos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 329064.27
+   },
+   {
+    "cod": "1.3.2.0.00.0.0",
+    "conta": "Valores Mobiliários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7033921.37
+   },
+   {
+    "cod": "1.3.2.1.00.0.0",
+    "conta": "Juros e Correções Monetárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7033921.37
+   },
+   {
+    "cod": "1.3.2.1.00.1.0",
+    "conta": "Remuneração de Depósitos Bancários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2162762.44
+   },
+   {
+    "cod": "1.3.2.1.00.2.0",
+    "conta": "Remuneração de Depósitos Especiais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 898880.94
+   },
+   {
+    "cod": "1.3.2.1.00.3.0",
+    "conta": "Remuneração de Saldos de Recursos Não-Desembolsados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11.87
+   },
+   {
+    "cod": "1.3.2.1.00.4.0",
+    "conta": "Remuneração dos Recursos do Regime Próprio de Previdência Social - RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3972266.12
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14787185.8
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2069078.78
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13205484.35
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2069078.78
+   },
+   {
+    "cod": "1.6.1.0.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13205484.35
+   },
+   {
+    "cod": "1.6.1.0.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2069078.78
+   },
+   {
+    "cod": "1.6.2.0.00.0.0",
+    "conta": "Serviços e Atividades Referentes à Navegação e ao Transporte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1246292.67
+   },
+   {
+    "cod": "1.6.2.0.02.0.0",
+    "conta": "Serviços de Transporte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1246292.67
+   },
+   {
+    "cod": "1.6.9.0.00.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 335408.78
+   },
+   {
+    "cod": "1.6.9.0.99.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 335408.78
+   },
    {
     "cod": "1.7.0.0.00.0.0",
     "conta": "Transferências Correntes",
@@ -1064,6 +2498,162 @@
     "valor": 11250.39
    },
    {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 40401178.28
+   },
+   {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 14298.1
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21444994.25
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 12981.44
+   },
+   {
+    "cod": "1.9.1.0.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21434757.85
+   },
+   {
+    "cod": "1.9.1.0.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 12981.44
+   },
+   {
+    "cod": "1.9.1.0.06.0.0",
+    "conta": "Multas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10236.4
+   },
+   {
+    "cod": "1.9.1.0.06.1.0",
+    "conta": "Multas Administrativas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10236.4
+   },
+   {
+    "cod": "1.9.2.0.00.0.0",
+    "conta": "Indenizações, Restituições e Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3593993.08
+   },
+   {
+    "cod": "1.9.2.2.00.0.0",
+    "conta": "Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2669690.22
+   },
+   {
+    "cod": "1.9.2.2.01.0.0",
+    "conta": "Restituição de Convênios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2393991.36
+   },
+   {
+    "cod": "1.9.2.2.02.0.0",
+    "conta": "Restituição de Benefícios Não Desembolsados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1
+   },
+   {
+    "cod": "1.9.2.2.03.0.0",
+    "conta": "Restituição de Benefícios Previdenciários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5914.81
+   },
+   {
+    "cod": "1.9.2.2.06.0.0",
+    "conta": "Restituição de Despesas de Exercícios Anteriores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 255683.05
+   },
+   {
+    "cod": "1.9.2.2.99.0.0",
+    "conta": "Outras Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14100
+   },
+   {
+    "cod": "1.9.2.8.00.0.0",
+    "conta": "Indenizações, Restituições e Ressarcimentos - Específicas para Estados/DF/Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 924302.86
+   },
+   {
+    "cod": "1.9.2.8.01.0.0",
+    "conta": "Indenizações- Específicas para Estados/DF/Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 924302.86
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15362190.95
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1316.66
+   },
+   {
+    "cod": "1.9.9.0.03.0.0",
+    "conta": "Compensações Financeiras entre o Regime Geral e os Regimes Próprios de Previdência dos Servidores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5885134.86
+   },
+   {
+    "cod": "1.9.9.0.12.0.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 500784.42
+   },
+   {
+    "cod": "1.9.9.0.12.1.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 500784.42
+   },
+   {
+    "cod": "1.9.9.0.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8976271.67
+   },
+   {
+    "cod": "1.9.9.0.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1316.66
+   },
+   {
+    "cod": "1.9.9.0.99.1.0",
+    "conta": "Outras Receitas - Primárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8976271.67
+   },
+   {
+    "cod": "1.9.9.0.99.1.0",
+    "conta": "Outras Receitas - Primárias",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1316.66
+   },
+   {
     "cod": "2.4.0.0.00.0.0",
     "conta": "Transferências de Capital",
     "coluna": "Receitas Brutas Realizadas",
@@ -1137,6 +2727,390 @@
    }
   ],
   "2021": [
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3441595583.39
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 153447445.95
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2031273.03
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1812439466.54
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 165277.15
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1730464018.02
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 157793.42
+   },
+   {
+    "cod": "1.1.1.3.00.0.0",
+    "conta": "Impostos sobre a Renda e Proventos de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 86198750.63
+   },
+   {
+    "cod": "1.1.1.3.03.0.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 86198750.63
+   },
+   {
+    "cod": "1.1.1.3.03.1.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Trabalho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 61058178.86
+   },
+   {
+    "cod": "1.1.1.3.03.4.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Outros Rendimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 25140571.77
+   },
+   {
+    "cod": "1.1.1.8.00.0.0",
+    "conta": "Impostos Específicos de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1644265267.39
+   },
+   {
+    "cod": "1.1.1.8.00.0.0",
+    "conta": "Impostos Específicos de Estados, DF e Municípios",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 157793.42
+   },
+   {
+    "cod": "1.1.1.8.01.0.0",
+    "conta": "Impostos sobre o Patrimônio para Estados/DF/Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 461119513.03
+   },
+   {
+    "cod": "1.1.1.8.01.0.0",
+    "conta": "Impostos sobre o Patrimônio para Estados/DF/Municípios",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 157793.42
+   },
+   {
+    "cod": "1.1.1.8.01.1.0",
+    "conta": "Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 386041534.25
+   },
+   {
+    "cod": "1.1.1.8.01.1.0",
+    "conta": "Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 80888.91
+   },
+   {
+    "cod": "1.1.1.8.01.4.0",
+    "conta": "Imposto sobre Transmissão ¿Inter Vivos¿ de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 75077978.78
+   },
+   {
+    "cod": "1.1.1.8.01.4.0",
+    "conta": "Imposto sobre Transmissão ¿Inter Vivos¿ de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 76904.51
+   },
+   {
+    "cod": "1.1.1.8.02.0.0",
+    "conta": "Impostos sobre a Produção, Circulação de Mercadorias e Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1183145754.36
+   },
+   {
+    "cod": "1.1.1.8.02.3.0",
+    "conta": "Imposto sobre Serviços de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1183145754.36
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 81975448.52
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 7483.73
+   },
+   {
+    "cod": "1.1.2.8.00.0.0",
+    "conta": "Taxas - Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 81975448.52
+   },
+   {
+    "cod": "1.1.2.8.00.0.0",
+    "conta": "Taxas - Específicas de Estados, DF e Municípios",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 7483.73
+   },
+   {
+    "cod": "1.1.2.8.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 18516610.64
+   },
+   {
+    "cod": "1.1.2.8.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 670.88
+   },
+   {
+    "cod": "1.1.2.8.01.1.0",
+    "conta": "Taxa de Fiscalização de Vigilância Sanitária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 33623.41
+   },
+   {
+    "cod": "1.1.2.8.01.9.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização - Outras",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 18482987.23
+   },
+   {
+    "cod": "1.1.2.8.01.9.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização - Outras",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 670.88
+   },
+   {
+    "cod": "1.1.2.8.02.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 63458837.88
+   },
+   {
+    "cod": "1.1.2.8.02.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 6812.85
+   },
+   {
+    "cod": "1.1.2.8.02.9.0",
+    "conta": "Taxas pela Prestação de Serviços - Outras",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 63458837.88
+   },
+   {
+    "cod": "1.1.2.8.02.9.0",
+    "conta": "Taxas pela Prestação de Serviços - Outras",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 6812.85
+   },
+   {
+    "cod": "1.2.0.0.00.0.0",
+    "conta": "Contribuições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 109124189.44
+   },
+   {
+    "cod": "1.2.1.0.00.0.0",
+    "conta": "Contribuições Sociais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 81018375.73
+   },
+   {
+    "cod": "1.2.1.8.00.0.0",
+    "conta": "Contribuições Sociais Específicas de Estados, DF e Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 81018375.73
+   },
+   {
+    "cod": "1.2.1.8.01.0.0",
+    "conta": "Contribuição do Servidor Civil para o Plano de Seguridade Social - CPSSS - Específico de EST/DF/MUN",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 81004509.79
+   },
+   {
+    "cod": "1.2.1.8.01.1.0",
+    "conta": "CPSSS do Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 77038816.88
+   },
+   {
+    "cod": "1.2.1.8.01.2.0",
+    "conta": "CPSSS do Servidor Civil Inativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3487580.43
+   },
+   {
+    "cod": "1.2.1.8.01.3.0",
+    "conta": "CPSSS do Servidor Civil - Pensionistas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 478112.48
+   },
+   {
+    "cod": "1.2.1.8.03.0.0",
+    "conta": "CPSSS Patronal - Servidor Civil - Específico de EST/DF/MUN",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13865.94
+   },
+   {
+    "cod": "1.2.1.8.03.1.0",
+    "conta": "CPSSS Patronal - Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13865.94
+   },
+   {
+    "cod": "1.2.4.0.00.0.0",
+    "conta": "Contribuição para o Custeio do Serviço de Iluminação Pública",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 28105813.71
+   },
+   {
+    "cod": "1.3.0.0.00.0.0",
+    "conta": "Receita Patrimonial",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 25744216.69
+   },
+   {
+    "cod": "1.3.1.0.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 558145.36
+   },
+   {
+    "cod": "1.3.1.0.01.0.0",
+    "conta": "Aluguéis, Arrendamentos, Foros, Laudêmios, Tarifas de Ocupação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 329575.25
+   },
+   {
+    "cod": "1.3.1.0.01.1.0",
+    "conta": "Aluguéis e Arrendamentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 329575.25
+   },
+   {
+    "cod": "1.3.1.0.02.0.0",
+    "conta": "Concessão, Permissão, Autorização ou Cessão do Direito de Uso de Bens Imóveis Públicos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 228570.11
+   },
+   {
+    "cod": "1.3.2.0.00.0.0",
+    "conta": "Valores Mobiliários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 25186071.33
+   },
+   {
+    "cod": "1.3.2.1.00.0.0",
+    "conta": "Juros e Correções Monetárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 25186071.33
+   },
+   {
+    "cod": "1.3.2.1.00.1.0",
+    "conta": "Remuneração de Depósitos Bancários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 16575656.98
+   },
+   {
+    "cod": "1.3.2.1.00.2.0",
+    "conta": "Remuneração de Depósitos Especiais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2205066.09
+   },
+   {
+    "cod": "1.3.2.1.00.3.0",
+    "conta": "Remuneração de Saldos de Recursos Não-Desembolsados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 37.92
+   },
+   {
+    "cod": "1.3.2.1.00.4.0",
+    "conta": "Remuneração dos Recursos do Regime Próprio de Previdência Social - RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6405310.34
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15056899.18
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1854701.05
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14710332.62
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1854701.05
+   },
+   {
+    "cod": "1.6.1.0.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14696767.16
+   },
+   {
+    "cod": "1.6.1.0.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1854701.05
+   },
+   {
+    "cod": "1.6.1.0.02.0.0",
+    "conta": "Inscrição em Concursos e Processos Seletivos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13565.46
+   },
+   {
+    "cod": "1.6.9.0.00.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 346566.56
+   },
+   {
+    "cod": "1.6.9.0.99.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 346566.56
+   },
    {
     "cod": "1.7.0.0.00.0.0",
     "conta": "Transferências Correntes",
@@ -1474,6 +3448,150 @@
     "valor": 398531252.42
    },
    {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 70245007.31
+   },
+   {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 11294.83
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 26541750.01
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 11294.83
+   },
+   {
+    "cod": "1.9.1.0.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 26528488.12
+   },
+   {
+    "cod": "1.9.1.0.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 11294.83
+   },
+   {
+    "cod": "1.9.1.0.06.0.0",
+    "conta": "Multas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13261.89
+   },
+   {
+    "cod": "1.9.1.0.06.1.0",
+    "conta": "Multas Administrativas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13261.89
+   },
+   {
+    "cod": "1.9.2.0.00.0.0",
+    "conta": "Indenizações, Restituições e Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10633058.83
+   },
+   {
+    "cod": "1.9.2.1.00.0.0",
+    "conta": "Indenizações",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 149400
+   },
+   {
+    "cod": "1.9.2.1.03.0.0",
+    "conta": "Indenização por Sinistro",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 149400
+   },
+   {
+    "cod": "1.9.2.2.00.0.0",
+    "conta": "Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10478761.6
+   },
+   {
+    "cod": "1.9.2.2.01.0.0",
+    "conta": "Restituição de Convênios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 423203.45
+   },
+   {
+    "cod": "1.9.2.2.03.0.0",
+    "conta": "Restituição de Benefícios Previdenciários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 104679.93
+   },
+   {
+    "cod": "1.9.2.2.06.0.0",
+    "conta": "Restituição de Despesas de Exercícios Anteriores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 9929813.39
+   },
+   {
+    "cod": "1.9.2.2.99.0.0",
+    "conta": "Outras Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21064.83
+   },
+   {
+    "cod": "1.9.2.8.00.0.0",
+    "conta": "Indenizações, Restituições e Ressarcimentos - Específicas para Estados/DF/Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4897.23
+   },
+   {
+    "cod": "1.9.2.8.01.0.0",
+    "conta": "Indenizações- Específicas para Estados/DF/Municípios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4897.23
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 33070198.47
+   },
+   {
+    "cod": "1.9.9.0.03.0.0",
+    "conta": "Compensações Financeiras entre o Regime Geral e os Regimes Próprios de Previdência dos Servidores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17216485.83
+   },
+   {
+    "cod": "1.9.9.0.12.0.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 892498.75
+   },
+   {
+    "cod": "1.9.9.0.12.2.0",
+    "conta": "Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 892498.75
+   },
+   {
+    "cod": "1.9.9.0.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14961213.89
+   },
+   {
+    "cod": "1.9.9.0.99.1.0",
+    "conta": "Outras Receitas - Primárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14961213.89
+   },
+   {
     "cod": "2.4.0.0.00.0.0",
     "conta": "Transferências de Capital",
     "coluna": "Receitas Brutas Realizadas",
@@ -1523,6 +3641,450 @@
    }
   ],
   "2022": [
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4228661299.53
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 170946074.25
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1722490.21
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2334011083.76
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 277955.45
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2234260737.65
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 269474.63
+   },
+   {
+    "cod": "1.1.1.2.00.0.0",
+    "conta": "Impostos sobre o Patrimônio",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 501856289.92
+   },
+   {
+    "cod": "1.1.1.2.00.0.0",
+    "conta": "Impostos sobre o Patrimônio",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 214448.47
+   },
+   {
+    "cod": "1.1.1.2.50.0.0",
+    "conta": "Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 432685568.68
+   },
+   {
+    "cod": "1.1.1.2.50.0.0",
+    "conta": "Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 51571.4
+   },
+   {
+    "cod": "1.1.1.2.53.0.0",
+    "conta": "Impostos sobre Transmissão \"Inter Vivos\" de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 69170721.24
+   },
+   {
+    "cod": "1.1.1.2.53.0.0",
+    "conta": "Impostos sobre Transmissão \"Inter Vivos\" de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 162877.07
+   },
+   {
+    "cod": "1.1.1.3.00.0.0",
+    "conta": "Impostos sobre a Renda e Proventos de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 139077278.83
+   },
+   {
+    "cod": "1.1.1.3.03.0.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 139077278.83
+   },
+   {
+    "cod": "1.1.1.3.03.1.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Trabalho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 104533401.13
+   },
+   {
+    "cod": "1.1.1.3.03.4.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Outros Rendimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 34543877.7
+   },
+   {
+    "cod": "1.1.1.4.00.0.0",
+    "conta": "Impostos sobre a Produção e Circulação de Mercadorias e Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1593327168.9
+   },
+   {
+    "cod": "1.1.1.4.00.0.0",
+    "conta": "Impostos sobre a Produção e Circulação de Mercadorias e Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 55026.16
+   },
+   {
+    "cod": "1.1.1.4.51.0.0",
+    "conta": "Impostos sobre Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1593327168.9
+   },
+   {
+    "cod": "1.1.1.4.51.0.0",
+    "conta": "Impostos sobre Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 55026.16
+   },
+   {
+    "cod": "1.1.1.4.51.1.0",
+    "conta": "Imposto sobre Serviços de Qualquer Natureza - ISSQN",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1593327168.9
+   },
+   {
+    "cod": "1.1.1.4.51.1.0",
+    "conta": "Imposto sobre Serviços de Qualquer Natureza - ISSQN",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 55026.16
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 99750346.11
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 8480.82
+   },
+   {
+    "cod": "1.1.2.1.00.0.0",
+    "conta": "Taxas pelo Exercício do Poder de Polícia",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 26832441.98
+   },
+   {
+    "cod": "1.1.2.1.00.0.0",
+    "conta": "Taxas pelo Exercício do Poder de Polícia",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 4415.99
+   },
+   {
+    "cod": "1.1.2.1.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 26788644.16
+   },
+   {
+    "cod": "1.1.2.1.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 4415.99
+   },
+   {
+    "cod": "1.1.2.1.50.0.0",
+    "conta": "Taxa de Fiscalização de Vigilância Sanitária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 43797.82
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 72917904.13
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 4064.83
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 72506898.74
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 4064.83
+   },
+   {
+    "cod": "1.1.2.2.02.0.0",
+    "conta": "Emolumentos e Custas Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 411005.39
+   },
+   {
+    "cod": "1.2.0.0.00.0.0",
+    "conta": "Contribuições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 137860606.56
+   },
+   {
+    "cod": "1.2.1.0.00.0.0",
+    "conta": "Contribuições Sociais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 107095442.91
+   },
+   {
+    "cod": "1.2.1.5.00.0.0",
+    "conta": "Contribuições para Regimes Próprios de Previdência e Sistema de Proteção Social",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 107095442.91
+   },
+   {
+    "cod": "1.2.1.5.01.0.0",
+    "conta": "Contribuição do Servidor Civil",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 107079361.21
+   },
+   {
+    "cod": "1.2.1.5.01.1.0",
+    "conta": "Contribuição do Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 101976293.58
+   },
+   {
+    "cod": "1.2.1.5.01.2.0",
+    "conta": "Contribuição do Servidor Civil Inativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4576821.48
+   },
+   {
+    "cod": "1.2.1.5.01.3.0",
+    "conta": "Contribuição do Servidor Civil - Pensionistas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 515994.56
+   },
+   {
+    "cod": "1.2.1.5.01.4.0",
+    "conta": "Contribuição Oriunda de Sentenças Judiciais - Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10251.59
+   },
+   {
+    "cod": "1.2.1.5.02.0.0",
+    "conta": "Contribuição Patronal - Servidor Civil",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 16081.7
+   },
+   {
+    "cod": "1.2.1.5.02.1.0",
+    "conta": "Contribuição Patronal - Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 16081.7
+   },
+   {
+    "cod": "1.2.4.0.00.0.0",
+    "conta": "Contribuição para o Custeio do Serviço de Iluminação Pública",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 30765163.65
+   },
+   {
+    "cod": "1.3.0.0.00.0.0",
+    "conta": "Receita Patrimonial",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 117453845.15
+   },
+   {
+    "cod": "1.3.1.0.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 237773.08
+   },
+   {
+    "cod": "1.3.1.1.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 237773.08
+   },
+   {
+    "cod": "1.3.1.1.01.0.0",
+    "conta": "Aluguéis, Arrendamentos, Foros, Laudêmios, Tarifas de Ocupação",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23782.3
+   },
+   {
+    "cod": "1.3.1.1.01.1.0",
+    "conta": "Aluguéis e Arrendamentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23782.3
+   },
+   {
+    "cod": "1.3.1.1.02.0.0",
+    "conta": "Concessão, Permissão, Autorização ou Cessão do Direito de Uso de Bens Imóveis Públicos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 213990.78
+   },
+   {
+    "cod": "1.3.2.0.00.0.0",
+    "conta": "Valores Mobiliários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 108917351.49
+   },
+   {
+    "cod": "1.3.2.1.00.0.0",
+    "conta": "Juros e Correções Monetárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 108917351.49
+   },
+   {
+    "cod": "1.3.2.1.01.0.0",
+    "conta": "Remuneração de Depósitos Bancários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 76424102.14
+   },
+   {
+    "cod": "1.3.2.1.02.0.0",
+    "conta": "Remuneração de Depósitos Especiais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8959867.48
+   },
+   {
+    "cod": "1.3.2.1.03.0.0",
+    "conta": "Remuneração de Saldos de Recursos Não-Desembolsados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 70.1
+   },
+   {
+    "cod": "1.3.2.1.04.0.0",
+    "conta": "Remuneração dos Recursos do Regime Próprio de Previdência Social - RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23533311.77
+   },
+   {
+    "cod": "1.3.6.0.00.0.0",
+    "conta": "Cessão de Direitos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8298720.58
+   },
+   {
+    "cod": "1.3.6.1.00.0.0",
+    "conta": "Cessão de Direitos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8298720.58
+   },
+   {
+    "cod": "1.3.6.1.01.0.0",
+    "conta": "Cessão do Direito de Operacionalização de Pagamentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8298720.58
+   },
+   {
+    "cod": "1.3.6.1.01.1.0",
+    "conta": "Cessão do Direito de Operacionalização de Pagamentos - Poderes Executivo e Legislativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8298720.58
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15469148.01
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1440525.69
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15078074.66
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1440525.69
+   },
+   {
+    "cod": "1.6.1.1.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15078074.66
+   },
+   {
+    "cod": "1.6.1.1.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1440525.69
+   },
+   {
+    "cod": "1.6.1.1.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15078074.66
+   },
+   {
+    "cod": "1.6.1.1.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1440525.69
+   },
+   {
+    "cod": "1.6.2.0.00.0.0",
+    "conta": "Serviços e Atividades Referentes à Navegação e ao Transporte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 150.52
+   },
+   {
+    "cod": "1.6.2.1.00.0.0",
+    "conta": "Serviços e Atividades Referentes à Navegação e ao Transporte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 150.52
+   },
+   {
+    "cod": "1.6.2.1.02.0.0",
+    "conta": "Serviços de Transporte de Passageiros ou Mercadorias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 150.52
+   },
+   {
+    "cod": "1.6.9.0.00.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 390922.83
+   },
    {
     "cod": "1.7.0.0.00.0.0",
     "conta": "Transferências Correntes",
@@ -1854,6 +4416,180 @@
     "valor": 451725600.32
    },
    {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 49824856.25
+   },
+   {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 4009.07
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 27079406.75
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 3191.45
+   },
+   {
+    "cod": "1.9.1.1.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 27079406.75
+   },
+   {
+    "cod": "1.9.1.1.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 3191.45
+   },
+   {
+    "cod": "1.9.1.1.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5349844.1
+   },
+   {
+    "cod": "1.9.1.1.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 268.58
+   },
+   {
+    "cod": "1.9.1.1.06.0.0",
+    "conta": "Multas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 29668.48
+   },
+   {
+    "cod": "1.9.1.1.06.1.0",
+    "conta": "Multas Administrativas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 29668.48
+   },
+   {
+    "cod": "1.9.1.1.14.0.0",
+    "conta": "Multas Previstas no Código de Trânsito Brasileiro - CTB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21699894.17
+   },
+   {
+    "cod": "1.9.1.1.14.0.0",
+    "conta": "Multas Previstas no Código de Trânsito Brasileiro - CTB",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2922.87
+   },
+   {
+    "cod": "1.9.2.0.00.0.0",
+    "conta": "Indenizações, Restituições e Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4917043.18
+   },
+   {
+    "cod": "1.9.2.2.00.0.0",
+    "conta": "Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4917043.18
+   },
+   {
+    "cod": "1.9.2.2.01.0.0",
+    "conta": "Restituição de Convênios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3203560.54
+   },
+   {
+    "cod": "1.9.2.2.03.0.0",
+    "conta": "Restituição de Benefícios Previdenciários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5415.9
+   },
+   {
+    "cod": "1.9.2.2.06.0.0",
+    "conta": "Restituição de Despesas de Exercícios Anteriores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1703686.77
+   },
+   {
+    "cod": "1.9.2.2.99.0.0",
+    "conta": "Outras Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4379.97
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17828406.32
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 817.62
+   },
+   {
+    "cod": "1.9.9.9.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17828406.32
+   },
+   {
+    "cod": "1.9.9.9.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 817.62
+   },
+   {
+    "cod": "1.9.9.9.03.0.0",
+    "conta": "Compensações Financeiras entre o Regime Geral e os Regimes Próprios de Previdência e Sistema de Proteção Social",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3542881.99
+   },
+   {
+    "cod": "1.9.9.9.12.0.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 836877.98
+   },
+   {
+    "cod": "1.9.9.9.12.2.0",
+    "conta": "Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 836877.98
+   },
+   {
+    "cod": "1.9.9.9.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13448646.35
+   },
+   {
+    "cod": "1.9.9.9.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 817.62
+   },
+   {
+    "cod": "1.9.9.9.99.2.0",
+    "conta": "Outras Receitas Não Arrecadadas e Não Projetadas pela RFB - Primárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13448646.35
+   },
+   {
+    "cod": "1.9.9.9.99.2.0",
+    "conta": "Outras Receitas Não Arrecadadas e Não Projetadas pela RFB - Primárias",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 817.62
+   },
+   {
     "cod": "2.4.0.0.00.0.0",
     "conta": "Transferências de Capital",
     "coluna": "Receitas Brutas Realizadas",
@@ -1903,6 +4639,426 @@
    }
   ],
   "2023": [
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 4452903498.69
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 171839975.02
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1718127.1
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2475210700.05
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 333275.02
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2369495373.37
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 286379.08
+   },
+   {
+    "cod": "1.1.1.2.00.0.0",
+    "conta": "Impostos sobre o Patrimônio",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 552733515.74
+   },
+   {
+    "cod": "1.1.1.2.00.0.0",
+    "conta": "Impostos sobre o Patrimônio",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 195961.7
+   },
+   {
+    "cod": "1.1.1.2.50.0.0",
+    "conta": "Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 461564799.85
+   },
+   {
+    "cod": "1.1.1.2.50.0.0",
+    "conta": "Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 157218.57
+   },
+   {
+    "cod": "1.1.1.2.53.0.0",
+    "conta": "Impostos sobre Transmissão \"Inter Vivos\" de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 91168715.89
+   },
+   {
+    "cod": "1.1.1.2.53.0.0",
+    "conta": "Impostos sobre Transmissão \"Inter Vivos\" de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 38743.13
+   },
+   {
+    "cod": "1.1.1.3.00.0.0",
+    "conta": "Impostos sobre a Renda e Proventos de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 205421217.17
+   },
+   {
+    "cod": "1.1.1.3.03.0.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 205421217.17
+   },
+   {
+    "cod": "1.1.1.3.03.1.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Trabalho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 138367234.42
+   },
+   {
+    "cod": "1.1.1.3.03.4.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Outros Rendimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 67053982.75
+   },
+   {
+    "cod": "1.1.1.4.00.0.0",
+    "conta": "Impostos sobre a Produção e Circulação de Mercadorias e Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1611340640.46
+   },
+   {
+    "cod": "1.1.1.4.00.0.0",
+    "conta": "Impostos sobre a Produção e Circulação de Mercadorias e Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 90417.38
+   },
+   {
+    "cod": "1.1.1.4.51.0.0",
+    "conta": "Impostos sobre Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1611340640.46
+   },
+   {
+    "cod": "1.1.1.4.51.0.0",
+    "conta": "Impostos sobre Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 90417.38
+   },
+   {
+    "cod": "1.1.1.4.51.1.0",
+    "conta": "Imposto sobre Serviços de Qualquer Natureza - ISSQN",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1611340640.46
+   },
+   {
+    "cod": "1.1.1.4.51.1.0",
+    "conta": "Imposto sobre Serviços de Qualquer Natureza - ISSQN",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 90417.38
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 105715326.68
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 46895.94
+   },
+   {
+    "cod": "1.1.2.1.00.0.0",
+    "conta": "Taxas pelo Exercício do Poder de Polícia",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 26831231.2
+   },
+   {
+    "cod": "1.1.2.1.00.0.0",
+    "conta": "Taxas pelo Exercício do Poder de Polícia",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 5318.73
+   },
+   {
+    "cod": "1.1.2.1.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 26681985.61
+   },
+   {
+    "cod": "1.1.2.1.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 5318.73
+   },
+   {
+    "cod": "1.1.2.1.50.0.0",
+    "conta": "Taxa de Fiscalização de Vigilância Sanitária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 149245.59
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 78884095.48
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 41577.21
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços em Geral",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 78884095.48
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços em Geral",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 41577.21
+   },
+   {
+    "cod": "1.2.0.0.00.0.0",
+    "conta": "Contribuições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 163922454.26
+   },
+   {
+    "cod": "1.2.1.0.00.0.0",
+    "conta": "Contribuições Sociais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 129892690.33
+   },
+   {
+    "cod": "1.2.1.5.00.0.0",
+    "conta": "Contribuições para Regimes Próprios de Previdência e Sistema de Proteção Social",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 129892690.33
+   },
+   {
+    "cod": "1.2.1.5.01.0.0",
+    "conta": "Contribuição do Servidor Civil",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 129879260.29
+   },
+   {
+    "cod": "1.2.1.5.01.1.0",
+    "conta": "Contribuição do Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 122395008.52
+   },
+   {
+    "cod": "1.2.1.5.01.2.0",
+    "conta": "Contribuição do Servidor Civil Inativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6824702.12
+   },
+   {
+    "cod": "1.2.1.5.01.3.0",
+    "conta": "Contribuição do Servidor Civil - Pensionistas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 639085.33
+   },
+   {
+    "cod": "1.2.1.5.01.4.0",
+    "conta": "Contribuição Oriunda de Sentenças Judiciais - Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 20464.32
+   },
+   {
+    "cod": "1.2.1.5.02.0.0",
+    "conta": "Contribuição Patronal - Servidor Civil",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13430.04
+   },
+   {
+    "cod": "1.2.1.5.02.1.0",
+    "conta": "Contribuição Patronal - Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13430.04
+   },
+   {
+    "cod": "1.2.4.0.00.0.0",
+    "conta": "Contribuição para o Custeio do Serviço de Iluminação Pública",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 34029763.93
+   },
+   {
+    "cod": "1.3.0.0.00.0.0",
+    "conta": "Receita Patrimonial",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 140296264.14
+   },
+   {
+    "cod": "1.3.1.0.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 230470.2
+   },
+   {
+    "cod": "1.3.1.1.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 230470.2
+   },
+   {
+    "cod": "1.3.1.1.02.0.0",
+    "conta": "Concessão, Permissão, Autorização ou Cessão do Direito de Uso de Bens Imóveis Públicos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 148817.38
+   },
+   {
+    "cod": "1.3.1.1.99.0.0",
+    "conta": "Outras Receitas Imobiliárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 81652.82
+   },
+   {
+    "cod": "1.3.2.0.00.0.0",
+    "conta": "Valores Mobiliários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 131415877.47
+   },
+   {
+    "cod": "1.3.2.1.00.0.0",
+    "conta": "Juros e Correções Monetárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 131415877.47
+   },
+   {
+    "cod": "1.3.2.1.01.0.0",
+    "conta": "Remuneração de Depósitos Bancários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 67395233.59
+   },
+   {
+    "cod": "1.3.2.1.02.0.0",
+    "conta": "Remuneração de Depósitos Especiais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10019217.28
+   },
+   {
+    "cod": "1.3.2.1.03.0.0",
+    "conta": "Remuneração de Saldos de Recursos Não-Desembolsados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 74.48
+   },
+   {
+    "cod": "1.3.2.1.04.0.0",
+    "conta": "Remuneração dos Recursos do Regime Próprio de Previdência Social - RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 54001352.12
+   },
+   {
+    "cod": "1.3.6.0.00.0.0",
+    "conta": "Cessão de Direitos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8612211.36
+   },
+   {
+    "cod": "1.3.6.1.00.0.0",
+    "conta": "Cessão de Direitos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8612211.36
+   },
+   {
+    "cod": "1.3.6.1.01.0.0",
+    "conta": "Cessão do Direito de Operacionalização de Pagamentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8612211.36
+   },
+   {
+    "cod": "1.3.6.1.01.1.0",
+    "conta": "Cessão do Direito de Operacionalização de Pagamentos - Poderes Executivo e Legislativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8612211.36
+   },
+   {
+    "cod": "1.3.9.0.00.0.0",
+    "conta": "Demais Receitas Patrimoniais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 37705.11
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13969575.09
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1297061.12
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13285596.33
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1297061.12
+   },
+   {
+    "cod": "1.6.1.1.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13285596.33
+   },
+   {
+    "cod": "1.6.1.1.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1297061.12
+   },
+   {
+    "cod": "1.6.1.1.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais Prestados por Entidades e Órgãos Públicos em Geral",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13285596.33
+   },
+   {
+    "cod": "1.6.1.1.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais Prestados por Entidades e Órgãos Públicos em Geral",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1297061.12
+   },
+   {
+    "cod": "1.6.9.0.00.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 683978.76
+   },
    {
     "cod": "1.7.0.0.00.0.0",
     "conta": "Transferências Correntes",
@@ -2294,6 +5450,222 @@
     "valor": 84.3
    },
    {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 97460637.58
+   },
+   {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 8350.93
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 27667120.62
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 8176.39
+   },
+   {
+    "cod": "1.9.1.1.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 27667120.62
+   },
+   {
+    "cod": "1.9.1.1.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 8176.39
+   },
+   {
+    "cod": "1.9.1.1.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5906544.63
+   },
+   {
+    "cod": "1.9.1.1.06.0.0",
+    "conta": "Multas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 24008.91
+   },
+   {
+    "cod": "1.9.1.1.06.1.0",
+    "conta": "Multas Administrativas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 24008.91
+   },
+   {
+    "cod": "1.9.1.1.14.0.0",
+    "conta": "Multas Previstas no Código de Trânsito Brasileiro - CTB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21736567.08
+   },
+   {
+    "cod": "1.9.1.1.14.0.0",
+    "conta": "Multas Previstas no Código de Trânsito Brasileiro - CTB",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 8176.39
+   },
+   {
+    "cod": "1.9.2.0.00.0.0",
+    "conta": "Indenizações, Restituições e Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 18837688.81
+   },
+   {
+    "cod": "1.9.2.1.00.0.0",
+    "conta": "Indenizações",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14195928.44
+   },
+   {
+    "cod": "1.9.2.1.01.0.0",
+    "conta": "Indenizações por Danos Causados ao Patrimônio Público",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8365.98
+   },
+   {
+    "cod": "1.9.2.1.99.0.0",
+    "conta": "Outras Indenizações",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 14187562.46
+   },
+   {
+    "cod": "1.9.2.2.00.0.0",
+    "conta": "Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1491922.88
+   },
+   {
+    "cod": "1.9.2.2.01.0.0",
+    "conta": "Restituição de Convênios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1145409.57
+   },
+   {
+    "cod": "1.9.2.2.01.1.0",
+    "conta": "Restituição de Convênios - Primárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1145409.57
+   },
+   {
+    "cod": "1.9.2.2.03.0.0",
+    "conta": "Restituição de Benefícios Previdenciários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 307873.9
+   },
+   {
+    "cod": "1.9.2.2.06.0.0",
+    "conta": "Restituição de Despesas de Exercícios Anteriores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1525.41
+   },
+   {
+    "cod": "1.9.2.2.06.3.0",
+    "conta": "Restituição de Despesas Primárias de Exercícios Anteriores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1525.41
+   },
+   {
+    "cod": "1.9.2.2.14.0.0",
+    "conta": "Restituição de Recursos Transferidos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 15387.24
+   },
+   {
+    "cod": "1.9.2.2.99.0.0",
+    "conta": "Outras Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 21726.76
+   },
+   {
+    "cod": "1.9.2.3.00.0.0",
+    "conta": "Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3149837.49
+   },
+   {
+    "cod": "1.9.2.3.99.0.0",
+    "conta": "Outros Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3149837.49
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 50955828.15
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 174.54
+   },
+   {
+    "cod": "1.9.9.9.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 50955828.15
+   },
+   {
+    "cod": "1.9.9.9.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 174.54
+   },
+   {
+    "cod": "1.9.9.9.03.0.0",
+    "conta": "Compensações Financeiras entre os Regimes de Previdência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 37548648.76
+   },
+   {
+    "cod": "1.9.9.9.12.0.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 909144
+   },
+   {
+    "cod": "1.9.9.9.12.0.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 174.54
+   },
+   {
+    "cod": "1.9.9.9.12.2.0",
+    "conta": "Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 909144
+   },
+   {
+    "cod": "1.9.9.9.12.2.0",
+    "conta": "Ônus de Sucumbência",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 174.54
+   },
+   {
+    "cod": "1.9.9.9.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 12498035.39
+   },
+   {
+    "cod": "1.9.9.9.99.2.0",
+    "conta": "Outras Receitas Não Arrecadadas e Não Projetadas pela RFB - Primárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 12498035.39
+   },
+   {
     "cod": "2.4.0.0.00.0.0",
     "conta": "Transferências de Capital",
     "coluna": "Receitas Brutas Realizadas",
@@ -2439,6 +5811,456 @@
    }
   ],
   "2024": [
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5068853881.17
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 185608845.47
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1716428.5
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2773586201.82
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 160944.56
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2661731461.79
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 150302.15
+   },
+   {
+    "cod": "1.1.1.2.00.0.0",
+    "conta": "Impostos sobre o Patrimônio",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 578930494.05
+   },
+   {
+    "cod": "1.1.1.2.00.0.0",
+    "conta": "Impostos sobre o Patrimônio",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 82136.78
+   },
+   {
+    "cod": "1.1.1.2.50.0.0",
+    "conta": "Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 485781525.11
+   },
+   {
+    "cod": "1.1.1.2.50.0.0",
+    "conta": "Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 15181.69
+   },
+   {
+    "cod": "1.1.1.2.53.0.0",
+    "conta": "Impostos sobre Transmissão \"Inter Vivos\" de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 93148968.94
+   },
+   {
+    "cod": "1.1.1.2.53.0.0",
+    "conta": "Impostos sobre Transmissão \"Inter Vivos\" de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 66955.09
+   },
+   {
+    "cod": "1.1.1.3.00.0.0",
+    "conta": "Impostos sobre a Renda e Proventos de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 254068829.44
+   },
+   {
+    "cod": "1.1.1.3.00.0.0",
+    "conta": "Impostos sobre a Renda e Proventos de Qualquer Natureza",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 64620.34
+   },
+   {
+    "cod": "1.1.1.3.03.0.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 254068829.44
+   },
+   {
+    "cod": "1.1.1.3.03.0.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 64620.34
+   },
+   {
+    "cod": "1.1.1.3.03.1.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Trabalho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 167595084.43
+   },
+   {
+    "cod": "1.1.1.3.03.4.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Outros Rendimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 86473745.01
+   },
+   {
+    "cod": "1.1.1.3.03.4.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Outros Rendimentos",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 64620.34
+   },
+   {
+    "cod": "1.1.1.4.00.0.0",
+    "conta": "Impostos sobre a Produção e Circulação de Mercadorias e Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1828732138.3
+   },
+   {
+    "cod": "1.1.1.4.00.0.0",
+    "conta": "Impostos sobre a Produção e Circulação de Mercadorias e Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 3545.03
+   },
+   {
+    "cod": "1.1.1.4.51.0.0",
+    "conta": "Impostos sobre Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1828732138.3
+   },
+   {
+    "cod": "1.1.1.4.51.0.0",
+    "conta": "Impostos sobre Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 3545.03
+   },
+   {
+    "cod": "1.1.1.4.51.1.0",
+    "conta": "Imposto sobre Serviços de Qualquer Natureza - ISSQN",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1828732138.3
+   },
+   {
+    "cod": "1.1.1.4.51.1.0",
+    "conta": "Imposto sobre Serviços de Qualquer Natureza - ISSQN",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 3545.03
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 111854740.03
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 10642.41
+   },
+   {
+    "cod": "1.1.2.1.00.0.0",
+    "conta": "Taxas pelo Exercício do Poder de Polícia",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 29481650.75
+   },
+   {
+    "cod": "1.1.2.1.00.0.0",
+    "conta": "Taxas pelo Exercício do Poder de Polícia",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 347.66
+   },
+   {
+    "cod": "1.1.2.1.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 29333329.91
+   },
+   {
+    "cod": "1.1.2.1.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 347.66
+   },
+   {
+    "cod": "1.1.2.1.50.0.0",
+    "conta": "Taxa de Fiscalização de Vigilância Sanitária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 148320.84
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 82373089.28
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 10294.75
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços em Geral",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2105046.75
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços em Geral",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 10148.37
+   },
+   {
+    "cod": "1.1.2.2.53.0.0",
+    "conta": "Taxa pela Prestação de Serviços de Limpeza Pública e Manejo de Resíduos Sólidos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 80268042.53
+   },
+   {
+    "cod": "1.1.2.2.53.0.0",
+    "conta": "Taxa pela Prestação de Serviços de Limpeza Pública e Manejo de Resíduos Sólidos",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 146.38
+   },
+   {
+    "cod": "1.2.0.0.00.0.0",
+    "conta": "Contribuições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 181162622.34
+   },
+   {
+    "cod": "1.2.1.0.00.0.0",
+    "conta": "Contribuições Sociais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 144656569.39
+   },
+   {
+    "cod": "1.2.1.5.00.0.0",
+    "conta": "Contribuições para Regimes Próprios de Previdência e Sistema de Proteção Social",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 144656569.39
+   },
+   {
+    "cod": "1.2.1.5.01.0.0",
+    "conta": "Contribuição do Servidor Civil",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 144642723.07
+   },
+   {
+    "cod": "1.2.1.5.01.1.0",
+    "conta": "Contribuição do Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 134994626.23
+   },
+   {
+    "cod": "1.2.1.5.01.2.0",
+    "conta": "Contribuição do Servidor Civil Inativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8908931.7
+   },
+   {
+    "cod": "1.2.1.5.01.3.0",
+    "conta": "Contribuição do Servidor Civil - Pensionistas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 685485.24
+   },
+   {
+    "cod": "1.2.1.5.01.4.0",
+    "conta": "Contribuição Oriunda de Sentenças Judiciais - Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 53679.9
+   },
+   {
+    "cod": "1.2.1.5.02.0.0",
+    "conta": "Contribuição Patronal - Servidor Civil",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13846.32
+   },
+   {
+    "cod": "1.2.1.5.02.1.0",
+    "conta": "Contribuição Patronal - Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13846.32
+   },
+   {
+    "cod": "1.2.4.0.00.0.0",
+    "conta": "Contribuição para o Custeio do Serviço de Iluminação Pública",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 36506052.95
+   },
+   {
+    "cod": "1.3.0.0.00.0.0",
+    "conta": "Receita Patrimonial",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 218155814.23
+   },
+   {
+    "cod": "1.3.1.0.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 750080.43
+   },
+   {
+    "cod": "1.3.1.1.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 750080.43
+   },
+   {
+    "cod": "1.3.1.1.02.0.0",
+    "conta": "Concessão, Permissão, Autorização ou Cessão do Direito de Uso de Bens Imóveis Públicos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 750080.43
+   },
+   {
+    "cod": "1.3.2.0.00.0.0",
+    "conta": "Valores Mobiliários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 100998408.42
+   },
+   {
+    "cod": "1.3.2.1.00.0.0",
+    "conta": "Juros e Correções Monetárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 100998408.42
+   },
+   {
+    "cod": "1.3.2.1.01.0.0",
+    "conta": "Remuneração de Depósitos Bancários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 39407718.51
+   },
+   {
+    "cod": "1.3.2.1.02.0.0",
+    "conta": "Remuneração de Depósitos Especiais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 93291.59
+   },
+   {
+    "cod": "1.3.2.1.03.0.0",
+    "conta": "Remuneração de Saldos de Recursos Não-Desembolsados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 59.71
+   },
+   {
+    "cod": "1.3.2.1.04.0.0",
+    "conta": "Remuneração dos Recursos do Regime Próprio de Previdência Social - RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 61497338.61
+   },
+   {
+    "cod": "1.3.3.0.00.0.0",
+    "conta": "Delegação de Serviços Públicos Mediante Concessão, Permissão, Autorização ou Licença",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 81000000
+   },
+   {
+    "cod": "1.3.3.9.00.0.0",
+    "conta": "Demais Delegações de Serviços Públicos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 81000000
+   },
+   {
+    "cod": "1.3.6.0.00.0.0",
+    "conta": "Cessão de Direitos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 35407325.38
+   },
+   {
+    "cod": "1.3.6.1.00.0.0",
+    "conta": "Cessão de Direitos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 35407325.38
+   },
+   {
+    "cod": "1.3.6.1.01.0.0",
+    "conta": "Cessão do Direito de Operacionalização de Pagamentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 35407325.38
+   },
+   {
+    "cod": "1.3.6.1.01.1.0",
+    "conta": "Cessão do Direito de Operacionalização de Pagamentos - Poderes Executivo e Legislativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 35407325.38
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13941179.09
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1274642.82
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13438990.59
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1274642.82
+   },
+   {
+    "cod": "1.6.1.1.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13438990.59
+   },
+   {
+    "cod": "1.6.1.1.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1274642.82
+   },
+   {
+    "cod": "1.6.1.1.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais Prestados por Entidades e Órgãos Públicos em Geral",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 13438990.59
+   },
+   {
+    "cod": "1.6.1.1.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais Prestados por Entidades e Órgãos Públicos em Geral",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1274642.82
+   },
+   {
+    "cod": "1.6.9.0.00.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 502188.5
+   },
    {
     "cod": "1.7.0.0.00.0.0",
     "conta": "Transferências Correntes",
@@ -2824,6 +6646,204 @@
     "valor": 0.02
    },
    {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 67247080.17
+   },
+   {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 4091.64
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 26426493.52
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 4091.64
+   },
+   {
+    "cod": "1.9.1.1.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 26426493.52
+   },
+   {
+    "cod": "1.9.1.1.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 4091.64
+   },
+   {
+    "cod": "1.9.1.1.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5558037.52
+   },
+   {
+    "cod": "1.9.1.1.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1586.21
+   },
+   {
+    "cod": "1.9.1.1.06.0.0",
+    "conta": "Multas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 37828.4
+   },
+   {
+    "cod": "1.9.1.1.06.1.0",
+    "conta": "Multas Administrativas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 37828.4
+   },
+   {
+    "cod": "1.9.1.1.08.0.0",
+    "conta": "Multas Decorrentes de Sentenças Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 8000
+   },
+   {
+    "cod": "1.9.1.1.14.0.0",
+    "conta": "Multas Previstas no Código de Trânsito Brasileiro - CTB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 20822627.6
+   },
+   {
+    "cod": "1.9.1.1.14.0.0",
+    "conta": "Multas Previstas no Código de Trânsito Brasileiro - CTB",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2505.43
+   },
+   {
+    "cod": "1.9.2.0.00.0.0",
+    "conta": "Indenizações, Restituições e Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 9317530.47
+   },
+   {
+    "cod": "1.9.2.2.00.0.0",
+    "conta": "Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 9317530.47
+   },
+   {
+    "cod": "1.9.2.2.01.0.0",
+    "conta": "Restituição de Convênios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7420197.17
+   },
+   {
+    "cod": "1.9.2.2.01.1.0",
+    "conta": "Restituição de Convênios - Primárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7420197.17
+   },
+   {
+    "cod": "1.9.2.2.03.0.0",
+    "conta": "Restituição de Benefícios Previdenciários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 28539.91
+   },
+   {
+    "cod": "1.9.2.2.06.0.0",
+    "conta": "Restituição de Despesas de Exercícios Anteriores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 817388.06
+   },
+   {
+    "cod": "1.9.2.2.06.3.0",
+    "conta": "Restituição de Despesas Primárias de Exercícios Anteriores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 817388.06
+   },
+   {
+    "cod": "1.9.2.2.14.0.0",
+    "conta": "Restituição de Recursos Transferidos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 984189.52
+   },
+   {
+    "cod": "1.9.2.2.99.0.0",
+    "conta": "Outras Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 67215.81
+   },
+   {
+    "cod": "1.9.3.0.00.0.0",
+    "conta": "Bens, Direitos e Valores Incorporados ao Patrimônio Público",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1954692.39
+   },
+   {
+    "cod": "1.9.3.1.00.0.0",
+    "conta": "Bens, Direitos e Valores Incorporados ao Patrimônio Público",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1954692.39
+   },
+   {
+    "cod": "1.9.3.1.05.0.0",
+    "conta": "Receitas Reconhecidas por Força de Decisões Judiciais e de Tribunais Administrativos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1613328.64
+   },
+   {
+    "cod": "1.9.3.1.99.0.0",
+    "conta": "Bens, Direitos e Valores Perdidos em Favor do Poder Público por Demais Infrações ou Crimes Previstos em Legislação Especial",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 341363.75
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 29548363.79
+   },
+   {
+    "cod": "1.9.9.9.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 29548363.79
+   },
+   {
+    "cod": "1.9.9.9.03.0.0",
+    "conta": "Compensações Financeiras entre os Regimes de Previdência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 16581908.44
+   },
+   {
+    "cod": "1.9.9.9.12.0.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 643483.89
+   },
+   {
+    "cod": "1.9.9.9.12.2.0",
+    "conta": "Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 643483.89
+   },
+   {
+    "cod": "1.9.9.9.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 12322971.46
+   },
+   {
+    "cod": "1.9.9.9.99.2.0",
+    "conta": "Outras Receitas Não Arrecadadas e Não Projetadas pela RFB - Primárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 12322971.46
+   },
+   {
     "cod": "2.4.0.0.00.0.0",
     "conta": "Transferências de Capital",
     "coluna": "Receitas Brutas Realizadas",
@@ -2933,6 +6953,420 @@
    }
   ],
   "2025": [
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 5382251535.63
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Deduções - FUNDEB",
+    "valor": 199960153.01
+   },
+   {
+    "cod": "1.0.0.0.00.0.0",
+    "conta": "Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 1015142.49
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2968907507.29
+   },
+   {
+    "cod": "1.1.0.0.00.0.0",
+    "conta": "Impostos, Taxas e Contribuições de Melhoria",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 998355.75
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2846057971.7
+   },
+   {
+    "cod": "1.1.1.0.00.0.0",
+    "conta": "Impostos",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 954025.81
+   },
+   {
+    "cod": "1.1.1.2.00.0.0",
+    "conta": "Impostos sobre o Patrimônio",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 616125347.18
+   },
+   {
+    "cod": "1.1.1.2.00.0.0",
+    "conta": "Impostos sobre o Patrimônio",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 457912.81
+   },
+   {
+    "cod": "1.1.1.2.50.0.0",
+    "conta": "Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 524557044.71
+   },
+   {
+    "cod": "1.1.1.2.50.0.0",
+    "conta": "Imposto sobre a Propriedade Predial e Territorial Urbana",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 313704.62
+   },
+   {
+    "cod": "1.1.1.2.53.0.0",
+    "conta": "Impostos sobre Transmissão \"Inter Vivos\" de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 91568302.47
+   },
+   {
+    "cod": "1.1.1.2.53.0.0",
+    "conta": "Impostos sobre Transmissão \"Inter Vivos\" de Bens Imóveis e de Direitos Reais sobre Imóveis",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 144208.19
+   },
+   {
+    "cod": "1.1.1.3.00.0.0",
+    "conta": "Impostos sobre a Renda e Proventos de Qualquer Natureza",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 287118152.3
+   },
+   {
+    "cod": "1.1.1.3.03.0.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 287118152.3
+   },
+   {
+    "cod": "1.1.1.3.03.1.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Trabalho",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 238654855.64
+   },
+   {
+    "cod": "1.1.1.3.03.4.0",
+    "conta": "Imposto sobre a Renda - Retido na Fonte - Outros Rendimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 48463296.66
+   },
+   {
+    "cod": "1.1.1.4.00.0.0",
+    "conta": "Impostos sobre a Produção e Circulação de Mercadorias e Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1942814472.22
+   },
+   {
+    "cod": "1.1.1.4.00.0.0",
+    "conta": "Impostos sobre a Produção e Circulação de Mercadorias e Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 496113
+   },
+   {
+    "cod": "1.1.1.4.51.0.0",
+    "conta": "Impostos sobre Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1942814472.22
+   },
+   {
+    "cod": "1.1.1.4.51.0.0",
+    "conta": "Impostos sobre Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 496113
+   },
+   {
+    "cod": "1.1.1.4.51.1.0",
+    "conta": "Imposto sobre Serviços de Qualquer Natureza - ISSQN",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1942814472.22
+   },
+   {
+    "cod": "1.1.1.4.51.1.0",
+    "conta": "Imposto sobre Serviços de Qualquer Natureza - ISSQN",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 496113
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 122849535.59
+   },
+   {
+    "cod": "1.1.2.0.00.0.0",
+    "conta": "Taxas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 44329.94
+   },
+   {
+    "cod": "1.1.2.1.00.0.0",
+    "conta": "Taxas pelo Exercício do Poder de Polícia",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 33462002.23
+   },
+   {
+    "cod": "1.1.2.1.00.0.0",
+    "conta": "Taxas pelo Exercício do Poder de Polícia",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 25379.45
+   },
+   {
+    "cod": "1.1.2.1.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 33431242.71
+   },
+   {
+    "cod": "1.1.2.1.01.0.0",
+    "conta": "Taxas de Inspeção, Controle e Fiscalização",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 25379.45
+   },
+   {
+    "cod": "1.1.2.1.50.0.0",
+    "conta": "Taxa de Fiscalização de Vigilância Sanitária",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 30759.52
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 89387533.36
+   },
+   {
+    "cod": "1.1.2.2.00.0.0",
+    "conta": "Taxas pela Prestação de Serviços",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 18950.49
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços em Geral",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 3637962.24
+   },
+   {
+    "cod": "1.1.2.2.01.0.0",
+    "conta": "Taxas pela Prestação de Serviços em Geral",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 11612.7
+   },
+   {
+    "cod": "1.1.2.2.53.0.0",
+    "conta": "Taxa pela Prestação de Serviços de Limpeza Pública e Manejo de Resíduos Sólidos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 85749571.12
+   },
+   {
+    "cod": "1.1.2.2.53.0.0",
+    "conta": "Taxa pela Prestação de Serviços de Limpeza Pública e Manejo de Resíduos Sólidos",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 7337.79
+   },
+   {
+    "cod": "1.2.0.0.00.0.0",
+    "conta": "Contribuições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 183116256.64
+   },
+   {
+    "cod": "1.2.1.0.00.0.0",
+    "conta": "Contribuições Sociais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 144687932.72
+   },
+   {
+    "cod": "1.2.1.5.00.0.0",
+    "conta": "Contribuições para Regimes Próprios de Previdência e Sistema de Proteção Social",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 144687932.72
+   },
+   {
+    "cod": "1.2.1.5.01.0.0",
+    "conta": "Contribuição do Servidor Civil",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 144629840.94
+   },
+   {
+    "cod": "1.2.1.5.01.1.0",
+    "conta": "Contribuição do Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 133371284.52
+   },
+   {
+    "cod": "1.2.1.5.01.2.0",
+    "conta": "Contribuição do Servidor Civil Inativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10149196.54
+   },
+   {
+    "cod": "1.2.1.5.01.3.0",
+    "conta": "Contribuição do Servidor Civil - Pensionistas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 913099.4
+   },
+   {
+    "cod": "1.2.1.5.01.4.0",
+    "conta": "Contribuição Oriunda de Sentenças Judiciais - Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 196260.48
+   },
+   {
+    "cod": "1.2.1.5.02.0.0",
+    "conta": "Contribuição Patronal - Servidor Civil",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 58091.78
+   },
+   {
+    "cod": "1.2.1.5.02.1.0",
+    "conta": "Contribuição Patronal - Servidor Civil Ativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 58091.78
+   },
+   {
+    "cod": "1.2.4.0.00.0.0",
+    "conta": "Contribuição para o Custeio do Serviço de Iluminação Pública",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 38428323.92
+   },
+   {
+    "cod": "1.3.0.0.00.0.0",
+    "conta": "Receita Patrimonial",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 178170840.5
+   },
+   {
+    "cod": "1.3.1.0.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 414789.72
+   },
+   {
+    "cod": "1.3.1.1.00.0.0",
+    "conta": "Exploração do Patrimônio Imobiliário do Estado",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 414789.72
+   },
+   {
+    "cod": "1.3.1.1.02.0.0",
+    "conta": "Concessão, Permissão, Autorização ou Cessão do Direito de Uso de Bens Imóveis Públicos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 414789.72
+   },
+   {
+    "cod": "1.3.2.0.00.0.0",
+    "conta": "Valores Mobiliários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 154229921.18
+   },
+   {
+    "cod": "1.3.2.1.00.0.0",
+    "conta": "Juros e Correções Monetárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 154229921.18
+   },
+   {
+    "cod": "1.3.2.1.01.0.0",
+    "conta": "Remuneração de Depósitos Bancários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 60835160.32
+   },
+   {
+    "cod": "1.3.2.1.02.0.0",
+    "conta": "Remuneração de Depósitos Especiais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 156038.42
+   },
+   {
+    "cod": "1.3.2.1.03.0.0",
+    "conta": "Remuneração de Saldos de Recursos Não-Desembolsados",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 60.76
+   },
+   {
+    "cod": "1.3.2.1.04.0.0",
+    "conta": "Remuneração dos Recursos do Regime Próprio de Previdência Social - RPPS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 93238661.68
+   },
+   {
+    "cod": "1.3.3.0.00.0.0",
+    "conta": "Delegação de Serviços Públicos Mediante Concessão, Permissão, Autorização ou Licença",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6363557.39
+   },
+   {
+    "cod": "1.3.3.9.00.0.0",
+    "conta": "Demais Delegações de Serviços Públicos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6363557.39
+   },
+   {
+    "cod": "1.3.3.9.99.0.0",
+    "conta": "Outras Delegações de Serviços Públicos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6363557.39
+   },
+   {
+    "cod": "1.3.6.0.00.0.0",
+    "conta": "Cessão de Direitos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17162572.21
+   },
+   {
+    "cod": "1.3.6.1.00.0.0",
+    "conta": "Cessão de Direitos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17162572.21
+   },
+   {
+    "cod": "1.3.6.1.01.0.0",
+    "conta": "Cessão do Direito de Operacionalização de Pagamentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17162572.21
+   },
+   {
+    "cod": "1.3.6.1.01.1.0",
+    "conta": "Cessão do Direito de Operacionalização de Pagamentos - Poderes Executivo e Legislativo",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 17162572.21
+   },
+   {
+    "cod": "1.6.0.0.00.0.0",
+    "conta": "Receita de Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11836396.47
+   },
+   {
+    "cod": "1.6.1.0.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11289306.4
+   },
+   {
+    "cod": "1.6.1.1.00.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11289306.4
+   },
+   {
+    "cod": "1.6.1.1.01.0.0",
+    "conta": "Serviços Administrativos e Comerciais Gerais Prestados por Entidades e Órgãos Públicos em Geral",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 11289306.4
+   },
+   {
+    "cod": "1.6.9.0.00.0.0",
+    "conta": "Outros Serviços",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 547090.07
+   },
    {
     "cod": "1.7.0.0.00.0.0",
     "conta": "Transferências Correntes",
@@ -3274,6 +7708,270 @@
     "conta": "Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação - FUNDEB",
     "coluna": "Receitas Brutas Realizadas",
     "valor": 544574885.62
+   },
+   {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 91847803.7
+   },
+   {
+    "cod": "1.9.0.0.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 16786.74
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 26701380.41
+   },
+   {
+    "cod": "1.9.1.0.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 14618.66
+   },
+   {
+    "cod": "1.9.1.1.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 26701380.41
+   },
+   {
+    "cod": "1.9.1.1.00.0.0",
+    "conta": "Multas Administrativas, Contratuais e Judiciais",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 14618.66
+   },
+   {
+    "cod": "1.9.1.1.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10625870.74
+   },
+   {
+    "cod": "1.9.1.1.01.0.0",
+    "conta": "Multas Previstas em Legislação Específica",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 8987.96
+   },
+   {
+    "cod": "1.9.1.1.06.0.0",
+    "conta": "Multas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 42603.34
+   },
+   {
+    "cod": "1.9.1.1.06.1.0",
+    "conta": "Multas Administrativas por Danos Ambientais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 42603.34
+   },
+   {
+    "cod": "1.9.1.1.08.0.0",
+    "conta": "Multas Decorrentes de Sentenças Judiciais",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 2051.15
+   },
+   {
+    "cod": "1.9.1.1.09.0.0",
+    "conta": "Multas e Juros Previstos em Contratos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 7379.25
+   },
+   {
+    "cod": "1.9.1.1.14.0.0",
+    "conta": "Multas Previstas no Código de Trânsito Brasileiro - CTB",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 16023475.93
+   },
+   {
+    "cod": "1.9.1.1.14.0.0",
+    "conta": "Multas Previstas no Código de Trânsito Brasileiro - CTB",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 5630.7
+   },
+   {
+    "cod": "1.9.2.0.00.0.0",
+    "conta": "Indenizações, Restituições e Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 20369810.56
+   },
+   {
+    "cod": "1.9.2.1.00.0.0",
+    "conta": "Indenizações",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 16699713.95
+   },
+   {
+    "cod": "1.9.2.1.99.0.0",
+    "conta": "Outras Indenizações",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 16699713.95
+   },
+   {
+    "cod": "1.9.2.2.00.0.0",
+    "conta": "Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1896665.66
+   },
+   {
+    "cod": "1.9.2.2.01.0.0",
+    "conta": "Restituição de Convênios",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1375469.24
+   },
+   {
+    "cod": "1.9.2.2.01.1.0",
+    "conta": "Restituição de Convênios - Primárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1375469.24
+   },
+   {
+    "cod": "1.9.2.2.03.0.0",
+    "conta": "Restituição de Benefícios Previdenciários",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 139962.45
+   },
+   {
+    "cod": "1.9.2.2.06.0.0",
+    "conta": "Restituição de Despesas de Exercícios Anteriores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 42381.13
+   },
+   {
+    "cod": "1.9.2.2.06.3.0",
+    "conta": "Restituição de Despesas Primárias de Exercícios Anteriores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 40454.1
+   },
+   {
+    "cod": "1.9.2.2.06.4.0",
+    "conta": "Restituição de Despesas Financeiras de Exercícios Anteriores",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1927.03
+   },
+   {
+    "cod": "1.9.2.2.14.0.0",
+    "conta": "Restituição de Recursos Transferidos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 250039.26
+   },
+   {
+    "cod": "1.9.2.2.50.0.0",
+    "conta": "Restituição de Recursos Recebidos do SUS",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 29446.1
+   },
+   {
+    "cod": "1.9.2.2.99.0.0",
+    "conta": "Outras Restituições",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 59367.48
+   },
+   {
+    "cod": "1.9.2.3.00.0.0",
+    "conta": "Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1773430.95
+   },
+   {
+    "cod": "1.9.2.3.02.0.0",
+    "conta": "Ressarcimento de Custos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 23544
+   },
+   {
+    "cod": "1.9.2.3.99.0.0",
+    "conta": "Outros Ressarcimentos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 1749886.95
+   },
+   {
+    "cod": "1.9.3.0.00.0.0",
+    "conta": "Bens, Direitos e Valores Incorporados ao Patrimônio Público",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6111.21
+   },
+   {
+    "cod": "1.9.3.1.00.0.0",
+    "conta": "Bens, Direitos e Valores Incorporados ao Patrimônio Público",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6111.21
+   },
+   {
+    "cod": "1.9.3.1.05.0.0",
+    "conta": "Receitas Reconhecidas por Força de Decisões Judiciais e de Tribunais Administrativos",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 6111.21
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 44770501.52
+   },
+   {
+    "cod": "1.9.9.0.00.0.0",
+    "conta": "Demais Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2168.08
+   },
+   {
+    "cod": "1.9.9.9.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 44770501.52
+   },
+   {
+    "cod": "1.9.9.9.00.0.0",
+    "conta": "Outras Receitas Correntes",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2168.08
+   },
+   {
+    "cod": "1.9.9.9.03.0.0",
+    "conta": "Compensações Financeiras entre os Regimes de Previdência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 33430914.25
+   },
+   {
+    "cod": "1.9.9.9.12.0.0",
+    "conta": "Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 719034.68
+   },
+   {
+    "cod": "1.9.9.9.12.2.0",
+    "conta": "Ônus de Sucumbência",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 719034.68
+   },
+   {
+    "cod": "1.9.9.9.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10620552.59
+   },
+   {
+    "cod": "1.9.9.9.99.0.0",
+    "conta": "Outras Receitas",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2168.08
+   },
+   {
+    "cod": "1.9.9.9.99.2.0",
+    "conta": "Outras Receitas Não Arrecadadas e Não Projetadas pela RFB - Primárias",
+    "coluna": "Receitas Brutas Realizadas",
+    "valor": 10620552.59
+   },
+   {
+    "cod": "1.9.9.9.99.2.0",
+    "conta": "Outras Receitas Não Arrecadadas e Não Projetadas pela RFB - Primárias",
+    "coluna": "Outras Deduções da Receita",
+    "valor": 2168.08
    },
    {
     "cod": "2.4.0.0.00.0.0",

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Abre } from "@/components/movimento/Movimento";
 import type { Integridade, Modalidades } from "@/lib/dinheiro";
-import { dataBR, dinheiroCurto, pct } from "@/lib/formato";
+import { dataBR, dinheiroCurto, pct, reaisExato } from "@/lib/formato";
 
 // "2020, 2021 e 2024"
 const lista = (xs: (string | number)[]) => new Intl.ListFormat("pt-BR", { type: "conjunction" }).format(xs.map(String));
@@ -97,7 +97,7 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
         <li key={p.cnpj} className="rounded-lg bg-slate-50 p-3">
           <div className="flex items-baseline gap-3">
             <span className="min-w-0 flex-1 font-medium text-slate-900">{p.nome}</span>
-            <span className="shrink-0 tabular-nums text-slate-900">{dinheiroCurto(p.recebeu)}</span>
+            <span className="shrink-0 tabular-nums text-slate-900">{reaisExato(p.recebeu)}</span>
           </div>
           <div className="text-xs text-slate-500">
             Recebeu verbas de fora em {lista(p.anos)}
@@ -217,7 +217,7 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
                           · {d.modalidade}, {lista(d.anos)}
                         </span>
                       </span>
-                      <span className="shrink-0 tabular-nums text-slate-900">{dinheiroCurto(d.valor)}</span>
+                      <span className="shrink-0 tabular-nums text-slate-900">{reaisExato(d.valor)}</span>
                     </li>
                   ))}
                 </ul>

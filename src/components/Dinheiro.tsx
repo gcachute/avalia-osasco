@@ -3,7 +3,7 @@
 import { useId, useState } from "react";
 import { Abre, Segmentos } from "@/components/movimento/Movimento";
 import type { ContaDCA, EntradaAno, GastoAno, ResumoGasto } from "@/lib/dinheiro";
-import { dinheiroCurto, pct } from "@/lib/formato";
+import { dinheiroCurto, pct, reais, reaisExato } from "@/lib/formato";
 
 // Seletor de ano, do mais recente para o mais antigo, com o destaque que desliza.
 function Anos({ anos, ano, setAno, rotulo }: { anos: number[]; ano: number; setAno: (a: number) => void; rotulo: (a: number) => string }) {
@@ -155,6 +155,66 @@ const FUNDEB: LinhaEntrada[] = [
   },
 ];
 
+// Receita da própria cidade, para comparar com o que vem de fora.
+const PROPRIA: LinhaEntrada[] = [
+  {
+    chave: "iss",
+    nome: "ISS (imposto sobre serviços)",
+    explica: "Cobrado das empresas que prestam serviços na cidade. É a maior receita de Osasco.",
+    valor: (e) => e.propria?.iss ?? 0,
+    contas: (e) => e.propria?.contas.iss ?? [],
+  },
+  {
+    chave: "iptu",
+    nome: "IPTU (imposto sobre imóveis)",
+    explica: "Pago pelos donos de casas, apartamentos, salas e terrenos da cidade.",
+    valor: (e) => e.propria?.iptu ?? 0,
+    contas: (e) => e.propria?.contas.iptu ?? [],
+  },
+  {
+    chave: "irrf",
+    nome: "Imposto de Renda retido",
+    explica: "Imposto de Renda descontado dos salários dos servidores municipais e de pagamentos feitos pela Prefeitura. Pela Constituição, fica com a cidade.",
+    valor: (e) => e.propria?.irrf ?? 0,
+    contas: (e) => e.propria?.contas.irrf ?? [],
+  },
+  {
+    chave: "itbi",
+    nome: "ITBI (compra e venda de imóveis)",
+    explica: "Imposto pago quando um imóvel da cidade é vendido.",
+    valor: (e) => e.propria?.itbi ?? 0,
+    contas: (e) => e.propria?.contas.itbi ?? [],
+  },
+  {
+    chave: "taxas",
+    nome: "Taxas",
+    explica: "Taxas de serviços e de fiscalização, como a de coleta de lixo.",
+    valor: (e) => e.propria?.taxas ?? 0,
+    contas: (e) => e.propria?.contas.taxas ?? [],
+  },
+  {
+    chave: "iluminacao",
+    nome: "Contribuição de iluminação pública",
+    explica: "Cobrada na conta de luz para pagar a iluminação das ruas.",
+    valor: (e) => e.propria?.iluminacao ?? 0,
+    contas: (e) => e.propria?.contas.iluminacao ?? [],
+  },
+  {
+    chave: "previdencia",
+    nome: "Previdência dos servidores",
+    explica: "Contribuições dos servidores, rendimentos e compensações do instituto de previdência. É dinheiro reservado às aposentadorias, não para outros gastos.",
+    valor: (e) => e.propria?.previdencia ?? 0,
+    contas: (e) => e.propria?.contas.previdencia ?? [],
+  },
+  {
+    chave: "outras",
+    nome: "Outras receitas próprias",
+    explica: "Rendimentos de aplicações, multas, indenizações, serviços e outras receitas. As contas abaixo dizem o que são.",
+    valor: (e) => e.propria?.outras ?? 0,
+    contas: (e) => e.propria?.contas.outras ?? [],
+  },
+];
+
 function Variacao({ atual, antes, anoAntes }: { atual: number; antes: number | null; anoAntes: number }) {
   if (!antes) return null;
   const v = atual / antes - 1;
@@ -207,7 +267,7 @@ function EntradaExpansivel({
         onClick={() => setAberto(!aberto)}
         aria-expanded={aberto}
         aria-controls={id}
-        className={`-mx-2 grid w-[calc(100%+1rem)] grid-cols-[minmax(0,16rem)_minmax(0,1fr)_auto_auto] items-center gap-x-3 gap-y-0.5 rounded-lg px-2 py-1.5 text-left text-sm transition-colors max-sm:grid-cols-[minmax(0,1fr)_auto_auto] ${aberto ? "bg-slate-50" : "hover:bg-slate-50"}`}
+        className={`grid w-full grid-cols-[minmax(0,16rem)_minmax(0,1fr)_auto_auto] items-center gap-x-3 gap-y-0.5 rounded-lg px-2 py-1.5 text-left text-sm transition-colors max-sm:grid-cols-[minmax(0,1fr)_auto_auto] ${aberto ? "bg-slate-50" : "hover:bg-slate-50"}`}
       >
         <span className="min-w-0">
           <span className="block text-slate-800">{l.nome}</span>
@@ -228,6 +288,15 @@ function EntradaExpansivel({
       <Abre aberto={aberto} id={id}>
         <div className="mt-1 mb-2 space-y-3 rounded-xl border border-slate-200 p-3 text-xs">
           <p className="text-slate-600">{l.explica}</p>
+          <p className="text-slate-700">
+            Valor exato em {ano}: <span className="font-semibold tabular-nums text-slate-900">{reaisExato(valor)}</span>
+            {retido > 0 && (
+              <>
+                {" "}
+                · retido para o FUNDEB: <span className="tabular-nums">{reaisExato(retido)}</span> · livre: <span className="tabular-nums">{reaisExato(valor - retido)}</span>
+              </>
+            )}
+          </p>
           {retido > 0 && (
             <p className="rounded-lg bg-teal-50 px-2.5 py-1.5 text-teal-900 ring-1 ring-teal-200">
               Desse valor, {dinheiroCurto(retido)} ({pct(retido / valor)}, a parte listrada da barra) ficaram retidos para formar o FUNDEB e voltam pela linha do
@@ -286,7 +355,7 @@ function EntradaExpansivel({
                 {contas.map((c, i) => (
                   <li key={i} className="flex items-baseline gap-3 py-1">
                     <span className="min-w-0 flex-1 text-slate-700">{c.conta}</span>
-                    <span className="shrink-0 tabular-nums text-slate-900">{dinheiroCurto(c.valor)}</span>
+                    <span className="shrink-0 tabular-nums text-slate-900">{reaisExato(c.valor)}</span>
                   </li>
                 ))}
               </ul>
@@ -302,11 +371,13 @@ export function ComposicaoEntradas({ anos }: { anos: EntradaAno[] }) {
   const lista = [...anos].sort((a, b) => b.ano - a.ano);
   const [ano, setAno] = useState(lista[0].ano);
   const e = lista.find((x) => x.ano === ano)!;
-  const maximo = Math.max(...UNIAO.map((l) => l.valor(e)), ...ESTADO.map((l) => l.valor(e)), e.fundeb);
+  const propria = e.propria?.total ?? 0;
+  const maximo = Math.max(...UNIAO.map((l) => l.valor(e)), ...ESTADO.map((l) => l.valor(e)), e.fundeb, ...PROPRIA.map((l) => l.valor(e)));
   // Sem contar duas vezes o que é retido do FPM, do ICMS e do IPVA e volta pelo FUNDEB.
   const uniaoLivre = e.uniao.total - (e.uniao.paraFundebTotal ?? 0);
   const estadoLivre = e.estado.total - (e.estado.paraFundebTotal ?? 0);
   const totalGeral = uniaoLivre + estadoLivre + e.fundeb;
+  const totalComPropria = totalGeral + propria;
   const bloco = (titulo: string, total: number, cor: string, linhas: LinhaEntrada[], nomeTotal: string) => (
     <div>
       <div className="mb-1.5 flex items-baseline justify-between gap-2">
@@ -330,17 +401,28 @@ export function ComposicaoEntradas({ anos }: { anos: EntradaAno[] }) {
       <div className="flex flex-wrap items-center justify-between gap-3">
         <Anos anos={lista.map((x) => x.ano)} ano={ano} setAno={setAno} rotulo={String} />
         <span className="text-xs text-slate-500">
-          Total em {ano}: <span className="font-semibold tabular-nums text-slate-900">{dinheiroCurto(totalGeral)}</span>
+          Verbas de fora em {ano}: <span className="font-semibold tabular-nums text-slate-900">{dinheiroCurto(totalGeral)}</span>
         </span>
       </div>
-      {/* Proporção de cada origem no total do ano. */}
-      <div className="flex h-2.5 overflow-hidden rounded-full" role="img" aria-label={`União ${pct(uniaoLivre / totalGeral)}, Estado ${pct(estadoLivre / totalGeral)}, FUNDEB ${pct(e.fundeb / totalGeral)}`}>
+      {propria > 0 && (
+        <p className="rounded-xl bg-slate-50 px-3 py-2 text-sm text-slate-700">
+          De cada <b>R$ 100</b> que a Prefeitura recebeu em {ano}, <b>{reais((totalGeral / totalComPropria) * 100, 2)}</b> vieram da União, do Estado e do FUNDEB e{" "}
+          <b>{reais((propria / totalComPropria) * 100, 2)}</b> foram arrecadados pela própria cidade.
+        </p>
+      )}
+      {/* Proporção de cada origem no total do ano (receita própria por último). */}
+      <div
+        className="flex h-2.5 overflow-hidden rounded-full"
+        role="img"
+        aria-label={`União ${pct(uniaoLivre / totalComPropria)}, Estado ${pct(estadoLivre / totalComPropria)}, FUNDEB ${pct(e.fundeb / totalComPropria)}, própria ${pct(propria / totalComPropria)}`}
+      >
         {[
           [uniaoLivre, "var(--grafico-1)"],
           [estadoLivre, "var(--grafico-2)"],
           [e.fundeb, "var(--grafico-3)"],
+          [propria, "var(--grafico-outro)"],
         ].map(([v, c], i) => (
-          <span key={i} className="border-r-2 border-white transition-[width] duration-500 last:border-r-0" style={{ width: `${((v as number) / totalGeral) * 100}%`, background: c as string }} />
+          <span key={i} className="border-r-2 border-white transition-[width] duration-500 last:border-r-0" style={{ width: `${((v as number) / totalComPropria) * 100}%`, background: c as string }} />
         ))}
       </div>
       <p className="-mt-3 text-[11px] text-slate-500">
@@ -360,6 +442,7 @@ export function ComposicaoEntradas({ anos }: { anos: EntradaAno[] }) {
       {bloco("Da União", e.uniao.total, "var(--grafico-1)", UNIAO, "do que veio da União")}
       {bloco("Do Estado de São Paulo", e.estado.total, "var(--grafico-2)", ESTADO, "do que veio do Estado")}
       {e.fundeb > 0 && bloco("FUNDEB", e.fundeb, "var(--grafico-3)", FUNDEB, "")}
+      {propria > 0 && bloco("Da própria cidade (para comparar)", propria, "var(--grafico-outro)", PROPRIA, "da receita própria")}
     </div>
   );
 }

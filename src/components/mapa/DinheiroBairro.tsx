@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import type { BairroMapa } from "@/lib/dados";
 import { GRUPO_ORIGEM, ROTULO_ORIGEM, frase, type ItemDinheiroBairro } from "@/lib/dinheiro";
-import { dinheiroCurto } from "@/lib/formato";
+import { dinheiroCurto, reaisExato } from "@/lib/formato";
 
 type Grupo = "emendas" | "federal" | "estadual" | "vereadores";
 const GRUPOS: { chave: Grupo; nome: string; cor: string }[] = [
@@ -29,6 +29,7 @@ function Item({ i, indice }: { i: ItemDinheiroBairro; indice: number }) {
       </div>
       <button type="button" onClick={() => setAberto(!aberto)} aria-expanded={aberto} className="mt-0.5 block w-full text-left">
         <span className={`block text-slate-700 ${aberto ? "" : "line-clamp-3"}`}>{frase(i.texto)}</span>
+        {aberto && <span className="mt-0.5 block tabular-nums text-slate-500">Valor exato: {reaisExato(i.valor)}</span>}
       </button>
       <div className="mt-0.5 flex flex-wrap gap-x-2 text-[11px] text-slate-500">
         {i.autor ? (
