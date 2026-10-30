@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { BairroMapa, Historico, ItemMapa, Mapa } from "@/lib/dados";
-import { ROTULO_ORIGEM } from "@/lib/dinheiro";
-import { dinheiroCurto, num } from "@/lib/formato";
+import { num } from "@/lib/formato";
+import { DinheiroBairro } from "./DinheiroBairro";
 import { EvolucaoBairro } from "./EvolucaoBairro";
 import { INDICADORES, formatar } from "./indicadores";
 
@@ -148,32 +148,7 @@ export function PainelBairro({
 
         {aba === "dinheiro" &&
           (bairro.dinheiro?.itens.length ? (
-            <div>
-              <p className="text-xs text-slate-500">
-                {bairro.dinheiro.quantidade === 1 ? "1 item" : `${bairro.dinheiro.quantidade} itens`} com dinheiro da União ou do Estado citam o bairro,
-                somando {dinheiroCurto(bairro.dinheiro.valor)}.{bairro.dinheiro.quantidade > bairro.dinheiro.itens.length && ` Os ${bairro.dinheiro.itens.length} maiores:`}
-              </p>
-              <ol className="mt-2 space-y-2 text-xs">
-                {bairro.dinheiro.itens.map((i, n) => (
-                  <li key={n} className="rounded-lg bg-slate-50 p-2">
-                    <div className="flex flex-wrap items-baseline gap-x-2 text-[11px] text-slate-500">
-                      <span className="font-medium text-slate-700">{ROTULO_ORIGEM[i.origem]}</span>
-                      <span>{i.ano}</span>
-                      <span className="ml-auto font-semibold tabular-nums text-slate-900">{dinheiroCurto(i.valor)}</span>
-                    </div>
-                    <p className="mt-0.5 line-clamp-3 text-slate-700">{i.texto}</p>
-                    <div className="mt-0.5 text-[11px] text-slate-500">
-                      {[i.quem, i.pagamentos && i.pagamentos > 1 && `${i.pagamentos} pagamentos`, i.outrosBairros > 0 && `cita mais ${i.outrosBairros} ${i.outrosBairros === 1 ? "bairro" : "bairros"}`]
-                        .filter(Boolean)
-                        .join(" · ")}
-                    </div>
-                  </li>
-                ))}
-              </ol>
-              <Link href="/dinheiro" className="mt-2 inline-block text-xs font-medium text-blue-800 underline">
-                Todo o dinheiro de fora
-              </Link>
-            </div>
+            <DinheiroBairro d={bairro.dinheiro} />
           ) : (
             <p className="text-xs text-slate-500">Nenhuma emenda, convênio ou pagamento com dinheiro federal ou estadual cita este bairro pelo nome.</p>
           ))}

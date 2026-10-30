@@ -273,13 +273,29 @@ export default function Metodologia() {
             nacionais ficam de fora. As &quot;emendas Pix&quot; trazem, do Transferegov, o que a Prefeitura informou que vai fazer com o dinheiro.
           </li>
           <li>
+            <b>Quem é cada autor:</b> o nome curto que a CGU grava (&quot;GIORDANO&quot;, &quot;PR. MARCO FELICIANO&quot;) é procurado nas listas oficiais de
+            deputados federais e senadores desde 2011. De lá vêm o cargo, o estado, a foto e os partidos ao longo do tempo. O partido mostrado em cada
+            emenda é o do autor em novembro do ano anterior, quando as emendas ao Orçamento são apresentadas.
+          </li>
+          <li>
+            <b>Até a nota:</b> quando o histórico de um pagamento da Prefeitura cita o número da emenda (&quot;EMENDA PARLAMENTAR N 37730001&quot; é a emenda 1
+            do autor 3773) ou o nome do deputado, o pagamento entra na própria emenda. Emendas de vereadores entram quando o histórico traz o nome do vereador.
+          </li>
+          <li>
             <b>Emendas estaduais:</b> a planilha do TCE-SP com as transferências especiais do Estado (posição de 31/08/2024). O governo estadual não
             publica em arquivo aberto o deputado que indicou cada uma.
           </li>
           <li>
-            <b>Para onde foi:</b> despesas que a Prefeitura informa ao TCE-SP, pagamento a pagamento, com a fonte do dinheiro (federal, estadual ou do
+            <b>Com quem a Prefeitura gastou:</b> despesas que a Prefeitura informa ao TCE-SP, pagamento a pagamento, com a fonte do dinheiro (federal, estadual ou do
             próprio caixa) e o código do programa. Os códigos 0800 e 0801 marcam o que foi pago com emendas federais e estaduais. Pagamentos a pessoas
             físicas entram só nos totais.
+          </li>
+          <li>
+            <b>Conferências de integridade:</b> todas as empresas e entidades que receberam dinheiro de fora são procuradas pelo CNPJ nas listas de punidos
+            da CGU (CEIS, CNEP e CEPIM), e o mês de cada pagamento é comparado com o período da punição. Uma punição conta como válida para Osasco quando
+            abrange todos os governos, quando é declaração de inidoneidade ou quando foi aplicada pela própria Prefeitura. Também são contadas a forma de
+            contratação (licitação, dispensa, inexigibilidade), a parte dos pagamentos com a emenda identificada, a concentração em um fornecedor, as
+            emendas de relator e a situação das emendas Pix. São fatos para olhar de perto, não conclusões.
           </li>
           <li>
             <b>Bairros:</b> entram emendas, convênios e pagamentos cujo texto cita o bairro, uma escola ou uma unidade de saúde, com o mesmo reconhecimento

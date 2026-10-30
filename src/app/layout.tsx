@@ -39,11 +39,12 @@ export const viewport: Viewport = {
 
 const NAV: ItemNav[] = [
   { href: "/", nome: "Painel", icone: "painel" },
+  { href: "/mapa", nome: "Mapa", icone: "mapa" },
   { href: "/vereadores", nome: "Vereadores", icone: "vereadores" },
   { href: "/prefeito", nome: "Prefeito", icone: "prefeito" },
   { href: "/dinheiro", nome: "Dinheiro", icone: "dinheiro" },
-  { href: "/historico", nome: "Histórico", icone: "historico" },
-  { href: "/metodologia", nome: "Metodologia", curto: "Método", icone: "metodologia" },
+  { href: "/historico", nome: "Histórico", icone: "historico", mais: true },
+  { href: "/metodologia", nome: "Metodologia", icone: "metodologia", mais: true },
 ];
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

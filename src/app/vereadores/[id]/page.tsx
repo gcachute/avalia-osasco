@@ -159,7 +159,7 @@ export default async function PaginaVereador({ params }: Props) {
 
       <header className="relative mt-4 flex flex-wrap items-start gap-5 overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6">
         <div className="pointer-events-none absolute -left-20 -top-24 h-64 w-64 rounded-full bg-blue-100 opacity-50 blur-3xl" aria-hidden />
-        <figure className="relative w-36 shrink-0 sm:w-44">
+        <figure className="relative w-24 shrink-0 sm:w-44">
           <Retrato nome={v.nome} foto={v.foto} className="rounded-2xl shadow-sm ring-1 ring-slate-200" />
           {v.foto && v.fotoFonte && <figcaption className="mt-1 text-[10px] leading-tight text-slate-400">Foto: {v.fotoFonte}</figcaption>}
         </figure>
