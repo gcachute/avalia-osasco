@@ -2,13 +2,21 @@
 export const num = (v: number | null | undefined, casas = 1) =>
   v == null ? "—" : v.toLocaleString("pt-BR", { minimumFractionDigits: casas, maximumFractionDigits: casas });
 
-export const milhoes = (v: number) => `${v < 0 ? "−" : ""}R$ ${num(Math.abs(v) / 1e6, 0)} mi`;
+// Dinheiro nunca é arredondado para cima: as casas que não cabem são cortadas (R$ 639.773.139 vira "R$ 639,7 mi").
+// O valor exato aparece no detalhe (reaisExato).
+const corta = (v: number, casas: number) => {
+  const f = 10 ** casas;
+  return Math.trunc(v * f + (v >= 0 ? 1e-9 : -1e-9)) / f;
+};
+export const milhoes = (v: number) => `${v < 0 ? "−" : ""}R$ ${num(corta(Math.abs(v) / 1e6, 0), 0)} mi`;
 
-export const reais = (v: number, casas = 0) => `R$ ${num(v, casas)}`;
-export const milReais = (v: number) => `R$ ${num(v / 1e3, 1)} mil`;
-// Valores grandes de dinheiro, curtos: R$ 462 mi, R$ 2,1 mi, R$ 850 mil.
+export const reais = (v: number, casas = 0) => `R$ ${num(corta(v, casas), casas)}`;
+export const milReais = (v: number) => `R$ ${num(corta(v / 1e3, 1), 1)} mil`;
+// Valor completo, com centavos: R$ 639.773.139,17.
+export const reaisExato = (v: number) => `R$ ${num(v, 2)}`;
+// Valores grandes de dinheiro, curtos e cortados (não arredondados): R$ 639,7 mi, R$ 2,1 mi, R$ 850 mil.
 export const dinheiroCurto = (v: number) =>
-  Math.abs(v) >= 1e6 ? `R$ ${num(v / 1e6, Math.abs(v) >= 1e8 ? 0 : 1)} mi` : Math.abs(v) >= 1e3 ? `R$ ${num(v / 1e3, 0)} mil` : reais(v);
+  Math.abs(v) >= 1e6 ? `R$ ${num(corta(v / 1e6, 1), 1)} mi` : Math.abs(v) >= 1e3 ? `R$ ${num(corta(v / 1e3, 0), 0)} mil` : reais(v);
 
 export const nota10 = (v: number | null | undefined) => (v == null ? null : Math.round(v * 100) / 10);
 

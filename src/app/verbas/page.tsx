@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ComposicaoEntradas, GastosPorAno } from "@/components/Dinheiro";
+import { AnoEmAndamento, ConferenciaNumeros } from "@/components/dinheiro/Conferencia";
 import { QuemMandou } from "@/components/dinheiro/Emendas";
 import { ConferenciasIntegridade } from "@/components/dinheiro/Integridade";
 import { GraficoLinha } from "@/components/GraficoLinha";
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
 const dinheiro = bruto as unknown as PaginaDinheiro;
 
 export default function PaginaDinheiro() {
-  const { entradas, emendas, vereadores, pixEstaduais, gastos, fontes, convenios, integridade } = dinheiro;
+  const { entradas, emendas, vereadores, pixEstaduais, gastos, fontes, convenios, integridade, parcial, conferencias, fontesConferencia } = dinheiro;
   const ultimo = [...entradas].sort((a, b) => b.ano - a.ano)[0];
   const anoEmendas = String(ultimo.ano);
   const recebidoUltimo = emendas.recebidoPorAno[anoEmendas] ?? 0;
@@ -82,6 +83,11 @@ export default function PaginaDinheiro() {
         <div className="mt-4">
           <ComposicaoEntradas anos={entradas} />
         </div>
+        {parcial && (
+          <div className="mt-4">
+            <AnoEmAndamento p={parcial} />
+          </div>
+        )}
         <p className="mt-3 text-xs text-slate-500">
           O que é obrigatório (FPM, ICMS, IPVA, FUNDEB) chega por regra fixa e entra no caixa geral da Prefeitura, misturado aos impostos da própria
           cidade: não dá para seguir esse dinheiro até a nota. Saúde, educação, convênios e emendas chegam carimbados e podem ser seguidos (veja{" "}
@@ -95,6 +101,16 @@ export default function PaginaDinheiro() {
           .
         </p>
       </Secao>
+
+      {conferencias.length > 0 && (
+        <Secao
+          titulo="Conferência dos números"
+          id="conferencia"
+          subtitulo="Cada valor desta página comparado com outra fonte: o relatório bimestral da própria Prefeitura, os repasses publicados pelo Estado e as transferências publicadas pelo governo federal."
+        >
+          <ConferenciaNumeros conferencias={conferencias} fontes={[fontes.entradas, fontesConferencia.rreo, fontesConferencia.estado, fontesConferencia.uniao]} />
+        </Secao>
+      )}
 
       <Secao
         titulo="Quem mandou emendas"
@@ -243,6 +259,17 @@ export default function PaginaDinheiro() {
           <li>
             O rastro até a nota aparece quando o histórico do pagamento, escrito pela Prefeitura, cita o número da emenda. Quando não cita, dá para ver com
             quem a área gastou, mas não qual nota cada emenda pagou.
+          </li>
+          <li>
+            A receita da própria cidade (ISS, IPTU, ITBI, taxas) aparece só para comparar o tamanho do dinheiro de fora. A linha de previdência dos
+            servidores é dinheiro reservado às aposentadorias.
+          </li>
+          <li>
+            O ano em andamento vem do relatório bimestral, sem o detalhe de cada conta; os anos fechados vêm da declaração anual. A{" "}
+            <a href="#conferencia" className="underline">
+              conferência dos números
+            </a>{" "}
+            compara cada valor com outra fonte, ano a ano.
           </li>
           <li>Se a obra ou o serviço foi entregue não aparece nesses registros. Para obras, veja a camada de obras no mapa.</li>
         </ul>

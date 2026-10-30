@@ -274,6 +274,17 @@ export default function Metodologia() {
             nacionais ficam de fora. As &quot;emendas Pix&quot; trazem, do Transferegov, o que a Prefeitura informou que vai fazer com o dinheiro.
           </li>
           <li>
+            <b>Receita própria e ano em andamento:</b> a receita da própria cidade (ISS, IPTU, ITBI, Imposto de Renda retido, taxas, iluminação pública,
+            previdência dos servidores e outras) vem da mesma declaração anual, só para comparar. O ano em andamento vem do último relatório bimestral da
+            Prefeitura (SICONFI, RREO Anexo 3), mês a mês, comparado com os mesmos meses do ano anterior e com o valor previsto no orçamento.
+          </li>
+          <li>
+            <b>Conferência dos números:</b> cada valor é comparado, ano a ano, com o relatório bimestral da Prefeitura, com os repasses publicados pela
+            Secretaria da Fazenda de SP (ICMS e IPVA) e com as transferências publicadas pelo governo federal no Portal da Transparência (FPM, saúde,
+            educação, assistência social, emendas Pix). Diferença de até 0,1% conta como igual; até 3%, como próxima; acima disso aparece como diferente,
+            com a explicação quando ela foi conferida numa terceira fonte.
+          </li>
+          <li>
             <b>Quem é cada autor:</b> o nome curto que a CGU grava (&quot;GIORDANO&quot;, &quot;PR. MARCO FELICIANO&quot;) é procurado nas listas oficiais de
             deputados federais e senadores desde 2011. De lá vêm o cargo, o estado, a foto e os partidos ao longo do tempo. O partido mostrado em cada
             emenda é o do autor em novembro do ano anterior, quando as emendas ao Orçamento são apresentadas.

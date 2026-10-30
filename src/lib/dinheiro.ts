@@ -15,6 +15,8 @@ export type EntradaAno = {
   estado: { convenios: number; sus: number; icms: number; ipva: number; outras: number; total: number } & Retencao;
   fundeb: number;
   contasFundeb: ContaDCA[];
+  // Receita da própria cidade (impostos, taxas, previdência dos servidores e outras).
+  propria: { previdencia: number; iss: number; iptu: number; itbi: number; irrf: number; taxas: number; iluminacao: number; outras: number; total: number } & Retencao;
 };
 
 // Cadastro do parlamentar na Câmara dos Deputados ou no Senado.
@@ -139,6 +141,25 @@ export type Integridade = {
   entidadesVariasFontes: { nome: string; federal: number; vereadores: number; autores: string[] }[];
 };
 
+// Ano em andamento, pelo relatório bimestral, comparado aos mesmos meses do ano anterior.
+export type Parcial = {
+  ano: number;
+  ateMes: number;
+  linhas: { grupo: "propria" | "estado" | "uniao" | "fundeb" | "outras" | "retencao"; chave: string; nome: string; atual: number; anterior: number | null; previsao: number | null }[];
+  uniao: { chave: string; atual: number; anterior: number | null }[];
+  fonte: Fonte;
+};
+
+// Um valor da página comparado com outra fonte, ano a ano.
+export type Conferencia = {
+  chave: string;
+  nome: string;
+  fonteA: string;
+  fonteB: string;
+  nota: string | null;
+  anos: { ano: number; a: number; b: number; situacao: "igual" | "proximo" | "diferente"; nota: string | null }[];
+};
+
 export type PaginaDinheiro = {
   fontes: { entradas: Fonte; emendas: Fonte; pix: Fonte | null; pixEstaduais: Fonte | null; gastos: Fonte; parlamentares: Fonte | null };
   entradas: EntradaAno[];
@@ -155,6 +176,9 @@ export type PaginaDinheiro = {
   convenios: { data: string; objeto: string; valor: number; numero: string; autor: string | null; bairros: string[] }[];
   gastos: GastoAno[];
   integridade: Integridade | null;
+  parcial: Parcial | null;
+  conferencias: Conferencia[];
+  fontesConferencia: { rreo: Fonte | null; uniao: Fonte | null; estado: Fonte | null };
 };
 
 // Item do mapa: o que cita o bairro, com a origem do dinheiro.

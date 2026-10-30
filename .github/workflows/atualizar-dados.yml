@@ -48,6 +48,8 @@ jobs:
         run: npm run coletar:siops
         continue-on-error: true
       # Baixa de novo só o ano atual e o anterior das despesas do TCE-SP (cerca de 2 GB cada); os anos fechados ficam no repositório.
+      # Também traz o relatório bimestral, os repasses do Estado e as transferências federais do mês (para o ano em andamento e a
+      # conferência dos números); se o servidor da CGU limitar os pedidos, os meses que faltam vêm na coleta seguinte.
       - name: Dinheiro federal e estadual (SICONFI, CGU, Transferegov, TCE-SP)
         run: npm run coletar:dinheiro
         continue-on-error: true

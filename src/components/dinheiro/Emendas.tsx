@@ -19,7 +19,7 @@ import {
   situacaoDe,
   situacaoPlano,
 } from "@/lib/dinheiro";
-import { comBase, dataBR, dinheiroCurto, iniciais, reais } from "@/lib/formato";
+import { comBase, dataBR, dinheiroCurto, iniciais, reaisExato } from "@/lib/formato";
 import { DinheiroAnimado } from "@/components/Animacoes";
 import { Abre, Segmentos } from "@/components/movimento/Movimento";
 
@@ -198,9 +198,9 @@ export function CartaoEmenda({ e, abertoInicial = false, indice }: { e: Emenda; 
               <>
                 <dt className="text-slate-500">Emenda inteira</dt>
                 <dd className="text-slate-800">
-                  {dinheiroCurto(e.valorEmenda.pago)} pagos{" "}
+                  {reaisExato(e.valorEmenda.pago)} pagos{" "}
                   {/M[UÚ]LTIPLO/i.test(e.localidade) ? "a várias cidades" : `para ${frase(e.localidade.replace(/\s*\(UF\)/, ""))}`}; Osasco recebeu{" "}
-                  {dinheiroCurto(e.recebido + e.paraEntidades)}
+                  {reaisExato(e.recebido + e.paraEntidades)}
                 </dd>
               </>
             )}
@@ -217,7 +217,7 @@ export function CartaoEmenda({ e, abertoInicial = false, indice }: { e: Emenda; 
                       {nomeProprio(r.favorecido)}
                       {r.entidade && <span className="text-slate-500"> (entidade, fora da Prefeitura)</span>}
                     </span>
-                    <span className="shrink-0 tabular-nums text-slate-900">{reais(r.valor)}</span>
+                    <span className="shrink-0 tabular-nums text-slate-900">{reaisExato(r.valor)}</span>
                   </li>
                 ))}
               </ul>
@@ -308,7 +308,7 @@ function Pagamentos({ e }: { e: Emenda }) {
           <li key={i} className="py-1.5">
             <div className="flex items-baseline gap-3">
               <span className="min-w-0 flex-1 font-medium text-slate-800">{p.fornecedor ?? "Pagamento a pessoa física"}</span>
-              <span className="shrink-0 tabular-nums text-slate-900">{reais(p.valor)}</span>
+              <span className="shrink-0 tabular-nums text-slate-900">{reaisExato(p.valor)}</span>
             </div>
             <div className="text-[11px] text-slate-500">
               {[dataBR(p.data), modalidade(p.modalidade), p.pagamentos > 1 && `${p.pagamentos} pagamentos`].filter(Boolean).join(" · ")}
@@ -448,6 +448,7 @@ function Ficha({ a, aoFechar }: { a: Autor; aoFechar: () => void }) {
             <div className="text-lg font-semibold tabular-nums text-slate-900">
               <DinheiroAnimado valor={a.total} />
             </div>
+            <div className="text-[10px] tabular-nums text-slate-500">{reaisExato(a.total)}</div>
           </div>
           <div className="rounded-xl bg-slate-50 p-3">
             <div className="text-[11px] text-slate-500">{a.tipo === "vereador" ? "Destinos" : "Emendas à Prefeitura"}</div>
@@ -459,6 +460,7 @@ function Ficha({ a, aoFechar }: { a: Autor; aoFechar: () => void }) {
               <div className="text-lg font-semibold tabular-nums text-slate-900">
                 <DinheiroAnimado valor={a.totalEntidades} />
               </div>
+              <div className="text-[10px] tabular-nums text-slate-500">{reaisExato(a.totalEntidades)}</div>
             </div>
           )}
         </div>
@@ -541,7 +543,7 @@ function LinhaAutor({ a, maximo, aoAbrir, partido, indice }: { a: Autor; maximo:
   return (
     <li className="entra" style={{ "--i": indice } as React.CSSProperties}>
       {/* Em cima: foto, nome, valor e botão; embaixo, na largura toda (no celular), as etiquetas e a barra. */}
-      <div className="group -mx-2 grid grid-cols-[auto_minmax(0,1fr)_auto_auto] items-center gap-x-3 gap-y-1 rounded-lg px-2 py-2 transition-colors hover:bg-slate-50">
+      <div className="group grid grid-cols-[auto_minmax(0,1fr)_auto_auto] items-center gap-x-3 gap-y-1 rounded-lg px-2 py-2 transition-colors hover:bg-slate-50">
         <button
           type="button"
           onClick={aoAbrir}
@@ -606,7 +608,7 @@ function LinhaEntidade({ x, maximo, aoAbrir, indice }: { x: Entidade; maximo: nu
   const autoresX = [...new Map(x.itens.map((i) => [i.a.chave, i.a])).values()];
   return (
     <li className="entra" style={{ "--i": indice } as React.CSSProperties}>
-      <div className="-mx-2 flex items-center gap-3 rounded-lg px-2 py-2 transition-colors hover:bg-slate-50">
+      <div className="flex items-center gap-3 rounded-lg px-2 py-2 transition-colors hover:bg-slate-50">
         <div className="min-w-0 flex-1">
           <div className="text-sm font-medium text-slate-900">{nomeProprio(x.nome)}</div>
           <div className="mt-0.5 flex flex-wrap gap-x-2 text-xs text-slate-500">

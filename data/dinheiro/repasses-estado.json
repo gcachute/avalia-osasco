@@ -1,0 +1,662 @@
+{
+ "coletadoEm": "2026-10-30",
+ "fonte": "Secretaria da Fazenda de SP, Repasse de Tributos a Municípios",
+ "url": "https://www.fazenda.sp.gov.br/RepasseConsulta/Consulta/repasse.aspx",
+ "nota": "ICMS sem os 20% retidos para o FUNDEB; IPVA bruto.",
+ "anos": {
+  "2018": {
+   "2018-01": {
+    "icmsLiquido": 29816609.85,
+    "ipva": 38871953.01,
+    "ipiExportacao": 232006.4,
+    "compensacao": 126371.41
+   },
+   "2018-02": {
+    "icmsLiquido": 21579717.27,
+    "ipva": 20921617.72,
+    "ipiExportacao": 223092.73,
+    "compensacao": 162213.35
+   },
+   "2018-03": {
+    "icmsLiquido": 23232829.1,
+    "ipva": 15570038.86,
+    "ipiExportacao": 179391.27,
+    "compensacao": 168613.69
+   },
+   "2018-04": {
+    "icmsLiquido": 17099908.01,
+    "ipva": 5180757.23,
+    "ipiExportacao": 193034.05,
+    "compensacao": 144101.46
+   },
+   "2018-05": {
+    "icmsLiquido": 34125914.69,
+    "ipva": 4223179.3,
+    "ipiExportacao": 208067.47,
+    "compensacao": 154083.43
+   },
+   "2018-06": {
+    "icmsLiquido": 22587823.9,
+    "ipva": 4228229.84,
+    "ipiExportacao": 204757.54,
+    "compensacao": 143416.71
+   },
+   "2018-07": {
+    "icmsLiquido": 29619298.47,
+    "ipva": 4234374.95,
+    "ipiExportacao": 185455.97,
+    "compensacao": 196472.17
+   },
+   "2018-08": {
+    "icmsLiquido": 22414058.68,
+    "ipva": 4288119.56,
+    "ipiExportacao": 206882.72,
+    "compensacao": 192936.01
+   },
+   "2018-09": {
+    "icmsLiquido": 24894035.06,
+    "ipva": 4233868.86,
+    "ipiExportacao": 186354.13,
+    "compensacao": 199932.44
+   },
+   "2018-10": {
+    "icmsLiquido": 30442204.98,
+    "ipva": 3710602.02,
+    "ipiExportacao": 221161.96,
+    "compensacao": 194409.85
+   },
+   "2018-11": {
+    "icmsLiquido": 22411605.35,
+    "ipva": 2914893.01,
+    "ipiExportacao": 198040.49,
+    "compensacao": 218751.93
+   },
+   "2018-12": {
+    "icmsLiquido": 26682785.44,
+    "ipva": 5021093.21,
+    "ipiExportacao": 210182.28,
+    "compensacao": 224530.93
+   }
+  },
+  "2019": {
+   "2019-01": {
+    "icmsLiquido": 29145264.35,
+    "ipva": 40609128.08,
+    "ipiExportacao": 232737.28,
+    "compensacao": 153650.29
+   },
+   "2019-02": {
+    "icmsLiquido": 24793730.88,
+    "ipva": 22082603.07,
+    "ipiExportacao": 170447.46,
+    "compensacao": 158759.57
+   },
+   "2019-03": {
+    "icmsLiquido": 25613816.46,
+    "ipva": 15689630.75,
+    "ipiExportacao": 187468.97,
+    "compensacao": 146783.85
+   },
+   "2019-04": {
+    "icmsLiquido": 30960453.15,
+    "ipva": 5366839.04,
+    "ipiExportacao": 212865.77,
+    "compensacao": 149714
+   },
+   "2019-05": {
+    "icmsLiquido": 23197335.26,
+    "ipva": 4726712.63,
+    "ipiExportacao": 179098.1,
+    "compensacao": 178163.82
+   },
+   "2019-06": {
+    "icmsLiquido": 22519028.03,
+    "ipva": 3980131.18,
+    "ipiExportacao": 195399.39,
+    "compensacao": 174674.04
+   },
+   "2019-07": {
+    "icmsLiquido": 33274474.43,
+    "ipva": 4510081.4,
+    "ipiExportacao": 208479.11,
+    "compensacao": 191159.6
+   },
+   "2019-08": {
+    "icmsLiquido": 23829102.58,
+    "ipva": 4224838.14,
+    "ipiExportacao": 171246.11,
+    "compensacao": 158286.85
+   },
+   "2019-09": {
+    "icmsLiquido": 19319871.07,
+    "ipva": 4640597.14,
+    "ipiExportacao": 213836.91,
+    "compensacao": 150495.6
+   },
+   "2019-10": {
+    "icmsLiquido": 36825732.3,
+    "ipva": 3983272.89,
+    "ipiExportacao": 217965.87,
+    "compensacao": 149682.64
+   },
+   "2019-11": {
+    "icmsLiquido": 27652123.35,
+    "ipva": 3102905.84,
+    "ipiExportacao": 188718.58,
+    "compensacao": 160819.4
+   },
+   "2019-12": {
+    "icmsLiquido": 39866648.19,
+    "ipva": 5019467.16,
+    "ipiExportacao": 210134.79,
+    "compensacao": 147935.06
+   }
+  },
+  "2020": {
+   "2020-01": {
+    "icmsLiquido": 27077844.09,
+    "ipva": 43025581.75,
+    "ipiExportacao": 212316.88,
+    "compensacao": 73952.97
+   },
+   "2020-02": {
+    "icmsLiquido": 27747280.23,
+    "ipva": 22173671.29,
+    "ipiExportacao": 177446.44,
+    "compensacao": 89758.76
+   },
+   "2020-03": {
+    "icmsLiquido": 31982872.72,
+    "ipva": 15828271.23,
+    "ipiExportacao": 192439.77,
+    "compensacao": 96711.21
+   },
+   "2020-04": {
+    "icmsLiquido": 21604755.89,
+    "ipva": 2684824.62,
+    "ipiExportacao": 175517.98,
+    "compensacao": 83962.48
+   },
+   "2020-05": {
+    "icmsLiquido": 21236868.59,
+    "ipva": 2827473.88,
+    "ipiExportacao": 147152.8,
+    "compensacao": 56130.53
+   },
+   "2020-06": {
+    "icmsLiquido": 25909280.93,
+    "ipva": 4817701.11,
+    "ipiExportacao": 153660.6,
+    "compensacao": 32832.45
+   },
+   "2020-07": {
+    "icmsLiquido": 22967558.82,
+    "ipva": 5341380.63,
+    "ipiExportacao": 168638.14,
+    "compensacao": 59314.55
+   },
+   "2020-08": {
+    "icmsLiquido": 27540798.27,
+    "ipva": 5378080.74,
+    "ipiExportacao": 182959.07,
+    "compensacao": 122128.32
+   },
+   "2020-09": {
+    "icmsLiquido": 32183361.62,
+    "ipva": 6167936.07,
+    "ipiExportacao": 246632.26,
+    "compensacao": 84412.13
+   },
+   "2020-10": {
+    "icmsLiquido": 31152311.34,
+    "ipva": 4960297.36,
+    "ipiExportacao": 271514.89,
+    "compensacao": 97033.98
+   },
+   "2020-11": {
+    "icmsLiquido": 28770971.5,
+    "ipva": 4269036.96,
+    "ipiExportacao": 262882.92,
+    "compensacao": 57698.9
+   },
+   "2020-12": {
+    "icmsLiquido": 41287815.5,
+    "ipva": 6594542.64,
+    "ipiExportacao": 331262.71,
+    "compensacao": 70366.58
+   }
+  },
+  "2021": {
+   "2021-01": {
+    "icmsLiquido": 32914282.79,
+    "ipva": 48099481.2,
+    "ipiExportacao": 295271.84,
+    "compensacao": 80417.25
+   },
+   "2021-02": {
+    "icmsLiquido": 21651483.9,
+    "ipva": 23169564.15,
+    "ipiExportacao": 245641.55,
+    "compensacao": 93733.23
+   },
+   "2021-03": {
+    "icmsLiquido": 50048460.6,
+    "ipva": 16743249.49,
+    "ipiExportacao": 259627.5,
+    "compensacao": 123054.25
+   },
+   "2021-04": {
+    "icmsLiquido": 28407555.17,
+    "ipva": 5522604.75,
+    "ipiExportacao": 294209.94,
+    "compensacao": 109233.33
+   },
+   "2021-05": {
+    "icmsLiquido": 32434365.08,
+    "ipva": 4905039.05,
+    "ipiExportacao": 255311.58,
+    "compensacao": 138015.72
+   },
+   "2021-06": {
+    "icmsLiquido": 37008354.84,
+    "ipva": 5249903.37,
+    "ipiExportacao": 266339.39,
+    "compensacao": 136089.4
+   },
+   "2021-07": {
+    "icmsLiquido": 35677868.82,
+    "ipva": 4616367.04,
+    "ipiExportacao": 288433.29,
+    "compensacao": 145586.92
+   },
+   "2021-08": {
+    "icmsLiquido": 43275651.26,
+    "ipva": 4799158.46,
+    "ipiExportacao": 230158.47,
+    "compensacao": 141190.93
+   },
+   "2021-09": {
+    "icmsLiquido": 33671516.12,
+    "ipva": 5011238.64,
+    "ipiExportacao": 290859.4,
+    "compensacao": 150197.64
+   },
+   "2021-10": {
+    "icmsLiquido": 38241627.43,
+    "ipva": 3805399.32,
+    "ipiExportacao": 305174.97,
+    "compensacao": 147173.55
+   },
+   "2021-11": {
+    "icmsLiquido": 47063766.9,
+    "ipva": 3499386.49,
+    "ipiExportacao": 288129.48,
+    "compensacao": 141165.31
+   },
+   "2021-12": {
+    "icmsLiquido": 38502930.36,
+    "ipva": 4225414.01,
+    "ipiExportacao": 265267.6,
+    "compensacao": 177802.49
+   }
+  },
+  "2022": {
+   "2022-01": {
+    "icmsLiquido": 38105393.52,
+    "ipva": 48125749.92,
+    "ipiExportacao": 338880.76,
+    "compensacao": 133675.17
+   },
+   "2022-02": {
+    "icmsLiquido": 25592801.03,
+    "ipva": 19425308.92,
+    "ipiExportacao": 238819.16,
+    "compensacao": 133832.93
+   },
+   "2022-03": {
+    "icmsLiquido": 50183111.46,
+    "ipva": 17324960.82,
+    "ipiExportacao": 288568.56,
+    "compensacao": 177806.94
+   },
+   "2022-04": {
+    "icmsLiquido": 37029917.34,
+    "ipva": 13890919.33,
+    "ipiExportacao": 262378.41,
+    "compensacao": 161737
+   },
+   "2022-05": {
+    "icmsLiquido": 45990043.11,
+    "ipva": 13649692.23,
+    "ipiExportacao": 180494.04,
+    "compensacao": 221046.95
+   },
+   "2022-06": {
+    "icmsLiquido": 33901730.26,
+    "ipva": 10259346.21,
+    "ipiExportacao": 207000.96,
+    "compensacao": 176112.31
+   },
+   "2022-07": {
+    "icmsLiquido": 39255546.48,
+    "ipva": 5938135.54,
+    "ipiExportacao": 226688.54,
+    "compensacao": 200340.22
+   },
+   "2022-08": {
+    "icmsLiquido": 46473209.03,
+    "ipva": 6565585.94,
+    "ipiExportacao": 158027.93,
+    "compensacao": 204762.04
+   },
+   "2022-09": {
+    "icmsLiquido": 34690156.55,
+    "ipva": 6221064.23,
+    "ipiExportacao": 239015.88,
+    "compensacao": 203486.55
+   },
+   "2022-10": {
+    "icmsLiquido": 36987270.78,
+    "ipva": 5595427.25,
+    "ipiExportacao": 256448.67,
+    "compensacao": 185943.91
+   },
+   "2022-11": {
+    "icmsLiquido": 39078284.15,
+    "ipva": 4938490.81,
+    "ipiExportacao": 178348.11,
+    "compensacao": 172304.08
+   },
+   "2022-12": {
+    "icmsLiquido": 38533431.82,
+    "ipva": 5633906.78,
+    "ipiExportacao": 230387.35,
+    "compensacao": 164359.09
+   }
+  },
+  "2023": {
+   "2023-01": {
+    "icmsLiquido": 40128327.38,
+    "ipva": 62774930.31,
+    "ipiExportacao": 228587.76,
+    "compensacao": 105061.99
+   },
+   "2023-02": {
+    "icmsLiquido": 29492992.45,
+    "ipva": 25973814.41,
+    "ipiExportacao": 172968.95,
+    "compensacao": 119053.16
+   },
+   "2023-03": {
+    "icmsLiquido": 32165232.93,
+    "ipva": 22145414.23,
+    "ipiExportacao": 175762.98,
+    "compensacao": 117458.89
+   },
+   "2023-04": {
+    "icmsLiquido": 22660484.06,
+    "ipva": 17662510.42,
+    "ipiExportacao": 207937,
+    "compensacao": 112969.36
+   },
+   "2023-05": {
+    "icmsLiquido": 50079269.28,
+    "ipva": 17188745.85,
+    "ipiExportacao": 191899.23,
+    "compensacao": 125776.21
+   },
+   "2023-06": {
+    "icmsLiquido": 31187608.19,
+    "ipva": 5827970.03,
+    "ipiExportacao": 217502.86,
+    "compensacao": 120336.73
+   },
+   "2023-07": {
+    "icmsLiquido": 34928494.94,
+    "ipva": 6455066.38,
+    "ipiExportacao": 224346.2,
+    "compensacao": 114142.88
+   },
+   "2023-08": {
+    "icmsLiquido": 38284135.89,
+    "ipva": 7343660.05,
+    "ipiExportacao": 187148.76,
+    "compensacao": 115529.76
+   },
+   "2023-09": {
+    "icmsLiquido": 37275094.18,
+    "ipva": 6437635.98,
+    "ipiExportacao": 199224.53,
+    "compensacao": 126133.86
+   },
+   "2023-10": {
+    "icmsLiquido": 42932579.69,
+    "ipva": 6038718.15,
+    "ipiExportacao": 287623.25,
+    "compensacao": 139895.91
+   },
+   "2023-11": {
+    "icmsLiquido": 33442778.73,
+    "ipva": 4908707.89,
+    "ipiExportacao": 218916.59,
+    "compensacao": 145785.88
+   },
+   "2023-12": {
+    "icmsLiquido": 39406897.19,
+    "ipva": 6870651.33,
+    "ipiExportacao": 232247.56,
+    "compensacao": 149941.03
+   }
+  },
+  "2024": {
+   "2024-01": {
+    "icmsLiquido": 41316146.21,
+    "ipva": 65241037.74,
+    "ipiExportacao": 273195.14,
+    "compensacao": 106865.14
+   },
+   "2024-02": {
+    "icmsLiquido": 31644255.92,
+    "ipva": 28342337.15,
+    "ipiExportacao": 212332.14,
+    "compensacao": 108610.88
+   },
+   "2024-03": {
+    "icmsLiquido": 35456385.55,
+    "ipva": 22039068.23,
+    "ipiExportacao": 228294.36,
+    "compensacao": 96448.88
+   },
+   "2024-04": {
+    "icmsLiquido": 43068764.61,
+    "ipva": 20075610.72,
+    "ipiExportacao": 312317.3,
+    "compensacao": 91010.89
+   },
+   "2024-05": {
+    "icmsLiquido": 33875274.86,
+    "ipva": 18341555.44,
+    "ipiExportacao": 232871.83,
+    "compensacao": 109037.67
+   },
+   "2024-06": {
+    "icmsLiquido": 38346774.33,
+    "ipva": 5811784.17,
+    "ipiExportacao": 294892.05,
+    "compensacao": 3002.75
+   },
+   "2024-07": {
+    "icmsLiquido": 45258264.15,
+    "ipva": 6930056.51,
+    "ipiExportacao": 331043.33,
+    "compensacao": 119064.98
+   },
+   "2024-08": {
+    "icmsLiquido": 35819130.8,
+    "ipva": 7328463.25,
+    "ipiExportacao": 357260.81,
+    "compensacao": 115037.75
+   },
+   "2024-09": {
+    "icmsLiquido": 28089546.08,
+    "ipva": 6853694.72,
+    "ipiExportacao": 298801.67,
+    "compensacao": 229516.35
+   },
+   "2024-10": {
+    "icmsLiquido": 54622222.11,
+    "ipva": 6780427.13,
+    "ipiExportacao": 418129.6,
+    "compensacao": 120978.92
+   },
+   "2024-11": {
+    "icmsLiquido": 39422397.86,
+    "ipva": 4877712.18,
+    "ipiExportacao": 300025.04,
+    "compensacao": 0
+   },
+   "2024-12": {
+    "icmsLiquido": 49059929.6,
+    "ipva": 6973408.23,
+    "ipiExportacao": 412004.4,
+    "compensacao": 219819.92
+   }
+  },
+  "2025": {
+   "2025-01": {
+    "icmsLiquido": 37002517.42,
+    "ipva": 68787057.4,
+    "ipiExportacao": 233784.68,
+    "compensacao": 84160.35
+   },
+   "2025-02": {
+    "icmsLiquido": 39425730.58,
+    "ipva": 31271124.55,
+    "ipiExportacao": 271435.56,
+    "compensacao": 90440.85
+   },
+   "2025-03": {
+    "icmsLiquido": 40282629.17,
+    "ipva": 24709574.03,
+    "ipiExportacao": 313114.17,
+    "compensacao": 2060.46
+   },
+   "2025-04": {
+    "icmsLiquido": 43385515.28,
+    "ipva": 22405542.84,
+    "ipiExportacao": 333530.08,
+    "compensacao": 118611.65
+   },
+   "2025-05": {
+    "icmsLiquido": 40162471.5,
+    "ipva": 19170084.09,
+    "ipiExportacao": 264646.83,
+    "compensacao": 196321.65
+   },
+   "2025-06": {
+    "icmsLiquido": 30443214.71,
+    "ipva": 5974582.14,
+    "ipiExportacao": 340695.62,
+    "compensacao": 2453.84
+   },
+   "2025-07": {
+    "icmsLiquido": 55121248.64,
+    "ipva": 7605178.37,
+    "ipiExportacao": 314749.99,
+    "compensacao": 174883.06
+   },
+   "2025-08": {
+    "icmsLiquido": 40672791.22,
+    "ipva": 7622898.97,
+    "ipiExportacao": 278045.16,
+    "compensacao": 0
+   },
+   "2025-09": {
+    "icmsLiquido": 49111816.85,
+    "ipva": 7882920.69,
+    "ipiExportacao": 338510.18,
+    "compensacao": 169566.95
+   },
+   "2025-10": {
+    "icmsLiquido": 40470815.21,
+    "ipva": 7189817.43,
+    "ipiExportacao": 337255.79,
+    "compensacao": 2121.19
+   },
+   "2025-11": {
+    "icmsLiquido": 37286396.54,
+    "ipva": 4932843.22,
+    "ipiExportacao": 310384.41,
+    "compensacao": 86387.03
+   },
+   "2025-12": {
+    "icmsLiquido": 58453364.06,
+    "ipva": 8607221.91,
+    "ipiExportacao": 356533.71,
+    "compensacao": 160991.4
+   }
+  },
+  "2026": {
+   "2026-01": {
+    "icmsLiquido": 41267754.41,
+    "ipva": 74504483.97,
+    "ipiExportacao": 333740.26,
+    "compensacao": 67085.86
+   },
+   "2026-02": {
+    "icmsLiquido": 26296227.27,
+    "ipva": 34674811.12,
+    "ipiExportacao": 318692.33,
+    "compensacao": 5476.11
+   },
+   "2026-03": {
+    "icmsLiquido": 61774257.74,
+    "ipva": 29685181.53,
+    "ipiExportacao": 285399.66,
+    "compensacao": 180642.87
+   },
+   "2026-04": {
+    "icmsLiquido": 39545367.1,
+    "ipva": 23009188.37,
+    "ipiExportacao": 307053.27,
+    "compensacao": 0
+   },
+   "2026-05": {
+    "icmsLiquido": 41879368.11,
+    "ipva": 20272599.1,
+    "ipiExportacao": 285872.44,
+    "compensacao": 91163.49
+   },
+   "2026-06": {
+    "icmsLiquido": 52069817.89,
+    "ipva": 6896408.33,
+    "ipiExportacao": 449430.37,
+    "compensacao": 161234.99
+   },
+   "2026-07": {
+    "icmsLiquido": 42317126.4,
+    "ipva": 8434281.64,
+    "ipiExportacao": 420915.12,
+    "compensacao": 351112.18
+   },
+   "2026-08": {
+    "icmsLiquido": 45393768.73,
+    "ipva": 8534486.6,
+    "ipiExportacao": 391966.19,
+    "compensacao": 0
+   },
+   "2026-09": {
+    "icmsLiquido": 51395606.1,
+    "ipva": 9501032.84,
+    "ipiExportacao": 309745.52,
+    "compensacao": 156894.14
+   },
+   "2026-10": {
+    "icmsLiquido": 44431869.65,
+    "ipva": 0,
+    "ipiExportacao": 380436.15,
+    "compensacao": 149574.83
+   }
+  }
+ }
+}

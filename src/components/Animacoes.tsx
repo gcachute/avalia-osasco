@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { dinheiroCurto } from "@/lib/formato";
+import { dinheiroCurto, reaisExato } from "@/lib/formato";
 
 // Observa os elementos .revelar e .barra-anim e marca com data-visivel quando entram na tela.
 // A marca é um atributo, não uma classe: se um componente trocar a própria classe (ao passar o mouse,
@@ -108,7 +108,7 @@ export function DinheiroAnimado({ valor }: { valor: number }) {
   }, [el, valor]);
 
   return (
-    <span ref={setEl} className="tabular-nums">
+    <span ref={setEl} className="tabular-nums" title={reaisExato(valor)}>
       {dinheiroCurto(atual)}
     </span>
   );

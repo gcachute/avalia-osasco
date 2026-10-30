@@ -27,6 +27,17 @@ const CATEGORIAS = {
     ["icms", /ICMS/],
     ["ipva", /IPVA/],
   ],
+  // Receita da própria cidade. A previdência dos servidores (contribuições, rendimentos e compensações do instituto de
+  // previdência) vem antes, para não se misturar a impostos e taxas: é dinheiro reservado às aposentadorias.
+  propria: [
+    ["previdencia", /Regimes? Pr[oó]prios? de Previd|RPPS|Seguridade Social|CPSSS|Contribui[cç][aã]o do Servidor|Compensa[cç][oõ]es Financeiras entre os Regimes|Patronal/i],
+    ["iss", /Servi[cç]os de Qualquer Natureza|ISSQN/i],
+    ["iptu", /Propriedade Predial e Territorial Urbana/i],
+    ["itbi", /Transmiss[aã]o/i],
+    ["irrf", /Renda.*Retido na Fonte/i],
+    ["taxas", /^([\d.]+\s+)?Taxas\b/i],
+    ["iluminacao", /Ilumina[cç][aã]o P[uú]blica/i],
+  ],
 };
 // O SICONFI devolve o travessão como "¿" ("Sistema Único de Saúde ¿ SUS").
 const limpaConta = (s) => s.replace(/^[\d.]+\s+/, "").replace(/\s*¿\s*/g, " – ").replace(/\s+/g, " ").trim();
@@ -77,6 +88,7 @@ function classificarAno(linhas) {
   return {
     uniao: esfera("uniao", ["1.7.1", "2.4.1"]),
     estado: esfera("estado", ["1.7.2", "2.4.2"]),
+    propria: esfera("propria", ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.9"]),
     // O FUNDEB junta parte dos impostos do Estado e dos municípios (e um complemento da União) e redistribui pelo número
     // de alunos; entra como "outras instituições públicas" no plano de contas.
     fundeb: r2(brutas.filter((l) => /^1\.7\.5(\.|$)/.test(l.sig) && /FUNDEB|Manuten[cç][aã]o e Desenvolvimento da Educa/i.test(l.conta)).reduce((a, l) => Math.max(a, l.valor), 0)),
@@ -490,6 +502,138 @@ export function montarDinheiro({ acha, achaEquipamento, vereadores = [] }) {
     })
     .sort((a, b) => b.total - a.total);
 
+  // ---------- Ano em andamento (relatório bimestral) ----------
+  // Soma os meses do ano em andamento e os mesmos meses do ano anterior, para comparar.
+  const rreo = ler("rreo.json");
+  const tu = ler("transferencias-uniao.json");
+  const mesesUniao = tu?.meses ?? {};
+  let parcial = null;
+  const anoParcial = Math.max(...Object.keys(rreo?.anos ?? {}).map(Number));
+  const rp = rreo?.anos?.[anoParcial];
+  if (rp && rp.periodo < 6 && rp.anoAnterior) {
+    const idx = rp.meses.map((m, i) => [m, i]).filter(([m]) => m.startsWith(String(anoParcial))).map(([, i]) => i);
+    const soma = (bloco, cod) => (bloco.linhas[cod] ? r2(idx.reduce((t, i) => t + (bloco.linhas[cod].meses[i] ?? 0), 0)) : null);
+    const LINHAS = [
+      ["propria", "iss", "ISS", "ISSLiquidoExcetoTransferenciasEFUNDEB"],
+      ["propria", "iptu", "IPTU", "IPTULiquidoExcetoTransferenciasEFUNDEB"],
+      ["propria", "itbi", "ITBI", "ITBILiquidoExcetoTransferenciasEFUNDEB"],
+      ["propria", "irrf", "Imposto de Renda retido na fonte", "IRRFLiquidoExcetoTransferenciasEFUNDEB"],
+      ["propria", "outrosTributos", "Taxas e outros tributos", "OutrasReceitasTributarias"],
+      ["estado", "icms", "ICMS", "RREO3CotaParteDoICMS"],
+      ["estado", "ipva", "IPVA", "RREO3CotaParteDoIPVA"],
+      ["uniao", "fpm", "FPM", "RREO3CotaParteDoFPM"],
+      ["fundeb", "fundeb", "FUNDEB", "RREO3TransferenciasDoFUNDEB"],
+      ["outras", "outrasTransf", "Outros repasses da União e do Estado (SUS, educação, convênios...)", "RREO3OutrasTransferenciasCorrentes"],
+      ["retencao", "retencao", "Retido do FPM, ICMS e IPVA para o FUNDEB", "DeducaoDeReceitaParaFormacaoDoFUNDEB"],
+    ];
+    const ultimo = rp.meses[idx.at(-1)];
+    // Detalhe federal do mesmo período, pelo arquivo da CGU (se os meses já saíram).
+    const mesesCgu = (ano) => idx.map((i) => `${ano}${rp.meses[i].slice(5, 7)}`);
+    const cgu = (ano, cat) => {
+      const ms = mesesCgu(ano);
+      return ms.every((m) => mesesUniao[m]) ? r2(ms.reduce((t, m) => t + (mesesUniao[m].prefeitura[cat] ?? 0), 0)) : null;
+    };
+    parcial = {
+      ano: anoParcial,
+      ateMes: Number(ultimo.slice(5, 7)),
+      linhas: LINHAS.map(([grupo, chave, nome, cod]) => ({
+        grupo,
+        chave,
+        nome,
+        atual: soma(rp, cod),
+        anterior: soma(rp.anoAnterior, cod),
+        previsao: rp.linhas[cod]?.previsao ?? null,
+      })).filter((l) => l.atual != null),
+      uniao: ["sus", "educacao", "assistencia", "especiais"]
+        .map((cat) => ({ chave: cat, atual: cgu(anoParcial, cat), anterior: cgu(anoParcial - 1, cat) }))
+        .filter((x) => x.atual != null),
+      fonte: { nome: rreo.fonte, url: rreo.url },
+    };
+  }
+
+  // ---------- Conferência dos números ----------
+  // Cada valor da página é comparado com outra fonte: o relatório bimestral (a mesma Prefeitura, outro relatório) e o
+  // arquivo de transferências do governo federal (fonte independente). Diferença de até 0,1% conta como igual; até 3%,
+  // como próxima (datas de lançamento, restituições); acima disso, como diferente, com a explicação quando ela é conhecida.
+  const anosFechados = anosEntradas.filter((e) => rreo?.anos?.[e.ano]?.periodo === 6);
+  const rreoTotal = (ano, cod) => rreo?.anos?.[ano]?.linhas?.[cod]?.total ?? null;
+  const cguAno = (ano, cat) => {
+    const ms = Object.entries(mesesUniao).filter(([m]) => m.startsWith(String(ano)));
+    return ms.length === 12 ? r2(ms.reduce((t, [, x]) => t + (x.prefeitura[cat] ?? 0), 0)) : null;
+  };
+  const situacao = (a, b) => {
+    const d = Math.abs(b - a) / Math.max(Math.abs(a), 1);
+    return d <= 0.001 ? "igual" : d <= 0.03 ? "proximo" : "diferente";
+  };
+  // notasAno: explicação de uma diferença num ano específico, quando ela foi conferida numa terceira fonte.
+  const conferencia = (chave, nome, fonteA, fonteB, nota, par, notasAno = {}) => {
+    const anos = anosFechados
+      .map((e) => {
+        const [a, b] = par(e);
+        return a == null || b == null || (!a && !b) ? null : { ano: e.ano, a: r2(a), b: r2(b), situacao: situacao(a, b), nota: notasAno[e.ano] ?? null };
+      })
+      .filter(Boolean);
+    return anos.length ? { chave, nome, fonteA, fonteB, nota, anos } : null;
+  };
+  const sefaz = ler("repasses-estado.json");
+  const estadoAno = (ano, campo) => {
+    const ms = Object.values(sefaz?.anos?.[ano] ?? {});
+    return ms.length === 12 ? r2(ms.reduce((t, m) => t + m[campo], 0)) : null;
+  };
+  const DCA = "Declaração anual (SICONFI)";
+  const SEFAZ = "Repasses do Estado (Secretaria da Fazenda de SP)";
+  const RREO = "Relatório bimestral (RREO)";
+  const CGU = "Transferências do governo federal (CGU)";
+  const EMENDAS = "Emendas recebidas (CGU)";
+  const recebidoTipo = (ano, re) => rec.filter((r) => r.destino === "prefeitura" && r.mes.startsWith(String(ano)) && re.test(r.tipo)).reduce((t, r) => t + r.valor, 0);
+  const conferencias = [
+    conferencia("fpm", "FPM bruto", DCA, RREO, null, (e) => [e.uniao.fpm, rreoTotal(e.ano, "RREO3CotaParteDoFPM")], {
+      2018: "O relatório bimestral deixou fora da linha do FPM as cotas extras de 1% (julho e dezembro), que a declaração anual inclui.",
+      2019: "O relatório bimestral deixou fora da linha do FPM parte das cotas extras de 1% (julho e dezembro), que a declaração anual inclui.",
+    }),
+    conferencia("icms", "ICMS bruto", DCA, RREO, null, (e) => [e.estado.icms, rreoTotal(e.ano, "RREO3CotaParteDoICMS")], {
+      2019: "Os repasses do Estado confirmam o valor da declaração anual (R$ 421,2 mi); o relatório bimestral de 2019 da Prefeitura ficou abaixo.",
+    }),
+    conferencia("ipva", "IPVA bruto", DCA, RREO, null, (e) => [e.estado.ipva, rreoTotal(e.ano, "RREO3CotaParteDoIPVA")], {
+      2019: "Os repasses do Estado confirmam o valor da declaração anual (R$ 117,9 mi); o relatório bimestral de 2019 da Prefeitura ficou abaixo.",
+    }),
+    conferencia(
+      "icmsEstado",
+      "ICMS bruto",
+      DCA,
+      SEFAZ,
+      "O Estado publica o ICMS já sem os 20% do FUNDEB; aqui o valor do Estado foi dividido por 0,8. Em 2023 o Estado também pagou às cidades uma compensação por perdas de ICMS (Lei Complementar 201/2023), uma explicação possível para a diferença daquele ano.",
+      (e) => [e.estado.icms, estadoAno(e.ano, "icmsLiquido") && estadoAno(e.ano, "icmsLiquido") / 0.8],
+    ),
+    conferencia("ipvaEstado", "IPVA bruto", DCA, SEFAZ, "Repasses do fim de dezembro podem cair em janeiro do ano seguinte.", (e) => [e.estado.ipva, estadoAno(e.ano, "ipva")]),
+    conferencia("fundeb", "FUNDEB recebido", DCA, RREO, null, (e) => [e.fundeb, rreoTotal(e.ano, "RREO3TransferenciasDoFUNDEB")]),
+    conferencia("retencao", "Retido para o FUNDEB", DCA, RREO, null, (e) => [e.uniao.paraFundebTotal + e.estado.paraFundebTotal, rreoTotal(e.ano, "DeducaoDeReceitaParaFormacaoDoFUNDEB")]),
+    conferencia("iss", "ISS", DCA, RREO, "O relatório bimestral desconta restituições, por isso pode ficar um pouco abaixo.", (e) => [e.propria.iss, rreoTotal(e.ano, "ISSLiquidoExcetoTransferenciasEFUNDEB")]),
+    conferencia("iptu", "IPTU", DCA, RREO, "O relatório bimestral desconta restituições, por isso pode ficar um pouco abaixo.", (e) => [e.propria.iptu, rreoTotal(e.ano, "IPTULiquidoExcetoTransferenciasEFUNDEB")]),
+    conferencia("itbi", "ITBI", DCA, RREO, null, (e) => [e.propria.itbi, rreoTotal(e.ano, "ITBILiquidoExcetoTransferenciasEFUNDEB")]),
+    conferencia(
+      "fpmUniao",
+      "FPM que chegou livre",
+      DCA,
+      CGU,
+      "O governo federal registra o FPM já sem a parte do FUNDEB. Em alguns anos as cotas extras de julho e dezembro aparecem em outra linha do arquivo federal.",
+      (e) => [e.uniao.fpm - (e.uniao.paraFundeb?.fpm ?? 0), cguAno(e.ano, "fpm")],
+      { 2025: "No arquivo federal de 2025 a linha do FPM não traz as cotas extras de 1% de julho e dezembro (R$ 17,3 mi); sem elas, os valores são iguais." },
+    ),
+    conferencia("susUniao", "Saúde (SUS) da União", DCA, CGU, "Diferenças pequenas vêm de repasses lançados em meses diferentes e de rendimentos das contas da saúde.", (e) => [e.uniao.sus, cguAno(e.ano, "sus")]),
+    conferencia("educacaoUniao", "Educação da União (salário-educação, merenda e outros)", DCA, CGU, "Valores menores, em que o mês de lançamento e os rendimentos das contas pesam mais na diferença.", (e) => [e.uniao.educacao, cguAno(e.ano, "educacao")]),
+    conferencia("assistenciaUniao", "Assistência social da União", DCA, CGU, "Valores pequenos (cerca de R$ 6 mi por ano), em que o mês de lançamento pesa mais na diferença.", (e) => [e.uniao.assistencia, cguAno(e.ano, "assistencia")]),
+    conferencia("pix", "Emendas Pix", EMENDAS, CGU, "As duas listas são do governo federal; a data de cada registro pode cair em meses diferentes.", (e) => [recebidoTipo(e.ano, /Especiais/i), cguAno(e.ano, "especiais")]),
+    conferencia(
+      "emendasIndividuais",
+      "Emendas individuais recebidas",
+      EMENDAS,
+      RREO,
+      "Em 2024 a Prefeitura declarou R$ 49,5 mi em emendas individuais (e R$ 28,7 mi de bancada), mas a lista da CGU por recebedor só identifica R$ 21,4 mi: o restante chegou ao Fundo Municipal de Saúde como “incremento temporário” sem o autor na lista. Por isso 2024 aparece com menos emendas do que houve.",
+      (e) => [recebidoTipo(e.ano, /Individual/i), rreoTotal(e.ano, "RREO3TransferenciasObrigatoriasDaUniaoRelativasAsEmendasIndividuais")],
+    ),
+  ].filter(Boolean);
+
   // ---------- Integridade ----------
   const sancoes = ler("sancoes.json");
   const mesesPorCnpj = {};
@@ -667,6 +811,13 @@ export function montarDinheiro({ acha, achaEquipamento, vereadores = [] }) {
       convenios,
       gastos,
       integridade,
+      parcial,
+      conferencias,
+      fontesConferencia: {
+        rreo: rreo && { nome: rreo.fonte, url: rreo.url },
+        uniao: tu && { nome: tu.fonte, url: tu.url },
+        estado: sefaz && { nome: sefaz.fonte, url: sefaz.url },
+      },
     },
     porBairro,
   };
