@@ -260,7 +260,7 @@ export default function Metodologia() {
         </p>
       </Secao>
 
-      <Secao titulo="Verbas de fora" id="verbas">
+      <Secao titulo="Verbas e receitas" id="verbas">
         <ul className="list-disc space-y-2 pl-5 text-slate-700">
           <li>
             <b>De onde vem o dinheiro:</b> receitas que a Prefeitura declarou ao Tesouro Nacional nas contas anuais (SICONFI, Anexo I-C), separadas pelo nome de

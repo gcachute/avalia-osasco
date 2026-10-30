@@ -157,7 +157,7 @@ export function DinheiroBairro({ d, realce: base }: { d: NonNullable<BairroMapa[
       </ol>
       {!itens.length && <p className="mt-2 text-xs text-slate-500">Entre os itens de maior valor, nenhum é deste tipo.</p>}
       <Link href="/verbas" className="mt-2 inline-block text-xs font-medium text-blue-800 underline">
-        Todas as verbas de fora
+        Ver a página Verbas e receitas
       </Link>
     </div>
   );

@@ -13,7 +13,7 @@ import { nomeProprio, type PaginaDinheiro } from "@/lib/dinheiro";
 import { dinheiroCurto } from "@/lib/formato";
 
 export const metadata: Metadata = {
-  title: "Verbas de fora",
+  title: "Verbas e receitas",
   description: "Quanto a União e o Estado mandam para Osasco, quais deputados e senadores mandaram emendas, com quem a Prefeitura gastou esse dinheiro e o que a conferência de integridade encontrou.",
 };
 
@@ -36,18 +36,19 @@ export default function PaginaDinheiro() {
     <>
       <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-5 py-5 sm:px-8 sm:py-7">
         <div className="relative">
-          <p className="text-sm font-medium text-blue-800">Receitas e gastos da Prefeitura de Osasco</p>
-          <h1 className="mt-1 max-w-3xl text-3xl font-bold tracking-tight text-balance text-slate-900 sm:text-4xl">Verbas de fora</h1>
+          <p className="text-sm font-medium text-blue-800">De onde vem e para onde vai o dinheiro da Prefeitura de Osasco</p>
+          <h1 className="mt-1 max-w-3xl text-3xl font-bold tracking-tight text-balance text-slate-900 sm:text-4xl">Verbas e receitas</h1>
           <p className="mt-3 max-w-3xl text-slate-600">
-            Quanto chega e por qual motivo, quem mandou cada emenda, com quem a Prefeitura gastou esse dinheiro e o que a conferência nas listas oficiais
-            de punidos encontrou. Tudo a partir dos registros oficiais, com o link de cada fonte.
+            O que chega da União e do Estado e por qual motivo, o que a própria cidade arrecada, quem mandou cada emenda, com quem a Prefeitura gastou o
+            dinheiro de fora e o que a conferência nas listas oficiais de punidos encontrou. Tudo a partir dos registros oficiais, com o link de cada fonte.
           </p>
-          <dl className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">
+          <dl className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
             {[
               { t: `Da União em ${ultimo.ano}`, v: ultimo.uniao.total, d: "valor bruto: FPM, SUS, educação, convênios", cor: "var(--grafico-1)" },
               { t: `Do Estado em ${ultimo.ano}`, v: ultimo.estado.total, d: "valor bruto: ICMS, IPVA, SUS, convênios", cor: "var(--grafico-2)" },
               { t: `FUNDEB em ${ultimo.ano}`, v: ultimo.fundeb, d: "fundo da educação básica", cor: "var(--grafico-3)" },
               { t: `Emendas federais em ${anoEmendas}`, v: recebidoUltimo, d: `${dinheiroCurto(totalEmendas)} desde ${anosRecebido[0]}`, cor: "var(--grafico-4)" },
+              { t: `Receita própria em ${ultimo.ano}`, v: ultimo.propria?.total ?? 0, d: "ISS, IPTU, ITBI, taxas e outras", cor: "var(--grafico-outro)" },
             ].map((c) => (
               <div key={c.t} className="relative overflow-hidden rounded-xl bg-slate-50 p-3 transition hover:-translate-y-0.5 hover:shadow-md">
                 <span className="absolute inset-x-0 top-0 h-1" style={{ background: c.cor }} aria-hidden />
