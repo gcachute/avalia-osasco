@@ -21,7 +21,6 @@ export default async function PaginaMapa() {
   return (
     <>
       <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-5 py-5 sm:px-8 sm:py-7">
-        <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-blue-100 opacity-60 blur-3xl" aria-hidden />
         <div className="relative">
           <p className="text-sm font-medium text-blue-800">Mapa de Osasco</p>
           <h1 className="mt-1 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Onde a política chega em cada bairro</h1>

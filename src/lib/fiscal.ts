@@ -6,8 +6,8 @@ export type ChaveFiscal = "saude" | "educacao" | "fundeb" | "pessoal" | "investi
 export const INDICADORES: { chave: ChaveFiscal; nome: string; maiorMelhor: boolean }[] = [
   { chave: "saude", nome: "Saúde", maiorMelhor: true },
   { chave: "educacao", nome: "Educação", maiorMelhor: true },
-  { chave: "fundeb", nome: "FUNDEB p/ professores", maiorMelhor: true },
-  { chave: "pessoal", nome: "Pessoal / RCL", maiorMelhor: false },
+  { chave: "fundeb", nome: "FUNDEB nos salários da educação", maiorMelhor: true },
+  { chave: "pessoal", nome: "Gasto com pessoal", maiorMelhor: false },
   { chave: "investimento", nome: "Investimento", maiorMelhor: true },
 ];
 

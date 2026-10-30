@@ -254,7 +254,7 @@ export default function Evolucao() {
                   formato="pct"
                   zeroNaBase
                   series={[
-                    { nome: "Pessoal (% da RCL)", cor: "var(--grafico-1)", pontos: fiscalAnos.map((a) => ({ x: a.ano, y: osasco(a).pessoal })) },
+                    { nome: "Pessoal (% da receita líquida)", cor: "var(--grafico-1)", pontos: fiscalAnos.map((a) => ({ x: a.ano, y: osasco(a).pessoal })) },
                     {
                       nome: "Investimento (% da despesa)",
                       cor: "var(--grafico-2)",
@@ -288,7 +288,7 @@ export default function Evolucao() {
                       .filter((a) => a.educacao != null && a.educacao < 25)
                       .map((a) => `${a.ano} (${formatar(a.educacao, "pct")})`)
                       .join(", ")} a educação ficou abaixo do mínimo de 25%; a Emenda Constitucional 119/2022 suspendeu as punições por isso em 2020 e 2021, anos da pandemia.`}{" "}
-                  Para 2025, o resumo enviado ao Tesouro (RREO) traz números diferentes dos declarados aqui; a nota do prefeito usa estes. Veja a
+                  Para 2025, o relatório bimestral enviado ao Tesouro (RREO) traz números diferentes dos declarados aqui; a nota do prefeito usa estes. Veja a
                   página do prefeito.
                 </p>
               </Cartao>

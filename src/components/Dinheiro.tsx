@@ -2,7 +2,8 @@
 
 import { useId, useState } from "react";
 import { Abre, Segmentos } from "@/components/movimento/Movimento";
-import type { ContaDCA, EntradaAno, GastoAno, ResumoGasto } from "@/lib/dinheiro";
+import { ConferirLinha } from "@/components/dinheiro/Conferencia";
+import type { Conferencia, ContaDCA, EntradaAno, GastoAno, ResumoGasto } from "@/lib/dinheiro";
 import { dinheiroCurto, pct, reais, reaisExato } from "@/lib/formato";
 
 // Seletor de ano, do mais recente para o mais antigo, com o destaque que desliza.
@@ -44,11 +45,14 @@ type LinhaEntrada = {
   contas: (e: EntradaAno) => ContaDCA[];
   // Parte retida para formar o FUNDEB (volta na linha do FUNDEB).
   retido?: (e: EntradaAno) => number;
+  // Conferências (outras fontes) que valem para esta linha.
+  conferir?: string[];
 };
 
 const UNIAO: LinhaEntrada[] = [
   {
     chave: "fpm",
+    conferir: ["fpm", "fpmUniao"],
     nome: "Fundo de Participação dos Municípios (FPM)",
     etiqueta: OBRIGATORIO,
     explica: "Parte do Imposto de Renda e do IPI que a União divide entre todas as cidades, conforme a população. Chega a cada dez dias e pode ser usada em qualquer área.",
@@ -58,6 +62,7 @@ const UNIAO: LinhaEntrada[] = [
   },
   {
     chave: "sus",
+    conferir: ["susUniao"],
     nome: "Saúde (SUS)",
     etiqueta: PROGRAMA,
     explica: "Repasses do Fundo Nacional de Saúde para o Fundo Municipal de Saúde: manutenção de postos, hospitais e programas. Boa parte das emendas federais de saúde chega por aqui.",
@@ -66,6 +71,7 @@ const UNIAO: LinhaEntrada[] = [
   },
   {
     chave: "educacao",
+    conferir: ["educacaoUniao"],
     nome: "Educação (FNDE, merenda, salário-educação)",
     etiqueta: PROGRAMA,
     explica: "Salário-educação (contribuição das empresas, dividida pelo número de alunos) e programas do FNDE, como a merenda escolar.",
@@ -74,6 +80,7 @@ const UNIAO: LinhaEntrada[] = [
   },
   {
     chave: "assistencia",
+    conferir: ["assistenciaUniao"],
     nome: "Assistência social",
     etiqueta: PROGRAMA,
     explica: "Repasses do Fundo Nacional de Assistência Social para os centros de referência (CRAS e CREAS) e os serviços de acolhimento.",
@@ -101,6 +108,7 @@ const UNIAO: LinhaEntrada[] = [
 const ESTADO: LinhaEntrada[] = [
   {
     chave: "icms",
+    conferir: ["icms", "icmsEstado"],
     nome: "ICMS (parte do imposto estadual)",
     etiqueta: OBRIGATORIO,
     explica: "Um quarto do ICMS arrecadado pelo Estado pertence às cidades. A parte de cada uma depende principalmente do movimento econômico gerado nela.",
@@ -110,6 +118,7 @@ const ESTADO: LinhaEntrada[] = [
   },
   {
     chave: "ipva",
+    conferir: ["ipva", "ipvaEstado"],
     nome: "IPVA (metade do imposto dos veículos)",
     etiqueta: OBRIGATORIO,
     explica: "Metade do IPVA dos veículos registrados em Osasco fica com a cidade.",
@@ -146,6 +155,7 @@ const ESTADO: LinhaEntrada[] = [
 const FUNDEB: LinhaEntrada[] = [
   {
     chave: "fundeb",
+    conferir: ["fundeb", "retencao"],
     nome: "Fundo da educação básica",
     etiqueta: "obrigatório, conforme o número de alunos",
     explica:
@@ -159,6 +169,7 @@ const FUNDEB: LinhaEntrada[] = [
 const PROPRIA: LinhaEntrada[] = [
   {
     chave: "iss",
+    conferir: ["iss"],
     nome: "ISS (imposto sobre serviços)",
     explica: "Cobrado das empresas que prestam serviços na cidade. É a maior receita de Osasco.",
     valor: (e) => e.propria?.iss ?? 0,
@@ -166,6 +177,7 @@ const PROPRIA: LinhaEntrada[] = [
   },
   {
     chave: "iptu",
+    conferir: ["iptu"],
     nome: "IPTU (imposto sobre imóveis)",
     explica: "Pago pelos donos de casas, apartamentos, salas e terrenos da cidade.",
     valor: (e) => e.propria?.iptu ?? 0,
@@ -180,6 +192,7 @@ const PROPRIA: LinhaEntrada[] = [
   },
   {
     chave: "itbi",
+    conferir: ["itbi"],
     nome: "ITBI (compra e venda de imóveis)",
     explica: "Imposto pago quando um imóvel da cidade é vendido.",
     valor: (e) => e.propria?.itbi ?? 0,
@@ -240,6 +253,7 @@ function EntradaExpansivel({
   maximo,
   cor,
   indice,
+  conferencias,
 }: {
   l: LinhaEntrada;
   lista: EntradaAno[];
@@ -250,6 +264,7 @@ function EntradaExpansivel({
   maximo: number;
   cor: string;
   indice: number;
+  conferencias: Conferencia[];
 }) {
   const [aberto, setAberto] = useState(false);
   const id = useId();
@@ -348,6 +363,8 @@ function EntradaExpansivel({
             <p className="mt-1 text-[11px] text-slate-500">Toque numa barra para ver aquele ano. Valores sem correção pela inflação.</p>
           </div>
 
+          <ConferirLinha conferencias={conferencias.filter((c) => l.conferir?.includes(c.chave))} ano={ano} />
+
           {contas.length > 0 && !(contas.length === 1 && l.chave === "fundeb") && (
             <div>
               <div className="font-medium text-slate-900">Contas da declaração anual de {ano}</div>
@@ -367,7 +384,7 @@ function EntradaExpansivel({
   );
 }
 
-export function ComposicaoEntradas({ anos }: { anos: EntradaAno[] }) {
+export function ComposicaoEntradas({ anos, conferencias = [] }: { anos: EntradaAno[]; conferencias?: Conferencia[] }) {
   const lista = [...anos].sort((a, b) => b.ano - a.ano);
   const [ano, setAno] = useState(lista[0].ano);
   const e = lista.find((x) => x.ano === ano)!;
@@ -391,7 +408,19 @@ export function ComposicaoEntradas({ anos }: { anos: EntradaAno[] }) {
         {linhas
           .filter((l) => l.valor(e) > 0)
           .map((l, i) => (
-            <EntradaExpansivel key={l.chave} l={l} lista={lista} ano={ano} setAno={setAno} total={total} nomeTotal={nomeTotal} maximo={maximo} cor={cor} indice={i} />
+            <EntradaExpansivel
+              key={l.chave}
+              l={l}
+              lista={lista}
+              ano={ano}
+              setAno={setAno}
+              total={total}
+              nomeTotal={nomeTotal}
+              maximo={maximo}
+              cor={cor}
+              indice={i}
+              conferencias={conferencias}
+            />
           ))}
       </ul>
     </div>
@@ -501,8 +530,8 @@ export function GastosPorAno({ gastos }: { gastos: GastoAno[] }) {
       <Anos anos={lista.map((x) => x.ano)} ano={ano} setAno={setAno} rotulo={(a) => (lista.find((x) => x.ano === a)!.ultimoMes < 12 ? `${a} (até ${MESES[lista.find((x) => x.ano === a)!.ultimoMes].slice(0, 3)})` : String(a))} />
       {g.ultimoMes < 12 && <p className="text-xs text-slate-500">Ano em andamento: pagamentos até {MESES[g.ultimoMes]}.</p>}
       <div className="grid gap-4 lg:grid-cols-2">
-        {g.federal && <BlocoGasto titulo="Pago com dinheiro federal" g={g.federal} cor="var(--grafico-1)" />}
-        {g.estadual && <BlocoGasto titulo="Pago com dinheiro estadual (quase todo do FUNDEB)" g={g.estadual} cor="var(--grafico-2)" />}
+        {g.federal && <BlocoGasto titulo="Pago com verba federal" g={g.federal} cor="var(--grafico-1)" />}
+        {g.estadual && <BlocoGasto titulo="Pago com verba estadual (quase toda do FUNDEB)" g={g.estadual} cor="var(--grafico-2)" />}
       </div>
       {emendas.length > 0 && (
         <div className="rounded-xl border border-slate-200 p-4">

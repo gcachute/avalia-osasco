@@ -129,7 +129,7 @@ export function ListaVereadores({
           ))}
         </div>
         {criterio === "proprio" && (
-          <div className="animate-[mapa-painel_0.35s_ease_both] rounded-xl border border-blue-100 bg-gradient-to-b from-blue-50/80 to-white p-2.5">
+          <div className="animate-[mapa-painel_0.35s_ease_both] rounded-xl border border-blue-100 bg-blue-50/60 p-2.5">
             <div className="flex items-baseline justify-between gap-2">
               <p className="text-xs font-semibold text-slate-900">O que importa para você?</p>
               <span className="text-[10px] text-slate-500">fica salvo neste navegador</span>
