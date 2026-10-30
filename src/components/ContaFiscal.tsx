@@ -2,6 +2,7 @@
 // Osasco, a média que dá a nota e a tabela com todas as cidades comparadas.
 import type { AnoFiscal, CidadeFiscal, Fiscal } from "@/lib/dados";
 import { nota, nota10, num } from "@/lib/formato";
+import { RolagemLateral } from "@/components/RolagemLateral";
 
 const pts = (x: number | null | undefined) => (x == null ? "—" : nota(nota10(x)));
 const pct = (x: number | null | undefined, casas = 1) => (x == null ? "—" : `${num(x, casas)}%`);
@@ -45,7 +46,7 @@ function Tabela({
 }) {
   const cidades = a.cidades.filter((c) => c.pilares[pilar].nota != null).sort((x, y) => (x.pilares[pilar].ranking ?? 99) - (y.pilares[pilar].ranking ?? 99));
   return (
-    <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+    <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
       <table className="w-full min-w-[640px] text-sm">
         <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
           <tr>
@@ -75,7 +76,7 @@ function Tabela({
           ))}
         </tbody>
       </table>
-    </div>
+    </RolagemLateral>
   );
 }
 

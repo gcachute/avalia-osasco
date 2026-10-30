@@ -12,6 +12,7 @@ import type { AnoFiscal, CidadeFiscal } from "@/lib/dados";
 import { PILARES_PREFEITO, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, num, plural, sessao } from "@/lib/dados";
 import { INDICADORES, primarioTexto, ranking, rotuloPeriodo } from "@/lib/fiscal";
 import { FAIXAS } from "@/lib/iegm";
+import { RolagemLateral } from "@/components/RolagemLateral";
 
 export const metadata: Metadata = { title: "Prefeito" };
 
@@ -242,7 +243,7 @@ export default function PaginaPrefeito() {
           </Secao>
 
           <Secao titulo="Osasco ano a ano">
-            <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+            <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
               <table className="w-full min-w-[560px] text-sm">
                 <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
                   <tr>
@@ -279,7 +280,7 @@ export default function PaginaPrefeito() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </RolagemLateral>
             {anoParcial && focoParcial && (
               <p className="mt-2 text-xs text-slate-500">
                 {anoParcial.ano} ainda está em andamento (dados até o {anoParcial.rreoPeriodo}º bimestre) e não entra na nota. Os percentuais de saúde e

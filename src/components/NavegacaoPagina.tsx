@@ -84,7 +84,7 @@ export function BotaoTopo() {
       type="button"
       onClick={() => window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" })}
       aria-label="Voltar ao topo"
-      className={`fixed right-4 z-30 grid h-11 w-11 place-items-center rounded-full bg-slate-900 text-white shadow-lg transition bottom-[calc(5rem+env(safe-area-inset-bottom))] md:bottom-6 ${
+      className={`fixed right-4 z-30 grid h-11 w-11 place-items-center rounded-full bg-slate-900 text-white shadow-lg transition bottom-[calc(7rem+env(safe-area-inset-bottom))] md:bottom-6 ${
         topo ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-3 opacity-0"
       }`}
     >

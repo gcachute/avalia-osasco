@@ -4,6 +4,7 @@ import { useId, useState } from "react";
 import { Abre } from "@/components/movimento/Movimento";
 import type { Conferencia, Parcial } from "@/lib/dinheiro";
 import { dinheiroCurto, pct, reaisExato } from "@/lib/formato";
+import { RolagemLateral } from "@/components/RolagemLateral";
 
 const MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
 
@@ -148,7 +149,7 @@ const curta = (fonte: string) =>
 function TabelaConferencia({ c, destaque }: { c: Conferencia; destaque?: number }) {
   return (
     <div className="space-y-2">
-      <div className="overflow-x-auto">
+      <RolagemLateral>
         <table className="w-full min-w-[28rem] text-left">
           <thead className="text-[11px] text-slate-500">
             <tr>
@@ -177,7 +178,7 @@ function TabelaConferencia({ c, destaque }: { c: Conferencia; destaque?: number 
             ))}
           </tbody>
         </table>
-      </div>
+      </RolagemLateral>
       {c.nota && <p className="text-slate-600">{c.nota}</p>}
       {c.anos
         .filter((a) => a.nota)
