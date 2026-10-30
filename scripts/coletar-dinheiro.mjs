@@ -15,7 +15,7 @@ import { createInterface } from "node:readline";
 import { Readable } from "node:stream";
 import { pipeline } from "node:stream/promises";
 import { baixar, sleep } from "./lib/baixar.mjs";
-import { carregarBairros, reconhecedorDeBairros, reconhecedorDeEquipamentos } from "./lib/bairros.mjs";
+import { carregarBairros, reconhecedorDeBairros, reconhecedorDeEquipamentos, reconhecedorDeLugares } from "./lib/bairros.mjs";
 import { readWorkbook } from "./lib/xlsx.mjs";
 import { linhasDoZip } from "./lib/zip-linhas.mjs";
 
@@ -466,6 +466,7 @@ if (SO.includes("gastos")) {
   const malha = carregarBairros();
   const acha = malha ? reconhecedorDeBairros(malha.bairros) : () => [];
   const achaEquipamento = reconhecedorDeEquipamentos();
+  const achaLugares = reconhecedorDeLugares();
   const ORGAOS = /PREFEITURA MUNICIPAL DE OSASCO|FUNDA..O INSTITUTO TECNOL.GICO DE OSASCO/i;
   const grupo = (fonte) => (/FEDERA/i.test(fonte) ? "federal" : /ESTADUA/i.test(fonte) ? "estadual" : /EMENDAS PARLAMENTARES/i.test(fonte) ? "emendasVereadores" : null);
   const soma = (obj, k, v) => (obj[k] = centavos((obj[k] ?? 0) + v));
@@ -536,7 +537,7 @@ if (SO.includes("gastos")) {
       // Valor por mês de pagamento: serve para comparar com o período de punições (listas da CGU).
       soma((f.meses ??= {}), `${ano}-${String(r.mes_referencia).padStart(2, "0")}`, v);
       const texto = r.historico_despesa;
-      const bairros = [...new Set([...acha(texto), ...achaEquipamento(texto).map((e) => e.bairro)])];
+      const bairros = [...new Set([...acha(texto), ...achaEquipamento(texto).map((e) => e.bairro), ...achaLugares(texto).flatMap((l) => l.bairros)])];
       if (bairros.length)
         x.itensBairro.push({
           data: r.dt_emissao_despesa.split("/").reverse().join("-"),

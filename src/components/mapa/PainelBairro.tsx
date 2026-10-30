@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { BairroMapa, Historico, ItemMapa, Mapa } from "@/lib/dados";
 import { num } from "@/lib/formato";
 import { DinheiroBairro } from "./DinheiroBairro";
@@ -62,6 +62,17 @@ export function PainelBairro({
   marcarBairros?: (ids: string[] | null) => void;
 }) {
   const [aba, setAba] = useState<Aba>(abaInicial);
+  // Aba Documentos: logo ao abrir, os outros bairros citados pelos documentos deste bairro ficam coloridos no mapa.
+  const chaveDocs = [...new Set(itens.filter((i) => i.bairros.length > 1).flatMap((i) => i.bairros))]
+    .filter((b) => b !== bairro.id)
+    .sort()
+    .join(",");
+  const docsCitados = useMemo(() => (chaveDocs ? chaveDocs.split(",") : null), [chaveDocs]);
+  useEffect(() => {
+    if (aba !== "politica" || !marcarBairros) return;
+    marcarBairros(docsCitados);
+    return () => marcarBairros(null);
+  }, [aba, docsCitados, marcarBairros]);
   const c = bairro.censo;
   const pessoas = c?.pessoas ?? bairro.populacao ?? 0;
   const publicas = (bairro.escolas ?? []).filter((e) => e.rede !== "Privada");
@@ -169,7 +180,7 @@ export function PainelBairro({
                   className="border-l-2 pl-3"
                   style={{ borderColor: corOrigem(i.origem) }}
                   onMouseEnter={() => i.bairros.length > 1 && marcarBairros?.(i.bairros.filter((b) => b !== bairro.id))}
-                  onMouseLeave={() => marcarBairros?.(null)}
+                  onMouseLeave={() => marcarBairros?.(docsCitados)}
                 >
                   <div className="flex flex-wrap items-center gap-x-2 text-[11px] text-slate-500">
                     <span className="font-medium text-slate-700">{i.tipo}</span>
@@ -179,7 +190,7 @@ export function PainelBairro({
                   {i.via && <p className="mt-0.5 text-[11px] text-slate-500">Ligado ao bairro por: {i.via.map(titulo).join(", ")}</p>}
                   {i.bairros.length > 1 && nomesBairros && (
                     <p className="mt-0.5 text-[11px] text-slate-500">
-                      Também cita (tracejados no mapa ao passar o mouse):{" "}
+                      Também cita (coloridos no mapa):{" "}
                       {i.bairros
                         .filter((b) => b !== bairro.id)
                         .map((b) => nomesBairros.get(b) ?? b)

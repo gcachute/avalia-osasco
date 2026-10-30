@@ -125,20 +125,32 @@ const frase = (s) => (s === s.toUpperCase() ? s.charAt(0) + s.slice(1).toLowerCa
 const nomeLegivel = (s) => (s === s.toUpperCase() ? s.toLowerCase().replace(/(^|\s)(\p{L})/gu, (m) => m.toUpperCase()).replace(/ (De|Da|Do|Dos|Das|E) /g, (m) => m.toLowerCase()) : s);
 
 // ---------- Montagem ----------
-export function montarDinheiro({ acha, achaEquipamento, vereadores = [] }) {
+export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], todosBairros = [], vereadores = [] }) {
   const entradas = ler("entradas.json");
   const emendas = ler("emendas-federais.json");
   const pix = ler("pix-federais.json");
   const pixEst = ler("pix-estaduais.json");
   if (!entradas || !emendas) return null;
-  const bairrosDe = (texto) => [...new Set([...acha(texto ?? ""), ...achaEquipamento(texto ?? "").map((e) => e.bairro)])];
+  // Bairros citados pelo texto: pelo nome, por uma escola ou unidade de saúde, ou por uma rua, córrego ou lugar (todos os
+  // bairros por onde ela passa). Nunca um bairro só quando o texto vale para vários.
+  const bairrosDe = (texto) =>
+    [...new Set([...acha(texto ?? ""), ...achaEquipamento(texto ?? "").map((e) => e.bairro), ...achaLugares(texto ?? "").flatMap((l) => l.bairros)])];
+  const lugaresDe = (texto) => achaLugares(texto ?? "").map((l) => l.nome);
   const porBairro = {};
+  // O valor é dividido igualmente entre os bairros citados; "cidadeToda" marca o que vale para os 60 bairros.
   const noBairro = (bairros, item) => {
+    const cidadeToda = bairros.length === todosBairros.length && todosBairros.length > 0;
+    const via = item.texto ? lugaresDe(item.texto) : [];
     for (const b of bairros) {
       const x = (porBairro[b] ??= { valor: 0, itens: [] });
       x.valor = r2(x.valor + item.valor / bairros.length);
-      x.itens.push({ ...item, texto: item.texto?.slice(0, 300), outrosBairros: bairros.length - 1, bairros });
+      x.itens.push({ ...item, texto: item.texto?.slice(0, 300), outrosBairros: bairros.length - 1, bairros: cidadeToda ? undefined : bairros, cidadeToda, via: via.length ? via : undefined });
     }
+  };
+  // Emenda recebida pela Prefeitura sem lugar no texto ("diversas ruas do município"): vale para a cidade toda.
+  const bairrosOuCidade = (texto) => {
+    const b = bairrosDe(texto);
+    return b.length ? b : todosBairros;
   };
 
   // Entradas por ano.
@@ -290,16 +302,25 @@ export function montarDinheiro({ acha, achaEquipamento, vereadores = [] }) {
 
   // Convênios gerados por emendas (texto do objeto cita bairro?).
   const convenios = emendas.convenios
-    .map((c) => ({ data: c.data, objeto: c.objeto, valor: c.valor, numero: c.numero, autor: autorDe.get(c.codigo) ?? null, bairros: bairrosDe(c.objeto) }))
+    .map((c) => ({ codigo: c.codigo, data: c.data, objeto: c.objeto, valor: c.valor, numero: c.numero, autor: autorDe.get(c.codigo) ?? null, bairros: bairrosDe(c.objeto) }))
     .sort((a, b) => b.data.localeCompare(a.data));
   // No mapa, cada emenda leva o nome legível do autor e a chave da ficha dele na página do dinheiro.
   const quemE = (nome) => {
     const a = listaAutores.find((x) => x.nome === nome);
     return a && !a.coletiva ? { quem: nomeLegivel(a.perfil?.nome ?? a.nome), autor: slug(a.perfil?.nome ?? a.nome) } : { quem: nome ? nomeLegivel(nome) : null, autor: null };
   };
-  for (const c of convenios) if (c.bairros.length) noBairro(c.bairros, { origem: "convenio", ano: Number(c.data.slice(0, 4)), valor: c.valor, texto: c.objeto, ...quemE(c.autor) });
-  for (const p of planos)
-    for (const o of p.objetos) if (o.bairros.length) noBairro(o.bairros, { origem: "pix", ano: p.ano, valor: o.valor, texto: o.objeto, ...quemE(autorDe.get(p.codigo) ?? Object.keys(autores).find((n) => semAcento(n) === semAcento(p.parlamentar)) ?? p.parlamentar) });
+  // O valor de um convênio na CGU pode ser o do programa inteiro (o do Minha Casa Minha Vida de 2011 passa de R$ 1,5 bi):
+  // no mapa entra no máximo o que Osasco recebeu pela emenda que gerou o convênio.
+  const recebidoPorCodigo = {};
+  for (const r of rec) if (r.codigo !== "Sem informação") recebidoPorCodigo[r.codigo] = (recebidoPorCodigo[r.codigo] ?? 0) + r.valor;
+  for (const c of convenios) {
+    const recebido = recebidoPorCodigo[c.codigo];
+    const valor = recebido != null ? Math.min(c.valor, recebido) : c.valor;
+    noBairro(bairrosOuCidade(c.objeto), { origem: "convenio", ano: Number(c.data.slice(0, 4)), valor: r2(valor), texto: c.objeto, ...quemE(c.autor) });
+  }
+  // Emenda Pix barrada (impedimento técnico) não trouxe dinheiro: fica fora do mapa.
+  for (const p of planos.filter((p) => !/IMPEDIDO/i.test(p.situacao)))
+    for (const o of p.objetos) noBairro(bairrosOuCidade(o.objeto), { origem: "pix", ano: p.ano, valor: o.valor, texto: o.objeto, ...quemE(autorDe.get(p.codigo) ?? Object.keys(autores).find((n) => semAcento(n) === semAcento(p.parlamentar)) ?? p.parlamentar) });
 
   // Gastos pagos com dinheiro federal e estadual, por ano.
   const arquivosGastos = readdirSync(PASTA).filter((f) => /^gastos-\d{4}\.json$/.test(f)).sort();
@@ -330,13 +351,16 @@ export function montarDinheiro({ acha, achaEquipamento, vereadores = [] }) {
       // Pagamentos do mesmo fornecedor no mesmo bairro e ano viram um item só (contratos mensais repetem o texto).
       const juntos = {};
       for (const i of x.itensBairro) {
-        const k = `${i.bairros.join(",")}|${i.fornecedor}|${i.aplicacao}`;
-        const j = (juntos[k] ??= { bairros: i.bairros, valor: 0, pagamentos: 0, fornecedor: i.fornecedor, aplicacao: i.aplicacao, texto: i.texto });
+        // Os pagamentos com dinheiro de emenda entram mais abaixo, pela lista completa deles.
+        if (grupo === "emendasVereadores" || /^080[01]/.test(i.aplicacao ?? "")) continue;
+        const bairros = [...new Set([...i.bairros, ...bairrosDe(i.texto)])].sort();
+        const k = `${bairros.join(",")}|${i.fornecedor}|${i.aplicacao}`;
+        const j = (juntos[k] ??= { bairros, valor: 0, pagamentos: 0, fornecedor: i.fornecedor, aplicacao: i.aplicacao, texto: i.texto });
         j.valor += i.valor;
         j.pagamentos++;
       }
       for (const j of Object.values(juntos))
-        noBairro(j.bairros, { origem: grupo === "federal" ? "gastoFederal" : grupo === "estadual" ? "gastoEstadual" : "gastoVereadores", ano: g.ano, valor: r2(j.valor), texto: j.texto, quem: j.fornecedor, pagamentos: j.pagamentos });
+        noBairro(j.bairros, { origem: grupo === "federal" ? "gastoFederal" : "gastoEstadual", ano: g.ano, valor: r2(j.valor), texto: j.texto, quem: j.fornecedor, pagamentos: j.pagamentos });
     }
     return {
       ano: g.ano,
@@ -768,8 +792,22 @@ export function montarDinheiro({ acha, achaEquipamento, vereadores = [] }) {
     entidadesVariasFontes,
   };
 
+  // Compras pagas com dinheiro de emenda cujo histórico cita bairro, escola, unidade de saúde, rua, córrego ou lugar.
+  {
+    const juntos = {};
+    for (const p of pagamentosBrutos.filter((p) => p.texto)) {
+      const bairros = bairrosDe(p.texto).sort();
+      if (!bairros.length) continue;
+      const k = `${p.ano}|${bairros.join(",")}|${p.cnpj}|${p.empenho}`;
+      const j = (juntos[k] ??= { ano: p.ano, bairros, valor: 0, pagamentos: 0, fornecedor: p.fornecedor, texto: p.texto });
+      j.valor += p.valor;
+      j.pagamentos++;
+    }
+    for (const j of Object.values(juntos)) noBairro(j.bairros, { origem: "gastoEmenda", ano: j.ano, valor: r2(j.valor), texto: j.texto, quem: j.fornecedor, pagamentos: j.pagamentos });
+  }
+
   // No mapa vão os 15 itens de maior valor de cada bairro (a soma do bairro conta todos).
-  const GRUPO = { pix: "emendas", convenio: "emendas", gastoFederal: "federal", gastoEstadual: "estadual", gastoVereadores: "vereadores" };
+  const GRUPO = { pix: "emendas", convenio: "emendas", gastoEmenda: "emendas", gastoFederal: "federal", gastoEstadual: "estadual", gastoVereadores: "vereadores" };
   for (const b of Object.values(porBairro)) {
     b.quantidade = b.itens.length;
     // Soma de cada grupo com todos os itens (inclusive os que ficam fora dos 15), já dividida entre os bairros citados.

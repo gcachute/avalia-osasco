@@ -7,7 +7,7 @@ import { calcularIegm } from "./lib/iegm.mjs";
 import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, notaIntegridade, pontosComissoes, temasDoProjeto } from "./lib/vereadores.mjs";
 import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
-import { carregarBairros, reconhecedorDeBairros, reconhecedorDeEquipamentos } from "./lib/bairros.mjs";
+import { carregarBairros, reconhecedorDeBairros, reconhecedorDeEquipamentos, reconhecedorDeLugares } from "./lib/bairros.mjs";
 import { montarDinheiro } from "./lib/dinheiro.mjs";
 import { montarTerritorio } from "./lib/territorio.mjs";
 import { montarHistorico } from "./lib/historico.mjs";
@@ -585,7 +585,7 @@ if (malha) {
   itens.sort((a, b) => a.data.localeCompare(b.data));
   const territorio = montarTerritorio(malha, idFor);
   // Dinheiro federal e estadual: a página própria vai num arquivo separado; o mapa recebe o que cita cada bairro.
-  const dinheiro = montarDinheiro({ acha, achaEquipamento, vereadores });
+  const dinheiro = montarDinheiro({ acha, achaEquipamento, achaLugares: reconhecedorDeLugares(), todosBairros: malha.bairros.map((b) => b.id), vereadores });
   if (dinheiro) writeFileSync("src/data/dinheiro.json", JSON.stringify(dinheiro.pagina));
   mapa = {
     fonte: malha.fonte,
