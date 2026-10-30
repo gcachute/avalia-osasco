@@ -1,56 +1,46 @@
 "use client";
 
-import { useEffect, useId, useRef } from "react";
+import { useEffect, useState } from "react";
+import { Abre } from "./movimento/Movimento";
 import { PedidoCorrecao } from "./PedidoCorrecao";
 
-// Aviso que abre ao entrar no site. Fica guardado só nesta aba: mudar de página ou recarregar não repete, voltar ao site depois, sim.
-const CHAVE = "aviso-ia-visto";
+// Faixa no topo do site, sem bloquear a tela. Fecha no X e fica fechada só nesta aba: quem voltar ao site depois vê de novo.
+// As cores são fixas, para o vermelho e o branco não trocarem com o modo escuro.
+const CHAVE = "aviso-ia-fechado";
 
 export function AvisoIA() {
-  const janela = useRef<HTMLDialogElement>(null);
-  const tituloId = useId();
-  const textoId = useId();
+  const [ver, setVer] = useState(false);
   useEffect(() => {
     try {
       if (sessionStorage.getItem(CHAVE)) return;
+    } catch {
+      // Sem acesso ao armazenamento do navegador, o aviso aparece de qualquer forma.
+    }
+    setVer(true);
+  }, []);
+  const fechar = () => {
+    setVer(false);
+    try {
       sessionStorage.setItem(CHAVE, "1");
     } catch {
-      // Sem acesso ao armazenamento do navegador, o aviso abre de qualquer forma.
+      // Sem armazenamento, o aviso só volta ao recarregar a página.
     }
-    if (!janela.current?.open) janela.current?.showModal();
-  }, []);
-  const fechar = () => janela.current?.close();
+  };
   return (
-    <dialog
-      ref={janela}
-      aria-labelledby={tituloId}
-      aria-describedby={textoId}
-      className="ficha m-auto w-[min(28rem,calc(100vw-2rem))] rounded-2xl border border-slate-200 bg-white p-5 text-slate-800 shadow-2xl backdrop:bg-slate-950/50 backdrop:backdrop-blur-sm sm:p-6"
-      onClick={(e) => e.target === janela.current && fechar()}
-    >
-      <div className="flex items-start gap-3">
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 font-bold text-amber-800" aria-hidden>
-          !
-        </span>
-        <div className="min-w-0">
-          <h2 id={tituloId} className="text-lg font-semibold text-slate-900">
-            Este site pode conter erros
-          </h2>
-          <p id={textoId} className="mt-1 text-sm text-slate-600">
-            A coleta das informações é feita com inteligência artificial (IA), a partir de fontes oficiais, e por isso pode ter erros. Cada número traz a fonte para
-            você conferir. Se encontrar algo errado, peça uma correção.
+    <Abre aberto={ver}>
+      <div role="alert" className="bg-[#b91c1c] text-[#fff]">
+        <div className="mx-auto flex max-w-5xl items-start gap-3 px-4 py-2 text-sm">
+          <p className="min-w-0 flex-1">
+            <span className="font-semibold">Este site pode conter erros.</span> A coleta das informações é feita com inteligência artificial (IA). Confira a fonte de
+            cada número e, se encontrar algo errado, <PedidoCorrecao className="font-semibold underline">peça uma correção</PedidoCorrecao>.
           </p>
+          <button type="button" onClick={fechar} aria-label="Fechar aviso" className="-m-1 shrink-0 rounded-lg p-1 transition hover:bg-[#991b1b]">
+            <svg viewBox="0 0 20 20" className="h-5 w-5" aria-hidden>
+              <path d="M5 5l10 10M15 5L5 15" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+            </svg>
+          </button>
         </div>
       </div>
-      <div className="mt-5 flex flex-wrap justify-end gap-2">
-        {/* O aviso fecha antes de abrir o pedido, para não ficar de volta na tela quando o pedido terminar. */}
-        <span onClickCapture={fechar}>
-          <PedidoCorrecao className="rounded-xl px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-slate-300 hover:bg-slate-50">Pedir uma correção</PedidoCorrecao>
-        </span>
-        <button type="button" autoFocus onClick={fechar} className="rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-700">
-          Entendi
-        </button>
-      </div>
-    </dialog>
+    </Abre>
   );
 }
