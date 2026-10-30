@@ -729,7 +729,7 @@ export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], 
     });
   const dispensas = {};
   for (const p of pagamentosBrutos.filter((p) => p.cnpj && ["dispensa", "inexigivel"].includes(classe(p.modalidade)))) {
-    const d = (dispensas[p.cnpj] ??= { fornecedor: p.fornecedor, valor: 0, anos: new Set(), modalidade: classe(p.modalidade) === "dispensa" ? "dispensa de licitação" : "inexigibilidade" });
+    const d = (dispensas[p.cnpj] ??= { cnpj: p.cnpj, fornecedor: p.fornecedor, valor: 0, anos: new Set(), modalidade: classe(p.modalidade) === "dispensa" ? "dispensa de licitação" : "inexigibilidade" });
     d.valor = r2(d.valor + p.valor);
     d.anos.add(p.ano);
   }
@@ -845,6 +845,14 @@ export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], 
     b.itens = b.itens.sort((a, c) => c.valor - a.valor).slice(0, 15);
   }
   const parl = ler("parlamentares.json");
+
+  // Cidade da sede de quem recebeu, pelo cadastro de CNPJ. Quem tem sede fora entra por ter recebido da Prefeitura.
+  const sedes = ler("sedes.json")?.sedes ?? {};
+  const sedeDe = (cnpj) => (sedes[cnpj] ? `${nomeLegivel(sedes[cnpj].municipio)}/${sedes[cnpj].uf}` : null);
+  for (const g of gastos)
+    for (const k of ["federal", "estadual", "emendasFederais", "emendasEstaduais", "emendasVereadores"]) for (const f of g[k]?.fornecedores ?? []) f.sede = sedeDe(f.cnpj);
+  for (const p of integridade.punidos) p.sede = sedeDe(p.cnpj);
+  for (const x of integridade.dispensasEmendas) x.sede = sedeDe(x.cnpj);
 
   return {
     pagina: {

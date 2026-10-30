@@ -312,7 +312,7 @@ export default function Metodologia() {
           </li>
           <li>
             <b>Com quem a Prefeitura gastou:</b> despesas que a Prefeitura informa ao TCE-SP, pagamento a pagamento, com a fonte do dinheiro (federal, estadual ou do
-            próprio caixa) e o código do programa. Os códigos 0800 e 0801 marcam o que foi pago com emendas federais e estaduais. Pagamentos a pessoas
+            próprio caixa) e o código do programa. Os códigos 0800 e 0801 marcam o que foi pago com emendas federais e estaduais. A sede de cada empresa ou entidade vem do cadastro de CNPJ da Receita Federal. Pagamentos a pessoas
             físicas entram só nos totais.
           </li>
           <li>

@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { PorQueOsasco } from "@/components/dinheiro/PorQueOsasco";
 import { Abre, Segmentos } from "@/components/movimento/Movimento";
 import { nomeProprio, type GastoAno, type ResumoGasto } from "@/lib/dinheiro";
 import { dinheiroCurto, pct, reaisExato } from "@/lib/formato";
 
 type Origem = "federal" | "estadual" | "emendas";
 type TipoEmenda = "emendasFederais" | "emendasEstaduais" | "emendasVereadores";
-type Recebedor = { cnpj: string; nome: string; valor: number; principal?: string | null };
+type Recebedor = { cnpj: string; nome: string; valor: number; principal?: string | null; sede?: string | null };
 
 const ORIGENS: { chave: Origem; nome: string; cor: string }[] = [
   { chave: "federal", nome: "Verba federal", cor: "var(--grafico-1)" },
@@ -127,6 +128,12 @@ function LinhaRecebedor({ f, total, cor, indice }: { f: Recebedor; total: number
           <dd className="tabular-nums text-slate-900">{reaisExato(f.valor)}</dd>
           <dt className="text-slate-500">Parte do total</dt>
           <dd className="tabular-nums text-slate-900">{pct(f.valor / total)}</dd>
+          {f.sede && (
+            <>
+              <dt className="text-slate-500">Sede</dt>
+              <dd className="text-slate-900">{f.sede}</dd>
+            </>
+          )}
           {uso && (
             <>
               <dt className="text-slate-500">Principal uso</dt>
@@ -145,6 +152,7 @@ function Recebedores({ itens, total, cor }: { itens: Recebedor[]; total: number;
   return (
     <div>
       <div className="text-xs font-medium text-slate-900">Quem mais recebeu</div>
+      <PorQueOsasco className="mt-1">pagamentos feitos pela Prefeitura de Osasco. Abra uma linha para ver a sede.</PorQueOsasco>
       <ol className="mt-1 divide-y divide-slate-100">
         {visiveis.map((f, n) => (
           <LinhaRecebedor key={f.cnpj} f={f} total={total} cor={cor} indice={n} />

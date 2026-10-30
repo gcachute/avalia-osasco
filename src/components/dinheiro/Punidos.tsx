@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { PorQueOsasco } from "@/components/dinheiro/PorQueOsasco";
 import { Abre } from "@/components/movimento/Movimento";
 import { frase, nomeProprio, type Integridade, type Punicao } from "@/lib/dinheiro";
 import { dataBR, dinheiroCurto, listaBR, reaisExato } from "@/lib/formato";
@@ -68,6 +69,7 @@ function Linha({ p }: { p: Punido }) {
             ))}
           </span>
           <span className="mt-1 block text-xs text-slate-500">
+            {p.sede && `Sede em ${p.sede} · `}
             Recebeu em {listaBR(p.anos)}
             {p.deEmenda > 0 && `, com ${dinheiroCurto(p.deEmenda)} de emendas`}
             {p.punicoes.length > 1 && ` · ${p.punicoes.length} punições`}
@@ -209,6 +211,8 @@ export function ListaPunidos({ punidos }: { punidos: Integridade["punidos"] }) {
           </>
         )}
       </p>
+
+      <PorQueOsasco>todas receberam verbas pagas pela Prefeitura de Osasco. A sede e o órgão que puniu podem ser de outra cidade.</PorQueOsasco>
 
       {lista.length > 0 ? (
         <ul className="space-y-2">
