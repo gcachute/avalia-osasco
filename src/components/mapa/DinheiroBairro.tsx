@@ -14,11 +14,11 @@ const GRUPOS: { chave: Grupo; nome: string; cor: string }[] = [
   { chave: "vereadores", nome: "Emendas individuais", cor: "var(--grafico-3)" },
 ];
 
-function Item({ i }: { i: ItemDinheiroBairro }) {
+function Item({ i, indice }: { i: ItemDinheiroBairro; indice: number }) {
   const [aberto, setAberto] = useState(false);
   const grupo = GRUPOS.find((g) => g.chave === GRUPO_ORIGEM[i.origem])!;
   return (
-    <li className="rounded-lg bg-slate-50 p-2">
+    <li className="entra rounded-lg bg-slate-50 p-2" style={{ "--i": indice } as React.CSSProperties}>
       <div className="flex flex-wrap items-baseline gap-x-2 text-[11px] text-slate-500">
         <span className="inline-flex items-center gap-1 font-medium text-slate-700">
           <span className="h-1.5 w-1.5 rounded-full" style={{ background: grupo.cor }} aria-hidden />
@@ -63,7 +63,7 @@ export function DinheiroBairro({ d }: { d: NonNullable<BairroMapa["dinheiro"]> }
             {presentes.map((g) => (
               <span
                 key={g.chave}
-                className="border-r-2 border-white transition-opacity last:border-r-0"
+                className="barra-anim border-r-2 border-white transition-opacity last:border-r-0"
                 style={{ width: `${(porGrupo[g.chave]! / total) * 100}%`, background: g.cor, opacity: filtro && filtro !== g.chave ? 0.3 : 1 }}
               />
             ))}
@@ -85,9 +85,9 @@ export function DinheiroBairro({ d }: { d: NonNullable<BairroMapa["dinheiro"]> }
         </>
       )}
       {d.quantidade > d.itens.length && !filtro && <p className="mt-2 text-[11px] text-slate-500">Os {d.itens.length} de maior valor:</p>}
-      <ol className="mt-2 space-y-2 text-xs">
+      <ol key={filtro ?? "todos"} className="mt-2 space-y-2 text-xs">
         {itens.map((i, n) => (
-          <Item key={n} i={i} />
+          <Item key={n} i={i} indice={n} />
         ))}
       </ol>
       {!itens.length && <p className="mt-2 text-xs text-slate-500">Entre os itens de maior valor, nenhum é deste tipo.</p>}

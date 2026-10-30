@@ -28,6 +28,8 @@ const CATEGORIAS = {
     ["ipva", /IPVA/],
   ],
 };
+// O SICONFI devolve o travessão como "¿" ("Sistema Único de Saúde ¿ SUS").
+const limpaConta = (s) => s.replace(/^[\d.]+\s+/, "").replace(/\s*¿\s*/g, " – ").replace(/\s+/g, " ").trim();
 const significativo = (cod) => cod.split(".").reduce((acc, p, i, arr) => (arr.slice(i).every((x) => /^0+$/.test(x)) ? acc : [...acc, p]), []).join(".");
 
 function classificarAno(linhas) {
@@ -45,7 +47,18 @@ function classificarAno(linhas) {
     for (const l of topo) out[l.cat] += l.valor;
     const t = total(prefixos);
     out.outras = Math.max(0, t - somaObj(out));
-    return { ...Object.fromEntries(Object.entries(out).map(([k, v]) => [k, r2(v)])), total: r2(t) };
+    // As contas que formam cada linha, para quem abrir o detalhe: as filhas diretas da conta da categoria (ou ela mesma,
+    // quando não tem filhas). Em "outras" entram as contas mais altas que não somam nenhuma categoria nem estão dentro de uma.
+    const nivel = (l) => l.sig.split(".").length;
+    const filhas = (l) => sob.filter((o) => o.sig.startsWith(l.sig + ".") && nivel(o) === nivel(l) + 1);
+    // Contas do grupo 2.4 são transferências de capital (para obras e equipamentos); têm o mesmo nome das correntes.
+    const item = (l) => ({ conta: limpaConta(l.conta) + (l.sig.startsWith("2.") ? " (para obras e equipamentos)" : ""), valor: r2(l.valor) });
+    const contas = Object.fromEntries(CATEGORIAS[nome].map(([k]) => [k, []]));
+    for (const l of topo) contas[l.cat].push(...(filhas(l).length ? filhas(l) : [l]).map(item));
+    const livres = sob.filter((l) => !marcadas.some((m) => m.sig === l.sig || m.sig.startsWith(l.sig + ".") || l.sig.startsWith(m.sig + ".")));
+    contas.outras = livres.filter((l) => !livres.some((o) => o !== l && l.sig.startsWith(o.sig + "."))).map(item);
+    for (const k of Object.keys(contas)) contas[k] = contas[k].filter((c) => c.valor > 0).sort((a, b) => b.valor - a.valor);
+    return { ...Object.fromEntries(Object.entries(out).map(([k, v]) => [k, r2(v)])), total: r2(t), contas };
   };
   return {
     uniao: esfera("uniao", ["1.7.1", "2.4.1"]),
@@ -53,6 +66,11 @@ function classificarAno(linhas) {
     // O FUNDEB junta parte dos impostos do Estado e dos municípios (e um complemento da União) e redistribui pelo número
     // de alunos; entra como "outras instituições públicas" no plano de contas.
     fundeb: r2(brutas.filter((l) => /^1\.7\.5(\.|$)/.test(l.sig) && /FUNDEB|Manuten[cç][aã]o e Desenvolvimento da Educa/i.test(l.conta)).reduce((a, l) => Math.max(a, l.valor), 0)),
+    contasFundeb: brutas
+      .filter((l) => /^1\.7\.5\.\d+/.test(l.sig) && /FUNDEB|Manuten[cç][aã]o e Desenvolvimento da Educa|Complementa/i.test(l.conta) && l.valor > 0)
+      .filter((l, _, todas) => !todas.some((o) => o !== l && o.sig.startsWith(l.sig + ".")))
+      .map((l) => ({ conta: limpaConta(l.conta), valor: r2(l.valor) }))
+      .sort((a, b) => b.valor - a.valor),
   };
 }
 

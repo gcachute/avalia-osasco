@@ -4,7 +4,8 @@ import { ComposicaoEntradas, GastosPorAno } from "@/components/Dinheiro";
 import { QuemMandou } from "@/components/dinheiro/Emendas";
 import { ConferenciasIntegridade } from "@/components/dinheiro/Integridade";
 import { GraficoLinha } from "@/components/GraficoLinha";
-import { Cartao, Secao } from "@/components/ui";
+import { Secao } from "@/components/ui";
+import { DinheiroAnimado } from "@/components/Animacoes";
 import { dados, dataBR } from "@/lib/dados";
 import bruto from "@/data/dinheiro.json";
 import { nomeProprio, type PaginaDinheiro } from "@/lib/dinheiro";
@@ -32,20 +33,34 @@ export default function PaginaDinheiro() {
 
   return (
     <>
-      <header className="max-w-3xl">
-        <h1 className="text-3xl font-bold tracking-tight text-balance text-slate-900">Verbas de fora</h1>
-        <p className="mt-2 text-slate-600">
-          Quanto a União e o Estado mandam para Osasco e por qual motivo, quem mandou cada emenda, com quem a Prefeitura gastou esse dinheiro e o que a
-          conferência nas listas oficiais de punidos encontrou. Tudo a partir dos registros oficiais, com o link de cada fonte.
-        </p>
-      </header>
-
-      <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4">
-        <Cartao titulo={`Da União em ${ultimo.ano}`} valor={dinheiroCurto(ultimo.uniao.total)} detalhe="FPM, SUS, educação, convênios" />
-        <Cartao titulo={`Do Estado em ${ultimo.ano}`} valor={dinheiroCurto(ultimo.estado.total)} detalhe="ICMS, IPVA, SUS, convênios" />
-        <Cartao titulo={`FUNDEB em ${ultimo.ano}`} valor={dinheiroCurto(ultimo.fundeb)} detalhe="fundo da educação básica" />
-        <Cartao titulo={`Emendas federais em ${anoEmendas}`} valor={dinheiroCurto(recebidoUltimo)} detalhe={`${dinheiroCurto(totalEmendas)} desde ${anosRecebido[0]}`} />
-      </div>
+      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-5 py-5 sm:px-8 sm:py-7">
+        <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-blue-100 opacity-60 blur-3xl" aria-hidden />
+        <div className="relative">
+          <p className="text-sm font-medium text-blue-800">Dinheiro da União e do Estado para Osasco</p>
+          <h1 className="mt-1 max-w-3xl text-3xl font-bold tracking-tight text-balance text-slate-900 sm:text-4xl">Verbas de fora</h1>
+          <p className="mt-3 max-w-3xl text-slate-600">
+            Quanto chega e por qual motivo, quem mandou cada emenda, com quem a Prefeitura gastou esse dinheiro e o que a conferência nas listas oficiais
+            de punidos encontrou. Tudo a partir dos registros oficiais, com o link de cada fonte.
+          </p>
+          <dl className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">
+            {[
+              { t: `Da União em ${ultimo.ano}`, v: ultimo.uniao.total, d: "FPM, SUS, educação, convênios", cor: "var(--grafico-1)" },
+              { t: `Do Estado em ${ultimo.ano}`, v: ultimo.estado.total, d: "ICMS, IPVA, SUS, convênios", cor: "var(--grafico-2)" },
+              { t: `FUNDEB em ${ultimo.ano}`, v: ultimo.fundeb, d: "fundo da educação básica", cor: "var(--grafico-3)" },
+              { t: `Emendas federais em ${anoEmendas}`, v: recebidoUltimo, d: `${dinheiroCurto(totalEmendas)} desde ${anosRecebido[0]}`, cor: "var(--grafico-4)" },
+            ].map((c) => (
+              <div key={c.t} className="relative overflow-hidden rounded-xl bg-slate-50 p-3 transition hover:-translate-y-0.5 hover:shadow-md">
+                <span className="absolute inset-x-0 top-0 h-1" style={{ background: c.cor }} aria-hidden />
+                <dt className="text-xs text-slate-500">{c.t}</dt>
+                <dd className="mt-0.5 text-2xl font-semibold tabular-nums text-slate-900">
+                  <DinheiroAnimado valor={c.v} />
+                </dd>
+                <dd className="mt-0.5 text-[11px] text-slate-500">{c.d}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
 
       <Secao titulo="Quanto chega por ano" id="quanto-chega" subtitulo="Receitas que a Prefeitura registrou como vindas da União e do Estado, ano a ano.">
         <div className="rounded-2xl border border-slate-200 bg-white p-4">
