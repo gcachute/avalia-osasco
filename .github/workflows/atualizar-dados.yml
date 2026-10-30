@@ -50,8 +50,21 @@ jobs:
       # Baixa de novo só o ano atual e o anterior das despesas do TCE-SP (cerca de 2 GB cada); os anos fechados ficam no repositório.
       # Também traz o relatório bimestral, os repasses do Estado e as transferências federais do mês (para o ano em andamento e a
       # conferência dos números); se o servidor da CGU limitar os pedidos, os meses que faltam vêm na coleta seguinte.
-      - name: Dinheiro federal e estadual (SICONFI, CGU, Transferegov, TCE-SP)
+      # Em três etapas: quando o servidor da CGU recusa o arquivo de emendas, o resto da coleta continua.
+      - name: Receitas e repasses (SICONFI, CGU, Fazenda SP)
         run: npm run coletar:dinheiro
+        env:
+          SO: entradas,rreo,uniao,sefaz
+        continue-on-error: true
+      - name: Emendas federais (CGU)
+        run: npm run coletar:dinheiro
+        env:
+          SO: emendas
+        continue-on-error: true
+      - name: Emendas Pix, despesas e listas de punidos (Transferegov, TCE-SP, CGU)
+        run: npm run coletar:dinheiro
+        env:
+          SO: pix,parlamentares,estaduais,gastos,sancoes
         continue-on-error: true
 
       # Bairro dos endereços com número citados nos textos novos (só consulta os que ainda não estão no cadastro).

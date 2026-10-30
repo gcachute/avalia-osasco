@@ -25,6 +25,11 @@ const pendentes = new Map();
 for (const t of textos) for (const e of enderecosDe(t)) if (!(e.chave in enderecos)) pendentes.set(e.chave, e);
 console.log(`Endereços com número: ${Object.keys(enderecos).length} já consultados, ${pendentes.size} novos`);
 
+// O mapa oficial de bairros fica só na pasta local (é grande demais para o repositório): sem ele, a etapa passa e os novos ficam para a próxima.
+if (!pendentes.size || !existsSync("data/cache/SP_bairros_CD2022.zip")) {
+  if (pendentes.size) console.log("Mapa de bairros ausente: rode npm run coletar:enderecos na máquina que tem data/cache.");
+  process.exit(0);
+}
 const localiza = await localizadorDeBairros();
 for (const e of pendentes.values()) {
   const q = new URLSearchParams({ street: `${e.numero} ${e.rua}`, city: "Osasco", state: "São Paulo", country: "Brasil", format: "jsonv2", addressdetails: "1", limit: "1" });
