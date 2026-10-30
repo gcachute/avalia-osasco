@@ -29,7 +29,7 @@ export function AvisoIA() {
   return (
     <Abre aberto={ver}>
       <div role="alert" className="bg-[#b91c1c] text-[#fff]">
-        <div className="mx-auto flex max-w-5xl items-start gap-3 px-4 py-2 text-sm">
+        <div className="mx-auto flex max-w-5xl items-center gap-3 px-4 py-2 text-sm">
           <p className="min-w-0 flex-1">
             <span className="font-semibold">Este site pode conter erros.</span> A coleta das informações é feita com inteligência artificial (IA). Confira a fonte de
             cada número e, se encontrar algo errado, <PedidoCorrecao className="font-semibold underline">peça uma correção</PedidoCorrecao>.
