@@ -775,7 +775,8 @@ export function montarDinheiro({ acha, achaEquipamento, vereadores = [] }) {
     // Soma de cada grupo com todos os itens (inclusive os que ficam fora dos 15), já dividida entre os bairros citados.
     b.porGrupo = {};
     for (const i of b.itens) b.porGrupo[GRUPO[i.origem]] = r2((b.porGrupo[GRUPO[i.origem]] ?? 0) + i.valor / (i.outrosBairros + 1));
-    b.itens = b.itens.sort((a, c) => c.valor - a.valor).slice(0, 15);
+    // Pela parte de cada bairro (um pagamento que cita 17 bairros vale 1/17 aqui).
+    b.itens = b.itens.sort((a, c) => c.valor / (c.outrosBairros + 1) - a.valor / (a.outrosBairros + 1)).slice(0, 15);
   }
   const parl = ler("parlamentares.json");
 

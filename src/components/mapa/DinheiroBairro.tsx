@@ -17,6 +17,9 @@ const GRUPOS: { chave: Grupo; nome: string; cor: string }[] = [
 function Item({ i, indice }: { i: ItemDinheiroBairro; indice: number }) {
   const [aberto, setAberto] = useState(false);
   const grupo = GRUPOS.find((g) => g.chave === GRUPO_ORIGEM[i.origem])!;
+  // Quando o texto cita vários bairros, cada um fica com uma parte igual do valor: é essa parte que entra na soma do bairro.
+  const bairros = i.outrosBairros + 1;
+  const parte = i.valor / bairros;
   return (
     <li className="entra rounded-lg bg-slate-50 p-2" style={{ "--i": indice } as React.CSSProperties}>
       <div className="flex flex-wrap items-baseline gap-x-2 text-[11px] text-slate-500">
@@ -25,11 +28,20 @@ function Item({ i, indice }: { i: ItemDinheiroBairro; indice: number }) {
           {ROTULO_ORIGEM[i.origem]}
         </span>
         <span className="tabular-nums">{i.ano}</span>
-        <span className="ml-auto font-semibold tabular-nums text-slate-900">{dinheiroCurto(i.valor)}</span>
+        <span className="ml-auto text-right">
+          <span className="block font-semibold tabular-nums text-slate-900">{dinheiroCurto(parte)}</span>
+          {bairros > 1 && <span className="block text-[10px] text-slate-500">neste bairro</span>}
+        </span>
       </div>
       <button type="button" onClick={() => setAberto(!aberto)} aria-expanded={aberto} className="mt-0.5 block w-full text-left">
         <span className={`block text-slate-700 ${aberto ? "" : "line-clamp-3"}`}>{frase(i.texto)}</span>
-        {aberto && <span className="mt-0.5 block tabular-nums text-slate-500">Valor exato: {reaisExato(i.valor)}</span>}
+        {aberto && (
+          <span className="mt-0.5 block tabular-nums text-slate-500">
+            {bairros > 1
+              ? `Valor exato: ${reaisExato(i.valor)}, dividido igualmente entre os ${bairros} bairros citados (${reaisExato(parte)} para cada um).`
+              : `Valor exato: ${reaisExato(i.valor)}`}
+          </span>
+        )}
       </button>
       <div className="mt-0.5 flex flex-wrap gap-x-2 text-[11px] text-slate-500">
         {i.autor ? (
@@ -40,7 +52,11 @@ function Item({ i, indice }: { i: ItemDinheiroBairro; indice: number }) {
           i.quem && <span>{i.quem}</span>
         )}
         {i.pagamentos && i.pagamentos > 1 && <span>{i.pagamentos} pagamentos</span>}
-        {i.outrosBairros > 0 && <span>cita mais {i.outrosBairros === 1 ? "1 bairro" : `${i.outrosBairros} bairros`} (valor dividido)</span>}
+        {bairros > 1 && (
+          <span>
+            {i.pagamentos && i.pagamentos > 1 ? "pagamentos" : "pagamento"} de {dinheiroCurto(i.valor)} que cita {bairros} bairros
+          </span>
+        )}
       </div>
     </li>
   );
