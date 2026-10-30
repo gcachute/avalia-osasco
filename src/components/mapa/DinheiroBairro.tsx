@@ -15,7 +15,7 @@ const GRUPOS: { chave: Grupo; nome: string; cor: string }[] = [
 ];
 
 // Ao passar o mouse (ou com o item aberto), os outros bairros citados ficam marcados no mapa.
-type Realce = { atual: string; nomes: Map<string, string>; marcar: (ids: string[] | null) => void; todos: string[] | null };
+type Realce = { atual: string; nomes: Map<string, string>; marcar: (ids: string[] | null, ajuste?: "enquadrar" | "selecionado") => void; todos: string[] | null };
 
 function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; realce?: Realce }) {
   const [aberto, setAberto] = useState(false);
@@ -55,7 +55,8 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
         type="button"
         onClick={() => {
           setAberto(!aberto);
-          marca(!aberto);
+          // Abrir um item de vários bairros ajusta o mapa para mostrar todos; fechar volta ao bairro escolhido.
+          if (realce && outros.length > 0) realce.marcar(!aberto ? outros : realce.todos, !aberto ? "enquadrar" : "selecionado");
         }}
         aria-expanded={aberto}
         className="mt-0.5 block w-full text-left"

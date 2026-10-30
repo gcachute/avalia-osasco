@@ -19,6 +19,7 @@
     "coletar:camara": "node scripts/coletar-camara.mjs",
     "coletar:dinheiro": "node scripts/coletar-dinheiro.mjs",
     "coletar:lugares": "node scripts/coletar-lugares.mjs",
+    "coletar:enderecos": "node scripts/coletar-enderecos.mjs",
     "coletar:bairros": "node scripts/coletar-bairros.mjs",
     "coletar:fotos": "node scripts/coletar-fotos.mjs",
     "coletar:partidos": "node scripts/coletar-partidos.mjs",

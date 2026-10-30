@@ -54,6 +54,11 @@ jobs:
         run: npm run coletar:dinheiro
         continue-on-error: true
 
+      # Bairro dos endereços com número citados nos textos novos (só consulta os que ainda não estão no cadastro).
+      - name: Endereços com número (OpenStreetMap)
+        run: npm run coletar:enderecos
+        continue-on-error: true
+
       - name: Recalcular notas
         run: npm run dados
 

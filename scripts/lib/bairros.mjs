@@ -180,3 +180,45 @@ export function reconhecedorDeLugares() {
     return achados;
   };
 }
+
+// Endereços com número ("Rua Newton Estilac Leal, nº 643"): a chave normalizada serve para achar o bairro do número no
+// cadastro de endereços (data/territorio/enderecos.json, preenchido por scripts/coletar-lugares.mjs).
+const RE_ENDERECO = /(?:^| )((?:RUA|AVENIDA|ESTRADA|TRAVESSA|ALAMEDA|PRACA) [A-Z ]{3,60}?) (?:N |NO |NUMERO )?(\d{1,5})(?= |$)/g;
+export function enderecosDe(texto) {
+  const t = formaLugar(texto);
+  return [...t.matchAll(RE_ENDERECO)]
+    .map((m) => ({ rua: m[1].trim(), numero: m[2], chave: `${m[1].trim()} ${m[2]}` }))
+    // "S N" (sem número), cidade ou código de contrato no meio do nome: não é um endereço com número.
+    .filter((e) => !/ S N( |$)| OSASCO | SP | CT$| CONTRATO$| PROCESSO$/.test(` ${e.rua} `) && e.rua.split(" ").length <= 7);
+}
+
+// Localiza o texto nos bairros, do mais preciso para o menos preciso:
+// 1. endereço com número achado no cadastro de endereços: só o bairro daquele número (e escolas ou unidades de saúde citadas);
+// 2. bairro citado pelo nome junto de uma rua que passa por ele ("Av. dos Autonomistas - Vila Yara"): só esse bairro;
+// 3. rua, córrego ou lugar sem mais nada: todos os bairros por onde passa.
+export function localizadorDeTexto({ acha, achaEquipamento, achaLugares }) {
+  const cadastro = existsSync("data/territorio/enderecos.json") ? JSON.parse(readFileSync("data/territorio/enderecos.json", "utf8")).enderecos : {};
+  // "jaCitados": bairros já achados no texto completo (o texto guardado dos pagamentos é cortado em 240 caracteres).
+  return (texto, jaCitados = []) => {
+    if (!texto) return { bairros: [...jaCitados], via: [] };
+    const equipamentos = achaEquipamento(texto).map((e) => e.bairro);
+    const enderecos = enderecosDe(texto).filter((e) => cadastro[e.chave]?.bairro);
+    if (enderecos.length) {
+      const bairros = [...new Set([...enderecos.map((e) => cadastro[e.chave].bairro), ...equipamentos])];
+      return { bairros, via: enderecos.map((e) => `${titulo(e.rua)}, ${e.numero}`) };
+    }
+    const nomeados = new Set([...acha(texto), ...equipamentos, ...jaCitados]);
+    const bairros = new Set(nomeados);
+    const via = [];
+    for (const l of achaLugares(texto)) {
+      const naRua = l.bairros.filter((b) => nomeados.has(b));
+      if (naRua.length) via.push(`${l.nome} (só ${naRua.length === 1 ? "o trecho no bairro citado" : "os trechos nos bairros citados"})`);
+      else {
+        l.bairros.forEach((b) => bairros.add(b));
+        via.push(l.nome);
+      }
+    }
+    return { bairros: [...bairros], via };
+  };
+}
+const titulo = (s) => s.toLowerCase().replace(/(^|\s)(\p{L})/gu, (m) => m.toUpperCase()).replace(/ (De|Da|Do|Dos|Das|E) /g, (m) => m.toLowerCase());

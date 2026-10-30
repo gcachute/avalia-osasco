@@ -1,6 +1,7 @@
 // Monta os dados da página "Verbas e receitas" (/verbas) a partir de data/dinheiro/*.json (ver scripts/coletar-dinheiro.mjs):
 // quanto chega da União e do Estado, quem mandou emendas, para onde foi o dinheiro e quais bairros aparecem citados.
 import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { localizadorDeTexto } from "./bairros.mjs";
 
 const PASTA = "data/dinheiro";
 const ler = (nome) => (existsSync(`${PASTA}/${nome}`) ? JSON.parse(readFileSync(`${PASTA}/${nome}`, "utf8")) : null);
@@ -133,9 +134,12 @@ export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], 
   if (!entradas || !emendas) return null;
   // Bairros citados pelo texto: pelo nome, por uma escola ou unidade de saúde, ou por uma rua, córrego ou lugar (todos os
   // bairros por onde ela passa). Nunca um bairro só quando o texto vale para vários.
-  const bairrosDe = (texto) =>
-    [...new Set([...acha(texto ?? ""), ...achaEquipamento(texto ?? "").map((e) => e.bairro), ...achaLugares(texto ?? "").flatMap((l) => l.bairros)])];
-  const lugaresDe = (texto) => achaLugares(texto ?? "").map((l) => l.nome);
+  // Do mais preciso para o menos preciso: endereço com número, bairro citado junto da rua, rua inteira (ver localizadorDeTexto).
+  const localiza = localizadorDeTexto({ acha, achaEquipamento, achaLugares });
+  const memo = new Map();
+  const local = (texto) => (memo.has(texto) ? memo.get(texto) : (memo.set(texto, localiza(texto)), memo.get(texto)));
+  const bairrosDe = (texto) => local(texto ?? "").bairros;
+  const lugaresDe = (texto) => local(texto ?? "").via;
   const porBairro = {};
   // O valor é dividido igualmente entre os bairros citados. O que vale para a cidade toda (sem bairro, rua ou lugar no
   // texto) não entra nas estatísticas dos bairros.
@@ -349,7 +353,7 @@ export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], 
       for (const i of x.itensBairro) {
         // Os pagamentos com dinheiro de emenda entram mais abaixo, pela lista completa deles.
         if (grupo === "emendasVereadores" || /^080[01]/.test(i.aplicacao ?? "")) continue;
-        const bairros = [...new Set([...i.bairros, ...bairrosDe(i.texto)])].sort();
+        const bairros = localiza(i.texto, i.bairros).bairros.slice().sort();
         const k = `${bairros.join(",")}|${i.fornecedor}|${i.aplicacao}`;
         const j = (juntos[k] ??= { bairros, valor: 0, pagamentos: 0, fornecedor: i.fornecedor, aplicacao: i.aplicacao, texto: i.texto });
         j.valor += i.valor;
