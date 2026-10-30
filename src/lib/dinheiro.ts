@@ -1,4 +1,4 @@
-// Tipos e rótulos da página "Verbas de fora" (/verbas) (dados gerados por scripts/lib/dinheiro.mjs em src/data/dinheiro.json).
+// Tipos e rótulos da página "Verbas e receitas" (/verbas) (dados gerados por scripts/lib/dinheiro.mjs em src/data/dinheiro.json).
 // O arquivo de dados é importado só pela página: este módulo também vai para o painel do mapa, no navegador.
 
 export type Fonte = { nome: string; url: string; coletadoEm?: string; posicao?: string };

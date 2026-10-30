@@ -1,4 +1,4 @@
-// Monta os dados da página "Verbas de fora" (/verbas) a partir de data/dinheiro/*.json (ver scripts/coletar-dinheiro.mjs):
+// Monta os dados da página "Verbas e receitas" (/verbas) a partir de data/dinheiro/*.json (ver scripts/coletar-dinheiro.mjs):
 // quanto chega da União e do Estado, quem mandou emendas, para onde foi o dinheiro e quais bairros aparecem citados.
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 
