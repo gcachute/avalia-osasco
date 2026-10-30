@@ -16,7 +16,7 @@ function Conferencia({
 }: {
   titulo: string;
   resultado: React.ReactNode;
-  achou: boolean;
+  achou?: boolean;
   children?: React.ReactNode;
 }) {
   const [aberto, setAberto] = useState(false);
@@ -28,12 +28,14 @@ function Conferencia({
         aria-expanded={children ? aberto : undefined}
         className={`flex w-full items-start gap-3 rounded-xl p-4 text-left ${children ? "" : "cursor-default"}`}
       >
-        <span
-          className={`selo-pula mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${achou ? "bg-amber-100 text-amber-800" : "bg-emerald-100 text-emerald-800"}`}
-          aria-label={achou ? "Ponto de atenção" : "Nada encontrado"}
-        >
-          {achou ? "!" : "✓"}
-        </span>
+        {achou !== undefined && (
+          <span
+            className={`selo-pula mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${achou ? "bg-amber-100 text-amber-800" : "bg-emerald-100 text-emerald-800"}`}
+            aria-label={achou ? "Caso encontrado" : "Nada encontrado"}
+          >
+            {achou ? "!" : "✓"}
+          </span>
+        )}
         <span className="min-w-0 flex-1">
           <span className="block font-medium text-slate-900">{titulo}</span>
           <span className="mt-0.5 block text-sm text-slate-600">{resultado}</span>
@@ -95,7 +97,6 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
       {comEmendas.length > 0 && (
         <Conferencia
           titulo="Como as compras com dinheiro de emenda foram contratadas"
-          achou={parteSemLicitacao(emendasTodas) > 0.25}
           resultado={
             <>
               {pct(parteSemLicitacao(emendasTodas))} das compras e serviços pagos com dinheiro de emenda desde {comEmendas[0].ano} (
@@ -111,7 +112,6 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
       {i.rastreio.length > 0 && (
         <Conferencia
           titulo="Dá para seguir cada emenda até a nota?"
-          achou={rastreioTotal.comNumero / rastreioTotal.total < 0.5}
           resultado={
             <>
               {pct(rastreioTotal.comNumero / rastreioTotal.total)} do que a Prefeitura pagou com dinheiro de emenda ({dinheiroCurto(rastreioTotal.comNumero)} de{" "}
@@ -140,7 +140,6 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
       {i.concentracao.length > 0 && (
         <Conferencia
           titulo="Concentração em um só fornecedor"
-          achou={i.concentracao.some((c) => c.valor / c.total > 0.3)}
           resultado={(() => {
             const c = i.concentracao.at(-1)!;
             return (
@@ -171,7 +170,6 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
       {i.relator.total > 0 && (
         <Conferencia
           titulo="Emendas de relator"
-          achou
           resultado={
             <>
               Osasco recebeu {dinheiroCurto(i.relator.total)} em {i.relator.quantidade} emendas de relator, pagas em {listaBR(i.relator.anos)}. Nesse tipo de emenda o
@@ -217,8 +215,7 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
       {i.atrasadas.length > 0 && (
         <Conferencia
           titulo="Dinheiro que chegou anos depois"
-          achou={false}
-          resultado={`${i.atrasadas.length} emendas chegaram três anos ou mais depois do ano em que foram aprovadas, somando ${dinheiroCurto(i.atrasadas.reduce((s, x) => s + x.valor, 0))}. É dinheiro empenhado num ano e pago bem depois.`}
+          resultado={`${i.atrasadas.length} emendas chegaram três anos ou mais depois do ano em que foram aprovadas, somando ${dinheiroCurto(i.atrasadas.reduce((s, x) => s + x.valor, 0))}.`}
         >
           <ul className="divide-y divide-slate-100 text-xs">
             {i.atrasadas.map((x) => (
@@ -236,7 +233,6 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
       {i.entidadesVariasFontes.length > 0 && (
         <Conferencia
           titulo="Entidades com emendas de mais de um político"
-          achou={false}
           resultado={`${i.entidadesVariasFontes.length} entidades da cidade receberam emenda federal direto e também dinheiro de emenda de vereador pago pela Prefeitura.`}
         >
           <ul className="divide-y divide-slate-100 text-xs">

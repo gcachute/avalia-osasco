@@ -139,7 +139,7 @@ export function Contratacoes({ i }: { i: Integridade }) {
         </div>
       )}
 
-      <p className="text-xs text-slate-500">Comprar sem licitação não é irregular por si. Compras pela bolsa eletrônica do Estado contam como licitação.</p>
+      <p className="text-xs text-slate-500">Compras pela bolsa eletrônica do Estado contam como licitação.</p>
     </div>
   );
 }

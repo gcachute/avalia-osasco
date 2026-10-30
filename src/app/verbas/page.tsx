@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ComposicaoEntradas, GastosPorAno } from "@/components/Dinheiro";
+import { ComposicaoEntradas } from "@/components/Dinheiro";
+import { GastosPorAno } from "@/components/dinheiro/Gastos";
 import { AnoEmAndamento, ConferirLinha } from "@/components/dinheiro/Conferencia";
 import { QuemMandou } from "@/components/dinheiro/Emendas";
 import { ConferenciasIntegridade } from "@/components/dinheiro/Integridade";
@@ -201,7 +202,7 @@ export default function PaginaDinheiro() {
         <Secao
           titulo="Conferências de integridade"
           id="integridade"
-          subtitulo="Cruzamentos feitos com registros oficiais. Cada um diz o que foi conferido e o que apareceu; um ponto de atenção é um fato a olhar de perto, não uma acusação."
+          subtitulo="Cruzamentos feitos com registros oficiais. Cada um diz o que foi conferido e o que apareceu."
         >
           <ConferenciasIntegridade i={integridade} />
         </Secao>

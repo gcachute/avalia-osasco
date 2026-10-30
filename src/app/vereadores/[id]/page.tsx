@@ -117,11 +117,11 @@ export default async function PaginaVereador({ params }: Props) {
     return vs.reduce((a, b) => a + b, 0) / (vs.length || 1);
   };
   const comparacoes = [
-    { nome: "Presença nas sessões", valor: i.presencaAjustada, media: media((x) => x.indicadores.presencaAjustada), formato: pct, maiorMelhor: true },
-    { nome: "Participação nas votações nominais", valor: i.participacaoVotos, media: media((x) => x.indicadores.participacaoVotos), formato: pct, maiorMelhor: true },
-    { nome: "Projetos de política pública", valor: i.projetosSubstantivos, media: media((x) => x.indicadores.projetosSubstantivos), formato: (n: number | null) => (n == null ? "—" : n.toLocaleString("pt-BR", { maximumFractionDigits: 1 })), maiorMelhor: true },
-    { nome: "Leis sancionadas", valor: i.leisSancionadas, media: media((x) => x.indicadores.leisSancionadas), formato: (n: number | null) => (n == null ? "—" : n.toLocaleString("pt-BR", { maximumFractionDigits: 1 })), maiorMelhor: true },
-    { nome: "Itens próprios adiados por falta", valor: i.adiadasPorAusencia, media: media((x) => x.indicadores.adiadasPorAusencia), formato: (n: number | null) => (n == null ? "—" : n.toLocaleString("pt-BR", { maximumFractionDigits: 1 })), maiorMelhor: false },
+    { nome: "Presença nas sessões", valor: i.presencaAjustada, media: media((x) => x.indicadores.presencaAjustada), formato: pct },
+    { nome: "Participação nas votações nominais", valor: i.participacaoVotos, media: media((x) => x.indicadores.participacaoVotos), formato: pct },
+    { nome: "Projetos de política pública", valor: i.projetosSubstantivos, media: media((x) => x.indicadores.projetosSubstantivos), formato: (n: number | null) => (n == null ? "—" : n.toLocaleString("pt-BR", { maximumFractionDigits: 1 })) },
+    { nome: "Leis sancionadas", valor: i.leisSancionadas, media: media((x) => x.indicadores.leisSancionadas), formato: (n: number | null) => (n == null ? "—" : n.toLocaleString("pt-BR", { maximumFractionDigits: 1 })) },
+    { nome: "Itens próprios adiados por falta", valor: i.adiadasPorAusencia, media: media((x) => x.indicadores.adiadasPorAusencia), formato: (n: number | null) => (n == null ? "—" : n.toLocaleString("pt-BR", { maximumFractionDigits: 1 })) },
   ];
   const ordem = avaliados;
   const idx = ordem.findIndex((x) => x.id === v.id);
@@ -386,8 +386,8 @@ export default async function PaginaVereador({ params }: Props) {
       <Secao titulo="Comparado com a média da Câmara" subtitulo={`Média entre os ${pares.length} vereadores com nota, no mesmo período.`}>
         <div className="divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white px-5">
           {comparacoes.map((c) => {
-            const melhor = c.valor != null && (c.maiorMelhor ? c.valor > c.media * 1.02 : c.valor < c.media * 0.98);
-            const pior = c.valor != null && (c.maiorMelhor ? c.valor < c.media * 0.98 : c.valor > c.media * 1.02);
+            const acima = c.valor != null && c.valor > c.media * 1.02;
+            const abaixo = c.valor != null && c.valor < c.media * 0.98;
             const escala = Math.max(c.valor ?? 0, c.media) * 1.15 || 1;
             return (
               <div key={c.nome} className="grid items-center gap-x-4 gap-y-2 py-3 sm:grid-cols-[1fr_14rem_7rem]">
@@ -405,9 +405,7 @@ export default async function PaginaVereador({ params }: Props) {
                 <div className="text-right text-sm">
                   <span className="font-semibold tabular-nums text-slate-900">{c.formato(c.valor)}</span>
                   <span className="text-slate-400"> / {c.formato(c.media)}</span>
-                  <div className={`text-xs font-medium ${melhor ? "text-emerald-700" : pior ? "text-rose-700" : "text-slate-500"}`}>
-                    {melhor ? "▲ melhor que a média" : pior ? "▼ pior que a média" : "● na média"}
-                  </div>
+                  <div className="text-xs font-medium text-slate-500">{acima ? "▲ acima da média" : abaixo ? "▼ abaixo da média" : "● na média"}</div>
                 </div>
               </div>
             );
