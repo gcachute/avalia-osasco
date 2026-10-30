@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PedidoCorrecao } from "@/components/PedidoCorrecao";
-import { AvisoParcial, Secao } from "@/components/ui";
+import { AvisoParcial, ComoLer, Secao } from "@/components/ui";
+import { nomeProprio } from "@/lib/dinheiro";
+import { dinheiroCurto } from "@/lib/formato";
+import dinheiro from "@/data/dinheiro.json";
 import { COEFICIENTES, PILARES_VEREADOR, TIPO_NOME, dados, dataBR, num } from "@/lib/dados";
 
 export const metadata: Metadata = { title: "Metodologia" };
@@ -275,7 +278,13 @@ export default function Metodologia() {
           <li>
             <b>Emendas federais:</b> arquivo de emendas do Portal da Transparência (CGU), pelo valor que chegou. Conta só o que foi para a Prefeitura e os
             fundos municipais; entidades sem fins lucrativos de Osasco aparecem à parte, e empresas com sede na cidade que forneceram para programas
-            nacionais ficam de fora. As &quot;emendas Pix&quot; trazem, do Transferegov, o que a Prefeitura informou que vai fazer com o dinheiro.
+            nacionais ficam de fora. As &quot;emendas Pix&quot; trazem, do Transferegov, o que a Prefeitura informou que vai fazer com o dinheiro. Ficam de fora{" "}
+            {dinheiro.emendas.empresasForaDaConta.quantidade.toLocaleString("pt-BR")} pagamentos ({dinheiroCurto(dinheiro.emendas.empresasForaDaConta.total)}) a empresas com sede em Osasco
+            {dinheiro.emendas.entidadesForaDaConta.length > 0 &&
+              ` e ${dinheiroCurto(dinheiro.emendas.entidadesForaDaConta.reduce((t, x) => t + x.valor, 0))} recebidos por entidades com sede em Osasco para projetos em outro lugar (${dinheiro.emendas.entidadesForaDaConta
+                .map((x) => `${x.autor} para ${nomeProprio(x.entidade)}${x.destino ? `, destino ${/v[aá]rias|m[uú]ltiplo/i.test(x.destino) ? "várias cidades" : x.destino}` : ""}`)
+                .join("; ")})`}
+            .
           </li>
           <li>
             <b>Receita própria e ano em andamento:</b> a receita da própria cidade (ISS, IPTU, ITBI, Imposto de Renda retido, taxas, iluminação pública,
@@ -396,6 +405,12 @@ export default function Metodologia() {
           </li>
         </ul>
       </Secao>
+
+      <ComoLer>
+        <li>Cada seção explica uma parte do site: vereadores, integridade, prefeito, verbas e séries históricas.</li>
+        <li>Cada avaliação vai de 0 a 10, com a conta à mostra e o link para a fonte oficial.</li>
+        <li>Limitações lista o que os dados não cobrem. Correções explica como pedir um ajuste. Privacidade diz o que o site guarda.</li>
+      </ComoLer>
     </article>
   );
 }

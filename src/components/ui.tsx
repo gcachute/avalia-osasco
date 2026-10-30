@@ -100,6 +100,15 @@ export function Secao({ titulo, children, id, subtitulo }: { titulo: string; chi
   );
 }
 
+/* Bloco padrão do site: toda página termina com ele. Descreve o que está na tela e como foi montado, sem concluir nada. */
+export function ComoLer({ children }: { children: React.ReactNode }) {
+  return (
+    <Secao titulo="Como ler esta página" id="como-ler">
+      <ul className="list-disc space-y-1.5 pl-5 text-sm text-slate-700">{children}</ul>
+    </Secao>
+  );
+}
+
 const ALVO_AVISO = {
   geral: {
     quem: "dos vereadores e da Prefeitura",

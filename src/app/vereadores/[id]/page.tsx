@@ -8,7 +8,7 @@ import { ListaTematica, type ItemLista } from "@/components/ListaTematica";
 import { MapaPessoa, type ModoMapa } from "@/components/MapaPessoa";
 import { geometriaBairros } from "@/lib/mapaGeo";
 import { reais } from "@/lib/formato";
-import { AvisoParcial, Avatar, Barra, Cartao, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
+import { AvisoParcial, Avatar, Barra, Cartao, ComoLer, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { PilarVereador, Vereador } from "@/lib/dados";
 import { COEFICIENTES, PILARES_VEREADOR, TIPO_NOME, dados, dataBR, milReais, nomeSessao, nota, nota10, num, pct, plural, sessao } from "@/lib/dados";
 
@@ -655,6 +655,15 @@ export default async function PaginaVereador({ params }: Props) {
           )}
         </nav>
       )}
+
+      <ComoLer>
+        <li>No topo ficam as notas de 0 a 10. Cada coeficiente junta avaliações individuais, e a seção Como cada avaliação foi calculada mostra a conta de cada uma.</li>
+        <li>Sem dados quer dizer que não há registro para aquela avaliação no período.</li>
+        <li>Na comparação com a média da Câmara, aparece o valor do vereador, a média e se ele está acima, abaixo ou na média (diferença de até 2%).</li>
+        <li>O custo do mandato é informativo e não entra na nota.</li>
+        <li>Integridade traz só decisões definitivas de órgãos oficiais. Processos em andamento não entram.</li>
+        <li>Presença, votações e projetos listam os registros um a um. Só as votações nominais têm o voto de cada vereador.</li>
+      </ComoLer>
     </>
   );
 }

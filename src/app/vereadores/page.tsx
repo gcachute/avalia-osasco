@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { AvisoParcial, Avatar, Secao, SeloPartido } from "@/components/ui";
+import { AvisoParcial, Avatar, ComoLer, Secao, SeloPartido } from "@/components/ui";
 import { COEFICIENTES, dados, type Vereador } from "@/lib/dados";
 import { nota10, num } from "@/lib/formato";
 
@@ -93,6 +93,19 @@ export default function Vereadores() {
           </div>
         </Secao>
       )}
+
+      <ComoLer>
+        <li>Cada cartão mostra a nota de 0 a 10 do vereador em cada coeficiente e, logo abaixo, a posição dele entre os vereadores avaliados.</li>
+        <li>Quem tem menos de {dados.metodologia.vereador.minimoSessoes} sessões no período aparece sem nota.</li>
+        <li>Em exercício lista quem está no cargo. Passaram pela Câmara lista suplentes que assumiram por um tempo e vereadores que saíram.</li>
+        <li>
+          Clique em um nome para abrir o perfil, com a conta de cada nota. Para ordenar e comparar, use a lista do{" "}
+          <Link href="/" className="underline">
+            painel
+          </Link>
+          .
+        </li>
+      </ComoLer>
     </>
   );
 }

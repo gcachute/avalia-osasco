@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { GraficoLinha } from "@/components/GraficoLinha";
-import { AvisoParcial, Secao } from "@/components/ui";
+import { AvisoParcial, ComoLer, Secao } from "@/components/ui";
 import { Halter, legendaHalter } from "@/components/mapa/Halter";
 import { formatar } from "@/components/mapa/indicadores";
 import { dados, type CampoCenso } from "@/lib/dados";
@@ -389,6 +390,20 @@ export default function Evolucao() {
           )}
         </Secao>
       )}
+
+      <ComoLer>
+        <li>Os gráficos mostram os mesmos dados oficiais do site em anos anteriores. O subtítulo de cada seção traz a fonte.</li>
+        <li>As etiquetas no topo mostram quem governou em cada período.</li>
+        <li>Nas contas da Prefeitura entram os anos fechados, como foram entregues aos órgãos oficiais. Os valores são os da época, sem correção pela inflação.</li>
+        <li>As médias dos Censos são ponderadas por moradores ou domicílios.</li>
+        <li>
+          O histórico de cada bairro está no{" "}
+          <Link href="/mapa" className="underline">
+            mapa
+          </Link>
+          , na aba Histórico.
+        </li>
+      </ComoLer>
     </article>
   );
 }

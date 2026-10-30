@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { MapaBairros } from "@/components/MapaBairros";
-import { Secao } from "@/components/ui";
+import { ComoLer } from "@/components/ui";
 import { dados, dataBR, num } from "@/lib/dados";
 import { dadosDoMapaCompleto } from "@/lib/mapaGeo";
 
@@ -68,8 +68,7 @@ export default async function PaginaMapa() {
         />
       </div>
 
-      <Secao titulo="Como ler o mapa" id="como-ler">
-        <ul className="list-disc space-y-2 pl-5 text-sm text-slate-700">
+      <ComoLer>
           <li>
             <b>Documentos:</b> um documento conta para um bairro quando o texto cita o nome dele (ou uma grafia conhecida, como Quitaúna e
             Rochdalle). Nomes que também são palavras comuns, como Aliança ou Santo Antônio, só contam quando vêm com Jardim, Vila ou Bairro. A
@@ -110,8 +109,7 @@ export default async function PaginaMapa() {
               </span>
             ))}
           </li>
-        </ul>
-      </Secao>
+      </ComoLer>
     </>
   );
 }
