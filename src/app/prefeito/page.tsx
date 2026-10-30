@@ -49,7 +49,7 @@ function PilarA({ a, c }: { a: AnoFiscal; c: CidadeFiscal }) {
     <div className="divide-y divide-slate-100">
       <LinhaComponente
         nome="Gasto com pessoal"
-        valor={i.pessoal == null ? "—" : `${num(i.pessoal)}% da RCL`}
+        valor={i.pessoal == null ? "—" : `${num(i.pessoal)}% da receita líquida`}
         referencia={`limite de alerta ${num(r.pessoal.alerta)}%, máximo ${r.pessoal.maximo}%`}
         posicao={ranking(a.cidades, c, "pessoal")}
         pontos={c.pilares.A.componentes.pessoal}
@@ -64,14 +64,14 @@ function PilarA({ a, c }: { a: AnoFiscal; c: CidadeFiscal }) {
         fonte={c.fontes.rreo01}
       />
       <LinhaComponente
-        nome="Resultado primário × meta da LDO"
+        nome="Resultado primário × meta da Lei de Diretrizes Orçamentárias"
         valor={primarioTexto(i.primario)}
         referencia={
           !a.completo
             ? "a meta é anual: só conta no ano fechado"
             : i.primario && i.primario.diferencaRCL >= 0
               ? "meta cumprida"
-              : `${num(Math.abs(i.primario?.diferencaRCL ?? 0))}% da RCL abaixo da meta (zero pontos a partir de ${r.toleranciaPrimario}%)`
+              : `${num(Math.abs(i.primario?.diferencaRCL ?? 0))}% da receita líquida abaixo da meta (zero pontos a partir de ${r.toleranciaPrimario}%)`
         }
         pontos={c.pilares.A.componentes.primario}
         fonte={c.fontes.rreo14}
@@ -160,7 +160,6 @@ export default function PaginaPrefeito() {
   return (
     <>
       <header className="relative flex flex-wrap items-center gap-5 overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6">
-        <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-blue-100 opacity-50 blur-3xl" aria-hidden />
         <Retrato nome={p.nome} foto={p.foto} className="relative w-32 shrink-0 rounded-2xl shadow-sm ring-1 ring-slate-200 sm:w-40" />
         <div className="min-w-0 flex-1 basis-48">
           <h1 className="text-3xl font-bold tracking-tight text-balance text-slate-900">{p.nome}</h1>

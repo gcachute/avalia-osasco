@@ -25,7 +25,7 @@ export function Retrato({ nome, foto, className = "" }: { nome: string; foto: st
         foto={foto}
         alt={`Foto de ${nome}`}
         className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
-        classeIniciais="grid h-full w-full place-items-center bg-gradient-to-br from-blue-50 to-slate-100 text-4xl font-semibold text-blue-900"
+        classeIniciais="grid h-full w-full place-items-center bg-slate-100 text-4xl font-semibold text-blue-900"
       />
     </div>
   );

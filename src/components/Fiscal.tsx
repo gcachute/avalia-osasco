@@ -61,14 +61,14 @@ export function TabelaPares({ anos }: { anos: AnoFiscal[] }) {
                 ))}
                 <td className="px-3 py-2.5 text-right tabular-nums text-slate-700">
                   {!a.completo ? (
-                    <span className="text-slate-400" title="A meta da LDO é anual">—</span>
+                    <span className="text-slate-400" title="A meta da Lei de Diretrizes Orçamentárias é anual">—</span>
                   ) : c.indicadores.primario ? (
                     <span className={c.indicadores.primario.diferencaRCL >= -0.05 ? "text-emerald-700" : "text-rose-700"}>
                       {c.indicadores.primario.diferencaRCL >= 0
                         ? "bateu a meta"
                         : c.indicadores.primario.diferencaRCL >= -0.05
                           ? "na meta"
-                          : `${num(c.indicadores.primario.diferencaRCL)}% da RCL`}
+                          : `${num(c.indicadores.primario.diferencaRCL)}% da receita líquida`}
                     </span>
                   ) : (
                     "—"
@@ -83,8 +83,8 @@ export function TabelaPares({ anos }: { anos: AnoFiscal[] }) {
       </div>
       <p className="mt-2 text-xs text-slate-500">
         Saúde, educação e FUNDEB: % aplicado das receitas (mínimos de 15%, 25% e 70%; FUNDEB 60% até 2020), como declarado no SIOPS e no SIOPE (no
-        ano em andamento, pelo resumo do RREO). Pessoal: despesa com pessoal do Executivo sobre a receita corrente líquida ajustada (limite de 54%).
-        Investimento: investimentos empenhados sobre a despesa total. Resultado primário: diferença para a meta da LDO, em % da RCL. Dados do
+        ano em andamento, pelo relatório bimestral). Pessoal: despesa com pessoal do Executivo sobre a receita corrente líquida ajustada (limite de 54%).
+        Investimento: investimentos empenhados sobre a despesa total. Resultado primário: diferença para a meta da Lei de Diretrizes Orçamentárias, em % da receita corrente líquida. Dados do
         Executivo de cada cidade.
       </p>
     </div>

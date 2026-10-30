@@ -176,7 +176,7 @@ export default function Metodologia() {
         </p>
         <p className="mt-3 text-slate-700">
           O pilar A usa os relatórios fiscais que a própria Prefeitura entrega ao Tesouro Nacional (RREO e RGF, pelo sistema SICONFI). O pilar B usa o
-          que cada prefeitura declara nos sistemas oficiais de cada área, o SIOPS (saúde) e o SIOPE (educação e FUNDEB); o resumo do RREO só entra
+          que cada prefeitura declara nos sistemas oficiais de cada área, o SIOPS (saúde) e o SIOPE (educação e FUNDEB); o relatório bimestral (RREO) só entra
           quando falta dado neles. Em 2025 Osasco informou números diferentes nos dois lugares, e as outras cidades batem. Osasco é
           comparada com {pares.length} cidades paulistas grandes ({pares.join(", ")}) no mesmo período. Conta só o mandato atual: a nota é a média dos
           anos fechados desde 2025, e 2024 aparece como referência da gestão anterior.
@@ -193,7 +193,7 @@ export default function Metodologia() {
               <tr>
                 <td className="px-4 py-3 font-medium text-slate-900">A · Gasto com pessoal</td>
                 <td className="px-4 py-3 text-slate-600">
-                  Pela Lei de Responsabilidade Fiscal: até {ref?.pessoal.otimo}% da RCL vale 10, no limite de alerta ({num(ref?.pessoal.alerta)}%) vale 5 e
+                  Pela Lei de Responsabilidade Fiscal: até {ref?.pessoal.otimo}% da receita corrente líquida vale 10, no limite de alerta ({num(ref?.pessoal.alerta)}%) vale 5 e
                   no limite máximo ({ref?.pessoal.maximo}%) vale 0.
                 </td>
               </tr>
@@ -204,7 +204,7 @@ export default function Metodologia() {
               <tr>
                 <td className="px-4 py-3 font-medium text-slate-900">A · Resultado primário</td>
                 <td className="px-4 py-3 text-slate-600">
-                  Cumprir a meta da Lei de Diretrizes Orçamentárias vale 10. Ficar {ref?.toleranciaPrimario}% da RCL ou mais abaixo da meta vale 0. Só
+                  Cumprir a meta da Lei de Diretrizes Orçamentárias vale 10. Ficar {ref?.toleranciaPrimario}% da receita corrente líquida ou mais abaixo da meta vale 0. Só
                   conta em ano fechado.
                 </td>
               </tr>
@@ -263,7 +263,7 @@ export default function Metodologia() {
       <Secao titulo="Verbas de fora" id="verbas">
         <ul className="list-disc space-y-2 pl-5 text-slate-700">
           <li>
-            <b>Quanto chega:</b> receitas que a Prefeitura declarou ao Tesouro Nacional nas contas anuais (SICONFI, Anexo I-C), separadas pelo nome de
+            <b>De onde vem o dinheiro:</b> receitas que a Prefeitura declarou ao Tesouro Nacional nas contas anuais (SICONFI, Anexo I-C), separadas pelo nome de
             cada conta: FPM, ICMS, IPVA, FUNDEB, saúde, educação, assistência social e convênios. O plano de contas mudou em 2022; a separação pelo nome
             vale para os dois formatos. Os valores são brutos (coluna &quot;Receitas Brutas Realizadas&quot;); a parte retida para o FUNDEB (coluna
             &quot;Deduções – FUNDEB&quot;) aparece no detalhe de cada linha e é descontada do total do ano, para não contar duas vezes o que volta pelo FUNDEB.

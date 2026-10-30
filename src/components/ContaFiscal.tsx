@@ -14,7 +14,7 @@ const lugar = (cidades: CidadeFiscal[], c: CidadeFiscal, k: "pessoal" | "investi
 const primarioTexto = (c: CidadeFiscal) => {
   const p = c.indicadores.primario;
   if (!p) return "—";
-  return p.diferencaRCL >= 0 ? `meta cumprida (+${num(p.diferencaRCL, 1)}% da RCL)` : `${num(Math.abs(p.diferencaRCL), 1)}% da RCL abaixo da meta`;
+  return p.diferencaRCL >= 0 ? `meta cumprida (+${num(p.diferencaRCL, 1)}% da receita líquida)` : `${num(Math.abs(p.diferencaRCL), 1)}% da receita líquida abaixo da meta`;
 };
 
 function Formula({ nomes, valores, total, zerado }: { nomes: string[]; valores: (number | null)[]; total: number | null; zerado?: string }) {
@@ -123,7 +123,7 @@ export function ContaPilarA({ a, c, f }: { a: AnoFiscal; c: CidadeFiscal; f: Fis
         ]}
       />
       <p className="text-xs text-slate-500">
-        Primário × meta: diferença entre o resultado e a meta da LDO, em % da receita corrente líquida (positivo = meta cumprida). Fonte: relatórios
+        Primário × meta: diferença entre o resultado e a meta da Lei de Diretrizes Orçamentárias, em % da receita corrente líquida (positivo = meta cumprida). Fonte: relatórios
         fiscais enviados ao Tesouro Nacional (SICONFI), ano de {a.ano}.
       </p>
     </div>
@@ -162,7 +162,7 @@ export function ContaPilarB({ a, c, f }: { a: AnoFiscal; c: CidadeFiscal; f: Fis
             {c.fonteMinimos?.[l.k] !== "RREO" && c.rreo?.[l.k] != null && l.v != null && Math.abs(c.rreo[l.k]! - l.v) >= 1 && (
               <span className="text-slate-500">
                 {" "}
-                No resumo enviado ao Tesouro (RREO), a Prefeitura informou <b>{pct(c.rreo[l.k])}</b>.
+                No relatório bimestral enviado ao Tesouro (RREO), a Prefeitura informou <b>{pct(c.rreo[l.k])}</b>.
               </span>
             )}
           </li>
@@ -182,7 +182,7 @@ export function ContaPilarB({ a, c, f }: { a: AnoFiscal; c: CidadeFiscal; f: Fis
       />
       <p className="text-xs text-slate-500">
         Fonte: o que cada prefeitura declarou no SIOPS (saúde, Ministério da Saúde) e no SIOPE (educação e FUNDEB, FNDE), ano de {a.ano}. Quando falta
-        dado nesses sistemas, entra o resumo enviado ao Tesouro Nacional (RREO, pelo SICONFI). Diferenças entre os dois aparecem nos avisos sobre a
+        dado nesses sistemas, entra o relatório bimestral enviado ao Tesouro Nacional (RREO, pelo SICONFI). Diferenças entre os dois aparecem nos avisos sobre a
         qualidade dos dados.
       </p>
     </div>

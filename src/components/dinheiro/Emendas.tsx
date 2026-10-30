@@ -391,12 +391,8 @@ function Ficha({ a, aoFechar }: { a: Autor; aoFechar: () => void }) {
       className="ficha fixed inset-x-0 top-auto bottom-0 m-0 w-full max-w-none rounded-t-2xl border border-slate-200 bg-white p-0 text-slate-800 shadow-2xl backdrop:bg-slate-950/50 backdrop:backdrop-blur-sm md:inset-0 md:m-auto md:h-fit md:w-[min(44rem,calc(100vw-2rem))] md:rounded-2xl"
     >
       <div className="relative max-h-[88dvh] overflow-y-auto overscroll-contain p-4 sm:p-6 md:max-h-[calc(100dvh-3rem)]">
-        {/* Faixa de cor da esfera no topo da ficha. */}
-        <div
-          className="pointer-events-none absolute inset-x-0 top-0 h-32 opacity-[0.14]"
-          style={{ background: `linear-gradient(to bottom, ${COR_ESFERA[esferaDe(a) ?? "Federal"]}, transparent)` }}
-          aria-hidden
-        />
+        {/* Fio com a cor da esfera no topo da ficha. */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1" style={{ background: COR_ESFERA[esferaDe(a) ?? "Federal"] }} aria-hidden />
         <div
           className="relative -mx-4 -mt-4 mb-1 flex h-8 cursor-grab touch-none items-center justify-center md:hidden"
           onPointerDown={comecaArraste}

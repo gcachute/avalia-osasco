@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ComposicaoEntradas, GastosPorAno } from "@/components/Dinheiro";
-import { AnoEmAndamento, ConferenciaNumeros } from "@/components/dinheiro/Conferencia";
+import { AnoEmAndamento, ConferirLinha } from "@/components/dinheiro/Conferencia";
 import { QuemMandou } from "@/components/dinheiro/Emendas";
 import { ConferenciasIntegridade } from "@/components/dinheiro/Integridade";
 import { GraficoLinha } from "@/components/GraficoLinha";
@@ -35,9 +35,8 @@ export default function PaginaDinheiro() {
   return (
     <>
       <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-5 py-5 sm:px-8 sm:py-7">
-        <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-blue-100 opacity-60 blur-3xl" aria-hidden />
         <div className="relative">
-          <p className="text-sm font-medium text-blue-800">Dinheiro da União e do Estado para Osasco</p>
+          <p className="text-sm font-medium text-blue-800">Receitas e gastos da Prefeitura de Osasco</p>
           <h1 className="mt-1 max-w-3xl text-3xl font-bold tracking-tight text-balance text-slate-900 sm:text-4xl">Verbas de fora</h1>
           <p className="mt-3 max-w-3xl text-slate-600">
             Quanto chega e por qual motivo, quem mandou cada emenda, com quem a Prefeitura gastou esse dinheiro e o que a conferência nas listas oficiais
@@ -45,8 +44,8 @@ export default function PaginaDinheiro() {
           </p>
           <dl className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">
             {[
-              { t: `Da União em ${ultimo.ano}`, v: ultimo.uniao.total, d: "FPM, SUS, educação, convênios", cor: "var(--grafico-1)" },
-              { t: `Do Estado em ${ultimo.ano}`, v: ultimo.estado.total, d: "ICMS, IPVA, SUS, convênios", cor: "var(--grafico-2)" },
+              { t: `Da União em ${ultimo.ano}`, v: ultimo.uniao.total, d: "valor bruto: FPM, SUS, educação, convênios", cor: "var(--grafico-1)" },
+              { t: `Do Estado em ${ultimo.ano}`, v: ultimo.estado.total, d: "valor bruto: ICMS, IPVA, SUS, convênios", cor: "var(--grafico-2)" },
               { t: `FUNDEB em ${ultimo.ano}`, v: ultimo.fundeb, d: "fundo da educação básica", cor: "var(--grafico-3)" },
               { t: `Emendas federais em ${anoEmendas}`, v: recebidoUltimo, d: `${dinheiroCurto(totalEmendas)} desde ${anosRecebido[0]}`, cor: "var(--grafico-4)" },
             ].map((c) => (
@@ -63,7 +62,10 @@ export default function PaginaDinheiro() {
         </div>
       </section>
 
-      <Secao titulo="Quanto chega por ano" id="quanto-chega" subtitulo="Receitas que a Prefeitura registrou como vindas da União e do Estado, ano a ano.">
+      <Secao
+        titulo="De onde vem o dinheiro"
+        id="quanto-chega"
+        subtitulo="O que a Prefeitura recebeu da União, do Estado e do FUNDEB, ano a ano, e, para comparar, o que arrecadou sozinha. O ano em andamento vem logo abaixo.">
         <div className="rounded-2xl border border-slate-200 bg-white p-4">
           <GraficoLinha
             rotulo="Dinheiro da União, do Estado e do FUNDEB recebido por Osasco, por ano"
@@ -81,7 +83,7 @@ export default function PaginaDinheiro() {
           </p>
         </div>
         <div className="mt-4">
-          <ComposicaoEntradas anos={entradas} />
+          <ComposicaoEntradas anos={entradas} conferencias={conferencias} />
         </div>
         {parcial && (
           <div className="mt-4">
@@ -98,19 +100,19 @@ export default function PaginaDinheiro() {
           <a href={fontes.entradas.url} className="underline">
             {fontes.entradas.nome}
           </a>
-          .
+          . Conferido com:{" "}
+          {[fontesConferencia.rreo, fontesConferencia.estado, fontesConferencia.uniao]
+            .filter((f) => f != null)
+            .map((f, i, arr) => (
+              <span key={f.url}>
+                <a href={f.url} className="underline">
+                  {f.nome}
+                </a>
+                {i < arr.length - 1 ? "; " : "."}
+              </span>
+            ))}
         </p>
       </Secao>
-
-      {conferencias.length > 0 && (
-        <Secao
-          titulo="Conferência dos números"
-          id="conferencia"
-          subtitulo="Cada valor desta página comparado com outra fonte: o relatório bimestral da própria Prefeitura, os repasses publicados pelo Estado e as transferências publicadas pelo governo federal."
-        >
-          <ConferenciaNumeros conferencias={conferencias} fontes={[fontes.entradas, fontesConferencia.rreo, fontesConferencia.estado, fontesConferencia.uniao]} />
-        </Secao>
-      )}
 
       <Secao
         titulo="Quem mandou emendas"
@@ -118,6 +120,13 @@ export default function PaginaDinheiro() {
         subtitulo="Cada político com o valor que de fato chegou à Prefeitura e aos fundos municipais. Toque no nome para abrir a ficha; abra as emendas para ver o detalhe de cada uma, até as compras que ela pagou."
       >
         <QuemMandou autores={emendas.autores} vereadores={vereadores} porPartido={emendas.porPartido} />
+        <div className="mt-3 text-xs">
+          <ConferirLinha
+            conferencias={conferencias.filter((c) => ["emendasIndividuais", "pix"].includes(c.chave))}
+            ano={Number(anoEmendas)}
+            titulo={`Total de emendas de ${anoEmendas} conferido com outras fontes`}
+          />
+        </div>
 
         <div className="mt-4">
           <div className="rounded-2xl border border-slate-200 bg-white p-4">
@@ -265,11 +274,8 @@ export default function PaginaDinheiro() {
             servidores é dinheiro reservado às aposentadorias.
           </li>
           <li>
-            O ano em andamento vem do relatório bimestral, sem o detalhe de cada conta; os anos fechados vêm da declaração anual. A{" "}
-            <a href="#conferencia" className="underline">
-              conferência dos números
-            </a>{" "}
-            compara cada valor com outra fonte, ano a ano.
+            O ano em andamento vem do relatório bimestral, sem o detalhe de cada conta; os anos fechados vêm da declaração anual. Ao abrir uma linha, a
+            conferência mostra o mesmo valor em outra fonte (relatório bimestral, repasses do Estado, governo federal), ano a ano.
           </li>
           <li>Se a obra ou o serviço foi entregue não aparece nesses registros. Para obras, veja a camada de obras no mapa.</li>
         </ul>
