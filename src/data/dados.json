@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-30T05:14:21.569Z",
+ "geradoEm": "2026-10-30T20:37:04.158Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -41508,7 +41508,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-28T18:59:54.144Z",
+     "coletadoEm": "2026-10-30T20:21:51.693Z",
      "mandato": false,
      "cidades": [
       {
@@ -41974,7 +41974,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-28T19:00:50.697Z",
+     "coletadoEm": "2026-10-30T20:22:57.089Z",
      "mandato": false,
      "cidades": [
       {
@@ -42440,7 +42440,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-28T19:01:45.484Z",
+     "coletadoEm": "2026-10-30T20:23:57.073Z",
      "mandato": false,
      "cidades": [
       {
@@ -42906,7 +42906,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-28T19:02:41.249Z",
+     "coletadoEm": "2026-10-30T20:25:01.309Z",
      "mandato": false,
      "cidades": [
       {
@@ -43372,7 +43372,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-28T19:03:38.649Z",
+     "coletadoEm": "2026-10-30T20:25:55.161Z",
      "mandato": false,
      "cidades": [
       {
@@ -43846,7 +43846,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-28T19:04:32.294Z",
+     "coletadoEm": "2026-10-30T20:26:46.771Z",
      "mandato": false,
      "cidades": [
       {
@@ -44312,7 +44312,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-28T19:05:22.672Z",
+     "coletadoEm": "2026-10-30T20:27:38.103Z",
      "mandato": false,
      "cidades": [
       {
@@ -44818,7 +44818,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-28T19:06:15.755Z",
+     "coletadoEm": "2026-10-30T20:28:30.330Z",
      "mandato": false,
      "cidades": [
       {
@@ -45324,7 +45324,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-28T19:07:15.985Z",
+     "coletadoEm": "2026-10-30T20:29:21.564Z",
      "mandato": true,
      "cidades": [
       {
@@ -45830,7 +45830,7 @@
      "completo": false,
      "rreoPeriodo": 4,
      "rgfPeriodo": 2,
-     "coletadoEm": "2026-10-28T19:08:19.154Z",
+     "coletadoEm": "2026-10-30T20:30:17.407Z",
      "mandato": true,
      "cidades": [
       {
@@ -49722,7 +49722,7 @@
   "despesas": {
    "fonte": "TCE-SP, Portal da Transparência Municipal (dados do sistema AUDESP)",
    "url": "https://transparencia.tce.sp.gov.br/",
-   "coletadoEm": "2026-10-28",
+   "coletadoEm": "2026-10-30",
    "anos": {
     "2017": {
      "pago": 41002832.78,
