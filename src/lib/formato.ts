@@ -12,6 +12,9 @@ export const milhoes = (v: number) => `${v < 0 ? "−" : ""}R$ ${num(corta(Math.
 
 export const reais = (v: number, casas = 0) => `R$ ${num(corta(v, casas), casas)}`;
 export const milReais = (v: number) => `R$ ${num(corta(v / 1e3, 1), 1)} mil`;
+// "2020, 2021 e 2024"
+export const listaBR = (xs: (string | number)[]) => new Intl.ListFormat("pt-BR", { type: "conjunction" }).format(xs.map(String));
+
 // Valor completo, com centavos: R$ 639.773.139,17.
 export const reaisExato = (v: number) => `${v < 0 ? "−" : ""}R$ ${num(Math.abs(v), 2)}`;
 // Valores grandes de dinheiro, curtos e cortados (não arredondados): R$ 3,43 bi, R$ 639,7 mi, R$ 850 mil.

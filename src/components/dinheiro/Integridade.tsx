@@ -2,11 +2,10 @@
 
 import { useState } from "react";
 import { Abre } from "@/components/movimento/Movimento";
-import type { Integridade, Modalidades } from "@/lib/dinheiro";
-import { dataBR, dinheiroCurto, pct, reaisExato } from "@/lib/formato";
-
-// "2020, 2021 e 2024"
-const lista = (xs: (string | number)[]) => new Intl.ListFormat("pt-BR", { type: "conjunction" }).format(xs.map(String));
+import { Contratacoes, parteSemLicitacao, somaModalidades } from "@/components/dinheiro/Contratacoes";
+import { ListaPunidos } from "@/components/dinheiro/Punidos";
+import type { Integridade } from "@/lib/dinheiro";
+import { dataBR, dinheiroCurto, listaBR, pct } from "@/lib/formato";
 
 // Cada conferência é um cartão: o que foi conferido, o resultado em uma frase e, ao abrir, os casos.
 function Conferencia({
@@ -54,80 +53,15 @@ function Conferencia({
   );
 }
 
-const PARTES: { chave: keyof Omit<Modalidades, "total">; nome: string; cor: string }[] = [
-  { chave: "licitacao", nome: "Licitação", cor: "var(--grafico-1)" },
-  { chave: "dispensa", nome: "Dispensa de licitação", cor: "var(--grafico-2)" },
-  { chave: "inexigivel", nome: "Inexigível", cor: "var(--grafico-4)" },
-  { chave: "semContratacao", nome: "Sem compra (salários, repasses)", cor: "var(--grafico-outro)" },
-];
-
-function Barra({ m, rotulo }: { m: Modalidades; rotulo: string }) {
-  return (
-    <div className="grid grid-cols-[minmax(0,7rem)_minmax(0,1fr)] items-center gap-2 text-xs max-sm:grid-cols-1">
-      <span className="text-slate-600">{rotulo}</span>
-      <span className="flex h-3 overflow-hidden rounded" role="img" aria-label={PARTES.map((p) => `${p.nome}: ${pct(m[p.chave] / m.total)}`).join("; ")}>
-        {PARTES.map((p) => (m[p.chave] > 0 ? <span key={p.chave} style={{ width: `${(m[p.chave] / m.total) * 100}%`, background: p.cor }} className="barra-anim border-r-2 border-white last:border-r-0" /> : null))}
-      </span>
-    </div>
-  );
-}
-
 export function ConferenciasIntegridade({ i }: { i: Integridade }) {
   const pagosDurante = i.punidos.filter((p) => p.punicoes.some((s) => s.valeParaOsasco && s.pagoDurante > 0));
   const valemDepois = i.punidos.filter((p) => !pagosDurante.includes(p) && p.punicoes.some((s) => s.valeParaOsasco));
   const outros = i.punidos.filter((p) => !pagosDurante.includes(p) && !valemDepois.includes(p));
   const datas = [...new Set(Object.values(i.listas))].map(dataBR).join(" e ");
 
-  const comEmendas = i.modalidades.filter((m) => m.emendas.total > 0);
-  const somaM = (lista: Modalidades[]) =>
-    lista.reduce((a, m) => ({ licitacao: a.licitacao + m.licitacao, dispensa: a.dispensa + m.dispensa, inexigivel: a.inexigivel + m.inexigivel, semContratacao: a.semContratacao + m.semContratacao, total: a.total + m.total }), {
-      licitacao: 0,
-      dispensa: 0,
-      inexigivel: 0,
-      semContratacao: 0,
-      total: 0,
-    });
-  const emendasTodas = somaM(comEmendas.map((m) => m.emendas));
-  const semLicitacao = (m: Modalidades) => (m.dispensa + m.inexigivel) / Math.max(1, m.total - m.semContratacao);
+  const comEmendas = i.modalidades.filter((m) => m.emendas.total > m.emendas.semContratacao);
+  const emendasTodas = somaModalidades(comEmendas.map((m) => m.emendas));
   const rastreioTotal = i.rastreio.reduce((a, r) => ({ total: a.total + r.total, comNumero: a.comNumero + r.comNumero }), { total: 0, comNumero: 0 });
-
-  const ListaPunidos = ({ itens }: { itens: Integridade["punidos"] }) => (
-    <ul className="space-y-3">
-      {itens.map((p) => (
-        <li key={p.cnpj} className="rounded-lg bg-slate-50 p-3">
-          <div className="flex items-baseline gap-3">
-            <span className="min-w-0 flex-1 font-medium text-slate-900">{p.nome}</span>
-            <span className="shrink-0 tabular-nums text-slate-900">{reaisExato(p.recebeu)}</span>
-          </div>
-          <div className="text-xs text-slate-500">
-            Recebeu verbas de fora em {lista(p.anos)}
-            {p.deEmenda > 0 && ` (${dinheiroCurto(p.deEmenda)} de emendas)`}
-          </div>
-          <ul className="mt-2 space-y-1.5 text-xs">
-            {p.punicoes.map((s, k) => (
-              <li key={k} className="text-slate-700">
-                <span className="font-medium">{s.categoria}</span>
-                {s.inicio && ` desde ${dataBR(s.inicio)}`}
-                {s.fim && ` até ${dataBR(s.fim)}`}, aplicada por {s.orgao}
-                {s.outraUnidade && " (a outra unidade da mesma empresa)"}.{" "}
-                <span className={s.valeParaOsasco ? "text-amber-800" : "text-slate-500"}>
-                  {s.lista === "CEPIM"
-                    ? "Impede a entidade de receber repasses do governo federal."
-                    : s.valeParaOsasco
-                      ? s.pagoDurante > 0
-                        ? `Vale para Osasco; ${dinheiroCurto(s.pagoDurante)} foram pagos no período da punição.`
-                        : "Vale para Osasco; nenhum pagamento com verbas de fora no período da punição."
-                      : /Multa|Publica/i.test(s.categoria)
-                        ? "Multa, sem proibição de contratar."
-                        : "Só vale para o órgão que puniu ou para o governo dele."}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </li>
-      ))}
-    </ul>
-  );
 
   return (
     <ul className="space-y-3">
@@ -146,24 +80,7 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
         }
       >
         <div className="space-y-4">
-          {pagosDurante.length > 0 && (
-            <div>
-              <div className="mb-2 text-xs font-medium text-slate-900">Pagas durante uma punição que vale para Osasco</div>
-              <ListaPunidos itens={pagosDurante} />
-            </div>
-          )}
-          {valemDepois.length > 0 && (
-            <div>
-              <div className="mb-2 text-xs font-medium text-slate-900">Punição que vale para Osasco, mas sem pagamento no período</div>
-              <ListaPunidos itens={valemDepois} />
-            </div>
-          )}
-          {outros.length > 0 && (
-            <div>
-              <div className="mb-2 text-xs font-medium text-slate-900">Punidas por outros órgãos (a punição não alcança Osasco)</div>
-              <ListaPunidos itens={outros} />
-            </div>
-          )}
+          <ListaPunidos punidos={i.punidos} />
           <p className="text-xs text-slate-500">
             As listas mostram só as punições em vigor hoje ou ainda registradas. Estar numa lista não quer dizer que houve irregularidade em Osasco: uma
             suspensão aplicada por outra prefeitura, por exemplo, só vale lá. Pagamentos a pessoas físicas não foram conferidos. Fonte:{" "}
@@ -178,56 +95,16 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
       {comEmendas.length > 0 && (
         <Conferencia
           titulo="Como as compras com dinheiro de emenda foram contratadas"
-          achou={semLicitacao(emendasTodas) > 0.25}
+          achou={parteSemLicitacao(emendasTodas) > 0.25}
           resultado={
             <>
-              Das compras e serviços pagos com dinheiro de emenda desde {comEmendas[0].ano}, {pct(semLicitacao(emendasTodas))} foram contratados sem licitação
-              (dispensa ou inexigibilidade). No total das verbas de fora, a parte sem licitação é de {pct(semLicitacao(somaM(i.modalidades.map((m) => m.todos))))}.
+              {pct(parteSemLicitacao(emendasTodas))} das compras e serviços pagos com dinheiro de emenda desde {comEmendas[0].ano} (
+              {dinheiroCurto(emendasTodas.dispensa + emendasTodas.inexigivel)} de {dinheiroCurto(emendasTodas.total - emendasTodas.semContratacao)}) foram contratados sem
+              licitação, ou seja, sem disputa entre empresas. Em todas as verbas de fora, essa parte é de {pct(parteSemLicitacao(somaModalidades(i.modalidades.map((m) => m.todos))))}.
             </>
           }
         >
-          <div className="space-y-2">
-            <div className="flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-slate-600">
-              {PARTES.map((p) => (
-                <span key={p.chave} className="inline-flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-sm" style={{ background: p.cor }} aria-hidden />
-                  {p.nome}
-                </span>
-              ))}
-            </div>
-            {comEmendas
-              .slice()
-              .reverse()
-              .map((m) => (
-                <div key={m.ano} className="space-y-1">
-                  <Barra m={m.emendas} rotulo={`${m.ano}, emendas`} />
-                  <Barra m={m.todos} rotulo={`${m.ano}, tudo`} />
-                </div>
-              ))}
-            {i.dispensasEmendas.length > 0 && (
-              <div className="pt-2">
-                <div className="text-xs font-medium text-slate-900">Quem mais recebeu dinheiro de emenda sem licitação</div>
-                <ul className="mt-1 divide-y divide-slate-100 text-xs">
-                  {i.dispensasEmendas.map((d) => (
-                    <li key={d.fornecedor} className="flex items-baseline gap-3 py-1">
-                      <span className="min-w-0 flex-1 text-slate-800">
-                        {d.fornecedor}
-                        <span className="text-slate-500">
-                          {" "}
-                          · {d.modalidade}, {lista(d.anos)}
-                        </span>
-                      </span>
-                      <span className="shrink-0 tabular-nums text-slate-900">{reaisExato(d.valor)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            <p className="text-xs text-slate-500">
-              A lei permite comprar sem licitação em casos como valores pequenos, emergências ou fornecedor único; isso não é irregular por si. Compras pela
-              bolsa eletrônica do Estado contam como licitação.
-            </p>
-          </div>
+          <Contratacoes i={i} />
         </Conferencia>
       )}
 
@@ -297,7 +174,7 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
           achou
           resultado={
             <>
-              Osasco recebeu {dinheiroCurto(i.relator.total)} em {i.relator.quantidade} emendas de relator, pagas em {lista(i.relator.anos)}. Nesse tipo de emenda o
+              Osasco recebeu {dinheiroCurto(i.relator.total)} em {i.relator.quantidade} emendas de relator, pagas em {listaBR(i.relator.anos)}. Nesse tipo de emenda o
               registro oficial não diz qual parlamentar pediu o dinheiro; o Supremo Tribunal Federal julgou o modelo inconstitucional em dezembro de 2022.
             </>
           }
@@ -347,7 +224,7 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
             {i.atrasadas.map((x) => (
               <li key={x.codigo} className="flex items-baseline gap-3 py-1">
                 <span className="min-w-0 flex-1 text-slate-700">
-                  {x.autor}, emenda de {x.ano}, paga em {lista(x.anosRecebido)}
+                  {x.autor}, emenda de {x.ano}, paga em {listaBR(x.anosRecebido)}
                 </span>
                 <span className="shrink-0 tabular-nums text-slate-900">{dinheiroCurto(x.valor)}</span>
               </li>
@@ -370,7 +247,7 @@ export function ConferenciasIntegridade({ i }: { i: Integridade }) {
                   <span className="shrink-0 tabular-nums text-slate-900">{dinheiroCurto(e.federal + e.vereadores)}</span>
                 </div>
                 <div className="text-slate-500">
-                  {dinheiroCurto(e.federal)} de emenda federal, {dinheiroCurto(e.vereadores)} de emenda de vereador · {lista(e.autores)}
+                  {dinheiroCurto(e.federal)} de emenda federal, {dinheiroCurto(e.vereadores)} de emenda de vereador · {listaBR(e.autores)}
                 </div>
               </li>
             ))}
