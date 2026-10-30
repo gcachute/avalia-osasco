@@ -1,5 +1,5 @@
 {
- "coletadoEm": "2026-10-29",
+ "coletadoEm": "2026-10-30",
  "fonte": "TCE-SP, despesas dos municípios (Audesp)",
  "url": "https://transparencia.tce.sp.gov.br/conjunto-de-dados",
  "ano": 2021,
@@ -30,6 +30,13 @@
     "0264 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO - ANO ANTERIOR": 14313028.77,
     "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 3828573.09
    },
+   "modalidades": {
+    "OUTROS/NÃO APLICÁVEL": 365901153.66,
+    "DISPENSA DE LICITAÇÃO": 8296122.3,
+    "BEC-BOLSA ELETRÔNICA DE COMPRAS": 14188552.5,
+    "PREGÃO": 229305.13,
+    "CONCORRÊNCIA": 47933.69
+   },
    "fornecedores": {
     "2035": {
      "nome": "FOLHA DE PAG AUXILIO DOENCA",
@@ -37,6 +44,9 @@
      "aplicacoes": {
       "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 146946.7,
       "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 532245.42
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 679192.12
      }
     },
     "5726": {
@@ -45,6 +55,9 @@
      "aplicacoes": {
       "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 58397.87,
       "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 3691.44
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 62089.31
      }
     },
     "7383": {
@@ -53,6 +66,9 @@
      "aplicacoes": {
       "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 406951.44,
       "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 12914.03
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 419865.47
      }
     },
     "46523171000104": {
@@ -62,6 +78,9 @@
       "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 264945020.36,
       "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 30586800.52,
       "0264 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO - ANO ANTERIOR": 14313028.77
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 309844849.65
      }
     },
     "46621538000114": {
@@ -70,6 +89,9 @@
      "aplicacoes": {
       "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 45655943.81,
       "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 6891975.6
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 52547919.41
      }
     },
     "06344497000141": {
@@ -77,6 +99,9 @@
      "valor": 13307571.8,
      "aplicacoes": {
       "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 13307571.8
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 13307571.8
      }
     },
     "61610283000188": {
@@ -84,6 +109,9 @@
      "valor": 3408516.4,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 3408516.4
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 3408516.4
      }
     },
     "26635388000190": {
@@ -91,6 +119,9 @@
      "valor": 2197623,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 2197623
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 2197623
      }
     },
     "29979036038547": {
@@ -99,6 +130,9 @@
      "aplicacoes": {
       "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 618603.91,
       "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 119132.34
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 737736.25
      }
     },
     "46384111000140": {
@@ -106,6 +140,9 @@
      "valor": 646741.02,
      "aplicacoes": {
       "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 646741.02
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 646741.02
      }
     },
     "13032053000136": {
@@ -113,6 +150,9 @@
      "valor": 514500,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 514500
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 514500
      }
     },
     "46374500015892": {
@@ -120,6 +160,9 @@
      "valor": 479938.17,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 479938.17
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 479938.17
      }
     },
     "02629588000172": {
@@ -127,6 +170,9 @@
      "valor": 467955,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 467955
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 467955
      }
     },
     "15021981000120": {
@@ -134,6 +180,9 @@
      "valor": 423221,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 423221
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 423221
      }
     },
     "08070362000160": {
@@ -141,6 +190,9 @@
      "valor": 341565.85,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 341565.85
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 341565.85
      }
     },
     "15046859000109": {
@@ -148,6 +200,9 @@
      "valor": 218677.7,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 218677.7
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 218677.7
      }
     },
     "10718875000187": {
@@ -155,6 +210,9 @@
      "valor": 210000,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 210000
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 210000
      }
     },
     "03434334000161": {
@@ -162,6 +220,9 @@
      "valor": 186900,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 186900
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 186900
      }
     },
     "01664908000162": {
@@ -169,6 +230,9 @@
      "valor": 182038.92,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 182038.92
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 182038.92
      }
     },
     "43640754000119": {
@@ -176,6 +240,9 @@
      "valor": 162175,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 162175
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 162175
      }
     },
     "03641257000110": {
@@ -183,6 +250,9 @@
      "valor": 134958.19,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 134958.19
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 134958.19
      }
     },
     "07046094000189": {
@@ -190,6 +260,9 @@
      "valor": 116610,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 116610
+     },
+     "modalidades": {
+      "PREGÃO": 116610
      }
     },
     "14112327000160": {
@@ -197,6 +270,9 @@
      "valor": 105600,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 105600
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 105600
      }
     },
     "69001378000106": {
@@ -204,6 +280,9 @@
      "valor": 95700,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 95700
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 95700
      }
     },
     "05489375000180": {
@@ -211,6 +290,10 @@
      "valor": 94052.22,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 94052.22
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 32002.14,
+      "PREGÃO": 62050.08
      }
     },
     "21813311000140": {
@@ -218,6 +301,9 @@
      "valor": 60634,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 60634
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 60634
      }
     },
     "05782733000149": {
@@ -225,6 +311,9 @@
      "valor": 56548,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 56548
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 56548
      }
     },
     "32593430000150": {
@@ -232,6 +321,9 @@
      "valor": 55778.9,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 55778.9
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 55778.9
      }
     },
     "21941290000148": {
@@ -239,6 +331,9 @@
      "valor": 47933.69,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 47933.69
+     },
+     "modalidades": {
+      "CONCORRÊNCIA": 47933.69
      }
     },
     "20754940000183": {
@@ -246,6 +341,9 @@
      "valor": 36210,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 36210
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 36210
      }
     },
     "13846262000113": {
@@ -253,6 +351,9 @@
      "valor": 33629.31,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 33629.31
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 33629.31
      }
     },
     "34122728000108": {
@@ -260,6 +361,9 @@
      "valor": 32438,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 32438
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 32438
      }
     },
     "20230316000187": {
@@ -267,6 +371,9 @@
      "valor": 29751,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 29751
+     },
+     "modalidades": {
+      "PREGÃO": 29751
      }
     },
     "22929732000101": {
@@ -274,6 +381,9 @@
      "valor": 24000,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 24000
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 24000
      }
     },
     "03649725000101": {
@@ -281,6 +391,9 @@
      "valor": 22344.76,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 22344.76
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 22344.76
      }
     },
     "08610916000175": {
@@ -288,6 +401,9 @@
      "valor": 21717.83,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 21717.83
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 21717.83
      }
     },
     "05876269000150": {
@@ -295,6 +411,9 @@
      "valor": 20894.05,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 20894.05
+     },
+     "modalidades": {
+      "PREGÃO": 20894.05
      }
     },
     "05836107000198": {
@@ -302,6 +421,9 @@
      "valor": 19210.5,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 19210.5
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 19210.5
      }
     },
     "35820448008544": {
@@ -309,6 +431,9 @@
      "valor": 18901.2,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 18901.2
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 18901.2
      }
     },
     "14619703000107": {
@@ -316,6 +441,9 @@
      "valor": 18678.81,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 18678.81
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 18678.81
      }
     },
     "09635131000110": {
@@ -323,6 +451,9 @@
      "valor": 15315.4,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 15315.4
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 15315.4
      }
     },
     "30223033000161": {
@@ -330,6 +461,9 @@
      "valor": 12000,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 12000
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 12000
      }
     },
     "97533241000138": {
@@ -337,6 +471,9 @@
      "valor": 11000,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 11000
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 11000
      }
     },
     "21597932000133": {
@@ -344,6 +481,9 @@
      "valor": 10705.41,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 10705.41
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 10705.41
      }
     },
     "53901591000134": {
@@ -351,6 +491,9 @@
      "valor": 10210,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 10210
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 10210
      }
     },
     "32399280000149": {
@@ -358,6 +501,9 @@
      "valor": 9800,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 9800
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 9800
      }
     },
     "03638878000145": {
@@ -365,6 +511,9 @@
      "valor": 9000,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 9000
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 9000
      }
     },
     "21971041000103": {
@@ -372,6 +521,9 @@
      "valor": 8200,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 8200
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 8200
      }
     },
     "26742152000153": {
@@ -379,6 +531,9 @@
      "valor": 7902.75,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 7902.75
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 7902.75
      }
     },
     "01838723000127": {
@@ -386,6 +541,9 @@
      "valor": 7231.26,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 7231.26
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 7231.26
      }
     },
     "35764167000103": {
@@ -393,6 +551,9 @@
      "valor": 6764,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 6764
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 6764
      }
     },
     "00360305000104": {
@@ -401,6 +562,9 @@
      "aplicacoes": {
       "0261 - EDUCAÇÃO - FUNDEB - MAGISTÉRIO": 1851.99,
       "0262 - EDUCAÇÃO - FUNDEB - OUTROS": 4692.22
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 6544.21
      }
     },
     "34680592000151": {
@@ -408,6 +572,9 @@
      "valor": 5149.98,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 5149.98
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 5149.98
      }
     },
     "20371330000109": {
@@ -415,6 +582,9 @@
      "valor": 3600,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 3600
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 3600
      }
     },
     "30619938000155": {
@@ -422,6 +592,9 @@
      "valor": 3300,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 3300
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 3300
      }
     },
     "11089732000116": {
@@ -429,6 +602,9 @@
      "valor": 3100,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 3100
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 3100
      }
     },
     "24103721000195": {
@@ -436,6 +612,9 @@
      "valor": 2600,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 2600
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 2600
      }
     },
     "20451726000239": {
@@ -443,6 +622,9 @@
      "valor": 929,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 929
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 929
      }
     },
     "24768176000156": {
@@ -450,6 +632,9 @@
      "valor": 682,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 682
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 682
      }
     },
     "23236167000151": {
@@ -457,12 +642,518 @@
      "valor": 670,
      "aplicacoes": {
       "0300 - SAÚDE - RECURSOS ESPECÍFICOS": 670
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 670
      }
     }
    },
    "pessoasFisicas": 442648.74,
    "itensBairro": [],
+   "pagamentosEmendas": [],
    "outrosFornecedores": 1048,
+   "todosCnpjs": {
+    "2035": {
+     "nome": "FOLHA DE PAG AUXILIO DOENCA",
+     "meses": {
+      "2021-07": 153421.01,
+      "2021-08": 130000.44,
+      "2021-10": 216590.93,
+      "2021-11": 179179.74
+     }
+    },
+    "5726": {
+     "nome": "FOLHA DE PAGAMENTO SALARIO FAMILIA IPMO",
+     "meses": {
+      "2021-07": 15124.65,
+      "2021-08": 14201.79,
+      "2021-09": 15073.38,
+      "2021-10": 17125.52,
+      "2021-11": 563.97
+     }
+    },
+    "7383": {
+     "nome": "FOLHA DE PAGAMENTO SALARIO MATERNIDADE IPMO",
+     "meses": {
+      "2021-07": 106487.9,
+      "2021-08": 120736.03,
+      "2021-10": 107406.7,
+      "2021-11": 85234.84
+     }
+    },
+    "46523171000104": {
+     "nome": "PREFEITURA DO MUNICIPIO DE OSASCO",
+     "meses": {
+      "2021-01": 25913889.94,
+      "2021-02": 20828655.26,
+      "2021-03": 26286038.29,
+      "2021-04": 30535975.06,
+      "2021-05": 25414846.15,
+      "2021-06": 22644446.34,
+      "2021-07": 25603361.22,
+      "2021-08": 23799081.44,
+      "2021-09": 27485726.82,
+      "2021-10": 24870469.27,
+      "2021-11": 39177629.18,
+      "2021-12": 17284730.68
+     }
+    },
+    "46621538000114": {
+     "nome": "IPMO INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
+     "meses": {
+      "2021-02": 4271548.16,
+      "2021-03": 4197664.9,
+      "2021-04": 4209795.38,
+      "2021-05": 4601019.35,
+      "2021-06": 4728707.08,
+      "2021-07": 4695114.06,
+      "2021-08": 9458916.3,
+      "2021-10": 4697248.38,
+      "2021-11": 11687905.8,
+      "2021-12": 0
+     }
+    },
+    "06344497000141": {
+     "nome": "VEROCHEQUE REFEICOES LTDA",
+     "meses": {
+      "2021-02": 1605794.4,
+      "2021-03": 1617948,
+      "2021-04": 1560218.4,
+      "2021-05": 1562497.2,
+      "2021-06": 1539329.4,
+      "2021-07": 1521858.6,
+      "2021-08": 1520339.4,
+      "2021-09": 1504767.6,
+      "2021-10": 1485777.6,
+      "2021-11": 640102.4,
+      "2021-12": -1251061.2
+     }
+    },
+    "61610283000188": {
+     "nome": "VITAL HOSPITALAR COMERCIAL LTDA",
+     "meses": {
+      "2021-06": 1354844.44,
+      "2021-07": 2053671.96
+     }
+    },
+    "26635388000190": {
+     "nome": "CENTRO DE SERVICOS DE SAUDE MEDCAL",
+     "meses": {
+      "2021-06": 2197623
+     }
+    },
+    "29979036038547": {
+     "nome": "INSS INSTITUTO NACIONAL DO SEGURO SOCIAL",
+     "meses": {
+      "2021-02": 102408.24,
+      "2021-03": 22431.17,
+      "2021-04": 10525.61,
+      "2021-05": 9125.46,
+      "2021-06": 558290.43,
+      "2021-07": 5594.33,
+      "2021-08": 5042.57,
+      "2021-09": 4491,
+      "2021-10": 4793.9,
+      "2021-11": 4124.32,
+      "2021-12": 10909.22
+     }
+    },
+    "46384111000140": {
+     "nome": "SECRETARIA DE ESTADO DA EDUCACAO",
+     "meses": {
+      "2021-02": 51489.33,
+      "2021-03": 54577.75,
+      "2021-05": 92174.15,
+      "2021-06": 40625.97,
+      "2021-07": 41805.9,
+      "2021-08": 45516.99,
+      "2021-09": 78469.97,
+      "2021-10": 153332.44,
+      "2021-11": 88748.52
+     }
+    },
+    "13032053000136": {
+     "nome": "T & T Produtos Médicos Hospitalares LTDA",
+     "meses": {
+      "2021-03": 94500,
+      "2021-04": 105000,
+      "2021-09": 105000,
+      "2021-10": 105000,
+      "2021-11": 105000
+     }
+    },
+    "46374500015892": {
+     "nome": "SECRETARIA DE ESTADO DA SAUDE",
+     "meses": {
+      "2021-08": 479938.17
+     }
+    },
+    "02629588000172": {
+     "nome": "FIRST MEDICAL SERVICE LTDA",
+     "meses": {
+      "2021-07": 155985,
+      "2021-11": 207980,
+      "2021-12": 103990
+     }
+    },
+    "15021981000120": {
+     "nome": "UNOMED COMERCIO DE MATERIAIS HOSPITALARES LTDA ME",
+     "meses": {
+      "2021-02": 293121,
+      "2021-06": 130100
+     }
+    },
+    "08070362000160": {
+     "nome": "NS ALIMENTOS LTDA",
+     "meses": {
+      "2021-11": 296880.06,
+      "2021-12": 44685.79
+     }
+    },
+    "15046859000109": {
+     "nome": "MAXLAV LAVANDERIA ESPECIALIZADA LTDA",
+     "meses": {
+      "2021-03": 55473.52,
+      "2021-04": 78479.96,
+      "2021-07": 84724.22
+     }
+    },
+    "10718875000187": {
+     "nome": "STAREX EMERGENCIAS MEDICAS",
+     "meses": {
+      "2021-03": 105000,
+      "2021-04": 105000
+     }
+    },
+    "03434334000161": {
+     "nome": "MEDIMPORT COMERCIO DE PRODUTOS HOSPITALARES EIRELI EPP",
+     "meses": {
+      "2021-04": 49128,
+      "2021-05": 137772
+     }
+    },
+    "01664908000162": {
+     "nome": "CCM COMERCIAL CREME MARFIM LTDA",
+     "meses": {
+      "2021-04": 6598.44,
+      "2021-05": 23702.45,
+      "2021-06": 23732.4,
+      "2021-07": 20980.77,
+      "2021-08": 1358.71,
+      "2021-09": 20658.28,
+      "2021-10": 20958.43,
+      "2021-11": 6400.8,
+      "2021-12": 57648.64
+     }
+    },
+    "43640754000119": {
+     "nome": "FUNDACAO PARA O REMEDIO POPULAR FURP",
+     "meses": {
+      "2021-07": 25000,
+      "2021-09": 137175
+     }
+    },
+    "03641257000110": {
+     "nome": "UNISERV TERCEIRIZACAO E SERVICOS LTDA",
+     "meses": {
+      "2021-12": 134958.19
+     }
+    },
+    "07046094000189": {
+     "nome": "ELYON SOLUCOES GRAFICAS LTDA",
+     "meses": {
+      "2021-08": 116610
+     }
+    },
+    "14112327000160": {
+     "nome": "BIOFAC INDUSTRIA COMERCIO E REPRESENTACAO EIRELI",
+     "meses": {
+      "2021-05": 105600
+     }
+    },
+    "69001378000106": {
+     "nome": "LASER TECH COMERCIAL EIRELI",
+     "meses": {
+      "2021-07": 95700
+     }
+    },
+    "05489375000180": {
+     "nome": "MAX COMERCIO REPRESENTACOES E SERVICOS EIRELI LTDA ME",
+     "meses": {
+      "2021-05": 8848.67,
+      "2021-06": 9594.76,
+      "2021-07": 3815.44,
+      "2021-08": 2116.76,
+      "2021-10": 27670.33,
+      "2021-11": 14699.43,
+      "2021-12": 27306.83
+     }
+    },
+    "21813311000140": {
+     "nome": "NAT NUTRE ALIMENTOS S A",
+     "meses": {
+      "2021-04": 6012,
+      "2021-05": 8579.2,
+      "2021-06": 10341.2,
+      "2021-07": 8307.6,
+      "2021-08": 3161.6,
+      "2021-09": 2432,
+      "2021-10": 2553.6,
+      "2021-11": 10859.2,
+      "2021-12": 8387.6
+     }
+    },
+    "05782733000149": {
+     "nome": "CIAMED DISTRIBUIDORA DE MEDICAMENTOS LTDA",
+     "meses": {
+      "2021-05": 56548
+     }
+    },
+    "32593430000150": {
+     "nome": "M CARREGA COMERCIO DE PRODUTOS HOSPITALARES LTDA",
+     "meses": {
+      "2021-10": 55778.9
+     }
+    },
+    "21941290000148": {
+     "nome": "TOWER ENGENHARIA E CONSTRUCAO LTDA",
+     "meses": {
+      "2021-09": 20312.24,
+      "2021-10": 12949.36,
+      "2021-11": 14672.09
+     }
+    },
+    "20754940000183": {
+     "nome": "FIVE LOCACAO DE MAQUINAS E EQUIPAMENTOS P CONSTRUCAO CIVIL E EVENTOS",
+     "meses": {
+      "2021-11": 36210
+     }
+    },
+    "13846262000113": {
+     "nome": "FUNDO ESTADUAL DE ASSISTÊNCIA SOCIAL-FEAS",
+     "meses": {
+      "2021-02": 33629.31
+     }
+    },
+    "34122728000108": {
+     "nome": "LD BRASIL HOLDING LTDA",
+     "meses": {
+      "2021-12": 32438
+     }
+    },
+    "20230316000187": {
+     "nome": "M P A PRODUCAO E EVENTOS EIRELI ME",
+     "meses": {
+      "2021-04": 6330,
+      "2021-05": 3165,
+      "2021-06": 3165,
+      "2021-09": 3165,
+      "2021-10": 9495,
+      "2021-11": 3165,
+      "2021-12": 1266
+     }
+    },
+    "22929732000101": {
+     "nome": "SEFER INDUSTRIA E COMERCIO LTDA",
+     "meses": {
+      "2021-04": 24000
+     }
+    },
+    "03649725000101": {
+     "nome": "SUPERMERCADO MORADA DO SOL LTDA",
+     "meses": {
+      "2021-11": 10241.7,
+      "2021-12": 12103.06
+     }
+    },
+    "08610916000175": {
+     "nome": "TR2 COMERCIO E SERVICOS LTDA EPP",
+     "meses": {
+      "2021-09": 21717.83
+     }
+    },
+    "05876269000150": {
+     "nome": "CONSER ALIMENTOS LTDA",
+     "meses": {
+      "2021-10": 3393,
+      "2021-11": 7486.5,
+      "2021-12": 10014.55
+     }
+    },
+    "05836107000198": {
+     "nome": "RVS COMERCIAL EIRELI",
+     "meses": {
+      "2021-08": 19210.5
+     }
+    },
+    "35820448008544": {
+     "nome": "WHITE MARTINS GASES INDUSTRIAIS LTDA",
+     "meses": {
+      "2021-12": 18901.2
+     }
+    },
+    "14619703000107": {
+     "nome": "BLS COMERCIO DE ALIMENTOS LTDA",
+     "meses": {
+      "2021-07": 1766.06,
+      "2021-08": 1413.35,
+      "2021-09": 2666.61,
+      "2021-12": 12832.79
+     }
+    },
+    "09635131000110": {
+     "nome": "SUZUPAPER COMERCIO DE PAPELARIA LTDA",
+     "meses": {
+      "2021-10": 15315.4
+     }
+    },
+    "30223033000161": {
+     "nome": "MIRAZAB COMERCIO E SERVICOS TECNICOS EIRELI",
+     "meses": {
+      "2021-09": 12000
+     }
+    },
+    "97533241000138": {
+     "nome": "M H M DO COUTO COMERCIAL",
+     "meses": {
+      "2021-09": 11000
+     }
+    },
+    "21597932000133": {
+     "nome": "QUALITY FOOD COMERCIO E SERVICOS LTDA EPP",
+     "meses": {
+      "2021-11": 6531.61,
+      "2021-12": 4173.8
+     }
+    },
+    "53901591000134": {
+     "nome": "PONTO MEDICO INSTRUMENTOS PARA MEDICINA LTDA",
+     "meses": {
+      "2021-11": 10210
+     }
+    },
+    "32399280000149": {
+     "nome": "MARCELO PEREIRA BEZERRA RESTAURANTE",
+     "meses": {
+      "2021-12": 9800
+     }
+    },
+    "03638878000145": {
+     "nome": "CAUTRONICA LTDA EPP",
+     "meses": {
+      "2021-03": 4500,
+      "2021-04": 4500
+     }
+    },
+    "21971041000103": {
+     "nome": "K C R S COMERCIO DE EQUIPAMENTOS EIRELI",
+     "meses": {
+      "2021-12": 8200
+     }
+    },
+    "26742152000153": {
+     "nome": "GABEE FOODS COMERCIO DE ALIMENTOS EIRELI",
+     "meses": {
+      "2021-05": 1076.25,
+      "2021-06": 1168.5,
+      "2021-07": 922.5,
+      "2021-08": 922.5,
+      "2021-09": 861,
+      "2021-10": 430.5,
+      "2021-11": 1968,
+      "2021-12": 553.5
+     }
+    },
+    "01838723000127": {
+     "nome": "BRF S A",
+     "meses": {
+      "2021-11": 5145.01,
+      "2021-12": 2086.25
+     }
+    },
+    "35764167000103": {
+     "nome": "ACARVE COMERCIO E LICITACOES EIRELI",
+     "meses": {
+      "2021-09": 6764
+     }
+    },
+    "00360305000104": {
+     "nome": "CAIXA ECONOMICA FEDERAL MATRIZ FGTS",
+     "meses": {
+      "2021-02": 819.63,
+      "2021-03": 729.08,
+      "2021-04": 693.3,
+      "2021-05": 734.41,
+      "2021-06": 639,
+      "2021-07": 610.84,
+      "2021-08": 576.48,
+      "2021-09": 371.21,
+      "2021-10": 460.07,
+      "2021-11": 371.13,
+      "2021-12": 539.06
+     }
+    },
+    "34680592000151": {
+     "nome": "BRASIL DEVICES EQUIPAMENTOS HOSPITALARES EIRELI",
+     "meses": {
+      "2021-09": 5149.98
+     }
+    },
+    "20371330000109": {
+     "nome": "MUNDI EQUIPAMENTOS MEDICOS ODONTOLOGICOS E VETERINARIOS EIRELI",
+     "meses": {
+      "2021-09": 3600
+     }
+    },
+    "30619938000155": {
+     "nome": "MEDCOLI DISTRIBUIDOR DE PRODUTOS MEDICOS COZINHA E LIMPEZA LTDA",
+     "meses": {
+      "2021-11": 3300
+     }
+    },
+    "11089732000116": {
+     "nome": "STOKMED PRODUTOS HOSPITALARES LTDA",
+     "meses": {
+      "2021-09": 3100
+     }
+    },
+    "24103721000195": {
+     "nome": "ROYAL ATACADISTA E COMERCIO EIRELI",
+     "meses": {
+      "2021-11": 2600
+     }
+    },
+    "20451726000239": {
+     "nome": "SALUTEM COMERCIO DE MOVEIS HOSPITALARES EIRELI",
+     "meses": {
+      "2021-11": 929
+     }
+    },
+    "24768176000156": {
+     "nome": "STRAFER PRODUTOS MEDICO HOSPITALARES EIRELI",
+     "meses": {
+      "2021-11": 682
+     }
+    },
+    "23236167000151": {
+     "nome": "NORTH MED DISTRIBUIDORA DE PRODUTOS MEDICOS E HOSPITALARES LTDA",
+     "meses": {
+      "2021-11": 670
+     }
+    },
+    "02974757000101": {
+     "nome": "MC COMERCIO DE AGUA MINERAL E GAS LTDA",
+     "meses": {
+      "2021-12": 528
+     }
+    },
+    "04187384000154": {
+     "nome": "LEISTUNG EQUIPAMENTOS LTDA",
+     "meses": {
+      "2021-09": 520
+     }
+    }
+   },
    "quantidadeFornecedores": 62
   },
   "federal": {
@@ -485,6 +1176,15 @@
     "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 2110763.06,
     "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 19151691.3
    },
+   "modalidades": {
+    "DISPENSA DE LICITAÇÃO": 111677407.3,
+    "OUTROS/NÃO APLICÁVEL": 25833489.48,
+    "CONCORRÊNCIA": 12205790.84,
+    "BEC-BOLSA ELETRÔNICA DE COMPRAS": 17517906.3,
+    "PREGÃO": 11576021.81,
+    "INEXIGÍVEL": 298000,
+    "TOMADA DE PREÇOS": 445658.25
+   },
    "fornecedores": {
     "47708771000100": {
      "nome": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
@@ -493,6 +1193,10 @@
       "0310 - SAÚDE - GERAL": 33735254.12,
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 7763575.45,
       "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 1016398.68
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 1500125.01,
+      "DISPENSA DE LICITAÇÃO": 41015103.24
      }
     },
     "04740876000125": {
@@ -500,6 +1204,9 @@
      "valor": 35926316.7,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 35926316.7
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 35926316.7
      }
     },
     "20672533000127": {
@@ -507,6 +1214,9 @@
      "valor": 11654513.38,
      "aplicacoes": {
       "0100 - GERAL TOTAL": 11654513.38
+     },
+     "modalidades": {
+      "CONCORRÊNCIA": 11654513.38
      }
     },
     "20226804000110": {
@@ -514,6 +1224,9 @@
      "valor": 9265797.88,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 9265797.88
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 9265797.88
      }
     },
     "53524534000183": {
@@ -521,6 +1234,9 @@
      "valor": 8240221.33,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 8240221.33
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 8240221.33
      }
     },
     "24516372000133": {
@@ -528,6 +1244,9 @@
      "valor": 7047603.94,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 7047603.94
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 7047603.94
      }
     },
     "08070362000160": {
@@ -535,6 +1254,9 @@
      "valor": 5541095.62,
      "aplicacoes": {
       "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 5541095.62
+     },
+     "modalidades": {
+      "PREGÃO": 5541095.62
      }
     },
     "11620725000107": {
@@ -542,6 +1264,9 @@
      "valor": 5443014.41,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 5443014.41
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 5443014.41
      }
     },
     "03817246000149": {
@@ -549,6 +1274,9 @@
      "valor": 5018203.41,
      "aplicacoes": {
       "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 5018203.41
+     },
+     "modalidades": {
+      "PREGÃO": 5018203.41
      }
     },
     "46523171000104": {
@@ -557,6 +1285,9 @@
      "aplicacoes": {
       "0100 - GERAL TOTAL": 325479.41,
       "0310 - SAÚDE - GERAL": 4380520.09
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 4705999.5
      }
     },
     "04539279000137": {
@@ -564,6 +1295,9 @@
      "valor": 3626893.36,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 3626893.36
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 3626893.36
      }
     },
     "18160462000131": {
@@ -571,6 +1305,9 @@
      "valor": 3503921.22,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 3503921.22
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 3503921.22
      }
     },
     "60979457000707": {
@@ -578,6 +1315,9 @@
      "valor": 3367592.74,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 3367592.74
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 3367592.74
      }
     },
     "28633887000174": {
@@ -585,6 +1325,9 @@
      "valor": 3152412,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 3152412
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 3152412
      }
     },
     "01227588000183": {
@@ -592,6 +1335,9 @@
      "valor": 2992300.1,
      "aplicacoes": {
       "0100 - GERAL TOTAL": 2992300.1
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 2992300.1
      }
     },
     "07118264000193": {
@@ -600,6 +1346,10 @@
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 1981702.74,
       "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 894364.38
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 1916497.74,
+      "OUTROS/NÃO APLICÁVEL": 959569.38
      }
     },
     "20697582000114": {
@@ -607,6 +1357,9 @@
      "valor": 2705764.05,
      "aplicacoes": {
       "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 2705764.05
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 2705764.05
      }
     },
     "10718875000187": {
@@ -615,6 +1368,9 @@
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 2007976.46,
       "0310 - SAÚDE - GERAL": 647071.95
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 2655048.41
      }
     },
     "01916756000148": {
@@ -622,6 +1378,9 @@
      "valor": 2441285.7,
      "aplicacoes": {
       "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 2441285.7
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 2441285.7
      }
     },
     "03641257000110": {
@@ -630,6 +1389,10 @@
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 341756.39,
       "0310 - SAÚDE - GERAL": 1383818.66
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 1067875.04,
+      "OUTROS/NÃO APLICÁVEL": 657700.01
      }
     },
     "51207041000194": {
@@ -637,6 +1400,9 @@
      "valor": 1448299.5,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 1448299.5
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 1448299.5
      }
     },
     "31263950000132": {
@@ -644,6 +1410,9 @@
      "valor": 1082018.25,
      "aplicacoes": {
       "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 1082018.25
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 1082018.25
      }
     },
     "24138777000185": {
@@ -651,6 +1420,9 @@
      "valor": 1082018.25,
      "aplicacoes": {
       "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 1082018.25
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 1082018.25
      }
     },
     "17112698000130": {
@@ -658,6 +1430,9 @@
      "valor": 1081971.7,
      "aplicacoes": {
       "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 1081971.7
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 1081971.7
      }
     },
     "18979485000172": {
@@ -665,6 +1440,10 @@
      "valor": 1050400,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 1050400
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 275400,
+      "OUTROS/NÃO APLICÁVEL": 775000
      }
     },
     "03022122000177": {
@@ -672,6 +1451,9 @@
      "valor": 700000,
      "aplicacoes": {
       "0100 - GERAL TOTAL": 700000
+     },
+     "modalidades": {
+      "PREGÃO": 700000
      }
     },
     "43640754000119": {
@@ -679,6 +1461,9 @@
      "valor": 685713.25,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 685713.25
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 685713.25
      }
     },
     "46621538000114": {
@@ -686,6 +1471,9 @@
      "valor": 630101.86,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 630101.86
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 630101.86
      }
     },
     "13032053000136": {
@@ -693,6 +1481,10 @@
      "valor": 584500,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 584500
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 420000,
+      "DISPENSA DE LICITAÇÃO": 164500
      }
     },
     "05614358000128": {
@@ -700,6 +1492,9 @@
      "valor": 489513.6,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 489513.6
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 489513.6
      }
     },
     "31250365000106": {
@@ -707,6 +1502,9 @@
      "valor": 467100,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 467100
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 467100
      }
     },
     "13034156000135": {
@@ -714,6 +1512,9 @@
      "valor": 445658.25,
      "aplicacoes": {
       "0100 - GERAL TOTAL": 445658.25
+     },
+     "modalidades": {
+      "TOMADA DE PREÇOS": 445658.25
      }
     },
     "31541096000129": {
@@ -721,6 +1522,9 @@
      "valor": 395854.16,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 395854.16
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 395854.16
      }
     },
     "04470103000176": {
@@ -728,6 +1532,9 @@
      "valor": 370000,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 370000
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 370000
      }
     },
     "58763350000190": {
@@ -735,6 +1542,10 @@
      "valor": 349680,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 349680
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 148800,
+      "DISPENSA DE LICITAÇÃO": 200880
      }
     },
     "03743156000150": {
@@ -742,6 +1553,10 @@
      "valor": 349117,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 349117
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 230737,
+      "OUTROS/NÃO APLICÁVEL": 118380
      }
     },
     "74400052000191": {
@@ -749,6 +1564,9 @@
      "valor": 288900,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 288900
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 288900
      }
     },
     "67192609000180": {
@@ -756,6 +1574,9 @@
      "valor": 206094.71,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 206094.71
+     },
+     "modalidades": {
+      "CONCORRÊNCIA": 206094.71
      }
     },
     "60619202000148": {
@@ -763,6 +1584,9 @@
      "valor": 205353.83,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 205353.83
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 205353.83
      }
     },
     "51441939000122": {
@@ -770,6 +1594,9 @@
      "valor": 200000,
      "aplicacoes": {
       "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo": 200000
+     },
+     "modalidades": {
+      "INEXIGÍVEL": 200000
      }
     },
     "61602199017350": {
@@ -778,6 +1605,9 @@
      "aplicacoes": {
       "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 191356,
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 7957
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 199313
      }
     },
     "16996080000117": {
@@ -785,6 +1615,9 @@
      "valor": 185200,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 185200
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 185200
      }
     },
     "31733363000836": {
@@ -792,6 +1625,9 @@
      "valor": 173743.34,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 173743.34
+     },
+     "modalidades": {
+      "CONCORRÊNCIA": 173743.34
      }
     },
     "02423591000135": {
@@ -799,6 +1635,9 @@
      "valor": 157500,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 157500
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 157500
      }
     },
     "29979036038547": {
@@ -806,6 +1645,9 @@
      "valor": 155295.97,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 155295.97
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 155295.97
      }
     },
     "39523285000180": {
@@ -813,6 +1655,9 @@
      "valor": 135000,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 135000
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 135000
      }
     },
     "65692543000162": {
@@ -820,6 +1665,9 @@
      "valor": 120000,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 120000
+     },
+     "modalidades": {
+      "OUTROS/NÃO APLICÁVEL": 120000
      }
     },
     "56838949000110": {
@@ -827,6 +1675,9 @@
      "valor": 116840.83,
      "aplicacoes": {
       "0100 - GERAL TOTAL": 116840.83
+     },
+     "modalidades": {
+      "CONCORRÊNCIA": 116840.83
      }
     },
     "61610283000188": {
@@ -834,6 +1685,9 @@
      "valor": 112944,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 112944
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 112944
      }
     },
     "14619703000107": {
@@ -841,6 +1695,9 @@
      "valor": 104044.43,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 104044.43
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 104044.43
      }
     },
     "03576719000163": {
@@ -848,6 +1705,9 @@
      "valor": 101190,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 101190
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 101190
      }
     },
     "53440939000648": {
@@ -855,6 +1715,9 @@
      "valor": 93903.71,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 93903.71
+     },
+     "modalidades": {
+      "PREGÃO": 93903.71
      }
     },
     "22913087000120": {
@@ -862,6 +1725,9 @@
      "valor": 90000,
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 90000
+     },
+     "modalidades": {
+      "INEXIGÍVEL": 90000
      }
     },
     "15046859000109": {
@@ -869,6 +1735,9 @@
      "valor": 82832.57,
      "aplicacoes": {
       "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos": 82832.57
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 82832.57
      }
     },
     "03668066000142": {
@@ -877,6 +1746,9 @@
      "aplicacoes": {
       "0510 - ASSISTÊNCIA SOCIAL - GERAL": 75152.7,
       "0200 - EDUCAÇÃO - RECURSOS ESPECÍFICOS": 4456.92
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 79609.62
      }
     },
     "05909646000100": {
@@ -884,6 +1756,9 @@
      "valor": 77936.49,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 77936.49
+     },
+     "modalidades": {
+      "PREGÃO": 77936.49
      }
     },
     "20216703000169": {
@@ -891,6 +1766,10 @@
      "valor": 73420,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 73420
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 65020,
+      "OUTROS/NÃO APLICÁVEL": 8400
      }
     },
     "30084600000146": {
@@ -898,6 +1777,9 @@
      "valor": 70893,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 70893
+     },
+     "modalidades": {
+      "BEC-BOLSA ELETRÔNICA DE COMPRAS": 70893
      }
     },
     "61074175000138": {
@@ -905,6 +1787,9 @@
      "valor": 68567.78,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 68567.78
+     },
+     "modalidades": {
+      "PREGÃO": 68567.78
      }
     },
     "15801092000186": {
@@ -912,6 +1797,9 @@
      "valor": 58500,
      "aplicacoes": {
       "0310 - SAÚDE - GERAL": 58500
+     },
+     "modalidades": {
+      "DISPENSA DE LICITAÇÃO": 58500
      }
     }
    },
@@ -1369,7 +2257,912 @@
      ]
     }
    ],
+   "pagamentosEmendas": [
+    {
+     "data": "2021-04-13",
+     "valor": 516398.68,
+     "empenho": "5749-2021",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "SAÚDE",
+     "acao": "Gestão compartilhada de unidade hospitalar",
+     "modalidade": "DISPENSA DE LICITAÇÃO",
+     "cnpj": "47708771000100",
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO"
+    },
+    {
+     "data": "2021-11-05",
+     "valor": 500000,
+     "empenho": "25459-2021",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "SAÚDE",
+     "acao": "Gestão compartilhada de unidade hospitalar",
+     "modalidade": "DISPENSA DE LICITAÇÃO",
+     "cnpj": "47708771000100",
+     "fornecedor": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "texto": "CONTRATACAO EMERGENCIAL DE ORGANIZACAO SOCIAL PARA GESTAO DOHOSPITAL MUNICIPAL ANTONIO GIGLIO"
+    },
+    {
+     "data": "2021-12-14",
+     "valor": 71102.96,
+     "empenho": "28901-2021",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "SAÚDE",
+     "acao": "Gestão das Ações de Apoio Administrativo e Operacional",
+     "modalidade": "OUTROS/NÃO APLICÁVEL",
+     "cnpj": "07118264000193",
+     "fornecedor": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE AQUISICAO DE MATERIAL HOSPITALAR PARA AS UNIDADES DE SAUDE DO MUNICIPIO DE OSASCO I O M O N 2138 DE 19 11 2021 PERIODO 04 02 05 05 2020"
+    },
+    {
+     "data": "2021-12-14",
+     "valor": 194150.12,
+     "empenho": "28903-2021",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "SAÚDE",
+     "acao": "Gestão das Ações de Apoio Administrativo e Operacional",
+     "modalidade": "OUTROS/NÃO APLICÁVEL",
+     "cnpj": "07118264000193",
+     "fornecedor": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE AQUISICAO DE MATERIAL HOSPITALAR PARA AS UNIDADES DE SAUDE DO MUNICIPIO DE OSASCO I O M O N 2138 DE 19 11 2021 PERIODO 16 17 12 2020"
+    },
+    {
+     "data": "2021-12-14",
+     "valor": 546893.62,
+     "empenho": "28904-2021",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "SAÚDE",
+     "acao": "Gestão das Ações de Apoio Administrativo e Operacional",
+     "modalidade": "OUTROS/NÃO APLICÁVEL",
+     "cnpj": "07118264000193",
+     "fornecedor": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE AQUISICAO DE MATERIAL HOSPITALAR PARA AS UNIDADES DE SAUDE DO MUNICIPIO DE OSASCO I O M O N 2138 DE 19 11 2021 PERIODO 13 18 20 21 27 10 E 03 11 2021"
+    },
+    {
+     "data": "2021-12-14",
+     "valor": 82217.68,
+     "empenho": "28902-2021",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "SAÚDE",
+     "acao": "Gestão das Ações de Apoio Administrativo e Operacional",
+     "modalidade": "OUTROS/NÃO APLICÁVEL",
+     "cnpj": "07118264000193",
+     "fornecedor": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE AQUISICAO DE MATERIAL HOSPITALAR PARA AS UNIDADES DE SAUDE DO MUNICIPIO DE OSASCO I O M O N 2138 DE 19 11 2021 PERIODO 13 18 10 2021"
+    },
+    {
+     "data": "2021-12-22",
+     "valor": 200000,
+     "empenho": "31146-2021",
+     "aplicacao": "0800 - TRANSFERÊNCIAS DA UNIÃO DECORRENTES DE EMENDAS PARLAMENTARES INDIVIDUAIS - Convênios/Entidades/Fundo",
+     "funcao": "ASSISTÊNCIA SOCIAL",
+     "acao": "Parcerias com o Terceiro Setor",
+     "modalidade": "INEXIGÍVEL",
+     "cnpj": "51441939000122",
+     "fornecedor": "AMAMOS ASSOC MUNICIPES P AMPARO AO MENOR OSASQUENSE",
+     "texto": "AMAMOS EMENDA PARLAMENTAR 41190007"
+    }
+   ],
    "outrosFornecedores": 671591.27,
+   "todosCnpjs": {
+    "1777": {
+     "nome": "PASEP PROGRAMA DE FORMACAO DO PATRIMONIO DO SERVIDOR PUBLICO",
+     "meses": {
+      "2021-07": 1523.57,
+      "2021-08": 1523.57,
+      "2021-09": 1523.57,
+      "2021-11": 3047.14,
+      "2021-12": 1523.57
+     }
+    },
+    "2035": {
+     "nome": "FOLHA DE PAG AUXILIO DOENCA",
+     "meses": {
+      "2021-08": 13421.25,
+      "2021-10": 9829.49,
+      "2021-11": 15974.93,
+      "2021-12": 0
+     }
+    },
+    "5726": {
+     "nome": "FOLHA DE PAGAMENTO SALARIO FAMILIA IPMO",
+     "meses": {
+      "2021-08": 307.62,
+      "2021-10": 256.35,
+      "2021-11": 102.54
+     }
+    },
+    "7383": {
+     "nome": "FOLHA DE PAGAMENTO SALARIO MATERNIDADE IPMO",
+     "meses": {
+      "2021-12": 0
+     }
+    },
+    "47708771000100": {
+     "nome": "IRMANDADE DA SANTA CASA DE MISERICORDIA DE SAO BERNARDO DO CAMPO",
+     "meses": {
+      "2021-01": 500041.67,
+      "2021-02": 2583375,
+      "2021-03": 2583375,
+      "2021-04": 4039419.67,
+      "2021-05": 2083333.33,
+      "2021-06": 2083333.33,
+      "2021-07": 4317561.22,
+      "2021-08": 7897347.95,
+      "2021-09": 5113028.11,
+      "2021-10": 3327347.95,
+      "2021-11": 5755612.77,
+      "2021-12": 2231452.25
+     }
+    },
+    "04740876000125": {
+     "nome": "ALELO S A",
+     "meses": {
+      "2021-01": 3430000,
+      "2021-02": 3430000,
+      "2021-03": 3430000,
+      "2021-04": 3430000,
+      "2021-05": 4480060.2,
+      "2021-06": 4480060.2,
+      "2021-07": 4568897.2,
+      "2021-08": 2880009.3,
+      "2021-09": 2561646.5,
+      "2021-10": 3235643.3
+     }
+    },
+    "20672533000127": {
+     "nome": "CONSORCIO CONSTRAN EIT ROCHDALE",
+     "meses": {
+      "2021-03": 956808.3,
+      "2021-04": 703741.68,
+      "2021-05": 1368476.88,
+      "2021-06": 1342151.49,
+      "2021-07": 1673025.88,
+      "2021-08": 1336524.42,
+      "2021-10": 1297587.46,
+      "2021-11": 1451306.01,
+      "2021-12": 1524891.26
+     }
+    },
+    "20226804000110": {
+     "nome": "DERMACOR SERVICOS TECNICOS EM SAUDE LTDA",
+     "meses": {
+      "2021-04": 520039,
+      "2021-05": 1165032.8,
+      "2021-06": 2722653.15,
+      "2021-07": 1519424.59,
+      "2021-08": 2279136.88,
+      "2021-09": 1054252.81,
+      "2021-10": 5258.65
+     }
+    },
+    "53524534000183": {
+     "nome": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
+     "meses": {
+      "2021-01": 2083333.33,
+      "2021-04": 5344500,
+      "2021-05": 812388
+     }
+    },
+    "24516372000133": {
+     "nome": "ONE LAUDOS DIAGNOSICOS MEDICOS LTDA",
+     "meses": {
+      "2021-03": 1057434.56,
+      "2021-05": 583758.23,
+      "2021-10": 1179969.97,
+      "2021-11": 1781244.45,
+      "2021-12": 2445196.73
+     }
+    },
+    "08070362000160": {
+     "nome": "NS ALIMENTOS LTDA",
+     "meses": {
+      "2021-09": 162170.92,
+      "2021-10": 1422409.6,
+      "2021-11": 1207499.85,
+      "2021-12": 2749015.25
+     }
+    },
+    "11620725000107": {
+     "nome": "MEDICAL CORP ASSESSORIA A SAUDE E BEM ESTAR LTDA",
+     "meses": {
+      "2021-08": 2150778.92,
+      "2021-12": 3292235.49
+     }
+    },
+    "03817246000149": {
+     "nome": "COMERCIAL DE ALIMENTOS NUTRIVIP DO BRASIL LTDA",
+     "meses": {
+      "2021-04": 1024138.93,
+      "2021-05": 109588.36,
+      "2021-09": 323478.93,
+      "2021-10": 581362.09,
+      "2021-11": 36862.95,
+      "2021-12": 2942772.15
+     }
+    },
+    "46523171000104": {
+     "nome": "PREFEITURA DO MUNICIPIO DE OSASCO",
+     "meses": {
+      "2021-07": 325479.41,
+      "2021-08": 950639.59,
+      "2021-09": 981489.06,
+      "2021-10": 954989.82,
+      "2021-11": 1481676.54,
+      "2021-12": 11725.08
+     }
+    },
+    "04539279000137": {
+     "nome": "CIENTIFICALAB PRODUTOS LABORATORIAIS E SISTEMAS LTDA",
+     "meses": {
+      "2021-03": 462626.67,
+      "2021-09": 191114.04,
+      "2021-10": 744919.09,
+      "2021-11": 800173.51,
+      "2021-12": 1428060.05
+     }
+    },
+    "18160462000131": {
+     "nome": "CLINICA PIRES VANCI SERVICOS MEDICOS LTDA",
+     "meses": {
+      "2021-01": 722332.41,
+      "2021-03": 2781588.81
+     }
+    },
+    "60979457000707": {
+     "nome": "AACD ASSOC DE A CRIANCA DEFICIENTE OSASCO",
+     "meses": {
+      "2021-02": 293638.07,
+      "2021-03": 266896.02,
+      "2021-05": 668548.39,
+      "2021-06": 338131.31,
+      "2021-07": 330649.95,
+      "2021-08": 610475.24,
+      "2021-09": 367852.55,
+      "2021-10": 367071.61,
+      "2021-12": 124329.6
+     }
+    },
+    "28633887000174": {
+     "nome": "ELGE SERVICOS MEDICOS EIRELI",
+     "meses": {
+      "2021-03": 165240,
+      "2021-04": 258876,
+      "2021-05": 165240,
+      "2021-06": 642600,
+      "2021-07": 330480,
+      "2021-08": 550800,
+      "2021-09": 873936,
+      "2021-10": 165240
+     }
+    },
+    "01227588000183": {
+     "nome": "CEF PROGRAMAS DE DESENVOLVIMENTO URBANO",
+     "meses": {
+      "2021-06": 2925588.35,
+      "2021-07": 66711.75
+     }
+    },
+    "07118264000193": {
+     "nome": "QUALITY MEDICAL COM E DIST DE MEDICAMENTOS LTDA EPP",
+     "meses": {
+      "2021-04": 1067200.84,
+      "2021-08": 849296.9,
+      "2021-12": 959569.38
+     }
+    },
+    "20697582000114": {
+     "nome": "J DIAS COMERCIO E CONFECCOES LTDA",
+     "meses": {
+      "2021-08": 927227.83,
+      "2021-09": 1778536.22
+     }
+    },
+    "10718875000187": {
+     "nome": "STAREX EMERGENCIAS MEDICAS",
+     "meses": {
+      "2021-05": 153000,
+      "2021-06": 62601.85,
+      "2021-07": 430508.77,
+      "2021-08": 428713.89,
+      "2021-10": 787566.67,
+      "2021-11": 145585.28,
+      "2021-12": 647071.95
+     }
+    },
+    "01916756000148": {
+     "nome": "COMERCIAL HORTIFRUTIGRANJEIRO ITAUBA LTDA",
+     "meses": {
+      "2021-10": 438516.76,
+      "2021-11": 340790.8,
+      "2021-12": 1661978.14
+     }
+    },
+    "03641257000110": {
+     "nome": "UNISERV TERCEIRIZACAO E SERVICOS LTDA",
+     "meses": {
+      "2021-03": 825480.11,
+      "2021-04": 167780.1,
+      "2021-06": 55861.38,
+      "2021-07": 111722.76,
+      "2021-09": 223231.17,
+      "2021-10": 132917.19,
+      "2021-12": 208582.34
+     }
+    },
+    "51207041000194": {
+     "nome": "EQUIPAMED EQUIPAMENTOS MEDICOS LTDA",
+     "meses": {
+      "2021-03": 470430,
+      "2021-05": 509550,
+      "2021-08": 463395,
+      "2021-09": 4924.5
+     }
+    },
+    "31263950000132": {
+     "nome": "ATENA COMERCIO E IMPORTACAO LTDA",
+     "meses": {
+      "2021-08": 287745.04,
+      "2021-09": 794273.21
+     }
+    },
+    "24138777000185": {
+     "nome": "GNOMA INDUSTRIA TEXTIL EIRELI",
+     "meses": {
+      "2021-09": 1082018.25
+     }
+    },
+    "17112698000130": {
+     "nome": "RS COMERCIO E PRESTACAO DE SERVICOS DE APOIO EIRELI",
+     "meses": {
+      "2021-09": 407107.26,
+      "2021-10": 674864.44
+     }
+    },
+    "18979485000172": {
+     "nome": "RV MEDICAL SOLUCOES HOSPITALARES LTDA ME",
+     "meses": {
+      "2021-04": 275400,
+      "2021-12": 775000
+     }
+    },
+    "03022122000177": {
+     "nome": "BK CONSULTORIA E SERVICOS LTDA",
+     "meses": {
+      "2021-03": 140309.01,
+      "2021-04": 149048.4,
+      "2021-05": 150161.99,
+      "2021-06": 149817.44,
+      "2021-07": 110663.16
+     }
+    },
+    "43640754000119": {
+     "nome": "FUNDACAO PARA O REMEDIO POPULAR FURP",
+     "meses": {
+      "2021-07": 119143.75,
+      "2021-09": 218260,
+      "2021-11": 8560,
+      "2021-12": 339749.5
+     }
+    },
+    "46621538000114": {
+     "nome": "IPMO INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
+     "meses": {
+      "2021-08": 150083.59,
+      "2021-10": 151128.96,
+      "2021-11": 328889.31
+     }
+    },
+    "13032053000136": {
+     "nome": "T & T Produtos Médicos Hospitalares LTDA",
+     "meses": {
+      "2021-05": 105000,
+      "2021-06": 105000,
+      "2021-07": 105000,
+      "2021-08": 105000,
+      "2021-12": 164500
+     }
+    },
+    "05614358000128": {
+     "nome": "INSTITUTO MONSENHOR JOSE BENEDITO ANTUNES",
+     "meses": {
+      "2021-05": 244756.8,
+      "2021-12": 244756.8
+     }
+    },
+    "31250365000106": {
+     "nome": "ALIMEX COMERCIO DE PRODUTOS ALIMENTICIOS EIRELI",
+     "meses": {
+      "2021-04": 116775,
+      "2021-05": 116775,
+      "2021-06": 116775,
+      "2021-07": 116775
+     }
+    },
+    "13034156000135": {
+     "nome": "TETO CONSTRUTORA S A",
+     "meses": {
+      "2021-09": 86394.52,
+      "2021-10": 220821.1,
+      "2021-12": 138442.63
+     }
+    },
+    "31541096000129": {
+     "nome": "GADIEL SOLUCOES E SERVICOS EIRELI",
+     "meses": {
+      "2021-04": 395854.16
+     }
+    },
+    "04470103000176": {
+     "nome": "BIOTECNO INDUSTRIA E COMERCIO LTDA",
+     "meses": {
+      "2021-07": 370000
+     }
+    },
+    "58763350000190": {
+     "nome": "OXY SYSTEM EQUIPAMENTOS MEDICOS LTDA",
+     "meses": {
+      "2021-03": 148800,
+      "2021-04": 74400,
+      "2021-06": 74400,
+      "2021-09": 52080
+     }
+    },
+    "03743156000150": {
+     "nome": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "meses": {
+      "2021-03": 88308,
+      "2021-05": 37110,
+      "2021-07": 105319,
+      "2021-11": 118380
+     }
+    },
+    "74400052000191": {
+     "nome": "COMERCIAL 3 ALBE LTDA",
+     "meses": {
+      "2021-10": 288900
+     }
+    },
+    "67192609000180": {
+     "nome": "M A S CONSTRUCOES E EMPREENDIMENTOS LTDA",
+     "meses": {
+      "2021-12": 206094.71
+     }
+    },
+    "60619202000148": {
+     "nome": "MESSER GASES LTDA",
+     "meses": {
+      "2021-05": 49110.3,
+      "2021-06": 67382.41,
+      "2021-07": 61772.19,
+      "2021-08": 27088.93
+     }
+    },
+    "51441939000122": {
+     "nome": "AMAMOS ASSOC MUNICIPES P AMPARO AO MENOR OSASQUENSE",
+     "meses": {
+      "2021-12": 200000
+     }
+    },
+    "61602199017350": {
+     "nome": "COMPANHIA ULTRAGAZ S A",
+     "meses": {
+      "2021-04": 40552,
+      "2021-06": 15344,
+      "2021-07": 1644,
+      "2021-08": 9590,
+      "2021-09": 2192,
+      "2021-10": 14385,
+      "2021-11": 24939,
+      "2021-12": 90667
+     }
+    },
+    "16996080000117": {
+     "nome": "DELTAMED H COMERCIO E SERVICOS LTDA EPP",
+     "meses": {
+      "2021-12": 185200
+     }
+    },
+    "31733363000836": {
+     "nome": "CORPUS SANEAMENTO E OBRAS LTDA",
+     "meses": {
+      "2021-07": 14947.17,
+      "2021-09": 51181.1,
+      "2021-10": 36125.26,
+      "2021-11": 35581.9,
+      "2021-12": 35907.91
+     }
+    },
+    "02423591000135": {
+     "nome": "GRUPO DE ORIENTACAO E ASSISTENCIA A SAUDE",
+     "meses": {
+      "2021-02": 35000,
+      "2021-03": 17500,
+      "2021-04": 17500,
+      "2021-05": 17500,
+      "2021-06": 17500,
+      "2021-07": 17500,
+      "2021-08": 17500,
+      "2021-09": 17500
+     }
+    },
+    "29979036038547": {
+     "nome": "INSS INSTITUTO NACIONAL DO SEGURO SOCIAL",
+     "meses": {
+      "2021-09": 27245.83,
+      "2021-10": 27089.26,
+      "2021-11": 36520.64,
+      "2021-12": 64440.24
+     }
+    },
+    "39523285000180": {
+     "nome": "INSTITUTO DE ACOMPANHAMENTO TERAPEUTICO E PSICOLOGIA LTDA",
+     "meses": {
+      "2021-03": 15000,
+      "2021-04": 15000,
+      "2021-05": 15000,
+      "2021-06": 15000,
+      "2021-07": 15000,
+      "2021-08": 15000,
+      "2021-09": 15000,
+      "2021-10": 15000,
+      "2021-11": 15000
+     }
+    },
+    "65692543000162": {
+     "nome": "ASSOC LIB COM AMOR RESP A VIDA LAR",
+     "meses": {
+      "2021-02": 30000,
+      "2021-03": 15000,
+      "2021-04": 15000,
+      "2021-05": 15000,
+      "2021-06": 15000,
+      "2021-07": 15000,
+      "2021-08": 15000
+     }
+    },
+    "56838949000110": {
+     "nome": "CONSTRUTORA PROGREDIOR LTDA",
+     "meses": {
+      "2021-10": 116840.83
+     }
+    },
+    "61610283000188": {
+     "nome": "VITAL HOSPITALAR COMERCIAL LTDA",
+     "meses": {
+      "2021-06": 112944
+     }
+    },
+    "14619703000107": {
+     "nome": "BLS COMERCIO DE ALIMENTOS LTDA",
+     "meses": {
+      "2021-07": 13124.03,
+      "2021-08": 14327.6,
+      "2021-09": 16320.96,
+      "2021-12": 60271.84
+     }
+    },
+    "03576719000163": {
+     "nome": "COMERCIAL LUX CLEAN LTDA",
+     "meses": {
+      "2021-06": 101190
+     }
+    },
+    "53440939000648": {
+     "nome": "PHARMACIA ARTESANAL LTDA",
+     "meses": {
+      "2021-03": 27548.11,
+      "2021-04": 66355.6
+     }
+    },
+    "22913087000120": {
+     "nome": "A MARCOS L DO PRADO",
+     "meses": {
+      "2021-03": 18000,
+      "2021-05": 9000,
+      "2021-06": 9000,
+      "2021-07": 9000,
+      "2021-08": 9000,
+      "2021-09": 9000,
+      "2021-10": 9000,
+      "2021-11": 9000,
+      "2021-12": 9000
+     }
+    },
+    "15046859000109": {
+     "nome": "MAXLAV LAVANDERIA ESPECIALIZADA LTDA",
+     "meses": {
+      "2021-08": 82832.57
+     }
+    },
+    "03668066000142": {
+     "nome": "RDM MATERIAIS DE CONSTRUCAO E MOBILIARIO LTDA",
+     "meses": {
+      "2021-07": 75152.7,
+      "2021-10": 4456.92
+     }
+    },
+    "05909646000100": {
+     "nome": "SOLUGRAF ARTES GRAFICAS EDITORA LTDA",
+     "meses": {
+      "2021-09": 43222.2,
+      "2021-12": 34714.29
+     }
+    },
+    "20216703000169": {
+     "nome": "EMPREISERVICE SERVICOS LTDA ME",
+     "meses": {
+      "2021-06": 23020,
+      "2021-09": 42000,
+      "2021-11": 8400
+     }
+    },
+    "30084600000146": {
+     "nome": "DZ7 COMERCIAL EIRELI",
+     "meses": {
+      "2021-08": 23631,
+      "2021-09": 23631,
+      "2021-11": 23631
+     }
+    },
+    "61074175000138": {
+     "nome": "MAPFRE VERA CRUZ SEGURADORA S A",
+     "meses": {
+      "2021-03": 26955.86,
+      "2021-07": 5154.34,
+      "2021-11": 36457.58
+     }
+    },
+    "15801092000186": {
+     "nome": "BRASMED COMERCIO E SERVICOS EIRELI",
+     "meses": {
+      "2021-05": 58500
+     }
+    },
+    "02811333000126": {
+     "nome": "E E C ENGENHARIA E CONSTRUCOES LTDA",
+     "meses": {
+      "2021-09": 13217.3,
+      "2021-10": 41381.28
+     }
+    },
+    "05876269000150": {
+     "nome": "CONSER ALIMENTOS LTDA",
+     "meses": {
+      "2021-07": 1368,
+      "2021-08": 3115.75,
+      "2021-09": 21759.85,
+      "2021-10": 1818,
+      "2021-11": 23632.6
+     }
+    },
+    "15697102000185": {
+     "nome": "FD STANDS COMERCIO E TRANSPORTE DE DISPLAYS EIRELI",
+     "meses": {
+      "2021-08": 45416
+     }
+    },
+    "00360305000104": {
+     "nome": "CAIXA ECONOMICA FEDERAL MATRIZ FGTS",
+     "meses": {
+      "2021-09": 7358.77,
+      "2021-10": 7231.47,
+      "2021-11": 10492.22,
+      "2021-12": 18862.88
+     }
+    },
+    "16897017000123": {
+     "nome": "ATOS PHARMA PRODUTOS HOSPITALARES",
+     "meses": {
+      "2021-04": 40032
+     }
+    },
+    "24436395000138": {
+     "nome": "WCG MEDICAL COMERCIO IMPORTACAO E SERVICOS LTDA",
+     "meses": {
+      "2021-06": 40000
+     }
+    },
+    "11983349000107": {
+     "nome": "CASA DE REPOUSO MOOCA BEM ME CARE EIRELI",
+     "meses": {
+      "2021-04": 4600,
+      "2021-05": 4600,
+      "2021-06": 4600,
+      "2021-07": 9200,
+      "2021-08": 4600,
+      "2021-09": 4600,
+      "2021-11": 1993.33
+     }
+    },
+    "27374330000101": {
+     "nome": "J ALVES CONSULTORIA GESTAO E SUPERVISAO DE OBRAS LTDA ME",
+     "meses": {
+      "2021-05": 24471.9
+     }
+    },
+    "08610916000175": {
+     "nome": "TR2 COMERCIO E SERVICOS LTDA EPP",
+     "meses": {
+      "2021-09": 22501.83
+     }
+    },
+    "04013164000104": {
+     "nome": "ORLA DISTRIBUIDORA DE PRODUTOS EIRELI",
+     "meses": {
+      "2021-07": 22413.5
+     }
+    },
+    "35901833000108": {
+     "nome": "DI SERVICOS DE MANUTENCAO DE APARELHOS ELETRO MEDICOS LTDA",
+     "meses": {
+      "2021-09": 1890,
+      "2021-10": 4725,
+      "2021-11": 4725,
+      "2021-12": 9450
+     }
+    },
+    "05836107000198": {
+     "nome": "RVS COMERCIAL EIRELI",
+     "meses": {
+      "2021-08": 19741.5
+     }
+    },
+    "60166832000104": {
+     "nome": "APETECE SISTEMAS DE ALIMENTACAO S A",
+     "meses": {
+      "2021-05": 18763.99
+     }
+    },
+    "27511471000110": {
+     "nome": "CASA DE REPOUSO JORNALISTA WALTER ABRAHAO EIRELI EPP",
+     "meses": {
+      "2021-05": 6640,
+      "2021-06": 3320,
+      "2021-07": 3320,
+      "2021-08": 3320,
+      "2021-11": 1992
+     }
+    },
+    "25136184000142": {
+     "nome": "NET BENEFICIOS LTDA",
+     "meses": {
+      "2021-08": 2100.8,
+      "2021-09": 1372.8,
+      "2021-10": 7088.64,
+      "2021-12": 7753.46
+     }
+    },
+    "03638878000145": {
+     "nome": "CAUTRONICA LTDA EPP",
+     "meses": {
+      "2021-05": 4500,
+      "2021-07": 9000,
+      "2021-08": 4500
+     }
+    },
+    "09635131000110": {
+     "nome": "SUZUPAPER COMERCIO DE PAPELARIA LTDA",
+     "meses": {
+      "2021-10": 17401.4
+     }
+    },
+    "18632071000172": {
+     "nome": "R RIBAS REPRESENTACAO COMERCIAL ME",
+     "meses": {
+      "2021-12": 15790.6
+     }
+    },
+    "26546943000108": {
+     "nome": "CLINICA RENASCER LTDA ME",
+     "meses": {
+      "2021-03": 4200,
+      "2021-06": 4200,
+      "2021-07": 2100,
+      "2021-08": 2100,
+      "2021-09": 2100
+     }
+    },
+    "74659186000121": {
+     "nome": "COMERCIAL MABRUK LTDA",
+     "meses": {
+      "2021-07": 9333.3,
+      "2021-09": 3359
+     }
+    },
+    "23827316000157": {
+     "nome": "NOVA RB COMERCIO E SERVICOS LTDA",
+     "meses": {
+      "2021-07": 11747
+     }
+    },
+    "12333659000149": {
+     "nome": "MARIA DE FATIMA DOS SANTOS SOARES 133 256 078 45",
+     "meses": {
+      "2021-09": 8997
+     }
+    },
+    "07046094000189": {
+     "nome": "ELYON SOLUCOES GRAFICAS LTDA",
+     "meses": {
+      "2021-08": 8830
+     }
+    },
+    "32399280000149": {
+     "nome": "MARCELO PEREIRA BEZERRA RESTAURANTE",
+     "meses": {
+      "2021-12": 8540
+     }
+    },
+    "28701927000178": {
+     "nome": "ANA MARIA FRANCHI PINCOLINI 98601881068",
+     "meses": {
+      "2021-12": 8000
+     }
+    },
+    "29940579000154": {
+     "nome": "PONTO MIX COMERCIAL E SERVICOS EIRELI",
+     "meses": {
+      "2021-12": 7164
+     }
+    },
+    "33113593000151": {
+     "nome": "CENTRO AUTOMOTIVO PAPALEGUAS 2 0 EIRRELI",
+     "meses": {
+      "2021-06": 3000
+     }
+    },
+    "68271279000181": {
+     "nome": "PPH DISTRIBUIDORA LTDA",
+     "meses": {
+      "2021-10": 2416.4
+     }
+    },
+    "02573131000193": {
+     "nome": "RICARDO GONCALVES ITAPIRA",
+     "meses": {
+      "2021-07": 2366
+     }
+    },
+    "10717280000107": {
+     "nome": "ROSS COMERCIO DE MERCADORIAS POR ATACADO E SERVIÇOS LTDA",
+     "meses": {
+      "2021-09": 2265.6
+     }
+    },
+    "20161464000197": {
+     "nome": "ECO PLAST COMERCIO E INDUSTRIA LTDA",
+     "meses": {
+      "2021-03": 1634.4
+     }
+    },
+    "07396733000136": {
+     "nome": "MARINGA HOSPITALAR DISTR DE MEDICAMENTOS E CORRELATOS EIRELI",
+     "meses": {
+      "2021-03": 713.25,
+      "2021-09": 713.25
+     }
+    },
+    "19410028000125": {
+     "nome": "S B COMERCIO DE GAS EIRELI",
+     "meses": {
+      "2021-06": 1105
+     }
+    },
+    "47673793000173": {
+     "nome": "ASSOCIACAO FUNDO DE INCENTIVO A PESQUISA",
+     "meses": {
+      "2021-11": 1000
+     }
+    },
+    "00360305032650": {
+     "nome": "CAIXA ECONOMICA FEDERAL",
+     "meses": {
+      "2021-09": 9.5,
+      "2021-11": 2.1
+     }
+    }
+   },
    "quantidadeFornecedores": 99
   }
  }

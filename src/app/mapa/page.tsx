@@ -20,7 +20,7 @@ export default async function PaginaMapa() {
 
   return (
     <>
-      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-5 py-7 sm:px-8">
+      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-5 py-5 sm:px-8 sm:py-7">
         <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-blue-100 opacity-60 blur-3xl" aria-hidden />
         <div className="relative">
           <p className="text-sm font-medium text-blue-800">Mapa de Osasco</p>
@@ -39,8 +39,9 @@ export default async function PaginaMapa() {
               { t: "Escolas públicas", v: escolasPublicas.toLocaleString("pt-BR") },
               { t: "Moradores em favelas e comunidades", v: `${num(mapa.cidade?.favelas ?? 0, 0)}%` },
               { t: `Ocorrências policiais em ${mapa.anoSeguranca ?? ""}`, v: Math.round(mapa.bairros.reduce((a, b) => a + Object.values(b.seguranca ?? {}).reduce((x, g) => x + g.n, 0), 0)).toLocaleString("pt-BR") },
-            ].map((c) => (
-              <div key={c.t} className="rounded-xl bg-slate-50 p-3">
+            ].map((c, i) => (
+              // No celular ficam só os quatro primeiros, para o mapa aparecer logo.
+              <div key={c.t} className={`rounded-xl bg-slate-50 p-3 ${i >= 4 ? "max-sm:hidden" : ""}`}>
                 <dt className="text-xs text-slate-500">{c.t}</dt>
                 <dd className="mt-0.5 text-2xl font-semibold tabular-nums text-slate-900">{c.v}</dd>
               </div>

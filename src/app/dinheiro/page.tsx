@@ -1,41 +1,42 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ComposicaoEntradas, GastosPorAno } from "@/components/Dinheiro";
+import { QuemMandou } from "@/components/dinheiro/Emendas";
+import { ConferenciasIntegridade } from "@/components/dinheiro/Integridade";
 import { GraficoLinha } from "@/components/GraficoLinha";
 import { Cartao, Secao } from "@/components/ui";
 import { dados, dataBR } from "@/lib/dados";
 import bruto from "@/data/dinheiro.json";
-import { nomeAutor, nomeFuncao, type PaginaDinheiro } from "@/lib/dinheiro";
+import { nomeProprio, type PaginaDinheiro } from "@/lib/dinheiro";
 import { dinheiroCurto } from "@/lib/formato";
 
 export const metadata: Metadata = {
   title: "Dinheiro de fora",
-  description: "Quanto a União e o Estado mandam para Osasco, quais deputados mandaram emendas e com quem a Prefeitura gastou esse dinheiro.",
+  description: "Quanto a União e o Estado mandam para Osasco, quais deputados e senadores mandaram emendas, com quem a Prefeitura gastou esse dinheiro e o que a conferência de integridade encontrou.",
 };
 
 const dinheiro = bruto as unknown as PaginaDinheiro;
 
 export default function PaginaDinheiro() {
-  const { entradas, emendas, pix, pixEstaduais, gastos, fontes, convenios } = dinheiro;
+  const { entradas, emendas, vereadores, pixEstaduais, gastos, fontes, convenios, integridade } = dinheiro;
   const ultimo = [...entradas].sort((a, b) => b.ano - a.ano)[0];
   const anoEmendas = String(ultimo.ano);
   const recebidoUltimo = emendas.recebidoPorAno[anoEmendas] ?? 0;
-  const nomesBairro = new Map((dados.mapa?.bairros ?? []).map((b) => [b.id, b.nome]));
   const bairros = (dados.mapa?.bairros ?? [])
     .filter((b) => b.dinheiro && b.dinheiro.valor > 0)
     .sort((a, b) => b.dinheiro!.valor - a.dinheiro!.valor);
-  const individuais = emendas.autores.filter((a) => !a.coletiva);
-  const coletivas = emendas.autores.filter((a) => a.coletiva);
   const totalEmendas = Object.values(emendas.recebidoPorAno).reduce((a, b) => a + b, 0);
   const anosRecebido = Object.keys(emendas.recebidoPorAno).sort();
+  const pagoEmendasEstaduais = gastos.reduce((s, g) => s + (g.emendasEstaduais?.total ?? 0), 0);
+  const anosEstaduais = gastos.filter((g) => g.emendasEstaduais?.total).map((g) => g.ano);
 
   return (
     <>
       <header className="max-w-3xl">
         <h1 className="text-3xl font-bold tracking-tight text-balance text-slate-900">Dinheiro de fora</h1>
         <p className="mt-2 text-slate-600">
-          Quanto a União e o Estado mandam para Osasco, por qual motivo, quais deputados e senadores mandaram emendas e com quem a Prefeitura gastou
-          esse dinheiro. Tudo a partir dos registros oficiais, com o link de cada fonte.
+          Quanto a União e o Estado mandam para Osasco e por qual motivo, quem mandou cada emenda, com quem a Prefeitura gastou esse dinheiro e o que a
+          conferência nas listas oficiais de punidos encontrou. Tudo a partir dos registros oficiais, com o link de cada fonte.
         </p>
       </header>
 
@@ -43,7 +44,7 @@ export default function PaginaDinheiro() {
         <Cartao titulo={`Da União em ${ultimo.ano}`} valor={dinheiroCurto(ultimo.uniao.total)} detalhe="FPM, SUS, educação, convênios" />
         <Cartao titulo={`Do Estado em ${ultimo.ano}`} valor={dinheiroCurto(ultimo.estado.total)} detalhe="ICMS, IPVA, SUS, convênios" />
         <Cartao titulo={`FUNDEB em ${ultimo.ano}`} valor={dinheiroCurto(ultimo.fundeb)} detalhe="fundo da educação básica" />
-        <Cartao titulo={`Emendas federais recebidas em ${anoEmendas}`} valor={dinheiroCurto(recebidoUltimo)} detalhe={`${dinheiroCurto(totalEmendas)} desde ${anosRecebido[0]}`} />
+        <Cartao titulo={`Emendas federais em ${anoEmendas}`} valor={dinheiroCurto(recebidoUltimo)} detalhe={`${dinheiroCurto(totalEmendas)} desde ${anosRecebido[0]}`} />
       </div>
 
       <Secao titulo="Quanto chega por ano" id="quanto-chega" subtitulo="Receitas que a Prefeitura registrou como vindas da União e do Estado, ano a ano.">
@@ -60,8 +61,7 @@ export default function PaginaDinheiro() {
             ]}
           />
           <p className="mt-2 text-xs text-slate-500">
-            Valores brutos, sem correção pela inflação. O ano de{" "}
-            {ultimo.ano + 1} entra quando a Prefeitura entregar as contas anuais.
+            Valores brutos, sem correção pela inflação. O ano de {ultimo.ano + 1} entra quando a Prefeitura entregar as contas anuais.
           </p>
         </div>
         <div className="mt-4">
@@ -70,8 +70,8 @@ export default function PaginaDinheiro() {
         <p className="mt-3 text-xs text-slate-500">
           O que é obrigatório (FPM, ICMS, IPVA, FUNDEB) chega por regra fixa e entra no caixa geral da Prefeitura, misturado aos impostos da própria
           cidade: não dá para seguir esse dinheiro até a nota. Saúde, educação, convênios e emendas chegam carimbados e podem ser seguidos (veja{" "}
-          <a href="#para-onde-foi" className="underline">
-            para onde foi
+          <a href="#com-quem-gastou" className="underline">
+            com quem a Prefeitura gastou
           </a>
           ). Fonte:{" "}
           <a href={fontes.entradas.url} className="underline">
@@ -84,117 +84,91 @@ export default function PaginaDinheiro() {
       <Secao
         titulo="Quem mandou emendas"
         id="quem-mandou"
-        subtitulo="Deputados federais e senadores cujas emendas chegaram à Prefeitura de Osasco ou aos fundos municipais, pelo valor efetivamente recebido."
+        subtitulo="Cada político com o valor que de fato chegou à Prefeitura e aos fundos municipais. Toque no nome para abrir a ficha; abra as emendas para ver o detalhe de cada uma, até as compras que ela pagou."
       >
-        <div className="grid gap-4 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
+        <QuemMandou autores={emendas.autores} vereadores={vereadores} porPartido={emendas.porPartido} />
+
+        <div className="mt-4">
           <div className="rounded-2xl border border-slate-200 bg-white p-4">
-            <ol className="divide-y divide-slate-100">
-              {individuais.map((a) => (
-                <li key={a.nome} className="flex items-baseline gap-3 py-2">
-                  <span className="min-w-0 flex-1">
-                    <span className="block font-medium text-slate-900">{nomeAutor(a.nome)}</span>
-                    <span className="block text-xs text-slate-500">
-                      {a.emendas === 1 ? "1 emenda" : `${a.emendas} emendas`} · recebido em {Object.keys(a.porAno).sort().join(", ")}
-                      {a.funcoes.length > 0 && ` · ${a.funcoes.slice(0, 3).map(nomeFuncao).join(", ")}`}
-                    </span>
+            <div className="text-sm font-medium text-slate-900">E os deputados estaduais?</div>
+            <p className="mt-1 text-sm text-slate-600">
+              O governo do Estado não publica em arquivo aberto quem indicou cada emenda estadual. Dá para ver o dinheiro, sem o nome:
+            </p>
+            <ul className="mt-2 space-y-1.5 text-sm">
+              {pagoEmendasEstaduais > 0 && (
+                <li className="flex items-baseline gap-3">
+                  <span className="min-w-0 flex-1 text-slate-700">
+                    Pago pela Prefeitura com dinheiro de emendas estaduais ({anosEstaduais[0]} a {anosEstaduais.at(-1)})
                   </span>
-                  <span className="shrink-0 font-semibold tabular-nums text-slate-900">{dinheiroCurto(a.total)}</span>
+                  <span className="shrink-0 font-semibold tabular-nums text-slate-900">{dinheiroCurto(pagoEmendasEstaduais)}</span>
                 </li>
-              ))}
-            </ol>
-          </div>
-          <div className="space-y-4">
-            {coletivas.length > 0 && (
-              <div className="rounded-2xl border border-slate-200 bg-white p-4">
-                <div className="text-sm font-medium text-slate-900">Emendas sem um autor individual</div>
-                <p className="mt-0.5 text-xs text-slate-500">De relator, comissão ou bancada: o registro não diz qual parlamentar pediu.</p>
-                <ul className="mt-2 divide-y divide-slate-100 text-sm">
-                  {coletivas.map((a) => (
-                    <li key={a.nome} className="flex items-baseline gap-3 py-1.5">
-                      <span className="min-w-0 flex-1 text-slate-800">{nomeAutor(a.nome)}</span>
-                      <span className="shrink-0 tabular-nums text-slate-900">{dinheiroCurto(a.total)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {emendas.entidades.length > 0 && (
-              <div className="rounded-2xl border border-slate-200 bg-white p-4">
-                <div className="text-sm font-medium text-slate-900">Entidades de Osasco que receberam emendas direto</div>
-                <p className="mt-0.5 text-xs text-slate-500">Associações e institutos sediados na cidade. Esse dinheiro não passa pela Prefeitura.</p>
-                <ul className="mt-2 divide-y divide-slate-100 text-sm">
-                  {emendas.entidades.slice(0, 10).map((e) => (
-                    <li key={e.nome} className="flex items-baseline gap-3 py-1.5">
-                      <span className="min-w-0 flex-1">
-                        <span className="block text-slate-800">{e.nome}</span>
-                        <span className="block text-[11px] text-slate-500">{e.autores.map(nomeAutor).join(", ")}</span>
-                      </span>
-                      <span className="shrink-0 tabular-nums text-slate-900">{dinheiroCurto(e.total)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            <p className="text-xs text-slate-500">
-              Ficam de fora {emendas.empresasForaDaConta.quantidade.toLocaleString("pt-BR")} pagamentos ({dinheiroCurto(emendas.empresasForaDaConta.total)}) a
-              empresas com sede em Osasco que forneceram para programas nacionais: é dinheiro de emenda, mas não foi para a cidade. Fonte:{" "}
-              <a href={fontes.emendas.url} className="underline">
-                {fontes.emendas.nome}
+              )}
+              {pixEstaduais.length > 0 && (
+                <li className="flex items-baseline gap-3">
+                  <span className="min-w-0 flex-1 text-slate-700">
+                    {pixEstaduais.length} emendas Pix estaduais recebidas até {dataBR(fontes.pixEstaduais!.posicao!)} (
+                    <a href={fontes.pixEstaduais!.url} className="underline">
+                      planilha do TCE-SP
+                    </a>
+                    )
+                  </span>
+                  <span className="shrink-0 font-semibold tabular-nums text-slate-900">{dinheiroCurto(pixEstaduais.reduce((a, r) => a + r.valor, 0))}</span>
+                </li>
+              )}
+            </ul>
+            <p className="mt-2 text-xs text-slate-500">
+              Quem recebeu esse dinheiro está em{" "}
+              <a href="#com-quem-gastou" className="underline">
+                com quem a Prefeitura gastou
               </a>
               .
             </p>
           </div>
         </div>
+        <p className="mt-3 text-xs text-slate-500">
+          Ficam de fora {emendas.empresasForaDaConta.quantidade.toLocaleString("pt-BR")} pagamentos ({dinheiroCurto(emendas.empresasForaDaConta.total)}) a
+          empresas com sede em Osasco que forneceram para programas nacionais: é dinheiro de emenda, mas não foi para a cidade.
+          {emendas.entidadesForaDaConta.length > 0 &&
+            ` Pelo mesmo motivo ficam de fora ${dinheiroCurto(emendas.entidadesForaDaConta.reduce((t, x) => t + x.valor, 0))} recebidos por entidades com sede em Osasco para projetos em outro lugar (${emendas.entidadesForaDaConta
+              .map((x) => `${x.autor} para ${nomeProprio(x.entidade)}${x.destino ? `, destino ${/v[aá]rias|m[uú]ltiplo/i.test(x.destino) ? "várias cidades" : x.destino}` : ""}`)
+              .join("; ")}).`}{" "}
+          Fontes:{" "}
+          <a href={fontes.emendas.url} className="underline">
+            {fontes.emendas.nome}
+          </a>
+          {fontes.pix && (
+            <>
+              ;{" "}
+              <a href={fontes.pix.url} className="underline">
+                {fontes.pix.nome}
+              </a>
+            </>
+          )}
+          {fontes.parlamentares && (
+            <>
+              ; cargos, partidos e fotos:{" "}
+              <a href={fontes.parlamentares.url} className="underline">
+                {fontes.parlamentares.nome}
+              </a>
+            </>
+          )}
+          .
+        </p>
       </Secao>
 
-      {pix.length > 0 && (
+      {integridade && (
         <Secao
-          titulo="Emendas com destino escrito"
-          id="emendas-pix"
-          subtitulo="Nas transferências especiais (as “emendas Pix”), a Prefeitura informa ao governo federal o que vai fazer com o dinheiro. Isto é o que ela escreveu."
+          titulo="Conferências de integridade"
+          id="integridade"
+          subtitulo="Cruzamentos feitos com registros oficiais. Cada um diz o que foi conferido e o que apareceu; um ponto de atenção é um fato a olhar de perto, não uma acusação."
         >
-          <ul className="grid gap-3 md:grid-cols-2">
-            {pix.map((p, i) => (
-              <li key={`${p.ano}-${p.parlamentar}-${i}`} className="rounded-xl border border-slate-200 bg-white p-4 text-sm">
-                <div className="flex items-baseline justify-between gap-3">
-                  <span className="font-medium text-slate-900">{p.parlamentar}</span>
-                  <span className="shrink-0 font-semibold tabular-nums text-slate-900">{dinheiroCurto(p.valor)}</span>
-                </div>
-                <div className="text-xs text-slate-500">
-                  Emenda de {p.ano}
-                  {p.planoTrabalho?.fim && ` · prazo de execução até ${dataBR(p.planoTrabalho.fim)}`}
-                </div>
-                {p.objetos.length > 0 ? (
-                  <ul className="mt-2 space-y-1">
-                    {p.objetos.map((o) => (
-                      <li key={o.objeto} className="line-clamp-4 text-slate-700" title={o.objeto}>
-                        {o.objeto}
-                        {o.bairros.length > 0 && <span className="text-xs text-blue-800"> · {o.bairros.map((b) => nomesBairro.get(b) ?? b).join(", ")}</span>}
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="mt-2 text-xs text-slate-500">A Prefeitura ainda não informou o que vai fazer com este dinheiro.</p>
-                )}
-              </li>
-            ))}
-          </ul>
-          {pixEstaduais.length > 0 && (
-            <p className="mt-3 text-xs text-slate-500">
-              O Estado também mandou {pixEstaduais.length} transferências especiais de deputados estaduais, somando{" "}
-              {dinheiroCurto(pixEstaduais.reduce((a, r) => a + r.valor, 0))} até {dataBR(fontes.pixEstaduais!.posicao!)}, pela{" "}
-              <a href={fontes.pixEstaduais!.url} className="underline">
-                planilha publicada pelo TCE-SP
-              </a>
-              . O governo estadual não publica em arquivo aberto o nome do deputado que indicou cada uma.
-            </p>
-          )}
+          <ConferenciasIntegridade i={integridade} />
         </Secao>
       )}
 
       <Secao
-        titulo="Para onde foi"
-        id="para-onde-foi"
+        titulo="Com quem a Prefeitura gastou"
+        id="com-quem-gastou"
         subtitulo="Pagamentos da Prefeitura feitos com dinheiro carimbado da União e do Estado, como a própria Prefeitura informou ao Tribunal de Contas."
       >
         <GastosPorAno gastos={gastos} />
@@ -212,10 +186,12 @@ export default function PaginaDinheiro() {
           <>
             <ol className="grid gap-x-6 sm:grid-cols-2 lg:grid-cols-3">
               {bairros.slice(0, 15).map((b) => (
-                <li key={b.id} className="flex items-baseline gap-3 border-b border-slate-100 py-2 text-sm">
-                  <span className="min-w-0 flex-1 text-slate-800">{b.nome}</span>
-                  <span className="shrink-0 text-xs text-slate-500">{b.dinheiro!.quantidade === 1 ? "1 item" : `${b.dinheiro!.quantidade} itens`}</span>
-                  <span className="shrink-0 font-semibold tabular-nums text-slate-900">{dinheiroCurto(b.dinheiro!.valor)}</span>
+                <li key={b.id} className="border-b border-slate-100">
+                  <Link href={`/mapa?indicador=dinheiroCitado&bairro=${b.id}`} className="flex items-baseline gap-3 py-2 text-sm hover:bg-slate-50">
+                    <span className="min-w-0 flex-1 text-slate-800">{b.nome}</span>
+                    <span className="shrink-0 text-xs text-slate-500">{b.dinheiro!.quantidade === 1 ? "1 item" : `${b.dinheiro!.quantidade} itens`}</span>
+                    <span className="shrink-0 font-semibold tabular-nums text-slate-900">{dinheiroCurto(b.dinheiro!.valor)}</span>
+                  </Link>
                 </li>
               ))}
             </ol>
@@ -241,12 +217,12 @@ export default function PaginaDinheiro() {
             parlamentar ou de um acordo.
           </li>
           <li>
-            Emendas aparecem pelo valor que chegou a Osasco, não pelo valor prometido. A Prefeitura costuma lançar as emendas dentro da área (saúde,
-            convênios), por isso o quadro de cima não tem uma linha só de emendas.
+            Emendas aparecem pelo valor que chegou a Osasco, não pelo valor prometido. O partido mostrado em cada emenda é o do autor quando ela foi
+            apresentada (em novembro do ano anterior); o da ficha é o de hoje.
           </li>
           <li>
-            O rastro completo, do parlamentar até a nota, existe para o que chega carimbado. Dinheiro repassado direto aos fundos de saúde e educação, e
-            as “emendas Pix”, entram num caixa comum daquela área: dá para ver com quem a área gastou, mas não qual nota cada emenda pagou.
+            O rastro até a nota aparece quando o histórico do pagamento, escrito pela Prefeitura, cita o número da emenda. Quando não cita, dá para ver com
+            quem a área gastou, mas não qual nota cada emenda pagou.
           </li>
           <li>Se a obra ou o serviço foi entregue não aparece nesses registros. Para obras, veja a camada de obras no mapa.</li>
         </ul>

@@ -136,7 +136,7 @@ export function GastosPorAno({ gastos }: { gastos: GastoAno[] }) {
   const emendas = [
     { titulo: "Pago com emendas federais", e: g.emendasFederais },
     { titulo: "Pago com emendas estaduais", e: g.emendasEstaduais },
-    { titulo: "Pago com emendas de vereadores", e: g.emendasVereadores },
+    { titulo: "Pago com a fonte “emendas individuais”", e: g.emendasVereadores },
   ].filter((x) => x.e && x.e.total > 0);
   return (
     <div className="space-y-4">
@@ -148,9 +148,11 @@ export function GastosPorAno({ gastos }: { gastos: GastoAno[] }) {
       </div>
       {emendas.length > 0 && (
         <div className="rounded-xl border border-slate-200 p-4">
-          <div className="text-sm font-medium text-slate-900">O dinheiro das emendas, até a nota</div>
+          <div className="text-sm font-medium text-slate-900">Quem recebeu o dinheiro das emendas</div>
           <p className="mt-0.5 text-xs text-slate-500">
-            A Prefeitura marca com um código próprio o que paga com dinheiro de emendas. Aqui está quem recebeu esse dinheiro em {ano}.
+            A Prefeitura marca com um código próprio o que paga com dinheiro de emendas federais e estaduais, e usa uma fonte chamada “emendas parlamentares
+            individuais” (em parte, emendas de vereadores; quando o histórico cita o vereador, ele aparece na aba Vereadores de Osasco). Aqui está quem
+            recebeu esse dinheiro em {ano}.
           </p>
           <div className="mt-3 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {emendas.map(({ titulo, e }) => (

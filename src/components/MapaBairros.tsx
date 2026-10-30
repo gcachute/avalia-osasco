@@ -441,7 +441,7 @@ export function MapaBairros({
     setChave(k);
     setPeriodo(p ?? null);
   };
-  // Links das páginas de vereador e prefeito abrem o mapa já filtrado: ?indicador=, ?autor=, ?origem=.
+  // Links das páginas de vereador e prefeito abrem o mapa já filtrado: ?indicador=, ?autor=, ?origem=, ?bairro=.
   useEffect(() => {
     const q = new URLSearchParams(window.location.search);
     const ind = q.get("indicador");
@@ -453,6 +453,9 @@ export function MapaBairros({
     if (a) setAutor(a);
     const o = q.get("origem");
     if (o === "camara" || o === "prefeitura") setOrigem(o);
+    // ?bairro= abre o painel do bairro (links da página do dinheiro).
+    const b = q.get("bairro");
+    if (b && bairros.some((x) => x.id === b)) setSelecionado(b);
     // Só na abertura da página: depois, quem manda é quem está navegando.
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 

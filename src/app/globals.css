@@ -164,11 +164,14 @@
 }
 
 /* Gráficos de linha (séries históricas): três cores validadas para daltonismo, nos dois temas,
-   e um cinza para a referência da cidade (sempre tracejada). */
+   e um cinza para a referência da cidade (sempre tracejada). A quarta cor e o cinza "outro" servem às barras
+   empilhadas da página do dinheiro (forma de contratação). */
 :root {
   --grafico-1: #2563eb;
   --grafico-2: #ea580c;
   --grafico-3: #0d9488;
+  --grafico-4: #9333ea;
+  --grafico-outro: #94a3b8;
   --grafico-ref: #64748b;
   --grafico-grade: #e2e8f0;
 }
@@ -176,6 +179,8 @@
   --grafico-1: #3b82f6;
   --grafico-2: #ea580c;
   --grafico-3: #0d9488;
+  --grafico-4: #a855f7;
+  --grafico-outro: #64748b;
   --grafico-ref: #94a3b8;
   --grafico-grade: #1e293b;
 }
