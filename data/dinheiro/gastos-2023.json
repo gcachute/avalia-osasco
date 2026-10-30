@@ -653,6 +653,63 @@
    "pessoasFisicas": 418454.16,
    "itensBairro": [
     {
+     "data": "2023-05-09",
+     "valor": 129100,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0300 - SAÚDE - RECURSOS ESPECÍFICOS",
+     "funcao": "ADMINISTRAÇÃO",
+     "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO DE VEICULOS OFICIAIS DA SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 02 01 2023 A 28 02 2023 IOMO N 2 424 DE 14 04 2023",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2023-05-09",
+     "valor": 397831,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0300 - SAÚDE - RECURSOS ESPECÍFICOS",
+     "funcao": "ADMINISTRAÇÃO",
+     "texto": "PAGAMENTO INDENIZATORIO REF AQUISICAO DE PECAS PARA MANUTENCAO DE VEICULOS OFICIAIS DA SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 02 01 2023 A 28 02 2023 IOMO N 2 424 DE 14 04 2023",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2023-09-28",
+     "valor": 210727,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0300 - SAÚDE - RECURSOS ESPECÍFICOS",
+     "funcao": "ADMINISTRAÇÃO",
+     "texto": "PAGAMENTO INDENIZATORIO REF AQUISICAO DE PECAS PARA MANUTENCAO DE VEICULOS OFICIAIS DA SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 01 04 2023 A 15 06 2023 IOMO N 2 482 DE 02 08 2023",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2023-09-28",
+     "valor": 85400,
+     "fornecedor": "VALCAR MECANICA FUNILARIA E PINTURA LTDA",
+     "aplicacao": "0300 - SAÚDE - RECURSOS ESPECÍFICOS",
+     "funcao": "ADMINISTRAÇÃO",
+     "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS MANUTENCAO DE VEICULOS OFICIAIS DA SECRETARIA DE SAUDE DO MUNICIPIO DE OSASCO PERIODO 01 04 2023 A 15 06 2023 IOMO N 2 482 DE 02 08 2023",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2023-10-19",
+     "valor": 285957.5,
+     "fornecedor": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "SANEAMENTO",
+     "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
+     "bairros": [
+      "alianca",
+      "helena-maria",
+      "jardim-elvira"
+     ]
+    },
+    {
      "data": "2023-11-23",
      "valor": 152056.16,
      "fornecedor": "OMEGA CONSTRUCOES E SERVICOS",
@@ -661,6 +718,32 @@
      "texto": "REFORMA DA UBS FRANCISCA LIMA DE LIRA",
      "bairros": [
       "baronesa"
+     ]
+    },
+    {
+     "data": "2023-11-09",
+     "valor": 1683962.37,
+     "fornecedor": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "SANEAMENTO",
+     "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
+     "bairros": [
+      "alianca",
+      "helena-maria",
+      "jardim-elvira"
+     ]
+    },
+    {
+     "data": "2023-12-22",
+     "valor": 1773768.08,
+     "fornecedor": "JOFEGE PAVIMENTACAO E CONSTRUCAO LTDA",
+     "aplicacao": "0100 - GERAL TOTAL",
+     "funcao": "SANEAMENTO",
+     "texto": "CANALIZACAO DOS TRECHOS DO CORREGO RICO",
+     "bairros": [
+      "alianca",
+      "helena-maria",
+      "jardim-elvira"
      ]
     }
    ],
@@ -1945,6 +2028,17 @@
      ]
     },
     {
+     "data": "2023-09-14",
+     "valor": 2774044.54,
+     "fornecedor": "SOEBE CONSTRUCAO E PAVIMENTACAO LTDA",
+     "aplicacao": "0110 - GERAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRA EMERGENCIAL RUA CAMPOS DO JORDAO BONANCA CONTENCAODE ENCOSTAS DRENAGEM E PAVIMENTACAO",
+     "bairros": [
+      "bonanca"
+     ]
+    },
+    {
      "data": "2023-09-05",
      "valor": 267425.81,
      "fornecedor": "CONSTRUTORA PROGREDIOR LTDA",
@@ -1986,6 +2080,17 @@
      "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
      "bairros": [
       "rochdale"
+     ]
+    },
+    {
+     "data": "2023-11-09",
+     "valor": 612848.29,
+     "fornecedor": "SOEBE CONSTRUCAO E PAVIMENTACAO LTDA",
+     "aplicacao": "0110 - GERAL",
+     "funcao": "HABITAÇÃO",
+     "texto": "OBRA EMERGENCIAL RUA CAMPOS DO JORDAO BONANCA CONTENCAODE ENCOSTAS DRENAGEM E PAVIMENTACAO",
+     "bairros": [
+      "bonanca"
      ]
     },
     {

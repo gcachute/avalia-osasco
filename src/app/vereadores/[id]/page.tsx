@@ -127,6 +127,23 @@ export default async function PaginaVereador({ params }: Props) {
   const idx = ordem.findIndex((x) => x.id === v.id);
   const anterior = idx > 0 ? ordem[idx - 1] : null;
   const seguinte = idx >= 0 && idx < ordem.length - 1 ? ordem[idx + 1] : null;
+  // A conta de cada pilar com os números do vereador, pelas mesmas regras do cálculo da nota.
+  const regras = dados.metodologia.vereador.regras;
+  const por10 = (n: number) => (i.sessoes ? (n / i.sessoes) * 10 : 0);
+  const pontos = (x: number | null | undefined) => nota(nota10(x));
+  const compC = v.pilares.C.componentes;
+  const contas: Partial<Record<PilarVereador, string>> = {
+    A: `(presença ${pontos(v.pilares.A.componentes.presenca)} + votações ${pontos(v.pilares.A.componentes.votacoes)}) ÷ 2 = ${pontos(v.pilares.A.nota)}`,
+    B: `${num(por10(i.pontosLegislacao), 2)} pontos a cada 10 sessões: (${num(por10(i.pontosLegislacao), 2)} ÷ ${num(regras.alvoLegislacao, 1)}) elevado a ${num(regras.curva, 1)}, vezes 10, com teto em 10 = ${pontos(v.pilares.B.nota)}`,
+    ...(v.emExercicio && {
+      C:
+        compC.requerimentos != null
+          ? `requerimentos ${pontos(compC.requerimentos)} × 70% + comissões ${pontos(compC.comissoes)} × 30% = ${pontos(v.pilares.C.nota)}`
+          : `${num(i.pontosComissoes, 2)} pontos: (${num(i.pontosComissoes, 2)} ÷ ${num(regras.alvoComissoes, 0)}) elevado a ${num(regras.curva, 1)}, vezes 10, com teto em 10 = ${pontos(v.pilares.C.nota)}`,
+    }),
+    E: `10 − ${num(por10(i.adiadasPorAusencia), 2)} itens adiados a cada 10 sessões × ${num(regras.perdaPorAdiamento, 0)} = ${pontos(v.pilares.E.nota)}`,
+    ...(v.pilares.F.nota != null && { F: `10 − ${num(10 - v.pilares.F.nota * 10, 1)} de desconto por decisões definitivas = ${pontos(v.pilares.F.nota)}` }),
+  };
   const detalhes: Record<PilarVereador, string> = {
     A: `Presença de ${pct(i.presencaAjustada)} descontadas ${plural(i.faltasJustificadas, "falta justificada", "faltas justificadas")} (esteve em ${i.presencas} de ${i.sessoes} sessões) · votou em ${pct(i.participacaoVotos)} das votações nominais`,
     B: `${plural(i.projetosSubstantivos, "projeto", "projetos")} de política pública, ${plural(i.projetosSimbolicos, "simbólico", "simbólicos")} e ${plural(i.leisSancionadas, "lei sancionada", "leis sancionadas")} em ${i.sessoes} sessões`,
@@ -348,6 +365,7 @@ export default async function PaginaVereador({ params }: Props) {
                   {pl.chave} · {pl.nome}
                 </div>
                 <div className="text-sm text-slate-600">{detalhes[pl.chave]}</div>
+                {contas[pl.chave] && <div className="mt-0.5 text-xs tabular-nums text-slate-700">A conta: {contas[pl.chave]}</div>}
                 <div className="mt-0.5 text-xs text-slate-400">{pl.descricao}</div>
               </div>
               <div className="flex items-center gap-3 sm:w-48">

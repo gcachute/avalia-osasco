@@ -303,6 +303,11 @@ export default function Metodologia() {
             emenda é o do autor em novembro do ano anterior, quando as emendas ao Orçamento são apresentadas.
           </li>
           <li>
+            <b>Emendas de saúde:</b> o arquivo da CGU por recebedor deixa de fora boa parte dos repasses de emendas ao Fundo Municipal de Saúde. O que ele não traz
+            vem da Consulta do Fundo Nacional de Saúde, com o parlamentar de cada repasse e sem o mês exato, porque a consulta é feita por ano. Uma emenda só entra
+            por essa via se a CGU não registrou o mesmo valor para ela no mesmo ano, para não contar o dinheiro duas vezes.
+          </li>
+          <li>
             <b>Até a nota:</b> quando o histórico de um pagamento da Prefeitura cita o número da emenda (&quot;EMENDA PARLAMENTAR N 37730001&quot; é a emenda 1
             do autor 3773) ou o nome do deputado, o pagamento entra na própria emenda. Emendas de vereadores entram quando o histórico traz o nome do vereador.
           </li>

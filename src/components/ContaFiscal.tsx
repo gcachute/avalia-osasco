@@ -18,7 +18,7 @@ const primarioTexto = (c: CidadeFiscal) => {
   return p.diferencaRCL >= 0 ? `meta cumprida (+${num(p.diferencaRCL, 1)}% da receita líquida)` : `${num(Math.abs(p.diferencaRCL), 1)}% da receita líquida abaixo da meta`;
 };
 
-function Formula({ nomes, valores, total, zerado }: { nomes: string[]; valores: (number | null)[]; total: number | null; zerado?: string }) {
+export function Formula({ nomes, valores, total, zerado }: { nomes: string[]; valores: (number | null)[]; total: number | null; zerado?: string }) {
   return (
     <div className="rounded-lg bg-blue-50 p-3 text-sm text-blue-950 ring-1 ring-inset ring-blue-200">
       {zerado ? (

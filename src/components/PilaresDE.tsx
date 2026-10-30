@@ -1,5 +1,6 @@
 import type { Resultados, Transparencia } from "@/lib/dados";
 import { milhoes, nota, nota10, num, plural } from "@/lib/formato";
+import { Formula } from "./ContaFiscal";
 import { Barra, Secao } from "./ui";
 import { RolagemLateral } from "@/components/RolagemLateral";
 
@@ -68,6 +69,9 @@ export function PilarD({ r }: { r: Resultados }) {
             <a href={r.ideb.fonte} className="text-blue-800 underline">
               planilha do INEP
             </a>
+            <span className="mt-1 block text-xs tabular-nums text-slate-500">
+              A conta: posição {nota(nota10(o.partes.educacao.posicao))} e evolução {nota(nota10(o.partes.educacao.evolucao))}, média {nota(nota10(o.componentes.educacao))}.
+            </span>
           </Componente>
         )}
         {r.mortalidade && (
@@ -80,8 +84,14 @@ export function PilarD({ r }: { r: Resultados }) {
             <a href={r.mortalidade.fonte} className="text-blue-800 underline">
               DataSUS
             </a>
+            <span className="mt-1 block text-xs tabular-nums text-slate-500">
+              A conta: posição {nota(nota10(o.partes.saude.posicao))} e evolução {nota(nota10(o.partes.saude.evolucao))}, média {nota(nota10(o.componentes.saude))}.
+            </span>
           </Componente>
         )}
+      </div>
+      <div className="mt-3">
+        <Formula nomes={["educação", "saúde"]} valores={[o.componentes.educacao, o.componentes.saude]} total={o.nota} />
       </div>
       {r.mortalidade?.preliminar && (
         <p className="mt-2 text-xs text-slate-500">
@@ -137,6 +147,9 @@ export function PilarE({ t }: { t: Transparencia }) {
             </a>
           </Componente>
         )}
+      </div>
+      <div className="mt-3">
+        <Formula nomes={["transparência", "obras"]} valores={[o.componentes.transparencia, o.componentes.obras]} total={o.nota} />
       </div>
       <div className="mt-4">
         <Tabela

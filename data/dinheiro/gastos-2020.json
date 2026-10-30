@@ -612,6 +612,28 @@
    "pessoasFisicas": 7891.7,
    "itensBairro": [
     {
+     "data": "2020-05-20",
+     "valor": 780000,
+     "fornecedor": "RV MEDICAL SOLUCOES HOSPITALARES LTDA ME",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "PAGTO INDENIZATORIO COVID 19 EMPRESA ESPECIALIZADA EM FORNECIMENTO DE PROTECAO INDIVIDUAL HOSPITALAR MASCARA AS UNIDADES DA SECRETARIA DE SAUDE REF PERIODO DE 24 04 2020 CONF PUBLICACAO 04 E 11 05 2020 DOS N 1844 E 1847 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-07-29",
+     "valor": 9500,
+     "fornecedor": "TECNO4 PRODUTOS HOSPITALARES LTDA EPP",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO COVID 19 REFERENTE A AQUISICAO DE MASCARAS DE NAO REINALACAO PARA UTILIZACAO NAS UNIDADES DA SECRETARIA DE SAUDE DEVIDO AO PICO DA PANDEMIA IOMO 1844 DE 04 05 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
      "data": "2020-09-11",
      "valor": 1342563.94,
      "fornecedor": "CONSTRUTORA PROGREDIOR LTDA",
@@ -620,6 +642,17 @@
      "texto": "CONTRATACAO EMERGENCIAL PARA AMPLIACAO DE LEITOS UTI S NO PRONTO SOCORRO DO JARDIM D ABRIL PS JOSE IBRAHIM COM INSTALACAO DE 40 LEITOS DE UTI",
      "bairros": [
       "jardim-d-abril"
+     ]
+    },
+    {
+     "data": "2020-09-30",
+     "valor": 492000,
+     "fornecedor": "RV MEDICAL SOLUCOES HOSPITALARES LTDA ME",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO EMERGENCIAL COVID 19 PARA AQUISICAO DE MASCARAS CIRURGICAS DESCARTAVEIS PARA UTILIZACAO DOS SERVIDORES DA SECRETARIA DE SAUDE EMENDA PARLAMENTAR N 2020 31 19805 DEPUTADO ESTADUAL BRUNO LIMA",
+     "bairros": [
+      "centro"
      ]
     }
    ],
@@ -1754,6 +1787,28 @@
      ]
     },
     {
+     "data": "2020-03-06",
+     "valor": 3500,
+     "fornecedor": "CENTRO AUTOMOTIVO PAPALEGUAS 2 0 EIRRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM FORNECIMENTO DE PECAS PARA VEICULOS DA SECRETARIA DE SAUDE FZZ 8635 REFERENTE AO PERIODO DE NOVEMBRO 2019",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-03-06",
+     "valor": 8273,
+     "fornecedor": "CENTRO AUTOMOTIVO PAPALEGUAS 2 0 EIRRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM FORNECIMENTO DE PECAS PARA VEICULOS DA SECRETARIA DE SAUDE FZZ 8635 REFERENTE AO PERIODO DE NOVEMBRO 2019",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
      "data": "2020-04-17",
      "valor": 18087.92,
      "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
@@ -1771,6 +1826,17 @@
      "aplicacao": "0310 - SAÚDE - GERAL",
      "funcao": "SAÚDE",
      "texto": "ORGANIZACAO SOCIAL NA AREA DA SAUDE PARA O GERENCIAMENTO E EXECUCAO DOS SERVICOS DE SAUDE DO HOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-04-03",
+     "valor": 93215.14,
+     "fornecedor": "CENTRO AUTOMOTIVO PAPALEGUAS 2 0 EIRRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM FORNECIMENTO DE PECAS DE VEICULO DA SECRETARIA DE SAUDE REFERENTE AO PERIODO DE OUTUBRO DE 2019 PLACA EGI 0966 FUD 2354 JKH 6663 EGI 1129 EGI 0567 DMN 8006 E EGI 0992",
      "bairros": [
       "centro"
      ]
@@ -1919,6 +1985,17 @@
      ]
     },
     {
+     "data": "2020-07-02",
+     "valor": 479667,
+     "fornecedor": "EQUIPAMED EQUIPAMENTOS MEDICOS LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO EM EMPRESA ESPECIALIZADA EM LOCALIZACAO DE EQUIPAMENTOS HOSPITALARES COMO UNIDADES DA SECRETARIA DE SAUDE REFERENCIA AO PERIODO DE ABRIL 2020 CONFORME PUBLICACAO IOMO DO DIA 17 06 2020 N 1866 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
      "data": "2020-07-15",
      "valor": 1981275.9,
      "fornecedor": "ASSOCIACAO DA IRMANDADE DA SANTA CASA DE MISERICORDIA DE PACAEMBU",
@@ -1947,6 +2024,72 @@
      "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
      "funcao": "SAÚDE",
      "texto": "ORGANIZACAO SOCIAL NA AREA DA SAUDE PARA O GERENCIAMENTO E EXECUCAO DOS SERVICOS DE SAUDE DO HOSPITAL MUNICIPAL ANTONIO GIGLIO CT 06 2020 ADITAMENTO CONTRATUAL PARA PLANO DE CONTINGENCIA PARA PANDEMIA COVID 19",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-07-17",
+     "valor": 24995,
+     "fornecedor": "BLUE DENT COMERCIO DE EQUIPAMENTOS MEDICOS ODONTOLOGICOS EIRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM MANUTENCAO E MONTAGEM E DESMONTAGEM DE EQUIPAMENTOS ODONTOLOGICOS NAS UNIDADES DA SECRETARIA DE SAUDE REFERENCIADO AO PERIODO DE 13 04 2020 CONF PUBLICACAO 1873 07 07 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-07-13",
+     "valor": 30960.4,
+     "fornecedor": "DELTAMED H COMERCIO E SERVICOS LTDA EPP",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO EM EMPRESA ESPECIALIZADA EM FORNECIMENTO DE MATERIAL HOSPITALAR AS UNIDADES DA SECRETARIA DE SAUDE REFERENTE AO PERIODO DE 13 03 2020 CONF PUBLICACAO DO IOMO 1867 19 06 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-08-26",
+     "valor": 25600,
+     "fornecedor": "OXY SYSTEM EQUIPAMENTOS MEDICOS LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA NA LOCACAO DE EQUIPAMENTOS MEDICOS CARDIOVERSORES PARA SEREM UTILIZADOS NAS UNIDADES DA SECRETARIA DE SAUDE PERIODO DE 16 05 A 15 07 2020 I O M O N 1 892 DE 10 08 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-08-26",
+     "valor": 123200,
+     "fornecedor": "OXY SYSTEM EQUIPAMENTOS MEDICOS LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA NA LOCACAO DE EQUIPAMENTOS MEDICOS CARDIOVERSORES PARA SEREM UTILIZADOS NAS UNIDADES DA SECRETARIA DE SAUDE PERIODO DE 16 05 A 15 07 2020 I O M O N 1 892 DE 10 08 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-08-21",
+     "valor": 53621.7,
+     "fornecedor": "ROBERTO CARLOS RUBIO SANCHEZ AUTOMOTIVO ME",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM FORNECIMENTO DE PECAS P MANUTENCAO DA FROTA DE VEICULOS OFICIAIS DA SECRETARIA DE SAUDE PERIODO MAIO DE 2019 IOMO N 1872 DE 01 07 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-08-26",
+     "valor": 74400,
+     "fornecedor": "OXY SYSTEM EQUIPAMENTOS MEDICOS LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA NO FORNECIMENTO DE EQUIPAMENTOS HOSPITALARES CARDIOVERSORES P SEREM UTLIZADOS NAS UNIDADES DA SECRETARIA DE SAUDE PERIODO DE 16 04 A 15 05 2020 I O M O N 1 892 DE 10 08 2020",
      "bairros": [
       "centro"
      ]
@@ -1993,6 +2136,28 @@
      "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
      "bairros": [
       "rochdale"
+     ]
+    },
+    {
+     "data": "2020-08-28",
+     "valor": 65361.49,
+     "fornecedor": "UNISERV TERCEIRIZACAO E SERVICOS LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO COMPLEMENTAR A EMPRESA ESPECIALIZADA PELA PRESTACAO DE SERVICOS LIMPEZA TECNICA HOSPITALAR NAS UNIDADES DA SECRETARIA DE SAUDE DO MUNICIPIO PERIODO 01 A 31 05 2020 I O M O N 1 886 DE 29 07 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-08-04",
+     "valor": 8502,
+     "fornecedor": "THIAGO TEIXEIRA DA MATA 39081002830",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM LIMPEZA DE TUBOS SOLDAS PRATA E TODAS COMO CONEXOES NAS UNIDADES DA SECRETARIA DE SAUDE REFERENCIADO AO PERIODO DE 19 06 2020 CONF PUBLICACAO 1873 07 07 2020",
+     "bairros": [
+      "centro"
      ]
     },
     {
@@ -2144,6 +2309,17 @@
      ]
     },
     {
+     "data": "2020-09-30",
+     "valor": 41818,
+     "fornecedor": "CENTRO AUTOMOTIVO PAPALEGUAS 2 0 EIRRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO COMPLEMENTAR A EMPRESA ESPECIALIZADA NO FORNECIMENTO DE PECAS PARA MANUTENCAO DOS VEICULOS OFICIAIS DA SECRETARIA DE SAUDE DURANTE O MES DE ABRIL 2020 I O M O N 1 886 DE 29 07 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
      "data": "2020-09-15",
      "valor": 442534.78,
      "fornecedor": "B B ENGENHARIA E CONSTRUCAO LTDA",
@@ -2152,7 +2328,8 @@
      "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA A CONSTRUCAO DA CRECHE VILA MILITAR UNIFESP A SER EDIFICADA EM AREA PUBLICA NA ALAMEDA PARQUE S N QUITAUNA OSASCO SP CT 12 2018 E TERMO 85 2019 REVERSAO DO EMPENHO 11438 2019",
      "bairros": [
       "vila-militar",
-      "quintauna"
+      "quintauna",
+      "km-18"
      ]
     },
     {
@@ -2164,6 +2341,39 @@
      "texto": "CONTRATACAO EMERGENCIAL PARA GERENCIAMENTO DO CENTRO DE ATENDIMENTO AO PACIENTE DIAGNOSTICADO COM COVID 19 REFERENTE AO PRONTO SOCORRO OSMAR MESQUITA NO HELENA MARIA E PRONTO SOCORRO CONRADO CESARINO NUVOLINO NO SANTO ANTONIO COVID 19",
      "bairros": [
       "helena-maria"
+     ]
+    },
+    {
+     "data": "2020-10-09",
+     "valor": 4150.81,
+     "fornecedor": "CENTRO AUTOMOTIVO PAPALEGUAS 2 0 EIRRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO NOS VEICULOS OFICIAIS DA SECRETARIA DE SAUDE KOMBI PLACA EVK 6848 SANDERO FZS 0335 LOGAN EGI 0957 E S10 PLACA CMW 0796 PERIODO 30 06 A 28 07 20 2020 I O M O 1 889 DE 05 08 20",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-10-23",
+     "valor": 81591.32,
+     "fornecedor": "INSTITUTO DE GESTAO ADMINISTRACAO E TREINAMENTO EM SAUDE IGATS",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO DE OSS PARA O CENTRO ESPECIALIZADO EM REABILITACAO CER II DR EDMUNDO CAMPANHA BURJATO",
+     "bairros": [
+      "remedios"
+     ]
+    },
+    {
+     "data": "2020-10-09",
+     "valor": 4738,
+     "fornecedor": "CENTRO AUTOMOTIVO PAPALEGUAS 2 0 EIRRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A PELA AQUISICAO DE PECAS UTILIZADAS NOS VEICULOS OFICIAIS DA SECRETARIA DE SAUDE RENAULT SANDERO PLACA FZS 0335 E LOGAN PLACA FUC 5038 PERIODO 17 07 A 30 07 2020 I O M O 1 889 DE 05 08 20",
+     "bairros": [
+      "centro"
      ]
     },
     {
@@ -2200,6 +2410,17 @@
      ]
     },
     {
+     "data": "2020-10-09",
+     "valor": 50069.96,
+     "fornecedor": "CENTRO AUTOMOTIVO PAPALEGUAS 2 0 EIRRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A PELA AQUISICAO DE PECAS UTILIZADAS NOS VEICULOS OFICIAIS DA SECRETARIA DE SAUDE RENAULT MASTER FTB 3829 LOGAN EGI 0957 E S 10 CMW 0796 PERIODO 03 07 A 28 07 2020 I O M O 1 889 DE 05 08 20",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
      "data": "2020-10-28",
      "valor": 37778,
      "fornecedor": "EMPREISERVICE SERVICOS LTDA ME",
@@ -2217,6 +2438,28 @@
      "aplicacao": "0310 - SAÚDE - GERAL",
      "funcao": "SAÚDE",
      "texto": "ORGANIZACAO SOCIAL NA AREA DA SAUDE PARA O GERENCIAMENTO E EXECUCAO DOS SERVICOS DE SAUDE DO HOSPITAL MUNICIPAL ANTONIO GIGLIO",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-10-09",
+     "valor": 3199.19,
+     "fornecedor": "CENTRO AUTOMOTIVO PAPALEGUAS 2 0 EIRRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO PELA PRESTACAO DE SERVICOS DE MANUTENCAO NOS VEICULOS OFICIAIS DA SECRETARIA DE SAUDE RENAULT MASTER PLACA FTB 3829 E RENAULT LOGAN PLACA FUC 5038 PERIODO 03 07 A 30 07 20 I O M O N 1 889 DE 05 08 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-10-05",
+     "valor": 745806.95,
+     "fornecedor": "INSTITUTO TECNOLOGICO INOVACAO ITI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO A EMPRESA ESPECIALIZADA EM SERVICOS DE MANUTENCAO E SUPORTE DE TECNOLOGIA DA INFORMACAO SUPORTE TECNICO E CAPACITACAO DO SISTEMA DE P ATENDIMENTO DA SECRETARIA DE SAUDE PERIODO DE 01 A 31 08 2020 I O M O N 1 906 DE 0",
      "bairros": [
       "centro"
      ]
@@ -2244,6 +2487,17 @@
      ]
     },
     {
+     "data": "2020-11-16",
+     "valor": 81591.32,
+     "fornecedor": "INSTITUTO DE GESTAO ADMINISTRACAO E TREINAMENTO EM SAUDE IGATS",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO DE OSS PARA O CENTRO ESPECIALIZADO EM REABILITACAO CER II DR EDMUNDO CAMPANHA BURJATO",
+     "bairros": [
+      "remedios"
+     ]
+    },
+    {
      "data": "2020-11-27",
      "valor": 391864.63,
      "fornecedor": "CONSORCIO CONSTRAN EIT ROCHDALE",
@@ -2252,6 +2506,17 @@
      "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
      "bairros": [
       "rochdale"
+     ]
+    },
+    {
+     "data": "2020-11-18",
+     "valor": 745806.95,
+     "fornecedor": "INSTITUTO TECNOLOGICO INOVACAO ITI",
+     "aplicacao": "0312 - RECURSOS PARA COMBATE AO CORONAVIRUS - Convênios/Entidades/Fundos",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO COVID 19 A EMPRESA ESPECIALIZADA EM SERVICOS DE MANUTENCAO E SUPORTE DE TECNOLOGIA DA INFORMACAO ATENDIMENTO DA SECRETARIA DE SAUDE PERIODO DE 01 A 31 10 2020 I O M O N 1 938 DE 11 11 2020",
+     "bairros": [
+      "centro"
      ]
     },
     {
@@ -2285,6 +2550,28 @@
      "texto": "OBRAS DE URBANIZACAO DO JARDIM ROCHDALE",
      "bairros": [
       "rochdale"
+     ]
+    },
+    {
+     "data": "2020-12-02",
+     "valor": 38232.45,
+     "fornecedor": "CENTRO AUTOMOTIVO PAPALEGUAS 2 0 EIRRELI",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "PAGAMENTO INDENIZATORIO REFERENTE AQUISICAO DE PECAS PARA MANUTENCAO DOS VEICULOS OFICIAIS DA SECRETARIA DE SAUDE PERIODO 03 08 A 20 08 E 24 08 A 28 08 20 I O M O N 1 936 DE 06 11 2020",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2020-12-15",
+     "valor": 81591.31,
+     "fornecedor": "INSTITUTO DE GESTAO ADMINISTRACAO E TREINAMENTO EM SAUDE IGATS",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "CONTRATACAO DE OSS PARA O CENTRO ESPECIALIZADO EM REABILITACAO CER II DR EDMUNDO CAMPANHA BURJATO",
+     "bairros": [
+      "remedios"
      ]
     },
     {

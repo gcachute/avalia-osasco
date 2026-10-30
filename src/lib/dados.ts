@@ -296,6 +296,7 @@ export type CidadeResultados = {
   ideb: { serie: Record<string, number | null> | null; valor: number | null; anterior: number | null; delta: number | null };
   mortalidade: { obitos?: number; nascidos?: number; taxa: number | null; anterior: number | null; delta: number | null; serie: Record<string, number | null> };
   componentes: { educacao: number | null; saude: number | null };
+  partes: { educacao: { posicao: number | null; evolucao: number | null }; saude: { posicao: number | null; evolucao: number | null } };
   nota: number | null;
   ranking?: number;
 };
@@ -384,7 +385,7 @@ export type Dados = {
   metodologia: {
     inicioLegislatura: string;
     tiposProjeto: string[];
-    vereador: { pesos: Record<PilarVereador, number>; minimoSessoes: number };
+    vereador: { pesos: Record<PilarVereador, number>; minimoSessoes: number; regras: { curva: number; alvoLegislacao: number; alvoComissoes: number; perdaPorAdiamento: number } };
     prefeito: { pesos: Record<PilarPrefeito, number>; coberturaMinima: number };
   };
   notasVereadores: { usaRequerimentos: boolean; referencias: { legislacao: number; requerimentos: number; comissoes: number } };

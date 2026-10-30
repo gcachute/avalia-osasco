@@ -322,7 +322,8 @@ export const nomeProprio = (s: string) => (s === s.toUpperCase() ? capitaliza(s)
 export const frase = (s: string) => (s === s.toUpperCase() ? s.charAt(0) + s.slice(1).toLowerCase() : s);
 
 const MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
-export const mesAno = (m: string) => `${MESES[Number(m.slice(5, 7)) - 1]}/${m.slice(0, 4)}`;
+// Repasse sem mês conhecido (Consulta FNS, consultada por ano) vem com mês 00: mostra só o ano.
+export const mesAno = (m: string) => (m.endsWith("-00") ? m.slice(0, 4) : `${MESES[Number(m.slice(5, 7)) - 1]}/${m.slice(0, 4)}`);
 
 // Situação do plano de trabalho das emendas Pix, como o Transferegov grava.
 export const situacaoPlano = (s: string) =>

@@ -1236,11 +1236,33 @@
    "itensBairro": [
     {
      "data": "2018-02-07",
+     "valor": 125000,
+     "fornecedor": "REMOCENTER REMOCOES E SERVICOS MEDICOS LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento Indenizatório, Referente à Locação de 10 (Dez) Ambulâncias para as Unidades da Secretaria de Saúde, Durante o Mês de NOVEMBRO/2017.",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2018-02-07",
      "valor": 3000000,
      "fornecedor": "INSTITUTO SOCIAL SAUDE RESGATE A VIDA",
      "aplicacao": "0310 - SAÚDE - GERAL",
      "funcao": "SAÚDE",
      "texto": "Pagamento referente a Contratação Emergencial para Administração do Hospital Municipal Central e UPA Vicente Missiano. (Adto da 6ª parcela - Janeiro/2018)",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2018-02-07",
+     "valor": 112499.99,
+     "fornecedor": "REMOCENTER REMOCOES E SERVICOS MEDICOS LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento Indenizatório, Referente à Locação de 10 (Dez) Ambulâncias para as Unidades da Secretaria de Saúde, Durante ao Período de 04/10 a 31/10/2017.",
      "bairros": [
       "centro"
      ]
@@ -1275,7 +1297,15 @@
      "funcao": "URBANISMO",
      "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
      "bairros": [
-      "vila-yara"
+      "vila-yara",
+      "centro",
+      "industrial-autonomistas",
+      "industrial-centro",
+      "km-18",
+      "parque-continental",
+      "quintauna",
+      "vila-campesina",
+      "vila-militar"
      ]
     },
     {
@@ -1430,6 +1460,28 @@
      "texto": "Construção da Creche Jardim Roberto II - Rua Claudio Aparecido de Iliveira, 85 - Jd. Roberto (TC 5872/2013 Pro Infância Tipo 2) Contrato n° 008/2018 - REPASSE.",
      "bairros": [
       "jardim-roberto"
+     ]
+    },
+    {
+     "data": "2018-09-05",
+     "valor": 295497.47,
+     "fornecedor": "MAXLAV LAVANDERIA ESPECIALIZADA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento Indenizatório referente a Serviços prestados de Lavanderia hospitalar, nas Unidades da Secretaria de Saúde no mês de Abril/2018.",
+     "bairros": [
+      "centro"
+     ]
+    },
+    {
+     "data": "2018-09-05",
+     "valor": 4720.93,
+     "fornecedor": "MAXLAV LAVANDERIA ESPECIALIZADA LTDA",
+     "aplicacao": "0310 - SAÚDE - GERAL",
+     "funcao": "SAÚDE",
+     "texto": "Pagamento Indenizatório referente a Serviços prestados de Lavanderia hospitalar, nas Unidades da Secretaria de Saúde no mês de Abril/2018.",
+     "bairros": [
+      "centro"
      ]
     },
     {

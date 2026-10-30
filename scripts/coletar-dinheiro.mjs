@@ -270,13 +270,15 @@ if (SO.includes("emendas")) {
     });
   }
   const codigos = new Set(recebimentos.map((r) => r.codigo));
+  // Emendas de saúde que só aparecem na Consulta FNS: o número vem sem o ano, por isso a comparação é pelos 8 dígitos finais.
+  const doFns = new Set((existsSync(`${PASTA}/emendas-fns.json`) ? JSON.parse(readFileSync(`${PASTA}/emendas-fns.json`, "utf8")).repasses : []).map((r) => r.emenda));
   const emendas = {};
   // Código de todos os autores: o histórico de alguns pagamentos da Prefeitura cita emendas que não aparecem como
   // recebidas por Osasco (vieram por outro caminho); pelo código dá para saber de quem são.
   const autores = {};
   for await (const r of tabela(zip, /EmendasParlamentares\.csv$/i)) {
     if (/^\d{4}$/.test(r["Código do Autor da Emenda"])) autores[r["Código do Autor da Emenda"]] = r["Nome do Autor da Emenda"];
-    if (!codigos.has(r["Código da Emenda"])) continue;
+    if (!codigos.has(r["Código da Emenda"]) && !doFns.has(r["Código da Emenda"].slice(-8))) continue;
     emendas[r["Código da Emenda"]] = {
       ano: Number(r["Ano da Emenda"]),
       numero: r["Número da emenda"],
@@ -349,11 +351,13 @@ if (SO.includes("parlamentares")) {
   const APELIDOS = { "RIBAMAR ANTONIO DA SILVA": "RIBAMAR SILVA" };
   const emendas = JSON.parse(readFileSync(`${PASTA}/emendas-federais.json`, "utf8"));
   const pix = existsSync(`${PASTA}/pix-federais.json`) ? JSON.parse(readFileSync(`${PASTA}/pix-federais.json`, "utf8")) : { planos: [] };
-  const nomes = [...new Set([...emendas.recebimentos.map((r) => r.autor), ...pix.planos.map((p) => p.parlamentar)])].filter((n) => !/^(RELATOR GERAL|COM\.|BANCADA|Sem informa)/i.test(n));
+  const fns = (existsSync(`${PASTA}/emendas-fns.json`) ? JSON.parse(readFileSync(`${PASTA}/emendas-fns.json`, "utf8")).repasses : []).map((r) => ({ autor: emendas.autores[r.emenda.slice(0, 4)], ano: r.ano })).filter((r) => r.autor);
+  const nomes = [...new Set([...emendas.recebimentos.map((r) => r.autor), ...fns.map((r) => r.autor), ...pix.planos.map((p) => p.parlamentar)])].filter((n) => !/^(RELATOR GERAL|COM\.|BANCADA|Sem informa)/i.test(n));
 
   // Anos das emendas de cada autor: quem foi deputado e depois senador (ou o contrário) é procurado na casa da época.
   const anosDe = {};
   for (const r of emendas.recebimentos) (anosDe[r.autor] ??= new Set()).add(Number(r.codigo.slice(0, 4)) || Number(r.mes.slice(0, 4)));
+  for (const r of fns) (anosDe[r.autor] ??= new Set()).add(r.ano);
   for (const p of pix.planos) (anosDe[p.parlamentar] ??= new Set()).add(p.ano);
   const json = async (url) => {
     const r = await (await baixar(url, { headers: { Accept: "application/json" } })).json();
