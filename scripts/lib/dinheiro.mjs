@@ -1,4 +1,4 @@
-// Monta os dados da página "Dinheiro de fora" a partir de data/dinheiro/*.json (ver scripts/coletar-dinheiro.mjs):
+// Monta os dados da página "Verbas de fora" (/verbas) a partir de data/dinheiro/*.json (ver scripts/coletar-dinheiro.mjs):
 // quanto chega da União e do Estado, quem mandou emendas, para onde foi o dinheiro e quais bairros aparecem citados.
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 
@@ -67,7 +67,7 @@ function juntarFolha(lista) {
   return (folha.length ? [...resto, { cnpj: "folha", nome: "Salários e encargos dos servidores", valor: r2(total), principal: null }] : resto).sort((a, b) => b.valor - a.valor);
 }
 
-// Endereço curto de cada autor (/dinheiro?autor=tabata-amaral).
+// Endereço curto de cada autor (/verbas?autor=tabata-amaral).
 const slug = (s) =>
   s
     .normalize("NFD")

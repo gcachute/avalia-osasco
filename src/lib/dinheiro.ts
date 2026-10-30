@@ -1,4 +1,4 @@
-// Tipos e rótulos da página "Dinheiro de fora" (dados gerados por scripts/lib/dinheiro.mjs em src/data/dinheiro.json).
+// Tipos e rótulos da página "Verbas de fora" (/verbas) (dados gerados por scripts/lib/dinheiro.mjs em src/data/dinheiro.json).
 // O arquivo de dados é importado só pela página: este módulo também vai para o painel do mapa, no navegador.
 
 export type Fonte = { nome: string; url: string; coletadoEm?: string; posicao?: string };
@@ -157,7 +157,7 @@ export type ItemDinheiroBairro = {
   valor: number;
   texto: string;
   quem: string | null;
-  // Autor da emenda (chave usada em /dinheiro?autor=...), quando o item vem de uma emenda conhecida.
+  // Autor da emenda (chave usada em /verbas?autor=...), quando o item vem de uma emenda conhecida.
   autor?: string | null;
   pagamentos?: number;
   outrosBairros: number;

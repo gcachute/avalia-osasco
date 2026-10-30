@@ -13,7 +13,7 @@ const ABAS: { chave: Aba; nome: string }[] = [
   { chave: "perfil", nome: "Perfil" },
   { chave: "evolucao", nome: "Histórico" },
   { chave: "politica", nome: "Documentos" },
-  { chave: "dinheiro", nome: "Dinheiro" },
+  { chave: "dinheiro", nome: "Verbas" },
   { chave: "eleicao", nome: "Eleição" },
   { chave: "servicos", nome: "Serviços" },
   { chave: "seguranca", nome: "Segurança" },
