@@ -1123,11 +1123,17 @@ export function MapaBairros({
                   {feed.map((i) => (
                     <li
                       key={`${mes}-${i.id}`}
-                      className="animate-[mapa-painel_0.45s_ease_both] rounded-lg border border-slate-100 bg-slate-50 p-2.5 text-xs"
+                      className={`animate-[mapa-painel_0.45s_ease_both] cursor-pointer rounded-lg border p-2.5 text-xs transition-colors ${
+                        citados.length && i.bairros.every((b) => citados.includes(b)) ? "border-blue-200 bg-blue-50" : "border-slate-100 bg-slate-50 hover:bg-slate-100"
+                      }`}
                       style={{ borderLeft: `3px solid ${corOrigem(i.origem)}` }}
-                      // Todos os bairros citados pelo documento ficam tracejados no mapa enquanto o ponteiro está nele.
-                      onMouseEnter={() => setCitados(i.bairros)}
-                      onMouseLeave={() => setCitados([])}
+                      // Clicar no documento colore no mapa todos os bairros que ele cita e ajusta o zoom; clicar de novo desfaz.
+                      onClick={() => {
+                        const ja = citados.length > 0 && i.bairros.every((b) => citados.includes(b)) && citados.length === i.bairros.length;
+                        setCitados(ja ? [] : i.bairros);
+                        if (ja) irPara(null);
+                        else enquadrar(i.bairros);
+                      }}
                     >
                       <div className="flex flex-wrap items-center gap-x-2 text-[11px] text-slate-500">
                         <span className="font-medium text-slate-700">{i.tipo}</span>
@@ -1139,7 +1145,8 @@ export function MapaBairros({
                               <button
                                 key={id}
                                 className="font-medium text-blue-800 hover:underline"
-                                onClick={() => {
+                                onClick={(e) => {
+                                  e.stopPropagation();
                                   citadosAoEscolher.current = i.bairros.filter((b) => b !== id);
                                   setSelecionado(id);
                                 }}
