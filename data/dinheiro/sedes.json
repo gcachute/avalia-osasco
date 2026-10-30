@@ -1,0 +1,843 @@
+{
+  "fonte": "Receita Federal, cadastro de CNPJ (BrasilAPI)",
+  "url": "https://brasilapi.com.br/docs",
+  "coletadoEm": "2026-10-30",
+  "sedes": {
+    "18160462000131": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "07118264000193": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "03817246000149": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "07900613000124": {
+      "municipio": "SAO LOURENCO DA SERRA",
+      "uf": "SP"
+    },
+    "11891484000122": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "08070362000160": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "01916756000148": {
+      "municipio": "SOROCABA",
+      "uf": "SP"
+    },
+    "20697582000114": {
+      "municipio": "GASPAR",
+      "uf": "SC"
+    },
+    "58625344000257": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "03641257000110": {
+      "municipio": "SAO CAETANO DO SUL",
+      "uf": "SP"
+    },
+    "60979457000707": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "60166832000104": {
+      "municipio": "SAO CAETANO DO SUL",
+      "uf": "SP"
+    },
+    "02582267000160": {
+      "municipio": "MUNDO NOVO",
+      "uf": "MS"
+    },
+    "20672533000127": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "07900613001015": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "29979036038547": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "00360305000104": {
+      "municipio": "BRASILIA",
+      "uf": "DF"
+    },
+    "46384111000140": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "13846262000113": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "43640754000119": {
+      "municipio": "GUARULHOS",
+      "uf": "SP"
+    },
+    "67729178000491": {
+      "municipio": "JAGUARIUNA",
+      "uf": "SP"
+    },
+    "61610283000188": {
+      "municipio": "BARUERI",
+      "uf": "SP"
+    },
+    "46393500000131": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "15521275000148": {
+      "municipio": "COTIA",
+      "uf": "SP"
+    },
+    "03668066000142": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "04243746000187": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "03764882000150": {
+      "municipio": "BARUERI",
+      "uf": "SP"
+    },
+    "08618261000181": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "07900613000809": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "53524534000183": {
+      "municipio": "PACAEMBU",
+      "uf": "SP"
+    },
+    "04539279000137": {
+      "municipio": "BARUERI",
+      "uf": "SP"
+    },
+    "00676679000133": {
+      "municipio": "MUNDO NOVO",
+      "uf": "MS"
+    },
+    "00530493000171": {
+      "municipio": "BRASILIA",
+      "uf": "DF"
+    },
+    "02119775000106": {
+      "municipio": "COTIA",
+      "uf": "SP"
+    },
+    "46374500000194": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "19492142000141": {
+      "municipio": "GUARULHOS",
+      "uf": "SP"
+    },
+    "59042234000144": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "51437861000172": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "04237324000107": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "08304991000108": {
+      "municipio": "SAO JOSE DO RIO PRETO",
+      "uf": "SP"
+    },
+    "28515824000113": {
+      "municipio": "CRUZEIRO",
+      "uf": "SP"
+    },
+    "26570361000167": {
+      "municipio": "JUSSARA",
+      "uf": "GO"
+    },
+    "12517378000146": {
+      "municipio": "VARZEA PAULISTA",
+      "uf": "SP"
+    },
+    "31588978000140": {
+      "municipio": "ATILIO VIVACQUA",
+      "uf": "ES"
+    },
+    "24005322000191": {
+      "municipio": "GOIANIA",
+      "uf": "GO"
+    },
+    "20371330000109": {
+      "municipio": "CRAVINHOS",
+      "uf": "SP"
+    },
+    "17737428000114": {
+      "municipio": "CAMBE",
+      "uf": "PR"
+    },
+    "68886605000165": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "19910840000110": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "17189700000179": {
+      "municipio": "ENCANTADO",
+      "uf": "RS"
+    },
+    "04740876000125": {
+      "municipio": "BARUERI",
+      "uf": "SP"
+    },
+    "09294054000181": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "24516372000133": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "24386755000134": {
+      "municipio": "BARRETOS",
+      "uf": "SP"
+    },
+    "47708771000100": {
+      "municipio": "SAO BERNARDO DO CAMPO",
+      "uf": "SP"
+    },
+    "18979485000172": {
+      "municipio": "SAO ROQUE",
+      "uf": "SP"
+    },
+    "05471234000130": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "56838949000110": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "20216703000169": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "27374330000101": {
+      "municipio": "BOITUVA",
+      "uf": "SP"
+    },
+    "30846375000138": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "13032053000136": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "30535468000141": {
+      "municipio": "COTIA",
+      "uf": "SP"
+    },
+    "15801092000186": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "24380578002041": {
+      "municipio": "JABOATAO DOS GUARARAPES",
+      "uf": "PE"
+    },
+    "01004347000175": {
+      "municipio": "GUARUJA",
+      "uf": "SP"
+    },
+    "06158571000135": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "04709243000154": {
+      "municipio": "VARGINHA",
+      "uf": "MG"
+    },
+    "07554943000105": {
+      "municipio": "ENCANTADO",
+      "uf": "RS"
+    },
+    "04063503000167": {
+      "municipio": "GOIANIA",
+      "uf": "GO"
+    },
+    "25386146000148": {
+      "municipio": "CURITIBA",
+      "uf": "PR"
+    },
+    "02967807000123": {
+      "municipio": "HUMAITA",
+      "uf": "AM"
+    },
+    "05758045000143": {
+      "municipio": "SANTOS",
+      "uf": "SP"
+    },
+    "20226804000110": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "11620725000107": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "28633887000174": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "01227588000183": {
+      "municipio": "BRASILIA",
+      "uf": "DF"
+    },
+    "06344497000141": {
+      "municipio": "RIBEIRAO PRETO",
+      "uf": "SP"
+    },
+    "26635388000190": {
+      "municipio": "ORLANDIA",
+      "uf": "SP"
+    },
+    "46374500015892": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "02629588000172": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "15021981000120": {
+      "municipio": "POA",
+      "uf": "SP"
+    },
+    "15046859000109": {
+      "municipio": "JAGUARIUNA",
+      "uf": "SP"
+    },
+    "10718875000187": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "51441939000122": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "18540483000182": {
+      "municipio": "SUMARE",
+      "uf": "SP"
+    },
+    "50351626000110": {
+      "municipio": "CESARIO LANGE",
+      "uf": "SP"
+    },
+    "03502775000153": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "37409100000186": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "12361832000112": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "92781335000102": {
+      "municipio": "SAO LEOPOLDO",
+      "uf": "RS"
+    },
+    "74400052000191": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "03948933000101": {
+      "municipio": "BARUERI",
+      "uf": "SP"
+    },
+    "01854654000145": {
+      "municipio": "SANTANA DE PARNAIBA",
+      "uf": "SP"
+    },
+    "02423591000135": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "23236167000151": {
+      "municipio": "SAO CAETANO DO SUL",
+      "uf": "SP"
+    },
+    "01958324000108": {
+      "municipio": "SANTO ANDRE",
+      "uf": "SP"
+    },
+    "47361100000107": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "38007528000165": {
+      "municipio": "RIBEIRAO DAS NEVES",
+      "uf": "MG"
+    },
+    "62413869000115": {
+      "municipio": "RIBEIRAO PRETO",
+      "uf": "SP"
+    },
+    "08933601000169": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "23217514000107": {
+      "municipio": "AMERICANA",
+      "uf": "SP"
+    },
+    "30060599000110": {
+      "municipio": "SAO JOSE DOS CAMPOS",
+      "uf": "SP"
+    },
+    "13498596000143": {
+      "municipio": "CARAPICUIBA",
+      "uf": "SP"
+    },
+    "43677822000114": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "62162847000120": {
+      "municipio": "ITATIBA",
+      "uf": "SP"
+    },
+    "04770650000177": {
+      "municipio": "CURITIBA",
+      "uf": "PR"
+    },
+    "33337565000118": {
+      "municipio": "ARARAQUARA",
+      "uf": "SP"
+    },
+    "03743156000150": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "67192609000180": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "09362084000188": {
+      "municipio": "BARUERI",
+      "uf": "SP"
+    },
+    "23228205000124": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "38408899000159": {
+      "municipio": "PINHAIS",
+      "uf": "PR"
+    },
+    "29419365000137": {
+      "municipio": "BARUERI",
+      "uf": "SP"
+    },
+    "34301255000106": {
+      "municipio": "SAO JOSE DOS CAMPOS",
+      "uf": "SP"
+    },
+    "02987552000160": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "21690964000189": {
+      "municipio": "CURITIBA",
+      "uf": "PR"
+    },
+    "12441147000104": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "31635100000118": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "21111808000116": {
+      "municipio": "ITAJAI",
+      "uf": "SC"
+    },
+    "14512229000543": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "05465986000199": {
+      "municipio": "BRASILIA",
+      "uf": "DF"
+    },
+    "20183526000161": {
+      "municipio": "PITIMBU",
+      "uf": "PB"
+    },
+    "08092188000157": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "16996080000117": {
+      "municipio": "COTIA",
+      "uf": "SP"
+    },
+    "52350554000112": {
+      "municipio": "COTIA",
+      "uf": "SP"
+    },
+    "12043445000138": {
+      "municipio": "IBIUNA",
+      "uf": "SP"
+    },
+    "14512229000110": {
+      "municipio": "SANTOS",
+      "uf": "SP"
+    },
+    "05903138000114": {
+      "municipio": "PIRACICABA",
+      "uf": "SP"
+    },
+    "73068231000100": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "10728371000148": {
+      "municipio": "CEDRAL",
+      "uf": "SP"
+    },
+    "39422495000182": {
+      "municipio": "BARUERI",
+      "uf": "SP"
+    },
+    "50394488000157": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "40976095000106": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "20694859000236": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "29057376000114": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "35741144000183": {
+      "municipio": "FRANCA",
+      "uf": "SP"
+    },
+    "07334962000126": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "65035222000195": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "11896538000142": {
+      "municipio": "POCOS DE CALDAS",
+      "uf": "MG"
+    },
+    "45997558000121": {
+      "municipio": "GUARULHOS",
+      "uf": "SP"
+    },
+    "47173729000204": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "53499240000149": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "22387259000170": {
+      "municipio": "SAO ROQUE",
+      "uf": "SP"
+    },
+    "58426628000133": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "07237073000140": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "13034156000135": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "53421046000140": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "05489375000180": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "47567598000169": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "40580701000161": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "53420972000100": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "08773990000102": {
+      "municipio": "MACAIBA",
+      "uf": "RN"
+    },
+    "05525250000169": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "39357755000183": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "05367970000143": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "11472645000143": {
+      "municipio": "PIRAPORA DO BOM JESUS",
+      "uf": "SP"
+    },
+    "42619993000124": {
+      "municipio": "ERVALIA",
+      "uf": "MG"
+    },
+    "15153524000190": {
+      "municipio": "ALMIRANTE TAMANDARE",
+      "uf": "PR"
+    },
+    "20483193000196": {
+      "municipio": "BLUMENAU",
+      "uf": "SC"
+    },
+    "64745847000188": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "49009043000127": {
+      "municipio": "JOINVILLE",
+      "uf": "SC"
+    },
+    "36181473000180": {
+      "municipio": "CURITIBA",
+      "uf": "PR"
+    },
+    "12758923000196": {
+      "municipio": "BAURU",
+      "uf": "SP"
+    },
+    "03652030000170": {
+      "municipio": "BARAO DE COTEGIPE",
+      "uf": "RS"
+    },
+    "08243988000121": {
+      "municipio": "CUIABA",
+      "uf": "MT"
+    },
+    "11211419000109": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "03434334000161": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "31179291000150": {
+      "municipio": "SANTO ANDRE",
+      "uf": "SP"
+    },
+    "21700911000100": {
+      "municipio": "CARIACICA",
+      "uf": "ES"
+    },
+    "32396720000104": {
+      "municipio": "SERRA",
+      "uf": "ES"
+    },
+    "21972444000169": {
+      "municipio": "BOM RETIRO",
+      "uf": "SC"
+    },
+    "43449401000136": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "05118766000199": {
+      "municipio": "RIBEIRAO PIRES",
+      "uf": "SP"
+    },
+    "15658767000180": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "11858330000139": {
+      "municipio": "CURITIBA",
+      "uf": "PR"
+    },
+    "53249470000150": {
+      "municipio": "SAO PAULO",
+      "uf": "SP"
+    },
+    "17238455000142": {
+      "municipio": "CAXIAS DO SUL",
+      "uf": "RS"
+    },
+    "26044732000177": {
+      "municipio": "JOAO PESSOA",
+      "uf": "PB"
+    },
+    "44384524000107": {
+      "municipio": "FORMIGA",
+      "uf": "MG"
+    },
+    "20339865000194": {
+      "municipio": "SANTA RITA DO SAPUCAI",
+      "uf": "MG"
+    },
+    "10450805000190": {
+      "municipio": "SAO BERNARDO DO CAMPO",
+      "uf": "SP"
+    },
+    "21613975000165": {
+      "municipio": "CARIACICA",
+      "uf": "ES"
+    },
+    "55738820000177": {
+      "municipio": "BLUMENAU",
+      "uf": "SC"
+    },
+    "14363859000170": {
+      "municipio": "ITABORAI",
+      "uf": "RJ"
+    },
+    "29940579000154": {
+      "municipio": "GUARULHOS",
+      "uf": "SP"
+    },
+    "11149885000101": {
+      "municipio": "SAO JOSE DO RIO PRETO",
+      "uf": "SP"
+    },
+    "64106552000161": {
+      "municipio": "BARIRI",
+      "uf": "SP"
+    },
+    "37984422000159": {
+      "municipio": "JANDIRA",
+      "uf": "SP"
+    },
+    "38425816000130": {
+      "municipio": "RIO DE JANEIRO",
+      "uf": "RJ"
+    },
+    "13611287000138": {
+      "municipio": "CARUARU",
+      "uf": "PE"
+    },
+    "59999498000190": {
+      "municipio": "GUARULHOS",
+      "uf": "SP"
+    },
+    "55012019000140": {
+      "municipio": "BIRIGUI",
+      "uf": "SP"
+    },
+    "49949246000101": {
+      "municipio": "GOIANIA",
+      "uf": "GO"
+    },
+    "54638483000183": {
+      "municipio": "BRASILIA",
+      "uf": "DF"
+    },
+    "39905061000133": {
+      "municipio": "BARRA VELHA",
+      "uf": "SC"
+    },
+    "33275120000150": {
+      "municipio": "SAO JOSE",
+      "uf": "SC"
+    },
+    "33618396000194": {
+      "municipio": "SAO JOSE",
+      "uf": "SC"
+    },
+    "23186928000108": {
+      "municipio": "CURITIBA",
+      "uf": "PR"
+    },
+    "20649395000165": {
+      "municipio": "CATANDUVA",
+      "uf": "SP"
+    },
+    "16643051000171": {
+      "municipio": "MATINHOS",
+      "uf": "PR"
+    },
+    "58491452000101": {
+      "municipio": "BELO HORIZONTE",
+      "uf": "MG"
+    },
+    "28182306000125": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "28316531000107": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "30527194000149": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "32015402000156": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "23794590000177": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "32241726000102": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    },
+    "53415634000171": {
+      "municipio": "OSASCO",
+      "uf": "SP"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { PorQueOsasco } from "@/components/dinheiro/PorQueOsasco";
 import { Abre } from "@/components/movimento/Movimento";
 import { nomeProprio, type Integridade, type Modalidades } from "@/lib/dinheiro";
 import { dinheiroCurto, listaBR, pct, reaisExato } from "@/lib/formato";
@@ -123,6 +124,7 @@ export function Contratacoes({ i }: { i: Integridade }) {
       {i.dispensasEmendas.length > 0 && (
         <div>
           <div className="text-xs font-medium text-slate-900">Quem mais recebeu dinheiro de emenda sem licitação</div>
+          <PorQueOsasco className="mt-1">pagamentos feitos pela Prefeitura de Osasco. A sede de cada um é a do cadastro de CNPJ.</PorQueOsasco>
           <ul className="mt-1 divide-y divide-slate-100 text-xs">
             {i.dispensasEmendas.map((d) => (
               <li key={d.fornecedor} className="flex items-baseline gap-3 py-1.5">
@@ -130,6 +132,7 @@ export function Contratacoes({ i }: { i: Integridade }) {
                   <span className="block text-slate-800">{nomeProprio(d.fornecedor)}</span>
                   <span className="block text-[11px] text-slate-500">
                     {d.modalidade}, {listaBR(d.anos)}
+                    {d.sede && ` · sede em ${d.sede}`}
                   </span>
                 </span>
                 <span className="shrink-0 tabular-nums text-slate-900">{reaisExato(d.valor)}</span>

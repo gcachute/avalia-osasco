@@ -96,7 +96,7 @@ export type ResumoGasto = {
   quantidadeFornecedores: number;
   funcoes: { nome: string; valor: number }[];
   aplicacoes: { nome: string; valor: number }[];
-  fornecedores: { cnpj: string; nome: string; valor: number; principal: string | null }[];
+  fornecedores: { cnpj: string; nome: string; valor: number; principal: string | null; sede?: string | null }[];
 };
 
 export type GastoAno = {
@@ -105,9 +105,9 @@ export type GastoAno = {
   tesouro: number;
   federal: ResumoGasto | null;
   estadual: ResumoGasto | null;
-  emendasFederais: { total: number; fornecedores: { cnpj: string; nome: string; valor: number }[] } | null;
-  emendasEstaduais: { total: number; fornecedores: { cnpj: string; nome: string; valor: number }[] } | null;
-  emendasVereadores: { total: number; fornecedores: { cnpj: string; nome: string; valor: number }[] } | null;
+  emendasFederais: { total: number; fornecedores: { cnpj: string; nome: string; valor: number; sede?: string | null }[] } | null;
+  emendasEstaduais: { total: number; fornecedores: { cnpj: string; nome: string; valor: number; sede?: string | null }[] } | null;
+  emendasVereadores: { total: number; fornecedores: { cnpj: string; nome: string; valor: number; sede?: string | null }[] } | null;
 };
 
 // Forma de contratação: valor pago por licitação, dispensa, inexigibilidade e o que não passa por contratação.
@@ -129,9 +129,9 @@ export type Integridade = {
   conferidos: number;
   listas: Record<string, string>;
   fonteListas: Fonte;
-  punidos: { cnpj: string; nome: string; recebeu: number; anos: string[]; deEmenda: number; punicoes: Punicao[] }[];
+  punidos: { cnpj: string; nome: string; recebeu: number; anos: string[]; deEmenda: number; punicoes: Punicao[]; sede?: string | null }[];
   modalidades: { ano: number; emendas: Modalidades; todos: Modalidades }[];
-  dispensasEmendas: { fornecedor: string; valor: number; anos: number[]; modalidade: string }[];
+  dispensasEmendas: { cnpj: string; fornecedor: string; valor: number; anos: number[]; modalidade: string; sede?: string | null }[];
   relator: { total: number; quantidade: number; anos: number[] };
   pix: { impedidos: { autor: string; ano: number; valor: number }[]; atrasados: { autor: string; ano: number; valor: number; fim: string; situacao: string }[]; semObjeto: number };
   atrasadas: { autor: string; codigo: string; ano: number; anosRecebido: number[]; valor: number }[];

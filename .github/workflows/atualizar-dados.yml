@@ -59,6 +59,11 @@ jobs:
         run: npm run coletar:enderecos
         continue-on-error: true
 
+      # Sede de quem recebeu (só consulta os CNPJs que ainda não estão no arquivo).
+      - name: Sedes das empresas (cadastro de CNPJ)
+        run: npm run coletar:sedes
+        continue-on-error: true
+
       - name: Recalcular notas
         run: npm run dados
 

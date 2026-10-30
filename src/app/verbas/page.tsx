@@ -254,8 +254,8 @@ export default function PaginaDinheiro() {
 
       <ComoLer>
           <li>
-            Os valores são os recebidos pela Prefeitura, pelos fundos municipais e por entidades com sede em Osasco. As empresas e entidades da conferência de
-            punidos aparecem porque receberam verbas pagas pela Prefeitura.
+            Os valores são os recebidos pela Prefeitura, pelos fundos municipais e por entidades com sede em Osasco. Empresas e entidades de outras cidades
+            aparecem porque receberam pagamento da Prefeitura. O indicador Por que Osasco mostra o registro que faz essa ligação.
           </li>
           <li>
             Dinheiro obrigatório (FPM, ICMS, IPVA, FUNDEB) chega todo mês por regra fixa, sem pedido de ninguém. Emendas e convênios dependem de um

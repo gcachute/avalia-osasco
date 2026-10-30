@@ -21,6 +21,7 @@ import {
 } from "@/lib/dinheiro";
 import { comBase, dataBR, dinheiroCurto, iniciais, reaisExato } from "@/lib/formato";
 import { DinheiroAnimado } from "@/components/Animacoes";
+import { PorQueOsasco } from "@/components/dinheiro/PorQueOsasco";
 import { Abre, Segmentos } from "@/components/movimento/Movimento";
 
 // ---------- Peças pequenas ----------
@@ -621,9 +622,10 @@ function LinhaEntidade({ x, maximo, aoAbrir, indice }: { x: Entidade; maximo: nu
               </button>
             ))}
           </div>
-          <div className="mt-0.5 text-[11px] text-slate-500">
-            Destino na emenda: {[...new Set(x.itens.map((i) => (i.e.localidade ? destinoDe(i.e.localidade) : "não informado")))].join(", ")}
-          </div>
+          <PorQueOsasco className="mt-1">
+            a entidade tem sede na cidade, segundo o cadastro de CNPJ. Destino na emenda:{" "}
+            {[...new Set(x.itens.map((i) => (i.e.localidade ? destinoDe(i.e.localidade) : "não informado")))].join(", ")}.
+          </PorQueOsasco>
           <span className="relative mt-1.5 block h-1.5" aria-hidden>
             <span className="absolute inset-0 rounded bg-slate-100" />
             <span className="barra-anim absolute inset-y-0 left-0 rounded" style={{ width: `${Math.max(0.5, (x.total / maximo) * 100)}%`, background: "var(--grafico-4)" }} />
@@ -771,7 +773,7 @@ export function QuemMandou({ autores, vereadores, porPartido }: { autores: Autor
           <>
             <p className="mt-3 text-xs text-slate-500">
               Associações e institutos sediados em Osasco que receberam emenda federal direto. Esse dinheiro não passa pela Prefeitura e não entra nos
-              valores das outras abas. O destino é o que consta no registro oficial de cada emenda.
+              valores das outras abas.
             </p>
             <ol className="mt-1 divide-y divide-slate-100">
               {entidades.map((x, k) => (
