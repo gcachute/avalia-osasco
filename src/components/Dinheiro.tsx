@@ -27,6 +27,9 @@ function Linha({ nome, etiqueta, valor, maximo, cor, detalhe }: { nome: string; 
   );
 }
 
+// Parte bruta que não chega livre (retida para o FUNDEB): listras na cor da linha sobre um fundo claro da mesma cor.
+const listrado = (cor: string) => `repeating-linear-gradient(135deg, ${cor} 0 2px, color-mix(in srgb, ${cor} 22%, transparent) 2px 5px)`;
+
 const OBRIGATORIO = "obrigatório, por lei";
 const PROGRAMA = "por programa, segue regras do ministério";
 const VOLUNTARIO = "voluntário, depende de acordo";
@@ -193,7 +196,8 @@ function EntradaExpansivel({
   const e = lista.find((x) => x.ano === ano)!;
   const antes = lista.find((x) => x.ano === ano - 1);
   const valor = l.valor(e);
-  const serie = [...lista].sort((a, b) => a.ano - b.ano).map((x) => ({ ano: x.ano, v: l.valor(x) }));
+  const retido = l.retido?.(e) ?? 0;
+  const serie = [...lista].sort((a, b) => a.ano - b.ano).map((x) => ({ ano: x.ano, v: l.valor(x), r: l.retido?.(x) ?? 0 }));
   const maxSerie = Math.max(...serie.map((s) => s.v), 1);
   const contas = l.contas(e);
   return (
@@ -211,7 +215,10 @@ function EntradaExpansivel({
         </span>
         <span className="relative h-3 max-sm:order-4 max-sm:col-span-3" aria-hidden>
           <span className="absolute inset-0 rounded bg-slate-100" />
-          <span className="barra-anim absolute inset-y-0 left-0 rounded" style={{ width: `${maximo ? Math.max(0.5, (valor / maximo) * 100) : 0}%`, background: cor }} />
+          <span className="barra-anim absolute inset-y-0 left-0 flex overflow-hidden rounded" style={{ width: `${maximo ? Math.max(0.5, (valor / maximo) * 100) : 0}%` }}>
+            <span className="h-full" style={{ width: `${valor ? ((valor - retido) / valor) * 100 : 100}%`, background: cor }} />
+            {retido > 0 && <span className="h-full flex-1" style={{ background: listrado(cor) }} />}
+          </span>
         </span>
         <span className="text-right font-semibold tabular-nums text-slate-900">{dinheiroCurto(valor)}</span>
         <svg viewBox="0 0 20 20" className={`h-4 w-4 shrink-0 text-slate-400 transition-transform ${aberto ? "rotate-180" : ""}`} aria-hidden>
@@ -221,10 +228,10 @@ function EntradaExpansivel({
       <Abre aberto={aberto} id={id}>
         <div className="mt-1 mb-2 space-y-3 rounded-xl border border-slate-200 p-3 text-xs">
           <p className="text-slate-600">{l.explica}</p>
-          {(l.retido?.(e) ?? 0) > 0 && (
+          {retido > 0 && (
             <p className="rounded-lg bg-teal-50 px-2.5 py-1.5 text-teal-900 ring-1 ring-teal-200">
-              Desse valor, {dinheiroCurto(l.retido!(e))} ({pct(l.retido!(e) / valor)}) ficaram retidos para formar o FUNDEB e voltam pela linha do FUNDEB. Chegaram
-              livres para a Prefeitura {dinheiroCurto(valor - l.retido!(e))}.
+              Desse valor, {dinheiroCurto(retido)} ({pct(retido / valor)}, a parte listrada da barra) ficaram retidos para formar o FUNDEB e voltam pela linha do
+              FUNDEB. Chegaram livres para a Prefeitura {dinheiroCurto(valor - retido)}.
             </p>
           )}
           {l.chave === "fundeb" && e.uniao.paraFundebTotal + e.estado.paraFundebTotal > 0 && (
@@ -253,15 +260,18 @@ function EntradaExpansivel({
                   key={s.ano}
                   type="button"
                   onClick={() => setAno(s.ano)}
-                  title={`${s.ano}: ${dinheiroCurto(s.v)}`}
-                  aria-label={`${s.ano}: ${dinheiroCurto(s.v)}`}
+                  title={`${s.ano}: ${dinheiroCurto(s.v)}${s.r ? `, dos quais ${dinheiroCurto(s.r)} retidos para o FUNDEB` : ""}`}
+                  aria-label={`${s.ano}: ${dinheiroCurto(s.v)}${s.r ? `, dos quais ${dinheiroCurto(s.r)} retidos para o FUNDEB` : ""}`}
                   aria-pressed={s.ano === ano}
                   className="group flex h-full min-w-0 flex-1 flex-col items-center justify-end gap-1"
                 >
                   <span
-                    className="w-full max-w-8 rounded-t transition-[height,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:opacity-100"
-                    style={{ height: `${Math.max(3, (s.v / maxSerie) * 100)}%`, background: cor, opacity: s.ano === ano ? 1 : 0.35 }}
-                  />
+                    className="flex w-full max-w-8 flex-col overflow-hidden rounded-t transition-[height,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:opacity-100"
+                    style={{ height: `${Math.max(3, (s.v / maxSerie) * 100)}%`, opacity: s.ano === ano ? 1 : 0.35 }}
+                  >
+                    {s.r > 0 && <span style={{ height: `${(s.r / s.v) * 100}%`, background: listrado(cor) }} />}
+                    <span className="flex-1" style={{ background: cor }} />
+                  </span>
                   <span className={`text-[10px] tabular-nums ${s.ano === ano ? "font-semibold text-slate-900" : "text-slate-500"}`}>{String(s.ano).slice(2)}</span>
                 </button>
               ))}
@@ -337,6 +347,16 @@ export function ComposicaoEntradas({ anos }: { anos: EntradaAno[] }) {
         O total não conta duas vezes os 20% do FPM, do ICMS e do IPVA que vão para o FUNDEB e voltam por ele; as linhas abaixo mostram o valor bruto. Toque
         numa linha para ver o que ela é, como mudou e as contas oficiais que a formam.
       </p>
+      <div className="-mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-slate-600">
+        <span className="inline-flex items-center gap-1.5">
+          <span className="h-2.5 w-5 rounded-sm" style={{ background: "var(--grafico-2)" }} aria-hidden />
+          líquido: chega livre para a Prefeitura
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <span className="h-2.5 w-5 rounded-sm" style={{ background: listrado("var(--grafico-2)") }} aria-hidden />
+          retido para o FUNDEB (o bruto é a barra inteira)
+        </span>
+      </div>
       {bloco("Da União", e.uniao.total, "var(--grafico-1)", UNIAO, "do que veio da União")}
       {bloco("Do Estado de São Paulo", e.estado.total, "var(--grafico-2)", ESTADO, "do que veio do Estado")}
       {e.fundeb > 0 && bloco("FUNDEB", e.fundeb, "var(--grafico-3)", FUNDEB, "")}
