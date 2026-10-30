@@ -110,6 +110,10 @@ export default function Metodologia() {
           </li>
           <li>Só tem coeficientes quem tem pelo menos {m.vereador.minimoSessoes} sessões no período. Suplentes que ficaram poucas semanas aparecem sem eles.</li>
           <li>
+            A média por partido junta todos os vereadores do partido na legislatura, inclusive quem já saiu do cargo, e cada um pesa pelas sessões em
+            que esteve no cargo: quem ficou o período inteiro conta mais do que um suplente de poucas semanas.
+          </li>
+          <li>
             Contam como projeto: {m.tiposProjeto.map((t) => TIPO_NOME[t] ?? t).join(", ")}. Projetos, moções, requerimentos e leis com mais de um autor
             contam para todos os autores citados pelo nome. Quando o texto diz só “e outros vereadores”, não há como saber quem são.
           </li>
