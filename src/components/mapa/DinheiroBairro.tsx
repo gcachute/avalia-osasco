@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { BairroMapa } from "@/lib/dados";
 import { GRUPO_ORIGEM, ROTULO_ORIGEM, frase, type ItemDinheiroBairro } from "@/lib/dinheiro";
 import { dinheiroCurto, reaisExato } from "@/lib/formato";
@@ -14,14 +14,24 @@ const GRUPOS: { chave: Grupo; nome: string; cor: string }[] = [
   { chave: "vereadores", nome: "Emendas individuais", cor: "var(--grafico-3)" },
 ];
 
-function Item({ i, indice }: { i: ItemDinheiroBairro; indice: number }) {
+// Ao passar o mouse (ou com o item aberto), os outros bairros citados ficam marcados no mapa.
+type Realce = { atual: string; nomes: Map<string, string>; marcar: (ids: string[] | null) => void };
+
+function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; realce?: Realce }) {
   const [aberto, setAberto] = useState(false);
+  const outros = (i.bairros ?? []).filter((b) => b !== realce?.atual);
+  const marca = (sim: boolean) => realce && outros.length > 0 && realce.marcar(sim ? outros : null);
   const grupo = GRUPOS.find((g) => g.chave === GRUPO_ORIGEM[i.origem])!;
   // Quando o texto cita vários bairros, cada um fica com uma parte igual do valor: é essa parte que entra na soma do bairro.
   const bairros = i.outrosBairros + 1;
   const parte = i.valor / bairros;
   return (
-    <li className="entra rounded-lg bg-slate-50 p-2" style={{ "--i": indice } as React.CSSProperties}>
+    <li
+      className={`entra rounded-lg p-2 transition-colors ${aberto && outros.length ? "bg-blue-50 ring-1 ring-blue-200" : "bg-slate-50"}`}
+      style={{ "--i": indice } as React.CSSProperties}
+      onMouseEnter={() => marca(true)}
+      onMouseLeave={() => !aberto && marca(false)}
+    >
       <div className="flex flex-wrap items-baseline gap-x-2 text-[11px] text-slate-500">
         <span className="inline-flex items-center gap-1 font-medium text-slate-700">
           <span className="h-1.5 w-1.5 rounded-full" style={{ background: grupo.cor }} aria-hidden />
@@ -33,7 +43,15 @@ function Item({ i, indice }: { i: ItemDinheiroBairro; indice: number }) {
           {bairros > 1 && <span className="block text-[10px] text-slate-500">neste bairro</span>}
         </span>
       </div>
-      <button type="button" onClick={() => setAberto(!aberto)} aria-expanded={aberto} className="mt-0.5 block w-full text-left">
+      <button
+        type="button"
+        onClick={() => {
+          setAberto(!aberto);
+          marca(!aberto);
+        }}
+        aria-expanded={aberto}
+        className="mt-0.5 block w-full text-left"
+      >
         <span className={`block text-slate-700 ${aberto ? "" : "line-clamp-3"}`}>{frase(i.texto)}</span>
         {aberto && (
           <span className="mt-0.5 block tabular-nums text-slate-500">
@@ -58,11 +76,24 @@ function Item({ i, indice }: { i: ItemDinheiroBairro; indice: number }) {
           </span>
         )}
       </div>
+      {outros.length > 0 && realce && (
+        <p className="mt-1 text-[11px] text-slate-600">
+          <span className="font-medium">Também cita</span> (tracejados no mapa):{" "}
+          {outros
+            .map((b) => realce.nomes.get(b) ?? b)
+            .sort((x, y) => x.localeCompare(y, "pt-BR"))
+            .join(", ")}
+          .
+        </p>
+      )}
     </li>
   );
 }
 
-export function DinheiroBairro({ d }: { d: NonNullable<BairroMapa["dinheiro"]> }) {
+export function DinheiroBairro({ d, realce }: { d: NonNullable<BairroMapa["dinheiro"]>; realce?: Realce }) {
+  // Ao sair da aba, os bairros marcados no mapa voltam ao normal.
+  const marcar = realce?.marcar;
+  useEffect(() => () => marcar?.(null), [marcar]);
   const [filtro, setFiltro] = useState<Grupo | null>(null);
   const porGrupo = d.porGrupo ?? {};
   const presentes = GRUPOS.filter((g) => (porGrupo[g.chave] ?? 0) > 0);
@@ -104,7 +135,7 @@ export function DinheiroBairro({ d }: { d: NonNullable<BairroMapa["dinheiro"]> }
       {d.quantidade > d.itens.length && !filtro && <p className="mt-2 text-[11px] text-slate-500">Os {d.itens.length} de maior valor:</p>}
       <ol key={filtro ?? "todos"} className="mt-2 space-y-2 text-xs">
         {itens.map((i, n) => (
-          <Item key={n} i={i} indice={n} />
+          <Item key={n} i={i} indice={n} realce={realce} />
         ))}
       </ol>
       {!itens.length && <p className="mt-2 text-xs text-slate-500">Entre os itens de maior valor, nenhum é deste tipo.</p>}

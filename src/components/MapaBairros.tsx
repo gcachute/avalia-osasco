@@ -411,6 +411,16 @@ export function MapaBairros({
     return () => window.removeEventListener("keydown", tecla);
   }, [selecionado]);
   const realce = foco ?? selecionado;
+  // Outros bairros citados pelo item aberto no painel (aba Verbas): ficam com contorno tracejado.
+  const [citados, setCitados] = useState<string[]>([]);
+  // Ao escolher um bairro a partir de um documento, os outros bairros do documento continuam marcados.
+  const citadosAoEscolher = useRef<string[] | null>(null);
+  useEffect(() => {
+    setCitados(citadosAoEscolher.current ?? []);
+    citadosAoEscolher.current = null;
+  }, [selecionado]);
+  const nomesBairros = useMemo(() => new Map(bairros.map((b) => [b.id, b.nome])), [bairros]);
+  const marcarBairros = useCallback((ids: string[] | null) => setCitados(ids ?? []), []);
   const bFoco = foco ? porId.get(foco) : null;
   const maxDist = Math.max(1, ...bairros.map((b) => b.distancia));
   const feed = (doMes.length ? doMes : visiveis.slice(-6)).slice().reverse().slice(0, 6);
@@ -651,7 +661,7 @@ export function MapaBairros({
                         style={{
                           ["--atraso" as string]: `${(b.distancia / maxDist) * 0.7}s`,
                           fill: corDaFaixa(faixa(valor(b))),
-                          opacity: realce && !ativo ? 0.55 : 1,
+                          opacity: realce && !ativo && !citados.includes(b.id) ? 0.55 : 1,
                         }}
                         stroke="var(--mapa-borda)"
                         strokeWidth={1.2}
@@ -671,6 +681,22 @@ export function MapaBairros({
                     );
                   })}
                 </g>
+                {citados.map(
+                  (id) =>
+                    porId.get(id) && (
+                      <path
+                        key={`citado-${id}`}
+                        d={porId.get(id)!.d}
+                        fill="none"
+                        stroke="var(--mapa-destaque)"
+                        strokeWidth={2}
+                        strokeDasharray="5 4"
+                        strokeLinejoin="round"
+                        vectorEffect="non-scaling-stroke"
+                        pointerEvents="none"
+                      />
+                    ),
+                )}
                 {realce && porId.get(realce) && (
                   <path
                     d={porId.get(realce)!.d}
@@ -751,7 +777,7 @@ export function MapaBairros({
                   </g>
                 )}
                 {bairros
-                  .filter((b) => rotulados.has(b.id) || b.id === realce)
+                  .filter((b) => rotulados.has(b.id) || b.id === realce || citados.includes(b.id))
                   .map((b) => (
                     <text
                       key={`t-${b.id}`}
@@ -1071,16 +1097,30 @@ export function MapaBairros({
                       key={`${mes}-${i.id}`}
                       className="animate-[mapa-painel_0.45s_ease_both] rounded-lg border border-slate-100 bg-slate-50 p-2.5 text-xs"
                       style={{ borderLeft: `3px solid ${corOrigem(i.origem)}` }}
+                      // Todos os bairros citados pelo documento ficam tracejados no mapa enquanto o ponteiro está nele.
+                      onMouseEnter={() => setCitados(i.bairros)}
+                      onMouseLeave={() => setCitados([])}
                     >
                       <div className="flex flex-wrap items-center gap-x-2 text-[11px] text-slate-500">
                         <span className="font-medium text-slate-700">{i.tipo}</span>
                         <span>·</span>
-                        <button className="font-medium text-blue-800 hover:underline" onClick={() => setSelecionado(i.bairros[0])}>
+                        <span className="flex flex-wrap gap-x-1">
                           {i.bairros
-                            .map((id) => porId.get(id)?.nome)
-                            .filter(Boolean)
-                            .join(", ")}
-                        </button>
+                            .filter((id) => porId.get(id))
+                            .map((id, k, arr) => (
+                              <button
+                                key={id}
+                                className="font-medium text-blue-800 hover:underline"
+                                onClick={() => {
+                                  citadosAoEscolher.current = i.bairros.filter((b) => b !== id);
+                                  setSelecionado(id);
+                                }}
+                              >
+                                {porId.get(id)!.nome}
+                                {k < arr.length - 1 ? "," : ""}
+                              </button>
+                            ))}
+                        </span>
                         <span className="ml-auto">{dataCurta(i.data)}</span>
                       </div>
                       <p className="mt-0.5 line-clamp-2 text-slate-700">{i.texto}</p>
@@ -1133,6 +1173,8 @@ export function MapaBairros({
             mesTexto={mes < meses.length - 1 ? rotuloMes(ateMes) : null}
             anoSeguranca={anoSeguranca}
             historico={historico}
+            nomesBairros={nomesBairros}
+            marcarBairros={marcarBairros}
           />
         ) : (
           <div>

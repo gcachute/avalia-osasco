@@ -45,6 +45,8 @@ export function PainelBairro({
   mesTexto,
   anoSeguranca,
   historico,
+  nomesBairros,
+  marcarBairros,
 }: {
   bairro: BairroMapa;
   itens: ItemMapa[];
@@ -56,6 +58,8 @@ export function PainelBairro({
   mesTexto: string | null;
   anoSeguranca: number | null;
   historico?: Historico | null;
+  nomesBairros?: Map<string, string>;
+  marcarBairros?: (ids: string[] | null) => void;
 }) {
   const [aba, setAba] = useState<Aba>(abaInicial);
   const c = bairro.censo;
@@ -148,7 +152,10 @@ export function PainelBairro({
 
         {aba === "dinheiro" &&
           (bairro.dinheiro?.itens.length ? (
-            <DinheiroBairro d={bairro.dinheiro} />
+            <DinheiroBairro
+              d={bairro.dinheiro}
+              realce={nomesBairros && marcarBairros ? { atual: bairro.id, nomes: nomesBairros, marcar: marcarBairros } : undefined}
+            />
           ) : (
             <p className="text-xs text-slate-500">Nenhuma emenda, convênio ou pagamento com dinheiro federal ou estadual cita este bairro pelo nome.</p>
           ))}
@@ -157,13 +164,30 @@ export function PainelBairro({
           (itens.length ? (
             <ol className="space-y-3">
               {itens.map((i) => (
-                <li key={i.id} className="border-l-2 pl-3" style={{ borderColor: corOrigem(i.origem) }}>
+                <li
+                  key={i.id}
+                  className="border-l-2 pl-3"
+                  style={{ borderColor: corOrigem(i.origem) }}
+                  onMouseEnter={() => i.bairros.length > 1 && marcarBairros?.(i.bairros.filter((b) => b !== bairro.id))}
+                  onMouseLeave={() => marcarBairros?.(null)}
+                >
                   <div className="flex flex-wrap items-center gap-x-2 text-[11px] text-slate-500">
                     <span className="font-medium text-slate-700">{i.tipo}</span>
                     <span>{dataCurta(i.data)}</span>
                   </div>
                   <p className="mt-0.5 text-sm text-slate-700">{i.texto}</p>
                   {i.via && <p className="mt-0.5 text-[11px] text-slate-500">Ligado ao bairro por: {i.via.map(titulo).join(", ")}</p>}
+                  {i.bairros.length > 1 && nomesBairros && (
+                    <p className="mt-0.5 text-[11px] text-slate-500">
+                      Também cita (tracejados no mapa ao passar o mouse):{" "}
+                      {i.bairros
+                        .filter((b) => b !== bairro.id)
+                        .map((b) => nomesBairros.get(b) ?? b)
+                        .sort((x, y) => x.localeCompare(y, "pt-BR"))
+                        .join(", ")}
+                      .
+                    </p>
+                  )}
                   <div className="mt-0.5 text-xs">
                     {vereadores.has(i.autor) ? (
                       <Link href={`/vereadores/${i.autor}`} className="text-blue-800 underline">
