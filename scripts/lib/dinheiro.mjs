@@ -35,6 +35,10 @@ const significativo = (cod) => cod.split(".").reduce((acc, p, i, arr) => (arr.sl
 function classificarAno(linhas) {
   const brutas = linhas.filter((l) => l.coluna === "Receitas Brutas Realizadas").map((l) => ({ ...l, sig: significativo(l.cod) }));
   const total = (prefixos) => brutas.filter((l) => prefixos.includes(l.sig)).reduce((a, l) => a + l.valor, 0);
+  // 20% do FPM, do ICMS, do IPVA (e de outras cotas) ficam retidos para formar o FUNDEB e voltam na linha do FUNDEB.
+  // A declaração traz essa retenção numa coluna própria; sem descontá-la, a soma União + Estado + FUNDEB conta esse
+  // dinheiro duas vezes.
+  const retido = new Map(linhas.filter((l) => l.coluna === "Deduções - FUNDEB").map((l) => [significativo(l.cod), l.valor]));
   const esfera = (nome, prefixos) => {
     const sob = brutas.filter((l) => prefixos.some((p) => l.sig.startsWith(p + ".")));
     const marcadas = [];
@@ -58,7 +62,17 @@ function classificarAno(linhas) {
     const livres = sob.filter((l) => !marcadas.some((m) => m.sig === l.sig || m.sig.startsWith(l.sig + ".") || l.sig.startsWith(m.sig + ".")));
     contas.outras = livres.filter((l) => !livres.some((o) => o !== l && l.sig.startsWith(o.sig + "."))).map(item);
     for (const k of Object.keys(contas)) contas[k] = contas[k].filter((c) => c.valor > 0).sort((a, b) => b.valor - a.valor);
-    return { ...Object.fromEntries(Object.entries(out).map(([k, v]) => [k, r2(v)])), total: r2(t), contas };
+    const paraFundeb = Object.fromEntries(CATEGORIAS[nome].map(([k]) => [k, 0]));
+    for (const l of topo) paraFundeb[l.cat] += retido.get(l.sig) ?? 0;
+    const retidoTotal = prefixos.reduce((a, p) => a + (retido.get(p) ?? 0), 0);
+    paraFundeb.outras = Math.max(0, retidoTotal - somaObj(paraFundeb));
+    return {
+      ...Object.fromEntries(Object.entries(out).map(([k, v]) => [k, r2(v)])),
+      total: r2(t),
+      contas,
+      paraFundeb: Object.fromEntries(Object.entries(paraFundeb).map(([k, v]) => [k, r2(v)])),
+      paraFundebTotal: r2(retidoTotal),
+    };
   };
   return {
     uniao: esfera("uniao", ["1.7.1", "2.4.1"]),

@@ -39,6 +39,8 @@ type LinhaEntrada = {
   explica: string;
   valor: (e: EntradaAno) => number;
   contas: (e: EntradaAno) => ContaDCA[];
+  // Parte retida para formar o FUNDEB (volta na linha do FUNDEB).
+  retido?: (e: EntradaAno) => number;
 };
 
 const UNIAO: LinhaEntrada[] = [
@@ -49,6 +51,7 @@ const UNIAO: LinhaEntrada[] = [
     explica: "Parte do Imposto de Renda e do IPI que a União divide entre todas as cidades, conforme a população. Chega a cada dez dias e pode ser usada em qualquer área.",
     valor: (e) => e.uniao.fpm,
     contas: (e) => e.uniao.contas.fpm ?? [],
+    retido: (e) => e.uniao.paraFundeb?.fpm ?? 0,
   },
   {
     chave: "sus",
@@ -88,6 +91,7 @@ const UNIAO: LinhaEntrada[] = [
     explica: "Repasses federais que não entram nas linhas acima. As contas abaixo dizem o que são.",
     valor: (e) => e.uniao.outras,
     contas: (e) => e.uniao.contas.outras ?? [],
+    retido: (e) => e.uniao.paraFundeb?.outras ?? 0,
   },
 ];
 
@@ -99,6 +103,7 @@ const ESTADO: LinhaEntrada[] = [
     explica: "Um quarto do ICMS arrecadado pelo Estado pertence às cidades. A parte de cada uma depende principalmente do movimento econômico gerado nela.",
     valor: (e) => e.estado.icms,
     contas: (e) => e.estado.contas.icms ?? [],
+    retido: (e) => e.estado.paraFundeb?.icms ?? 0,
   },
   {
     chave: "ipva",
@@ -107,6 +112,7 @@ const ESTADO: LinhaEntrada[] = [
     explica: "Metade do IPVA dos veículos registrados em Osasco fica com a cidade.",
     valor: (e) => e.estado.ipva,
     contas: (e) => e.estado.contas.ipva ?? [],
+    retido: (e) => e.estado.paraFundeb?.ipva ?? 0,
   },
   {
     chave: "sus",
@@ -130,6 +136,7 @@ const ESTADO: LinhaEntrada[] = [
     explica: "Repasses estaduais que não entram nas linhas acima. As contas abaixo dizem o que são.",
     valor: (e) => e.estado.outras,
     contas: (e) => e.estado.contas.outras ?? [],
+    retido: (e) => e.estado.paraFundeb?.outras ?? 0,
   },
 ];
 
@@ -214,6 +221,21 @@ function EntradaExpansivel({
       <Abre aberto={aberto} id={id}>
         <div className="mt-1 mb-2 space-y-3 rounded-xl border border-slate-200 p-3 text-xs">
           <p className="text-slate-600">{l.explica}</p>
+          {(l.retido?.(e) ?? 0) > 0 && (
+            <p className="rounded-lg bg-teal-50 px-2.5 py-1.5 text-teal-900 ring-1 ring-teal-200">
+              Desse valor, {dinheiroCurto(l.retido!(e))} ({pct(l.retido!(e) / valor)}) ficaram retidos para formar o FUNDEB e voltam pela linha do FUNDEB. Chegaram
+              livres para a Prefeitura {dinheiroCurto(valor - l.retido!(e))}.
+            </p>
+          )}
+          {l.chave === "fundeb" && e.uniao.paraFundebTotal + e.estado.paraFundebTotal > 0 && (
+            <p className="rounded-lg bg-teal-50 px-2.5 py-1.5 text-teal-900 ring-1 ring-teal-200">
+              Em {ano}, Osasco teve {dinheiroCurto(e.uniao.paraFundebTotal + e.estado.paraFundebTotal)} retidos do FPM, do ICMS e do IPVA para o fundo e recebeu{" "}
+              {dinheiroCurto(valor)}:{" "}
+              {valor >= e.uniao.paraFundebTotal + e.estado.paraFundebTotal
+                ? `${dinheiroCurto(valor - e.uniao.paraFundebTotal - e.estado.paraFundebTotal)} a mais do que colocou.`
+                : `${dinheiroCurto(e.uniao.paraFundebTotal + e.estado.paraFundebTotal - valor)} a menos do que colocou.`}
+            </p>
+          )}
           <div className="flex flex-wrap items-center gap-2">
             {total > 0 && l.chave !== "fundeb" && (
               <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-700 ring-1 ring-slate-200">
@@ -271,7 +293,10 @@ export function ComposicaoEntradas({ anos }: { anos: EntradaAno[] }) {
   const [ano, setAno] = useState(lista[0].ano);
   const e = lista.find((x) => x.ano === ano)!;
   const maximo = Math.max(...UNIAO.map((l) => l.valor(e)), ...ESTADO.map((l) => l.valor(e)), e.fundeb);
-  const totalGeral = e.uniao.total + e.estado.total + e.fundeb;
+  // Sem contar duas vezes o que é retido do FPM, do ICMS e do IPVA e volta pelo FUNDEB.
+  const uniaoLivre = e.uniao.total - (e.uniao.paraFundebTotal ?? 0);
+  const estadoLivre = e.estado.total - (e.estado.paraFundebTotal ?? 0);
+  const totalGeral = uniaoLivre + estadoLivre + e.fundeb;
   const bloco = (titulo: string, total: number, cor: string, linhas: LinhaEntrada[], nomeTotal: string) => (
     <div>
       <div className="mb-1.5 flex items-baseline justify-between gap-2">
@@ -299,16 +324,19 @@ export function ComposicaoEntradas({ anos }: { anos: EntradaAno[] }) {
         </span>
       </div>
       {/* Proporção de cada origem no total do ano. */}
-      <div className="flex h-2.5 overflow-hidden rounded-full" role="img" aria-label={`União ${pct(e.uniao.total / totalGeral)}, Estado ${pct(e.estado.total / totalGeral)}, FUNDEB ${pct(e.fundeb / totalGeral)}`}>
+      <div className="flex h-2.5 overflow-hidden rounded-full" role="img" aria-label={`União ${pct(uniaoLivre / totalGeral)}, Estado ${pct(estadoLivre / totalGeral)}, FUNDEB ${pct(e.fundeb / totalGeral)}`}>
         {[
-          [e.uniao.total, "var(--grafico-1)"],
-          [e.estado.total, "var(--grafico-2)"],
+          [uniaoLivre, "var(--grafico-1)"],
+          [estadoLivre, "var(--grafico-2)"],
           [e.fundeb, "var(--grafico-3)"],
         ].map(([v, c], i) => (
           <span key={i} className="border-r-2 border-white transition-[width] duration-500 last:border-r-0" style={{ width: `${((v as number) / totalGeral) * 100}%`, background: c as string }} />
         ))}
       </div>
-      <p className="-mt-3 text-[11px] text-slate-500">Toque numa linha para ver o que ela é, como mudou e as contas oficiais que a formam.</p>
+      <p className="-mt-3 text-[11px] text-slate-500">
+        O total não conta duas vezes os 20% do FPM, do ICMS e do IPVA que vão para o FUNDEB e voltam por ele; as linhas abaixo mostram o valor bruto. Toque
+        numa linha para ver o que ela é, como mudou e as contas oficiais que a formam.
+      </p>
       {bloco("Da União", e.uniao.total, "var(--grafico-1)", UNIAO, "do que veio da União")}
       {bloco("Do Estado de São Paulo", e.estado.total, "var(--grafico-2)", ESTADO, "do que veio do Estado")}
       {e.fundeb > 0 && bloco("FUNDEB", e.fundeb, "var(--grafico-3)", FUNDEB, "")}

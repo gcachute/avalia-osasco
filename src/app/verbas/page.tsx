@@ -232,6 +232,11 @@ export default function PaginaDinheiro() {
             parlamentar ou de um acordo.
           </li>
           <li>
+            FPM, ICMS e IPVA aparecem pelo valor bruto, como na declaração anual da Prefeitura. Desse valor, 20% fica retido para formar o FUNDEB e volta
+            pela linha do FUNDEB. Por isso números de jornal ou do orçamento podem ser diferentes: o ICMS de 2025, por exemplo, foi de R$ 640 mi brutos e R$
+            512 mi livres; o valor previsto no orçamento é outro.
+          </li>
+          <li>
             Emendas aparecem pelo valor que chegou a Osasco, não pelo valor prometido. O partido mostrado em cada emenda é o do autor quando ela foi
             apresentada (em novembro do ano anterior); o da ficha é o de hoje.
           </li>
