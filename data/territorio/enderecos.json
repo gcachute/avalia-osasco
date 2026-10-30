@@ -1,0 +1,34 @@
+{
+ "fonte": "OpenStreetMap (Nominatim), número exato localizado no bairro do IBGE",
+ "url": "https://nominatim.org",
+ "enderecos": {
+  "RUA CLAUDIO APARECIDO DE ILIVEIRA 85": {
+   "bairro": null,
+   "consultadoEm": "2026-10-30"
+  },
+  "RUA NEWTON ESTILAC LEAL 643": {
+   "bairro": null,
+   "consultadoEm": "2026-10-30"
+  },
+  "RUA DOUTOR PEDRO DOS SANTOS FIGUEIREDO 212": {
+   "bairro": null,
+   "consultadoEm": "2026-10-30"
+  },
+  "RUA ANTONIO RUSSO 680": {
+   "bairro": "jardim-roberto",
+   "consultadoEm": "2026-10-30"
+  },
+  "RUA DOUTOR PEDRO DOS SANTOS FIGUEREDO 212": {
+   "bairro": null,
+   "consultadoEm": "2026-10-30"
+  },
+  "AVENIDA TRANSVERSAL SUL 15": {
+   "bairro": null,
+   "consultadoEm": "2026-10-30"
+  },
+  "RUA MARTIN AFONSO 244": {
+   "bairro": null,
+   "consultadoEm": "2026-10-30"
+  }
+ }
+}

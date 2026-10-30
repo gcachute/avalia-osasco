@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-30T04:43:21.326Z",
+ "geradoEm": "2026-10-30T04:57:35.839Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -53071,7 +53071,7 @@
         "alianca"
        ],
        "via": [
-        "Hospital e Maternidade Amador Aguiar"
+        "Hospital e Maternidade Amador Aguiar (só o trecho no bairro citado)"
        ]
       },
       {
@@ -54341,25 +54341,8 @@
      }
     ],
     "dinheiro": {
-     "valor": 332592.49,
+     "valor": 925.82,
      "itens": [
-      {
-       "origem": "pix",
-       "ano": 2026,
-       "valor": 995000,
-       "texto": "RECAPEAMENTO da Rua XV de Novembro, Jaguaribe",
-       "quem": "Nilto Tatto",
-       "autor": "nilto-tatto",
-       "outrosBairros": 2,
-       "bairros": [
-        "jaguaribe",
-        "bela-vista",
-        "santo-antonio"
-       ],
-       "via": [
-        "Rua Quinze de Novembro"
-       ]
-      },
       {
        "origem": "gastoFederal",
        "ano": 2020,
@@ -54389,9 +54372,8 @@
        ]
       }
      ],
-     "quantidade": 2,
+     "quantidade": 1,
      "porGrupo": {
-      "emendas": 331666.67,
       "federal": 925.82
      }
     }
@@ -55713,7 +55695,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 78536427.24,
+     "valor": 78533790.71,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -55873,35 +55855,12 @@
        "via": [
         "Espaço Cultural Grande Otelo"
        ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2018,
-       "valor": 23728.76,
-       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
-       "quem": "VIEL CONSTRUCOES LTDA EPP",
-       "pagamentos": 1,
-       "outrosBairros": 8,
-       "bairros": [
-        "centro",
-        "industrial-autonomistas",
-        "industrial-centro",
-        "km-18",
-        "parque-continental",
-        "quintauna",
-        "vila-campesina",
-        "vila-militar",
-        "vila-yara"
-       ],
-       "via": [
-        "Avenida dos Autonomistas"
-       ]
       }
      ],
-     "quantidade": 14,
+     "quantidade": 13,
      "porGrupo": {
       "emendas": 1216398.68,
-      "federal": 77320028.56
+      "federal": 77317392.03
      }
     }
    },
@@ -57594,38 +57553,7 @@
     "obras": [],
     "saude": [],
     "escolas": [],
-    "dinheiro": {
-     "valor": 2636.53,
-     "itens": [
-      {
-       "origem": "gastoFederal",
-       "ano": 2018,
-       "valor": 23728.76,
-       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
-       "quem": "VIEL CONSTRUCOES LTDA EPP",
-       "pagamentos": 1,
-       "outrosBairros": 8,
-       "bairros": [
-        "centro",
-        "industrial-autonomistas",
-        "industrial-centro",
-        "km-18",
-        "parque-continental",
-        "quintauna",
-        "vila-campesina",
-        "vila-militar",
-        "vila-yara"
-       ],
-       "via": [
-        "Avenida dos Autonomistas"
-       ]
-      }
-     ],
-     "quantidade": 1,
-     "porGrupo": {
-      "federal": 2636.53
-     }
-    }
+    "dinheiro": null
    },
    {
     "id": "industrial-centro",
@@ -57706,38 +57634,7 @@
     "obras": [],
     "saude": [],
     "escolas": [],
-    "dinheiro": {
-     "valor": 2636.53,
-     "itens": [
-      {
-       "origem": "gastoFederal",
-       "ano": 2018,
-       "valor": 23728.76,
-       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
-       "quem": "VIEL CONSTRUCOES LTDA EPP",
-       "pagamentos": 1,
-       "outrosBairros": 8,
-       "bairros": [
-        "centro",
-        "industrial-autonomistas",
-        "industrial-centro",
-        "km-18",
-        "parque-continental",
-        "quintauna",
-        "vila-campesina",
-        "vila-militar",
-        "vila-yara"
-       ],
-       "via": [
-        "Avenida dos Autonomistas"
-       ]
-      }
-     ],
-     "quantidade": 1,
-     "porGrupo": {
-      "federal": 2636.53
-     }
-    }
+    "dinheiro": null
    },
    {
     "id": "industrial-mazzei",
@@ -58279,7 +58176,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 332592.49,
+     "valor": 995925.82,
      "itens": [
       {
        "origem": "pix",
@@ -58288,14 +58185,12 @@
        "texto": "RECAPEAMENTO da Rua XV de Novembro, Jaguaribe",
        "quem": "Nilto Tatto",
        "autor": "nilto-tatto",
-       "outrosBairros": 2,
+       "outrosBairros": 0,
        "bairros": [
-        "jaguaribe",
-        "bela-vista",
-        "santo-antonio"
+        "jaguaribe"
        ],
        "via": [
-        "Rua Quinze de Novembro"
+        "Rua Quinze de Novembro (só o trecho no bairro citado)"
        ]
       },
       {
@@ -58329,7 +58224,7 @@
      ],
      "quantidade": 2,
      "porGrupo": {
-      "emendas": 331666.67,
+      "emendas": 995000,
       "federal": 925.82
      }
     }
@@ -58604,7 +58499,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 1873489.01,
+     "valor": 2095663.35,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -58637,13 +58532,12 @@
        "texto": "Construção da Creche Conceição FNDE - Avenida Transversal Sul nº 15 - Jardim Conceição - Osasco-SP. Termo de Compromisso nº Pac 2 5442/2013 pro Infância Tipo 2 .",
        "quem": "CONSTRUMEDICI ENGENHARIA E COMERCIO LTDA",
        "pagamentos": 1,
-       "outrosBairros": 1,
+       "outrosBairros": 0,
        "bairros": [
-        "jardim-conceicao",
-        "santa-maria"
+        "jardim-conceicao"
        ],
        "via": [
-        "Avenida Transversal Sul"
+        "Avenida Transversal Sul (só o trecho no bairro citado)"
        ]
       },
       {
@@ -58677,7 +58571,7 @@
      ],
      "quantidade": 4,
      "porGrupo": {
-      "federal": 1873489.01
+      "federal": 2095663.35
      }
     }
    },
@@ -60146,6 +60040,9 @@
        "outrosBairros": 0,
        "bairros": [
         "jardim-roberto"
+       ],
+       "via": [
+        "Rua Antonio Russo, 680"
        ]
       },
       {
@@ -60435,7 +60332,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 830616.83,
+     "valor": 553469.53,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -60452,40 +60349,6 @@
       {
        "origem": "gastoFederal",
        "ano": 2020,
-       "valor": 442534.78,
-       "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA A CONSTRUCAO DA CRECHE VILA MILITAR UNIFESP A SER EDIFICADA EM AREA PUBLICA NA ALAMEDA PARQUE S N QUITAUNA OSASCO SP CT 12 2018 E TERMO 85 2019 REVERSAO DO EMPENHO 11438 2019",
-       "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
-       "pagamentos": 1,
-       "outrosBairros": 2,
-       "bairros": [
-        "km-18",
-        "quintauna",
-        "vila-militar"
-       ],
-       "via": [
-        "Alameda Parque"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2019,
-       "valor": 380997.54,
-       "texto": "Contratação de Empresa de Engenharia para a construção da Creche vila militar- Unifesp - Rua Newton Estilac Leal. nº 643 - ALAMEDA PARQUE, Quitaúna - Osasco/SP. Contrato 012/18. (Termo de Compromisso PAC 2 5442/2013 Pró Infância Tipo 1)",
-       "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
-       "pagamentos": 3,
-       "outrosBairros": 2,
-       "bairros": [
-        "km-18",
-        "quintauna",
-        "vila-militar"
-       ],
-       "via": [
-        "Alameda Parque"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2020,
        "valor": 79978.61,
        "texto": "CONTRATACAO DE EMPRESA ESPECIALIZADA EM REFORMAS E MANUTENCAO DO CRAS BAIRRO KM 18 OSASCO REFERENTE A ARP N 122 2019 CP 002 2019",
        "quem": "M A S CONSTRUCOES E EMPREENDIMENTOS LTDA",
@@ -60493,29 +60356,6 @@
        "outrosBairros": 0,
        "bairros": [
         "km-18"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2018,
-       "valor": 23728.76,
-       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
-       "quem": "VIEL CONSTRUCOES LTDA EPP",
-       "pagamentos": 1,
-       "outrosBairros": 8,
-       "bairros": [
-        "centro",
-        "industrial-autonomistas",
-        "industrial-centro",
-        "km-18",
-        "parque-continental",
-        "quintauna",
-        "vila-campesina",
-        "vila-militar",
-        "vila-yara"
-       ],
-       "via": [
-        "Avenida dos Autonomistas"
        ]
       },
       {
@@ -60547,9 +60387,9 @@
        ]
       }
      ],
-     "quantidade": 6,
+     "quantidade": 3,
      "porGrupo": {
-      "federal": 830616.83
+      "federal": 553469.53
      }
     }
    },
@@ -60751,24 +60591,8 @@
      }
     ],
     "dinheiro": {
-     "valor": 74809.95,
+     "valor": 925.82,
      "itens": [
-      {
-       "origem": "gastoFederal",
-       "ano": 2019,
-       "valor": 147768.25,
-       "texto": "Contratação da empresa de engenharia para a construção da creche Veloso, na rua Doutor Pedro dos Santos Figueiredo nº 212 - Jardim Veloso - Osasco/SP. Contrato nº 010/2018 (Termo de Compromisso nº PAC 6162/13). Prazo de 15 meses.Valor de Re",
-       "quem": "CONSITEC ENGENHARIA E TECNOLOGIA LTDA",
-       "pagamentos": 1,
-       "outrosBairros": 1,
-       "bairros": [
-        "metalurgicos",
-        "veloso"
-       ],
-       "via": [
-        "Rua Doutor Pedro dos Santos Figueiredo"
-       ]
-      },
       {
        "origem": "gastoFederal",
        "ano": 2020,
@@ -60798,9 +60622,9 @@
        ]
       }
      ],
-     "quantidade": 2,
+     "quantidade": 1,
      "porGrupo": {
-      "federal": 74809.95
+      "federal": 925.82
      }
     }
    },
@@ -61829,38 +61653,7 @@
     "obras": [],
     "saude": [],
     "escolas": [],
-    "dinheiro": {
-     "valor": 2636.53,
-     "itens": [
-      {
-       "origem": "gastoFederal",
-       "ano": 2018,
-       "valor": 23728.76,
-       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
-       "quem": "VIEL CONSTRUCOES LTDA EPP",
-       "pagamentos": 1,
-       "outrosBairros": 8,
-       "bairros": [
-        "centro",
-        "industrial-autonomistas",
-        "industrial-centro",
-        "km-18",
-        "parque-continental",
-        "quintauna",
-        "vila-campesina",
-        "vila-militar",
-        "vila-yara"
-       ],
-       "via": [
-        "Avenida dos Autonomistas"
-       ]
-      }
-     ],
-     "quantidade": 1,
-     "porGrupo": {
-      "federal": 2636.53
-     }
-    }
+    "dinheiro": null
    },
    {
     "id": "pestana",
@@ -63395,7 +63188,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 278073.12,
+     "valor": 412691.98,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -63404,14 +63197,13 @@
        "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA A CONSTRUCAO DA CRECHE VILA MILITAR UNIFESP A SER EDIFICADA EM AREA PUBLICA NA ALAMEDA PARQUE S N QUITAUNA OSASCO SP CT 12 2018 E TERMO 85 2019 REVERSAO DO EMPENHO 11438 2019",
        "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
        "pagamentos": 1,
-       "outrosBairros": 2,
+       "outrosBairros": 1,
        "bairros": [
-        "km-18",
         "quintauna",
         "vila-militar"
        ],
        "via": [
-        "Alameda Parque"
+        "Alameda Parque (só o trecho no bairro citado)"
        ]
       },
       {
@@ -63421,37 +63213,13 @@
        "texto": "Contratação de Empresa de Engenharia para a construção da Creche vila militar- Unifesp - Rua Newton Estilac Leal. nº 643 - ALAMEDA PARQUE, Quitaúna - Osasco/SP. Contrato 012/18. (Termo de Compromisso PAC 2 5442/2013 Pró Infância Tipo 1)",
        "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
        "pagamentos": 3,
-       "outrosBairros": 2,
+       "outrosBairros": 1,
        "bairros": [
-        "km-18",
         "quintauna",
         "vila-militar"
        ],
        "via": [
-        "Alameda Parque"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2018,
-       "valor": 23728.76,
-       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
-       "quem": "VIEL CONSTRUCOES LTDA EPP",
-       "pagamentos": 1,
-       "outrosBairros": 8,
-       "bairros": [
-        "centro",
-        "industrial-autonomistas",
-        "industrial-centro",
-        "km-18",
-        "parque-continental",
-        "quintauna",
-        "vila-campesina",
-        "vila-militar",
-        "vila-yara"
-       ],
-       "via": [
-        "Avenida dos Autonomistas"
+        "Alameda Parque (só o trecho no bairro citado)"
        ]
       },
       {
@@ -63483,9 +63251,9 @@
        ]
       }
      ],
-     "quantidade": 4,
+     "quantidade": 3,
      "porGrupo": {
-      "federal": 278073.12
+      "federal": 412691.98
      }
     }
    },
@@ -64682,31 +64450,7 @@
       "idebFinais": 4.4
      }
     ],
-    "dinheiro": {
-     "valor": 222174.35,
-     "itens": [
-      {
-       "origem": "gastoFederal",
-       "ano": 2019,
-       "valor": 444348.69,
-       "texto": "Construção da Creche Conceição FNDE - Avenida Transversal Sul nº 15 - Jardim Conceição - Osasco-SP. Termo de Compromisso nº Pac 2 5442/2013 pro Infância Tipo 2 .",
-       "quem": "CONSTRUMEDICI ENGENHARIA E COMERCIO LTDA",
-       "pagamentos": 1,
-       "outrosBairros": 1,
-       "bairros": [
-        "jardim-conceicao",
-        "santa-maria"
-       ],
-       "via": [
-        "Avenida Transversal Sul"
-       ]
-      }
-     ],
-     "quantidade": 1,
-     "porGrupo": {
-      "federal": 222174.35
-     }
-    }
+    "dinheiro": null
    },
    {
     "id": "santo-antonio",
@@ -64950,25 +64694,8 @@
      }
     ],
     "dinheiro": {
-     "valor": 480037.54,
+     "valor": 148370.87,
      "itens": [
-      {
-       "origem": "pix",
-       "ano": 2026,
-       "valor": 995000,
-       "texto": "RECAPEAMENTO da Rua XV de Novembro, Jaguaribe",
-       "quem": "Nilto Tatto",
-       "autor": "nilto-tatto",
-       "outrosBairros": 2,
-       "bairros": [
-        "jaguaribe",
-        "bela-vista",
-        "santo-antonio"
-       ],
-       "via": [
-        "Rua Quinze de Novembro"
-       ]
-      },
       {
        "origem": "gastoFederal",
        "ano": 2021,
@@ -64994,9 +64721,8 @@
        ]
       }
      ],
-     "quantidade": 3,
+     "quantidade": 2,
      "porGrupo": {
-      "emendas": 331666.67,
       "federal": 148370.87
      }
     }
@@ -65952,34 +65678,21 @@
      }
     ],
     "dinheiro": {
-     "valor": 248453.15,
+     "valor": 322337.27,
      "itens": [
       {
        "origem": "gastoFederal",
        "ano": 2019,
-       "valor": 169307.9,
-       "texto": "Construção da creche Veloso - Rua Doutor Pedro dos Santos Figueredo, Nº 212 - Jardim Veloso - Osasco - S?P. Contrato 010/18 ( Termo de Compromisso nº PAC 2 6162/2013 Pró Infância Tipo 2) - COMPLEMENTO DE EMPENHO.",
+       "valor": 317076.15,
+       "texto": "Contratação da empresa de engenharia para a construção da creche Veloso, na rua Doutor Pedro dos Santos Figueiredo nº 212 - Jardim Veloso - Osasco/SP. Contrato nº 010/2018 (Termo de Compromisso nº PAC 6162/13). Prazo de 15 meses.Valor de Re",
        "quem": "CONSITEC ENGENHARIA E TECNOLOGIA LTDA",
-       "pagamentos": 1,
+       "pagamentos": 2,
        "outrosBairros": 0,
        "bairros": [
         "veloso"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2019,
-       "valor": 147768.25,
-       "texto": "Contratação da empresa de engenharia para a construção da creche Veloso, na rua Doutor Pedro dos Santos Figueiredo nº 212 - Jardim Veloso - Osasco/SP. Contrato nº 010/2018 (Termo de Compromisso nº PAC 6162/13). Prazo de 15 meses.Valor de Re",
-       "quem": "CONSITEC ENGENHARIA E TECNOLOGIA LTDA",
-       "pagamentos": 1,
-       "outrosBairros": 1,
-       "bairros": [
-        "metalurgicos",
-        "veloso"
        ],
        "via": [
-        "Rua Doutor Pedro dos Santos Figueiredo"
+        "Rua Doutor Pedro dos Santos Figueiredo (só o trecho no bairro citado)"
        ]
       },
       {
@@ -65995,9 +65708,9 @@
        ]
       }
      ],
-     "quantidade": 3,
+     "quantidade": 2,
      "porGrupo": {
-      "federal": 248453.15
+      "federal": 322337.27
      }
     }
    },
@@ -66240,38 +65953,7 @@
       "idebFinais": null
      }
     ],
-    "dinheiro": {
-     "valor": 2636.53,
-     "itens": [
-      {
-       "origem": "gastoFederal",
-       "ano": 2018,
-       "valor": 23728.76,
-       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
-       "quem": "VIEL CONSTRUCOES LTDA EPP",
-       "pagamentos": 1,
-       "outrosBairros": 8,
-       "bairros": [
-        "centro",
-        "industrial-autonomistas",
-        "industrial-centro",
-        "km-18",
-        "parque-continental",
-        "quintauna",
-        "vila-campesina",
-        "vila-militar",
-        "vila-yara"
-       ],
-       "via": [
-        "Avenida dos Autonomistas"
-       ]
-      }
-     ],
-     "quantidade": 1,
-     "porGrupo": {
-      "federal": 2636.53
-     }
-    }
+    "dinheiro": null
    },
    {
     "id": "vila-menck",
@@ -66792,7 +66474,7 @@
     ],
     "escolas": [],
     "dinheiro": {
-     "valor": 277147.3,
+     "valor": 411766.16,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -66801,14 +66483,13 @@
        "texto": "CONTRATACAO DE EMPRESA DE ENGENHARIA PARA A CONSTRUCAO DA CRECHE VILA MILITAR UNIFESP A SER EDIFICADA EM AREA PUBLICA NA ALAMEDA PARQUE S N QUITAUNA OSASCO SP CT 12 2018 E TERMO 85 2019 REVERSAO DO EMPENHO 11438 2019",
        "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
        "pagamentos": 1,
-       "outrosBairros": 2,
+       "outrosBairros": 1,
        "bairros": [
-        "km-18",
         "quintauna",
         "vila-militar"
        ],
        "via": [
-        "Alameda Parque"
+        "Alameda Parque (só o trecho no bairro citado)"
        ]
       },
       {
@@ -66818,43 +66499,19 @@
        "texto": "Contratação de Empresa de Engenharia para a construção da Creche vila militar- Unifesp - Rua Newton Estilac Leal. nº 643 - ALAMEDA PARQUE, Quitaúna - Osasco/SP. Contrato 012/18. (Termo de Compromisso PAC 2 5442/2013 Pró Infância Tipo 1)",
        "quem": "B B ENGENHARIA E CONSTRUCAO LTDA",
        "pagamentos": 3,
-       "outrosBairros": 2,
+       "outrosBairros": 1,
        "bairros": [
-        "km-18",
         "quintauna",
         "vila-militar"
        ],
        "via": [
-        "Alameda Parque"
-       ]
-      },
-      {
-       "origem": "gastoFederal",
-       "ano": 2018,
-       "valor": 23728.76,
-       "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
-       "quem": "VIEL CONSTRUCOES LTDA EPP",
-       "pagamentos": 1,
-       "outrosBairros": 8,
-       "bairros": [
-        "centro",
-        "industrial-autonomistas",
-        "industrial-centro",
-        "km-18",
-        "parque-continental",
-        "quintauna",
-        "vila-campesina",
-        "vila-militar",
-        "vila-yara"
-       ],
-       "via": [
-        "Avenida dos Autonomistas"
+        "Alameda Parque (só o trecho no bairro citado)"
        ]
       }
      ],
-     "quantidade": 3,
+     "quantidade": 2,
      "porGrupo": {
-      "federal": 277147.3
+      "federal": 411766.16
      }
     }
    },
@@ -67185,7 +66842,7 @@
         "vila-osasco"
        ],
        "via": [
-        "Hospital e Maternidade Amador Aguiar",
+        "Hospital e Maternidade Amador Aguiar (só o trecho no bairro citado)",
         "Policlínica Zona Sul"
        ]
       }
@@ -67457,7 +67114,7 @@
      }
     ],
     "dinheiro": {
-     "valor": 366216.03,
+     "valor": 387308.26,
      "itens": [
       {
        "origem": "gastoFederal",
@@ -67490,26 +67147,18 @@
        "texto": "Contratação de Empresa de Engenharia Especializada para Execução de Obras e Serviços da Construção do Portal de Entrada da Cidade, na Av. dos Autonomistas - Vila Yara. (Reversão do Saldo Cancelado do Empenho 19820 de 22.09.15)",
        "quem": "VIEL CONSTRUCOES LTDA EPP",
        "pagamentos": 1,
-       "outrosBairros": 8,
+       "outrosBairros": 0,
        "bairros": [
-        "centro",
-        "industrial-autonomistas",
-        "industrial-centro",
-        "km-18",
-        "parque-continental",
-        "quintauna",
-        "vila-campesina",
-        "vila-militar",
         "vila-yara"
        ],
        "via": [
-        "Avenida dos Autonomistas"
+        "Avenida dos Autonomistas (só o trecho no bairro citado)"
        ]
       }
      ],
      "quantidade": 3,
      "porGrupo": {
-      "federal": 366216.03
+      "federal": 387308.26
      }
     }
    },

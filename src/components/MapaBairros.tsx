@@ -250,13 +250,13 @@ export function MapaBairros({
 
   const semMovimento = () => typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const irPara = useCallback(
-    (alvo: { x: number; y: number; w: number; h: number } | null) => {
+    (alvo: { x: number; y: number; w: number; h: number } | null, zoomMinimo = 1.5) => {
       const svg = svgRef.current;
       const z = zoomRef.current;
       if (!svg || !z) return;
       let t = zoomIdentity;
       if (alvo) {
-        const k = Math.min(10, Math.max(1.5, 0.55 / Math.max(alvo.w / vb.w, alvo.h / vb.h)));
+        const k = Math.min(10, Math.max(zoomMinimo, 0.55 / Math.max(alvo.w / vb.w, alvo.h / vb.h)));
         t = zoomIdentity.translate(vb.x + vb.w / 2 - k * (alvo.x + alvo.w / 2), (vb.h - FOLGA_BAIXO) / 2 - k * (alvo.y + alvo.h / 2)).scale(k);
       }
       select(svg)
@@ -422,7 +422,33 @@ export function MapaBairros({
     citadosAoEscolher.current = null;
   }, [selecionado]);
   const nomesBairros = useMemo(() => new Map(bairros.map((b) => [b.id, b.nome])), [bairros]);
-  const marcarBairros = useCallback((ids: string[] | null) => setCitados(ids ?? []), []);
+  // "enquadrar": ao abrir um item, o mapa se ajusta para mostrar o bairro escolhido e todos os citados; "selecionado"
+  // volta para o bairro escolhido.
+  const selecionadoRef = useRef(selecionado);
+  selecionadoRef.current = selecionado;
+  const enquadrar = useCallback(
+    (ids: string[]) => {
+      const caixas = [selecionadoRef.current, ...ids]
+        .filter(Boolean)
+        .map((id) => svgRef.current?.querySelector<SVGPathElement>(`[data-bairro="${id}"]`)?.getBBox())
+        .filter((b): b is DOMRect => !!b);
+      if (!caixas.length) return;
+      const x0 = Math.min(...caixas.map((b) => b.x));
+      const y0 = Math.min(...caixas.map((b) => b.y));
+      const x1 = Math.max(...caixas.map((b) => b.x + b.width));
+      const y1 = Math.max(...caixas.map((b) => b.y + b.height));
+      irPara({ x: x0, y: y0, w: x1 - x0, h: y1 - y0 }, ids.length ? 1 : 1.5);
+    },
+    [irPara],
+  );
+  const marcarBairros = useCallback(
+    (ids: string[] | null, ajuste?: "enquadrar" | "selecionado") => {
+      setCitados(ids ?? []);
+      if (ajuste === "enquadrar") enquadrar(ids ?? []);
+      else if (ajuste === "selecionado") enquadrar([]);
+    },
+    [enquadrar],
+  );
   const bFoco = foco ? porId.get(foco) : null;
   const maxDist = Math.max(1, ...bairros.map((b) => b.distancia));
   const feed = (doMes.length ? doMes : visiveis.slice(-6)).slice().reverse().slice(0, 6);

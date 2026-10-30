@@ -59,7 +59,7 @@ export function PainelBairro({
   anoSeguranca: number | null;
   historico?: Historico | null;
   nomesBairros?: Map<string, string>;
-  marcarBairros?: (ids: string[] | null) => void;
+  marcarBairros?: (ids: string[] | null, ajuste?: "enquadrar" | "selecionado") => void;
 }) {
   const [aba, setAba] = useState<Aba>(abaInicial);
   // Aba Documentos: logo ao abrir, os outros bairros citados pelos documentos deste bairro ficam coloridos no mapa.
@@ -181,6 +181,8 @@ export function PainelBairro({
                   style={{ borderColor: corOrigem(i.origem) }}
                   onMouseEnter={() => i.bairros.length > 1 && marcarBairros?.(i.bairros.filter((b) => b !== bairro.id))}
                   onMouseLeave={() => marcarBairros?.(docsCitados)}
+                  // Clicar num documento de vários bairros ajusta o mapa para mostrar todos.
+                  onClick={() => i.bairros.length > 1 && marcarBairros?.(i.bairros.filter((b) => b !== bairro.id), "enquadrar")}
                 >
                   <div className="flex flex-wrap items-center gap-x-2 text-[11px] text-slate-500">
                     <span className="font-medium text-slate-700">{i.tipo}</span>
