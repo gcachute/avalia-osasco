@@ -40,6 +40,8 @@ export function MapaPessoa({
 }) {
   const [chave, setChave] = useState(modos[0]?.chave ?? "");
   const [foco, setFoco] = useState<string | null>(null);
+  // Bairros citados pelo documento sob o ponteiro: todos ficam marcados no mapa.
+  const [citados, setCitados] = useState<string[]>([]);
   const [dica, setDica] = useState<{ x: number; y: number } | null>(null);
   const [entrou, setEntrou] = useState(false);
   const caixa = useRef<HTMLDivElement>(null);
@@ -102,7 +104,7 @@ export function MapaPessoa({
               key={b.id}
               d={b.d}
               className="mapa-bairro"
-              style={{ ["--atraso" as string]: `${(b.distancia / maxDist) * 0.6}s`, fill: cor(faixa(modo.valores[b.id])), opacity: foco && foco !== b.id ? 0.6 : 1 }}
+              style={{ ["--atraso" as string]: `${(b.distancia / maxDist) * 0.6}s`, fill: cor(faixa(modo.valores[b.id])), opacity: (foco && foco !== b.id) || (citados.length > 0 && !citados.includes(b.id)) ? 0.6 : 1 }}
               stroke="var(--mapa-borda)"
               strokeWidth={1.2}
               strokeLinejoin="round"
@@ -110,6 +112,7 @@ export function MapaPessoa({
             />
           ))}
           {foco && porId.get(foco) && <path d={porId.get(foco)!.d} fill="none" stroke="var(--mapa-destaque)" strokeWidth={2.5} pointerEvents="none" />}
+          {citados.map((id) => porId.get(id) && <path key={`citado-${id}`} d={porId.get(id)!.d} fill="none" stroke="var(--mapa-destaque)" strokeWidth={2} pointerEvents="none" />)}
           {/* Onde agiu: círculo no bairro, do tamanho do número de documentos */}
           {Object.entries(docs).map(([id, n]) => {
             const b = porId.get(id);
@@ -208,7 +211,13 @@ export function MapaPessoa({
             <div className="mb-1.5 text-xs font-medium uppercase tracking-wide text-slate-500">Documentos mais recentes com bairro</div>
             <ul className="space-y-1.5">
               {recentes.map((i) => (
-                <li key={i.id} className="rounded-lg bg-slate-50 p-2 text-xs" style={{ borderLeft: `3px solid ${corItens}` }}>
+                <li
+                  key={i.id}
+                  className="rounded-lg bg-slate-50 p-2 text-xs transition-colors hover:bg-slate-100"
+                  style={{ borderLeft: `3px solid ${corItens}` }}
+                  onMouseEnter={() => setCitados(i.bairros)}
+                  onMouseLeave={() => setCitados([])}
+                >
                   <div className="flex flex-wrap gap-x-2 text-[11px] text-slate-500">
                     <span className="font-medium text-slate-700">{i.tipo}</span>
                     <span>{i.bairros.map((id) => porId.get(id)?.nome).filter(Boolean).join(", ")}</span>

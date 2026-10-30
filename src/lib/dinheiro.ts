@@ -192,6 +192,8 @@ export type ItemDinheiroBairro = {
   autor?: string | null;
   pagamentos?: number;
   outrosBairros: number;
+  // Todos os bairros citados pelo item (o valor é dividido igualmente entre eles).
+  bairros?: string[];
 };
 
 export const ROTULO_ORIGEM: Record<ItemDinheiroBairro["origem"], string> = {

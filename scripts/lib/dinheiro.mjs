@@ -137,7 +137,7 @@ export function montarDinheiro({ acha, achaEquipamento, vereadores = [] }) {
     for (const b of bairros) {
       const x = (porBairro[b] ??= { valor: 0, itens: [] });
       x.valor = r2(x.valor + item.valor / bairros.length);
-      x.itens.push({ ...item, texto: item.texto?.slice(0, 300), outrosBairros: bairros.length - 1 });
+      x.itens.push({ ...item, texto: item.texto?.slice(0, 300), outrosBairros: bairros.length - 1, bairros });
     }
   };
 
