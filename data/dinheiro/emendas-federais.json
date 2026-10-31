@@ -1541,6 +1541,19 @@
    "liquidado": 0,
    "pago": 2340000
   },
+  "201527970001": {
+   "ano": 2015,
+   "numero": "0001",
+   "localidade": "ITAPEVI - SP",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "programa": "PLANEJAMENTO URBANO",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "planoOrcamentario": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO - DESPESAS DIVERSAS",
+   "empenhado": 456900,
+   "liquidado": 0,
+   "pago": 456900
+  },
   "201525200003": {
    "ano": 2015,
    "numero": "0003",
@@ -1683,6 +1696,19 @@
    "empenhado": 560000,
    "liquidado": 126750,
    "pago": 560000
+  },
+  "201627970001": {
+   "ano": 2016,
+   "numero": "0001",
+   "localidade": "SÃO PAULO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "FORTALECIMENTO DO SISTEMA UNICO DE SAUDE (SUS)",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "planoOrcamentario": "EMENDA INDIVIDUAL",
+   "empenhado": 869138,
+   "liquidado": 0,
+   "pago": 869138
   },
   "201627970006": {
    "ano": 2016,
@@ -1866,6 +1892,19 @@
    "liquidado": 0,
    "pago": 1754150
   },
+  "201628120006": {
+   "ano": 2016,
+   "numero": "0006",
+   "localidade": "CARAPICUÍBA - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "FORTALECIMENTO DO SISTEMA UNICO DE SAUDE (SUS)",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "planoOrcamentario": "EMENDA INDIVIDUAL",
+   "empenhado": 999990,
+   "liquidado": 0,
+   "pago": 999990
+  },
   "201637460002": {
    "ano": 2016,
    "numero": "0002",
@@ -1983,6 +2022,19 @@
    "liquidado": 0,
    "pago": 1100000
   },
+  "201727970001": {
+   "ano": 2017,
+   "numero": "0001",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "FORTALECIMENTO DO SISTEMA UNICO DE SAUDE (SUS)",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "planoOrcamentario": "EMENDA INDIVIDUAL",
+   "empenhado": 499990,
+   "liquidado": 0,
+   "pago": 499990
+  },
   "201725200003": {
    "ano": 2017,
    "numero": "0003",
@@ -2061,6 +2113,19 @@
    "liquidado": 300000,
    "pago": 300000
   },
+  "201715810011": {
+   "ano": 2017,
+   "numero": "0011",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Desporto e lazer",
+   "subfuncao": "Desporto comunitário",
+   "programa": "ESPORTE, CIDADANIA E DESENVOLVIMENTO",
+   "acao": "IMPLANTACAO E MODERNIZACAO DE INFRAESTRUTURA PARA ESPORTE EDUCACIONAL, RECREATIVO E DE LAZER",
+   "planoOrcamentario": "EMENDA INDIVIDUAL",
+   "empenhado": 2000000,
+   "liquidado": 0,
+   "pago": 2000000
+  },
   "201737370007": {
    "ano": 2017,
    "numero": "0007",
@@ -2099,6 +2164,19 @@
    "empenhado": 277500,
    "liquidado": 0,
    "pago": 277500
+  },
+  "201728120006": {
+   "ano": 2017,
+   "numero": "0006",
+   "localidade": "EMBU - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "FORTALECIMENTO DO SISTEMA UNICO DE SAUDE (SUS)",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "planoOrcamentario": "EMENDA INDIVIDUAL",
+   "empenhado": 1200000,
+   "liquidado": 0,
+   "pago": 1200000
   },
   "201737460001": {
    "ano": 2017,
@@ -2178,6 +2256,19 @@
    "liquidado": 2100,
    "pago": 399999.29
   },
+  "201827970001": {
+   "ano": 2018,
+   "numero": "0001",
+   "localidade": "ÁGUAS DE SANTA BÁRBARA - SP",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "programa": "PLANEJAMENTO URBANO",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "planoOrcamentario": "EMENDA INDIVIDUAL",
+   "empenhado": 499999.38,
+   "liquidado": 3500,
+   "pago": 463583.62
+  },
   "201825200003": {
    "ano": 2018,
    "numero": "0003",
@@ -2256,6 +2347,19 @@
    "liquidado": 2786136,
    "pago": 2786136
   },
+  "201815810011": {
+   "ano": 2018,
+   "numero": "0011",
+   "localidade": "Nacional",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "FORTALECIMENTO DO SISTEMA UNICO DE SAUDE (SUS)",
+   "acao": "ASSISTENCIA MEDICA QUALIFICADA E GRATUITA A TODOS OS NIVEIS DA POPULACAO E DESENVOLVIMENTO DE ATIVIDADES EDUCACIONAIS E DE PESQUISA NO CAMPO DA SAUDE - REDE SARAH DE HOSPITAIS DE REABILITACAO",
+   "planoOrcamentario": "EMENDA INDIVIDUAL",
+   "empenhado": 300000,
+   "liquidado": 300000,
+   "pago": 300000
+  },
   "201837370007": {
    "ano": 2018,
    "numero": "0007",
@@ -2281,6 +2385,19 @@
    "empenhado": 200000,
    "liquidado": 0,
    "pago": 191918.35
+  },
+  "201828120006": {
+   "ano": 2018,
+   "numero": "0006",
+   "localidade": "OURINHOS - SP",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "programa": "PLANEJAMENTO URBANO",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "planoOrcamentario": "EMENDA INDIVIDUAL",
+   "empenhado": 399999.29,
+   "liquidado": 3500,
+   "pago": 369214.29
   },
   "201828120019": {
    "ano": 2018,
@@ -2359,6 +2476,19 @@
    "empenhado": 3968704,
    "liquidado": 3968704,
    "pago": 3968704
+  },
+  "201927970001": {
+   "ano": 2019,
+   "numero": "0001",
+   "localidade": "Nacional",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "programa": "PROMOCAO DA IGUALDADE RACIAL E SUPERACAO DO RACISMO",
+   "acao": "FORTALECIMENTO INSTITUCIONAL DOS ORGAOS ESTADUAIS E MUNICIPAIS PARA O ENFRENTAMENTO AO RACISMO E PROMOCAO DA IGUALDADE RACIAL",
+   "planoOrcamentario": "EMENDA INDIVIDUAL",
+   "empenhado": 199451.64,
+   "liquidado": 0,
+   "pago": 195430
   },
   "201925200003": {
    "ano": 2019,
@@ -2464,6 +2594,19 @@
    "liquidado": 300000,
    "pago": 300000
   },
+  "201915810011": {
+   "ano": 2019,
+   "numero": "0011",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "infra-estrutura urbana",
+   "programa": "PLANEJAMENTO URBANO",
+   "acao": "APOIO A POLITICA NACIONAL DE DESENVOLVIMENTO URBANO VOLTADO A IMPLANTACAO E QUALIFICACAO VIARIA",
+   "planoOrcamentario": "EMENDA INDIVIDUAL",
+   "empenhado": 2600774,
+   "liquidado": 0,
+   "pago": 2350774
+  },
   "201937370007": {
    "ano": 2019,
    "numero": "0007",
@@ -2489,6 +2632,19 @@
    "empenhado": 900000,
    "liquidado": 0,
    "pago": 854800
+  },
+  "201928120006": {
+   "ano": 2019,
+   "numero": "0006",
+   "localidade": "MORRO AGUDO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "FORTALECIMENTO DO SISTEMA UNICO DE SAUDE (SUS)",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "EMENDA INDIVIDUAL",
+   "empenhado": 100000,
+   "liquidado": 100000,
+   "pago": 100000
   },
   "201928120019": {
    "ano": 2019,
@@ -2555,6 +2711,19 @@
    "liquidado": 10000000,
    "pago": 10000000
   },
+  "202039070005": {
+   "ano": 2020,
+   "numero": "0005",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 4000000,
+   "liquidado": 4000000,
+   "pago": 4000000
+  },
   "202039090001": {
    "ano": 2020,
    "numero": "0001",
@@ -2580,6 +2749,19 @@
    "empenhado": 377690,
    "liquidado": 0,
    "pago": 377690
+  },
+  "202027970001": {
+   "ano": 2020,
+   "numero": "0001",
+   "localidade": "BARUERI - SP",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "programa": "PROTECAO A VIDA, FORTALECIMENTO DA FAMILIA, PROMOCAO E DEFESA DOS DIREITOS HUMANOS PARA TODOS",
+   "acao": "PROMOCAO E DEFESA DE DIREITOS HUMANOS PARA TODOS",
+   "planoOrcamentario": "PROMOCAO E DEFESA DE DIREITOS HUMANOS PARA TODOS - DESPESAS DIVERSAS",
+   "empenhado": 200000,
+   "liquidado": 0,
+   "pago": 143400
   },
   "202025200003": {
    "ano": 2020,
@@ -2646,6 +2828,19 @@
    "liquidado": 1350000,
    "pago": 1350000
   },
+  "202039550006": {
+   "ano": 2020,
+   "numero": "0006",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 5948744,
+   "liquidado": 1554076,
+   "pago": 5608802
+  },
   "202030880017": {
    "ano": 2020,
    "numero": "0017",
@@ -2685,6 +2880,19 @@
    "liquidado": 0,
    "pago": 3365586.95
   },
+  "202090600003": {
+   "ano": 2020,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "Assistência comunitária",
+   "programa": "PROTECAO SOCIAL NO AMBITO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "planoOrcamentario": "ESTRUTURACAO DA REDE DE SERVICOS DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS) - DESPESAS DIVERSAS",
+   "empenhado": 600000,
+   "liquidado": 600000,
+   "pago": 600000
+  },
   "202015810002": {
    "ano": 2020,
    "numero": "0002",
@@ -2711,6 +2919,58 @@
    "liquidado": 300000,
    "pago": 300000
   },
+  "202015810011": {
+   "ano": 2020,
+   "numero": "0011",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "ATENCAO PRIMARIA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 3000000,
+   "liquidado": 3000000,
+   "pago": 3000000
+  },
+  "202090890001": {
+   "ano": 2020,
+   "numero": "0001",
+   "localidade": "SÃO SEBASTIÃO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Administração geral",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "ENFRENTAMENTO DA EMERGENCIA DE SAUDE PUBLICA DE IMPORTANCIA INTERNACIONAL DECORRENTE DO CORONAVIRUS",
+   "planoOrcamentario": "ENFRENTAMENTO DA EMERGENCIA DE SAUDE PUBLICA DE IMPORTANCIA INTERNACIONAL DECORRENTE DO CORONAVIRUS - DESPESAS DIVERSAS",
+   "empenhado": 500000,
+   "liquidado": 500000,
+   "pago": 500000
+  },
+  "202041550001": {
+   "ano": 2020,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 12440000,
+   "liquidado": 12440000,
+   "pago": 12440000
+  },
+  "202040360001": {
+   "ano": 2020,
+   "numero": "0001",
+   "localidade": "Nacional",
+   "funcao": "Segurança pública",
+   "subfuncao": "Policiamento",
+   "programa": "SEGURANCA PUBLICA, COMBATE A CORRUPCAO, AO CRIME ORGANIZADO E AO CRIME VIOLENTO",
+   "acao": "DESENVOLVIMENTO DE POLITICAS DE SEGURANCA PUBLICA, PREVENCAO E ENFRENTAMENTO A CRIMINALIDADE",
+   "planoOrcamentario": "DESENVOLVIMENTO DE POLITICAS DE SEGURANCA PUBLICA, PREVENCAO E ENFRENTAMENTO A CRIMINALIDADE - DESPESAS DIVERSAS",
+   "empenhado": 1398825,
+   "liquidado": 0,
+   "pago": 1398825
+  },
   "202040940003": {
    "ano": 2020,
    "numero": "0003",
@@ -2736,6 +2996,45 @@
    "empenhado": 2500000,
    "liquidado": 0,
    "pago": 1803101
+  },
+  "202041610002": {
+   "ano": 2020,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Saneamento básico urbano",
+   "programa": "SANEAMENTO BASICO",
+   "acao": "IMPLANTACAO, AMPLIACAO E MELHORIA DE SISTEMAS PUBLICOS DE ABASTECIMENTO DE AGUA EM MUNICIPIOS COM ATE 50.000 HABITANTES",
+   "planoOrcamentario": "IMPLANTACAO, AMPLIACAO E MELHORIA DE SISTEMAS PUBLICOS DE ABASTECIMENTO DE AGUA EM MUNICIPIOS COM ATE 50.000 HABITANTES - DESPESAS DIVERSAS",
+   "empenhado": 985113,
+   "liquidado": 0,
+   "pago": 0
+  },
+  "202041190002": {
+   "ano": 2020,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "ATENCAO PRIMARIA A SAUDE",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 2999183,
+   "liquidado": 2349245,
+   "pago": 2999183
+  },
+  "202041190007": {
+   "ano": 2020,
+   "numero": "0007",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "Assistência comunitária",
+   "programa": "PROTECAO SOCIAL NO AMBITO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "planoOrcamentario": "ESTRUTURACAO DA REDE DE SERVICOS DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS) - DESPESAS DIVERSAS",
+   "empenhado": 1200000,
+   "liquidado": 600000,
+   "pago": 1200000
   },
   "202037370007": {
    "ano": 2020,
@@ -2801,6 +3100,19 @@
    "empenhado": 7500000,
    "liquidado": 7500000,
    "pago": 7500000
+  },
+  "202028120006": {
+   "ano": 2020,
+   "numero": "0006",
+   "localidade": "OURINHOS - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 1500000,
+   "liquidado": 1500000,
+   "pago": 1500000
   },
   "202081000215": {
    "ano": 2020,
@@ -2958,6 +3270,19 @@
    "liquidado": 0,
    "pago": 210893.11
   },
+  "202127970001": {
+   "ano": 2021,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "ATENCAO PRIMARIA A SAUDE",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 1939822,
+   "liquidado": 1939822,
+   "pago": 1939822
+  },
   "202125200003": {
    "ano": 2021,
    "numero": "0003",
@@ -3023,6 +3348,19 @@
    "liquidado": 500000,
    "pago": 500000
   },
+  "202139550006": {
+   "ano": 2021,
+   "numero": "0006",
+   "localidade": "AMPARO - SP",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "programa": "OPERACOES ESPECIAIS: TRANSFERENCIAS CONSTITUCIONAIS E AS DECORRENTES DE LEGISLACAO ESPECIFICA",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "planoOrcamentario": "TRANSFERENCIAS ESPECIAIS - DESPESAS DIVERSAS",
+   "empenhado": 500000,
+   "liquidado": 500000,
+   "pago": 500000
+  },
   "202127990019": {
    "ano": 2021,
    "numero": "0019",
@@ -3062,6 +3400,19 @@
    "liquidado": 600000,
    "pago": 600000
   },
+  "202190600003": {
+   "ano": 2021,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "ATENCAO PRIMARIA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 3130000,
+   "liquidado": 2730000,
+   "pago": 3130000
+  },
   "202115810002": {
    "ano": 2021,
    "numero": "0002",
@@ -3088,6 +3439,19 @@
    "liquidado": 1350000,
    "pago": 1530209
   },
+  "202115810011": {
+   "ano": 2021,
+   "numero": "0011",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Segurança pública",
+   "subfuncao": "Policiamento",
+   "programa": "SEGURANCA PUBLICA, COMBATE A CORRUPCAO, AO CRIME ORGANIZADO E AO CRIME VIOLENTO",
+   "acao": "DESENVOLVIMENTO DE POLITICAS DE SEGURANCA PUBLICA, PREVENCAO E ENFRENTAMENTO A CRIMINALIDADE",
+   "planoOrcamentario": "DESENVOLVIMENTO DE POLITICAS DE SEGURANCA PUBLICA, PREVENCAO E ENFRENTAMENTO A CRIMINALIDADE - DESPESAS DIVERSAS",
+   "empenhado": 500000,
+   "liquidado": 0,
+   "pago": 453811.57
+  },
   "202115810017": {
    "ano": 2021,
    "numero": "0017",
@@ -3100,6 +3464,45 @@
    "empenhado": 2000000,
    "liquidado": 2000000,
    "pago": 2000000
+  },
+  "202190890001": {
+   "ano": 2021,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 6000000,
+   "liquidado": 6000000,
+   "pago": 6000000
+  },
+  "202141550001": {
+   "ano": 2021,
+   "numero": "0001",
+   "localidade": "Nacional",
+   "funcao": "Agricultura",
+   "subfuncao": "Desenvolvimento tecnológico e engenharia",
+   "programa": "PESQUISA E INOVACAO AGROPECUARIA",
+   "acao": "PESQUISA, DESENVOLVIMENTO E TRANSFERENCIA DE TECNOLOGIAS PARA A AGROPECUARIA",
+   "planoOrcamentario": "PESQUISA E DESENVOLVIMENTO DE TECNOLOGIAS PARA A AGROPECUARIA - DESPESAS DIVERSAS",
+   "empenhado": 499999.96,
+   "liquidado": 0,
+   "pago": 499999.96
+  },
+  "202141550005": {
+   "ano": 2021,
+   "numero": "0005",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 9204000,
+   "liquidado": 9204000,
+   "pago": 9204000
   },
   "202141550006": {
    "ano": 2021,
@@ -3127,6 +3530,19 @@
    "liquidado": 2549986,
    "pago": 2549986
   },
+  "202140360001": {
+   "ano": 2021,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "ATENCAO PRIMARIA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 8049986,
+   "liquidado": 8049986,
+   "pago": 8049986
+  },
   "202140940003": {
    "ano": 2021,
    "numero": "0003",
@@ -3153,6 +3569,19 @@
    "liquidado": 0,
    "pago": 3000000
   },
+  "202141610002": {
+   "ano": 2021,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 3745915,
+   "liquidado": 3000000,
+   "pago": 3745915
+  },
   "202141190001": {
    "ano": 2021,
    "numero": "0001",
@@ -3165,6 +3594,32 @@
    "empenhado": 321148.83,
    "liquidado": 238295.69,
    "pago": 306380.69
+  },
+  "202141190002": {
+   "ano": 2021,
+   "numero": "0002",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "programa": "PROTECAO A VIDA, FORTALECIMENTO DA FAMILIA, PROMOCAO E DEFESA DOS DIREITOS HUMANOS PARA TODOS",
+   "acao": "PROMOCAO E DEFESA DE DIREITOS HUMANOS PARA TODOS",
+   "planoOrcamentario": "PROMOCAO E DEFESA DE DIREITOS HUMANOS PARA TODOS - DESPESAS DIVERSAS",
+   "empenhado": 359660,
+   "liquidado": 0,
+   "pago": 359660
+  },
+  "202141190007": {
+   "ano": 2021,
+   "numero": "0007",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "ATENCAO PRIMARIA A SAUDE",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 2498784,
+   "liquidado": 1699444,
+   "pago": 2498784
   },
   "202137350005": {
    "ano": 2021,
@@ -3243,6 +3698,19 @@
    "empenhado": 5810000,
    "liquidado": 5810000,
    "pago": 5810000
+  },
+  "202128120006": {
+   "ano": 2021,
+   "numero": "0006",
+   "localidade": "OSASCO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 1000000,
+   "liquidado": 1000000,
+   "pago": 1000000
   },
   "202128120019": {
    "ano": 2021,
@@ -3387,6 +3855,19 @@
    "liquidado": 400000,
    "pago": 400000
   },
+  "202141300013": {
+   "ano": 2021,
+   "numero": "0013",
+   "localidade": "OSASCO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 249840,
+   "liquidado": 249840,
+   "pago": 249840
+  },
   "202141350003": {
    "ano": 2021,
    "numero": "0003",
@@ -3412,6 +3893,19 @@
    "empenhado": 12518460,
    "liquidado": 12518460,
    "pago": 12518460
+  },
+  "202239070005": {
+   "ano": 2022,
+   "numero": "0005",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "ATENCAO PRIMARIA A SAUDE",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 517811,
+   "liquidado": 258883,
+   "pago": 517811
   },
   "202239070010": {
    "ano": 2022,
@@ -3451,6 +3945,32 @@
    "empenhado": 2172820,
    "liquidado": 0,
    "pago": 1685836.43
+  },
+  "202290890001": {
+   "ano": 2022,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 7042018,
+   "liquidado": 7042018,
+   "pago": 7042018
+  },
+  "202227970001": {
+   "ano": 2022,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "ATENCAO PRIMARIA A SAUDE",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 6156528,
+   "liquidado": 1534528,
+   "pago": 6156528
   },
   "202225200003": {
    "ano": 2022,
@@ -3503,6 +4023,19 @@
    "empenhado": 543205,
    "liquidado": 543205,
    "pago": 543205
+  },
+  "202239550006": {
+   "ano": 2022,
+   "numero": "0006",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 2139883,
+   "liquidado": 2050000,
+   "pago": 2139883
   },
   "202230880017": {
    "ano": 2022,
@@ -3582,6 +4115,19 @@
    "liquidado": 4174461,
    "pago": 4182678
   },
+  "202290600003": {
+   "ano": 2022,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 3487079,
+   "liquidado": 3487079,
+   "pago": 3487079
+  },
   "202215810002": {
    "ano": 2022,
    "numero": "0002",
@@ -3620,6 +4166,32 @@
    "empenhado": 6900000,
    "liquidado": 3450000,
    "pago": 6900000
+  },
+  "202241550001": {
+   "ano": 2022,
+   "numero": "0001",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Educação",
+   "subfuncao": "Ensino superior",
+   "programa": "EDUCACAO SUPERIOR - GRADUACAO, POS-GRADUACAO, ENSINO, PESQUISA E EXTENSAO",
+   "acao": "APOIO A ENTIDADES DE ENSINO SUPERIOR NAO FEDERAIS",
+   "planoOrcamentario": "APOIO A ENTIDADES DE ENSINO SUPERIOR NAO FEDERAIS - DESPESAS DIVERSAS",
+   "empenhado": 1000000,
+   "liquidado": 0,
+   "pago": 0
+  },
+  "202241550005": {
+   "ano": 2022,
+   "numero": "0005",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Segurança pública",
+   "subfuncao": "Policiamento",
+   "programa": "SEGURANCA PUBLICA, COMBATE A CORRUPCAO, AO CRIME ORGANIZADO E AO CRIME VIOLENTO",
+   "acao": "DESENVOLVIMENTO DE POLITICAS DE SEGURANCA PUBLICA, PREVENCAO E ENFRENTAMENTO A CRIMINALIDADE",
+   "planoOrcamentario": "DESENVOLVIMENTO DE POLITICAS DE SEGURANCA PUBLICA, PREVENCAO E ENFRENTAMENTO A CRIMINALIDADE - DESPESAS DIVERSAS",
+   "empenhado": 793957.75,
+   "liquidado": 0,
+   "pago": 283388.38
   },
   "202241550006": {
    "ano": 2022,
@@ -3673,6 +4245,19 @@
    "liquidado": 1099983.46,
    "pago": 2279607.02
   },
+  "202240360001": {
+   "ano": 2022,
+   "numero": "0001",
+   "localidade": "Nacional",
+   "funcao": "Defesa nacional",
+   "subfuncao": "Desenvolvimento tecnológico e engenharia",
+   "programa": "DEFESA NACIONAL",
+   "acao": "DESENVOLVIMENTO DE SISTEMAS DE TECNOLOGIA NUCLEAR DA MARINHA",
+   "planoOrcamentario": "DESENVOLVIMENTO DE SISTEMAS DE TECNOLOGIA NUCLEAR DA MARINHA - DESPESAS DIVERSAS",
+   "empenhado": 1300000,
+   "liquidado": 10183.92,
+   "pago": 1299999.97
+  },
   "202240360012": {
    "ano": 2022,
    "numero": "0012",
@@ -3712,6 +4297,19 @@
    "liquidado": 818893,
    "pago": 1605002
   },
+  "202241610002": {
+   "ano": 2022,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Urbanismo",
+   "subfuncao": "Assistência comunitária",
+   "programa": "DESENVOLVIMENTO REGIONAL, TERRITORIAL E URBANO",
+   "acao": "APOIO A PROJETOS DE DESENVOLVIMENTO SUSTENTAVEL LOCAL INTEGRADO",
+   "planoOrcamentario": "APOIO A PROJETOS DE DESENVOLVIMENTO SUSTENTAVEL LOCAL INTEGRADO",
+   "empenhado": 2385542,
+   "liquidado": 0,
+   "pago": 1216862.91
+  },
   "202241190001": {
    "ano": 2022,
    "numero": "0001",
@@ -3724,6 +4322,32 @@
    "empenhado": 6898421,
    "liquidado": 6600340,
    "pago": 6898421
+  },
+  "202241190002": {
+   "ano": 2022,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 561002,
+   "liquidado": 358074,
+   "pago": 561002
+  },
+  "202241190007": {
+   "ano": 2022,
+   "numero": "0007",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "ATENCAO PRIMARIA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 560792,
+   "liquidado": 560792,
+   "pago": 560792
   },
   "202237370007": {
    "ano": 2022,
@@ -3789,6 +4413,19 @@
    "empenhado": 8719682,
    "liquidado": 4359841,
    "pago": 8719682
+  },
+  "202228120006": {
+   "ano": 2022,
+   "numero": "0006",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 107621,
+   "liquidado": 107621,
+   "pago": 107621
   },
   "202237460002": {
    "ano": 2022,
@@ -3867,6 +4504,19 @@
    "empenhado": 1999995.75,
    "liquidado": 1059293,
    "pago": 1967462.75
+  },
+  "202241300013": {
+   "ano": 2022,
+   "numero": "0013",
+   "localidade": "IGUAPE - SP",
+   "funcao": "Agricultura",
+   "subfuncao": "Promoção da produção agropecuária",
+   "programa": "AGROPECUARIA SUSTENTAVEL",
+   "acao": "DESENVOLVIMENTO DA AQUICULTURA",
+   "planoOrcamentario": "DESENVOLVIMENTO DA AQUICULTURA",
+   "empenhado": 750000,
+   "liquidado": 750000,
+   "pago": 750000
   },
   "202241320014": {
    "ano": 2022,
@@ -3971,6 +4621,45 @@
    "empenhado": 2793912,
    "liquidado": 2647912,
    "pago": 2793912
+  },
+  "202390890001": {
+   "ano": 2023,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 16055690,
+   "liquidado": 16055690,
+   "pago": 16055690
+  },
+  "202327970001": {
+   "ano": 2023,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "Assistência comunitária",
+   "programa": "PROTECAO SOCIAL NO AMBITO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "planoOrcamentario": "ESTRUTURACAO DA REDE DE SERVICOS DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS) - DESPESAS DIVERSAS",
+   "empenhado": 400000,
+   "liquidado": 200000,
+   "pago": 400000
+  },
+  "202390600003": {
+   "ano": 2023,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "Assistência comunitária",
+   "programa": "PROTECAO SOCIAL NO AMBITO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "planoOrcamentario": "ESTRUTURACAO DA REDE DE SERVICOS DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS) - DESPESAS DIVERSAS",
+   "empenhado": 3645000,
+   "liquidado": 3645000,
+   "pago": 3645000
   },
   "202325200003": {
    "ano": 2023,
@@ -4102,6 +4791,45 @@
    "liquidado": 651683,
    "pago": 651683
   },
+  "202315810011": {
+   "ano": 2023,
+   "numero": "0011",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 814604,
+   "liquidado": 814604,
+   "pago": 814604
+  },
+  "202341550001": {
+   "ano": 2023,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "programa": "OPERACOES ESPECIAIS: TRANSFERENCIAS CONSTITUCIONAIS E AS DECORRENTES DE LEGISLACAO ESPECIFICA",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "planoOrcamentario": "TRANSFERENCIAS ESPECIAIS - DESPESAS DIVERSAS",
+   "empenhado": 2700000,
+   "liquidado": 2700000,
+   "pago": 2700000
+  },
+  "202341550005": {
+   "ano": 2023,
+   "numero": "0005",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Agricultura",
+   "subfuncao": "Difusão do conhecimento científico e tecnológico",
+   "programa": "PESQUISA E INOVACAO AGROPECUARIA",
+   "acao": "TRANSFERENCIA DE TECNOLOGIAS PARA A INOVACAO PARA A AGROPECUARIA",
+   "planoOrcamentario": "TRANSFERENCIA DE TECNOLOGIAS PARA A INOVACAO PARA A AGROPECUARIA - DESPESAS DIVERSAS",
+   "empenhado": 81460,
+   "liquidado": 70740.33,
+   "pago": 81460
+  },
   "202341550006": {
    "ano": 2023,
    "numero": "0006",
@@ -4140,6 +4868,19 @@
    "empenhado": 1829814,
    "liquidado": 1829814,
    "pago": 1829814
+  },
+  "202340360001": {
+   "ano": 2023,
+   "numero": "0001",
+   "localidade": "Nacional",
+   "funcao": "Múltiplo",
+   "subfuncao": "Múltiplo",
+   "programa": "Múltiplo",
+   "acao": "Múltiplo",
+   "planoOrcamentario": "PRESERVACAO DO PATRIMONIO CULTURAL BRASILEIRO - DESPESAS DIVERSAS",
+   "empenhado": 2443813,
+   "liquidado": 67830.6,
+   "pago": 2443813
   },
   "202340360012": {
    "ano": 2023,
@@ -4180,6 +4921,19 @@
    "liquidado": 1738980,
    "pago": 2231850.2
   },
+  "202341610002": {
+   "ano": 2023,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 1924599,
+   "liquidado": 0,
+   "pago": 0
+  },
   "202341190001": {
    "ano": 2023,
    "numero": "0001",
@@ -4192,6 +4946,32 @@
    "empenhado": 7326987,
    "liquidado": 6077504,
    "pago": 6927028
+  },
+  "202341190002": {
+   "ano": 2023,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "Múltiplo",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 11767087,
+   "liquidado": 9667398,
+   "pago": 11571583.6
+  },
+  "202341190007": {
+   "ano": 2023,
+   "numero": "0007",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Desporto e lazer",
+   "subfuncao": "Desporto comunitário",
+   "programa": "ESPORTE",
+   "acao": "DESENVOLVIMENTO DE ATIVIDADES E APOIO A PROGRAMAS, EVENTOS E PROJETOS DE ESPORTE AMADOR, EDUCACAO, LAZER E INCLUSAO SOCIAL",
+   "planoOrcamentario": "DESENVOLVIMENTO DE ATIVIDADES E APOIO A PROJETOS E EVENTOS DE ESPORTE, EDUCACAO, LAZER E INCLUSAO SOCIAL - DESPESAS DIVERSAS",
+   "empenhado": 3910102,
+   "liquidado": 2199998.97,
+   "pago": 3160100.97
   },
   "202337370007": {
    "ano": 2023,
@@ -4244,6 +5024,19 @@
    "empenhado": 6842679,
    "liquidado": 6842679,
    "pago": 6842679
+  },
+  "202328120006": {
+   "ano": 2023,
+   "numero": "0006",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS - DESPESAS DIVERSAS",
+   "empenhado": 162920,
+   "liquidado": 162920,
+   "pago": 162920
   },
   "202337460008": {
    "ano": 2023,
@@ -4309,6 +5102,19 @@
    "empenhado": 1906174,
    "liquidado": 1456174,
    "pago": 1906174
+  },
+  "202341300013": {
+   "ano": 2023,
+   "numero": "0013",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Educação",
+   "subfuncao": "Ensino superior",
+   "programa": "EDUCACAO SUPERIOR - GRADUACAO, POS-GRADUACAO, ENSINO, PESQUISA E EXTENSAO",
+   "acao": "APOIO A ENTIDADES DE ENSINO SUPERIOR NAO FEDERAIS",
+   "planoOrcamentario": "APOIO A ENTIDADES DE ENSINO SUPERIOR NAO FEDERAIS - DESPESAS DIVERSAS",
+   "empenhado": 534267,
+   "liquidado": 0,
+   "pago": 24548
   },
   "202325170011": {
    "ano": 2023,
@@ -4648,6 +5454,19 @@
    "liquidado": 0,
    "pago": 200000
   },
+  "202415810011": {
+   "ano": 2024,
+   "numero": "0011",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 500000,
+   "liquidado": 500000,
+   "pago": 500000
+  },
   "202415810013": {
    "ano": 2024,
    "numero": "0013",
@@ -4739,6 +5558,19 @@
    "liquidado": 0,
    "pago": 488284.66
   },
+  "202441550001": {
+   "ano": 2024,
+   "numero": "0001",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Agricultura",
+   "subfuncao": "Desenvolvimento tecnológico e engenharia",
+   "programa": "PESQUISA E INOVACAO AGROPECUARIA",
+   "acao": "PESQUISA, DESENVOLVIMENTO E TRANSFERENCIA DE TECNOLOGIAS PARA A AGROPECUARIA",
+   "planoOrcamentario": "PESQUISA, DESENVOLVIMENTO E TRANSFERENCIA DE TECNOLOGIAS PARA A AGROPECUARIA - DESPESAS DIVERSAS",
+   "empenhado": 499818.15,
+   "liquidado": 205466.37,
+   "pago": 486838.66
+  },
   "202441550006": {
    "ano": 2024,
    "numero": "0006",
@@ -4791,6 +5623,19 @@
    "liquidado": 6859000,
    "pago": 6859000
   },
+  "202440360001": {
+   "ano": 2024,
+   "numero": "0001",
+   "localidade": "RIO DE JANEIRO - RJ",
+   "funcao": "Cultura",
+   "subfuncao": "Patrimônio histórico, artístico e arqueológico",
+   "programa": "DIREITO A CULTURA",
+   "acao": "PRESERVACAO DO PATRIMONIO CULTURAL BRASILEIRO",
+   "planoOrcamentario": "PRESERVACAO DO PATRIMONIO CULTURAL BRASILEIRO - DESPESAS DIVERSAS",
+   "empenhado": 1450000,
+   "liquidado": 1160000,
+   "pago": 1450000
+  },
   "202440360012": {
    "ano": 2024,
    "numero": "0012",
@@ -4830,6 +5675,19 @@
    "liquidado": 10000000,
    "pago": 10300000
   },
+  "202441610002": {
+   "ano": 2024,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Assistência social",
+   "subfuncao": "Assistência comunitária",
+   "programa": "PROTECAO SOCIAL PELO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS)",
+   "planoOrcamentario": "ESTRUTURACAO DA REDE DE SERVICOS DO SISTEMA UNICO DE ASSISTENCIA SOCIAL (SUAS) - DESPESAS DIVERSAS",
+   "empenhado": 2000000,
+   "liquidado": 2000000,
+   "pago": 2000000
+  },
   "202441190001": {
    "ano": 2024,
    "numero": "0001",
@@ -4842,6 +5700,32 @@
    "empenhado": 2071391,
    "liquidado": 550000,
    "pago": 1857595.24
+  },
+  "202441190002": {
+   "ano": 2024,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 12750000,
+   "liquidado": 12750000,
+   "pago": 12750000
+  },
+  "202441190007": {
+   "ano": 2024,
+   "numero": "0007",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Desporto e lazer",
+   "subfuncao": "Desporto comunitário",
+   "programa": "ESPORTE PARA A VIDA",
+   "acao": "DESENVOLVIMENTO DE ATIVIDADES E APOIO A PROGRAMAS, EVENTOS E PROJETOS DE ESPORTE AMADOR, EDUCACAO, LAZER E INCLUSAO SOCIAL",
+   "planoOrcamentario": "DESENVOLVIMENTO DE ATIVIDADES E APOIO A PROGRAMAS, EVENTOS E PROJETOS DE ESPORTE AMADOR, EDUCACAO, LAZER E INCLUSAO SOCIAL - DESPESAS DIVERSAS",
+   "empenhado": 10260000,
+   "liquidado": 0,
+   "pago": 9256435.85
   },
   "202444290002": {
    "ano": 2024,
@@ -4920,6 +5804,19 @@
    "empenhado": 2000000,
    "liquidado": 2000000,
    "pago": 2000000
+  },
+  "202428120006": {
+   "ano": 2024,
+   "numero": "0006",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 200000,
+   "liquidado": 200000,
+   "pago": 200000
   },
   "202428120019": {
    "ano": 2024,
@@ -5011,6 +5908,19 @@
    "empenhado": 2860915.6,
    "liquidado": 965969.03,
    "pago": 2394625.28
+  },
+  "202441300013": {
+   "ano": 2024,
+   "numero": "0013",
+   "localidade": "Nacional",
+   "funcao": "Educação",
+   "subfuncao": "Ensino superior",
+   "programa": "EDUCACAO SUPERIOR: QUALIDADE, DEMOCRACIA, EQUIDADE E SUSTENTABILIDADE",
+   "acao": "FOMENTO AS ACOES DE GRADUACAO, POS-GRADUACAO, ENSINO, PESQUISA E EXTENSAO",
+   "planoOrcamentario": "FOMENTO AS ACOES DE GRADUACAO, POS-GRADUACAO, ENSINO, PESQUISA E EXTENSAO - DESPESAS DIVERSAS",
+   "empenhado": 200000,
+   "liquidado": 22413.04,
+   "pago": 200000
   },
   "202441320017": {
    "ano": 2024,
@@ -5167,6 +6077,19 @@
    "empenhado": 2099949.44,
    "liquidado": 10000,
    "pago": 1903949.44
+  },
+  "202539550006": {
+   "ano": 2025,
+   "numero": "0006",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "programa": "OPERACOES ESPECIAIS: TRANSFERENCIAS CONSTITUCIONAIS E AS DECORRENTES DE LEGISLACAO ESPECIFICA",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "planoOrcamentario": "TRANSFERENCIAS ESPECIAIS - DESPESAS DIVERSAS",
+   "empenhado": 3400000,
+   "liquidado": 3366000,
+   "pago": 3400000
   },
   "202543490001": {
    "ano": 2025,
@@ -5350,6 +6273,19 @@
    "liquidado": 2000000,
    "pago": 2000000
   },
+  "202515810011": {
+   "ano": 2025,
+   "numero": "0011",
+   "localidade": "RIBEIRÃO PRETO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 2000000,
+   "liquidado": 2000000,
+   "pago": 2000000
+  },
   "202525280012": {
    "ano": 2025,
    "numero": "0012",
@@ -5428,6 +6364,32 @@
    "liquidado": 500000,
    "pago": 500000
   },
+  "202541550001": {
+   "ano": 2025,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "programa": "OPERACOES ESPECIAIS: TRANSFERENCIAS CONSTITUCIONAIS E AS DECORRENTES DE LEGISLACAO ESPECIFICA",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "planoOrcamentario": "TRANSFERENCIAS ESPECIAIS - DESPESAS DIVERSAS",
+   "empenhado": 12775000,
+   "liquidado": 12647250,
+   "pago": 12647250
+  },
+  "202541550005": {
+   "ano": 2025,
+   "numero": "0005",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Cultura",
+   "subfuncao": "Difusão cultural",
+   "programa": "DIREITO A CULTURA",
+   "acao": "PROMOCAO E FOMENTO A CULTURA BRASILEIRA",
+   "planoOrcamentario": "PROMOCAO E FOMENTO A CULTURA BRASILEIRA - DESPESAS DIVERSAS",
+   "empenhado": 1000000,
+   "liquidado": 750000,
+   "pago": 1000000
+  },
   "202541550006": {
    "ano": 2025,
    "numero": "0006",
@@ -5440,6 +6402,19 @@
    "empenhado": 500000,
    "liquidado": 171468.98,
    "pago": 467032
+  },
+  "202540360001": {
+   "ano": 2025,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 6750000,
+   "liquidado": 6750000,
+   "pago": 6750000
   },
   "202540940003": {
    "ano": 2025,
@@ -5467,6 +6442,19 @@
    "liquidado": 8637993,
    "pago": 8637993
   },
+  "202541610002": {
+   "ano": 2025,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "ATENCAO PRIMARIA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE METAS",
+   "empenhado": 5000000,
+   "liquidado": 5000000,
+   "pago": 5000000
+  },
   "202541190001": {
    "ano": 2025,
    "numero": "0001",
@@ -5479,6 +6467,32 @@
    "empenhado": 5768000,
    "liquidado": 5768000,
    "pago": 5768000
+  },
+  "202541190002": {
+   "ano": 2025,
+   "numero": "0002",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Direitos da cidadania",
+   "subfuncao": "Direitos individuais, coletivos e difusos",
+   "programa": "PROMOCAO DA CIDADANIA, DEFESA DE DIREITOS HUMANOS E REPARACAO DE VIOLACOES",
+   "acao": "PROMOCAO E DEFESA DOS DIREITOS HUMANOS PARA TODOS E REPARACAO DE VIOLACOES",
+   "planoOrcamentario": "PROMOCAO E DEFESA DOS DIREITOS HUMANOS PARA TODOS E REPARACAO DE VIOLACOES - DESPESAS DIVERSAS",
+   "empenhado": 2599967.58,
+   "liquidado": 0,
+   "pago": 0
+  },
+  "202541190007": {
+   "ano": 2025,
+   "numero": "0007",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Atenção básica",
+   "programa": "ATENCAO PRIMARIA A SAUDE",
+   "acao": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DA REDE DE SERVICOS DE ATENCAO PRIMARIA A SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 4732552,
+   "liquidado": 4532557,
+   "pago": 4732552
   },
   "202544290002": {
    "ano": 2025,
@@ -5518,6 +6532,19 @@
    "empenhado": 8591218,
    "liquidado": 7891218,
    "pago": 7891218
+  },
+  "202528120006": {
+   "ano": 2025,
+   "numero": "0006",
+   "localidade": "SÃO PAULO - SP",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 300000,
+   "liquidado": 300000,
+   "pago": 300000
   },
   "202528120019": {
    "ano": 2025,
@@ -5609,6 +6636,19 @@
    "empenhado": 3772495,
    "liquidado": 1962055,
    "pago": 2572603
+  },
+  "202541300013": {
+   "ano": 2025,
+   "numero": "0013",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 2349340,
+   "liquidado": 599444,
+   "pago": 1725131.24
   },
   "202630370001": {
    "ano": 2026,
@@ -5766,6 +6806,19 @@
    "liquidado": 206696,
    "pago": 206696
   },
+  "202639550006": {
+   "ano": 2026,
+   "numero": "0006",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Encargos especiais",
+   "subfuncao": "Outras transferências",
+   "programa": "OPERACOES ESPECIAIS: TRANSFERENCIAS CONSTITUCIONAIS E AS DECORRENTES DE LEGISLACAO ESPECIFICA",
+   "acao": "TRANSFERENCIAS ESPECIAIS",
+   "planoOrcamentario": "TRANSFERENCIAS ESPECIAIS",
+   "empenhado": 3034750,
+   "liquidado": 1744326.84,
+   "pago": 1744326.84
+  },
   "202643490004": {
    "ano": 2026,
    "numero": "0004",
@@ -5870,6 +6923,19 @@
    "liquidado": 6964258,
    "pago": 6964258
   },
+  "202690600003": {
+   "ano": 2026,
+   "numero": "0003",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 800000,
+   "liquidado": 400000,
+   "pago": 400000
+  },
   "202615810002": {
    "ano": 2026,
    "numero": "0002",
@@ -5895,6 +6961,19 @@
    "empenhado": 300000,
    "liquidado": 0,
    "pago": 0
+  },
+  "202615810011": {
+   "ano": 2026,
+   "numero": "0011",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 250000,
+   "liquidado": 250000,
+   "pago": 250000
   },
   "202644020020": {
    "ano": 2026,
@@ -5948,6 +7027,32 @@
    "liquidado": 10800000,
    "pago": 10800000
   },
+  "202641550001": {
+   "ano": 2026,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 20100000,
+   "liquidado": 5227000,
+   "pago": 5227000
+  },
+  "202641550005": {
+   "ano": 2026,
+   "numero": "0005",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Agricultura",
+   "subfuncao": "Desenvolvimento tecnológico e engenharia",
+   "programa": "PESQUISA E INOVACAO AGROPECUARIA",
+   "acao": "PESQUISA, DESENVOLVIMENTO E TRANSFERENCIA DE TECNOLOGIAS PARA A AGROPECUARIA",
+   "planoOrcamentario": "PESQUISA, DESENVOLVIMENTO E TRANSFERENCIA DE TECNOLOGIAS PARA A AGROPECUARIA - DESPESAS DIVERSAS",
+   "empenhado": 286128.58,
+   "liquidado": 55076.6,
+   "pago": 0
+  },
   "202641550006": {
    "ano": 2026,
    "numero": "0006",
@@ -5986,6 +7091,19 @@
    "empenhado": 400000,
    "liquidado": 0,
    "pago": 0
+  },
+  "202640360001": {
+   "ano": 2026,
+   "numero": "0001",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 8230000,
+   "liquidado": 950000,
+   "pago": 950000
   },
   "202640360012": {
    "ano": 2026,
@@ -6026,6 +7144,19 @@
    "liquidado": 7767066.16,
    "pago": 7767066.16
   },
+  "202641610002": {
+   "ano": 2026,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE",
+   "planoOrcamentario": "ESTRUTURACAO DE UNIDADES DE ATENCAO ESPECIALIZADA EM SAUDE - DESPESAS DIVERSAS",
+   "empenhado": 5571801,
+   "liquidado": 514058,
+   "pago": 499995
+  },
   "202641190001": {
    "ano": 2026,
    "numero": "0001",
@@ -6038,6 +7169,19 @@
    "empenhado": 5050000,
    "liquidado": 4030000,
    "pago": 4030000
+  },
+  "202641190002": {
+   "ano": 2026,
+   "numero": "0002",
+   "localidade": "MÚLTIPLO",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 9135000,
+   "liquidado": 2250000,
+   "pago": 2250000
   },
   "202641190005": {
    "ano": 2026,
@@ -6129,6 +7273,19 @@
    "empenhado": 17372000,
    "liquidado": 15872000,
    "pago": 15872000
+  },
+  "202628120006": {
+   "ano": 2026,
+   "numero": "0006",
+   "localidade": "SÃO PAULO (UF)",
+   "funcao": "Saúde",
+   "subfuncao": "Assistência hospitalar e ambulatorial",
+   "programa": "ATENCAO ESPECIALIZADA A SAUDE",
+   "acao": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "planoOrcamentario": "INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ASSISTENCIA HOSPITALAR E AMBULATORIAL PARA CUMPRIMENTO DE METAS",
+   "empenhado": 300000,
+   "liquidado": 0,
+   "pago": 0
   },
   "202637460002": {
    "ano": 2026,

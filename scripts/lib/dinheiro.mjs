@@ -166,7 +166,8 @@ export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], 
   const naCgu = {};
   for (const r of emendas.recebimentos) naCgu[`${r.mes.slice(0, 4)}|${r.codigo.slice(-8)}`] = (naCgu[`${r.mes.slice(0, 4)}|${r.codigo.slice(-8)}`] ?? 0) + r.valor;
   // Emenda paga em parcelas aparece uma vez por parcela na consulta, com o detalhe repetido: fica uma linha de cada.
-  const fnsTodos = [...new Map((ler("emendas-fns.json")?.repasses ?? []).map((r) => [[r.ano, r.proposta, r.emenda, r.portaria, r.competencia, r.valor].join("|"), r])).values()];
+  const arquivoFns = ler("emendas-fns.json");
+  const fnsTodos = [...new Map((arquivoFns?.repasses ?? []).map((r) => [[r.ano, r.proposta, r.emenda, r.portaria, r.competencia, r.valor].join("|"), r])).values()];
   const somaFns = {};
   for (const r of fnsTodos) somaFns[`${r.ano}|${r.emenda}`] = (somaFns[`${r.ano}|${r.emenda}`] ?? 0) + r.valor;
   const TIPO_FNS = { "EMENDA INDIVIDUAL": "Emenda Individual - Fundo a Fundo", "EMENDA COMISSAO": "Emenda de Comissão", "EMENDA BANCADA": "Emenda de Bancada" };
@@ -885,6 +886,7 @@ export function montarDinheiro({ acha, achaEquipamento, achaLugares = () => [], 
         entradas: { nome: entradas.fonte, url: "https://siconfi.tesouro.gov.br/siconfi/pages/public/consulta_finbra/finbra_list.jsf", coletadoEm: entradas.coletadoEm },
         emendas: { nome: emendas.fonte, url: emendas.url, coletadoEm: emendas.coletadoEm },
         pix: pix && { nome: pix.fonte, url: pix.url, coletadoEm: pix.coletadoEm },
+        fns: arquivoFns && { nome: "Fundo Nacional de Saúde, Consulta FNS", url: arquivoFns.url, coletadoEm: arquivoFns.coletadoEm },
         pixEstaduais: pixEst && { nome: pixEst.fonte, url: pixEst.url, posicao: pixEst.posicao },
         gastos: { nome: "TCE-SP, despesas dos municípios (Audesp)", url: "https://transparencia.tce.sp.gov.br/conjunto-de-dados" },
         parlamentares: parl && { nome: parl.fonte, url: parl.url, coletadoEm: parl.coletadoEm },

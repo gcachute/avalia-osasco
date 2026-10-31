@@ -56,6 +56,9 @@ jobs:
         env:
           SO: entradas,rreo,uniao,sefaz
         continue-on-error: true
+      - name: Emendas de saúde (Consulta FNS)
+        run: npm run coletar:fns
+        continue-on-error: true
       - name: Emendas federais (CGU)
         run: npm run coletar:dinheiro
         env:

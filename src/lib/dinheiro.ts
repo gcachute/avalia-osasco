@@ -160,7 +160,7 @@ export type Conferencia = {
 };
 
 export type PaginaDinheiro = {
-  fontes: { entradas: Fonte; emendas: Fonte; pix: Fonte | null; pixEstaduais: Fonte | null; gastos: Fonte; parlamentares: Fonte | null };
+  fontes: { entradas: Fonte; emendas: Fonte; pix: Fonte | null; fns: Fonte | null; pixEstaduais: Fonte | null; gastos: Fonte; parlamentares: Fonte | null };
   entradas: EntradaAno[];
   emendas: {
     recebidoPorAno: Record<string, number>;

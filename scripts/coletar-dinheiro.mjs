@@ -348,7 +348,11 @@ if (SO.includes("pix")) {
 if (SO.includes("parlamentares")) {
   const sem = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toUpperCase().replace(/[^A-Z ]/g, " ").replace(/\s+/g, " ").trim();
   // Nomes que a CGU grava diferente do nome parlamentar.
-  const APELIDOS = { "RIBAMAR ANTONIO DA SILVA": "RIBAMAR SILVA" };
+  const APELIDOS = { "RIBAMAR ANTONIO DA SILVA": "RIBAMAR SILVA", BOZZELLA: "JUNIOR BOZZELLA" };
+  const chaveDe = (nome) => {
+    const atual = sem(nome.match(/^(.*?)\s*\(EX-PARLAMENTAR/i)?.[1] ?? nome);
+    return APELIDOS[atual] ?? atual;
+  };
   const emendas = JSON.parse(readFileSync(`${PASTA}/emendas-federais.json`, "utf8"));
   const pix = existsSync(`${PASTA}/pix-federais.json`) ? JSON.parse(readFileSync(`${PASTA}/pix-federais.json`, "utf8")) : { planos: [] };
   const fns = (existsSync(`${PASTA}/emendas-fns.json`) ? JSON.parse(readFileSync(`${PASTA}/emendas-fns.json`, "utf8")).repasses : []).map((r) => ({ autor: emendas.autores[r.emenda.slice(0, 4)], ano: r.ano })).filter((r) => r.autor);
@@ -364,13 +368,28 @@ if (SO.includes("parlamentares")) {
     await sleep(400);
     return r;
   };
+  // Fonte fora do ar não pode apagar o que já foi coletado: quem não for achado agora mantém o cadastro anterior.
+  const anteriores = existsSync(`${PASTA}/parlamentares.json`) ? JSON.parse(readFileSync(`${PASTA}/parlamentares.json`, "utf8")).parlamentares : {};
   const camara = new Map();
-  for (const leg of [54, 55, 56, 57]) {
-    // A lista repete o deputado a cada troca de partido e vem em páginas.
-    for (let url = `https://dadosabertos.camara.leg.br/api/v2/deputados?idLegislatura=${leg}&itens=100`; url; ) {
-      const r = await json(url);
-      for (const d of r.dados) camara.set(sem(d.nome), d.id);
-      url = r.links.find((l) => l.rel === "next")?.href;
+  let listaInteira = true;
+  try {
+    for (const leg of [54, 55, 56, 57]) {
+      // A lista repete o deputado a cada troca de partido e vem em páginas.
+      for (let url = `https://dadosabertos.camara.leg.br/api/v2/deputados?idLegislatura=${leg}&itens=100`; url; ) {
+        const r = await json(url);
+        for (const d of r.dados) camara.set(sem(d.nome), d.id);
+        url = r.links.find((l) => l.rel === "next")?.href;
+      }
+    }
+  } catch {
+    // A lista completa às vezes fica fora do ar enquanto a busca por nome funciona.
+    // A busca por nome é lenta, então só procura quem ainda não tem cadastro.
+    console.log("Lista de deputados indisponível: buscando nome a nome.");
+    listaInteira = false;
+    for (const chave of new Set(nomes.filter((n) => !anteriores[n]).map(chaveDe))) {
+      if (camara.has(chave)) continue;
+      const r = await json(`https://dadosabertos.camara.leg.br/api/v2/deputados?nome=${encodeURIComponent(chave)}&idLegislatura=54&idLegislatura=55&idLegislatura=56&idLegislatura=57`).catch(() => null);
+      for (const d of r?.dados ?? []) camara.set(sem(d.nome), d.id);
     }
   }
   const senado = new Map();
@@ -396,54 +415,65 @@ if (SO.includes("parlamentares")) {
   const parlamentares = {};
   for (const nome of nomes) {
     // "RIBAMAR ANTONIO DA SILVA (EX-PARLAMENTAR RICARDO SILVA, NOS TERMOS ...)": a indicação passou a outro deputado.
-    const [, atual, antigo] = nome.match(/^(.*?)\s*\(EX-PARLAMENTAR ([^,]+),/i) ?? [null, nome, null];
-    const chave = APELIDOS[sem(atual)] ?? sem(atual);
+    if (!listaInteira && anteriores[nome]) {
+      parlamentares[nome] = anteriores[nome];
+      continue;
+    }
+    const antigo = nome.match(/\(EX-PARLAMENTAR ([^,]+),/i)?.[1] ?? null;
+    const chave = chaveDe(nome);
     const candidatos = [chave, sem(chave.replace(/^(PR|PASTOR|DELEGADO|DELEGADA|POLICIAL|CORONEL|CAPITAO|GENERAL) /, ""))];
     let idCamara = candidatos.map((c) => camara.get(c)).find(Boolean);
     const sen = candidatos.map((c) => senado.get(c)).find(Boolean);
     if (idCamara && sen && [...(anosDe[nome] ?? [])].every((a) => anosSenado(sen).includes(a))) idCamara = null;
-    if (idCamara) {
-      const d = (await json(`https://dadosabertos.camara.leg.br/api/v2/deputados/${idCamara}`)).dados;
-      // As linhas "Nome no início da legislatura" vêm com data errada e embaralham a ordem dos partidos.
-      const hist = (await json(`https://dadosabertos.camara.leg.br/api/v2/deputados/${idCamara}/historico`)).dados.filter((h) => !/^Nome no in/i.test(h.descricaoStatus ?? ""));
-      const partidos = [];
-      for (const h of hist.sort((a, b) => a.dataHora.localeCompare(b.dataHora)))
-        if (h.siglaPartido && partidos.at(-1)?.sigla !== h.siglaPartido) partidos.push({ sigla: h.siglaPartido, desde: h.dataHora.slice(0, 10) });
-      parlamentares[nome] = {
-        casa: "camara",
-        id: idCamara,
-        nome: d.ultimoStatus.nome.trim(),
-        sexo: d.sexo,
-        uf: d.ultimoStatus.siglaUf,
-        partido: d.ultimoStatus.siglaPartido,
-        partidos,
-        // "Exercício", "Licença", "Vacância", "Fim de Mandato"...
-        situacao: d.ultimoStatus.situacao,
-        legislaturas: [...new Set(hist.map((h) => h.idLegislatura))].sort(),
-        perfil: `https://www.camara.leg.br/deputados/${idCamara}`,
-        foto: await foto(d.ultimoStatus.urlFoto, `/fotos/parlamentares/camara-${idCamara}.jpg`),
-        indicacaoDe: antigo ? antigo.trim() : null,
-      };
-    } else if (sen) {
-      const id = sen.IdentificacaoParlamentar;
-      const mandatos = [].concat(sen.Mandatos?.Mandato ?? []);
-      const filiacoes = [].concat((await json(`https://legis.senado.leg.br/dadosabertos/senador/${id.CodigoParlamentar}/filiacoes`)).FiliacaoParlamentar.Parlamentar.Filiacoes?.Filiacao ?? []);
-      const fimMandato = Math.max(...anosSenado(sen));
-      parlamentares[nome] = {
-        casa: "senado",
-        id: id.CodigoParlamentar,
-        nome: id.NomeParlamentar,
-        sexo: id.SexoParlamentar === "Feminino" ? "F" : "M",
-        uf: mandatos.at(-1)?.UfParlamentar ?? null,
-        partido: id.SiglaPartidoParlamentar,
-        partidos: filiacoes.map((f) => ({ sigla: f.Partido.SiglaPartido, desde: f.DataFiliacao })).sort((a, b) => a.desde.localeCompare(b.desde)),
-        situacao: senadoresAtuais.has(id.CodigoParlamentar) ? "Exercício" : fimMandato >= ATUAL ? "Licença" : "Fim de Mandato",
-        legislaturas: mandatos.flatMap((m) => [m.PrimeiraLegislaturaDoMandato?.NumeroLegislatura, m.SegundaLegislaturaDoMandato?.NumeroLegislatura]).filter(Boolean).map(Number),
-        perfil: `https://www25.senado.leg.br/web/senadores/senador/-/perfil/${id.CodigoParlamentar}`,
-        foto: await foto(`https://www.senado.leg.br/senadores/img/fotos-oficiais/senador${id.CodigoParlamentar}.jpg`, `/fotos/parlamentares/senado-${id.CodigoParlamentar}.jpg`),
-        indicacaoDe: antigo ? antigo.trim() : null,
-      };
-    } else console.log(`  autor sem cadastro encontrado: ${nome}`);
+    try {
+      if (idCamara) {
+        const d = (await json(`https://dadosabertos.camara.leg.br/api/v2/deputados/${idCamara}`)).dados;
+        // As linhas "Nome no início da legislatura" vêm com data errada e embaralham a ordem dos partidos.
+        const hist = (await json(`https://dadosabertos.camara.leg.br/api/v2/deputados/${idCamara}/historico`)).dados.filter((h) => !/^Nome no in/i.test(h.descricaoStatus ?? ""));
+        const partidos = [];
+        for (const h of hist.sort((a, b) => a.dataHora.localeCompare(b.dataHora)))
+          if (h.siglaPartido && partidos.at(-1)?.sigla !== h.siglaPartido) partidos.push({ sigla: h.siglaPartido, desde: h.dataHora.slice(0, 10) });
+        parlamentares[nome] = {
+          casa: "camara",
+          id: idCamara,
+          nome: d.ultimoStatus.nome.trim(),
+          sexo: d.sexo,
+          uf: d.ultimoStatus.siglaUf,
+          partido: d.ultimoStatus.siglaPartido,
+          partidos,
+          // "Exercício", "Licença", "Vacância", "Fim de Mandato"...
+          situacao: d.ultimoStatus.situacao,
+          legislaturas: [...new Set(hist.map((h) => h.idLegislatura))].sort(),
+          perfil: `https://www.camara.leg.br/deputados/${idCamara}`,
+          foto: await foto(d.ultimoStatus.urlFoto, `/fotos/parlamentares/camara-${idCamara}.jpg`),
+          indicacaoDe: antigo ? antigo.trim() : null,
+        };
+      } else if (sen) {
+        const id = sen.IdentificacaoParlamentar;
+        const mandatos = [].concat(sen.Mandatos?.Mandato ?? []);
+        const filiacoes = [].concat((await json(`https://legis.senado.leg.br/dadosabertos/senador/${id.CodigoParlamentar}/filiacoes`)).FiliacaoParlamentar.Parlamentar.Filiacoes?.Filiacao ?? []);
+        const fimMandato = Math.max(...anosSenado(sen));
+        parlamentares[nome] = {
+          casa: "senado",
+          id: id.CodigoParlamentar,
+          nome: id.NomeParlamentar,
+          sexo: id.SexoParlamentar === "Feminino" ? "F" : "M",
+          uf: mandatos.at(-1)?.UfParlamentar ?? null,
+          partido: id.SiglaPartidoParlamentar,
+          partidos: filiacoes.map((f) => ({ sigla: f.Partido.SiglaPartido, desde: f.DataFiliacao })).sort((a, b) => a.desde.localeCompare(b.desde)),
+          situacao: senadoresAtuais.has(id.CodigoParlamentar) ? "Exercício" : fimMandato >= ATUAL ? "Licença" : "Fim de Mandato",
+          legislaturas: mandatos.flatMap((m) => [m.PrimeiraLegislaturaDoMandato?.NumeroLegislatura, m.SegundaLegislaturaDoMandato?.NumeroLegislatura]).filter(Boolean).map(Number),
+          perfil: `https://www25.senado.leg.br/web/senadores/senador/-/perfil/${id.CodigoParlamentar}`,
+          foto: await foto(`https://www.senado.leg.br/senadores/img/fotos-oficiais/senador${id.CodigoParlamentar}.jpg`, `/fotos/parlamentares/senado-${id.CodigoParlamentar}.jpg`),
+          indicacaoDe: antigo ? antigo.trim() : null,
+        };
+      } else if (anteriores[nome]) parlamentares[nome] = anteriores[nome];
+      else console.log(`  autor sem cadastro encontrado: ${nome}`);
+    } catch {
+      // Um cadastro fora do ar não derruba os outros.
+      console.log(`  cadastro indisponível agora: ${nome}`);
+      if (anteriores[nome]) parlamentares[nome] = anteriores[nome];
+    }
   }
   console.log(`Autores: ${Object.keys(parlamentares).length} de ${nomes.length} encontrados na Câmara ou no Senado`);
   grava("parlamentares.json", {
