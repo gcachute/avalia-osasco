@@ -184,6 +184,14 @@ export default function PaginaDinheiro() {
               </a>
             </>
           )}
+          {fontes.fns && (
+            <>
+              ;{" "}
+              <a href={fontes.fns.url} className="underline">
+                {fontes.fns.nome}
+              </a>
+            </>
+          )}
           {fontes.parlamentares && (
             <>
               ; cargos, partidos e fotos:{" "}
