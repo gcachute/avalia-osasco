@@ -434,3 +434,12 @@ a:hover .logo-palpebra {
     animation: none;
   }
 }
+
+/* No toque, nenhum botão fica baixo demais para o dedo. Links no meio do texto continuam como estão. */
+@media (pointer: coarse) {
+  main button:not(p button),
+  main summary,
+  main select {
+    min-height: 2rem;
+  }
+}
