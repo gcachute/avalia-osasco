@@ -369,7 +369,7 @@ export default function Metodologia() {
             <b>Bolsa Família:</b> arquivos mensais da CGU. Só o número de famílias e o valor pago na cidade são guardados; meses escolhidos, não a série inteira.
           </li>
           <li>
-            <b>Obras federais:</b> Obrasgov, filtrando as obras de São Paulo que citam Osasco ou têm a Prefeitura como responsável.
+            <b>Obras no cadastro federal:</b> Obrasgov, filtrando as obras de São Paulo que citam Osasco ou têm a Prefeitura como responsável. O cadastro inclui obras com recurso federal e estadual. Quando a fonte para de responder antes do fim, a página avisa que a lista está incompleta.
           </li>
         </ul>
       </Secao>

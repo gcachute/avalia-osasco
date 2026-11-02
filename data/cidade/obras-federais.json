@@ -1,0 +1,822 @@
+{
+ "fonte": "Ministério da Gestão, Obrasgov",
+ "url": "https://www.gov.br/transferegov/pt-br/obrasgov",
+ "completo": false,
+ "obras": [
+  {
+   "id": "63946.35-58",
+   "nome": "OSASCO - SEDE, DER - PEDIDO DE INTERVENÇÃO - 2024/00897",
+   "descricao": "Plano de Obras 2025 -1- Execução de manejo arbóreo conforme levantamento GVT, serviços de recuperação de arquibancada por conta do manejo e complementares",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Educação",
+   "inicioPrevisto": "2025-08-03",
+   "fimPrevisto": "2026-03-01",
+   "inicio": null,
+   "fim": null,
+   "tomador": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+   "executor": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+   "fontes": [
+    {
+     "origem": "Estadual",
+     "valor": 632088.08
+    }
+   ]
+  },
+  {
+   "id": "50387.35-97",
+   "nome": "Reforma da Academia de Lutas Zona Norte",
+   "descricao": "Reforma da Academia de Artes Marciais e Lutas, no Município de Osasco/SP.",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Esporte",
+   "inicioPrevisto": "2024-09-23",
+   "fimPrevisto": "2025-11-28",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 2905000
+    }
+   ]
+  },
+  {
+   "id": "102302.35-71",
+   "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+   "descricao": "Canalização e implantação de infraestrutura verde para controle de alagamentos e inundações no Município de Osasco/SP",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Meio Ambiente",
+   "inicioPrevisto": "2025-12-10",
+   "fimPrevisto": "2027-10-07",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 50579913.93
+    }
+   ]
+  },
+  {
+   "id": "108352.35-82",
+   "nome": "Adequação e requalificação de passeios públicos",
+   "descricao": "Adequa��o e requalifica��o de passeios p�blicos e recapeamento.",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2025-12-31",
+   "fimPrevisto": "2029-12-31",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 2197686.5
+    }
+   ]
+  },
+  {
+   "id": "23087.35-40",
+   "nome": "Gradil Terreno Quitaúna",
+   "descricao": "Contratação de serviço de projeto executivo de aterramento do gradil que cerca o terreno do Campus Osasco – unidade Quitaúna, da Universidade Federal de São Paulo, e interligação com malha de aterramento da edificação",
+   "endereco": "R. Gen. Newton Estilac Leal, 354 - Pestana, Osasco",
+   "situacao": "Cadastrada",
+   "natureza": "Outros",
+   "especie": "Construção",
+   "tipo": "Educação",
+   "inicioPrevisto": "2023-08-01",
+   "fimPrevisto": "2023-10-30",
+   "inicio": null,
+   "fim": null,
+   "tomador": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+   "executor": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 14300
+    }
+   ]
+  },
+  {
+   "id": "39729.35-60",
+   "nome": "Recapeamento 2 ruas do Municipio de Osasco",
+   "descricao": "Obras de Infraestrutura Urbana - Pavimentação, Recapeamento Asfáltico e Drenagem nas diversas ruas do Município de\nOsasco- São Paul",
+   "endereco": null,
+   "situacao": "Concluída",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2021-12-30",
+   "fimPrevisto": "2024-12-30",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 407135.39
+    }
+   ]
+  },
+  {
+   "id": "50354.35-36",
+   "nome": "Obras de Infraestrutura Urbana - Pavimentação, Recapeamento Asfáltico e Drenagem nas diversas ruas do Município de Osasco- São Paulo",
+   "descricao": "Obras de Infraestrutura Urbana - Pavimentação, Recapeamento Asfáltico e Drenagem nas diversas ruas do Município de Osasco- São Paulo",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Recuperação",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2024-12-23",
+   "fimPrevisto": "2026-01-01",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Estadual",
+     "valor": 500000
+    }
+   ]
+  },
+  {
+   "id": "52178.35-08",
+   "nome": "Reforma Elétrica do Fórum de Osasco",
+   "descricao": "Contratação de empresa especializada para  o  fornecimento  e  instalação  de sistema de climatização, ventilação e exaustão,  incluindo  forro  e  toda  a infraestrutura  elétrica,  civil  e \nhidráulica  necessária  para  o  perfeito funcionamento do sistema,",
+   "endereco": "Av. das Flores, 703 - Jardim das Flores",
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Administrativo",
+   "inicioPrevisto": "2024-07-28",
+   "fimPrevisto": "2026-09-20",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "SAO PAULO TRIBUNAL DE JUSTICA",
+   "fontes": [
+    {
+     "origem": "Estadual",
+     "valor": 1314456.61
+    }
+   ]
+  },
+  {
+   "id": "43022.35-74",
+   "nome": "Reforma do Parque Municipal Chico Mendes",
+   "descricao": "Reforma e adequação do Parque Municipal Chico Mendes no município de Osasco/SP.",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Desenvolvimento",
+   "inicioPrevisto": "2024-12-31",
+   "fimPrevisto": "2028-12-31",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 1934356
+    }
+   ]
+  },
+  {
+   "id": "64019.35-50",
+   "nome": "OSASCO - SEDE, DER - PEDIDO DE INTERVENÇÃO - 2024/00897",
+   "descricao": "Plano de Obras 2025 -1- Execução de manejo arbóreo conforme levantamento GVT, serviços de recuperação de arquibancada por conta do manejo e complementares",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Educação",
+   "inicioPrevisto": "2025-08-07",
+   "fimPrevisto": "2026-03-05",
+   "inicio": null,
+   "fim": null,
+   "tomador": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+   "executor": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+   "fontes": [
+    {
+     "origem": "Estadual",
+     "valor": 632088.08
+    }
+   ]
+  },
+  {
+   "id": "111605.35-00",
+   "nome": "Sedec - Recuperação de Infraestrutura afetada por desastre SEI 59053.003605/2020-31",
+   "descricao": "Execução de unidades habitacionais com infraestrutura interna (quadra, salão, vagas de estacionamento, caixa d'água, guarita, lixeira) para realocar as famílias devido à destruição ou interdição definitiva da moradia (300 un)\n\n",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Recuperação",
+   "tipo": "Defesa Civil",
+   "inicioPrevisto": "2022-12-26",
+   "fimPrevisto": "2026-09-06",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MUNICIPIO DE OSASCO",
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 29803474.06
+    }
+   ]
+  },
+  {
+   "id": "52525.35-05",
+   "nome": "CONSTRUÇÃO DA CIDADE CENOGRÁFICA DO CENTRO DE INSTRUÇÃO DE OPERAÇÕES URBANAS CIOU DO 28 BATALHÃO DE INFANTARIA MECANIZADO 28 BIMEC",
+   "descricao": "CONSTRUÇÃO DA CIDADE CENOGRÁFICA DO CENTRO DE INSTRUÇÃO DE OPERAÇÕES URBANAS (CIOU), DO 28° BATALHÃO DE INFANTARIA MECANIZADO (28° BIMEC) – 1ª FASE, SITUADO NA AVENIDA SOLDADO PASSARINHO – JARDIM CHAPADÃO – CAMPINAS/SP.",
+   "endereco": "Av. dos Autonomistas, s/n - Vila Militar, Osasco - SP, 06194-140",
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Desenvolvimento",
+   "inicioPrevisto": "2025-04-21",
+   "fimPrevisto": "2026-12-21",
+   "inicio": null,
+   "fim": null,
+   "tomador": "COMANDO DO EXÉRCITO",
+   "executor": "COMANDO DO EXÉRCITO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 5131678.22
+    }
+   ]
+  },
+  {
+   "id": "52589.35-04",
+   "nome": "DER OSASCO - SEDE - PEDIDO DE INTERVENÇÃO - 2024/05412",
+   "descricao": "ARP 2025 - Revisão das Instalações Elétricas - Emenda Parlamentar 2024.040.58280",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Educação",
+   "inicioPrevisto": "2025-05-02",
+   "fimPrevisto": "2025-06-16",
+   "inicio": null,
+   "fim": null,
+   "tomador": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+   "executor": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+   "fontes": [
+    {
+     "origem": "Estadual",
+     "valor": 149981.08
+    }
+   ]
+  },
+  {
+   "id": "37812.35-29",
+   "nome": "Contenção de Encostas Rua Castanha do Para",
+   "descricao": "Obras de Contenção de Encostas no Munícipio de Osasco/SP",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2024-07-26",
+   "fimPrevisto": "2029-07-25",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 42545556.38
+    }
+   ]
+  },
+  {
+   "id": "40663.35-71",
+   "nome": "Reurb núcleos Chapéu de Couro e P3",
+   "descricao": "Regularização Fundiária Urbana dos núcleos urbanos informais Chapéu de Couro e P3-Rochdale",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Desenvolvimento",
+   "inicioPrevisto": "2024-07-26",
+   "fimPrevisto": "2028-07-25",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 3105750
+    }
+   ]
+  },
+  {
+   "id": "43488.35-79",
+   "nome": "Construção de Centro Comunitário Esportivo em Osasco/SP",
+   "descricao": "Construção do Espaço Esportivo Comunitário, no município de Osasco/SP (Novo PAC)",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Esporte",
+   "inicioPrevisto": "2024-09-27",
+   "fimPrevisto": "2028-09-27",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 1462500
+    }
+   ]
+  },
+  {
+   "id": "41590.35-05",
+   "nome": "Readequações elétricas no edifício-sede da Delegacia da Receita Federal do Brasil em Osasco",
+   "descricao": "Prestação de serviços de engenharia elétrica, com fornecimento de materiais e insumos, para execução: a) de readequação/modernização de cabine primária, e b) aquisição e instalação de novo gerador e sua interligação entre os quadros elétricos. Estes serviços serão empreendidos no edifício-sede da Delegacia da Receita Federal do Brasil em Osasco. \n",
+   "endereco": "Rua Avelino Lopes 156",
+   "situacao": "Concluída",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Administrativo",
+   "inicioPrevisto": "2024-08-26",
+   "fimPrevisto": "2024-09-26",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MINISTERIO DA ECONOMIA",
+   "executor": "SRRF08 - SUPERINTENDÊNCIA REGIONAL DA RECEITA FEDERAL DO BRASIL DA 8ª REGIÃO FISCAL",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 399900
+    }
+   ]
+  },
+  {
+   "id": "57520.35-49",
+   "nome": "CONSTRUÇÃO DE UNIDADE BÁSICA DE SAÚDE",
+   "descricao": "CONSTRUÇÃO DE UNIDADE BÁSICA DE SAÚDE",
+   "endereco": "AVENIDA PASSAREDO",
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Saúde",
+   "inicioPrevisto": "2024-04-11",
+   "fimPrevisto": "2024-05-29",
+   "inicio": null,
+   "fim": null,
+   "tomador": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "executor": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 6584873
+    }
+   ]
+  },
+  {
+   "id": "57522.35-51",
+   "nome": "CONSTRUÇÃO DE UNIDADE DE ATENÇÃO ESPECIALIZADA EM SAÚDE",
+   "descricao": "CONSTRUÇÃO DE UNIDADE DE ATENÇÃO ESPECIALIZADA EM SAÚDE",
+   "endereco": "RUA ANHANGUERA",
+   "situacao": "Em execução",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Saúde",
+   "inicioPrevisto": "2025-12-29",
+   "fimPrevisto": "2028-05-28",
+   "inicio": null,
+   "fim": null,
+   "tomador": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "executor": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 2496000
+    }
+   ]
+  },
+  {
+   "id": "57521.35-05",
+   "nome": "CONSTRUÇÃO DE UNIDADE BÁSICA DE SAÚDE",
+   "descricao": "CONSTRUÇÃO DE UNIDADE BÁSICA DE SAÚDE",
+   "endereco": "PASSAGEM GILBERTO CHAVES",
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Saúde",
+   "inicioPrevisto": "2024-04-11",
+   "fimPrevisto": "2024-05-29",
+   "inicio": null,
+   "fim": null,
+   "tomador": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "executor": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 5291345
+    }
+   ]
+  },
+  {
+   "id": "91236.35-95",
+   "nome": "Complemento da Reforma para implantação do campus Osasco do IFSP",
+   "descricao": "Complemento da Reforma para implantação do campus Osasco do IFSP",
+   "endereco": "R. Angélica, 100 - Jardim das Flores, Osasco - SP, 06110-295",
+   "situacao": "Em execução",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Educação",
+   "inicioPrevisto": "2024-10-21",
+   "fimPrevisto": "2025-01-21",
+   "inicio": null,
+   "fim": null,
+   "tomador": "INST.FED.DE EDUC.,CIENC.E TEC.DE SAO PAULO",
+   "executor": "INST.FED.DE EDUC.,CIENC.E TEC.DE SAO PAULO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 7956917.59
+    }
+   ]
+  },
+  {
+   "id": "98887.35-70",
+   "nome": "Obras de Infraestrutura Producao de 2000 UH pelo MCMV Equipamentos Comunitarios Escola e Centro Comunitario 8650 famil",
+   "descricao": "NOVO PAC - Retomada | cod_tci 2-0353054 | Obras de Infraestrutura Producao de 2000 UH pelo MCMV Equipamentos Comunitarios Escola e Centro Comunitario 8650 famil",
+   "endereco": null,
+   "situacao": "Em execução",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2015-03-24",
+   "fimPrevisto": "2026-07-03",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MUNICIPIO DE OSASCO",
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 114124134.54
+    }
+   ]
+  },
+  {
+   "id": "137196.35-24",
+   "nome": "Aterramento Gradil (semiintegrada revisão de projeto e obra)",
+   "descricao": "Contratação de obra, incluindo revisão de projeto, para  implantação de sistema de aterramento no gradil de cercamento do campus Osasco (contratação semintegrada).",
+   "endereco": "Rua General Newton Estilac Leal, 932 - Quitaúna - Osasco",
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Educação",
+   "inicioPrevisto": "2026-08-03",
+   "fimPrevisto": "2027-02-03",
+   "inicio": null,
+   "fim": null,
+   "tomador": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+   "executor": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 314000
+    }
+   ]
+  },
+  {
+   "id": "100498.35-52",
+   "nome": "CANALIZACAO DO RIBEIRAO VERMELHO EM SAO PAULO E OSASCO",
+   "descricao": "PAC 1 | cod_tci 2-0292887 | CANALIZACAO DO RIBEIRAO VERMELHO EM SAO PAULO E OSASCO",
+   "endereco": null,
+   "situacao": "Concluída",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2012-11-29",
+   "fimPrevisto": "2025-03-31",
+   "inicio": null,
+   "fim": null,
+   "tomador": "ESTADO DE SAO PAULO",
+   "executor": "ESTADO DE SAO PAULO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 40437343.26
+    }
+   ]
+  },
+  {
+   "id": "100406.35-74",
+   "nome": "ELABORACAO DE PROJETOS PARA ESTABILIZACAO DE ENCOSTAS",
+   "descricao": "PAC 2 - GRUPO I | cod_tci 2-0351514 | ELABORACAO DE PROJETOS PARA ESTABILIZACAO DE ENCOSTAS",
+   "endereco": null,
+   "situacao": "Concluída",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2013-11-08",
+   "fimPrevisto": "2016-10-30",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MUNICIPIO DE OSASCO",
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 1085000
+    }
+   ]
+  },
+  {
+   "id": "100417.35-76",
+   "nome": "OBRAS DE CONTENCAO DE ENCOSTAS EM AREAS DE RISCO EM OSASCOSP  MCMV 22",
+   "descricao": "PAC 2 - GRUPO I | cod_tci 2-0351564 | OBRAS DE CONTENCAO DE ENCOSTAS EM AREAS DE RISCO EM OSASCOSP  MCMV 22",
+   "endereco": null,
+   "situacao": "Concluída",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2013-04-30",
+   "fimPrevisto": "2015-10-30",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MUNICIPIO DE OSASCO",
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 12507556.46
+    }
+   ]
+  },
+  {
+   "id": "100440.35-17",
+   "nome": "Urbanizacao  Area Livre AAVicentina",
+   "descricao": "PAC 1 | cod_tci 2-0301586 | Urbanizacao  Area Livre AAVicentina",
+   "endereco": null,
+   "situacao": "Concluída",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2011-04-01",
+   "fimPrevisto": "2025-12-31",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MUNICIPIO DE OSASCO",
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 12532758.09
+    }
+   ]
+  },
+  {
+   "id": "100441.35-62",
+   "nome": "Urbanizacao  Area LivreSM2  Rodoanel",
+   "descricao": "PAC 1 | cod_tci 2-0301587 | Urbanizacao  Area LivreSM2  Rodoanel",
+   "endereco": null,
+   "situacao": "Concluída",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2011-03-10",
+   "fimPrevisto": "2027-03-30",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MUNICIPIO DE OSASCO",
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 23555574.19
+    }
+   ]
+  },
+  {
+   "id": "100614.35-64",
+   "nome": "URBANIZACAO INTEGRADA DA FAVELA MORRO DO SABAO",
+   "descricao": "PAC 1 | cod_tci 2-0218836 | URBANIZACAO INTEGRADA DA FAVELA MORRO DO SABAO",
+   "endereco": null,
+   "situacao": "Concluída",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2008-06-01",
+   "fimPrevisto": "2024-09-25",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MUNICIPIO DE OSASCO",
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 31338491.51
+    }
+   ]
+  },
+  {
+   "id": "100616.35-55",
+   "nome": "URBANIZACAO INTEGRADA DE FAVELASCOLINA D OESTEMORRO SOCO",
+   "descricao": "PAC 1 | cod_tci 2-0218837 | URBANIZACAO INTEGRADA DE FAVELASCOLINA D OESTEMORRO SOCO",
+   "endereco": null,
+   "situacao": "Concluída",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2008-06-19",
+   "fimPrevisto": "2026-07-09",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MUNICIPIO DE OSASCO",
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 70277864.67
+    }
+   ]
+  },
+  {
+   "id": "43718.35-42",
+   "nome": "Reforma para implantação do campus Osasco do IFSP",
+   "descricao": "Reforma para implantação do campus Osasco do IFSP",
+   "endereco": "R. Angélica, 100 - Jardim das Flores, Osasco - SP, 06110-295",
+   "situacao": "Em execução",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Educação",
+   "inicioPrevisto": "2024-10-21",
+   "fimPrevisto": "2025-01-21",
+   "inicio": null,
+   "fim": null,
+   "tomador": "INST.FED.DE EDUC.,CIENC.E TEC.DE SAO PAULO",
+   "executor": "INST.FED.DE EDUC.,CIENC.E TEC.DE SAO PAULO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 1648585.73
+    }
+   ]
+  },
+  {
+   "id": "100615.35-00",
+   "nome": "URBANIZACAO INTEGRADA DA FAVELA PORTAIS JUNCAO DE DOIS ASSENTAMENTOS MENCK E CAMPO",
+   "descricao": "PAC 1 | cod_tci 2-0218838 | URBANIZACAO INTEGRADA DA FAVELA PORTAIS JUNCAO DE DOIS ASSENTAMENTOS MENCK E CAMPO",
+   "endereco": null,
+   "situacao": "Concluída",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2008-06-19",
+   "fimPrevisto": "2025-10-29",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MUNICIPIO DE OSASCO",
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 45225118.61
+    }
+   ]
+  },
+  {
+   "id": "100940.35-33",
+   "nome": "URBANIZACAO DE ASSENTAMENTO PRECARIOS NO BAIRRO MUNHOZ      JUNIOR                                                      ",
+   "descricao": " FIN: FGTS | cod_tci 3-0620684 | URBANIZACAO DE ASSENTAMENTO PRECARIOS NO BAIRRO MUNHOZ      JUNIOR                                                      ",
+   "endereco": null,
+   "situacao": "Em execução",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2024-01-08",
+   "fimPrevisto": "1900-01-01",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MUNICIPIO DE OSASCO",
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Empréstimo",
+     "valor": 24018998.61
+    }
+   ]
+  },
+  {
+   "id": "106281.35-92",
+   "nome": "CASA Jacarandá e CASA Osasco I",
+   "descricao": "Execução de reparos em banheiros dos módulos do CASA Jacarandá e banheiro coletivo da T40/ CASA Osasco I\n",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Administrativo",
+   "inicioPrevisto": "2025-12-22",
+   "fimPrevisto": "2026-05-20",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "FUNDACAO CENTRO DE ATENDIMENTO SOCIOEDUCATIVO AO ADOLESCENTE - FUNDACAO CASA - SP",
+   "fontes": [
+    {
+     "origem": "Estadual",
+     "valor": 269839.25
+    }
+   ]
+  },
+  {
+   "id": "105491.35-05",
+   "nome": "Serviço de engenharia  para instalação de sistemas e equipamentos de prevenção e combate a incêndio na DRF Osasco",
+   "descricao": "O objetivo desta contratação é executar os serviços de engenharia necessários para a instalação, adequação e plena operacionalização dos sistemas e equipamentos de prevenção e combate a incêndio na Delegacia da Receita Federal do Brasil em Osasco, garantindo a conformidade com as normas técnicas vigentes, especialmente as exigências do Corpo de Bombeiros, de modo a assegurar a proteção à vida, ao patrimônio e a obtenção ou renovação do Auto de Vistoria do Corpo de Bombeiros (AVCB).",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Administrativo",
+   "inicioPrevisto": "2025-12-19",
+   "fimPrevisto": "2026-06-18",
+   "inicio": null,
+   "fim": null,
+   "tomador": "SRRF08 - SUPERINTENDÊNCIA REGIONAL DA RECEITA FEDERAL DO BRASIL DA 8ª REGIÃO FISCAL",
+   "executor": "SRRF08 - SUPERINTENDÊNCIA REGIONAL DA RECEITA FEDERAL DO BRASIL DA 8ª REGIÃO FISCAL",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 249350.21
+    }
+   ]
+  },
+  {
+   "id": "108439.35-55",
+   "nome": "Convênio de Reassentamento Habitacional - Córrego Ribeirão Vermelho",
+   "descricao": "CONVÊNIO DE REASSENTAMENTO HABITACIONAL | AÇÕES INTEGRADAS ENTRE A CDHU, DAEE E O MUNICÍPIO DE OSASCO - CÓRREGO RIBEIRÃO VERMELHO\n",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Hídrica, Portos, Hidrovia",
+   "inicioPrevisto": "2024-12-11",
+   "fimPrevisto": "2028-03-11",
+   "inicio": null,
+   "fim": null,
+   "tomador": "AGENCIA DE AGUAS DO ESTADO DE SAO PAULO - SP-AGUAS",
+   "executor": "AGENCIA DE AGUAS DO ESTADO DE SAO PAULO - SP-AGUAS",
+   "fontes": [
+    {
+     "origem": "Estadual",
+     "valor": 47000000
+    }
+   ]
+  },
+  {
+   "id": "98889.35-83",
+   "nome": "Obras de Infraestrutura Producao de 800 UH pelo MCMV Equipamento comunitario centro comunitario 4180 familias beneficiad",
+   "descricao": "NOVO PAC - Retomada | cod_tci 2-0353056 | Obras de Infraestrutura Producao de 800 UH pelo MCMV Equipamento comunitario centro comunitario 4180 familias beneficiad",
+   "endereco": null,
+   "situacao": "Em execução",
+   "natureza": "Obra",
+   "especie": "Construção",
+   "tipo": "Infraestrutura Urbana e Mobilidade",
+   "inicioPrevisto": "2014-01-20",
+   "fimPrevisto": "2025-09-29",
+   "inicio": null,
+   "fim": null,
+   "tomador": "MUNICIPIO DE OSASCO",
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 63644119.54
+    }
+   ]
+  }
+ ],
+ "coletadoEm": "2026-11-02"
+}

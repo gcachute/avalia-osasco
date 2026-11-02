@@ -5,7 +5,7 @@ import { dinheiroCurto, reaisExato } from "@/lib/formato";
 
 export const metadata: Metadata = {
   title: "A cidade",
-  description: "Trânsito, dengue, empregos, empresas, Bolsa Família e obras federais em Osasco, ano a ano, com o link de cada fonte.",
+  description: "Trânsito, dengue, empregos, empresas, Bolsa Família e obras do cadastro federal em Osasco, ano a ano, com o link de cada fonte.",
 };
 
 type Fonte = { fonte: string; url: string; coletadoEm?: string };
@@ -32,6 +32,7 @@ type Cidade = {
   bolsa: (Fonte & { meses: Record<string, { familias: number; valor: number }> }) | null;
   obras:
     | (Fonte & {
+        completo: boolean;
         obras: { id: string; nome: string; descricao: string | null; situacao: string | null; tipo: string | null; inicioPrevisto: string | null; fimPrevisto: string | null; executor: string | null; fontes: { origem: string; valor: number | null }[] }[];
       })
     | null;
@@ -167,7 +168,8 @@ export default function PaginaCidade() {
       )}
 
       {obras && obras.obras.length > 0 && (
-        <Secao titulo={`Obras com dinheiro federal (${obras.obras.length})`} subtitulo="Obras cadastradas no sistema do governo federal que citam Osasco ou têm a Prefeitura como responsável.">
+        <Secao titulo={`Obras no cadastro federal (${obras.obras.length})`} subtitulo="Obras registradas no sistema do governo federal que citam Osasco ou têm a Prefeitura como responsável.">
+          {!obras.completo && <p className="mb-3 text-sm text-slate-600">A fonte parou de responder antes do fim da consulta, então esta lista está incompleta.</p>}
           <ul className="divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white px-4">
             {[...obras.obras]
               .sort((a, b) => valorObra(b) - valorObra(a))
@@ -185,6 +187,7 @@ export default function PaginaCidade() {
                   <p className="mt-0.5 text-xs text-slate-500">
                     {o.situacao ?? "Situação não informada"}
                     {o.executor ? ` · ${o.executor}` : ""}
+                    {o.fontes.length > 0 ? ` · Recurso: ${[...new Set(o.fontes.map((f) => f.origem.toLowerCase()))].join(", ")}` : ""}
                   </p>
                 </li>
               ))}
@@ -198,6 +201,7 @@ export default function PaginaCidade() {
         <li>O ano em andamento fica incompleto até a fonte publicar os meses que faltam.</li>
         <li>Nos números de trânsito, as ocorrências sem ponto no mapa entram no total da cidade, mas não na conta por bairro.</li>
         <li>O saldo de empregos conta só vagas com carteira assinada. A conta de empresas vem de outra fonte e termina em outro ano.</li>
+        <li>Nas obras, o valor é o investimento previsto e a situação é a que consta no cadastro. Cada registro aparece como foi cadastrado, mesmo com nome igual ao de outro.</li>
       </ComoLer>
     </>
   );
