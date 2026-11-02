@@ -197,12 +197,24 @@ if (SO.includes("bolsa")) {
 
 // ---------- Obras com dinheiro federal (Obrasgov) ----------
 if (SO.includes("obras")) {
-  const obras = [];
-  const vistos = new Set();
+  // A consulta não filtra por cidade, então lê todas as obras de São Paulo. Guarda o progresso porque o serviço às vezes para.
+  const PROGRESSO = "data/cache/obras-progresso.json";
+  const salvo = existsSync(PROGRESSO) ? JSON.parse(readFileSync(PROGRESSO, "utf8")) : { pagina: 0, obras: [] };
+  const obras = salvo.obras;
+  const vistos = new Set(obras.map((o) => o.id));
   let vazias = 0;
-  for (let pagina = 0; vazias < 2; pagina++) {
-    const r = await baixar(`https://api.obrasgov.gestao.gov.br/obrasgov/api/projeto-investimento?uf=SP&pagina=${pagina}&tamanhoDaPagina=100`, { tentativas: 2 }).catch(() => null);
-    const lista = r ? ((await r.json()).content ?? []) : [];
+  let falhas = 0;
+  for (let pagina = salvo.pagina; vazias < 2 && falhas < 5; pagina++) {
+    let lista = null;
+    try {
+      lista = (await (await baixar(`https://api.obrasgov.gestao.gov.br/obrasgov/api/projeto-investimento?uf=SP&pagina=${pagina}&tamanhoDaPagina=100`, { tentativas: 2 })).json()).content ?? [];
+      falhas = 0;
+    } catch {
+      falhas++;
+      await sleep(30000);
+      pagina--;
+      continue;
+    }
     if (!lista.length) {
       vazias++;
       continue;
@@ -229,9 +241,13 @@ if (SO.includes("obras")) {
         fontes: (o.fontesDeRecurso ?? []).map((f) => ({ origem: f.origem, valor: f.valorInvestimentoPrevisto })),
       });
     }
-    if (pagina % 50 === 0) console.log(`Obras: página ${pagina}, ${obras.length} de Osasco`);
+    if (pagina % 25 === 0) {
+      console.log(`Obras: página ${pagina}, ${obras.length} de Osasco`);
+      writeFileSync(PROGRESSO, JSON.stringify({ pagina, obras }));
+    }
     await sleep(1000);
   }
-  grava("obras-federais.json", { fonte: "Ministério da Gestão, Obrasgov", url: "https://www.gov.br/transferegov/pt-br/obrasgov", obras });
+  grava("obras-federais.json", { fonte: "Ministério da Gestão, Obrasgov", url: "https://www.gov.br/transferegov/pt-br/obrasgov", completo: vazias >= 2, obras });
+  if (vazias >= 2) rmSync(PROGRESSO, { force: true });
   console.log(`Obras federais em Osasco: ${obras.length}`);
 }
