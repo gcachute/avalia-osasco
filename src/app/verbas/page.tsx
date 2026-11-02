@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ComposicaoEntradas } from "@/components/Dinheiro";
+import { Contratos, type ResumoContratos } from "@/components/dinheiro/Contratos";
 import { GastosPorAno } from "@/components/dinheiro/Gastos";
 import { AnoEmAndamento, ConferirLinha } from "@/components/dinheiro/Conferencia";
 import { QuemMandou } from "@/components/dinheiro/Emendas";
@@ -10,6 +11,7 @@ import { ComoLer, Secao } from "@/components/ui";
 import { DinheiroAnimado } from "@/components/Animacoes";
 import { dados, dataBR } from "@/lib/dados";
 import bruto from "@/data/dinheiro.json";
+import dadosCidade from "@/data/cidade.json";
 import type { PaginaDinheiro } from "@/lib/dinheiro";
 import { dinheiroCurto } from "@/lib/formato";
 
@@ -19,6 +21,7 @@ export const metadata: Metadata = {
 };
 
 const dinheiro = bruto as unknown as PaginaDinheiro;
+const contratos = dadosCidade.contratos as unknown as ResumoContratos | null;
 
 export default function PaginaDinheiro() {
   const { entradas, emendas, vereadores, pixEstaduais, gastos, fontes, convenios, integridade, parcial, conferencias, fontesConferencia } = dinheiro;
@@ -229,6 +232,12 @@ export default function PaginaDinheiro() {
         </p>
       </Secao>
 
+      {contratos && (
+        <Secao titulo="Contratos da Prefeitura" id="contratos" subtitulo="Contratos publicados no portal nacional, com empresa, objeto, valor e prazo.">
+          <Contratos resumo={contratos} />
+        </Secao>
+      )}
+
       <Secao titulo="Nos bairros" id="nos-bairros" subtitulo="Emendas, convênios e pagamentos cujo texto oficial cita o bairro, uma escola, unidade de saúde, rua ou córrego dele.">
         {bairros.length ? (
           <>
@@ -261,6 +270,7 @@ export default function PaginaDinheiro() {
       </Secao>
 
       <ComoLer>
+        <li>Contratos mostram o valor combinado no contrato inteiro. Pagamentos mostram o que saiu do caixa em cada ano. Os dois números não se somam.</li>
           <li>
             Os valores são os recebidos pela Prefeitura, pelos fundos municipais e por entidades com sede em Osasco. Empresas e entidades de outras cidades
             aparecem porque receberam pagamento da Prefeitura. O indicador Por que Osasco mostra o registro que faz essa ligação.

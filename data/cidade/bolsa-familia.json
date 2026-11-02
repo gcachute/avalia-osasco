@@ -1,0 +1,35 @@
+{
+ "fonte": "CGU, Portal da Transparência, Novo Bolsa Família",
+ "url": "https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia",
+ "meses": {
+  "202306": {
+   "familias": 45330,
+   "valor": 31409805
+  },
+  "202312": {
+   "familias": 47328,
+   "valor": 31189296
+  },
+  "202406": {
+   "familias": 47405,
+   "valor": 31363202
+  },
+  "202412": {
+   "familias": 43533,
+   "valor": 29081495
+  },
+  "202506": {
+   "familias": 39273,
+   "valor": 25883968
+  },
+  "202512": {
+   "familias": 32871,
+   "valor": 22056268
+  },
+  "202608": {
+   "familias": 34681,
+   "valor": 23741935
+  }
+ },
+ "coletadoEm": "2026-11-02"
+}

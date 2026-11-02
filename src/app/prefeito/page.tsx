@@ -14,6 +14,7 @@ import { PILARES_PREFEITO, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, n
 import { INDICADORES, primarioTexto, ranking, rotuloPeriodo } from "@/lib/fiscal";
 import { FAIXAS } from "@/lib/iegm";
 import { RolagemLateral } from "@/components/RolagemLateral";
+import { campanhas, Candidatos, ResumoCampanha } from "@/components/Campanha";
 
 export const metadata: Metadata = { title: "Prefeito" };
 
@@ -109,6 +110,7 @@ function PilarB({ a, c }: { a: AnoFiscal; c: CidadeFiscal }) {
 
 export default function PaginaPrefeito() {
   const p = dados.prefeito;
+  const campanha = campanhas.prefeitos.find((c) => c.situacao === "ELEITO");
   const i = p.indicadores;
   const f = p.fiscal;
   const ie = p.iegm;
@@ -373,6 +375,14 @@ export default function PaginaPrefeito() {
         </Secao>
       )}
 
+      {campanha && (
+        <Secao titulo="Campanha de 2024" id="campanha" subtitulo="Quanto a campanha recebeu e gastou, e o que foi declarado à Justiça Eleitoral.">
+          <ResumoCampanha c={campanha} />
+          <h3 className="mt-5 mb-2 text-sm font-medium text-slate-900">Candidaturas a prefeito em 2024</h3>
+          <Candidatos lista={campanhas.prefeitos} />
+        </Secao>
+      )}
+
       <Secao titulo="Relação com a Câmara">
         <p className="-mt-2 mb-4 text-sm text-slate-500">Mostrado para contexto. Não entra na nota.</p>
         <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
@@ -430,6 +440,7 @@ export default function PaginaPrefeito() {
 
 
       <ComoLer>
+        <li>Na campanha, bens declarados são os valores informados pelo próprio candidato à Justiça Eleitoral em 2024.</li>
         <li>A avaliação é feita por pilar, de 0 a 10, sem nota geral. Cada pilar traz a própria fonte.</li>
         <li>Aguardando dados do mandato quer dizer que a fonte ainda não publicou os números do período.</li>
         <li>A comparação coloca Osasco ao lado de outras cidades paulistas grandes, no mesmo período.</li>

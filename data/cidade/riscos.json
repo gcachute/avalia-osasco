@@ -1,0 +1,8 @@
+{
+  "_leiame": "Números copiados à mão do Plano Municipal de Redução de Riscos, publicado na Imprensa Oficial de Osasco em 20/10/2023 (seção 04 do relatório). O mapeamento usa estudo do Instituto Geológico de 2020.",
+  "fonte": "Prefeitura de Osasco, Plano Municipal de Redução de Riscos (2023)",
+  "url": "https://participa.osasco.sp.gov.br/Upload/publicacao/plano-municipal-de-redu%C3%A7%C3%A3o-de-riscos-out-2023.pdf",
+  "publicadoEm": "2023-10-20",
+  "areas": 46,
+  "setores": { "Inundação": 165, "Deslizamento": 72, "Solapamento": 12 }
+}

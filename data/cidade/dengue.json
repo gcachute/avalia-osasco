@@ -1,0 +1,183 @@
+{
+ "fonte": "InfoDengue (Fiocruz e Fundação Getulio Vargas)",
+ "url": "https://info.dengue.mat.br/",
+ "doencas": {
+  "dengue": {
+   "2015": {
+    "notificados": 4458,
+    "estimados": 4458,
+    "semanas": 52
+   },
+   "2016": {
+    "notificados": 2191,
+    "estimados": 2191,
+    "semanas": 52
+   },
+   "2017": {
+    "notificados": 242,
+    "estimados": 242,
+    "semanas": 52
+   },
+   "2018": {
+    "notificados": 152,
+    "estimados": 152,
+    "semanas": 52
+   },
+   "2019": {
+    "notificados": 986,
+    "estimados": 986,
+    "semanas": 52
+   },
+   "2020": {
+    "notificados": 417,
+    "estimados": 417,
+    "semanas": 53
+   },
+   "2021": {
+    "notificados": 277,
+    "estimados": 277,
+    "semanas": 52
+   },
+   "2022": {
+    "notificados": 908,
+    "estimados": 908,
+    "semanas": 52
+   },
+   "2023": {
+    "notificados": 2704,
+    "estimados": 2704,
+    "semanas": 52
+   },
+   "2024": {
+    "notificados": 25809,
+    "estimados": 25809,
+    "semanas": 52
+   },
+   "2025": {
+    "notificados": 13913,
+    "estimados": 13913,
+    "semanas": 53
+   },
+   "2026": {
+    "notificados": 2653,
+    "estimados": 2680,
+    "semanas": 42
+   }
+  },
+  "chikungunya": {
+   "2015": {
+    "notificados": 11,
+    "estimados": 11,
+    "semanas": 52
+   },
+   "2016": {
+    "notificados": 122,
+    "estimados": 122,
+    "semanas": 52
+   },
+   "2017": {
+    "notificados": 20,
+    "estimados": 20,
+    "semanas": 52
+   },
+   "2018": {
+    "notificados": 8,
+    "estimados": 8,
+    "semanas": 52
+   },
+   "2019": {
+    "notificados": 11,
+    "estimados": 11,
+    "semanas": 52
+   },
+   "2020": {
+    "notificados": 0,
+    "estimados": 0,
+    "semanas": 53
+   },
+   "2021": {
+    "notificados": 2,
+    "estimados": 2,
+    "semanas": 52
+   },
+   "2022": {
+    "notificados": 7,
+    "estimados": 7,
+    "semanas": 52
+   },
+   "2023": {
+    "notificados": 74,
+    "estimados": 74,
+    "semanas": 52
+   },
+   "2024": {
+    "notificados": 28,
+    "estimados": 28,
+    "semanas": 52
+   },
+   "2025": {
+    "notificados": 66,
+    "estimados": 66,
+    "semanas": 53
+   },
+   "2026": {
+    "notificados": 9,
+    "estimados": 9,
+    "semanas": 42
+   }
+  },
+  "zika": {
+   "2015": {
+    "notificados": 0,
+    "estimados": 0,
+    "semanas": 52
+   },
+   "2016": {
+    "notificados": 33,
+    "estimados": 33,
+    "semanas": 52
+   },
+   "2017": {
+    "notificados": 9,
+    "estimados": 9,
+    "semanas": 52
+   },
+   "2018": {
+    "notificados": 3,
+    "estimados": 3,
+    "semanas": 52
+   },
+   "2019": {
+    "notificados": 4,
+    "estimados": 4,
+    "semanas": 52
+   },
+   "2020": {
+    "notificados": 1,
+    "estimados": 1,
+    "semanas": 53
+   },
+   "2021": {
+    "notificados": 2,
+    "estimados": 2,
+    "semanas": 52
+   },
+   "2022": {
+    "notificados": 1,
+    "estimados": 1,
+    "semanas": 52
+   },
+   "2023": {
+    "notificados": 1,
+    "estimados": 1,
+    "semanas": 52
+   },
+   "2024": {
+    "notificados": 0,
+    "estimados": 0,
+    "semanas": 7
+   }
+  }
+ },
+ "coletadoEm": "2026-11-02"
+}

@@ -44,6 +44,8 @@ export function montarTerritorio(malha, idFor) {
   const coordEscolas = ler("data/territorio/escolas-coordenadas.json");
   const favelas = ler("data/territorio/favelas.json");
   const seguranca = ler("data/territorio/seguranca.json");
+  const transito = ler("data/cidade/transito.json");
+  const anoTransito = transito ? new Date(transito.coletadoEm).getFullYear() - 1 : null;
   const obrasTce = ler("data/transparencia/obras.json");
   const acha = reconhecedorDeBairros(malha.bairros);
   const obras = (obrasTce?.obras?.["3534401"] ?? []).map((o) => ({ ...o, bairros: acha(o.objeto) }));
@@ -98,6 +100,7 @@ export function montarTerritorio(malha, idFor) {
       return [
         b.id,
         {
+          transito: transito?.porBairro?.[b.id]?.[anoTransito] ? { ano: anoTransito, ...transito.porBairro[b.id][anoTransito] } : null,
           censo: c && {
             ...c,
             id: undefined,

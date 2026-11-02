@@ -346,6 +346,34 @@ export default function Metodologia() {
         </p>
       </Secao>
 
+      <Secao titulo="Contratos, campanhas e dados da cidade" id="cidade">
+        <ul className="list-disc space-y-2 pl-5 text-slate-700">
+          <li>
+            <b>Contratos da Prefeitura:</b> Portal Nacional de Contratações Públicas, pelo CNPJ da Prefeitura. Quase todos os contratos de Osasco no portal são de 2024 em diante. Contrato com pessoa física
+            entra só na contagem, sem nome nem documento.
+          </li>
+          <li>
+            <b>Campanhas de 2024:</b> arquivos abertos do Tribunal Superior Eleitoral. A página usa o total recebido por origem, os gastos contratados e pagos, as empresas contratadas e a soma
+            dos bens declarados. Doações de pessoas aparecem só na soma, e a descrição de cada bem não é mostrada, porque pode conter endereço. O perfil de cada vereador é ligado à candidatura
+            pelo nome.
+          </li>
+          <li>
+            <b>Trânsito:</b> Infosiga, do Detran-SP. Cada ocorrência com coordenada é colocada no bairro do ponto. Mortes por meio de transporte contam a data da morte; as demais linhas, a data
+            da ocorrência.
+          </li>
+          <li>
+            <b>Dengue:</b> casos notificados por semana do InfoDengue, somados por ano. <b>Empregos:</b> Novo CAGED, com admissões e desligamentos dentro e fora do prazo e sem os registros
+            excluídos. <b>Empresas:</b> Cadastro Central de Empresas do IBGE.
+          </li>
+          <li>
+            <b>Bolsa Família:</b> arquivos mensais da CGU. Só o número de famílias e o valor pago na cidade são guardados; meses escolhidos, não a série inteira.
+          </li>
+          <li>
+            <b>Obras federais:</b> Obrasgov, filtrando as obras de São Paulo que citam Osasco ou têm a Prefeitura como responsável.
+          </li>
+        </ul>
+      </Secao>
+
       <Secao titulo="Séries históricas" id="historico">
         <ul className="list-disc space-y-2 pl-5 text-slate-700">
           <li>

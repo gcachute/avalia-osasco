@@ -80,6 +80,14 @@ jobs:
         run: npm run coletar:sedes
         continue-on-error: true
 
+      - name: Contratos da Prefeitura (PNCP)
+        run: npm run coletar:contratos
+        continue-on-error: true
+      - name: Trânsito, dengue, empresas e obras federais
+        run: npm run coletar:cidade
+        env:
+          SO: transito,dengue,empresas,obras
+        continue-on-error: true
       - name: Recalcular notas
         run: npm run dados
 

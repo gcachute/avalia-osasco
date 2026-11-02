@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-30T22:06:30.252Z",
+ "geradoEm": "2026-11-02T01:36:17.228Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -52765,6 +52765,13 @@
     "nome": "Adalgisa",
     "populacao": 8857,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 7,
+     "mortos": 1,
+     "graves": 1,
+     "leves": 6
+    },
     "censo": {
      "areaKm2": 1.5884081,
      "pessoas": 8857,
@@ -52873,6 +52880,13 @@
     "nome": "Aliança",
     "populacao": 16335,
     "citacoes": 6,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 22,
+     "mortos": 1,
+     "graves": 1,
+     "leves": 19
+    },
     "censo": {
      "areaKm2": 0.6712883,
      "pessoas": 16335,
@@ -53400,6 +53414,13 @@
     "nome": "Ayrosa",
     "populacao": 21775,
     "citacoes": 2,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 25,
+     "mortos": 1,
+     "graves": 1,
+     "leves": 21
+    },
     "censo": {
      "areaKm2": 1.6797969,
      "pessoas": 21775,
@@ -53731,6 +53752,13 @@
     "nome": "Bandeiras",
     "populacao": 24246,
     "citacoes": 2,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 16,
+     "mortos": 2,
+     "graves": 2,
+     "leves": 14
+    },
     "censo": {
      "areaKm2": 1.3271604,
      "pessoas": 24246,
@@ -53961,6 +53989,13 @@
     "nome": "Baronesa",
     "populacao": 13403,
     "citacoes": 1,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 12,
+     "mortos": 0,
+     "graves": 1,
+     "leves": 12
+    },
     "censo": {
      "areaKm2": 0.7726555,
      "pessoas": 13403,
@@ -54239,6 +54274,13 @@
     "nome": "Bela Vista",
     "populacao": 11248,
     "citacoes": 2,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 16,
+     "mortos": 2,
+     "graves": 1,
+     "leves": 15
+    },
     "censo": {
      "areaKm2": 1.0409655,
      "pessoas": 11248,
@@ -54530,6 +54572,13 @@
     "nome": "Bonança",
     "populacao": 23431,
     "citacoes": 6,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 10,
+     "mortos": 0,
+     "graves": 3,
+     "leves": 8
+    },
     "censo": {
      "areaKm2": 1.0688894,
      "pessoas": 23431,
@@ -54771,6 +54820,13 @@
     "nome": "Bonfim",
     "populacao": 1621,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 22,
+     "mortos": 0,
+     "graves": 1,
+     "leves": 28
+    },
     "censo": {
      "areaKm2": 0.6977856,
      "pessoas": 1621,
@@ -54934,6 +54990,13 @@
     "nome": "Bussocaba",
     "populacao": 12741,
     "citacoes": 3,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 15,
+     "mortos": 1,
+     "graves": 1,
+     "leves": 13
+    },
     "censo": {
      "areaKm2": 0.6410787,
      "pessoas": 12741,
@@ -55189,6 +55252,13 @@
     "nome": "Castelo Branco",
     "populacao": 5098,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 6,
+     "mortos": 0,
+     "graves": 0,
+     "leves": 6
+    },
     "censo": {
      "areaKm2": 1.3913076,
      "pessoas": 5098,
@@ -55369,6 +55439,13 @@
     "nome": "Centro",
     "populacao": 13250,
     "citacoes": 22,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 87,
+     "mortos": 6,
+     "graves": 6,
+     "leves": 88
+    },
     "censo": {
      "areaKm2": 2.2449059,
      "pessoas": 13250,
@@ -56117,6 +56194,13 @@
     "nome": "Cidade das Flores",
     "populacao": 8316,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 1,
+     "mortos": 0,
+     "graves": 0,
+     "leves": 1
+    },
     "censo": {
      "areaKm2": 0.5600271,
      "pessoas": 8316,
@@ -56327,6 +56411,13 @@
     "nome": "Cidade de Deus",
     "populacao": 285,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 4,
+     "mortos": 0,
+     "graves": 0,
+     "leves": 4
+    },
     "censo": {
      "areaKm2": 0.3828169,
      "pessoas": 285,
@@ -56408,6 +56499,13 @@
     "nome": "Cipava",
     "populacao": 8600,
     "citacoes": 3,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 9,
+     "mortos": 0,
+     "graves": 1,
+     "leves": 10
+    },
     "censo": {
      "areaKm2": 0.6941701,
      "pessoas": 8600,
@@ -56642,6 +56740,13 @@
     "nome": "City Bussocaba",
     "populacao": 2632,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 5,
+     "mortos": 0,
+     "graves": 0,
+     "leves": 5
+    },
     "censo": {
      "areaKm2": 0.7399914,
      "pessoas": 2632,
@@ -56723,6 +56828,13 @@
     "nome": "Helena Maria",
     "populacao": 20604,
     "citacoes": 3,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 16,
+     "mortos": 0,
+     "graves": 1,
+     "leves": 15
+    },
     "censo": {
      "areaKm2": 0.9663055,
      "pessoas": 20604,
@@ -57157,6 +57269,13 @@
     "nome": "Iapi",
     "populacao": 12803,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 17,
+     "mortos": 2,
+     "graves": 2,
+     "leves": 19
+    },
     "censo": {
      "areaKm2": 0.7353601,
      "pessoas": 12803,
@@ -57348,6 +57467,13 @@
     "nome": "Industrial Altino",
     "populacao": 17,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 36,
+     "mortos": 2,
+     "graves": 2,
+     "leves": 28
+    },
     "censo": {
      "areaKm2": 0.503119,
      "pessoas": 17,
@@ -57429,6 +57555,13 @@
     "nome": "Industrial Anhanguera",
     "populacao": 6807,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 30,
+     "mortos": 2,
+     "graves": 5,
+     "leves": 21
+    },
     "censo": {
      "areaKm2": 4.2343572,
      "pessoas": 6807,
@@ -57616,6 +57749,13 @@
     "nome": "Industrial Autonomistas",
     "populacao": 14571,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 21,
+     "mortos": 0,
+     "graves": 0,
+     "leves": 23
+    },
     "censo": {
      "areaKm2": 1.3729444,
      "pessoas": 14571,
@@ -57802,6 +57942,13 @@
     "nome": "Industrial Centro",
     "populacao": 867,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 4,
+     "mortos": 0,
+     "graves": 0,
+     "leves": 5
+    },
     "censo": {
      "areaKm2": 0.4783448,
      "pessoas": 867,
@@ -57914,6 +58061,13 @@
     "nome": "Industrial Mazzei",
     "populacao": 2370,
     "citacoes": 1,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 13,
+     "mortos": 2,
+     "graves": 1,
+     "leves": 13
+    },
     "censo": {
      "areaKm2": 0.9455325,
      "pessoas": 2370,
@@ -58044,6 +58198,13 @@
     "nome": "Industrial Remédios",
     "populacao": 3081,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 12,
+     "mortos": 0,
+     "graves": 3,
+     "leves": 10
+    },
     "censo": {
      "areaKm2": 0.7742107,
      "pessoas": 3081,
@@ -58222,6 +58383,13 @@
     "nome": "Jaguaribe",
     "populacao": 23679,
     "citacoes": 5,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 11,
+     "mortos": 1,
+     "graves": 1,
+     "leves": 10
+    },
     "censo": {
      "areaKm2": 1.1622178,
      "pessoas": 23679,
@@ -58507,6 +58675,13 @@
     "nome": "Jardim Conceição",
     "populacao": 40738,
     "citacoes": 2,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 20,
+     "mortos": 2,
+     "graves": 4,
+     "leves": 16
+    },
     "censo": {
      "areaKm2": 1.4976464,
      "pessoas": 40738,
@@ -58854,6 +59029,13 @@
     "nome": "Jardim D'Abril",
     "populacao": 13812,
     "citacoes": 3,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 12,
+     "mortos": 0,
+     "graves": 1,
+     "leves": 13
+    },
     "censo": {
      "areaKm2": 0.9894476,
      "pessoas": 13812,
@@ -59129,6 +59311,13 @@
     "nome": "Jardim das Flores",
     "populacao": 9265,
     "citacoes": 1,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 11,
+     "mortos": 1,
+     "graves": 0,
+     "leves": 12
+    },
     "censo": {
      "areaKm2": 1.1523704,
      "pessoas": 9265,
@@ -59396,6 +59585,13 @@
     "nome": "Jardim Elvira",
     "populacao": 10446,
     "citacoes": 1,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 5,
+     "mortos": 0,
+     "graves": 1,
+     "leves": 6
+    },
     "censo": {
      "areaKm2": 0.5622622,
      "pessoas": 10446,
@@ -59778,6 +59974,13 @@
     "nome": "Jardim Novo Osasco",
     "populacao": 18344,
     "citacoes": 3,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 16,
+     "mortos": 0,
+     "graves": 2,
+     "leves": 15
+    },
     "censo": {
      "areaKm2": 1.1534541,
      "pessoas": 18344,
@@ -60071,6 +60274,13 @@
     "nome": "Jardim Roberto",
     "populacao": 20704,
     "citacoes": 1,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 20,
+     "mortos": 0,
+     "graves": 3,
+     "leves": 23
+    },
     "censo": {
      "areaKm2": 1.0623874,
      "pessoas": 20704,
@@ -60307,6 +60517,13 @@
     "nome": "Km 18",
     "populacao": 11929,
     "citacoes": 3,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 34,
+     "mortos": 2,
+     "graves": 3,
+     "leves": 37
+    },
     "censo": {
      "areaKm2": 1.2040103,
      "pessoas": 11929,
@@ -60693,6 +60910,13 @@
     "nome": "Metalúrgicos",
     "populacao": 8146,
     "citacoes": 1,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 8,
+     "mortos": 1,
+     "graves": 3,
+     "leves": 4
+    },
     "censo": {
      "areaKm2": 0.5781615,
      "pessoas": 8146,
@@ -60944,6 +61168,13 @@
     "nome": "Munhoz Júnior",
     "populacao": 28944,
     "citacoes": 1,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 9,
+     "mortos": 1,
+     "graves": 0,
+     "leves": 12
+    },
     "censo": {
      "areaKm2": 1.3144232,
      "pessoas": 28944,
@@ -61269,6 +61500,13 @@
     "nome": "Mutinga",
     "populacao": 12312,
     "citacoes": 2,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 24,
+     "mortos": 2,
+     "graves": 2,
+     "leves": 21
+    },
     "censo": {
      "areaKm2": 0.7672115,
      "pessoas": 12312,
@@ -61500,6 +61738,13 @@
     "nome": "Padroeira",
     "populacao": 24420,
     "citacoes": 1,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 18,
+     "mortos": 0,
+     "graves": 6,
+     "leves": 13
+    },
     "censo": {
      "areaKm2": 0.9899668,
      "pessoas": 24420,
@@ -61804,6 +62049,7 @@
     "nome": "Paiva Ramos",
     "populacao": 2805,
     "citacoes": 1,
+    "transito": null,
     "censo": {
      "areaKm2": 2.2951759,
      "pessoas": 2805,
@@ -61890,6 +62136,7 @@
     "nome": "Parque Continental",
     "populacao": 387,
     "citacoes": 0,
+    "transito": null,
     "censo": {
      "areaKm2": 0.1909919,
      "pessoas": 387,
@@ -62002,6 +62249,13 @@
     "nome": "Pestana",
     "populacao": 12226,
     "citacoes": 1,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 18,
+     "mortos": 1,
+     "graves": 2,
+     "leves": 18
+    },
     "censo": {
      "areaKm2": 0.8996344,
      "pessoas": 12226,
@@ -62291,6 +62545,13 @@
     "nome": "Piratininga",
     "populacao": 14063,
     "citacoes": 3,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 74,
+     "mortos": 5,
+     "graves": 17,
+     "leves": 60
+    },
     "censo": {
      "areaKm2": 1.3909945,
      "pessoas": 14063,
@@ -62611,6 +62872,13 @@
     "nome": "Platina",
     "populacao": 2865,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 9,
+     "mortos": 5,
+     "graves": 0,
+     "leves": 1
+    },
     "censo": {
      "areaKm2": 0.8480174,
      "pessoas": 2865,
@@ -62779,6 +63047,13 @@
     "nome": "Portal D'Oeste",
     "populacao": 10162,
     "citacoes": 3,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 9,
+     "mortos": 1,
+     "graves": 3,
+     "leves": 4
+    },
     "censo": {
      "areaKm2": 0.4735209,
      "pessoas": 10162,
@@ -62992,6 +63267,13 @@
     "nome": "Presidente Altino",
     "populacao": 13699,
     "citacoes": 2,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 15,
+     "mortos": 0,
+     "graves": 1,
+     "leves": 16
+    },
     "censo": {
      "areaKm2": 1.0684818,
      "pessoas": 13699,
@@ -63295,6 +63577,13 @@
     "nome": "Quintaúna",
     "populacao": 9043,
     "citacoes": 3,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 20,
+     "mortos": 1,
+     "graves": 2,
+     "leves": 20
+    },
     "censo": {
      "areaKm2": 0.8125819,
      "pessoas": 9043,
@@ -63629,6 +63918,13 @@
     "nome": "Raposo Tavares",
     "populacao": 580,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 18,
+     "mortos": 2,
+     "graves": 0,
+     "leves": 12
+    },
     "censo": {
      "areaKm2": 1.7855818,
      "pessoas": 580,
@@ -63814,6 +64110,13 @@
     "nome": "Remédios",
     "populacao": 4990,
     "citacoes": 4,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 14,
+     "mortos": 1,
+     "graves": 2,
+     "leves": 14
+    },
     "censo": {
      "areaKm2": 0.4239026,
      "pessoas": 4990,
@@ -64083,6 +64386,13 @@
     "nome": "Rochdale",
     "populacao": 25259,
     "citacoes": 4,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 78,
+     "mortos": 6,
+     "graves": 9,
+     "leves": 75
+    },
     "censo": {
      "areaKm2": 1.7845064,
      "pessoas": 25259,
@@ -64517,6 +64827,13 @@
     "nome": "Santa Fé",
     "populacao": 1501,
     "citacoes": 1,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 1,
+     "mortos": 0,
+     "graves": 0,
+     "leves": 1
+    },
     "censo": {
      "areaKm2": 1.1589783,
      "pessoas": 1501,
@@ -64611,6 +64928,13 @@
     "nome": "Santa Maria",
     "populacao": 29184,
     "citacoes": 2,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 24,
+     "mortos": 1,
+     "graves": 4,
+     "leves": 18
+    },
     "censo": {
      "areaKm2": 1.7509201,
      "pessoas": 29184,
@@ -64863,6 +65187,13 @@
     "nome": "Santo Antônio",
     "populacao": 13510,
     "citacoes": 4,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 17,
+     "mortos": 1,
+     "graves": 1,
+     "leves": 17
+    },
     "censo": {
      "areaKm2": 0.7906019,
      "pessoas": 13510,
@@ -65138,6 +65469,13 @@
     "nome": "São Pedro",
     "populacao": 27174,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 23,
+     "mortos": 2,
+     "graves": 3,
+     "leves": 20
+    },
     "censo": {
      "areaKm2": 1.4451061,
      "pessoas": 27174,
@@ -65324,6 +65662,13 @@
     "nome": "Setor Militar",
     "populacao": 2958,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 5,
+     "mortos": 2,
+     "graves": 2,
+     "leves": 2
+    },
     "censo": {
      "areaKm2": 1.6570094,
      "pessoas": 2958,
@@ -65405,6 +65750,13 @@
     "nome": "Três Montanhas",
     "populacao": 1441,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 2,
+     "mortos": 0,
+     "graves": 0,
+     "leves": 2
+    },
     "censo": {
      "areaKm2": 0.4570779,
      "pessoas": 1441,
@@ -65568,6 +65920,13 @@
     "nome": "Umuarama",
     "populacao": 10260,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 5,
+     "mortos": 0,
+     "graves": 2,
+     "leves": 4
+    },
     "censo": {
      "areaKm2": 0.7504741,
      "pessoas": 10260,
@@ -65797,6 +66156,13 @@
     "nome": "Veloso",
     "populacao": 29666,
     "citacoes": 5,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 34,
+     "mortos": 2,
+     "graves": 3,
+     "leves": 30
+    },
     "censo": {
      "areaKm2": 1.4559932,
      "pessoas": 29666,
@@ -66138,6 +66504,13 @@
     "nome": "Vila Campesina",
     "populacao": 2607,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 7,
+     "mortos": 0,
+     "graves": 2,
+     "leves": 8
+    },
     "censo": {
      "areaKm2": 0.429459,
      "pessoas": 2607,
@@ -66410,6 +66783,13 @@
     "nome": "Vila Menck",
     "populacao": 22240,
     "citacoes": 6,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 21,
+     "mortos": 1,
+     "graves": 1,
+     "leves": 24
+    },
     "censo": {
      "areaKm2": 1.0202697,
      "pessoas": 22240,
@@ -66767,6 +67147,13 @@
     "nome": "Vila Militar",
     "populacao": 274,
     "citacoes": 1,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 6,
+     "mortos": 1,
+     "graves": 2,
+     "leves": 5
+    },
     "censo": {
      "areaKm2": 0.4397563,
      "pessoas": 274,
@@ -66995,6 +67382,13 @@
     "nome": "Vila Osasco",
     "populacao": 12126,
     "citacoes": 0,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 18,
+     "mortos": 1,
+     "graves": 1,
+     "leves": 17
+    },
     "censo": {
      "areaKm2": 0.9882552,
      "pessoas": 12126,
@@ -67333,6 +67727,13 @@
     "nome": "Vila Yara",
     "populacao": 7622,
     "citacoes": 2,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 7,
+     "mortos": 0,
+     "graves": 0,
+     "leves": 8
+    },
     "censo": {
      "areaKm2": 0.6315766,
      "pessoas": 7622,
@@ -67650,6 +68051,13 @@
     "nome": "Vila Yolanda",
     "populacao": 12300,
     "citacoes": 2,
+    "transito": {
+     "ano": 2025,
+     "sinistros": 8,
+     "mortos": 0,
+     "graves": 4,
+     "leves": 9
+    },
     "censo": {
      "areaKm2": 0.8822024,
      "pessoas": 12300,
