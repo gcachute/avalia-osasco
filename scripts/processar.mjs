@@ -8,6 +8,7 @@ import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, notaIntegridade, pon
 import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
 import { carregarBairros, reconhecedorDeBairros, reconhecedorDeEquipamentos, reconhecedorDeLugares } from "./lib/bairros.mjs";
+import { montarCidade } from "./lib/cidade.mjs";
 import { montarDinheiro } from "./lib/dinheiro.mjs";
 import { montarTerritorio } from "./lib/territorio.mjs";
 import { montarHistorico } from "./lib/historico.mjs";
@@ -587,6 +588,7 @@ if (malha) {
   // Dinheiro federal e estadual: a página própria vai num arquivo separado; o mapa recebe o que cita cada bairro.
   const dinheiro = montarDinheiro({ acha, achaEquipamento, achaLugares: reconhecedorDeLugares(), vereadores });
   if (dinheiro) writeFileSync("src/data/dinheiro.json", JSON.stringify(dinheiro.pagina));
+  montarCidade({ vereadores });
   mapa = {
     fonte: malha.fonte,
     bairros: malha.bairros.map((b) => ({

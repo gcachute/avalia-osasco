@@ -45,6 +45,7 @@ const NAV: ItemNav[] = [
   { href: "/vereadores", nome: "Vereadores", icone: "vereadores" },
   { href: "/prefeito", nome: "Prefeito", icone: "prefeito" },
   { href: "/verbas", nome: "Verbas", icone: "dinheiro" },
+  { href: "/cidade", nome: "A cidade", icone: "painel", mais: true },
   { href: "/historico", nome: "Histórico", icone: "historico", mais: true },
   { href: "/metodologia", nome: "Metodologia", icone: "metodologia", mais: true },
 ];

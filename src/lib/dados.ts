@@ -116,6 +116,7 @@ export type BairroMapa = {
   partidoPrefeito?: number | null;
   favelas?: { moradores: number; pct: number | null; comunidades: { nome: string; moradores: number }[] } | null;
   seguranca?: Record<GrupoCrime, { n: number; por10mil: number | null }> | null;
+  transito?: { ano: number; sinistros: number; mortos: number; graves: number; leves: number } | null;
   obras?: { objeto: string; situacao: string; valor: number; contratante: string; contratado: string; ano: number }[];
   saude?: { cnes: string; nome: string; tipo: string; publica: boolean; turno: string | null }[];
   escolas?: { codigo: string; nome: string; rede: string; idebIniciais: number | null; idebFinais: number | null }[];

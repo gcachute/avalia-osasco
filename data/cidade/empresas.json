@@ -1,0 +1,232 @@
+{
+ "fonte": "IBGE, Cadastro Central de Empresas",
+ "url": "https://sidra.ibge.gov.br/tabela/6449",
+ "porAno": {
+  "2006": {
+   "empresas": 14886,
+   "pessoal": 214677,
+   "assalariados": 195956,
+   "salarios": 4322746
+  },
+  "2007": {
+   "empresas": 15194,
+   "pessoal": 238359,
+   "assalariados": 218080,
+   "salarios": 4812126
+  },
+  "2008": {
+   "empresas": 15942,
+   "pessoal": 252434,
+   "assalariados": 231440,
+   "salarios": 5622454
+  },
+  "2009": {
+   "empresas": 16801,
+   "pessoal": 257324,
+   "assalariados": 235290,
+   "salarios": 5918642
+  },
+  "2010": {
+   "empresas": 17219,
+   "pessoal": 276946,
+   "assalariados": 255086,
+   "salarios": 6691890
+  },
+  "2011": {
+   "empresas": 17874,
+   "pessoal": 308472,
+   "assalariados": 285183,
+   "salarios": 8006101
+  },
+  "2012": {
+   "empresas": 16481,
+   "pessoal": 293530,
+   "assalariados": 270533,
+   "salarios": 8769358
+  },
+  "2013": {
+   "empresas": 17048,
+   "pessoal": 290893,
+   "assalariados": 267750,
+   "salarios": 9431688
+  },
+  "2014": {
+   "empresas": 15785,
+   "pessoal": 280538,
+   "assalariados": 258976,
+   "salarios": 10022526
+  },
+  "2015": {
+   "empresas": 16172,
+   "pessoal": 271796,
+   "assalariados": 250092,
+   "salarios": 10407102
+  },
+  "2016": {
+   "empresas": 15315,
+   "pessoal": 270545,
+   "assalariados": 250143,
+   "salarios": 11182405
+  },
+  "2017": {
+   "empresas": 15346,
+   "pessoal": 262269,
+   "assalariados": 242230,
+   "salarios": 12365846
+  },
+  "2018": {
+   "empresas": 15114,
+   "pessoal": 260464,
+   "assalariados": 240802,
+   "salarios": 12293283
+  },
+  "2019": {
+   "empresas": 17417,
+   "pessoal": 277032,
+   "assalariados": 256213,
+   "salarios": 12974195
+  },
+  "2020": {
+   "empresas": 18047,
+   "pessoal": 260520,
+   "assalariados": 238733,
+   "salarios": 13351757
+  },
+  "2021": {
+   "empresas": 19693,
+   "pessoal": 278405,
+   "assalariados": 255821,
+   "salarios": 15011336
+  }
+ },
+ "ultimo": "2021",
+ "setores": {
+  "Agricultura, pecuária, produção florestal, pesca e aquicultura": {
+   "empresas": 13,
+   "pessoal": 65,
+   "assalariados": 48,
+   "salarios": 1662
+  },
+  "Indústrias extrativas": {
+   "empresas": 2,
+   "pessoal": 0,
+   "assalariados": 0,
+   "salarios": 0
+  },
+  "Indústrias de transformação": {
+   "empresas": 927,
+   "pessoal": 16413,
+   "assalariados": 15160,
+   "salarios": 752534
+  },
+  "Eletricidade e gás": {
+   "empresas": 2,
+   "pessoal": 0,
+   "assalariados": 0,
+   "salarios": 0
+  },
+  "Água, esgoto, atividades de gestão de resíduos e descontaminação": {
+   "empresas": 32,
+   "pessoal": 782,
+   "assalariados": 748,
+   "salarios": 26688
+  },
+  "Construção": {
+   "empresas": 992,
+   "pessoal": 7688,
+   "assalariados": 6269,
+   "salarios": 185764
+  },
+  "Comércio; reparação de veículos automotores e motocicletas": {
+   "empresas": 6203,
+   "pessoal": 40439,
+   "assalariados": 32789,
+   "salarios": 1279496
+  },
+  "Transporte, armazenagem e correio": {
+   "empresas": 988,
+   "pessoal": 48910,
+   "assalariados": 47774,
+   "salarios": 2521311
+  },
+  "Alojamento e alimentação": {
+   "empresas": 1038,
+   "pessoal": 5748,
+   "assalariados": 4462,
+   "salarios": 89642
+  },
+  "Informação e comunicação": {
+   "empresas": 1190,
+   "pessoal": 10431,
+   "assalariados": 9028,
+   "salarios": 381862
+  },
+  "Atividades financeiras, de seguros e serviços relacionados": {
+   "empresas": 1756,
+   "pessoal": 82256,
+   "assalariados": 81511,
+   "salarios": 7569823
+  },
+  "Atividades imobiliárias": {
+   "empresas": 416,
+   "pessoal": 1286,
+   "assalariados": 649,
+   "salarios": 31122
+  },
+  "Atividades profissionais, científicas e técnicas": {
+   "empresas": 1442,
+   "pessoal": 7414,
+   "assalariados": 5716,
+   "salarios": 396001
+  },
+  "Atividades administrativas e serviços complementares": {
+   "empresas": 2114,
+   "pessoal": 24332,
+   "assalariados": 21948,
+   "salarios": 479603
+  },
+  "Administração pública, defesa e seguridade social": {
+   "empresas": 6,
+   "pessoal": 15780,
+   "assalariados": 15780,
+   "salarios": 795121
+  },
+  "Educação": {
+   "empresas": 687,
+   "pessoal": 9215,
+   "assalariados": 8565,
+   "salarios": 372885
+  },
+  "Saúde humana e serviços sociais": {
+   "empresas": 891,
+   "pessoal": 4247,
+   "assalariados": 2925,
+   "salarios": 63605
+  },
+  "Artes, cultura, esporte e recreação": {
+   "empresas": 180,
+   "pessoal": 709,
+   "assalariados": 505,
+   "salarios": 12911
+  },
+  "Outras atividades de serviços": {
+   "empresas": 814,
+   "pessoal": 2674,
+   "assalariados": 1935,
+   "salarios": 51112
+  },
+  "Serviços domésticos": {
+   "empresas": 0,
+   "pessoal": 0,
+   "assalariados": 0,
+   "salarios": 0
+  },
+  "Organismos internacionais e outras instituições extraterritoriais": {
+   "empresas": 0,
+   "pessoal": 0,
+   "assalariados": 0,
+   "salarios": 0
+  }
+ },
+ "coletadoEm": "2026-11-02"
+}

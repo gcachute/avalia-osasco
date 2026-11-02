@@ -368,6 +368,12 @@ export function PainelBairro({
           </div>
         )}
 
+        {aba === "seguranca" && bairro.transito && (
+          <p className="mb-3 rounded-lg bg-slate-50 p-3 text-xs text-slate-700">
+            Trânsito em {bairro.transito.ano}: <b className="tabular-nums">{bairro.transito.sinistros.toLocaleString("pt-BR")}</b> ocorrências com local no bairro,{" "}
+            <b className="tabular-nums">{bairro.transito.mortos.toLocaleString("pt-BR")}</b> mortes e <b className="tabular-nums">{bairro.transito.graves.toLocaleString("pt-BR")}</b> feridos graves (Infosiga, Detran-SP).
+          </p>
+        )}
         {aba === "seguranca" &&
           (bairro.seguranca ? (
             <div className="space-y-2.5">

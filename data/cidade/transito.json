@@ -1,0 +1,3868 @@
+{
+ "fonte": "Detran-SP, Infosiga",
+ "url": "https://infosiga.detran.sp.gov.br/",
+ "porAno": {
+  "2015": {
+   "sinistros": 81,
+   "mortos": 83,
+   "graves": 0,
+   "leves": 0
+  },
+  "2016": {
+   "sinistros": 65,
+   "mortos": 68,
+   "graves": 0,
+   "leves": 0
+  },
+  "2017": {
+   "sinistros": 54,
+   "mortos": 55,
+   "graves": 0,
+   "leves": 0
+  },
+  "2018": {
+   "sinistros": 39,
+   "mortos": 41,
+   "graves": 0,
+   "leves": 0
+  },
+  "2019": {
+   "sinistros": 1905,
+   "mortos": 42,
+   "graves": 139,
+   "leves": 1178
+  },
+  "2020": {
+   "sinistros": 1795,
+   "mortos": 38,
+   "graves": 139,
+   "leves": 1086
+  },
+  "2021": {
+   "sinistros": 2021,
+   "mortos": 46,
+   "graves": 141,
+   "leves": 1081
+  },
+  "2022": {
+   "sinistros": 2172,
+   "mortos": 59,
+   "graves": 169,
+   "leves": 1286
+  },
+  "2023": {
+   "sinistros": 2280,
+   "mortos": 62,
+   "graves": 165,
+   "leves": 1239
+  },
+  "2024": {
+   "sinistros": 2084,
+   "mortos": 57,
+   "graves": 142,
+   "leves": 1173
+  },
+  "2025": {
+   "sinistros": 2084,
+   "mortos": 72,
+   "graves": 153,
+   "leves": 1180
+  },
+  "2026": {
+   "sinistros": 1583,
+   "mortos": 59,
+   "graves": 100,
+   "leves": 836
+  }
+ },
+ "porBairro": {
+  "presidente-altino": {
+   "2015": {
+    "sinistros": 25,
+    "mortos": 25,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 8,
+    "mortos": 8,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 5,
+    "mortos": 5,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 21,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 13
+   },
+   "2020": {
+    "sinistros": 12,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 8
+   },
+   "2021": {
+    "sinistros": 31,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 21
+   },
+   "2022": {
+    "sinistros": 24,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 13
+   },
+   "2023": {
+    "sinistros": 31,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 13
+   },
+   "2024": {
+    "sinistros": 31,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 23
+   },
+   "2025": {
+    "sinistros": 15,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 16
+   },
+   "2026": {
+    "sinistros": 21,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 14
+   }
+  },
+  "portal-d-oeste": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 24,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 16
+   },
+   "2020": {
+    "sinistros": 32,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 19
+   },
+   "2021": {
+    "sinistros": 41,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 25
+   },
+   "2022": {
+    "sinistros": 30,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 19
+   },
+   "2023": {
+    "sinistros": 35,
+    "mortos": 0,
+    "graves": 5,
+    "leves": 16
+   },
+   "2024": {
+    "sinistros": 25,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 10
+   },
+   "2025": {
+    "sinistros": 9,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 4
+   },
+   "2026": {
+    "sinistros": 9,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   }
+  },
+  "cidade-de-deus": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 3,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 0
+   },
+   "2020": {
+    "sinistros": 2,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 2
+   },
+   "2021": {
+    "sinistros": 2,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 0
+   },
+   "2022": {
+    "sinistros": 3,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   },
+   "2023": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 1
+   },
+   "2024": {
+    "sinistros": 5,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 2
+   },
+   "2025": {
+    "sinistros": 4,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 4
+   },
+   "2026": {
+    "sinistros": 3,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 2
+   }
+  },
+  "jardim-d-abril": {
+   "2015": {
+    "sinistros": 3,
+    "mortos": 3,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 44,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 25
+   },
+   "2020": {
+    "sinistros": 33,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 23
+   },
+   "2021": {
+    "sinistros": 47,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 23
+   },
+   "2022": {
+    "sinistros": 52,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 37
+   },
+   "2023": {
+    "sinistros": 42,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 20
+   },
+   "2024": {
+    "sinistros": 45,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 26
+   },
+   "2025": {
+    "sinistros": 12,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 13
+   },
+   "2026": {
+    "sinistros": 18,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 12
+   }
+  },
+  "rochdale": {
+   "2015": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 3,
+    "mortos": 3,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 3,
+    "mortos": 3,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 107,
+    "mortos": 1,
+    "graves": 19,
+    "leves": 66
+   },
+   "2020": {
+    "sinistros": 108,
+    "mortos": 2,
+    "graves": 14,
+    "leves": 66
+   },
+   "2021": {
+    "sinistros": 122,
+    "mortos": 5,
+    "graves": 14,
+    "leves": 68
+   },
+   "2022": {
+    "sinistros": 137,
+    "mortos": 2,
+    "graves": 14,
+    "leves": 88
+   },
+   "2023": {
+    "sinistros": 114,
+    "mortos": 3,
+    "graves": 11,
+    "leves": 65
+   },
+   "2024": {
+    "sinistros": 122,
+    "mortos": 4,
+    "graves": 8,
+    "leves": 76
+   },
+   "2025": {
+    "sinistros": 78,
+    "mortos": 6,
+    "graves": 9,
+    "leves": 75
+   },
+   "2026": {
+    "sinistros": 69,
+    "mortos": 4,
+    "graves": 11,
+    "leves": 49
+   }
+  },
+  "industrial-anhanguera": {
+   "2015": {
+    "sinistros": 3,
+    "mortos": 4,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 3,
+    "mortos": 3,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 43,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 32
+   },
+   "2020": {
+    "sinistros": 43,
+    "mortos": 7,
+    "graves": 1,
+    "leves": 20
+   },
+   "2021": {
+    "sinistros": 57,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 42
+   },
+   "2022": {
+    "sinistros": 56,
+    "mortos": 4,
+    "graves": 2,
+    "leves": 41
+   },
+   "2023": {
+    "sinistros": 65,
+    "mortos": 6,
+    "graves": 9,
+    "leves": 36
+   },
+   "2024": {
+    "sinistros": 57,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 28
+   },
+   "2025": {
+    "sinistros": 30,
+    "mortos": 2,
+    "graves": 5,
+    "leves": 21
+   },
+   "2026": {
+    "sinistros": 24,
+    "mortos": 5,
+    "graves": 2,
+    "leves": 20
+   }
+  },
+  "umuarama": {
+   "2015": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 32,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 18
+   },
+   "2020": {
+    "sinistros": 24,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 13
+   },
+   "2021": {
+    "sinistros": 30,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 23
+   },
+   "2022": {
+    "sinistros": 33,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 15
+   },
+   "2023": {
+    "sinistros": 25,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 14
+   },
+   "2024": {
+    "sinistros": 33,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 11
+   },
+   "2025": {
+    "sinistros": 5,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 4
+   },
+   "2026": {
+    "sinistros": 7,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 1
+   }
+  },
+  "piratininga": {
+   "2015": {
+    "sinistros": 5,
+    "mortos": 5,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 4,
+    "mortos": 4,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 3,
+    "mortos": 3,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 88,
+    "mortos": 1,
+    "graves": 14,
+    "leves": 75
+   },
+   "2020": {
+    "sinistros": 88,
+    "mortos": 2,
+    "graves": 10,
+    "leves": 60
+   },
+   "2021": {
+    "sinistros": 80,
+    "mortos": 2,
+    "graves": 15,
+    "leves": 41
+   },
+   "2022": {
+    "sinistros": 82,
+    "mortos": 1,
+    "graves": 18,
+    "leves": 54
+   },
+   "2023": {
+    "sinistros": 115,
+    "mortos": 3,
+    "graves": 16,
+    "leves": 84
+   },
+   "2024": {
+    "sinistros": 99,
+    "mortos": 4,
+    "graves": 9,
+    "leves": 64
+   },
+   "2025": {
+    "sinistros": 74,
+    "mortos": 5,
+    "graves": 17,
+    "leves": 60
+   },
+   "2026": {
+    "sinistros": 74,
+    "mortos": 6,
+    "graves": 4,
+    "leves": 51
+   }
+  },
+  "centro": {
+   "2015": {
+    "sinistros": 7,
+    "mortos": 7,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 6,
+    "mortos": 6,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 6,
+    "mortos": 7,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 201,
+    "mortos": 0,
+    "graves": 9,
+    "leves": 113
+   },
+   "2020": {
+    "sinistros": 167,
+    "mortos": 1,
+    "graves": 12,
+    "leves": 112
+   },
+   "2021": {
+    "sinistros": 189,
+    "mortos": 1,
+    "graves": 14,
+    "leves": 97
+   },
+   "2022": {
+    "sinistros": 204,
+    "mortos": 8,
+    "graves": 11,
+    "leves": 142
+   },
+   "2023": {
+    "sinistros": 232,
+    "mortos": 7,
+    "graves": 4,
+    "leves": 139
+   },
+   "2024": {
+    "sinistros": 185,
+    "mortos": 3,
+    "graves": 15,
+    "leves": 99
+   },
+   "2025": {
+    "sinistros": 87,
+    "mortos": 6,
+    "graves": 6,
+    "leves": 88
+   },
+   "2026": {
+    "sinistros": 87,
+    "mortos": 3,
+    "graves": 6,
+    "leves": 67
+   }
+  },
+  "santa-maria": {
+   "2015": {
+    "sinistros": 4,
+    "mortos": 4,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 4,
+    "mortos": 4,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 45,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 31
+   },
+   "2020": {
+    "sinistros": 30,
+    "mortos": 3,
+    "graves": 3,
+    "leves": 11
+   },
+   "2021": {
+    "sinistros": 73,
+    "mortos": 1,
+    "graves": 8,
+    "leves": 24
+   },
+   "2022": {
+    "sinistros": 56,
+    "mortos": 2,
+    "graves": 4,
+    "leves": 27
+   },
+   "2023": {
+    "sinistros": 50,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 28
+   },
+   "2024": {
+    "sinistros": 60,
+    "mortos": 2,
+    "graves": 7,
+    "leves": 35
+   },
+   "2025": {
+    "sinistros": 24,
+    "mortos": 1,
+    "graves": 4,
+    "leves": 18
+   },
+   "2026": {
+    "sinistros": 37,
+    "mortos": 1,
+    "graves": 5,
+    "leves": 22
+   }
+  },
+  "ayrosa": {
+   "2015": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 1,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 3,
+    "mortos": 3,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 51,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 33
+   },
+   "2020": {
+    "sinistros": 56,
+    "mortos": 1,
+    "graves": 5,
+    "leves": 32
+   },
+   "2021": {
+    "sinistros": 54,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 42
+   },
+   "2022": {
+    "sinistros": 64,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 33
+   },
+   "2023": {
+    "sinistros": 39,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 25
+   },
+   "2024": {
+    "sinistros": 49,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 30
+   },
+   "2025": {
+    "sinistros": 25,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 21
+   },
+   "2026": {
+    "sinistros": 30,
+    "mortos": 4,
+    "graves": 4,
+    "leves": 18
+   }
+  },
+  "jardim-elvira": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 13,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 9
+   },
+   "2020": {
+    "sinistros": 10,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 4
+   },
+   "2021": {
+    "sinistros": 20,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 14
+   },
+   "2022": {
+    "sinistros": 17,
+    "mortos": 2,
+    "graves": 6,
+    "leves": 4
+   },
+   "2023": {
+    "sinistros": 19,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 14
+   },
+   "2024": {
+    "sinistros": 21,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 13
+   },
+   "2025": {
+    "sinistros": 5,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 6
+   },
+   "2026": {
+    "sinistros": 11,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 2
+   }
+  },
+  "mutinga": {
+   "2015": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 13,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 8
+   },
+   "2020": {
+    "sinistros": 16,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 11
+   },
+   "2021": {
+    "sinistros": 18,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 12
+   },
+   "2022": {
+    "sinistros": 32,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 25
+   },
+   "2023": {
+    "sinistros": 25,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 14
+   },
+   "2024": {
+    "sinistros": 35,
+    "mortos": 1,
+    "graves": 5,
+    "leves": 26
+   },
+   "2025": {
+    "sinistros": 24,
+    "mortos": 2,
+    "graves": 2,
+    "leves": 21
+   },
+   "2026": {
+    "sinistros": 16,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 14
+   }
+  },
+  "helena-maria": {
+   "2015": {
+    "sinistros": 3,
+    "mortos": 3,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 15,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 12
+   },
+   "2020": {
+    "sinistros": 23,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 12
+   },
+   "2021": {
+    "sinistros": 30,
+    "mortos": 2,
+    "graves": 2,
+    "leves": 17
+   },
+   "2022": {
+    "sinistros": 28,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 14
+   },
+   "2023": {
+    "sinistros": 27,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 10
+   },
+   "2024": {
+    "sinistros": 29,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 14
+   },
+   "2025": {
+    "sinistros": 16,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 15
+   },
+   "2026": {
+    "sinistros": 13,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 7
+   }
+  },
+  "bonfim": {
+   "2015": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 31,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 20
+   },
+   "2020": {
+    "sinistros": 30,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 22
+   },
+   "2021": {
+    "sinistros": 30,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 16
+   },
+   "2022": {
+    "sinistros": 36,
+    "mortos": 1,
+    "graves": 4,
+    "leves": 19
+   },
+   "2023": {
+    "sinistros": 33,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 21
+   },
+   "2024": {
+    "sinistros": 32,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 15
+   },
+   "2025": {
+    "sinistros": 22,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 28
+   },
+   "2026": {
+    "sinistros": 20,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 16
+   }
+  },
+  "jardim-das-flores": {
+   "2015": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 27,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 19
+   },
+   "2020": {
+    "sinistros": 12,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 14
+   },
+   "2021": {
+    "sinistros": 16,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   },
+   "2022": {
+    "sinistros": 16,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 6
+   },
+   "2023": {
+    "sinistros": 12,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   },
+   "2024": {
+    "sinistros": 21,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 12
+   },
+   "2025": {
+    "sinistros": 11,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 12
+   },
+   "2026": {
+    "sinistros": 14,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 14
+   }
+  },
+  "castelo-branco": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 4,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   },
+   "2020": {
+    "sinistros": 2,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 2
+   },
+   "2021": {
+    "sinistros": 5,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 1
+   },
+   "2022": {
+    "sinistros": 7,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 3
+   },
+   "2023": {
+    "sinistros": 7,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 1
+   },
+   "2024": {
+    "sinistros": 6,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 3
+   },
+   "2025": {
+    "sinistros": 6,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 6
+   },
+   "2026": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   }
+  },
+  "quintauna": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 23,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 13
+   },
+   "2020": {
+    "sinistros": 21,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 13
+   },
+   "2021": {
+    "sinistros": 14,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 11
+   },
+   "2022": {
+    "sinistros": 32,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 19
+   },
+   "2023": {
+    "sinistros": 20,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 9
+   },
+   "2024": {
+    "sinistros": 37,
+    "mortos": 2,
+    "graves": 2,
+    "leves": 30
+   },
+   "2025": {
+    "sinistros": 20,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 20
+   },
+   "2026": {
+    "sinistros": 14,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   }
+  },
+  "pestana": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 34,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 16
+   },
+   "2020": {
+    "sinistros": 40,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 30
+   },
+   "2021": {
+    "sinistros": 33,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 18
+   },
+   "2022": {
+    "sinistros": 64,
+    "mortos": 1,
+    "graves": 5,
+    "leves": 39
+   },
+   "2023": {
+    "sinistros": 34,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 17
+   },
+   "2024": {
+    "sinistros": 33,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 17
+   },
+   "2025": {
+    "sinistros": 18,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 18
+   },
+   "2026": {
+    "sinistros": 19,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 11
+   }
+  },
+  "vila-menck": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 35,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 16
+   },
+   "2020": {
+    "sinistros": 34,
+    "mortos": 0,
+    "graves": 5,
+    "leves": 26
+   },
+   "2021": {
+    "sinistros": 32,
+    "mortos": 0,
+    "graves": 5,
+    "leves": 21
+   },
+   "2022": {
+    "sinistros": 33,
+    "mortos": 2,
+    "graves": 2,
+    "leves": 14
+   },
+   "2023": {
+    "sinistros": 26,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 17
+   },
+   "2024": {
+    "sinistros": 37,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 26
+   },
+   "2025": {
+    "sinistros": 21,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 24
+   },
+   "2026": {
+    "sinistros": 24,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 19
+   }
+  },
+  "veloso": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 55,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 29
+   },
+   "2020": {
+    "sinistros": 57,
+    "mortos": 2,
+    "graves": 2,
+    "leves": 28
+   },
+   "2021": {
+    "sinistros": 54,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 23
+   },
+   "2022": {
+    "sinistros": 50,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 25
+   },
+   "2023": {
+    "sinistros": 65,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 27
+   },
+   "2024": {
+    "sinistros": 57,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 28
+   },
+   "2025": {
+    "sinistros": 34,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 30
+   },
+   "2026": {
+    "sinistros": 38,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 21
+   }
+  },
+  "bandeiras": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 60,
+    "mortos": 2,
+    "graves": 7,
+    "leves": 27
+   },
+   "2020": {
+    "sinistros": 61,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 25
+   },
+   "2021": {
+    "sinistros": 59,
+    "mortos": 1,
+    "graves": 6,
+    "leves": 15
+   },
+   "2022": {
+    "sinistros": 64,
+    "mortos": 3,
+    "graves": 2,
+    "leves": 16
+   },
+   "2023": {
+    "sinistros": 60,
+    "mortos": 4,
+    "graves": 1,
+    "leves": 27
+   },
+   "2024": {
+    "sinistros": 47,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 31
+   },
+   "2025": {
+    "sinistros": 16,
+    "mortos": 2,
+    "graves": 2,
+    "leves": 14
+   },
+   "2026": {
+    "sinistros": 22,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 13
+   }
+  },
+  "alianca": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 30,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 18
+   },
+   "2020": {
+    "sinistros": 29,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 18
+   },
+   "2021": {
+    "sinistros": 35,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 10
+   },
+   "2022": {
+    "sinistros": 32,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 16
+   },
+   "2023": {
+    "sinistros": 29,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 11
+   },
+   "2024": {
+    "sinistros": 34,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 16
+   },
+   "2025": {
+    "sinistros": 22,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 19
+   },
+   "2026": {
+    "sinistros": 14,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 4
+   }
+  },
+  "vila-yara": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 10,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 6
+   },
+   "2020": {
+    "sinistros": 8,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 7
+   },
+   "2021": {
+    "sinistros": 8,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 2
+   },
+   "2022": {
+    "sinistros": 7,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   },
+   "2023": {
+    "sinistros": 13,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 6
+   },
+   "2024": {
+    "sinistros": 10,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 6
+   },
+   "2025": {
+    "sinistros": 7,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 8
+   },
+   "2026": {
+    "sinistros": 3,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   }
+  },
+  "baronesa": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 33,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 24
+   },
+   "2020": {
+    "sinistros": 32,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 19
+   },
+   "2021": {
+    "sinistros": 42,
+    "mortos": 0,
+    "graves": 9,
+    "leves": 33
+   },
+   "2022": {
+    "sinistros": 47,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 37
+   },
+   "2023": {
+    "sinistros": 46,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 23
+   },
+   "2024": {
+    "sinistros": 28,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 11
+   },
+   "2025": {
+    "sinistros": 12,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 12
+   },
+   "2026": {
+    "sinistros": 17,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 18
+   }
+  },
+  "raposo-tavares": {
+   "2015": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 2,
+    "mortos": 3,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 26,
+    "mortos": 4,
+    "graves": 3,
+    "leves": 6
+   },
+   "2020": {
+    "sinistros": 14,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   },
+   "2021": {
+    "sinistros": 19,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 9
+   },
+   "2022": {
+    "sinistros": 11,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 9
+   },
+   "2023": {
+    "sinistros": 27,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 15
+   },
+   "2024": {
+    "sinistros": 25,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 21
+   },
+   "2025": {
+    "sinistros": 18,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 12
+   },
+   "2026": {
+    "sinistros": 8,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 1
+   }
+  },
+  "km-18": {
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 3,
+    "mortos": 3,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 76,
+    "mortos": 2,
+    "graves": 6,
+    "leves": 52
+   },
+   "2020": {
+    "sinistros": 59,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 62
+   },
+   "2021": {
+    "sinistros": 67,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 41
+   },
+   "2022": {
+    "sinistros": 91,
+    "mortos": 0,
+    "graves": 8,
+    "leves": 66
+   },
+   "2023": {
+    "sinistros": 97,
+    "mortos": 0,
+    "graves": 10,
+    "leves": 73
+   },
+   "2024": {
+    "sinistros": 54,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 31
+   },
+   "2025": {
+    "sinistros": 34,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 37
+   },
+   "2026": {
+    "sinistros": 24,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 30
+   }
+  },
+  "santo-antonio": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 44,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 31
+   },
+   "2020": {
+    "sinistros": 49,
+    "mortos": 0,
+    "graves": 5,
+    "leves": 28
+   },
+   "2021": {
+    "sinistros": 58,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 39
+   },
+   "2022": {
+    "sinistros": 72,
+    "mortos": 1,
+    "graves": 7,
+    "leves": 44
+   },
+   "2023": {
+    "sinistros": 70,
+    "mortos": 1,
+    "graves": 8,
+    "leves": 40
+   },
+   "2024": {
+    "sinistros": 52,
+    "mortos": 4,
+    "graves": 4,
+    "leves": 18
+   },
+   "2025": {
+    "sinistros": 17,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 17
+   },
+   "2026": {
+    "sinistros": 24,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 17
+   }
+  },
+  "jardim-conceicao": {
+   "2016": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 45,
+    "mortos": 2,
+    "graves": 2,
+    "leves": 22
+   },
+   "2020": {
+    "sinistros": 41,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 13
+   },
+   "2021": {
+    "sinistros": 47,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 17
+   },
+   "2022": {
+    "sinistros": 35,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 8
+   },
+   "2023": {
+    "sinistros": 47,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 16
+   },
+   "2024": {
+    "sinistros": 50,
+    "mortos": 1,
+    "graves": 4,
+    "leves": 20
+   },
+   "2025": {
+    "sinistros": 20,
+    "mortos": 2,
+    "graves": 4,
+    "leves": 16
+   },
+   "2026": {
+    "sinistros": 25,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 14
+   }
+  },
+  "industrial-altino": {
+   "2016": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 34,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 30
+   },
+   "2020": {
+    "sinistros": 22,
+    "mortos": 4,
+    "graves": 2,
+    "leves": 11
+   },
+   "2021": {
+    "sinistros": 35,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 21
+   },
+   "2022": {
+    "sinistros": 32,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 22
+   },
+   "2023": {
+    "sinistros": 39,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 27
+   },
+   "2024": {
+    "sinistros": 39,
+    "mortos": 6,
+    "graves": 2,
+    "leves": 15
+   },
+   "2025": {
+    "sinistros": 36,
+    "mortos": 2,
+    "graves": 2,
+    "leves": 28
+   },
+   "2026": {
+    "sinistros": 27,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 15
+   }
+  },
+  "industrial-mazzei": {
+   "2016": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 26,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 17
+   },
+   "2020": {
+    "sinistros": 25,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 16
+   },
+   "2021": {
+    "sinistros": 32,
+    "mortos": 1,
+    "graves": 5,
+    "leves": 23
+   },
+   "2022": {
+    "sinistros": 36,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 22
+   },
+   "2023": {
+    "sinistros": 25,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 19
+   },
+   "2024": {
+    "sinistros": 21,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 17
+   },
+   "2025": {
+    "sinistros": 13,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 13
+   },
+   "2026": {
+    "sinistros": 8,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 4
+   }
+  },
+  "jardim-roberto": {
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 25,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 17
+   },
+   "2020": {
+    "sinistros": 29,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 19
+   },
+   "2021": {
+    "sinistros": 40,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 16
+   },
+   "2022": {
+    "sinistros": 36,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 15
+   },
+   "2023": {
+    "sinistros": 28,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 17
+   },
+   "2024": {
+    "sinistros": 28,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 18
+   },
+   "2025": {
+    "sinistros": 20,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 23
+   },
+   "2026": {
+    "sinistros": 13,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 9
+   }
+  },
+  "sao-pedro": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2016": {
+    "sinistros": 3,
+    "mortos": 3,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 30,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 17
+   },
+   "2020": {
+    "sinistros": 28,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 17
+   },
+   "2021": {
+    "sinistros": 34,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 15
+   },
+   "2022": {
+    "sinistros": 34,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 23
+   },
+   "2023": {
+    "sinistros": 45,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 22
+   },
+   "2024": {
+    "sinistros": 31,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 20
+   },
+   "2025": {
+    "sinistros": 23,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 20
+   },
+   "2026": {
+    "sinistros": 18,
+    "mortos": 4,
+    "graves": 2,
+    "leves": 6
+   }
+  },
+  "bela-vista": {
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 49,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 35
+   },
+   "2020": {
+    "sinistros": 39,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 24
+   },
+   "2021": {
+    "sinistros": 40,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 22
+   },
+   "2022": {
+    "sinistros": 44,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 29
+   },
+   "2023": {
+    "sinistros": 42,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 21
+   },
+   "2024": {
+    "sinistros": 37,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 17
+   },
+   "2025": {
+    "sinistros": 16,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 15
+   },
+   "2026": {
+    "sinistros": 14,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 10
+   }
+  },
+  "bussocaba": {
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 24,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 13
+   },
+   "2020": {
+    "sinistros": 27,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 13
+   },
+   "2021": {
+    "sinistros": 30,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 13
+   },
+   "2022": {
+    "sinistros": 35,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 23
+   },
+   "2023": {
+    "sinistros": 39,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 17
+   },
+   "2024": {
+    "sinistros": 35,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 23
+   },
+   "2025": {
+    "sinistros": 15,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 13
+   },
+   "2026": {
+    "sinistros": 13,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 11
+   }
+  },
+  "jardim-novo-osasco": {
+   "2016": {
+    "sinistros": 1,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 17,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 12
+   },
+   "2020": {
+    "sinistros": 41,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 22
+   },
+   "2021": {
+    "sinistros": 30,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 14
+   },
+   "2022": {
+    "sinistros": 32,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 17
+   },
+   "2023": {
+    "sinistros": 22,
+    "mortos": 2,
+    "graves": 2,
+    "leves": 12
+   },
+   "2024": {
+    "sinistros": 28,
+    "mortos": 1,
+    "graves": 4,
+    "leves": 13
+   },
+   "2025": {
+    "sinistros": 16,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 15
+   },
+   "2026": {
+    "sinistros": 13,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 12
+   }
+  },
+  "bonanca": {
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 18,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 13
+   },
+   "2020": {
+    "sinistros": 19,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 8
+   },
+   "2021": {
+    "sinistros": 16,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 14
+   },
+   "2022": {
+    "sinistros": 23,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 7
+   },
+   "2023": {
+    "sinistros": 18,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 6
+   },
+   "2024": {
+    "sinistros": 18,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 5
+   },
+   "2025": {
+    "sinistros": 10,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 8
+   },
+   "2026": {
+    "sinistros": 13,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 5
+   }
+  },
+  "cipava": {
+   "2015": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 14,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 8
+   },
+   "2020": {
+    "sinistros": 19,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 9
+   },
+   "2021": {
+    "sinistros": 17,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 8
+   },
+   "2022": {
+    "sinistros": 18,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 11
+   },
+   "2023": {
+    "sinistros": 19,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 9
+   },
+   "2024": {
+    "sinistros": 19,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 9
+   },
+   "2025": {
+    "sinistros": 9,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 10
+   },
+   "2026": {
+    "sinistros": 19,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 7
+   }
+  },
+  "setor-militar": {
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 14,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 5
+   },
+   "2020": {
+    "sinistros": 6,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 6
+   },
+   "2021": {
+    "sinistros": 4,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 2
+   },
+   "2022": {
+    "sinistros": 9,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 3
+   },
+   "2023": {
+    "sinistros": 16,
+    "mortos": 3,
+    "graves": 3,
+    "leves": 9
+   },
+   "2024": {
+    "sinistros": 15,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 14
+   },
+   "2025": {
+    "sinistros": 5,
+    "mortos": 2,
+    "graves": 2,
+    "leves": 2
+   },
+   "2026": {
+    "sinistros": 10,
+    "mortos": 3,
+    "graves": 2,
+    "leves": 4
+   }
+  },
+  "industrial-autonomistas": {
+   "2016": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 23,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 16
+   },
+   "2020": {
+    "sinistros": 27,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 13
+   },
+   "2021": {
+    "sinistros": 24,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 11
+   },
+   "2022": {
+    "sinistros": 20,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 13
+   },
+   "2023": {
+    "sinistros": 45,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 27
+   },
+   "2024": {
+    "sinistros": 43,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 23
+   },
+   "2025": {
+    "sinistros": 21,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 23
+   },
+   "2026": {
+    "sinistros": 24,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 11
+   }
+  },
+  "padroeira": {
+   "2016": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 42,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 19
+   },
+   "2020": {
+    "sinistros": 44,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 34
+   },
+   "2021": {
+    "sinistros": 54,
+    "mortos": 3,
+    "graves": 4,
+    "leves": 19
+   },
+   "2022": {
+    "sinistros": 41,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 21
+   },
+   "2023": {
+    "sinistros": 54,
+    "mortos": 2,
+    "graves": 6,
+    "leves": 24
+   },
+   "2024": {
+    "sinistros": 52,
+    "mortos": 2,
+    "graves": 3,
+    "leves": 25
+   },
+   "2025": {
+    "sinistros": 18,
+    "mortos": 0,
+    "graves": 6,
+    "leves": 13
+   },
+   "2026": {
+    "sinistros": 29,
+    "mortos": 1,
+    "graves": 4,
+    "leves": 21
+   }
+  },
+  "vila-militar": {
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 11,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 6
+   },
+   "2020": {
+    "sinistros": 7,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 3
+   },
+   "2021": {
+    "sinistros": 6,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 2
+   },
+   "2022": {
+    "sinistros": 12,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 11
+   },
+   "2023": {
+    "sinistros": 11,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 8
+   },
+   "2024": {
+    "sinistros": 5,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 2
+   },
+   "2025": {
+    "sinistros": 6,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 5
+   },
+   "2026": {
+    "sinistros": 5,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 7
+   }
+  },
+  "vila-osasco": {
+   "2017": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 35,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 26
+   },
+   "2020": {
+    "sinistros": 32,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 20
+   },
+   "2021": {
+    "sinistros": 25,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 9
+   },
+   "2022": {
+    "sinistros": 33,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 17
+   },
+   "2023": {
+    "sinistros": 36,
+    "mortos": 1,
+    "graves": 4,
+    "leves": 17
+   },
+   "2024": {
+    "sinistros": 41,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 13
+   },
+   "2025": {
+    "sinistros": 18,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 17
+   },
+   "2026": {
+    "sinistros": 18,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 13
+   }
+  },
+  "jaguaribe": {
+   "2016": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2017": {
+    "sinistros": 2,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 37,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 20
+   },
+   "2020": {
+    "sinistros": 33,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 17
+   },
+   "2021": {
+    "sinistros": 45,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 25
+   },
+   "2022": {
+    "sinistros": 37,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 29
+   },
+   "2023": {
+    "sinistros": 57,
+    "mortos": 1,
+    "graves": 5,
+    "leves": 27
+   },
+   "2024": {
+    "sinistros": 48,
+    "mortos": 1,
+    "graves": 6,
+    "leves": 25
+   },
+   "2025": {
+    "sinistros": 11,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 10
+   },
+   "2026": {
+    "sinistros": 16,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 12
+   }
+  },
+  "iapi": {
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 25,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 22
+   },
+   "2020": {
+    "sinistros": 34,
+    "mortos": 0,
+    "graves": 7,
+    "leves": 19
+   },
+   "2021": {
+    "sinistros": 19,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 13
+   },
+   "2022": {
+    "sinistros": 38,
+    "mortos": 1,
+    "graves": 7,
+    "leves": 22
+   },
+   "2023": {
+    "sinistros": 48,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 22
+   },
+   "2024": {
+    "sinistros": 26,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 18
+   },
+   "2025": {
+    "sinistros": 17,
+    "mortos": 2,
+    "graves": 2,
+    "leves": 19
+   },
+   "2026": {
+    "sinistros": 13,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 7
+   }
+  },
+  "industrial-centro": {
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 16,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 11
+   },
+   "2020": {
+    "sinistros": 11,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 6
+   },
+   "2021": {
+    "sinistros": 21,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 12
+   },
+   "2022": {
+    "sinistros": 11,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 10
+   },
+   "2023": {
+    "sinistros": 7,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 0
+   },
+   "2024": {
+    "sinistros": 9,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   },
+   "2025": {
+    "sinistros": 4,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 5
+   },
+   "2026": {
+    "sinistros": 3,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 1
+   }
+  },
+  "parque-continental": {
+   "2018": {
+    "sinistros": 1,
+    "mortos": 3,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 2
+   },
+   "2022": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   },
+   "2023": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   },
+   "2024": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   },
+   "2026": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 0
+   }
+  },
+  "platina": {
+   "2017": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 20,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 18
+   },
+   "2020": {
+    "sinistros": 16,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 8
+   },
+   "2021": {
+    "sinistros": 22,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 12
+   },
+   "2022": {
+    "sinistros": 16,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 16
+   },
+   "2023": {
+    "sinistros": 21,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 5
+   },
+   "2024": {
+    "sinistros": 25,
+    "mortos": 3,
+    "graves": 2,
+    "leves": 18
+   },
+   "2025": {
+    "sinistros": 9,
+    "mortos": 5,
+    "graves": 0,
+    "leves": 1
+   },
+   "2026": {
+    "sinistros": 10,
+    "mortos": 4,
+    "graves": 0,
+    "leves": 3
+   }
+  },
+  "munhoz-junior": {
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 24,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 14
+   },
+   "2020": {
+    "sinistros": 36,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 13
+   },
+   "2021": {
+    "sinistros": 38,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 16
+   },
+   "2022": {
+    "sinistros": 33,
+    "mortos": 0,
+    "graves": 5,
+    "leves": 20
+   },
+   "2023": {
+    "sinistros": 42,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 20
+   },
+   "2024": {
+    "sinistros": 31,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 16
+   },
+   "2025": {
+    "sinistros": 9,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 12
+   },
+   "2026": {
+    "sinistros": 17,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 9
+   }
+  },
+  "metalurgicos": {
+   "2019": {
+    "sinistros": 8,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 3
+   },
+   "2020": {
+    "sinistros": 15,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   },
+   "2021": {
+    "sinistros": 7,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 5
+   },
+   "2022": {
+    "sinistros": 9,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 4
+   },
+   "2023": {
+    "sinistros": 17,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 9
+   },
+   "2024": {
+    "sinistros": 14,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 10
+   },
+   "2025": {
+    "sinistros": 8,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 4
+   },
+   "2026": {
+    "sinistros": 6,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 5
+   }
+  },
+  "remedios": {
+   "2018": {
+    "sinistros": 1,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 0
+   },
+   "2019": {
+    "sinistros": 14,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 12
+   },
+   "2020": {
+    "sinistros": 15,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 12
+   },
+   "2021": {
+    "sinistros": 17,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 11
+   },
+   "2022": {
+    "sinistros": 20,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 9
+   },
+   "2023": {
+    "sinistros": 15,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 12
+   },
+   "2024": {
+    "sinistros": 10,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   },
+   "2025": {
+    "sinistros": 14,
+    "mortos": 1,
+    "graves": 2,
+    "leves": 14
+   },
+   "2026": {
+    "sinistros": 5,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 4
+   }
+  },
+  "vila-campesina": {
+   "2019": {
+    "sinistros": 10,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 6
+   },
+   "2020": {
+    "sinistros": 7,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 5
+   },
+   "2021": {
+    "sinistros": 13,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 7
+   },
+   "2022": {
+    "sinistros": 15,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   },
+   "2023": {
+    "sinistros": 11,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 6
+   },
+   "2024": {
+    "sinistros": 14,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 13
+   },
+   "2025": {
+    "sinistros": 7,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 8
+   },
+   "2026": {
+    "sinistros": 9,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 6
+   }
+  },
+  "cidade-das-flores": {
+   "2019": {
+    "sinistros": 6,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 0
+   },
+   "2020": {
+    "sinistros": 11,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 4
+   },
+   "2021": {
+    "sinistros": 6,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 6
+   },
+   "2022": {
+    "sinistros": 6,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   },
+   "2023": {
+    "sinistros": 11,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 7
+   },
+   "2024": {
+    "sinistros": 9,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 5
+   },
+   "2025": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   },
+   "2026": {
+    "sinistros": 4,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 5
+   }
+  },
+  "city-bussocaba": {
+   "2019": {
+    "sinistros": 5,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 1
+   },
+   "2020": {
+    "sinistros": 5,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 3
+   },
+   "2021": {
+    "sinistros": 7,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 3
+   },
+   "2022": {
+    "sinistros": 6,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 2
+   },
+   "2023": {
+    "sinistros": 9,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 2
+   },
+   "2024": {
+    "sinistros": 8,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 3
+   },
+   "2025": {
+    "sinistros": 5,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 5
+   },
+   "2026": {
+    "sinistros": 6,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 3
+   }
+  },
+  "adalgisa": {
+   "2019": {
+    "sinistros": 11,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 5
+   },
+   "2020": {
+    "sinistros": 9,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 3
+   },
+   "2021": {
+    "sinistros": 11,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 4
+   },
+   "2022": {
+    "sinistros": 21,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   },
+   "2023": {
+    "sinistros": 16,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   },
+   "2024": {
+    "sinistros": 19,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 10
+   },
+   "2025": {
+    "sinistros": 7,
+    "mortos": 1,
+    "graves": 1,
+    "leves": 6
+   },
+   "2026": {
+    "sinistros": 5,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 4
+   }
+  },
+  "vila-yolanda": {
+   "2019": {
+    "sinistros": 31,
+    "mortos": 2,
+    "graves": 0,
+    "leves": 19
+   },
+   "2020": {
+    "sinistros": 27,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 13
+   },
+   "2021": {
+    "sinistros": 33,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 19
+   },
+   "2022": {
+    "sinistros": 34,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 20
+   },
+   "2023": {
+    "sinistros": 44,
+    "mortos": 1,
+    "graves": 3,
+    "leves": 19
+   },
+   "2024": {
+    "sinistros": 23,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 13
+   },
+   "2025": {
+    "sinistros": 8,
+    "mortos": 0,
+    "graves": 4,
+    "leves": 9
+   },
+   "2026": {
+    "sinistros": 9,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 7
+   }
+  },
+  "industrial-remedios": {
+   "2019": {
+    "sinistros": 15,
+    "mortos": 0,
+    "graves": 2,
+    "leves": 6
+   },
+   "2020": {
+    "sinistros": 18,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 9
+   },
+   "2021": {
+    "sinistros": 13,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 8
+   },
+   "2022": {
+    "sinistros": 26,
+    "mortos": 2,
+    "graves": 1,
+    "leves": 13
+   },
+   "2023": {
+    "sinistros": 29,
+    "mortos": 3,
+    "graves": 3,
+    "leves": 15
+   },
+   "2024": {
+    "sinistros": 20,
+    "mortos": 1,
+    "graves": 0,
+    "leves": 8
+   },
+   "2025": {
+    "sinistros": 12,
+    "mortos": 0,
+    "graves": 3,
+    "leves": 10
+   },
+   "2026": {
+    "sinistros": 9,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 7
+   }
+  },
+  "tres-montanhas": {
+   "2019": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 0
+   },
+   "2020": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   },
+   "2021": {
+    "sinistros": 3,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 0
+   },
+   "2022": {
+    "sinistros": 3,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 0
+   },
+   "2023": {
+    "sinistros": 4,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 2
+   },
+   "2024": {
+    "sinistros": 2,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 0
+   },
+   "2025": {
+    "sinistros": 2,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 2
+   },
+   "2026": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   }
+  },
+  "santa-fe": {
+   "2020": {
+    "sinistros": 3,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 2
+   },
+   "2021": {
+    "sinistros": 2,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   },
+   "2022": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 1,
+    "leves": 0
+   },
+   "2023": {
+    "sinistros": 5,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 9
+   },
+   "2024": {
+    "sinistros": 4,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 3
+   },
+   "2025": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 1
+   },
+   "2026": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 0
+   }
+  },
+  "paiva-ramos": {
+   "2022": {
+    "sinistros": 1,
+    "mortos": 0,
+    "graves": 0,
+    "leves": 0
+   }
+  }
+ },
+ "semLocal": 2101,
+ "mortesPorModo": {
+  "2015": {
+   "PEDESTRE": 31,
+   "NAO DISPONIVEL": 13,
+   "CAMINHAO": 3,
+   "AUTOMOVEL": 9,
+   "MOTOCICLETA": 24,
+   "BICICLETA": 3
+  },
+  "2016": {
+   "PEDESTRE": 26,
+   "NAO DISPONIVEL": 5,
+   "BICICLETA": 2,
+   "MOTOCICLETA": 27,
+   "AUTOMOVEL": 5,
+   "CAMINHAO": 1,
+   "OUTROS": 1,
+   "ONIBUS": 1
+  },
+  "2017": {
+   "PEDESTRE": 23,
+   "MOTOCICLETA": 21,
+   "AUTOMOVEL": 8,
+   "BICICLETA": 3
+  },
+  "2018": {
+   "NAO DISPONIVEL": 2,
+   "MOTOCICLETA": 21,
+   "BICICLETA": 2,
+   "PEDESTRE": 11,
+   "AUTOMOVEL": 5
+  },
+  "2019": {
+   "PEDESTRE": 18,
+   "MOTOCICLETA": 17,
+   "CAMINHAO": 3,
+   "AUTOMOVEL": 4
+  },
+  "2020": {
+   "PEDESTRE": 16,
+   "MOTOCICLETA": 10,
+   "AUTOMOVEL": 10,
+   "CAMINHAO": 1,
+   "BICICLETA": 1
+  },
+  "2021": {
+   "MOTOCICLETA": 24,
+   "AUTOMOVEL": 10,
+   "PEDESTRE": 7,
+   "BICICLETA": 4,
+   "NAO DISPONIVEL": 1
+  },
+  "2022": {
+   "PEDESTRE": 20,
+   "AUTOMOVEL": 10,
+   "MOTOCICLETA": 22,
+   "BICICLETA": 3,
+   "NAO DISPONIVEL": 2,
+   "CAMINHAO": 2
+  },
+  "2023": {
+   "PEDESTRE": 22,
+   "AUTOMOVEL": 10,
+   "BICICLETA": 5,
+   "MOTOCICLETA": 23,
+   "NAO DISPONIVEL": 1,
+   "CAMINHAO": 1
+  },
+  "2024": {
+   "PEDESTRE": 18,
+   "AUTOMOVEL": 8,
+   "MOTOCICLETA": 28,
+   "BICICLETA": 3
+  },
+  "2025": {
+   "MOTOCICLETA": 33,
+   "AUTOMOVEL": 12,
+   "BICICLETA": 2,
+   "CAMINHAO": 2,
+   "PEDESTRE": 21,
+   "NAO DISPONIVEL": 2
+  },
+  "2026": {
+   "MOTOCICLETA": 30,
+   "AUTOMOVEL": 7,
+   "PEDESTRE": 19,
+   "CAMINHAO": 1,
+   "BICICLETA": 2
+  }
+ },
+ "ruas": [
+  {
+   "rua": "SP 280",
+   "sinistros": 419,
+   "mortos": 23,
+   "graves": 65,
+   "leves": 307
+  },
+  {
+   "rua": "AVENIDA DOS AUTONOMISTAS",
+   "sinistros": 301,
+   "mortos": 7,
+   "graves": 21,
+   "leves": 198
+  },
+  {
+   "rua": "SP 021",
+   "sinistros": 173,
+   "mortos": 14,
+   "graves": 15,
+   "leves": 92
+  },
+  {
+   "rua": "PRESIDENTE CASTELLO BRANCO",
+   "sinistros": 139,
+   "mortos": 0,
+   "graves": 18,
+   "leves": 42
+  },
+  {
+   "rua": "SP 330",
+   "sinistros": 84,
+   "mortos": 16,
+   "graves": 5,
+   "leves": 24
+  },
+  {
+   "rua": "AVENIDA VISCONDE DE NOVA GRANADA",
+   "sinistros": 82,
+   "mortos": 2,
+   "graves": 4,
+   "leves": 40
+  },
+  {
+   "rua": "AVENIDA GETULIO VARGAS",
+   "sinistros": 76,
+   "mortos": 1,
+   "graves": 4,
+   "leves": 50
+  },
+  {
+   "rua": "AVENIDA PRESIDENTE MEDICI",
+   "sinistros": 74,
+   "mortos": 0,
+   "graves": 3,
+   "leves": 51
+  },
+  {
+   "rua": "AVENIDA PRESIDENTE KENEDY",
+   "sinistros": 72,
+   "mortos": 3,
+   "graves": 3,
+   "leves": 41
+  },
+  {
+   "rua": "AVENIDA JOAO DE ANDRADE",
+   "sinistros": 68,
+   "mortos": 0,
+   "graves": 4,
+   "leves": 45
+  },
+  {
+   "rua": "AVENIDA PREFEITO HIRANT SANAZAR",
+   "sinistros": 64,
+   "mortos": 0,
+   "graves": 3,
+   "leves": 23
+  },
+  {
+   "rua": "AVENIDA DAS NACOES UNIDAS",
+   "sinistros": 62,
+   "mortos": 0,
+   "graves": 3,
+   "leves": 43
+  },
+  {
+   "rua": "AVENIDA SPORT CLUB CORINTHIANS PAULISTA",
+   "sinistros": 60,
+   "mortos": 0,
+   "graves": 5,
+   "leves": 46
+  },
+  {
+   "rua": "AVENIDA ALBERTO J BYINGTON",
+   "sinistros": 57,
+   "mortos": 0,
+   "graves": 5,
+   "leves": 40
+  },
+  {
+   "rua": "AVENIDA BRASIL",
+   "sinistros": 56,
+   "mortos": 5,
+   "graves": 4,
+   "leves": 32
+  }
+ ],
+ "ruasDesde": 2024,
+ "coletadoEm": "2026-11-02"
+}

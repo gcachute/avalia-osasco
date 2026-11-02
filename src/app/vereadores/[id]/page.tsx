@@ -9,6 +9,7 @@ import { MapaPessoa, type ModoMapa } from "@/components/MapaPessoa";
 import { geometriaBairros } from "@/lib/mapaGeo";
 import { reais } from "@/lib/formato";
 import { AvisoParcial, Avatar, Barra, Cartao, ComoLer, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
+import { campanhas, ResumoCampanha } from "@/components/Campanha";
 import type { PilarVereador, Vereador } from "@/lib/dados";
 import { COEFICIENTES, PILARES_VEREADOR, TIPO_NOME, dados, dataBR, milReais, nomeSessao, nota, nota10, num, pct, plural, sessao } from "@/lib/dados";
 
@@ -70,6 +71,7 @@ export default async function PaginaVereador({ params }: Props) {
   const avaliados = dados.vereadores.filter((x) => x.coeficientes.producao != null);
   const pf = v.perfil;
   const custo = dados.camara.custoMandato;
+  const campanha = campanhas.porId[v.id];
   // Subsídio bruto pago ao vereador no último mês da folha publicada (Portal do Cidadão).
   const folha = dados.camara.folha;
   const mesFolha = folha ? Object.keys(folha.meses).sort().at(-1)! : null;
@@ -629,6 +631,12 @@ export default async function PaginaVereador({ params }: Props) {
         </Secao>
       )}
 
+      {campanha && (
+        <Secao titulo="Campanha de 2024" id="campanha" subtitulo="Quanto a campanha recebeu e gastou, e o que foi declarado à Justiça Eleitoral.">
+          <ResumoCampanha c={campanha} />
+        </Secao>
+      )}
+
       {v.adiadas.length > 0 && (
         <Secao titulo={`Itens adiados porque o autor faltou (${v.adiadas.length})`}>
           <ListaTematica
@@ -675,6 +683,7 @@ export default async function PaginaVereador({ params }: Props) {
       )}
 
       <ComoLer>
+        <li>Na campanha, bens declarados são os valores informados pelo próprio candidato à Justiça Eleitoral em 2024.</li>
         <li>No topo ficam as notas de 0 a 10. Cada coeficiente junta avaliações individuais, e a seção Como cada avaliação foi calculada mostra a conta de cada uma.</li>
         <li>Sem dados quer dizer que não há registro para aquela avaliação no período.</li>
         <li>Na comparação com a média da Câmara, aparece o valor do vereador, a média e se ele está acima, abaixo ou na média (diferença de até 2%).</li>
