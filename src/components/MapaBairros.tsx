@@ -116,6 +116,7 @@ export function MapaBairros({
   projecao,
   autor: autorControlado,
   aoMudarAutor,
+  bairroPedido,
 }: {
   bairros: BairroDesenho[];
   itens: ItemMapa[];
@@ -136,6 +137,9 @@ export function MapaBairros({
   // Opcional: o autor filtrado pode ser comandado de fora (a lista de vereadores da página inicial).
   autor?: string;
   aoMudarAutor?: (id: string) => void;
+  // Opcional: um bairro pedido de fora (a busca da página inicial). "vez" muda a cada pedido, para o mesmo bairro
+  // poder ser pedido de novo depois de fechado.
+  bairroPedido?: { id: string; vez: number } | null;
 }) {
   const meses = useMemo(() => mesesEntre(inicio, fim), [inicio, fim]);
   const [tema, setTema] = useState<Tema>("politica");
@@ -469,6 +473,10 @@ export function MapaBairros({
     const b = el?.getBBox();
     irPara(b ? { x: b.x, y: b.y, w: b.width, h: b.height } : null);
   }, [selecionado, irPara]);
+
+  useEffect(() => {
+    if (bairroPedido && bairros.some((x) => x.id === bairroPedido.id)) setSelecionado(bairroPedido.id);
+  }, [bairroPedido, bairros]);
 
   const escolherTema = (t: Tema) => {
     setTema(t);
