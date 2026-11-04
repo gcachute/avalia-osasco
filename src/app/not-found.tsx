@@ -8,7 +8,7 @@ export default function NaoEncontrada() {
   return (
     <div className="mx-auto max-w-md py-16 text-center">
       <MarcaOZ className="mx-auto h-16 w-16" />
-      <h1 className="mt-6 text-2xl font-bold tracking-tight text-slate-900">Página não encontrada</h1>
+      <h1 className="mt-6 text-3xl font-semibold text-slate-950">Página não encontrada</h1>
       <p className="mt-2 text-slate-600">O endereço pode ter mudado ou estar digitado errado.</p>
       <div className="mt-6 flex justify-center gap-3 text-sm">
         <Link href="/" className="rounded-xl bg-slate-900 px-4 py-2 font-semibold text-white hover:bg-slate-700">

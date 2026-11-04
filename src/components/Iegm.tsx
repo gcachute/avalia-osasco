@@ -41,7 +41,7 @@ export function TabelaIegm({ anos }: { anos: AnoIegm[] }) {
       </p>
       <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
         <table className="w-full min-w-[760px] text-sm">
-          <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+          <thead className="bg-slate-50 text-left text-xs text-slate-500">
             <tr>
               <th className="px-3 py-2">Cidade</th>
               {INDICES_IEGM.map((i) => (

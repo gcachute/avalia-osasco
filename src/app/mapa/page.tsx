@@ -20,10 +20,10 @@ export default async function PaginaMapa() {
 
   return (
     <>
-      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-5 py-5 sm:px-8 sm:py-7">
+      <section className="relative pb-2">
         <div className="relative">
           <p className="text-sm font-medium text-blue-800">Mapa de Osasco</p>
-          <h1 className="mt-1 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Onde a política chega em cada bairro</h1>
+          <h1 className="mt-1 max-w-3xl text-4xl font-semibold text-slate-950 sm:text-5xl">Onde a política chega em cada bairro</h1>
           <p className="mt-3 max-w-3xl text-slate-600">
             Documentos da Câmara e da Prefeitura que citam cada bairro, ao lado do retrato oficial de quem mora lá: renda, saneamento, rua, favelas,
             escolas, saúde, segurança, obras e como o bairro votou em 2024. Aperte o play para ver a legislatura acontecer mês a mês.

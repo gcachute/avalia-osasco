@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist } from "next/font/google";
+import { IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
 import Link from "next/link";
 import { Animacoes } from "@/components/Animacoes";
 import { Logo } from "@/components/Logo";
@@ -13,7 +13,9 @@ import { BotaoTema, SCRIPT_TEMA } from "@/components/Tema";
 import { dados, dataBR } from "@/lib/dados";
 import "./globals.css";
 
-const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+// Texto em IBM Plex Sans (algarismos de mesma largura, bons para tabelas); títulos e números grandes em Source Serif.
+const texto = IBM_Plex_Sans({ variable: "--font-texto", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
+const titulo = Source_Serif_4({ variable: "--font-titulo", subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
   title: { default: "De Olho em OZ — os políticos de Osasco em dados oficiais", template: "%s · De Olho em OZ" },
@@ -34,8 +36,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   viewportFit: "cover",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0f172a" },
+    { media: "(prefers-color-scheme: light)", color: "#fbfaf6" },
+    { media: "(prefers-color-scheme: dark)", color: "#1b1a18" },
   ],
 };
 
@@ -57,12 +59,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script dangerouslySetInnerHTML={{ __html: SCRIPT_TEMA }} />
       </head>
       <body
-        className={`${geist.variable} min-h-screen bg-slate-50 pb-[calc(4.25rem+env(safe-area-inset-bottom))] font-sans text-slate-800 antialiased transition-colors md:pb-0`}
+        className={`${texto.variable} ${titulo.variable} min-h-screen bg-white pb-[calc(4.25rem+env(safe-area-inset-bottom))] font-sans text-slate-800 antialiased transition-colors md:pb-0`}
       >
         <Animacoes />
         <NovaAba />
         <AvisoIA />
-        <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/85 backdrop-blur">
+        <header className="sticky top-0 z-30 border-b border-slate-300 bg-white/95 backdrop-blur">
           <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-2.5 md:py-3">
             <Link href="/" aria-label="De Olho em OZ, página inicial">
               <Logo />
@@ -81,7 +83,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <AtalhoComoLer />
           {children}
         </main>
-        <footer className="border-t border-slate-200 bg-white">
+        <footer className="mt-10 border-t border-slate-900">
           <div className="mx-auto max-w-5xl space-y-2 px-4 py-6 text-sm text-slate-500">
             <p>
               Projeto independente, sem vínculo com a Câmara Municipal ou a Prefeitura de Osasco. Todos os números vêm de fontes oficiais (Câmara,

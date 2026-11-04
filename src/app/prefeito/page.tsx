@@ -163,10 +163,10 @@ export default function PaginaPrefeito() {
 
   return (
     <>
-      <header className="relative flex flex-wrap items-center gap-5 overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6">
+      <header className="relative flex flex-wrap items-center gap-6 border-b border-slate-900 pb-6">
         <Retrato nome={p.nome} foto={p.foto} className="relative w-32 shrink-0 rounded-2xl shadow-sm ring-1 ring-slate-200 sm:w-40" />
         <div className="min-w-0 flex-1 basis-48">
-          <h1 className="text-3xl font-bold tracking-tight text-balance text-slate-900">{p.nome}</h1>
+          <h1 className="text-4xl font-semibold text-balance text-slate-950">{p.nome}</h1>
           <p className="mt-1 flex flex-wrap items-center gap-2 text-slate-600">
             <SeloPartido sigla={p.partido} logo={p.partidoLogo} grande />
             {p.cargo} · mandato {p.mandato}
@@ -200,7 +200,7 @@ export default function PaginaPrefeito() {
           const n = nota10(p.pilares[pl.chave]?.nota);
           return (
             <a key={pl.chave} href={pl.pronto ? `#pilar-${pl.chave}` : undefined} className={`rounded-xl border bg-white p-4 ${pl.pronto ? "border-slate-200 hover:border-blue-300" : "border-dashed border-slate-300"}`}>
-              <div className="text-xs font-medium uppercase tracking-wide text-slate-400">
+              <div className="text-xs font-medium text-slate-400">
                 Pilar {pl.chave}
               </div>
               <div className="mt-1 text-sm font-medium break-words hyphens-auto text-slate-900">{pl.nome}</div>
@@ -248,7 +248,7 @@ export default function PaginaPrefeito() {
           <Secao titulo="Osasco ano a ano">
             <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
               <table className="w-full min-w-[560px] text-sm">
-                <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+                <thead className="bg-slate-50 text-left text-xs text-slate-500">
                   <tr>
                     <th className="px-3 py-2">Indicador</th>
                     {f.anos.map((a) => (

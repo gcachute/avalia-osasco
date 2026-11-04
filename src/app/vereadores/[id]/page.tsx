@@ -176,13 +176,13 @@ export default async function PaginaVereador({ params }: Props) {
         </Link>
       </div>
 
-      <header className="relative mt-4 flex flex-wrap items-start gap-5 overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6">
+      <header className="relative mt-4 flex flex-wrap items-start gap-6 border-b border-slate-900 pb-6">
         <figure className="relative w-24 shrink-0 sm:w-44">
           <Retrato nome={v.nome} foto={v.foto} className="rounded-2xl shadow-sm ring-1 ring-slate-200" />
           {v.foto && v.fotoFonte && <figcaption className="mt-1 text-[10px] leading-tight text-slate-400">Foto: {v.fotoFonte}</figcaption>}
         </figure>
         <div className="@container relative min-w-0 flex-1 basis-64">
-          <h1 className="text-3xl font-bold tracking-tight text-balance text-slate-900">{v.nome}</h1>
+          <h1 className="text-4xl font-semibold text-balance text-slate-950">{v.nome}</h1>
           <p className="mt-1 flex flex-wrap items-center gap-2 text-slate-600">
             <SeloPartido sigla={v.partido} logo={v.partidoLogo} grande />
             <span>{v.partidoNome ?? (v.partido ? "" : "partido não informado")}</span>
@@ -247,7 +247,7 @@ export default async function PaginaVereador({ params }: Props) {
         <div className="relative grid w-full grid-cols-2 gap-2 sm:w-auto sm:min-w-[22rem] sm:grid-cols-4">
           {COEFICIENTES.map((c) => (
             <a key={c.chave} href="#coeficientes" className="rounded-xl bg-slate-50 p-3 text-center ring-1 ring-inset ring-slate-200 transition hover:ring-blue-300" title={c.descricao}>
-              <div className="text-[11px] font-medium uppercase tracking-wide text-slate-500">{c.nome}</div>
+              <div className="text-[11px] font-medium text-slate-500">{c.nome}</div>
               <div className="mt-1">
                 {v.coeficientes[c.chave] == null ? <span className="text-sm text-slate-400">—</span> : <NotaBadge valor={nota10(v.coeficientes[c.chave])} />}
               </div>
@@ -276,7 +276,7 @@ export default async function PaginaVereador({ params }: Props) {
         {COEFICIENTES.filter((c) => c.pilares.length).map((c) => (
           <div key={c.chave} className="rounded-xl border border-slate-200 bg-white p-4">
             <div className="flex items-center justify-between gap-2">
-              <span className="text-xs font-medium uppercase tracking-wide text-slate-500">{c.nome}</span>
+              <span className="text-xs font-medium text-slate-500">{c.nome}</span>
               {c.pilares.length > 1 && v.coeficientes[c.chave] != null && <NotaBadge valor={nota10(v.coeficientes[c.chave])} />}
             </div>
             <ul className="mt-2 divide-y divide-slate-100">
@@ -303,7 +303,7 @@ export default async function PaginaVereador({ params }: Props) {
           </div>
         ))}
         <a href="#quanto-custa-este-mandato" className="rounded-xl border border-dashed border-slate-300 bg-white p-4 hover:border-blue-300">
-          <span className="text-xs font-medium uppercase tracking-wide text-slate-500">Informativo, fora da nota</span>
+          <span className="text-xs font-medium text-slate-500">Informativo, fora da nota</span>
           <span className="mt-2 flex items-center gap-3">
             <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-slate-100 text-xs font-semibold text-slate-600">D</span>
             <span className="min-w-0 flex-1 text-sm font-medium text-slate-900">{PILARES_VEREADOR.find((p) => p.chave === "D")!.nome}</span>
@@ -658,7 +658,7 @@ export default async function PaginaVereador({ params }: Props) {
       {(anterior || seguinte) && (
         <nav className="mt-12 grid gap-3 sm:grid-cols-2" aria-label="Outros vereadores">
           {anterior ? (
-            <Link href={`/vereadores/${anterior.id}`} className="group flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-3 transition hover:border-blue-300 hover:shadow-md">
+            <Link href={`/vereadores/${anterior.id}`} className="group flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-3 transition hover:border-blue-300">
               <span className="text-slate-400 transition group-hover:-translate-x-1">←</span>
               <Avatar nome={anterior.nome} foto={anterior.foto} tamanho={44} />
               <span className="min-w-0">
@@ -670,7 +670,7 @@ export default async function PaginaVereador({ params }: Props) {
             <span />
           )}
           {seguinte && (
-            <Link href={`/vereadores/${seguinte.id}`} className="group flex items-center justify-end gap-3 rounded-2xl border border-slate-200 bg-white p-3 text-right transition hover:border-blue-300 hover:shadow-md">
+            <Link href={`/vereadores/${seguinte.id}`} className="group flex items-center justify-end gap-3 rounded-2xl border border-slate-200 bg-white p-3 text-right transition hover:border-blue-300">
               <span className="min-w-0">
                 <span className="block text-xs text-slate-500">{idx + 2}º em produção</span>
                 <span className="block truncate font-medium text-slate-900">{seguinte.nome}</span>

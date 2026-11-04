@@ -58,7 +58,7 @@ export function EvolucaoBairro({
     <div className="space-y-5">
       {censo && (
         <section>
-          <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+          <h3 className="text-xs font-semibold text-slate-500">
             Censo {anos.join(" · ")}
           </h3>
           {antes && depois ? (
@@ -130,7 +130,7 @@ export function EvolucaoBairro({
 
       {ele && temEleicao && (
         <section>
-          <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500">Eleições {anosEle.join(" · ")}</h3>
+          <h3 className="text-xs font-semibold text-slate-500">Eleições {anosEle.join(" · ")}</h3>
           <div className="mt-2">
             <GraficoLinha
               rotulo={`Comparecimento, brancos e nulos e voto no prefeito eleito em ${nome}, ${anosEle.join(", ")}`}

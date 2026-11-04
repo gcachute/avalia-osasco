@@ -381,7 +381,7 @@ export function ComposicaoEntradas({ anos, conferencias = [] }: { anos: EntradaA
   const bloco = (titulo: string, total: number, cor: string, linhas: LinhaEntrada[], nomeTotal: string) => (
     <div>
       <div className="mb-1.5 flex items-baseline justify-between gap-2">
-        <span className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-slate-500">
+        <span className="inline-flex items-center gap-2 text-xs font-medium text-slate-500">
           <span className="h-2 w-2 rounded-full" style={{ background: cor }} aria-hidden />
           {titulo}
         </span>

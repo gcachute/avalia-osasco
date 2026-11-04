@@ -20,7 +20,7 @@ export function Nav({ itens }: { itens: ItemNav[] }) {
           key={n.href}
           href={n.href}
           aria-current={ativoEm(caminho, n.href) ? "page" : undefined}
-          className={`shrink-0 rounded-md px-3 py-1.5 transition ${ativoEm(caminho, n.href) ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"}`}
+          className={`shrink-0 px-2.5 py-2 transition ${ativoEm(caminho, n.href) ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-950"}`}
         >
           {n.nome}
         </Link>
@@ -43,7 +43,7 @@ const ICONES = {
 
 function Icone({ nome, ativo }: { nome: keyof typeof ICONES; ativo: boolean }) {
   return (
-    <span className={`grid h-7 w-11 max-w-full place-items-center rounded-full transition ${ativo ? "bg-slate-200" : ""}`}>
+    <span className={`grid h-7 w-11 max-w-full place-items-center transition ${ativo ? "text-slate-950" : ""}`}>
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={nome === "mais" ? 3 : ativo ? 2.2 : 1.8} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
         <path d={ICONES[nome]} />
       </svg>

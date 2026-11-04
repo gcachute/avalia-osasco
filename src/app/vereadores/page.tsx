@@ -13,7 +13,7 @@ function Cartao({ v, avaliados }: { v: Vereador; avaliados: number }) {
   return (
     <Link
       href={`/vereadores/${v.id}`}
-      className="group flex flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-blue-300 hover:shadow-md"
+      className="group flex flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-blue-300"
     >
       <div className="flex items-center gap-3">
         <Avatar nome={v.nome} foto={v.foto} tamanho={56} />
@@ -29,7 +29,7 @@ function Cartao({ v, avaliados }: { v: Vereador; avaliados: number }) {
         <dl className="grid grid-cols-4 gap-1 text-center">
           {COEFICIENTES.map((c) => (
             <div key={c.chave} className="rounded-lg bg-slate-50 px-1 py-1.5">
-              <dt className="truncate text-[9.5px] uppercase tracking-wide text-slate-500" title={c.nome}>{c.nome}</dt>
+              <dt className="truncate text-[9.5px] text-slate-500" title={c.nome}>{c.nome}</dt>
               <dd
                 className={`text-base font-semibold tabular-nums ${
                   c.chave === "integridade" && (v.coeficientes.integridade ?? 1) < 0.7
@@ -65,7 +65,7 @@ export default function Vereadores() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold tracking-tight text-slate-900">Vereadores de Osasco</h1>
+      <h1 className="text-4xl font-semibold text-slate-950">Vereadores de Osasco</h1>
       <p className="mt-2 max-w-3xl text-slate-600">
         Quem está na Câmara na legislatura 2025–2028, com as notas de participação, produção e eficiência. Clique em um nome para ver o perfil
         completo e a conta por trás de cada nota. Para ordenar e comparar, use a lista do{" "}

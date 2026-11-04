@@ -152,9 +152,9 @@ export default function PaginaCidade() {
 
   return (
     <>
-      <section className="rounded-3xl border border-slate-200 bg-white px-5 py-5 sm:px-8 sm:py-7">
+      <section className="pb-2">
         <p className="text-sm font-medium text-blue-800">Osasco em números</p>
-        <h1 className="mt-1 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">A cidade</h1>
+        <h1 className="mt-1 text-4xl font-semibold text-slate-950 sm:text-5xl">A cidade</h1>
         <p className="mt-3 max-w-3xl text-slate-600">Trânsito, saúde, trabalho, assistência social e obras, ano a ano, a partir dos registros oficiais e com o link de cada fonte.</p>
         <dl className="mt-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
           {transitoAno && <Cartao titulo={`Mortes no trânsito em ${anoCompleto}`} valor={n(transitoAno.mortos)} detalhe={`${n(transitoAno.sinistros)} ocorrências registradas`} />}
