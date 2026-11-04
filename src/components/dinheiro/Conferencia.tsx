@@ -110,7 +110,7 @@ export function AnoEmAndamento({ p }: { p: Parcial }) {
           if (!linhas.length) return null;
           return (
             <div key={g.chave}>
-              <div className="mb-1 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-slate-500">
+              <div className="mb-1 inline-flex items-center gap-2 text-xs font-medium text-slate-500">
                 <span className="h-2 w-2 rounded-full" style={{ background: g.cor }} aria-hidden />
                 {g.nome}
               </div>

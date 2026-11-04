@@ -3,7 +3,45 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-texto), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-titulo), ui-serif, Georgia, serif;
+}
+
+/* Cantos discretos: o site é uma publicação de dados, não um painel de aplicativo. */
+@theme {
+  --radius-md: 0.25rem;
+  --radius-lg: 0.3125rem;
+  --radius-xl: 0.375rem;
+  --radius-2xl: 0.5rem;
+  --radius-3xl: 0.5rem;
+}
+
+/* Papel e tinta: cinzas quentes no lugar do cinza-azulado padrão e um azul mais sóbrio, de jornal.
+   Os nomes slate e blue continuam os mesmos nas classes; só o valor muda. */
+:root {
+  --color-white: #fbfaf6;
+  --color-slate-50: #f3f1ea;
+  --color-slate-100: #ebe8df;
+  --color-slate-200: #dedad0;
+  --color-slate-300: #c8c2b5;
+  --color-slate-400: #a19b8e;
+  --color-slate-500: #76716a;
+  --color-slate-600: #5b5751;
+  --color-slate-700: #45423d;
+  --color-slate-800: #2f2d2a;
+  --color-slate-900: #1f1e1c;
+  --color-slate-950: #141312;
+  --color-blue-50: #eef2f8;
+  --color-blue-100: #dde4f0;
+  --color-blue-200: #bdcbe2;
+  --color-blue-300: #94abd0;
+  --color-blue-400: #6786ba;
+  --color-blue-500: #4567a3;
+  --color-blue-600: #30538f;
+  --color-blue-700: #25457c;
+  --color-blue-800: #1d3866;
+  --color-blue-900: #172d52;
+  --color-blue-950: #0f1d36;
 }
 
 /* Grade sem número de colunas definido (o caso de quase toda grade no celular) cresce até o conteúdo mais largo e
@@ -17,24 +55,33 @@
   body {
     overflow-wrap: break-word;
   }
+  /* Títulos com serifa, como num caderno de jornal; o resto do texto fica na fonte sem serifa. */
+  h1,
+  h2 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.012em;
+  }
+  ::selection {
+    background: var(--color-blue-100);
+  }
 }
 
 /* Modo escuro: espelha as escalas de cor (50 <-> 950, 100 <-> 900...), então todo o site
    troca de tema sem precisar de classes dark: em cada componente. */
 .dark {
   color-scheme: dark;
-  --color-white:  oklch(20.8% 0.042 265.755);
-  --color-slate-50:  oklch(12.9% 0.042 264.695);
-  --color-slate-100:  oklch(20.8% 0.042 265.755);
-  --color-slate-200:  oklch(27.9% 0.041 260.031);
-  --color-slate-300:  oklch(37.2% 0.044 257.287);
-  --color-slate-400:  oklch(44.6% 0.043 257.281);
-  --color-slate-500:  oklch(55.4% 0.046 257.417);
-  --color-slate-600:  oklch(70.4% 0.04 256.788);
-  --color-slate-700:  oklch(86.9% 0.022 252.894);
-  --color-slate-800:  oklch(92.9% 0.013 255.508);
-  --color-slate-900:  oklch(96.8% 0.007 247.896);
-  --color-slate-950:  oklch(98.4% 0.003 247.858);
+  --color-white: #1b1a18;
+  --color-slate-50: #151413;
+  --color-slate-100: #252321;
+  --color-slate-200: #33312d;
+  --color-slate-300: #48453f;
+  --color-slate-400: #5f5b54;
+  --color-slate-500: #8c877d;
+  --color-slate-600: #aaa498;
+  --color-slate-700: #d0cabe;
+  --color-slate-800: #e5e0d6;
+  --color-slate-900: #f1ede5;
+  --color-slate-950: #f8f6f1;
   --color-blue-50:  oklch(28.2% 0.091 267.935);
   --color-blue-100:  oklch(37.9% 0.146 265.522);
   --color-blue-200:  oklch(42.4% 0.199 265.638);
@@ -129,40 +176,40 @@
    Escala sequencial azul (um tom, claro → escuro) e duas cores de origem validadas para daltonismo.
    No escuro a escala é reescalonada para a superfície escura: valor maior = mais claro. */
 :root {
-  --mapa-vazio: #e9edf2;
+  --mapa-vazio: #e6e2d9;
   --mapa-1: #cde2fb;
   --mapa-2: #9ec5f4;
   --mapa-3: #6da7ec;
   --mapa-4: #3987e5;
   --mapa-5: #256abf;
   --mapa-6: #104281;
-  --mapa-borda: #ffffff;
+  --mapa-borda: #fbfaf6;
   --mapa-destaque: #0b0b0b;
   --mapa-citado: rgba(234, 179, 8, 0.45);
   --mapa-camara: #eb6834;
   --mapa-prefeitura: #1baf7a;
-  --mapa-rotulo: #0f172a;
+  --mapa-rotulo: #1f1e1c;
   --mapa-halo: rgba(255, 255, 255, 0.9);
-  --mapa-ponto: #0f172a;
-  --mapa-hachura: #c5ccd6;
+  --mapa-ponto: #1f1e1c;
+  --mapa-hachura: #cbc5b8;
 }
 .dark {
-  --mapa-vazio: #1e293b;
+  --mapa-vazio: #2a2825;
   --mapa-1: #184f95;
   --mapa-2: #1c5cab;
   --mapa-3: #256abf;
   --mapa-4: #3987e5;
   --mapa-5: #6da7ec;
   --mapa-6: #b7d3f6;
-  --mapa-borda: #0b1220;
+  --mapa-borda: #1b1a18;
   --mapa-destaque: #f8fafc;
   --mapa-citado: rgba(250, 204, 21, 0.4);
   --mapa-camara: #d95926;
   --mapa-prefeitura: #199e70;
   --mapa-rotulo: #f1f5f9;
-  --mapa-halo: rgba(11, 18, 32, 0.85);
+  --mapa-halo: rgba(27, 26, 24, 0.85);
   --mapa-ponto: #f1f5f9;
-  --mapa-hachura: #334155;
+  --mapa-hachura: #48453f;
 }
 
 /* Gráficos de linha (séries históricas): três cores validadas para daltonismo, nos dois temas,
@@ -174,8 +221,8 @@
   --grafico-3: #0d9488;
   --grafico-4: #9333ea;
   --grafico-outro: #94a3b8;
-  --grafico-ref: #64748b;
-  --grafico-grade: #e2e8f0;
+  --grafico-ref: #76716a;
+  --grafico-grade: #e4e0d6;
 }
 .dark {
   --grafico-1: #3b82f6;
@@ -184,7 +231,7 @@
   --grafico-4: #a855f7;
   --grafico-outro: #64748b;
   --grafico-ref: #94a3b8;
-  --grafico-grade: #1e293b;
+  --grafico-grade: #2f2d2a;
 }
 
 .mapa-bairro {

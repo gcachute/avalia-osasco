@@ -213,7 +213,7 @@ export function MapaPessoa({
 
         {recentes.length > 0 && (
           <div>
-            <div className="mb-1.5 text-xs font-medium uppercase tracking-wide text-slate-500">Documentos mais recentes com bairro</div>
+            <div className="mb-1.5 text-xs font-medium text-slate-500">Documentos mais recentes com bairro</div>
             <ul className="space-y-1.5">
               {recentes.map((i) => (
                 <li

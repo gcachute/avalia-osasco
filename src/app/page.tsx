@@ -74,10 +74,10 @@ export default async function Home() {
     <>
       {/* Painel em largura total, como um mapa de apuração: lista à esquerda, mapa ao centro, detalhes à direita. */}
       <div className="relative left-1/2 -ml-[min(840px,calc(50vw-1rem))] w-[min(1680px,calc(100vw-2rem))] space-y-4">
-        <section className="flex flex-wrap items-center gap-x-6 gap-y-3 rounded-2xl border border-slate-200 bg-white px-4 py-3">
+        <section className="flex flex-wrap items-end gap-x-8 gap-y-3 border-b border-slate-900 pb-4">
           <div className="min-w-0">
-            <h1 className="text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">Osasco, bairro a bairro</h1>
-            <p className="text-xs text-slate-500">
+            <h1 className="text-3xl font-semibold text-slate-950 sm:text-5xl">Osasco, bairro a bairro</h1>
+            <p className="mt-2 text-sm text-slate-600">
               O que cada vereador e a Prefeitura fazem em cada bairro · legislatura 2025–2028 · dados até {dataBR(periodo.fim)}
             </p>
           </div>
@@ -89,15 +89,15 @@ export default async function Home() {
               { t: "Bairros citados", v: `${bairrosCitados} de ${mapa?.bairros.length ?? 0}` },
             ].map((c) => (
               <div key={c.t}>
-                <dt className="text-[11px] uppercase tracking-wide text-slate-500">{c.t}</dt>
-                <dd className="text-lg font-semibold tabular-nums text-slate-900">{typeof c.v === "number" ? c.v.toLocaleString("pt-BR") : c.v}</dd>
+                <dt className="text-[11px] text-slate-500">{c.t}</dt>
+                <dd className="font-serif text-2xl font-semibold tabular-nums text-slate-950">{typeof c.v === "number" ? c.v.toLocaleString("pt-BR") : c.v}</dd>
               </div>
             ))}
           </dl>
           <Link href="/prefeito" className="group ml-auto flex items-center gap-3 rounded-xl px-2 py-1.5 transition hover:bg-slate-50">
             <Avatar nome={prefeito.nome} foto={prefeito.foto} tamanho={44} />
             <span className="min-w-0">
-              <span className="block text-[11px] uppercase tracking-wide text-slate-500">Prefeito</span>
+              <span className="block text-[11px] text-slate-500">Prefeito</span>
               <span className="flex items-center gap-2 font-semibold text-slate-900 group-hover:text-blue-800">
                 {prefeito.nome} <SeloPartido sigla={prefeito.partido} logo={prefeito.partidoLogo} />
               </span>
@@ -134,19 +134,21 @@ export default async function Home() {
       </div>
 
       <Secao titulo="Como funciona">
-        <ol className="grid gap-3 md:grid-cols-3">
+        <ol className="grid gap-x-10 gap-y-6 md:grid-cols-3">
           {PASSOS.map((p) => (
-            <li key={p.n} className="rounded-2xl border border-slate-200 bg-white p-5">
-              <span className="grid h-8 w-8 place-items-center rounded-full bg-blue-800 text-sm font-bold text-white">{p.n}</span>
-              <div className="mt-3 font-semibold text-slate-900">{p.titulo}</div>
-              <p className="mt-1 text-sm text-slate-600">{p.texto}</p>
+            <li key={p.n} className="flex gap-4">
+              <span className="font-serif text-4xl leading-none font-semibold text-slate-300">{p.n}</span>
+              <div>
+                <div className="font-semibold text-slate-950">{p.titulo}</div>
+                <p className="mt-1 text-sm text-slate-600">{p.texto}</p>
+              </div>
             </li>
           ))}
         </ol>
-        <div className="mt-3 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid gap-x-8 gap-y-5 md:grid-cols-2 xl:grid-cols-4">
           {COEFICIENTES.map((c) => (
-            <div key={c.chave} className="rounded-2xl border border-slate-200 bg-white p-4 text-sm">
-              <div className="font-semibold text-slate-900">{c.nome}</div>
+            <div key={c.chave} className="border-t border-slate-300 pt-3 text-sm">
+              <div className="font-semibold text-slate-950">{c.nome}</div>
               <p className="mt-1 text-slate-600">{c.descricao}</p>
             </div>
           ))}
@@ -172,7 +174,7 @@ export default async function Home() {
         </Secao>
 
         <Secao titulo="Prefeitura">
-          <Link href="/prefeito" className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:border-blue-300 hover:shadow-md">
+          <Link href="/prefeito" className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:border-blue-300">
             <div className="flex items-center gap-4 p-5">
               <Avatar nome={prefeito.nome} foto={prefeito.foto} tamanho={72} />
               <div className="min-w-0 flex-1">

@@ -47,15 +47,15 @@ export function NavegacaoPagina() {
     <>
       {secoes.length > 0 && (
         <nav aria-label="Seções desta página" className="border-t border-slate-100">
-          <div ref={faixa} className="mx-auto flex max-w-5xl gap-1.5 overflow-x-auto px-4 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div ref={faixa} className="mx-auto flex max-w-5xl gap-4 overflow-x-auto px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {secoes.map((s) => (
               <a
                 key={s.id}
                 href={`#${s.id}`}
                 data-secao={s.id}
                 aria-current={ativa === s.id ? "location" : undefined}
-                className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset transition ${
-                  ativa === s.id ? "bg-slate-900 text-white ring-slate-900" : "text-slate-600 ring-slate-200 hover:bg-slate-100"
+                className={`shrink-0 whitespace-nowrap py-2.5 text-xs transition ${
+                  ativa === s.id ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-500 hover:text-slate-950"
                 }`}
               >
                 {s.nome}

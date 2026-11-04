@@ -589,7 +589,7 @@ export function MapaBairros({
           </div>
           {periodos && (
             <div className="flex flex-wrap items-center gap-2 text-[11px]">
-              <span className="font-medium uppercase tracking-wide text-slate-500">{indicador.historia?.tipo === "censo" ? "Censo" : "Eleição"}</span>
+              <span className="font-medium text-slate-500">{indicador.historia?.tipo === "censo" ? "Censo" : "Eleição"}</span>
               <div className="flex rounded-lg bg-slate-100 p-0.5" role="group" aria-label="Ano">
                 {periodos.map((p) => {
                   const ativo = (periodoAtivo ?? periodos.filter((x) => x !== "mudanca").at(-1)) === p;
@@ -955,13 +955,13 @@ export function MapaBairros({
               >
                 {favelaFoco && !pontoFoco ? (
                   <>
-                    <div className="text-[11px] uppercase tracking-wide text-slate-500">Favela ou comunidade urbana</div>
+                    <div className="text-[11px] text-slate-500">Favela ou comunidade urbana</div>
                     <div className="text-sm font-semibold text-slate-900">{favelaFoco.nome}</div>
                     <div className="mt-0.5 text-slate-600">{favelaFoco.moradores.toLocaleString("pt-BR")} moradores no Censo 2022</div>
                   </>
                 ) : pontoFoco ? (
                   <>
-                    <div className="text-[11px] uppercase tracking-wide text-slate-500">{pontoFoco.categoria}</div>
+                    <div className="text-[11px] text-slate-500">{pontoFoco.categoria}</div>
                     <div className="text-sm font-semibold text-slate-900">{pontoFoco.nome}</div>
                     {pontoFoco.eleitores != null && (
                       <div className="mt-0.5 text-slate-600">{pontoFoco.eleitores.toLocaleString("pt-BR")} eleitores</div>
@@ -1014,7 +1014,7 @@ export function MapaBairros({
 
           <div className="min-w-0 flex-1 space-y-3">
             <div>
-              <div className="text-xs uppercase tracking-wide text-slate-500">
+              <div className="text-xs text-slate-500">
                 {indicador.nome}
                 {periodos && ` · ${rotuloPeriodo(periodoAtivo ?? periodos.filter((x) => x !== "mudanca").at(-1)!)}`}
               </div>
@@ -1116,7 +1116,7 @@ export function MapaBairros({
 
             {politica && (
               <div>
-                <div className="mb-2 text-xs font-medium uppercase tracking-wide text-slate-500">
+                <div className="mb-2 text-xs font-medium text-slate-500">
                   {doMes.length ? `Documentos em ${rotuloMes(ateMes)}` : "Documentos mais recentes"}
                 </div>
                 <ol className="space-y-2">

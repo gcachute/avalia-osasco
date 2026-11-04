@@ -51,12 +51,15 @@ export function SeloPartido({ sigla, logo, grande = false }: { sigla: string | n
   );
 }
 
+// Nota como número, com um ponto da cor da faixa ao lado (verde, âmbar, vermelho); o nome da faixa vai no título.
+const PONTO: Record<string, string> = { Bom: "bg-emerald-600", Regular: "bg-amber-500", Fraco: "bg-rose-600", "Sem nota": "bg-slate-300" };
 export function NotaBadge({ valor, grande = false }: { valor: number | null; grande?: boolean }) {
   const f = faixa(valor);
   return (
-    <span className={`inline-flex items-baseline gap-1 rounded-lg px-2.5 py-1 font-semibold tabular-nums ring-1 ring-inset ${f.classe} ${grande ? "text-3xl" : "text-base"}`}>
+    <span title={f.texto} className={`inline-flex items-center gap-1.5 font-semibold tabular-nums ${valor == null ? "text-slate-500" : "text-slate-950"} ${grande ? "font-serif text-4xl" : "text-base"}`}>
+      <span className={`shrink-0 rounded-full ${PONTO[f.texto]} ${grande ? "h-3 w-3" : "h-2 w-2"}`} aria-hidden />
       {nota(valor)}
-      {grande && valor != null && <span className="text-sm font-medium">/ 10</span>}
+      {grande && valor != null && <span className="font-sans text-sm font-medium text-slate-500">/ 10</span>}
     </span>
   );
 }
@@ -71,9 +74,9 @@ export function Barra({ valor, classe = "bg-blue-700", altura = "h-2" }: { valor
 
 export function Cartao({ titulo, valor, detalhe }: { titulo: string; valor: React.ReactNode; detalhe?: React.ReactNode }) {
   return (
-    <div className="revelar rounded-xl border border-slate-200 bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-md">
-      <div className="text-sm text-slate-500">{titulo}</div>
-      <div className="mt-1 text-2xl font-semibold tabular-nums text-slate-900">{valor}</div>
+    <div className="revelar border-t border-slate-900 pt-3 pb-1">
+      <div className="text-sm text-slate-600">{titulo}</div>
+      <div className="mt-1 font-serif text-[1.75rem] leading-tight font-semibold tabular-nums text-slate-950">{valor}</div>
       {detalhe && <div className="mt-1 text-xs text-slate-500">{detalhe}</div>}
     </div>
   );
@@ -92,9 +95,9 @@ const ancora = (t: string) =>
 
 export function Secao({ titulo, children, id, subtitulo }: { titulo: string; children: React.ReactNode; id?: string; subtitulo?: React.ReactNode }) {
   return (
-    <section id={id ?? ancora(titulo)} className="revelar mt-10 scroll-mt-28 md:mt-12">
-      <h2 className="text-xl font-semibold text-slate-900">{titulo}</h2>
-      {subtitulo && <p className="mt-1 text-sm text-slate-500">{subtitulo}</p>}
+    <section id={id ?? ancora(titulo)} className="revelar mt-12 scroll-mt-28 border-t border-slate-900 pt-4 md:mt-16">
+      <h2 className="text-2xl font-semibold text-slate-950 md:text-[1.75rem]">{titulo}</h2>
+      {subtitulo && <p className="mt-1.5 max-w-3xl text-sm text-slate-600">{subtitulo}</p>}
       <div className="mt-4">{children}</div>
     </section>
   );
@@ -131,12 +134,8 @@ const ALVO_AVISO = {
 export function AvisoParcial({ alvo = "geral", className = "" }: { alvo?: keyof typeof ALVO_AVISO; className?: string }) {
   const a = ALVO_AVISO[alvo];
   return (
-    <aside role="note" className={`flex gap-3 rounded-2xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-950 ${className}`}>
-      <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0 text-amber-600" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-        <path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" />
-        <path d="M12 9v4M12 17h.01" />
-      </svg>
-      <div className="space-y-1">
+    <aside role="note" className={`border-l-[3px] border-amber-500 bg-slate-50 py-3 pr-4 pl-4 text-sm text-slate-800 ${className}`}>
+      <div className="max-w-4xl space-y-1">
         <p className="font-semibold">Atenção: este é um retrato parcial da atuação {a.quem}.</p>
         <TextoRecolhivel rotulo="Ler o aviso completo">
           <p>

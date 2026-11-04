@@ -17,7 +17,7 @@ export default function Metodologia() {
 
   return (
     <article className="max-w-3xl">
-      <h1 className="text-3xl font-bold tracking-tight text-slate-900">Metodologia</h1>
+      <h1 className="text-4xl font-semibold text-slate-950">Metodologia</h1>
       <p className="mt-3 text-lg text-slate-600">
         Cada avaliação vai de 0 a 10 e é calculada só com dados públicos e oficiais, com a conta à mostra. Cada número leva ao
         documento oficial de onde saiu.
@@ -58,7 +58,7 @@ export default function Metodologia() {
         </p>
         <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
           <table className="w-full text-sm">
-            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+            <thead className="bg-slate-50 text-left text-xs text-slate-500">
               <tr>
                 <th className="px-4 py-2">Pilar</th>
                 <th className="px-4 py-2 text-right">Coeficiente</th>
@@ -190,7 +190,7 @@ export default function Metodologia() {
         </p>
         <div className="mt-4 overflow-hidden rounded-xl border border-slate-200 bg-white">
           <table className="w-full text-sm">
-            <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+            <thead className="bg-slate-50 text-left text-xs text-slate-500">
               <tr>
                 <th className="px-4 py-2">Item</th>
                 <th className="px-4 py-2">Como pontua (0 a 10)</th>

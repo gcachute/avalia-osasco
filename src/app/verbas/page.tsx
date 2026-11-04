@@ -38,10 +38,10 @@ export default function PaginaDinheiro() {
 
   return (
     <>
-      <section className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white px-5 py-5 sm:px-8 sm:py-7">
+      <section className="relative pb-2">
         <div className="relative">
           <p className="text-sm font-medium text-blue-800">De onde vem e para onde vai o dinheiro da Prefeitura de Osasco</p>
-          <h1 className="mt-1 max-w-3xl text-3xl font-bold tracking-tight text-balance text-slate-900 sm:text-4xl">Verbas e receitas</h1>
+          <h1 className="mt-1 max-w-3xl text-4xl font-semibold text-balance text-slate-950 sm:text-5xl">Verbas e receitas</h1>
           <p className="mt-3 max-w-3xl text-slate-600">
             O que chega da União e do Estado e por qual motivo, o que a própria cidade arrecada, quem mandou cada emenda, com quem a Prefeitura gastou o
             dinheiro de fora e o que a conferência nas listas oficiais de punidos encontrou. Tudo a partir dos registros oficiais, com o link de cada fonte.
@@ -54,7 +54,7 @@ export default function PaginaDinheiro() {
               { t: `Emendas federais em ${anoEmendas}`, v: recebidoUltimo, d: `${dinheiroCurto(totalEmendas)} desde ${anosRecebido[0]}`, cor: "var(--grafico-4)" },
               { t: `Receita própria em ${ultimo.ano}`, v: ultimo.propria?.total ?? 0, d: "ISS, IPTU, ITBI, taxas e outras", cor: "var(--grafico-outro)" },
             ].map((c) => (
-              <div key={c.t} className="@container relative overflow-hidden rounded-xl bg-slate-50 p-3 transition hover:-translate-y-0.5 hover:shadow-md">
+              <div key={c.t} className="@container relative overflow-hidden rounded-xl bg-slate-50 p-3 transition">
                 <span className="absolute inset-x-0 top-0 h-1" style={{ background: c.cor }} aria-hidden />
                 <dt className="text-xs text-slate-500">{c.t}</dt>
                 <dd className="mt-0.5 font-semibold whitespace-nowrap tabular-nums text-slate-900 [font-size:clamp(1rem,17cqw,1.5rem)]">

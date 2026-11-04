@@ -60,7 +60,7 @@ export function DespesasCamara({ despesas }: { despesas: NonNullable<Camara["des
         </div>
         <div className="text-right text-sm text-slate-500">≈ {mi(d.pago / 21)} por vereador</div>
       </div>
-      <div className="mt-4 text-xs font-medium uppercase tracking-wide text-slate-400">Para quem foi o dinheiro</div>
+      <div className="mt-4 text-xs font-medium text-slate-400">Para quem foi o dinheiro</div>
       <ul className="mt-2 space-y-1.5 text-sm">
         {d.maioresFornecedores.map((f) => (
           <li key={f.nome} className="grid grid-cols-[minmax(0,1fr)_5.5rem] items-center gap-3">
