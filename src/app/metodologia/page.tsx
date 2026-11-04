@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { IndiceLateral } from "@/components/IndiceLateral";
 import { PedidoCorrecao } from "@/components/PedidoCorrecao";
 import { AvisoParcial, ComoLer, Secao } from "@/components/ui";
 import { nomeProprio } from "@/lib/dinheiro";
@@ -16,14 +17,15 @@ export default function Metodologia() {
   const pares = (dados.prefeito.fiscal?.anos.at(-1)?.cidades ?? []).filter((c) => !c.foco).map((c) => c.nome);
 
   return (
-    <article className="max-w-3xl">
+    <div className="grid gap-x-14 xl:grid-cols-[minmax(0,48rem)_minmax(0,1fr)]">
+    <article className="min-w-0">
       <h1 className="text-4xl font-semibold text-slate-950">Metodologia</h1>
       <p className="mt-3 text-lg text-slate-600">
         Cada avaliação vai de 0 a 10 e é calculada só com dados públicos e oficiais, com a conta à mostra. Cada número leva ao
         documento oficial de onde saiu.
       </p>
 
-      <AvisoParcial className="mt-5" />
+      <AvisoParcial className="mt-5 xl:hidden" />
 
       <Secao titulo="De onde vêm os dados">
         <p className="text-slate-700">
@@ -450,5 +452,12 @@ export default function Metodologia() {
         <li>Limitações lista o que os dados não cobrem. Correções explica como pedir um ajuste. Privacidade diz o que o site guarda.</li>
       </ComoLer>
     </article>
+    <aside className="hidden xl:block">
+      <div className="sticky top-24 space-y-6">
+        <AvisoParcial />
+        <IndiceLateral />
+      </div>
+    </aside>
+    </div>
   );
 }

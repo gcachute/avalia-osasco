@@ -68,26 +68,83 @@ export default async function Home() {
       .sort((a, b) => b.media - a.media);
 
   const documentos = mapa?.itens.length ?? 0;
+  // Os quatro documentos mais recentes que citam algum bairro, com o nome de cada bairro.
+  const nomeBairro = new Map((mapa?.bairros ?? []).map((b) => [b.id, b.nome]));
+  const recentes = [...(mapa?.itens ?? [])]
+    .filter((i) => i.bairros.length)
+    .sort((a, b) => b.data.localeCompare(a.data))
+    .slice(0, 4)
+    .map((i) => ({
+      id: i.id,
+      tipo: i.tipo,
+      data: i.data,
+      texto: i.texto,
+      autor: i.autorNome,
+      bairros: i.bairros.map((id) => ({ id, nome: nomeBairro.get(id) ?? id })),
+    }));
   const bairrosCitados = mapa?.bairros.filter((b) => b.citacoes > 0).length ?? 0;
 
   return (
     <>
       {/* Painel em largura total, como um mapa de apuração: lista à esquerda, mapa ao centro, detalhes à direita. */}
       <div className="relative left-1/2 -ml-[min(840px,calc(50vw-1rem))] w-[min(1680px,calc(100vw-2rem))] space-y-4">
-        <section className="max-w-3xl pt-4 sm:pt-8">
-          <h1 className="text-[2.6rem] text-balance text-slate-950 sm:text-[4.2rem]">Seu bairro na política de Osasco</h1>
-          <p className="mt-4 max-w-2xl text-base text-slate-600 sm:text-lg">
-            Veja os documentos da Câmara e da Prefeitura que citam o seu bairro, quem os assinou e o retrato oficial de quem mora lá.
-          </p>
-          <p className="mt-2 max-w-2xl text-sm text-slate-500 tabular-nums">
-            Até {dataBR(periodo.fim)}, foram {sessoes.length} sessões e {documentos} documentos que citam bairros; {bairrosCitados} dos {mapa?.bairros.length ?? 0} bairros aparecem
-            em algum deles. A Câmara tem {ativos.length} vereadores em exercício.
-          </p>
-        </section>
 
         {mapa && mapaPronto ? (
           <PainelInicial
             aviso={<AvisoParcial />}
+            cabecalho={
+              <section className="max-w-3xl pt-2 sm:pt-4">
+                <h1 className="text-[2.6rem] text-balance text-slate-950 sm:text-[4.2rem]">Seu bairro na política de Osasco</h1>
+                <p className="mt-4 max-w-2xl text-base text-slate-600 sm:text-lg">
+                  Veja os documentos da Câmara e da Prefeitura que citam o seu bairro, quem os assinou e o retrato oficial de quem mora lá.
+                </p>
+                <p className="mt-2 max-w-2xl text-sm text-slate-500 tabular-nums">
+                  Até {dataBR(periodo.fim)}, foram {sessoes.length} sessões e {documentos} documentos que citam bairros; {bairrosCitados} dos {mapa?.bairros.length ?? 0} bairros aparecem
+                  em algum deles. A Câmara tem {ativos.length} vereadores em exercício.
+                </p>
+              </section>
+            }
+            recentes={recentes}
+            aoLadoDaLista={
+              <>
+                <Secao titulo="Média por partido">
+                  {/* Integridade fica fora da média por partido: é um registro de cada pessoa, não do partido. */}
+                  <GraficoPartidos
+                    sessoesPeriodo={sessoes.length}
+                    conjuntos={COEFICIENTES.filter((c) => c.chave !== "integridade").map((c) => ({ chave: c.chave, nome: c.nome, dados: porPartido(c.chave) }))}
+                  />
+                </Secao>
+
+                <Secao titulo="Prefeitura">
+                  <Link href="/prefeito" className="group block overflow-hidden transition hover:border-blue-300 border-t border-slate-300">
+                    <div className="flex items-center gap-4 p-5">
+                      <Avatar nome={prefeito.nome} foto={prefeito.foto} tamanho={72} />
+                      <div className="min-w-0 flex-1">
+                        <div className="text-lg font-semibold text-slate-900 group-hover:text-blue-800">{prefeito.nome}</div>
+                        <div className="mt-0.5 flex flex-wrap items-center gap-2 text-sm text-slate-500">
+                          <SeloPartido sigla={prefeito.partido} logo={prefeito.partidoLogo} />
+                          {prefeito.cargo} · {prefeito.mandato}
+                        </div>
+                      </div>
+                    </div>
+                    <ul className="divide-y divide-slate-100 border-t border-slate-100">
+                      {PILARES_PREFEITO.map((pl) => {
+                        const n = prefeito.pilares[pl.chave]?.nota;
+                        return (
+                          <li key={pl.chave} className="flex items-center justify-between gap-3 px-5 py-2.5 text-sm">
+                            <span className="text-slate-700">
+                              {pl.chave} · {pl.nome}
+                            </span>
+                            {n == null ? <span className="text-xs text-slate-400">sem dados do mandato</span> : <NotaBadge valor={nota10(n)} />}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                    <p className="border-t border-slate-100 px-5 py-2 text-xs text-slate-500">Cada pilar com os dados e a conta na página do prefeito.</p>
+                  </Link>
+                </Secao>
+              </>
+            }
             vereadores={lista}
             minimoSessoes={minimo}
             mapa={{
@@ -143,44 +200,6 @@ export default async function Home() {
         </p>
       </Secao>
 
-      <div className="grid gap-6 lg:grid-cols-2">
-        <Secao titulo="Média por partido">
-          {/* Integridade fica fora da média por partido: é um registro de cada pessoa, não do partido. */}
-          <GraficoPartidos
-            sessoesPeriodo={sessoes.length}
-            conjuntos={COEFICIENTES.filter((c) => c.chave !== "integridade").map((c) => ({ chave: c.chave, nome: c.nome, dados: porPartido(c.chave) }))}
-          />
-        </Secao>
-
-        <Secao titulo="Prefeitura">
-          <Link href="/prefeito" className="group block overflow-hidden transition hover:border-blue-300 border-t border-slate-300">
-            <div className="flex items-center gap-4 p-5">
-              <Avatar nome={prefeito.nome} foto={prefeito.foto} tamanho={72} />
-              <div className="min-w-0 flex-1">
-                <div className="text-lg font-semibold text-slate-900 group-hover:text-blue-800">{prefeito.nome}</div>
-                <div className="mt-0.5 flex flex-wrap items-center gap-2 text-sm text-slate-500">
-                  <SeloPartido sigla={prefeito.partido} logo={prefeito.partidoLogo} />
-                  {prefeito.cargo} · {prefeito.mandato}
-                </div>
-              </div>
-            </div>
-            <ul className="divide-y divide-slate-100 border-t border-slate-100">
-              {PILARES_PREFEITO.map((pl) => {
-                const n = prefeito.pilares[pl.chave]?.nota;
-                return (
-                  <li key={pl.chave} className="flex items-center justify-between gap-3 px-5 py-2.5 text-sm">
-                    <span className="text-slate-700">
-                      {pl.chave} · {pl.nome}
-                    </span>
-                    {n == null ? <span className="text-xs text-slate-400">sem dados do mandato</span> : <NotaBadge valor={nota10(n)} />}
-                  </li>
-                );
-              })}
-            </ul>
-            <p className="border-t border-slate-100 px-5 py-2 text-xs text-slate-500">Cada pilar com os dados e a conta na página do prefeito.</p>
-          </Link>
-        </Secao>
-      </div>
 
       {(camara.custoMandato || camara.despesas) && (
         <Secao
