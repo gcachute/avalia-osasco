@@ -352,7 +352,14 @@ export default function Metodologia() {
         <ul className="list-disc space-y-2 pl-5 text-slate-700">
           <li>
             <b>Contratos da Prefeitura e da Câmara:</b> Portal Nacional de Contratações Públicas, pelo CNPJ de cada órgão (o da Câmara, 50.520.121/0001-32, conferido no próprio portal). Quase todos os contratos de Osasco no portal são de 2024 em diante. Contrato com pessoa física
-            entra só na contagem, sem nome nem documento.
+            entra só na contagem, sem nome nem documento. O tema de cada contrato (saúde, educação, obras e manutenção urbana e outros) é lido das palavras do objeto, pela
+            primeira regra que casa: o que se compra vem antes de para quem se compra, então tecnologia para a Secretaria de Educação fica em tecnologia. Cada contrato fica em um
+            tema só; o que não casa com nenhuma regra fica em Outros. O portal não informa o lugar de cada contrato: o bairro só aparece quando o texto do objeto cita o nome
+            dele, e o valor de um contrato que cita vários bairros é dividido igualmente entre eles.
+          </li>
+          <li>
+            <b>Lugar das obras no mapa:</b> o ponto que o cadastro federal de obras (Obrasgov) guarda para cada obra. Um ponto repetido em 5 ou mais obras diferentes é um endereço
+            genérico, e essas obras ficam fora do mapa.
           </li>
           <li>
             <b>Parecer do Tribunal de Contas:</b> pesquisa pública da página Contas Anuais do TCE-SP (Contas Municipais, município Osasco), que lista os processos de 1987 a 2026. Para cada

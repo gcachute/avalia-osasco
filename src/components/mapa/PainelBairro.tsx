@@ -3,17 +3,18 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { BairroMapa, Historico, ItemMapa, Mapa } from "@/lib/dados";
-import { num } from "@/lib/formato";
+import { dinheiroCurto, num } from "@/lib/formato";
 import { DinheiroBairro } from "./DinheiroBairro";
 import { EvolucaoBairro } from "./EvolucaoBairro";
 import { INDICADORES, formatar } from "./indicadores";
 
-type Aba = "perfil" | "evolucao" | "politica" | "dinheiro" | "eleicao" | "servicos" | "seguranca";
+type Aba = "perfil" | "evolucao" | "politica" | "dinheiro" | "obras" | "eleicao" | "servicos" | "seguranca";
 const ABAS: { chave: Aba; nome: string }[] = [
   { chave: "perfil", nome: "Perfil" },
   { chave: "evolucao", nome: "Histórico" },
   { chave: "politica", nome: "Documentos" },
   { chave: "dinheiro", nome: "Verbas" },
+  { chave: "obras", nome: "Obras" },
   { chave: "eleicao", nome: "Eleição" },
   { chave: "servicos", nome: "Serviços" },
   { chave: "seguranca", nome: "Segurança" },
@@ -47,6 +48,8 @@ export function PainelBairro({
   historico,
   nomesBairros,
   marcarBairros,
+  obraDestaque = null,
+  aoEscolherObra,
 }: {
   bairro: BairroMapa;
   itens: ItemMapa[];
@@ -60,8 +63,15 @@ export function PainelBairro({
   historico?: Historico | null;
   nomesBairros?: Map<string, string>;
   marcarBairros?: (ids: string[] | null, ajuste?: "enquadrar" | "selecionado") => void;
+  obraDestaque?: string | null;
+  aoEscolherObra?: (id: string | null) => void;
 }) {
   const [aba, setAba] = useState<Aba>(abaInicial);
+  // Ao sair da aba Obras, os bairros coloridos pela obra escolhida voltam ao normal.
+  useEffect(() => {
+    if (aba !== "obras" || !marcarBairros) return;
+    return () => marcarBairros(null);
+  }, [aba, marcarBairros]);
   // Aba Documentos: clicar num documento de vários bairros colore os outros no mapa; clicar de novo desfaz.
   const [docAberto, setDocAberto] = useState<string | null>(null);
   useEffect(() => {
@@ -92,7 +102,7 @@ export function PainelBairro({
         ))}
       </div>
 
-      <div className="mt-4 grid grid-cols-3 gap-0.5 border-b border-slate-300" role="tablist">
+      <div className="mt-4 grid grid-cols-4 gap-0.5 border-b border-slate-300" role="tablist">
         {ABAS.map((a) => (
           <button
             key={a.chave}
@@ -342,6 +352,38 @@ export function PainelBairro({
                     </li>
                   ))}
                 {!publicas.length && <li className="text-slate-500">Nenhuma escola pública com endereço neste bairro no Censo Escolar.</li>}
+              </ul>
+            </div>
+          </div>
+        )}
+
+        {aba === "obras" && (
+          <div className="space-y-4">
+            <div>
+              <span className="text-xs font-medium text-slate-900">Obras no cadastro federal ({bairro.obrasFederais?.length ?? 0})</span>
+              <ul className="mt-1.5 space-y-2 text-xs">
+                {/* Ordem fixa (maior valor primeiro): tocar só destaca a obra e leva o mapa até ela. */}
+                {(bairro.obrasFederais ?? []).map((o) => {
+                  const ativa = o.id === obraDestaque;
+                  return (
+                    <li key={o.id} className={`rounded-lg p-2 transition ${ativa ? "bg-blue-50 ring-1 ring-blue-300" : "bg-slate-50"}`}>
+                      <button type="button" onClick={() => aoEscolherObra?.(ativa ? null : o.id)} aria-pressed={ativa} className="block w-full text-left">
+                        <span className="flex flex-wrap items-center gap-2">
+                          <span className="rounded bg-white px-1.5 py-0.5 text-[10px] font-medium text-slate-700 ring-1 ring-inset ring-slate-200">{o.situacao ?? "Situação não informada"}</span>
+                          {o.valor > 0 && <span className="tabular-nums text-slate-600">{dinheiroCurto(o.valor)}</span>}
+                          {o.tipo && <span className="text-slate-500">{o.tipo}</span>}
+                        </span>
+                        <span className="mt-1 block text-slate-800">{o.nome === o.nome.toUpperCase() ? o.nome.charAt(0) + o.nome.slice(1).toLowerCase() : o.nome}</span>
+                        {o.executor && <span className="mt-0.5 block text-[11px] text-slate-500">{titulo(o.executor)}</span>}
+                        {o.nBairros > 1 && <span className="mt-0.5 block text-[11px] text-slate-500">Tem pontos em {o.nBairros} bairros.</span>}
+                      </button>
+                      <Link href={`/cidade?obra=${encodeURIComponent(o.id)}#obras`} className="mt-1 inline-block text-[11px] font-medium text-blue-800 underline">
+                        Todos os detalhes da obra
+                      </Link>
+                    </li>
+                  );
+                })}
+                {!bairro.obrasFederais?.length && <li className="text-slate-500">Nenhuma obra do cadastro federal tem ponto neste bairro.</li>}
               </ul>
             </div>
             {!!bairro.obras?.length && (

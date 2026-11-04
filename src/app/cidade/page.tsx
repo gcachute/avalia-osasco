@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Colunas } from "@/components/cidade/Colunas";
+import { Obras, type ObraLista } from "@/components/cidade/Obras";
 import { Barra, Cartao, ComoLer, Secao } from "@/components/ui";
 import bruto from "@/data/cidade.json";
-import { dinheiroCurto, reaisExato } from "@/lib/formato";
+import { dados } from "@/lib/dados";
+import { dataBR, dinheiroCurto, reaisExato } from "@/lib/formato";
 
 export const metadata: Metadata = {
   title: "A cidade",
@@ -34,7 +36,7 @@ type Cidade = {
   obras:
     | (Fonte & {
         completo: boolean;
-        obras: { id: string; nome: string; descricao: string | null; situacao: string | null; tipo: string | null; inicioPrevisto: string | null; fimPrevisto: string | null; executor: string | null; fontes: { origem: string; valor: number | null }[] }[];
+        obras: (Omit<ObraLista, "bairros"> & { pontos: { lat: number; lon: number; bairro: string }[]; bairros: string[] })[];
       })
     | null;
   riscos: (Fonte & { publicadoEm: string; areas: number; setores: Record<string, number> }) | null;
@@ -90,44 +92,15 @@ function Linhas({ titulo, linhas, limite = linhas.length }: { titulo: string; li
       <div className="text-sm font-medium text-slate-900">{titulo}</div>
       <ul className="mt-3 space-y-2.5">{linhas.slice(0, limite).map(item)}</ul>
       {resto.length > 0 && (
-        <details className="mt-2 text-xs">
-          <summary className="cursor-pointer py-1.5 font-medium text-blue-800">Ver mais {resto.length}</summary>
+        <details className="group mt-2 text-xs">
+          <summary className="cursor-pointer py-1.5 font-medium text-blue-800">
+            <span className="group-open:hidden">Ver mais {resto.length}</span>
+            <span className="hidden group-open:inline">Ver menos</span>
+          </summary>
           <ul className="mt-1.5 space-y-2.5">{resto.map(item)}</ul>
         </details>
       )}
     </div>
-  );
-}
-
-type Obra = NonNullable<Cidade["obras"]>["obras"][number];
-const valorObra = (o: Obra) => o.fontes.reduce((s, f) => s + (f.valor ?? 0), 0);
-// Algumas descrições vêm no formato "programa | código | nome da obra": fica só o que acrescenta ao título.
-const descricaoObra = (o: Obra) => {
-  const comeco = o.nome.slice(0, 30).toLowerCase();
-  return (o.descricao ?? "")
-    .split(" | ")
-    .filter((p) => p.trim() && !/^cod_/i.test(p.trim()) && !p.trim().toLowerCase().startsWith(comeco))
-    .join(" · ");
-};
-
-function CartaoObra({ o }: { o: Obra }) {
-  const origens = [...new Set(o.fontes.map((f) => f.origem.toLowerCase()))];
-  const descricao = descricaoObra(o);
-  return (
-    <li className="text-sm border-t border-slate-300 pt-3">
-      <div className="font-medium break-words text-slate-900">{o.nome}</div>
-      {descricao && <p className="mt-0.5 line-clamp-2 break-words text-slate-600">{descricao}</p>}
-      <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-600">
-        {valorObra(o) > 0 && (
-          <span className="text-sm font-semibold tabular-nums text-slate-900" title={reaisExato(valorObra(o))}>
-            {dinheiroCurto(valorObra(o))}
-          </span>
-        )}
-        <span className="rounded-sm bg-slate-100 px-2 py-0.5 text-slate-700">{o.situacao ?? "Situação não informada"}</span>
-        {origens.length > 0 && <span>Recurso {origens.join(", ")}</span>}
-      </div>
-      {o.executor && <div className="mt-1 text-xs break-words text-slate-500">{o.executor}</div>}
-    </li>
   );
 }
 
@@ -148,7 +121,11 @@ export default function PaginaCidade() {
   const empresasAnos = Object.entries(empresas?.porAno ?? {}).sort(([a], [b]) => Number(a) - Number(b)).slice(-10);
   const empresasUltimo = empresas?.porAno[empresas.ultimo];
   const setores = Object.entries(empresas?.setores ?? {}).sort((a, b) => (b[1].pessoal ?? 0) - (a[1].pessoal ?? 0));
-  const obrasOrdem = [...(obras?.obras ?? [])].sort((a, b) => valorObra(b) - valorObra(a));
+  // Obras com o nome de cada bairro em que o cadastro tem ponto; a maior primeiro.
+  const nomeBairro = new Map((dados.mapa?.bairros ?? []).map((b) => [b.id, b.nome]));
+  const obrasLista: ObraLista[] = [...(obras?.obras ?? [])]
+    .sort((a, b) => b.valor - a.valor)
+    .map(({ pontos: _pontos, ...o }) => ({ ...o, bairros: o.bairros.map((id) => ({ id, nome: nomeBairro.get(id) ?? id })) })); // eslint-disable-line @typescript-eslint/no-unused-vars
 
   return (
     <>
@@ -264,24 +241,14 @@ export default function PaginaCidade() {
       )}
 
       {obras && obras.obras.length > 0 && (
-        <Secao titulo={`Obras no cadastro federal (${obras.obras.length})`} subtitulo="Obras registradas no sistema do governo federal que citam Osasco ou têm a Prefeitura como responsável, da maior para a menor.">
+        <Secao
+          titulo={`Obras no cadastro federal (${obras.obras.length})`}
+          id="obras"
+          subtitulo="Obras registradas no sistema do governo federal que citam Osasco ou têm a Prefeitura como responsável, da maior para a menor. Toque em uma obra para ver os detalhes e abrir no mapa, na aba Obras."
+        >
           {!obras.completo && <p className="mb-3 text-sm text-slate-600">A fonte parou de responder antes do fim da consulta, então esta lista está incompleta.</p>}
-          <ul className="grid gap-3 lg:grid-cols-2">
-            {obrasOrdem.slice(0, 6).map((o) => (
-              <CartaoObra key={o.id} o={o} />
-            ))}
-          </ul>
-          {obrasOrdem.length > 6 && (
-            <details className="mt-3">
-              <summary className="cursor-pointer text-sm font-medium text-blue-800 border-t border-slate-300 pt-3">Ver mais {obrasOrdem.length - 6} obras</summary>
-              <ul className="mt-3 grid gap-3 lg:grid-cols-2">
-                {obrasOrdem.slice(6).map((o) => (
-                  <CartaoObra key={o.id} o={o} />
-                ))}
-              </ul>
-            </details>
-          )}
-          <Fonte f={obras} />
+          <Obras obras={obrasLista} />
+          <Fonte f={obras} nota={obras.coletadoEm ? `Consultado em ${dataBR(obras.coletadoEm)}.` : undefined} />
         </Secao>
       )}
 
@@ -291,6 +258,11 @@ export default function PaginaCidade() {
         <li>Nos números de trânsito, as ocorrências sem ponto no mapa entram no total da cidade, mas não na conta por bairro.</li>
         <li>O saldo de empregos conta só vagas com carteira assinada. A conta de empresas vem de outra fonte e termina em outro ano.</li>
         <li>Nas obras, o valor é o investimento previsto e a situação é a que consta no cadastro. Cada registro aparece como foi cadastrado, mesmo com nome igual ao de outro.</li>
+        <li>
+          Toque em uma obra para ver os detalhes; o botão Ver esta obra no mapa abre a aba Obras do mapa com ela escolhida. O ponto de cada obra no mapa é o que o próprio
+          cadastro federal guarda. Quando o mesmo ponto aparece em 5 ou mais obras diferentes, ele é um endereço
+          genérico e essas obras ficam fora do mapa. Uma obra pode ter vários pontos, como uma canalização que marca o trajeto.
+        </li>
       </ComoLer>
     </>
   );

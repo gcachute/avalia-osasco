@@ -82,8 +82,11 @@ export function Colunas({ titulo, unidade, pontos }: { titulo: string; unidade: 
         ))}
       </div>
 
-      <details className="mt-2 text-xs text-slate-600">
-        <summary className="cursor-pointer py-1.5 font-medium text-blue-800">Ver todos os números</summary>
+      <details className="group mt-2 text-xs text-slate-600">
+        <summary className="cursor-pointer py-1.5 font-medium text-blue-800">
+          <span className="group-open:hidden">Ver todos os números</span>
+          <span className="hidden group-open:inline">Ver menos</span>
+        </summary>
         <ul className="mt-1 divide-y divide-slate-100">
           {[...pontos].reverse().map((p) => (
             <li key={p.rotulo} className="py-1.5">

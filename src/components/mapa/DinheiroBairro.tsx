@@ -128,8 +128,10 @@ function Item({ i, indice, realce }: { i: ItemDinheiroBairro; indice: number; re
   );
 }
 
-export function DinheiroBairro({ d, realce }: { d: NonNullable<BairroMapa["dinheiro"]>; realce?: Realce }) {
+// Com `limite`, mostra os itens de `limite` em `limite`, com "Ver mais" e "Ver menos".
+export function DinheiroBairro({ d, realce, semLink = false, limite }: { d: NonNullable<BairroMapa["dinheiro"]>; realce?: Realce; semLink?: boolean; limite?: number }) {
   const [filtro, setFiltro] = useState<Grupo | null>(null);
+  const [quantos, setQuantos] = useState(limite ?? 0);
   const porGrupo = d.porGrupo ?? {};
   const presentes = GRUPOS.filter((g) => (porGrupo[g.chave] ?? 0) > 0);
   const total = presentes.reduce((s, g) => s + (porGrupo[g.chave] ?? 0), 0);
@@ -161,7 +163,10 @@ export function DinheiroBairro({ d, realce }: { d: NonNullable<BairroMapa["dinhe
                 key={g.chave}
                 type="button"
                 aria-pressed={filtro === g.chave}
-                onClick={() => setFiltro(filtro === g.chave ? null : g.chave)}
+                onClick={() => {
+                  setFiltro(filtro === g.chave ? null : g.chave);
+                  setQuantos(limite ?? 0);
+                }}
                 className={`inline-flex items-center gap-1 rounded-sm px-2 py-0.5 text-[11px] ring-1 transition ${filtro === g.chave ? "bg-slate-800 text-white ring-slate-800" : "bg-white text-slate-700 ring-slate-200 hover:ring-slate-300"}`}
               >
                 <span className="h-1.5 w-1.5 rounded-full" style={{ background: g.cor }} aria-hidden />
@@ -173,14 +178,30 @@ export function DinheiroBairro({ d, realce }: { d: NonNullable<BairroMapa["dinhe
       )}
       {d.quantidade > d.itens.length && !filtro && <p className="mt-2 text-[11px] text-slate-500">Os {d.itens.length} de maior valor:</p>}
       <ol key={filtro ?? "todos"} className="mt-2 space-y-2 text-xs">
-        {itens.map((i, n) => (
+        {(limite ? itens.slice(0, quantos) : itens).map((i, n) => (
           <Item key={n} i={i} indice={n} realce={realce} />
         ))}
       </ol>
+      {limite != null && (itens.length > quantos || quantos > limite) && (
+        <div className="mt-2 flex flex-wrap gap-x-4 text-xs">
+          {itens.length > quantos && (
+            <button type="button" onClick={() => setQuantos(quantos + limite)} className="font-bold text-blue-800 underline">
+              Ver mais {Math.min(limite, itens.length - quantos)} {Math.min(limite, itens.length - quantos) === 1 ? "item" : "itens"}
+            </button>
+          )}
+          {quantos > limite && (
+            <button type="button" onClick={() => setQuantos(limite)} className="font-bold text-blue-800 underline">
+              Ver menos
+            </button>
+          )}
+        </div>
+      )}
       {!itens.length && <p className="mt-2 text-xs text-slate-500">Entre os itens de maior valor, nenhum é deste tipo.</p>}
-      <Link href="/verbas" className="mt-2 inline-block text-xs font-medium text-blue-800 underline">
-        Ver a página Verbas e receitas
-      </Link>
+      {!semLink && (
+        <Link href="/verbas" className="mt-2 inline-block text-xs font-medium text-blue-800 underline">
+          Ver a página Verbas e receitas
+        </Link>
+      )}
     </div>
   );
 }

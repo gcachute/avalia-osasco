@@ -17,6 +17,7 @@ import {
   type Contexto,
   type Tema,
 } from "./mapa/indicadores";
+import { dinheiroCurto } from "@/lib/formato";
 import { PainelBairro } from "./mapa/PainelBairro";
 import { Ruas, type Projecao, type Vista } from "./mapa/Ruas";
 
@@ -46,6 +47,7 @@ const CAMADAS: { chave: Camada; nome: string }[] = [
   { chave: "saude", nome: "Saúde SUS" },
   { chave: "escola", nome: "Escolas" },
   { chave: "votacao", nome: "Locais de votação" },
+  { chave: "obra", nome: "Obras federais" },
 ];
 const MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
 const rotuloMes = (m: string) => `${MESES[Number(m.slice(5, 7)) - 1]}/${m.slice(2, 4)}`;
@@ -81,6 +83,8 @@ function Marcador({ tipo, ativo }: { tipo: Camada; ativo: boolean }) {
     );
   if (tipo === "escola")
     return <rect x={-r} y={-r} width={r * 2} height={r * 2} rx={1.5} fill="var(--mapa-ponto)" stroke="var(--mapa-borda)" strokeWidth={1.2} />;
+  if (tipo === "obra")
+    return <path d={`M0 ${-r * 1.25}L${r * 1.15} ${r * 0.85}H${-r * 1.15}Z`} fill="var(--mapa-ponto)" stroke="var(--mapa-borda)" strokeWidth={1.2} strokeLinejoin="round" />;
   return (
     <rect
       x={-r * 0.8}
@@ -154,6 +158,8 @@ export function MapaBairros({
   const [tocando, setTocando] = useState(false);
   const [foco, setFoco] = useState<string | null>(null);
   const [pontoFoco, setPontoFoco] = useState<PontoDesenho | null>(null);
+  // Obra escolhida (?obra= ou toque no ponto): os pontos dela ficam maiores e ela vem aberta no painel do bairro.
+  const [obraDestaque, setObraDestaque] = useState<string | null>(null);
   const [verFavelas, setVerFavelas] = useState(false);
   const [favelaFoco, setFavelaFoco] = useState<FavelaDesenho | null>(null);
   const [selecionado, setSelecionado] = useState<string | null>(null);
@@ -453,6 +459,23 @@ export function MapaBairros({
     },
     [enquadrar],
   );
+  // Obra escolhida no painel do bairro: a câmera vai até os pontos dela e os outros bairros por onde ela passa ficam
+  // coloridos. Escolher de novo desfaz e volta ao bairro.
+  const escolherObra = useCallback(
+    (id: string | null) => {
+      setObraDestaque(id);
+      const pts = id ? pontos.filter((p) => p.tipo === "obra" && p.id === id) : [];
+      if (!pts.length) return marcarBairros(null, "selecionado");
+      setCamadas((s) => (s.has("obra") ? s : new Set([...s, "obra"])));
+      setCitados([...new Set(pts.map((p) => p.bairro).filter((b): b is string => !!b && b !== selecionadoRef.current))]);
+      const folga = 30;
+      const xs = pts.map((p) => p.x);
+      const ys = pts.map((p) => p.y);
+      const [x0, y0] = [Math.min(...xs) - folga, Math.min(...ys) - folga];
+      irPara({ x: x0, y: y0, w: Math.max(...xs) + folga - x0, h: Math.max(...ys) + folga - y0 }, 2);
+    },
+    [pontos, marcarBairros, irPara],
+  );
   const bFoco = foco ? porId.get(foco) : null;
   const maxDist = Math.max(1, ...bairros.map((b) => b.distancia));
   const feed = (doMes.length ? doMes : visiveis.slice(-6)).slice().reverse().slice(0, 6);
@@ -481,6 +504,8 @@ export function MapaBairros({
   const escolherTema = (t: Tema) => {
     setTema(t);
     setChave(INDICADORES.find((i) => i.tema === t)!.chave);
+    // A aba Obras já mostra os pontos das obras.
+    if (t === "obras") setCamadas((s) => new Set([...s, "obra"]));
   };
   const escolherIndicador = (k: string, p?: string) => {
     setTema(INDICADORES.find((i) => i.chave === k)!.tema);
@@ -502,6 +527,22 @@ export function MapaBairros({
     // ?bairro= abre o painel do bairro (links da página do dinheiro).
     const b = q.get("bairro");
     if (b && bairros.some((x) => x.id === b)) setSelecionado(b);
+    // ?camada=obra liga uma camada de pontos (link da página A cidade).
+    const c = q.get("camada");
+    if (c && CAMADAS.some((x) => x.chave === c)) setCamadas(new Set([c as Camada]));
+    // ?tema=obras abre a aba; ?obra= abre a aba já com a obra escolhida e o bairro dela (link da página A cidade).
+    const t = q.get("tema");
+    const ob = q.get("obra");
+    if (t === "obras" || ob) {
+      setTema("obras");
+      setChave(INDICADORES.find((i) => i.tema === "obras")!.chave);
+      setCamadas((s) => new Set([...s, "obra"]));
+    }
+    const pontoObra = ob ? pontos.find((p) => p.tipo === "obra" && p.id === ob) : null;
+    if (pontoObra) {
+      setObraDestaque(ob);
+      if (pontoObra.bairro && !b) setSelecionado(pontoObra.bairro);
+    }
     // Só na abertura da página: depois, quem manda é quem está navegando.
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -520,6 +561,8 @@ export function MapaBairros({
   const abaInicial =
     tema === "dinheiro"
       ? "dinheiro"
+      : tema === "obras"
+      ? "obras"
       : tema === "eleicao"
       ? "eleicao"
       : tema === "servicos"
@@ -771,10 +814,16 @@ export function MapaBairros({
                       style={{ animationDelay: `${(k % 40) * 0.015}s` }}
                       onMouseEnter={() => setPontoFoco(p)}
                       onMouseLeave={() => setPontoFoco(null)}
+                      onClick={(e) => {
+                        if (p.tipo !== "obra") return;
+                        e.stopPropagation();
+                        setObraDestaque(p.id ?? null);
+                        if (p.bairro) setSelecionado(p.bairro);
+                      }}
                     >
                       <g transform={`translate(${p.x} ${p.y})`}>
                         <g className="mapa-escala">
-                          <Marcador tipo={p.tipo} ativo={pontoFoco === p} />
+                          <Marcador tipo={p.tipo} ativo={pontoFoco === p || (p.tipo === "obra" && p.id === obraDestaque)} />
                         </g>
                       </g>
                     </g>
@@ -971,6 +1020,7 @@ export function MapaBairros({
                   <>
                     <div className="text-[11px] text-slate-500">{pontoFoco.categoria}</div>
                     <div className="text-sm font-semibold text-slate-900">{pontoFoco.nome}</div>
+                    {pontoFoco.valor != null && pontoFoco.valor > 0 && <div className="mt-0.5 tabular-nums text-slate-600">{dinheiroCurto(pontoFoco.valor)} previstos</div>}
                     {pontoFoco.eleitores != null && (
                       <div className="mt-0.5 text-slate-600">{pontoFoco.eleitores.toLocaleString("pt-BR")} eleitores</div>
                     )}
@@ -1094,7 +1144,8 @@ export function MapaBairros({
             {/* Camadas de pontos */}
             <div className="flex flex-wrap gap-1.5" role="group" aria-label="Camadas de pontos">
               {CAMADAS.map((c) => {
-                const n = pontos.filter((p) => p.tipo === c.chave).length;
+                // Uma obra pode ter vários pontos: conta as obras, não os pontos.
+                const n = new Set(pontos.filter((p) => p.tipo === c.chave).map((p) => p.id ?? `${p.nome}-${p.x}-${p.y}`)).size;
                 const on = camadas.has(c.chave);
                 return (
                   <button
@@ -1218,6 +1269,8 @@ export function MapaBairros({
             historico={historico}
             nomesBairros={nomesBairros}
             marcarBairros={marcarBairros}
+            obraDestaque={obraDestaque}
+            aoEscolherObra={escolherObra}
           />
         ) : (
           <div>
@@ -1257,9 +1310,10 @@ export function MapaBairros({
               ))}
             </ol>
             {ranking.length > 15 && (
-              <details className="mt-2 text-xs text-slate-600">
+              <details className="group mt-2 text-xs text-slate-600">
                 <summary className="cursor-pointer select-none text-slate-500 hover:text-slate-800">
-                  Ver os outros {ranking.length - 15} bairros
+                  <span className="group-open:hidden">Ver os outros {ranking.length - 15} bairros</span>
+                  <span className="hidden group-open:inline">Ver menos</span>
                 </summary>
                 <ol className="mt-2 space-y-1">
                   {ranking.slice(15).map(({ b, v }, k) => (

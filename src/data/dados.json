@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-04T15:39:01.951Z",
+ "geradoEm": "2026-11-04T21:12:44.004Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -52848,6 +52848,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [
      {
@@ -53045,6 +53046,18 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "57520.35-49",
+      "nome": "CONSTRUÇÃO DE UNIDADE BÁSICA DE SAÚDE",
+      "situacao": "Cadastrada",
+      "tipo": "Saúde",
+      "especie": "Construção",
+      "valor": 6584873,
+      "executor": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+      "nBairros": 1
+     }
+    ],
     "saude": [
      {
       "cnes": "8036",
@@ -53575,6 +53588,18 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "40663.35-71",
+      "nome": "Reurb núcleos Chapéu de Couro e P3",
+      "situacao": "Cadastrada",
+      "tipo": "Desenvolvimento",
+      "especie": "Construção",
+      "valor": 3105750,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 2
+     }
+    ],
     "saude": [
      {
       "cnes": "8095",
@@ -53921,6 +53946,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "6983855",
@@ -54150,6 +54176,18 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "50387.35-97",
+      "nome": "Reforma da Academia de Lutas Zona Norte",
+      "situacao": "Cadastrada",
+      "tipo": "Esporte",
+      "especie": "Reforma",
+      "valor": 2905000,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 1
+     }
+    ],
     "saude": [
      {
       "cnes": "8265",
@@ -54426,6 +54464,28 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "39729.35-60",
+      "nome": "Recapeamento 2 ruas do Municipio de Osasco",
+      "situacao": "Concluída",
+      "tipo": "Infraestrutura Urbana e Mobilidade",
+      "especie": "Construção",
+      "valor": 407135.39,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 1
+     },
+     {
+      "id": "137982.35-04",
+      "nome": "Reforma de Centro Esportivo",
+      "situacao": "Cadastrada",
+      "tipo": "Esporte",
+      "especie": "Reforma",
+      "valor": 394000,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 1
+     }
+    ],
     "saude": [
      {
       "cnes": "8206",
@@ -54745,6 +54805,18 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "37812.35-29",
+      "nome": "Contenção de Encostas Rua Castanha do Para",
+      "situacao": "Cadastrada",
+      "tipo": "Infraestrutura Urbana e Mobilidade",
+      "especie": "Construção",
+      "valor": 42545556.38,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 1
+     }
+    ],
     "saude": [],
     "escolas": [
      {
@@ -54972,6 +55044,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [
      {
@@ -55159,6 +55232,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [
      {
@@ -55421,6 +55495,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [
      {
@@ -55598,6 +55673,38 @@
       "contratante": "INSTITUTO DE PREVIDÊNCIA DO MUNICÍPIO DE OSASCO",
       "contratado": "PAULA GONÇALVES PEREIRA",
       "ano": 2021
+     }
+    ],
+    "obrasFederais": [
+     {
+      "id": "108352.35-82",
+      "nome": "Adequação e requalificação de passeios públicos",
+      "situacao": "Cadastrada",
+      "tipo": "Infraestrutura Urbana e Mobilidade",
+      "especie": "Reforma",
+      "valor": 2197686.5,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 1
+     },
+     {
+      "id": "41590.35-05",
+      "nome": "Readequações elétricas no edifício-sede da Delegacia da Receita Federal do Brasil em Osasco",
+      "situacao": "Concluída",
+      "tipo": "Administrativo",
+      "especie": "Reforma",
+      "valor": 399900,
+      "executor": "SRRF08 - SUPERINTENDÊNCIA REGIONAL DA RECEITA FEDERAL DO BRASIL DA 8ª REGIÃO FISCAL",
+      "nBairros": 1
+     },
+     {
+      "id": "105491.35-05",
+      "nome": "Serviço de engenharia  para instalação de sistemas e equipamentos de prevenção e combate a incêndio na DRF Osasco",
+      "situacao": "Cadastrada",
+      "tipo": "Administrativo",
+      "especie": "Reforma",
+      "valor": 249350.21,
+      "executor": "SRRF08 - SUPERINTENDÊNCIA REGIONAL DA RECEITA FEDERAL DO BRASIL DA 8ª REGIÃO FISCAL",
+      "nBairros": 1
      }
     ],
     "saude": [
@@ -56351,6 +56458,18 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "102302.35-71",
+      "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+      "situacao": "Cadastrada",
+      "tipo": "Meio Ambiente",
+      "especie": "Construção",
+      "valor": 50579913.93,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 3
+     }
+    ],
     "saude": [],
     "escolas": [
      {
@@ -56489,6 +56608,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [],
     "dinheiro": null
@@ -56651,6 +56771,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "26131",
@@ -56818,6 +56939,18 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "43022.35-74",
+      "nome": "Reforma do Parque Municipal Chico Mendes",
+      "situacao": "Cadastrada",
+      "tipo": "Desenvolvimento",
+      "especie": "Reforma",
+      "valor": 1934356,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 1
+     }
+    ],
     "saude": [],
     "escolas": [],
     "dinheiro": null
@@ -56993,6 +57126,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "3828107",
@@ -57421,6 +57555,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [
      {
@@ -57545,6 +57680,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [],
     "dinheiro": null
@@ -57716,6 +57852,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8400",
@@ -57901,6 +58038,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [],
     "dinheiro": {
@@ -58020,6 +58158,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [],
     "dinheiro": {
@@ -58144,6 +58283,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8370",
@@ -58350,6 +58490,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [],
     "dinheiro": {
@@ -58548,6 +58689,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8184",
@@ -58836,6 +58978,18 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "43488.35-79",
+      "nome": "Construção de Centro Comunitário Esportivo em Osasco/SP",
+      "situacao": "Cadastrada",
+      "tipo": "Esporte",
+      "especie": "Construção",
+      "valor": 1462500,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 1
+     }
+    ],
     "saude": [
      {
       "cnes": "8354",
@@ -59181,6 +59335,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "3552454",
@@ -59468,6 +59623,38 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "108439.35-55",
+      "nome": "Convênio de Reassentamento Habitacional - Córrego Ribeirão Vermelho",
+      "situacao": "Cadastrada",
+      "tipo": "Infraestrutura Hídrica, Portos, Hidrovia",
+      "especie": "Construção",
+      "valor": 47000000,
+      "executor": "AGENCIA DE AGUAS DO ESTADO DE SAO PAULO - SP-AGUAS",
+      "nBairros": 1
+     },
+     {
+      "id": "43718.35-42",
+      "nome": "Reforma para implantação do campus Osasco do IFSP",
+      "situacao": "Em execução",
+      "tipo": "Educação",
+      "especie": "Reforma",
+      "valor": 1648585.73,
+      "executor": "INST.FED.DE EDUC.,CIENC.E TEC.DE SAO PAULO",
+      "nBairros": 1
+     },
+     {
+      "id": "52178.35-08",
+      "nome": "Reforma Elétrica do Fórum de Osasco",
+      "situacao": "Cadastrada",
+      "tipo": "Administrativo",
+      "especie": "Reforma",
+      "valor": 1314456.61,
+      "executor": "SAO PAULO TRIBUNAL DE JUSTICA",
+      "nBairros": 1
+     }
+    ],
     "saude": [
      {
       "cnes": "8168",
@@ -59737,6 +59924,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8109",
@@ -60135,6 +60323,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8117",
@@ -60435,6 +60624,28 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "102302.35-71",
+      "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+      "situacao": "Cadastrada",
+      "tipo": "Meio Ambiente",
+      "especie": "Construção",
+      "valor": 50579913.93,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 3
+     },
+     {
+      "id": "50354.35-36",
+      "nome": "Obras de Infraestrutura Urbana - Pavimentação, Recapeamento Asfáltico e Drenagem nas diversas ruas do Município de Osasco- São Paulo",
+      "situacao": "Cadastrada",
+      "tipo": "Infraestrutura Urbana e Mobilidade",
+      "especie": "Recuperação",
+      "valor": 500000,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 1
+     }
+    ],
     "saude": [
      {
       "cnes": "8087",
@@ -60683,6 +60894,7 @@
       "ano": 2023
      }
     ],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8303",
@@ -61062,6 +61274,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8427",
@@ -61349,6 +61562,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8362",
@@ -61670,6 +61884,7 @@
       "ano": 2023
      }
     ],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8257",
@@ -61919,6 +62134,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8230",
@@ -62126,6 +62342,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [],
     "dinheiro": null
@@ -62208,6 +62425,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [],
     "dinheiro": {
@@ -62406,6 +62624,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8125",
@@ -62710,6 +62929,18 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "57522.35-51",
+      "nome": "CONSTRUÇÃO DE UNIDADE DE ATENÇÃO ESPECIALIZADA EM SAÚDE",
+      "situacao": "Em execução",
+      "tipo": "Saúde",
+      "especie": "Construção",
+      "valor": 2496000,
+      "executor": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+      "nBairros": 1
+     }
+    ],
     "saude": [
      {
       "cnes": "8044",
@@ -63029,6 +63260,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [
      {
@@ -63219,6 +63451,18 @@
       "contratante": "PREFEITURA MUNICIPAL DE OSASCO",
       "contratado": "TOWER ENGENHARIA E CONSTRUCAO LTDA.",
       "ano": 2024
+     }
+    ],
+    "obrasFederais": [
+     {
+      "id": "40663.35-71",
+      "nome": "Reurb núcleos Chapéu de Couro e P3",
+      "situacao": "Cadastrada",
+      "tipo": "Desenvolvimento",
+      "especie": "Construção",
+      "valor": 3105750,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 2
      }
     ],
     "saude": [],
@@ -63419,6 +63663,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8052",
@@ -63729,6 +63974,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8346",
@@ -64070,6 +64316,18 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "106281.35-92",
+      "nome": "CASA Jacarandá e CASA Osasco I",
+      "situacao": "Cadastrada",
+      "tipo": "Administrativo",
+      "especie": "Reforma",
+      "valor": 269839.25,
+      "executor": "FUNDACAO CENTRO DE ATENDIMENTO SOCIOEDUCATIVO AO ADOLESCENTE - FUNDACAO CASA - SP",
+      "nBairros": 1
+     }
+    ],
     "saude": [
      {
       "cnes": "3007316",
@@ -64267,6 +64525,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "4063503",
@@ -64559,6 +64818,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8141",
@@ -64910,6 +65170,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [
      {
@@ -65102,6 +65363,7 @@
       "ano": 2023
      }
     ],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "3581683",
@@ -65348,6 +65610,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8281",
@@ -65630,6 +65893,28 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "102302.35-71",
+      "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+      "situacao": "Cadastrada",
+      "tipo": "Meio Ambiente",
+      "especie": "Construção",
+      "valor": 50579913.93,
+      "executor": "MUNICIPIO DE OSASCO",
+      "nBairros": 3
+     },
+     {
+      "id": "57521.35-05",
+      "nome": "CONSTRUÇÃO DE UNIDADE BÁSICA DE SAÚDE",
+      "situacao": "Cadastrada",
+      "tipo": "Saúde",
+      "especie": "Construção",
+      "valor": 5291345,
+      "executor": "FUNDO MUNICIPAL DE SAUDE DE OSASCO",
+      "nBairros": 1
+     }
+    ],
     "saude": [],
     "escolas": [
      {
@@ -65740,6 +66025,18 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "52525.35-05",
+      "nome": "CONSTRUÇÃO DA CIDADE CENOGRÁFICA DO CENTRO DE INSTRUÇÃO DE OPERAÇÕES URBANAS CIOU DO 28 BATALHÃO DE INFANTARIA MECANIZADO 28 BIMEC",
+      "situacao": "Cadastrada",
+      "tipo": "Desenvolvimento",
+      "especie": "Construção",
+      "valor": 5131678.22,
+      "executor": "COMANDO DO EXÉRCITO",
+      "nBairros": 1
+     }
+    ],
     "saude": [],
     "escolas": [],
     "dinheiro": null
@@ -65902,6 +66199,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [
      {
@@ -66072,6 +66370,38 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "63946.35-58",
+      "nome": "OSASCO - SEDE, DER - PEDIDO DE INTERVENÇÃO - 2024/00897",
+      "situacao": "Cadastrada",
+      "tipo": "Educação",
+      "especie": "Reforma",
+      "valor": 632088.08,
+      "executor": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+      "nBairros": 1
+     },
+     {
+      "id": "64019.35-50",
+      "nome": "OSASCO - SEDE, DER - PEDIDO DE INTERVENÇÃO - 2024/00897",
+      "situacao": "Cadastrada",
+      "tipo": "Educação",
+      "especie": "Reforma",
+      "valor": 632088.08,
+      "executor": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+      "nBairros": 1
+     },
+     {
+      "id": "52589.35-04",
+      "nome": "DER OSASCO - SEDE - PEDIDO DE INTERVENÇÃO - 2024/05412",
+      "situacao": "Cadastrada",
+      "tipo": "Educação",
+      "especie": "Reforma",
+      "valor": 149981.08,
+      "executor": "FUNDACAO PARA O DESENVOLVIMENTO DA EDUCACAO",
+      "nBairros": 1
+     }
+    ],
     "saude": [],
     "escolas": [
      {
@@ -66325,6 +66655,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8222",
@@ -66656,6 +66987,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "3945278",
@@ -66960,6 +67292,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8133",
@@ -67299,6 +67632,28 @@
      }
     },
     "obras": [],
+    "obrasFederais": [
+     {
+      "id": "137196.35-24",
+      "nome": "Aterramento Gradil (semiintegrada revisão de projeto e obra)",
+      "situacao": "Cadastrada",
+      "tipo": "Educação",
+      "especie": "Reforma",
+      "valor": 314000,
+      "executor": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+      "nBairros": 1
+     },
+     {
+      "id": "23087.35-40",
+      "nome": "Gradil Terreno Quitaúna",
+      "situacao": "Cadastrada",
+      "tipo": "Educação",
+      "especie": "Construção",
+      "valor": 14300,
+      "executor": "UNIVERSIDADE FEDERAL DE SAO PAULO",
+      "nBairros": 1
+     }
+    ],
     "saude": [
      {
       "cnes": "8176",
@@ -67543,6 +67898,7 @@
       "ano": 2024
      }
     ],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8060",
@@ -67879,6 +68235,7 @@
      }
     },
     "obras": [],
+    "obrasFederais": [],
     "saude": [
      {
       "cnes": "8397",
@@ -68212,6 +68569,7 @@
       "ano": 2022
      }
     ],
+    "obrasFederais": [],
     "saude": [],
     "escolas": [
      {
@@ -75721,6 +76079,426 @@
     "lat": -23.56187138,
     "lon": -46.81322191,
     "bairro": "veloso"
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Educação",
+    "nome": "OSASCO - SEDE, DER - PEDIDO DE INTERVENÇÃO - 2024/00897",
+    "lat": -23.5527000171067,
+    "lon": -46.774,
+    "bairro": "umuarama",
+    "id": "63946.35-58",
+    "valor": 632088.08
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Esporte",
+    "nome": "Reforma da Academia de Lutas Zona Norte",
+    "lat": -23.49943,
+    "lon": -46.78433,
+    "bairro": "baronesa",
+    "id": "50387.35-97",
+    "valor": 2905000
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Meio Ambiente",
+    "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+    "lat": -23.53762,
+    "lon": -46.81674,
+    "bairro": "sao-pedro",
+    "id": "102302.35-71",
+    "valor": 50579913.93
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Meio Ambiente",
+    "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+    "lat": -23.54375,
+    "lon": -46.80789,
+    "bairro": "jardim-roberto",
+    "id": "102302.35-71",
+    "valor": 50579913.93
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Meio Ambiente",
+    "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+    "lat": -23.54454,
+    "lon": -46.80823,
+    "bairro": "jardim-roberto",
+    "id": "102302.35-71",
+    "valor": 50579913.93
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Meio Ambiente",
+    "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+    "lat": -23.5396,
+    "lon": -46.80998,
+    "bairro": "cidade-das-flores",
+    "id": "102302.35-71",
+    "valor": 50579913.93
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Meio Ambiente",
+    "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+    "lat": -23.53514,
+    "lon": -46.81518,
+    "bairro": "sao-pedro",
+    "id": "102302.35-71",
+    "valor": 50579913.93
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Meio Ambiente",
+    "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+    "lat": -23.54338,
+    "lon": -46.81591,
+    "bairro": "sao-pedro",
+    "id": "102302.35-71",
+    "valor": 50579913.93
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Meio Ambiente",
+    "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+    "lat": -23.54113,
+    "lon": -46.81228,
+    "bairro": "sao-pedro",
+    "id": "102302.35-71",
+    "valor": 50579913.93
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Meio Ambiente",
+    "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+    "lat": -23.5407,
+    "lon": -46.81014,
+    "bairro": "sao-pedro",
+    "id": "102302.35-71",
+    "valor": 50579913.93
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Meio Ambiente",
+    "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+    "lat": -23.54318,
+    "lon": -46.80864,
+    "bairro": "jardim-roberto",
+    "id": "102302.35-71",
+    "valor": 50579913.93
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Meio Ambiente",
+    "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+    "lat": -23.54184,
+    "lon": -46.80658,
+    "bairro": "cidade-das-flores",
+    "id": "102302.35-71",
+    "valor": 50579913.93
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Meio Ambiente",
+    "nome": "Canalização e implantação de infraestrutura verde para controle de alagamento e inundações no Município de Osasco/SP",
+    "lat": -23.54397,
+    "lon": -46.80761,
+    "bairro": "jardim-roberto",
+    "id": "102302.35-71",
+    "valor": 50579913.93
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Infraestrutura Urbana e Mobilidade",
+    "nome": "Adequação e requalificação de passeios públicos",
+    "lat": -23.54058,
+    "lon": -46.77306,
+    "bairro": "centro",
+    "id": "108352.35-82",
+    "valor": 2197686.5
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Educação",
+    "nome": "Gradil Terreno Quitaúna",
+    "lat": -23.5319300170731,
+    "lon": -46.80562,
+    "bairro": "vila-militar",
+    "id": "23087.35-40",
+    "valor": 14300
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Concluída, Infraestrutura Urbana e Mobilidade",
+    "nome": "Recapeamento 2 ruas do Municipio de Osasco",
+    "lat": -23.54609,
+    "lon": -46.77827,
+    "bairro": "bela-vista",
+    "id": "39729.35-60",
+    "valor": 407135.39
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Concluída, Infraestrutura Urbana e Mobilidade",
+    "nome": "Recapeamento 2 ruas do Municipio de Osasco",
+    "lat": -23.545,
+    "lon": -46.77783,
+    "bairro": "bela-vista",
+    "id": "39729.35-60",
+    "valor": 407135.39
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Infraestrutura Urbana e Mobilidade",
+    "nome": "Obras de Infraestrutura Urbana - Pavimentação, Recapeamento Asfáltico e Drenagem nas diversas ruas do Município de Osasco- São Paulo",
+    "lat": -23.54317,
+    "lon": -46.80299,
+    "bairro": "jardim-roberto",
+    "id": "50354.35-36",
+    "valor": 500000
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Infraestrutura Urbana e Mobilidade",
+    "nome": "Obras de Infraestrutura Urbana - Pavimentação, Recapeamento Asfáltico e Drenagem nas diversas ruas do Município de Osasco- São Paulo",
+    "lat": -23.54307,
+    "lon": -46.80353,
+    "bairro": "jardim-roberto",
+    "id": "50354.35-36",
+    "valor": 500000
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Infraestrutura Urbana e Mobilidade",
+    "nome": "Obras de Infraestrutura Urbana - Pavimentação, Recapeamento Asfáltico e Drenagem nas diversas ruas do Município de Osasco- São Paulo",
+    "lat": -23.54342,
+    "lon": -46.80454,
+    "bairro": "jardim-roberto",
+    "id": "50354.35-36",
+    "valor": 500000
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Administrativo",
+    "nome": "Reforma Elétrica do Fórum de Osasco",
+    "lat": -23.5347800170777,
+    "lon": -46.79155,
+    "bairro": "jardim-das-flores",
+    "id": "52178.35-08",
+    "valor": 1314456.61
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Desenvolvimento",
+    "nome": "Reforma do Parque Municipal Chico Mendes",
+    "lat": -23.57173,
+    "lon": -46.78402,
+    "bairro": "city-bussocaba",
+    "id": "43022.35-74",
+    "valor": 1934356
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Educação",
+    "nome": "OSASCO - SEDE, DER - PEDIDO DE INTERVENÇÃO - 2024/00897",
+    "lat": -23.5527000171067,
+    "lon": -46.774,
+    "bairro": "umuarama",
+    "id": "64019.35-50",
+    "valor": 632088.08
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Desenvolvimento",
+    "nome": "CONSTRUÇÃO DA CIDADE CENOGRÁFICA DO CENTRO DE INSTRUÇÃO DE OPERAÇÕES URBANAS CIOU DO 28 BATALHÃO DE INFANTARIA MECANIZADO 28 BIMEC",
+    "lat": -23.5195870723824,
+    "lon": -46.8087493864219,
+    "bairro": "setor-militar",
+    "id": "52525.35-05",
+    "valor": 5131678.22
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Educação",
+    "nome": "DER OSASCO - SEDE - PEDIDO DE INTERVENÇÃO - 2024/05412",
+    "lat": -23.5527000171067,
+    "lon": -46.774,
+    "bairro": "umuarama",
+    "id": "52589.35-04",
+    "valor": 149981.08
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Infraestrutura Urbana e Mobilidade",
+    "nome": "Contenção de Encostas Rua Castanha do Para",
+    "lat": -23.48781,
+    "lon": -46.80178,
+    "bairro": "bonanca",
+    "id": "37812.35-29",
+    "valor": 42545556.38
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Infraestrutura Urbana e Mobilidade",
+    "nome": "Contenção de Encostas Rua Castanha do Para",
+    "lat": -23.48743,
+    "lon": -46.80353,
+    "bairro": "bonanca",
+    "id": "37812.35-29",
+    "valor": 42545556.38
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Infraestrutura Urbana e Mobilidade",
+    "nome": "Contenção de Encostas Rua Castanha do Para",
+    "lat": -23.48707,
+    "lon": -46.79216,
+    "bairro": "bonanca",
+    "id": "37812.35-29",
+    "valor": 42545556.38
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Desenvolvimento",
+    "nome": "Reurb núcleos Chapéu de Couro e P3",
+    "lat": -23.49094,
+    "lon": -46.8049,
+    "bairro": "portal-d-oeste",
+    "id": "40663.35-71",
+    "valor": 3105750
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Desenvolvimento",
+    "nome": "Reurb núcleos Chapéu de Couro e P3",
+    "lat": -23.51221,
+    "lon": -46.77274,
+    "bairro": "ayrosa",
+    "id": "40663.35-71",
+    "valor": 3105750
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Desenvolvimento",
+    "nome": "Reurb núcleos Chapéu de Couro e P3",
+    "lat": -23.49315,
+    "lon": -46.8003,
+    "bairro": "portal-d-oeste",
+    "id": "40663.35-71",
+    "valor": 3105750
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Esporte",
+    "nome": "Construção de Centro Comunitário Esportivo em Osasco/SP",
+    "lat": -23.57862,
+    "lon": -46.79243,
+    "bairro": "jardim-conceicao",
+    "id": "43488.35-79",
+    "valor": 1462500
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Concluída, Administrativo",
+    "nome": "Readequações elétricas no edifício-sede da Delegacia da Receita Federal do Brasil em Osasco",
+    "lat": -23.5347300170776,
+    "lon": -46.78131,
+    "bairro": "centro",
+    "id": "41590.35-05",
+    "valor": 399900
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Saúde",
+    "nome": "CONSTRUÇÃO DE UNIDADE BÁSICA DE SAÚDE",
+    "lat": -23.509679856676897,
+    "lon": -46.784055233001716,
+    "bairro": "alianca",
+    "id": "57520.35-49",
+    "valor": 6584873
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Em execução, Saúde",
+    "nome": "CONSTRUÇÃO DE UNIDADE DE ATENÇÃO ESPECIALIZADA EM SAÚDE",
+    "lat": -23.519983,
+    "lon": -46.79358,
+    "bairro": "piratininga",
+    "id": "57522.35-51",
+    "valor": 2496000
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Saúde",
+    "nome": "CONSTRUÇÃO DE UNIDADE BÁSICA DE SAÚDE",
+    "lat": -23.54134050275831,
+    "lon": -46.81234180927277,
+    "bairro": "sao-pedro",
+    "id": "57521.35-05",
+    "valor": 5291345
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Educação",
+    "nome": "Aterramento Gradil (semiintegrada revisão de projeto e obra)",
+    "lat": -23.5293300170689,
+    "lon": -46.80614,
+    "bairro": "vila-militar",
+    "id": "137196.35-24",
+    "valor": 314000
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Em execução, Educação",
+    "nome": "Reforma para implantação do campus Osasco do IFSP",
+    "lat": -23.5380000170829,
+    "lon": -46.78891,
+    "bairro": "jardim-das-flores",
+    "id": "43718.35-42",
+    "valor": 1648585.73
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Administrativo",
+    "nome": "CASA Jacarandá e CASA Osasco I",
+    "lat": -23.5889200171655,
+    "lon": -46.81211,
+    "bairro": "raposo-tavares",
+    "id": "106281.35-92",
+    "valor": 269839.25
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Administrativo",
+    "nome": "Serviço de engenharia  para instalação de sistemas e equipamentos de prevenção e combate a incêndio na DRF Osasco",
+    "lat": -23.5347300170776,
+    "lon": -46.78131,
+    "bairro": "centro",
+    "id": "105491.35-05",
+    "valor": 249350.21
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Infraestrutura Hídrica, Portos, Hidrovia",
+    "nome": "Convênio de Reassentamento Habitacional - Córrego Ribeirão Vermelho",
+    "lat": -23.5363107837301,
+    "lon": -46.7922717163086,
+    "bairro": "jardim-das-flores",
+    "id": "108439.35-55",
+    "valor": 47000000
+   },
+   {
+    "tipo": "obra",
+    "categoria": "Cadastrada, Esporte",
+    "nome": "Reforma de Centro Esportivo",
+    "lat": -23.54859,
+    "lon": -46.77929,
+    "bairro": "bela-vista",
+    "id": "137982.35-04",
+    "valor": 394000
    }
   ],
   "minimoMoradores": 500,

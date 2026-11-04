@@ -2,6 +2,7 @@
 // e calcula a média da cidade para comparação.
 import { existsSync, readFileSync } from "node:fs";
 import { reconhecedorDeBairros } from "./bairros.mjs";
+import { obrasFederais } from "./obras.mjs";
 
 const ler = (f) => (existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null);
 
@@ -49,6 +50,7 @@ export function montarTerritorio(malha, idFor) {
   const obrasTce = ler("data/transparencia/obras.json");
   const acha = reconhecedorDeBairros(malha.bairros);
   const obras = (obrasTce?.obras?.["3534401"] ?? []).map((o) => ({ ...o, bairros: acha(o.objeto) }));
+  const obrasGov = (obrasFederais()?.obras ?? []).filter((o) => o.pontos.length);
   if (!censo && !eleicao && !saude) return null;
 
   const porId = Object.fromEntries((censo?.bairros ?? []).map((b) => [b.id, b]));
@@ -149,6 +151,10 @@ export function montarTerritorio(malha, idFor) {
           obras: obras
             .filter((o) => o.bairros.includes(b.id))
             .map(({ objeto, situacao, valor, contratante, contratado, ano }) => ({ objeto, situacao, valor, contratante, contratado, ano })),
+          obrasFederais: obrasGov
+            .filter((o) => o.bairros.includes(b.id))
+            .sort((x, y) => y.valor - x.valor)
+            .map(({ id, nome, situacao, tipo, especie, valor, executor, bairros }) => ({ id, nome, situacao, tipo, especie, valor, executor, nBairros: bairros.length })),
           saude: unidades.map(({ cnes, nome, tipo, publica, turno }) => ({ cnes, nome, tipo, publica, turno })),
           escolas: esc.map(({ codigo, nome, rede, idebIniciais, idebFinais }) => ({ codigo, nome, rede, idebIniciais, idebFinais })),
         },
@@ -174,6 +180,10 @@ export function montarTerritorio(malha, idFor) {
       .map((e) => ({ ...e, ...coordEscolas?.escolas[e.codigo] }))
       .filter((e) => e.lat && e.lon)
       .map((e) => ({ tipo: "escola", categoria: e.rede, nome: e.nome, lat: e.lat, lon: e.lon, bairro: e.bairro })),
+    // Uma obra pode ter vários pontos (uma canalização, por exemplo, marca o trajeto).
+    ...obrasGov.flatMap((o) =>
+      o.pontos.map((p) => ({ tipo: "obra", categoria: [o.situacao, o.tipo].filter(Boolean).join(", "), nome: o.nome, lat: p.lat, lon: p.lon, bairro: p.bairro, id: o.id, valor: o.valor })),
+    ),
   ];
 
   // Para cada vereador com votos: quanto da votação veio de cada bairro.

@@ -6,6 +6,7 @@ import { GastosPorAno } from "@/components/dinheiro/Gastos";
 import { AnoEmAndamento, ConferirLinha } from "@/components/dinheiro/Conferencia";
 import { QuemMandou } from "@/components/dinheiro/Emendas";
 import { ConferenciasIntegridade } from "@/components/dinheiro/Integridade";
+import { NosBairros } from "@/components/dinheiro/NosBairros";
 import { GraficoLinha } from "@/components/GraficoLinha";
 import { ComoLer, Secao } from "@/components/ui";
 import { DinheiroAnimado } from "@/components/Animacoes";
@@ -240,20 +241,10 @@ export default function PaginaDinheiro() {
         </Secao>
       )}
 
-      <Secao titulo="Nos bairros" id="nos-bairros" subtitulo="Emendas, convênios e pagamentos cujo texto oficial cita o bairro, uma escola, unidade de saúde, rua ou córrego dele.">
+      <Secao titulo="Nos bairros" id="nos-bairros" subtitulo="Emendas, convênios e pagamentos cujo texto oficial cita o bairro, uma escola, unidade de saúde, rua ou córrego dele. Toque em um bairro para ver de onde veio o dinheiro e cada item.">
         {bairros.length ? (
           <>
-            <ol className="grid gap-x-6 sm:grid-cols-2 lg:grid-cols-3">
-              {bairros.slice(0, 15).map((b) => (
-                <li key={b.id} className="border-b border-slate-100">
-                  <Link href={`/mapa?indicador=dinheiroCitado&bairro=${b.id}`} className="flex items-baseline gap-3 py-2 text-sm hover:bg-slate-50">
-                    <span className="min-w-0 flex-1 text-slate-800">{b.nome}</span>
-                    <span className="shrink-0 text-xs text-slate-500">{b.dinheiro!.quantidade === 1 ? "1 item" : `${b.dinheiro!.quantidade} itens`}</span>
-                    <span className="shrink-0 font-semibold tabular-nums text-slate-900">{dinheiroCurto(b.dinheiro!.valor)}</span>
-                  </Link>
-                </li>
-              ))}
-            </ol>
+            <NosBairros bairros={bairros.map((b) => ({ id: b.id, nome: b.nome, dinheiro: b.dinheiro! }))} />
             <p className="mt-3 text-sm">
               <Link href="/mapa?indicador=dinheiroCitado" className="font-medium text-blue-800 underline">
                 Ver no mapa, bairro a bairro
@@ -272,6 +263,11 @@ export default function PaginaDinheiro() {
       </Secao>
 
       <ComoLer>
+        <li>
+          Nos contratos, escolha em Navegar por o tema, o ano, o tipo de compra ou a empresa e toque em uma linha para ver só esses contratos; os filtros se somam. Toque em um
+          contrato para ver CNPJ, prazo, valor exato e o link do portal nacional. O tema vem das palavras do que foi contratado.
+        </li>
+        <li>Nos bairros, o valor de um item que cita vários bairros entra na soma de cada um dividido igualmente; no detalhe, cada item aparece com o valor inteiro.</li>
         <li>Contratos mostram o valor combinado no contrato inteiro. Pagamentos mostram o que saiu do caixa em cada ano. Os dois números não se somam.</li>
           <li>
             Os valores são os recebidos pela Prefeitura, pelos fundos municipais e por entidades com sede em Osasco. Empresas e entidades de outras cidades

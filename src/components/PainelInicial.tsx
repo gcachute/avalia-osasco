@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { dataBR } from "@/lib/formato";
+import { Acontecendo, type Recente } from "./Acontecendo";
 import { BuscaPainel, type BairroBusca } from "./BuscaPainel";
 import { ListaVereadores, type VereadorLista } from "./ListaVereadores";
 import { MapaBairros } from "./MapaBairros";
@@ -11,8 +11,7 @@ type PropsMapa = Omit<React.ComponentProps<typeof MapaBairros>, "autor" | "aoMud
 // Painel da página inicial. Começa pela busca: o bairro escolhido abre no mapa logo abaixo e o vereador abre o perfil.
 // O mapa ocupa a largura toda; a lista de vereadores vem depois e, ao escolher um nome, filtra o mapa por ele.
 // No celular e no tablet, mapa e lista viram duas abas (o mapa primeiro); escolher um vereador volta para o mapa.
-export type Recente = { id: string; tipo: string; data: string; texto: string; autor: string | null; bairros: { id: string; nome: string }[] };
-
+// Abaixo do mapa, no computador, três colunas: vereadores, média por partido e Prefeitura (as duas últimas vêm em aoLadoDaLista).
 export function PainelInicial({
   vereadores,
   minimoSessoes,
@@ -62,29 +61,13 @@ export function PainelInicial({
         {aviso && <div className="max-w-3xl">{aviso}</div>}
       </div>
       {recentes.length > 0 && (
-        <section className="min-w-0 rounded-2xl bg-slate-50 p-5 lg:mt-4">
-          <h2 className="text-[1.6rem] leading-tight text-slate-950">Acontecendo agora</h2>
-          <p className="mt-1 text-sm text-slate-600">Os documentos mais recentes que citam algum bairro.</p>
-          <ol className="mt-3 divide-y divide-slate-200">
-            {recentes.map((r) => (
-              <li key={r.id} className="py-3">
-                <div className="text-[13px] text-slate-600">
-                  {r.bairros.map((b, i) => (
-                    <span key={b.id}>
-                      {i > 0 && ", "}
-                      <button type="button" onClick={() => (escolherBairro(b.id), irParaMapa())} className="font-bold text-blue-800 hover:underline">
-                        {b.nome}
-                      </button>
-                    </span>
-                  ))}
-                  {`, ${r.tipo.toLowerCase()}, ${dataBR(r.data)}`}
-                </div>
-                <p className="mt-1 line-clamp-3 text-[15px] text-slate-900">{r.texto}</p>
-                {r.autor && <div className="mt-0.5 text-[13px] text-slate-600">{r.autor}</div>}
-              </li>
-            ))}
-          </ol>
-        </section>
+        <Acontecendo
+          recentes={recentes}
+          aoVerBairro={(id) => {
+            escolherBairro(id);
+            irParaMapa();
+          }}
+        />
       )}
     </div>
     <div ref={topo} className="scroll-mt-20">
@@ -112,13 +95,13 @@ export function PainelInicial({
         <div className={`min-w-0 xl:block ${aba === "mapa" ? "" : "hidden"}`}>
           <MapaBairros {...mapa} autor={autor} aoMudarAutor={setAutor} bairroPedido={bairroPedido} />
         </div>
-        <div className="grid gap-x-12 gap-y-10 xl:grid-cols-2 xl:items-start">
-          <div className={`min-w-0 xl:block ${aba === "lista" ? "" : "hidden"}`}>
+        <div className="grid gap-x-10 gap-y-10 md:grid-cols-2 xl:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)_minmax(0,0.85fr)] xl:items-start">
+          <div className={`min-w-0 md:col-span-2 xl:col-span-1 xl:block ${aba === "lista" ? "" : "hidden"}`}>
             <h2 className="mb-1 hidden text-[2rem] text-slate-950 xl:block">Vereadores</h2>
             <p className="mb-3 hidden text-sm text-slate-600 xl:block">Escolha um nome para ver no mapa só os documentos e votos dele.</p>
             <ListaVereadores vereadores={vereadores} selecionado={autor} aoSelecionar={escolher} minimoSessoes={minimoSessoes} />
           </div>
-          {aoLadoDaLista && <div className="min-w-0 xl:[&>section:first-child]:mt-0">{aoLadoDaLista}</div>}
+          {aoLadoDaLista && <div className="contents md:[&>section]:mt-0">{aoLadoDaLista}</div>}
         </div>
       </div>
     </div>
