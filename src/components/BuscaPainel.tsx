@@ -88,7 +88,7 @@ export function BuscaPainel({ bairros, vereadores, aoEscolherBairro }: { bairros
           aria-activedescendant={mostrar && opcoes[ativo] ? `${lista}-${ativo}` : undefined}
           autoComplete="off"
           value={texto}
-          placeholder="Seu bairro ou um vereador"
+          placeholder="Bairro ou vereador"
           onChange={(e) => {
             setTexto(e.target.value);
             setAtivo(0);
