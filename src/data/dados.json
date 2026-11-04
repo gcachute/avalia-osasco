@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-02T09:27:21.465Z",
+ "geradoEm": "2026-11-04T15:39:01.951Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -84905,6 +84905,346 @@
     {
      "ano": 2026,
      "pessoas": 761441
+    }
+   ]
+  },
+  "contasTce": {
+   "fonte": "Tribunal de Contas do Estado de São Paulo, Contas Anuais (Contas Municipais, pesquisa por município)",
+   "url": "https://www.tce.sp.gov.br/contas-anuais",
+   "coletadoEm": "2026-11-04",
+   "anos": [
+    {
+     "exercicio": 2006,
+     "processo": "2995/026/06",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "reexame",
+       "data": "29/04/2009",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/23192.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2007,
+     "processo": "2132/026/07",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "16/06/2009",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/31329.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      },
+      {
+       "etapa": "reexame",
+       "data": "18/11/2009",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/57555.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2008,
+     "processo": "1661/026/08",
+     "final": "favorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "05/07/2010",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/83768.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      },
+      {
+       "etapa": "reexame",
+       "data": "08/06/2011",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/132732.pdf",
+       "resultado": "favorável",
+       "mudou": true
+      }
+     ]
+    },
+    {
+     "exercicio": 2009,
+     "processo": "126/026/09",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "13/09/2011",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/148780.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      },
+      {
+       "etapa": "reexame",
+       "data": "15/08/2012",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/189044.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2010,
+     "processo": "2524/026/10",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "28/08/2012",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/191084.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2011,
+     "processo": "996/026/11",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "24/09/2013",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/250487.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      },
+      {
+       "etapa": "reexame",
+       "data": "03/12/2014",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/443034.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2012,
+     "processo": "1585/026/12",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "04/11/2014",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/437364.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      },
+      {
+       "etapa": "reexame",
+       "data": "01/04/2015",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/469879.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2013,
+     "processo": "1653/026/13",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "10/11/2015",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/509293.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      },
+      {
+       "etapa": "reexame",
+       "data": "15/12/2016",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/572151.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2014,
+     "processo": "126/026/14",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "16/08/2016",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/555423.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      },
+      {
+       "etapa": "reexame",
+       "data": "27/09/2017",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/630861.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2015,
+     "processo": "2218/026/15",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "20/06/2017",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/609049.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      },
+      {
+       "etapa": "reexame",
+       "data": "28/11/2018",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/694651.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2016,
+     "processo": "4429/989/16",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "04/12/2018",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/700548.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2017,
+     "processo": "6907/989/16",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "26/11/2019",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/755574.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      },
+      {
+       "etapa": "embargos",
+       "data": "10/03/2020",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/773149.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2018,
+     "processo": "4664/989/18",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "08/12/2020",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/804067.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2019,
+     "processo": "5005/989/19",
+     "final": "favorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "07/12/2021",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/861616.pdf",
+       "resultado": "favorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2020,
+     "processo": "3353/989/20",
+     "final": null,
+     "etapas": []
+    },
+    {
+     "exercicio": 2021,
+     "processo": "7336/989/20",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "14/11/2023",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/941304.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2022,
+     "processo": "4383/989/22",
+     "final": "desfavorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "05/03/2024",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/947072.pdf",
+       "resultado": "desfavorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2023,
+     "processo": "4620/989/23",
+     "final": "favorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "06/05/2025",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/969864.pdf",
+       "resultado": "favorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2024,
+     "processo": "4521/989/24",
+     "final": "favorável",
+     "etapas": [
+      {
+       "etapa": "parecer",
+       "data": "14/04/2026",
+       "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/20114680.pdf",
+       "resultado": "favorável",
+       "mudou": false
+      }
+     ]
+    },
+    {
+     "exercicio": 2025,
+     "processo": "6719/989/24",
+     "final": null,
+     "etapas": []
+    },
+    {
+     "exercicio": 2026,
+     "processo": "3585/989/26",
+     "final": null,
+     "etapas": []
     }
    ]
   },

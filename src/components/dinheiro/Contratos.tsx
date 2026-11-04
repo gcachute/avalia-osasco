@@ -4,17 +4,16 @@ import { useEffect, useMemo, useState } from "react";
 import { Barra } from "@/components/ui";
 import { comBase, dataBR, dinheiroCurto, reaisExato } from "@/lib/formato";
 
-export type ResumoContratos = {
-  fonte: string;
-  url: string;
-  coletadoEm: string;
+type ResumoOrgao = {
   total: number;
   porAno: { ano: number; quantidade: number; valor: number }[];
   pessoasFisicas: Record<string, { quantidade: number; valor: number }>;
   fornecedores: number;
   maiores: { cnpj: string; nome: string; quantidade: number; valor: number }[];
 };
-type Contrato = { ano: number; sequencial: number; numero: string | null; tipo: string | null; cnpj: string; fornecedor: string; objeto: string; valor: number; assinatura: string; fim: string | null; url: string };
+export type ResumoContratos = { fonte: string; url: string; coletadoEm: string; orgaos: Record<string, ResumoOrgao> };
+const NOMES: Record<string, string> = { prefeitura: "Prefeitura", camara: "Câmara" };
+type Contrato = { orgao: string; ano: number; sequencial: number; numero: string | null; tipo: string | null; cnpj: string; fornecedor: string; objeto: string; valor: number; assinatura: string; fim: string | null; url: string };
 
 const POR_VEZ = 10;
 const dobra = (s: string) =>
@@ -57,7 +56,10 @@ function Lista({ contratos, total }: { contratos: Contrato[]; total: number }) {
   );
 }
 
-export function Contratos({ resumo }: { resumo: ResumoContratos }) {
+export function Contratos({ resumo: tudo }: { resumo: ResumoContratos }) {
+  const chaves = Object.keys(tudo.orgaos).sort((a, b) => Object.keys(NOMES).indexOf(a) - Object.keys(NOMES).indexOf(b));
+  const [orgao, setOrgao] = useState(chaves[0]);
+  const resumo = tudo.orgaos[orgao];
   const [busca, setBusca] = useState("");
   const [todos, setTodos] = useState<Contrato[] | null>(null);
   const [erro, setErro] = useState(false);
@@ -75,11 +77,27 @@ export function Contratos({ resumo }: { resumo: ResumoContratos }) {
   const achados = useMemo(() => {
     if (!todos) return [];
     const t = dobra(busca.trim());
-    return t ? todos.filter((c) => dobra(`${c.fornecedor} ${c.objeto} ${c.cnpj}`).includes(t)) : todos;
-  }, [todos, busca]);
+    const doOrgao = todos.filter((c) => (c.orgao ?? "prefeitura") === orgao);
+    return t ? doOrgao.filter((c) => dobra(`${c.fornecedor} ${c.objeto} ${c.cnpj}`).includes(t)) : doOrgao;
+  }, [todos, busca, orgao]);
 
   return (
     <div className="space-y-4">
+      {chaves.length > 1 && (
+        <div className="flex flex-wrap gap-2" role="group" aria-label="Órgão">
+          {chaves.map((k) => (
+            <button
+              key={k}
+              type="button"
+              aria-pressed={k === orgao}
+              onClick={() => setOrgao(k)}
+              className={`rounded-full px-3 py-1.5 text-sm font-medium ring-1 ring-inset transition ${k === orgao ? "bg-slate-900 text-white ring-slate-900" : "bg-white text-slate-700 ring-slate-200 hover:bg-slate-50"}`}
+            >
+              {NOMES[k] ?? k} <span className="tabular-nums opacity-70">{tudo.orgaos[k].total.toLocaleString("pt-BR")}</span>
+            </button>
+          ))}
+        </div>
+      )}
       <div className="rounded-2xl border border-slate-200 bg-white p-4">
         <div className="text-sm font-medium text-slate-900">Por ano de contrato</div>
         <ul className="mt-3 space-y-2.5">
@@ -119,7 +137,7 @@ export function Contratos({ resumo }: { resumo: ResumoContratos }) {
 
       <div className="rounded-2xl border border-slate-200 bg-white p-4">
         <label className="block text-sm font-medium text-slate-900" htmlFor="busca-contratos">
-          Procurar nos {resumo.total.toLocaleString("pt-BR")} contratos
+          Procurar nos {resumo.total.toLocaleString("pt-BR")} contratos {orgao === "camara" ? "da Câmara" : "da Prefeitura"}
         </label>
         <input
           id="busca-contratos"
@@ -145,10 +163,10 @@ export function Contratos({ resumo }: { resumo: ResumoContratos }) {
       </div>
       <p className="text-xs text-slate-500">
         Fonte:{" "}
-        <a href={resumo.url} className="underline">
-          {resumo.fonte}
+        <a href={tudo.url} className="underline">
+          {tudo.fonte}
         </a>
-        . O portal tem contratos da Prefeitura a partir de {resumo.porAno[0]?.ano}. Valor do contrato inteiro, que pode ser pago ao longo de mais de um ano.
+        . O portal tem contratos {orgao === "camara" ? "da Câmara" : "da Prefeitura"} a partir de {resumo.porAno[0]?.ano}. Valor do contrato inteiro, que pode ser pago ao longo de mais de um ano.
       </p>
     </div>
   );

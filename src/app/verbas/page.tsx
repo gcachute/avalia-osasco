@@ -233,7 +233,7 @@ export default function PaginaDinheiro() {
       </Secao>
 
       {contratos && (
-        <Secao titulo="Contratos da Prefeitura" id="contratos" subtitulo="Contratos publicados no portal nacional, com empresa, objeto, valor e prazo.">
+        <Secao titulo={contratos.orgaos.camara ? "Contratos da Prefeitura e da Câmara" : "Contratos da Prefeitura"} id="contratos" subtitulo="Contratos publicados no portal nacional, com empresa, objeto, valor e prazo.">
           <Contratos resumo={contratos} />
         </Secao>
       )}

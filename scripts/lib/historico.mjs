@@ -105,6 +105,7 @@ export function montarHistorico() {
   const pop = ler("data/historico/populacao.json");
   const ipca = ler("data/historico/ipca.json");
   const minimos = ler("data/siops-siope.json");
+  const tce = ler("data/tce/contas-pareceres.json");
   if (!c2010 && !ele && !pop) return null;
 
   const censo =
@@ -151,6 +152,23 @@ export function montarHistorico() {
     censo,
     eleicoes,
     populacao: pop && { fonte: pop.fonte, url: pop.url, censos: pop.censos, estimativas: pop.estimativas },
+    // Parecer prévio do TCE-SP sobre as contas de cada ano. Vale a última decisão: reexame e embargos podem manter ou mudar o parecer.
+    contasTce: tce && {
+      fonte: tce.fonte,
+      url: tce.url,
+      coletadoEm: tce.coletadoEm,
+      anos: tce.processos
+        .filter((p) => p.exercicio >= 2006)
+        .map((p) => {
+          let final = null;
+          const etapas = p.pareceres.map((x) => {
+            const antes = final;
+            if (x.resultado) final = x.resultado;
+            return { etapa: x.etapa, data: x.data, url: x.url, resultado: final, mudou: x.etapa !== "parecer" && antes !== null && antes !== final };
+          });
+          return { exercicio: p.exercicio, processo: p.processo, final, etapas };
+        }),
+    },
     // Saúde e educação de Osasco como declaradas nos sistemas próprios (SIOPS e SIOPE), ano a ano.
     minimos: minimos && {
       fontes: minimos.fontes,
