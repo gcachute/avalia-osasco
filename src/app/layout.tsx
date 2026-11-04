@@ -66,7 +66,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <NovaAba />
         <AvisoIA />
         <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur">
-          <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-2.5 md:py-3">
+          <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 md:py-3">
             <Link href="/" aria-label="De Olho em OZ, página inicial">
               <Logo />
             </Link>
@@ -80,12 +80,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           </div>
           <NavegacaoPagina />
         </header>
-        <main className="mx-auto max-w-5xl px-4 py-5 md:py-8">
+        <main className="mx-auto max-w-6xl px-4 py-5 md:py-8">
           <AtalhoComoLer />
           {children}
         </main>
         <footer className="mt-14 bg-slate-50">
-          <div className="mx-auto max-w-5xl space-y-2 px-4 py-6 text-sm text-slate-500">
+          <div className="mx-auto max-w-6xl space-y-2 px-4 py-6 text-sm text-slate-500">
             <p>
               Projeto independente, sem vínculo com a Câmara Municipal ou a Prefeitura de Osasco. Todos os números vêm de fontes oficiais (Câmara,
               Tesouro Nacional, TCE-SP, IBGE, TSE, INEP e DataSUS), listadas na{" "}

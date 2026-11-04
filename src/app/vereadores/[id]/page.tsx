@@ -244,12 +244,12 @@ export default async function PaginaVereador({ params }: Props) {
             ))}
           </p>
         </div>
-        <div className="relative grid w-full grid-cols-2 gap-x-6 gap-y-4 sm:w-auto sm:min-w-[22rem] sm:grid-cols-4">
+        <div className="relative grid w-full grid-cols-2 gap-3 sm:w-auto sm:min-w-[19rem] lg:min-w-[22rem]">
           {COEFICIENTES.map((c) => (
-            <a key={c.chave} href="#coeficientes" className="rounded-2xl bg-slate-50 px-3 py-2.5 transition hover:bg-blue-50" title={c.descricao}>
+            <a key={c.chave} href="#coeficientes" className="rounded-2xl bg-slate-50 px-4 py-3.5 transition hover:bg-blue-50" title={c.descricao}>
               <div className="text-[11px] font-medium text-slate-500">{c.nome}</div>
               <div className="mt-1">
-                {v.coeficientes[c.chave] == null ? <span className="text-sm text-slate-400">—</span> : <NotaBadge valor={nota10(v.coeficientes[c.chave])} />}
+                {v.coeficientes[c.chave] == null ? <span className="text-sm text-slate-500">sem dados</span> : <NotaBadge valor={nota10(v.coeficientes[c.chave])} grande />}
               </div>
               <div className="mt-1 text-[11px] text-slate-500">
                 {c.chave === "integridade"

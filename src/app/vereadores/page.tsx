@@ -8,45 +8,31 @@ export const metadata: Metadata = { title: "Vereadores" };
 
 const porNome = (a: Vereador, b: Vereador) => a.nome.localeCompare(b.nome, "pt-BR");
 
-// Uma linha por vereador, como numa tabela de jornal: nome e partido à esquerda, as quatro notas em colunas alinhadas.
-// No celular as notas descem para uma segunda linha, na mesma ordem do cabeçalho.
-const COLUNAS = "md:grid md:grid-cols-[minmax(0,1fr)_repeat(4,5.5rem)] md:items-center md:gap-x-4";
-
-function Cabecalho() {
-  return (
-    <div className={`hidden border-b border-slate-300 pb-2 text-xs text-slate-500 ${COLUNAS}`} aria-hidden>
-      <span>Vereador</span>
-      {COEFICIENTES.map((c) => (
-        <span key={c.chave} className="text-right">
-          {c.nome}
-        </span>
-      ))}
-    </div>
-  );
-}
-
-function Linha({ v, avaliados }: { v: Vereador; avaliados: number }) {
+// Um cartão por vereador: foto, partido e as quatro notas, com a posição de cada uma.
+function Cartao({ v, avaliados }: { v: Vereador; avaliados: number }) {
   const temNota = v.coeficientes.producao != null;
   return (
-    <li className="border-b border-slate-200">
-      <Link href={`/vereadores/${v.id}`} className={`group block py-3 ${COLUNAS}`}>
-        <div className="flex min-w-0 items-center gap-3">
-          <Avatar nome={v.nome} foto={v.foto} tamanho={40} />
+    <li>
+      <Link href={`/vereadores/${v.id}`} className="group flex h-full flex-col gap-4 rounded-2xl bg-slate-50 p-4 transition hover:bg-blue-50">
+        <div className="flex items-center gap-3">
+          <Avatar nome={v.nome} foto={v.foto} tamanho={56} />
           <div className="min-w-0">
-            <div className="truncate font-semibold text-slate-950 group-hover:underline group-hover:underline-offset-4">{v.nome}</div>
-            <div className="mt-0.5 flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
+            <div className="truncate text-[1.05rem] font-bold text-slate-950 group-hover:text-blue-800">{v.nome}</div>
+            <div className="mt-1 flex flex-wrap items-center gap-1.5 text-xs text-slate-600">
               <SeloPartido sigla={v.partido} logo={v.partidoLogo} />
               {v.perfil?.mesa && <span>{v.perfil.mesa}</span>}
             </div>
           </div>
         </div>
         {temNota ? (
-          <dl className="mt-2 grid grid-cols-4 gap-x-2 md:contents">
+          <dl className="mt-auto grid grid-cols-4 gap-2">
             {COEFICIENTES.map((c) => (
-              <div key={c.chave} className="md:text-right">
-                <dt className="text-[11px] text-slate-500 md:sr-only">{c.nome}</dt>
+              <div key={c.chave} className="min-w-0">
+                <dt className="truncate text-[11px] text-slate-600" title={c.nome}>
+                  {c.nome}
+                </dt>
                 <dd
-                  className={`font-serif text-lg leading-tight font-semibold tabular-nums ${
+                  className={`font-serif text-xl leading-tight tabular-nums ${
                     c.chave === "integridade" && (v.coeficientes.integridade ?? 1) < 0.7
                       ? (v.coeficientes.integridade ?? 1) < 0.5
                         ? "text-rose-700"
@@ -65,7 +51,7 @@ function Linha({ v, avaliados }: { v: Vereador; avaliados: number }) {
             ))}
           </dl>
         ) : (
-          <p className="mt-2 text-xs text-slate-500 md:col-span-4 md:mt-0 md:text-right">
+          <p className="mt-auto text-xs text-slate-600">
             {v.indicadores.sessoes} sessões no período: poucas para calcular as notas (mínimo {dados.metodologia.vereador.minimoSessoes}).
           </p>
         )}
@@ -81,39 +67,41 @@ export default function Vereadores() {
 
   return (
     <>
-      <h1 className="text-4xl font-semibold text-slate-950">Vereadores de Osasco</h1>
-      <p className="mt-2 max-w-3xl text-slate-600">
-        Quem está na Câmara na legislatura 2025–2028, com as notas de participação, produção e eficiência. Clique em um nome para ver o perfil
-        completo e a conta por trás de cada nota. Para ordenar e comparar, use a lista do{" "}
-        <Link href="/" className="underline">
-          painel
-        </Link>
-        .
-      </p>
-      <AvisoParcial className="mt-5" />
+      <div className="grid gap-x-10 gap-y-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,24rem)] lg:items-start">
+        <div>
+          <h1 className="text-4xl font-semibold text-slate-950">Vereadores de Osasco</h1>
+          <p className="mt-2 max-w-3xl text-slate-600">
+            Quem está na Câmara na legislatura 2025–2028, com as notas de participação, produção e eficiência. Clique em um nome para ver o perfil
+            completo e a conta por trás de cada nota. Para ordenar e comparar, use a lista do{" "}
+            <Link href="/" className="underline">
+              painel
+            </Link>
+            .
+          </p>
+        </div>
+        <AvisoParcial />
+      </div>
 
       <Secao titulo={`Em exercício (${ativos.length})`}>
-        <Cabecalho />
-        <ol>
+        <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {ativos.map((v) => (
-            <Linha key={v.id} v={v} avaliados={avaliados} />
+            <Cartao key={v.id} v={v} avaliados={avaliados} />
           ))}
         </ol>
       </Secao>
 
       {saiu.length > 0 && (
         <Secao titulo={`Passaram pela Câmara nesta legislatura (${saiu.length})`} subtitulo="Suplentes que assumiram por um tempo e vereadores que saíram.">
-          <Cabecalho />
-          <ol>
+          <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {saiu.map((v) => (
-              <Linha key={v.id} v={v} avaliados={avaliados} />
+              <Cartao key={v.id} v={v} avaliados={avaliados} />
             ))}
           </ol>
         </Secao>
       )}
 
       <ComoLer>
-        <li>Cada linha mostra a nota de 0 a 10 do vereador em cada coeficiente e, logo abaixo, a posição dele entre os vereadores avaliados.</li>
+        <li>Cada cartão mostra a nota de 0 a 10 do vereador em cada coeficiente e, logo abaixo, a posição dele entre os vereadores avaliados.</li>
         <li>Quem tem menos de {dados.metodologia.vereador.minimoSessoes} sessões no período aparece sem nota.</li>
         <li>Em exercício lista quem está no cargo. Passaram pela Câmara lista suplentes que assumiram por um tempo e vereadores que saíram.</li>
         <li>

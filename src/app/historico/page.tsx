@@ -80,12 +80,16 @@ export default function Evolucao() {
 
   return (
     <article>
-      <h1 className="text-4xl font-semibold text-slate-950">Osasco no tempo</h1>
-      <p className="mt-2 max-w-3xl text-slate-600">
-        Os mesmos dados oficiais do site em anos anteriores, para comparar com o passado: Censos de {anosCenso.join(", ").replace(/, (\d+)$/, " e $1") || "2010 e 2022"}, eleições desde
-        2016, contas da Prefeitura desde 2017 e despesas da Câmara. Cada bairro também tem o seu histórico no mapa (aba Histórico).
-      </p>
-      <AvisoParcial className="mt-4" />
+      <div className="grid gap-x-10 gap-y-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,24rem)] lg:items-start">
+        <div>
+          <h1 className="text-4xl font-semibold text-slate-950">Osasco no tempo</h1>
+          <p className="mt-2 max-w-3xl text-slate-600">
+            Os mesmos dados oficiais do site em anos anteriores, para comparar com o passado: Censos de {anosCenso.join(", ").replace(/, (\d+)$/, " e $1") || "2010 e 2022"}, eleições desde
+            2016, contas da Prefeitura desde 2017 e despesas da Câmara. Cada bairro também tem o seu histórico no mapa (aba Histórico).
+          </p>
+        </div>
+        <AvisoParcial />
+      </div>
 
       {gestoes.length > 0 && (
         <p className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">

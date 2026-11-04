@@ -95,7 +95,7 @@ const ancora = (t: string) =>
 
 export function Secao({ titulo, children, id, subtitulo }: { titulo: string; children: React.ReactNode; id?: string; subtitulo?: React.ReactNode }) {
   return (
-    <section id={id ?? ancora(titulo)} className="revelar mt-14 scroll-mt-28 md:mt-20">
+    <section id={id ?? ancora(titulo)} className="revelar mt-12 scroll-mt-28 md:mt-14">
       <h2 className="text-[1.75rem] leading-tight text-slate-950 md:text-[2rem]">{titulo}</h2>
       {subtitulo && <p className="mt-1.5 max-w-3xl text-sm text-slate-600">{subtitulo}</p>}
       <div className="mt-4">{children}</div>

@@ -180,10 +180,11 @@ export default function PaginaPrefeito() {
             </p>
           )}
         </div>
-        <p className="max-w-xs text-sm text-slate-500">Cada pilar abaixo tem a sua nota, com os dados e a conta por trás.</p>
+        <div className="w-full lg:w-[26rem]">
+          <AvisoParcial alvo="prefeito" />
+        </div>
       </header>
-
-      <AvisoParcial alvo="prefeito" className="mt-4" />
+      <p className="mt-4 text-sm text-slate-600">Cada pilar abaixo tem a sua nota, com os dados e a conta por trás.</p>
 
       {PILARES_PREFEITO.some((x) => p.pilares[x.chave]?.nota == null) && (
         <p className="mt-6 text-sm text-slate-600 border-t border-slate-300 pt-3">

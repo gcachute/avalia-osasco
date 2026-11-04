@@ -47,7 +47,7 @@ export function NavegacaoPagina() {
     <>
       {secoes.length > 0 && (
         <nav aria-label="Seções desta página" className="border-t border-slate-100">
-          <div ref={faixa} className="mx-auto flex max-w-5xl gap-4 overflow-x-auto px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div ref={faixa} className="mx-auto flex max-w-6xl gap-4 overflow-x-auto px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {secoes.map((s) => (
               <a
                 key={s.id}

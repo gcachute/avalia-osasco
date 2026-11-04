@@ -29,7 +29,7 @@ export function AvisoIA() {
   return (
     <Abre aberto={ver}>
       <div role="alert" className="bg-slate-100 text-slate-900">
-        <div className="mx-auto flex max-w-5xl items-center gap-3 px-4 py-2 text-[13px] leading-snug">
+        <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-2 text-[13px] leading-snug">
           <span className="h-2 w-2 shrink-0 rounded-full bg-[#cc423b]" aria-hidden />
           <p className="min-w-0 flex-1">
             <span className="font-bold">Este site pode conter erros.</span> A coleta das informações é feita com inteligência artificial (IA). Confira a fonte de
