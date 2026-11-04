@@ -223,9 +223,9 @@ export function ListaPunidos({ punidos }: { punidos: Integridade["punidos"] }) {
       ) : (
         <p className="py-4 text-center text-sm text-slate-500">Nada encontrado com esses filtros.</p>
       )}
-      {!todos && lista.length > VISIVEIS && (
-        <button type="button" onClick={() => setTodos(true)} className="w-full rounded-lg py-2 text-sm font-medium text-blue-800 ring-1 ring-slate-200 transition hover:bg-slate-50">
-          Ver mais {lista.length - VISIVEIS}
+      {lista.length > VISIVEIS && (
+        <button type="button" onClick={() => setTodos(!todos)} className="w-full rounded-lg py-2 text-sm font-medium text-blue-800 ring-1 ring-slate-200 transition hover:bg-slate-50">
+          {todos ? "Ver menos" : `Ver mais ${lista.length - VISIVEIS}`}
         </button>
       )}
     </div>

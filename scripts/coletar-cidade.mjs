@@ -251,3 +251,29 @@ if (SO.includes("obras")) {
   if (vazias >= 2) rmSync(PROGRESSO, { force: true });
   console.log(`Obras federais em Osasco: ${obras.length}`);
 }
+
+// ---------- Onde fica cada obra (Obrasgov, geometria) ----------
+// Lê o ponto que o próprio cadastro guarda para cada obra e acha o bairro em que ele cai. Obras sem ponto, ou com o ponto
+// fora de Osasco (o cadastro às vezes usa o endereço do órgão executor), ficam sem bairro e fora do mapa.
+if (SO.includes("obras") || SO.includes("obrasPontos")) {
+  const arquivo = `${PASTA}/obras-federais.json`;
+  const atual = JSON.parse(readFileSync(arquivo, "utf8"));
+  const localiza = await localizadorDeBairros();
+  for (const o of atual.obras) {
+    let geo = [];
+    try {
+      geo = await (await baixar(`https://api.obrasgov.gestao.gov.br/obrasgov/api/geometria?idUnico=${encodeURIComponent(o.id)}`, { tentativas: 2 })).json();
+    } catch {
+      console.log(`Obras: sem resposta para a localização de ${o.id}`);
+    }
+    o.pontos = (Array.isArray(geo) ? geo : [])
+      .map((g) => /POINT \(([-\d.]+) ([-\d.]+)\)/.exec(g.geometriaWkt ?? ""))
+      .filter(Boolean)
+      .map((m) => ({ lon: Number(m[1]), lat: Number(m[2]) }))
+      .map((p) => ({ ...p, bairro: localiza(p.lon, p.lat) }))
+      .filter((p) => p.bairro);
+    await sleep(1000);
+  }
+  grava("obras-federais.json", { ...atual, coletadoEm: undefined });
+  console.log(`Obras com ponto em Osasco: ${atual.obras.filter((o) => o.pontos.length).length} de ${atual.obras.length}`);
+}

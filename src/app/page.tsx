@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { CustoMandato, DespesasCamara, FolhaCamara } from "@/components/Camara";
 import type { VereadorLista } from "@/components/ListaVereadores";
+import type { Recente } from "@/components/Acontecendo";
 import { PainelInicial } from "@/components/PainelInicial";
 import { GraficoPartidos, type MediaPartido } from "@/components/Partidos";
 import { AvisoParcial, Avatar, ComoLer, NotaBadge, Secao, SeloPartido } from "@/components/ui";
 import type { Coeficiente } from "@/lib/dados";
-import { COEFICIENTES, PILARES_PREFEITO, dados, dataBR, nota10 } from "@/lib/dados";
+import { COEFICIENTES, PILARES_PREFEITO, dados, dataBR, nomeSessao, nota10 } from "@/lib/dados";
 import { dadosDoMapaCompleto } from "@/lib/mapaGeo";
 
 const PASSOS = [
@@ -68,20 +69,33 @@ export default async function Home() {
       .sort((a, b) => b.media - a.media);
 
   const documentos = mapa?.itens.length ?? 0;
-  // Os quatro documentos mais recentes que citam algum bairro, com o nome de cada bairro.
+  // Os documentos mais recentes que citam algum bairro, com autoria, sessão e bairros para o detalhe de cada um.
   const nomeBairro = new Map((mapa?.bairros ?? []).map((b) => [b.id, b.nome]));
-  const recentes = [...(mapa?.itens ?? [])]
+  const docsBairro = new Map<string, number>();
+  for (const i of mapa?.itens ?? []) for (const b of i.bairros) docsBairro.set(b, (docsBairro.get(b) ?? 0) + 1);
+  const porSessao = new Map(sessoes.map((s) => [s.id, s]));
+  const idsVereadores = new Set(vereadores.map((v) => v.id));
+  const recentes: Recente[] = [...(mapa?.itens ?? [])]
     .filter((i) => i.bairros.length)
     .sort((a, b) => b.data.localeCompare(a.data))
-    .slice(0, 4)
-    .map((i) => ({
-      id: i.id,
-      tipo: i.tipo,
-      data: i.data,
-      texto: i.texto,
-      autor: i.autorNome,
-      bairros: i.bairros.map((id) => ({ id, nome: nomeBairro.get(id) ?? id })),
-    }));
+    .slice(0, 12)
+    .map((i) => {
+      const s = porSessao.get(i.sessao);
+      const ids = i.autores ?? [i.autor];
+      const nomes = i.autoresNomes ?? [i.autorNome ?? i.autor];
+      return {
+        id: i.id,
+        tipo: i.tipo,
+        // O número só quando o código é o da própria Câmara (MOC-283/2026); os do Executivo são internos.
+        numero: /^[A-Z]+-(\d+\/\d{4})$/.exec(i.id)?.[1] ?? null,
+        origem: i.origem,
+        data: i.data,
+        texto: i.texto,
+        autores: ids.map((id, k) => ({ nome: nomes[k] ?? id, href: id === "prefeito" ? "/prefeito" : idsVereadores.has(id) ? `/vereadores/${id}` : null })),
+        sessao: s ? { rotulo: `${nomeSessao(s)}, ${dataBR(s.data)}`, url: s.url } : null,
+        bairros: i.bairros.map((id) => ({ id, nome: nomeBairro.get(id) ?? id, documentos: docsBairro.get(id) ?? 0 })),
+      };
+    });
   const bairrosCitados = mapa?.bairros.filter((b) => b.citacoes > 0).length ?? 0;
 
   return (
@@ -116,31 +130,29 @@ export default async function Home() {
                 </Secao>
 
                 <Secao titulo="Prefeitura">
-                  <Link href="/prefeito" className="group block overflow-hidden transition hover:border-blue-300 border-t border-slate-300">
-                    <div className="flex items-center gap-4 p-5">
+                  <Link href="/prefeito" className="group block overflow-hidden rounded-2xl bg-slate-50 transition hover:bg-blue-50">
+                    <div className="flex items-center gap-4 p-4">
                       <Avatar nome={prefeito.nome} foto={prefeito.foto} tamanho={72} />
                       <div className="min-w-0 flex-1">
-                        <div className="text-lg font-semibold text-slate-900 group-hover:text-blue-800">{prefeito.nome}</div>
-                        <div className="mt-0.5 flex flex-wrap items-center gap-2 text-sm text-slate-500">
+                        <div className="text-lg font-bold text-slate-950 group-hover:text-blue-800">{prefeito.nome}</div>
+                        <div className="mt-0.5 flex flex-wrap items-center gap-2 text-sm text-slate-600">
                           <SeloPartido sigla={prefeito.partido} logo={prefeito.partidoLogo} />
-                          {prefeito.cargo} · {prefeito.mandato}
+                          {prefeito.cargo}, {prefeito.mandato}
                         </div>
                       </div>
                     </div>
-                    <ul className="divide-y divide-slate-100 border-t border-slate-100">
+                    <ul className="divide-y divide-slate-200 border-t border-slate-200">
                       {PILARES_PREFEITO.map((pl) => {
                         const n = prefeito.pilares[pl.chave]?.nota;
                         return (
-                          <li key={pl.chave} className="flex items-center justify-between gap-3 px-5 py-2.5 text-sm">
-                            <span className="text-slate-700">
-                              {pl.chave} · {pl.nome}
-                            </span>
-                            {n == null ? <span className="text-xs text-slate-400">sem dados do mandato</span> : <NotaBadge valor={nota10(n)} />}
+                          <li key={pl.chave} className="flex items-center justify-between gap-3 px-4 py-2.5 text-sm">
+                            <span className="text-slate-700">{pl.nome}</span>
+                            {n == null ? <span className="text-xs text-slate-500">sem dados do mandato</span> : <NotaBadge valor={nota10(n)} />}
                           </li>
                         );
                       })}
                     </ul>
-                    <p className="border-t border-slate-100 px-5 py-2 text-xs text-slate-500">Cada pilar com os dados e a conta na página do prefeito.</p>
+                    <p className="border-t border-slate-200 px-4 py-2.5 text-xs text-slate-600">Cada pilar com os dados e a conta na página do prefeito.</p>
                   </Link>
                 </Secao>
               </>
@@ -210,7 +222,8 @@ export default async function Home() {
               : undefined
           }
         >
-          <div className="grid gap-3 lg:grid-cols-2">
+          {/* Três colunas no computador; no tablet, duas; no celular, uma embaixo da outra. */}
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {camara.custoMandato && <CustoMandato custo={camara.custoMandato} />}
             {camara.despesas && <DespesasCamara despesas={camara.despesas} />}
             {camara.folha && <FolhaCamara folha={camara.folha} />}
@@ -220,7 +233,8 @@ export default async function Home() {
 
       <ComoLer>
         <li>O painel começa pela busca: o bairro escolhido abre no mapa, com os documentos e o retrato dele, e o vereador escolhido abre o perfil. Os bairros sugeridos são os mais citados nos documentos.</li>
-        <li>Abaixo do mapa fica a lista de vereadores; no celular, os botões Mapa e Vereadores trocam entre os dois.</li>
+        <li>Em Acontecendo agora, toque em um documento para ver o texto inteiro, a autoria, a sessão em que foi lido e os bairros citados.</li>
+        <li>Abaixo do mapa ficam a lista de vereadores, a média por partido e a Prefeitura; no celular, os botões Mapa e Vereadores trocam entre o mapa e a lista.</li>
         <li>No mapa, escolha uma camada e toque em um bairro para abrir os dados dele.</li>
         <li>Na lista, cada vereador tem uma nota de 0 a 10 por coeficiente. Dá para ordenar por qualquer coeficiente ou montar um critério próprio, dando peso a cada um.</li>
         <li>A média por partido leva em conta as sessões de cada vereador, inclui quem já saiu do cargo e deixa Integridade de fora.</li>

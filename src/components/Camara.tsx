@@ -7,11 +7,11 @@ const mi = (v: number) => `R$ ${num(v / 1e6, 1)} mi`;
 export function CustoMandato({ custo, compacto = false }: { custo: NonNullable<Camara["custoMandato"]>; compacto?: boolean }) {
   const linhas = [{ cargo: "Vereador (subsídio)", quantidade: 1, vencimento: custo.subsidio }, ...custo.gabinete];
   return (
-    <div className="border-t border-slate-300 pt-3">
+    <div className="flex flex-col rounded-2xl bg-slate-50 p-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <div>
-          <div className="text-sm text-slate-500">Por mês, em salários</div>
-          <div className="text-3xl font-semibold tabular-nums text-slate-900">{milReais(custo.totalMensal)}</div>
+          <div className="text-sm text-slate-600">Por mês, em salários</div>
+          <div className="mt-0.5 font-serif text-[1.85rem] leading-tight tabular-nums text-slate-950">{milReais(custo.totalMensal)}</div>
         </div>
         <div className="text-right text-sm text-slate-500">
           ≈ {mi(custo.totalMensal * 12)} por ano
@@ -20,20 +20,20 @@ export function CustoMandato({ custo, compacto = false }: { custo: NonNullable<C
       </div>
       {!compacto && (
         <table className="mt-4 w-full text-sm">
-          <tbody className="divide-y divide-slate-100">
+          <tbody className="divide-y divide-slate-200">
             {linhas.map((l) => (
               <tr key={l.cargo}>
                 <td className="py-1.5 text-slate-700">
-                  {l.quantidade > 1 && <span className="tabular-nums text-slate-400">{l.quantidade} × </span>}
+                  {l.quantidade > 1 && <span className="tabular-nums text-slate-500">{l.quantidade} × </span>}
                   {l.cargo}
                 </td>
-                <td className="py-1.5 text-right tabular-nums text-slate-600">{reais(l.vencimento * l.quantidade)}</td>
+                <td className="py-1.5 pl-3 text-right whitespace-nowrap tabular-nums text-slate-600">{reais(l.vencimento * l.quantidade)}</td>
               </tr>
             ))}
           </tbody>
         </table>
       )}
-      <p className="mt-3 text-xs text-slate-500">
+      <p className="mt-auto pt-3 text-xs text-slate-500">
         A lei dá a mesma estrutura a todos os {num(21, 0)} gabinetes, por isso o custo não entra na nota. São vencimentos, sem encargos, 13º e
         benefícios. Fonte:{" "}
         <a href={custo.url} className="underline">
@@ -52,15 +52,15 @@ export function DespesasCamara({ despesas }: { despesas: NonNullable<Camara["des
   const [ano, d] = [...anos].reverse().find(([, x]) => x.meses === 12) ?? anos.at(-1)!;
   const max = d.maioresFornecedores[0]?.pago || 1;
   return (
-    <div className="border-t border-slate-300 pt-3">
+    <div className="flex flex-col rounded-2xl bg-slate-50 p-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <div>
-          <div className="text-sm text-slate-500">Despesa paga pela Câmara em {ano}</div>
-          <div className="text-3xl font-semibold tabular-nums text-slate-900">{mi(d.pago)}</div>
+          <div className="text-sm text-slate-600">Despesa paga pela Câmara em {ano}</div>
+          <div className="mt-0.5 font-serif text-[1.85rem] leading-tight tabular-nums text-slate-950">{mi(d.pago)}</div>
         </div>
         <div className="text-right text-sm text-slate-500">≈ {mi(d.pago / 21)} por vereador</div>
       </div>
-      <div className="mt-4 text-xs font-medium text-slate-400">Para quem foi o dinheiro</div>
+      <div className="mt-4 text-xs font-bold text-slate-600">Para quem foi o dinheiro</div>
       <ul className="mt-2 space-y-1.5 text-sm">
         {d.maioresFornecedores.map((f) => (
           <li key={f.nome} className="grid grid-cols-[minmax(0,1fr)_5.5rem] items-center gap-3">
@@ -68,7 +68,7 @@ export function DespesasCamara({ despesas }: { despesas: NonNullable<Camara["des
               <div className="truncate text-slate-700" title={f.nome}>
                 {/c[aâ]mara municipal/i.test(f.nome) ? "Folha de pessoal (repasse à conta da própria Câmara)" : razaoSocial(f.nome)}
               </div>
-              <div className="mt-0.5 h-1.5 overflow-hidden rounded-sm bg-slate-100">
+              <div className="mt-0.5 h-1.5 overflow-hidden rounded-sm bg-slate-200">
                 <div className="barra-anim h-full rounded-full bg-blue-600" style={{ width: `${(f.pago / max) * 100}%` }} />
               </div>
             </div>
@@ -76,7 +76,7 @@ export function DespesasCamara({ despesas }: { despesas: NonNullable<Camara["des
           </li>
         ))}
       </ul>
-      <p className="mt-3 text-xs text-slate-500">
+      <p className="mt-auto pt-3 text-xs text-slate-500">
         Valores efetivamente pagos no ano. Não aparecem diárias ou ressarcimentos pagos diretamente a vereadores nesses
         dados; a Ouvidoria Legislativa confirmou, em resposta a pedido de acesso à informação (27/10/2026), que a Câmara não paga diárias,
         auxílios ou verbas de gabinete aos vereadores. Fonte:{" "}
@@ -129,38 +129,38 @@ export function FolhaCamara({ folha }: { folha: NonNullable<Camara["folha"]> }) 
   // Um chefe de gabinete por vereador: é o melhor número de gabinetes que o relatório permite contar.
   const gabinetes = Math.max(m.vereadores.pessoas, m.gabinetes.porCargo.find((c) => c.cargo === "CHEFE DE GABINETE")?.pessoas ?? 0) || 21;
   return (
-    <div className="border-t border-slate-300 pt-3">
+    <div className="flex flex-col rounded-2xl bg-slate-50 p-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <div>
-          <div className="text-sm text-slate-500">Folha paga em {rotuloMesFolha(mes)} (bruto)</div>
-          <div className="text-3xl font-semibold tabular-nums text-slate-900">{m.todos ? mi(m.todos.bruto) : mi(m.gabinetes.bruto + m.vereadores.bruto)}</div>
+          <div className="text-sm text-slate-600">Folha paga em {rotuloMesFolha(mes)} (bruto)</div>
+          <div className="mt-0.5 font-serif text-[1.85rem] leading-tight tabular-nums text-slate-950">{m.todos ? mi(m.todos.bruto) : mi(m.gabinetes.bruto + m.vereadores.bruto)}</div>
         </div>
         <div className="text-right text-sm text-slate-500">{m.todos ? `${num(m.todos.pessoas, 0)} pessoas na Câmara` : ""}</div>
       </div>
       <table className="mt-4 w-full text-sm">
-        <tbody className="divide-y divide-slate-100">
+        <tbody className="divide-y divide-slate-200">
           <tr>
             <td className="py-1.5 text-slate-700">
-              <span className="tabular-nums text-slate-400">{m.vereadores.pessoas} × </span>Vereadores
+              <span className="tabular-nums text-slate-500">{m.vereadores.pessoas} × </span>Vereadores
             </td>
-            <td className="py-1.5 text-right tabular-nums text-slate-600">{reais(m.vereadores.bruto)}</td>
+            <td className="py-1.5 pl-3 text-right whitespace-nowrap tabular-nums text-slate-600">{reais(m.vereadores.bruto)}</td>
           </tr>
           {m.gabinetes.porCargo.map((c) => (
             <tr key={c.cargo}>
               <td className="py-1.5 text-slate-700">
-                <span className="tabular-nums text-slate-400">{c.pessoas} × </span>
+                <span className="tabular-nums text-slate-500">{c.pessoas} × </span>
                 {titulo(c.cargo)}
               </td>
-              <td className="py-1.5 text-right tabular-nums text-slate-600">{reais(c.bruto)}</td>
+              <td className="py-1.5 pl-3 text-right whitespace-nowrap tabular-nums text-slate-600">{reais(c.bruto)}</td>
             </tr>
           ))}
           <tr className="font-medium">
             <td className="py-1.5 text-slate-900">Média por gabinete ({gabinetes} gabinetes, só assessores)</td>
-            <td className="py-1.5 text-right tabular-nums text-slate-900">{reais(m.gabinetes.bruto / gabinetes)}</td>
+            <td className="py-1.5 pl-3 text-right whitespace-nowrap tabular-nums text-slate-900">{reais(m.gabinetes.bruto / gabinetes)}</td>
           </tr>
         </tbody>
       </table>
-      <p className="mt-3 text-xs text-slate-500">
+      <p className="mt-auto pt-3 text-xs text-slate-500">
         Valores brutos da folha normal, servidores ativos. O relatório oficial não informa o gabinete de cada assessor, por isso a conta por gabinete é uma
         média. Nomes de assessores não são publicados aqui. Fonte:{" "}
         <a href={folha.url} className="underline">

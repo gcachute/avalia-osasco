@@ -2,7 +2,7 @@
 import type { BairroMapa, CampoCenso, GrupoCrime, Historico, Mapa } from "@/lib/dados";
 import { dinheiroCurto, num } from "@/lib/formato";
 
-export type Tema = "politica" | "dinheiro" | "eleicao" | "pessoas" | "infra" | "servicos" | "seguranca";
+export type Tema = "politica" | "dinheiro" | "obras" | "eleicao" | "pessoas" | "infra" | "servicos" | "seguranca";
 
 export type Contexto = {
   contagem: Record<string, { total: number; camara: number; prefeitura: number }>;
@@ -30,6 +30,7 @@ export type Indicador = {
 export const TEMAS: { chave: Tema; nome: string }[] = [
   { chave: "politica", nome: "Política" },
   { chave: "dinheiro", nome: "Verbas de fora" },
+  { chave: "obras", nome: "Obras" },
   { chave: "eleicao", nome: "Eleições" },
   { chave: "pessoas", nome: "Renda e moradores" },
   { chave: "infra", nome: "Rua e saneamento" },
@@ -195,6 +196,33 @@ export const INDICADORES: Indicador[] = [
       const v = (b.escolas ?? []).map((e) => e.idebIniciais).filter((x): x is number => x != null);
       return v.length ? v.reduce((a, x) => a + x, 0) / v.length : null;
     },
+  },
+  {
+    chave: "obrasFederais",
+    tema: "obras",
+    nome: "Obras no cadastro federal",
+    dica: "Obras do cadastro federal (Obrasgov) com ponto dentro do bairro. O ponto é o que o próprio cadastro guarda para cada obra",
+    formato: "inteiro",
+    escala: "zero",
+    valor: (b) => b.obrasFederais?.length ?? 0,
+  },
+  {
+    chave: "obrasValor",
+    tema: "obras",
+    nome: "Investimento previsto",
+    dica: "Soma do investimento previsto das obras do cadastro federal no bairro. Quando a obra tem pontos em vários bairros, o valor é dividido igualmente entre eles",
+    formato: "dinheiro",
+    escala: "zero",
+    valor: (b) => (b.obrasFederais ?? []).reduce((s, o) => s + o.valor / (o.nBairros || 1), 0),
+  },
+  {
+    chave: "obrasTce",
+    tema: "obras",
+    nome: "Obras acompanhadas pelo TCE-SP",
+    dica: "Obras públicas do Painel de Obras do Tribunal de Contas cujo texto cita o bairro",
+    formato: "inteiro",
+    escala: "zero",
+    valor: (b) => b.obras?.length ?? 0,
   },
 ];
 

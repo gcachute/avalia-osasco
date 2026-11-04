@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ContasTce, type MandatoTce } from "@/components/ContasTce";
 import { GraficoLinha } from "@/components/GraficoLinha";
 import { AvisoParcial, ComoLer, Secao } from "@/components/ui";
 import { Halter, legendaHalter } from "@/components/mapa/Halter";
@@ -76,7 +77,12 @@ export default function Evolucao() {
   const mesNum = (m: string) => Number(m.slice(0, 4)) * 12 + Number(m.slice(5, 7)) - 1;
   const tce = h?.contasTce;
   const gestaoDe = (ano: number) => gestoes.find((g) => ano >= g.inicio && ano <= g.fim);
-  const ETAPA = { parecer: "Parecer", reexame: "Reexame", embargos: "Embargos" } as const;
+  // Mandatos de quatro anos (2005–2008, 2009–2012...) cortados aos anos que o Tribunal mostra; o nome do prefeito vem das eleições do site.
+  const anosTce = (tce?.anos ?? []).map((a) => a.exercicio);
+  const mandatosTce: MandatoTce[] = [];
+  if (anosTce.length)
+    for (let ini = 2005 + Math.floor((Math.min(...anosTce) - 2005) / 4) * 4; ini <= Math.max(...anosTce); ini += 4)
+      mandatosTce.push({ inicio: Math.max(ini, Math.min(...anosTce)), fim: Math.min(ini + 3, Math.max(...anosTce)), prefeito: gestaoDe(ini)?.nome ?? null });
 
   return (
     <article>
@@ -344,37 +350,27 @@ export default function Evolucao() {
       )}
 
       {tce && tce.anos.length > 0 && (
-        <Secao titulo="Contas da Prefeitura no Tribunal de Contas" subtitulo="Parecer prévio do TCE-SP sobre as contas de cada ano, da primeira decisão aos pedidos de reexame.">
-          <ul className="divide-y divide-slate-100 border-t border-slate-300 pt-3">
-            {[...tce.anos]
-              .sort((a, b) => b.exercicio - a.exercicio)
-              .map((a) => {
-                const g = gestaoDe(a.exercicio);
-                return (
-                  <li key={a.processo} className="py-3 text-sm sm:flex sm:items-baseline sm:gap-6">
-                    <div className="flex items-baseline gap-3 sm:w-72 sm:shrink-0">
-                      <span className="w-11 shrink-0 font-semibold tabular-nums text-slate-900">{a.exercicio}</span>
-                      <span className={a.final ? "font-medium text-slate-900" : "text-slate-500"}>{a.final ? `Parecer ${a.final}` : "Sem parecer na consulta do Tribunal"}</span>
-                    </div>
-                    <div className="mt-1 pl-14 text-xs text-slate-500 sm:mt-0 sm:pl-0">
-                      {a.etapas.map((e, i) => (
-                        <span key={e.url}>
-                          {i > 0 && " · "}
-                          <a href={e.url} className="underline hover:text-slate-800">
-                            {ETAPA[e.etapa]}
-                            {e.data ? ` de ${e.data}` : ""}
-                          </a>
-                          {e.etapa === "parecer" ? `: ${e.resultado ?? "resultado não lido"}` : e.mudou ? `: mudou para ${e.resultado}` : ": manteve"}
-                        </span>
-                      ))}
-                      {a.etapas.length > 0 && " · "}
-                      processo {a.processo}
-                      {g ? ` · gestão ${g.nome}` : ""}
-                    </div>
-                  </li>
-                );
-              })}
-          </ul>
+        <Secao titulo="Contas da Prefeitura no Tribunal de Contas" id="contas-tce" subtitulo="Todo ano a Prefeitura presta contas ao Tribunal de Contas do Estado (TCE-SP), que dá um parecer sobre elas antes de a Câmara votar.">
+          <ol className="grid gap-3 text-sm sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["A Prefeitura entrega as contas", "No ano seguinte, a Prefeitura manda ao Tribunal as contas do ano que terminou."],
+              ["O Tribunal dá o parecer prévio", "Os conselheiros analisam as contas e dão parecer favorável ou desfavorável à aprovação."],
+              ["A Prefeitura pode recorrer", "Com o pedido de reexame ou os embargos, o Tribunal decide de novo e pode manter ou mudar o parecer."],
+              ["A Câmara julga", "Quem aprova ou rejeita as contas é a Câmara Municipal. O parecer só deixa de valer com o voto de dois terços dos vereadores."],
+            ].map(([t, d], k) => (
+              <li key={t} className="rounded-2xl bg-slate-50 p-4">
+                <div className="font-serif text-2xl leading-none text-slate-400">{k + 1}</div>
+                <div className="mt-2 font-bold text-slate-950">{t}</div>
+                <p className="mt-1 text-slate-600">{d}</p>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-3 text-xs text-slate-500">
+            A regra dos dois terços está na Constituição Federal (artigo 31, parágrafo 2º). As votações da Câmara sobre essas contas não estão neste site.
+          </p>
+          <div className="mt-6">
+            <ContasTce anos={tce.anos} mandatos={mandatosTce} />
+          </div>
           <p className="mt-3 text-xs text-slate-500">
             Fonte:{" "}
             <a href={tce.url} className="underline">
@@ -446,8 +442,9 @@ export default function Evolucao() {
         <li>Nas contas da Prefeitura entram os anos fechados, como foram entregues aos órgãos oficiais. Os valores são os da época, sem correção pela inflação.</li>
         <li>As médias dos Censos são ponderadas por moradores ou domicílios.</li>
         <li>
-          O parecer do Tribunal de Contas é prévio: quem julga as contas da Prefeitura é a Câmara Municipal. Quando a Prefeitura pede reexame ou apresenta embargos, a linha mostra cada
-          decisão, e o resultado do ano é o da última. Ano sem parecer é aquele para o qual a consulta pública do Tribunal não mostra decisão.
+          O parecer do Tribunal de Contas é prévio: quem julga as contas da Prefeitura é a Câmara Municipal. Toque em um ano para ver cada decisão do Tribunal sobre aquelas contas,
+          com o link do documento. Quando há pedido de reexame ou embargos, o resultado do ano é o da última decisão. Ano sem parecer é aquele para o qual a consulta pública do
+          Tribunal não mostra decisão.
         </li>
         <li>
           O histórico de cada bairro está no{" "}

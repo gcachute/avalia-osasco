@@ -1,5 +1,7 @@
 // Junta o que veio de coletar-cidade, coletar-contratos e coletar-campanhas nos arquivos que o site lê.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { obrasFederais } from "./obras.mjs";
+import { temaDoContrato } from "./temas-contrato.mjs";
 
 const ler = (p) => (existsSync(p) ? JSON.parse(readFileSync(p, "utf8")) : null);
 const r2 = (v) => Math.round(v * 100) / 100;
@@ -77,19 +79,41 @@ function transito(t) {
 }
 
 // Um resumo por órgão (Prefeitura e Câmara), cada um com seus anos e suas empresas.
-function resumoContratos(c) {
+function resumoContratos(c, nomesBairros) {
   if (!c) return null;
   // Coletas antigas guardavam as pessoas físicas só por ano, todas da Prefeitura.
   const pf = Object.keys(c.pessoasFisicas ?? {}).every((k) => /^\d{4}$/.test(k)) ? { prefeitura: c.pessoasFisicas ?? {} } : c.pessoasFisicas;
   const orgaos = {};
-  for (const orgao of [...new Set(c.contratos.map((x) => x.orgao))]) orgaos[orgao] = resumoOrgao(c.contratos.filter((x) => x.orgao === orgao), pf[orgao] ?? {});
+  for (const orgao of [...new Set(c.contratos.map((x) => x.orgao))]) orgaos[orgao] = resumoOrgao(c.contratos.filter((x) => x.orgao === orgao), pf[orgao] ?? {}, c.coletadoEm, nomesBairros);
   return { fonte: c.fonte, url: c.url, coletadoEm: c.coletadoEm, orgaos };
 }
 
-function resumoOrgao(contratos, pessoasFisicas) {
+// Em vigor: contratos cujo prazo final não passou na data da coleta.
+// Tema e bairros já vêm em cada contrato (ver montarCidade). No bairro, o contrato que cita vários bairros entra com o
+// valor dividido igualmente entre eles; o que não cita bairro nenhum fica fora dessa conta.
+function resumoOrgao(contratos, pessoasFisicas, coletadoEm, nomesBairros = {}) {
   const porAno = {};
+  const porTema = {};
+  const porBairro = {};
+  const porCategoria = {};
   const fornecedores = {};
+  const vigentes = { quantidade: 0, valor: 0 };
   for (const x of contratos) {
+    const k = (porCategoria[x.categoria ?? "Não informado"] ??= { categoria: x.categoria ?? "Não informado", quantidade: 0, valor: 0 });
+    k.quantidade++;
+    k.valor += x.valor ?? 0;
+    const t = (porTema[x.tema] ??= { tema: x.tema, quantidade: 0, valor: 0 });
+    t.quantidade++;
+    t.valor += x.valor ?? 0;
+    for (const b of x.bairros ?? []) {
+      const q = (porBairro[b] ??= { id: b, nome: nomesBairros[b] ?? b, quantidade: 0, valor: 0 });
+      q.quantidade++;
+      q.valor += (x.valor ?? 0) / x.bairros.length;
+    }
+    if (x.fim && x.fim >= coletadoEm) {
+      vigentes.quantidade++;
+      vigentes.valor += x.valor ?? 0;
+    }
     const a = (porAno[x.ano] ??= { ano: x.ano, quantidade: 0, valor: 0 });
     a.quantidade++;
     a.valor += x.valor ?? 0;
@@ -99,6 +123,17 @@ function resumoOrgao(contratos, pessoasFisicas) {
   }
   return {
     total: contratos.length,
+    valor: r2(contratos.reduce((s, x) => s + (x.valor ?? 0), 0)),
+    vigentes: { quantidade: vigentes.quantidade, valor: r2(vigentes.valor) },
+    porCategoria: Object.values(porCategoria)
+      .sort((a, b) => b.valor - a.valor)
+      .map((k) => ({ ...k, valor: r2(k.valor) })),
+    porTema: Object.values(porTema)
+      .sort((a, b) => b.valor - a.valor)
+      .map((k) => ({ ...k, valor: r2(k.valor) })),
+    porBairro: Object.values(porBairro)
+      .sort((a, b) => b.valor - a.valor)
+      .map((k) => ({ ...k, valor: r2(k.valor) })),
     porAno: Object.values(porAno)
       .sort((a, b) => a.ano - b.ano)
       .map((a) => ({ ...a, valor: r2(a.valor) })),
@@ -124,12 +159,14 @@ function candidatoDe(v, candidatos) {
   return parecidos.length === 1 ? parecidos[0] : null;
 }
 
-export function montarCidade({ vereadores }) {
+export function montarCidade({ vereadores, acha = null, nomesBairros = {} }) {
   const contratos = ler("data/dinheiro/contratos.json");
+  // Tema (pelas palavras do objeto) e bairros citados no objeto de cada contrato.
+  if (contratos) for (const x of contratos.contratos) Object.assign(x, { tema: temaDoContrato(x.objeto), bairros: acha ? acha(x.objeto) : [] });
   const dengue = ler("data/cidade/dengue.json");
   const empresas = ler("data/cidade/empresas.json");
   const bolsa = ler("data/cidade/bolsa-familia.json");
-  const obras = ler("data/cidade/obras-federais.json");
+  const obras = obrasFederais();
   writeFileSync(
     "src/data/cidade.json",
     JSON.stringify({
@@ -140,13 +177,13 @@ export function montarCidade({ vereadores }) {
       bolsa,
       obras,
       riscos: ler("data/cidade/riscos.json"),
-      contratos: resumoContratos(contratos),
+      contratos: resumoContratos(contratos, nomesBairros),
     }),
   );
   // A lista completa de contratos é aberta só quando alguém busca, para não pesar a página.
   if (contratos) {
     mkdirSync("public/dados", { recursive: true });
-    const lista = contratos.contratos.map(({ ano, sequencial, numero, tipo, categoria, cnpj, fornecedor, objeto, valor, assinatura, fim, orgao, url }) => ({ ano, sequencial, numero, tipo, categoria, cnpj, fornecedor, objeto, valor, assinatura, fim, orgao, url }));
+    const lista = contratos.contratos.map(({ ano, sequencial, numero, tipo, categoria, cnpj, fornecedor, objeto, valor, assinatura, fim, orgao, url, tema, bairros }) => ({ ano, sequencial, numero, tipo, categoria, cnpj, fornecedor, objeto, valor, assinatura, fim, orgao, url, tema, bairros }));
     writeFileSync("public/dados/contratos.json", JSON.stringify(lista.sort((a, b) => (b.valor ?? 0) - (a.valor ?? 0))));
   }
 

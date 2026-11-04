@@ -94,8 +94,13 @@ export default async function PaginaMapa() {
             endereço de ocorrência é mostrado.
           </li>
           <li>
-            <b>Favelas e comunidades urbanas:</b> áreas delimitadas pelo IBGE no Censo 2022. <b>Obras:</b> contratos acompanhados pelo Painel de
-            Obras do TCE-SP cujo objeto cita o bairro.
+            <b>Favelas e comunidades urbanas:</b> áreas delimitadas pelo IBGE no Censo 2022.
+          </li>
+          <li>
+            <b>Obras:</b> a aba Obras mostra as obras do cadastro federal (Obrasgov), cada uma no ponto que o próprio cadastro guarda, e as obras acompanhadas pelo
+            Painel de Obras do TCE-SP cujo objeto cita o bairro. Toque num triângulo para abrir a obra no painel do bairro. Um ponto repetido em 5 ou mais obras
+            diferentes é um endereço genérico e fica fora do mapa. No investimento previsto, a obra com pontos em vários bairros entra com o valor dividido igualmente
+            entre eles; no painel do bairro, cada obra aparece com o valor inteiro.
           </li>
           <li>Indicações (pedidos de asfalto, poda, iluminação) trazem rua e bairro, mas a Câmara só as publica numa busca com captcha. Quando elas entrarem, o mapa fica bem mais completo.</li>
           <li>

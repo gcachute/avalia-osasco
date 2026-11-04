@@ -118,6 +118,8 @@ export type BairroMapa = {
   seguranca?: Record<GrupoCrime, { n: number; por10mil: number | null }> | null;
   transito?: { ano: number; sinistros: number; mortos: number; graves: number; leves: number } | null;
   obras?: { objeto: string; situacao: string; valor: number; contratante: string; contratado: string; ano: number }[];
+  // Obras do cadastro federal (Obrasgov) com ponto dentro do bairro.
+  obrasFederais?: { id: string; nome: string; situacao: string | null; tipo: string | null; especie: string | null; valor: number; executor: string | null; nBairros: number }[];
   saude?: { cnes: string; nome: string; tipo: string; publica: boolean; turno: string | null }[];
   escolas?: { codigo: string; nome: string; rede: string; idebIniciais: number | null; idebFinais: number | null }[];
   // Dinheiro federal e estadual cujo texto cita o bairro: valor (dividido entre os bairros citados) e os maiores itens.
@@ -126,7 +128,7 @@ export type BairroMapa = {
 
 export type GrupoCrime = "mortes" | "roubos" | "furtos" | "violencia" | "sexual" | "transito" | "drogas";
 
-export type PontoMapa = { tipo: "saude" | "votacao" | "escola"; categoria: string; nome: string; lat: number; lon: number; bairro: string | null; eleitores?: number };
+export type PontoMapa = { tipo: "saude" | "votacao" | "escola" | "obra"; categoria: string; nome: string; lat: number; lon: number; bairro: string | null; eleitores?: number; id?: string; valor?: number };
 
 export type Mapa = {
   fonte: string;

@@ -588,7 +588,7 @@ if (malha) {
   // Dinheiro federal e estadual: a página própria vai num arquivo separado; o mapa recebe o que cita cada bairro.
   const dinheiro = montarDinheiro({ acha, achaEquipamento, achaLugares: reconhecedorDeLugares(), vereadores });
   if (dinheiro) writeFileSync("src/data/dinheiro.json", JSON.stringify(dinheiro.pagina));
-  montarCidade({ vereadores });
+  montarCidade({ vereadores, acha, nomesBairros: Object.fromEntries(malha.bairros.map((b) => [b.id, b.nome])) });
   mapa = {
     fonte: malha.fonte,
     bairros: malha.bairros.map((b) => ({

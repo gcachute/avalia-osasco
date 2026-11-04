@@ -23,6 +23,13 @@
      "origem": "Estadual",
      "valor": 632088.08
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.774,
+     "lat": -23.5527000171067,
+     "bairro": "umuarama"
+    }
    ]
   },
   {
@@ -44,6 +51,13 @@
     {
      "origem": "Federal",
      "valor": 2905000
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78433,
+     "lat": -23.49943,
+     "bairro": "baronesa"
     }
    ]
   },
@@ -67,6 +81,63 @@
      "origem": "Federal",
      "valor": 50579913.93
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.81674,
+     "lat": -23.53762,
+     "bairro": "sao-pedro"
+    },
+    {
+     "lon": -46.80789,
+     "lat": -23.54375,
+     "bairro": "jardim-roberto"
+    },
+    {
+     "lon": -46.80823,
+     "lat": -23.54454,
+     "bairro": "jardim-roberto"
+    },
+    {
+     "lon": -46.80998,
+     "lat": -23.5396,
+     "bairro": "cidade-das-flores"
+    },
+    {
+     "lon": -46.81518,
+     "lat": -23.53514,
+     "bairro": "sao-pedro"
+    },
+    {
+     "lon": -46.81591,
+     "lat": -23.54338,
+     "bairro": "sao-pedro"
+    },
+    {
+     "lon": -46.81228,
+     "lat": -23.54113,
+     "bairro": "sao-pedro"
+    },
+    {
+     "lon": -46.81014,
+     "lat": -23.5407,
+     "bairro": "sao-pedro"
+    },
+    {
+     "lon": -46.80864,
+     "lat": -23.54318,
+     "bairro": "jardim-roberto"
+    },
+    {
+     "lon": -46.80658,
+     "lat": -23.54184,
+     "bairro": "cidade-das-flores"
+    },
+    {
+     "lon": -46.80761,
+     "lat": -23.54397,
+     "bairro": "jardim-roberto"
+    }
    ]
   },
   {
@@ -88,6 +159,13 @@
     {
      "origem": "Federal",
      "valor": 2197686.5
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.77306,
+     "lat": -23.54058,
+     "bairro": "centro"
     }
    ]
   },
@@ -111,6 +189,13 @@
      "origem": "Federal",
      "valor": 14300
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.80562,
+     "lat": -23.5319300170731,
+     "bairro": "vila-militar"
+    }
    ]
   },
   {
@@ -132,6 +217,18 @@
     {
      "origem": "Federal",
      "valor": 407135.39
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.77827,
+     "lat": -23.54609,
+     "bairro": "bela-vista"
+    },
+    {
+     "lon": -46.77783,
+     "lat": -23.545,
+     "bairro": "bela-vista"
     }
    ]
   },
@@ -155,6 +252,23 @@
      "origem": "Estadual",
      "valor": 500000
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.80299,
+     "lat": -23.54317,
+     "bairro": "jardim-roberto"
+    },
+    {
+     "lon": -46.80353,
+     "lat": -23.54307,
+     "bairro": "jardim-roberto"
+    },
+    {
+     "lon": -46.80454,
+     "lat": -23.54342,
+     "bairro": "jardim-roberto"
+    }
    ]
   },
   {
@@ -176,6 +290,13 @@
     {
      "origem": "Estadual",
      "valor": 1314456.61
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.79155,
+     "lat": -23.5347800170777,
+     "bairro": "jardim-das-flores"
     }
    ]
   },
@@ -199,6 +320,13 @@
      "origem": "Federal",
      "valor": 1934356
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78402,
+     "lat": -23.57173,
+     "bairro": "city-bussocaba"
+    }
    ]
   },
   {
@@ -220,6 +348,13 @@
     {
      "origem": "Estadual",
      "valor": 632088.08
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.774,
+     "lat": -23.5527000171067,
+     "bairro": "umuarama"
     }
    ]
   },
@@ -243,6 +378,13 @@
      "origem": "Federal",
      "valor": 29803474.06
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78881,
+     "lat": -23.5336100170758,
+     "bairro": "jardim-das-flores"
+    }
    ]
   },
   {
@@ -264,6 +406,13 @@
     {
      "origem": "Federal",
      "valor": 5131678.22
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.8087493864219,
+     "lat": -23.5195870723824,
+     "bairro": "setor-militar"
     }
    ]
   },
@@ -287,6 +436,13 @@
      "origem": "Estadual",
      "valor": 149981.08
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.774,
+     "lat": -23.5527000171067,
+     "bairro": "umuarama"
+    }
    ]
   },
   {
@@ -308,6 +464,23 @@
     {
      "origem": "Federal",
      "valor": 42545556.38
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.80178,
+     "lat": -23.48781,
+     "bairro": "bonanca"
+    },
+    {
+     "lon": -46.80353,
+     "lat": -23.48743,
+     "bairro": "bonanca"
+    },
+    {
+     "lon": -46.79216,
+     "lat": -23.48707,
+     "bairro": "bonanca"
     }
    ]
   },
@@ -331,6 +504,23 @@
      "origem": "Federal",
      "valor": 3105750
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.8049,
+     "lat": -23.49094,
+     "bairro": "portal-d-oeste"
+    },
+    {
+     "lon": -46.77274,
+     "lat": -23.51221,
+     "bairro": "ayrosa"
+    },
+    {
+     "lon": -46.8003,
+     "lat": -23.49315,
+     "bairro": "portal-d-oeste"
+    }
    ]
   },
   {
@@ -352,6 +542,13 @@
     {
      "origem": "Federal",
      "valor": 1462500
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.79243,
+     "lat": -23.57862,
+     "bairro": "jardim-conceicao"
     }
    ]
   },
@@ -375,6 +572,13 @@
      "origem": "Federal",
      "valor": 399900
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78131,
+     "lat": -23.5347300170776,
+     "bairro": "centro"
+    }
    ]
   },
   {
@@ -396,6 +600,13 @@
     {
      "origem": "Federal",
      "valor": 6584873
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.784055233001716,
+     "lat": -23.509679856676897,
+     "bairro": "alianca"
     }
    ]
   },
@@ -419,6 +630,13 @@
      "origem": "Federal",
      "valor": 2496000
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.79358,
+     "lat": -23.519983,
+     "bairro": "piratininga"
+    }
    ]
   },
   {
@@ -440,6 +658,13 @@
     {
      "origem": "Federal",
      "valor": 5291345
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.81234180927277,
+     "lat": -23.54134050275831,
+     "bairro": "sao-pedro"
     }
    ]
   },
@@ -463,7 +688,8 @@
      "origem": "Federal",
      "valor": 7956917.59
     }
-   ]
+   ],
+   "pontos": []
   },
   {
    "id": "98887.35-70",
@@ -484,6 +710,13 @@
     {
      "origem": "Federal",
      "valor": 114124134.54
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78881,
+     "lat": -23.53361,
+     "bairro": "jardim-das-flores"
     }
    ]
   },
@@ -507,6 +740,13 @@
      "origem": "Federal",
      "valor": 314000
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.80614,
+     "lat": -23.5293300170689,
+     "bairro": "vila-militar"
+    }
    ]
   },
   {
@@ -529,7 +769,8 @@
      "origem": "Federal",
      "valor": 40437343.26
     }
-   ]
+   ],
+   "pontos": []
   },
   {
    "id": "100406.35-74",
@@ -550,6 +791,13 @@
     {
      "origem": "Federal",
      "valor": 1085000
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78881,
+     "lat": -23.53361,
+     "bairro": "jardim-das-flores"
     }
    ]
   },
@@ -573,6 +821,13 @@
      "origem": "Federal",
      "valor": 12507556.46
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78881,
+     "lat": -23.53361,
+     "bairro": "jardim-das-flores"
+    }
    ]
   },
   {
@@ -594,6 +849,13 @@
     {
      "origem": "Federal",
      "valor": 12532758.09
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78881,
+     "lat": -23.53361,
+     "bairro": "jardim-das-flores"
     }
    ]
   },
@@ -617,6 +879,13 @@
      "origem": "Federal",
      "valor": 23555574.19
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78881,
+     "lat": -23.53361,
+     "bairro": "jardim-das-flores"
+    }
    ]
   },
   {
@@ -638,6 +907,13 @@
     {
      "origem": "Federal",
      "valor": 31338491.51
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78881,
+     "lat": -23.53361,
+     "bairro": "jardim-das-flores"
     }
    ]
   },
@@ -661,6 +937,13 @@
      "origem": "Federal",
      "valor": 70277864.67
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78881,
+     "lat": -23.53361,
+     "bairro": "jardim-das-flores"
+    }
    ]
   },
   {
@@ -682,6 +965,13 @@
     {
      "origem": "Federal",
      "valor": 1648585.73
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78891,
+     "lat": -23.5380000170829,
+     "bairro": "jardim-das-flores"
     }
    ]
   },
@@ -705,6 +995,13 @@
      "origem": "Federal",
      "valor": 45225118.61
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78881,
+     "lat": -23.53361,
+     "bairro": "jardim-das-flores"
+    }
    ]
   },
   {
@@ -726,6 +1023,13 @@
     {
      "origem": "Empréstimo",
      "valor": 24018998.61
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78881,
+     "lat": -23.53361,
+     "bairro": "jardim-das-flores"
     }
    ]
   },
@@ -749,6 +1053,13 @@
      "origem": "Estadual",
      "valor": 269839.25
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.81211,
+     "lat": -23.5889200171655,
+     "bairro": "raposo-tavares"
+    }
    ]
   },
   {
@@ -770,6 +1081,13 @@
     {
      "origem": "Federal",
      "valor": 249350.21
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78131,
+     "lat": -23.5347300170776,
+     "bairro": "centro"
     }
    ]
   },
@@ -793,6 +1111,13 @@
      "origem": "Estadual",
      "valor": 47000000
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.7922717163086,
+     "lat": -23.5363107837301,
+     "bairro": "jardim-das-flores"
+    }
    ]
   },
   {
@@ -815,6 +1140,13 @@
      "origem": "Federal",
      "valor": 63644119.54
     }
+   ],
+   "pontos": [
+    {
+     "lon": -46.78881,
+     "lat": -23.53361,
+     "bairro": "jardim-das-flores"
+    }
    ]
   },
   {
@@ -836,6 +1168,13 @@
     {
      "origem": "Federal",
      "valor": 394000
+    }
+   ],
+   "pontos": [
+    {
+     "lon": -46.77929,
+     "lat": -23.54859,
+     "bairro": "bela-vista"
     }
    ]
   }
