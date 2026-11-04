@@ -170,7 +170,7 @@ export function MapaPessoa({
                 key={m.chave}
                 onClick={() => setChave(m.chave)}
                 aria-pressed={m.chave === modo.chave}
-                className={`flex-1 px-2.5 py-1 text-xs font-medium transition ${m.chave === modo.chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-900"}`}
+                className={`flex-1 px-2.5 py-1 text-xs font-medium transition ${m.chave === modo.chave ? "font-semibold text-slate-950 shadow-[inset_0_-3px_0_var(--color-blue-700)]" : "text-slate-600 hover:text-slate-900"}`}
               >
                 {m.nome}
               </button>

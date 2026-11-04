@@ -122,7 +122,7 @@ export function ListaVereadores({
               key={c.chave}
               onClick={() => setCriterio(c.chave)}
               aria-pressed={criterio === c.chave}
-              className={`px-1 py-1 text-[11px] font-medium transition ${criterio === c.chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-900"}`}
+              className={`px-1 py-1 text-[11px] font-medium transition ${criterio === c.chave ? "font-semibold text-slate-950 shadow-[inset_0_-3px_0_var(--color-blue-700)]" : "text-slate-600 hover:text-slate-900"}`}
             >
               {c.nome}
             </button>

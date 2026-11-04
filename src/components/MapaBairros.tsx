@@ -576,7 +576,7 @@ export function MapaBairros({
                 role="tab"
                 aria-selected={tema === t.chave}
                 onClick={() => escolherTema(t.chave)}
-                className={`py-2 text-sm transition ${tema === t.chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-950"}`}
+                className={`py-2 text-sm transition ${tema === t.chave ? "font-semibold text-slate-950 shadow-[inset_0_-3px_0_var(--color-blue-700)]" : "text-slate-600 hover:text-slate-950"}`}
               >
                 {t.nome}
               </button>
@@ -606,7 +606,7 @@ export function MapaBairros({
                       key={p}
                       onClick={() => setPeriodo(p)}
                       aria-pressed={ativo}
-                      className={`px-2.5 py-1 font-semibold tabular-nums transition ${ativo ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-900"}`}
+                      className={`px-2.5 py-1 font-semibold tabular-nums transition ${ativo ? "font-semibold text-slate-950 shadow-[inset_0_-3px_0_var(--color-blue-700)]" : "text-slate-600 hover:text-slate-900"}`}
                     >
                       {rotuloPeriodo(p)}
                     </button>
@@ -625,7 +625,7 @@ export function MapaBairros({
                       key={o.chave}
                       onClick={() => setOrigem(o.chave)}
                       aria-pressed={origem === o.chave}
-                      className={`flex items-center gap-1.5 px-2 py-1 text-[11px] font-medium transition ${origem === o.chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-900"}`}
+                      className={`flex items-center gap-1.5 px-2 py-1 text-[11px] font-medium transition ${origem === o.chave ? "font-semibold text-slate-950 shadow-[inset_0_-3px_0_var(--color-blue-700)]" : "text-slate-600 hover:text-slate-900"}`}
                     >
                       {o.chave !== "todos" && <span className="h-2 w-2 rounded-full" style={{ background: corOrigem(o.chave) }} />}
                       {o.nome}
@@ -736,9 +736,9 @@ export function MapaBairros({
                 {realce && porId.get(realce) && (
                   <path
                     d={porId.get(realce)!.d}
-                    fill="none"
+                    fill={realce === selecionado ? "var(--mapa-escolhido)" : "none"}
                     stroke="var(--mapa-destaque)"
-                    strokeWidth={2.5}
+                    strokeWidth={realce === selecionado ? 3 : 2.5}
                     strokeLinejoin="round"
                     vectorEffect="non-scaling-stroke"
                     pointerEvents="none"

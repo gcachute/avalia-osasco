@@ -14,7 +14,7 @@ const COLUNAS = "md:grid md:grid-cols-[minmax(0,1fr)_repeat(4,5.5rem)] md:items-
 
 function Cabecalho() {
   return (
-    <div className={`hidden border-b border-slate-900 pb-2 text-xs text-slate-500 ${COLUNAS}`} aria-hidden>
+    <div className={`hidden border-b border-slate-300 pb-2 text-xs text-slate-500 ${COLUNAS}`} aria-hidden>
       <span>Vereador</span>
       {COEFICIENTES.map((c) => (
         <span key={c.chave} className="text-right">

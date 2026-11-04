@@ -63,15 +63,19 @@ export function BuscaPainel({ bairros, vereadores, aoEscolherBairro }: { bairros
         onSubmit={(e) => {
           e.preventDefault();
           if (opcoes[ativo]) abrir(opcoes[ativo]);
+          else campo.current?.focus();
         }}
-        className="flex items-stretch border-b-2 border-slate-950 focus-within:border-blue-700"
+        className="flex items-center gap-3 rounded-2xl border-[1.5px] border-slate-300 bg-white py-2 pr-2 pl-3.5 focus-within:border-blue-700 focus-within:outline-3 focus-within:outline-blue-100"
       >
         <label htmlFor={`${lista}-campo`} className="sr-only">
           Buscar bairro ou vereador
         </label>
-        <svg viewBox="0 0 24 24" className="h-6 w-6 shrink-0 self-center text-slate-500" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden>
-          <circle cx="11" cy="11" r="7" />
-          <path d="m20 20-3.5-3.5" />
+        {/* O ícone é o olho do logo, com a mesma íris laranja. */}
+        <svg viewBox="0 0 30 30" className="h-7 w-7 shrink-0" aria-hidden>
+          <circle cx="15" cy="15" r="11" fill="none" stroke="currentColor" strokeWidth="3.2" className="text-slate-900" />
+          <circle cx="16.6" cy="14" r="5.4" fill="#f26419" />
+          <circle cx="17.4" cy="13.4" r="2.3" fill="#0e1a3d" />
+          <circle cx="18.5" cy="12" r="1" fill="#fff" />
         </svg>
         <input
           ref={campo}
@@ -84,7 +88,7 @@ export function BuscaPainel({ bairros, vereadores, aoEscolherBairro }: { bairros
           aria-activedescendant={mostrar && opcoes[ativo] ? `${lista}-${ativo}` : undefined}
           autoComplete="off"
           value={texto}
-          placeholder="Digite seu bairro ou o nome de um vereador"
+          placeholder="Seu bairro ou um vereador"
           onChange={(e) => {
             setTexto(e.target.value);
             setAtivo(0);
@@ -102,15 +106,15 @@ export function BuscaPainel({ bairros, vereadores, aoEscolherBairro }: { bairros
               setAtivo((a) => Math.max(a - 1, 0));
             } else if (e.key === "Escape") setAberto(false);
           }}
-          className="min-w-0 flex-1 bg-transparent px-3 py-3 text-lg text-slate-950 outline-none placeholder:text-slate-400 sm:text-xl"
+          className="min-w-0 flex-1 bg-transparent py-2 text-[1.05rem] text-slate-950 outline-none placeholder:text-slate-500 sm:text-lg"
         />
-        <button type="submit" className="shrink-0 px-2 text-sm font-semibold text-slate-950 hover:text-blue-800 disabled:text-slate-400" disabled={!opcoes.length}>
+        <button type="submit" className="shrink-0 rounded-xl bg-blue-700 px-5 py-2.5 text-base font-bold text-white transition hover:bg-blue-800">
           Ver
         </button>
       </form>
 
       {mostrar && (
-        <ul id={lista} role="listbox" className="absolute inset-x-0 top-full z-30 mt-1 max-h-[22rem] overflow-y-auto border border-slate-300 bg-white py-1 shadow-lg">
+        <ul id={lista} role="listbox" className="absolute inset-x-0 top-full z-30 mt-2 max-h-[22rem] overflow-y-auto rounded-2xl border border-slate-200 bg-white py-1.5 shadow-lg">
           {opcoes.length === 0 && <li className="px-4 py-3 text-sm text-slate-500">Nenhum bairro ou vereador com esse nome.</li>}
           {opcoes.map((o, i) => (
             <li
@@ -155,14 +159,14 @@ export function BuscaPainel({ bairros, vereadores, aoEscolherBairro }: { bairros
         </ul>
       )}
 
-      <p className="mt-3 flex flex-wrap items-baseline justify-center gap-x-3 gap-y-1 text-sm text-slate-500">
+      <p className="mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm text-slate-600">
         <span>Mais citados nos documentos:</span>
         {sugestoes.map((b) => (
           <button
             key={b.id}
             type="button"
             onClick={() => abrir({ tipo: "bairro", b })}
-            className="font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900"
+            className="py-1.5 font-bold text-blue-800 underline decoration-blue-200 decoration-2 underline-offset-4 hover:decoration-blue-700"
           >
             {b.nome}
           </button>

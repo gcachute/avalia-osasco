@@ -40,7 +40,7 @@ export default async function PaginaMapa() {
               { t: `Ocorrências policiais em ${mapa.anoSeguranca ?? ""}`, v: Math.round(mapa.bairros.reduce((a, b) => a + Object.values(b.seguranca ?? {}).reduce((x, g) => x + g.n, 0), 0)).toLocaleString("pt-BR") },
             ].map((c, i) => (
               // No celular ficam só os quatro primeiros, para o mapa aparecer logo.
-              <div key={c.t} className={`border-t border-slate-900 pt-2.5 ${i >= 4 ? "max-sm:hidden" : ""}`}>
+              <div key={c.t} className={`rounded-2xl bg-slate-50 px-4 py-3 ${i >= 4 ? "max-sm:hidden" : ""}`}>
                 <dt className="text-xs text-slate-500">{c.t}</dt>
                 <dd className="mt-0.5 font-serif text-[1.75rem] leading-tight font-semibold tabular-nums text-slate-950">{c.v}</dd>
               </div>

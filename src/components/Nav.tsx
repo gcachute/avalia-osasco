@@ -20,7 +20,7 @@ export function Nav({ itens }: { itens: ItemNav[] }) {
           key={n.href}
           href={n.href}
           aria-current={ativoEm(caminho, n.href) ? "page" : undefined}
-          className={`shrink-0 px-2.5 py-2 transition ${ativoEm(caminho, n.href) ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-950"}`}
+          className={`shrink-0 px-2.5 py-2 transition ${ativoEm(caminho, n.href) ? "font-semibold text-slate-950 shadow-[inset_0_-3px_0_var(--color-blue-700)]" : "text-slate-600 hover:text-slate-950"}`}
         >
           {n.nome}
         </Link>

@@ -163,7 +163,7 @@ export default function PaginaPrefeito() {
 
   return (
     <>
-      <header className="relative flex flex-wrap items-center gap-6 border-b border-slate-900 pb-6">
+      <header className="relative flex flex-wrap items-center gap-6 pb-2">
         <Retrato nome={p.nome} foto={p.foto} className="relative w-32 shrink-0 rounded-2xl shadow-sm ring-1 ring-slate-200 sm:w-40" />
         <div className="min-w-0 flex-1 basis-48">
           <h1 className="text-4xl font-semibold text-balance text-slate-950">{p.nome}</h1>
@@ -199,7 +199,7 @@ export default function PaginaPrefeito() {
         {PILARES_PREFEITO.map((pl) => {
           const n = nota10(p.pilares[pl.chave]?.nota);
           return (
-            <a key={pl.chave} href={pl.pronto ? `#pilar-${pl.chave}` : undefined} className={`border-t pt-3 ${pl.pronto ? "border-slate-900 hover:border-blue-700" : "border-dashed border-slate-400"}`}>
+            <a key={pl.chave} href={pl.pronto ? `#pilar-${pl.chave}` : undefined} className={`rounded-2xl p-4 transition ${pl.pronto ? "bg-slate-50 hover:bg-blue-50" : "border border-dashed border-slate-300"}`}>
               <div className="text-xs font-medium text-slate-400">
                 Pilar {pl.chave}
               </div>

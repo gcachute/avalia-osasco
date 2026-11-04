@@ -74,14 +74,14 @@ export default async function Home() {
     <>
       {/* Painel em largura total, como um mapa de apuração: lista à esquerda, mapa ao centro, detalhes à direita. */}
       <div className="relative left-1/2 -ml-[min(840px,calc(50vw-1rem))] w-[min(1680px,calc(100vw-2rem))] space-y-4">
-        <section className="mx-auto max-w-3xl pt-4 text-center sm:pt-10">
-          <h1 className="text-4xl font-semibold text-balance text-slate-950 sm:text-6xl">Seu bairro na política de Osasco</h1>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 sm:text-lg">
-            Os documentos da Câmara e da Prefeitura que citam cada um dos {mapa?.bairros.length ?? 0} bairros, ao lado do retrato oficial de quem mora lá.
+        <section className="max-w-3xl pt-4 sm:pt-8">
+          <h1 className="text-[2.6rem] text-balance text-slate-950 sm:text-[4.2rem]">Seu bairro na política de Osasco</h1>
+          <p className="mt-4 max-w-2xl text-base text-slate-600 sm:text-lg">
+            Veja os documentos da Câmara e da Prefeitura que citam o seu bairro, quem os assinou e o retrato oficial de quem mora lá.
           </p>
-          <p className="mt-3 text-sm text-slate-500 tabular-nums">
-            {sessoes.length} sessões · {ativos.length} vereadores em exercício · {documentos} documentos com bairro · {bairrosCitados} de {mapa?.bairros.length ?? 0} bairros
-            citados · dados até {dataBR(periodo.fim)}
+          <p className="mt-2 max-w-2xl text-sm text-slate-500 tabular-nums">
+            Até {dataBR(periodo.fim)}, foram {sessoes.length} sessões e {documentos} documentos que citam bairros; {bairrosCitados} dos {mapa?.bairros.length ?? 0} bairros aparecem
+            em algum deles. A Câmara tem {ativos.length} vereadores em exercício.
           </p>
         </section>
 

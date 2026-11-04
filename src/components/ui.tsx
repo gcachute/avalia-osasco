@@ -56,7 +56,7 @@ const PONTO: Record<string, string> = { Bom: "bg-emerald-600", Regular: "bg-ambe
 export function NotaBadge({ valor, grande = false }: { valor: number | null; grande?: boolean }) {
   const f = faixa(valor);
   return (
-    <span title={f.texto} className={`inline-flex items-center gap-1.5 font-semibold tabular-nums ${valor == null ? "text-slate-500" : "text-slate-950"} ${grande ? "font-serif text-4xl" : "text-base"}`}>
+    <span title={f.texto} className={`inline-flex items-center gap-1.5 font-serif tabular-nums ${valor == null ? "text-slate-500" : "text-slate-950"} ${grande ? "text-4xl" : "text-[1.05rem]"}`}>
       <span className={`shrink-0 rounded-full ${PONTO[f.texto]} ${grande ? "h-3 w-3" : "h-2 w-2"}`} aria-hidden />
       {nota(valor)}
       {grande && valor != null && <span className="font-sans text-sm font-medium text-slate-500">/ 10</span>}
@@ -74,9 +74,9 @@ export function Barra({ valor, classe = "bg-blue-700", altura = "h-2" }: { valor
 
 export function Cartao({ titulo, valor, detalhe }: { titulo: string; valor: React.ReactNode; detalhe?: React.ReactNode }) {
   return (
-    <div className="revelar border-t border-slate-900 pt-3 pb-1">
+    <div className="revelar rounded-2xl bg-slate-50 px-4 py-3.5">
       <div className="text-sm text-slate-600">{titulo}</div>
-      <div className="mt-1 font-serif text-[1.75rem] leading-tight font-semibold tabular-nums text-slate-950">{valor}</div>
+      <div className="mt-1 font-serif text-[1.85rem] leading-tight tabular-nums text-slate-950">{valor}</div>
       {detalhe && <div className="mt-1 text-xs text-slate-500">{detalhe}</div>}
     </div>
   );
@@ -95,8 +95,8 @@ const ancora = (t: string) =>
 
 export function Secao({ titulo, children, id, subtitulo }: { titulo: string; children: React.ReactNode; id?: string; subtitulo?: React.ReactNode }) {
   return (
-    <section id={id ?? ancora(titulo)} className="revelar mt-12 scroll-mt-28 border-t border-slate-900 pt-4 md:mt-16">
-      <h2 className="text-2xl font-semibold text-slate-950 md:text-[1.75rem]">{titulo}</h2>
+    <section id={id ?? ancora(titulo)} className="revelar mt-14 scroll-mt-28 md:mt-20">
+      <h2 className="text-[1.75rem] leading-tight text-slate-950 md:text-[2rem]">{titulo}</h2>
       {subtitulo && <p className="mt-1.5 max-w-3xl text-sm text-slate-600">{subtitulo}</p>}
       <div className="mt-4">{children}</div>
     </section>

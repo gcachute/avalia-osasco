@@ -176,7 +176,7 @@ export default async function PaginaVereador({ params }: Props) {
         </Link>
       </div>
 
-      <header className="relative mt-4 flex flex-wrap items-start gap-6 border-b border-slate-900 pb-6">
+      <header className="relative mt-4 flex flex-wrap items-start gap-6 pb-2">
         <figure className="relative w-24 shrink-0 sm:w-44">
           <Retrato nome={v.nome} foto={v.foto} className="rounded-2xl shadow-sm ring-1 ring-slate-200" />
           {v.foto && v.fotoFonte && <figcaption className="mt-1 text-[10px] leading-tight text-slate-400">Foto: {v.fotoFonte}</figcaption>}
@@ -246,7 +246,7 @@ export default async function PaginaVereador({ params }: Props) {
         </div>
         <div className="relative grid w-full grid-cols-2 gap-x-6 gap-y-4 sm:w-auto sm:min-w-[22rem] sm:grid-cols-4">
           {COEFICIENTES.map((c) => (
-            <a key={c.chave} href="#coeficientes" className="border-t border-slate-900 pt-2 transition hover:border-blue-700" title={c.descricao}>
+            <a key={c.chave} href="#coeficientes" className="rounded-2xl bg-slate-50 px-3 py-2.5 transition hover:bg-blue-50" title={c.descricao}>
               <div className="text-[11px] font-medium text-slate-500">{c.nome}</div>
               <div className="mt-1">
                 {v.coeficientes[c.chave] == null ? <span className="text-sm text-slate-400">—</span> : <NotaBadge valor={nota10(v.coeficientes[c.chave])} />}

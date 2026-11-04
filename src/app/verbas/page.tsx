@@ -54,8 +54,11 @@ export default function PaginaDinheiro() {
               { t: `Emendas federais em ${anoEmendas}`, v: recebidoUltimo, d: `${dinheiroCurto(totalEmendas)} desde ${anosRecebido[0]}`, cor: "var(--grafico-4)" },
               { t: `Receita própria em ${ultimo.ano}`, v: ultimo.propria?.total ?? 0, d: "ISS, IPTU, ITBI, taxas e outras", cor: "var(--grafico-outro)" },
             ].map((c) => (
-              <div key={c.t} className="@container relative border-t-2 pt-2.5" style={{ borderColor: c.cor }}>
-                <dt className="text-xs text-slate-500">{c.t}</dt>
+              <div key={c.t} className="@container relative rounded-2xl bg-slate-50 px-4 py-3">
+                <dt className="text-xs text-slate-500">
+                  <span className="mr-1.5 inline-block h-2 w-2 rounded-full align-[1px]" style={{ background: c.cor }} aria-hidden />
+                  {c.t}
+                </dt>
                 <dd className="mt-0.5 font-serif font-semibold whitespace-nowrap tabular-nums text-slate-950 [font-size:clamp(1.05rem,18cqw,1.75rem)]">
                   <DinheiroAnimado valor={c.v} />
                 </dd>
