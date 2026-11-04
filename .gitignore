@@ -46,3 +46,4 @@ next-env.d.ts
 # wrangler pages dev (localhost:3100)
 /.wrangler/
 /comparacao/
+/mocks/

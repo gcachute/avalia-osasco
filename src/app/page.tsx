@@ -74,41 +74,20 @@ export default async function Home() {
     <>
       {/* Painel em largura total, como um mapa de apuração: lista à esquerda, mapa ao centro, detalhes à direita. */}
       <div className="relative left-1/2 -ml-[min(840px,calc(50vw-1rem))] w-[min(1680px,calc(100vw-2rem))] space-y-4">
-        <section className="flex flex-wrap items-end gap-x-8 gap-y-3 border-b border-slate-900 pb-4">
-          <div className="min-w-0">
-            <h1 className="text-3xl font-semibold text-slate-950 sm:text-5xl">Osasco, bairro a bairro</h1>
-            <p className="mt-2 text-sm text-slate-600">
-              O que cada vereador e a Prefeitura fazem em cada bairro · legislatura 2025–2028 · dados até {dataBR(periodo.fim)}
-            </p>
-          </div>
-          <dl className="flex flex-wrap gap-x-6 gap-y-1 text-sm">
-            {[
-              { t: "Sessões", v: sessoes.length },
-              { t: "Vereadores em exercício", v: ativos.length },
-              { t: "Documentos com bairro", v: documentos },
-              { t: "Bairros citados", v: `${bairrosCitados} de ${mapa?.bairros.length ?? 0}` },
-            ].map((c) => (
-              <div key={c.t}>
-                <dt className="text-[11px] text-slate-500">{c.t}</dt>
-                <dd className="font-serif text-2xl font-semibold tabular-nums text-slate-950">{typeof c.v === "number" ? c.v.toLocaleString("pt-BR") : c.v}</dd>
-              </div>
-            ))}
-          </dl>
-          <Link href="/prefeito" className="group ml-auto flex items-center gap-3 rounded-xl px-2 py-1.5 transition hover:bg-slate-50">
-            <Avatar nome={prefeito.nome} foto={prefeito.foto} tamanho={44} />
-            <span className="min-w-0">
-              <span className="block text-[11px] text-slate-500">Prefeito</span>
-              <span className="flex items-center gap-2 font-semibold text-slate-900 group-hover:text-blue-800">
-                {prefeito.nome} <SeloPartido sigla={prefeito.partido} logo={prefeito.partidoLogo} />
-              </span>
-            </span>
-          </Link>
+        <section className="mx-auto max-w-3xl pt-4 text-center sm:pt-10">
+          <h1 className="text-4xl font-semibold text-balance text-slate-950 sm:text-6xl">Seu bairro na política de Osasco</h1>
+          <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 sm:text-lg">
+            Os documentos da Câmara e da Prefeitura que citam cada um dos {mapa?.bairros.length ?? 0} bairros, ao lado do retrato oficial de quem mora lá.
+          </p>
+          <p className="mt-3 text-sm text-slate-500 tabular-nums">
+            {sessoes.length} sessões · {ativos.length} vereadores em exercício · {documentos} documentos com bairro · {bairrosCitados} de {mapa?.bairros.length ?? 0} bairros
+            citados · dados até {dataBR(periodo.fim)}
+          </p>
         </section>
-
-        <AvisoParcial />
 
         {mapa && mapaPronto ? (
           <PainelInicial
+            aviso={<AvisoParcial />}
             vereadores={lista}
             minimoSessoes={minimo}
             mapa={{
@@ -221,7 +200,8 @@ export default async function Home() {
       )}
 
       <ComoLer>
-        <li>O painel mostra a cidade de duas formas: o mapa, bairro a bairro, e a lista de vereadores. Os botões Mapa e Vereadores trocam entre elas.</li>
+        <li>O painel começa pela busca: o bairro escolhido abre no mapa, com os documentos e o retrato dele, e o vereador escolhido abre o perfil. Os bairros sugeridos são os mais citados nos documentos.</li>
+        <li>Abaixo do mapa fica a lista de vereadores; no celular, os botões Mapa e Vereadores trocam entre os dois.</li>
         <li>No mapa, escolha uma camada e toque em um bairro para abrir os dados dele.</li>
         <li>Na lista, cada vereador tem uma nota de 0 a 10 por coeficiente. Dá para ordenar por qualquer coeficiente ou montar um critério próprio, dando peso a cada um.</li>
         <li>A média por partido leva em conta as sessões de cada vereador, inclui quem já saiu do cargo e deixa Integridade de fora.</li>
