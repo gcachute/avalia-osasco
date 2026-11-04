@@ -54,10 +54,9 @@ export default function PaginaDinheiro() {
               { t: `Emendas federais em ${anoEmendas}`, v: recebidoUltimo, d: `${dinheiroCurto(totalEmendas)} desde ${anosRecebido[0]}`, cor: "var(--grafico-4)" },
               { t: `Receita própria em ${ultimo.ano}`, v: ultimo.propria?.total ?? 0, d: "ISS, IPTU, ITBI, taxas e outras", cor: "var(--grafico-outro)" },
             ].map((c) => (
-              <div key={c.t} className="@container relative overflow-hidden rounded-xl bg-slate-50 p-3 transition">
-                <span className="absolute inset-x-0 top-0 h-1" style={{ background: c.cor }} aria-hidden />
+              <div key={c.t} className="@container relative border-t-2 pt-2.5" style={{ borderColor: c.cor }}>
                 <dt className="text-xs text-slate-500">{c.t}</dt>
-                <dd className="mt-0.5 font-semibold whitespace-nowrap tabular-nums text-slate-900 [font-size:clamp(1rem,17cqw,1.5rem)]">
+                <dd className="mt-0.5 font-serif font-semibold whitespace-nowrap tabular-nums text-slate-950 [font-size:clamp(1.05rem,18cqw,1.75rem)]">
                   <DinheiroAnimado valor={c.v} />
                 </dd>
                 <dd className="mt-0.5 text-[11px] text-slate-500">{c.d}</dd>
@@ -71,7 +70,7 @@ export default function PaginaDinheiro() {
         titulo="De onde vem o dinheiro"
         id="quanto-chega"
         subtitulo="O que a Prefeitura recebeu da União, do Estado e do FUNDEB, ano a ano, e, para comparar, o que arrecadou sozinha. O ano em andamento vem logo abaixo.">
-        <div className="rounded-2xl border border-slate-200 bg-white p-4">
+        <div className="border-t border-slate-300 pt-3">
           <GraficoLinha
             rotulo="Dinheiro da União, do Estado e do FUNDEB recebido por Osasco, por ano"
             formato="milhoesReais"
@@ -134,7 +133,7 @@ export default function PaginaDinheiro() {
         </div>
 
         <div className="mt-4">
-          <div className="rounded-2xl border border-slate-200 bg-white p-4">
+          <div className="border-t border-slate-300 pt-3">
             <div className="text-sm font-medium text-slate-900">E os deputados estaduais?</div>
             <p className="mt-1 text-sm text-slate-600">
               O governo do Estado não publica em arquivo aberto quem indicou cada emenda estadual. Dá para ver o dinheiro, sem o nome:

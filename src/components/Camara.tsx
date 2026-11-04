@@ -7,7 +7,7 @@ const mi = (v: number) => `R$ ${num(v / 1e6, 1)} mi`;
 export function CustoMandato({ custo, compacto = false }: { custo: NonNullable<Camara["custoMandato"]>; compacto?: boolean }) {
   const linhas = [{ cargo: "Vereador (subsídio)", quantidade: 1, vencimento: custo.subsidio }, ...custo.gabinete];
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-5">
+    <div className="border-t border-slate-300 pt-3">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <div>
           <div className="text-sm text-slate-500">Por mês, em salários</div>
@@ -52,7 +52,7 @@ export function DespesasCamara({ despesas }: { despesas: NonNullable<Camara["des
   const [ano, d] = [...anos].reverse().find(([, x]) => x.meses === 12) ?? anos.at(-1)!;
   const max = d.maioresFornecedores[0]?.pago || 1;
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-5">
+    <div className="border-t border-slate-300 pt-3">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <div>
           <div className="text-sm text-slate-500">Despesa paga pela Câmara em {ano}</div>
@@ -68,7 +68,7 @@ export function DespesasCamara({ despesas }: { despesas: NonNullable<Camara["des
               <div className="truncate text-slate-700" title={f.nome}>
                 {/c[aâ]mara municipal/i.test(f.nome) ? "Folha de pessoal (repasse à conta da própria Câmara)" : razaoSocial(f.nome)}
               </div>
-              <div className="mt-0.5 h-1.5 overflow-hidden rounded-full bg-slate-100">
+              <div className="mt-0.5 h-1.5 overflow-hidden rounded-sm bg-slate-100">
                 <div className="barra-anim h-full rounded-full bg-blue-600" style={{ width: `${(f.pago / max) * 100}%` }} />
               </div>
             </div>
@@ -129,7 +129,7 @@ export function FolhaCamara({ folha }: { folha: NonNullable<Camara["folha"]> }) 
   // Um chefe de gabinete por vereador: é o melhor número de gabinetes que o relatório permite contar.
   const gabinetes = Math.max(m.vereadores.pessoas, m.gabinetes.porCargo.find((c) => c.cargo === "CHEFE DE GABINETE")?.pessoas ?? 0) || 21;
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-5">
+    <div className="border-t border-slate-300 pt-3">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <div>
           <div className="text-sm text-slate-500">Folha paga em {rotuloMesFolha(mes)} (bruto)</div>

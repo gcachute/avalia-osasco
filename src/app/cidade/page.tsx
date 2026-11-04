@@ -86,7 +86,7 @@ function Linhas({ titulo, linhas, limite = linhas.length }: { titulo: string; li
   );
   const resto = linhas.slice(limite);
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4">
+    <div className="border-t border-slate-300 pt-3">
       <div className="text-sm font-medium text-slate-900">{titulo}</div>
       <ul className="mt-3 space-y-2.5">{linhas.slice(0, limite).map(item)}</ul>
       {resto.length > 0 && (
@@ -114,7 +114,7 @@ function CartaoObra({ o }: { o: Obra }) {
   const origens = [...new Set(o.fontes.map((f) => f.origem.toLowerCase()))];
   const descricao = descricaoObra(o);
   return (
-    <li className="rounded-2xl border border-slate-200 bg-white p-4 text-sm">
+    <li className="text-sm border-t border-slate-300 pt-3">
       <div className="font-medium break-words text-slate-900">{o.nome}</div>
       {descricao && <p className="mt-0.5 line-clamp-2 break-words text-slate-600">{descricao}</p>}
       <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-600">
@@ -123,7 +123,7 @@ function CartaoObra({ o }: { o: Obra }) {
             {dinheiroCurto(valorObra(o))}
           </span>
         )}
-        <span className="rounded-full bg-slate-100 px-2 py-0.5 text-slate-700">{o.situacao ?? "Situação não informada"}</span>
+        <span className="rounded-sm bg-slate-100 px-2 py-0.5 text-slate-700">{o.situacao ?? "Situação não informada"}</span>
         {origens.length > 0 && <span>Recurso {origens.join(", ")}</span>}
       </div>
       {o.executor && <div className="mt-1 text-xs break-words text-slate-500">{o.executor}</div>}
@@ -273,7 +273,7 @@ export default function PaginaCidade() {
           </ul>
           {obrasOrdem.length > 6 && (
             <details className="mt-3">
-              <summary className="cursor-pointer rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-blue-800">Ver mais {obrasOrdem.length - 6} obras</summary>
+              <summary className="cursor-pointer text-sm font-medium text-blue-800 border-t border-slate-300 pt-3">Ver mais {obrasOrdem.length - 6} obras</summary>
               <ul className="mt-3 grid gap-3 lg:grid-cols-2">
                 {obrasOrdem.slice(6).map((o) => (
                   <CartaoObra key={o.id} o={o} />

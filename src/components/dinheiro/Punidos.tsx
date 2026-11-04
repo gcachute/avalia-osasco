@@ -114,7 +114,7 @@ function Chip({ ativo, desligado, aoClicar, children }: { ativo: boolean; deslig
       aria-pressed={ativo}
       disabled={desligado}
       onClick={aoClicar}
-      className={`rounded-full px-2 py-0.5 text-xs ring-1 transition ${ativo ? "bg-slate-800 text-white ring-slate-800" : "bg-white text-slate-700 ring-slate-200 enabled:hover:ring-slate-300 disabled:opacity-40"}`}
+      className={`rounded-sm px-2 py-0.5 text-xs ring-1 transition ${ativo ? "bg-slate-800 text-white ring-slate-800" : "bg-white text-slate-700 ring-slate-200 enabled:hover:ring-slate-300 disabled:opacity-40"}`}
     >
       {children}
     </button>

@@ -21,7 +21,7 @@ export function TabelaPares({ anos }: { anos: AnoFiscal[] }) {
             role="tab"
             aria-selected={x.ano === ano}
             onClick={() => setAno(x.ano)}
-            className={`rounded-full px-3 py-1 text-sm ring-1 ring-inset ${x.ano === ano ? "bg-blue-800 text-white ring-blue-800" : "bg-white text-slate-600 ring-slate-300 hover:bg-slate-50"}`}
+            className={`rounded-sm px-3 py-1 text-sm ring-1 ring-inset ${x.ano === ano ? "bg-blue-800 text-white ring-blue-800" : "bg-white text-slate-600 ring-slate-300 hover:bg-slate-50"}`}
           >
             {x.ano}
             {!x.mandato && " · gestão anterior"}
@@ -33,7 +33,7 @@ export function TabelaPares({ anos }: { anos: AnoFiscal[] }) {
         {a.ano}: {rotuloPeriodo(a)}. Todas as cidades comparadas no mesmo período.
         {!a.completo && " Ano em andamento: os valores ainda vão mudar e as notas dos pilares só são calculadas com o ano fechado."}
       </p>
-      <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
+      <RolagemLateral className="border-t border-slate-300">
         <table className="w-full min-w-[760px] text-sm">
           <thead className="bg-slate-50 text-left text-xs text-slate-500">
             <tr>

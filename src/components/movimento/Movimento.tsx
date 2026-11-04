@@ -44,10 +44,10 @@ export function Segmentos<T extends string | number>({
     return () => obs.disconnect();
   }, [valor, opcoes.length]);
   return (
-    <div ref={caixa} className="relative flex flex-wrap gap-1 rounded-lg bg-slate-100 p-0.5" role="group" aria-label={rotulo}>
+    <div ref={caixa} className="relative flex flex-wrap gap-1 border-b border-slate-300" role="group" aria-label={rotulo}>
       {marca && (
         <span
-          className="absolute rounded-md bg-white shadow-sm transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none"
+          className="absolute shadow-[inset_0_-2px_0_var(--color-slate-950)] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none"
           style={{ left: marca.x, top: marca.y, width: marca.w, height: marca.h }}
           aria-hidden
         />
@@ -58,7 +58,7 @@ export function Segmentos<T extends string | number>({
           type="button"
           aria-pressed={o.valor === valor}
           onClick={() => aoEscolher(o.valor)}
-          className={`relative rounded-md px-2.5 py-1 text-xs font-medium tabular-nums transition-colors ${o.valor === valor ? `text-slate-900 ${marca ? "" : "bg-white shadow-sm"}` : "text-slate-600 hover:text-slate-900"}`}
+          className={`relative px-2.5 py-1.5 text-xs font-medium tabular-nums transition-colors ${o.valor === valor ? `font-semibold text-slate-950 ${marca ? "" : "shadow-[inset_0_-2px_0_currentColor]"}` : "text-slate-600 hover:text-slate-900"}`}
         >
           {o.nome}
         </button>

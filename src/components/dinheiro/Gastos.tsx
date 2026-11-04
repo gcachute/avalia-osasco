@@ -182,7 +182,7 @@ export function GastosPorAno({ gastos }: { gastos: GastoAno[] }) {
   const total = totalDe(g, origem);
 
   return (
-    <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-4">
+    <div className="space-y-4 border-t border-slate-300 pt-3">
       <Segmentos rotulo="Origem do dinheiro" valor={origem} aoEscolher={setOrigem} opcoes={ORIGENS.map((x) => ({ valor: x.chave, nome: x.nome }))} />
 
       <div className="grid gap-4 md:grid-cols-[minmax(0,14rem)_minmax(0,1fr)] md:items-end">
@@ -218,7 +218,7 @@ export function GastosPorAno({ gastos }: { gastos: GastoAno[] }) {
                 type="button"
                 aria-pressed={t.chave === tipoAtual.chave}
                 onClick={() => setTipo(t.chave)}
-                className={`rounded-full px-2 py-0.5 text-xs ring-1 transition ${t.chave === tipoAtual.chave ? "bg-slate-800 text-white ring-slate-800" : "bg-white text-slate-700 ring-slate-200 hover:ring-slate-300"}`}
+                className={`rounded-sm px-2 py-0.5 text-xs ring-1 transition ${t.chave === tipoAtual.chave ? "bg-slate-800 text-white ring-slate-800" : "bg-white text-slate-700 ring-slate-200 hover:ring-slate-300"}`}
               >
                 {t.nome} <span className="tabular-nums opacity-70">{dinheiroCurto(g[t.chave]!.total)}</span>
               </button>

@@ -13,7 +13,7 @@ export function AtividadeMensal({ meses }: { meses: { mes: string; proposicoes: 
   const sel = ativo == null ? null : meses[ativo];
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4">
+    <div className="border-t border-slate-300 pt-3">
       <div className="mb-3 flex items-baseline justify-between gap-2 text-sm">
         <span className="text-slate-600">
           {sel ? (

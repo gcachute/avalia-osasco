@@ -23,7 +23,7 @@ function Componente({ nome, pontos, children }: { nome: string; pontos: number |
 
 function Tabela({ cabecalho, linhas }: { cabecalho: string[]; linhas: { chave: number; foco: boolean; celulas: React.ReactNode[] }[] }) {
   return (
-    <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
+    <RolagemLateral className="border-t border-slate-300">
       <table className="w-full min-w-[640px] text-sm">
         <thead className="bg-slate-50 text-left text-xs text-slate-500">
           <tr>
@@ -60,7 +60,7 @@ export function PilarD({ r }: { r: Resultados }) {
         A qualidade das escolas municipais e a sobrevivência dos bebês no primeiro ano de vida.
         Cada item vale metade pela posição entre as cidades comparadas e metade pela evolução em relação à medição anterior.
       </p>
-      <div className="rounded-xl border border-slate-200 bg-white px-5 py-2 divide-y divide-slate-100">
+      <div className="divide-y divide-slate-100 border-t border-slate-300 pt-3">
         {r.ideb && (
           <Componente nome={`Educação · IDEB ${r.ideb.edicao}, anos iniciais da rede municipal`} pontos={o.componentes.educacao}>
             <span className="font-semibold text-slate-900">{num(o.ideb.valor)}</span> (em {r.ideb.anterior}: {num(o.ideb.anterior)}, {sinal(o.ideb.delta)}) ·{" "}
@@ -127,7 +127,7 @@ export function PilarE({ t }: { t: Transparencia }) {
       <p className="-mt-2 mb-4 text-slate-600">
         Se a Prefeitura mostra o que faz com o dinheiro público, e se as obras que contratou estão andando.
       </p>
-      <div className="rounded-xl border border-slate-200 bg-white px-5 py-2 divide-y divide-slate-100">
+      <div className="divide-y divide-slate-100 border-t border-slate-300 pt-3">
         {t.pntp && (
           <Componente nome={`Transparência · Programa Nacional de Transparência Pública (ciclo ${t.pntp.ciclo})`} pontos={o.componentes.transparencia}>
             <span className="font-semibold text-slate-900">{pct(o.pntp?.indice)}</span> no índice de transparência do portal, nível {o.pntp?.nivel}{" "}
@@ -173,7 +173,7 @@ export function PilarE({ t }: { t: Transparencia }) {
         />
       </div>
       {o.obras.lista && o.obras.lista.length > 0 && (
-        <details className="mt-4 rounded-xl border border-slate-200 bg-white p-4 text-sm">
+        <details className="mt-4 text-sm border-t border-slate-300 pt-3">
           <summary className="cursor-pointer font-medium text-slate-800">Obras do Executivo de Osasco no painel ({o.obras.lista.length})</summary>
           <ul className="mt-3 divide-y divide-slate-100">
             {o.obras.lista.map((x, i) => (

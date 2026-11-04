@@ -32,7 +32,7 @@ const milhoes = (v: number) => `R$ ${(v / 1e6).toLocaleString("pt-BR", { maximum
 
 function Cartao({ titulo, children, fonte }: { titulo: string; children: React.ReactNode; fonte?: { nome: string; url: string }[] }) {
   return (
-    <div className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4">
+    <div className="min-w-0 border-t border-slate-300 pt-3">
       <h3 className="text-sm font-semibold text-slate-900">{titulo}</h3>
       <div className="mt-2">{children}</div>
       {fonte && (
@@ -90,7 +90,7 @@ export default function Evolucao() {
       {gestoes.length > 0 && (
         <p className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
           {gestoes.map((g) => (
-            <span key={g.inicio} className="rounded-full bg-slate-100 px-2.5 py-1">
+            <span key={g.inicio} className="rounded-sm bg-slate-100 px-2.5 py-1">
               {g.inicio}–{g.fim}: <b className="text-slate-900">{g.nome}</b> ({g.partido})
             </span>
           ))}
@@ -130,7 +130,7 @@ export default function Evolucao() {
                 const pts = anosCenso.map((a) => ({ ano: a, v: censo.cidade[a]?.[x.campo] ?? null })).filter((p) => p.v != null);
                 const [p0, p1] = [pts[0]?.v ?? null, pts.at(-1)?.v ?? null];
                 return (
-                  <div key={x.t} className="rounded-2xl border border-slate-200 bg-white p-4">
+                  <div key={x.t} className="border-t border-slate-300 pt-3">
                     <div className="text-xs text-slate-500">{x.t}</div>
                     <ol className="mt-1 space-y-0.5 text-sm tabular-nums text-slate-600">
                       {pts.map((p, i) => (
@@ -209,7 +209,7 @@ export default function Evolucao() {
                                   {x.nome} <span className="text-slate-400">({x.partido})</span>
                                 </span>
                                 <span className="text-right tabular-nums text-slate-900">{pct(x.pct)}</span>
-                                <span className="col-span-2 block h-1.5 rounded-full bg-slate-100">
+                                <span className="col-span-2 block h-1.5 rounded-sm bg-slate-100">
                                   <span className="block h-full rounded-full" style={{ width: `${x.pct}%`, background: "var(--grafico-1)" }} />
                                 </span>
                               </div>
@@ -341,7 +341,7 @@ export default function Evolucao() {
 
       {tce && tce.anos.length > 0 && (
         <Secao titulo="Contas da Prefeitura no Tribunal de Contas" subtitulo="Parecer prévio do TCE-SP sobre as contas de cada ano, da primeira decisão aos pedidos de reexame.">
-          <ul className="divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white px-4">
+          <ul className="divide-y divide-slate-100 border-t border-slate-300 pt-3">
             {[...tce.anos]
               .sort((a, b) => b.exercicio - a.exercicio)
               .map((a) => {

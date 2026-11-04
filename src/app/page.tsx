@@ -174,7 +174,7 @@ export default async function Home() {
         </Secao>
 
         <Secao titulo="Prefeitura">
-          <Link href="/prefeito" className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:border-blue-300">
+          <Link href="/prefeito" className="group block overflow-hidden transition hover:border-blue-300 border-t border-slate-300">
             <div className="flex items-center gap-4 p-5">
               <Avatar nome={prefeito.nome} foto={prefeito.foto} tamanho={72} />
               <div className="min-w-0 flex-1">

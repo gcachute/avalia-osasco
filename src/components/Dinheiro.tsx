@@ -216,7 +216,7 @@ function Variacao({ atual, antes, anoAntes }: { atual: number; antes: number | n
   const v = atual / antes - 1;
   const sobe = v >= 0;
   return (
-    <span className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium ring-1 ${sobe ? "bg-emerald-50 text-emerald-800 ring-emerald-200" : "bg-rose-50 text-rose-800 ring-rose-200"}`}>
+    <span className={`inline-flex items-center gap-1 rounded-sm px-2 py-0.5 text-[11px] font-medium ring-1 ${sobe ? "bg-emerald-50 text-emerald-800 ring-emerald-200" : "bg-rose-50 text-rose-800 ring-rose-200"}`}>
       <svg viewBox="0 0 12 12" className={`h-3 w-3 ${sobe ? "" : "rotate-180"}`} aria-hidden>
         <path d="M6 2.5 10 8H2l4-5.5Z" fill="currentColor" />
       </svg>
@@ -284,7 +284,7 @@ function EntradaExpansivel({
         </svg>
       </button>
       <Abre aberto={aberto} id={id}>
-        <div className="mt-1 mb-2 space-y-3 rounded-xl border border-slate-200 p-3 text-xs">
+        <div className="mt-1 mb-2 space-y-3 text-xs border-t border-slate-300 pt-3">
           <p className="text-slate-600">{l.explica}</p>
           <p className="text-slate-700">
             Valor exato em {ano}: <span className="font-semibold tabular-nums text-slate-900">{reaisExato(valor)}</span>
@@ -312,7 +312,7 @@ function EntradaExpansivel({
           )}
           <div className="flex flex-wrap items-center gap-2">
             {total > 0 && l.chave !== "fundeb" && (
-              <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-700 ring-1 ring-slate-200">
+              <span className="rounded-sm bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-700 ring-1 ring-slate-200">
                 {pct(valor / total)} {nomeTotal} em {ano}
               </span>
             )}
@@ -409,7 +409,7 @@ export function ComposicaoEntradas({ anos, conferencias = [] }: { anos: EntradaA
     </div>
   );
   return (
-    <div className="space-y-5 rounded-2xl border border-slate-200 bg-white p-4">
+    <div className="space-y-5 border-t border-slate-300 pt-3">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <Anos anos={lista.map((x) => x.ano)} ano={ano} setAno={setAno} rotulo={String} />
         <span className="text-xs text-slate-500">
