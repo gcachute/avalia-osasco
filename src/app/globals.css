@@ -16,32 +16,33 @@
   --radius-3xl: 0.5rem;
 }
 
-/* Papel e tinta: cinzas quentes no lugar do cinza-azulado padrão e um azul mais sóbrio, de jornal.
-   Os nomes slate e blue continuam os mesmos nas classes; só o valor muda. */
+/* Cores de Osasco: o verde da bandeira (suavizado) é a cor da cidade e entra no lugar da escala "blue";
+   a tinta é o azul-marinho do logo OZ, na escala "slate". As classes continuam as mesmas; só o valor muda.
+   O vermelho da bandeira marca o bairro escolhido no mapa (--mapa-escolhido). */
 :root {
-  --color-white: #fbfaf6;
-  --color-slate-50: #f3f1ea;
-  --color-slate-100: #ebe8df;
-  --color-slate-200: #dedad0;
-  --color-slate-300: #c8c2b5;
-  --color-slate-400: #a19b8e;
-  --color-slate-500: #76716a;
-  --color-slate-600: #5b5751;
-  --color-slate-700: #45423d;
-  --color-slate-800: #2f2d2a;
-  --color-slate-900: #1f1e1c;
-  --color-slate-950: #141312;
-  --color-blue-50: #eef2f8;
-  --color-blue-100: #dde4f0;
-  --color-blue-200: #bdcbe2;
-  --color-blue-300: #94abd0;
-  --color-blue-400: #6786ba;
-  --color-blue-500: #4567a3;
-  --color-blue-600: #30538f;
-  --color-blue-700: #25457c;
-  --color-blue-800: #1d3866;
-  --color-blue-900: #172d52;
-  --color-blue-950: #0f1d36;
+  --color-white: #ffffff;
+  --color-slate-50: #f4f6f5;
+  --color-slate-100: #eaeeec;
+  --color-slate-200: #dde2df;
+  --color-slate-300: #c9d1cc;
+  --color-slate-400: #98a29f;
+  --color-slate-500: #6b7480;
+  --color-slate-600: #5f6876;
+  --color-slate-700: #434c5c;
+  --color-slate-800: #2d3850;
+  --color-slate-900: #22304f;
+  --color-slate-950: #182440;
+  --color-blue-50: #eef5f0;
+  --color-blue-100: #e3efe7;
+  --color-blue-200: #c7dfcf;
+  --color-blue-300: #a9cdb5;
+  --color-blue-400: #74ab88;
+  --color-blue-500: #4f9068;
+  --color-blue-600: #3f8560;
+  --color-blue-700: #367d55;
+  --color-blue-800: #2f6f4b;
+  --color-blue-900: #275c3e;
+  --color-blue-950: #1c4430;
 }
 
 /* Grade sem número de colunas definido (o caso de quase toda grade no celular) cresce até o conteúdo mais largo e
@@ -55,12 +56,6 @@
   body {
     overflow-wrap: break-word;
   }
-  /* Títulos com serifa, como num caderno de jornal; o resto do texto fica na fonte sem serifa. */
-  h1,
-  h2 {
-    font-family: var(--font-serif);
-    letter-spacing: -0.012em;
-  }
   ::selection {
     background: var(--color-blue-100);
   }
@@ -70,29 +65,29 @@
    troca de tema sem precisar de classes dark: em cada componente. */
 .dark {
   color-scheme: dark;
-  --color-white: #1b1a18;
-  --color-slate-50: #151413;
-  --color-slate-100: #252321;
-  --color-slate-200: #33312d;
-  --color-slate-300: #48453f;
-  --color-slate-400: #5f5b54;
-  --color-slate-500: #8c877d;
-  --color-slate-600: #aaa498;
-  --color-slate-700: #d0cabe;
-  --color-slate-800: #e5e0d6;
-  --color-slate-900: #f1ede5;
-  --color-slate-950: #f8f6f1;
-  --color-blue-50:  oklch(28.2% 0.091 267.935);
-  --color-blue-100:  oklch(37.9% 0.146 265.522);
-  --color-blue-200:  oklch(42.4% 0.199 265.638);
-  --color-blue-300:  oklch(48.8% 0.243 264.376);
-  --color-blue-400:  oklch(54.6% 0.245 262.881);
-  --color-blue-500:  oklch(62.3% 0.214 259.815);
-  --color-blue-600:  oklch(70.7% 0.165 254.624);
-  --color-blue-700:  oklch(80.9% 0.105 251.813);
-  --color-blue-800:  oklch(88.2% 0.059 254.128);
-  --color-blue-900:  oklch(93.2% 0.032 255.585);
-  --color-blue-950:  oklch(97% 0.014 254.604);
+  --color-white: #161c28;
+  --color-slate-50: #11161f;
+  --color-slate-100: #1e2533;
+  --color-slate-200: #2a3242;
+  --color-slate-300: #3b4456;
+  --color-slate-400: #525c70;
+  --color-slate-500: #7c869a;
+  --color-slate-600: #9aa3b5;
+  --color-slate-700: #c4cad6;
+  --color-slate-800: #dde1e8;
+  --color-slate-900: #eceff3;
+  --color-slate-950: #f6f7f9;
+  --color-blue-50:  #14261c;
+  --color-blue-100:  #1a3324;
+  --color-blue-200:  #22422f;
+  --color-blue-300:  #2d553d;
+  --color-blue-400:  #3c6e50;
+  --color-blue-500:  #4f8a66;
+  --color-blue-600:  #6aa682;
+  --color-blue-700:  #8cc3a1;
+  --color-blue-800:  #b3d9c1;
+  --color-blue-900:  #d5ecdd;
+  --color-blue-950:  #eaf6ee;
   --color-emerald-50:  oklch(26.2% 0.051 172.552);
   --color-emerald-100:  oklch(37.8% 0.077 168.94);
   --color-emerald-200:  oklch(43.2% 0.095 166.913);
@@ -139,13 +134,26 @@
   --color-lime-950:  oklch(98.6% 0.031 120.757);
 }
 
-/* Entrada suave dos blocos ao rolar a página (ver components/Revelar.tsx). */
+/* Títulos e números grandes em Archivo estreita, como letreiro; o texto corrido fica na Atkinson Hyperlegible.
+   Fica fora das camadas do Tailwind para valer sobre font-semibold/font-bold escritos nos títulos. */
+h1,
+h2,
+.font-serif {
+  /* Direto na variável da fonte: o @theme inline não publica --font-serif como variável. */
+  font-family: var(--font-titulo), ui-sans-serif, system-ui, sans-serif;
+  font-stretch: 80%;
+  font-variation-settings: "wdth" 80;
+  font-weight: 800;
+  letter-spacing: -0.012em;
+}
+h1 {
+  line-height: 1;
+}
+
+/* Os blocos aparecem de uma vez: a entrada deslizante em cada seção era enfeite repetido.
+   A classe continua no código porque outras animações (selo, ficha) dependem de data-visivel. */
 .js .revelar {
-  opacity: 0;
-  transform: translateY(12px);
-  transition:
-    opacity 0.5s ease,
-    transform 0.5s ease;
+  opacity: 1;
 }
 .js .revelar[data-visivel] {
   opacity: 1;
@@ -176,40 +184,42 @@
    Escala sequencial azul (um tom, claro → escuro) e duas cores de origem validadas para daltonismo.
    No escuro a escala é reescalonada para a superfície escura: valor maior = mais claro. */
 :root {
-  --mapa-vazio: #e6e2d9;
-  --mapa-1: #cde2fb;
-  --mapa-2: #9ec5f4;
-  --mapa-3: #6da7ec;
-  --mapa-4: #3987e5;
-  --mapa-5: #256abf;
-  --mapa-6: #104281;
-  --mapa-borda: #fbfaf6;
-  --mapa-destaque: #0b0b0b;
+  --mapa-vazio: #eef1ef;
+  --mapa-1: #dbeae0;
+  --mapa-2: #bcd9c5;
+  --mapa-3: #94c2a3;
+  --mapa-4: #68a27e;
+  --mapa-5: #468461;
+  --mapa-6: #2b6446;
+  --mapa-borda: #ffffff;
+  --mapa-destaque: #22304f;
+  --mapa-escolhido: #cc423b;
   --mapa-citado: rgba(234, 179, 8, 0.45);
-  --mapa-camara: #eb6834;
-  --mapa-prefeitura: #1baf7a;
-  --mapa-rotulo: #1f1e1c;
+  --mapa-camara: #cc423b;
+  --mapa-prefeitura: #22304f;
+  --mapa-rotulo: #182440;
   --mapa-halo: rgba(255, 255, 255, 0.9);
-  --mapa-ponto: #1f1e1c;
-  --mapa-hachura: #cbc5b8;
+  --mapa-ponto: #22304f;
+  --mapa-hachura: #c9d1cc;
 }
 .dark {
-  --mapa-vazio: #2a2825;
-  --mapa-1: #184f95;
-  --mapa-2: #1c5cab;
-  --mapa-3: #256abf;
-  --mapa-4: #3987e5;
-  --mapa-5: #6da7ec;
-  --mapa-6: #b7d3f6;
-  --mapa-borda: #1b1a18;
-  --mapa-destaque: #f8fafc;
+  --mapa-vazio: #232b39;
+  --mapa-1: #1d3a2a;
+  --mapa-2: #245036;
+  --mapa-3: #2f6646;
+  --mapa-4: #4a8a64;
+  --mapa-5: #73b08c;
+  --mapa-6: #b2dcc1;
+  --mapa-borda: #161c28;
+  --mapa-destaque: #f6f7f9;
+  --mapa-escolhido: #d9554d;
   --mapa-citado: rgba(250, 204, 21, 0.4);
-  --mapa-camara: #d95926;
-  --mapa-prefeitura: #199e70;
-  --mapa-rotulo: #f1f5f9;
-  --mapa-halo: rgba(27, 26, 24, 0.85);
-  --mapa-ponto: #f1f5f9;
-  --mapa-hachura: #48453f;
+  --mapa-camara: #e8675f;
+  --mapa-prefeitura: #c4cad6;
+  --mapa-rotulo: #f6f7f9;
+  --mapa-halo: rgba(22, 28, 40, 0.85);
+  --mapa-ponto: #f6f7f9;
+  --mapa-hachura: #3b4456;
 }
 
 /* Gráficos de linha (séries históricas): três cores validadas para daltonismo, nos dois temas,
@@ -221,8 +231,8 @@
   --grafico-3: #0d9488;
   --grafico-4: #9333ea;
   --grafico-outro: #94a3b8;
-  --grafico-ref: #76716a;
-  --grafico-grade: #e4e0d6;
+  --grafico-ref: #6b7480;
+  --grafico-grade: #e3e8e5;
 }
 .dark {
   --grafico-1: #3b82f6;
@@ -230,8 +240,8 @@
   --grafico-3: #0d9488;
   --grafico-4: #a855f7;
   --grafico-outro: #64748b;
-  --grafico-ref: #94a3b8;
-  --grafico-grade: #2f2d2a;
+  --grafico-ref: #9aa3b5;
+  --grafico-grade: #2a3242;
 }
 
 .mapa-bairro {

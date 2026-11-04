@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Sans, Source_Serif_4 } from "next/font/google";
+import { Archivo, Atkinson_Hyperlegible_Next } from "next/font/google";
 import Link from "next/link";
 import { Animacoes } from "@/components/Animacoes";
 import { Logo } from "@/components/Logo";
@@ -13,9 +13,10 @@ import { BotaoTema, SCRIPT_TEMA } from "@/components/Tema";
 import { dados, dataBR } from "@/lib/dados";
 import "./globals.css";
 
-// Texto em IBM Plex Sans (algarismos de mesma largura, bons para tabelas); títulos e números grandes em Source Serif.
-const texto = IBM_Plex_Sans({ variable: "--font-texto", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
-const titulo = Source_Serif_4({ variable: "--font-titulo", subsets: ["latin"], weight: ["400", "600", "700"] });
+// Texto em Atkinson Hyperlegible Next, desenhada para ser lida por qualquer pessoa; títulos e números grandes em
+// Archivo, com o eixo de largura para a versão estreita, de letreiro.
+const texto = Atkinson_Hyperlegible_Next({ variable: "--font-texto", subsets: ["latin"], weight: ["400", "500", "700"] });
+const titulo = Archivo({ variable: "--font-titulo", subsets: ["latin"], axes: ["wdth"] });
 
 export const metadata: Metadata = {
   title: { default: "De Olho em OZ — os políticos de Osasco em dados oficiais", template: "%s · De Olho em OZ" },
@@ -36,8 +37,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   viewportFit: "cover",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fbfaf6" },
-    { media: "(prefers-color-scheme: dark)", color: "#1b1a18" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#161c28" },
   ],
 };
 
@@ -64,7 +65,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Animacoes />
         <NovaAba />
         <AvisoIA />
-        <header className="sticky top-0 z-30 border-b border-slate-300 bg-white/95 backdrop-blur">
+        <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur">
           <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-2.5 md:py-3">
             <Link href="/" aria-label="De Olho em OZ, página inicial">
               <Logo />
@@ -83,7 +84,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <AtalhoComoLer />
           {children}
         </main>
-        <footer className="mt-10 border-t border-slate-900">
+        <footer className="mt-14 bg-slate-50">
           <div className="mx-auto max-w-5xl space-y-2 px-4 py-6 text-sm text-slate-500">
             <p>
               Projeto independente, sem vínculo com a Câmara Municipal ou a Prefeitura de Osasco. Todos os números vêm de fontes oficiais (Câmara,

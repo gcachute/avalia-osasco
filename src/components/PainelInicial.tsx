@@ -34,10 +34,10 @@ export function PainelInicial({ vereadores, minimoSessoes, mapa, aviso }: { vere
 
   return (
     <>
-    <div className="mx-auto max-w-3xl pt-4 pb-6">
+    <div className="max-w-2xl pt-2 pb-6">
       <BuscaPainel bairros={bairrosBusca} vereadores={vereadores} aoEscolherBairro={escolherBairro} />
     </div>
-    {aviso && <div className="mx-auto mb-8 max-w-3xl">{aviso}</div>}
+    {aviso && <div className="mb-8 max-w-3xl">{aviso}</div>}
     <div ref={topo} className="scroll-mt-20">
       <div role="tablist" aria-label="Ver" className="sticky top-[3.6rem] z-20 mb-3 grid grid-cols-2 gap-1 border-b border-slate-300 bg-white text-sm font-semibold xl:hidden">
         {(
@@ -52,7 +52,7 @@ export function PainelInicial({ vereadores, minimoSessoes, mapa, aviso }: { vere
             type="button"
             aria-selected={aba === chave}
             onClick={() => setAba(chave)}
-            className={`truncate px-3 py-2 transition ${aba === chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600"}`}
+            className={`truncate px-3 py-2 transition ${aba === chave ? "font-semibold text-slate-950 shadow-[inset_0_-3px_0_var(--color-blue-700)]" : "text-slate-600"}`}
           >
             {nome}
             {chave === "mapa" && nomeAutor && <span className="ml-1 font-normal text-slate-500">· {nomeAutor.split(" ")[0]}</span>}
@@ -64,8 +64,8 @@ export function PainelInicial({ vereadores, minimoSessoes, mapa, aviso }: { vere
           <MapaBairros {...mapa} autor={autor} aoMudarAutor={setAutor} bairroPedido={bairroPedido} />
         </div>
         <div className={`xl:block ${aba === "lista" ? "" : "hidden"}`}>
-          <div className="mx-auto max-w-3xl">
-            <h2 className="mb-1 hidden text-2xl font-semibold text-slate-950 xl:block">Vereadores</h2>
+          <div className="max-w-3xl">
+            <h2 className="mb-1 hidden text-[2rem] text-slate-950 xl:block">Vereadores</h2>
             <p className="mb-3 hidden text-sm text-slate-600 xl:block">Escolha um nome para ver no mapa só os documentos e votos dele.</p>
             <ListaVereadores vereadores={vereadores} selecionado={autor} aoSelecionar={escolher} minimoSessoes={minimoSessoes} />
           </div>

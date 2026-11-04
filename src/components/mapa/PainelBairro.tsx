@@ -99,7 +99,7 @@ export function PainelBairro({
             role="tab"
             aria-selected={aba === a.chave}
             onClick={() => setAba(a.chave)}
-            className={`px-1.5 py-1 text-[11px] font-medium transition ${aba === a.chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-900"}`}
+            className={`px-1.5 py-1 text-[11px] font-medium transition ${aba === a.chave ? "font-semibold text-slate-950 shadow-[inset_0_-3px_0_var(--color-blue-700)]" : "text-slate-600 hover:text-slate-900"}`}
           >
             {a.nome}
           </button>

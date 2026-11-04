@@ -55,7 +55,7 @@ export function NavegacaoPagina() {
                 data-secao={s.id}
                 aria-current={ativa === s.id ? "location" : undefined}
                 className={`shrink-0 whitespace-nowrap py-2.5 text-xs transition ${
-                  ativa === s.id ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-500 hover:text-slate-950"
+                  ativa === s.id ? "font-semibold text-slate-950 shadow-[inset_0_-3px_0_var(--color-blue-700)]" : "text-slate-500 hover:text-slate-950"
                 }`}
               >
                 {s.nome}
