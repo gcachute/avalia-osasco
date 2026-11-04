@@ -49,7 +49,7 @@ const semAcento = (s: string) => s.normalize("NFD").replace(/\p{M}/gu, "").toLow
 
 function MiniBarra({ valor }: { valor: number | null }) {
   return (
-    <span className="block h-1.5 overflow-hidden rounded-full bg-slate-100">
+    <span className="block h-1.5 overflow-hidden rounded-sm bg-slate-100">
       <span className="block h-full rounded-full bg-blue-600 transition-all duration-500" style={{ width: `${(valor ?? 0) * 100}%` }} />
     </span>
   );
@@ -110,19 +110,19 @@ export function ListaVereadores({
   }, [vereadores, criterio, pesos, busca, todos]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <aside id="vereadores" className="flex min-w-0 flex-col rounded-2xl border border-slate-200 bg-white xl:max-h-[calc(100vh-7rem)]">
+    <aside id="vereadores" className="flex min-w-0 flex-col xl:max-h-[calc(100vh-7rem)] border-t border-slate-300">
       <div className="space-y-2 border-b border-slate-100 p-3">
         <div className="flex items-baseline justify-between">
           <h2 className="text-sm font-semibold text-slate-900">Vereadores</h2>
           <span className="text-[11px] text-slate-500">clique para ver no mapa</span>
         </div>
-        <div className="grid grid-cols-4 gap-0.5 rounded-lg bg-slate-100 p-0.5" role="group" aria-label="Ordenar por">
+        <div className="grid grid-cols-4 gap-0.5 border-b border-slate-300" role="group" aria-label="Ordenar por">
           {CRITERIOS.map((c) => (
             <button
               key={c.chave}
               onClick={() => setCriterio(c.chave)}
               aria-pressed={criterio === c.chave}
-              className={`rounded-md px-1 py-1 text-[11px] font-medium transition ${criterio === c.chave ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
+              className={`px-1 py-1 text-[11px] font-medium transition ${criterio === c.chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-900"}`}
             >
               {c.nome}
             </button>
@@ -142,7 +142,7 @@ export function ListaVereadores({
                     key={m.nome}
                     onClick={() => definirPesos(m.pesos)}
                     aria-pressed={ativo}
-                    className={`rounded-full px-2 py-0.5 text-[10px] font-medium ring-1 ring-inset transition ${ativo ? "bg-blue-800 text-white ring-blue-800" : "bg-white text-slate-600 ring-slate-200 hover:text-slate-900 hover:ring-slate-300"}`}
+                    className={`rounded-sm px-2 py-0.5 text-[10px] font-medium ring-1 ring-inset transition ${ativo ? "bg-blue-800 text-white ring-blue-800" : "bg-white text-slate-600 ring-slate-200 hover:text-slate-900 hover:ring-slate-300"}`}
                   >
                     {m.nome}
                   </button>

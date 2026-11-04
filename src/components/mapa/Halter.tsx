@@ -25,7 +25,7 @@ export function Halter({ nome, pontos, cidade, grande = false }: { nome: string;
           <span className={`font-semibold text-slate-700 ${grande ? "text-xs" : ""}`}>{formatar(mud, "pp")}</span>
         </span>
       </div>
-      <div className={`relative mx-1.5 mt-1 rounded-full bg-slate-100 ${grande ? "h-2" : "h-1.5"}`}>
+      <div className={`relative mx-1.5 mt-1 rounded-sm bg-slate-100 ${grande ? "h-2" : "h-1.5"}`}>
         {com.length > 1 && (
           <div
             className="absolute h-full rounded-full"

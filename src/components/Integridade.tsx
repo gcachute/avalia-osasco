@@ -54,7 +54,7 @@ export function SecaoIntegridade({ integridade, nota, quem }: { integridade: Int
         </p>
       </div>
 
-      <aside role="note" className="rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-700">
+      <aside role="note" className="text-sm text-slate-700 border-t border-slate-300 pt-3">
         <p className="font-semibold text-slate-900">Como ler esta parte</p>
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li>

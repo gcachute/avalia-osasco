@@ -91,14 +91,14 @@ export function Contratos({ resumo: tudo }: { resumo: ResumoContratos }) {
               type="button"
               aria-pressed={k === orgao}
               onClick={() => setOrgao(k)}
-              className={`rounded-full px-3 py-1.5 text-sm font-medium ring-1 ring-inset transition ${k === orgao ? "bg-slate-900 text-white ring-slate-900" : "bg-white text-slate-700 ring-slate-200 hover:bg-slate-50"}`}
+              className={`rounded-sm px-3 py-1.5 text-sm font-medium ring-1 ring-inset transition ${k === orgao ? "bg-slate-900 text-white ring-slate-900" : "bg-white text-slate-700 ring-slate-200 hover:bg-slate-50"}`}
             >
               {NOMES[k] ?? k} <span className="tabular-nums opacity-70">{tudo.orgaos[k].total.toLocaleString("pt-BR")}</span>
             </button>
           ))}
         </div>
       )}
-      <div className="rounded-2xl border border-slate-200 bg-white p-4">
+      <div className="border-t border-slate-300 pt-3">
         <div className="text-sm font-medium text-slate-900">Por ano de contrato</div>
         <ul className="mt-3 space-y-2.5">
           {resumo.porAno.map((a) => (
@@ -117,7 +117,7 @@ export function Contratos({ resumo: tudo }: { resumo: ResumoContratos }) {
         </ul>
       </div>
 
-      <div className="rounded-2xl border border-slate-200 bg-white p-4">
+      <div className="border-t border-slate-300 pt-3">
         <div className="text-sm font-medium text-slate-900">Empresas com maior valor em contratos</div>
         <ul className="mt-3 space-y-2.5">
           {resumo.maiores.slice(0, 10).map((f) => (
@@ -135,7 +135,7 @@ export function Contratos({ resumo: tudo }: { resumo: ResumoContratos }) {
         </ul>
       </div>
 
-      <div className="rounded-2xl border border-slate-200 bg-white p-4">
+      <div className="border-t border-slate-300 pt-3">
         <label className="block text-sm font-medium text-slate-900" htmlFor="busca-contratos">
           Procurar nos {resumo.total.toLocaleString("pt-BR")} contratos {orgao === "camara" ? "da Câmara" : "da Prefeitura"}
         </label>

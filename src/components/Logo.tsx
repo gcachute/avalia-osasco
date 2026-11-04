@@ -69,7 +69,7 @@ export function MarcaOZ({ className = "h-8 w-8" }: { className?: string }) {
 export function Logo() {
   return (
     <span className="flex items-center gap-[0.45rem]">
-      <span className="text-[1.08rem] font-semibold leading-none tracking-[-0.025em] text-slate-900">De Olho em</span>
+      <span className="font-serif text-[1.3rem] leading-none font-bold tracking-[-0.015em] text-slate-950">De Olho em</span>
       <MarcaOZ />
     </span>
   );

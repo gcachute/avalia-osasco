@@ -186,7 +186,7 @@ export default function PaginaPrefeito() {
       <AvisoParcial alvo="prefeito" className="mt-4" />
 
       {PILARES_PREFEITO.some((x) => p.pilares[x.chave]?.nota == null) && (
-        <p className="mt-6 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-600">
+        <p className="mt-6 text-sm text-slate-600 border-t border-slate-300 pt-3">
           Ainda sem dados do mandato:{" "}
           {PILARES_PREFEITO.filter((x) => p.pilares[x.chave]?.nota == null)
             .map((x) => `${x.chave} (${x.nome})`)
@@ -199,7 +199,7 @@ export default function PaginaPrefeito() {
         {PILARES_PREFEITO.map((pl) => {
           const n = nota10(p.pilares[pl.chave]?.nota);
           return (
-            <a key={pl.chave} href={pl.pronto ? `#pilar-${pl.chave}` : undefined} className={`rounded-xl border bg-white p-4 ${pl.pronto ? "border-slate-200 hover:border-blue-300" : "border-dashed border-slate-300"}`}>
+            <a key={pl.chave} href={pl.pronto ? `#pilar-${pl.chave}` : undefined} className={`border-t pt-3 ${pl.pronto ? "border-slate-900 hover:border-blue-700" : "border-dashed border-slate-400"}`}>
               <div className="text-xs font-medium text-slate-400">
                 Pilar {pl.chave}
               </div>
@@ -222,7 +222,7 @@ export default function PaginaPrefeito() {
       {f && anoNota && focoNota && (
         <>
           <Secao titulo={`Pilar A · Gestão fiscal (${anoNota.ano})`} id="pilar-A">
-            <div className="rounded-xl border border-slate-200 bg-white px-5 py-2">
+            <div className="border-t border-slate-300 pt-3">
               <PilarA a={anoNota} c={focoNota} />
             </div>
             <div className="mt-4">
@@ -232,7 +232,7 @@ export default function PaginaPrefeito() {
           </Secao>
 
           <Secao titulo={`Pilar B · Mínimos constitucionais (${anoNota.ano})`} id="pilar-B">
-            <div className="rounded-xl border border-slate-200 bg-white px-5 py-2">
+            <div className="border-t border-slate-300 pt-3">
               <PilarB a={anoNota} c={focoNota} />
             </div>
             <div className="mt-4">
@@ -246,7 +246,7 @@ export default function PaginaPrefeito() {
           </Secao>
 
           <Secao titulo="Osasco ano a ano">
-            <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
+            <RolagemLateral className="border-t border-slate-300">
               <table className="w-full min-w-[560px] text-sm">
                 <thead className="bg-slate-50 text-left text-xs text-slate-500">
                   <tr>
@@ -293,7 +293,7 @@ export default function PaginaPrefeito() {
           </Secao>
 
           {f.avisos.length > 0 && (
-            <details className="mt-6 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-600">
+            <details className="mt-6 text-sm text-slate-600 border-t border-slate-300 pt-3">
               <summary className="cursor-pointer font-medium text-slate-800">{plural(f.avisos.length, "aviso", "avisos")} sobre a qualidade dos dados</summary>
               <ul className="mt-2 list-disc space-y-1 pl-5">
                 {f.avisos.map((a) => (
@@ -316,13 +316,13 @@ export default function PaginaPrefeito() {
             ).
           </p>
           {ie.pilar.nota == null && (
-            <div className="mb-4 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700">
+            <div className="mb-4 text-sm text-slate-700 border-t border-slate-300 pt-3">
               <b>Ainda sem nota.</b> O TCE-SP ainda não publicou o IEG-M do primeiro ano do mandato (ano-base {dados.prefeito.mandato.slice(0, 4)}). O
               último publicado é o de ano-base {ie.ultimoAnoBase}, da gestão anterior, mostrado abaixo como referência. O pilar entra na nota
               automaticamente quando o novo índice sair.
             </div>
           )}
-          <div className="mb-6 rounded-xl border border-slate-200 bg-white p-4">
+          <div className="mb-6 border-t border-slate-300 pt-3">
             <div className="mb-2 text-sm font-medium text-slate-900">Osasco no IEG-M geral, ano a ano</div>
             <div className="flex flex-wrap gap-3">
               {ie.anos.map((a) => {

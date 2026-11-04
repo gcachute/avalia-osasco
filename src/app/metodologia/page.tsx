@@ -46,7 +46,7 @@ export default function Metodologia() {
         </p>
         <ul className="mb-4 space-y-2 text-slate-700">
           {COEFICIENTES.map((c) => (
-            <li key={c.chave} className="rounded-xl border border-slate-200 bg-white p-3">
+            <li key={c.chave} className="border-t border-slate-300 pt-3">
               <b>{c.nome}.</b> {c.descricao}
             </li>
           ))}
@@ -56,7 +56,7 @@ export default function Metodologia() {
           votações, projetos e leis, comissões, pauta e eficiência. O custo do mandato (D) aparece em cada perfil e não entra em nenhum coeficiente:
           o Quadro de Pessoal da Câmara dá a mesma estrutura a todos os gabinetes.
         </p>
-        <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+        <div className="overflow-hidden border-t border-slate-300">
           <table className="w-full text-sm">
             <thead className="bg-slate-50 text-left text-xs text-slate-500">
               <tr>
@@ -188,7 +188,7 @@ export default function Metodologia() {
           comparada com {pares.length} cidades paulistas grandes ({pares.join(", ")}) no mesmo período. Conta só o mandato atual: a nota é a média dos
           anos fechados desde 2025, e 2024 aparece como referência da gestão anterior.
         </p>
-        <div className="mt-4 overflow-hidden rounded-xl border border-slate-200 bg-white">
+        <div className="mt-4 overflow-hidden border-t border-slate-300">
           <table className="w-full text-sm">
             <thead className="bg-slate-50 text-left text-xs text-slate-500">
               <tr>

@@ -66,7 +66,7 @@ export function NotaBadge({ valor, grande = false }: { valor: number | null; gra
 
 export function Barra({ valor, classe = "bg-blue-700", altura = "h-2" }: { valor: number; classe?: string; altura?: string }) {
   return (
-    <div className={`${altura} w-full overflow-hidden rounded-full bg-slate-100`}>
+    <div className={`${altura} w-full overflow-hidden rounded-sm bg-slate-100`}>
       <div className={`barra-anim h-full rounded-full ${classe}`} style={{ width: `${Math.max(0, Math.min(1, valor)) * 100}%` }} />
     </div>
   );

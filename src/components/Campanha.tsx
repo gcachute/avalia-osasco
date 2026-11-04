@@ -49,7 +49,7 @@ export function ResumoCampanha({ c }: { c: Campanha }) {
         <Cartao titulo="Bens declarados" valor={<span title={reaisExato(c.bens.total)}>{dinheiroCurto(c.bens.total)}</span>} detalhe={`${c.bens.quantidade} ${c.bens.quantidade === 1 ? "item" : "itens"}, valor informado pelo candidato`} />
       </div>
       {origens.length > 0 && (
-        <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-4">
+        <div className="mt-4 border-t border-slate-300 pt-3">
           <div className="text-sm font-medium text-slate-900">De onde veio o dinheiro</div>
           <ul className="mt-3 space-y-2.5">
             {origens.map(([nome, v]) => (
@@ -67,7 +67,7 @@ export function ResumoCampanha({ c }: { c: Campanha }) {
         </div>
       )}
       {c.empresas.length > 0 && (
-        <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-4">
+        <div className="mt-4 border-t border-slate-300 pt-3">
           <div className="text-sm font-medium text-slate-900">Empresas contratadas na campanha</div>
           <ul className="mt-2 divide-y divide-slate-100 text-sm">
             {c.empresas.slice(0, 5).map((e) => (
@@ -94,7 +94,7 @@ export function ResumoCampanha({ c }: { c: Campanha }) {
 
 export function Candidatos({ lista }: { lista: Campanha[] }) {
   return (
-    <ul className="divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white px-4 text-sm">
+    <ul className="divide-y divide-slate-100 text-sm border-t border-slate-300 pt-3">
       {lista.map((c) => (
         <li key={c.sq} className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-0.5 py-2.5">
           <span className="min-w-0 text-slate-900">

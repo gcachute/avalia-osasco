@@ -8,53 +8,69 @@ export const metadata: Metadata = { title: "Vereadores" };
 
 const porNome = (a: Vereador, b: Vereador) => a.nome.localeCompare(b.nome, "pt-BR");
 
-function Cartao({ v, avaliados }: { v: Vereador; avaliados: number }) {
+// Uma linha por vereador, como numa tabela de jornal: nome e partido à esquerda, as quatro notas em colunas alinhadas.
+// No celular as notas descem para uma segunda linha, na mesma ordem do cabeçalho.
+const COLUNAS = "md:grid md:grid-cols-[minmax(0,1fr)_repeat(4,5.5rem)] md:items-center md:gap-x-4";
+
+function Cabecalho() {
+  return (
+    <div className={`hidden border-b border-slate-900 pb-2 text-xs text-slate-500 ${COLUNAS}`} aria-hidden>
+      <span>Vereador</span>
+      {COEFICIENTES.map((c) => (
+        <span key={c.chave} className="text-right">
+          {c.nome}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function Linha({ v, avaliados }: { v: Vereador; avaliados: number }) {
   const temNota = v.coeficientes.producao != null;
   return (
-    <Link
-      href={`/vereadores/${v.id}`}
-      className="group flex flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-blue-300"
-    >
-      <div className="flex items-center gap-3">
-        <Avatar nome={v.nome} foto={v.foto} tamanho={56} />
-        <div className="min-w-0">
-          <div className="truncate font-semibold text-slate-900 group-hover:text-blue-800">{v.nome}</div>
-          <div className="mt-0.5 flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
-            <SeloPartido sigla={v.partido} logo={v.partidoLogo} />
-            {v.perfil?.mesa && <span>{v.perfil.mesa}</span>}
+    <li className="border-b border-slate-200">
+      <Link href={`/vereadores/${v.id}`} className={`group block py-3 ${COLUNAS}`}>
+        <div className="flex min-w-0 items-center gap-3">
+          <Avatar nome={v.nome} foto={v.foto} tamanho={40} />
+          <div className="min-w-0">
+            <div className="truncate font-semibold text-slate-950 group-hover:underline group-hover:underline-offset-4">{v.nome}</div>
+            <div className="mt-0.5 flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
+              <SeloPartido sigla={v.partido} logo={v.partidoLogo} />
+              {v.perfil?.mesa && <span>{v.perfil.mesa}</span>}
+            </div>
           </div>
         </div>
-      </div>
-      {temNota ? (
-        <dl className="grid grid-cols-4 gap-1 text-center">
-          {COEFICIENTES.map((c) => (
-            <div key={c.chave} className="rounded-lg bg-slate-50 px-1 py-1.5">
-              <dt className="truncate text-[9.5px] text-slate-500" title={c.nome}>{c.nome}</dt>
-              <dd
-                className={`text-base font-semibold tabular-nums ${
-                  c.chave === "integridade" && (v.coeficientes.integridade ?? 1) < 0.7
-                    ? (v.coeficientes.integridade ?? 1) < 0.5
-                      ? "text-rose-700"
-                      : "text-amber-700"
-                    : "text-slate-900"
-                }`}
-              >
-                {num(nota10(v.coeficientes[c.chave]), 1)}
-              </dd>
-              {v.rankings[c.chave] && (
-                <dd className="text-[10px] tabular-nums text-slate-500">
-                  {v.rankings[c.chave]}º de {avaliados}
+        {temNota ? (
+          <dl className="mt-2 grid grid-cols-4 gap-x-2 md:contents">
+            {COEFICIENTES.map((c) => (
+              <div key={c.chave} className="md:text-right">
+                <dt className="text-[11px] text-slate-500 md:sr-only">{c.nome}</dt>
+                <dd
+                  className={`font-serif text-lg leading-tight font-semibold tabular-nums ${
+                    c.chave === "integridade" && (v.coeficientes.integridade ?? 1) < 0.7
+                      ? (v.coeficientes.integridade ?? 1) < 0.5
+                        ? "text-rose-700"
+                        : "text-amber-700"
+                      : "text-slate-950"
+                  }`}
+                >
+                  {num(nota10(v.coeficientes[c.chave]), 1)}
                 </dd>
-              )}
-            </div>
-          ))}
-        </dl>
-      ) : (
-        <p className="rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-500">
-          {v.indicadores.sessoes} sessões no período: poucas para calcular as notas (mínimo {dados.metodologia.vereador.minimoSessoes}).
-        </p>
-      )}
-    </Link>
+                {v.rankings[c.chave] && (
+                  <dd className="text-[11px] tabular-nums text-slate-500">
+                    {v.rankings[c.chave]}º de {avaliados}
+                  </dd>
+                )}
+              </div>
+            ))}
+          </dl>
+        ) : (
+          <p className="mt-2 text-xs text-slate-500 md:col-span-4 md:mt-0 md:text-right">
+            {v.indicadores.sessoes} sessões no período: poucas para calcular as notas (mínimo {dados.metodologia.vereador.minimoSessoes}).
+          </p>
+        )}
+      </Link>
+    </li>
   );
 }
 
@@ -77,25 +93,27 @@ export default function Vereadores() {
       <AvisoParcial className="mt-5" />
 
       <Secao titulo={`Em exercício (${ativos.length})`}>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <Cabecalho />
+        <ol>
           {ativos.map((v) => (
-            <Cartao key={v.id} v={v} avaliados={avaliados} />
+            <Linha key={v.id} v={v} avaliados={avaliados} />
           ))}
-        </div>
+        </ol>
       </Secao>
 
       {saiu.length > 0 && (
         <Secao titulo={`Passaram pela Câmara nesta legislatura (${saiu.length})`} subtitulo="Suplentes que assumiram por um tempo e vereadores que saíram.">
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <Cabecalho />
+          <ol>
             {saiu.map((v) => (
-              <Cartao key={v.id} v={v} avaliados={avaliados} />
+              <Linha key={v.id} v={v} avaliados={avaliados} />
             ))}
-          </div>
+          </ol>
         </Secao>
       )}
 
       <ComoLer>
-        <li>Cada cartão mostra a nota de 0 a 10 do vereador em cada coeficiente e, logo abaixo, a posição dele entre os vereadores avaliados.</li>
+        <li>Cada linha mostra a nota de 0 a 10 do vereador em cada coeficiente e, logo abaixo, a posição dele entre os vereadores avaliados.</li>
         <li>Quem tem menos de {dados.metodologia.vereador.minimoSessoes} sessões no período aparece sem nota.</li>
         <li>Em exercício lista quem está no cargo. Passaram pela Câmara lista suplentes que assumiram por um tempo e vereadores que saíram.</li>
         <li>

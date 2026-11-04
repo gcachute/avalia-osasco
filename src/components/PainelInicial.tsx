@@ -24,7 +24,7 @@ export function PainelInicial({ vereadores, minimoSessoes, mapa }: { vereadores:
 
   return (
     <div ref={topo} className="scroll-mt-20">
-      <div role="tablist" aria-label="Ver" className="sticky top-[3.6rem] z-20 mb-3 grid grid-cols-2 gap-1 rounded-xl bg-slate-100 p-1 text-sm font-semibold xl:hidden">
+      <div role="tablist" aria-label="Ver" className="sticky top-[3.6rem] z-20 mb-3 grid grid-cols-2 gap-1 border-b border-slate-300 bg-white text-sm font-semibold xl:hidden">
         {(
           [
             ["mapa", "Mapa"],
@@ -37,7 +37,7 @@ export function PainelInicial({ vereadores, minimoSessoes, mapa }: { vereadores:
             type="button"
             aria-selected={aba === chave}
             onClick={() => setAba(chave)}
-            className={`truncate rounded-lg px-3 py-2 transition ${aba === chave ? "bg-white text-slate-900 shadow-sm" : "text-slate-600"}`}
+            className={`truncate px-3 py-2 transition ${aba === chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600"}`}
           >
             {nome}
             {chave === "mapa" && nomeAutor && <span className="ml-1 font-normal text-slate-500">· {nomeAutor.split(" ")[0]}</span>}

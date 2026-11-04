@@ -21,7 +21,7 @@ function Variacao({ atual, anterior }: { atual: number; anterior: number | null 
   const v = atual / anterior - 1;
   const sobe = v >= 0;
   return (
-    <span className={`inline-flex shrink-0 items-center rounded-full px-1.5 py-0.5 text-[11px] font-medium tabular-nums ring-1 ${sobe ? "bg-emerald-50 text-emerald-800 ring-emerald-200" : "bg-rose-50 text-rose-800 ring-rose-200"}`}>
+    <span className={`inline-flex shrink-0 items-center rounded-sm px-1.5 py-0.5 text-[11px] font-medium tabular-nums ring-1 ${sobe ? "bg-emerald-50 text-emerald-800 ring-emerald-200" : "bg-rose-50 text-rose-800 ring-rose-200"}`}>
       {sobe ? "+" : "−"}
       {pct(Math.abs(v))}
     </span>
@@ -58,7 +58,7 @@ function LinhaParcial({ l, ano, ateMes, cor }: { l: Parcial["linhas"][number]; a
         <Seta aberto={aberto} />
         {feito != null && (
           <span className="col-span-4 flex items-center gap-2 text-[11px] text-slate-500">
-            <span className="relative h-1.5 flex-1 overflow-hidden rounded-full bg-slate-100" aria-hidden>
+            <span className="relative h-1.5 flex-1 overflow-hidden rounded-sm bg-slate-100" aria-hidden>
               <span className="barra-anim absolute inset-y-0 left-0 rounded-full" style={{ width: `${feito * 100}%`, background: cor }} />
             </span>
             <span className="shrink-0 tabular-nums">{pct(l.atual / l.previsao!)} do previsto para o ano</span>
@@ -66,7 +66,7 @@ function LinhaParcial({ l, ano, ateMes, cor }: { l: Parcial["linhas"][number]; a
         )}
       </button>
       <Abre aberto={aberto} id={id}>
-        <dl className="mt-1 mb-2 grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 gap-y-1 rounded-xl border border-slate-200 p-3 text-xs">
+        <dl className="mt-1 mb-2 grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 gap-y-1 text-xs border-t border-slate-300 pt-3">
           <dt className="text-slate-500">
             Janeiro a {MESES[ateMes - 1]} de {ano}
           </dt>
@@ -93,7 +93,7 @@ function LinhaParcial({ l, ano, ateMes, cor }: { l: Parcial["linhas"][number]; a
 
 export function AnoEmAndamento({ p }: { p: Parcial }) {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4">
+    <div className="border-t border-slate-300 pt-3">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <div className="text-sm font-semibold text-slate-900">
           {p.ano}, de janeiro a {MESES[p.ateMes - 1]}
@@ -203,12 +203,12 @@ export function ConferirLinha({ conferencias, ano, titulo = "Conferido com outra
         <span className="text-[11px] font-medium text-slate-700">{titulo}:</span>
         {doAno.map(({ c, a }) =>
           a ? (
-            <span key={c.chave} className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-medium ring-1 ${SELO[a.situacao].classe}`}>
+            <span key={c.chave} className={`inline-flex items-center gap-1 rounded-sm px-2 py-0.5 text-[11px] font-medium ring-1 ${SELO[a.situacao].classe}`}>
               <span aria-hidden>{SELO[a.situacao].icone}</span>
               {SELO[a.situacao].texto} {a.situacao === "diferente" ? "do" : "ao"} {curta(c.fonteB)}
             </span>
           ) : ano != null ? (
-            <span key={c.chave} className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-500 ring-1 ring-slate-200">
+            <span key={c.chave} className="rounded-sm bg-slate-100 px-2 py-0.5 text-[11px] text-slate-500 ring-1 ring-slate-200">
               sem dado do {curta(c.fonteB)} em {ano}
             </span>
           ) : null,

@@ -29,7 +29,7 @@ export function TabelaIegm({ anos }: { anos: AnoIegm[] }) {
             role="tab"
             aria-selected={x.anoBase === anoBase}
             onClick={() => setAnoBase(x.anoBase)}
-            className={`rounded-full px-3 py-1 text-sm ring-1 ring-inset ${x.anoBase === anoBase ? "bg-blue-800 text-white ring-blue-800" : "bg-white text-slate-600 ring-slate-300 hover:bg-slate-50"}`}
+            className={`rounded-sm px-3 py-1 text-sm ring-1 ring-inset ${x.anoBase === anoBase ? "bg-blue-800 text-white ring-blue-800" : "bg-white text-slate-600 ring-slate-300 hover:bg-slate-50"}`}
           >
             Ano-base {x.anoBase}
             {!x.mandato && " · gestão anterior"}
@@ -39,7 +39,7 @@ export function TabelaIegm({ anos }: { anos: AnoIegm[] }) {
       <p className="mb-3 text-sm text-slate-500">
         {a.descricao}, avaliando {a.totalMunicipios} municípios paulistas.
       </p>
-      <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
+      <RolagemLateral className="border-t border-slate-300">
         <table className="w-full min-w-[760px] text-sm">
           <thead className="bg-slate-50 text-left text-xs text-slate-500">
             <tr>

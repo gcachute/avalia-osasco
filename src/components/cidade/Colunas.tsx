@@ -18,7 +18,7 @@ export function Colunas({ titulo, unidade, pontos }: { titulo: string; unidade: 
   const alterna = pontos.length > 8;
 
   return (
-    <div className="@container rounded-2xl border border-slate-200 bg-white p-4">
+    <div className="@container border-t border-slate-300 pt-3">
       <div className="text-sm font-medium text-slate-900">{titulo}</div>
       <div className="mt-2 min-h-14" aria-live="polite">
         <div className="flex flex-wrap items-baseline gap-x-2">

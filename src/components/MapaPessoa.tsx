@@ -80,7 +80,7 @@ export function MapaPessoa({
   const recentes = itens.slice().sort((a, b) => b.data.localeCompare(a.data)).slice(0, 4);
 
   return (
-    <div className="grid gap-4 rounded-2xl border border-slate-200 bg-white p-4 md:grid-cols-[auto_minmax(0,1fr)]">
+    <div className="grid gap-4 md:grid-cols-[auto_minmax(0,1fr)] border-t border-slate-300 pt-3">
       <div
         ref={caixa}
         className="relative mx-auto"
@@ -164,13 +164,13 @@ export function MapaPessoa({
 
       <div className="min-w-0 space-y-3">
         {modos.length > 1 && (
-          <div className="flex flex-wrap gap-1 rounded-lg bg-slate-100 p-0.5" role="group" aria-label="O que colorir">
+          <div className="flex flex-wrap gap-1 border-b border-slate-300" role="group" aria-label="O que colorir">
             {modos.map((m) => (
               <button
                 key={m.chave}
                 onClick={() => setChave(m.chave)}
                 aria-pressed={m.chave === modo.chave}
-                className={`flex-1 rounded-md px-2.5 py-1 text-xs font-medium transition ${m.chave === modo.chave ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
+                className={`flex-1 px-2.5 py-1 text-xs font-medium transition ${m.chave === modo.chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-900"}`}
               >
                 {m.nome}
               </button>
@@ -201,7 +201,7 @@ export function MapaPessoa({
               <span className="text-right text-xs tabular-nums text-slate-400">{k + 1}</span>
               <span className="min-w-0">
                 <span className="block truncate text-slate-800">{b.nome}</span>
-                <span className="mt-0.5 block h-1.5 rounded-full bg-slate-100">
+                <span className="mt-0.5 block h-1.5 rounded-sm bg-slate-100">
                   <span className="block h-full rounded-full bg-blue-600 transition-all duration-500" style={{ width: `${(v / maximo) * 100}%` }} />
                 </span>
               </span>

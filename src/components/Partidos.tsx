@@ -14,14 +14,14 @@ export function GraficoPartidos({ conjuntos, sessoesPeriodo }: { conjuntos: { ch
   const [ativo, setAtivo] = useState<string | null>(null);
   const atual = conjuntos.find((c) => c.chave === chave) ?? conjuntos[0];
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4">
-      <div className="mb-3 flex flex-wrap gap-1 rounded-lg bg-slate-100 p-0.5" role="group" aria-label="Coeficiente">
+    <div className="border-t border-slate-300 pt-3">
+      <div className="mb-3 flex flex-wrap gap-1 border-b border-slate-300" role="group" aria-label="Coeficiente">
         {conjuntos.map((c) => (
           <button
             key={c.chave}
             onClick={() => setChave(c.chave)}
             aria-pressed={c.chave === atual.chave}
-            className={`flex-1 rounded-md px-2.5 py-1 text-xs font-medium transition ${c.chave === atual.chave ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
+            className={`flex-1 px-2.5 py-1 text-xs font-medium transition ${c.chave === atual.chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-900"}`}
           >
             {c.nome}
           </button>

@@ -47,7 +47,7 @@ export function BotaoTema() {
       onClick={proximo}
       title={`${ROTULO[tema]} (clique para trocar)`}
       aria-label={`${ROTULO[tema]}. Clique para trocar.`}
-      className="grid h-9 w-9 place-items-center rounded-lg text-slate-600 ring-1 ring-slate-200 transition hover:bg-slate-100 hover:text-slate-900"
+      className="grid h-9 w-9 place-items-center rounded-md text-slate-500 transition hover:bg-slate-100 hover:text-slate-950"
     >
       {tema === "claro" ? (
         <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">

@@ -162,7 +162,7 @@ export function DinheiroBairro({ d, realce }: { d: NonNullable<BairroMapa["dinhe
                 type="button"
                 aria-pressed={filtro === g.chave}
                 onClick={() => setFiltro(filtro === g.chave ? null : g.chave)}
-                className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] ring-1 transition ${filtro === g.chave ? "bg-slate-800 text-white ring-slate-800" : "bg-white text-slate-700 ring-slate-200 hover:ring-slate-300"}`}
+                className={`inline-flex items-center gap-1 rounded-sm px-2 py-0.5 text-[11px] ring-1 transition ${filtro === g.chave ? "bg-slate-800 text-white ring-slate-800" : "bg-white text-slate-700 ring-slate-200 hover:ring-slate-300"}`}
               >
                 <span className="h-1.5 w-1.5 rounded-full" style={{ background: g.cor }} aria-hidden />
                 {g.nome} <span className="tabular-nums opacity-70">{dinheiroCurto(porGrupo[g.chave]!)}</span>

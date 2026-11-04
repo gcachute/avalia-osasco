@@ -72,7 +72,7 @@ export function ListaTematica({
   const totalFiltrado = grupos.reduce((a, g) => a + g.length, 0);
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-white">
+    <div className="border-t border-slate-300">
       <div className="space-y-2 border-b border-slate-100 p-3">
         <div className="flex flex-wrap gap-1.5" role="group" aria-label="Filtrar por tema">
           {[["Todos", itens.length] as [string, number], ...contagem].map(([t, n]) => {
@@ -85,7 +85,7 @@ export function ListaTematica({
                   setMostrar(inicial);
                 }}
                 aria-pressed={ativo}
-                className={`rounded-full px-2.5 py-1 text-xs font-medium ring-1 ring-inset transition ${ativo ? "bg-blue-800 text-white ring-blue-800" : "bg-white text-slate-600 ring-slate-200 hover:bg-slate-50"}`}
+                className={`rounded-sm px-2.5 py-1 text-xs font-medium ring-1 ring-inset transition ${ativo ? "bg-blue-800 text-white ring-blue-800" : "bg-white text-slate-600 ring-slate-200 hover:bg-slate-50"}`}
               >
                 {t} <span className={`tabular-nums ${ativo ? "text-blue-100" : "text-slate-400"}`}>{n}</span>
               </button>
@@ -124,7 +124,7 @@ export function ListaTematica({
                   <button
                     key={t}
                     onClick={() => setTema(t)}
-                    className="rounded-full px-2 py-0.5 text-[11px] text-slate-500 ring-1 ring-inset ring-slate-200 transition hover:bg-slate-50 hover:text-slate-800"
+                    className="rounded-sm px-2 py-0.5 text-[11px] text-slate-500 ring-1 ring-inset ring-slate-200 transition hover:bg-slate-50 hover:text-slate-800"
                   >
                     {t}
                   </button>

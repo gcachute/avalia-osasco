@@ -531,7 +531,7 @@ export function MapaBairros({
 
   return (
     <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_23rem]">
-      <div className="min-w-0 rounded-2xl border border-slate-200 bg-white">
+      <div className="min-w-0 border-t border-slate-300">
         {/* Tema, indicador e filtros: tudo acima do mapa */}
         <div className="space-y-2 border-b border-slate-100 p-3">
           {/* Trilha: Osasco › bairro selecionado, e o autor filtrado */}
@@ -561,27 +561,27 @@ export function MapaBairros({
               </span>
             )}
           </nav>
-          <div className="flex flex-wrap gap-1" role="tablist" aria-label="Tema">
+          <div className="flex flex-wrap gap-x-4 border-b border-slate-300" role="tablist" aria-label="Tema">
             {TEMAS.map((t) => (
               <button
                 key={t.chave}
                 role="tab"
                 aria-selected={tema === t.chave}
                 onClick={() => escolherTema(t.chave)}
-                className={`rounded-full px-3 py-1 text-xs font-semibold transition ${tema === t.chave ? "bg-blue-800 text-white shadow-sm" : "bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900"}`}
+                className={`py-2 text-sm transition ${tema === t.chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-950"}`}
               >
                 {t.nome}
               </button>
             ))}
           </div>
-          <div className="flex flex-wrap gap-1" role="group" aria-label="Indicador">
+          <div className="flex flex-wrap gap-x-3 gap-y-1" role="group" aria-label="Indicador">
             {INDICADORES.filter((i) => i.tema === tema).map((i) => (
               <button
                 key={i.chave}
                 title={i.dica}
                 onClick={() => (setChave(i.chave), setPeriodo(null))}
                 aria-pressed={chave === i.chave}
-                className={`rounded-md px-2.5 py-1 text-xs transition ${chave === i.chave ? "bg-white font-medium text-slate-900 shadow-sm ring-1 ring-slate-300" : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"}`}
+                className={`py-1 text-xs transition ${chave === i.chave ? "font-semibold text-slate-950 underline decoration-2 underline-offset-4" : "text-slate-600 hover:text-slate-950"}`}
               >
                 {i.nome}
               </button>
@@ -590,7 +590,7 @@ export function MapaBairros({
           {periodos && (
             <div className="flex flex-wrap items-center gap-2 text-[11px]">
               <span className="font-medium text-slate-500">{indicador.historia?.tipo === "censo" ? "Censo" : "Eleição"}</span>
-              <div className="flex rounded-lg bg-slate-100 p-0.5" role="group" aria-label="Ano">
+              <div className="flex border-b border-slate-300" role="group" aria-label="Ano">
                 {periodos.map((p) => {
                   const ativo = (periodoAtivo ?? periodos.filter((x) => x !== "mudanca").at(-1)) === p;
                   return (
@@ -598,7 +598,7 @@ export function MapaBairros({
                       key={p}
                       onClick={() => setPeriodo(p)}
                       aria-pressed={ativo}
-                      className={`rounded-md px-2.5 py-1 font-semibold tabular-nums transition ${ativo ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
+                      className={`px-2.5 py-1 font-semibold tabular-nums transition ${ativo ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-900"}`}
                     >
                       {rotuloPeriodo(p)}
                     </button>
@@ -611,13 +611,13 @@ export function MapaBairros({
           {(politica || chave === "votosVereador") && (
             <div className="flex flex-wrap items-center gap-2">
               {politica && (
-                <div className="flex rounded-lg bg-slate-100 p-0.5" role="group" aria-label="Origem dos documentos">
+                <div className="flex border-b border-slate-300" role="group" aria-label="Origem dos documentos">
                   {ORIGENS.map((o) => (
                     <button
                       key={o.chave}
                       onClick={() => setOrigem(o.chave)}
                       aria-pressed={origem === o.chave}
-                      className={`flex items-center gap-1.5 rounded-md px-2 py-1 text-[11px] font-medium transition ${origem === o.chave ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
+                      className={`flex items-center gap-1.5 px-2 py-1 text-[11px] font-medium transition ${origem === o.chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-900"}`}
                     >
                       {o.chave !== "todos" && <span className="h-2 w-2 rounded-full" style={{ background: corOrigem(o.chave) }} />}
                       {o.nome}
@@ -1044,7 +1044,7 @@ export function MapaBairros({
             </div>
 
             {/* Legenda */}
-            <div className="rounded-xl border border-slate-200 p-2.5 text-[11px] text-slate-600">
+            <div className="text-[11px] text-slate-600 border-t border-slate-300 pt-3">
               <div className="flex flex-wrap items-center gap-1.5">
                 <span className="tabular-nums">{formatar(minimo, formato)}</span>
                 <div className="flex overflow-hidden rounded">
@@ -1093,7 +1093,7 @@ export function MapaBairros({
                     key={c.chave}
                     onClick={() => alternarCamada(c.chave)}
                     aria-pressed={on}
-                    className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-medium ring-1 ring-inset transition ${on ? "bg-slate-900 text-white ring-slate-900" : "bg-white text-slate-600 ring-slate-200 hover:bg-slate-50"}`}
+                    className={`flex items-center gap-1.5 rounded-sm px-2.5 py-1 text-[11px] font-medium ring-1 ring-inset transition ${on ? "bg-slate-900 text-white ring-slate-900" : "bg-white text-slate-600 ring-slate-200 hover:bg-slate-50"}`}
                   >
                     <svg width="12" height="12" viewBox="-7 -7 14 14" aria-hidden>
                       <Marcador tipo={c.chave} ativo={false} />
@@ -1105,7 +1105,7 @@ export function MapaBairros({
               <button
                 onClick={() => setVerFavelas((v) => !v)}
                 aria-pressed={verFavelas}
-                className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-medium ring-1 ring-inset transition ${verFavelas ? "bg-slate-900 text-white ring-slate-900" : "bg-white text-slate-600 ring-slate-200 hover:bg-slate-50"}`}
+                className={`flex items-center gap-1.5 rounded-sm px-2.5 py-1 text-[11px] font-medium ring-1 ring-inset transition ${verFavelas ? "bg-slate-900 text-white ring-slate-900" : "bg-white text-slate-600 ring-slate-200 hover:bg-slate-50"}`}
               >
                 <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden>
                   <rect x="1" y="1" width="10" height="10" rx="2" fill="url(#mapa-favela)" stroke="var(--mapa-camara)" strokeWidth="1.2" />
@@ -1176,9 +1176,9 @@ export function MapaBairros({
       {/* Painel lateral: ranking do indicador ou bairro selecionado. No celular, o bairro abre num painel que sobe
           da parte de baixo da tela, por cima do mapa, em vez de ficar lá embaixo da página. */}
       <aside
-        className={`min-w-0 rounded-2xl border border-slate-200 bg-white p-4 lg:max-h-[60rem] lg:overflow-y-auto ${
+        className={`min-w-0 bg-white max-lg:border-t max-lg:border-slate-300 max-lg:pt-4 lg:max-h-[60rem] lg:overflow-y-auto lg:border-l lg:border-slate-300 lg:pl-5 ${
           sel
-            ? "max-lg:fixed max-lg:inset-x-0 max-lg:bottom-0 max-lg:z-50 max-lg:max-h-[58dvh] max-lg:overflow-y-auto max-lg:overscroll-contain max-lg:rounded-b-none max-lg:pb-[calc(1rem+env(safe-area-inset-bottom))] max-lg:shadow-[0_-12px_40px_rgb(0_0_0/0.25)] max-lg:[animation:painel-sobe_0.28s_ease-out]"
+            ? "max-lg:fixed max-lg:inset-x-0 max-lg:bottom-0 max-lg:z-50 max-lg:rounded-t-lg max-lg:px-4 max-lg:max-h-[58dvh] max-lg:overflow-y-auto max-lg:overscroll-contain max-lg:rounded-b-none max-lg:pb-[calc(1rem+env(safe-area-inset-bottom))] max-lg:shadow-[0_-12px_40px_rgb(0_0_0/0.25)] max-lg:[animation:painel-sobe_0.28s_ease-out]"
             : ""
         }`}
       >
@@ -1233,7 +1233,7 @@ export function MapaBairros({
                     <span className="text-right text-xs tabular-nums text-slate-400">{k + 1}</span>
                     <span className="min-w-0">
                       <span className="block truncate text-slate-800">{b.nome}</span>
-                      <span className="relative mt-0.5 block h-1.5 rounded-full bg-slate-100">
+                      <span className="relative mt-0.5 block h-1.5 rounded-sm bg-slate-100">
                         <span
                           className="block h-full rounded-full bg-blue-600 transition-all duration-500"
                           style={{ width: `${Math.max(3, pos(v))}%` }}
@@ -1267,7 +1267,7 @@ export function MapaBairros({
             )}
             {!ranking.length && <p className="mt-3 text-sm text-slate-500">Nenhum bairro com valor para este indicador e filtros.</p>}
             {politica && (
-              <div className="mt-5 rounded-xl bg-amber-50 p-3 ring-1 ring-amber-200">
+              <div className="mt-5 border-l-[3px] border-amber-500 bg-slate-50 py-3 pr-3 pl-3">
                 <div className="text-sm font-semibold text-amber-900">{nuncaCitados.length} bairros sem nenhum documento</div>
                 <p className="mt-0.5 text-xs text-amber-900/80">
                   {Math.round(nuncaCitados.reduce((a, b) => a + (b.censo?.pessoas ?? b.populacao ?? 0), 0) / 1000).toLocaleString("pt-BR")} mil

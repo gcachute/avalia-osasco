@@ -46,7 +46,7 @@ function Tabela({
 }) {
   const cidades = a.cidades.filter((c) => c.pilares[pilar].nota != null).sort((x, y) => (x.pilares[pilar].ranking ?? 99) - (y.pilares[pilar].ranking ?? 99));
   return (
-    <RolagemLateral className="rounded-xl border border-slate-200 bg-white">
+    <RolagemLateral className="border-t border-slate-300">
       <table className="w-full min-w-[640px] text-sm">
         <thead className="bg-slate-50 text-left text-xs text-slate-500">
           <tr>

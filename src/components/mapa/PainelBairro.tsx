@@ -92,14 +92,14 @@ export function PainelBairro({
         ))}
       </div>
 
-      <div className="mt-4 grid grid-cols-3 gap-0.5 rounded-lg bg-slate-100 p-0.5" role="tablist">
+      <div className="mt-4 grid grid-cols-3 gap-0.5 border-b border-slate-300" role="tablist">
         {ABAS.map((a) => (
           <button
             key={a.chave}
             role="tab"
             aria-selected={aba === a.chave}
             onClick={() => setAba(a.chave)}
-            className={`rounded-md px-1.5 py-1 text-[11px] font-medium transition ${aba === a.chave ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"}`}
+            className={`px-1.5 py-1 text-[11px] font-medium transition ${aba === a.chave ? "font-semibold text-slate-950 shadow-[inset_0_-2px_0_currentColor]" : "text-slate-600 hover:text-slate-900"}`}
           >
             {a.nome}
           </button>
@@ -132,7 +132,7 @@ export function PainelBairro({
                         {media != null && <span className="text-slate-400"> · cidade {formatar(media, "pct")}</span>}
                       </span>
                     </div>
-                    <div className="relative mt-1 h-2 rounded-full bg-slate-100">
+                    <div className="relative mt-1 h-2 rounded-sm bg-slate-100">
                       <div className="h-full rounded-full bg-blue-600 transition-all duration-700" style={{ width: `${v ?? 0}%` }} />
                       {media != null && <div className="absolute -top-0.5 h-3 w-0.5 rounded bg-slate-900" style={{ left: `${media}%` }} />}
                     </div>
@@ -233,7 +233,7 @@ export function PainelBairro({
                         <span className="truncate text-slate-700">{titulo(p.nome)}</span>
                         <span className="tabular-nums text-slate-900">{formatar(p.pct, "pct")}</span>
                       </div>
-                      <div className="mt-0.5 h-2 rounded-full bg-slate-100">
+                      <div className="mt-0.5 h-2 rounded-sm bg-slate-100">
                         <div className={`h-full rounded-full transition-all duration-700 ${k === 0 ? "bg-blue-700" : "bg-slate-400"}`} style={{ width: `${p.pct ?? 0}%` }} />
                       </div>
                     </div>
@@ -282,7 +282,7 @@ export function PainelBairro({
                     {bairro.eleicao.partidos.map((p) => (
                       <div key={p.numero} className="grid grid-cols-[5.5rem_minmax(0,1fr)_3rem] items-center gap-2 text-xs">
                         <span className="truncate text-slate-700">{p.sigla}</span>
-                        <span className="h-2 rounded-full bg-slate-100">
+                        <span className="h-2 rounded-sm bg-slate-100">
                           <span className="block h-full rounded-full bg-blue-600 transition-all duration-700" style={{ width: `${Math.min(100, p.pct * 2)}%` }} />
                         </span>
                         <span className="text-right tabular-nums text-slate-900">{formatar(p.pct, "pct")}</span>
@@ -394,7 +394,7 @@ export function PainelBairro({
                       </span>
                     </div>
                     {x.por10mil != null && (
-                      <div className="relative mt-1 h-2 rounded-full bg-slate-100">
+                      <div className="relative mt-1 h-2 rounded-sm bg-slate-100">
                         <div className="h-full rounded-full bg-blue-600 transition-all duration-700" style={{ width: `${(x.por10mil / escala) * 100}%` }} />
                         {media != null && <div className="absolute -top-0.5 h-3 w-0.5 rounded bg-slate-900" style={{ left: `${(media / escala) * 100}%` }} />}
                       </div>

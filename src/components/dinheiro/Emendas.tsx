@@ -66,9 +66,9 @@ function Foto({ a, tamanho = 40 }: { a: Autor; tamanho?: number }) {
   const estilo = { width: tamanho, height: tamanho };
   if (src)
     // eslint-disable-next-line @next/next/no-img-element
-    return <img src={comBase(src)} alt="" loading="lazy" className="shrink-0 rounded-full bg-slate-100 object-cover object-top" style={estilo} />;
+    return <img src={comBase(src)} alt="" loading="lazy" className="shrink-0 rounded-sm bg-slate-100 object-cover object-top" style={estilo} />;
   return (
-    <span className="flex shrink-0 items-center justify-center rounded-full bg-slate-100 text-xs font-semibold text-slate-500" style={estilo} aria-hidden>
+    <span className="flex shrink-0 items-center justify-center rounded-sm bg-slate-100 text-xs font-semibold text-slate-500" style={estilo} aria-hidden>
       {a.coletiva ? "—" : iniciais(nomeDe(a))}
     </span>
   );
@@ -731,7 +731,7 @@ export function QuemMandou({ autores, vereadores, porPartido }: { autores: Autor
 
   return (
     <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_18rem]">
-      <div className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4">
+      <div className="min-w-0 border-t border-slate-300 pt-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <Segmentos
             rotulo="Quem"
@@ -816,7 +816,7 @@ export function QuemMandou({ autores, vereadores, porPartido }: { autores: Autor
       </div>
 
       {grupo === "individuais" && porPartido.length > 0 && (
-        <aside className="h-fit rounded-2xl border border-slate-200 bg-white p-4">
+        <aside className="h-fit border-t border-slate-300 pt-3">
           <div className="text-sm font-medium text-slate-900">Por partido</div>
           <p className="mt-0.5 text-xs text-slate-500">Partido do autor quando a emenda foi apresentada. Toque para filtrar.</p>
           <ul className="mt-3 space-y-1">
