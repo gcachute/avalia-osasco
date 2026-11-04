@@ -32,6 +32,7 @@
     "conferir:integridade": "node scripts/conferir-integridade.mjs",
     "coletar:contratos": "node scripts/coletar-contratos.mjs",
     "coletar:campanhas": "python -I scripts/coletar-campanhas.py",
+    "coletar:tce-contas": "python -I scripts/coletar-tce-contas.py",
     "coletar:cidade": "node scripts/coletar-cidade.mjs"
   },
   "dependencies": {

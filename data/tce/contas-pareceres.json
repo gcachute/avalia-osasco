@@ -1,0 +1,606 @@
+{
+ "fonte": "Tribunal de Contas do Estado de São Paulo, Contas Anuais (Contas Municipais, pesquisa por município)",
+ "url": "https://www.tce.sp.gov.br/contas-anuais",
+ "coletadoEm": "2026-11-04",
+ "processos": [
+  {
+   "exercicio": 1987,
+   "processo": "58169/026/88",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1988,
+   "processo": "48773/026/89",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1989,
+   "processo": "37457/026/90",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1990,
+   "processo": "5580/026/91",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1991,
+   "processo": "6941/026/92",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1992,
+   "processo": "5725/026/93",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1993,
+   "processo": "3511/026/94",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1994,
+   "processo": "2423/026/95",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1995,
+   "processo": "2556/026/96",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1996,
+   "processo": "1545/026/97",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1997,
+   "processo": "1456/026/98",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1998,
+   "processo": "5546/026/98",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 1999,
+   "processo": "1547/026/99",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 2000,
+   "processo": "2303/026/00",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 2001,
+   "processo": "1604/026/01",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 2002,
+   "processo": "2456/026/02",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 2003,
+   "processo": "2683/026/03",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 2004,
+   "processo": "1535/026/04",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 2005,
+   "processo": "2543/026/05",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 2006,
+   "processo": "2995/026/06",
+   "decisoes": [
+    "29/04/2009"
+   ],
+   "publicado": "13/05/2009",
+   "transito": "18/05/2009",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "reexame",
+     "data": "29/04/2009",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/23192.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL A APROVACAO DAS CONTAS DA PREFEITURA MUNICIPAL DE OSA SCO, RELATIVAS AO EXERCICIO DE 2006. FICA AUTORIZADA VISTA E EXTRACAO DE COPIAS DOS AUTOS AOS INTERESSADOS, NO CARTORIO DO CONSELHEIRO RELATO R, OBSERVADAS AS CAUTELAS LEGAIS. PUBLIQUE-"
+    }
+   ]
+  },
+  {
+   "exercicio": 2007,
+   "processo": "2132/026/07",
+   "decisoes": [
+    "16/06/2009",
+    "18/11/2009"
+   ],
+   "publicado": "09/07/2009",
+   "transito": "26/01/2010",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "16/06/2009",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/31329.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL A APROVACAO DAS CONTAS PRESTADAS PELO PREFEITO MUNICIPAL DE OSASCO, EXERCICIO DE 2007, NAO ALCANCA NDO ESTA DECISAO OS ATOS PORVENTURA PENDENTES DE APRECIACAO POR ESTE TRIBUNAL, DETERMINANDO, A MARGEM DO PARECER, A EXPE DICAO DE OFICIO AO "
+    },
+    {
+     "tipo": "Parecer",
+     "etapa": "reexame",
+     "data": "18/11/2009",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/57555.pdf",
+     "resultado": null,
+     "trecho": null
+    }
+   ]
+  },
+  {
+   "exercicio": 2008,
+   "processo": "1661/026/08",
+   "decisoes": [
+    "05/07/2010",
+    "08/06/2011"
+   ],
+   "publicado": "28/07/2010",
+   "transito": "01/07/2011",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "05/07/2010",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/83768.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL A APROVACAO DAS CONTAS DA PREFEITURA. DETERMINA QUE OS EXPEDIENTES ANEXOS TC-031559/ 026/07, TC-013901/026/08, TC-031111/026/08, TC-0221 83/026/09 E O ACESSORIO TC-1661/126/08, PERMANECAM APENSADOS A ESTES AUTOS. O EXPEDIENTE TC-0011781/02"
+    },
+    {
+     "tipo": "Parecer",
+     "etapa": "reexame",
+     "data": "08/06/2011",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/132732.pdf",
+     "resultado": "favorável",
+     "trecho": "FAVORAVEL A APROVACAO DAS CONTAS DA PREFEITURA MUNI CIPAL DE OSASCO, EXERCICIO DE 2008, MANTENDO-SE AS RECOMENDACOES E DETERMINACOES JA PROFERIDAS, COM ACRESCIMO PARA QUE A ORIGEM MANTENHA RIGIDO CONTROL E CONTABIL SOBRE RECEITAS E DESPESAS VINCULADAS AO ENSIN"
+    }
+   ]
+  },
+  {
+   "exercicio": 2009,
+   "processo": "126/026/09",
+   "decisoes": [
+    "13/09/2011",
+    "15/08/2012"
+   ],
+   "publicado": "05/10/2011",
+   "transito": "31/08/2012",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "13/09/2011",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/148780.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL AS CONTAS DA PREFEITURA MUNICIPAL DE OSASCO, EXERCICIO DE 2009, ESPECIALMENTE ANTE A INSUFICIENTE APLICACAO DE RECU RSOS NA MANUTENCAO E DESENVOLVIMENTO DO ENSINO , EXCETUANDO-SE OS ATOS PORVENTURA PENDENTES DE APRECIACAO, COM RECOMENDACOE"
+    },
+    {
+     "tipo": "Parecer",
+     "etapa": "reexame",
+     "data": "15/08/2012",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/189044.pdf",
+     "resultado": null,
+     "trecho": null
+    }
+   ]
+  },
+  {
+   "exercicio": 2010,
+   "processo": "2524/026/10",
+   "decisoes": [
+    "28/08/2012"
+   ],
+   "publicado": "15/09/2012",
+   "transito": "17/10/2012",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "28/08/2012",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/191084.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL A APROVACAO DAS CONTAS DA PREFEITURA. VOTACAO UNANIME. VISTOS, RELATADOS E DISCUTIDOS OS AUTOS DO PROCESSO TC-002524/026/10. CONSIDERANDO O QUE CONSTA DO RELATORIO E VOTO D O RELATOR, CONFORME NOTAS TAQUIGRAFICAS, JUNTADOS AOS AUTOS, A E. "
+    }
+   ]
+  },
+  {
+   "exercicio": 2011,
+   "processo": "996/026/11",
+   "decisoes": [
+    "24/09/2013",
+    "03/12/2014"
+   ],
+   "publicado": "09/10/2013",
+   "transito": "19/01/2015",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "24/09/2013",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/250487.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL A APROVACAO DAS CONTAS DA PREFEITURA MUNICIPAL DE OSASCO, EXERCICIO DE 2011, RESSALVANDO OS ATOS NAO APRECIADOS. A MARGEM DO PARECER, DETERMINOU A EXPEDICAO DE OFICIO A ORIGEM, TRA NSMITINDO RECOMENDACOES PARA QUE: - MELHORE AS SUAS PECAS "
+    },
+    {
+     "tipo": "Parecer",
+     "etapa": "reexame",
+     "data": "03/12/2014",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/443034.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL A APROVACAO DAS CONTAS DA PREFEITURA MUNICIPAL DE OSASCO, REFERENTES AO EXERCICIO DE 2011 VENCIDO O CONSELHEIRO SIDNEY ESTANISLAU BERALDO. PRESENTE O PROCURADOR - CHEFE DO MINISTERIO PUBLICO DE CONTAS CELSO AUG USTO MATUCK FERES JUNIOR. PU"
+    }
+   ]
+  },
+  {
+   "exercicio": 2012,
+   "processo": "1585/026/12",
+   "decisoes": [
+    "04/11/2014",
+    "01/04/2015"
+   ],
+   "publicado": "03/12/2014",
+   "transito": "26/05/2015",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "04/11/2014",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/437364.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL AS CONTAS DA PREFEITURA. AS RECOMENDACOES E DETERMINACOES ENCONTRAM -SE NO VOTO DO RELATOR. ESTA DELIBERACAO NAO ALCANCA OS ATOS PENDENTES DE APRECIACAO POR ESTE TRIBUNAL. PRESENTE O PROCURADOR DO MINISTERIO PUBLICO DE CONTAS THIAGO PINHEI"
+    },
+    {
+     "tipo": "Parecer",
+     "etapa": "reexame",
+     "data": "01/04/2015",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/469879.pdf",
+     "resultado": null,
+     "trecho": null
+    }
+   ]
+  },
+  {
+   "exercicio": 2013,
+   "processo": "1653/026/13",
+   "decisoes": [
+    "10/11/2015",
+    "15/12/2016"
+   ],
+   "publicado": "03/12/2015",
+   "transito": "30/01/2017",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "10/11/2015",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/509293.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL A APROVACAO DAS CONTAS DA PREFEITURA.VOTACAO UNANIME.. VISTOS, RELATADOS E DISCUTIDOS OS AUTOS DO PROCESSO TC-001653/026/13. CONSIDERANDO O QUE CONSTA DO RELATORIO E VOTO DO RELATOR, CONFORME NOTAS TAQUIGRAFICAS, JUNTADOS AOS AUTOS, A E. S"
+    },
+    {
+     "tipo": "Parecer",
+     "etapa": "reexame",
+     "data": "15/12/2016",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/572151.pdf",
+     "resultado": null,
+     "trecho": null
+    }
+   ]
+  },
+  {
+   "exercicio": 2014,
+   "processo": "126/026/14",
+   "decisoes": [
+    "16/08/2016",
+    "27/09/2017"
+   ],
+   "publicado": "09/09/2016",
+   "transito": "27/11/2017",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "16/08/2016",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/555423.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL A APROVACAO DAS CONTAS DA PREFEITURA, COM RECOMENDACOES. VISTOS, RELATADOS E DISCUTIDOS OS AUTOS. A E. PRIMEIRA CAMARA DO TRIBUNAL DE CONTAS DO ESTADO DE SAO PAULO, EM SESSAO DE 16 DE AGOSTO DE 2016, PELO VOTO DA CONSELHEIRA CRISTIANA DE C"
+    },
+    {
+     "tipo": "Parecer",
+     "etapa": "reexame",
+     "data": "27/09/2017",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/630861.pdf",
+     "resultado": null,
+     "trecho": null
+    }
+   ]
+  },
+  {
+   "exercicio": 2015,
+   "processo": "2218/026/15",
+   "decisoes": [
+    "20/06/2017",
+    "28/11/2018"
+   ],
+   "publicado": "20/07/2017",
+   "transito": "07/02/2019",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "20/06/2017",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/609049.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL A APROVACAO DAS CONTAS DA PREFEITURA MUNICIPAL DE OSASCO, EXERCICIO DE 2015, EXCECAO FEITA AOS ATOS PORVENTURA PENDENTES DE APRECIACAO POR ESTE TRIBUNAL, COM AS RECOMENDACOES CONSTANTES DO VOTO DO RELATOR AO EXECUTIVO, INCLUSIVE AQUELAS A "
+    },
+    {
+     "tipo": "Parecer",
+     "etapa": "reexame",
+     "data": "28/11/2018",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/694651.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL EMITIDO PELA E. SEGUNDA CAMARA SOBRE AS CONTAS APRESENTADAS PELO PREFEITO MUNICIPAL DE OSASCO, REFERENTES AO EXERCICIO DE 2015. PUBLIQUE-SE. SAO PAULO, 28 DE NOVEMBRO DE 2018. RENATO MARTINS COSTA PRESIDENTE JOSUE ROMERO RELATOR CGCRRM/ETK"
+    }
+   ]
+  },
+  {
+   "exercicio": 2016,
+   "processo": "4429/989/16",
+   "decisoes": [
+    "04/12/2018"
+   ],
+   "publicado": "02/02/2019",
+   "transito": null,
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "04/12/2018",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/700548.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL A APROVACAO DAS CONTAS DA PREFEITURA MUNICIPAL DE OSASCO, EXERCICIO DE 2016, RESSALVANDO OS ATOS PENDENTES DE APRECIACAO POR ESTA CORTE DE CONTAS, COM DETERMINACAO A FISCALIZACAO. DETERMINOU, OUTROSS IM, A MARGEM DO PARECER, A EXPEDICAO DE"
+    }
+   ]
+  },
+  {
+   "exercicio": 2017,
+   "processo": "6907/989/16",
+   "decisoes": [
+    "26/11/2019",
+    "10/03/2020"
+   ],
+   "publicado": "21/01/2020",
+   "transito": null,
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "26/11/2019",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/755574.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL, COM RECOMENDACOES. APLICACAO TOTAL NO ENSINO : 21,45%. INVESTIMENTO NO MAGISTERIO VERBA DO FUNDEB: 84,74%. TOTAL DE DESPESAS COM FUNDEB: 99,99%; INVESTIMENTO TOTAL NA SAUDE: 15,11%; GASTOS COM PESSOAL: 45,67%; RESULTADO DA EXECUCAO ORCAME"
+    },
+    {
+     "tipo": "Acórdão",
+     "etapa": "embargos",
+     "data": "10/03/2020",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/773149.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL A APROVACAO DAS CONTAS DEMITIDO PELA E. PRIMEIRA CAMARA. PARECER PUBLICADO NO D.O.E. DE 21-01-20. ADVOGADO(S): ANA CRISTINA FECURI (OAB/SP N 125.181), AUGUSTO NEVES DAL POZZO (OAB/SP N 174.392), LUCAS PETEAN AMARO (OAB/SP N 431.268), ADMAR"
+    }
+   ]
+  },
+  {
+   "exercicio": 2018,
+   "processo": "4664/989/18",
+   "decisoes": [
+    "08/12/2020"
+   ],
+   "publicado": "10/02/2021",
+   "transito": null,
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "08/12/2020",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/804067.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL. VISTOS, RELATADOS E DISCUTIDOS OS AUTOS. PELO VOTO DO AUDITOR SUBSTITUTO DE CONSELHEIRO JOSUE ROMERO, RELATOR, E DOS CONSELHEIROS RENATO MARTINS COSTA, PRESIDENTE, E DIMAS RAMALHO, REVISOR, A E. 2 CAMARA, EM SESSAO DE 08 DE DEZEMBRO DE 20"
+    }
+   ]
+  },
+  {
+   "exercicio": 2019,
+   "processo": "5005/989/19",
+   "decisoes": [
+    "07/12/2021"
+   ],
+   "publicado": "24/03/2022",
+   "transito": "18/04/2022",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "07/12/2021",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/861616.pdf",
+     "resultado": "favorável",
+     "trecho": "PARECER FAVORAVEL. APROVACAO DAS CONTAS DA PREFEITURA . POR MAIORIA DE VOTOS. VISTOS, RELATADOS E DISCUTIDOS OS AU TOS DO PROCESSO TC-005005.989.19-9. CONSIDERANDO O EXPOSTO NAS RESPECTIVAS NOTAS TAQUIGRAFICAS, INSERIDAS AOS AUTOS, A E. PRIMEIRA CAMARA DO TRIB"
+    }
+   ]
+  },
+  {
+   "exercicio": 2020,
+   "processo": "3353/989/20",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 2021,
+   "processo": "7336/989/20",
+   "decisoes": [
+    "14/11/2023"
+   ],
+   "publicado": "29/11/2023",
+   "transito": null,
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "14/11/2023",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/941304.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL, COM RESSALVAS E RECOMENDACOES. APLICACAO TOTAL NO ENSINO: 24,62% (MINIMO 25%) DEFICIENCIA DE R$ 9.518.153,10 (CALCULO ATJ + RETORNO DE GLOSAS SOBRE PROGRAMAS ESPECIFICOS). RESSALVAS TRIBUNAL DE CONTAS DO ESTADO DE SAO PAULO GABINETE DA CO"
+    }
+   ]
+  },
+  {
+   "exercicio": 2022,
+   "processo": "4383/989/22",
+   "decisoes": [
+    "05/03/2024"
+   ],
+   "publicado": "25/03/2024",
+   "transito": null,
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "05/03/2024",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/947072.pdf",
+     "resultado": "desfavorável",
+     "trecho": "PARECER DESFAVORAVEL. RECOMENDACOES. VISTOS, RELATADOS E DISCUTIDOS OS AUTOS. PELO VOTO DOS CONSELHEIROS ROBSON MARINHO, PRESIDENTE E RELATOR, CRISTIANA DE CASTRO MORAES E SIDNEY ESTANISLAU BERALDO, A E. 2 CAMARA, EM SESSAO DE 05 DE MARCO DE 2024 , ANTE O EXPO"
+    }
+   ]
+  },
+  {
+   "exercicio": 2023,
+   "processo": "4620/989/23",
+   "decisoes": [
+    "06/05/2025"
+   ],
+   "publicado": "19/05/2025",
+   "transito": "02/07/2025",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "06/05/2025",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/969864.pdf",
+     "resultado": "favorável",
+     "trecho": "PARECER PREVIO FAVORAVEL. APLICACAO NO ENSINO 28,89% DESPESAS COM FUNDEB 99,07% MAGISTERIO FUNDEB 93,89% DESPESAS COM PESSOAL 39,13 % APLICACAO NA SAUDE 17,50 % DEFICIT ORCAMENTARIO 9,08 % A COLENDA PRIMEIRA CAMARA DO TRIBUNAL DE CONTAS DO ESTADO DE SAO PAULO,"
+    }
+   ]
+  },
+  {
+   "exercicio": 2024,
+   "processo": "4521/989/24",
+   "decisoes": [
+    "14/04/2026"
+   ],
+   "publicado": "06/05/2026",
+   "transito": "19/06/2026",
+   "pareceres": [
+    {
+     "tipo": "Parecer",
+     "etapa": "parecer",
+     "data": "14/04/2026",
+     "url": "https://jurisprudencia.tce.sp.gov.br/arqs_juri/pdf/20114680.pdf",
+     "resultado": "favorável",
+     "trecho": "PARECER FAVORAVEL. OFICIO AO D. MINISTERIO PUBLICO ESTADUAL. ITENS RESULTADOS ENSINO 30,00% FUNDEB 100,00% MAGISTERIO 96,67% SAUDE 15,25% PESSOAL 38,19% TRANSFERENCIAS AO LEGISLATIVO 3,44% REMUNERACAO DOS AGENTES POLITICOS REGULAR PRECATORIOS REGULAR ENCARGOS "
+    }
+   ]
+  },
+  {
+   "exercicio": 2025,
+   "processo": "6719/989/24",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  },
+  {
+   "exercicio": 2026,
+   "processo": "3585/989/26",
+   "decisoes": [],
+   "publicado": null,
+   "transito": null,
+   "pareceres": []
+  }
+ ]
+}

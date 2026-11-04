@@ -1779,6 +1779,179 @@
       "perfil": "https://www.camara.leg.br/deputados/178972",
       "foto": "/fotos/parlamentares/camara-178972.jpg",
       "indicacaoDe": null
+    },
+    "MAURICIO NEVES": {
+      "casa": "camara",
+      "id": 220647,
+      "nome": "Mauricio Neves",
+      "sexo": "M",
+      "uf": "SP",
+      "partido": "PP",
+      "partidos": [
+        {
+          "sigla": "PP",
+          "desde": "2023-02-01"
+        }
+      ],
+      "situacao": "Exercício",
+      "legislaturas": [
+        57
+      ],
+      "perfil": "https://www.camara.leg.br/deputados/220647",
+      "foto": "/fotos/parlamentares/camara-220647.jpg",
+      "indicacaoDe": null
+    },
+    "DAVID SOARES": {
+      "casa": "camara",
+      "id": 204511,
+      "nome": "David Soares",
+      "sexo": "M",
+      "uf": "SP",
+      "partido": "PODE",
+      "partidos": [
+        {
+          "sigla": "DEM",
+          "desde": "2019-02-01"
+        },
+        {
+          "sigla": "UNIÃO",
+          "desde": "2022-02-23"
+        },
+        {
+          "sigla": "PODE",
+          "desde": "2026-04-08"
+        }
+      ],
+      "situacao": "Exercício",
+      "legislaturas": [
+        56,
+        57
+      ],
+      "perfil": "https://www.camara.leg.br/deputados/204511",
+      "foto": "/fotos/parlamentares/camara-204511.jpg",
+      "indicacaoDe": null
+    },
+    "LUIZ PHILIPPE DE ORLEANS E BRAGANCA": {
+      "casa": "camara",
+      "id": 204526,
+      "nome": "Luiz Philippe de Orleans e Bragança",
+      "sexo": "M",
+      "uf": "SP",
+      "partido": "PL",
+      "partidos": [
+        {
+          "sigla": "PSL",
+          "desde": "2019-02-01"
+        },
+        {
+          "sigla": "UNIÃO",
+          "desde": "2022-02-23"
+        },
+        {
+          "sigla": "PL",
+          "desde": "2022-03-15"
+        }
+      ],
+      "situacao": "Exercício",
+      "legislaturas": [
+        56,
+        57
+      ],
+      "perfil": "https://www.camara.leg.br/deputados/204526",
+      "foto": "/fotos/parlamentares/camara-204526.jpg",
+      "indicacaoDe": null
+    },
+    "ENRICO MISASI": {
+      "casa": "camara",
+      "id": 204537,
+      "nome": "Enrico Misasi",
+      "sexo": "M",
+      "uf": "SP",
+      "partido": "MDB",
+      "partidos": [
+        {
+          "sigla": "PV",
+          "desde": "2019-02-01"
+        },
+        {
+          "sigla": "MDB",
+          "desde": "2022-04-06"
+        }
+      ],
+      "situacao": "Suplência",
+      "legislaturas": [
+        56
+      ],
+      "perfil": "https://www.camara.leg.br/deputados/204537",
+      "foto": "/fotos/parlamentares/camara-204537.jpg",
+      "indicacaoDe": null
+    },
+    "ALEXIS FONTEYNE": {
+      "casa": "camara",
+      "id": 204516,
+      "nome": "Alexis Fonteyne",
+      "sexo": "M",
+      "uf": "SP",
+      "partido": "NOVO",
+      "partidos": [
+        {
+          "sigla": "NOVO",
+          "desde": "2019-02-01"
+        }
+      ],
+      "situacao": "Fim de Mandato",
+      "legislaturas": [
+        56
+      ],
+      "perfil": "https://www.camara.leg.br/deputados/204516",
+      "foto": "/fotos/parlamentares/camara-204516.jpg",
+      "indicacaoDe": null
+    },
+    "BOZZELLA": {
+      "casa": "camara",
+      "id": 204502,
+      "nome": "Bozzella",
+      "sexo": "M",
+      "uf": "SP",
+      "partido": "UNIÃO",
+      "partidos": [
+        {
+          "sigla": "PSL",
+          "desde": "2019-02-01"
+        },
+        {
+          "sigla": "UNIÃO",
+          "desde": "2022-02-23"
+        }
+      ],
+      "situacao": "Fim de Mandato",
+      "legislaturas": [
+        56
+      ],
+      "perfil": "https://www.camara.leg.br/deputados/204502",
+      "foto": "/fotos/parlamentares/camara-204502.jpg",
+      "indicacaoDe": null
+    },
+    "VINICIUS POIT": {
+      "casa": "camara",
+      "id": 204532,
+      "nome": "Vinicius Poit",
+      "sexo": "M",
+      "uf": "SP",
+      "partido": "NOVO",
+      "partidos": [
+        {
+          "sigla": "NOVO",
+          "desde": "2019-02-01"
+        }
+      ],
+      "situacao": "Fim de Mandato",
+      "legislaturas": [
+        56
+      ],
+      "perfil": "https://www.camara.leg.br/deputados/204532",
+      "foto": "/fotos/parlamentares/camara-204532.jpg",
+      "indicacaoDe": null
     }
   }
 }

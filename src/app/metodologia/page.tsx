@@ -349,8 +349,13 @@ export default function Metodologia() {
       <Secao titulo="Contratos, campanhas e dados da cidade" id="cidade">
         <ul className="list-disc space-y-2 pl-5 text-slate-700">
           <li>
-            <b>Contratos da Prefeitura:</b> Portal Nacional de Contratações Públicas, pelo CNPJ da Prefeitura. Quase todos os contratos de Osasco no portal são de 2024 em diante. Contrato com pessoa física
+            <b>Contratos da Prefeitura e da Câmara:</b> Portal Nacional de Contratações Públicas, pelo CNPJ de cada órgão (o da Câmara, 50.520.121/0001-32, conferido no próprio portal). Quase todos os contratos de Osasco no portal são de 2024 em diante. Contrato com pessoa física
             entra só na contagem, sem nome nem documento.
+          </li>
+          <li>
+            <b>Parecer do Tribunal de Contas:</b> pesquisa pública da página Contas Anuais do TCE-SP (Contas Municipais, município Osasco), que lista os processos de 1987 a 2026. Para cada
+            ano a partir de 2006, o site lê o PDF do parecer e dos reexames no site de jurisprudência do Tribunal e guarda só o resultado escrito nele: favorável ou desfavorável à
+            aprovação das contas. Os processos anteriores a 2006 não trazem o parecer na mesma consulta.
           </li>
           <li>
             <b>Campanhas de 2024:</b> arquivos abertos do Tribunal Superior Eleitoral. A página usa o total recebido por origem, os gastos contratados e pagos, as empresas contratadas e a soma

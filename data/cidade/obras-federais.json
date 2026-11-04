@@ -1,7 +1,7 @@
 {
  "fonte": "Ministério da Gestão, Obrasgov",
  "url": "https://www.gov.br/transferegov/pt-br/obrasgov",
- "completo": false,
+ "completo": true,
  "obras": [
   {
    "id": "63946.35-58",
@@ -816,7 +816,29 @@
      "valor": 63644119.54
     }
    ]
+  },
+  {
+   "id": "137982.35-04",
+   "nome": "Reforma de Centro Esportivo",
+   "descricao": "Reforma do Centro Esportivo no Município de Osasco/SP.",
+   "endereco": null,
+   "situacao": "Cadastrada",
+   "natureza": "Obra",
+   "especie": "Reforma",
+   "tipo": "Esporte",
+   "inicioPrevisto": "2026-05-24",
+   "fimPrevisto": "2028-05-24",
+   "inicio": null,
+   "fim": null,
+   "tomador": null,
+   "executor": "MUNICIPIO DE OSASCO",
+   "fontes": [
+    {
+     "origem": "Federal",
+     "valor": 394000
+    }
+   ]
   }
  ],
- "coletadoEm": "2026-11-02"
+ "coletadoEm": "2026-11-04"
 }

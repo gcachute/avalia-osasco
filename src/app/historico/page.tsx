@@ -8,7 +8,7 @@ import { dados, type CampoCenso } from "@/lib/dados";
 
 export const metadata: Metadata = {
   title: "Histórico",
-  description: "Como Osasco mudou: população, Censos de 2000, 2010 e 2022, eleições desde 2016, contas da Prefeitura e despesas da Câmara.",
+  description: "Como Osasco mudou: população, Censos de 2000, 2010 e 2022, eleições desde 2016, contas da Prefeitura, parecer do Tribunal de Contas e despesas da Câmara.",
 };
 
 const LINHAS_CENSO: { campo: CampoCenso; nome: string }[] = [
@@ -74,6 +74,9 @@ export default function Evolucao() {
   const folha = dados.camara.folha;
   const mesesFolha = Object.entries(folha?.meses ?? {}).sort(([a], [b]) => a.localeCompare(b));
   const mesNum = (m: string) => Number(m.slice(0, 4)) * 12 + Number(m.slice(5, 7)) - 1;
+  const tce = h?.contasTce;
+  const gestaoDe = (ano: number) => gestoes.find((g) => ano >= g.inicio && ano <= g.fim);
+  const ETAPA = { parecer: "Parecer", reexame: "Reexame", embargos: "Embargos" } as const;
 
   return (
     <article>
@@ -336,6 +339,48 @@ export default function Evolucao() {
         </Secao>
       )}
 
+      {tce && tce.anos.length > 0 && (
+        <Secao titulo="Contas da Prefeitura no Tribunal de Contas" subtitulo="Parecer prévio do TCE-SP sobre as contas de cada ano, da primeira decisão aos pedidos de reexame.">
+          <ul className="divide-y divide-slate-100 rounded-2xl border border-slate-200 bg-white px-4">
+            {[...tce.anos]
+              .sort((a, b) => b.exercicio - a.exercicio)
+              .map((a) => {
+                const g = gestaoDe(a.exercicio);
+                return (
+                  <li key={a.processo} className="py-3 text-sm sm:flex sm:items-baseline sm:gap-6">
+                    <div className="flex items-baseline gap-3 sm:w-72 sm:shrink-0">
+                      <span className="w-11 shrink-0 font-semibold tabular-nums text-slate-900">{a.exercicio}</span>
+                      <span className={a.final ? "font-medium text-slate-900" : "text-slate-500"}>{a.final ? `Parecer ${a.final}` : "Sem parecer na consulta do Tribunal"}</span>
+                    </div>
+                    <div className="mt-1 pl-14 text-xs text-slate-500 sm:mt-0 sm:pl-0">
+                      {a.etapas.map((e, i) => (
+                        <span key={e.url}>
+                          {i > 0 && " · "}
+                          <a href={e.url} className="underline hover:text-slate-800">
+                            {ETAPA[e.etapa]}
+                            {e.data ? ` de ${e.data}` : ""}
+                          </a>
+                          {e.etapa === "parecer" ? `: ${e.resultado ?? "resultado não lido"}` : e.mudou ? `: mudou para ${e.resultado}` : ": manteve"}
+                        </span>
+                      ))}
+                      {a.etapas.length > 0 && " · "}
+                      processo {a.processo}
+                      {g ? ` · gestão ${g.nome}` : ""}
+                    </div>
+                  </li>
+                );
+              })}
+          </ul>
+          <p className="mt-3 text-xs text-slate-500">
+            Fonte:{" "}
+            <a href={tce.url} className="underline">
+              {tce.fonte}
+            </a>
+            . Cada link abre a decisão no site do Tribunal.
+          </p>
+        </Secao>
+      )}
+
       {(despesasCompletas.length > 1 || mesesFolha.length > 1) && (
         <Secao titulo="Câmara Municipal">
           {mesesFolha.length > 1 && folha && (
@@ -396,6 +441,10 @@ export default function Evolucao() {
         <li>As etiquetas no topo mostram quem governou em cada período.</li>
         <li>Nas contas da Prefeitura entram os anos fechados, como foram entregues aos órgãos oficiais. Os valores são os da época, sem correção pela inflação.</li>
         <li>As médias dos Censos são ponderadas por moradores ou domicílios.</li>
+        <li>
+          O parecer do Tribunal de Contas é prévio: quem julga as contas da Prefeitura é a Câmara Municipal. Quando a Prefeitura pede reexame ou apresenta embargos, a linha mostra cada
+          decisão, e o resultado do ano é o da última. Ano sem parecer é aquele para o qual a consulta pública do Tribunal não mostra decisão.
+        </li>
         <li>
           O histórico de cada bairro está no{" "}
           <Link href="/mapa" className="underline">

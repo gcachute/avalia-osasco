@@ -378,6 +378,17 @@ export type Historico = {
     urls: { saude: string; educacao: string };
     anos: { ano: number; saude: number | null; educacao: number | null; fundeb: number | null }[];
   } | null;
+  contasTce?: {
+    fonte: string;
+    url: string;
+    coletadoEm: string;
+    anos: {
+      exercicio: number;
+      processo: string;
+      final: "favorável" | "desfavorável" | null;
+      etapas: { etapa: "parecer" | "reexame" | "embargos"; data: string | null; url: string; resultado: string | null; mudou: boolean }[];
+    }[];
+  } | null;
 };
 
 export type Dados = {

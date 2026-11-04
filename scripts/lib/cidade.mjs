@@ -76,11 +76,20 @@ function transito(t) {
   };
 }
 
+// Um resumo por órgão (Prefeitura e Câmara), cada um com seus anos e suas empresas.
 function resumoContratos(c) {
   if (!c) return null;
+  // Coletas antigas guardavam as pessoas físicas só por ano, todas da Prefeitura.
+  const pf = Object.keys(c.pessoasFisicas ?? {}).every((k) => /^\d{4}$/.test(k)) ? { prefeitura: c.pessoasFisicas ?? {} } : c.pessoasFisicas;
+  const orgaos = {};
+  for (const orgao of [...new Set(c.contratos.map((x) => x.orgao))]) orgaos[orgao] = resumoOrgao(c.contratos.filter((x) => x.orgao === orgao), pf[orgao] ?? {});
+  return { fonte: c.fonte, url: c.url, coletadoEm: c.coletadoEm, orgaos };
+}
+
+function resumoOrgao(contratos, pessoasFisicas) {
   const porAno = {};
   const fornecedores = {};
-  for (const x of c.contratos) {
+  for (const x of contratos) {
     const a = (porAno[x.ano] ??= { ano: x.ano, quantidade: 0, valor: 0 });
     a.quantidade++;
     a.valor += x.valor ?? 0;
@@ -89,12 +98,11 @@ function resumoContratos(c) {
     f.valor += x.valor ?? 0;
   }
   return {
-    fonte: c.fonte,
-    url: c.url,
-    coletadoEm: c.coletadoEm,
-    total: c.contratos.length,
-    porAno: Object.values(porAno).map((a) => ({ ...a, valor: r2(a.valor) })),
-    pessoasFisicas: c.pessoasFisicas,
+    total: contratos.length,
+    porAno: Object.values(porAno)
+      .sort((a, b) => a.ano - b.ano)
+      .map((a) => ({ ...a, valor: r2(a.valor) })),
+    pessoasFisicas,
     fornecedores: Object.keys(fornecedores).length,
     maiores: Object.values(fornecedores)
       .sort((a, b) => b.valor - a.valor)
