@@ -1,5 +1,5 @@
 {
- "coletadoEm": "2026-10-30",
+ "coletadoEm": "2026-11-05",
  "fonte": "Secretaria da Fazenda de SP, Repasse de Tributos a Municípios",
  "url": "https://www.fazenda.sp.gov.br/RepasseConsulta/Consulta/repasse.aspx",
  "nota": "ICMS sem os 20% retidos para o FUNDEB; IPVA bruto.",
@@ -656,6 +656,12 @@
     "ipva": 0,
     "ipiExportacao": 380436.15,
     "compensacao": 149574.83
+   },
+   "2026-11": {
+    "icmsLiquido": 7728931.92,
+    "ipva": 0,
+    "ipiExportacao": 62088.81,
+    "compensacao": 162120.9
    }
   }
  }
