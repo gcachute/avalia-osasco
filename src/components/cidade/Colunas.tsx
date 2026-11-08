@@ -30,7 +30,8 @@ export function Colunas({ titulo, unidade, pontos }: { titulo: string; unidade: 
         {atual.detalhe && <div className="mt-0.5 text-xs text-slate-500">{atual.detalhe}</div>}
       </div>
 
-      <div className="relative mt-2 h-36 pt-4">
+      {/* As colunas crescem a partir da linha do zero quando aparecem na tela. */}
+      <div className="revelar relative mt-2 h-36 pt-4">
         <span className="absolute top-0 left-0 text-[10px] tabular-nums text-slate-500">{topo.texto}</span>
         <span className="absolute inset-x-0 top-4 border-t border-slate-100" aria-hidden />
         <div className="relative h-full">
@@ -60,8 +61,8 @@ export function Colunas({ titulo, unidade, pontos }: { titulo: string; unidade: 
                   onFocus={() => setFoco(i)}
                 >
                   <span
-                    className={`absolute left-1/2 w-full max-w-9 -translate-x-1/2 ${negativo ? "rounded-b" : "rounded-t"} ${cor}`}
-                    style={{ height: `max(${altura}%, ${p.valor ? 2 : 0}px)`, ...(negativo ? { top: `${100 - zero}%` } : { bottom: `${zero}%` }) }}
+                    className={`coluna-cresce absolute left-1/2 w-full max-w-9 -translate-x-1/2 ${negativo ? "origin-top rounded-b" : "origin-bottom rounded-t"} ${cor}`}
+                    style={{ height: `max(${altura}%, ${p.valor ? 2 : 0}px)`, ...(negativo ? { top: `${100 - zero}%` } : { bottom: `${zero}%` }), ["--i" as string]: i }}
                   />
                 </button>
               );

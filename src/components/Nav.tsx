@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 // "curto" é o nome na barra de baixo do celular. "mais": no celular, a página fica no botão "Mais" (seis lugares na
 // barra; sete não cabem numa tela de 320 px).
@@ -10,22 +10,46 @@ export type ItemNav = { href: string; nome: string; curto?: string; icone: keyof
 
 const ativoEm = (caminho: string, href: string) => (href === "/" ? caminho === "/" : caminho.startsWith(href));
 
-// Menu do topo (computador e tablet).
+// Menu do topo (computador e tablet). O traço azul embaixo da página aberta desliza até a nova página quando ela muda.
+// Antes de medir (primeira pintura, sem JavaScript) o traço é a sombra do próprio link, no mesmo lugar.
 export function Nav({ itens }: { itens: ItemNav[] }) {
   const caminho = usePathname();
+  const caixa = useRef<HTMLDivElement>(null);
+  const [traco, setTraco] = useState<{ x: number; w: number; anima: boolean } | null>(null);
+  useLayoutEffect(() => {
+    const medir = (anima: boolean) => {
+      const el = caixa.current?.querySelector<HTMLElement>('[aria-current="page"]');
+      setTraco((t) => (el ? { x: el.offsetLeft, w: el.offsetWidth, anima: anima && t != null } : null));
+    };
+    medir(true);
+    // A largura muda quando a fonte termina de carregar ou a janela muda de tamanho: aí o traço acompanha sem deslizar.
+    const ro = new ResizeObserver(() => medir(false));
+    if (caixa.current) ro.observe(caixa.current);
+    return () => ro.disconnect();
+  }, [caminho]);
   return (
-    <>
-      {itens.map((n) => (
-        <Link
-          key={n.href}
-          href={n.href}
-          aria-current={ativoEm(caminho, n.href) ? "page" : undefined}
-          className={`shrink-0 px-2.5 py-2 transition ${ativoEm(caminho, n.href) ? "font-semibold text-slate-950 shadow-[inset_0_-3px_0_var(--color-blue-700)]" : "text-slate-600 hover:text-slate-950"}`}
-        >
-          {n.nome}
-        </Link>
-      ))}
-    </>
+    <div ref={caixa} className="relative flex items-center gap-1">
+      {itens.map((n) => {
+        const ativo = ativoEm(caminho, n.href);
+        return (
+          <Link
+            key={n.href}
+            href={n.href}
+            aria-current={ativo ? "page" : undefined}
+            className={`shrink-0 px-2.5 py-2 transition-colors ${ativo ? `font-semibold text-slate-950 ${traco ? "" : "shadow-[inset_0_-3px_0_var(--color-blue-700)]"}` : "text-slate-600 hover:text-slate-950"}`}
+          >
+            {n.nome}
+          </Link>
+        );
+      })}
+      {traco && (
+        <span
+          aria-hidden
+          className={`nav-traco pointer-events-none absolute bottom-0 left-0 h-[3px] bg-blue-700 ${traco.anima ? "nav-traco-anima" : ""}`}
+          style={{ width: traco.w, transform: `translateX(${traco.x}px)` }}
+        />
+      )}
+    </div>
   );
 }
 

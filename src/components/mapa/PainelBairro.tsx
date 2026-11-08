@@ -7,6 +7,7 @@ import { dinheiroCurto, num } from "@/lib/formato";
 import { DinheiroBairro } from "./DinheiroBairro";
 import { EvolucaoBairro } from "./EvolucaoBairro";
 import { INDICADORES, formatar } from "./indicadores";
+import { nomePartido } from "@/lib/partidos";
 
 type Aba = "perfil" | "evolucao" | "politica" | "dinheiro" | "obras" | "eleicao" | "servicos" | "seguranca";
 const ABAS: { chave: Aba; nome: string }[] = [
@@ -134,7 +135,7 @@ export function PainelBairro({
                 const v = c[k as keyof typeof c] as number | null;
                 const media = cidade ? ind.cidade?.(cidade) : null;
                 return (
-                  <button key={k} onClick={() => aoEscolherIndicador(k)} className="block w-full text-left" title={`${ind.dica}. Clique para colorir o mapa.`}>
+                  <button key={k} onClick={() => aoEscolherIndicador(k)} className="block w-full text-left" title={`${ind.dica}. Toque para colorir o mapa.`}>
                     <div className="flex justify-between text-xs">
                       <span className="text-slate-700">{ind.nome}</span>
                       <span className="tabular-nums text-slate-900">
@@ -291,7 +292,7 @@ export function PainelBairro({
                   <div className="mt-2 space-y-1.5">
                     {bairro.eleicao.partidos.map((p) => (
                       <div key={p.numero} className="grid grid-cols-[5.5rem_minmax(0,1fr)_3rem] items-center gap-2 text-xs">
-                        <span className="truncate text-slate-700">{p.sigla}</span>
+                        <span className="truncate text-slate-700">{nomePartido(p.sigla)}</span>
                         <span className="h-2 rounded-sm bg-slate-100">
                           <span className="block h-full rounded-full bg-blue-600 transition-all duration-700" style={{ width: `${Math.min(100, p.pct * 2)}%` }} />
                         </span>
@@ -427,7 +428,7 @@ export function PainelBairro({
                 const media = (cidade?.[`crime_${g}`] as number | null | undefined) ?? null;
                 const escala = Math.max(x.por10mil ?? 0, media ?? 0) * 1.25 || 1;
                 return (
-                  <button key={g} onClick={() => aoEscolherIndicador(`crime_${g}`)} className="block w-full text-left" title="Clique para colorir o mapa">
+                  <button key={g} onClick={() => aoEscolherIndicador(`crime_${g}`)} className="block w-full text-left" title="Toque para colorir o mapa">
                     <div className="flex justify-between text-xs">
                       <span className="text-slate-700">{nome}</span>
                       <span className="tabular-nums text-slate-900">

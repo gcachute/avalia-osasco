@@ -5,6 +5,7 @@
 # entra na soma. Dos bens declarados fica o total, porque a descrição de cada bem pode trazer endereço. Fornecedor de campanha
 # aparece só quando é empresa (CNPJ). Os planos de governo dos candidatos a prefeito vão para public/planos.
 # Usa Python porque os arquivos do TSE são zip64, que o leitor em JavaScript não abre.
+import re
 import collections
 import csv
 import io
@@ -42,6 +43,12 @@ def valor(s):
 
 def limpo(s):
     return None if not s or s.startswith("#") else s.strip()
+
+
+# Nome do fornecedor sem o CPF que o microempreendedor individual traz colado no fim (o site não publica CPF).
+def empresa(s):
+    s = limpo(s)
+    return re.sub(r"[\s-]*\d{11}$", "", s) if s else s
 
 
 candidatos = {}
@@ -88,8 +95,8 @@ for l in linhas(prestacao, "despesas_contratadas_candidatos_2024_SP.csv"):
     v = valor(l["VR_DESPESA_CONTRATADA"])
     c["despesas"]["contratado"] += v
     c["despesas"]["porTipo"][limpo(l["DS_ORIGEM_DESPESA"]) or "Não informado"] += v
-    if len(l["NR_CPF_CNPJ_FORNECEDOR"]) == 14 and limpo(l["NM_FORNECEDOR_RFB"] or l["NM_FORNECEDOR"]):
-        c["empresas"][limpo(l["NM_FORNECEDOR_RFB"] or l["NM_FORNECEDOR"])] += v
+    if len(l["NR_CPF_CNPJ_FORNECEDOR"]) == 14 and empresa(l["NM_FORNECEDOR_RFB"] or l["NM_FORNECEDOR"]):
+        c["empresas"][empresa(l["NM_FORNECEDOR_RFB"] or l["NM_FORNECEDOR"])] += v
 
 for l in linhas(prestacao, "despesas_pagas_candidatos_2024_SP.csv"):
     c = prestadores.get(l["SQ_PRESTADOR_CONTAS"])

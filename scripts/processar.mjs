@@ -4,7 +4,8 @@ import { existsSync, readFileSync, readdirSync, writeFileSync, mkdirSync } from 
 import { readWorkbook } from "./lib/xlsx.mjs";
 import { calcularFiscal } from "./lib/fiscal.mjs";
 import { calcularIegm } from "./lib/iegm.mjs";
-import { PESO_SIMBOLICO, calcularNotas, classificarProjeto, notaIntegridade, pontosComissoes, temasDoProjeto } from "./lib/vereadores.mjs";
+import { classificar, tipoExecutivo } from "./lib/classificacao.mjs";
+import { PESO_SIMBOLICO, calcularNotas, notaIntegridade, pontosComissoes, temasDoProjeto } from "./lib/vereadores.mjs";
 import { calcularResultados } from "./lib/resultados.mjs";
 import { calcularTransparencia } from "./lib/transparencia.mjs";
 import { carregarBairros, reconhecedorDeBairros, reconhecedorDeEquipamentos, reconhecedorDeLugares } from "./lib/bairros.mjs";
@@ -342,7 +343,7 @@ const vereadores = [...pessoas.values()].map((p) => {
   const faltas = registradas.length - presencas;
   const justificadas = Math.min(faltas, p.justificativas.length);
   const props = [...proposicoes.values()].filter((x) => ehAutor(x, p.id));
-  const projetos = props.filter((x) => metodologia.tiposProjeto.includes(x.tipo)).map((x) => ({ ...x, classe: classificarProjeto(x.ementa), temas: temasDoProjeto(x.ementa) }));
+  const projetos = props.filter((x) => metodologia.tiposProjeto.includes(x.tipo)).map((x) => ({ ...x, ...classificar(x.ementa), temas: temasDoProjeto(x.ementa) }));
   const honrarias = props.filter((x) => !metodologia.tiposProjeto.includes(x.tipo)).map((x) => ({ ...x, temas: temasDoProjeto(x.ementa) }));
   const reqs = [...requerimentos.values()].filter((x) => ehAutor(x, p.id));
   const naPauta = [...pautaRequerimentos.values()].filter((x) => ehAutor(x, p.id));
@@ -482,7 +483,7 @@ const prefeito = {
     leisDoExecutivo: [...sancoes.values()].filter((x) => x.autor === "prefeito").length,
     decretosLidos: decretos.size,
   },
-  projetos: projetosExecutivo.map((x) => ({ ...x, temas: temasDoProjeto(x.ementa) })).sort((a, b) => b.ano - a.ano || b.numero - a.numero),
+  projetos: projetosExecutivo.map((x) => ({ ...x, tipoProjeto: tipoExecutivo(x.ementa), temas: temasDoProjeto(x.ementa) })).sort((a, b) => b.ano - a.ano || b.numero - a.numero),
   vetos: [...vetos.values()].map((x) => ({ ...x, temas: temasDoProjeto(x.resumo) })),
 };
 

@@ -3,6 +3,25 @@ import bruto from "@/data/dados.json";
 export * from "./formato";
 
 export type Sessao = { id: string; numero: number; tipo: "ordinaria" | "extraordinaria"; data: string; url: string };
+// Por que um projeto é simbólico (scripts/lib/classificacao.mjs) e o tipo de cada projeto do Executivo.
+export type MotivoSimbolico = "nome" | "data" | "campanha" | "reconhecimento" | "selo" | "cerimonial";
+export type TipoProjetoExecutivo = "orcamento" | "pessoal" | "tributos" | "imoveis" | "politica" | "simbolico";
+export const MOTIVO_SIMBOLICO: Record<MotivoSimbolico, string> = {
+  nome: "nome",
+  data: "data ou evento",
+  campanha: "campanha",
+  reconhecimento: "homenagem",
+  selo: "selo de reconhecimento",
+  cerimonial: "cerimonial",
+};
+export const TIPO_EXECUTIVO: Record<TipoProjetoExecutivo, { nome: string; tom: "verde" | "cinza" }> = {
+  orcamento: { nome: "orçamento", tom: "cinza" },
+  pessoal: { nome: "pessoal", tom: "cinza" },
+  tributos: { nome: "tributos", tom: "cinza" },
+  imoveis: { nome: "imóveis", tom: "cinza" },
+  politica: { nome: "política pública", tom: "verde" },
+  simbolico: { nome: "simbólico", tom: "cinza" },
+};
 export type Proposicao = { key: string; tipo: string; numero: number; ano: number; autor: string; ementa: string; sessao: string; temas?: string[] };
 export type Lei = { key: string; lei: string; data: string; autor: string; resumo: string; sessao: string; temas?: string[] };
 export type Veto = { key: string; tipo: string; numero: string; projeto: string; autor: string; resumo: string; sessao: string; temas?: string[] };
@@ -217,7 +236,7 @@ export type Vereador = {
   temas: { tema: string; n: number }[];
   atividadePorMes: { mes: string; proposicoes: number }[];
   presencaPorSessao: { sessao: string; presente: boolean | null; primeiraChamada: boolean | null; presidente: boolean }[];
-  proposicoes: (Proposicao & { classe?: "substantivo" | "simbolico"; temas?: string[] })[];
+  proposicoes: (Proposicao & { classe?: "substantivo" | "simbolico"; motivo?: MotivoSimbolico | null; temas?: string[] })[];
   requerimentos: Proposicao[];
   requerimentosNaPauta: RequerimentoNaPauta[];
   leis: Lei[];
@@ -430,7 +449,7 @@ export type Dados = {
       leisDoExecutivo: number;
       decretosLidos: number;
     };
-    projetos: Proposicao[];
+    projetos: (Proposicao & { tipoProjeto?: TipoProjetoExecutivo })[];
     vetos: Veto[];
   };
   camara: Camara;

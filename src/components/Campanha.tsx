@@ -1,6 +1,7 @@
 import bruto from "@/data/campanhas.json";
 import { Barra, Cartao } from "@/components/ui";
 import { comBase, dinheiroCurto, reaisExato } from "@/lib/formato";
+import { nomePartido } from "@/lib/partidos";
 
 export type Campanha = {
   sq: string;
@@ -82,7 +83,7 @@ export function ResumoCampanha({ c }: { c: Campanha }) {
         </div>
       )}
       <p className="mt-3 text-xs text-slate-500">
-        Eleição de 2024, candidatura nº {c.numero} pelo {c.partido}. Fonte:{" "}
+        Eleição de 2024, candidatura nº {c.numero} pelo {nomePartido(c.partido)}. Fonte:{" "}
         <a href={campanhas.url} className="underline">
           {campanhas.fonte}
         </a>
@@ -98,7 +99,7 @@ export function Candidatos({ lista }: { lista: Campanha[] }) {
       {lista.map((c) => (
         <li key={c.sq} className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-0.5 py-2.5">
           <span className="min-w-0 text-slate-900">
-            {c.urna} <span className="text-slate-500">({c.partido})</span>
+            {c.urna} <span className="text-slate-500">({nomePartido(c.partido)})</span>
           </span>
           <span className="tabular-nums text-slate-700" title={reaisExato(c.receitas.total)}>
             {dinheiroCurto(c.receitas.total)}

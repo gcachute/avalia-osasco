@@ -1,6 +1,8 @@
 import { comBase, faixa, nota } from "@/lib/formato";
+import { Numero } from "./Animacoes";
 import { Foto } from "./Foto";
 import { TextoRecolhivel } from "./TextoRecolhivel";
+import { nomePartido } from "@/lib/partidos";
 
 export function Avatar({ nome, foto, tamanho = 40 }: { nome: string; foto: string | null; tamanho?: number }) {
   const style = { width: tamanho, height: tamanho, fontSize: tamanho * 0.38 };
@@ -10,8 +12,8 @@ export function Avatar({ nome, foto, tamanho = 40 }: { nome: string; foto: strin
       foto={foto}
       alt=""
       style={style}
-      className="shrink-0 rounded-full object-cover object-top ring-1 ring-slate-200"
-      classeIniciais="grid shrink-0 place-items-center rounded-full bg-blue-100 font-semibold text-blue-900"
+      className="avatar-cresce shrink-0 rounded-full object-cover object-top ring-1 ring-slate-200"
+      classeIniciais="avatar-cresce grid shrink-0 place-items-center rounded-full bg-blue-100 font-semibold text-blue-900"
     />
   );
 }
@@ -37,17 +39,18 @@ export function SeloPartido({ sigla, logo, grande = false }: { sigla: string | n
   if (!sigla) return null;
   if (logo)
     return (
+      // Caixa do mesmo tamanho para todos os partidos: o logo cabe nela sem distorcer, quadrado ou comprido.
       <span
-        className={`inline-flex shrink-0 items-center rounded-md px-1.5 ring-1 ring-slate-200 ${grande ? "h-8" : "h-6"}`}
+        className={`inline-flex shrink-0 items-center justify-center rounded-md px-1 ring-1 ring-slate-200 ${grande ? "h-8 w-24" : "h-6 w-[4.5rem]"}`}
         style={{ background: "#fff" }}
-        title={sigla}
+        title={nomePartido(sigla)}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={comBase(logo)} alt={`Partido: ${sigla}`} className={`w-auto max-w-24 object-contain ${grande ? "h-6" : "h-4"}`} loading="lazy" />
+        <img src={comBase(logo)} alt={`Partido: ${nomePartido(sigla)}`} className={`max-w-full object-contain ${grande ? "max-h-7" : "max-h-5"}`} loading="lazy" />
       </span>
     );
   return (
-    <span className={`inline-flex shrink-0 items-center rounded-md bg-slate-900 px-2 font-semibold text-white ${grande ? "h-8 text-sm" : "h-6 text-xs"}`}>{sigla}</span>
+    <span className={`inline-flex shrink-0 items-center rounded-md bg-slate-900 px-2 font-semibold text-white ${grande ? "h-8 text-sm" : "h-6 text-xs"}`}>{nomePartido(sigla)}</span>
   );
 }
 
@@ -58,7 +61,8 @@ export function NotaBadge({ valor, grande = false }: { valor: number | null; gra
   return (
     <span title={f.texto} className={`inline-flex items-center gap-1.5 font-serif tabular-nums ${valor == null ? "text-slate-500" : "text-slate-950"} ${grande ? "text-4xl" : "text-[1.05rem]"}`}>
       <span className={`shrink-0 rounded-full ${PONTO[f.texto]} ${grande ? "h-3 w-3" : "h-2 w-2"}`} aria-hidden />
-      {nota(valor)}
+      {/* A nota grande, no topo do perfil, conta até o valor quando aparece na tela. */}
+      {grande && valor != null ? <Numero valor={Math.round(valor * 10) / 10} casas={1} /> : nota(valor)}
       {grande && valor != null && <span className="font-sans text-sm font-medium text-slate-500">/ 10</span>}
     </span>
   );

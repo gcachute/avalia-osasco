@@ -1062,7 +1062,7 @@ export function MapaBairros({
                           </>
                         )}
                       </div>
-                      <div className="mt-1.5 text-[11px] text-slate-400">Clique para ver o bairro completo</div>
+                      <div className="mt-1.5 text-[11px] text-slate-400">Toque para ver o bairro completo</div>
                     </>
                   )
                 )}
@@ -1280,7 +1280,7 @@ export function MapaBairros({
             </h2>
             <p className="text-xs text-slate-500">
               {mediaCidade != null ? `A marca escura é a média de Osasco (${formatar(mediaCidade, formato)}). ` : ""}
-              Clique em um bairro para ver tudo sobre ele.
+              Toque em um bairro para ver tudo sobre ele.
             </p>
             <ol className="mt-3 space-y-1.5">
               {ranking.slice(0, 15).map(({ b, v }, k) => (

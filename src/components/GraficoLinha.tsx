@@ -94,7 +94,7 @@ export function GraficoLinha({
   const rotuloX = (x: number) => (eixoX === "mes" ? `${MESES[x % 12]}/${String(Math.floor(x / 12)).slice(2)}` : String(x));
 
   return (
-    <figure ref={caixa} className="relative">
+    <figure ref={caixa} className="revelar relative">
       <svg
         width={largura}
         height={altura}
@@ -124,6 +124,8 @@ export function GraficoLinha({
           </text>
         ))}
         {xFoco != null && <line x1={px(xFoco)} x2={px(xFoco)} y1={m.cima} y2={m.cima + h} stroke="var(--grafico-ref)" strokeWidth={1} strokeDasharray="2 3" />}
+        {/* As linhas se desenham da esquerda para a direita quando o gráfico aparece na tela. */}
+        <g className="linha-desenha">
         {series.map((s) => (
           <g key={s.nome}>
             <path d={caminho(s)} fill="none" stroke={s.cor} strokeWidth={2} strokeDasharray={s.tracejada ? "5 4" : undefined} strokeLinejoin="round" strokeLinecap="round" />
@@ -142,6 +144,7 @@ export function GraficoLinha({
               ))}
           </g>
         ))}
+        </g>
       </svg>
       {xFoco != null && (
         <div

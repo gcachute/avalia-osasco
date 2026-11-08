@@ -23,6 +23,7 @@ import { comBase, dataBR, dinheiroCurto, iniciais, reaisExato } from "@/lib/form
 import { DinheiroAnimado } from "@/components/Animacoes";
 import { PorQueOsasco } from "@/components/dinheiro/PorQueOsasco";
 import { Abre, Segmentos } from "@/components/movimento/Movimento";
+import { nomePartido, notaPartido, rotuloPartido } from "@/lib/partidos";
 
 // ---------- Peças pequenas ----------
 
@@ -39,7 +40,7 @@ export function Etiqueta({ children, cor, forte }: { children: React.ReactNode; 
   );
 }
 
-const partidoLegivel = (s: string) => (/^S\/?\s*Part/i.test(s) || /^S\.PART/i.test(s) ? "sem partido" : s);
+const partidoLegivel = (s: string) => (/^S\/?\s*Part/i.test(s) || /^S\.PART/i.test(s) ? "sem partido" : nomePartido(s));
 
 // Cargo, esfera, partido e situação de quem mandou a emenda.
 export function Etiquetas({ a, partido }: { a: Autor; partido?: string | null }) {
@@ -140,7 +141,7 @@ export function CartaoEmenda({ e, abertoInicial = false, indice }: { e: Emenda; 
           <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] text-slate-500">
             <span className="font-semibold text-slate-700 tabular-nums">{e.ano}</span>
             <Etiqueta>{ROTULO_TIPO_EMENDA[e.tipo]}</Etiqueta>
-            {e.partido && e.tipo !== "vereador" && <span>{partidoLegivel(e.partido)} na época</span>}
+            {e.partido && e.tipo !== "vereador" && <span>{rotuloPartido(partidoLegivel(e.partido), e.ano)} na época</span>}
             {e.pagamentos.length > 0 && (
               <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-1.5 text-emerald-800 ring-1 ring-emerald-200">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" aria-hidden />
@@ -828,7 +829,10 @@ export function QuemMandou({ autores, vereadores, porPartido }: { autores: Autor
                   aria-pressed={partido === p.sigla}
                   className={`grid w-full grid-cols-[minmax(0,5.5rem)_minmax(0,1fr)_auto] items-center gap-2 rounded-md px-1.5 py-1 text-left text-xs transition ${partido === p.sigla ? "bg-slate-100" : "hover:bg-slate-50"}`}
                 >
-                  <span className="truncate font-medium text-slate-800">{partidoLegivel(p.sigla)}</span>
+                  <span className="min-w-0 font-medium text-slate-800">
+                    <span className="block truncate">{partidoLegivel(p.sigla)}</span>
+                    {notaPartido(p.sigla) && <span className="block truncate text-[10px] font-normal text-slate-500">({notaPartido(p.sigla)})</span>}
+                  </span>
                   <span className="relative h-2" aria-hidden>
                     <span className="barra-anim absolute inset-y-0 left-0 rounded transition-opacity" style={{ width: `${Math.max(1, (p.valor / maxPartido) * 100)}%`, background: "var(--grafico-1)", opacity: partido && partido !== p.sigla ? 0.35 : 1 }} />
                   </span>

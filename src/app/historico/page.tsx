@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ContasTce, type MandatoTce } from "@/components/ContasTce";
+import { nomePartido, rotuloPartido } from "@/lib/partidos";
 import { GraficoLinha } from "@/components/GraficoLinha";
 import { AvisoParcial, ComoLer, Secao } from "@/components/ui";
 import { Halter, legendaHalter } from "@/components/mapa/Halter";
@@ -101,7 +102,7 @@ export default function Evolucao() {
         <p className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
           {gestoes.map((g) => (
             <span key={g.inicio} className="rounded-sm bg-slate-100 px-2.5 py-1">
-              {g.inicio}–{g.fim}: <b className="text-slate-900">{g.nome}</b> ({g.partido})
+              {g.inicio}–{g.fim}: <b className="text-slate-900">{g.nome}</b> ({rotuloPartido(g.partido, g.inicio - 1, { dentro: true })})
             </span>
           ))}
         </p>
@@ -216,7 +217,7 @@ export default function Evolucao() {
                             {t.candidatos.slice(0, 3).map((x) => (
                               <div key={x.nome} className="grid grid-cols-[minmax(0,1fr)_3.5rem] items-center gap-2 text-xs">
                                 <span className="truncate text-slate-700">
-                                  {x.nome} <span className="text-slate-400">({x.partido})</span>
+                                  {x.nome} <span className="text-slate-400">({rotuloPartido(x.partido, a, { dentro: true })})</span>
                                 </span>
                                 <span className="text-right tabular-nums text-slate-900">{pct(x.pct)}</span>
                                 <span className="col-span-2 block h-1.5 rounded-sm bg-slate-100">
@@ -239,7 +240,7 @@ export default function Evolucao() {
                     <ol className="mt-1 space-y-0.5 text-xs">
                       {ele.cidade[String(a)].partidos.slice(0, 6).map((p) => (
                         <li key={p.sigla} className="flex justify-between gap-2">
-                          <span className="text-slate-700">{p.sigla}</span>
+                          <span className="text-slate-700">{nomePartido(p.sigla)}</span>
                           <span className="tabular-nums text-slate-900">{pct(p.pct)}</span>
                         </li>
                       ))}

@@ -75,6 +75,9 @@ export function ListaDetalhe<T>({
             return (
               <li
                 key={id}
+                // Itens novos (filtro, "Ver mais") entram em sequência; os que já estavam ficam parados.
+                className="entra"
+                style={{ ["--i" as string]: n % porVez }}
                 ref={(el) => {
                   if (el) linhas.current.set(id, el);
                   else linhas.current.delete(id);
@@ -88,7 +91,7 @@ export function ListaDetalhe<T>({
                 >
                   {linha(x, ativo, n)}
                 </button>
-                {ativo && <div className="mt-1 mb-3 lg:hidden">{detalhe(x)}</div>}
+                {ativo && <div className="detalhe-entra mt-1 mb-3 lg:hidden">{detalhe(x)}</div>}
               </li>
             );
           })}
@@ -112,7 +115,14 @@ export function ListaDetalhe<T>({
         )}
       </div>
       <div className="hidden min-w-0 lg:sticky lg:top-28 lg:block lg:max-h-[calc(100dvh-8rem)] lg:overflow-y-auto lg:overscroll-contain">
-        {atual ? detalhe(atual) : <p className="rounded-2xl bg-slate-50 p-4 text-sm text-slate-600">Escolha um item na lista para ver os detalhes.</p>}
+        {/* O detalhe troca com um deslize curto, para ficar claro que mudou. */}
+        {atual ? (
+          <div key={escolhido} className="detalhe-entra">
+            {detalhe(atual)}
+          </div>
+        ) : (
+          <p className="rounded-2xl bg-slate-50 p-4 text-sm text-slate-600">Escolha um item na lista para ver os detalhes.</p>
+        )}
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useId, useMemo, useRef, useState } from "react";
 import { Avatar } from "./ui";
+import { nomePartido } from "@/lib/partidos";
 
 // Busca da página inicial: o jeito mais curto de chegar ao que interessa é pelo nome do bairro ou do vereador.
 // Bairro abre o painel dele no mapa logo abaixo; vereador abre o perfil. Setas escolhem, Enter abre, Esc fecha.
@@ -149,7 +150,7 @@ export function BuscaPainel({ bairros, vereadores, aoEscolherBairro }: { bairros
                     <span className="block font-medium text-slate-950">{o.v.nome}</span>
                     <span className="block text-xs text-slate-500">
                       {o.v.emExercicio ? "Na Câmara" : "Passou pela Câmara nesta legislatura"}
-                      {o.v.partido ? ` · ${o.v.partido}` : ""}
+                      {o.v.partido ? ` · ${nomePartido(o.v.partido)}` : ""}
                     </span>
                   </span>
                 </>

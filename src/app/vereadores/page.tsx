@@ -71,7 +71,7 @@ export default function Vereadores() {
         <div>
           <h1 className="text-4xl font-semibold text-slate-950">Vereadores de Osasco</h1>
           <p className="mt-2 max-w-3xl text-slate-600">
-            Quem está na Câmara na legislatura 2025–2028, com as notas de participação, produção e eficiência. Clique em um nome para ver o perfil
+            Quem está na Câmara na legislatura 2025–2028, com as notas de participação, produção e eficiência. Toque em um nome para ver o perfil
             completo e a conta por trás de cada nota. Para ordenar e comparar, use a lista do{" "}
             <Link href="/" className="underline">
               painel
@@ -105,7 +105,7 @@ export default function Vereadores() {
         <li>Quem tem menos de {dados.metodologia.vereador.minimoSessoes} sessões no período aparece sem nota.</li>
         <li>Em exercício lista quem está no cargo. Passaram pela Câmara lista suplentes que assumiram por um tempo e vereadores que saíram.</li>
         <li>
-          Clique em um nome para abrir o perfil, com a conta de cada nota. Para ordenar e comparar, use a lista do{" "}
+          Toque em um nome para abrir o perfil, com a conta de cada nota. Para ordenar e comparar, use a lista do{" "}
           <Link href="/" className="underline">
             painel
           </Link>

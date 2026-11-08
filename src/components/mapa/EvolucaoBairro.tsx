@@ -5,6 +5,7 @@ import { GraficoLinha } from "../GraficoLinha";
 import { Halter, legendaHalter } from "./Halter";
 import { formatar } from "./indicadores";
 import { RolagemLateral } from "@/components/RolagemLateral";
+import { nomePartido, rotuloPartido } from "@/lib/partidos";
 
 // Medidas do Censo comparáveis entre os anos (2000, 2010 e 2022), em porcentagem. A chave do indicador (quando existe) colore o mapa.
 const LINHAS: { campo: CampoCenso; nome: string; indicador?: string }[] = [
@@ -72,7 +73,7 @@ export function EvolucaoBairro({
                     key={x.t}
                     onClick={() => aoEscolherIndicador(x.ind, "mudanca")}
                     className="rounded-lg bg-slate-50 p-2 text-left transition hover:bg-slate-100"
-                    title="Clique para ver a mudança no mapa"
+                    title="Toque para ver a mudança no mapa"
                   >
                     <div className="text-[11px] text-slate-500">{x.t}</div>
                     <div className="text-xs tabular-nums text-slate-600">
@@ -103,7 +104,7 @@ export function EvolucaoBairro({
                     return (
                       <li key={l.campo}>
                         {l.indicador ? (
-                          <button onClick={() => aoEscolherIndicador(l.indicador!, "mudanca")} className="block w-full text-left" title="Clique para ver a mudança no mapa">
+                          <button onClick={() => aoEscolherIndicador(l.indicador!, "mudanca")} className="block w-full text-left" title="Toque para ver a mudança no mapa">
                             {conteudo}
                           </button>
                         ) : (
@@ -165,10 +166,10 @@ export function EvolucaoBairro({
                       ) : (
                         "—"
                       )}
-                      {x.c && <div className="text-[10px] text-slate-400">Eleito: {x.c.eleito.nome} ({x.c.eleito.partido})</div>}
+                      {x.c && <div className="text-[10px] text-slate-400">Eleito: {x.c.eleito.nome} ({rotuloPartido(x.c.eleito.partido, Number(x.ano), { dentro: true })})</div>}
                     </td>
                     <td className="py-1.5 text-slate-700">
-                      {x.b?.partidos.length ? x.b.partidos.map((p) => `${p.sigla} ${formatar(p.pct, "pct")}`).join(" · ") : "—"}
+                      {x.b?.partidos.length ? x.b.partidos.map((p) => `${nomePartido(p.sigla)} ${formatar(p.pct, "pct")}`).join(" · ") : "—"}
                     </td>
                   </tr>
                 ))}

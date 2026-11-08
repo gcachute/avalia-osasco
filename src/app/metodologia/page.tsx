@@ -95,8 +95,15 @@ export default function Metodologia() {
             cada 10. O bônus só soma, nunca tira.
           </li>
           <li>
-            Projetos simbólicos são identificados pela ementa: nomes de ruas e praças, datas e semanas comemorativas, títulos e utilidade pública. A
-            classificação aparece em cada projeto no perfil do vereador.
+            Projetos simbólicos são identificados pela ementa: são os que só nomeiam, comemoram, homenageiam, reconhecem ou divulgam, sem criar serviço,
+            direito, obrigação ou regra. Entram aqui: (1) nome de rua, praça, prédio, equipamento ou programa; (2) dia, semana, mês, festa, festival, celebração,
+            caminhada ou corrida, ou a inclusão (ou retirada) no calendário oficial; (3) campanha de conscientização ou divulgação, qualquer que seja o verbo da
+            ementa; (4) título de cidadão, utilidade pública, honraria, homenagem, medalha, prêmio, cidades-irmãs e reconhecimento como patrimônio; (5) selo ou
+            certificado de reconhecimento a empresas, escolas ou servidores; (6) ato cerimonial, como placas de inauguração e iluminação em alusão a uma data.
+            Volta a ser política pública o projeto que, junto com isso, institui um programa ou política, um inventário ou cadastro, ou muda o lugar de uma praça.
+            Todo o resto é política pública. A classificação aparece em cada projeto no perfil do vereador, com o motivo quando é simbólica, e foi conferida
+            projeto a projeto. Os projetos do Executivo são separados por tipo (orçamento, pessoal, tributos, imóveis, política pública e simbólico), só para
+            leitura; não entram em nota.
           </li>
           <li>
             Comissões e articulação: presidente de comissão vale 1,5; vice-presidente e relator, 1,25; membro, 1. Frente parlamentar vale 0,25, e
@@ -370,6 +377,14 @@ export default function Metodologia() {
             <b>Campanhas de 2024:</b> arquivos abertos do Tribunal Superior Eleitoral. A página usa o total recebido por origem, os gastos contratados e pagos, as empresas contratadas e a soma
             dos bens declarados. Doações de pessoas aparecem só na soma, e a descrição de cada bem não é mostrada, porque pode conter endereço. O perfil de cada vereador é ligado à candidatura
             pelo nome.
+          </li>
+          <li>
+            <b>Na urna, eleição a eleição:</b> candidaturas e votação por município dos arquivos abertos do Tribunal Superior Eleitoral, de 1996 a 2026: todas as eleições municipais
+            em Osasco e as estaduais e federais em São Paulo de quem já disputou em Osasco. A mesma pessoa é reconhecida pelo CPF que o TSE publica de 2000 a 2022 e em 2026; em 2024, que não
+            traz CPF, pelo nome completo com a data de nascimento; em 1996, pelo nome completo. Esses dados só servem para juntar as candidaturas e não são guardados nem mostrados.
+            Os votos são os recebidos em Osasco. Partido que mudou de nome, se fundiu ou foi incorporado a outro aparece com a sigla da época e, entre parênteses, a de
+            hoje (por exemplo, PTdoB, atual Avante; PHS, hoje no Podemos), segundo os registros de partidos do TSE. Vale também para as eleições da página Histórico e para o
+            partido do autor de cada emenda. Cada partido aparece escrito sempre do mesmo jeito em todo o site: pela sigla quando é conhecido pela sigla (PT, PL, MDB, PSD) e pelo nome quando é conhecido pelo nome (Podemos, Republicanos, União Brasil), mesmo que a fonte escreva de outra forma.
           </li>
           <li>
             <b>Trânsito:</b> Infosiga, do Detran-SP. Cada ocorrência com coordenada é colocada no bairro do ponto. Mortes por meio de transporte contam a data da morte; as demais linhas, a data

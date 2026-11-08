@@ -45,8 +45,8 @@ export function BotaoTema() {
   return (
     <button
       onClick={proximo}
-      title={`${ROTULO[tema]} (clique para trocar)`}
-      aria-label={`${ROTULO[tema]}. Clique para trocar.`}
+      title={`${ROTULO[tema]} (toque para trocar)`}
+      aria-label={`${ROTULO[tema]}. Toque para trocar.`}
       className="grid h-9 w-9 place-items-center rounded-md text-slate-500 transition hover:bg-slate-100 hover:text-slate-950"
     >
       {tema === "claro" ? (

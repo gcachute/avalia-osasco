@@ -125,6 +125,7 @@ export default async function Home() {
                   {/* Integridade fica fora da média por partido: é um registro de cada pessoa, não do partido. */}
                   <GraficoPartidos
                     sessoesPeriodo={sessoes.length}
+                    inicial="producao"
                     conjuntos={COEFICIENTES.filter((c) => c.chave !== "integridade").map((c) => ({ chave: c.chave, nome: c.nome, dados: porPartido(c.chave) }))}
                   />
                 </Secao>

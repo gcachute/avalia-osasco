@@ -29,6 +29,9 @@ const SO = (process.env.SO ?? "entradas,rreo,uniao,sefaz,emendas,pix,parlamentar
 mkdirSync(PASTA, { recursive: true });
 mkdirSync(CACHE, { recursive: true });
 
+// Nome de empresa como o órgão registrou. Microempreendedor individual vem com o CPF colado no fim do nome: o número sai,
+// porque o site não publica CPF.
+const nomeEmpresa = (s) => s.replace(/\s+/g, " ").trim().replace(/[\s-]*\d{11}$/, "");
 const grava = (nome, dados) => writeFileSync(`${PASTA}/${nome}`, JSON.stringify({ coletadoEm: new Date().toISOString().slice(0, 10), ...dados }, null, 1));
 const valor = (s) => Number(String(s ?? "0").replace(/\./g, "").replace(",", ".")) || 0;
 const centavos = (x) => Math.round(x * 100) / 100;
@@ -557,14 +560,14 @@ if (SO.includes("gastos")) {
           acao: r.ds_acao,
           modalidade: r.ds_modalidade_lic.trim(),
           cnpj: pj ? r.nr_identificador_despesa : null,
-          fornecedor: pj ? r.ds_despesa.replace(/\s+/g, " ").trim() : null,
+          fornecedor: pj ? nomeEmpresa(r.ds_despesa) : null,
           texto: pj ? r.historico_despesa.replace(/\s+/g, " ").trim().slice(0, 300) : null,
         });
       if (!pj) {
         x.pessoasFisicas = centavos(x.pessoasFisicas + v);
         continue;
       }
-      const f = (x.fornecedores[r.nr_identificador_despesa] ??= { nome: r.ds_despesa.replace(/\s+/g, " ").trim(), valor: 0, aplicacoes: {}, modalidades: {} });
+      const f = (x.fornecedores[r.nr_identificador_despesa] ??= { nome: nomeEmpresa(r.ds_despesa), valor: 0, aplicacoes: {}, modalidades: {} });
       f.valor = centavos(f.valor + v);
       soma(f.aplicacoes, r.ds_cd_aplicacao_fixo, v);
       soma(f.modalidades, r.ds_modalidade_lic.trim() || "Não informada", v);

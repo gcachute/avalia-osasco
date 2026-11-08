@@ -9,6 +9,7 @@
 // Réguas inspiradas no Ranking dos Políticos (ranking.org.br, Manual 2026): presença em proporção direta, metas
 // fixas em vez de comparar com quem mais produz, e bônus que só somam. O mandato tem muitas outras formas de
 // atuação que os dados não mostram; por isso as réguas não punem com força quem fica abaixo do esperado.
+import { classificar } from "./classificacao.mjs";
 import { media } from "./fiscal.mjs";
 
 const norm = (s) =>
@@ -17,10 +18,8 @@ const norm = (s) =>
     .replace(/\p{M}/gu, "")
     .toLowerCase();
 
-// Projetos que não mudam políticas públicas: nomes de ruas, datas comemorativas, títulos e afins.
-const SIMBOLICO =
-  /denomina|da nome|dar nome|altera(cao)? (a|da) denominacao|institui (o|a) (dia|semana|mes|campanha|festa|marcha|jornada|outubro|novembro|setembro|junho|maio|abril)|dia municipal|semana municipal|mes municipal|calendario oficial|utilidade publica|titulo de cidadao|concessao de (titulo|medalha|diploma)|patrimonio (cultural|historico|imaterial)|reconhece como|capital (municipal|estadual) d/;
-export const classificarProjeto = (ementa) => (SIMBOLICO.test(norm(ementa)) ? "simbolico" : "substantivo");
+// Simbólico ou política pública: o critério completo está em scripts/lib/classificacao.mjs.
+export const classificarProjeto = (ementa) => classificar(ementa).classe;
 
 // Temas por palavras-chave da ementa (um projeto pode ter mais de um).
 const TEMAS = [

@@ -10,11 +10,12 @@ import { Faixa, TabelaIegm } from "@/components/Iegm";
 import { PilarD, PilarE } from "@/components/PilaresDE";
 import { AvisoParcial, Barra, Cartao, ComoLer, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import type { AnoFiscal, CidadeFiscal } from "@/lib/dados";
-import { PILARES_PREFEITO, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, num, plural, sessao } from "@/lib/dados";
+import { PILARES_PREFEITO, TIPO_EXECUTIVO, TIPO_NOME, dados, dataBR, nomeSessao, nota, nota10, num, plural, sessao } from "@/lib/dados";
 import { INDICADORES, primarioTexto, ranking, rotuloPeriodo } from "@/lib/fiscal";
 import { FAIXAS } from "@/lib/iegm";
 import { RolagemLateral } from "@/components/RolagemLateral";
 import { campanhas, Candidatos, ResumoCampanha } from "@/components/Campanha";
+import { Trajetoria, trajetoriaDe } from "@/components/Trajetoria";
 
 export const metadata: Metadata = { title: "Prefeito" };
 
@@ -376,6 +377,12 @@ export default function PaginaPrefeito() {
         </Secao>
       )}
 
+      {trajetoriaDe("prefeito") && (
+        <Secao titulo="Na urna, eleição a eleição" id="trajetoria" subtitulo="Todas as candidaturas registradas na Justiça Eleitoral desde 1996, em Osasco e em São Paulo.">
+          <Trajetoria id="prefeito" />
+        </Secao>
+      )}
+
       {campanha && (
         <Secao titulo="Campanha de 2024" id="campanha" subtitulo="Quanto a campanha recebeu e gastou, e o que foi declarado à Justiça Eleitoral.">
           <ResumoCampanha c={campanha} />
@@ -401,6 +408,16 @@ export default function PaginaPrefeito() {
           Projetos com o mesmo texto (como os pedidos de crédito adicional ao orçamento) aparecem numa linha só. Filtre por tema ou busque pelo
           assunto.
         </p>
+        <p className="mb-3 text-sm text-slate-700">
+          {(Object.keys(TIPO_EXECUTIVO) as (keyof typeof TIPO_EXECUTIVO)[])
+            .map((k) => [k, p.projetos.filter((x) => x.tipoProjeto === k).length] as const)
+            .filter(([, n]) => n > 0)
+            .sort((a, b) => b[1] - a[1])
+            .map(([k, n]) => `${n} de ${TIPO_EXECUTIVO[k].nome}`)
+            .join(", ")
+            .replace(/, ([^,]*)$/, " e $1")}
+          .
+        </p>
         <ListaTematica
           agrupar
           nomes={["projeto", "projetos"]}
@@ -413,6 +430,7 @@ export default function PaginaPrefeito() {
               curto: `${x.tipo} ${x.numero}/${x.ano}`,
               texto: x.ementa,
               temas: x.temas ?? [],
+              selo: x.tipoProjeto ? { texto: TIPO_EXECUTIVO[x.tipoProjeto].nome, tom: TIPO_EXECUTIVO[x.tipoProjeto].tom } : undefined,
               sessao: s ? { rotulo: `${nomeSessao(s)} (${dataBR(s.data)})`, url: s.url } : null,
             };
           })}
@@ -441,6 +459,11 @@ export default function PaginaPrefeito() {
 
 
       <ComoLer>
+        <li>
+          Na urna, eleição a eleição: todas as candidaturas na Justiça Eleitoral desde 1996, em Osasco e em São Paulo. Os votos são os recebidos em Osasco; nas eleições
+          estaduais e federais aparece só o resultado. A mesma pessoa é reconhecida de uma eleição para outra pelos registros do TSE. Partido que mudou de nome
+          ou se juntou a outro aparece com o nome de hoje entre parênteses, como PTN (atual Podemos).
+        </li>
         <li>Na campanha, bens declarados são os valores informados pelo próprio candidato à Justiça Eleitoral em 2024.</li>
         <li>A avaliação é feita por pilar, de 0 a 10, sem nota geral. Cada pilar traz a própria fonte.</li>
         <li>Aguardando dados do mandato quer dizer que a fonte ainda não publicou os números do período.</li>

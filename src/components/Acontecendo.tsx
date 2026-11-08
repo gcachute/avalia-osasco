@@ -29,10 +29,10 @@ export function Acontecendo({ recentes, aoVerBairro }: { recentes: Recente[]; ao
       <h2 className="text-[1.6rem] leading-tight text-slate-950">Acontecendo agora</h2>
       <p className="mt-1 text-sm text-slate-600">Os documentos mais recentes que citam algum bairro. Toque em um para ver os detalhes.</p>
       <ol className="mt-3 divide-y divide-slate-200">
-        {recentes.slice(0, quantos).map((r) => {
+        {recentes.slice(0, quantos).map((r, i) => {
           const abre = aberto === r.id;
           return (
-            <li key={r.id} className="py-1.5">
+            <li key={r.id} className="entra py-1.5" style={{ ["--i" as string]: i % POR_VEZ }}>
               <button
                 type="button"
                 aria-expanded={abre}
@@ -83,7 +83,7 @@ export function Acontecendo({ recentes, aoVerBairro }: { recentes: Recente[]; ao
 
 function Detalhe({ r, aoVerBairro }: { r: Recente; aoVerBairro: (id: string) => void }) {
   return (
-    <div className="-mx-2 mb-1 rounded-b-xl bg-white px-2 pb-3 text-sm">
+    <div className="detalhe-entra -mx-2 mb-1 rounded-b-xl bg-white px-2 pb-3 text-sm">
       <dl className="grid grid-cols-[6.5rem_minmax(0,1fr)] gap-x-3 gap-y-1.5 border-t border-slate-100 pt-2.5">
         <dt className="text-slate-500">Documento</dt>
         <dd className="text-slate-900">

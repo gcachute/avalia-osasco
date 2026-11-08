@@ -22,8 +22,9 @@ type Parametro = "presenca" | "votacoes" | "legislacao" | "comissoes" | "pauta" 
 type Criterio = "producao" | "participacao" | "eficiencia" | "proprio";
 
 const CRITERIOS: { chave: Criterio; nome: string }[] = [
-  { chave: "producao", nome: "Produção" },
+  // Mesma ordem do resto do site (perfil, metodologia, média por partido); a lista começa ordenada por Produção.
   { chave: "participacao", nome: "Participação" },
+  { chave: "producao", nome: "Produção" },
   { chave: "eficiencia", nome: "Eficiência" },
   { chave: "proprio", nome: "Meu critério" },
 ];
@@ -114,7 +115,7 @@ export function ListaVereadores({
       <div className="space-y-2 border-b border-slate-100 p-3">
         <div className="flex items-baseline justify-between">
           <h2 className="text-sm font-semibold text-slate-900">Vereadores</h2>
-          <span className="text-[11px] text-slate-500">clique para ver no mapa</span>
+          <span className="text-[11px] text-slate-500">toque para ver no mapa</span>
         </div>
         <div className="grid grid-cols-4 gap-0.5 border-b border-slate-300" role="group" aria-label="Ordenar por">
           {CRITERIOS.map((c) => (

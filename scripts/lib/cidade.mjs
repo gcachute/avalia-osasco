@@ -199,6 +199,13 @@ export function montarCidade({ vereadores, acha = null, nomesBairros = {} }) {
     }
     if (semPar.length) console.log(`Sem candidatura encontrada em 2024: ${semPar.join(", ")}`);
     const soma = (lista, f) => r2(lista.reduce((s, c) => s + f(c), 0));
+    // Trajetória nas urnas (scripts/coletar-trajetorias.mjs): ligada a cada vereador e ao prefeito pela candidatura de 2024.
+    const trajetorias = ler("data/tse/trajetorias.json");
+    const porSq = new Map((trajetorias?.pessoas ?? []).filter((x) => x.sq2024).map((x) => [x.sq2024, x.candidaturas]));
+    const prefeitoEleito = campanhas.candidatos.find((c) => c.cargo === "Prefeito" && /^ELEITO/.test(c.situacao));
+    const trajetoria = Object.fromEntries(
+      [...Object.entries(porId).map(([id, c]) => [id, porSq.get(c.sq)]), ["prefeito", prefeitoEleito && porSq.get(prefeitoEleito.sq)]].filter(([, t]) => t),
+    );
     writeFileSync(
       "src/data/campanhas.json",
       JSON.stringify({
@@ -206,6 +213,8 @@ export function montarCidade({ vereadores, acha = null, nomesBairros = {} }) {
         url: campanhas.url,
         coletadoEm: campanhas.coletadoEm,
         porId,
+        trajetoria,
+        fonteTrajetoria: trajetorias ? { fonte: trajetorias.fonte, url: trajetorias.url, coletadoEm: trajetorias.coletadoEm } : null,
         prefeitos: campanhas.candidatos.filter((c) => c.cargo === "Prefeito"),
         vereadores: { candidaturas: candidatos.length, receitas: soma(candidatos, (c) => c.receitas.total), gastos: soma(candidatos, (c) => c.despesas.contratado) },
       }),

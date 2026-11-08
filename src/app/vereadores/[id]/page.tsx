@@ -10,8 +10,9 @@ import { geometriaBairros } from "@/lib/mapaGeo";
 import { reais } from "@/lib/formato";
 import { AvisoParcial, Avatar, Barra, Cartao, ComoLer, NotaBadge, Retrato, Secao, SeloPartido } from "@/components/ui";
 import { campanhas, ResumoCampanha } from "@/components/Campanha";
+import { Trajetoria, trajetoriaDe } from "@/components/Trajetoria";
 import type { PilarVereador, Vereador } from "@/lib/dados";
-import { COEFICIENTES, PILARES_VEREADOR, TIPO_NOME, dados, dataBR, milReais, nomeSessao, nota, nota10, num, pct, plural, sessao } from "@/lib/dados";
+import { COEFICIENTES, MOTIVO_SIMBOLICO, PILARES_VEREADOR, TIPO_NOME, dados, dataBR, milReais, nomeSessao, nota, nota10, num, pct, plural, sessao } from "@/lib/dados";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => dados.vereadores.map((v) => ({ id: v.id }));
@@ -45,7 +46,11 @@ const itemProposicao = (p: Vereador["proposicoes"][number]): ItemLista => ({
   curto: `${p.tipo} ${p.numero}/${p.ano}`,
   texto: p.ementa,
   temas: p.temas ?? [],
-  selo: p.classe ? (p.classe === "substantivo" ? { texto: "política pública", tom: "verde" } : { texto: "simbólico", tom: "cinza" }) : undefined,
+  selo: p.classe
+    ? p.classe === "substantivo"
+      ? { texto: "política pública", tom: "verde" }
+      : { texto: p.motivo ? `simbólico: ${MOTIVO_SIMBOLICO[p.motivo]}` : "simbólico", tom: "cinza" }
+    : undefined,
   sessao: linkSessao(p.sessao),
 });
 
@@ -631,6 +636,12 @@ export default async function PaginaVereador({ params }: Props) {
         </Secao>
       )}
 
+      {trajetoriaDe(v.id) && (
+        <Secao titulo="Na urna, eleição a eleição" id="trajetoria" subtitulo="Todas as candidaturas registradas na Justiça Eleitoral desde 1996, em Osasco e em São Paulo.">
+          <Trajetoria id={v.id} />
+        </Secao>
+      )}
+
       {campanha && (
         <Secao titulo="Campanha de 2024" id="campanha" subtitulo="Quanto a campanha recebeu e gastou, e o que foi declarado à Justiça Eleitoral.">
           <ResumoCampanha c={campanha} />
@@ -683,6 +694,11 @@ export default async function PaginaVereador({ params }: Props) {
       )}
 
       <ComoLer>
+        <li>
+          Na urna, eleição a eleição: todas as candidaturas na Justiça Eleitoral desde 1996, em Osasco e em São Paulo. Os votos são os recebidos em Osasco; nas eleições
+          estaduais e federais aparece só o resultado. A mesma pessoa é reconhecida de uma eleição para outra pelos registros do TSE. Partido que mudou de nome
+          ou se juntou a outro aparece com o nome de hoje entre parênteses, como PTN (atual Podemos).
+        </li>
         <li>Na campanha, bens declarados são os valores informados pelo próprio candidato à Justiça Eleitoral em 2024.</li>
         <li>No topo ficam as notas de 0 a 10. Cada coeficiente junta avaliações individuais, e a seção Como cada avaliação foi calculada mostra a conta de cada uma.</li>
         <li>Sem dados quer dizer que não há registro para aquela avaliação no período.</li>
