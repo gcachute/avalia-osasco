@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-06T23:40:27.975Z",
+ "geradoEm": "2026-11-08T00:51:52.575Z",
  "periodo": {
   "inicio": "2025-02-06",
   "fim": "2026-10-08"
@@ -41833,7 +41833,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-30T20:21:51.693Z",
+     "coletadoEm": "2026-11-05T17:07:31.028Z",
      "mandato": false,
      "cidades": [
       {
@@ -42299,7 +42299,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-30T20:22:57.089Z",
+     "coletadoEm": "2026-11-05T17:08:28.691Z",
      "mandato": false,
      "cidades": [
       {
@@ -42765,7 +42765,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-30T20:23:57.073Z",
+     "coletadoEm": "2026-11-05T17:09:25.125Z",
      "mandato": false,
      "cidades": [
       {
@@ -43231,7 +43231,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-30T20:25:01.309Z",
+     "coletadoEm": "2026-11-05T17:10:18.412Z",
      "mandato": false,
      "cidades": [
       {
@@ -43697,7 +43697,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-30T20:25:55.161Z",
+     "coletadoEm": "2026-11-05T17:11:14.099Z",
      "mandato": false,
      "cidades": [
       {
@@ -44171,7 +44171,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-30T20:26:46.771Z",
+     "coletadoEm": "2026-11-05T17:12:11.756Z",
      "mandato": false,
      "cidades": [
       {
@@ -44637,7 +44637,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-30T20:27:38.103Z",
+     "coletadoEm": "2026-11-05T17:13:10.392Z",
      "mandato": false,
      "cidades": [
       {
@@ -45143,7 +45143,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-30T20:28:30.330Z",
+     "coletadoEm": "2026-11-05T17:14:07.499Z",
      "mandato": false,
      "cidades": [
       {
@@ -45649,7 +45649,7 @@
      "completo": true,
      "rreoPeriodo": 6,
      "rgfPeriodo": 3,
-     "coletadoEm": "2026-10-30T20:29:21.564Z",
+     "coletadoEm": "2026-11-05T17:14:58.163Z",
      "mandato": true,
      "cidades": [
       {
@@ -46155,7 +46155,7 @@
      "completo": false,
      "rreoPeriodo": 4,
      "rgfPeriodo": 2,
-     "coletadoEm": "2026-10-30T20:30:17.407Z",
+     "coletadoEm": "2026-11-05T17:15:54.604Z",
      "mandato": true,
      "cidades": [
       {
@@ -50218,7 +50218,7 @@
   "despesas": {
    "fonte": "TCE-SP, Portal da Transparência Municipal (dados do sistema AUDESP)",
    "url": "https://transparencia.tce.sp.gov.br/",
-   "coletadoEm": "2026-10-30",
+   "coletadoEm": "2026-11-05",
    "anos": {
     "2017": {
      "pago": 41002832.78,
@@ -50563,40 +50563,40 @@
      ]
     },
     "2026": {
-     "pago": 74195903.95,
-     "meses": 8,
+     "pago": 84492349.06,
+     "meses": 9,
      "maioresFornecedores": [
       {
        "nome": "CAMARA MUNICIPAL DE OSASCO",
-       "pago": 46421423.52
+       "pago": 52043697.43
       },
       {
        "nome": "TETO CONSTRUTORA S A",
-       "pago": 4949016.26
-      },
-      {
-       "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO S A",
-       "pago": 4173457.38
+       "pago": 7094005.8
       },
       {
        "nome": "INSTITUTO NACIONAL DA SEGURIDADE SOCIAL",
-       "pago": 3978881.94
+       "pago": 4576717.88
+      },
+      {
+       "nome": "SODEXO PASS DO BRASIL SERVICOS E COMERCIO S A",
+       "pago": 4191377.38
       },
       {
        "nome": "IPMO INSTITUTO DE PREVIDENCIA DO MUNICIPIO DE OSASCO",
-       "pago": 2182406.88
+       "pago": 2501739.85
       },
       {
        "nome": "BRASIL COMPANY NEGOCIOS EMPRESARIAIS LTDA",
-       "pago": 1733077.44
+       "pago": 1995446.84
       },
       {
        "nome": "RED PROG AGENCIA DE PUBLICIDADE LTDA",
-       "pago": 1351297.93
+       "pago": 1613101.13
       },
       {
        "nome": "MOVIMENTO EMPRESA JORNALISTICA E EDITORA LTDA",
-       "pago": 1203469.5
+       "pago": 1301879.5
       }
      ]
     }

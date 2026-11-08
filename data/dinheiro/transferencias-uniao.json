@@ -1,5 +1,5 @@
 {
- "coletadoEm": "2026-10-30",
+ "coletadoEm": "2026-11-05",
  "fonte": "Portal da Transparência (CGU), transferências da União a municípios",
  "url": "https://portaldatransparencia.gov.br/transferencias",
  "meses": {
@@ -602,6 +602,254 @@
    },
    "entidades": 448845
   },
+  "202204": {
+   "prefeitura": {
+    "fundeb": 3509312.68,
+    "fpm": 7106048.57,
+    "royalties": 550767.52,
+    "assistencia": 554908.65,
+    "sus": 7725793.77,
+    "educacao": 5225409.97
+   },
+   "entidades": 154875
+  },
+  "202205": {
+   "prefeitura": {
+    "fundeb": 3765284.61,
+    "fpm": 7904769.91,
+    "royalties": 595663.56,
+    "outras": 9226193.09,
+    "assistencia": 237525.37,
+    "sus": 7378907.32,
+    "educacao": 5289492.04
+   },
+   "entidades": 370570
+  },
+  "202206": {
+   "prefeitura": {
+    "fundeb": 3599209.7,
+    "fpm": 7396420.76,
+    "royalties": 493204.61,
+    "assistencia": 186895.5,
+    "sus": 11013595.46,
+    "outras": 3548643.11,
+    "educacao": 5541526.1
+   },
+   "entidades": 1615
+  },
+  "202207": {
+   "prefeitura": {
+    "fundeb": 3105041.57,
+    "fpm": 10858050.79,
+    "royalties": 629867.82,
+    "assistencia": 497113.54,
+    "sus": 8151784.11,
+    "especiais": 500000,
+    "educacao": 5301359.91,
+    "outras": 1742338.94
+   },
+   "entidades": 43705
+  },
+  "202208": {
+   "prefeitura": {
+    "fundeb": 3485184.74,
+    "fpm": 7230364.77,
+    "royalties": 560358.43,
+    "assistencia": 331026.7,
+    "sus": 7676275.22,
+    "educacao": 6084947.68,
+    "outras": 2350254.7
+   },
+   "entidades": 0
+  },
+  "202209": {
+   "prefeitura": {
+    "fundeb": 3008404.97,
+    "fpm": 6815133.36,
+    "royalties": 572336.35,
+    "assistencia": 173478.25,
+    "sus": 7682654.74,
+    "educacao": 5786894.05,
+    "outras": 209038.59
+   },
+   "entidades": 100000
+  },
+  "202210": {
+   "prefeitura": {
+    "fundeb": 3544458.69,
+    "fpm": 6329356.07,
+    "outras": 11410780.37,
+    "royalties": 564469.74,
+    "assistencia": 344138.75,
+    "sus": 7809568.26,
+    "educacao": 5667515.44
+   },
+   "entidades": 0
+  },
+  "202211": {
+   "prefeitura": {
+    "fundeb": 3850512.47,
+    "fpm": 7954848.42,
+    "outras": 792133.01,
+    "royalties": 457544.08,
+    "assistencia": 232216.25,
+    "sus": 7379475.48,
+    "educacao": 6205605.7
+   },
+   "entidades": 1516940
+  },
+  "202212": {
+   "prefeitura": {
+    "fundeb": 4158807.92,
+    "fpm": 13321907.05,
+    "outras": 1678353.68,
+    "royalties": 476229.1,
+    "assistencia": 1163294.64,
+    "sus": 8323980.34,
+    "educacao": 4913714.35
+   },
+   "entidades": 163729
+  },
+  "202301": {
+   "prefeitura": {
+    "fundeb": 3821166.66,
+    "fpm": 7999734.87,
+    "royalties": 380854.87,
+    "sus": 6974214.23,
+    "educacao": 9122643.35,
+    "outras": 1860561.53
+   },
+   "entidades": 0
+  },
+  "202302": {
+   "prefeitura": {
+    "fundeb": 5013473.51,
+    "fpm": 10707254.75,
+    "royalties": 388831.71,
+    "assistencia": 464014.25,
+    "sus": 7330656.93,
+    "educacao": 5817832.19
+   },
+   "entidades": 0
+  },
+  "202303": {
+   "prefeitura": {
+    "fundeb": 3142070.32,
+    "fpm": 6541061.66,
+    "royalties": 394902.72,
+    "assistencia": 672303.9,
+    "sus": 8187478.92,
+    "educacao": 6903910.42,
+    "especiais": 1123000
+   },
+   "entidades": 0
+  },
+  "202304": {
+   "prefeitura": {
+    "fundeb": 3577814.72,
+    "fpm": 7478474.75,
+    "royalties": 367790.15,
+    "assistencia": 291737.9,
+    "sus": 7580331.25,
+    "educacao": 6043890.07,
+    "outras": 126145.99
+   },
+   "entidades": 168355
+  },
+  "202305": {
+   "prefeitura": {
+    "fundeb": 3945436.84,
+    "fpm": 8310181.37,
+    "royalties": 384423.03,
+    "assistencia": 710575.88,
+    "sus": 7701218.03,
+    "educacao": 6153255.53,
+    "outras": 7107596.3
+   },
+   "entidades": 506830
+  },
+  "202306": {
+   "prefeitura": {
+    "fundeb": 3732407.69,
+    "fpm": 7754171.13,
+    "royalties": 384594.81,
+    "assistencia": 410090.68,
+    "sus": 9557015.88,
+    "educacao": 6285602.72,
+    "outras": 350000
+   },
+   "entidades": 78660
+  },
+  "202307": {
+   "prefeitura": {
+    "fundeb": 2806035.81,
+    "fpm": 10610809.36,
+    "royalties": 4672.23,
+    "assistencia": 611132.82,
+    "sus": 7219350.95,
+    "educacao": 6234890.25,
+    "outras": 1068298.1
+   },
+   "entidades": 889060
+  },
+  "202308": {
+   "prefeitura": {
+    "fundeb": 3180635.99,
+    "fpm": 6571536.01,
+    "royalties": 366822.06,
+    "assistencia": 904828.09,
+    "sus": 8755976.63,
+    "educacao": 6230355.22,
+    "outras": 4620296.29
+   },
+   "entidades": 280310
+  },
+  "202309": {
+   "prefeitura": {
+    "fundeb": 2909531.62,
+    "fpm": 6943403.65,
+    "royalties": 763237.7,
+    "assistencia": 409953.33,
+    "sus": 7889139.56,
+    "educacao": 6239598.46,
+    "outras": 2279290.86
+   },
+   "entidades": 76530
+  },
+  "202310": {
+   "prefeitura": {
+    "fundeb": 3537695.39,
+    "fpm": 6221794.44,
+    "royalties": 500236.21,
+    "assistencia": 842175.77,
+    "sus": 9492192.65,
+    "educacao": 6453991.64
+   },
+   "entidades": 191178.78
+  },
+  "202311": {
+   "prefeitura": {
+    "fundeb": 3930059.13,
+    "fpm": 8072557.08,
+    "royalties": 479356.29,
+    "assistencia": 940486.76,
+    "sus": 10041303.7,
+    "educacao": 6838164.03
+   },
+   "entidades": 80396.82
+  },
+  "202312": {
+   "prefeitura": {
+    "fundeb": 4315849.54,
+    "fpm": 13804250.52,
+    "royalties": 478502.56,
+    "assistencia": 1991994.12,
+    "sus": 10573542.64,
+    "educacao": 5672713.33,
+    "outras": 4584491.98
+   },
+   "entidades": 529898
+  },
   "202401": {
    "prefeitura": {
     "fundeb": 4490003.79,
@@ -879,6 +1127,49 @@
     "outras": 894534.12
    },
    "entidades": 183248
+  },
+  "202601": {
+   "prefeitura": {
+    "fundeb": 4931762.16,
+    "fpm": 10470700.43,
+    "royalties": 437551.6,
+    "assistencia": 462687.85,
+    "sus": 9570839.5,
+    "educacao": 5591911.67
+   },
+   "entidades": 750000
+  },
+  "202602": {
+   "prefeitura": {
+    "fundeb": 6142887.36,
+    "fpm": 13164807.27,
+    "royalties": 355274.79,
+    "sus": 12678148.33,
+    "educacao": 4819307.24
+   },
+   "entidades": 200000
+  },
+  "202603": {
+   "prefeitura": {
+    "fundeb": 3800458.84,
+    "fpm": 7972087.62,
+    "royalties": 398286.66,
+    "assistencia": 736761.93,
+    "sus": 10209727.91,
+    "educacao": 1563030.25
+   },
+   "entidades": 0
+  },
+  "202604": {
+   "prefeitura": {
+    "fundeb": 4411054.77,
+    "fpm": 9386358.75,
+    "royalties": 503869.04,
+    "assistencia": 433990.66,
+    "sus": 13129502.81,
+    "educacao": 4914801.38
+   },
+   "entidades": 0
   }
  }
 }
